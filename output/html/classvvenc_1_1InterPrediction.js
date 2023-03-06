@@ -1,0 +1,26 @@
+var classvvenc_1_1InterPrediction =
+[
+    [ "InterPrediction", "classvvenc_1_1InterPrediction.html#a7ab8b9dd263674820cac4daf880d55af", null ],
+    [ "~InterPrediction", "classvvenc_1_1InterPrediction.html#a9eb1c62063916f3bd2c130511aff69e9", null ],
+    [ "destroy", "classvvenc_1_1InterPrediction.html#a3a80b6032f86a56bec74609034b3246f", null ],
+    [ "init", "classvvenc_1_1InterPrediction.html#ad95ecc488e5dc47c66b40a94e4962a67", null ],
+    [ "isLumaBvValidIBC", "classvvenc_1_1InterPrediction.html#a19309c6f816ca51c7cea11cb21473ffd", null ],
+    [ "motionCompensation", "classvvenc_1_1InterPrediction.html#a5a356ccf97b9f7b33428f6650b6f9da5", null ],
+    [ "motionCompensationGeo", "classvvenc_1_1InterPrediction.html#ae7d5980af5ef4ee4366ad79b6955feeb", null ],
+    [ "motionCompensationIBC", "classvvenc_1_1InterPrediction.html#a25fd611e79abe6a1da4d33a03f321fcb", null ],
+    [ "resetIBCBuffer", "classvvenc_1_1InterPrediction.html#a077087b708345d4e9423eac9d32323ab", null ],
+    [ "resetVPDUforIBC", "classvvenc_1_1InterPrediction.html#a402d98b243d45f7cee2956c1e023088a", null ],
+    [ "xCheckIdenticalMotion", "classvvenc_1_1InterPrediction.html#a70ecd652e112cabb7dfffed8005287db", null ],
+    [ "xFillIBCBuffer", "classvvenc_1_1InterPrediction.html#aa1609def843feb7504a19d95ed485a2e", null ],
+    [ "xIntraBlockCopyIBC", "classvvenc_1_1InterPrediction.html#a8add971dc3374c5462bb54c6f5f43efc", null ],
+    [ "xPredInterBi", "classvvenc_1_1InterPrediction.html#a129ce478fba97dea28361be72409fe2d", null ],
+    [ "xPredInterUni", "classvvenc_1_1InterPrediction.html#a32806fdb7cf77d4ae99f8240e2927d1e", null ],
+    [ "xSubPuBDOF", "classvvenc_1_1InterPrediction.html#a85b0dabec975bf1a9c4adce8eb141b39", null ],
+    [ "xSubPuMC", "classvvenc_1_1InterPrediction.html#a825a3a015731fd4a2411e43170f6af0e", null ],
+    [ "m_currChromaFormat", "classvvenc_1_1InterPrediction.html#a9ddbb02a220623fa10f87e6f751e77e6", null ],
+    [ "m_geoPartBuf", "classvvenc_1_1InterPrediction.html#a2c781c71205a9144906280c30b759ef4", null ],
+    [ "m_IBCBuffer", "classvvenc_1_1InterPrediction.html#a2fb4a2e1e8a89b812fa7df85799dc25b", null ],
+    [ "m_IBCBufferWidth", "classvvenc_1_1InterPrediction.html#a1772f4fde0e53388a546adacdb5d444b", null ],
+    [ "m_subPuMC", "classvvenc_1_1InterPrediction.html#a4e02ed9e1f4afa737de0ea7b1c65f486", null ],
+    [ "m_yuvPred", "classvvenc_1_1InterPrediction.html#a3de81f16a66e23a35850efb6a0add5e0", null ]
+];

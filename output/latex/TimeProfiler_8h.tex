@@ -1,0 +1,112 @@
+\hypertarget{TimeProfiler_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Time\+Profiler.h File Reference}
+\label{TimeProfiler_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TimeProfiler.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TimeProfiler.h}}
+
+
+profiling of run-\/time behavior (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stat\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$numeric$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for Time\+Profiler.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TimeProfiler_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TimeProfiler_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{TimeProfiler_8h_a28ff18f1b2b1337f35cf4a6ddb215cde}{P\+R\+O\+F\+\_\+\+S\+T\+A\+RT}}(p,  s)
+\item 
+\#define \mbox{\hyperlink{TimeProfiler_8h_a943d30725359a92d7406bd8a9006cca9}{P\+R\+O\+F\+\_\+\+S\+T\+OP}}(p)
+\item 
+\#define \mbox{\hyperlink{TimeProfiler_8h_ab375d00740ca9be0fe6c705ba5791504}{P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+R\+T\+\_\+\+N\+E\+W\+\_\+\+S\+ET}}(cond,  p,  s)
+\item 
+\#define \mbox{\hyperlink{TimeProfiler_8h_a48e5ee72e953901b1aeca5200b1f751c}{P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+S\+C\+O\+P\+E\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+GE}}(cond,  p,  s)
+\item 
+\#define \mbox{\hyperlink{TimeProfiler_8h_a1f8b82dec98edb8bd913a4e0b9e32512}{P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+S\+C\+O\+P\+E\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+G\+E\+\_\+\+E\+XT}}(cond,  p,  s,  cs,  ch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+profiling of run-\/time behavior (header) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{TimeProfiler_8h_a28ff18f1b2b1337f35cf4a6ddb215cde}\label{TimeProfiler_8h_a28ff18f1b2b1337f35cf4a6ddb215cde}} 
+\index{TimeProfiler.h@{TimeProfiler.h}!PROF\_START@{PROF\_START}}
+\index{PROF\_START@{PROF\_START}!TimeProfiler.h@{TimeProfiler.h}}
+\doxysubsubsection{\texorpdfstring{PROF\_START}{PROF\_START}}
+{\footnotesize\ttfamily \#define P\+R\+O\+F\+\_\+\+S\+T\+A\+RT(\begin{DoxyParamCaption}\item[{}]{p,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 378 of file Time\+Profiler.\+h.
+
+\mbox{\Hypertarget{TimeProfiler_8h_a943d30725359a92d7406bd8a9006cca9}\label{TimeProfiler_8h_a943d30725359a92d7406bd8a9006cca9}} 
+\index{TimeProfiler.h@{TimeProfiler.h}!PROF\_STOP@{PROF\_STOP}}
+\index{PROF\_STOP@{PROF\_STOP}!TimeProfiler.h@{TimeProfiler.h}}
+\doxysubsubsection{\texorpdfstring{PROF\_STOP}{PROF\_STOP}}
+{\footnotesize\ttfamily \#define P\+R\+O\+F\+\_\+\+S\+T\+OP(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 379 of file Time\+Profiler.\+h.
+
+\mbox{\Hypertarget{TimeProfiler_8h_ab375d00740ca9be0fe6c705ba5791504}\label{TimeProfiler_8h_ab375d00740ca9be0fe6c705ba5791504}} 
+\index{TimeProfiler.h@{TimeProfiler.h}!PROFILER\_ACCUM\_AND\_START\_NEW\_SET@{PROFILER\_ACCUM\_AND\_START\_NEW\_SET}}
+\index{PROFILER\_ACCUM\_AND\_START\_NEW\_SET@{PROFILER\_ACCUM\_AND\_START\_NEW\_SET}!TimeProfiler.h@{TimeProfiler.h}}
+\doxysubsubsection{\texorpdfstring{PROFILER\_ACCUM\_AND\_START\_NEW\_SET}{PROFILER\_ACCUM\_AND\_START\_NEW\_SET}}
+{\footnotesize\ttfamily \#define P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+A\+C\+C\+U\+M\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+R\+T\+\_\+\+N\+E\+W\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{p,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 380 of file Time\+Profiler.\+h.
+
+\mbox{\Hypertarget{TimeProfiler_8h_a48e5ee72e953901b1aeca5200b1f751c}\label{TimeProfiler_8h_a48e5ee72e953901b1aeca5200b1f751c}} 
+\index{TimeProfiler.h@{TimeProfiler.h}!PROFILER\_SCOPE\_AND\_STAGE@{PROFILER\_SCOPE\_AND\_STAGE}}
+\index{PROFILER\_SCOPE\_AND\_STAGE@{PROFILER\_SCOPE\_AND\_STAGE}!TimeProfiler.h@{TimeProfiler.h}}
+\doxysubsubsection{\texorpdfstring{PROFILER\_SCOPE\_AND\_STAGE}{PROFILER\_SCOPE\_AND\_STAGE}}
+{\footnotesize\ttfamily \#define P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+S\+C\+O\+P\+E\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+GE(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{p,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 381 of file Time\+Profiler.\+h.
+
+\mbox{\Hypertarget{TimeProfiler_8h_a1f8b82dec98edb8bd913a4e0b9e32512}\label{TimeProfiler_8h_a1f8b82dec98edb8bd913a4e0b9e32512}} 
+\index{TimeProfiler.h@{TimeProfiler.h}!PROFILER\_SCOPE\_AND\_STAGE\_EXT@{PROFILER\_SCOPE\_AND\_STAGE\_EXT}}
+\index{PROFILER\_SCOPE\_AND\_STAGE\_EXT@{PROFILER\_SCOPE\_AND\_STAGE\_EXT}!TimeProfiler.h@{TimeProfiler.h}}
+\doxysubsubsection{\texorpdfstring{PROFILER\_SCOPE\_AND\_STAGE\_EXT}{PROFILER\_SCOPE\_AND\_STAGE\_EXT}}
+{\footnotesize\ttfamily \#define P\+R\+O\+F\+I\+L\+E\+R\+\_\+\+S\+C\+O\+P\+E\+\_\+\+A\+N\+D\+\_\+\+S\+T\+A\+G\+E\+\_\+\+E\+XT(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{p,  }\item[{}]{s,  }\item[{}]{cs,  }\item[{}]{ch }\end{DoxyParamCaption})}
+
+
+
+Definition at line 382 of file Time\+Profiler.\+h.
+

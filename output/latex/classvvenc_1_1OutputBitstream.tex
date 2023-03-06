@@ -1,0 +1,435 @@
+\hypertarget{classvvenc_1_1OutputBitstream}{}\doxysection{Output\+Bitstream}
+\label{classvvenc_1_1OutputBitstream}\index{OutputBitstream@{OutputBitstream}}
+
+
+{\ttfamily \#include \char`\"{}Bit\+Stream.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1OutputBitstream_ae6f1d69ef580b1428566d7ab712d6341}{Output\+Bitstream}} ()
+\begin{DoxyCompactList}\small\item\em this value is always msb-\/aligned, bigendian. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1OutputBitstream_a077ef9b6b6979ffe44be7f8f752be5d0}{$\sim$\+Output\+Bitstream}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_abcdb5e73911c1b03b02fe890e6487147}{add\+Substream}} (const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$pc\+Substream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ac8bb3912a3ce86b15842e79d0b421204}{clear}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a40e0032877d0a05f2ec50129be9b3c76}{count\+Start\+Code\+Emulations}} ()
+\begin{DoxyCompactList}\small\item\em returns the number of start code emulations contained in the current buffer \end{DoxyCompactList}\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a26c5e4c9d5a3ed626e0a08dea9c42d93}{get\+Byte\+Stream}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ae17320be5234ec48382ef71ac041f8a0}{get\+Byte\+Stream\+Length}} ()
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \& \mbox{\hyperlink{classvvenc_1_1OutputBitstream_adcaeb7d9ef818dbfb510fee9207f7be8}{get\+F\+I\+FO}} ()
+\item 
+const std\+::vector$<$ uint8\+\_\+t $>$ \& \mbox{\hyperlink{classvvenc_1_1OutputBitstream_acd73b8fbb2b84de9726a591204147b50}{get\+F\+I\+FO}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1OutputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}{get\+Held\+Bits}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a0ad94d9c30bf00771fdfbf0dbf206a29}{get\+Number\+Of\+Written\+Bits}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a0561bb123b0520accdbf3e504067ecb7}{get\+Num\+Bits\+Until\+Byte\+Aligned}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a9e9b7f57ec0b17764e2ecfd47669b75e}{insert\+At}} (const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&src, uint32\+\_\+t pos)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_aa33f0ffa205937876840969faaa13fec}{write}} (uint32\+\_\+t ui\+Bits, uint32\+\_\+t ui\+Number\+Of\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a9632e6c838b1a9cc60297c7948828b1b}{write\+Align\+One}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_aadde0187d2331a97021345c0cba1c8a8}{write\+Align\+Zero}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ac48ccc623f9ab98eafa8ddd22fc60cb7}{write\+Byte\+Alignment}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ab61f584eff07357d17450dae15cd579f}{m\+\_\+fifo}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ad9c1102ded3d932c9ee83c42456739ca}{m\+\_\+held\+\_\+bits}}
+\begin{DoxyCompactList}\small\item\em number of bits not flushed to bytestream. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ac8fc4991c89fedb6a533383aa16671dd}{m\+\_\+num\+\_\+held\+\_\+bits}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Model of a writable bitstream that accumulates bits to produce a bytestream. 
+
+Definition at line 68 of file Bit\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ae6f1d69ef580b1428566d7ab712d6341}\label{classvvenc_1_1OutputBitstream_ae6f1d69ef580b1428566d7ab712d6341}} 
+\index{OutputBitstream@{OutputBitstream}!OutputBitstream@{OutputBitstream}}
+\index{OutputBitstream@{OutputBitstream}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{OutputBitstream()}{OutputBitstream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+this value is always msb-\/aligned, bigendian. 
+
+the bits held and not flushed to bytestream. 
+
+Definition at line 69 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classvvenc_1_1OutputBitstream_ae6f1d69ef580b1428566d7ab712d6341_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a077ef9b6b6979ffe44be7f8f752be5d0}\label{classvvenc_1_1OutputBitstream_a077ef9b6b6979ffe44be7f8f752be5d0}} 
+\index{OutputBitstream@{OutputBitstream}!````~OutputBitstream@{$\sim$OutputBitstream}}
+\index{````~OutputBitstream@{$\sim$OutputBitstream}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{$\sim$OutputBitstream()}{~OutputBitstream()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file Bit\+Stream.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_abcdb5e73911c1b03b02fe890e6487147}\label{classvvenc_1_1OutputBitstream_abcdb5e73911c1b03b02fe890e6487147}} 
+\index{OutputBitstream@{OutputBitstream}!addSubstream@{addSubstream}}
+\index{addSubstream@{addSubstream}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{addSubstream()}{addSubstream()}}
+{\footnotesize\ttfamily void add\+Substream (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$}]{pc\+Substream }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item add substream to the end of the current bitstream
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em pc\+Substream} & substream to be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 193 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classvvenc_1_1OutputBitstream_abcdb5e73911c1b03b02fe890e6487147_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_abcdb5e73911c1b03b02fe890e6487147_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ac8bb3912a3ce86b15842e79d0b421204}\label{classvvenc_1_1OutputBitstream_ac8bb3912a3ce86b15842e79d0b421204}} 
+\index{OutputBitstream@{OutputBitstream}!clear@{clear}}
+\index{clear@{clear}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset all internal state. 
+
+Definition at line 119 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_ac8bb3912a3ce86b15842e79d0b421204_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a40e0032877d0a05f2ec50129be9b3c76}\label{classvvenc_1_1OutputBitstream_a40e0032877d0a05f2ec50129be9b3c76}} 
+\index{OutputBitstream@{OutputBitstream}!countStartCodeEmulations@{countStartCodeEmulations}}
+\index{countStartCodeEmulations@{countStartCodeEmulations}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{countStartCodeEmulations()}{countStartCodeEmulations()}}
+{\footnotesize\ttfamily int count\+Start\+Code\+Emulations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the number of start code emulations contained in the current buffer 
+
+
+
+Definition at line 214 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1OutputBitstream_a40e0032877d0a05f2ec50129be9b3c76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a26c5e4c9d5a3ed626e0a08dea9c42d93}\label{classvvenc_1_1OutputBitstream_a26c5e4c9d5a3ed626e0a08dea9c42d93}} 
+\index{OutputBitstream@{OutputBitstream}!getByteStream@{getByteStream}}
+\index{getByteStream@{getByteStream}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getByteStream()}{getByteStream()}}
+{\footnotesize\ttfamily uint8\+\_\+t $\ast$ get\+Byte\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Return a pointer to the start of the byte-\/stream buffer. Pointer is valid until the next write/flush/reset call. NB, data is arranged such that subsequent bytes in the bytestream are stored in ascending addresses. 
+
+Definition at line 109 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_a26c5e4c9d5a3ed626e0a08dea9c42d93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ae17320be5234ec48382ef71ac041f8a0}\label{classvvenc_1_1OutputBitstream_ae17320be5234ec48382ef71ac041f8a0}} 
+\index{OutputBitstream@{OutputBitstream}!getByteStreamLength@{getByteStreamLength}}
+\index{getByteStreamLength@{getByteStreamLength}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getByteStreamLength()}{getByteStreamLength()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Byte\+Stream\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the number of valid bytes available from \mbox{\hyperlink{classvvenc_1_1OutputBitstream_a26c5e4c9d5a3ed626e0a08dea9c42d93}{get\+Byte\+Stream()}} 
+
+Definition at line 114 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_ae17320be5234ec48382ef71ac041f8a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_adcaeb7d9ef818dbfb510fee9207f7be8}\label{classvvenc_1_1OutputBitstream_adcaeb7d9ef818dbfb510fee9207f7be8}} 
+\index{OutputBitstream@{OutputBitstream}!getFIFO@{getFIFO}}
+\index{getFIFO@{getFIFO}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getFIFO()}{getFIFO()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$\& get\+F\+I\+FO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a reference to the internal fifo 
+
+Definition at line 136 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_adcaeb7d9ef818dbfb510fee9207f7be8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_acd73b8fbb2b84de9726a591204147b50}\label{classvvenc_1_1OutputBitstream_acd73b8fbb2b84de9726a591204147b50}} 
+\index{OutputBitstream@{OutputBitstream}!getFIFO@{getFIFO}}
+\index{getFIFO@{getFIFO}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getFIFO()}{getFIFO()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$uint8\+\_\+t$>$\& get\+F\+I\+FO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return a reference to the internal fifo 
+
+Definition at line 142 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}\label{classvvenc_1_1OutputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}} 
+\index{OutputBitstream@{OutputBitstream}!getHeldBits@{getHeldBits}}
+\index{getHeldBits@{getHeldBits}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getHeldBits()}{getHeldBits()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Held\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 138 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a0ad94d9c30bf00771fdfbf0dbf206a29}\label{classvvenc_1_1OutputBitstream_a0ad94d9c30bf00771fdfbf0dbf206a29}} 
+\index{OutputBitstream@{OutputBitstream}!getNumberOfWrittenBits@{getNumberOfWrittenBits}}
+\index{getNumberOfWrittenBits@{getNumberOfWrittenBits}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getNumberOfWrittenBits()}{getNumberOfWrittenBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Number\+Of\+Written\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the number of bits that have been written since the last \mbox{\hyperlink{classvvenc_1_1OutputBitstream_ac8bb3912a3ce86b15842e79d0b421204}{clear()}} 
+
+Definition at line 129 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_a0ad94d9c30bf00771fdfbf0dbf206a29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a0561bb123b0520accdbf3e504067ecb7}\label{classvvenc_1_1OutputBitstream_a0561bb123b0520accdbf3e504067ecb7}} 
+\index{OutputBitstream@{OutputBitstream}!getNumBitsUntilByteAligned@{getNumBitsUntilByteAligned}}
+\index{getNumBitsUntilByteAligned@{getNumBitsUntilByteAligned}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{getNumBitsUntilByteAligned()}{getNumBitsUntilByteAligned()}}
+{\footnotesize\ttfamily int get\+Num\+Bits\+Until\+Byte\+Aligned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the number of bits that need to be written to achieve byte alignment. 
+
+Definition at line 124 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_a0561bb123b0520accdbf3e504067ecb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a9e9b7f57ec0b17764e2ecfd47669b75e}\label{classvvenc_1_1OutputBitstream_a9e9b7f57ec0b17764e2ecfd47669b75e}} 
+\index{OutputBitstream@{OutputBitstream}!insertAt@{insertAt}}
+\index{insertAt@{insertAt}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{insertAt()}{insertAt()}}
+{\footnotesize\ttfamily void insert\+At (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&}]{src,  }\item[{uint32\+\_\+t}]{pos }\end{DoxyParamCaption})}
+
+insert the contents of the bytealigned (and flushed) bitstream src into this at byte position pos. 
+
+Definition at line 336 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classvvenc_1_1OutputBitstream_a9e9b7f57ec0b17764e2ecfd47669b75e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_aa33f0ffa205937876840969faaa13fec}\label{classvvenc_1_1OutputBitstream_aa33f0ffa205937876840969faaa13fec}} 
+\index{OutputBitstream@{OutputBitstream}!write@{write}}
+\index{write@{write}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void write (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Bits,  }\item[{uint32\+\_\+t}]{ui\+Number\+Of\+Bits }\end{DoxyParamCaption})}
+
+append ui\+Number\+Of\+Bits least significant bits of ui\+Bits to the current bitstream 
+
+Definition at line 126 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_aa33f0ffa205937876840969faaa13fec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_a9632e6c838b1a9cc60297c7948828b1b}\label{classvvenc_1_1OutputBitstream_a9632e6c838b1a9cc60297c7948828b1b}} 
+\index{OutputBitstream@{OutputBitstream}!writeAlignOne@{writeAlignOne}}
+\index{writeAlignOne@{writeAlignOne}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{writeAlignOne()}{writeAlignOne()}}
+{\footnotesize\ttfamily void write\+Align\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+insert one bits until the bitstream is byte-\/aligned 
+
+Definition at line 170 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classvvenc_1_1OutputBitstream_a9632e6c838b1a9cc60297c7948828b1b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_aadde0187d2331a97021345c0cba1c8a8}\label{classvvenc_1_1OutputBitstream_aadde0187d2331a97021345c0cba1c8a8}} 
+\index{OutputBitstream@{OutputBitstream}!writeAlignZero@{writeAlignZero}}
+\index{writeAlignZero@{writeAlignZero}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{writeAlignZero()}{writeAlignZero()}}
+{\footnotesize\ttfamily void write\+Align\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+insert zero bits until the bitstream is byte-\/aligned 
+
+Definition at line 177 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_aadde0187d2331a97021345c0cba1c8a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ac48ccc623f9ab98eafa8ddd22fc60cb7}\label{classvvenc_1_1OutputBitstream_ac48ccc623f9ab98eafa8ddd22fc60cb7}} 
+\index{OutputBitstream@{OutputBitstream}!writeByteAlignment@{writeByteAlignment}}
+\index{writeByteAlignment@{writeByteAlignment}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{writeByteAlignment()}{writeByteAlignment()}}
+{\footnotesize\ttfamily void write\+Byte\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 208 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvvenc_1_1OutputBitstream_ac48ccc623f9ab98eafa8ddd22fc60cb7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1OutputBitstream_ac48ccc623f9ab98eafa8ddd22fc60cb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ab61f584eff07357d17450dae15cd579f}\label{classvvenc_1_1OutputBitstream_ab61f584eff07357d17450dae15cd579f}} 
+\index{OutputBitstream@{OutputBitstream}!m\_fifo@{m\_fifo}}
+\index{m\_fifo@{m\_fifo}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_fifo}{m\_fifo}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ m\+\_\+fifo\hspace{0.3cm}{\ttfamily [private]}}
+
+F\+I\+FO for storage of bytes. Use\+:
+\begin{DoxyItemize}
+\item fifo.\+push\+\_\+back(x) to append words
+\item fifo.\+clear() to empty the F\+I\+FO
+\item \&fifo.\+front() to get a pointer to the data array. NB, this pointer is only valid until the next push\+\_\+back()/clear() 
+\end{DoxyItemize}
+
+Definition at line 77 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ad9c1102ded3d932c9ee83c42456739ca}\label{classvvenc_1_1OutputBitstream_ad9c1102ded3d932c9ee83c42456739ca}} 
+\index{OutputBitstream@{OutputBitstream}!m\_held\_bits@{m\_held\_bits}}
+\index{m\_held\_bits@{m\_held\_bits}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_held\_bits}{m\_held\_bits}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+held\+\_\+bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+number of bits not flushed to bytestream. 
+
+
+
+Definition at line 80 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1OutputBitstream_ac8fc4991c89fedb6a533383aa16671dd}\label{classvvenc_1_1OutputBitstream_ac8fc4991c89fedb6a533383aa16671dd}} 
+\index{OutputBitstream@{OutputBitstream}!m\_num\_held\_bits@{m\_num\_held\_bits}}
+\index{m\_num\_held\_bits@{m\_num\_held\_bits}!OutputBitstream@{OutputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_num\_held\_bits}{m\_num\_held\_bits}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+num\+\_\+held\+\_\+bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Bit\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{BitStream_8h}{Bit\+Stream.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{BitStream_8cpp}{Bit\+Stream.\+cpp}}\end{DoxyCompactItemize}

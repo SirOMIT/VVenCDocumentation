@@ -1,0 +1,22 @@
+<map id="picInitRateControl" name="picInitRateControl">
+<area shape="rect" id="node1" title=" " alt="" coords="5,375,132,401"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncRCPic.html#a6dca3fb01fb0bdc3024a26d2c069b89e" title=" " alt="" coords="195,54,375,95"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1EncRCPic.html#ac036fd34f712c951c1c05593d44bde3e" title=" " alt="" coords="180,120,391,147"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1EncRCPic.html#a00a61f37d924393793f0336daf330dfd" title=" " alt="" coords="193,171,378,213"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1EncRCPic.html#ad6f561fb8a4aed1c50d7b7c03e716078" title=" " alt="" coords="193,237,378,278"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1EncPicture.html#aec615d2cc456faad0cc60b50f1e5b862" title=" " alt="" coords="217,302,354,343"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1EncRCSeq.html#a64065a84a8249e4e0b7b78c07eccdee6" title=" " alt="" coords="196,367,375,409"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1RateCtrl.html#a4f6ef322ba068bd051222b3079670b3b" title=" " alt="" coords="195,433,375,460"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1EncRCPic.html#a62da06f3dacb4dfdb0b1bfe66132d3d5" title=" " alt="" coords="190,485,381,526"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1Slice.html#a022764e04d9a5b3e4e90b20a70d05677" title=" " alt="" coords="216,551,355,577"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1Slice.html#ae712c51e5029cc6e18d4272f9df547cf" title=" " alt="" coords="213,601,357,628"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1EncSlice.html#a862c99f1fbddb1e567c2d42d10933895" title=" " alt="" coords="199,652,372,679"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1Picture.html#a7b8e59f547b3a21d59f72e2fd97f751c" title=" " alt="" coords="464,7,640,33"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#a166ed3b561f2f4b2071ba9cbdda38d86" title=" " alt="" coords="459,61,645,88"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1Picture.html#a935164c49b3eeccd1e4df1a4fdbed4d9" title=" " alt="" coords="715,5,867,32"/>
+<area shape="rect" id="node6" href="$namespacevvenc.html#a7f349632878be19b99945fca37c91813" title=" " alt="" coords="713,57,869,98"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1EncRCPic.html#a05656446c705e5c9331f8181ca223466" title=" " alt="" coords="459,113,645,154"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1EncRCPic.html#abe4dc3eaf6f08d3447089bb434203555" title=" " alt="" coords="451,178,653,219"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1EncRCPic.html#aa8c918708805c64a7d573936acf8e19d" title=" " alt="" coords="439,244,665,271"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1Slice.html#a0aedb7e260ba211f7465b90020b1f9cd" title=" " alt="" coords="465,652,639,679"/>
+</map>

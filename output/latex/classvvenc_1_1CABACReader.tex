@@ -1,0 +1,1998 @@
+\hypertarget{classvvenc_1_1CABACReader}{}\doxysection{C\+A\+B\+A\+C\+Reader}
+\label{classvvenc_1_1CABACReader}\index{CABACReader@{CABACReader}}
+
+
+{\ttfamily \#include \char`\"{}C\+A\+B\+A\+C\+Reader.\+h\char`\"{}}
+
+
+
+Inheritance diagram for C\+A\+B\+A\+C\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{classvvenc_1_1CABACReader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+A\+B\+A\+C\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACReader_ad93dadccf226526f3578d3e95667812b}{C\+A\+B\+A\+C\+Reader}} (\mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}} \&bin\+Decoder)
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1CABACReader_a0dab2b007565b357d6f60c868283b181}{$\sim$\+C\+A\+B\+A\+C\+Reader}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a3b999504530e478b1280d9501c7babb1}{adaptive\+\_\+color\+\_\+transform}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_aa037821e912eb0b3ded54fab446ae507}{affine\+\_\+amvr\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a0195ef4470ac8d02f6a5bc52a8bb2f67}{affine\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ae088bcaee360b2f005562f60d6501a52}{bdpcm\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CABACReader_ad7c809756fa4b93fac9be45e32b9217c}{cbf\+\_\+comp}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, unsigned depth, const bool prev\+Cbf=false, const bool use\+I\+SP=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a9f446eb28d64ae1c5ee262995630cc5c}{cc\+Alf\+Filter\+Control\+Idc}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const int cur\+Idx, uint8\+\_\+t $\ast$filter\+Control\+Idc, \mbox{\hyperlink{structvvenc_1_1Position}{Position}} luma\+Pos, int filter\+Count)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a09102316b88bbc10ddfc761ba1fa60ae}{Ciip\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a94b58be20068f09f0344df44aadbbce4}{coding\+\_\+tree}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} $\ast$p\+Partitioner\+Chroma=nullptr, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} $\ast$p\+Cu\+Ctx\+Chroma=nullptr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_adcdb0f81eecc7aa3412d70c44c276936}{coding\+\_\+tree\+\_\+unit}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area, int(\&qps)\mbox{[}2\mbox{]}, unsigned ctu\+Rs\+Addr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a8b9ef457ce5ff633cc8b551f5fc84d37}{coding\+\_\+unit}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a3b47b6f8e82ad1f9d2ffdf876181e75a}{cu\+\_\+bcw\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_aa2f4761bf96901adb3b25adaf0e288e4}{cu\+\_\+chroma\+\_\+qp\+\_\+offset}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a6613e234fc117a0af9056220259daf0e}{cu\+\_\+palette\+\_\+info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Begin, uint32\+\_\+t num\+Comp, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a19c239639ed5fd9160d7bbc7bfc0c683}{cu\+\_\+pred\+\_\+data}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a56b2e2d76b4afca1fba4f343aadc0226}{cu\+\_\+qp\+\_\+delta}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int pred\+QP, int8\+\_\+t \&qp)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_afdb3f44cee411174aae79a969f6c8721}{cu\+\_\+residual}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a101b1a2da497dbdf3b7cd71198a20749}{cu\+\_\+skip\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a57514f16f4b34fa531a7d10492c1d173}{cu\+Palette\+Subblock\+Info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Begin, uint32\+\_\+t num\+Comp, int sub\+Set\+Id, uint32\+\_\+t \&prev\+Run\+Pos, unsigned \&prev\+Run\+Type)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a2fef640836d7dbe1c0899521a42b21f0}{end\+\_\+of\+\_\+ctu}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_aa8ba6b355b2136cf1040627ee6cc6631}{extend\+\_\+ref\+\_\+line}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+\mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \& \mbox{\hyperlink{classvvenc_1_1CABACReader_a64fea5af988dd3394c35bfaf723183a2}{get\+Ctx}} ()
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \& \mbox{\hyperlink{classvvenc_1_1CABACReader_aae23d3ef7f18113b1f9cf7de56045476}{get\+Ctx}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a11584ada7633da9dacfe69c4652eca03}{imv\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a385c0d08ac0fdba228280ebdaad0312d}{init\+Bitstream}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$bitstream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ab689481eef54ceff5373869fb93d6c41}{init\+Ctx\+Models}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_acbb5f7d62b5c5a9a92a71da3f0517118}{inter\+\_\+pred\+\_\+idc}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CABACReader_ae8ed969d814c111859074845c468cb28}{intra\+\_\+chroma\+\_\+lmc\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_aa10a3b3aed70c82ca530cde545b433cc}{intra\+\_\+chroma\+\_\+pred\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a4dcb49dc60a84020f653e444abb24114}{intra\+\_\+chroma\+\_\+pred\+\_\+modes}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ae03cd58a388a88538e2060b90156a580}{intra\+\_\+luma\+\_\+pred\+\_\+modes}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a210f95299e4b9761a510f0fca82ed9ea}{isp\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a619cc34e2421378f3b3e1eda2d79e695}{joint\+\_\+cb\+\_\+cr}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const int cbf\+Mask)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CABACReader_a8e99e700dc42e884bcc0f449a809f90a}{last\+\_\+sig\+\_\+coeff}} (\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&cctx, \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a4e24b1e1192bdf08d172d0a240673388}{merge\+\_\+data}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a745f5397520032f68c81dbf31299f4a3}{merge\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_abc84bc047543a931b0a4710aa0a31fcd}{merge\+\_\+idx}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a8f5a6131effa5956d7672ffd7cb40317}{mip\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a24831277515831700aacda7c99cd4dab}{mip\+\_\+pred\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_af547bd1fc2010604d0f43580c5233fc4}{mip\+\_\+pred\+\_\+modes}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a458b2a7ea43bf9d547a0246e0a5e3c3b}{mmvd\+\_\+merge\+\_\+idx}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+\mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} \mbox{\hyperlink{classvvenc_1_1CABACReader_ab35f4e9219a3590e69e485b2042d6ab0}{mode\+\_\+constraint}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} split\+Mode)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a5d556792ec9edc2fc616df911bde8c95}{mts\+\_\+idx}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ab94d54040443245056d7c8bf3b303a65}{mvd\+\_\+coding}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&r\+Mvd)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a1b0780f0ba84676497c350c127457f22}{mvp\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+List)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a8a4bcb95554d152cfe19cced36f8a422}{pred\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a93d2654f701b9cdc063f81521b497d38}{prediction\+\_\+unit}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a00adc868df4213c7e6f34981713835b0}{read\+Alf\+Ctu\+Filter\+Index}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, unsigned ctu\+Rs\+Addr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ac809e94dc7a1c89ab57a7d49d40ba4dd}{ref\+\_\+idx}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+List)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a24a59bf5d5854422df6410bcf5521989}{remaining\+\_\+bytes}} (bool no\+Trailing\+Bytes\+Expected)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a1cc96b9d63b3fd2233a719eb1b6aece7}{residual\+\_\+coding}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a470a7bbf13bf4702483504d860e0c2eb}{residual\+\_\+coding\+\_\+subblock}} (\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&cctx, \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff, const int state\+Trans\+Table, int \&state)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a8c1944da53ed98f601b1717ceeca7c21}{residual\+\_\+coding\+\_\+subblock\+TS}} (\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&cctx, \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a2a119d7395cdce06746c8a802906ed02}{residual\+\_\+coding\+TS}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_af51b842d17423ecf43509b248ae330c9}{residual\+\_\+lfnst\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_ac5a16e97f95b1df1cb3d1f3034c21d17}{rqt\+\_\+root\+\_\+cbf}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_adf6f096a52128296b75b44e46b9b551f}{sao}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, unsigned ctu\+Rs\+Addr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a4ab4db55fad6370255c56f58da6c95df}{sbt\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a4d69dec623d6ca43b6bf97c9dd86f965}{smvd\+\_\+mode}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{classvvenc_1_1CABACReader_a0d5122234ffabf1726f83458d12aedf0}{split\+\_\+cu\+\_\+mode}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a6f8deec5179c99788ff2d592994c3deb}{subblock\+\_\+merge\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CABACReader_aff9b27e68505f01c4439cde38adba2f5}{terminating\+\_\+bit}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a96064a8ca2185e72721b9ba2d31b5953}{transform\+\_\+tree}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} isp\+Type=\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daac857994f6db53579c3fa66889565d977}{T\+U\+\_\+\+N\+O\+\_\+\+I\+SP}}, const int sub\+Tu\+Idx=-\/1)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_a687c5bdefc6cda2f32d6433953341ad6}{transform\+\_\+unit}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&cu\+Ctx, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&pm, const int sub\+Tu\+Counter=-\/1)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_abdd55ed0068067bfca3fcff8b9e86d21}{ts\+\_\+flag}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CABACReader_a339264558d59baca998010578747dd5d}{exp\+\_\+golomb\+\_\+eqprob}} (unsigned count)
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CABACReader_a2aa458335e9e7ad913ef4c2e6980f283}{get\+\_\+num\+\_\+bits\+\_\+read}} ()
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CABACReader_ad65fa2b4418e604a89f2691c6472e6bb}{unary\+\_\+max\+\_\+eqprob}} (unsigned max\+Symbol)
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CABACReader_aa6e888d99fdc1202ef1e399e11f45e17}{unary\+\_\+max\+\_\+symbol}} (unsigned ctx\+Id0, unsigned ctx\+IdN, unsigned max\+Symbol)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CABACReader_afbcb76fd9cbce3f7a2ca94fc38c4a081}{x\+Read\+Trunc\+Bin\+Code}} (uint32\+\_\+t \&symbol, uint32\+\_\+t max\+Symbol)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}} \& \mbox{\hyperlink{classvvenc_1_1CABACReader_aff475975a99386f1031f61fb6dec95c6}{m\+\_\+\+Bin\+Decoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CABACReader_a1f29296d7394ceada639c38be5cf2e4b}{m\+\_\+\+Bitstream}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \mbox{\hyperlink{classvvenc_1_1CABACReader_ac08e9b424746c829672033d74d31d2f6}{m\+\_\+partitioner}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 62 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ad93dadccf226526f3578d3e95667812b}\label{classvvenc_1_1CABACReader_ad93dadccf226526f3578d3e95667812b}} 
+\index{CABACReader@{CABACReader}!CABACReader@{CABACReader}}
+\index{CABACReader@{CABACReader}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{CABACReader()}{CABACReader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACReader}{C\+A\+B\+A\+C\+Reader}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}} \&}]{bin\+Decoder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a0dab2b007565b357d6f60c868283b181}\label{classvvenc_1_1CABACReader_a0dab2b007565b357d6f60c868283b181}} 
+\index{CABACReader@{CABACReader}!````~CABACReader@{$\sim$CABACReader}}
+\index{````~CABACReader@{$\sim$CABACReader}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CABACReader()}{~CABACReader()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1CABACReader}{C\+A\+B\+A\+C\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 68 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a3b999504530e478b1280d9501c7babb1}\label{classvvenc_1_1CABACReader_a3b999504530e478b1280d9501c7babb1}} 
+\index{CABACReader@{CABACReader}!adaptive\_color\_transform@{adaptive\_color\_transform}}
+\index{adaptive\_color\_transform@{adaptive\_color\_transform}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{adaptive\_color\_transform()}{adaptive\_color\_transform()}}
+{\footnotesize\ttfamily void adaptive\+\_\+color\+\_\+transform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1450 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a3b999504530e478b1280d9501c7babb1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a3b999504530e478b1280d9501c7babb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aa037821e912eb0b3ded54fab446ae507}\label{classvvenc_1_1CABACReader_aa037821e912eb0b3ded54fab446ae507}} 
+\index{CABACReader@{CABACReader}!affine\_amvr\_mode@{affine\_amvr\_mode}}
+\index{affine\_amvr\_mode@{affine\_amvr\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{affine\_amvr\_mode()}{affine\_amvr\_mode()}}
+{\footnotesize\ttfamily void affine\+\_\+amvr\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 945 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa037821e912eb0b3ded54fab446ae507_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa037821e912eb0b3ded54fab446ae507_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a0195ef4470ac8d02f6a5bc52a8bb2f67}\label{classvvenc_1_1CABACReader_a0195ef4470ac8d02f6a5bc52a8bb2f67}} 
+\index{CABACReader@{CABACReader}!affine\_flag@{affine\_flag}}
+\index{affine\_flag@{affine\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{affine\_flag()}{affine\_flag()}}
+{\footnotesize\ttfamily void affine\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1688 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a0195ef4470ac8d02f6a5bc52a8bb2f67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a0195ef4470ac8d02f6a5bc52a8bb2f67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ae088bcaee360b2f005562f60d6501a52}\label{classvvenc_1_1CABACReader_ae088bcaee360b2f005562f60d6501a52}} 
+\index{CABACReader@{CABACReader}!bdpcm\_mode@{bdpcm\_mode}}
+\index{bdpcm\_mode@{bdpcm\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{bdpcm\_mode()}{bdpcm\_mode()}}
+{\footnotesize\ttfamily void bdpcm\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1063 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae088bcaee360b2f005562f60d6501a52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae088bcaee360b2f005562f60d6501a52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ad7c809756fa4b93fac9be45e32b9217c}\label{classvvenc_1_1CABACReader_ad7c809756fa4b93fac9be45e32b9217c}} 
+\index{CABACReader@{CABACReader}!cbf\_comp@{cbf\_comp}}
+\index{cbf\_comp@{cbf\_comp}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cbf\_comp()}{cbf\_comp()}}
+{\footnotesize\ttfamily bool cbf\+\_\+comp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{unsigned}]{depth,  }\item[{const bool}]{prev\+Cbf = {\ttfamily false},  }\item[{const bool}]{use\+I\+SP = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2104 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ad7c809756fa4b93fac9be45e32b9217c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ad7c809756fa4b93fac9be45e32b9217c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a9f446eb28d64ae1c5ee262995630cc5c}\label{classvvenc_1_1CABACReader_a9f446eb28d64ae1c5ee262995630cc5c}} 
+\index{CABACReader@{CABACReader}!ccAlfFilterControlIdc@{ccAlfFilterControlIdc}}
+\index{ccAlfFilterControlIdc@{ccAlfFilterControlIdc}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{ccAlfFilterControlIdc()}{ccAlfFilterControlIdc()}}
+{\footnotesize\ttfamily void cc\+Alf\+Filter\+Control\+Idc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const int}]{cur\+Idx,  }\item[{uint8\+\_\+t $\ast$}]{filter\+Control\+Idc,  }\item[{\mbox{\hyperlink{structvvenc_1_1Position}{Position}}}]{luma\+Pos,  }\item[{int}]{filter\+Count }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a9f446eb28d64ae1c5ee262995630cc5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a9f446eb28d64ae1c5ee262995630cc5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a09102316b88bbc10ddfc761ba1fa60ae}\label{classvvenc_1_1CABACReader_a09102316b88bbc10ddfc761ba1fa60ae}} 
+\index{CABACReader@{CABACReader}!Ciip\_flag@{Ciip\_flag}}
+\index{Ciip\_flag@{Ciip\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{Ciip\_flag()}{Ciip\_flag()}}
+{\footnotesize\ttfamily void Ciip\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2008 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a09102316b88bbc10ddfc761ba1fa60ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a09102316b88bbc10ddfc761ba1fa60ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a94b58be20068f09f0344df44aadbbce4}\label{classvvenc_1_1CABACReader_a94b58be20068f09f0344df44aadbbce4}} 
+\index{CABACReader@{CABACReader}!coding\_tree@{coding\_tree}}
+\index{coding\_tree@{coding\_tree}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{coding\_tree()}{coding\_tree()}}
+{\footnotesize\ttfamily void coding\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} $\ast$}]{p\+Partitioner\+Chroma = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} $\ast$}]{p\+Cu\+Ctx\+Chroma = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 457 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a94b58be20068f09f0344df44aadbbce4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a94b58be20068f09f0344df44aadbbce4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_adcdb0f81eecc7aa3412d70c44c276936}\label{classvvenc_1_1CABACReader_adcdb0f81eecc7aa3412d70c44c276936}} 
+\index{CABACReader@{CABACReader}!coding\_tree\_unit@{coding\_tree\_unit}}
+\index{coding\_tree\_unit@{coding\_tree\_unit}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{coding\_tree\_unit()}{coding\_tree\_unit()}}
+{\footnotesize\ttfamily void coding\+\_\+tree\+\_\+unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area,  }\item[{int(\&)}]{qps\mbox{[}2\mbox{]},  }\item[{unsigned}]{ctu\+Rs\+Addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 133 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CABACReader_adcdb0f81eecc7aa3412d70c44c276936_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_adcdb0f81eecc7aa3412d70c44c276936_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a8b9ef457ce5ff633cc8b551f5fc84d37}\label{classvvenc_1_1CABACReader_a8b9ef457ce5ff633cc8b551f5fc84d37}} 
+\index{CABACReader@{CABACReader}!coding\_unit@{coding\_unit}}
+\index{coding\_unit@{coding\_unit}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{coding\_unit()}{coding\_unit()}}
+{\footnotesize\ttfamily void coding\+\_\+unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 770 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CABACReader_a8b9ef457ce5ff633cc8b551f5fc84d37_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8b9ef457ce5ff633cc8b551f5fc84d37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a3b47b6f8e82ad1f9d2ffdf876181e75a}\label{classvvenc_1_1CABACReader_a3b47b6f8e82ad1f9d2ffdf876181e75a}} 
+\index{CABACReader@{CABACReader}!cu\_bcw\_flag@{cu\_bcw\_flag}}
+\index{cu\_bcw\_flag@{cu\_bcw\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_bcw\_flag()}{cu\_bcw\_flag()}}
+{\footnotesize\ttfamily void cu\+\_\+bcw\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1131 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a3b47b6f8e82ad1f9d2ffdf876181e75a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a3b47b6f8e82ad1f9d2ffdf876181e75a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aa2f4761bf96901adb3b25adaf0e288e4}\label{classvvenc_1_1CABACReader_aa2f4761bf96901adb3b25adaf0e288e4}} 
+\index{CABACReader@{CABACReader}!cu\_chroma\_qp\_offset@{cu\_chroma\_qp\_offset}}
+\index{cu\_chroma\_qp\_offset@{cu\_chroma\_qp\_offset}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_chroma\_qp\_offset()}{cu\_chroma\_qp\_offset()}}
+{\footnotesize\ttfamily void cu\+\_\+chroma\+\_\+qp\+\_\+offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2333 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa2f4761bf96901adb3b25adaf0e288e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa2f4761bf96901adb3b25adaf0e288e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a6613e234fc117a0af9056220259daf0e}\label{classvvenc_1_1CABACReader_a6613e234fc117a0af9056220259daf0e}} 
+\index{CABACReader@{CABACReader}!cu\_palette\_info@{cu\_palette\_info}}
+\index{cu\_palette\_info@{cu\_palette\_info}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_palette\_info()}{cu\_palette\_info()}}
+{\footnotesize\ttfamily void cu\+\_\+palette\+\_\+info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Begin,  }\item[{uint32\+\_\+t}]{num\+Comp,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1539 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a19c239639ed5fd9160d7bbc7bfc0c683}\label{classvvenc_1_1CABACReader_a19c239639ed5fd9160d7bbc7bfc0c683}} 
+\index{CABACReader@{CABACReader}!cu\_pred\_data@{cu\_pred\_data}}
+\index{cu\_pred\_data@{cu\_pred\_data}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_pred\_data()}{cu\_pred\_data()}}
+{\footnotesize\ttfamily void cu\+\_\+pred\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1101 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CABACReader_a19c239639ed5fd9160d7bbc7bfc0c683_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a19c239639ed5fd9160d7bbc7bfc0c683_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a56b2e2d76b4afca1fba4f343aadc0226}\label{classvvenc_1_1CABACReader_a56b2e2d76b4afca1fba4f343aadc0226}} 
+\index{CABACReader@{CABACReader}!cu\_qp\_delta@{cu\_qp\_delta}}
+\index{cu\_qp\_delta@{cu\_qp\_delta}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_qp\_delta()}{cu\_qp\_delta()}}
+{\footnotesize\ttfamily void cu\+\_\+qp\+\_\+delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int}]{pred\+QP,  }\item[{int8\+\_\+t \&}]{qp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2309 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a56b2e2d76b4afca1fba4f343aadc0226_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a56b2e2d76b4afca1fba4f343aadc0226_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_afdb3f44cee411174aae79a969f6c8721}\label{classvvenc_1_1CABACReader_afdb3f44cee411174aae79a969f6c8721}} 
+\index{CABACReader@{CABACReader}!cu\_residual@{cu\_residual}}
+\index{cu\_residual@{cu\_residual}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_residual()}{cu\_residual()}}
+{\footnotesize\ttfamily void cu\+\_\+residual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1393 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CABACReader_afdb3f44cee411174aae79a969f6c8721_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_afdb3f44cee411174aae79a969f6c8721_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a101b1a2da497dbdf3b7cd71198a20749}\label{classvvenc_1_1CABACReader_a101b1a2da497dbdf3b7cd71198a20749}} 
+\index{CABACReader@{CABACReader}!cu\_skip\_flag@{cu\_skip\_flag}}
+\index{cu\_skip\_flag@{cu\_skip\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cu\_skip\_flag()}{cu\_skip\_flag()}}
+{\footnotesize\ttfamily void cu\+\_\+skip\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 816 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a101b1a2da497dbdf3b7cd71198a20749_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a101b1a2da497dbdf3b7cd71198a20749_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a57514f16f4b34fa531a7d10492c1d173}\label{classvvenc_1_1CABACReader_a57514f16f4b34fa531a7d10492c1d173}} 
+\index{CABACReader@{CABACReader}!cuPaletteSubblockInfo@{cuPaletteSubblockInfo}}
+\index{cuPaletteSubblockInfo@{cuPaletteSubblockInfo}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{cuPaletteSubblockInfo()}{cuPaletteSubblockInfo()}}
+{\footnotesize\ttfamily void cu\+Palette\+Subblock\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Begin,  }\item[{uint32\+\_\+t}]{num\+Comp,  }\item[{int}]{sub\+Set\+Id,  }\item[{uint32\+\_\+t \&}]{prev\+Run\+Pos,  }\item[{unsigned \&}]{prev\+Run\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a2fef640836d7dbe1c0899521a42b21f0}\label{classvvenc_1_1CABACReader_a2fef640836d7dbe1c0899521a42b21f0}} 
+\index{CABACReader@{CABACReader}!end\_of\_ctu@{end\_of\_ctu}}
+\index{end\_of\_ctu@{end\_of\_ctu}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{end\_of\_ctu()}{end\_of\_ctu()}}
+{\footnotesize\ttfamily void end\+\_\+of\+\_\+ctu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1526 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a2fef640836d7dbe1c0899521a42b21f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a2fef640836d7dbe1c0899521a42b21f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a339264558d59baca998010578747dd5d}\label{classvvenc_1_1CABACReader_a339264558d59baca998010578747dd5d}} 
+\index{CABACReader@{CABACReader}!exp\_golomb\_eqprob@{exp\_golomb\_eqprob}}
+\index{exp\_golomb\_eqprob@{exp\_golomb\_eqprob}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{exp\_golomb\_eqprob()}{exp\_golomb\_eqprob()}}
+{\footnotesize\ttfamily unsigned exp\+\_\+golomb\+\_\+eqprob (\begin{DoxyParamCaption}\item[{unsigned}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2960 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a339264558d59baca998010578747dd5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a339264558d59baca998010578747dd5d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aa8ba6b355b2136cf1040627ee6cc6631}\label{classvvenc_1_1CABACReader_aa8ba6b355b2136cf1040627ee6cc6631}} 
+\index{CABACReader@{CABACReader}!extend\_ref\_line@{extend\_ref\_line}}
+\index{extend\_ref\_line@{extend\_ref\_line}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{extend\_ref\_line()}{extend\_ref\_line()}}
+{\footnotesize\ttfamily void extend\+\_\+ref\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1201 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classvvenc_1_1CABACReader_aa8ba6b355b2136cf1040627ee6cc6631_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa8ba6b355b2136cf1040627ee6cc6631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a2aa458335e9e7ad913ef4c2e6980f283}\label{classvvenc_1_1CABACReader_a2aa458335e9e7ad913ef4c2e6980f283}} 
+\index{CABACReader@{CABACReader}!get\_num\_bits\_read@{get\_num\_bits\_read}}
+\index{get\_num\_bits\_read@{get\_num\_bits\_read}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{get\_num\_bits\_read()}{get\_num\_bits\_read()}}
+{\footnotesize\ttfamily unsigned get\+\_\+num\+\_\+bits\+\_\+read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 162 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a2aa458335e9e7ad913ef4c2e6980f283_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a64fea5af988dd3394c35bfaf723183a2}\label{classvvenc_1_1CABACReader_a64fea5af988dd3394c35bfaf723183a2}} 
+\index{CABACReader@{CABACReader}!getCtx@{getCtx}}
+\index{getCtx@{getCtx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{getCtx()}{getCtx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}}\& get\+Ctx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classvvenc_1_1CABACReader_a64fea5af988dd3394c35bfaf723183a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aae23d3ef7f18113b1f9cf7de56045476}\label{classvvenc_1_1CABACReader_aae23d3ef7f18113b1f9cf7de56045476}} 
+\index{CABACReader@{CABACReader}!getCtx@{getCtx}}
+\index{getCtx@{getCtx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{getCtx()}{getCtx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}}\& get\+Ctx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classvvenc_1_1CABACReader_aae23d3ef7f18113b1f9cf7de56045476_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aae23d3ef7f18113b1f9cf7de56045476_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a11584ada7633da9dacfe69c4652eca03}\label{classvvenc_1_1CABACReader_a11584ada7633da9dacfe69c4652eca03}} 
+\index{CABACReader@{CABACReader}!imv\_mode@{imv\_mode}}
+\index{imv\_mode@{imv\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{imv\_mode()}{imv\_mode()}}
+{\footnotesize\ttfamily void imv\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 893 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a11584ada7633da9dacfe69c4652eca03_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a11584ada7633da9dacfe69c4652eca03_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a385c0d08ac0fdba228280ebdaad0312d}\label{classvvenc_1_1CABACReader_a385c0d08ac0fdba228280ebdaad0312d}} 
+\index{CABACReader@{CABACReader}!initBitstream@{initBitstream}}
+\index{initBitstream@{initBitstream}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{initBitstream()}{initBitstream()}}
+{\footnotesize\ttfamily void init\+Bitstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{bitstream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1CABACReader_a385c0d08ac0fdba228280ebdaad0312d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a385c0d08ac0fdba228280ebdaad0312d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ab689481eef54ceff5373869fb93d6c41}\label{classvvenc_1_1CABACReader_ab689481eef54ceff5373869fb93d6c41}} 
+\index{CABACReader@{CABACReader}!initCtxModels@{initCtxModels}}
+\index{initCtxModels@{initCtxModels}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{initCtxModels()}{initCtxModels()}}
+{\footnotesize\ttfamily void init\+Ctx\+Models (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab689481eef54ceff5373869fb93d6c41_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab689481eef54ceff5373869fb93d6c41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_acbb5f7d62b5c5a9a92a71da3f0517118}\label{classvvenc_1_1CABACReader_acbb5f7d62b5c5a9a92a71da3f0517118}} 
+\index{CABACReader@{CABACReader}!inter\_pred\_idc@{inter\_pred\_idc}}
+\index{inter\_pred\_idc@{inter\_pred\_idc}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{inter\_pred\_idc()}{inter\_pred\_idc()}}
+{\footnotesize\ttfamily void inter\+\_\+pred\+\_\+idc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1935 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_acbb5f7d62b5c5a9a92a71da3f0517118_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_acbb5f7d62b5c5a9a92a71da3f0517118_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ae8ed969d814c111859074845c468cb28}\label{classvvenc_1_1CABACReader_ae8ed969d814c111859074845c468cb28}} 
+\index{CABACReader@{CABACReader}!intra\_chroma\_lmc\_mode@{intra\_chroma\_lmc\_mode}}
+\index{intra\_chroma\_lmc\_mode@{intra\_chroma\_lmc\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{intra\_chroma\_lmc\_mode()}{intra\_chroma\_lmc\_mode()}}
+{\footnotesize\ttfamily bool intra\+\_\+chroma\+\_\+lmc\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1336 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae8ed969d814c111859074845c468cb28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae8ed969d814c111859074845c468cb28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aa10a3b3aed70c82ca530cde545b433cc}\label{classvvenc_1_1CABACReader_aa10a3b3aed70c82ca530cde545b433cc}} 
+\index{CABACReader@{CABACReader}!intra\_chroma\_pred\_mode@{intra\_chroma\_pred\_mode}}
+\index{intra\_chroma\_pred\_mode@{intra\_chroma\_pred\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{intra\_chroma\_pred\_mode()}{intra\_chroma\_pred\_mode()}}
+{\footnotesize\ttfamily void intra\+\_\+chroma\+\_\+pred\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1356 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa10a3b3aed70c82ca530cde545b433cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa10a3b3aed70c82ca530cde545b433cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a4dcb49dc60a84020f653e444abb24114}\label{classvvenc_1_1CABACReader_a4dcb49dc60a84020f653e444abb24114}} 
+\index{CABACReader@{CABACReader}!intra\_chroma\_pred\_modes@{intra\_chroma\_pred\_modes}}
+\index{intra\_chroma\_pred\_modes@{intra\_chroma\_pred\_modes}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{intra\_chroma\_pred\_modes()}{intra\_chroma\_pred\_modes()}}
+{\footnotesize\ttfamily void intra\+\_\+chroma\+\_\+pred\+\_\+modes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1320 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4dcb49dc60a84020f653e444abb24114_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4dcb49dc60a84020f653e444abb24114_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ae03cd58a388a88538e2060b90156a580}\label{classvvenc_1_1CABACReader_ae03cd58a388a88538e2060b90156a580}} 
+\index{CABACReader@{CABACReader}!intra\_luma\_pred\_modes@{intra\_luma\_pred\_modes}}
+\index{intra\_luma\_pred\_modes@{intra\_luma\_pred\_modes}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{intra\_luma\_pred\_modes()}{intra\_luma\_pred\_modes()}}
+{\footnotesize\ttfamily void intra\+\_\+luma\+\_\+pred\+\_\+modes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1232 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae03cd58a388a88538e2060b90156a580_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ae03cd58a388a88538e2060b90156a580_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a210f95299e4b9761a510f0fca82ed9ea}\label{classvvenc_1_1CABACReader_a210f95299e4b9761a510f0fca82ed9ea}} 
+\index{CABACReader@{CABACReader}!isp\_mode@{isp\_mode}}
+\index{isp\_mode@{isp\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{isp\_mode()}{isp\_mode()}}
+{\footnotesize\ttfamily void isp\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2488 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a210f95299e4b9761a510f0fca82ed9ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a210f95299e4b9761a510f0fca82ed9ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a619cc34e2421378f3b3e1eda2d79e695}\label{classvvenc_1_1CABACReader_a619cc34e2421378f3b3e1eda2d79e695}} 
+\index{CABACReader@{CABACReader}!joint\_cb\_cr@{joint\_cb\_cr}}
+\index{joint\_cb\_cr@{joint\_cb\_cr}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{joint\_cb\_cr()}{joint\_cb\_cr()}}
+{\footnotesize\ttfamily void joint\+\_\+cb\+\_\+cr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const int}]{cbf\+Mask }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2358 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classvvenc_1_1CABACReader_a619cc34e2421378f3b3e1eda2d79e695_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a619cc34e2421378f3b3e1eda2d79e695_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a8e99e700dc42e884bcc0f449a809f90a}\label{classvvenc_1_1CABACReader_a8e99e700dc42e884bcc0f449a809f90a}} 
+\index{CABACReader@{CABACReader}!last\_sig\_coeff@{last\_sig\_coeff}}
+\index{last\_sig\_coeff@{last\_sig\_coeff}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{last\_sig\_coeff()}{last\_sig\_coeff()}}
+{\footnotesize\ttfamily int last\+\_\+sig\+\_\+coeff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&}]{cctx,  }\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2560 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8e99e700dc42e884bcc0f449a809f90a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8e99e700dc42e884bcc0f449a809f90a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a4e24b1e1192bdf08d172d0a240673388}\label{classvvenc_1_1CABACReader_a4e24b1e1192bdf08d172d0a240673388}} 
+\index{CABACReader@{CABACReader}!merge\_data@{merge\_data}}
+\index{merge\_data@{merge\_data}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{merge\_data()}{merge\_data()}}
+{\footnotesize\ttfamily void merge\+\_\+data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1724 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4e24b1e1192bdf08d172d0a240673388_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4e24b1e1192bdf08d172d0a240673388_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a745f5397520032f68c81dbf31299f4a3}\label{classvvenc_1_1CABACReader_a745f5397520032f68c81dbf31299f4a3}} 
+\index{CABACReader@{CABACReader}!merge\_flag@{merge\_flag}}
+\index{merge\_flag@{merge\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{merge\_flag()}{merge\_flag()}}
+{\footnotesize\ttfamily void merge\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1709 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a745f5397520032f68c81dbf31299f4a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a745f5397520032f68c81dbf31299f4a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_abc84bc047543a931b0a4710aa0a31fcd}\label{classvvenc_1_1CABACReader_abc84bc047543a931b0a4710aa0a31fcd}} 
+\index{CABACReader@{CABACReader}!merge\_idx@{merge\_idx}}
+\index{merge\_idx@{merge\_idx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{merge\_idx()}{merge\_idx()}}
+{\footnotesize\ttfamily void merge\+\_\+idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1808 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_abc84bc047543a931b0a4710aa0a31fcd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_abc84bc047543a931b0a4710aa0a31fcd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a8f5a6131effa5956d7672ffd7cb40317}\label{classvvenc_1_1CABACReader_a8f5a6131effa5956d7672ffd7cb40317}} 
+\index{CABACReader@{CABACReader}!mip\_flag@{mip\_flag}}
+\index{mip\_flag@{mip\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mip\_flag()}{mip\_flag()}}
+{\footnotesize\ttfamily void mip\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2976 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8f5a6131effa5956d7672ffd7cb40317_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8f5a6131effa5956d7672ffd7cb40317_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a24831277515831700aacda7c99cd4dab}\label{classvvenc_1_1CABACReader_a24831277515831700aacda7c99cd4dab}} 
+\index{CABACReader@{CABACReader}!mip\_pred\_mode@{mip\_pred\_mode}}
+\index{mip\_pred\_mode@{mip\_pred\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mip\_pred\_mode()}{mip\_pred\_mode()}}
+{\footnotesize\ttfamily void mip\+\_\+pred\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3003 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a24831277515831700aacda7c99cd4dab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a24831277515831700aacda7c99cd4dab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_af547bd1fc2010604d0f43580c5233fc4}\label{classvvenc_1_1CABACReader_af547bd1fc2010604d0f43580c5233fc4}} 
+\index{CABACReader@{CABACReader}!mip\_pred\_modes@{mip\_pred\_modes}}
+\index{mip\_pred\_modes@{mip\_pred\_modes}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mip\_pred\_modes()}{mip\_pred\_modes()}}
+{\footnotesize\ttfamily void mip\+\_\+pred\+\_\+modes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2993 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_af547bd1fc2010604d0f43580c5233fc4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_af547bd1fc2010604d0f43580c5233fc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a458b2a7ea43bf9d547a0246e0a5e3c3b}\label{classvvenc_1_1CABACReader_a458b2a7ea43bf9d547a0246e0a5e3c3b}} 
+\index{CABACReader@{CABACReader}!mmvd\_merge\_idx@{mmvd\_merge\_idx}}
+\index{mmvd\_merge\_idx@{mmvd\_merge\_idx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mmvd\_merge\_idx()}{mmvd\_merge\_idx()}}
+{\footnotesize\ttfamily void mmvd\+\_\+merge\+\_\+idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1889 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a458b2a7ea43bf9d547a0246e0a5e3c3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a458b2a7ea43bf9d547a0246e0a5e3c3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ab35f4e9219a3590e69e485b2042d6ab0}\label{classvvenc_1_1CABACReader_ab35f4e9219a3590e69e485b2042d6ab0}} 
+\index{CABACReader@{CABACReader}!mode\_constraint@{mode\_constraint}}
+\index{mode\_constraint@{mode\_constraint}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mode\_constraint()}{mode\_constraint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} mode\+\_\+constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split\+Mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 666 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab35f4e9219a3590e69e485b2042d6ab0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab35f4e9219a3590e69e485b2042d6ab0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a5d556792ec9edc2fc616df911bde8c95}\label{classvvenc_1_1CABACReader_a5d556792ec9edc2fc616df911bde8c95}} 
+\index{CABACReader@{CABACReader}!mts\_idx@{mts\_idx}}
+\index{mts\_idx@{mts\_idx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mts\_idx()}{mts\_idx()}}
+{\footnotesize\ttfamily void mts\+\_\+idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2455 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a5d556792ec9edc2fc616df911bde8c95_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a5d556792ec9edc2fc616df911bde8c95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ab94d54040443245056d7c8bf3b303a65}\label{classvvenc_1_1CABACReader_ab94d54040443245056d7c8bf3b303a65}} 
+\index{CABACReader@{CABACReader}!mvd\_coding@{mvd\_coding}}
+\index{mvd\_coding@{mvd\_coding}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mvd\_coding()}{mvd\_coding()}}
+{\footnotesize\ttfamily void mvd\+\_\+coding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{r\+Mvd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2130 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab94d54040443245056d7c8bf3b303a65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ab94d54040443245056d7c8bf3b303a65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a1b0780f0ba84676497c350c127457f22}\label{classvvenc_1_1CABACReader_a1b0780f0ba84676497c350c127457f22}} 
+\index{CABACReader@{CABACReader}!mvp\_flag@{mvp\_flag}}
+\index{mvp\_flag@{mvp\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{mvp\_flag()}{mvp\_flag()}}
+{\footnotesize\ttfamily void mvp\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1999 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a1b0780f0ba84676497c350c127457f22_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a1b0780f0ba84676497c350c127457f22_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a8a4bcb95554d152cfe19cced36f8a422}\label{classvvenc_1_1CABACReader_a8a4bcb95554d152cfe19cced36f8a422}} 
+\index{CABACReader@{CABACReader}!pred\_mode@{pred\_mode}}
+\index{pred\_mode@{pred\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{pred\_mode()}{pred\_mode()}}
+{\footnotesize\ttfamily void pred\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 974 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8a4bcb95554d152cfe19cced36f8a422_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8a4bcb95554d152cfe19cced36f8a422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a93d2654f701b9cdc063f81521b497d38}\label{classvvenc_1_1CABACReader_a93d2654f701b9cdc063f81521b497d38}} 
+\index{CABACReader@{CABACReader}!prediction\_unit@{prediction\_unit}}
+\index{prediction\_unit@{prediction\_unit}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{prediction\_unit()}{prediction\_unit()}}
+{\footnotesize\ttfamily void prediction\+\_\+unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1557 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a93d2654f701b9cdc063f81521b497d38_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a93d2654f701b9cdc063f81521b497d38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a00adc868df4213c7e6f34981713835b0}\label{classvvenc_1_1CABACReader_a00adc868df4213c7e6f34981713835b0}} 
+\index{CABACReader@{CABACReader}!readAlfCtuFilterIndex@{readAlfCtuFilterIndex}}
+\index{readAlfCtuFilterIndex@{readAlfCtuFilterIndex}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{readAlfCtuFilterIndex()}{readAlfCtuFilterIndex()}}
+{\footnotesize\ttfamily void read\+Alf\+Ctu\+Filter\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{unsigned}]{ctu\+Rs\+Addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 238 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a00adc868df4213c7e6f34981713835b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a00adc868df4213c7e6f34981713835b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ac809e94dc7a1c89ab57a7d49d40ba4dd}\label{classvvenc_1_1CABACReader_ac809e94dc7a1c89ab57a7d49d40ba4dd}} 
+\index{CABACReader@{CABACReader}!ref\_idx@{ref\_idx}}
+\index{ref\_idx@{ref\_idx}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{ref\_idx()}{ref\_idx()}}
+{\footnotesize\ttfamily void ref\+\_\+idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1963 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ac809e94dc7a1c89ab57a7d49d40ba4dd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ac809e94dc7a1c89ab57a7d49d40ba4dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a24a59bf5d5854422df6410bcf5521989}\label{classvvenc_1_1CABACReader_a24a59bf5d5854422df6410bcf5521989}} 
+\index{CABACReader@{CABACReader}!remaining\_bytes@{remaining\_bytes}}
+\index{remaining\_bytes@{remaining\_bytes}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{remaining\_bytes()}{remaining\_bytes()}}
+{\footnotesize\ttfamily void remaining\+\_\+bytes (\begin{DoxyParamCaption}\item[{bool}]{no\+Trailing\+Bytes\+Expected }\end{DoxyParamCaption})}
+
+
+
+Definition at line 108 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classvvenc_1_1CABACReader_a24a59bf5d5854422df6410bcf5521989_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a24a59bf5d5854422df6410bcf5521989_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a1cc96b9d63b3fd2233a719eb1b6aece7}\label{classvvenc_1_1CABACReader_a1cc96b9d63b3fd2233a719eb1b6aece7}} 
+\index{CABACReader@{CABACReader}!residual\_coding@{residual\_coding}}
+\index{residual\_coding@{residual\_coding}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{residual\_coding()}{residual\_coding()}}
+{\footnotesize\ttfamily void residual\+\_\+coding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2371 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a1cc96b9d63b3fd2233a719eb1b6aece7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a1cc96b9d63b3fd2233a719eb1b6aece7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a470a7bbf13bf4702483504d860e0c2eb}\label{classvvenc_1_1CABACReader_a470a7bbf13bf4702483504d860e0c2eb}} 
+\index{CABACReader@{CABACReader}!residual\_coding\_subblock@{residual\_coding\_subblock}}
+\index{residual\_coding\_subblock@{residual\_coding\_subblock}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{residual\_coding\_subblock()}{residual\_coding\_subblock()}}
+{\footnotesize\ttfamily void residual\+\_\+coding\+\_\+subblock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&}]{cctx,  }\item[{\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff,  }\item[{const int}]{state\+Trans\+Table,  }\item[{int \&}]{state }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2622 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a470a7bbf13bf4702483504d860e0c2eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a470a7bbf13bf4702483504d860e0c2eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a8c1944da53ed98f601b1717ceeca7c21}\label{classvvenc_1_1CABACReader_a8c1944da53ed98f601b1717ceeca7c21}} 
+\index{CABACReader@{CABACReader}!residual\_coding\_subblockTS@{residual\_coding\_subblockTS}}
+\index{residual\_coding\_subblockTS@{residual\_coding\_subblockTS}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{residual\_coding\_subblockTS()}{residual\_coding\_subblockTS()}}
+{\footnotesize\ttfamily void residual\+\_\+coding\+\_\+subblock\+TS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&}]{cctx,  }\item[{\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2782 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8c1944da53ed98f601b1717ceeca7c21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a8c1944da53ed98f601b1717ceeca7c21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a2a119d7395cdce06746c8a802906ed02}\label{classvvenc_1_1CABACReader_a2a119d7395cdce06746c8a802906ed02}} 
+\index{CABACReader@{CABACReader}!residual\_codingTS@{residual\_codingTS}}
+\index{residual\_codingTS@{residual\_codingTS}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{residual\_codingTS()}{residual\_codingTS()}}
+{\footnotesize\ttfamily void residual\+\_\+coding\+TS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2764 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a2a119d7395cdce06746c8a802906ed02_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a2a119d7395cdce06746c8a802906ed02_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_af51b842d17423ecf43509b248ae330c9}\label{classvvenc_1_1CABACReader_af51b842d17423ecf43509b248ae330c9}} 
+\index{CABACReader@{CABACReader}!residual\_lfnst\_mode@{residual\_lfnst\_mode}}
+\index{residual\_lfnst\_mode@{residual\_lfnst\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{residual\_lfnst\_mode()}{residual\_lfnst\_mode()}}
+{\footnotesize\ttfamily void residual\+\_\+lfnst\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2505 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_af51b842d17423ecf43509b248ae330c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_af51b842d17423ecf43509b248ae330c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ac5a16e97f95b1df1cb3d1f3034c21d17}\label{classvvenc_1_1CABACReader_ac5a16e97f95b1df1cb3d1f3034c21d17}} 
+\index{CABACReader@{CABACReader}!rqt\_root\_cbf@{rqt\_root\_cbf}}
+\index{rqt\_root\_cbf@{rqt\_root\_cbf}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{rqt\_root\_cbf()}{rqt\_root\_cbf()}}
+{\footnotesize\ttfamily void rqt\+\_\+root\+\_\+cbf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1443 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ac5a16e97f95b1df1cb3d1f3034c21d17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ac5a16e97f95b1df1cb3d1f3034c21d17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_adf6f096a52128296b75b44e46b9b551f}\label{classvvenc_1_1CABACReader_adf6f096a52128296b75b44e46b9b551f}} 
+\index{CABACReader@{CABACReader}!sao@{sao}}
+\index{sao@{sao}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{sao()}{sao()}}
+{\footnotesize\ttfamily void sao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{unsigned}]{ctu\+Rs\+Addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 308 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_adf6f096a52128296b75b44e46b9b551f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_adf6f096a52128296b75b44e46b9b551f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a4ab4db55fad6370255c56f58da6c95df}\label{classvvenc_1_1CABACReader_a4ab4db55fad6370255c56f58da6c95df}} 
+\index{CABACReader@{CABACReader}!sbt\_mode@{sbt\_mode}}
+\index{sbt\_mode@{sbt\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{sbt\_mode()}{sbt\_mode()}}
+{\footnotesize\ttfamily void sbt\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1468 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4ab4db55fad6370255c56f58da6c95df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4ab4db55fad6370255c56f58da6c95df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a4d69dec623d6ca43b6bf97c9dd86f965}\label{classvvenc_1_1CABACReader_a4d69dec623d6ca43b6bf97c9dd86f965}} 
+\index{CABACReader@{CABACReader}!smvd\_mode@{smvd\_mode}}
+\index{smvd\_mode@{smvd\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{smvd\_mode()}{smvd\_mode()}}
+{\footnotesize\ttfamily void smvd\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1658 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4d69dec623d6ca43b6bf97c9dd86f965_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a4d69dec623d6ca43b6bf97c9dd86f965_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a0d5122234ffabf1726f83458d12aedf0}\label{classvvenc_1_1CABACReader_a0d5122234ffabf1726f83458d12aedf0}} 
+\index{CABACReader@{CABACReader}!split\_cu\_mode@{split\_cu\_mode}}
+\index{split\_cu\_mode@{split\_cu\_mode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{split\_cu\_mode()}{split\_cu\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} split\+\_\+cu\+\_\+mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm }\end{DoxyParamCaption})}
+
+
+
+Definition at line 686 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a0d5122234ffabf1726f83458d12aedf0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a0d5122234ffabf1726f83458d12aedf0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a6f8deec5179c99788ff2d592994c3deb}\label{classvvenc_1_1CABACReader_a6f8deec5179c99788ff2d592994c3deb}} 
+\index{CABACReader@{CABACReader}!subblock\_merge\_flag@{subblock\_merge\_flag}}
+\index{subblock\_merge\_flag@{subblock\_merge\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{subblock\_merge\_flag()}{subblock\_merge\_flag()}}
+{\footnotesize\ttfamily void subblock\+\_\+merge\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1676 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a6f8deec5179c99788ff2d592994c3deb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a6f8deec5179c99788ff2d592994c3deb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aff9b27e68505f01c4439cde38adba2f5}\label{classvvenc_1_1CABACReader_aff9b27e68505f01c4439cde38adba2f5}} 
+\index{CABACReader@{CABACReader}!terminating\_bit@{terminating\_bit}}
+\index{terminating\_bit@{terminating\_bit}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{terminating\_bit()}{terminating\_bit()}}
+{\footnotesize\ttfamily bool terminating\+\_\+bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 97 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aff9b27e68505f01c4439cde38adba2f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aff9b27e68505f01c4439cde38adba2f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a96064a8ca2185e72721b9ba2d31b5953}\label{classvvenc_1_1CABACReader_a96064a8ca2185e72721b9ba2d31b5953}} 
+\index{CABACReader@{CABACReader}!transform\_tree@{transform\_tree}}
+\index{transform\_tree@{transform\_tree}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{transform\_tree()}{transform\_tree()}}
+{\footnotesize\ttfamily void transform\+\_\+tree (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{isp\+Type = {\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daac857994f6db53579c3fa66889565d977}{T\+U\+\_\+\+N\+O\+\_\+\+I\+SP}}},  }\item[{const int}]{sub\+Tu\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2033 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a96064a8ca2185e72721b9ba2d31b5953_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a96064a8ca2185e72721b9ba2d31b5953_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a687c5bdefc6cda2f32d6433953341ad6}\label{classvvenc_1_1CABACReader_a687c5bdefc6cda2f32d6433953341ad6}} 
+\index{CABACReader@{CABACReader}!transform\_unit@{transform\_unit}}
+\index{transform\_unit@{transform\_unit}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{transform\_unit()}{transform\_unit()}}
+{\footnotesize\ttfamily void transform\+\_\+unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}} \&}]{cu\+Ctx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{pm,  }\item[{const int}]{sub\+Tu\+Counter = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2182 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CABACReader_a687c5bdefc6cda2f32d6433953341ad6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_a687c5bdefc6cda2f32d6433953341ad6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_abdd55ed0068067bfca3fcff8b9e86d21}\label{classvvenc_1_1CABACReader_abdd55ed0068067bfca3fcff8b9e86d21}} 
+\index{CABACReader@{CABACReader}!ts\_flag@{ts\_flag}}
+\index{ts\_flag@{ts\_flag}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{ts\_flag()}{ts\_flag()}}
+{\footnotesize\ttfamily void ts\+\_\+flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2440 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_abdd55ed0068067bfca3fcff8b9e86d21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_abdd55ed0068067bfca3fcff8b9e86d21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ad65fa2b4418e604a89f2691c6472e6bb}\label{classvvenc_1_1CABACReader_ad65fa2b4418e604a89f2691c6472e6bb}} 
+\index{CABACReader@{CABACReader}!unary\_max\_eqprob@{unary\_max\_eqprob}}
+\index{unary\_max\_eqprob@{unary\_max\_eqprob}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{unary\_max\_eqprob()}{unary\_max\_eqprob()}}
+{\footnotesize\ttfamily unsigned unary\+\_\+max\+\_\+eqprob (\begin{DoxyParamCaption}\item[{unsigned}]{max\+Symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2947 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ad65fa2b4418e604a89f2691c6472e6bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_ad65fa2b4418e604a89f2691c6472e6bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aa6e888d99fdc1202ef1e399e11f45e17}\label{classvvenc_1_1CABACReader_aa6e888d99fdc1202ef1e399e11f45e17}} 
+\index{CABACReader@{CABACReader}!unary\_max\_symbol@{unary\_max\_symbol}}
+\index{unary\_max\_symbol@{unary\_max\_symbol}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{unary\_max\_symbol()}{unary\_max\_symbol()}}
+{\footnotesize\ttfamily unsigned unary\+\_\+max\+\_\+symbol (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id0,  }\item[{unsigned}]{ctx\+IdN,  }\item[{unsigned}]{max\+Symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2936 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classvvenc_1_1CABACReader_aa6e888d99fdc1202ef1e399e11f45e17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_aa6e888d99fdc1202ef1e399e11f45e17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_afbcb76fd9cbce3f7a2ca94fc38c4a081}\label{classvvenc_1_1CABACReader_afbcb76fd9cbce3f7a2ca94fc38c4a081}} 
+\index{CABACReader@{CABACReader}!xReadTruncBinCode@{xReadTruncBinCode}}
+\index{xReadTruncBinCode@{xReadTruncBinCode}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{xReadTruncBinCode()}{xReadTruncBinCode()}}
+{\footnotesize\ttfamily void x\+Read\+Trunc\+Bin\+Code (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{symbol,  }\item[{uint32\+\_\+t}]{max\+Symbol }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1169 of file C\+A\+B\+A\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_afbcb76fd9cbce3f7a2ca94fc38c4a081_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CABACReader_afbcb76fd9cbce3f7a2ca94fc38c4a081_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_aff475975a99386f1031f61fb6dec95c6}\label{classvvenc_1_1CABACReader_aff475975a99386f1031f61fb6dec95c6}} 
+\index{CABACReader@{CABACReader}!m\_BinDecoder@{m\_BinDecoder}}
+\index{m\_BinDecoder@{m\_BinDecoder}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{m\_BinDecoder}{m\_BinDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}}\& m\+\_\+\+Bin\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 166 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_a1f29296d7394ceada639c38be5cf2e4b}\label{classvvenc_1_1CABACReader_a1f29296d7394ceada639c38be5cf2e4b}} 
+\index{CABACReader@{CABACReader}!m\_Bitstream@{m\_Bitstream}}
+\index{m\_Bitstream@{m\_Bitstream}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{m\_Bitstream}{m\_Bitstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}}$\ast$ m\+\_\+\+Bitstream\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 167 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CABACReader_ac08e9b424746c829672033d74d31d2f6}\label{classvvenc_1_1CABACReader_ac08e9b424746c829672033d74d31d2f6}} 
+\index{CABACReader@{CABACReader}!m\_partitioner@{m\_partitioner}}
+\index{m\_partitioner@{m\_partitioner}!CABACReader@{CABACReader}}
+\doxysubsubsection{\texorpdfstring{m\_partitioner}{m\_partitioner}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} m\+\_\+partitioner\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 168 of file C\+A\+B\+A\+C\+Reader.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{CABACReader_8h}{C\+A\+B\+A\+C\+Reader.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{CABACReader_8cpp}{C\+A\+B\+A\+C\+Reader.\+cpp}}\end{DoxyCompactItemize}

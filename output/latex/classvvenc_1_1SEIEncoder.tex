@@ -1,0 +1,317 @@
+\hypertarget{classvvenc_1_1SEIEncoder}{}\doxysection{S\+E\+I\+Encoder}
+\label{classvvenc_1_1SEIEncoder}\index{SEIEncoder@{SEIEncoder}}
+
+
+Initializes different \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message types based on given encoder configuration parameters.  
+
+
+
+
+{\ttfamily \#include \char`\"{}S\+E\+I\+Encoder.\+h\char`\"{}}
+
+
+
+Collaboration diagram for S\+E\+I\+Encoder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIEncoder_a9c0e3794a630da869acaaf6f392d59e3}{S\+E\+I\+Encoder}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a2c309f4ad41c384b00255768f5efcd28}{$\sim$\+S\+E\+I\+Encoder}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a34bddab6bf0d12776c6fc92f954f1fa5}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg, \mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} \&enc\+H\+RD)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a0f902a95ac2e83375a26bc55ad819503}{init\+Buffering\+Period\+S\+EI}} (\mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&bp\+Sei, bool no\+Leading\+Pictures)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_aeb24fbabb5325ee9456ec5351cd4e523}{init\+Decoded\+Picture\+Hash\+S\+EI}} (\mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&dph\+Sei, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&pic, std\+::string \&r\+Hash\+String, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\begin{DoxyCompactList}\small\item\em calculate hashes for entire reconstructed picture \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a29a3a52c99680bdfdcdf5d3d50d4447a}{init\+Drap\+S\+EI}} (\mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&drap\+Sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a690fe64ba2edcb5da607a8352a509c75}{init\+Picture\+Timing\+S\+EI}} (\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&sei\+Messages, \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&nested\+Sei\+Messages, \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&du\+Info\+Sei\+Messages, const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const uint32\+\_\+t num\+DU, const bool bp\+Present\+In\+AU)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a919f0dd1c03522dc87320364c8d73890}{init\+S\+E\+I\+Alternative\+Transfer\+Characteristics}} (\mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} $\ast$sei\+Alt\+Trans\+Characteristics)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_ac7bc967d60af1a8851a217e09642129d}{init\+S\+E\+I\+Content\+Light\+Level}} (\mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} $\ast$sei\+C\+LL)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a6024640754202cdb3489a3c9476a7cee}{init\+S\+E\+I\+Mastering\+Display\+Colour\+Volume}} (\mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} $\ast$sei\+M\+D\+CV)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a217245eec26f69d0c5b6e991937de95a}{m\+\_\+is\+Initialized}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1SEIEncoder_a9a5737dc9ea1b3ffa34ffcdaf1b72d41}{m\+\_\+last\+B\+P\+S\+EI}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1SEIEncoder_afabc33c7c4328921490982de50e35da0}{m\+\_\+pc\+Enc\+Cfg}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} $\ast$ \mbox{\hyperlink{classvvenc_1_1SEIEncoder_ae06118c0343b4e4ec319bdc2461e5a8d}{m\+\_\+pc\+Enc\+H\+RD}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1SEIEncoder_ade4f64a00d59e0a882176da726840eef}{m\+\_\+rap\+With\+Leading}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1SEIEncoder_aa4ccc95aa26b57738f245decd130ead6}{m\+\_\+total\+Coded}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initializes different \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message types based on given encoder configuration parameters. 
+
+Definition at line 69 of file S\+E\+I\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a9c0e3794a630da869acaaf6f392d59e3}\label{classvvenc_1_1SEIEncoder_a9c0e3794a630da869acaaf6f392d59e3}} 
+\index{SEIEncoder@{SEIEncoder}!SEIEncoder@{SEIEncoder}}
+\index{SEIEncoder@{SEIEncoder}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{SEIEncoder()}{SEIEncoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIEncoder}{S\+E\+I\+Encoder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a2c309f4ad41c384b00255768f5efcd28}\label{classvvenc_1_1SEIEncoder_a2c309f4ad41c384b00255768f5efcd28}} 
+\index{SEIEncoder@{SEIEncoder}!````~SEIEncoder@{$\sim$SEIEncoder}}
+\index{````~SEIEncoder@{$\sim$SEIEncoder}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{$\sim$SEIEncoder()}{~SEIEncoder()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1SEIEncoder}{S\+E\+I\+Encoder}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 78 of file S\+E\+I\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a34bddab6bf0d12776c6fc92f954f1fa5}\label{classvvenc_1_1SEIEncoder_a34bddab6bf0d12776c6fc92f954f1fa5}} 
+\index{SEIEncoder@{SEIEncoder}!init@{init}}
+\index{init@{init}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg,  }\item[{\mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} \&}]{enc\+H\+RD }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a34bddab6bf0d12776c6fc92f954f1fa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a0f902a95ac2e83375a26bc55ad819503}\label{classvvenc_1_1SEIEncoder_a0f902a95ac2e83375a26bc55ad819503}} 
+\index{SEIEncoder@{SEIEncoder}!initBufferingPeriodSEI@{initBufferingPeriodSEI}}
+\index{initBufferingPeriodSEI@{initBufferingPeriodSEI}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initBufferingPeriodSEI()}{initBufferingPeriodSEI()}}
+{\footnotesize\ttfamily void init\+Buffering\+Period\+S\+EI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{bp\+Sei,  }\item[{bool}]{no\+Leading\+Pictures }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a0f902a95ac2e83375a26bc55ad819503_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a0f902a95ac2e83375a26bc55ad819503_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_aeb24fbabb5325ee9456ec5351cd4e523}\label{classvvenc_1_1SEIEncoder_aeb24fbabb5325ee9456ec5351cd4e523}} 
+\index{SEIEncoder@{SEIEncoder}!initDecodedPictureHashSEI@{initDecodedPictureHashSEI}}
+\index{initDecodedPictureHashSEI@{initDecodedPictureHashSEI}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initDecodedPictureHashSEI()}{initDecodedPictureHashSEI()}}
+{\footnotesize\ttfamily void init\+Decoded\+Picture\+Hash\+S\+EI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&}]{dph\+Sei,  }\item[{const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{pic,  }\item[{std\+::string \&}]{r\+Hash\+String,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})}
+
+
+
+calculate hashes for entire reconstructed picture 
+
+
+
+Definition at line 202 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_aeb24fbabb5325ee9456ec5351cd4e523_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_aeb24fbabb5325ee9456ec5351cd4e523_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a29a3a52c99680bdfdcdf5d3d50d4447a}\label{classvvenc_1_1SEIEncoder_a29a3a52c99680bdfdcdf5d3d50d4447a}} 
+\index{SEIEncoder@{SEIEncoder}!initDrapSEI@{initDrapSEI}}
+\index{initDrapSEI@{initDrapSEI}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initDrapSEI()}{initDrapSEI()}}
+{\footnotesize\ttfamily void init\+Drap\+S\+EI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&}]{drap\+Sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a690fe64ba2edcb5da607a8352a509c75}\label{classvvenc_1_1SEIEncoder_a690fe64ba2edcb5da607a8352a509c75}} 
+\index{SEIEncoder@{SEIEncoder}!initPictureTimingSEI@{initPictureTimingSEI}}
+\index{initPictureTimingSEI@{initPictureTimingSEI}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initPictureTimingSEI()}{initPictureTimingSEI()}}
+{\footnotesize\ttfamily void init\+Picture\+Timing\+S\+EI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{sei\+Messages,  }\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{nested\+Sei\+Messages,  }\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{du\+Info\+Sei\+Messages,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const uint32\+\_\+t}]{num\+DU,  }\item[{const bool}]{bp\+Present\+In\+AU }\end{DoxyParamCaption})}
+
+
+
+Definition at line 233 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a690fe64ba2edcb5da607a8352a509c75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a919f0dd1c03522dc87320364c8d73890}\label{classvvenc_1_1SEIEncoder_a919f0dd1c03522dc87320364c8d73890}} 
+\index{SEIEncoder@{SEIEncoder}!initSEIAlternativeTransferCharacteristics@{initSEIAlternativeTransferCharacteristics}}
+\index{initSEIAlternativeTransferCharacteristics@{initSEIAlternativeTransferCharacteristics}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initSEIAlternativeTransferCharacteristics()}{initSEIAlternativeTransferCharacteristics()}}
+{\footnotesize\ttfamily void init\+S\+E\+I\+Alternative\+Transfer\+Characteristics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} $\ast$}]{sei\+Alt\+Trans\+Characteristics }\end{DoxyParamCaption})}
+
+
+
+Definition at line 494 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a919f0dd1c03522dc87320364c8d73890_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_ac7bc967d60af1a8851a217e09642129d}\label{classvvenc_1_1SEIEncoder_ac7bc967d60af1a8851a217e09642129d}} 
+\index{SEIEncoder@{SEIEncoder}!initSEIContentLightLevel@{initSEIContentLightLevel}}
+\index{initSEIContentLightLevel@{initSEIContentLightLevel}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initSEIContentLightLevel()}{initSEIContentLightLevel()}}
+{\footnotesize\ttfamily void init\+S\+E\+I\+Content\+Light\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} $\ast$}]{sei\+C\+LL }\end{DoxyParamCaption})}
+
+
+
+Definition at line 524 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_ac7bc967d60af1a8851a217e09642129d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a6024640754202cdb3489a3c9476a7cee}\label{classvvenc_1_1SEIEncoder_a6024640754202cdb3489a3c9476a7cee}} 
+\index{SEIEncoder@{SEIEncoder}!initSEIMasteringDisplayColourVolume@{initSEIMasteringDisplayColourVolume}}
+\index{initSEIMasteringDisplayColourVolume@{initSEIMasteringDisplayColourVolume}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{initSEIMasteringDisplayColourVolume()}{initSEIMasteringDisplayColourVolume()}}
+{\footnotesize\ttfamily void init\+S\+E\+I\+Mastering\+Display\+Colour\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} $\ast$}]{sei\+M\+D\+CV }\end{DoxyParamCaption})}
+
+
+
+Definition at line 502 of file S\+E\+I\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIEncoder_a6024640754202cdb3489a3c9476a7cee_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a217245eec26f69d0c5b6e991937de95a}\label{classvvenc_1_1SEIEncoder_a217245eec26f69d0c5b6e991937de95a}} 
+\index{SEIEncoder@{SEIEncoder}!m\_isInitialized@{m\_isInitialized}}
+\index{m\_isInitialized@{m\_isInitialized}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_isInitialized}{m\_isInitialized}}
+{\footnotesize\ttfamily bool m\+\_\+is\+Initialized\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 94 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_a9a5737dc9ea1b3ffa34ffcdaf1b72d41}\label{classvvenc_1_1SEIEncoder_a9a5737dc9ea1b3ffa34ffcdaf1b72d41}} 
+\index{SEIEncoder@{SEIEncoder}!m\_lastBPSEI@{m\_lastBPSEI}}
+\index{m\_lastBPSEI@{m\_lastBPSEI}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_lastBPSEI}{m\_lastBPSEI}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+last\+B\+P\+S\+EI\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 96 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_afabc33c7c4328921490982de50e35da0}\label{classvvenc_1_1SEIEncoder_afabc33c7c4328921490982de50e35da0}} 
+\index{SEIEncoder@{SEIEncoder}!m\_pcEncCfg@{m\_pcEncCfg}}
+\index{m\_pcEncCfg@{m\_pcEncCfg}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncCfg}{m\_pcEncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+pc\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_ae06118c0343b4e4ec319bdc2461e5a8d}\label{classvvenc_1_1SEIEncoder_ae06118c0343b4e4ec319bdc2461e5a8d}} 
+\index{SEIEncoder@{SEIEncoder}!m\_pcEncHRD@{m\_pcEncHRD}}
+\index{m\_pcEncHRD@{m\_pcEncHRD}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncHRD}{m\_pcEncHRD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}}$\ast$ m\+\_\+pc\+Enc\+H\+RD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 93 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_ade4f64a00d59e0a882176da726840eef}\label{classvvenc_1_1SEIEncoder_ade4f64a00d59e0a882176da726840eef}} 
+\index{SEIEncoder@{SEIEncoder}!m\_rapWithLeading@{m\_rapWithLeading}}
+\index{m\_rapWithLeading@{m\_rapWithLeading}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_rapWithLeading}{m\_rapWithLeading}}
+{\footnotesize\ttfamily bool m\+\_\+rap\+With\+Leading\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 95 of file S\+E\+I\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIEncoder_aa4ccc95aa26b57738f245decd130ead6}\label{classvvenc_1_1SEIEncoder_aa4ccc95aa26b57738f245decd130ead6}} 
+\index{SEIEncoder@{SEIEncoder}!m\_totalCoded@{m\_totalCoded}}
+\index{m\_totalCoded@{m\_totalCoded}!SEIEncoder@{SEIEncoder}}
+\doxysubsubsection{\texorpdfstring{m\_totalCoded}{m\_totalCoded}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+total\+Coded\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 97 of file S\+E\+I\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{SEIEncoder_8h}{S\+E\+I\+Encoder.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{SEIEncoder_8cpp}{S\+E\+I\+Encoder.\+cpp}}\end{DoxyCompactItemize}

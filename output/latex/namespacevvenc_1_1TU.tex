@@ -1,0 +1,212 @@
+\hypertarget{namespacevvenc_1_1TU}{}\doxysection{vvenc\+::TU Namespace Reference}
+\label{namespacevvenc_1_1TU}\index{vvenc::TU@{vvenc::TU}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_a03a541a415d6446babf0d87c518dbc45}{get\+Cbf}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_a9d70f74b18f30374e529c6cfc3c5ab73}{get\+Cbf\+At\+Depth}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const unsigned depth)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1TU_a4a1b594da27641480650e8bca1a752eb}{get\+I\+C\+T\+Mode}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, int joint\+Cb\+Cr=-\/1)
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{namespacevvenc_1_1TU_afa0e03360d8701bdb2aaf82e4159c2e0}{get\+Prev\+TU}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_ac7e98523a8d432ceb9163b9e330d19c9}{get\+Prev\+Tu\+Cbf\+At\+Depth}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const int tr\+Depth)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_a32efa54bde543278738ecf5a637cdddc}{is\+Non\+Transformed\+Residual\+Rotated}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_aee00d6cb0167549b59828b4df8604a51}{is\+T\+S\+Allowed}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1TU_afb9178ebb2f773c8998ddde95cd74f8e}{needs\+Sqrt2\+Scale}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1TU_afeb76a93cab1a555ddc0e30677536c35}{set\+Cbf\+At\+Depth}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const unsigned depth, const bool cbf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_a03a541a415d6446babf0d87c518dbc45}\label{namespacevvenc_1_1TU_a03a541a415d6446babf0d87c518dbc45}} 
+\index{vvenc::TU@{vvenc::TU}!getCbf@{getCbf}}
+\index{getCbf@{getCbf}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{getCbf()}{getCbf()}}
+{\footnotesize\ttfamily bool get\+Cbf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3565 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{namespacevvenc_1_1TU_a03a541a415d6446babf0d87c518dbc45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_a03a541a415d6446babf0d87c518dbc45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_a9d70f74b18f30374e529c6cfc3c5ab73}\label{namespacevvenc_1_1TU_a9d70f74b18f30374e529c6cfc3c5ab73}} 
+\index{vvenc::TU@{vvenc::TU}!getCbfAtDepth@{getCbfAtDepth}}
+\index{getCbfAtDepth@{getCbfAtDepth}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{getCbfAtDepth()}{getCbfAtDepth()}}
+{\footnotesize\ttfamily bool get\+Cbf\+At\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const unsigned}]{depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3570 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_a9d70f74b18f30374e529c6cfc3c5ab73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_a4a1b594da27641480650e8bca1a752eb}\label{namespacevvenc_1_1TU_a4a1b594da27641480650e8bca1a752eb}} 
+\index{vvenc::TU@{vvenc::TU}!getICTMode@{getICTMode}}
+\index{getICTMode@{getICTMode}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{getICTMode()}{getICTMode()}}
+{\footnotesize\ttfamily int get\+I\+C\+T\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{int}]{joint\+Cb\+Cr = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3599 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_a4a1b594da27641480650e8bca1a752eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_afa0e03360d8701bdb2aaf82e4159c2e0}\label{namespacevvenc_1_1TU_afa0e03360d8701bdb2aaf82e4159c2e0}} 
+\index{vvenc::TU@{vvenc::TU}!getPrevTU@{getPrevTU}}
+\index{getPrevTU@{getPrevTU}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{getPrevTU()}{getPrevTU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ get\+Prev\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3615 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_afa0e03360d8701bdb2aaf82e4159c2e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_ac7e98523a8d432ceb9163b9e330d19c9}\label{namespacevvenc_1_1TU_ac7e98523a8d432ceb9163b9e330d19c9}} 
+\index{vvenc::TU@{vvenc::TU}!getPrevTuCbfAtDepth@{getPrevTuCbfAtDepth}}
+\index{getPrevTuCbfAtDepth@{getPrevTuCbfAtDepth}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{getPrevTuCbfAtDepth()}{getPrevTuCbfAtDepth()}}
+{\footnotesize\ttfamily bool get\+Prev\+Tu\+Cbf\+At\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const int}]{tr\+Depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3627 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{namespacevvenc_1_1TU_ac7e98523a8d432ceb9163b9e330d19c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_ac7e98523a8d432ceb9163b9e330d19c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_a32efa54bde543278738ecf5a637cdddc}\label{namespacevvenc_1_1TU_a32efa54bde543278738ecf5a637cdddc}} 
+\index{vvenc::TU@{vvenc::TU}!isNonTransformedResidualRotated@{isNonTransformedResidualRotated}}
+\index{isNonTransformedResidualRotated@{isNonTransformedResidualRotated}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{isNonTransformedResidualRotated()}{isNonTransformedResidualRotated()}}
+{\footnotesize\ttfamily bool is\+Non\+Transformed\+Residual\+Rotated (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3560 of file Unit\+Tools.\+cpp.
+
+\mbox{\Hypertarget{namespacevvenc_1_1TU_aee00d6cb0167549b59828b4df8604a51}\label{namespacevvenc_1_1TU_aee00d6cb0167549b59828b4df8604a51}} 
+\index{vvenc::TU@{vvenc::TU}!isTSAllowed@{isTSAllowed}}
+\index{isTSAllowed@{isTSAllowed}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{isTSAllowed()}{isTSAllowed()}}
+{\footnotesize\ttfamily bool is\+T\+S\+Allowed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3585 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{namespacevvenc_1_1TU_aee00d6cb0167549b59828b4df8604a51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_aee00d6cb0167549b59828b4df8604a51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_afb9178ebb2f773c8998ddde95cd74f8e}\label{namespacevvenc_1_1TU_afb9178ebb2f773c8998ddde95cd74f8e}} 
+\index{vvenc::TU@{vvenc::TU}!needsSqrt2Scale@{needsSqrt2Scale}}
+\index{needsSqrt2Scale@{needsSqrt2Scale}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{needsSqrt2Scale()}{needsSqrt2Scale()}}
+{\footnotesize\ttfamily bool needs\+Sqrt2\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3608 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_afb9178ebb2f773c8998ddde95cd74f8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_afb9178ebb2f773c8998ddde95cd74f8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1TU_afeb76a93cab1a555ddc0e30677536c35}\label{namespacevvenc_1_1TU_afeb76a93cab1a555ddc0e30677536c35}} 
+\index{vvenc::TU@{vvenc::TU}!setCbfAtDepth@{setCbfAtDepth}}
+\index{setCbfAtDepth@{setCbfAtDepth}!vvenc::TU@{vvenc::TU}}
+\doxysubsubsection{\texorpdfstring{setCbfAtDepth()}{setCbfAtDepth()}}
+{\footnotesize\ttfamily void set\+Cbf\+At\+Depth (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const unsigned}]{depth,  }\item[{const bool}]{cbf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3577 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1TU_afeb76a93cab1a555ddc0e30677536c35_icgraph}
+\end{center}
+\end{figure}

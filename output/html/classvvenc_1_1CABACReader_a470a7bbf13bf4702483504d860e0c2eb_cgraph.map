@@ -1,0 +1,28 @@
+<map id="residual_coding_subblock" name="residual_coding_subblock">
+<area shape="rect" id="node1" title=" " alt="" coords="5,607,176,634"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1CoeffCodingContext.html#ab50eef7ddbf55461e47b82bc48eabb60" title=" " alt="" coords="233,5,417,47"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1CoeffCodingContext.html#a34e9ecec45d459d553583f11968c3033" title=" " alt="" coords="233,71,417,112"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1BinDecoderBase.html#a5e061c18d443942cbb928e1f5416c3e6" title=" " alt="" coords="244,136,407,177"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1BinDecoderBase.html#a2895766cc40263ce1f3d71df4dd9f8be" title=" " alt="" coords="485,195,648,236"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1BinDecoderBase.html#ae03c79b221ab54d02c7b336aae6207b1" title=" " alt="" coords="244,253,407,295"/>
+<area shape="rect" id="node10" href="$namespacevvenc.html#a834be69f46df5bf788af4764f547599d" title=" " alt="" coords="224,319,427,346"/>
+<area shape="rect" id="node11" href="$structvvenc_1_1CoeffCodingContext.html#a9b48e75d7ed56bbd621ff5a4f4ff05ef" title=" " alt="" coords="233,371,417,412"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1CoeffCodingContext.html#a8944f4fc3aa2cbb71bbfe816a9535276" title=" " alt="" coords="233,436,417,477"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1CoeffCodingContext.html#a4d33ee5c5c8290da7d5eaa4e080b92c7" title=" " alt="" coords="233,501,417,543"/>
+<area shape="rect" id="node14" href="$structvvenc_1_1CoeffCodingContext.html#a574aa2d124b5bebb483d4b08b5d1db9d" title=" " alt="" coords="233,567,417,608"/>
+<area shape="rect" id="node15" href="$structvvenc_1_1CoeffCodingContext.html#ab2ecfd0d0f5dc208813a7f6e8caaeaf2" title=" " alt="" coords="233,632,417,673"/>
+<area shape="rect" id="node16" href="$structvvenc_1_1CoeffCodingContext.html#ade159fcb188d938f03fff984ad59fdb5" title=" " alt="" coords="233,697,417,739"/>
+<area shape="rect" id="node17" href="$structvvenc_1_1CoeffCodingContext.html#af56f08fc3cc038279b3eb36648b94deb" title=" " alt="" coords="233,763,417,804"/>
+<area shape="rect" id="node18" href="$structvvenc_1_1CoeffCodingContext.html#a2c344872d98363e88e5148f5ebf759d4" title=" " alt="" coords="233,828,417,869"/>
+<area shape="rect" id="node19" href="$structvvenc_1_1CoeffCodingContext.html#a3a53065affd0023076599fa23deb2109" title=" " alt="" coords="233,893,417,935"/>
+<area shape="rect" id="node20" href="$structvvenc_1_1CoeffCodingContext.html#a9ab6ad51d0fa8791367dbf54a474bf8d" title=" " alt="" coords="233,959,417,1000"/>
+<area shape="rect" id="node21" href="$structvvenc_1_1CoeffCodingContext.html#a54875f6ec2408ce87b5eb7ebdf8cf94a" title=" " alt="" coords="233,1024,417,1065"/>
+<area shape="rect" id="node22" href="$structvvenc_1_1CoeffCodingContext.html#a62988f468c2f31b61007bf071160d84f" title=" " alt="" coords="233,1089,417,1131"/>
+<area shape="rect" id="node25" href="$structvvenc_1_1CoeffCodingContext.html#a07066ee1490851873d517ca083abf44f" title=" " alt="" coords="233,1220,417,1261"/>
+<area shape="rect" id="node26" href="$structvvenc_1_1CoeffCodingContext.html#a6e0bdb2558132fdbecd8adad0810c0c0" title=" " alt="" coords="233,1155,417,1196"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1BinDecoderBase.html#a851e0041e268b44562278b4d23f49bbf" title=" " alt="" coords="707,136,869,177"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1InputBitstream.html#a851f98b4b9141bd0910ce136b93b8b14" title=" " alt="" coords="917,195,1068,236"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1BinDecoderBase.html#a663c133ea93e68091465a9894a73ff2d" title=" " alt="" coords="707,253,869,295"/>
+<area shape="rect" id="node23" href="$structvvenc_1_1CoeffCodingContext.html#ac765c8abd974af54122e8b0ac89047b0" title=" " alt="" coords="475,1089,659,1131"/>
+<area shape="rect" id="node24" href="$structvvenc_1_1CoeffCodingContext.html#aa42da4571679a84abeaae7704e2982ca" title=" " alt="" coords="475,1155,659,1196"/>
+</map>

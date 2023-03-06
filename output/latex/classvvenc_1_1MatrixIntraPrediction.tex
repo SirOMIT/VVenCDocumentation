@@ -1,0 +1,354 @@
+\hypertarget{classvvenc_1_1MatrixIntraPrediction}{}\doxysection{Matrix\+Intra\+Prediction}
+\label{classvvenc_1_1MatrixIntraPrediction}\index{MatrixIntraPrediction@{MatrixIntraPrediction}}
+
+
+{\ttfamily \#include \char`\"{}Matrix\+Intra\+Prediction.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Matrix\+Intra\+Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classvvenc_1_1MatrixIntraPrediction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_ab676efd6d81f0662e716e81a36787198}{Matrix\+Intra\+Prediction}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a622a4eba6ccc0c1497ccf7c348e70ae5}{$\sim$\+Matrix\+Intra\+Prediction}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a6744bccb1d1012b37fa09a5d1ec71619}{pred\+Block}} (\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const result, const int mode\+Idx, const bool transpose, const int bit\+Depth)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a77006892286730f2428f5593f79e0b48}{prepare\+Input\+For\+Pred}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&block, const int bit\+Depth)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a426c93862a31181147f9c212701dd745}{init\+Pred\+Block\+Params}} (const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&block)
+\item 
+{\footnotesize template$<$Size\+Type pred\+Pred\+Size, unsigned log2\+Upsmp\+Factor$>$ }\\void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a0cb0e115be35e46ff9d111883de8cb28}{prediction\+Upsampling1\+D\+Hor}} (\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const dst, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const src, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const bndry, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} dst\+Stride, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} bndry\+Step)
+\item 
+{\footnotesize template$<$Size\+Type in\+Height, unsigned log2\+Upsmp\+Factor$>$ }\\void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a9e0190f7a7092d34c3149010809a8554}{prediction\+Upsampling1\+D\+Ver}} (\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const dst, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const src, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const bndry, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} out\+Width, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} src\+Step)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a76713b94fe742793f30492ef6bfffefb}{boundary\+Downsampling1D}} (\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$reduced\+Dst, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const full\+Src, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} src\+Len, const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} dst\+Len)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Size}{Size}} \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a6e7cab1154a3386e6cd091d0a80fb66e}{m\+\_\+block\+Size}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_ac621767180c5b73b4056d3bfb8af06c0}{m\+\_\+input\+Offset}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_ab06cf4817f7b3b89d6adb07dfc1fe076}{m\+\_\+input\+Offset\+Transp}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_ac2ac60f05eacad42eadafd2216c39505}{m\+\_\+reduced\+Bdry\+Size}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a8d9e148a0b283b7bb5c9e5576ea5bb82}{m\+\_\+reduced\+Boundary}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_afd7a3a32c927ad2d4309e969c12bf276}{m\+\_\+reduced\+Boundary\+Transp}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a586ccdbebafe634ff82ee1e209cf956d}{m\+\_\+reduced\+Pred\+Size}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_ad37133a1942fa911ec8c6100451a6d01}{m\+\_\+ref\+Samples\+Left}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a10c81c2584c5bdd5b33c77d45e5d0b38}{m\+\_\+ref\+Samples\+Top}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a3e1bf0b046846c00ea8cc2329f25b645}{m\+\_\+size\+Id}}
+\item 
+unsigned int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a13d907ce80057f32b5ea43b53dd29869}{m\+\_\+upsmp\+Factor\+Hor}}
+\item 
+unsigned int \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction_a9fa693fbd4d1fd4988dadce52420f2d0}{m\+\_\+upsmp\+Factor\+Ver}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 59 of file Matrix\+Intra\+Prediction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_ab676efd6d81f0662e716e81a36787198}\label{classvvenc_1_1MatrixIntraPrediction_ab676efd6d81f0662e716e81a36787198}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{MatrixIntraPrediction()}{MatrixIntraPrediction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction}{Matrix\+Intra\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file Matrix\+Intra\+Prediction.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a622a4eba6ccc0c1497ccf7c348e70ae5}\label{classvvenc_1_1MatrixIntraPrediction_a622a4eba6ccc0c1497ccf7c348e70ae5}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!````~MatrixIntraPrediction@{$\sim$MatrixIntraPrediction}}
+\index{````~MatrixIntraPrediction@{$\sim$MatrixIntraPrediction}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{$\sim$MatrixIntraPrediction()}{~MatrixIntraPrediction()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction}{Matrix\+Intra\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file Matrix\+Intra\+Prediction.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a76713b94fe742793f30492ef6bfffefb}\label{classvvenc_1_1MatrixIntraPrediction_a76713b94fe742793f30492ef6bfffefb}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!boundaryDownsampling1D@{boundaryDownsampling1D}}
+\index{boundaryDownsampling1D@{boundaryDownsampling1D}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{boundaryDownsampling1D()}{boundaryDownsampling1D()}}
+{\footnotesize\ttfamily void boundary\+Downsampling1D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{reduced\+Dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{full\+Src,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{src\+Len,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{dst\+Len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 237 of file Matrix\+Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classvvenc_1_1MatrixIntraPrediction_a76713b94fe742793f30492ef6bfffefb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MatrixIntraPrediction_a76713b94fe742793f30492ef6bfffefb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a426c93862a31181147f9c212701dd745}\label{classvvenc_1_1MatrixIntraPrediction_a426c93862a31181147f9c212701dd745}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!initPredBlockParams@{initPredBlockParams}}
+\index{initPredBlockParams@{initPredBlockParams}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{initPredBlockParams()}{initPredBlockParams()}}
+{\footnotesize\ttfamily void init\+Pred\+Block\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 217 of file Matrix\+Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classvvenc_1_1MatrixIntraPrediction_a426c93862a31181147f9c212701dd745_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MatrixIntraPrediction_a426c93862a31181147f9c212701dd745_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a6744bccb1d1012b37fa09a5d1ec71619}\label{classvvenc_1_1MatrixIntraPrediction_a6744bccb1d1012b37fa09a5d1ec71619}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!predBlock@{predBlock}}
+\index{predBlock@{predBlock}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predBlock()}{predBlock()}}
+{\footnotesize\ttfamily void pred\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{result,  }\item[{const int}]{mode\+Idx,  }\item[{const bool}]{transpose,  }\item[{const int}]{bit\+Depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 130 of file Matrix\+Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1MatrixIntraPrediction_a6744bccb1d1012b37fa09a5d1ec71619_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MatrixIntraPrediction_a6744bccb1d1012b37fa09a5d1ec71619_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a0cb0e115be35e46ff9d111883de8cb28}\label{classvvenc_1_1MatrixIntraPrediction_a0cb0e115be35e46ff9d111883de8cb28}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!predictionUpsampling1DHor@{predictionUpsampling1DHor}}
+\index{predictionUpsampling1DHor@{predictionUpsampling1DHor}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predictionUpsampling1DHor()}{predictionUpsampling1DHor()}}
+{\footnotesize\ttfamily void prediction\+Upsampling1\+D\+Hor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{src,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{bndry,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{dst\+Stride,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{bndry\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 268 of file Matrix\+Intra\+Prediction.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a9e0190f7a7092d34c3149010809a8554}\label{classvvenc_1_1MatrixIntraPrediction_a9e0190f7a7092d34c3149010809a8554}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!predictionUpsampling1DVer@{predictionUpsampling1DVer}}
+\index{predictionUpsampling1DVer@{predictionUpsampling1DVer}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predictionUpsampling1DVer()}{predictionUpsampling1DVer()}}
+{\footnotesize\ttfamily void prediction\+Upsampling1\+D\+Ver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{src,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$const}]{bndry,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{out\+Width,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{src\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 303 of file Matrix\+Intra\+Prediction.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a77006892286730f2428f5593f79e0b48}\label{classvvenc_1_1MatrixIntraPrediction_a77006892286730f2428f5593f79e0b48}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!prepareInputForPred@{prepareInputForPred}}
+\index{prepareInputForPred@{prepareInputForPred}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{prepareInputForPred()}{prepareInputForPred()}}
+{\footnotesize\ttfamily void prepare\+Input\+For\+Pred (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{p\+Src,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{block,  }\item[{const int}]{bit\+Depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file Matrix\+Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MatrixIntraPrediction_a77006892286730f2428f5593f79e0b48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MatrixIntraPrediction_a77006892286730f2428f5593f79e0b48_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a6e7cab1154a3386e6cd091d0a80fb66e}\label{classvvenc_1_1MatrixIntraPrediction_a6e7cab1154a3386e6cd091d0a80fb66e}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_blockSize@{m\_blockSize}}
+\index{m\_blockSize@{m\_blockSize}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_blockSize}{m\_blockSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Size}{Size}} m\+\_\+block\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_ac621767180c5b73b4056d3bfb8af06c0}\label{classvvenc_1_1MatrixIntraPrediction_ac621767180c5b73b4056d3bfb8af06c0}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_inputOffset@{m\_inputOffset}}
+\index{m\_inputOffset@{m\_inputOffset}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_inputOffset}{m\_inputOffset}}
+{\footnotesize\ttfamily int m\+\_\+input\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_ab06cf4817f7b3b89d6adb07dfc1fe076}\label{classvvenc_1_1MatrixIntraPrediction_ab06cf4817f7b3b89d6adb07dfc1fe076}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_inputOffsetTransp@{m\_inputOffsetTransp}}
+\index{m\_inputOffsetTransp@{m\_inputOffsetTransp}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_inputOffsetTransp}{m\_inputOffsetTransp}}
+{\footnotesize\ttfamily int m\+\_\+input\+Offset\+Transp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_ac2ac60f05eacad42eadafd2216c39505}\label{classvvenc_1_1MatrixIntraPrediction_ac2ac60f05eacad42eadafd2216c39505}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_reducedBdrySize@{m\_reducedBdrySize}}
+\index{m\_reducedBdrySize@{m\_reducedBdrySize}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_reducedBdrySize}{m\_reducedBdrySize}}
+{\footnotesize\ttfamily int m\+\_\+reduced\+Bdry\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a8d9e148a0b283b7bb5c9e5576ea5bb82}\label{classvvenc_1_1MatrixIntraPrediction_a8d9e148a0b283b7bb5c9e5576ea5bb82}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_reducedBoundary@{m\_reducedBoundary}}
+\index{m\_reducedBoundary@{m\_reducedBoundary}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_reducedBoundary}{m\_reducedBoundary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+reduced\+Boundary\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 69 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_afd7a3a32c927ad2d4309e969c12bf276}\label{classvvenc_1_1MatrixIntraPrediction_afd7a3a32c927ad2d4309e969c12bf276}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_reducedBoundaryTransp@{m\_reducedBoundaryTransp}}
+\index{m\_reducedBoundaryTransp@{m\_reducedBoundaryTransp}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_reducedBoundaryTransp}{m\_reducedBoundaryTransp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+reduced\+Boundary\+Transp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a586ccdbebafe634ff82ee1e209cf956d}\label{classvvenc_1_1MatrixIntraPrediction_a586ccdbebafe634ff82ee1e209cf956d}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_reducedPredSize@{m\_reducedPredSize}}
+\index{m\_reducedPredSize@{m\_reducedPredSize}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_reducedPredSize}{m\_reducedPredSize}}
+{\footnotesize\ttfamily int m\+\_\+reduced\+Pred\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_ad37133a1942fa911ec8c6100451a6d01}\label{classvvenc_1_1MatrixIntraPrediction_ad37133a1942fa911ec8c6100451a6d01}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_refSamplesLeft@{m\_refSamplesLeft}}
+\index{m\_refSamplesLeft@{m\_refSamplesLeft}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_refSamplesLeft}{m\_refSamplesLeft}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+ref\+Samples\+Left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a10c81c2584c5bdd5b33c77d45e5d0b38}\label{classvvenc_1_1MatrixIntraPrediction_a10c81c2584c5bdd5b33c77d45e5d0b38}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_refSamplesTop@{m\_refSamplesTop}}
+\index{m\_refSamplesTop@{m\_refSamplesTop}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_refSamplesTop}{m\_refSamplesTop}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+ref\+Samples\+Top\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a3e1bf0b046846c00ea8cc2329f25b645}\label{classvvenc_1_1MatrixIntraPrediction_a3e1bf0b046846c00ea8cc2329f25b645}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_sizeId@{m\_sizeId}}
+\index{m\_sizeId@{m\_sizeId}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_sizeId}{m\_sizeId}}
+{\footnotesize\ttfamily int m\+\_\+size\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a13d907ce80057f32b5ea43b53dd29869}\label{classvvenc_1_1MatrixIntraPrediction_a13d907ce80057f32b5ea43b53dd29869}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_upsmpFactorHor@{m\_upsmpFactorHor}}
+\index{m\_upsmpFactorHor@{m\_upsmpFactorHor}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_upsmpFactorHor}{m\_upsmpFactorHor}}
+{\footnotesize\ttfamily unsigned int m\+\_\+upsmp\+Factor\+Hor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Matrix\+Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MatrixIntraPrediction_a9fa693fbd4d1fd4988dadce52420f2d0}\label{classvvenc_1_1MatrixIntraPrediction_a9fa693fbd4d1fd4988dadce52420f2d0}} 
+\index{MatrixIntraPrediction@{MatrixIntraPrediction}!m\_upsmpFactorVer@{m\_upsmpFactorVer}}
+\index{m\_upsmpFactorVer@{m\_upsmpFactorVer}!MatrixIntraPrediction@{MatrixIntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_upsmpFactorVer}{m\_upsmpFactorVer}}
+{\footnotesize\ttfamily unsigned int m\+\_\+upsmp\+Factor\+Ver\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Matrix\+Intra\+Prediction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MatrixIntraPrediction_8h}{Matrix\+Intra\+Prediction.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MatrixIntraPrediction_8cpp}{Matrix\+Intra\+Prediction.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var classvvenc_1_1DQIntern_1_1State =
+[
+    [ "State", "classvvenc_1_1DQIntern_1_1State.html#a291664c514b9fa29d8ec800374482e3b", null ],
+    [ "checkRdCosts", "classvvenc_1_1DQIntern_1_1State.html#a85d68b462a274317862440b71c6d0708", null ],
+    [ "checkRdCostSkipSbb", "classvvenc_1_1DQIntern_1_1State.html#ae5317d5f0d3a931155290a0599d775c7", null ],
+    [ "checkRdCostSkipSbbZeroOut", "classvvenc_1_1DQIntern_1_1State.html#ac61ed60261b011ada3f87349d726ca5b", null ],
+    [ "checkRdCostStart", "classvvenc_1_1DQIntern_1_1State.html#af50c707b734808587f44b5cb5b2015ce", null ],
+    [ "init", "classvvenc_1_1DQIntern_1_1State.html#a02fd73d861ef2e4aabb38c0c9ff82947", null ],
+    [ "updateState", "classvvenc_1_1DQIntern_1_1State.html#a8448c79e39fa5f0aa5f84a36f728fac7", null ],
+    [ "updateStateEOS", "classvvenc_1_1DQIntern_1_1State.html#a605434bd8eb4a35f25cc3367bb92f5d7", null ],
+    [ "CommonCtx", "classvvenc_1_1DQIntern_1_1State.html#aa2c4cbd425dbd2d74787295fbc60331e", null ],
+    [ "effHeight", "classvvenc_1_1DQIntern_1_1State.html#ad7451a79641a36ddb080ef0df56ac72c", null ],
+    [ "effWidth", "classvvenc_1_1DQIntern_1_1State.html#a8f513482ad167ae69619d15441ff1faa", null ],
+    [ "m_absLevelsAndCtxInit", "classvvenc_1_1DQIntern_1_1State.html#a5aa48d3e9494cf13f1fd9e09c7019b28", null ],
+    [ "m_coeffFracBits", "classvvenc_1_1DQIntern_1_1State.html#a4a0648fe8171fbd8b617b65955359912", null ],
+    [ "m_commonCtx", "classvvenc_1_1DQIntern_1_1State.html#a43ad77f295c7696e7b212d73526cd670", null ],
+    [ "m_goRicePar", "classvvenc_1_1DQIntern_1_1State.html#aebbab41221b865a94decd3fc85607e40", null ],
+    [ "m_goRiceZero", "classvvenc_1_1DQIntern_1_1State.html#a70e90cc42ce9bacbff7d64a4d3660cd1", null ],
+    [ "m_gtxFracBitsArray", "classvvenc_1_1DQIntern_1_1State.html#a8245abccb73ba8550d8f61c1a24d59b0", null ],
+    [ "m_numSigSbb", "classvvenc_1_1DQIntern_1_1State.html#a87d92944b9150bcde80806617f12e52f", null ],
+    [ "m_rdCost", "classvvenc_1_1DQIntern_1_1State.html#adcdef38f15a96d3d7a5f6737d0fb0658", null ],
+    [ "m_refSbbCtxId", "classvvenc_1_1DQIntern_1_1State.html#a6b39bd080c4882c31680cf0027859eb0", null ],
+    [ "m_remRegBins", "classvvenc_1_1DQIntern_1_1State.html#ab1aa53a98890213e22cd2f00e2e5129e", null ],
+    [ "m_sbbFracBits", "classvvenc_1_1DQIntern_1_1State.html#a994c5914c0f45033d45a8f8cae438270", null ],
+    [ "m_sigFracBits", "classvvenc_1_1DQIntern_1_1State.html#a818861232c77215dcf5f4f3ee0e8c5d0", null ],
+    [ "m_sigFracBitsArray", "classvvenc_1_1DQIntern_1_1State.html#a1c2ad914f6babf2733ed449d525734e5", null ],
+    [ "m_stateId", "classvvenc_1_1DQIntern_1_1State.html#a67c1bd84ba9704b1478e7805d1aa3cc0", null ]
+];

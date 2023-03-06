@@ -1,0 +1,207 @@
+\hypertarget{classvvenc_1_1InputByteStream}{}\doxysection{Input\+Byte\+Stream}
+\label{classvvenc_1_1InputByteStream}\index{InputByteStream@{InputByteStream}}
+
+
+{\ttfamily \#include \char`\"{}Annex\+Bread.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputByteStream_a2d07be288c8cde5d2c0e859d4b15796f}{Input\+Byte\+Stream}} (std\+::istream \&istream)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InputByteStream_aafc75c44aac16b5ff0a3f0b008fa9c8c}{eof\+Before\+N\+Bytes}} (uint32\+\_\+t n)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputByteStream_aa4936cc3ed482e080dfa3219b49a23f7}{peek\+Bytes}} (uint32\+\_\+t n)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputByteStream_a9b760904bbc60f357339dc98253d6d17}{read\+Byte}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputByteStream_a9c9530a89d4daba9d8b9d4df2849446f}{read\+Bytes}} (uint32\+\_\+t n)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputByteStream_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputByteStream_a37ed9bbaf380ee93fe45143a28ff91b3}{m\+\_\+\+Future\+Bytes}}
+\item 
+std\+::istream \& \mbox{\hyperlink{classvvenc_1_1InputByteStream_a1e94f87c71532465a98c693c940aa906}{m\+\_\+\+Input}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputByteStream_a47979244391f0aefb5e118186f99ee16}{m\+\_\+\+Num\+Future\+Bytes}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 64 of file Annex\+Bread.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a2d07be288c8cde5d2c0e859d4b15796f}\label{classvvenc_1_1InputByteStream_a2d07be288c8cde5d2c0e859d4b15796f}} 
+\index{InputByteStream@{InputByteStream}!InputByteStream@{InputByteStream}}
+\index{InputByteStream@{InputByteStream}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{InputByteStream()}{InputByteStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}} (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{istream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a bytestream reader that will extract bytes from istream.
+
+NB, it isn\textquotesingle{}t safe to access istream while in use by a \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}}.
+
+Side-\/effects\+: the exception mask of istream is set to eofbit 
+
+Definition at line 76 of file Annex\+Bread.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_aafc75c44aac16b5ff0a3f0b008fa9c8c}\label{classvvenc_1_1InputByteStream_aafc75c44aac16b5ff0a3f0b008fa9c8c}} 
+\index{InputByteStream@{InputByteStream}!eofBeforeNBytes@{eofBeforeNBytes}}
+\index{eofBeforeNBytes@{eofBeforeNBytes}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{eofBeforeNBytes()}{eofBeforeNBytes()}}
+{\footnotesize\ttfamily bool eof\+Before\+N\+Bytes (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns true if an E\+OF will be encountered within the next n bytes. 
+
+Definition at line 98 of file Annex\+Bread.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputByteStream_aafc75c44aac16b5ff0a3f0b008fa9c8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_aa4936cc3ed482e080dfa3219b49a23f7}\label{classvvenc_1_1InputByteStream_aa4936cc3ed482e080dfa3219b49a23f7}} 
+\index{InputByteStream@{InputByteStream}!peekBytes@{peekBytes}}
+\index{peekBytes@{peekBytes}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{peekBytes()}{peekBytes()}}
+{\footnotesize\ttfamily uint32\+\_\+t peek\+Bytes (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return the next n bytes in the stream without advancing the stream pointer.
+
+Returns\+: an unsigned integer representing an n byte bigendian word.
+
+If an attempt is made to read past E\+OF, an n-\/byte word is returned, but the portion that required input bytes beyond E\+OF is undefined. 
+
+Definition at line 134 of file Annex\+Bread.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classvvenc_1_1InputByteStream_aa4936cc3ed482e080dfa3219b49a23f7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputByteStream_aa4936cc3ed482e080dfa3219b49a23f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a9b760904bbc60f357339dc98253d6d17}\label{classvvenc_1_1InputByteStream_a9b760904bbc60f357339dc98253d6d17}} 
+\index{InputByteStream@{InputByteStream}!readByte@{readByte}}
+\index{readByte@{readByte}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+consume and return one byte from the input.
+
+If bytestream is already at E\+OF prior to a call to \mbox{\hyperlink{classvvenc_1_1InputByteStream_a9b760904bbc60f357339dc98253d6d17}{read\+Byte()}}, an exception std\+::ios\+\_\+base\+::failure is thrown. 
+
+Definition at line 146 of file Annex\+Bread.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputByteStream_a9b760904bbc60f357339dc98253d6d17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a9c9530a89d4daba9d8b9d4df2849446f}\label{classvvenc_1_1InputByteStream_a9c9530a89d4daba9d8b9d4df2849446f}} 
+\index{InputByteStream@{InputByteStream}!readBytes@{readBytes}}
+\index{readBytes@{readBytes}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{readBytes()}{readBytes()}}
+{\footnotesize\ttfamily uint32\+\_\+t read\+Bytes (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+consume and return n bytes from the input. n bytes from bytestream are interpreted as bigendian when assembling the return value. 
+
+Definition at line 164 of file Annex\+Bread.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classvvenc_1_1InputByteStream_a9c9530a89d4daba9d8b9d4df2849446f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputByteStream_a9c9530a89d4daba9d8b9d4df2849446f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_ad20897c5c8bd47f5d4005989bead0e55}\label{classvvenc_1_1InputByteStream_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{InputByteStream@{InputByteStream}!reset@{reset}}
+\index{reset@{reset}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the internal state. Must be called if input stream is modified externally to this class 
+
+Definition at line 88 of file Annex\+Bread.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputByteStream_ad20897c5c8bd47f5d4005989bead0e55_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a37ed9bbaf380ee93fe45143a28ff91b3}\label{classvvenc_1_1InputByteStream_a37ed9bbaf380ee93fe45143a28ff91b3}} 
+\index{InputByteStream@{InputByteStream}!m\_FutureBytes@{m\_FutureBytes}}
+\index{m\_FutureBytes@{m\_FutureBytes}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{m\_FutureBytes}{m\_FutureBytes}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Future\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 176 of file Annex\+Bread.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a1e94f87c71532465a98c693c940aa906}\label{classvvenc_1_1InputByteStream_a1e94f87c71532465a98c693c940aa906}} 
+\index{InputByteStream@{InputByteStream}!m\_Input@{m\_Input}}
+\index{m\_Input@{m\_Input}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{m\_Input}{m\_Input}}
+{\footnotesize\ttfamily std\+::istream\& m\+\_\+\+Input\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 177 of file Annex\+Bread.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputByteStream_a47979244391f0aefb5e118186f99ee16}\label{classvvenc_1_1InputByteStream_a47979244391f0aefb5e118186f99ee16}} 
+\index{InputByteStream@{InputByteStream}!m\_NumFutureBytes@{m\_NumFutureBytes}}
+\index{m\_NumFutureBytes@{m\_NumFutureBytes}!InputByteStream@{InputByteStream}}
+\doxysubsubsection{\texorpdfstring{m\_NumFutureBytes}{m\_NumFutureBytes}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Num\+Future\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 175 of file Annex\+Bread.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{AnnexBread_8h}{Annex\+Bread.\+h}}\end{DoxyCompactItemize}

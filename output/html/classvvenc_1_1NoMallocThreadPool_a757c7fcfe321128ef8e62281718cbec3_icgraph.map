@@ -1,0 +1,12 @@
+<map id="addBarrierTask" name="addBarrierTask">
+<area shape="rect" id="node1" title=" " alt="" coords="1448,81,1557,108"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1MCTF.html#ac02b5aaf35ce51ced68d20b1559751f0" title=" " alt="" coords="1187,5,1371,32"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1EncGOP.html#a61c82aee8789605e0a9a1a9756553c79" title=" " alt="" coords="479,107,693,133"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1MCTF.html#a371642e309d32bae11fc210f5df1bb4d" title=" " alt="" coords="1157,56,1400,83"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1EncSlice.html#a45a2f8654b9ec99a028383708f2149f1" title=" " alt="" coords="1175,161,1383,188"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1MCTF.html#a627b85715167089df19dc6ab17cb0277" title=" " alt="" coords="951,56,1085,83"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,81,431,108"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,81,187,108"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1EncSlice.html#a97e60d70e5757358cd2f6ca08e7cb3c0" title="analysis stage of slice s" alt="" coords="927,158,1109,199"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1EncPicture.html#a3d97b2aabb8ed53cc627154351f94c54" title=" " alt="" coords="741,158,879,199"/>
+</map>

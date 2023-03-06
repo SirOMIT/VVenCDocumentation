@@ -1,0 +1,943 @@
+\hypertarget{classvvenc_1_1IntraPrediction}{}\doxysection{Intra\+Prediction}
+\label{classvvenc_1_1IntraPrediction}\index{IntraPrediction@{IntraPrediction}}
+
+
+{\ttfamily \#include \char`\"{}Intra\+Prediction.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Intra\+Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classvvenc_1_1IntraPrediction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Intra\+Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1IntraPrediction_1_1IntraPredParam}{Intra\+Pred\+Param}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1IntraPrediction_ad440e69c2f69b40c939a05f7126b7bfb}{Intra\+Prediction}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a55a3da523472d1147932b9ec8fc28f2a}{$\sim$\+Intra\+Prediction}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1IntraPrediction_aef988b1085e7e597054902835fc44b57}{get\+Num\+Intra\+Ciip}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_addc94e439f72535e66769b1ebfea2dd8}{get\+Predictor\+Ptr}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a47d20d23dc42584061633fd338ca200b}{init}} (\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chroma\+Format\+I\+DC, const unsigned bit\+DepthY)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a4fb1253e274e73ca25ec00d42bb6488d}{init\+Intra\+Mip}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_aad741daed15e2abae83b8ddc09b19a96}{init\+Intra\+Pattern\+Ch\+Type}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, const bool force\+Ref\+Filter\+Flag=false)
+\begin{DoxyCompactList}\small\item\em set parameters from \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} data for accessing intra data \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_afb61f10e17a196793145881b246761e7}{init\+Intra\+Pattern\+Ch\+Type\+I\+SP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Reco, const bool force\+Ref\+Filter\+Flag=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a87ec1edab93782a24a26f86ab05fa525}{init\+Pred\+Intra\+Params}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} comp\+Area, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_ac05d4852ad2c60d221a5a0515e3f0449}{load\+L\+M\+Luma\+Rec\+Pels}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&chroma\+Area)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_afdb63c00ab7fce3ae0af6faadfa854ff}{pred\+Intra\+Ang}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Pred, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a72d30974538a8fcd43b578ccb7f7ae2b}{pred\+Intra\+Chroma\+LM}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Pred, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&chroma\+Area, int intra\+Dir)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a7a8583a353270bcf7ce38d7b598564ff}{pred\+Intra\+Mip}} (\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Pred, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_ab524352ad6539d26b4a662443fe4afc4}{set\+Reference\+Array\+Lengths}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a9ddbb02a220623fa10f87e6f751e77e6}{m\+\_\+curr\+Chroma\+Format}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a7d1f42d42dd27e3e690371a7d9b4ec2e}{m\+\_\+left\+Ref\+Length}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a9da626eaf3ae8c3cffc5f90f63b1edc6}{m\+\_\+top\+Ref\+Length}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a74a9472e77c9101b05900167ceae86ae}{x\+Fill\+Reference\+Samples}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&reco\+Buf, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Buf\+Unfiltered, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_aed4e5333c0e7272e745b973fae250973}{x\+Filter\+Reference\+Samples}} (const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Buf\+Unfiltered, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Buf\+Filtered, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, int multi\+Ref\+Idx, int pred\+Stride=0)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a21f89d52732400f5ce35a7f043f5c548}{x\+Get\+L\+M\+Parameters}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&chroma\+Area, int \&a, int \&b, int \&i\+Shift)
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a0629eed3cb1a48421eb13dad768d0272}{x\+Get\+Pred\+Val\+Dc}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src, const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&dst\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a03a83b8ed3cad0fd52b440c6dd73b91f}{x\+Pred\+Intra\+Ang}} (\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Dst, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} channel\+Type, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a63bcf687e2a6dae92890095e0009098d}{x\+Pred\+Intra\+B\+D\+P\+CM}} (\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Dst, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src, const uint32\+\_\+t dir\+Mode, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a2abd5e0e23fde7709ccec38e81461548}{x\+Pred\+Intra\+Dc}} (\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Dst, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a800a18fc9c049dc706f739a6497c959d}{get\+Wide\+Angle}} (int width, int height, int pred\+Mode)
+\item 
+static bool \mbox{\hyperlink{classvvenc_1_1IntraPrediction_aff52da62c21191fd9389df11f422c7e2}{is\+Integer\+Slope}} (const int abs\+Ang)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a073b135f2675798592519db054ca4abb}{Intra\+Angle\+P\+D\+PC}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dsty, const int dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Side, const int width, const int height, int scale, int inv\+Angle)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a5757db03e91ac782eede2b6efe8c564c}{Intra\+Hor\+Ver\+P\+D\+PC}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dsty, const int dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Side, const int width, const int height, int scale, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Main, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a7243e491f491009b85ea116abe91e4e7}{Intra\+Pred\+Angle\+Chroma}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dst, const ptrdiff\+\_\+t dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Border, int width, int height, int delta\+Pos, int intra\+Pred\+Angle)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a574c1b6c3a5ef12c23d542c2d3ab9bc5}{Intra\+Pred\+Angle\+Luma}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dst\+Buf, const ptrdiff\+\_\+t dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Main, int width, int height, int delta\+Pos, int intra\+Pred\+Angle, const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} $\ast$ff, const bool use\+Cubic\+Filter, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a21dfc21037fe284d8be93f2dbc6ed4e3}{Intra\+Pred\+Sample\+Filter}} )(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Pred, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src)
+\item 
+\mbox{\hyperlink{structvvenc_1_1IntraPrediction_1_1IntraPredParam}{Intra\+Pred\+Param}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_af5860e56f9a31358f070cd388828605e}{m\+\_\+ipa\+Param}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Area}{Area}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a9e8f400f1ea4abb8cba43378460de7da}{m\+\_\+last\+Area}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_ab65f8d2e80970367de5a4ef99310a2fa}{m\+\_\+last\+Ch}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction}{Matrix\+Intra\+Prediction}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_accc96d790b7a004022ec196227e94dcc}{m\+\_\+matrix\+Intra\+Pred}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a05abfb3d3567da5d420f5d11a8ca8c79}{m\+\_\+neighbor\+Flags}} \mbox{[}4 $\ast$\mbox{\hyperlink{namespacevvenc_ad21821cd10803ba3ce718c08e973e415}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+\_\+\+I\+D\+X\+S\+\_\+\+I\+N\+\_\+\+C\+T\+U\+\_\+\+W\+I\+D\+TH}}+1\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1IntraPrediction_abe8d3f5cbd4fd37d03f467d6e49244b7}{m\+\_\+num\+Intra\+Neighbor}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a3afb65d95b52ef6d42359ea75a435320}{m\+\_\+p\+Mdlm\+Temp}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a0cdcf4bee14679b51b8ce21bc5b28b61}{m\+\_\+ref\+Buffer}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a4032fefa991f37df4006c3218f4a72e9a3c2cd42ca652947bc4a430f36de0ebad}{N\+U\+M\+\_\+\+P\+R\+E\+D\+\_\+\+B\+UF}}\mbox{]}\mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$2+1+\mbox{\hyperlink{namespacevvenc_a2ae2a927eaaad4394ab96c42890c7d9d}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+L\+I\+N\+E\+\_\+\+I\+DX}}) $\ast$2\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a616aa7b452de7ea78ea70c82162f27b9}{m\+\_\+ref\+Buffer\+Stride}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a3004b5afd802b379d551edaddbb3dccf}{x\+Pred\+Intra\+Planar}} )(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Dst, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1IntraPrediction_a167d224a8d722be00a18265610e93d49}{m\+\_\+auc\+Intra\+Filter}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a321f8331129933df9da7a475ba17eaa3}{M\+A\+X\+\_\+\+I\+N\+T\+R\+A\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+D\+E\+P\+T\+HS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 75 of file Intra\+Prediction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_ad440e69c2f69b40c939a05f7126b7bfb}\label{classvvenc_1_1IntraPrediction_ad440e69c2f69b40c939a05f7126b7bfb}} 
+\index{IntraPrediction@{IntraPrediction}!IntraPrediction@{IntraPrediction}}
+\index{IntraPrediction@{IntraPrediction}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraPrediction()}{IntraPrediction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 255 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_ad440e69c2f69b40c939a05f7126b7bfb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a55a3da523472d1147932b9ec8fc28f2a}\label{classvvenc_1_1IntraPrediction_a55a3da523472d1147932b9ec8fc28f2a}} 
+\index{IntraPrediction@{IntraPrediction}!````~IntraPrediction@{$\sim$IntraPrediction}}
+\index{````~IntraPrediction@{$\sim$IntraPrediction}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{$\sim$IntraPrediction()}{~IntraPrediction()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 267 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classvvenc_1_1IntraPrediction_a55a3da523472d1147932b9ec8fc28f2a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1IntraPrediction_a3a80b6032f86a56bec74609034b3246f}} 
+\index{IntraPrediction@{IntraPrediction}!destroy@{destroy}}
+\index{destroy@{destroy}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 272 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classvvenc_1_1IntraPrediction_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_aef988b1085e7e597054902835fc44b57}\label{classvvenc_1_1IntraPrediction_aef988b1085e7e597054902835fc44b57}} 
+\index{IntraPrediction@{IntraPrediction}!getNumIntraCiip@{getNumIntraCiip}}
+\index{getNumIntraCiip@{getNumIntraCiip}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{getNumIntraCiip()}{getNumIntraCiip()}}
+{\footnotesize\ttfamily int get\+Num\+Intra\+Ciip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file Intra\+Prediction.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aef988b1085e7e597054902835fc44b57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aef988b1085e7e597054902835fc44b57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_addc94e439f72535e66769b1ebfea2dd8}\label{classvvenc_1_1IntraPrediction_addc94e439f72535e66769b1ebfea2dd8}} 
+\index{IntraPrediction@{IntraPrediction}!getPredictorPtr@{getPredictorPtr}}
+\index{getPredictorPtr@{getPredictorPtr}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{getPredictorPtr()}{getPredictorPtr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ get\+Predictor\+Ptr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 161 of file Intra\+Prediction.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_addc94e439f72535e66769b1ebfea2dd8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a800a18fc9c049dc706f739a6497c959d}\label{classvvenc_1_1IntraPrediction_a800a18fc9c049dc706f739a6497c959d}} 
+\index{IntraPrediction@{IntraPrediction}!getWideAngle@{getWideAngle}}
+\index{getWideAngle@{getWideAngle}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{getWideAngle()}{getWideAngle()}}
+{\footnotesize\ttfamily int get\+Wide\+Angle (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{pred\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 331 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a800a18fc9c049dc706f739a6497c959d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a800a18fc9c049dc706f739a6497c959d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a47d20d23dc42584061633fd338ca200b}\label{classvvenc_1_1IntraPrediction_a47d20d23dc42584061633fd338ca200b}} 
+\index{IntraPrediction@{IntraPrediction}!init@{init}}
+\index{init@{init}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{chroma\+Format\+I\+DC,  }\item[{const unsigned}]{bit\+DepthY }\end{DoxyParamCaption})}
+
+
+
+Definition at line 278 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a47d20d23dc42584061633fd338ca200b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a4fb1253e274e73ca25ec00d42bb6488d}\label{classvvenc_1_1IntraPrediction_a4fb1253e274e73ca25ec00d42bb6488d}} 
+\index{IntraPrediction@{IntraPrediction}!initIntraMip@{initIntraMip}}
+\index{initIntraMip@{initIntraMip}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{initIntraMip()}{initIntraMip()}}
+{\footnotesize\ttfamily void init\+Intra\+Mip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1592 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a4fb1253e274e73ca25ec00d42bb6488d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a4fb1253e274e73ca25ec00d42bb6488d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_aad741daed15e2abae83b8ddc09b19a96}\label{classvvenc_1_1IntraPrediction_aad741daed15e2abae83b8ddc09b19a96}} 
+\index{IntraPrediction@{IntraPrediction}!initIntraPatternChType@{initIntraPatternChType}}
+\index{initIntraPatternChType@{initIntraPatternChType}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{initIntraPatternChType()}{initIntraPatternChType()}}
+{\footnotesize\ttfamily void init\+Intra\+Pattern\+Ch\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{const bool}]{force\+Ref\+Filter\+Flag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+set parameters from \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} data for accessing intra data 
+
+
+
+Definition at line 718 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aad741daed15e2abae83b8ddc09b19a96_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aad741daed15e2abae83b8ddc09b19a96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_afb61f10e17a196793145881b246761e7}\label{classvvenc_1_1IntraPrediction_afb61f10e17a196793145881b246761e7}} 
+\index{IntraPrediction@{IntraPrediction}!initIntraPatternChTypeISP@{initIntraPatternChTypeISP}}
+\index{initIntraPatternChTypeISP@{initIntraPatternChTypeISP}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{initIntraPatternChTypeISP()}{initIntraPatternChTypeISP()}}
+{\footnotesize\ttfamily void init\+Intra\+Pattern\+Ch\+Type\+I\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{pi\+Reco,  }\item[{const bool}]{force\+Ref\+Filter\+Flag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1618 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_afb61f10e17a196793145881b246761e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_afb61f10e17a196793145881b246761e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a87ec1edab93782a24a26f86ab05fa525}\label{classvvenc_1_1IntraPrediction_a87ec1edab93782a24a26f86ab05fa525}} 
+\index{IntraPrediction@{IntraPrediction}!initPredIntraParams@{initPredIntraParams}}
+\index{initPredIntraParams@{initPredIntraParams}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{initPredIntraParams()}{initPredIntraParams()}}
+{\footnotesize\ttfamily void init\+Pred\+Intra\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}}}]{comp\+Area,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 405 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a87ec1edab93782a24a26f86ab05fa525_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a87ec1edab93782a24a26f86ab05fa525_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_aff52da62c21191fd9389df11f422c7e2}\label{classvvenc_1_1IntraPrediction_aff52da62c21191fd9389df11f422c7e2}} 
+\index{IntraPrediction@{IntraPrediction}!isIntegerSlope@{isIntegerSlope}}
+\index{isIntegerSlope@{isIntegerSlope}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{isIntegerSlope()}{isIntegerSlope()}}
+{\footnotesize\ttfamily static bool is\+Integer\+Slope (\begin{DoxyParamCaption}\item[{const int}]{abs\+Ang }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Intra\+Prediction.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aff52da62c21191fd9389df11f422c7e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_ac05d4852ad2c60d221a5a0515e3f0449}\label{classvvenc_1_1IntraPrediction_ac05d4852ad2c60d221a5a0515e3f0449}} 
+\index{IntraPrediction@{IntraPrediction}!loadLMLumaRecPels@{loadLMLumaRecPels}}
+\index{loadLMLumaRecPels@{loadLMLumaRecPels}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{loadLMLumaRecPels()}{loadLMLumaRecPels()}}
+{\footnotesize\ttfamily void load\+L\+M\+Luma\+Rec\+Pels (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{chroma\+Area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1150 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_ac05d4852ad2c60d221a5a0515e3f0449_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_ac05d4852ad2c60d221a5a0515e3f0449_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_afdb63c00ab7fce3ae0af6faadfa854ff}\label{classvvenc_1_1IntraPrediction_afdb63c00ab7fce3ae0af6faadfa854ff}} 
+\index{IntraPrediction@{IntraPrediction}!predIntraAng@{predIntraAng}}
+\index{predIntraAng@{predIntraAng}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predIntraAng()}{predIntraAng()}}
+{\footnotesize\ttfamily void pred\+Intra\+Ang (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{pi\+Pred,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 349 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_afdb63c00ab7fce3ae0af6faadfa854ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_afdb63c00ab7fce3ae0af6faadfa854ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a72d30974538a8fcd43b578ccb7f7ae2b}\label{classvvenc_1_1IntraPrediction_a72d30974538a8fcd43b578ccb7f7ae2b}} 
+\index{IntraPrediction@{IntraPrediction}!predIntraChromaLM@{predIntraChromaLM}}
+\index{predIntraChromaLM@{predIntraChromaLM}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predIntraChromaLM()}{predIntraChromaLM()}}
+{\footnotesize\ttfamily void pred\+Intra\+Chroma\+LM (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{pi\+Pred,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{chroma\+Area,  }\item[{int}]{intra\+Dir }\end{DoxyParamCaption})}
+
+
+
+Definition at line 381 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a72d30974538a8fcd43b578ccb7f7ae2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a72d30974538a8fcd43b578ccb7f7ae2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a7a8583a353270bcf7ce38d7b598564ff}\label{classvvenc_1_1IntraPrediction_a7a8583a353270bcf7ce38d7b598564ff}} 
+\index{IntraPrediction@{IntraPrediction}!predIntraMip@{predIntraMip}}
+\index{predIntraMip@{predIntraMip}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{predIntraMip()}{predIntraMip()}}
+{\footnotesize\ttfamily void pred\+Intra\+Mip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{pi\+Pred,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1605 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a7a8583a353270bcf7ce38d7b598564ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a7a8583a353270bcf7ce38d7b598564ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_ad20897c5c8bd47f5d4005989bead0e55}\label{classvvenc_1_1IntraPrediction_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{IntraPrediction@{IntraPrediction}!reset@{reset}}
+\index{reset@{reset}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 741 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_ad20897c5c8bd47f5d4005989bead0e55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_ab524352ad6539d26b4a662443fe4afc4}\label{classvvenc_1_1IntraPrediction_ab524352ad6539d26b4a662443fe4afc4}} 
+\index{IntraPrediction@{IntraPrediction}!setReferenceArrayLengths@{setReferenceArrayLengths}}
+\index{setReferenceArrayLengths@{setReferenceArrayLengths}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{setReferenceArrayLengths()}{setReferenceArrayLengths()}}
+{\footnotesize\ttfamily void set\+Reference\+Array\+Lengths (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1738 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_ab524352ad6539d26b4a662443fe4afc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a74a9472e77c9101b05900167ceae86ae}\label{classvvenc_1_1IntraPrediction_a74a9472e77c9101b05900167ceae86ae}} 
+\index{IntraPrediction@{IntraPrediction}!xFillReferenceSamples@{xFillReferenceSamples}}
+\index{xFillReferenceSamples@{xFillReferenceSamples}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xFillReferenceSamples()}{xFillReferenceSamples()}}
+{\footnotesize\ttfamily void x\+Fill\+Reference\+Samples (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{reco\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{ref\+Buf\+Unfiltered,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 747 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a74a9472e77c9101b05900167ceae86ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a74a9472e77c9101b05900167ceae86ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_aed4e5333c0e7272e745b973fae250973}\label{classvvenc_1_1IntraPrediction_aed4e5333c0e7272e745b973fae250973}} 
+\index{IntraPrediction@{IntraPrediction}!xFilterReferenceSamples@{xFilterReferenceSamples}}
+\index{xFilterReferenceSamples@{xFilterReferenceSamples}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xFilterReferenceSamples()}{xFilterReferenceSamples()}}
+{\footnotesize\ttfamily void x\+Filter\+Reference\+Samples (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{ref\+Buf\+Unfiltered,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{ref\+Buf\+Filtered,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{int}]{multi\+Ref\+Idx,  }\item[{int}]{pred\+Stride = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 986 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_aed4e5333c0e7272e745b973fae250973_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a21f89d52732400f5ce35a7f043f5c548}\label{classvvenc_1_1IntraPrediction_a21f89d52732400f5ce35a7f043f5c548}} 
+\index{IntraPrediction@{IntraPrediction}!xGetLMParameters@{xGetLMParameters}}
+\index{xGetLMParameters@{xGetLMParameters}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xGetLMParameters()}{xGetLMParameters()}}
+{\footnotesize\ttfamily void x\+Get\+L\+M\+Parameters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{chroma\+Area,  }\item[{int \&}]{a,  }\item[{int \&}]{b,  }\item[{int \&}]{i\+Shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1393 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a21f89d52732400f5ce35a7f043f5c548_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a21f89d52732400f5ce35a7f043f5c548_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a0629eed3cb1a48421eb13dad768d0272}\label{classvvenc_1_1IntraPrediction_a0629eed3cb1a48421eb13dad768d0272}} 
+\index{IntraPrediction@{IntraPrediction}!xGetPredValDc@{xGetPredValDc}}
+\index{xGetPredValDc@{xGetPredValDc}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xGetPredValDc()}{xGetPredValDc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} x\+Get\+Pred\+Val\+Dc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{p\+Src,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&}]{dst\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 298 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a0629eed3cb1a48421eb13dad768d0272_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a0629eed3cb1a48421eb13dad768d0272_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a03a83b8ed3cad0fd52b440c6dd73b91f}\label{classvvenc_1_1IntraPrediction_a03a83b8ed3cad0fd52b440c6dd73b91f}} 
+\index{IntraPrediction@{IntraPrediction}!xPredIntraAng@{xPredIntraAng}}
+\index{xPredIntraAng@{xPredIntraAng}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredIntraAng()}{xPredIntraAng()}}
+{\footnotesize\ttfamily void x\+Pred\+Intra\+Ang (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{p\+Src,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{channel\+Type,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Function for deriving the simplified angular intra predictions.
+
+This function derives the prediction samples for the angular mode based on the prediction direction indicated by the prediction mode index. The prediction direction is given by the displacement of the bottom row of the block and the reference row above the block in the case of vertical prediction or displacement of the rightmost column of the block and reference column left from the block in the case of the horizontal prediction. The displacement is signalled at 1/32 pixel accuracy. When projection of the predicted pixel falls inbetween reference samples, the predicted value for the pixel is linearly interpolated from the reference samples. All reference samples are taken from the extended main reference. 
+
+Definition at line 510 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a03a83b8ed3cad0fd52b440c6dd73b91f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a03a83b8ed3cad0fd52b440c6dd73b91f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a63bcf687e2a6dae92890095e0009098d}\label{classvvenc_1_1IntraPrediction_a63bcf687e2a6dae92890095e0009098d}} 
+\index{IntraPrediction@{IntraPrediction}!xPredIntraBDPCM@{xPredIntraBDPCM}}
+\index{xPredIntraBDPCM@{xPredIntraBDPCM}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredIntraBDPCM()}{xPredIntraBDPCM()}}
+{\footnotesize\ttfamily void x\+Pred\+Intra\+B\+D\+P\+CM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{p\+Src,  }\item[{const uint32\+\_\+t}]{dir\+Mode,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 675 of file Intra\+Prediction.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a63bcf687e2a6dae92890095e0009098d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a2abd5e0e23fde7709ccec38e81461548}\label{classvvenc_1_1IntraPrediction_a2abd5e0e23fde7709ccec38e81461548}} 
+\index{IntraPrediction@{IntraPrediction}!xPredIntraDc@{xPredIntraDc}}
+\index{xPredIntraDc@{xPredIntraDc}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredIntraDc()}{xPredIntraDc()}}
+{\footnotesize\ttfamily void x\+Pred\+Intra\+Dc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{p\+Src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Function for deriving planar intra prediction. This function derives the prediction samples for planar mode (intra coding). 
+
+Definition at line 398 of file Intra\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a2abd5e0e23fde7709ccec38e81461548_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1IntraPrediction_a2abd5e0e23fde7709ccec38e81461548_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a073b135f2675798592519db054ca4abb}\label{classvvenc_1_1IntraPrediction_a073b135f2675798592519db054ca4abb}} 
+\index{IntraPrediction@{IntraPrediction}!IntraAnglePDPC@{IntraAnglePDPC}}
+\index{IntraAnglePDPC@{IntraAnglePDPC}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraAnglePDPC}{IntraAnglePDPC}}
+{\footnotesize\ttfamily void( $\ast$ Intra\+Angle\+P\+D\+PC(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dsty, const int dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Side, const int width, const int height, int scale, int inv\+Angle)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a5757db03e91ac782eede2b6efe8c564c}\label{classvvenc_1_1IntraPrediction_a5757db03e91ac782eede2b6efe8c564c}} 
+\index{IntraPrediction@{IntraPrediction}!IntraHorVerPDPC@{IntraHorVerPDPC}}
+\index{IntraHorVerPDPC@{IntraHorVerPDPC}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraHorVerPDPC}{IntraHorVerPDPC}}
+{\footnotesize\ttfamily void( $\ast$ Intra\+Hor\+Ver\+P\+D\+PC(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dsty, const int dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Side, const int width, const int height, int scale, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Main, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 140 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a7243e491f491009b85ea116abe91e4e7}\label{classvvenc_1_1IntraPrediction_a7243e491f491009b85ea116abe91e4e7}} 
+\index{IntraPrediction@{IntraPrediction}!IntraPredAngleChroma@{IntraPredAngleChroma}}
+\index{IntraPredAngleChroma@{IntraPredAngleChroma}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraPredAngleChroma}{IntraPredAngleChroma}}
+{\footnotesize\ttfamily void( $\ast$ Intra\+Pred\+Angle\+Chroma(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dst, const ptrdiff\+\_\+t dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Border, int width, int height, int delta\+Pos, int intra\+Pred\+Angle)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 138 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a574c1b6c3a5ef12c23d542c2d3ab9bc5}\label{classvvenc_1_1IntraPrediction_a574c1b6c3a5ef12c23d542c2d3ab9bc5}} 
+\index{IntraPrediction@{IntraPrediction}!IntraPredAngleLuma@{IntraPredAngleLuma}}
+\index{IntraPredAngleLuma@{IntraPredAngleLuma}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraPredAngleLuma}{IntraPredAngleLuma}}
+{\footnotesize\ttfamily void( $\ast$ Intra\+Pred\+Angle\+Luma(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Dst\+Buf, const ptrdiff\+\_\+t dst\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ref\+Main, int width, int height, int delta\+Pos, int intra\+Pred\+Angle, const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} $\ast$ff, const bool use\+Cubic\+Filter, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a21dfc21037fe284d8be93f2dbc6ed4e3}\label{classvvenc_1_1IntraPrediction_a21dfc21037fe284d8be93f2dbc6ed4e3}} 
+\index{IntraPrediction@{IntraPrediction}!IntraPredSampleFilter@{IntraPredSampleFilter}}
+\index{IntraPredSampleFilter@{IntraPredSampleFilter}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{IntraPredSampleFilter}{IntraPredSampleFilter}}
+{\footnotesize\ttfamily void( $\ast$ Intra\+Pred\+Sample\+Filter(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&pi\+Pred, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 141 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a167d224a8d722be00a18265610e93d49}\label{classvvenc_1_1IntraPrediction_a167d224a8d722be00a18265610e93d49}} 
+\index{IntraPrediction@{IntraPrediction}!m\_aucIntraFilter@{m\_aucIntraFilter}}
+\index{m\_aucIntraFilter@{m\_aucIntraFilter}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_aucIntraFilter}{m\_aucIntraFilter}}
+{\footnotesize\ttfamily const uint8\+\_\+t m\+\_\+auc\+Intra\+Filter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  24, }
+\DoxyCodeLine{  24, }
+\DoxyCodeLine{  24, }
+\DoxyCodeLine{  14, }
+\DoxyCodeLine{  2,  }
+\DoxyCodeLine{  0,  }
+\DoxyCodeLine{  0,  }
+\DoxyCodeLine{  0   }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 85 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a9ddbb02a220623fa10f87e6f751e77e6}\label{classvvenc_1_1IntraPrediction_a9ddbb02a220623fa10f87e6f751e77e6}} 
+\index{IntraPrediction@{IntraPrediction}!m\_currChromaFormat@{m\_currChromaFormat}}
+\index{m\_currChromaFormat@{m\_currChromaFormat}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_currChromaFormat}{m\_currChromaFormat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} m\+\_\+curr\+Chroma\+Format\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 116 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_af5860e56f9a31358f070cd388828605e}\label{classvvenc_1_1IntraPrediction_af5860e56f9a31358f070cd388828605e}} 
+\index{IntraPrediction@{IntraPrediction}!m\_ipaParam@{m\_ipaParam}}
+\index{m\_ipaParam@{m\_ipaParam}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_ipaParam}{m\_ipaParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1IntraPrediction_1_1IntraPredParam}{Intra\+Pred\+Param}} m\+\_\+ipa\+Param\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 111 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a9e8f400f1ea4abb8cba43378460de7da}\label{classvvenc_1_1IntraPrediction_a9e8f400f1ea4abb8cba43378460de7da}} 
+\index{IntraPrediction@{IntraPrediction}!m\_lastArea@{m\_lastArea}}
+\index{m\_lastArea@{m\_lastArea}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_lastArea}{m\_lastArea}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Area}{Area}} m\+\_\+last\+Area\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_ab65f8d2e80970367de5a4ef99310a2fa}\label{classvvenc_1_1IntraPrediction_ab65f8d2e80970367de5a4ef99310a2fa}} 
+\index{IntraPrediction@{IntraPrediction}!m\_lastCh@{m\_lastCh}}
+\index{m\_lastCh@{m\_lastCh}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_lastCh}{m\_lastCh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} m\+\_\+last\+Ch\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a7d1f42d42dd27e3e690371a7d9b4ec2e}\label{classvvenc_1_1IntraPrediction_a7d1f42d42dd27e3e690371a7d9b4ec2e}} 
+\index{IntraPrediction@{IntraPrediction}!m\_leftRefLength@{m\_leftRefLength}}
+\index{m\_leftRefLength@{m\_leftRefLength}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_leftRefLength}{m\_leftRefLength}}
+{\footnotesize\ttfamily int m\+\_\+left\+Ref\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 119 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_accc96d790b7a004022ec196227e94dcc}\label{classvvenc_1_1IntraPrediction_accc96d790b7a004022ec196227e94dcc}} 
+\index{IntraPrediction@{IntraPrediction}!m\_matrixIntraPred@{m\_matrixIntraPred}}
+\index{m\_matrixIntraPred@{m\_matrixIntraPred}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_matrixIntraPred}{m\_matrixIntraPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1MatrixIntraPrediction}{Matrix\+Intra\+Prediction}} m\+\_\+matrix\+Intra\+Pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 113 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a05abfb3d3567da5d420f5d11a8ca8c79}\label{classvvenc_1_1IntraPrediction_a05abfb3d3567da5d420f5d11a8ca8c79}} 
+\index{IntraPrediction@{IntraPrediction}!m\_neighborFlags@{m\_neighborFlags}}
+\index{m\_neighborFlags@{m\_neighborFlags}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_neighborFlags}{m\_neighborFlags}}
+{\footnotesize\ttfamily bool m\+\_\+neighbor\+Flags\mbox{[}4 $\ast$\mbox{\hyperlink{namespacevvenc_ad21821cd10803ba3ce718c08e973e415}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+\_\+\+I\+D\+X\+S\+\_\+\+I\+N\+\_\+\+C\+T\+U\+\_\+\+W\+I\+D\+TH}}+1\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 81 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_abe8d3f5cbd4fd37d03f467d6e49244b7}\label{classvvenc_1_1IntraPrediction_abe8d3f5cbd4fd37d03f467d6e49244b7}} 
+\index{IntraPrediction@{IntraPrediction}!m\_numIntraNeighbor@{m\_numIntraNeighbor}}
+\index{m\_numIntraNeighbor@{m\_numIntraNeighbor}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_numIntraNeighbor}{m\_numIntraNeighbor}}
+{\footnotesize\ttfamily int m\+\_\+num\+Intra\+Neighbor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a3afb65d95b52ef6d42359ea75a435320}\label{classvvenc_1_1IntraPrediction_a3afb65d95b52ef6d42359ea75a435320}} 
+\index{IntraPrediction@{IntraPrediction}!m\_pMdlmTemp@{m\_pMdlmTemp}}
+\index{m\_pMdlmTemp@{m\_pMdlmTemp}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_pMdlmTemp}{m\_pMdlmTemp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+p\+Mdlm\+Temp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 112 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a0cdcf4bee14679b51b8ce21bc5b28b61}\label{classvvenc_1_1IntraPrediction_a0cdcf4bee14679b51b8ce21bc5b28b61}} 
+\index{IntraPrediction@{IntraPrediction}!m\_refBuffer@{m\_refBuffer}}
+\index{m\_refBuffer@{m\_refBuffer}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_refBuffer}{m\_refBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} m\+\_\+ref\+Buffer\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a4032fefa991f37df4006c3218f4a72e9a3c2cd42ca652947bc4a430f36de0ebad}{N\+U\+M\+\_\+\+P\+R\+E\+D\+\_\+\+B\+UF}}\mbox{]}\mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$2+1+\mbox{\hyperlink{namespacevvenc_a2ae2a927eaaad4394ab96c42890c7d9d}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+L\+I\+N\+E\+\_\+\+I\+DX}}) $\ast$2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a616aa7b452de7ea78ea70c82162f27b9}\label{classvvenc_1_1IntraPrediction_a616aa7b452de7ea78ea70c82162f27b9}} 
+\index{IntraPrediction@{IntraPrediction}!m\_refBufferStride@{m\_refBufferStride}}
+\index{m\_refBufferStride@{m\_refBufferStride}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_refBufferStride}{m\_refBufferStride}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ref\+Buffer\+Stride\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a9da626eaf3ae8c3cffc5f90f63b1edc6}\label{classvvenc_1_1IntraPrediction_a9da626eaf3ae8c3cffc5f90f63b1edc6}} 
+\index{IntraPrediction@{IntraPrediction}!m\_topRefLength@{m\_topRefLength}}
+\index{m\_topRefLength@{m\_topRefLength}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_topRefLength}{m\_topRefLength}}
+{\footnotesize\ttfamily int m\+\_\+top\+Ref\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 118 of file Intra\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1IntraPrediction_a3004b5afd802b379d551edaddbb3dccf}\label{classvvenc_1_1IntraPrediction_a3004b5afd802b379d551edaddbb3dccf}} 
+\index{IntraPrediction@{IntraPrediction}!xPredIntraPlanar@{xPredIntraPlanar}}
+\index{xPredIntraPlanar@{xPredIntraPlanar}!IntraPrediction@{IntraPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredIntraPlanar}{xPredIntraPlanar}}
+{\footnotesize\ttfamily void($\ast$ x\+Pred\+Intra\+Planar(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Dst, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&p\+Src)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 127 of file Intra\+Prediction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{IntraPrediction_8h}{Intra\+Prediction.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{IntraPrediction_8cpp}{Intra\+Prediction.\+cpp}}\end{DoxyCompactItemize}

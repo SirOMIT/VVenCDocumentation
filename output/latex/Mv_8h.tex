@@ -1,0 +1,67 @@
+\hypertarget{Mv_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Mv.h File Reference}
+\label{Mv_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Mv.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Mv.h}}
+
+
+motion vector class (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+Include dependency graph for Mv.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Mv_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Mv_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstd_1_1hash_3_01vvenc_1_1Mv_01_4}{hash$<$ vvenc\+::\+Mv $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}
+\begin{DoxyCompactList}\small\item\em basic motion vector class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacestd}{std}}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \{ \newline
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a0515f94079bb68ffa3cece37a4777779}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+4\+P\+EL}} = 0, 
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}} = 2, 
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8ada802e2dfc785fb5a033528db1f7ca5c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+H\+A\+LF}} = 3, 
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8af3a8dee7f255daa5a6805e2cd900374c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+Q\+U\+A\+R\+T\+ER}} = 4, 
+\newline
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a7592137366a3f94e0b3844698e6c1483}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+S\+I\+X\+T\+E\+E\+N\+TH}} = 6, 
+\mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8afd17f2d8f948b7b845eb447f54e7205e}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+N\+T\+E\+R\+N\+AL}} = 2 + M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+I\+N\+T\+E\+R\+N\+AL
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_afdbf96d0dc34a3768f24f33be488fb37}{clip\+Mv}} (Mv \&rc\+Mv, const Position \&pos, const Size \&size, const Pre\+Calc\+Values \&pcv)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a56020dd8c76d83c5156ffbd93cf29f3d}{clip\+Mv}} (Mv \&rc\+Mv, const Position \&pos, const Size \&size, const Pre\+Calc\+Values \&pcv, const P\+PS \&pps, bool m\+\_\+clip\+Mv\+In\+Sub\+Pic)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a73942a45402ce654d35f505f148b08fb}{round\+Affine\+Mv}} (int \&mvx, int \&mvy, int n\+Shift)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a6fdddb347e7aee65444d99a8c261a211}{wrap\+Clip\+Mv}} (Mv \&rc\+Mv, const Position \&pos, const Size \&size, const Coding\+Structure \&cs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+motion vector class (header) 
+

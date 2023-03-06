@@ -1,0 +1,168 @@
+\hypertarget{classvvenc_1_1Channel}{}\doxysection{Channel}
+\label{classvvenc_1_1Channel}\index{Channel@{Channel}}
+
+
+{\ttfamily \#include \char`\"{}dtrace.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Channel_aeede9b013ddef6a6d7391ed14943ce3c}{Channel}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Channel_a0cb3050c8a4f6bdb2c1f727eec8d9701}{active}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Channel_aa84bb2073f7f3e303c373e05624d84e7}{add}} (\mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}} rule)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Channel_a2fba61d7079186eb4e54034e8143e0f3}{decrement\+Counter}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1Channel_a96beb80fe291e621a31a42e53419e68c}{get\+Counter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Channel_ae536d714cb84dad52e0fc3921bc724cc}{increment\+Counter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Channel_afd3bcfda37658d42d899d224c593ecb6}{update}} (std\+::map$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$ state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1Condition}{Condition}} $>$ \mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Channel_aaf6261fa6a915445f7c09d64ba940e4e}{\+\_\+active}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1Channel_ae06ef2c1a34d712a84fc56a0c3c39fcb}{\+\_\+counter}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}} $>$ \mbox{\hyperlink{classvvenc_1_1Channel_a9395f31fe675ba85c78f5bea4cb677a5}{rule\+\_\+list}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 91 of file dtrace.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}\label{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}} 
+\index{Channel@{Channel}!Rule@{Rule}}
+\index{Rule@{Rule}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{Rule}{Rule}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1Condition}{Condition}}$>$ \mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 93 of file dtrace.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Channel_aeede9b013ddef6a6d7391ed14943ce3c}\label{classvvenc_1_1Channel_aeede9b013ddef6a6d7391ed14943ce3c}} 
+\index{Channel@{Channel}!Channel@{Channel}}
+\index{Channel@{Channel}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{Channel()}{Channel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Channel}{Channel}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 95 of file dtrace.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Channel_a0cb3050c8a4f6bdb2c1f727eec8d9701}\label{classvvenc_1_1Channel_a0cb3050c8a4f6bdb2c1f727eec8d9701}} 
+\index{Channel@{Channel}!active@{active}}
+\index{active@{active}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{active()}{active()}}
+{\footnotesize\ttfamily bool active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_aa84bb2073f7f3e303c373e05624d84e7}\label{classvvenc_1_1Channel_aa84bb2073f7f3e303c373e05624d84e7}} 
+\index{Channel@{Channel}!add@{add}}
+\index{add@{add}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}}}]{rule }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_a2fba61d7079186eb4e54034e8143e0f3}\label{classvvenc_1_1Channel_a2fba61d7079186eb4e54034e8143e0f3}} 
+\index{Channel@{Channel}!decrementCounter@{decrementCounter}}
+\index{decrementCounter@{decrementCounter}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{decrementCounter()}{decrementCounter()}}
+{\footnotesize\ttfamily void decrement\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_a96beb80fe291e621a31a42e53419e68c}\label{classvvenc_1_1Channel_a96beb80fe291e621a31a42e53419e68c}} 
+\index{Channel@{Channel}!getCounter@{getCounter}}
+\index{getCounter@{getCounter}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{getCounter()}{getCounter()}}
+{\footnotesize\ttfamily int64\+\_\+t get\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_ae536d714cb84dad52e0fc3921bc724cc}\label{classvvenc_1_1Channel_ae536d714cb84dad52e0fc3921bc724cc}} 
+\index{Channel@{Channel}!incrementCounter@{incrementCounter}}
+\index{incrementCounter@{incrementCounter}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{incrementCounter()}{incrementCounter()}}
+{\footnotesize\ttfamily void increment\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_afd3bcfda37658d42d899d224c593ecb6}\label{classvvenc_1_1Channel_afd3bcfda37658d42d899d224c593ecb6}} 
+\index{Channel@{Channel}!update@{update}}
+\index{update@{update}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$}]{state }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file dtrace.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Channel_aaf6261fa6a915445f7c09d64ba940e4e}\label{classvvenc_1_1Channel_aaf6261fa6a915445f7c09d64ba940e4e}} 
+\index{Channel@{Channel}!\_active@{\_active}}
+\index{\_active@{\_active}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{\_active}{\_active}}
+{\footnotesize\ttfamily bool \+\_\+active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 104 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_ae06ef2c1a34d712a84fc56a0c3c39fcb}\label{classvvenc_1_1Channel_ae06ef2c1a34d712a84fc56a0c3c39fcb}} 
+\index{Channel@{Channel}!\_counter@{\_counter}}
+\index{\_counter@{\_counter}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{\_counter}{\_counter}}
+{\footnotesize\ttfamily int64\+\_\+t \+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 105 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Channel_a9395f31fe675ba85c78f5bea4cb677a5}\label{classvvenc_1_1Channel_a9395f31fe675ba85c78f5bea4cb677a5}} 
+\index{Channel@{Channel}!rule\_list@{rule\_list}}
+\index{rule\_list@{rule\_list}!Channel@{Channel}}
+\doxysubsubsection{\texorpdfstring{rule\_list}{rule\_list}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1Channel_af1255185fe0d4b67f2beaaaaaedfcac2}{Rule}} $>$ rule\+\_\+list\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file dtrace.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{dtrace_8h}{dtrace.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{dtrace_8cpp}{dtrace.\+cpp}}\end{DoxyCompactItemize}

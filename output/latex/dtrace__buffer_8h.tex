@@ -1,0 +1,170 @@
+\hypertarget{dtrace__buffer_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/dtrace\+\_\+buffer.h File Reference}
+\label{dtrace__buffer_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace\_buffer.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace\_buffer.h}}
+
+
+Easy to use dtrace calls concerning buffers.  
+
+
+{\ttfamily \#include \char`\"{}dtrace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+Include dependency graph for dtrace\+\_\+buffer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dtrace__buffer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dtrace__buffer_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a6007ede5b7b781dffc16ddb4009a186d}{D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+R\+EC}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a241bfe9be9f66ed942334278c4100a74}{D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+R\+E\+C\+\_\+\+C\+O\+ND}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a3fff26c6024c3269915ce4cc45741260}{D\+T\+R\+A\+C\+E\+\_\+\+C\+C\+RC}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a68c3d80c44e2406b282929f5028a4acf}{D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+E\+F\+F\+\_\+\+B\+UF}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_ad466cfd3b342a24672ca8a6aa403d8a1}{D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+E\+F\+F\+\_\+\+B\+U\+F\+\_\+\+C\+O\+ND}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a069dc4a7342ad120b45f662ada45a91c}{D\+T\+R\+A\+C\+E\+\_\+\+C\+RC}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a3ad80038897d0054dd4ec4505e1d01e1}{D\+T\+R\+A\+C\+E\+\_\+\+M\+O\+T\+\_\+\+F\+I\+E\+LD}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a6c76c57bb190ad88f36e00e96de3eba7}{D\+T\+R\+A\+C\+E\+\_\+\+P\+E\+L\+\_\+\+B\+UF}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a33bab5f349d181828966864b2dbd9477}{D\+T\+R\+A\+C\+E\+\_\+\+P\+E\+L\+\_\+\+B\+U\+F\+\_\+\+C\+O\+ND}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__buffer_8h_a6b41fa5cca6c982448c8d9362f28a0a4}{D\+T\+R\+A\+C\+E\+\_\+\+U\+N\+I\+T\+\_\+\+C\+O\+MP}}(...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{namespacevvenc_abe3233216a96bb5bddf699b78e0694d3}{calc\+Check\+Sum}} (const C\+Pel\+Buf \&buf, int bitdepth)
+\item 
+unsigned \mbox{\hyperlink{namespacevvenc_ac326205b60a4abd3f73f0318c674952a}{calc\+Check\+Sum}} (const int i\+Width, const int i\+Height, const Pel $\ast$p, const uint32\+\_\+t stride, const int bitdepth)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Easy to use dtrace calls concerning buffers. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{dtrace__buffer_8h_a6007ede5b7b781dffc16ddb4009a186d}\label{dtrace__buffer_8h_a6007ede5b7b781dffc16ddb4009a186d}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_BLOCK\_REC@{DTRACE\_BLOCK\_REC}}
+\index{DTRACE\_BLOCK\_REC@{DTRACE\_BLOCK\_REC}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_BLOCK\_REC}{DTRACE\_BLOCK\_REC}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+R\+EC(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 229 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a241bfe9be9f66ed942334278c4100a74}\label{dtrace__buffer_8h_a241bfe9be9f66ed942334278c4100a74}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_BLOCK\_REC\_COND@{DTRACE\_BLOCK\_REC\_COND}}
+\index{DTRACE\_BLOCK\_REC\_COND@{DTRACE\_BLOCK\_REC\_COND}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_BLOCK\_REC\_COND}{DTRACE\_BLOCK\_REC\_COND}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+R\+E\+C\+\_\+\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a3fff26c6024c3269915ce4cc45741260}\label{dtrace__buffer_8h_a3fff26c6024c3269915ce4cc45741260}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_CCRC@{DTRACE\_CCRC}}
+\index{DTRACE\_CCRC@{DTRACE\_CCRC}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_CCRC}{DTRACE\_CCRC}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+C\+C\+RC(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 235 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a68c3d80c44e2406b282929f5028a4acf}\label{dtrace__buffer_8h_a68c3d80c44e2406b282929f5028a4acf}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_COEFF\_BUF@{DTRACE\_COEFF\_BUF}}
+\index{DTRACE\_COEFF\_BUF@{DTRACE\_COEFF\_BUF}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_COEFF\_BUF}{DTRACE\_COEFF\_BUF}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+E\+F\+F\+\_\+\+B\+UF(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 228 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_ad466cfd3b342a24672ca8a6aa403d8a1}\label{dtrace__buffer_8h_ad466cfd3b342a24672ca8a6aa403d8a1}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_COEFF\_BUF\_COND@{DTRACE\_COEFF\_BUF\_COND}}
+\index{DTRACE\_COEFF\_BUF\_COND@{DTRACE\_COEFF\_BUF\_COND}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_COEFF\_BUF\_COND}{DTRACE\_COEFF\_BUF\_COND}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+E\+F\+F\+\_\+\+B\+U\+F\+\_\+\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 231 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a069dc4a7342ad120b45f662ada45a91c}\label{dtrace__buffer_8h_a069dc4a7342ad120b45f662ada45a91c}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_CRC@{DTRACE\_CRC}}
+\index{DTRACE\_CRC@{DTRACE\_CRC}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_CRC}{DTRACE\_CRC}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+C\+RC(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 234 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a3ad80038897d0054dd4ec4505e1d01e1}\label{dtrace__buffer_8h_a3ad80038897d0054dd4ec4505e1d01e1}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_MOT\_FIELD@{DTRACE\_MOT\_FIELD}}
+\index{DTRACE\_MOT\_FIELD@{DTRACE\_MOT\_FIELD}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_MOT\_FIELD}{DTRACE\_MOT\_FIELD}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+M\+O\+T\+\_\+\+F\+I\+E\+LD(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 236 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a6c76c57bb190ad88f36e00e96de3eba7}\label{dtrace__buffer_8h_a6c76c57bb190ad88f36e00e96de3eba7}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_PEL\_BUF@{DTRACE\_PEL\_BUF}}
+\index{DTRACE\_PEL\_BUF@{DTRACE\_PEL\_BUF}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_PEL\_BUF}{DTRACE\_PEL\_BUF}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+P\+E\+L\+\_\+\+B\+UF(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a33bab5f349d181828966864b2dbd9477}\label{dtrace__buffer_8h_a33bab5f349d181828966864b2dbd9477}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_PEL\_BUF\_COND@{DTRACE\_PEL\_BUF\_COND}}
+\index{DTRACE\_PEL\_BUF\_COND@{DTRACE\_PEL\_BUF\_COND}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_PEL\_BUF\_COND}{DTRACE\_PEL\_BUF\_COND}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+P\+E\+L\+\_\+\+B\+U\+F\+\_\+\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file dtrace\+\_\+buffer.\+h.
+
+\mbox{\Hypertarget{dtrace__buffer_8h_a6b41fa5cca6c982448c8d9362f28a0a4}\label{dtrace__buffer_8h_a6b41fa5cca6c982448c8d9362f28a0a4}} 
+\index{dtrace\_buffer.h@{dtrace\_buffer.h}!DTRACE\_UNIT\_COMP@{DTRACE\_UNIT\_COMP}}
+\index{DTRACE\_UNIT\_COMP@{DTRACE\_UNIT\_COMP}!dtrace\_buffer.h@{dtrace\_buffer.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_UNIT\_COMP}{DTRACE\_UNIT\_COMP}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+U\+N\+I\+T\+\_\+\+C\+O\+MP(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 233 of file dtrace\+\_\+buffer.\+h.
+

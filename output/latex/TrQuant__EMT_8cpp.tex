@@ -1,0 +1,180 @@
+\hypertarget{TrQuant__EMT_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Tr\+Quant\+\_\+\+E\+MT.cpp File Reference}
+\label{TrQuant__EMT_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TrQuant\_EMT.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TrQuant\_EMT.cpp}}
+
+
+transform and quantization class  
+
+
+{\ttfamily \#include \char`\"{}Tr\+Quant\+\_\+\+E\+M\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Buffer.\+h\char`\"{}}\newline
+Include dependency graph for Tr\+Quant\+\_\+\+E\+M\+T.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TrQuant__EMT_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_a872885763ad0e468469d0d9ad222fb10}{C\+L\+I\+P\+\_\+\+I\+NC}}~dst      += stride
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_a20c0badfba045344708c9f94def5c96b}{C\+L\+I\+P\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = Clip3( output\+Min, output\+Max, ( dst\mbox{[}A\+D\+DR\mbox{]} + round ) $>$$>$ shift )
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_aeee47315bac578bb1e8dea8f249ee77a}{C\+P\+Y\+C\+O\+E\+F\+F\+\_\+\+I\+NC}}~src += stride; dst += width;
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_a49fc01f951db8922c6a6869873ff4f1c}{C\+P\+Y\+C\+O\+E\+F\+F\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = src\mbox{[}A\+D\+DR\mbox{]};
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_a6d031378daf0ddd5c048d72d297143f6}{C\+P\+Y\+R\+E\+S\+I\+\_\+\+I\+NC}}~dst += stride; src += width;
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_ac75154a3b0445785d450aadec13212e1}{C\+P\+Y\+R\+E\+S\+I\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = Pel( src\mbox{[}A\+D\+DR\mbox{]} );
+\item 
+\#define \mbox{\hyperlink{TrQuant__EMT_8cpp_abc51db95c593abdca1e6e0c450fdc307}{D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int ui\+Tr\+Size$>$ }\\void \mbox{\hyperlink{namespacevvenc_a286c1b406ece3a509ab4ee6ada79e5f2}{\+\_\+fast\+Forward\+MM}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Matrix\+Coeff $\ast$tc)
+\item 
+{\footnotesize template$<$int ui\+Tr\+Size$>$ }\\void \mbox{\hyperlink{namespacevvenc_ab212e905fcbd831addb9ef589df7a95c}{\+\_\+fast\+Inverse\+MM}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum, const T\+Matrix\+Coeff $\ast$iT)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespacevvenc_a91baec6e02f2fdfe3e4c52d4e1ffce43}{\+\_\+fast\+Inverse\+M\+M$<$ 2 $>$}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum, const T\+Matrix\+Coeff $\ast$iT)
+\item 
+template$<$$>$ void \mbox{\hyperlink{namespacevvenc_aa157798ce3594ea7c77bd8b3d021e55d}{\+\_\+fast\+Inverse\+M\+M$<$ 4 $>$}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum, const T\+Matrix\+Coeff $\ast$iT)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a4a7b4c5285a1f13e88d77ed691048bda}{clip\+Core}} (T\+Coeff $\ast$dst, unsigned width, unsigned height, unsigned stride, const T\+Coeff output\+Min, const T\+Coeff output\+Max, const T\+Coeff round, const T\+Coeff shift)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a1f51d7ced4bf360c8b7212b00965ae56}{cpy\+Coeff\+Core}} (const Pel $\ast$src, ptrdiff\+\_\+t stride, T\+Coeff $\ast$dst, unsigned width, unsigned height)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a2fcfc6e5c2a9e10563bd6dc354ee9794}{cpy\+Resi\+Core}} (const T\+Coeff $\ast$src, Pel $\ast$dst, ptrdiff\+\_\+t stride, unsigned width, unsigned height)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a80d2db7d20579b4574975084ba1bcb4c}{fast\+Forward\+D\+C\+T2\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a42aa42726e1d7097869b0c6f18fa33c3}{fast\+Forward\+D\+C\+T2\+\_\+\+B2}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a87b7d8645c5ab54c26149395e7e50c58}{fast\+Forward\+D\+C\+T2\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_aff81c3ec17cf4e0f68a123283aea614c}{fast\+Forward\+D\+C\+T2\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a927106966f68193daaeaf79d0bdfae8f}{fast\+Forward\+D\+C\+T2\+\_\+\+B64}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a69968b066a69c66d67cd53f958323bcb}{fast\+Forward\+D\+C\+T2\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7ed5f5730c749a2d87e3703cc223df8c}{fast\+Forward\+D\+C\+T8\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ad3d17464ea87576320fae4a0064d28fb}{fast\+Forward\+D\+C\+T8\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_acd3e193ae09315dbb7bad0469a893125}{fast\+Forward\+D\+C\+T8\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_aa23df5784132b6b136d9718d94fcc69c}{fast\+Forward\+D\+C\+T8\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_aeafe7db35fbf94c4a0e050b1094d6b2b}{fast\+Forward\+D\+S\+T7\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_af67d753d38b51b5c2fb45ee035e051ea}{fast\+Forward\+D\+S\+T7\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ad1b1e84f88948a6357b363de5b3d9cca}{fast\+Forward\+D\+S\+T7\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ac85853456a3b6c6b2e2e7669f216932c}{fast\+Forward\+D\+S\+T7\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a13e95cd1a0afa75b6afcde05145a2859}{fast\+Fwd\+Core}} (const T\+Matrix\+Coeff $\ast$tc, const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, unsigned tr\+Size, unsigned line, unsigned reduced\+Line, unsigned cutoff, int shift)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a245b3d01ad6c29edbbe6787664f59807}{fast\+Inv\+Core}} (const T\+Matrix\+Coeff $\ast$it, const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, unsigned tr\+Size, unsigned lines, unsigned reduced\+Lines, unsigned rows)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a1bec4837117a17435baeccc11738ac54}{fast\+Inverse\+D\+C\+T2\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ab2b342fac739bfb0e2b51b59dfe89147}{fast\+Inverse\+D\+C\+T2\+\_\+\+B2}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a16aca1a3b67ecb386a07fd8e29a239ca}{fast\+Inverse\+D\+C\+T2\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a260b2c56c2384b530e4897edc6ae652f}{fast\+Inverse\+D\+C\+T2\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a20272c44eeab634d2ff5a76cfa72846e}{fast\+Inverse\+D\+C\+T2\+\_\+\+B64}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_af1a82084b38c2ebf79c9750860b63628}{fast\+Inverse\+D\+C\+T2\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a0713369ba545aaa0ff07ec04a41ecf68}{fast\+Inverse\+D\+C\+T8\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a3a738ea66a14d2f1e1be2cd48c287a14}{fast\+Inverse\+D\+C\+T8\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_afb4d1622f4470c60bf511e45be5a8855}{fast\+Inverse\+D\+C\+T8\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ae095d1c2e65604c5ce47efec2f43d017}{fast\+Inverse\+D\+C\+T8\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a6ceb455f5d5a3d8e6bb5f15940e39a1b}{fast\+Inverse\+D\+S\+T7\+\_\+\+B16}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a9c51f8489199e06655a49bf00b3d5fdf}{fast\+Inverse\+D\+S\+T7\+\_\+\+B32}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ac50826bbb3ab37274bba26a075846983}{fast\+Inverse\+D\+S\+T7\+\_\+\+B4}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a2c3e0f9ac02d8243c8d3509fe564f356}{fast\+Inverse\+D\+S\+T7\+\_\+\+B8}} (const T\+Coeff $\ast$src, T\+Coeff $\ast$dst, int shift, int line, int i\+Skip\+Line, int i\+Skip\+Line2, const T\+Coeff output\+Minimum, const T\+Coeff output\+Maximum)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+T\+Coeff\+Ops \mbox{\hyperlink{namespacevvenc_a58edf48b3311ff6310e8bfbb43380359}{g\+\_\+t\+Coeff\+Ops}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+transform and quantization class 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_a872885763ad0e468469d0d9ad222fb10}\label{TrQuant__EMT_8cpp_a872885763ad0e468469d0d9ad222fb10}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CLIP\_INC@{CLIP\_INC}}
+\index{CLIP\_INC@{CLIP\_INC}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CLIP\_INC}{CLIP\_INC}}
+{\footnotesize\ttfamily \#define C\+L\+I\+P\+\_\+\+I\+NC~dst      += stride}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_a20c0badfba045344708c9f94def5c96b}\label{TrQuant__EMT_8cpp_a20c0badfba045344708c9f94def5c96b}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CLIP\_OP@{CLIP\_OP}}
+\index{CLIP\_OP@{CLIP\_OP}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CLIP\_OP}{CLIP\_OP}}
+{\footnotesize\ttfamily \#define C\+L\+I\+P\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = Clip3( output\+Min, output\+Max, ( dst\mbox{[}A\+D\+DR\mbox{]} + round ) $>$$>$ shift )}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_aeee47315bac578bb1e8dea8f249ee77a}\label{TrQuant__EMT_8cpp_aeee47315bac578bb1e8dea8f249ee77a}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CPYCOEFF\_INC@{CPYCOEFF\_INC}}
+\index{CPYCOEFF\_INC@{CPYCOEFF\_INC}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CPYCOEFF\_INC}{CPYCOEFF\_INC}}
+{\footnotesize\ttfamily \#define C\+P\+Y\+C\+O\+E\+F\+F\+\_\+\+I\+NC~src += stride; dst += width;}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_a49fc01f951db8922c6a6869873ff4f1c}\label{TrQuant__EMT_8cpp_a49fc01f951db8922c6a6869873ff4f1c}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CPYCOEFF\_OP@{CPYCOEFF\_OP}}
+\index{CPYCOEFF\_OP@{CPYCOEFF\_OP}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CPYCOEFF\_OP}{CPYCOEFF\_OP}}
+{\footnotesize\ttfamily \#define C\+P\+Y\+C\+O\+E\+F\+F\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = src\mbox{[}A\+D\+DR\mbox{]};}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_a6d031378daf0ddd5c048d72d297143f6}\label{TrQuant__EMT_8cpp_a6d031378daf0ddd5c048d72d297143f6}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CPYRESI\_INC@{CPYRESI\_INC}}
+\index{CPYRESI\_INC@{CPYRESI\_INC}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CPYRESI\_INC}{CPYRESI\_INC}}
+{\footnotesize\ttfamily \#define C\+P\+Y\+R\+E\+S\+I\+\_\+\+I\+NC~dst += stride; src += width;}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_ac75154a3b0445785d450aadec13212e1}\label{TrQuant__EMT_8cpp_ac75154a3b0445785d450aadec13212e1}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!CPYRESI\_OP@{CPYRESI\_OP}}
+\index{CPYRESI\_OP@{CPYRESI\_OP}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{CPYRESI\_OP}{CPYRESI\_OP}}
+{\footnotesize\ttfamily \#define C\+P\+Y\+R\+E\+S\+I\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = Pel( src\mbox{[}A\+D\+DR\mbox{]} );}
+
+\mbox{\Hypertarget{TrQuant__EMT_8cpp_abc51db95c593abdca1e6e0c450fdc307}\label{TrQuant__EMT_8cpp_abc51db95c593abdca1e6e0c450fdc307}} 
+\index{TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}!DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+\index{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}!TrQuant\_EMT.cpp@{TrQuant\_EMT.cpp}}
+\doxysubsubsection{\texorpdfstring{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+{\footnotesize\ttfamily \#define D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP~1}
+
+
+
+Definition at line 1919 of file Tr\+Quant\+\_\+\+E\+M\+T.\+cpp.
+

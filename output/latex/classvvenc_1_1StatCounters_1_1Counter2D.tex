@@ -1,0 +1,194 @@
+\hypertarget{classvvenc_1_1StatCounters_1_1Counter2D}{}\doxysection{Counter2D$<$ T $>$}
+\label{classvvenc_1_1StatCounters_1_1Counter2D}\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Stat\+Counter.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Counter2D$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classvvenc_1_1StatCounters_1_1Counter2D__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a18e30c0ad2a8e75b3699861b2b946a95}{Counter2D}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a757f107f690a5c8afdecb912b8fb6b82}{Counter2D}} (size\+\_\+t x\+Dim, size\+\_\+t y\+Dim)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a7280a44e445a7ab0580c67eeaaec0f4c}{$\sim$\+Counter2D}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a3fd8045acbde7163e025be3ea4de4f13}{init}} (size\+\_\+t x\+Dim, size\+\_\+t y\+Dim)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_af9d1b9670defd640f6d84744ed57ac25}{operator+=}} (const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a90cad80ffa40879c71af6c976140a588}{operator/=}} (const T \&val)
+\item 
+std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a03b15ae0cd8990e03949286802d2fb3f}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t y)
+\item 
+const std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_ab985784c6fb775dca6931a0b2c7963be}{operator\mbox{[}$\,$\mbox{]}}} (size\+\_\+t y) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a24ff41cacf2c4b9a20b38ab22408a227}{reset}} (const T val)
+\item 
+T \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a85fd610d1e8863cd34930a691dfa6bde}{total}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ T $>$ $>$ \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D_a0f2abb60ceb0756908374f096d0d30e6}{m\+\_\+counters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class vvenc\+::\+Stat\+Counters\+::\+Counter2\+D$<$ T $>$}
+
+
+
+Definition at line 477 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a18e30c0ad2a8e75b3699861b2b946a95}\label{classvvenc_1_1StatCounters_1_1Counter2D_a18e30c0ad2a8e75b3699861b2b946a95}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!Counter2D@{Counter2D}}
+\index{Counter2D@{Counter2D}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Counter2D()}{Counter2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 480 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a757f107f690a5c8afdecb912b8fb6b82}\label{classvvenc_1_1StatCounters_1_1Counter2D_a757f107f690a5c8afdecb912b8fb6b82}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!Counter2D@{Counter2D}}
+\index{Counter2D@{Counter2D}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Counter2D()}{Counter2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 481 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classvvenc_1_1StatCounters_1_1Counter2D_a757f107f690a5c8afdecb912b8fb6b82_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a7280a44e445a7ab0580c67eeaaec0f4c}\label{classvvenc_1_1StatCounters_1_1Counter2D_a7280a44e445a7ab0580c67eeaaec0f4c}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!````~Counter2D@{$\sim$Counter2D}}
+\index{````~Counter2D@{$\sim$Counter2D}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Counter2D()}{~Counter2D()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 485 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a3fd8045acbde7163e025be3ea4de4f13}\label{classvvenc_1_1StatCounters_1_1Counter2D_a3fd8045acbde7163e025be3ea4de4f13}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!init@{init}}
+\index{init@{init}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 487 of file Stat\+Counter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classvvenc_1_1StatCounters_1_1Counter2D_a3fd8045acbde7163e025be3ea4de4f13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_af9d1b9670defd640f6d84744ed57ac25}\label{classvvenc_1_1StatCounters_1_1Counter2D_af9d1b9670defd640f6d84744ed57ac25}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}}\& operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 523 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a90cad80ffa40879c71af6c976140a588}\label{classvvenc_1_1StatCounters_1_1Counter2D_a90cad80ffa40879c71af6c976140a588}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2D}}\& operator/= (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 534 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a03b15ae0cd8990e03949286802d2fb3f}\label{classvvenc_1_1StatCounters_1_1Counter2D_a03b15ae0cd8990e03949286802d2fb3f}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 520 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_ab985784c6fb775dca6931a0b2c7963be}\label{classvvenc_1_1StatCounters_1_1Counter2D_ab985784c6fb775dca6931a0b2c7963be}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 521 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a24ff41cacf2c4b9a20b38ab22408a227}\label{classvvenc_1_1StatCounters_1_1Counter2D_a24ff41cacf2c4b9a20b38ab22408a227}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{const T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 509 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a85fd610d1e8863cd34930a691dfa6bde}\label{classvvenc_1_1StatCounters_1_1Counter2D_a85fd610d1e8863cd34930a691dfa6bde}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!total@{total}}
+\index{total@{total}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily T total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 496 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1Counter2D_a0f2abb60ceb0756908374f096d0d30e6}\label{classvvenc_1_1StatCounters_1_1Counter2D_a0f2abb60ceb0756908374f096d0d30e6}} 
+\index{Counter2D$<$ T $>$@{Counter2D$<$ T $>$}!m\_counters@{m\_counters}}
+\index{m\_counters@{m\_counters}!Counter2D$<$ T $>$@{Counter2D$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_counters}{m\_counters}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$T$>$ $>$ m\+\_\+counters\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 547 of file Stat\+Counter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{StatCounter_8h}{Stat\+Counter.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<map id="last_sig_coeff" name="last_sig_coeff">
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,108,301"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1CoeffCodingContext.html#ab50eef7ddbf55461e47b82bc48eabb60" title=" " alt="" coords="156,5,340,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1BinDecoderBase.html#a5e061c18d443942cbb928e1f5416c3e6" title=" " alt="" coords="167,71,329,112"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1BinDecoderBase.html#a663c133ea93e68091465a9894a73ff2d" title=" " alt="" coords="167,136,329,177"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1CoeffCodingContext.html#a42a0ca669482784ac4c6992f4830c3b2" title=" " alt="" coords="156,201,340,243"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1CoeffCodingContext.html#a25862913bdd2ddff9e1745d9663d6ba1" title=" " alt="" coords="156,267,340,308"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1CoeffCodingContext.html#afec50e1512819a6f22eb0f04f59b0ced" title=" " alt="" coords="156,332,340,373"/>
+<area shape="rect" id="node9" href="$structvvenc_1_1CoeffCodingContext.html#a76ebf573ca7d5bd7d7e853bf820d1f43" title=" " alt="" coords="156,397,340,439"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1CoeffCodingContext.html#a89240da7f2385d1738f7e6d6be5ddbb5" title=" " alt="" coords="156,463,340,504"/>
+<area shape="rect" id="node11" href="$structvvenc_1_1CoeffCodingContext.html#ac07b7d89bde207a61e2eb3655102d572" title=" " alt="" coords="156,528,340,569"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1InputBitstream.html#a851f98b4b9141bd0910ce136b93b8b14" title=" " alt="" coords="388,136,539,177"/>
+</map>

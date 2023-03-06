@@ -1,0 +1,50 @@
+\hypertarget{BitAllocation_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Bit\+Allocation.h File Reference}
+\label{BitAllocation_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/BitAllocation.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/BitAllocation.h}}
+
+
+Bit allocation class for QP adaptation and, possibly, rate control (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Unit.\+h\char`\"{}}\newline
+Include dependency graph for Bit\+Allocation.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BitAllocation_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BitAllocation_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1BitAllocation}{vvenc\+::\+Bit\+Allocation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536}{apply\+Q\+P\+Adaptation\+Chroma}} (const Slice $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const int slice\+QP, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, int opt\+Chroma\+Q\+P\+Offset\mbox{[}2\mbox{]}, double $\ast$pic\+Vis\+ActY=nullptr)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42}{apply\+Q\+P\+Adaptation\+Luma}} (const Slice $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const int saved\+QP, const double lambda, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, std\+::vector$<$ uint8\+\_\+t $>$ $\ast$ctu\+R\+C\+Q\+P\+Memory, const uint32\+\_\+t ctu\+Start\+Addr, const uint32\+\_\+t ctu\+Bounding\+Addr)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad}{apply\+Q\+P\+Adaptation\+Sub\+Ctu}} (const Slice $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const Area \&luma\+Area)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60}{get\+Ctu\+Pumping\+Reducing\+QP}} (const Slice $\ast$slice, const C\+Pel\+Buf \&origY, const Distortion ui\+Sad\+Best\+For\+Q\+PA, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, const uint32\+\_\+t ctu\+Rs\+Addr, const int base\+QP)
+\item 
+double \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a}{get\+Pic\+Visual\+Activity}} (const Slice $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bit allocation class for QP adaptation and, possibly, rate control (header) 
+

@@ -1,0 +1,449 @@
+\hypertarget{classvvenc_1_1NoMallocThreadPool}{}\doxysection{No\+Malloc\+Thread\+Pool}
+\label{classvvenc_1_1NoMallocThreadPool}\index{NoMallocThreadPool@{NoMallocThreadPool}}
+
+
+{\ttfamily \#include \char`\"{}No\+Malloc\+Thread\+Pool.\+h\char`\"{}}
+
+
+
+Collaboration diagram for No\+Malloc\+Thread\+Pool\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot}{Slot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a0beb75423b160926d963e5e6b562e399}{No\+Malloc\+Thread\+Pool}} (int \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_ac2bb8b2cfd6528e169a94624b804596a}{num\+Threads}}=1, const char $\ast$thread\+Pool\+Name=nullptr)
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a43a97cb863a7e9ef5465062de8f3ccec}{$\sim$\+No\+Malloc\+Thread\+Pool}} ()
+\item 
+{\footnotesize template$<$class T\+Param $>$ }\\bool \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a757c7fcfe321128ef8e62281718cbec3}{add\+Barrier\+Task}} (bool($\ast$func)(int, T\+Param $\ast$), T\+Param $\ast$param, \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$counter=nullptr, \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} $\ast$done=nullptr, const \mbox{\hyperlink{namespacevvenc_aacb8778ea29851c5c3f3dd170c2a1f7c}{C\+Barrier\+Vec}} \&\&barriers=\{\}, bool($\ast$ready\+Check)(int, T\+Param $\ast$)=nullptr)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_ac2bb8b2cfd6528e169a94624b804596a}{num\+Threads}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a51c4cd59b43cd3eb81e47a8bdcc38d72}{process\+Tasks\+On\+Main\+Thread}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a66f10e447fba2ec82e45582ccb5d1c42}{shutdown}} (bool block)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a53706df9628725e5648ef2fe6228a368}{wait\+For\+Threads}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} = bool($\ast$)(int, void $\ast$)
+\item 
+using \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} = \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Chunked\+Task\+Queue\+::\+Iterator}}
+\item 
+enum \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}{Task\+State}} \{ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bceacc62d1576546f3245237e1b232d838b6}{F\+R\+EE}} = 0, 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea3520fae386a6c9845911a50caec1e626}{P\+R\+E\+P\+A\+R\+I\+NG}}, 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea757971c0bc5a1972d5f1b1be2c0e2087}{W\+A\+I\+T\+I\+NG}}, 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea1061be6c3fb88d32829cba6f6b2be304}{R\+U\+N\+N\+I\+NG}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_aecf2d4e2f16a0c26e4615d8c296cc720}{find\+Next\+Task}} (int thread\+Id, \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} start\+Search)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_acf159f98b945a3fe6f2ef9265a06a49a}{process\+Task}} (int thread\+Id, \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot}{Slot}} \&task)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a1da07c4517c888577bba5fd786a2393e}{thread\+Proc}} (int thread\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::atomic\+\_\+bool \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3834c23db652721299e9447205804c16}{m\+\_\+exit\+Threads}} \{ false \}
+\item 
+std\+::mutex \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a2ad65f54f91e90b2487b87292fb59f2f}{m\+\_\+idle\+Mutex}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a80602064e44c8cb335ac4c3891d7c5a4}{m\+\_\+next\+Fill\+Slot}} = m\+\_\+tasks.\+begin()
+\item 
+std\+::mutex \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_afb0d13c6085f3c2b9b5de8af7b1e42f5}{m\+\_\+next\+Fill\+Slot\+Mutex}}
+\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a98f1761a7b16e1e719b46a16c5403fb2}{m\+\_\+pool\+Name}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_aa8bb8eefb37f75eaeb5efb7c69b0f8d3}{m\+\_\+tasks}}
+\item 
+std\+::vector$<$ std\+::thread $>$ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a7446b3771fa37ebf640de95191ac7425}{m\+\_\+threads}}
+\item 
+std\+::atomic\+\_\+uint \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af40a7761d7b4478327b43096a2dda5a0}{m\+\_\+waiting\+Threads}} \{ 0 \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 239 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}\label{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!TaskFunc@{TaskFunc}}
+\index{TaskFunc@{TaskFunc}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{TaskFunc}{TaskFunc}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} =  bool ( $\ast$ )( int, void $\ast$ )\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 249 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}\label{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!TaskIterator@{TaskIterator}}
+\index{TaskIterator@{TaskIterator}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{TaskIterator}{TaskIterator}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} =  \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Chunked\+Task\+Queue\+::\+Iterator}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 481 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}\label{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!TaskState@{TaskState}}
+\index{TaskState@{TaskState}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{TaskState}{TaskState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}{Task\+State}}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FREE@{FREE}!NoMallocThreadPool@{NoMallocThreadPool}}\index{NoMallocThreadPool@{NoMallocThreadPool}!FREE@{FREE}}}\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bceacc62d1576546f3245237e1b232d838b6}\label{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bceacc62d1576546f3245237e1b232d838b6}} 
+F\+R\+EE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PREPARING@{PREPARING}!NoMallocThreadPool@{NoMallocThreadPool}}\index{NoMallocThreadPool@{NoMallocThreadPool}!PREPARING@{PREPARING}}}\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea3520fae386a6c9845911a50caec1e626}\label{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea3520fae386a6c9845911a50caec1e626}} 
+P\+R\+E\+P\+A\+R\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WAITING@{WAITING}!NoMallocThreadPool@{NoMallocThreadPool}}\index{NoMallocThreadPool@{NoMallocThreadPool}!WAITING@{WAITING}}}\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea757971c0bc5a1972d5f1b1be2c0e2087}\label{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea757971c0bc5a1972d5f1b1be2c0e2087}} 
+W\+A\+I\+T\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUNNING@{RUNNING}!NoMallocThreadPool@{NoMallocThreadPool}}\index{NoMallocThreadPool@{NoMallocThreadPool}!RUNNING@{RUNNING}}}\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea1061be6c3fb88d32829cba6f6b2be304}\label{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bcea1061be6c3fb88d32829cba6f6b2be304}} 
+R\+U\+N\+N\+I\+NG&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 241 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a0beb75423b160926d963e5e6b562e399}\label{classvvenc_1_1NoMallocThreadPool_a0beb75423b160926d963e5e6b562e399}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!NoMallocThreadPool@{NoMallocThreadPool}}
+\index{NoMallocThreadPool@{NoMallocThreadPool}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{NoMallocThreadPool()}{NoMallocThreadPool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} (\begin{DoxyParamCaption}\item[{int}]{num\+Threads = {\ttfamily 1},  }\item[{const char $\ast$}]{thread\+Pool\+Name = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a0beb75423b160926d963e5e6b562e399_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a43a97cb863a7e9ef5465062de8f3ccec}\label{classvvenc_1_1NoMallocThreadPool_a43a97cb863a7e9ef5465062de8f3ccec}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!````~NoMallocThreadPool@{$\sim$NoMallocThreadPool}}
+\index{````~NoMallocThreadPool@{$\sim$NoMallocThreadPool}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{$\sim$NoMallocThreadPool()}{~NoMallocThreadPool()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classvvenc_1_1NoMallocThreadPool_a43a97cb863a7e9ef5465062de8f3ccec_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a757c7fcfe321128ef8e62281718cbec3}\label{classvvenc_1_1NoMallocThreadPool_a757c7fcfe321128ef8e62281718cbec3}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!addBarrierTask@{addBarrierTask}}
+\index{addBarrierTask@{addBarrierTask}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{addBarrierTask()}{addBarrierTask()}}
+{\footnotesize\ttfamily bool add\+Barrier\+Task (\begin{DoxyParamCaption}\item[{bool($\ast$)(int, T\+Param $\ast$)}]{func,  }\item[{T\+Param $\ast$}]{param,  }\item[{\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$}]{counter = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} $\ast$}]{done = {\ttfamily nullptr},  }\item[{const \mbox{\hyperlink{namespacevvenc_aacb8778ea29851c5c3f3dd170c2a1f7c}{C\+Barrier\+Vec}} \&\&}]{barriers = {\ttfamily \{\}},  }\item[{bool($\ast$)(int, T\+Param $\ast$)}]{ready\+Check = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 388 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a757c7fcfe321128ef8e62281718cbec3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_aecf2d4e2f16a0c26e4615d8c296cc720}\label{classvvenc_1_1NoMallocThreadPool_aecf2d4e2f16a0c26e4615d8c296cc720}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!findNextTask@{findNextTask}}
+\index{findNextTask@{findNextTask}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{findNextTask()}{findNextTask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{No\+Malloc\+Thread\+Pool\+::\+Task\+Iterator}} find\+Next\+Task (\begin{DoxyParamCaption}\item[{int}]{thread\+Id,  }\item[{\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}}}]{start\+Search }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 198 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classvvenc_1_1NoMallocThreadPool_aecf2d4e2f16a0c26e4615d8c296cc720_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_aecf2d4e2f16a0c26e4615d8c296cc720_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_ac2bb8b2cfd6528e169a94624b804596a}\label{classvvenc_1_1NoMallocThreadPool_ac2bb8b2cfd6528e169a94624b804596a}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!numThreads@{numThreads}}
+\index{numThreads@{numThreads}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{numThreads()}{numThreads()}}
+{\footnotesize\ttfamily int num\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 477 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_ac2bb8b2cfd6528e169a94624b804596a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_acf159f98b945a3fe6f2ef9265a06a49a}\label{classvvenc_1_1NoMallocThreadPool_acf159f98b945a3fe6f2ef9265a06a49a}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!processTask@{processTask}}
+\index{processTask@{processTask}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{processTask()}{processTask()}}
+{\footnotesize\ttfamily bool process\+Task (\begin{DoxyParamCaption}\item[{int}]{thread\+Id,  }\item[{\mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot}{No\+Malloc\+Thread\+Pool\+::\+Slot}} \&}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 240 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1NoMallocThreadPool_acf159f98b945a3fe6f2ef9265a06a49a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_acf159f98b945a3fe6f2ef9265a06a49a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a51c4cd59b43cd3eb81e47a8bdcc38d72}\label{classvvenc_1_1NoMallocThreadPool_a51c4cd59b43cd3eb81e47a8bdcc38d72}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!processTasksOnMainThread@{processTasksOnMainThread}}
+\index{processTasksOnMainThread@{processTasksOnMainThread}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{processTasksOnMainThread()}{processTasksOnMainThread()}}
+{\footnotesize\ttfamily bool process\+Tasks\+On\+Main\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a51c4cd59b43cd3eb81e47a8bdcc38d72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a66f10e447fba2ec82e45582ccb5d1c42}\label{classvvenc_1_1NoMallocThreadPool_a66f10e447fba2ec82e45582ccb5d1c42}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily void shutdown (\begin{DoxyParamCaption}\item[{bool}]{block }\end{DoxyParamCaption})}
+
+
+
+Definition at line 122 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classvvenc_1_1NoMallocThreadPool_a66f10e447fba2ec82e45582ccb5d1c42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a66f10e447fba2ec82e45582ccb5d1c42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a1da07c4517c888577bba5fd786a2393e}\label{classvvenc_1_1NoMallocThreadPool_a1da07c4517c888577bba5fd786a2393e}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!threadProc@{threadProc}}
+\index{threadProc@{threadProc}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{threadProc()}{threadProc()}}
+{\footnotesize\ttfamily void thread\+Proc (\begin{DoxyParamCaption}\item[{int}]{thread\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 140 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a1da07c4517c888577bba5fd786a2393e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classvvenc_1_1NoMallocThreadPool_a1da07c4517c888577bba5fd786a2393e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a53706df9628725e5648ef2fe6228a368}\label{classvvenc_1_1NoMallocThreadPool_a53706df9628725e5648ef2fe6228a368}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!waitForThreads@{waitForThreads}}
+\index{waitForThreads@{waitForThreads}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{waitForThreads()}{waitForThreads()}}
+{\footnotesize\ttfamily void wait\+For\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 131 of file No\+Malloc\+Thread\+Pool.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_a53706df9628725e5648ef2fe6228a368_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a3834c23db652721299e9447205804c16}\label{classvvenc_1_1NoMallocThreadPool_a3834c23db652721299e9447205804c16}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_exitThreads@{m\_exitThreads}}
+\index{m\_exitThreads@{m\_exitThreads}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_exitThreads}{m\_exitThreads}}
+{\footnotesize\ttfamily std\+::atomic\+\_\+bool m\+\_\+exit\+Threads \{ false \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 485 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a2ad65f54f91e90b2487b87292fb59f2f}\label{classvvenc_1_1NoMallocThreadPool_a2ad65f54f91e90b2487b87292fb59f2f}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_idleMutex@{m\_idleMutex}}
+\index{m\_idleMutex@{m\_idleMutex}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_idleMutex}{m\_idleMutex}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+idle\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 492 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a80602064e44c8cb335ac4c3891d7c5a4}\label{classvvenc_1_1NoMallocThreadPool_a80602064e44c8cb335ac4c3891d7c5a4}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_nextFillSlot@{m\_nextFillSlot}}
+\index{m\_nextFillSlot@{m\_nextFillSlot}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_nextFillSlot}{m\_nextFillSlot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a3f382069122201beb05ca8a362eba088}{Task\+Iterator}} m\+\_\+next\+Fill\+Slot = m\+\_\+tasks.\+begin()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 488 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_afb0d13c6085f3c2b9b5de8af7b1e42f5}\label{classvvenc_1_1NoMallocThreadPool_afb0d13c6085f3c2b9b5de8af7b1e42f5}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_nextFillSlotMutex@{m\_nextFillSlotMutex}}
+\index{m\_nextFillSlotMutex@{m\_nextFillSlotMutex}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_nextFillSlotMutex}{m\_nextFillSlotMutex}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+next\+Fill\+Slot\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 490 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a98f1761a7b16e1e719b46a16c5403fb2}\label{classvvenc_1_1NoMallocThreadPool_a98f1761a7b16e1e719b46a16c5403fb2}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_poolName@{m\_poolName}}
+\index{m\_poolName@{m\_poolName}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_poolName}{m\_poolName}}
+{\footnotesize\ttfamily std\+::string m\+\_\+pool\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 484 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_aa8bb8eefb37f75eaeb5efb7c69b0f8d3}\label{classvvenc_1_1NoMallocThreadPool_aa8bb8eefb37f75eaeb5efb7c69b0f8d3}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_tasks@{m\_tasks}}
+\index{m\_tasks@{m\_tasks}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_tasks}{m\_tasks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} m\+\_\+tasks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 487 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_a7446b3771fa37ebf640de95191ac7425}\label{classvvenc_1_1NoMallocThreadPool_a7446b3771fa37ebf640de95191ac7425}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_threads@{m\_threads}}
+\index{m\_threads@{m\_threads}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_threads}{m\_threads}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::thread$>$ m\+\_\+threads\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 486 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_af40a7761d7b4478327b43096a2dda5a0}\label{classvvenc_1_1NoMallocThreadPool_af40a7761d7b4478327b43096a2dda5a0}} 
+\index{NoMallocThreadPool@{NoMallocThreadPool}!m\_waitingThreads@{m\_waitingThreads}}
+\index{m\_waitingThreads@{m\_waitingThreads}!NoMallocThreadPool@{NoMallocThreadPool}}
+\doxysubsubsection{\texorpdfstring{m\_waitingThreads}{m\_waitingThreads}}
+{\footnotesize\ttfamily std\+::atomic\+\_\+uint m\+\_\+waiting\+Threads \{ 0 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 493 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8h}{No\+Malloc\+Thread\+Pool.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8cpp}{No\+Malloc\+Thread\+Pool.\+cpp}}\end{DoxyCompactItemize}

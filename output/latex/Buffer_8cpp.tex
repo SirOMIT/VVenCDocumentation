@@ -1,0 +1,343 @@
+\hypertarget{Buffer_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Buffer.cpp File Reference}
+\label{Buffer_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Buffer.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Buffer.cpp}}
+
+
+Low-\/overhead class describing 2D memory layout.  
+
+
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interpolation\+Filter.\+h\char`\"{}}\newline
+Include dependency graph for Buffer.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buffer_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_ab28daf3b8d1a63e20b5b16c9863c0794}{A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a8ae949649cc50b25259bbbb42c4fc2bf}{A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+C\+O\+R\+E\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src1\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]} + offset ), rshift ), clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_ace1f830b58fe125872ee70d2a9dd74d0}{A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a54abb88c0f5c48d0ac6b3024d8545f1f}{A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src0\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]} + offset ), shift\+Num ), clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a798234627b69fa754e1decc639a2294e}{A\+D\+D\+\_\+\+W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a507fa6e36c29cc95376075702cc30801}{A\+D\+D\+\_\+\+W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src1\mbox{[}A\+D\+DR\mbox{]}$\ast$w0 + src2\mbox{[}A\+D\+DR\mbox{]}$\ast$w1 + offset ), rshift ), clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_abc51db95c593abdca1e6e0c450fdc307}{D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_aa2b6f5fe0a31b7cc9d0e1723ebdcdb55}{L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}{L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = ( Pel ) Clip\+Pel( right\+ShiftU( scale $\ast$ src\mbox{[}A\+D\+DR\mbox{]}, shift ) + offset, clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}{L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = ( Pel ) ( right\+ShiftU( scale $\ast$ src\mbox{[}A\+D\+DR\mbox{]}, shift ) + offset )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_af669f51b63e85a21eacd50e5cbcc370e}{R\+E\+C\+O\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a2c6a10e76e072d016021a2a20a757ca5}{R\+E\+C\+O\+\_\+\+C\+O\+R\+E\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( src1\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a4b89e8a70705edf62dddf4b47120971b}{R\+E\+C\+O\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a684b9f777ae0e7531f7acebbdfa6299d}{R\+E\+C\+O\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( src\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a05d6e8e9d1daccac253e920d8a34dcc9}{R\+E\+M\+\_\+\+H\+F\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a703695e66c3f3f3493151ce1d4c88060}{R\+E\+M\+\_\+\+H\+F\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} =             2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a96e58603721b9972d199f76650575cdb}{R\+S\+P\+\_\+\+S\+G\+N\+L\+\_\+\+I\+NC}}~src      += src\+Stride; dst += dst\+Stride;
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a79fcd960bac223ac6af1908fb9ddabb8}{R\+S\+P\+\_\+\+S\+G\+N\+L\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = lut\mbox{[}src\mbox{[}A\+D\+DR\mbox{]}\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}{S\+U\+B\+S\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}{S\+U\+B\+S\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}{S\+U\+B\+S\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = src0\mbox{[}A\+D\+DR\mbox{]} -\/ src1\mbox{[}A\+D\+DR\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}{S\+U\+B\+S\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = mins\mbox{[}A\+D\+DR\mbox{]} -\/ subs\mbox{[}A\+D\+DR\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a4b5b086cc0b67a5a1182ce6ce8ca9c3e}{W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8cpp_a3b59aa025f30db1bb48da9dd07f03068}{W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+OP}}(A\+D\+DR)~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src0\mbox{[}A\+D\+DR\mbox{]}$\ast$w0 + src2\mbox{[}A\+D\+DR\mbox{]}$\ast$w1 + offset ), shift\+Num ), clp\+Rng )
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a587345e8f535fe78c8733ab64c84738a}{add\+Avg\+Core}} (const T $\ast$src1, const T $\ast$src2, T $\ast$dest, int num\+Samples, unsigned rshift, int offset, const Clp\+Rng \&clp\+Rng)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a9ae944e8caf1002cff18c91a4fe9cb80}{add\+Avg\+Core}} (const T $\ast$src1, int src1\+Stride, const T $\ast$src2, int src2\+Stride, T $\ast$dest, int dst\+Stride, int width, int height, unsigned rshift, int offset, const Clp\+Rng \&clp\+Rng)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a448f0a31f38b00230ca3bb331be5625f}{add\+Weighted\+Avg\+Core}} (const T $\ast$src1, int src1\+Stride, const T $\ast$src2, int src2\+Stride, T $\ast$dest, int dest\+Stride, int width, int height, unsigned rshift, int offset, int w0, int w1, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7d98968d22b09c902abcbca27af53f38}{apply\+Lut\+Core}} (const Pel $\ast$src, const ptrdiff\+\_\+t src\+Stride, Pel $\ast$dst, const ptrdiff\+\_\+t dst\+Stride, int width, int height, const Pel $\ast$lut)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a64ad3040a70740611bed0eb007c8b60f}{copy\+Buffer\+Core}} (const char $\ast$src, int src\+Stride, char $\ast$dst, int dst\+Stride, int num\+Bytes, int height)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_adf2d391230ff3614d3bde02932eb754c}{copy\+Clip\+Core}} (const T $\ast$src, int src\+Stride, Pel $\ast$dst, int dst\+Stride, int width, int height, const Clp\+Rng \&clp\+Rng)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_adb03a4629e4352f350d7a7ea767e8292}{copy\+Clip\+Core}} (const T $\ast$src, Pel $\ast$dst, int num\+Samples, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a22736d5c0c6b5c7d0d20541dcaa07115}{copy\+Pad\+To\+Pel\+Unit\+Buf}} (Pel\+Unit\+Buf pel\+Unit\+Buf, const vvenc\+Y\+U\+V\+Buffer \&yuv\+Buffer, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&ch\+Fmt)
+\item 
+void \mbox{\hyperlink{namespacevvenc_adefc1ab42382555c2d7f7de7f887551d}{fill\+Map\+Ptr\+\_\+\+Core}} (void $\ast$$\ast$ptr\+Map, const ptrdiff\+\_\+t map\+Stride, int width, int height, void $\ast$val)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_aece099ac8ee2376a977bcd2c00f7f44c}{lin\+Tf\+Core}} (const T $\ast$src, int src\+Stride, Pel $\ast$dst, int dst\+Stride, int width, int height, int scale, unsigned shift, int offset, const Clp\+Rng \&clp\+Rng, bool b\+Clip)
+\item 
+{\footnotesize template$<$unsigned input\+Size, unsigned output\+Size$>$ }\\void \mbox{\hyperlink{namespacevvenc_a099d9664701bf7fb53f1616a676454a9}{mip\+Matrix\+Mul\+Core}} (Pel $\ast$res, const Pel $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int input\+Offset, bool transpose)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a3c6b213ff59ed633915fb9f1f37eed7e}{reco\+Core}} (const T $\ast$src1, const T $\ast$src2, T $\ast$dest, int num\+Samples, const Clp\+Rng \&clp\+Rng)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a4710667de411ed09121c28da49d3d2f4}{reconstruct\+Core}} (const T $\ast$src1, int src1\+Stride, const T $\ast$src2, int src2\+Stride, T $\ast$dest, int dst\+Stride, int width, int height, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a197317a050ae70bc2175c881af7656f0}{remove\+High\+Freq}} (int16\+\_\+t $\ast$dst, int dst\+Stride, const int16\+\_\+t $\ast$src, int src\+Stride, int width, int height)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_ab0fbca3f24149ce56d2e2daad6d1c8c2}{round\+Geo\+Core}} (const T $\ast$src, T $\ast$dest, const int num\+Samples, unsigned rshift, int offset, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a269d3395a2ab5600e9e636d2127e61dc}{setup\+Yuv\+Buffer}} (const Pel\+Unit\+Buf \&pel\+Unit\+Buf, vvenc\+Y\+U\+V\+Buffer \&yuv\+Buffer, const Window $\ast$conf\+Window)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{namespacevvenc_a7432a36a62993dab027776f403f8c9ac}{subs\+Core}} (const T $\ast$src0, int src0\+Stride, const T $\ast$src1, int src1\+Stride, T $\ast$dest, int dest\+Stride, int width, int height)
+\item 
+{\footnotesize template$<$typename T , int N$>$ }\\void \mbox{\hyperlink{namespacevvenc_a4b96954be97852b154d31311f3712b2c}{transpose\+Nx\+N\+Core}} (const Pel $\ast$src, int src\+Stride, Pel $\ast$dst, int dst\+Stride)
+\item 
+void \mbox{\hyperlink{namespacevvenc_aed15a93828cac59adfb62bedb2e78268}{weight\+Ciip\+Core}} (Pel $\ast$res, const Pel $\ast$src, const int num\+Samples, int num\+Intra)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Pel\+Buffer\+Ops \mbox{\hyperlink{namespacevvenc_a22d6b3f877d23e23a34548d6f21f36c4}{g\+\_\+pel\+Buf\+OP}} = Pel\+Buffer\+Ops()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Low-\/overhead class describing 2D memory layout. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Buffer_8cpp_ab28daf3b8d1a63e20b5b16c9863c0794}\label{Buffer_8cpp_ab28daf3b8d1a63e20b5b16c9863c0794}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_AVG\_CORE\_INC@{ADD\_AVG\_CORE\_INC}}
+\index{ADD\_AVG\_CORE\_INC@{ADD\_AVG\_CORE\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_AVG\_CORE\_INC}{ADD\_AVG\_CORE\_INC}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  src1 += src1Stride;       \(\backslash\)}
+\DoxyCodeLine{  src2 += src2Stride;       \(\backslash\)}
+\DoxyCodeLine{  dest +=  dstStride;       \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a8ae949649cc50b25259bbbb42c4fc2bf}\label{Buffer_8cpp_a8ae949649cc50b25259bbbb42c4fc2bf}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_AVG\_CORE\_OP@{ADD\_AVG\_CORE\_OP}}
+\index{ADD\_AVG\_CORE\_OP@{ADD\_AVG\_CORE\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_AVG\_CORE\_OP}{ADD\_AVG\_CORE\_OP}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+C\+O\+R\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src1\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]} + offset ), rshift ), clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_ace1f830b58fe125872ee70d2a9dd74d0}\label{Buffer_8cpp_ace1f830b58fe125872ee70d2a9dd74d0}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_AVG\_INC@{ADD\_AVG\_INC}}
+\index{ADD\_AVG\_INC@{ADD\_AVG\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_AVG\_INC}{ADD\_AVG\_INC}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    src0 += src1Stride; \(\backslash\)}
+\DoxyCodeLine{    src2 += src2Stride; \(\backslash\)}
+\DoxyCodeLine{    dest += destStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a54abb88c0f5c48d0ac6b3024d8545f1f}\label{Buffer_8cpp_a54abb88c0f5c48d0ac6b3024d8545f1f}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_AVG\_OP@{ADD\_AVG\_OP}}
+\index{ADD\_AVG\_OP@{ADD\_AVG\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_AVG\_OP}{ADD\_AVG\_OP}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+A\+V\+G\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src0\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]} + offset ), shift\+Num ), clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_a798234627b69fa754e1decc639a2294e}\label{Buffer_8cpp_a798234627b69fa754e1decc639a2294e}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_WGHT\_AVG\_INC@{ADD\_WGHT\_AVG\_INC}}
+\index{ADD\_WGHT\_AVG\_INC@{ADD\_WGHT\_AVG\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_WGHT\_AVG\_INC}{ADD\_WGHT\_AVG\_INC}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    src1 += src1Stride; \(\backslash\)}
+\DoxyCodeLine{    src2 += src2Stride; \(\backslash\)}
+\DoxyCodeLine{    dest += destStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a507fa6e36c29cc95376075702cc30801}\label{Buffer_8cpp_a507fa6e36c29cc95376075702cc30801}} 
+\index{Buffer.cpp@{Buffer.cpp}!ADD\_WGHT\_AVG\_OP@{ADD\_WGHT\_AVG\_OP}}
+\index{ADD\_WGHT\_AVG\_OP@{ADD\_WGHT\_AVG\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{ADD\_WGHT\_AVG\_OP}{ADD\_WGHT\_AVG\_OP}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src1\mbox{[}A\+D\+DR\mbox{]}$\ast$w0 + src2\mbox{[}A\+D\+DR\mbox{]}$\ast$w1 + offset ), rshift ), clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_abc51db95c593abdca1e6e0c450fdc307}\label{Buffer_8cpp_abc51db95c593abdca1e6e0c450fdc307}} 
+\index{Buffer.cpp@{Buffer.cpp}!DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+\index{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+{\footnotesize\ttfamily \#define D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}
+
+
+
+Definition at line 52 of file Buffer.\+cpp.
+
+\mbox{\Hypertarget{Buffer_8cpp_aa2b6f5fe0a31b7cc9d0e1723ebdcdb55}\label{Buffer_8cpp_aa2b6f5fe0a31b7cc9d0e1723ebdcdb55}} 
+\index{Buffer.cpp@{Buffer.cpp}!LINTF\_CORE\_INC@{LINTF\_CORE\_INC}}
+\index{LINTF\_CORE\_INC@{LINTF\_CORE\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{LINTF\_CORE\_INC}{LINTF\_CORE\_INC}}
+{\footnotesize\ttfamily \#define L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  src += srcStride;     \(\backslash\)}
+\DoxyCodeLine{  dst += dstStride;     \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}\label{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}} 
+\index{Buffer.cpp@{Buffer.cpp}!LINTF\_CORE\_OP@{LINTF\_CORE\_OP}}
+\index{LINTF\_CORE\_OP@{LINTF\_CORE\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{LINTF\_CORE\_OP}{LINTF\_CORE\_OP}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = ( Pel ) Clip\+Pel( right\+ShiftU( scale $\ast$ src\mbox{[}A\+D\+DR\mbox{]}, shift ) + offset, clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}\label{Buffer_8cpp_a24c61038aab525273dac52628f1b1845}} 
+\index{Buffer.cpp@{Buffer.cpp}!LINTF\_CORE\_OP@{LINTF\_CORE\_OP}}
+\index{LINTF\_CORE\_OP@{LINTF\_CORE\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{LINTF\_CORE\_OP}{LINTF\_CORE\_OP}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define L\+I\+N\+T\+F\+\_\+\+C\+O\+R\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = ( Pel ) ( right\+ShiftU( scale $\ast$ src\mbox{[}A\+D\+DR\mbox{]}, shift ) + offset )}
+
+\mbox{\Hypertarget{Buffer_8cpp_af669f51b63e85a21eacd50e5cbcc370e}\label{Buffer_8cpp_af669f51b63e85a21eacd50e5cbcc370e}} 
+\index{Buffer.cpp@{Buffer.cpp}!RECO\_CORE\_INC@{RECO\_CORE\_INC}}
+\index{RECO\_CORE\_INC@{RECO\_CORE\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RECO\_CORE\_INC}{RECO\_CORE\_INC}}
+{\footnotesize\ttfamily \#define R\+E\+C\+O\+\_\+\+C\+O\+R\+E\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  src1 += src1Stride;     \(\backslash\)}
+\DoxyCodeLine{  src2 += src2Stride;     \(\backslash\)}
+\DoxyCodeLine{  dest +=  dstStride;     \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a2c6a10e76e072d016021a2a20a757ca5}\label{Buffer_8cpp_a2c6a10e76e072d016021a2a20a757ca5}} 
+\index{Buffer.cpp@{Buffer.cpp}!RECO\_CORE\_OP@{RECO\_CORE\_OP}}
+\index{RECO\_CORE\_OP@{RECO\_CORE\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RECO\_CORE\_OP}{RECO\_CORE\_OP}}
+{\footnotesize\ttfamily \#define R\+E\+C\+O\+\_\+\+C\+O\+R\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( src1\mbox{[}A\+D\+DR\mbox{]} + src2\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_a4b89e8a70705edf62dddf4b47120971b}\label{Buffer_8cpp_a4b89e8a70705edf62dddf4b47120971b}} 
+\index{Buffer.cpp@{Buffer.cpp}!RECO\_INC@{RECO\_INC}}
+\index{RECO\_INC@{RECO\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RECO\_INC}{RECO\_INC}}
+{\footnotesize\ttfamily \#define R\+E\+C\+O\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    src += srcStride; \(\backslash\)}
+\DoxyCodeLine{    dst += dstStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a684b9f777ae0e7531f7acebbdfa6299d}\label{Buffer_8cpp_a684b9f777ae0e7531f7acebbdfa6299d}} 
+\index{Buffer.cpp@{Buffer.cpp}!RECO\_OP@{RECO\_OP}}
+\index{RECO\_OP@{RECO\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RECO\_OP}{RECO\_OP}}
+{\footnotesize\ttfamily \#define R\+E\+C\+O\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( src\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8cpp_a05d6e8e9d1daccac253e920d8a34dcc9}\label{Buffer_8cpp_a05d6e8e9d1daccac253e920d8a34dcc9}} 
+\index{Buffer.cpp@{Buffer.cpp}!REM\_HF\_INC@{REM\_HF\_INC}}
+\index{REM\_HF\_INC@{REM\_HF\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{REM\_HF\_INC}{REM\_HF\_INC}}
+{\footnotesize\ttfamily \#define R\+E\+M\+\_\+\+H\+F\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ src += srcStride; \(\backslash\)}
+\DoxyCodeLine{ dst += dstStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a703695e66c3f3f3493151ce1d4c88060}\label{Buffer_8cpp_a703695e66c3f3f3493151ce1d4c88060}} 
+\index{Buffer.cpp@{Buffer.cpp}!REM\_HF\_OP@{REM\_HF\_OP}}
+\index{REM\_HF\_OP@{REM\_HF\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{REM\_HF\_OP}{REM\_HF\_OP}}
+{\footnotesize\ttfamily \#define R\+E\+M\+\_\+\+H\+F\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} =             2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8cpp_a96e58603721b9972d199f76650575cdb}\label{Buffer_8cpp_a96e58603721b9972d199f76650575cdb}} 
+\index{Buffer.cpp@{Buffer.cpp}!RSP\_SGNL\_INC@{RSP\_SGNL\_INC}}
+\index{RSP\_SGNL\_INC@{RSP\_SGNL\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RSP\_SGNL\_INC}{RSP\_SGNL\_INC}}
+{\footnotesize\ttfamily \#define R\+S\+P\+\_\+\+S\+G\+N\+L\+\_\+\+I\+NC~src      += src\+Stride; dst += dst\+Stride;}
+
+\mbox{\Hypertarget{Buffer_8cpp_a79fcd960bac223ac6af1908fb9ddabb8}\label{Buffer_8cpp_a79fcd960bac223ac6af1908fb9ddabb8}} 
+\index{Buffer.cpp@{Buffer.cpp}!RSP\_SGNL\_OP@{RSP\_SGNL\_OP}}
+\index{RSP\_SGNL\_OP@{RSP\_SGNL\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{RSP\_SGNL\_OP}{RSP\_SGNL\_OP}}
+{\footnotesize\ttfamily \#define R\+S\+P\+\_\+\+S\+G\+N\+L\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = lut\mbox{[}src\mbox{[}A\+D\+DR\mbox{]}\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}\label{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}} 
+\index{Buffer.cpp@{Buffer.cpp}!SUBS\_INC@{SUBS\_INC}}
+\index{SUBS\_INC@{SUBS\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{SUBS\_INC}{SUBS\_INC}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define S\+U\+B\+S\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  dest += destStride;  \(\backslash\)}
+\DoxyCodeLine{  src0 += src0Stride;  \(\backslash\)}
+\DoxyCodeLine{  src1 += src1Stride;  \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}\label{Buffer_8cpp_adcf2c983f9356659baf0140bbfe3087f}} 
+\index{Buffer.cpp@{Buffer.cpp}!SUBS\_INC@{SUBS\_INC}}
+\index{SUBS\_INC@{SUBS\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{SUBS\_INC}{SUBS\_INC}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define S\+U\+B\+S\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    dest +=            stride;  \(\backslash\)}
+\DoxyCodeLine{    mins += minuend   .stride;  \(\backslash\)}
+\DoxyCodeLine{    subs += subtrahend.stride;  \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}\label{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}} 
+\index{Buffer.cpp@{Buffer.cpp}!SUBS\_OP@{SUBS\_OP}}
+\index{SUBS\_OP@{SUBS\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{SUBS\_OP}{SUBS\_OP}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define S\+U\+B\+S\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = src0\mbox{[}A\+D\+DR\mbox{]} -\/ src1\mbox{[}A\+D\+DR\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}\label{Buffer_8cpp_acfc8b8ea5d5ad1c0875484867cb33479}} 
+\index{Buffer.cpp@{Buffer.cpp}!SUBS\_OP@{SUBS\_OP}}
+\index{SUBS\_OP@{SUBS\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{SUBS\_OP}{SUBS\_OP}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define S\+U\+B\+S\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = mins\mbox{[}A\+D\+DR\mbox{]} -\/ subs\mbox{[}A\+D\+DR\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8cpp_a4b5b086cc0b67a5a1182ce6ce8ca9c3e}\label{Buffer_8cpp_a4b5b086cc0b67a5a1182ce6ce8ca9c3e}} 
+\index{Buffer.cpp@{Buffer.cpp}!WGHT\_AVG\_INC@{WGHT\_AVG\_INC}}
+\index{WGHT\_AVG\_INC@{WGHT\_AVG\_INC}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{WGHT\_AVG\_INC}{WGHT\_AVG\_INC}}
+{\footnotesize\ttfamily \#define W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    src0 += src1Stride; \(\backslash\)}
+\DoxyCodeLine{    src2 += src2Stride; \(\backslash\)}
+\DoxyCodeLine{    dest += destStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8cpp_a3b59aa025f30db1bb48da9dd07f03068}\label{Buffer_8cpp_a3b59aa025f30db1bb48da9dd07f03068}} 
+\index{Buffer.cpp@{Buffer.cpp}!WGHT\_AVG\_OP@{WGHT\_AVG\_OP}}
+\index{WGHT\_AVG\_OP@{WGHT\_AVG\_OP}!Buffer.cpp@{Buffer.cpp}}
+\doxysubsubsection{\texorpdfstring{WGHT\_AVG\_OP}{WGHT\_AVG\_OP}}
+{\footnotesize\ttfamily \#define W\+G\+H\+T\+\_\+\+A\+V\+G\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dest\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel( right\+ShiftU( ( src0\mbox{[}A\+D\+DR\mbox{]}$\ast$w0 + src2\mbox{[}A\+D\+DR\mbox{]}$\ast$w1 + offset ), shift\+Num ), clp\+Rng )}
+

@@ -1,0 +1,232 @@
+\hypertarget{structvvenc_1_1MergeCtx}{}\doxysection{Merge\+Ctx}
+\label{structvvenc_1_1MergeCtx}\index{MergeCtx@{MergeCtx}}
+
+
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Merge\+Ctx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{structvvenc_1_1MergeCtx__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MergeCtx_ae7219e28a5cef42393cb443ace7cc016}{Merge\+Ctx}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1MergeCtx_a75324a3c5093923629ea4e3a9295c03f}{set\+Merge\+Info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int cand\+Idx) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1MergeCtx_a73fb52cfc2e4eeca6adc0991ffd32c5c}{set\+Mmvd\+Merge\+Candi\+Info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int cand\+Idx) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1MergeCtx_a0c2181b11b544aa75a68fe89b05cfbbc}{Bcw\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1MergeCtx_a463d72d2756cf144b2803d21ee8cdaa1}{has\+Merged\+Cand\+List}}
+\item 
+unsigned char \mbox{\hyperlink{structvvenc_1_1MergeCtx_adfff17a938aac566184b44cc54fddda6}{inter\+Dir\+Neighbours}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \mbox{\hyperlink{structvvenc_1_1MergeCtx_a19a3458d91163167a125e7ea1616dfbd}{mmvd\+Base\+Mv}} \mbox{[}\mbox{\hyperlink{namespacevvenc_adab358666fca1a1521e393bd74db62b2}{M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM}}\mbox{]}\mbox{[}2\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1MergeCtx_a0c728e50f617b18d25c8d4065cbad4ed}{mmvd\+Use\+Alt\+Hpel\+If}} \mbox{[}\mbox{\hyperlink{namespacevvenc_adab358666fca1a1521e393bd74db62b2}{M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacevvenc_a97009d0c192b99b1a98c91001b6bb932}{Merge\+Type}} \mbox{\hyperlink{structvvenc_1_1MergeCtx_a02e549730b3cf78405b78b266a82f130}{mrg\+Type\+Neighbours}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \mbox{\hyperlink{structvvenc_1_1MergeCtx_a000d790b2949b3277281f7df95362af4}{mv\+Field\+Neighbours}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}$<$$<$ 1\mbox{]}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1MergeCtx_a2e9f00b38b42131c43ba20a5c651c039}{num\+Valid\+Merge\+Cand}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} \mbox{\hyperlink{structvvenc_1_1MergeCtx_ac8a6d94af3d696e1bf24f6dcf84d5006}{sub\+Pu\+Mvp\+Mi\+Buf}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1MergeCtx_a8143a5b48b378d60c28814705a378c7d}{use\+Alt\+Hpel\+If}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 453 of file Context\+Modelling.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_ae7219e28a5cef42393cb443ace7cc016}\label{structvvenc_1_1MergeCtx_ae7219e28a5cef42393cb443ace7cc016}} 
+\index{MergeCtx@{MergeCtx}!MergeCtx@{MergeCtx}}
+\index{MergeCtx@{MergeCtx}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{MergeCtx()}{MergeCtx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 455 of file Context\+Modelling.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a75324a3c5093923629ea4e3a9295c03f}\label{structvvenc_1_1MergeCtx_a75324a3c5093923629ea4e3a9295c03f}} 
+\index{MergeCtx@{MergeCtx}!setMergeInfo@{setMergeInfo}}
+\index{setMergeInfo@{setMergeInfo}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{setMergeInfo()}{setMergeInfo()}}
+{\footnotesize\ttfamily void set\+Merge\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int}]{cand\+Idx }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 233 of file Context\+Modelling.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1MergeCtx_a75324a3c5093923629ea4e3a9295c03f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1MergeCtx_a75324a3c5093923629ea4e3a9295c03f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a73fb52cfc2e4eeca6adc0991ffd32c5c}\label{structvvenc_1_1MergeCtx_a73fb52cfc2e4eeca6adc0991ffd32c5c}} 
+\index{MergeCtx@{MergeCtx}!setMmvdMergeCandiInfo@{setMmvdMergeCandiInfo}}
+\index{setMmvdMergeCandiInfo@{setMmvdMergeCandiInfo}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{setMmvdMergeCandiInfo()}{setMmvdMergeCandiInfo()}}
+{\footnotesize\ttfamily void set\+Mmvd\+Merge\+Candi\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int}]{cand\+Idx }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 265 of file Context\+Modelling.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1MergeCtx_a73fb52cfc2e4eeca6adc0991ffd32c5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1MergeCtx_a73fb52cfc2e4eeca6adc0991ffd32c5c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a0c2181b11b544aa75a68fe89b05cfbbc}\label{structvvenc_1_1MergeCtx_a0c2181b11b544aa75a68fe89b05cfbbc}} 
+\index{MergeCtx@{MergeCtx}!BcwIdx@{BcwIdx}}
+\index{BcwIdx@{BcwIdx}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{BcwIdx}{BcwIdx}}
+{\footnotesize\ttfamily uint8\+\_\+t Bcw\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}}
+
+
+
+Definition at line 461 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a463d72d2756cf144b2803d21ee8cdaa1}\label{structvvenc_1_1MergeCtx_a463d72d2756cf144b2803d21ee8cdaa1}} 
+\index{MergeCtx@{MergeCtx}!hasMergedCandList@{hasMergedCandList}}
+\index{hasMergedCandList@{hasMergedCandList}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{hasMergedCandList}{hasMergedCandList}}
+{\footnotesize\ttfamily bool has\+Merged\+Cand\+List}
+
+
+
+Definition at line 465 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_adfff17a938aac566184b44cc54fddda6}\label{structvvenc_1_1MergeCtx_adfff17a938aac566184b44cc54fddda6}} 
+\index{MergeCtx@{MergeCtx}!interDirNeighbours@{interDirNeighbours}}
+\index{interDirNeighbours@{interDirNeighbours}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{interDirNeighbours}{interDirNeighbours}}
+{\footnotesize\ttfamily unsigned char inter\+Dir\+Neighbours\mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}}
+
+
+
+Definition at line 462 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a19a3458d91163167a125e7ea1616dfbd}\label{structvvenc_1_1MergeCtx_a19a3458d91163167a125e7ea1616dfbd}} 
+\index{MergeCtx@{MergeCtx}!mmvdBaseMv@{mmvdBaseMv}}
+\index{mmvdBaseMv@{mmvdBaseMv}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{mmvdBaseMv}{mmvdBaseMv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} mmvd\+Base\+Mv\mbox{[}\mbox{\hyperlink{namespacevvenc_adab358666fca1a1521e393bd74db62b2}{M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM}}\mbox{]}\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 468 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a0c728e50f617b18d25c8d4065cbad4ed}\label{structvvenc_1_1MergeCtx_a0c728e50f617b18d25c8d4065cbad4ed}} 
+\index{MergeCtx@{MergeCtx}!mmvdUseAltHpelIf@{mmvdUseAltHpelIf}}
+\index{mmvdUseAltHpelIf@{mmvdUseAltHpelIf}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{mmvdUseAltHpelIf}{mmvdUseAltHpelIf}}
+{\footnotesize\ttfamily bool mmvd\+Use\+Alt\+Hpel\+If\mbox{[}\mbox{\hyperlink{namespacevvenc_adab358666fca1a1521e393bd74db62b2}{M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM}}\mbox{]}}
+
+
+
+Definition at line 469 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a02e549730b3cf78405b78b266a82f130}\label{structvvenc_1_1MergeCtx_a02e549730b3cf78405b78b266a82f130}} 
+\index{MergeCtx@{MergeCtx}!mrgTypeNeighbours@{mrgTypeNeighbours}}
+\index{mrgTypeNeighbours@{mrgTypeNeighbours}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{mrgTypeNeighbours}{mrgTypeNeighbours}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a97009d0c192b99b1a98c91001b6bb932}{Merge\+Type}} mrg\+Type\+Neighbours\mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}}
+
+
+
+Definition at line 463 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a000d790b2949b3277281f7df95362af4}\label{structvvenc_1_1MergeCtx_a000d790b2949b3277281f7df95362af4}} 
+\index{MergeCtx@{MergeCtx}!mvFieldNeighbours@{mvFieldNeighbours}}
+\index{mvFieldNeighbours@{mvFieldNeighbours}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{mvFieldNeighbours}{mvFieldNeighbours}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} mv\+Field\+Neighbours\mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}$<$$<$ 1\mbox{]}}
+
+
+
+Definition at line 460 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a2e9f00b38b42131c43ba20a5c651c039}\label{structvvenc_1_1MergeCtx_a2e9f00b38b42131c43ba20a5c651c039}} 
+\index{MergeCtx@{MergeCtx}!numValidMergeCand@{numValidMergeCand}}
+\index{numValidMergeCand@{numValidMergeCand}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{numValidMergeCand}{numValidMergeCand}}
+{\footnotesize\ttfamily int num\+Valid\+Merge\+Cand}
+
+
+
+Definition at line 464 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_ac8a6d94af3d696e1bf24f6dcf84d5006}\label{structvvenc_1_1MergeCtx_ac8a6d94af3d696e1bf24f6dcf84d5006}} 
+\index{MergeCtx@{MergeCtx}!subPuMvpMiBuf@{subPuMvpMiBuf}}
+\index{subPuMvpMiBuf@{subPuMvpMiBuf}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{subPuMvpMiBuf}{subPuMvpMiBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} sub\+Pu\+Mvp\+Mi\+Buf}
+
+
+
+Definition at line 467 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1MergeCtx_a8143a5b48b378d60c28814705a378c7d}\label{structvvenc_1_1MergeCtx_a8143a5b48b378d60c28814705a378c7d}} 
+\index{MergeCtx@{MergeCtx}!useAltHpelIf@{useAltHpelIf}}
+\index{useAltHpelIf@{useAltHpelIf}!MergeCtx@{MergeCtx}}
+\doxysubsubsection{\texorpdfstring{useAltHpelIf}{useAltHpelIf}}
+{\footnotesize\ttfamily bool use\+Alt\+Hpel\+If\mbox{[}\mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}\mbox{]}}
+
+
+
+Definition at line 470 of file Context\+Modelling.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8h}{Context\+Modelling.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8cpp}{Context\+Modelling.\+cpp}}\end{DoxyCompactItemize}

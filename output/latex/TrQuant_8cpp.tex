@@ -1,0 +1,70 @@
+\hypertarget{TrQuant_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Tr\+Quant.cpp File Reference}
+\label{TrQuant_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TrQuant.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/TrQuant.cpp}}
+
+
+transform and quantization class  
+
+
+{\ttfamily \#include \char`\"{}Tr\+Quant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tr\+Quant\+\_\+\+E\+M\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Quant\+R\+D\+O\+Q.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dep\+Quant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Time\+Profiler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Search\+Space\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+Include dependency graph for Tr\+Quant.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{TrQuant_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1coeffGroupRDStats}{coeff\+Group\+R\+D\+Stats}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int signed\+Mode$>$ }\\std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ \mbox{\hyperlink{namespacevvenc_a454b77f841e104721e9ef5edeb5d7098}{fwd\+Transform\+Cb\+Cr}} (const Pel\+Buf \&res\+Cb, const Pel\+Buf \&res\+Cr, Pel\+Buf \&res\+C1, Pel\+Buf \&res\+C2)
+\item 
+{\footnotesize template$<$int signed\+Mode$>$ }\\void \mbox{\hyperlink{namespacevvenc_aa7788e45ce1e1bd63b77aa7f4237ebcb}{inv\+Transform\+Cb\+Cr}} (Pel\+Buf \&res\+Cb, Pel\+Buf \&res\+Cr)
+\item 
+static int64\+\_\+t \mbox{\hyperlink{namespacevvenc_af0676b8bcff05b8311fd109bccd72d75}{square}} (const int d)
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+static int64\+\_\+t \mbox{\hyperlink{namespacevvenc_af0676b8bcff05b8311fd109bccd72d75}{square}} (const int d)
+\item 
+{\footnotesize template$<$int signed\+Mode$>$ }\\std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ \mbox{\hyperlink{namespacevvenc_a454b77f841e104721e9ef5edeb5d7098}{fwd\+Transform\+Cb\+Cr}} (const Pel\+Buf \&res\+Cb, const Pel\+Buf \&res\+Cr, Pel\+Buf \&res\+C1, Pel\+Buf \&res\+C2)
+\item 
+{\footnotesize template$<$int signed\+Mode$>$ }\\void \mbox{\hyperlink{namespacevvenc_aa7788e45ce1e1bd63b77aa7f4237ebcb}{inv\+Transform\+Cb\+Cr}} (Pel\+Buf \&res\+Cb, Pel\+Buf \&res\+Cr)
+\end{DoxyCompactItemize}
+
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Fwd\+Trans $\ast$const \mbox{\hyperlink{namespacevvenc_a2f53828225e8c097d8396af23595fd25}{fast\+Fwd\+Trans}} \mbox{[}N\+U\+M\+\_\+\+T\+R\+A\+N\+S\+\_\+\+T\+Y\+PE\mbox{]}\mbox{[}g\+\_\+num\+Transform\+Matrix\+Sizes\mbox{]}
+\item 
+Inv\+Trans $\ast$const \mbox{\hyperlink{namespacevvenc_abd65e852f8beaba7d1138e227b29719d}{fast\+Inv\+Trans}} \mbox{[}N\+U\+M\+\_\+\+T\+R\+A\+N\+S\+\_\+\+T\+Y\+PE\mbox{]}\mbox{[}g\+\_\+num\+Transform\+Matrix\+Sizes\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+transform and quantization class 
+

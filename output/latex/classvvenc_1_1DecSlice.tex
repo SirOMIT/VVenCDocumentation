@@ -1,0 +1,201 @@
+\hypertarget{classvvenc_1_1DecSlice}{}\doxysection{Dec\+Slice}
+\label{classvvenc_1_1DecSlice}\index{DecSlice@{DecSlice}}
+
+
+slice decoder class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Dec\+Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Dec\+Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DecSlice_a25065ec1d575bac945dad84ae0496845}{Dec\+Slice}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1DecSlice_a873cd941cc4d7c645ce4b7189ed6f966}{$\sim$\+Dec\+Slice}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecSlice_ae2ee59f7cc16ee42559c87e81c433039}{create}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecSlice_a0c4e2ff7c4b76591f7254f9a325d2607}{decompress\+Slice}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$bitstream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecSlice_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecSlice_ab7e27250715d337dace5aa8954dcb755}{init}} (\mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}} $\ast$cabac\+Decoder, \mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} $\ast$pc\+Mb\+Decoder)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecSlice_ae664a3f858f389e0309ed33cb5976a2e}{m\+\_\+\+C\+A\+B\+A\+C\+Decoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \mbox{\hyperlink{classvvenc_1_1DecSlice_ab39e61080d033fbe06bdf936e9da195a}{m\+\_\+entropy\+Coding\+Sync\+Context\+State}}
+\begin{DoxyCompactList}\small\item\em context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecSlice_af142aecb8eb0d4e3eb1eb135c50c9600}{m\+\_\+pc\+Cu\+Decoder}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+slice decoder class 
+
+Definition at line 67 of file Dec\+Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_a25065ec1d575bac945dad84ae0496845}\label{classvvenc_1_1DecSlice_a25065ec1d575bac945dad84ae0496845}} 
+\index{DecSlice@{DecSlice}!DecSlice@{DecSlice}}
+\index{DecSlice@{DecSlice}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{DecSlice()}{DecSlice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecSlice}{Dec\+Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file Dec\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_a873cd941cc4d7c645ce4b7189ed6f966}\label{classvvenc_1_1DecSlice_a873cd941cc4d7c645ce4b7189ed6f966}} 
+\index{DecSlice@{DecSlice}!````~DecSlice@{$\sim$DecSlice}}
+\index{````~DecSlice@{$\sim$DecSlice}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{$\sim$DecSlice()}{~DecSlice()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1DecSlice}{Dec\+Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 71 of file Dec\+Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_ae2ee59f7cc16ee42559c87e81c433039}\label{classvvenc_1_1DecSlice_ae2ee59f7cc16ee42559c87e81c433039}} 
+\index{DecSlice@{DecSlice}!create@{create}}
+\index{create@{create}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file Dec\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice_ae2ee59f7cc16ee42559c87e81c433039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_a0c4e2ff7c4b76591f7254f9a325d2607}\label{classvvenc_1_1DecSlice_a0c4e2ff7c4b76591f7254f9a325d2607}} 
+\index{DecSlice@{DecSlice}!decompressSlice@{decompressSlice}}
+\index{decompressSlice@{decompressSlice}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{decompressSlice()}{decompressSlice()}}
+{\footnotesize\ttfamily void decompress\+Slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{bitstream }\end{DoxyParamCaption})}
+
+
+
+Definition at line 89 of file Dec\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice_a0c4e2ff7c4b76591f7254f9a325d2607_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice_a0c4e2ff7c4b76591f7254f9a325d2607_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1DecSlice_a3a80b6032f86a56bec74609034b3246f}} 
+\index{DecSlice@{DecSlice}!destroy@{destroy}}
+\index{destroy@{destroy}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file Dec\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_ab7e27250715d337dace5aa8954dcb755}\label{classvvenc_1_1DecSlice_ab7e27250715d337dace5aa8954dcb755}} 
+\index{DecSlice@{DecSlice}!init@{init}}
+\index{init@{init}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}} $\ast$}]{cabac\+Decoder,  }\item[{\mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} $\ast$}]{pc\+Mb\+Decoder }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Dec\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecSlice_ab7e27250715d337dace5aa8954dcb755_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_ae664a3f858f389e0309ed33cb5976a2e}\label{classvvenc_1_1DecSlice_ae664a3f858f389e0309ed33cb5976a2e}} 
+\index{DecSlice@{DecSlice}!m\_CABACDecoder@{m\_CABACDecoder}}
+\index{m\_CABACDecoder@{m\_CABACDecoder}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{m\_CABACDecoder}{m\_CABACDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}}$\ast$ m\+\_\+\+C\+A\+B\+A\+C\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Dec\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_ab39e61080d033fbe06bdf936e9da195a}\label{classvvenc_1_1DecSlice_ab39e61080d033fbe06bdf936e9da195a}} 
+\index{DecSlice@{DecSlice}!m\_entropyCodingSyncContextState@{m\_entropyCodingSyncContextState}}
+\index{m\_entropyCodingSyncContextState@{m\_entropyCodingSyncContextState}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{m\_entropyCodingSyncContextState}{m\_entropyCodingSyncContextState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} m\+\_\+entropy\+Coding\+Sync\+Context\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row 
+
+
+
+Definition at line 74 of file Dec\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecSlice_af142aecb8eb0d4e3eb1eb135c50c9600}\label{classvvenc_1_1DecSlice_af142aecb8eb0d4e3eb1eb135c50c9600}} 
+\index{DecSlice@{DecSlice}!m\_pcCuDecoder@{m\_pcCuDecoder}}
+\index{m\_pcCuDecoder@{m\_pcCuDecoder}!DecSlice@{DecSlice}}
+\doxysubsubsection{\texorpdfstring{m\_pcCuDecoder}{m\_pcCuDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}}$\ast$ m\+\_\+pc\+Cu\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Dec\+Slice.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecSlice_8h}{Dec\+Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecSlice_8cpp}{Dec\+Slice.\+cpp}}\end{DoxyCompactItemize}

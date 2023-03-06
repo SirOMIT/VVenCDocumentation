@@ -1,0 +1,95 @@
+\hypertarget{UnitPartitioner_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Unit\+Partitioner.h File Reference}
+\label{UnitPartitioner_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/UnitPartitioner.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/UnitPartitioner.h}}
+
+
+Provides a class for partitioning management.  
+
+
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+Include dependency graph for Unit\+Partitioner.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UnitPartitioner_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UnitPartitioner_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1PartLevel}{Part\+Level}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1PartitionerImpl}{vvenc\+::\+Partitioner\+Impl}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Unit\+Area $\ast$ \mbox{\hyperlink{namespacevvenc_a45ddda1c3ad32d58cc1b7528304036ec}{Partitioning}}
+\item 
+typedef static\+\_\+vector$<$ Part\+Level, 2 $\ast$M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH+1 $>$ \mbox{\hyperlink{namespacevvenc_ab3ba51166babca685b5af2a1ac7af2e4}{Partitioning\+Stack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \{ \newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa089f86450e6e8e9755749e6f88438327}{C\+T\+U\+\_\+\+L\+E\+V\+EL}} = 0, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa5f271ee24260631e632460583d28a51e}{C\+U\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daaeea769e763d6528084529497fffd3c64}{C\+U\+\_\+\+H\+O\+R\+Z\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daaa486793146c0647069205824697ef8fe}{C\+U\+\_\+\+V\+E\+R\+T\+\_\+\+S\+P\+L\+IT}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daaa4913c5d007af4f59d31efc38ee8fc1c}{C\+U\+\_\+\+T\+R\+I\+H\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa9ec1b74592ecc43bd20e8ae7bfb04192}{C\+U\+\_\+\+T\+R\+I\+V\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daace67cf9457923a7d2f148eb60025de3d}{T\+U\+\_\+\+M\+A\+X\+\_\+\+T\+R\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daac857994f6db53579c3fa66889565d977}{T\+U\+\_\+\+N\+O\+\_\+\+I\+SP}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa32130f90e55368031319863ebf1718ff}{T\+U\+\_\+1\+D\+\_\+\+H\+O\+R\+Z\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa9eac6a9b6747e7f6b6fa9ebb836663af}{T\+U\+\_\+1\+D\+\_\+\+V\+E\+R\+T\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa68bc55b11ba7a911d098075c06b395fb}{S\+B\+T\+\_\+\+V\+E\+R\+\_\+\+H\+A\+L\+F\+\_\+\+P\+O\+S0\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa6677d1b6b598e1dce989209a76d96ec5}{S\+B\+T\+\_\+\+V\+E\+R\+\_\+\+H\+A\+L\+F\+\_\+\+P\+O\+S1\+\_\+\+S\+P\+L\+IT}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daaf56ec3055d092d0123b9c920f3895e94}{S\+B\+T\+\_\+\+H\+O\+R\+\_\+\+H\+A\+L\+F\+\_\+\+P\+O\+S0\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa2fab8cb6b9dffc729b45705454b9344c}{S\+B\+T\+\_\+\+H\+O\+R\+\_\+\+H\+A\+L\+F\+\_\+\+P\+O\+S1\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa09c2f1c2b44ad3db25ca44fa0b27da89}{S\+B\+T\+\_\+\+V\+E\+R\+\_\+\+Q\+U\+A\+D\+\_\+\+P\+O\+S0\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daac75de78ea87cf4544c54acf5decb7974}{S\+B\+T\+\_\+\+V\+E\+R\+\_\+\+Q\+U\+A\+D\+\_\+\+P\+O\+S1\+\_\+\+S\+P\+L\+IT}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa0c8e22139411e4d34c4e195d2c4dddc6}{S\+B\+T\+\_\+\+H\+O\+R\+\_\+\+Q\+U\+A\+D\+\_\+\+P\+O\+S0\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa9a8aea39b2f8da6cfdfa59146b3cf3fb}{S\+B\+T\+\_\+\+H\+O\+R\+\_\+\+Q\+U\+A\+D\+\_\+\+P\+O\+S1\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daad758c283af0de1eadd1fe6b7e484ed9e}{N\+U\+M\+\_\+\+P\+A\+R\+T\+\_\+\+S\+P\+L\+IT}}, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daac74275492a03ceb5bbd71e8e01243c5a}{C\+U\+\_\+\+M\+T\+\_\+\+S\+P\+L\+IT}} = 1000, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa7bd1fa13fc2130301d96876898b892ac}{C\+U\+\_\+\+B\+T\+\_\+\+S\+P\+L\+IT}} = 1001, 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691daa1a3d4c89bb5b2ed4f35aac92996f025d}{C\+U\+\_\+\+D\+O\+N\+T\+\_\+\+S\+P\+L\+IT}} = 2000
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1PartitionerImpl_a872b8ed86ac79c44c476feae4d143fa0}{get\+C\+U\+Sub\+Partitions}} (Partitioning \&sub, const Unit\+Area \&cu\+Area, const Coding\+Structure \&cs, const Part\+Split split\+Type=C\+U\+\_\+\+Q\+U\+A\+D\+\_\+\+S\+P\+L\+IT)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1PartitionerImpl_a7f590ef42b38db873b89a3a59e815879}{get\+Max\+Tu\+Tiling}} (Partitioning \&sub, const Unit\+Area \&cur\+Area, const Coding\+Structure \&cs)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1PartitionerImpl_a2f0c4c6c208609e13c01df186c6e6323}{get\+Sbt\+Tu\+Tiling}} (Partitioning \&sub, const Unit\+Area \&cur\+Area, const Coding\+Structure \&cs, const Part\+Split split\+Type)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1PartitionerImpl_aa410b40857fdc564a472ba8c45179fd3}{get\+T\+U\+Intra\+Sub\+Partitions}} (Partitioning \&sub, const Unit\+Area \&tu\+Area, const Coding\+Structure \&cs, const Part\+Split split\+Type, const Tree\+Type tree\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a class for partitioning management. 
+

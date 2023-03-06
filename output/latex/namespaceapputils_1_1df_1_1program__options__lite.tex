@@ -1,0 +1,243 @@
+\hypertarget{namespaceapputils_1_1df_1_1program__options__lite}{}\doxysection{apputils\+::df\+::program\+\_\+options\+\_\+lite Namespace Reference}
+\label{namespaceapputils_1_1df_1_1program__options__lite}\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1ArgvParser}{Argv\+Parser}}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1CfgStreamParser}{Cfg\+Stream\+Parser}}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1OptionWriter}{Option\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a20db85ddaa48adb8dad2868fbbb08d82}{do\+Help}} (std\+::ostream \&out, Options \&opts, unsigned columns)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_af932d54483b50454bd320bed03672249}{do\+Help\+Opt}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned pad\+\_\+short=0)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca}{do\+Print\+Help\+Entry}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned desc\+\_\+width, unsigned opt\+\_\+width, unsigned pad\+\_\+short=0)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303}{parse\+Config\+File}} (Options \&opts, const std\+::string \&filename, Error\+Reporter \&error\+\_\+reporter)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a512acb340d098d1058e45022b9f57c1e}{print\+Formatted\+Config\+Entry}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned desc\+\_\+width, unsigned opt\+\_\+width, unsigned opt\+\_\+value\+\_\+width)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a1e02196bdf429a5daac28d7f49475feb}{save\+Config}} (std\+::ostream \&out, Options \&opts, std\+::list$<$ std\+::string $>$ ignore\+Param\+Lst, unsigned columns)
+\item 
+std\+::list$<$ const char $\ast$ $>$ \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee}{scan\+Argv}} (Options \&opts, unsigned argc, const char $\ast$argv\mbox{[}$\,$\mbox{]}, Error\+Reporter \&error\+\_\+reporter)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_af21015f87a9074b44f8ee84872e0a2b3}{set\+Defaults}} (Options \&opts)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a7c9bed7ff43d848e10e723e6cf878f53}{set\+Options}} (Options\+::\+Names\+Ptr\+List \&opt\+\_\+list, const std\+::string \&value, Error\+Reporter \&error\+\_\+reporter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Error\+Reporter \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_ad916cd953fa5f3c647ea737d231d8e6f}{default\+\_\+error\+\_\+reporter}}
+\item 
+static const char \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a12a273467de0bb4c5993aac2c03a8d3d}{spaces}} \mbox{[}41\mbox{]} = \char`\"{} \char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a20db85ddaa48adb8dad2868fbbb08d82}\label{namespaceapputils_1_1df_1_1program__options__lite_a20db85ddaa48adb8dad2868fbbb08d82}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!doHelp@{doHelp}}
+\index{doHelp@{doHelp}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{doHelp()}{doHelp()}}
+{\footnotesize\ttfamily void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::do\+Help (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{Options \&}]{opts,  }\item[{unsigned}]{columns }\end{DoxyParamCaption})}
+
+
+
+Definition at line 378 of file Parse\+Arg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceapputils_1_1df_1_1program__options__lite_a20db85ddaa48adb8dad2868fbbb08d82_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_af932d54483b50454bd320bed03672249}\label{namespaceapputils_1_1df_1_1program__options__lite_af932d54483b50454bd320bed03672249}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!doHelpOpt@{doHelpOpt}}
+\index{doHelpOpt@{doHelpOpt}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{doHelpOpt()}{doHelpOpt()}}
+{\footnotesize\ttfamily static void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::do\+Help\+Opt (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const Options\+::\+Names \&}]{entry,  }\item[{unsigned}]{pad\+\_\+short = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 173 of file Parse\+Arg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceapputils_1_1df_1_1program__options__lite_af932d54483b50454bd320bed03672249_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca}\label{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!doPrintHelpEntry@{doPrintHelpEntry}}
+\index{doPrintHelpEntry@{doPrintHelpEntry}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{doPrintHelpEntry()}{doPrintHelpEntry()}}
+{\footnotesize\ttfamily static void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::do\+Print\+Help\+Entry (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const Options\+::\+Names \&}]{entry,  }\item[{unsigned}]{desc\+\_\+width,  }\item[{unsigned}]{opt\+\_\+width,  }\item[{unsigned}]{pad\+\_\+short = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 200 of file Parse\+Arg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303}\label{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!parseConfigFile@{parseConfigFile}}
+\index{parseConfigFile@{parseConfigFile}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{parseConfigFile()}{parseConfigFile()}}
+{\footnotesize\ttfamily void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::parse\+Config\+File (\begin{DoxyParamCaption}\item[{Options \&}]{opts,  }\item[{const std\+::string \&}]{filename,  }\item[{Error\+Reporter \&}]{error\+\_\+reporter }\end{DoxyParamCaption})}
+
+
+
+Definition at line 851 of file Parse\+Arg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a512acb340d098d1058e45022b9f57c1e}\label{namespaceapputils_1_1df_1_1program__options__lite_a512acb340d098d1058e45022b9f57c1e}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!printFormattedConfigEntry@{printFormattedConfigEntry}}
+\index{printFormattedConfigEntry@{printFormattedConfigEntry}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{printFormattedConfigEntry()}{printFormattedConfigEntry()}}
+{\footnotesize\ttfamily static void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::print\+Formatted\+Config\+Entry (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{const Options\+::\+Names \&}]{entry,  }\item[{unsigned}]{desc\+\_\+width,  }\item[{unsigned}]{opt\+\_\+width,  }\item[{unsigned}]{opt\+\_\+value\+\_\+width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 276 of file Parse\+Arg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{namespaceapputils_1_1df_1_1program__options__lite_a512acb340d098d1058e45022b9f57c1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a1e02196bdf429a5daac28d7f49475feb}\label{namespaceapputils_1_1df_1_1program__options__lite_a1e02196bdf429a5daac28d7f49475feb}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!saveConfig@{saveConfig}}
+\index{saveConfig@{saveConfig}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{saveConfig()}{saveConfig()}}
+{\footnotesize\ttfamily void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::save\+Config (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{Options \&}]{opts,  }\item[{std\+::list$<$ std\+::string $>$}]{ignore\+Param\+Lst,  }\item[{unsigned}]{columns }\end{DoxyParamCaption})}
+
+
+
+Definition at line 433 of file Parse\+Arg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{namespaceapputils_1_1df_1_1program__options__lite_a1e02196bdf429a5daac28d7f49475feb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee}\label{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!scanArgv@{scanArgv}}
+\index{scanArgv@{scanArgv}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{scanArgv()}{scanArgv()}}
+{\footnotesize\ttfamily std\+::list$<$const char$\ast$$>$ apputils\+::df\+::program\+\_\+options\+\_\+lite\+::scan\+Argv (\begin{DoxyParamCaption}\item[{Options \&}]{opts,  }\item[{unsigned}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{Error\+Reporter \&}]{error\+\_\+reporter }\end{DoxyParamCaption})}
+
+
+
+Definition at line 680 of file Parse\+Arg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_af21015f87a9074b44f8ee84872e0a2b3}\label{namespaceapputils_1_1df_1_1program__options__lite_af21015f87a9074b44f8ee84872e0a2b3}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!setDefaults@{setDefaults}}
+\index{setDefaults@{setDefaults}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{setDefaults()}{setDefaults()}}
+{\footnotesize\ttfamily void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::set\+Defaults (\begin{DoxyParamCaption}\item[{Options \&}]{opts }\end{DoxyParamCaption})}
+
+
+
+Definition at line 843 of file Parse\+Arg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a7c9bed7ff43d848e10e723e6cf878f53}\label{namespaceapputils_1_1df_1_1program__options__lite_a7c9bed7ff43d848e10e723e6cf878f53}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily static void apputils\+::df\+::program\+\_\+options\+\_\+lite\+::set\+Options (\begin{DoxyParamCaption}\item[{Options\+::\+Names\+Ptr\+List \&}]{opt\+\_\+list,  }\item[{const std\+::string \&}]{value,  }\item[{Error\+Reporter \&}]{error\+\_\+reporter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 156 of file Parse\+Arg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespaceapputils_1_1df_1_1program__options__lite_a7c9bed7ff43d848e10e723e6cf878f53_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_ad916cd953fa5f3c647ea737d231d8e6f}\label{namespaceapputils_1_1df_1_1program__options__lite_ad916cd953fa5f3c647ea737d231d8e6f}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!default\_error\_reporter@{default\_error\_reporter}}
+\index{default\_error\_reporter@{default\_error\_reporter}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{default\_error\_reporter}{default\_error\_reporter}}
+{\footnotesize\ttfamily Error\+Reporter default\+\_\+error\+\_\+reporter}
+
+
+
+Definition at line 70 of file Parse\+Arg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_1_1df_1_1program__options__lite_a12a273467de0bb4c5993aac2c03a8d3d}\label{namespaceapputils_1_1df_1_1program__options__lite_a12a273467de0bb4c5993aac2c03a8d3d}} 
+\index{apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}!spaces@{spaces}}
+\index{spaces@{spaces}!apputils::df::program\_options\_lite@{apputils::df::program\_options\_lite}}
+\doxysubsubsection{\texorpdfstring{spaces}{spaces}}
+{\footnotesize\ttfamily const char spaces\mbox{[}41\mbox{]} = \char`\"{} \char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 166 of file Parse\+Arg.\+cpp.
+

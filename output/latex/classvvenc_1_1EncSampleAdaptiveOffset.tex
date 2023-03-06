@@ -1,0 +1,569 @@
+\hypertarget{classvvenc_1_1EncSampleAdaptiveOffset}{}\doxysection{Enc\+Sample\+Adaptive\+Offset}
+\label{classvvenc_1_1EncSampleAdaptiveOffset}\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Sample\+Adaptive\+Offset.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Enc\+Sample\+Adaptive\+Offset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classvvenc_1_1EncSampleAdaptiveOffset__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enc\+Sample\+Adaptive\+Offset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a70a63c126544096e1f68524b4b8df54b}{Enc\+Sample\+Adaptive\+Offset}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_aacbd77443f694c0e512fb2546e4f9944}{$\sim$\+Enc\+Sample\+Adaptive\+Offset}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a2046fa0605ce430d394fd32abcee9f0b}{decide\+Ctu\+Params}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&sao\+Statistics, const bool sao\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}, const bool all\+Blks\+Disabled, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area, const int ctu\+Rs\+Addr, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$recon\+Params, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$coded\+Params)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_ab2d0f7e48f014bb76a4e09c179c8d9c3}{get\+Ctu\+Statistics}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&sao\+Statistics, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area, const int ctu\+Rs\+Addr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a571130c2aa335541bda96e268f5b05fc}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a9dc2bfb9adb61b6b29663858557177e6}{init\+Slice}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_ae5bbbbaab2147a78b600c06ce64da976}{set\+Ctu\+Enc\+Rsrc}} (\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$cabac\+Estimator, \mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$ctx\+Cache)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_aa53a7d9b6ffe43c9f5a25ca7685ee3cc}{store\+Ctu\+Reco}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_aa10aaf5f5ff40920750003f360a72785}{decide\+Pic\+Params}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, double sao\+Disabled\+Rate\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}, bool sao\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}, const double sao\+Encoding\+Rate, const double sao\+Encoding\+Rate\+Chroma, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&chroma\+Format)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a0f8e0153f2bfa94d29b07599f2993934}{disabled\+Rate}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, double sao\+Disabled\+Rate\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$recon\+Params, const double sao\+Encoding\+Rate, const double sao\+Encoding\+Rate\+Chroma, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&chroma\+Format)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a0ba5c959a402ebb1a0e85782b0b3b053}{derive\+Loop\+Filter\+Boundary\+Availibility}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, bool \&is\+Left\+Avail, bool \&is\+Above\+Avail, bool \&is\+Above\+Left\+Avail) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_ab40e4ca1c65f0ac32580d44ed3019af9}{derive\+Mode\+Merge\+R\+DO}} (const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths, int ctu\+Rs\+Addr, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$merge\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a4de22f2f4b5a20fa0e711e69b0c66028aa53dc6bc99edc8924be149f70594e8c0}{N\+U\+M\+\_\+\+S\+A\+O\+\_\+\+M\+E\+R\+G\+E\+\_\+\+T\+Y\+P\+ES}}\mbox{]}, const bool $\ast$slice\+Enabled, const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&blk\+Stats, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} \&mode\+Param, double \&mode\+Norm\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_aa5f52ee8c17c487f542b011a29d521fd}{derive\+Mode\+New\+R\+DO}} (const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths, int ctu\+Rs\+Addr, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$merge\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a4de22f2f4b5a20fa0e711e69b0c66028aa53dc6bc99edc8924be149f70594e8c0}{N\+U\+M\+\_\+\+S\+A\+O\+\_\+\+M\+E\+R\+G\+E\+\_\+\+T\+Y\+P\+ES}}\mbox{]}, const bool $\ast$slice\+Enabled, const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&blk\+Stats, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} \&mode\+Param, double \&mode\+Norm\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a2b14de104b4998ef2df532e006be692f}{derive\+Offsets}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const int channel\+Bit\+Depth, int type\+Idc, \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} \&stat\+Data, int $\ast$quant\+Offsets, int \&type\+Aux\+Info)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a5c87c434ab7fc6028097ba066e2adc2b}{est\+Iter\+Offset}} (int type\+Idx, double lambda, int offset\+Input, int64\+\_\+t count, int64\+\_\+t diff\+Sum, int shift, int bit\+Increase, int64\+\_\+t \&best\+Dist, double \&best\+Cost, int offset\+Th)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_ad40a60997b88e5ac344aa9b3ea5f4add}{est\+Sao\+Dist}} (int64\+\_\+t count, int64\+\_\+t offset, int64\+\_\+t diff\+Sum, int shift)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a90f6a64e278ec10272efa5cd475956d1}{get\+Blk\+Stats}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const int channel\+Bit\+Depth, \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$stats\+Data\+Types, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src\+Blk, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$org\+Blk, int src\+Stride, int org\+Stride, int width, int height, bool is\+Left\+Avail, bool is\+Right\+Avail, bool is\+Above\+Avail, bool is\+Below\+Avail, bool is\+Above\+Left\+Avail, bool is\+Above\+Right\+Avail)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_acc9e7b0a16fe8fc18344b5747c70b1c5}{get\+Distortion}} (const int channel\+Bit\+Depth, int type\+Idc, int type\+Aux\+Info, int $\ast$offset\+Val, \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} \&stat\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_aff19b9e5067ff9405c60185af2a21ef6}{get\+Statistics}} (std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&blk\+Stats, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&org\+Yuv, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&src\+Yuv, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_af2eecbd6936ec23d3bd8962fff7e65a7}{m\+\_\+\+C\+A\+B\+A\+C\+Estimator}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_adc15ecb13505785bb69c278578c79980}{m\+\_\+\+Ctx\+Cache}}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a3cdd86d788c6875df60d3e149dd4c332}{m\+\_\+\+Enc\+Cfg}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset_a1cdc9ee2486ff0f82cc076fbca9db238}{m\+\_\+lambda}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 94 of file Enc\+Sample\+Adaptive\+Offset.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a70a63c126544096e1f68524b4b8df54b}\label{classvvenc_1_1EncSampleAdaptiveOffset_a70a63c126544096e1f68524b4b8df54b}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{EncSampleAdaptiveOffset()}{EncSampleAdaptiveOffset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset}{Enc\+Sample\+Adaptive\+Offset}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 94 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_aacbd77443f694c0e512fb2546e4f9944}\label{classvvenc_1_1EncSampleAdaptiveOffset_aacbd77443f694c0e512fb2546e4f9944}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!````~EncSampleAdaptiveOffset@{$\sim$EncSampleAdaptiveOffset}}
+\index{````~EncSampleAdaptiveOffset@{$\sim$EncSampleAdaptiveOffset}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncSampleAdaptiveOffset()}{~EncSampleAdaptiveOffset()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncSampleAdaptiveOffset}{Enc\+Sample\+Adaptive\+Offset}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 100 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a2046fa0605ce430d394fd32abcee9f0b}\label{classvvenc_1_1EncSampleAdaptiveOffset_a2046fa0605ce430d394fd32abcee9f0b}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!decideCtuParams@{decideCtuParams}}
+\index{decideCtuParams@{decideCtuParams}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{decideCtuParams()}{decideCtuParams()}}
+{\footnotesize\ttfamily void decide\+Ctu\+Params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&}]{sao\+Statistics,  }\item[{const bool}]{sao\+Enabled\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]},  }\item[{const bool}]{all\+Blks\+Disabled,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area,  }\item[{const int}]{ctu\+Rs\+Addr,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{recon\+Params,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{coded\+Params }\end{DoxyParamCaption})}
+
+
+
+Definition at line 331 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a2046fa0605ce430d394fd32abcee9f0b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classvvenc_1_1EncSampleAdaptiveOffset_a2046fa0605ce430d394fd32abcee9f0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_aa10aaf5f5ff40920750003f360a72785}\label{classvvenc_1_1EncSampleAdaptiveOffset_aa10aaf5f5ff40920750003f360a72785}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!decidePicParams@{decidePicParams}}
+\index{decidePicParams@{decidePicParams}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{decidePicParams()}{decidePicParams()}}
+{\footnotesize\ttfamily void decide\+Pic\+Params (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{double}]{sao\+Disabled\+Rate\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]}\mbox{[}\+V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+E\+R\mbox{]},  }\item[{bool}]{sao\+Enabled\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]},  }\item[{const double}]{sao\+Encoding\+Rate,  }\item[{const double}]{sao\+Encoding\+Rate\+Chroma,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&}]{chroma\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 159 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa10aaf5f5ff40920750003f360a72785_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa10aaf5f5ff40920750003f360a72785_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a0ba5c959a402ebb1a0e85782b0b3b053}\label{classvvenc_1_1EncSampleAdaptiveOffset_a0ba5c959a402ebb1a0e85782b0b3b053}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!deriveLoopFilterBoundaryAvailibility@{deriveLoopFilterBoundaryAvailibility}}
+\index{deriveLoopFilterBoundaryAvailibility@{deriveLoopFilterBoundaryAvailibility}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{deriveLoopFilterBoundaryAvailibility()}{deriveLoopFilterBoundaryAvailibility()}}
+{\footnotesize\ttfamily void derive\+Loop\+Filter\+Boundary\+Availibility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{bool \&}]{is\+Left\+Avail,  }\item[{bool \&}]{is\+Above\+Avail,  }\item[{bool \&}]{is\+Above\+Left\+Avail }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1019 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a0ba5c959a402ebb1a0e85782b0b3b053_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a0ba5c959a402ebb1a0e85782b0b3b053_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_ab40e4ca1c65f0ac32580d44ed3019af9}\label{classvvenc_1_1EncSampleAdaptiveOffset_ab40e4ca1c65f0ac32580d44ed3019af9}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!deriveModeMergeRDO@{deriveModeMergeRDO}}
+\index{deriveModeMergeRDO@{deriveModeMergeRDO}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{deriveModeMergeRDO()}{deriveModeMergeRDO()}}
+{\footnotesize\ttfamily void derive\+Mode\+Merge\+R\+DO (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths,  }\item[{int}]{ctu\+Rs\+Addr,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{merge\+List\mbox{[}\+N\+U\+M\+\_\+\+S\+A\+O\+\_\+\+M\+E\+R\+G\+E\+\_\+\+T\+Y\+P\+E\+S\mbox{]},  }\item[{const bool $\ast$}]{slice\+Enabled,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&}]{blk\+Stats,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} \&}]{mode\+Param,  }\item[{double \&}]{mode\+Norm\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 734 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_ab40e4ca1c65f0ac32580d44ed3019af9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_ab40e4ca1c65f0ac32580d44ed3019af9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_aa5f52ee8c17c487f542b011a29d521fd}\label{classvvenc_1_1EncSampleAdaptiveOffset_aa5f52ee8c17c487f542b011a29d521fd}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!deriveModeNewRDO@{deriveModeNewRDO}}
+\index{deriveModeNewRDO@{deriveModeNewRDO}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{deriveModeNewRDO()}{deriveModeNewRDO()}}
+{\footnotesize\ttfamily void derive\+Mode\+New\+R\+DO (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths,  }\item[{int}]{ctu\+Rs\+Addr,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{merge\+List\mbox{[}\+N\+U\+M\+\_\+\+S\+A\+O\+\_\+\+M\+E\+R\+G\+E\+\_\+\+T\+Y\+P\+E\+S\mbox{]},  }\item[{const bool $\ast$}]{slice\+Enabled,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&}]{blk\+Stats,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} \&}]{mode\+Param,  }\item[{double \&}]{mode\+Norm\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 594 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa5f52ee8c17c487f542b011a29d521fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa5f52ee8c17c487f542b011a29d521fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a2b14de104b4998ef2df532e006be692f}\label{classvvenc_1_1EncSampleAdaptiveOffset_a2b14de104b4998ef2df532e006be692f}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!deriveOffsets@{deriveOffsets}}
+\index{deriveOffsets@{deriveOffsets}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{deriveOffsets()}{deriveOffsets()}}
+{\footnotesize\ttfamily void derive\+Offsets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Idx,  }\item[{const int}]{channel\+Bit\+Depth,  }\item[{int}]{type\+Idc,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} \&}]{stat\+Data,  }\item[{int $\ast$}]{quant\+Offsets,  }\item[{int \&}]{type\+Aux\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 481 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a2b14de104b4998ef2df532e006be692f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a2b14de104b4998ef2df532e006be692f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a0f8e0153f2bfa94d29b07599f2993934}\label{classvvenc_1_1EncSampleAdaptiveOffset_a0f8e0153f2bfa94d29b07599f2993934}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!disabledRate@{disabledRate}}
+\index{disabledRate@{disabledRate}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{disabledRate()}{disabledRate()}}
+{\footnotesize\ttfamily void disabled\+Rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{double}]{sao\+Disabled\+Rate\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]}\mbox{[}\+V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+E\+R\mbox{]},  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{recon\+Params,  }\item[{const double}]{sao\+Encoding\+Rate,  }\item[{const double}]{sao\+Encoding\+Rate\+Chroma,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&}]{chroma\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 125 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a0f8e0153f2bfa94d29b07599f2993934_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a0f8e0153f2bfa94d29b07599f2993934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a5c87c434ab7fc6028097ba066e2adc2b}\label{classvvenc_1_1EncSampleAdaptiveOffset_a5c87c434ab7fc6028097ba066e2adc2b}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!estIterOffset@{estIterOffset}}
+\index{estIterOffset@{estIterOffset}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{estIterOffset()}{estIterOffset()}}
+{\footnotesize\ttfamily int est\+Iter\+Offset (\begin{DoxyParamCaption}\item[{int}]{type\+Idx,  }\item[{double}]{lambda,  }\item[{int}]{offset\+Input,  }\item[{int64\+\_\+t}]{count,  }\item[{int64\+\_\+t}]{diff\+Sum,  }\item[{int}]{shift,  }\item[{int}]{bit\+Increase,  }\item[{int64\+\_\+t \&}]{best\+Dist,  }\item[{double \&}]{best\+Cost,  }\item[{int}]{offset\+Th }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 448 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classvvenc_1_1EncSampleAdaptiveOffset_a5c87c434ab7fc6028097ba066e2adc2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a5c87c434ab7fc6028097ba066e2adc2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_ad40a60997b88e5ac344aa9b3ea5f4add}\label{classvvenc_1_1EncSampleAdaptiveOffset_ad40a60997b88e5ac344aa9b3ea5f4add}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!estSaoDist@{estSaoDist}}
+\index{estSaoDist@{estSaoDist}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{estSaoDist()}{estSaoDist()}}
+{\footnotesize\ttfamily int64\+\_\+t est\+Sao\+Dist (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{count,  }\item[{int64\+\_\+t}]{offset,  }\item[{int64\+\_\+t}]{diff\+Sum,  }\item[{int}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 442 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_ad40a60997b88e5ac344aa9b3ea5f4add_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a90f6a64e278ec10272efa5cd475956d1}\label{classvvenc_1_1EncSampleAdaptiveOffset_a90f6a64e278ec10272efa5cd475956d1}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!getBlkStats@{getBlkStats}}
+\index{getBlkStats@{getBlkStats}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{getBlkStats()}{getBlkStats()}}
+{\footnotesize\ttfamily void get\+Blk\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Idx,  }\item[{const int}]{channel\+Bit\+Depth,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$}]{stats\+Data\+Types,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{src\+Blk,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{org\+Blk,  }\item[{int}]{src\+Stride,  }\item[{int}]{org\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+Left\+Avail,  }\item[{bool}]{is\+Right\+Avail,  }\item[{bool}]{is\+Above\+Avail,  }\item[{bool}]{is\+Below\+Avail,  }\item[{bool}]{is\+Above\+Left\+Avail,  }\item[{bool}]{is\+Above\+Right\+Avail }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 790 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvvenc_1_1EncSampleAdaptiveOffset_a90f6a64e278ec10272efa5cd475956d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a90f6a64e278ec10272efa5cd475956d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_ab2d0f7e48f014bb76a4e09c179c8d9c3}\label{classvvenc_1_1EncSampleAdaptiveOffset_ab2d0f7e48f014bb76a4e09c179c8d9c3}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!getCtuStatistics@{getCtuStatistics}}
+\index{getCtuStatistics@{getCtuStatistics}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{getCtuStatistics()}{getCtuStatistics()}}
+{\footnotesize\ttfamily void get\+Ctu\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&}]{sao\+Statistics,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area,  }\item[{const int}]{ctu\+Rs\+Addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 234 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_ab2d0f7e48f014bb76a4e09c179c8d9c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classvvenc_1_1EncSampleAdaptiveOffset_ab2d0f7e48f014bb76a4e09c179c8d9c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_acc9e7b0a16fe8fc18344b5747c70b1c5}\label{classvvenc_1_1EncSampleAdaptiveOffset_acc9e7b0a16fe8fc18344b5747c70b1c5}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!getDistortion@{getDistortion}}
+\index{getDistortion@{getDistortion}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{getDistortion()}{getDistortion()}}
+{\footnotesize\ttfamily int64\+\_\+t get\+Distortion (\begin{DoxyParamCaption}\item[{const int}]{channel\+Bit\+Depth,  }\item[{int}]{type\+Idc,  }\item[{int}]{type\+Aux\+Info,  }\item[{int $\ast$}]{offset\+Val,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} \&}]{stat\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 406 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classvvenc_1_1EncSampleAdaptiveOffset_acc9e7b0a16fe8fc18344b5747c70b1c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_acc9e7b0a16fe8fc18344b5747c70b1c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_aff19b9e5067ff9405c60185af2a21ef6}\label{classvvenc_1_1EncSampleAdaptiveOffset_aff19b9e5067ff9405c60185af2a21ef6}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!getStatistics@{getStatistics}}
+\index{getStatistics@{getStatistics}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{getStatistics()}{getStatistics()}}
+{\footnotesize\ttfamily void get\+Statistics (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \&}]{blk\+Stats,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{org\+Yuv,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{src\+Yuv,  }\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 279 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aff19b9e5067ff9405c60185af2a21ef6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a571130c2aa335541bda96e268f5b05fc}\label{classvvenc_1_1EncSampleAdaptiveOffset_a571130c2aa335541bda96e268f5b05fc}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!init@{init}}
+\index{init@{init}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 104 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_a571130c2aa335541bda96e268f5b05fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a9dc2bfb9adb61b6b29663858557177e6}\label{classvvenc_1_1EncSampleAdaptiveOffset_a9dc2bfb9adb61b6b29663858557177e6}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!initSlice@{initSlice}}
+\index{initSlice@{initSlice}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{initSlice()}{initSlice()}}
+{\footnotesize\ttfamily void init\+Slice (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 114 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1EncSampleAdaptiveOffset_a9dc2bfb9adb61b6b29663858557177e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_ae5bbbbaab2147a78b600c06ce64da976}\label{classvvenc_1_1EncSampleAdaptiveOffset_ae5bbbbaab2147a78b600c06ce64da976}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!setCtuEncRsrc@{setCtuEncRsrc}}
+\index{setCtuEncRsrc@{setCtuEncRsrc}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{setCtuEncRsrc()}{setCtuEncRsrc()}}
+{\footnotesize\ttfamily void set\+Ctu\+Enc\+Rsrc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$}]{cabac\+Estimator,  }\item[{\mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$}]{ctx\+Cache }\end{DoxyParamCaption})}
+
+
+
+Definition at line 119 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classvvenc_1_1EncSampleAdaptiveOffset_ae5bbbbaab2147a78b600c06ce64da976_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_aa53a7d9b6ffe43c9f5a25ca7685ee3cc}\label{classvvenc_1_1EncSampleAdaptiveOffset_aa53a7d9b6ffe43c9f5a25ca7685ee3cc}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!storeCtuReco@{storeCtuReco}}
+\index{storeCtuReco@{storeCtuReco}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{storeCtuReco()}{storeCtuReco()}}
+{\footnotesize\ttfamily void store\+Ctu\+Reco (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file Enc\+Sample\+Adaptive\+Offset.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa53a7d9b6ffe43c9f5a25ca7685ee3cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classvvenc_1_1EncSampleAdaptiveOffset_aa53a7d9b6ffe43c9f5a25ca7685ee3cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_af2eecbd6936ec23d3bd8962fff7e65a7}\label{classvvenc_1_1EncSampleAdaptiveOffset_af2eecbd6936ec23d3bd8962fff7e65a7}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!m\_CABACEstimator@{m\_CABACEstimator}}
+\index{m\_CABACEstimator@{m\_CABACEstimator}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{m\_CABACEstimator}{m\_CABACEstimator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}}$\ast$ m\+\_\+\+C\+A\+B\+A\+C\+Estimator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Enc\+Sample\+Adaptive\+Offset.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_adc15ecb13505785bb69c278578c79980}\label{classvvenc_1_1EncSampleAdaptiveOffset_adc15ecb13505785bb69c278578c79980}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!m\_CtxCache@{m\_CtxCache}}
+\index{m\_CtxCache@{m\_CtxCache}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{m\_CtxCache}{m\_CtxCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}}$\ast$ m\+\_\+\+Ctx\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 129 of file Enc\+Sample\+Adaptive\+Offset.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a3cdd86d788c6875df60d3e149dd4c332}\label{classvvenc_1_1EncSampleAdaptiveOffset_a3cdd86d788c6875df60d3e149dd4c332}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!m\_EncCfg@{m\_EncCfg}}
+\index{m\_EncCfg@{m\_EncCfg}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{m\_EncCfg}{m\_EncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 125 of file Enc\+Sample\+Adaptive\+Offset.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSampleAdaptiveOffset_a1cdc9ee2486ff0f82cc076fbca9db238}\label{classvvenc_1_1EncSampleAdaptiveOffset_a1cdc9ee2486ff0f82cc076fbca9db238}} 
+\index{EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}!m\_lambda@{m\_lambda}}
+\index{m\_lambda@{m\_lambda}!EncSampleAdaptiveOffset@{EncSampleAdaptiveOffset}}
+\doxysubsubsection{\texorpdfstring{m\_lambda}{m\_lambda}}
+{\footnotesize\ttfamily double m\+\_\+lambda\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Enc\+Sample\+Adaptive\+Offset.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncSampleAdaptiveOffset_8h}{Enc\+Sample\+Adaptive\+Offset.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncSampleAdaptiveOffset_8cpp}{Enc\+Sample\+Adaptive\+Offset.\+cpp}}\end{DoxyCompactItemize}

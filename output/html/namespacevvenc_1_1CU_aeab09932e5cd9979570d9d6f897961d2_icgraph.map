@@ -1,0 +1,52 @@
+<map id="isLMCMode" name="isLMCMode">
+<area shape="rect" id="node1" title=" " alt="" coords="3440,383,3532,409"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1IntraSearch.html#a2f2d24beeac934b8e930618a1bc94799" title=" " alt="" coords="2206,43,2371,85"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1CABACReader.html#aa10a3b3aed70c82ca530cde545b433cc" title=" " alt="" coords="3213,535,3389,577"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1CABACWriter.html#a05bf4018ffa70f46a1db89edf31e3af7" title=" " alt="" coords="3213,317,3389,358"/>
+<area shape="rect" id="node37" href="$classvvenc_1_1TrQuant.html#ae0a1cf94f84132e226732532ed0bfbf7" title=" " alt="" coords="3211,383,3392,409"/>
+<area shape="rect" id="node41" href="$classvvenc_1_1IntraSearch.html#a910e25be08ac1ad3b7d22e4c1af784a3" title=" " alt="" coords="2453,43,2621,85"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1DecCu.html#a0ae25c4476a09a8f6f9422a496d8388f" title=" " alt="" coords="2691,529,2882,556"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1TrQuant.html#a60e24196175022979d3e3b710cce3923" title=" " alt="" coords="3214,433,3389,460"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1CABACReader.html#a4dcb49dc60a84020f653e444abb24114" title=" " alt="" coords="2960,565,3143,606"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1CABACReader.html#a19c239639ed5fd9160d7bbc7bfc0c683" title=" " alt="" coords="2709,614,2864,655"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1CABACReader.html#a8b9ef457ce5ff633cc8b551f5fc84d37" title=" " alt="" coords="2460,629,2615,670"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1CABACReader.html#a94b58be20068f09f0344df44aadbbce4" title=" " alt="" coords="2211,627,2366,669"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1CABACReader.html#adcdb0f81eecc7aa3412d70c44c276936" title=" " alt="" coords="1955,623,2110,665"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1DecSlice.html#a0c4e2ff7c4b76591f7254f9a325d2607" title=" " alt="" coords="1671,563,1868,605"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1DecLib.html#a98ee02f302658e4ce4dce89344ca660c" title=" " alt="" coords="1415,535,1609,561"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1DecLib.html#aaad70c3b3177aeba953e91df36b695be" title=" " alt="" coords="1211,516,1367,543"/>
+<area shape="rect" id="node12" href="$namespacevvenc.html#a4b8a6866b7ca3b758d7fa57dd622c0ff" title=" " alt="" coords="996,507,1163,533"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1VVEncImpl.html#a738995bb8f5f1f9372177ec270bcc902" title=" " alt="" coords="754,554,935,595"/>
+<area shape="rect" id="node16" href="$namespacevvenc.html#adb1eeab1fc3b671e5bce71e1c9053d18" title=" " alt="" coords="741,503,948,529"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1EncGOP.html#afc55c7ec70cedfed561118110b384d10" title=" " alt="" coords="752,452,937,479"/>
+<area shape="rect" id="node14" href="$vvenc_8cpp.html#ad004900a48a00c04fcd1193f117efb82" title=" " alt="" coords="503,561,669,588"/>
+<area shape="rect" id="node15" href="$classEncApp.html#a201eddecd65dcf1a76105a867d021ef4" title="main encoding function" alt="" coords="273,561,392,588"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1EncGOP.html#a61c82aee8789605e0a9a1a9756553c79" title=" " alt="" coords="479,451,693,477"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,451,431,477"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,451,187,477"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1CABACWriter.html#a4f2d9fb65b060ff3b3816c5ca618dfd2" title=" " alt="" coords="2960,317,3143,358"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1IntraSearch.html#ad6a320d2586dd576eb95f7c2e87e4941" title=" " alt="" coords="2985,207,3117,249"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1CABACWriter.html#a5d1c1cc9d0693589b31afb4de87c6ffb" title=" " alt="" coords="2713,331,2860,373"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1CABACWriter.html#a8eaaf985efdefd87fc3d4ec0bf2a7fe6" title=" " alt="" coords="2464,329,2611,370"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1InterSearch.html#ad63bfa3ac9511f55501c000f8dda5cd4" title=" " alt="" coords="2449,394,2626,435"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1CABACWriter.html#a8ec34354911fa26032a7f1a5fcb86fa4" title=" " alt="" coords="2215,345,2362,386"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1CABACWriter.html#ab03bdd8cc13cd81153a6396909a531c4" title=" " alt="" coords="1959,367,2106,409"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1EncSlice.html#a5ce9a47a17a7e7ef82fde50ee7d06241" title=" " alt="" coords="1657,377,1881,404"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1EncPicture.html#a3aa054ad338763fbf94e99a821f2dfc9" title=" " alt="" coords="1443,382,1581,423"/>
+<area shape="rect" id="node29" href="$classvvenc_1_1EncPicture.html#a1923d4a8c3829e889669c0524c768843" title=" " alt="" coords="1011,389,1148,430"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1InterSearch.html#a9c686c694eaa5ea4e414cb623bde0139" title="set ME search range" alt="" coords="2184,425,2393,466"/>
+<area shape="rect" id="node33" href="$classvvenc_1_1IntraSearch.html#af9dd0fadf6539374a07b99ae27b78689" title=" " alt="" coords="2711,178,2862,219"/>
+<area shape="rect" id="node34" href="$classvvenc_1_1IntraSearch.html#a369dfd77f4e587823f799f45db5cdfd6" title=" " alt="" coords="2211,211,2366,253"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1IntraSearch.html#adaaf9526c2f40027b1fb9e9523ee9a23" title=" " alt="" coords="2471,211,2603,253"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1IntraSearch.html#a15cada00b0f72aac01cae54c3a12b57a" title=" " alt="" coords="1957,211,2108,253"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1TrQuant.html#aa75cb739cc3a76b68078e6696558b79d" title=" " alt="" coords="2950,383,3153,409"/>
+<area shape="rect" id="node39" href="$classvvenc_1_1InterSearch.html#a3690ee43ddf352cc2fa9fab4d65d8616" title=" " alt="" coords="2695,413,2879,454"/>
+<area shape="rect" id="node40" href="$classvvenc_1_1IntraSearch.html#a596b206741287b3176fb061196d41142" title=" " alt="" coords="2709,266,2864,307"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1DecCu.html#a803d3c73546aaf1f41db1080e8ac70c9" title=" " alt="" coords="2443,577,2632,604"/>
+<area shape="rect" id="node44" href="$classvvenc_1_1DecCu.html#a20a30992dc4cfbbdd01e1407213159a1" title=" " alt="" coords="2187,572,2390,599"/>
+<area shape="rect" id="node45" href="$classvvenc_1_1DecCu.html#ac65c68e5db506859fc962df5f28ed0dc" title=" " alt="" coords="1929,571,2136,597"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1TrQuant.html#ade34c28b491ba61af93501c1fd5abcd3" title=" " alt="" coords="2940,433,3163,460"/>
+<area shape="rect" id="node48" href="$classvvenc_1_1DecCu.html#a7437f20ca590005876b40dde989f6ee0" title=" " alt="" coords="2681,479,2892,505"/>
+<area shape="rect" id="node49" href="$classvvenc_1_1DecCu.html#a6a1e6367f62d5fefecf02b4a920623fb" title=" " alt="" coords="2441,511,2633,553"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1DecCu.html#ab324f93ddc8fd6b8f85d3917c831c87f" title=" " alt="" coords="2196,520,2381,547"/>
+</map>

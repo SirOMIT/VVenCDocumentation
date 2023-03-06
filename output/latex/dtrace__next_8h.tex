@@ -1,0 +1,163 @@
+\hypertarget{dtrace__next_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/dtrace\+\_\+next.h File Reference}
+\label{dtrace__next_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace\_next.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace\_next.h}}
+
+
+D\+Trace support for next software.  
+
+
+{\ttfamily \#include \char`\"{}dtrace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for dtrace\+\_\+next.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dtrace__next_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dtrace__next_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a40fa8e4bb6064294484bdd1ac543d4a2}{D\+T\+R\+A\+CE}}(ctx,  channel, ...)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_ad460f4d1ed4fae868ca1f3c0e19dfa28}{D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+CK}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a7efffb794623d63228c24c4ca68afe7a}{D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+ND}}(cond,  level, ...)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a7e140eab37ff1b5aa4a1e19615379262}{D\+T\+R\+A\+C\+E\+\_\+\+D\+E\+C\+R\+\_\+\+C\+O\+U\+N\+T\+ER}}(ctx,  channel)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a8459f9357bba3a817d7bb4193df8aa59}{D\+T\+R\+A\+C\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+B\+L\+O\+C\+K\+W\+I\+SE}}(...)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a7589e23a3a40dbdfacd05a1854f135ff}{D\+T\+R\+A\+C\+E\+\_\+\+G\+E\+T\+\_\+\+C\+O\+U\+N\+T\+ER}}(ctx,  channel)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_acb0d445749f42f7302c793bc4acde24e}{D\+T\+R\+A\+C\+E\+\_\+\+R\+E\+P\+E\+AT}}(ctx,  channel,  times, ...)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_ad7b09574d5733d2bd592a05539a84536}{D\+T\+R\+A\+C\+E\+\_\+\+S\+ET}}(\+\_\+dst,  \+\_\+src)~(\+\_\+dst)=(\+\_\+src)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_a60977af402536fce4e55514d8fe947ad}{D\+T\+R\+A\+C\+E\+\_\+\+U\+P\+D\+A\+TE}}(ctx,  s)
+\item 
+\#define \mbox{\hyperlink{dtrace__next_8h_afc5c5daba197112789f0a33d8b87e5dc}{D\+T\+R\+A\+C\+E\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+C\+O\+U\+NT}}(ctx,  channel, ...)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+D\+Trace support for next software. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{dtrace__next_8h_a40fa8e4bb6064294484bdd1ac543d4a2}\label{dtrace__next_8h_a40fa8e4bb6064294484bdd1ac543d4a2}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE@{DTRACE}}
+\index{DTRACE@{DTRACE}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE}{DTRACE}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+CE(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{channel,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 280 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_ad460f4d1ed4fae868ca1f3c0e19dfa28}\label{dtrace__next_8h_ad460f4d1ed4fae868ca1f3c0e19dfa28}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_BLOCK@{DTRACE\_BLOCK}}
+\index{DTRACE\_BLOCK@{DTRACE\_BLOCK}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_BLOCK}{DTRACE\_BLOCK}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+B\+L\+O\+CK(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 287 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_a7efffb794623d63228c24c4ca68afe7a}\label{dtrace__next_8h_a7efffb794623d63228c24c4ca68afe7a}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_COND@{DTRACE\_COND}}
+\index{DTRACE\_COND@{DTRACE\_COND}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_COND}{DTRACE\_COND}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+C\+O\+ND(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{level,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 284 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_a7e140eab37ff1b5aa4a1e19615379262}\label{dtrace__next_8h_a7e140eab37ff1b5aa4a1e19615379262}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_DECR\_COUNTER@{DTRACE\_DECR\_COUNTER}}
+\index{DTRACE\_DECR\_COUNTER@{DTRACE\_DECR\_COUNTER}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_DECR\_COUNTER}{DTRACE\_DECR\_COUNTER}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+D\+E\+C\+R\+\_\+\+C\+O\+U\+N\+T\+ER(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{channel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 282 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_a8459f9357bba3a817d7bb4193df8aa59}\label{dtrace__next_8h_a8459f9357bba3a817d7bb4193df8aa59}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_FRAME\_BLOCKWISE@{DTRACE\_FRAME\_BLOCKWISE}}
+\index{DTRACE\_FRAME\_BLOCKWISE@{DTRACE\_FRAME\_BLOCKWISE}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_FRAME\_BLOCKWISE}{DTRACE\_FRAME\_BLOCKWISE}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+F\+R\+A\+M\+E\+\_\+\+B\+L\+O\+C\+K\+W\+I\+SE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 288 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_a7589e23a3a40dbdfacd05a1854f135ff}\label{dtrace__next_8h_a7589e23a3a40dbdfacd05a1854f135ff}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_GET\_COUNTER@{DTRACE\_GET\_COUNTER}}
+\index{DTRACE\_GET\_COUNTER@{DTRACE\_GET\_COUNTER}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_GET\_COUNTER}{DTRACE\_GET\_COUNTER}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+G\+E\+T\+\_\+\+C\+O\+U\+N\+T\+ER(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{channel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 289 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_acb0d445749f42f7302c793bc4acde24e}\label{dtrace__next_8h_acb0d445749f42f7302c793bc4acde24e}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_REPEAT@{DTRACE\_REPEAT}}
+\index{DTRACE\_REPEAT@{DTRACE\_REPEAT}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_REPEAT}{DTRACE\_REPEAT}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+R\+E\+P\+E\+AT(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{channel,  }\item[{}]{times,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 285 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_ad7b09574d5733d2bd592a05539a84536}\label{dtrace__next_8h_ad7b09574d5733d2bd592a05539a84536}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_SET@{DTRACE\_SET}}
+\index{DTRACE\_SET@{DTRACE\_SET}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_SET}{DTRACE\_SET}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{\+\_\+dst,  }\item[{}]{\+\_\+src }\end{DoxyParamCaption})~(\+\_\+dst)=(\+\_\+src)}
+
+
+
+Definition at line 286 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_a60977af402536fce4e55514d8fe947ad}\label{dtrace__next_8h_a60977af402536fce4e55514d8fe947ad}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_UPDATE@{DTRACE\_UPDATE}}
+\index{DTRACE\_UPDATE@{DTRACE\_UPDATE}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_UPDATE}{DTRACE\_UPDATE}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+
+
+Definition at line 283 of file dtrace\+\_\+next.\+h.
+
+\mbox{\Hypertarget{dtrace__next_8h_afc5c5daba197112789f0a33d8b87e5dc}\label{dtrace__next_8h_afc5c5daba197112789f0a33d8b87e5dc}} 
+\index{dtrace\_next.h@{dtrace\_next.h}!DTRACE\_WITHOUT\_COUNT@{DTRACE\_WITHOUT\_COUNT}}
+\index{DTRACE\_WITHOUT\_COUNT@{DTRACE\_WITHOUT\_COUNT}!dtrace\_next.h@{dtrace\_next.h}}
+\doxysubsubsection{\texorpdfstring{DTRACE\_WITHOUT\_COUNT}{DTRACE\_WITHOUT\_COUNT}}
+{\footnotesize\ttfamily \#define D\+T\+R\+A\+C\+E\+\_\+\+W\+I\+T\+H\+O\+U\+T\+\_\+\+C\+O\+U\+NT(\begin{DoxyParamCaption}\item[{}]{ctx,  }\item[{}]{channel,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 281 of file dtrace\+\_\+next.\+h.
+

@@ -1,0 +1,11 @@
+<map id="SEIWriter" name="SEIWriter">
+<area shape="rect" id="node1" title=" " alt="" coords="173,260,251,287"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1VLCWriter.html" title=" " alt="" coords="125,171,208,197"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1OutputBitstream.html" title=" " alt="" coords="5,81,123,108"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1HRD.html" title=" " alt="" coords="335,171,387,197"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1SEIPictureTiming.html" title=" " alt="" coords="146,81,270,108"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1SEI.html" title=" " alt="" coords="262,5,306,32"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1SEIBufferingPeriod.html" title=" " alt="" coords="295,81,428,108"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1OlsHrdParams.html" title=" " alt="" coords="453,81,561,108"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1GeneralHrdParams.html" title=" " alt="" coords="585,81,719,108"/>
+</map>

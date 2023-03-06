@@ -1,0 +1,291 @@
+\hypertarget{classvvenc_1_1DMVR}{}\doxysection{D\+M\+VR}
+\label{classvvenc_1_1DMVR}\index{DMVR@{DMVR}}
+
+
+{\ttfamily \#include \char`\"{}Inter\+Prediction.\+h\char`\"{}}
+
+
+
+Inheritance diagram for D\+M\+VR\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classvvenc_1_1DMVR__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for D\+M\+VR\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DMVR_a16018e32874a575bf50b15d9e51884ec}{D\+M\+VR}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1DMVR_a9057a11719fa78b98dd65abd420416f0}{$\sim$\+D\+M\+VR}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DMVR_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DMVR_a78be7cf95f458e22030818d4ee9a80b0}{init}} (\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$pc\+Rd\+Cost, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} ch\+Format)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DMVR_a9b7100be645a6aaaeb7c983ef04ae366}{x\+Process\+D\+M\+VR}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pc\+Yuv\+Dst, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const bool bio\+Applied)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DMVR_a5362ece009f24c56a92b8d934ae9e10b}{x\+Copy\+And\+Pad}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pc\+Pad, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Id, bool for\+Luma)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DMVR_ade00062241702fdc946e52e5095c7ab1}{x\+Final\+Padded\+M\+C\+For\+D\+M\+VR}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$dst\+Buf, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$ref\+Buf, const bool bio\+Applied, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} start\+MV\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&ref\+MV)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DMVR_a7941a56c2fd607b45125922e737f91ea}{m\+\_\+pc\+Rd\+Cost}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1DMVR_a0cfd73f6506b74dac6ae58769cf97ffc}{m\+\_\+p\+Search\+Offset}} \mbox{[}25\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1DMVR_a97015a5310c4e45262fe8045e75e9a74}{m\+\_\+yuv\+Pad}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1DMVR_a3de81f16a66e23a35850efb6a0add5e0}{m\+\_\+yuv\+Pred}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1DMVR_ab68a1306c0f311571be494b06f5614a9}{m\+\_\+yuv\+Tmp}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 128 of file Inter\+Prediction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a16018e32874a575bf50b15d9e51884ec}\label{classvvenc_1_1DMVR_a16018e32874a575bf50b15d9e51884ec}} 
+\index{DMVR@{DMVR}!DMVR@{DMVR}}
+\index{DMVR@{DMVR}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{DMVR()}{DMVR()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DMVR}{D\+M\+VR}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1081 of file Inter\+Prediction.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a9057a11719fa78b98dd65abd420416f0}\label{classvvenc_1_1DMVR_a9057a11719fa78b98dd65abd420416f0}} 
+\index{DMVR@{DMVR}!````~DMVR@{$\sim$DMVR}}
+\index{````~DMVR@{$\sim$DMVR}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{$\sim$DMVR()}{~DMVR()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1DMVR}{D\+M\+VR}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 1085 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a9057a11719fa78b98dd65abd420416f0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1DMVR_a3a80b6032f86a56bec74609034b3246f}} 
+\index{DMVR@{DMVR}!destroy@{destroy}}
+\index{destroy@{destroy}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1090 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1DMVR_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a78be7cf95f458e22030818d4ee9a80b0}\label{classvvenc_1_1DMVR_a78be7cf95f458e22030818d4ee9a80b0}} 
+\index{DMVR@{DMVR}!init@{init}}
+\index{init@{init}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$}]{pc\+Rd\+Cost,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{ch\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1101 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classvvenc_1_1DMVR_a78be7cf95f458e22030818d4ee9a80b0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a5362ece009f24c56a92b8d934ae9e10b}\label{classvvenc_1_1DMVR_a5362ece009f24c56a92b8d934ae9e10b}} 
+\index{DMVR@{DMVR}!xCopyAndPad@{xCopyAndPad}}
+\index{xCopyAndPad@{xCopyAndPad}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{xCopyAndPad()}{xCopyAndPad()}}
+{\footnotesize\ttfamily void x\+Copy\+And\+Pad (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pc\+Pad,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Id,  }\item[{bool}]{for\+Luma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1118 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a5362ece009f24c56a92b8d934ae9e10b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a5362ece009f24c56a92b8d934ae9e10b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_ade00062241702fdc946e52e5095c7ab1}\label{classvvenc_1_1DMVR_ade00062241702fdc946e52e5095c7ab1}} 
+\index{DMVR@{DMVR}!xFinalPaddedMCForDMVR@{xFinalPaddedMCForDMVR}}
+\index{xFinalPaddedMCForDMVR@{xFinalPaddedMCForDMVR}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{xFinalPaddedMCForDMVR()}{xFinalPaddedMCForDMVR()}}
+{\footnotesize\ttfamily void x\+Final\+Padded\+M\+C\+For\+D\+M\+VR (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$}]{dst\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$}]{ref\+Buf,  }\item[{const bool}]{bio\+Applied,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{start\+MV\mbox{[}\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01\mbox{]},  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{ref\+MV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1227 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_ade00062241702fdc946e52e5095c7ab1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_ade00062241702fdc946e52e5095c7ab1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a9b7100be645a6aaaeb7c983ef04ae366}\label{classvvenc_1_1DMVR_a9b7100be645a6aaaeb7c983ef04ae366}} 
+\index{DMVR@{DMVR}!xProcessDMVR@{xProcessDMVR}}
+\index{xProcessDMVR@{xProcessDMVR}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{xProcessDMVR()}{xProcessDMVR()}}
+{\footnotesize\ttfamily void x\+Process\+D\+M\+VR (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pc\+Yuv\+Dst,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const bool}]{bio\+Applied }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1287 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a9b7100be645a6aaaeb7c983ef04ae366_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DMVR_a9b7100be645a6aaaeb7c983ef04ae366_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a7941a56c2fd607b45125922e737f91ea}\label{classvvenc_1_1DMVR_a7941a56c2fd607b45125922e737f91ea}} 
+\index{DMVR@{DMVR}!m\_pcRdCost@{m\_pcRdCost}}
+\index{m\_pcRdCost@{m\_pcRdCost}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{m\_pcRdCost}{m\_pcRdCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}}$\ast$ m\+\_\+pc\+Rd\+Cost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a0cfd73f6506b74dac6ae58769cf97ffc}\label{classvvenc_1_1DMVR_a0cfd73f6506b74dac6ae58769cf97ffc}} 
+\index{DMVR@{DMVR}!m\_pSearchOffset@{m\_pSearchOffset}}
+\index{m\_pSearchOffset@{m\_pSearchOffset}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{m\_pSearchOffset}{m\_pSearchOffset}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+p\+Search\+Offset\mbox{[}25\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{ Mv(-\/2,-\/2), Mv(-\/1,-\/2), Mv(0,-\/2), Mv(1,-\/2), Mv(2,-\/2),}
+\DoxyCodeLine{                                   Mv(-\/2,-\/1), Mv(-\/1,-\/1), Mv(0,-\/1), Mv(1,-\/1), Mv(2,-\/1),}
+\DoxyCodeLine{                                   Mv(-\/2, 0), Mv(-\/1, 0), Mv(0, 0), Mv(1, 0), Mv(2, 0),}
+\DoxyCodeLine{                                   Mv(-\/2, 1), Mv(-\/1, 1), Mv(0, 1), Mv(1, 1), Mv(2, 1),}
+\DoxyCodeLine{                                   Mv(-\/2, 2), Mv(-\/1, 2), Mv(0, 2), Mv(1, 2), Mv(2, 2) \}}
+
+\end{DoxyCode}
+
+
+Definition at line 135 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a97015a5310c4e45262fe8045e75e9a74}\label{classvvenc_1_1DMVR_a97015a5310c4e45262fe8045e75e9a74}} 
+\index{DMVR@{DMVR}!m\_yuvPad@{m\_yuvPad}}
+\index{m\_yuvPad@{m\_yuvPad}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{m\_yuvPad}{m\_yuvPad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+yuv\+Pad\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 134 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DMVR_a3de81f16a66e23a35850efb6a0add5e0}\label{classvvenc_1_1DMVR_a3de81f16a66e23a35850efb6a0add5e0}} 
+\index{DMVR@{DMVR}!m\_yuvPred@{m\_yuvPred}}
+\index{m\_yuvPred@{m\_yuvPred}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{m\_yuvPred}{m\_yuvPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+yuv\+Pred\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 132 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DMVR_ab68a1306c0f311571be494b06f5614a9}\label{classvvenc_1_1DMVR_ab68a1306c0f311571be494b06f5614a9}} 
+\index{DMVR@{DMVR}!m\_yuvTmp@{m\_yuvTmp}}
+\index{m\_yuvTmp@{m\_yuvTmp}!DMVR@{DMVR}}
+\doxysubsubsection{\texorpdfstring{m\_yuvTmp}{m\_yuvTmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+yuv\+Tmp\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Inter\+Prediction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterPrediction_8h}{Inter\+Prediction.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterPrediction_8cpp}{Inter\+Prediction.\+cpp}}\end{DoxyCompactItemize}

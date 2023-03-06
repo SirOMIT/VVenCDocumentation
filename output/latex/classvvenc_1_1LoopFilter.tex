@@ -1,0 +1,429 @@
+\hypertarget{classvvenc_1_1LoopFilter}{}\doxysection{Loop\+Filter}
+\label{classvvenc_1_1LoopFilter}\index{LoopFilter@{LoopFilter}}
+
+
+deblocking filter class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Loop\+Filter.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Loop\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classvvenc_1_1LoopFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1LoopFilter_a28d79ada3e5698ed967af97721f08526}{set\+Origin}} (const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Position}{Position}} \mbox{\hyperlink{classvvenc_1_1LoopFilter_a9ac944605bff2a935171b6c6d99376fb}{m\+\_\+origin}} \mbox{[}2\mbox{]}
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1LoopFilter_aaefbac32b4459908c721de3c9edb67a2}{x\+Filtering\+PandQ}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, int number\+P\+Side, int number\+Q\+Side, int tc)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1LoopFilter_abd850b9e79dd5945c3cd05d256877377}{x\+Pel\+Filter\+Luma}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+Src, const ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, const int tc, const bool sw, const int i\+Thr\+Cut, const bool b\+Filter\+SecondP, const bool b\+Filter\+SecondQ, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{classvvenc_1_1LoopFilter_a5bca36241a95c3ff6e2f8bd21c25c004}{sm\+\_\+tc\+Table}} \mbox{[}\mbox{\hyperlink{namespacevvenc_aa2aaf0a0822296d132b363aeaf9df0ca}{M\+A\+X\+\_\+\+QP}}+3\mbox{]}
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1LoopFilter_a5020e241c43fc6ba70a10912cfb1537c}{sm\+\_\+beta\+Table}} \mbox{[}\mbox{\hyperlink{namespacevvenc_aa2aaf0a0822296d132b363aeaf9df0ca}{M\+A\+X\+\_\+\+QP}}+1\mbox{]}
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{classvvenc_1_1LoopFilter_ac590cb17947fd082f3fe960f57fecf2c}{x\+Edge\+Filter\+Luma}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} \&lfp, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pic\+Reco) const
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{classvvenc_1_1LoopFilter_a7f579d8af9da8fbc754474d9c02b512d}{x\+Edge\+Filter\+Chroma}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} \&lfp, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pic\+Reco) const
+\item 
+\mbox{\hyperlink{classvvenc_1_1LoopFilter_a21a157d185d28086186733a262e44663}{Loop\+Filter}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1LoopFilter_a9b9c7e32656202a3214d540cf9286a7e}{$\sim$\+Loop\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1LoopFilter_af2ef6a3b3e26d1afce6782aa82487ef6}{loop\+Filter\+Pic}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, bool calc\+Filter\+Strength) const
+\begin{DoxyCompactList}\small\item\em picture-\/level deblocking filter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1LoopFilter_ad9d112c03af314ceb4e7ac7463ce73f1}{loop\+Filter\+Pic\+Line}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const int ctu\+Line, const int offset=0, \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} edge\+Dir=\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1LoopFilter_ad086c19cd4e5eb70fc0da2370001b50c}{loop\+Filter\+C\+TU}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const int ctu\+Col, const int ctu\+Line, const int offset=0, \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} edge\+Dir=\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}) const
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{classvvenc_1_1LoopFilter_adcf47cfaf4e6f25e5eb0d8832862e4e3}{x\+Deblock\+Area}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pic\+Reco) const
+\begin{DoxyCompactList}\small\item\em ctu-\/level deblocking filter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1LoopFilter_ad89c7c6ecf0e8926caa2cc914e03de33}{loop\+Filter\+Cu}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} edge\+Dir, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&db\+Buffer)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1LoopFilter_a5c42f80dede5fb84abe154eb92ffe1a6}{calc\+Filter\+Strengths\+C\+TU}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area, const bool clear\+L\+FP)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1LoopFilter_ac53626d4647c68b02e46233c6ea8297e}{calc\+Filter\+Strengths}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, bool clear\+LF=false)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1LoopFilter_a667980308345a7c37017c9cdf31dc19d}{get\+Max\+Filter\+Length}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int \&max\+Filter\+Lenght\+Luma\+Hor, int \&max\+Filter\+Lenght\+Luma\+Ver)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+deblocking filter class 
+
+Definition at line 69 of file Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a21a157d185d28086186733a262e44663}\label{classvvenc_1_1LoopFilter_a21a157d185d28086186733a262e44663}} 
+\index{LoopFilter@{LoopFilter}!LoopFilter@{LoopFilter}}
+\index{LoopFilter@{LoopFilter}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{LoopFilter()}{LoopFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 364 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_a21a157d185d28086186733a262e44663_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a9b9c7e32656202a3214d540cf9286a7e}\label{classvvenc_1_1LoopFilter_a9b9c7e32656202a3214d540cf9286a7e}} 
+\index{LoopFilter@{LoopFilter}!````~LoopFilter@{$\sim$LoopFilter}}
+\index{````~LoopFilter@{$\sim$LoopFilter}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$LoopFilter()}{~LoopFilter()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 377 of file Loop\+Filter.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_ac53626d4647c68b02e46233c6ea8297e}\label{classvvenc_1_1LoopFilter_ac53626d4647c68b02e46233c6ea8297e}} 
+\index{LoopFilter@{LoopFilter}!calcFilterStrengths@{calcFilterStrengths}}
+\index{calcFilterStrengths@{calcFilterStrengths}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{calcFilterStrengths()}{calcFilterStrengths()}}
+{\footnotesize\ttfamily void calc\+Filter\+Strengths (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{bool}]{clear\+LF = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 770 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ac53626d4647c68b02e46233c6ea8297e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ac53626d4647c68b02e46233c6ea8297e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a5c42f80dede5fb84abe154eb92ffe1a6}\label{classvvenc_1_1LoopFilter_a5c42f80dede5fb84abe154eb92ffe1a6}} 
+\index{LoopFilter@{LoopFilter}!calcFilterStrengthsCTU@{calcFilterStrengthsCTU}}
+\index{calcFilterStrengthsCTU@{calcFilterStrengthsCTU}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{calcFilterStrengthsCTU()}{calcFilterStrengthsCTU()}}
+{\footnotesize\ttfamily void calc\+Filter\+Strengths\+C\+TU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area,  }\item[{const bool}]{clear\+L\+FP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 560 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_a5c42f80dede5fb84abe154eb92ffe1a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_a5c42f80dede5fb84abe154eb92ffe1a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a667980308345a7c37017c9cdf31dc19d}\label{classvvenc_1_1LoopFilter_a667980308345a7c37017c9cdf31dc19d}} 
+\index{LoopFilter@{LoopFilter}!getMaxFilterLength@{getMaxFilterLength}}
+\index{getMaxFilterLength@{getMaxFilterLength}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{getMaxFilterLength()}{getMaxFilterLength()}}
+{\footnotesize\ttfamily void get\+Max\+Filter\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int \&}]{max\+Filter\+Lenght\+Luma\+Hor,  }\item[{int \&}]{max\+Filter\+Lenght\+Luma\+Ver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 679 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classvvenc_1_1LoopFilter_a667980308345a7c37017c9cdf31dc19d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_ad086c19cd4e5eb70fc0da2370001b50c}\label{classvvenc_1_1LoopFilter_ad086c19cd4e5eb70fc0da2370001b50c}} 
+\index{LoopFilter@{LoopFilter}!loopFilterCTU@{loopFilterCTU}}
+\index{loopFilterCTU@{loopFilterCTU}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{loopFilterCTU()}{loopFilterCTU()}}
+{\footnotesize\ttfamily void loop\+Filter\+C\+TU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const int}]{ctu\+Col,  }\item[{const int}]{ctu\+Line,  }\item[{const int}]{offset = {\ttfamily 0},  }\item[{\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}}}]{edge\+Dir = {\ttfamily \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}} }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 583 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ad086c19cd4e5eb70fc0da2370001b50c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_ad89c7c6ecf0e8926caa2cc914e03de33}\label{classvvenc_1_1LoopFilter_ad89c7c6ecf0e8926caa2cc914e03de33}} 
+\index{LoopFilter@{LoopFilter}!loopFilterCu@{loopFilterCu}}
+\index{loopFilterCu@{loopFilterCu}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{loopFilterCu()}{loopFilterCu()}}
+{\footnotesize\ttfamily void loop\+Filter\+Cu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}}}]{edge\+Dir,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{db\+Buffer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 949 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_af2ef6a3b3e26d1afce6782aa82487ef6}\label{classvvenc_1_1LoopFilter_af2ef6a3b3e26d1afce6782aa82487ef6}} 
+\index{LoopFilter@{LoopFilter}!loopFilterPic@{loopFilterPic}}
+\index{loopFilterPic@{loopFilterPic}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{loopFilterPic()}{loopFilterPic()}}
+{\footnotesize\ttfamily void loop\+Filter\+Pic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{bool}]{calc\+Filter\+Strength }\end{DoxyParamCaption}) const}
+
+
+
+picture-\/level deblocking filter 
+
+
+\begin{DoxyItemize}
+\item call deblocking function for every \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}}
+\end{DoxyItemize}
+\begin{DoxyParams}{Parameters}
+{\em pc\+Pic} & picture class (Pic) pointer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 389 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_af2ef6a3b3e26d1afce6782aa82487ef6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_af2ef6a3b3e26d1afce6782aa82487ef6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_ad9d112c03af314ceb4e7ac7463ce73f1}\label{classvvenc_1_1LoopFilter_ad9d112c03af314ceb4e7ac7463ce73f1}} 
+\index{LoopFilter@{LoopFilter}!loopFilterPicLine@{loopFilterPicLine}}
+\index{loopFilterPicLine@{loopFilterPicLine}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{loopFilterPicLine()}{loopFilterPicLine()}}
+{\footnotesize\ttfamily void loop\+Filter\+Pic\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const int}]{ctu\+Line,  }\item[{const int}]{offset = {\ttfamily 0},  }\item[{\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}}}]{edge\+Dir = {\ttfamily \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}} }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 511 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ad9d112c03af314ceb4e7ac7463ce73f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ad9d112c03af314ceb4e7ac7463ce73f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a28d79ada3e5698ed967af97721f08526}\label{classvvenc_1_1LoopFilter_a28d79ada3e5698ed967af97721f08526}} 
+\index{LoopFilter@{LoopFilter}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
+{\footnotesize\ttfamily void set\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_adcf47cfaf4e6f25e5eb0d8832862e4e3}\label{classvvenc_1_1LoopFilter_adcf47cfaf4e6f25e5eb0d8832862e4e3}} 
+\index{LoopFilter@{LoopFilter}!xDeblockArea@{xDeblockArea}}
+\index{xDeblockArea@{xDeblockArea}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{xDeblockArea()}{xDeblockArea()}}
+{\footnotesize\ttfamily void x\+Deblock\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pic\+Reco\+Buf }\end{DoxyParamCaption}) const}
+
+
+
+ctu-\/level deblocking filter 
+
+Deblocking filter process in C\+U-\/based (the same function as conventional\textquotesingle{}s)
+
+
+\begin{DoxyParams}{Parameters}
+{\em cu} & the \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} to be deblocked \\
+\hline
+{\em edge\+Dir} & the direction of the edge in block boundary (horizontal/vertical), which is added newly \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 621 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_adcf47cfaf4e6f25e5eb0d8832862e4e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classvvenc_1_1LoopFilter_adcf47cfaf4e6f25e5eb0d8832862e4e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a7f579d8af9da8fbc754474d9c02b512d}\label{classvvenc_1_1LoopFilter_a7f579d8af9da8fbc754474d9c02b512d}} 
+\index{LoopFilter@{LoopFilter}!xEdgeFilterChroma@{xEdgeFilterChroma}}
+\index{xEdgeFilterChroma@{xEdgeFilterChroma}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{xEdgeFilterChroma()}{xEdgeFilterChroma()}}
+{\footnotesize\ttfamily void x\+Edge\+Filter\+Chroma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} \&}]{lfp,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pic\+Reco }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1710 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_a7f579d8af9da8fbc754474d9c02b512d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_ac590cb17947fd082f3fe960f57fecf2c}\label{classvvenc_1_1LoopFilter_ac590cb17947fd082f3fe960f57fecf2c}} 
+\index{LoopFilter@{LoopFilter}!xEdgeFilterLuma@{xEdgeFilterLuma}}
+\index{xEdgeFilterLuma@{xEdgeFilterLuma}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{xEdgeFilterLuma()}{xEdgeFilterLuma()}}
+{\footnotesize\ttfamily void x\+Edge\+Filter\+Luma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} \&}]{lfp,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pic\+Reco }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1560 of file Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1LoopFilter_ac590cb17947fd082f3fe960f57fecf2c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a9ac944605bff2a935171b6c6d99376fb}\label{classvvenc_1_1LoopFilter_a9ac944605bff2a935171b6c6d99376fb}} 
+\index{LoopFilter@{LoopFilter}!m\_origin@{m\_origin}}
+\index{m\_origin@{m\_origin}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_origin}{m\_origin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Position}{Position}} m\+\_\+origin\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 114 of file Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a5020e241c43fc6ba70a10912cfb1537c}\label{classvvenc_1_1LoopFilter_a5020e241c43fc6ba70a10912cfb1537c}} 
+\index{LoopFilter@{LoopFilter}!sm\_betaTable@{sm\_betaTable}}
+\index{sm\_betaTable@{sm\_betaTable}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{sm\_betaTable}{sm\_betaTable}}
+{\footnotesize\ttfamily const uint8\+\_\+t sm\+\_\+beta\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58,60,62,64}
+\DoxyCodeLine{  , 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 78 of file Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_a5bca36241a95c3ff6e2f8bd21c25c004}\label{classvvenc_1_1LoopFilter_a5bca36241a95c3ff6e2f8bd21c25c004}} 
+\index{LoopFilter@{LoopFilter}!sm\_tcTable@{sm\_tcTable}}
+\index{sm\_tcTable@{sm\_tcTable}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{sm\_tcTable}{sm\_tcTable}}
+{\footnotesize\ttfamily const uint16\+\_\+t sm\+\_\+tc\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,4,4,4,4,5,5,5,5,7,7,8,9,10,10,11,13,14,15,17,19,21,24,25,29,33,36,41,45,51,57,64,71,80,89,100,112,125,141,157,177,198,222,250,280,314,352,395}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 77 of file Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_aaefbac32b4459908c721de3c9edb67a2}\label{classvvenc_1_1LoopFilter_aaefbac32b4459908c721de3c9edb67a2}} 
+\index{LoopFilter@{LoopFilter}!xFilteringPandQ@{xFilteringPandQ}}
+\index{xFilteringPandQ@{xFilteringPandQ}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{xFilteringPandQ}{xFilteringPandQ}}
+{\footnotesize\ttfamily void( $\ast$ x\+Filtering\+PandQ(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, int number\+P\+Side, int number\+Q\+Side, int tc)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 81 of file Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1LoopFilter_abd850b9e79dd5945c3cd05d256877377}\label{classvvenc_1_1LoopFilter_abd850b9e79dd5945c3cd05d256877377}} 
+\index{LoopFilter@{LoopFilter}!xPelFilterLuma@{xPelFilterLuma}}
+\index{xPelFilterLuma@{xPelFilterLuma}!LoopFilter@{LoopFilter}}
+\doxysubsubsection{\texorpdfstring{xPelFilterLuma}{xPelFilterLuma}}
+{\footnotesize\ttfamily void( $\ast$ x\+Pel\+Filter\+Luma(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+Src, const ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, const int tc, const bool sw, const int i\+Thr\+Cut, const bool b\+Filter\+SecondP, const bool b\+Filter\+SecondQ, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Loop\+Filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{LoopFilter_8h}{Loop\+Filter.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{LoopFilter_8cpp}{Loop\+Filter.\+cpp}}\end{DoxyCompactItemize}

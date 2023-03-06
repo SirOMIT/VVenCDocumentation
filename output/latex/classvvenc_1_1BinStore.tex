@@ -1,0 +1,223 @@
+\hypertarget{classvvenc_1_1BinStore}{}\doxysection{Bin\+Store}
+\label{classvvenc_1_1BinStore}\index{BinStore@{BinStore}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Encoder.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinStore_a5e1e56358fd46336a73c72f7b4e4b684}{Bin\+Store}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinStore_a873ae7904a996825f900c9d3ced99559}{$\sim$\+Bin\+Store}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinStore_ab62ce3128150ce6ae1dee2e00e3611cc}{add\+Bin}} (unsigned bin, unsigned ctx\+Id)
+\item 
+const std\+::vector$<$ bool $>$ \& \mbox{\hyperlink{classvvenc_1_1BinStore_a9d926b9e3f1d0aa194ee3f1d5c5a1d27}{get\+Bin\+Vector}} (unsigned ctx\+Id) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BinStore_ad134926cbc5423ed34d9a853703dc5c4}{in\+Use}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinStore_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinStore_a103e50465e5d3f6050f63676d9f073a4}{set\+Use}} (bool use\+Store)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinStore_a95b5879fd6e256fb6a1453f9e3080d19}{x\+Check\+Alloc}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BinStore_a8ca2d9a854e6d046b2423776a9574748}{m\+\_\+allocated}}
+\item 
+std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ \mbox{\hyperlink{classvvenc_1_1BinStore_a84a004621b3e65980d740de835a7bb76}{m\+\_\+bin\+Buffer}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BinStore_acd6409f2c57625273ce1826697c82e6b}{m\+\_\+in\+Use}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const std\+::size\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinStore_a1db8c59448487627aa9399d110d639d4}{m\+\_\+max\+Num\+Bins}} = 100000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 57 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a5e1e56358fd46336a73c72f7b4e4b684}\label{classvvenc_1_1BinStore_a5e1e56358fd46336a73c72f7b4e4b684}} 
+\index{BinStore@{BinStore}!BinStore@{BinStore}}
+\index{BinStore@{BinStore}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{BinStore()}{BinStore()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a873ae7904a996825f900c9d3ced99559}\label{classvvenc_1_1BinStore_a873ae7904a996825f900c9d3ced99559}} 
+\index{BinStore@{BinStore}!````~BinStore@{$\sim$BinStore}}
+\index{````~BinStore@{$\sim$BinStore}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinStore()}{~BinStore()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 61 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_ab62ce3128150ce6ae1dee2e00e3611cc}\label{classvvenc_1_1BinStore_ab62ce3128150ce6ae1dee2e00e3611cc}} 
+\index{BinStore@{BinStore}!addBin@{addBin}}
+\index{addBin@{addBin}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{addBin()}{addBin()}}
+{\footnotesize\ttfamily void add\+Bin (\begin{DoxyParamCaption}\item[{unsigned}]{bin,  }\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1BinStore_ab62ce3128150ce6ae1dee2e00e3611cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a9d926b9e3f1d0aa194ee3f1d5c5a1d27}\label{classvvenc_1_1BinStore_a9d926b9e3f1d0aa194ee3f1d5c5a1d27}} 
+\index{BinStore@{BinStore}!getBinVector@{getBinVector}}
+\index{getBinVector@{getBinVector}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{getBinVector()}{getBinVector()}}
+{\footnotesize\ttfamily const std\+::vector$<$bool$>$\& get\+Bin\+Vector (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_ad134926cbc5423ed34d9a853703dc5c4}\label{classvvenc_1_1BinStore_ad134926cbc5423ed34d9a853703dc5c4}} 
+\index{BinStore@{BinStore}!inUse@{inUse}}
+\index{inUse@{inUse}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{inUse()}{inUse()}}
+{\footnotesize\ttfamily bool in\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classvvenc_1_1BinStore_ad134926cbc5423ed34d9a853703dc5c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_ad20897c5c8bd47f5d4005989bead0e55}\label{classvvenc_1_1BinStore_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{BinStore@{BinStore}!reset@{reset}}
+\index{reset@{reset}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 63 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a103e50465e5d3f6050f63676d9f073a4}\label{classvvenc_1_1BinStore_a103e50465e5d3f6050f63676d9f073a4}} 
+\index{BinStore@{BinStore}!setUse@{setUse}}
+\index{setUse@{setUse}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{setUse()}{setUse()}}
+{\footnotesize\ttfamily void set\+Use (\begin{DoxyParamCaption}\item[{bool}]{use\+Store }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Bin\+Encoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classvvenc_1_1BinStore_a103e50465e5d3f6050f63676d9f073a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classvvenc_1_1BinStore_a103e50465e5d3f6050f63676d9f073a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a95b5879fd6e256fb6a1453f9e3080d19}\label{classvvenc_1_1BinStore_a95b5879fd6e256fb6a1453f9e3080d19}} 
+\index{BinStore@{BinStore}!xCheckAlloc@{xCheckAlloc}}
+\index{xCheckAlloc@{xCheckAlloc}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{xCheckAlloc()}{xCheckAlloc()}}
+{\footnotesize\ttfamily void x\+Check\+Alloc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 90 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinStore_a95b5879fd6e256fb6a1453f9e3080d19_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a8ca2d9a854e6d046b2423776a9574748}\label{classvvenc_1_1BinStore_a8ca2d9a854e6d046b2423776a9574748}} 
+\index{BinStore@{BinStore}!m\_allocated@{m\_allocated}}
+\index{m\_allocated@{m\_allocated}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{m\_allocated}{m\_allocated}}
+{\footnotesize\ttfamily bool m\+\_\+allocated\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 106 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a84a004621b3e65980d740de835a7bb76}\label{classvvenc_1_1BinStore_a84a004621b3e65980d740de835a7bb76}} 
+\index{BinStore@{BinStore}!m\_binBuffer@{m\_binBuffer}}
+\index{m\_binBuffer@{m\_binBuffer}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{m\_binBuffer}{m\_binBuffer}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$bool$>$ $>$ m\+\_\+bin\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 107 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_acd6409f2c57625273ce1826697c82e6b}\label{classvvenc_1_1BinStore_acd6409f2c57625273ce1826697c82e6b}} 
+\index{BinStore@{BinStore}!m\_inUse@{m\_inUse}}
+\index{m\_inUse@{m\_inUse}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{m\_inUse}{m\_inUse}}
+{\footnotesize\ttfamily bool m\+\_\+in\+Use\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 105 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinStore_a1db8c59448487627aa9399d110d639d4}\label{classvvenc_1_1BinStore_a1db8c59448487627aa9399d110d639d4}} 
+\index{BinStore@{BinStore}!m\_maxNumBins@{m\_maxNumBins}}
+\index{m\_maxNumBins@{m\_maxNumBins}!BinStore@{BinStore}}
+\doxysubsubsection{\texorpdfstring{m\_maxNumBins}{m\_maxNumBins}}
+{\footnotesize\ttfamily const std\+::size\+\_\+t m\+\_\+max\+Num\+Bins = 100000\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 104 of file Bin\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8h}{Bin\+Encoder.\+h}}\end{DoxyCompactItemize}

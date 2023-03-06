@@ -1,0 +1,262 @@
+\hypertarget{structvvenc_1_1ReferencePictureList}{}\doxysection{Reference\+Picture\+List}
+\label{structvvenc_1_1ReferencePictureList}\index{ReferencePictureList@{ReferencePictureList}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ReferencePictureList_afaf6b0e0decfc33c649d2ea3c410785e}{Reference\+Picture\+List}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a92895829a92b280316c969ca10d7b642}{get\+Num\+Ref\+Entries}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_aca15cb7ad34c72087ffb808379d1fb50}{is\+P\+O\+C\+In\+Ref\+Pic\+List}} (const int poc, const int curr\+Poc) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a215d59aee7473603c91bf17f3578e923}{set\+Ref\+Pic\+Identifier}} (int idx, int identifier, bool is\+Longterm, bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_ab8a825afe8df26dfbef16bac289689e6}{is\+Inter\+Layer\+Ref\+Pic}}, int inter\+Layer\+Idx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a1e6259cf8917188537cdb28a50168e0e}{delta\+Poc\+M\+S\+B\+Cycle\+LT}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a990dece57b3987ca6efe2667ded7e5e9}{delta\+Poc\+M\+S\+B\+Present}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a04e5c4973e6bc1ff949c1e1a5bf25f1c}{inter\+Layer\+Present}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a858c5541fdb437e8efdc7d99049a5d23}{inter\+Layer\+Ref\+Pic\+Idx}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_ab8a825afe8df26dfbef16bac289689e6}{is\+Inter\+Layer\+Ref\+Pic}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a15cab7772f9897569310d1d315009a98}{is\+Longterm\+Ref\+Pic}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_af3647caaddbbb1995afa64803021f7ea}{ltrp\+In\+Slice\+Header}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_afe3ce0d7b8a022a1e32fccff9785d86e}{number\+Of\+Active\+Pictures}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a4e7d5744e9b88bcdda0310102dd501dd}{number\+Of\+Inter\+Layer\+Pictures}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a5979149b98fd87c165c3a7d8b808d68f}{number\+Of\+Longterm\+Pictures}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_ad11700bbc592d79a3b745299e36ed742}{number\+Of\+Shortterm\+Pictures}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_af454a9125502e8b2ff6b8a212c9ea76d}{P\+OC}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ReferencePictureList_a08921220e56c9085e64d2c9b439c60e6}{ref\+Pic\+Identifier}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 95 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_afaf6b0e0decfc33c649d2ea3c410785e}\label{structvvenc_1_1ReferencePictureList_afaf6b0e0decfc33c649d2ea3c410785e}} 
+\index{ReferencePictureList@{ReferencePictureList}!ReferencePictureList@{ReferencePictureList}}
+\index{ReferencePictureList@{ReferencePictureList}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{ReferencePictureList()}{ReferencePictureList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1897 of file Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a92895829a92b280316c969ca10d7b642}\label{structvvenc_1_1ReferencePictureList_a92895829a92b280316c969ca10d7b642}} 
+\index{ReferencePictureList@{ReferencePictureList}!getNumRefEntries@{getNumRefEntries}}
+\index{getNumRefEntries@{getNumRefEntries}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{getNumRefEntries()}{getNumRefEntries()}}
+{\footnotesize\ttfamily int get\+Num\+Ref\+Entries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 114 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1ReferencePictureList_a92895829a92b280316c969ca10d7b642_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_aca15cb7ad34c72087ffb808379d1fb50}\label{structvvenc_1_1ReferencePictureList_aca15cb7ad34c72087ffb808379d1fb50}} 
+\index{ReferencePictureList@{ReferencePictureList}!isPOCInRefPicList@{isPOCInRefPicList}}
+\index{isPOCInRefPicList@{isPOCInRefPicList}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{isPOCInRefPicList()}{isPOCInRefPicList()}}
+{\footnotesize\ttfamily bool is\+P\+O\+C\+In\+Ref\+Pic\+List (\begin{DoxyParamCaption}\item[{const int}]{poc,  }\item[{const int}]{curr\+Poc }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1927 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1ReferencePictureList_aca15cb7ad34c72087ffb808379d1fb50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a215d59aee7473603c91bf17f3578e923}\label{structvvenc_1_1ReferencePictureList_a215d59aee7473603c91bf17f3578e923}} 
+\index{ReferencePictureList@{ReferencePictureList}!setRefPicIdentifier@{setRefPicIdentifier}}
+\index{setRefPicIdentifier@{setRefPicIdentifier}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{setRefPicIdentifier()}{setRefPicIdentifier()}}
+{\footnotesize\ttfamily void set\+Ref\+Pic\+Identifier (\begin{DoxyParamCaption}\item[{int}]{idx,  }\item[{int}]{identifier,  }\item[{bool}]{is\+Longterm,  }\item[{bool}]{is\+Inter\+Layer\+Ref\+Pic,  }\item[{int}]{inter\+Layer\+Idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1915 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1ReferencePictureList_a215d59aee7473603c91bf17f3578e923_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a1e6259cf8917188537cdb28a50168e0e}\label{structvvenc_1_1ReferencePictureList_a1e6259cf8917188537cdb28a50168e0e}} 
+\index{ReferencePictureList@{ReferencePictureList}!deltaPocMSBCycleLT@{deltaPocMSBCycleLT}}
+\index{deltaPocMSBCycleLT@{deltaPocMSBCycleLT}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{deltaPocMSBCycleLT}{deltaPocMSBCycleLT}}
+{\footnotesize\ttfamily uint32\+\_\+t delta\+Poc\+M\+S\+B\+Cycle\+LT\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 103 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a990dece57b3987ca6efe2667ded7e5e9}\label{structvvenc_1_1ReferencePictureList_a990dece57b3987ca6efe2667ded7e5e9}} 
+\index{ReferencePictureList@{ReferencePictureList}!deltaPocMSBPresent@{deltaPocMSBPresent}}
+\index{deltaPocMSBPresent@{deltaPocMSBPresent}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{deltaPocMSBPresent}{deltaPocMSBPresent}}
+{\footnotesize\ttfamily bool delta\+Poc\+M\+S\+B\+Present\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 104 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a04e5c4973e6bc1ff949c1e1a5bf25f1c}\label{structvvenc_1_1ReferencePictureList_a04e5c4973e6bc1ff949c1e1a5bf25f1c}} 
+\index{ReferencePictureList@{ReferencePictureList}!interLayerPresent@{interLayerPresent}}
+\index{interLayerPresent@{interLayerPresent}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{interLayerPresent}{interLayerPresent}}
+{\footnotesize\ttfamily bool inter\+Layer\+Present}
+
+
+
+Definition at line 106 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a858c5541fdb437e8efdc7d99049a5d23}\label{structvvenc_1_1ReferencePictureList_a858c5541fdb437e8efdc7d99049a5d23}} 
+\index{ReferencePictureList@{ReferencePictureList}!interLayerRefPicIdx@{interLayerRefPicIdx}}
+\index{interLayerRefPicIdx@{interLayerRefPicIdx}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{interLayerRefPicIdx}{interLayerRefPicIdx}}
+{\footnotesize\ttfamily int inter\+Layer\+Ref\+Pic\+Idx\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 108 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_ab8a825afe8df26dfbef16bac289689e6}\label{structvvenc_1_1ReferencePictureList_ab8a825afe8df26dfbef16bac289689e6}} 
+\index{ReferencePictureList@{ReferencePictureList}!isInterLayerRefPic@{isInterLayerRefPic}}
+\index{isInterLayerRefPic@{isInterLayerRefPic}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{isInterLayerRefPic}{isInterLayerRefPic}}
+{\footnotesize\ttfamily bool is\+Inter\+Layer\+Ref\+Pic\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 107 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a15cab7772f9897569310d1d315009a98}\label{structvvenc_1_1ReferencePictureList_a15cab7772f9897569310d1d315009a98}} 
+\index{ReferencePictureList@{ReferencePictureList}!isLongtermRefPic@{isLongtermRefPic}}
+\index{isLongtermRefPic@{isLongtermRefPic}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{isLongtermRefPic}{isLongtermRefPic}}
+{\footnotesize\ttfamily bool is\+Longterm\+Ref\+Pic\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 100 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_af3647caaddbbb1995afa64803021f7ea}\label{structvvenc_1_1ReferencePictureList_af3647caaddbbb1995afa64803021f7ea}} 
+\index{ReferencePictureList@{ReferencePictureList}!ltrpInSliceHeader@{ltrpInSliceHeader}}
+\index{ltrpInSliceHeader@{ltrpInSliceHeader}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{ltrpInSliceHeader}{ltrpInSliceHeader}}
+{\footnotesize\ttfamily bool ltrp\+In\+Slice\+Header}
+
+
+
+Definition at line 105 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_afe3ce0d7b8a022a1e32fccff9785d86e}\label{structvvenc_1_1ReferencePictureList_afe3ce0d7b8a022a1e32fccff9785d86e}} 
+\index{ReferencePictureList@{ReferencePictureList}!numberOfActivePictures@{numberOfActivePictures}}
+\index{numberOfActivePictures@{numberOfActivePictures}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{numberOfActivePictures}{numberOfActivePictures}}
+{\footnotesize\ttfamily int number\+Of\+Active\+Pictures}
+
+
+
+Definition at line 99 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a4e7d5744e9b88bcdda0310102dd501dd}\label{structvvenc_1_1ReferencePictureList_a4e7d5744e9b88bcdda0310102dd501dd}} 
+\index{ReferencePictureList@{ReferencePictureList}!numberOfInterLayerPictures@{numberOfInterLayerPictures}}
+\index{numberOfInterLayerPictures@{numberOfInterLayerPictures}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{numberOfInterLayerPictures}{numberOfInterLayerPictures}}
+{\footnotesize\ttfamily int number\+Of\+Inter\+Layer\+Pictures}
+
+
+
+Definition at line 109 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a5979149b98fd87c165c3a7d8b808d68f}\label{structvvenc_1_1ReferencePictureList_a5979149b98fd87c165c3a7d8b808d68f}} 
+\index{ReferencePictureList@{ReferencePictureList}!numberOfLongtermPictures@{numberOfLongtermPictures}}
+\index{numberOfLongtermPictures@{numberOfLongtermPictures}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{numberOfLongtermPictures}{numberOfLongtermPictures}}
+{\footnotesize\ttfamily int number\+Of\+Longterm\+Pictures}
+
+
+
+Definition at line 98 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_ad11700bbc592d79a3b745299e36ed742}\label{structvvenc_1_1ReferencePictureList_ad11700bbc592d79a3b745299e36ed742}} 
+\index{ReferencePictureList@{ReferencePictureList}!numberOfShorttermPictures@{numberOfShorttermPictures}}
+\index{numberOfShorttermPictures@{numberOfShorttermPictures}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{numberOfShorttermPictures}{numberOfShorttermPictures}}
+{\footnotesize\ttfamily int number\+Of\+Shortterm\+Pictures}
+
+
+
+Definition at line 97 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_af454a9125502e8b2ff6b8a212c9ea76d}\label{structvvenc_1_1ReferencePictureList_af454a9125502e8b2ff6b8a212c9ea76d}} 
+\index{ReferencePictureList@{ReferencePictureList}!POC@{POC}}
+\index{POC@{POC}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{POC}{POC}}
+{\footnotesize\ttfamily int P\+OC\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 102 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ReferencePictureList_a08921220e56c9085e64d2c9b439c60e6}\label{structvvenc_1_1ReferencePictureList_a08921220e56c9085e64d2c9b439c60e6}} 
+\index{ReferencePictureList@{ReferencePictureList}!refPicIdentifier@{refPicIdentifier}}
+\index{refPicIdentifier@{refPicIdentifier}!ReferencePictureList@{ReferencePictureList}}
+\doxysubsubsection{\texorpdfstring{refPicIdentifier}{refPicIdentifier}}
+{\footnotesize\ttfamily int ref\+Pic\+Identifier\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS\mbox{]}}
+
+
+
+Definition at line 101 of file Slice.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

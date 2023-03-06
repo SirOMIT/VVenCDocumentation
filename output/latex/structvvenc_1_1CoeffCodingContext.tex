@@ -1,0 +1,1855 @@
+\hypertarget{structvvenc_1_1CoeffCodingContext}{}\doxysection{Coeff\+Coding\+Context}
+\label{structvvenc_1_1CoeffCodingContext}\index{CoeffCodingContext@{CoeffCodingContext}}
+
+
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Coeff\+Coding\+Context\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{structvvenc_1_1CoeffCodingContext__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a81ebd4348a74dfba35467e62fd752689}{Coeff\+Coding\+Context}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} component, bool sign\+Hide, bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}{bdpcm}}=false)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}{bdpcm}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ab50eef7ddbf55461e47b82bc48eabb60}{block\+Pos}} (int scan\+Pos) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ae352588caf3abc6eb3dc8f4d3adc386e}{cg\+PosX}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8f0215792c84839fceccd01cf3d25b3d}{cg\+PosY}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ad38b1301e1b1fdb8121d4989edc5ac04}{comp\+ID}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a34e9ecec45d459d553583f11968c3033}{ctx\+Offset\+Abs}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2b34602c720f2e537fd1b6152f12ada4}{dec\+Derive\+Mod\+Coeff}} (int right\+Pixel, int below\+Pixel, int abs\+Coeff)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9651d5ef5c5392755ac8f41a1561a055}{decimate\+Num\+Ctx\+Bins}} (int n)
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a51e17389ee3d14acc836d0190a0e2920}{derive\+Mod\+Coeff}} (int right\+Pixel, int below\+Pixel, int abs\+Coeff, int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}{bdpcm}}=0)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a00c2ea665694ff6d94543ecee6c27bf0}{ext\+Prec}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9b48e75d7ed56bbd621ff5a4f4ff05ef}{greater1\+Ctx\+Id\+Abs}} (uint8\+\_\+t offset) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8944f4fc3aa2cbb71bbfe816a9535276}{greater2\+Ctx\+Id\+Abs}} (uint8\+\_\+t offset) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a67f4bbaad5f8d2da991ff9ddf446d296}{greater\+X\+Ctx\+Id\+Abs\+TS}} (uint8\+\_\+t offset) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aef9727c53503a7abe07b4cf7394cdeae}{height}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a4d33ee5c5c8290da7d5eaa4e080b92c7}{hide\+Sign}} (int pos\+First, int pos\+Last) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a3ec9518cd3a048daab7f9f9a21d182c7}{increase\+Num\+Ctx\+Bins}} (int n)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ab26152d100e61e35542a82acc058689f}{init\+Subblock}} (int Subset\+Id, bool sig\+Group\+Flag=false)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a574aa2d124b5bebb483d4b08b5d1db9d}{is\+Last}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aade6950583c1d80f799a9d976c8f8d25}{is\+Last\+Sub\+Set}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ab2ecfd0d0f5dc208813a7f6e8caaeaf2}{is\+Not\+First}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a81eea0795418f78152a0a0a8e5283f42}{is\+Sig\+Group}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ac2b19d377d1b1101d50a370f9310c8f9}{is\+Sig\+Group}} (int scan\+Pos\+CG) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aa34027beef30ddccad3b1ce0164997b1}{last\+Sub\+Set}} ()
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a42a0ca669482784ac4c6992f4830c3b2}{last\+X\+Ctx\+Id}} (unsigned pos\+LastX) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a25862913bdd2ddff9e1745d9663d6ba1}{last\+Y\+Ctx\+Id}} (unsigned pos\+LastY) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a52e3d97ba7b6be10a4f9c58610ecf43c}{log2\+C\+G\+Height}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a4b5539c51a0d3407dfeff27fad6b76ff}{log2\+C\+G\+Size}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a0f11dd090a7395e85706d26bce62a3df}{log2\+C\+G\+Width}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8f97e2c66bc4c63ca6a31c8a37d08fb3}{lrg1\+Ctx\+Id\+Abs\+TS}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff, int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}{bdpcm}})
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_afec50e1512819a6f22eb0f04f59b0ced}{max\+Last\+PosX}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a76ebf573ca7d5bd7d7e853bf820d1f43}{max\+Last\+PosY}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ade159fcb188d938f03fff984ad59fdb5}{max\+Log2\+Tr\+D\+Range}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a89240da7f2385d1738f7e6d6be5ddbb5}{max\+Num\+Coeff}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af56f08fc3cc038279b3eb36648b94deb}{max\+Sub\+Pos}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2c344872d98363e88e5148f5ebf759d4}{min\+Sub\+Pos}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a43e1065a24c2964f4773200f29dfced7}{neigh\+TS}} (int \&right\+Pixel, int \&below\+Pixel, int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af89132199a662808e85a1479435393aa}{none\+Sig\+Group}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_afc56ecf6ee0753209a8c6c0316d34463}{num\+Ctx\+Bins}} () const
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aea7898a6fd63f99f9586d2c9f8d31e5b}{only1st\+Sig\+Group}} ()
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a3a53065affd0023076599fa23deb2109}{parity\+Ctx\+Id\+Abs}} (uint8\+\_\+t offset) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a6c6031aa3de71bdabe85105f1dac210d}{parity\+Ctx\+Id\+Abs\+TS}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ac765c8abd974af54122e8b0ac89047b0}{posX}} (int scan\+Pos) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aa42da4571679a84abeaae7704e2982ca}{posY}} (int scan\+Pos) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a1c4bd39a949407cb605f9f4278fda7d5}{reset\+Sig\+Group}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9ab6ad51d0fa8791367dbf54a474bf8d}{scan\+Pos\+Last}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a55a74c7817e2ed50e59fc33f3d1ba5d4}{set\+Num\+Ctx\+Bins}} (int n)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a157bc9167c0c14a50eeda904d38ee6be}{set\+Scan\+Pos\+Last}} (int pos\+Last)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a54875f6ec2408ce87b5eb7ebdf8cf94a}{set\+Sig\+Group}} ()
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a62988f468c2f31b61007bf071160d84f}{sig\+Ctx\+Id\+Abs}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff, const int state)
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a0b2626625b31eef9cff0d90b6b4ed06f}{sig\+Ctx\+Id\+Abs\+TS}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff)
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a07066ee1490851873d517ca083abf44f}{sig\+Group\+Ctx\+Id}} (bool ts=false) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a85a0c28fbd30817a83cbf9ff767a8aff}{sign\+Ctx\+Id\+Abs\+TS}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff, int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}{bdpcm}})
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af33b4cb606df60d18f340fb33a1d2638}{sign\+Hiding}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a10f2eab8a4d16071c6ef56da22cc41cd}{sub\+Set\+Id}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_adcb538c2ac1a07f1d018f6e246e0b31b}{sub\+Set\+Pos}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a6e0bdb2558132fdbecd8adad0810c0c0}{template\+Abs\+Sum}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff, int base\+Level)
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a3e23a7b7615ba7195666f53410c3f166}{template\+Abs\+Sum\+TS}} (int scan\+Pos, const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$coeff)
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ac07b7d89bde207a61e2eb3655102d572}{width}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a830571f1da7831e535dd234924e2bb4f}{reg\+Bin\+Limit}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a474629dfbd3f780ccba25d7d437d84e7}{m\+\_\+bdpcm}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a6ea90068a7a6894e1a9ce8d2e5dbd18f}{m\+\_\+ch\+Type}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a186b7bb9a9c444cc1ba3d05895e9a145}{m\+\_\+comp\+ID}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8bbc289779266b075d075e1fea7e5028}{m\+\_\+\+Ctx\+Set\+LastX}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a13ae14de37655c71365bdd400e43719a}{m\+\_\+\+Ctx\+Set\+LastY}}
+\item 
+const bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2418b137635be8f65fbf1623bd5c2f3e}{m\+\_\+extended\+Precision}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2558e52b2379e0eeb1df2b065bd9442f}{m\+\_\+gtx\+Flag\+Ctx\+Set}} \mbox{[}2\mbox{]}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a27e03d637b47782acde11f6e9ae38927}{m\+\_\+height}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af22fcb385ee4350057ceadc03cff65a7}{m\+\_\+height\+In\+Groups}}
+\item 
+const int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a10d99c2bef7b5f3c7736b27f9bf23b36}{m\+\_\+last\+OffsetX}}
+\item 
+const int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af61cb0bc1fc3de647a2fa70d7e803629}{m\+\_\+last\+OffsetY}}
+\item 
+const int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aa6426dc3516d90f8de861db43b48aff7}{m\+\_\+last\+ShiftX}}
+\item 
+const int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a142e9662466dc6a7495d2ad10131c7d4}{m\+\_\+last\+ShiftY}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a18a95613cfd3e0d8fae989d46758828b}{m\+\_\+log2\+Block\+Height}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a0553bf0acf71d25e72fc86aebc67d043}{m\+\_\+log2\+Block\+Width}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2be9a0035c3ce0bd4e87a94b5d25f23a}{m\+\_\+log2\+C\+G\+Height}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a0cb7d309c8189a97d17142dce6ed779e}{m\+\_\+log2\+C\+G\+Size}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a1a64517da0e319e84f98e84b954b7d34}{m\+\_\+log2\+C\+G\+Width}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a5ae013eaeaad1fcdfd45adc30c8e91c5}{m\+\_\+log2\+Width\+In\+Groups}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a890bbab8d6dbbf132675c5bb51145bbf}{m\+\_\+max\+Last\+PosX}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a556a935238701bc4b2f5a877142fee5b}{m\+\_\+max\+Last\+PosY}}
+\item 
+const int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a32c9f4f2a78a91b4f71ce152d35f1d95}{m\+\_\+max\+Log2\+Tr\+Dynamic\+Range}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a5d4113dc834c5dd7e0d0be2c74bcff92}{m\+\_\+max\+Num\+Coeff}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ab77ee4161fa2d145f3fe016102033e39}{m\+\_\+max\+Sub\+Pos}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_afe5f59380e70d9b43f4876ab85f21d8f}{m\+\_\+min\+Sub\+Pos}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ac86b813fe4476b4a02f5f23e1e49528e}{m\+\_\+par\+Flag\+Ctx\+Set}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a086bd8f4ed38b956d5e1134e753d43ce}{m\+\_\+remaining\+Context\+Bins}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ScanElement}{Scan\+Element}} $\ast$ \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a55102fa505015e353ab0ceaf93063488}{m\+\_\+scan}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ScanElement}{Scan\+Element}} $\ast$ \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a676251b6dd67310f3939086cfe16534c}{m\+\_\+scan\+CG}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a4c5ededa630f13ad6d7a85411f963e80}{m\+\_\+scan\+Pos\+Last}}
+\item 
+std\+::bitset$<$ \mbox{\hyperlink{namespacevvenc_a3be7827d2a4a2c35661962feb9bce427}{M\+L\+S\+\_\+\+G\+R\+P\+\_\+\+N\+UM}} $>$ \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a20338d5fa6a32048322cc3aa9f5c1aaf}{m\+\_\+sig\+Coeff\+Group\+Flag}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a72a935bf84d4f83d499caa4a3138bb34}{m\+\_\+sig\+Flag\+Ctx\+Set}} \mbox{[}3\mbox{]}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a5278781ec66617a09f8f4161f2f1ec45}{m\+\_\+sig\+Group\+Ctx\+Id}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aeeffa2ab342fcbc0c7f36d39df588082}{m\+\_\+sig\+Group\+Ctx\+Id\+TS}}
+\item 
+const bool \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ad3aa60217dffed00d260ea3af202e3b1}{m\+\_\+sign\+Hiding}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_af9b6a76a5565fef2fdefe377728db659}{m\+\_\+sub\+Set\+Id}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8d86b75a3df661e625c4b5d132c3566b}{m\+\_\+sub\+Set\+Pos}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a57ab7c39b9298d2713de3921e0820314}{m\+\_\+sub\+Set\+PosX}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ad668240bdae23d2e8c466a8710c7d88c}{m\+\_\+sub\+Set\+PosY}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a000417f7ebb0e7dee27499db9f3b2766}{m\+\_\+tmpl\+Cp\+Diag}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a8dce0fbd602dd7353d50bb59ece3625f}{m\+\_\+tmpl\+Cp\+Sum1}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a37ace94fafee5e3f22c75bbf7a0c1303}{m\+\_\+ts\+Gtx\+Flag\+Ctx\+Set}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a46d32cb3009a2475167bc3d6290ee63e}{m\+\_\+ts\+Lrg1\+Flag\+Ctx\+Set}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a2a2a5fcdd9e05adc5dbaa500d1cb5bd2}{m\+\_\+ts\+Par\+Flag\+Ctx\+Set}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a5d040fc63cb3caed829579afacf4aaba}{m\+\_\+ts\+Sig\+Flag\+Ctx\+Set}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_ad93cd9bce39c69f0377dd1af69b0c6b1}{m\+\_\+ts\+Sign\+Flag\+Ctx\+Set}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_aa129142ae93cb431be6932ab80ed026e}{m\+\_\+width}}
+\item 
+const unsigned \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext_a60140293bdc7ff61bb9efdcfa223d7d8}{m\+\_\+width\+In\+Groups}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 65 of file Context\+Modelling.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a81ebd4348a74dfba35467e62fd752689}\label{structvvenc_1_1CoeffCodingContext_a81ebd4348a74dfba35467e62fd752689}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!CoeffCodingContext@{CoeffCodingContext}}
+\index{CoeffCodingContext@{CoeffCodingContext}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{CoeffCodingContext()}{CoeffCodingContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{component,  }\item[{bool}]{sign\+Hide,  }\item[{bool}]{bdpcm = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file Context\+Modelling.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}\label{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!bdpcm@{bdpcm}}
+\index{bdpcm@{bdpcm}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{bdpcm()}{bdpcm()}}
+{\footnotesize\ttfamily bool bdpcm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a9322f01cead6d7e974535d6aa1e16065_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ab50eef7ddbf55461e47b82bc48eabb60}\label{structvvenc_1_1CoeffCodingContext_ab50eef7ddbf55461e47b82bc48eabb60}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!blockPos@{blockPos}}
+\index{blockPos@{blockPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{blockPos()}{blockPos()}}
+{\footnotesize\ttfamily unsigned block\+Pos (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ab50eef7ddbf55461e47b82bc48eabb60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ae352588caf3abc6eb3dc8f4d3adc386e}\label{structvvenc_1_1CoeffCodingContext_ae352588caf3abc6eb3dc8f4d3adc386e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!cgPosX@{cgPosX}}
+\index{cgPosX@{cgPosX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{cgPosX()}{cgPosX()}}
+{\footnotesize\ttfamily int cg\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ae352588caf3abc6eb3dc8f4d3adc386e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8f0215792c84839fceccd01cf3d25b3d}\label{structvvenc_1_1CoeffCodingContext_a8f0215792c84839fceccd01cf3d25b3d}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!cgPosY@{cgPosY}}
+\index{cgPosY@{cgPosY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{cgPosY()}{cgPosY()}}
+{\footnotesize\ttfamily int cg\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a8f0215792c84839fceccd01cf3d25b3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ad38b1301e1b1fdb8121d4989edc5ac04}\label{structvvenc_1_1CoeffCodingContext_ad38b1301e1b1fdb8121d4989edc5ac04}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!compID@{compID}}
+\index{compID@{compID}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{compID()}{compID()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a34e9ecec45d459d553583f11968c3033}\label{structvvenc_1_1CoeffCodingContext_a34e9ecec45d459d553583f11968c3033}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!ctxOffsetAbs@{ctxOffsetAbs}}
+\index{ctxOffsetAbs@{ctxOffsetAbs}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{ctxOffsetAbs()}{ctxOffsetAbs()}}
+{\footnotesize\ttfamily uint8\+\_\+t ctx\+Offset\+Abs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 162 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a34e9ecec45d459d553583f11968c3033_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2b34602c720f2e537fd1b6152f12ada4}\label{structvvenc_1_1CoeffCodingContext_a2b34602c720f2e537fd1b6152f12ada4}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!decDeriveModCoeff@{decDeriveModCoeff}}
+\index{decDeriveModCoeff@{decDeriveModCoeff}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{decDeriveModCoeff()}{decDeriveModCoeff()}}
+{\footnotesize\ttfamily int dec\+Derive\+Mod\+Coeff (\begin{DoxyParamCaption}\item[{int}]{right\+Pixel,  }\item[{int}]{below\+Pixel,  }\item[{int}]{abs\+Coeff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 339 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a2b34602c720f2e537fd1b6152f12ada4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a9651d5ef5c5392755ac8f41a1561a055}\label{structvvenc_1_1CoeffCodingContext_a9651d5ef5c5392755ac8f41a1561a055}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!decimateNumCtxBins@{decimateNumCtxBins}}
+\index{decimateNumCtxBins@{decimateNumCtxBins}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{decimateNumCtxBins()}{decimateNumCtxBins()}}
+{\footnotesize\ttfamily void decimate\+Num\+Ctx\+Bins (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 115 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a9651d5ef5c5392755ac8f41a1561a055_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a51e17389ee3d14acc836d0190a0e2920}\label{structvvenc_1_1CoeffCodingContext_a51e17389ee3d14acc836d0190a0e2920}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!deriveModCoeff@{deriveModCoeff}}
+\index{deriveModCoeff@{deriveModCoeff}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{deriveModCoeff()}{deriveModCoeff()}}
+{\footnotesize\ttfamily int derive\+Mod\+Coeff (\begin{DoxyParamCaption}\item[{int}]{right\+Pixel,  }\item[{int}]{below\+Pixel,  }\item[{int}]{abs\+Coeff,  }\item[{int}]{bdpcm = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 313 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{structvvenc_1_1CoeffCodingContext_a51e17389ee3d14acc836d0190a0e2920_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a51e17389ee3d14acc836d0190a0e2920_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a00c2ea665694ff6d94543ecee6c27bf0}\label{structvvenc_1_1CoeffCodingContext_a00c2ea665694ff6d94543ecee6c27bf0}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!extPrec@{extPrec}}
+\index{extPrec@{extPrec}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{extPrec()}{extPrec()}}
+{\footnotesize\ttfamily bool ext\+Prec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 90 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a9b48e75d7ed56bbd621ff5a4f4ff05ef}\label{structvvenc_1_1CoeffCodingContext_a9b48e75d7ed56bbd621ff5a4f4ff05ef}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!greater1CtxIdAbs@{greater1CtxIdAbs}}
+\index{greater1CtxIdAbs@{greater1CtxIdAbs}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{greater1CtxIdAbs()}{greater1CtxIdAbs()}}
+{\footnotesize\ttfamily unsigned greater1\+Ctx\+Id\+Abs (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a9b48e75d7ed56bbd621ff5a4f4ff05ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8944f4fc3aa2cbb71bbfe816a9535276}\label{structvvenc_1_1CoeffCodingContext_a8944f4fc3aa2cbb71bbfe816a9535276}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!greater2CtxIdAbs@{greater2CtxIdAbs}}
+\index{greater2CtxIdAbs@{greater2CtxIdAbs}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{greater2CtxIdAbs()}{greater2CtxIdAbs()}}
+{\footnotesize\ttfamily unsigned greater2\+Ctx\+Id\+Abs (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 175 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a8944f4fc3aa2cbb71bbfe816a9535276_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a67f4bbaad5f8d2da991ff9ddf446d296}\label{structvvenc_1_1CoeffCodingContext_a67f4bbaad5f8d2da991ff9ddf446d296}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!greaterXCtxIdAbsTS@{greaterXCtxIdAbsTS}}
+\index{greaterXCtxIdAbsTS@{greaterXCtxIdAbsTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{greaterXCtxIdAbsTS()}{greaterXCtxIdAbsTS()}}
+{\footnotesize\ttfamily unsigned greater\+X\+Ctx\+Id\+Abs\+TS (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 227 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a67f4bbaad5f8d2da991ff9ddf446d296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aef9727c53503a7abe07b4cf7394cdeae}\label{structvvenc_1_1CoeffCodingContext_aef9727c53503a7abe07b4cf7394cdeae}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!height@{height}}
+\index{height@{height}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily unsigned height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aef9727c53503a7abe07b4cf7394cdeae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a4d33ee5c5c8290da7d5eaa4e080b92c7}\label{structvvenc_1_1CoeffCodingContext_a4d33ee5c5c8290da7d5eaa4e080b92c7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!hideSign@{hideSign}}
+\index{hideSign@{hideSign}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{hideSign()}{hideSign()}}
+{\footnotesize\ttfamily bool hide\+Sign (\begin{DoxyParamCaption}\item[{int}]{pos\+First,  }\item[{int}]{pos\+Last }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a4d33ee5c5c8290da7d5eaa4e080b92c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a3ec9518cd3a048daab7f9f9a21d182c7}\label{structvvenc_1_1CoeffCodingContext_a3ec9518cd3a048daab7f9f9a21d182c7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!increaseNumCtxBins@{increaseNumCtxBins}}
+\index{increaseNumCtxBins@{increaseNumCtxBins}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{increaseNumCtxBins()}{increaseNumCtxBins()}}
+{\footnotesize\ttfamily void increase\+Num\+Ctx\+Bins (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a3ec9518cd3a048daab7f9f9a21d182c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ab26152d100e61e35542a82acc058689f}\label{structvvenc_1_1CoeffCodingContext_ab26152d100e61e35542a82acc058689f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!initSubblock@{initSubblock}}
+\index{initSubblock@{initSubblock}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{initSubblock()}{initSubblock()}}
+{\footnotesize\ttfamily void init\+Subblock (\begin{DoxyParamCaption}\item[{int}]{Subset\+Id,  }\item[{bool}]{sig\+Group\+Flag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 116 of file Context\+Modelling.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ab26152d100e61e35542a82acc058689f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a574aa2d124b5bebb483d4b08b5d1db9d}\label{structvvenc_1_1CoeffCodingContext_a574aa2d124b5bebb483d4b08b5d1db9d}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!isLast@{isLast}}
+\index{isLast@{isLast}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{isLast()}{isLast()}}
+{\footnotesize\ttfamily bool is\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 96 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a574aa2d124b5bebb483d4b08b5d1db9d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aade6950583c1d80f799a9d976c8f8d25}\label{structvvenc_1_1CoeffCodingContext_aade6950583c1d80f799a9d976c8f8d25}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!isLastSubSet@{isLastSubSet}}
+\index{isLastSubSet@{isLastSubSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{isLastSubSet()}{isLastSubSet()}}
+{\footnotesize\ttfamily bool is\+Last\+Sub\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aade6950583c1d80f799a9d976c8f8d25_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aade6950583c1d80f799a9d976c8f8d25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ab2ecfd0d0f5dc208813a7f6e8caaeaf2}\label{structvvenc_1_1CoeffCodingContext_ab2ecfd0d0f5dc208813a7f6e8caaeaf2}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!isNotFirst@{isNotFirst}}
+\index{isNotFirst@{isNotFirst}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{isNotFirst()}{isNotFirst()}}
+{\footnotesize\ttfamily bool is\+Not\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 97 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ab2ecfd0d0f5dc208813a7f6e8caaeaf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a81eea0795418f78152a0a0a8e5283f42}\label{structvvenc_1_1CoeffCodingContext_a81eea0795418f78152a0a0a8e5283f42}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!isSigGroup@{isSigGroup}}
+\index{isSigGroup@{isSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{isSigGroup()}{isSigGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool is\+Sig\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ac2b19d377d1b1101d50a370f9310c8f9}\label{structvvenc_1_1CoeffCodingContext_ac2b19d377d1b1101d50a370f9310c8f9}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!isSigGroup@{isSigGroup}}
+\index{isSigGroup@{isSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{isSigGroup()}{isSigGroup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool is\+Sig\+Group (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos\+CG }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 98 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ac2b19d377d1b1101d50a370f9310c8f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aa34027beef30ddccad3b1ce0164997b1}\label{structvvenc_1_1CoeffCodingContext_aa34027beef30ddccad3b1ce0164997b1}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!lastSubSet@{lastSubSet}}
+\index{lastSubSet@{lastSubSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{lastSubSet()}{lastSubSet()}}
+{\footnotesize\ttfamily int last\+Sub\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{structvvenc_1_1CoeffCodingContext_aa34027beef30ddccad3b1ce0164997b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aa34027beef30ddccad3b1ce0164997b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a42a0ca669482784ac4c6992f4830c3b2}\label{structvvenc_1_1CoeffCodingContext_a42a0ca669482784ac4c6992f4830c3b2}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!lastXCtxId@{lastXCtxId}}
+\index{lastXCtxId@{lastXCtxId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{lastXCtxId()}{lastXCtxId()}}
+{\footnotesize\ttfamily unsigned last\+X\+Ctx\+Id (\begin{DoxyParamCaption}\item[{unsigned}]{pos\+LastX }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a42a0ca669482784ac4c6992f4830c3b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a25862913bdd2ddff9e1745d9663d6ba1}\label{structvvenc_1_1CoeffCodingContext_a25862913bdd2ddff9e1745d9663d6ba1}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!lastYCtxId@{lastYCtxId}}
+\index{lastYCtxId@{lastYCtxId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{lastYCtxId()}{lastYCtxId()}}
+{\footnotesize\ttfamily unsigned last\+Y\+Ctx\+Id (\begin{DoxyParamCaption}\item[{unsigned}]{pos\+LastY }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 109 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a25862913bdd2ddff9e1745d9663d6ba1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a52e3d97ba7b6be10a4f9c58610ecf43c}\label{structvvenc_1_1CoeffCodingContext_a52e3d97ba7b6be10a4f9c58610ecf43c}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!log2CGHeight@{log2CGHeight}}
+\index{log2CGHeight@{log2CGHeight}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{log2CGHeight()}{log2CGHeight()}}
+{\footnotesize\ttfamily unsigned log2\+C\+G\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 88 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a52e3d97ba7b6be10a4f9c58610ecf43c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a4b5539c51a0d3407dfeff27fad6b76ff}\label{structvvenc_1_1CoeffCodingContext_a4b5539c51a0d3407dfeff27fad6b76ff}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!log2CGSize@{log2CGSize}}
+\index{log2CGSize@{log2CGSize}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{log2CGSize()}{log2CGSize()}}
+{\footnotesize\ttfamily unsigned log2\+C\+G\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 89 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a4b5539c51a0d3407dfeff27fad6b76ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a0f11dd090a7395e85706d26bce62a3df}\label{structvvenc_1_1CoeffCodingContext_a0f11dd090a7395e85706d26bce62a3df}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!log2CGWidth@{log2CGWidth}}
+\index{log2CGWidth@{log2CGWidth}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{log2CGWidth()}{log2CGWidth()}}
+{\footnotesize\ttfamily unsigned log2\+C\+G\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a0f11dd090a7395e85706d26bce62a3df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8f97e2c66bc4c63ca6a31c8a37d08fb3}\label{structvvenc_1_1CoeffCodingContext_a8f97e2c66bc4c63ca6a31c8a37d08fb3}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!lrg1CtxIdAbsTS@{lrg1CtxIdAbsTS}}
+\index{lrg1CtxIdAbsTS@{lrg1CtxIdAbsTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{lrg1CtxIdAbsTS()}{lrg1CtxIdAbsTS()}}
+{\footnotesize\ttfamily unsigned lrg1\+Ctx\+Id\+Abs\+TS (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff,  }\item[{int}]{bdpcm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 229 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{structvvenc_1_1CoeffCodingContext_a8f97e2c66bc4c63ca6a31c8a37d08fb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a8f97e2c66bc4c63ca6a31c8a37d08fb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_afec50e1512819a6f22eb0f04f59b0ced}\label{structvvenc_1_1CoeffCodingContext_afec50e1512819a6f22eb0f04f59b0ced}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!maxLastPosX@{maxLastPosX}}
+\index{maxLastPosX@{maxLastPosX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{maxLastPosX()}{maxLastPosX()}}
+{\footnotesize\ttfamily unsigned max\+Last\+PosX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_afec50e1512819a6f22eb0f04f59b0ced_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a76ebf573ca7d5bd7d7e853bf820d1f43}\label{structvvenc_1_1CoeffCodingContext_a76ebf573ca7d5bd7d7e853bf820d1f43}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!maxLastPosY@{maxLastPosY}}
+\index{maxLastPosY@{maxLastPosY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{maxLastPosY()}{maxLastPosY()}}
+{\footnotesize\ttfamily unsigned max\+Last\+PosY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a76ebf573ca7d5bd7d7e853bf820d1f43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ade159fcb188d938f03fff984ad59fdb5}\label{structvvenc_1_1CoeffCodingContext_ade159fcb188d938f03fff984ad59fdb5}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!maxLog2TrDRange@{maxLog2TrDRange}}
+\index{maxLog2TrDRange@{maxLog2TrDRange}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{maxLog2TrDRange()}{maxLog2TrDRange()}}
+{\footnotesize\ttfamily int max\+Log2\+Tr\+D\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 91 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ade159fcb188d938f03fff984ad59fdb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a89240da7f2385d1738f7e6d6be5ddbb5}\label{structvvenc_1_1CoeffCodingContext_a89240da7f2385d1738f7e6d6be5ddbb5}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!maxNumCoeff@{maxNumCoeff}}
+\index{maxNumCoeff@{maxNumCoeff}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{maxNumCoeff()}{maxNumCoeff()}}
+{\footnotesize\ttfamily unsigned max\+Num\+Coeff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 92 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a89240da7f2385d1738f7e6d6be5ddbb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af56f08fc3cc038279b3eb36648b94deb}\label{structvvenc_1_1CoeffCodingContext_af56f08fc3cc038279b3eb36648b94deb}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!maxSubPos@{maxSubPos}}
+\index{maxSubPos@{maxSubPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{maxSubPos()}{maxSubPos()}}
+{\footnotesize\ttfamily int max\+Sub\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 95 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_af56f08fc3cc038279b3eb36648b94deb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2c344872d98363e88e5148f5ebf759d4}\label{structvvenc_1_1CoeffCodingContext_a2c344872d98363e88e5148f5ebf759d4}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!minSubPos@{minSubPos}}
+\index{minSubPos@{minSubPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{minSubPos()}{minSubPos()}}
+{\footnotesize\ttfamily int min\+Sub\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a2c344872d98363e88e5148f5ebf759d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a43e1065a24c2964f4773200f29dfced7}\label{structvvenc_1_1CoeffCodingContext_a43e1065a24c2964f4773200f29dfced7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!neighTS@{neighTS}}
+\index{neighTS@{neighTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{neighTS()}{neighTS()}}
+{\footnotesize\ttfamily void neigh\+TS (\begin{DoxyParamCaption}\item[{int \&}]{right\+Pixel,  }\item[{int \&}]{below\+Pixel,  }\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 295 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{structvvenc_1_1CoeffCodingContext_a43e1065a24c2964f4773200f29dfced7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a43e1065a24c2964f4773200f29dfced7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af89132199a662808e85a1479435393aa}\label{structvvenc_1_1CoeffCodingContext_af89132199a662808e85a1479435393aa}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!noneSigGroup@{noneSigGroup}}
+\index{noneSigGroup@{noneSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{noneSigGroup()}{noneSigGroup()}}
+{\footnotesize\ttfamily bool none\+Sig\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_af89132199a662808e85a1479435393aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_afc56ecf6ee0753209a8c6c0316d34463}\label{structvvenc_1_1CoeffCodingContext_afc56ecf6ee0753209a8c6c0316d34463}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!numCtxBins@{numCtxBins}}
+\index{numCtxBins@{numCtxBins}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{numCtxBins()}{numCtxBins()}}
+{\footnotesize\ttfamily int num\+Ctx\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_afc56ecf6ee0753209a8c6c0316d34463_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aea7898a6fd63f99f9586d2c9f8d31e5b}\label{structvvenc_1_1CoeffCodingContext_aea7898a6fd63f99f9586d2c9f8d31e5b}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!only1stSigGroup@{only1stSigGroup}}
+\index{only1stSigGroup@{only1stSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{only1stSigGroup()}{only1stSigGroup()}}
+{\footnotesize\ttfamily bool only1st\+Sig\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aea7898a6fd63f99f9586d2c9f8d31e5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aea7898a6fd63f99f9586d2c9f8d31e5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a3a53065affd0023076599fa23deb2109}\label{structvvenc_1_1CoeffCodingContext_a3a53065affd0023076599fa23deb2109}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!parityCtxIdAbs@{parityCtxIdAbs}}
+\index{parityCtxIdAbs@{parityCtxIdAbs}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{parityCtxIdAbs()}{parityCtxIdAbs()}}
+{\footnotesize\ttfamily unsigned parity\+Ctx\+Id\+Abs (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{offset }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a3a53065affd0023076599fa23deb2109_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a6c6031aa3de71bdabe85105f1dac210d}\label{structvvenc_1_1CoeffCodingContext_a6c6031aa3de71bdabe85105f1dac210d}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!parityCtxIdAbsTS@{parityCtxIdAbsTS}}
+\index{parityCtxIdAbsTS@{parityCtxIdAbsTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{parityCtxIdAbsTS()}{parityCtxIdAbsTS()}}
+{\footnotesize\ttfamily unsigned parity\+Ctx\+Id\+Abs\+TS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 226 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a6c6031aa3de71bdabe85105f1dac210d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ac765c8abd974af54122e8b0ac89047b0}\label{structvvenc_1_1CoeffCodingContext_ac765c8abd974af54122e8b0ac89047b0}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!posX@{posX}}
+\index{posX@{posX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{posX()}{posX()}}
+{\footnotesize\ttfamily unsigned posX (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ac765c8abd974af54122e8b0ac89047b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aa42da4571679a84abeaae7704e2982ca}\label{structvvenc_1_1CoeffCodingContext_aa42da4571679a84abeaae7704e2982ca}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!posY@{posY}}
+\index{posY@{posY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{posY()}{posY()}}
+{\footnotesize\ttfamily unsigned posY (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_aa42da4571679a84abeaae7704e2982ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a1c4bd39a949407cb605f9f4278fda7d5}\label{structvvenc_1_1CoeffCodingContext_a1c4bd39a949407cb605f9f4278fda7d5}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!resetSigGroup@{resetSigGroup}}
+\index{resetSigGroup@{resetSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{resetSigGroup()}{resetSigGroup()}}
+{\footnotesize\ttfamily void reset\+Sig\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 72 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a1c4bd39a949407cb605f9f4278fda7d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a9ab6ad51d0fa8791367dbf54a474bf8d}\label{structvvenc_1_1CoeffCodingContext_a9ab6ad51d0fa8791367dbf54a474bf8d}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!scanPosLast@{scanPosLast}}
+\index{scanPosLast@{scanPosLast}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{scanPosLast()}{scanPosLast()}}
+{\footnotesize\ttfamily int scan\+Pos\+Last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a9ab6ad51d0fa8791367dbf54a474bf8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a55a74c7817e2ed50e59fc33f3d1ba5d4}\label{structvvenc_1_1CoeffCodingContext_a55a74c7817e2ed50e59fc33f3d1ba5d4}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!setNumCtxBins@{setNumCtxBins}}
+\index{setNumCtxBins@{setNumCtxBins}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{setNumCtxBins()}{setNumCtxBins()}}
+{\footnotesize\ttfamily void set\+Num\+Ctx\+Bins (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a55a74c7817e2ed50e59fc33f3d1ba5d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a157bc9167c0c14a50eeda904d38ee6be}\label{structvvenc_1_1CoeffCodingContext_a157bc9167c0c14a50eeda904d38ee6be}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!setScanPosLast@{setScanPosLast}}
+\index{setScanPosLast@{setScanPosLast}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{setScanPosLast()}{setScanPosLast()}}
+{\footnotesize\ttfamily void set\+Scan\+Pos\+Last (\begin{DoxyParamCaption}\item[{int}]{pos\+Last }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 78 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a157bc9167c0c14a50eeda904d38ee6be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a54875f6ec2408ce87b5eb7ebdf8cf94a}\label{structvvenc_1_1CoeffCodingContext_a54875f6ec2408ce87b5eb7ebdf8cf94a}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!setSigGroup@{setSigGroup}}
+\index{setSigGroup@{setSigGroup}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{setSigGroup()}{setSigGroup()}}
+{\footnotesize\ttfamily void set\+Sig\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 73 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a54875f6ec2408ce87b5eb7ebdf8cf94a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a62988f468c2f31b61007bf071160d84f}\label{structvvenc_1_1CoeffCodingContext_a62988f468c2f31b61007bf071160d84f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!sigCtxIdAbs@{sigCtxIdAbs}}
+\index{sigCtxIdAbs@{sigCtxIdAbs}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{sigCtxIdAbs()}{sigCtxIdAbs()}}
+{\footnotesize\ttfamily unsigned sig\+Ctx\+Id\+Abs (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff,  }\item[{const int}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 118 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{structvvenc_1_1CoeffCodingContext_a62988f468c2f31b61007bf071160d84f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a62988f468c2f31b61007bf071160d84f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a0b2626625b31eef9cff0d90b6b4ed06f}\label{structvvenc_1_1CoeffCodingContext_a0b2626625b31eef9cff0d90b6b4ed06f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!sigCtxIdAbsTS@{sigCtxIdAbsTS}}
+\index{sigCtxIdAbsTS@{sigCtxIdAbsTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{sigCtxIdAbsTS()}{sigCtxIdAbsTS()}}
+{\footnotesize\ttfamily unsigned sig\+Ctx\+Id\+Abs\+TS (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{structvvenc_1_1CoeffCodingContext_a0b2626625b31eef9cff0d90b6b4ed06f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a0b2626625b31eef9cff0d90b6b4ed06f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a07066ee1490851873d517ca083abf44f}\label{structvvenc_1_1CoeffCodingContext_a07066ee1490851873d517ca083abf44f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!sigGroupCtxId@{sigGroupCtxId}}
+\index{sigGroupCtxId@{sigGroupCtxId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{sigGroupCtxId()}{sigGroupCtxId()}}
+{\footnotesize\ttfamily unsigned sig\+Group\+Ctx\+Id (\begin{DoxyParamCaption}\item[{bool}]{ts = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 112 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a07066ee1490851873d517ca083abf44f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a85a0c28fbd30817a83cbf9ff767a8aff}\label{structvvenc_1_1CoeffCodingContext_a85a0c28fbd30817a83cbf9ff767a8aff}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!signCtxIdAbsTS@{signCtxIdAbsTS}}
+\index{signCtxIdAbsTS@{signCtxIdAbsTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{signCtxIdAbsTS()}{signCtxIdAbsTS()}}
+{\footnotesize\ttfamily unsigned sign\+Ctx\+Id\+Abs\+TS (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff,  }\item[{int}]{bdpcm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 258 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{structvvenc_1_1CoeffCodingContext_a85a0c28fbd30817a83cbf9ff767a8aff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a85a0c28fbd30817a83cbf9ff767a8aff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af33b4cb606df60d18f340fb33a1d2638}\label{structvvenc_1_1CoeffCodingContext_af33b4cb606df60d18f340fb33a1d2638}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!signHiding@{signHiding}}
+\index{signHiding@{signHiding}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{signHiding()}{signHiding()}}
+{\footnotesize\ttfamily bool sign\+Hiding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_af33b4cb606df60d18f340fb33a1d2638_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a10f2eab8a4d16071c6ef56da22cc41cd}\label{structvvenc_1_1CoeffCodingContext_a10f2eab8a4d16071c6ef56da22cc41cd}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!subSetId@{subSetId}}
+\index{subSetId@{subSetId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{subSetId()}{subSetId()}}
+{\footnotesize\ttfamily int sub\+Set\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a10f2eab8a4d16071c6ef56da22cc41cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_adcb538c2ac1a07f1d018f6e246e0b31b}\label{structvvenc_1_1CoeffCodingContext_adcb538c2ac1a07f1d018f6e246e0b31b}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!subSetPos@{subSetPos}}
+\index{subSetPos@{subSetPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{subSetPos()}{subSetPos()}}
+{\footnotesize\ttfamily int sub\+Set\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a6e0bdb2558132fdbecd8adad0810c0c0}\label{structvvenc_1_1CoeffCodingContext_a6e0bdb2558132fdbecd8adad0810c0c0}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!templateAbsSum@{templateAbsSum}}
+\index{templateAbsSum@{templateAbsSum}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{templateAbsSum()}{templateAbsSum()}}
+{\footnotesize\ttfamily unsigned template\+Abs\+Sum (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff,  }\item[{int}]{base\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 177 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{structvvenc_1_1CoeffCodingContext_a6e0bdb2558132fdbecd8adad0810c0c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a6e0bdb2558132fdbecd8adad0810c0c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a3e23a7b7615ba7195666f53410c3f166}\label{structvvenc_1_1CoeffCodingContext_a3e23a7b7615ba7195666f53410c3f166}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!templateAbsSumTS@{templateAbsSumTS}}
+\index{templateAbsSumTS@{templateAbsSumTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{templateAbsSumTS()}{templateAbsSumTS()}}
+{\footnotesize\ttfamily unsigned template\+Abs\+Sum\+TS (\begin{DoxyParamCaption}\item[{int}]{scan\+Pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$}]{coeff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 360 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_a3e23a7b7615ba7195666f53410c3f166_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ac07b7d89bde207a61e2eb3655102d572}\label{structvvenc_1_1CoeffCodingContext_ac07b7d89bde207a61e2eb3655102d572}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!width@{width}}
+\index{width@{width}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily unsigned width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CoeffCodingContext_ac07b7d89bde207a61e2eb3655102d572_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a474629dfbd3f780ccba25d7d437d84e7}\label{structvvenc_1_1CoeffCodingContext_a474629dfbd3f780ccba25d7d437d84e7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_bdpcm@{m\_bdpcm}}
+\index{m\_bdpcm@{m\_bdpcm}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_bdpcm}{m\_bdpcm}}
+{\footnotesize\ttfamily const bool m\+\_\+bdpcm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 417 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a6ea90068a7a6894e1a9ce8d2e5dbd18f}\label{structvvenc_1_1CoeffCodingContext_a6ea90068a7a6894e1a9ce8d2e5dbd18f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_chType@{m\_chType}}
+\index{m\_chType@{m\_chType}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_chType}{m\_chType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} m\+\_\+ch\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 370 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a186b7bb9a9c444cc1ba3d05895e9a145}\label{structvvenc_1_1CoeffCodingContext_a186b7bb9a9c444cc1ba3d05895e9a145}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_compID@{m\_compID}}
+\index{m\_compID@{m\_compID}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_compID}{m\_compID}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} m\+\_\+comp\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 369 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8bbc289779266b075d075e1fea7e5028}\label{structvvenc_1_1CoeffCodingContext_a8bbc289779266b075d075e1fea7e5028}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_CtxSetLastX@{m\_CtxSetLastX}}
+\index{m\_CtxSetLastX@{m\_CtxSetLastX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_CtxSetLastX}{m\_CtxSetLastX}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+\+Ctx\+Set\+LastX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 387 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a13ae14de37655c71365bdd400e43719a}\label{structvvenc_1_1CoeffCodingContext_a13ae14de37655c71365bdd400e43719a}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_CtxSetLastY@{m\_CtxSetLastY}}
+\index{m\_CtxSetLastY@{m\_CtxSetLastY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_CtxSetLastY}{m\_CtxSetLastY}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+\+Ctx\+Set\+LastY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 388 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2418b137635be8f65fbf1623bd5c2f3e}\label{structvvenc_1_1CoeffCodingContext_a2418b137635be8f65fbf1623bd5c2f3e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_extendedPrecision@{m\_extendedPrecision}}
+\index{m\_extendedPrecision@{m\_extendedPrecision}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_extendedPrecision}{m\_extendedPrecision}}
+{\footnotesize\ttfamily const bool m\+\_\+extended\+Precision\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 383 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2558e52b2379e0eeb1df2b065bd9442f}\label{structvvenc_1_1CoeffCodingContext_a2558e52b2379e0eeb1df2b065bd9442f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_gtxFlagCtxSet@{m\_gtxFlagCtxSet}}
+\index{m\_gtxFlagCtxSet@{m\_gtxFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_gtxFlagCtxSet}{m\_gtxFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+gtx\+Flag\+Ctx\+Set\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 408 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a27e03d637b47782acde11f6e9ae38927}\label{structvvenc_1_1CoeffCodingContext_a27e03d637b47782acde11f6e9ae38927}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_height@{m\_height}}
+\index{m\_height@{m\_height}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_height}{m\_height}}
+{\footnotesize\ttfamily const unsigned m\+\_\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 372 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af22fcb385ee4350057ceadc03cff65a7}\label{structvvenc_1_1CoeffCodingContext_af22fcb385ee4350057ceadc03cff65a7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_heightInGroups@{m\_heightInGroups}}
+\index{m\_heightInGroups@{m\_heightInGroups}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_heightInGroups}{m\_heightInGroups}}
+{\footnotesize\ttfamily const unsigned m\+\_\+height\+In\+Groups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 377 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a10d99c2bef7b5f3c7736b27f9bf23b36}\label{structvvenc_1_1CoeffCodingContext_a10d99c2bef7b5f3c7736b27f9bf23b36}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_lastOffsetX@{m\_lastOffsetX}}
+\index{m\_lastOffsetX@{m\_lastOffsetX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_lastOffsetX}{m\_lastOffsetX}}
+{\footnotesize\ttfamily const int m\+\_\+last\+OffsetX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 391 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af61cb0bc1fc3de647a2fa70d7e803629}\label{structvvenc_1_1CoeffCodingContext_af61cb0bc1fc3de647a2fa70d7e803629}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_lastOffsetY@{m\_lastOffsetY}}
+\index{m\_lastOffsetY@{m\_lastOffsetY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_lastOffsetY}{m\_lastOffsetY}}
+{\footnotesize\ttfamily const int m\+\_\+last\+OffsetY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 392 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aa6426dc3516d90f8de861db43b48aff7}\label{structvvenc_1_1CoeffCodingContext_aa6426dc3516d90f8de861db43b48aff7}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_lastShiftX@{m\_lastShiftX}}
+\index{m\_lastShiftX@{m\_lastShiftX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_lastShiftX}{m\_lastShiftX}}
+{\footnotesize\ttfamily const int m\+\_\+last\+ShiftX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 393 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a142e9662466dc6a7495d2ad10131c7d4}\label{structvvenc_1_1CoeffCodingContext_a142e9662466dc6a7495d2ad10131c7d4}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_lastShiftY@{m\_lastShiftY}}
+\index{m\_lastShiftY@{m\_lastShiftY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_lastShiftY}{m\_lastShiftY}}
+{\footnotesize\ttfamily const int m\+\_\+last\+ShiftY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 394 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a18a95613cfd3e0d8fae989d46758828b}\label{structvvenc_1_1CoeffCodingContext_a18a95613cfd3e0d8fae989d46758828b}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2BlockHeight@{m\_log2BlockHeight}}
+\index{m\_log2BlockHeight@{m\_log2BlockHeight}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2BlockHeight}{m\_log2BlockHeight}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+Block\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 380 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a0553bf0acf71d25e72fc86aebc67d043}\label{structvvenc_1_1CoeffCodingContext_a0553bf0acf71d25e72fc86aebc67d043}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2BlockWidth@{m\_log2BlockWidth}}
+\index{m\_log2BlockWidth@{m\_log2BlockWidth}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2BlockWidth}{m\_log2BlockWidth}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+Block\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 379 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2be9a0035c3ce0bd4e87a94b5d25f23a}\label{structvvenc_1_1CoeffCodingContext_a2be9a0035c3ce0bd4e87a94b5d25f23a}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2CGHeight@{m\_log2CGHeight}}
+\index{m\_log2CGHeight@{m\_log2CGHeight}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2CGHeight}{m\_log2CGHeight}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+C\+G\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 374 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a0cb7d309c8189a97d17142dce6ed779e}\label{structvvenc_1_1CoeffCodingContext_a0cb7d309c8189a97d17142dce6ed779e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2CGSize@{m\_log2CGSize}}
+\index{m\_log2CGSize@{m\_log2CGSize}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2CGSize}{m\_log2CGSize}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+C\+G\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 375 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a1a64517da0e319e84f98e84b954b7d34}\label{structvvenc_1_1CoeffCodingContext_a1a64517da0e319e84f98e84b954b7d34}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2CGWidth@{m\_log2CGWidth}}
+\index{m\_log2CGWidth@{m\_log2CGWidth}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2CGWidth}{m\_log2CGWidth}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+C\+G\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 373 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a5ae013eaeaad1fcdfd45adc30c8e91c5}\label{structvvenc_1_1CoeffCodingContext_a5ae013eaeaad1fcdfd45adc30c8e91c5}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_log2WidthInGroups@{m\_log2WidthInGroups}}
+\index{m\_log2WidthInGroups@{m\_log2WidthInGroups}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_log2WidthInGroups}{m\_log2WidthInGroups}}
+{\footnotesize\ttfamily const unsigned m\+\_\+log2\+Width\+In\+Groups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 378 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a890bbab8d6dbbf132675c5bb51145bbf}\label{structvvenc_1_1CoeffCodingContext_a890bbab8d6dbbf132675c5bb51145bbf}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_maxLastPosX@{m\_maxLastPosX}}
+\index{m\_maxLastPosX@{m\_maxLastPosX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_maxLastPosX}{m\_maxLastPosX}}
+{\footnotesize\ttfamily const unsigned m\+\_\+max\+Last\+PosX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 389 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a556a935238701bc4b2f5a877142fee5b}\label{structvvenc_1_1CoeffCodingContext_a556a935238701bc4b2f5a877142fee5b}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_maxLastPosY@{m\_maxLastPosY}}
+\index{m\_maxLastPosY@{m\_maxLastPosY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_maxLastPosY}{m\_maxLastPosY}}
+{\footnotesize\ttfamily const unsigned m\+\_\+max\+Last\+PosY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 390 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a32c9f4f2a78a91b4f71ce152d35f1d95}\label{structvvenc_1_1CoeffCodingContext_a32c9f4f2a78a91b4f71ce152d35f1d95}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_maxLog2TrDynamicRange@{m\_maxLog2TrDynamicRange}}
+\index{m\_maxLog2TrDynamicRange@{m\_maxLog2TrDynamicRange}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_maxLog2TrDynamicRange}{m\_maxLog2TrDynamicRange}}
+{\footnotesize\ttfamily const int m\+\_\+max\+Log2\+Tr\+Dynamic\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 384 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a5d4113dc834c5dd7e0d0be2c74bcff92}\label{structvvenc_1_1CoeffCodingContext_a5d4113dc834c5dd7e0d0be2c74bcff92}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_maxNumCoeff@{m\_maxNumCoeff}}
+\index{m\_maxNumCoeff@{m\_maxNumCoeff}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_maxNumCoeff}{m\_maxNumCoeff}}
+{\footnotesize\ttfamily const unsigned m\+\_\+max\+Num\+Coeff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 381 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ab77ee4161fa2d145f3fe016102033e39}\label{structvvenc_1_1CoeffCodingContext_ab77ee4161fa2d145f3fe016102033e39}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_maxSubPos@{m\_maxSubPos}}
+\index{m\_maxSubPos@{m\_maxSubPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_maxSubPos}{m\_maxSubPos}}
+{\footnotesize\ttfamily int m\+\_\+max\+Sub\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 402 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_afe5f59380e70d9b43f4876ab85f21d8f}\label{structvvenc_1_1CoeffCodingContext_afe5f59380e70d9b43f4876ab85f21d8f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_minSubPos@{m\_minSubPos}}
+\index{m\_minSubPos@{m\_minSubPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_minSubPos}{m\_minSubPos}}
+{\footnotesize\ttfamily int m\+\_\+min\+Sub\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 401 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ac86b813fe4476b4a02f5f23e1e49528e}\label{structvvenc_1_1CoeffCodingContext_ac86b813fe4476b4a02f5f23e1e49528e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_parFlagCtxSet@{m\_parFlagCtxSet}}
+\index{m\_parFlagCtxSet@{m\_parFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_parFlagCtxSet}{m\_parFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+par\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 407 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a086bd8f4ed38b956d5e1134e753d43ce}\label{structvvenc_1_1CoeffCodingContext_a086bd8f4ed38b956d5e1134e753d43ce}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_remainingContextBins@{m\_remainingContextBins}}
+\index{m\_remainingContextBins@{m\_remainingContextBins}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_remainingContextBins}{m\_remainingContextBins}}
+{\footnotesize\ttfamily int m\+\_\+remaining\+Context\+Bins\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 415 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a55102fa505015e353ab0ceaf93063488}\label{structvvenc_1_1CoeffCodingContext_a55102fa505015e353ab0ceaf93063488}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_scan@{m\_scan}}
+\index{m\_scan@{m\_scan}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_scan}{m\_scan}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ScanElement}{Scan\+Element}}$\ast$ m\+\_\+scan\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 385 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a676251b6dd67310f3939086cfe16534c}\label{structvvenc_1_1CoeffCodingContext_a676251b6dd67310f3939086cfe16534c}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_scanCG@{m\_scanCG}}
+\index{m\_scanCG@{m\_scanCG}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_scanCG}{m\_scanCG}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ScanElement}{Scan\+Element}}$\ast$ m\+\_\+scan\+CG\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 386 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a4c5ededa630f13ad6d7a85411f963e80}\label{structvvenc_1_1CoeffCodingContext_a4c5ededa630f13ad6d7a85411f963e80}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_scanPosLast@{m\_scanPosLast}}
+\index{m\_scanPosLast@{m\_scanPosLast}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_scanPosLast}{m\_scanPosLast}}
+{\footnotesize\ttfamily int m\+\_\+scan\+Pos\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 396 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a20338d5fa6a32048322cc3aa9f5c1aaf}\label{structvvenc_1_1CoeffCodingContext_a20338d5fa6a32048322cc3aa9f5c1aaf}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_sigCoeffGroupFlag@{m\_sigCoeffGroupFlag}}
+\index{m\_sigCoeffGroupFlag@{m\_sigCoeffGroupFlag}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_sigCoeffGroupFlag}{m\_sigCoeffGroupFlag}}
+{\footnotesize\ttfamily std\+::bitset$<$\mbox{\hyperlink{namespacevvenc_a3be7827d2a4a2c35661962feb9bce427}{M\+L\+S\+\_\+\+G\+R\+P\+\_\+\+N\+UM}}$>$ m\+\_\+sig\+Coeff\+Group\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 416 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a72a935bf84d4f83d499caa4a3138bb34}\label{structvvenc_1_1CoeffCodingContext_a72a935bf84d4f83d499caa4a3138bb34}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_sigFlagCtxSet@{m\_sigFlagCtxSet}}
+\index{m\_sigFlagCtxSet@{m\_sigFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_sigFlagCtxSet}{m\_sigFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+sig\+Flag\+Ctx\+Set\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 406 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a5278781ec66617a09f8f4161f2f1ec45}\label{structvvenc_1_1CoeffCodingContext_a5278781ec66617a09f8f4161f2f1ec45}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_sigGroupCtxId@{m\_sigGroupCtxId}}
+\index{m\_sigGroupCtxId@{m\_sigGroupCtxId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_sigGroupCtxId}{m\_sigGroupCtxId}}
+{\footnotesize\ttfamily unsigned m\+\_\+sig\+Group\+Ctx\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 403 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aeeffa2ab342fcbc0c7f36d39df588082}\label{structvvenc_1_1CoeffCodingContext_aeeffa2ab342fcbc0c7f36d39df588082}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_sigGroupCtxIdTS@{m\_sigGroupCtxIdTS}}
+\index{m\_sigGroupCtxIdTS@{m\_sigGroupCtxIdTS}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_sigGroupCtxIdTS}{m\_sigGroupCtxIdTS}}
+{\footnotesize\ttfamily unsigned m\+\_\+sig\+Group\+Ctx\+Id\+TS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 409 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ad3aa60217dffed00d260ea3af202e3b1}\label{structvvenc_1_1CoeffCodingContext_ad3aa60217dffed00d260ea3af202e3b1}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_signHiding@{m\_signHiding}}
+\index{m\_signHiding@{m\_signHiding}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_signHiding}{m\_signHiding}}
+{\footnotesize\ttfamily const bool m\+\_\+sign\+Hiding\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 382 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_af9b6a76a5565fef2fdefe377728db659}\label{structvvenc_1_1CoeffCodingContext_af9b6a76a5565fef2fdefe377728db659}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_subSetId@{m\_subSetId}}
+\index{m\_subSetId@{m\_subSetId}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_subSetId}{m\_subSetId}}
+{\footnotesize\ttfamily int m\+\_\+sub\+Set\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 397 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8d86b75a3df661e625c4b5d132c3566b}\label{structvvenc_1_1CoeffCodingContext_a8d86b75a3df661e625c4b5d132c3566b}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_subSetPos@{m\_subSetPos}}
+\index{m\_subSetPos@{m\_subSetPos}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_subSetPos}{m\_subSetPos}}
+{\footnotesize\ttfamily int m\+\_\+sub\+Set\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 398 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a57ab7c39b9298d2713de3921e0820314}\label{structvvenc_1_1CoeffCodingContext_a57ab7c39b9298d2713de3921e0820314}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_subSetPosX@{m\_subSetPosX}}
+\index{m\_subSetPosX@{m\_subSetPosX}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_subSetPosX}{m\_subSetPosX}}
+{\footnotesize\ttfamily int m\+\_\+sub\+Set\+PosX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 399 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ad668240bdae23d2e8c466a8710c7d88c}\label{structvvenc_1_1CoeffCodingContext_ad668240bdae23d2e8c466a8710c7d88c}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_subSetPosY@{m\_subSetPosY}}
+\index{m\_subSetPosY@{m\_subSetPosY}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_subSetPosY}{m\_subSetPosY}}
+{\footnotesize\ttfamily int m\+\_\+sub\+Set\+PosY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 400 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a000417f7ebb0e7dee27499db9f3b2766}\label{structvvenc_1_1CoeffCodingContext_a000417f7ebb0e7dee27499db9f3b2766}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tmplCpDiag@{m\_tmplCpDiag}}
+\index{m\_tmplCpDiag@{m\_tmplCpDiag}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tmplCpDiag}{m\_tmplCpDiag}}
+{\footnotesize\ttfamily int m\+\_\+tmpl\+Cp\+Diag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 405 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a8dce0fbd602dd7353d50bb59ece3625f}\label{structvvenc_1_1CoeffCodingContext_a8dce0fbd602dd7353d50bb59ece3625f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tmplCpSum1@{m\_tmplCpSum1}}
+\index{m\_tmplCpSum1@{m\_tmplCpSum1}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tmplCpSum1}{m\_tmplCpSum1}}
+{\footnotesize\ttfamily int m\+\_\+tmpl\+Cp\+Sum1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 404 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a37ace94fafee5e3f22c75bbf7a0c1303}\label{structvvenc_1_1CoeffCodingContext_a37ace94fafee5e3f22c75bbf7a0c1303}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tsGtxFlagCtxSet@{m\_tsGtxFlagCtxSet}}
+\index{m\_tsGtxFlagCtxSet@{m\_tsGtxFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tsGtxFlagCtxSet}{m\_tsGtxFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+ts\+Gtx\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 412 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a46d32cb3009a2475167bc3d6290ee63e}\label{structvvenc_1_1CoeffCodingContext_a46d32cb3009a2475167bc3d6290ee63e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tsLrg1FlagCtxSet@{m\_tsLrg1FlagCtxSet}}
+\index{m\_tsLrg1FlagCtxSet@{m\_tsLrg1FlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tsLrg1FlagCtxSet}{m\_tsLrg1FlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+ts\+Lrg1\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 413 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a2a2a5fcdd9e05adc5dbaa500d1cb5bd2}\label{structvvenc_1_1CoeffCodingContext_a2a2a5fcdd9e05adc5dbaa500d1cb5bd2}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tsParFlagCtxSet@{m\_tsParFlagCtxSet}}
+\index{m\_tsParFlagCtxSet@{m\_tsParFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tsParFlagCtxSet}{m\_tsParFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+ts\+Par\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 411 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a5d040fc63cb3caed829579afacf4aaba}\label{structvvenc_1_1CoeffCodingContext_a5d040fc63cb3caed829579afacf4aaba}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tsSigFlagCtxSet@{m\_tsSigFlagCtxSet}}
+\index{m\_tsSigFlagCtxSet@{m\_tsSigFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tsSigFlagCtxSet}{m\_tsSigFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+ts\+Sig\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 410 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_ad93cd9bce39c69f0377dd1af69b0c6b1}\label{structvvenc_1_1CoeffCodingContext_ad93cd9bce39c69f0377dd1af69b0c6b1}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_tsSignFlagCtxSet@{m\_tsSignFlagCtxSet}}
+\index{m\_tsSignFlagCtxSet@{m\_tsSignFlagCtxSet}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_tsSignFlagCtxSet}{m\_tsSignFlagCtxSet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} m\+\_\+ts\+Sign\+Flag\+Ctx\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 414 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_aa129142ae93cb431be6932ab80ed026e}\label{structvvenc_1_1CoeffCodingContext_aa129142ae93cb431be6932ab80ed026e}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_width@{m\_width}}
+\index{m\_width@{m\_width}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_width}{m\_width}}
+{\footnotesize\ttfamily const unsigned m\+\_\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 371 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a60140293bdc7ff61bb9efdcfa223d7d8}\label{structvvenc_1_1CoeffCodingContext_a60140293bdc7ff61bb9efdcfa223d7d8}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!m\_widthInGroups@{m\_widthInGroups}}
+\index{m\_widthInGroups@{m\_widthInGroups}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{m\_widthInGroups}{m\_widthInGroups}}
+{\footnotesize\ttfamily const unsigned m\+\_\+width\+In\+Groups\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 376 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CoeffCodingContext_a830571f1da7831e535dd234924e2bb4f}\label{structvvenc_1_1CoeffCodingContext_a830571f1da7831e535dd234924e2bb4f}} 
+\index{CoeffCodingContext@{CoeffCodingContext}!regBinLimit@{regBinLimit}}
+\index{regBinLimit@{regBinLimit}!CoeffCodingContext@{CoeffCodingContext}}
+\doxysubsubsection{\texorpdfstring{regBinLimit}{regBinLimit}}
+{\footnotesize\ttfamily int reg\+Bin\+Limit}
+
+
+
+Definition at line 365 of file Context\+Modelling.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8h}{Context\+Modelling.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8cpp}{Context\+Modelling.\+cpp}}\end{DoxyCompactItemize}

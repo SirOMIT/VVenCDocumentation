@@ -1,0 +1,44 @@
+\hypertarget{InterPrediction_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Inter\+Prediction.cpp File Reference}
+\label{InterPrediction_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/InterPrediction.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/InterPrediction.cpp}}
+{\ttfamily \#include \char`\"{}Inter\+Prediction.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Time\+Profiler.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for Inter\+Prediction.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{InterPrediction_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_aac80466f25299fe368ead1f5c8432a3c}{add\+B\+D\+O\+F\+Avg\+Core}} (const Pel $\ast$src0, int src0\+Stride, const Pel $\ast$src1, int src1\+Stride, Pel $\ast$dst, int dst\+Stride, const Pel $\ast$grad\+X0, const Pel $\ast$grad\+X1, const Pel $\ast$grad\+Y0, const Pel $\ast$grad\+Y1, int grad\+Stride, int width, int height, int tmpx, int tmpy, unsigned shift, int offset, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ab6f8fbd516e959c8f02120132cd33ba1}{apply\+P\+R\+O\+F\+Core}} (Pel $\ast$dst, int dst\+Stride, const Pel $\ast$src, int src\+Stride, int width, int height, const Pel $\ast$gradX, const Pel $\ast$gradY, int grad\+Stride, const int $\ast$d\+MvX, const int $\ast$d\+MvY, int d\+Mv\+Stride, const bool \&bi, int shift\+Num, Pel offset, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a0761f5d05ac23551d521dfee49635e7a}{calc\+B\+D\+O\+F\+Sums\+Core}} (const Pel $\ast$src\+Y0\+Tmp, const Pel $\ast$src\+Y1\+Tmp, Pel $\ast$grad\+X0, Pel $\ast$grad\+X1, Pel $\ast$grad\+Y0, Pel $\ast$grad\+Y1, int xu, int yu, const int src0\+Stride, const int src1\+Stride, const int widthG, const int bit\+Depth, int $\ast$sum\+Abs\+GX, int $\ast$sum\+Abs\+GY, int $\ast$sum\+D\+IX, int $\ast$sum\+D\+IY, int $\ast$sum\+Sign\+G\+Y\+\_\+\+GX)
+\item 
+int32\+\_\+t \mbox{\hyperlink{namespacevvenc_a2ae16b34fc4916a01ec5181d71df7d9e}{div\+\_\+for\+\_\+maxq7}} (int64\+\_\+t N, int64\+\_\+t D)
+\item 
+{\footnotesize template$<$bool P\+AD = true$>$ }\\void \mbox{\hyperlink{namespacevvenc_a5a92ee536ac998efd8c71e2df4381677}{grad\+Filter\+Core}} (const Pel $\ast$p\+Src, int src\+Stride, int width, int height, int grad\+Stride, Pel $\ast$gradX, Pel $\ast$gradY, const int bit\+Depth)
+\item 
+{\footnotesize template$<$int pad\+Size$>$ }\\void \mbox{\hyperlink{namespacevvenc_a41b60f03fe06db3781f4198bcb87dd62}{padding\+Core}} (Pel $\ast$ptr, int stride, int width, int height)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ac12e6559a9c33eccf25d502fe03b70ca}{pad\+Dmvr\+Core}} (const Pel $\ast$src, const int src\+Stride, Pel $\ast$dst, const int dst\+Stride, int width, int height, int pad\+Size)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a1410ec528c47be018fa1981d6278f4f5}{x\+D\+M\+V\+R\+Sub\+Pixel\+Error\+Surface}} (bool not\+Zero\+Cost, int16\+\_\+t $\ast$total\+Delta\+MV, int16\+\_\+t $\ast$delta\+MV, uint64\+\_\+t $\ast$p\+S\+A\+Ds\+Array)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a21c1c4be32e6326916de764a3dd6a8b4}{x\+Sub\+Pel\+Error\+Srfc}} (uint64\+\_\+t $\ast$sad\+Buffer, int32\+\_\+t $\ast$delta\+Mv)
+\end{DoxyCompactItemize}

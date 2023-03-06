@@ -1,0 +1,34 @@
+<map id="xCalculateAddPSNR" name="xCalculateAddPSNR">
+<area shape="rect" id="node1" title=" " alt="" coords="5,535,151,562"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1RateCtrl.html#ab932255b352c7d7ccade22225676ef05" title=" " alt="" coords="217,5,411,47"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1Analyze.html#abdb09027eb23b59e0000b9d5bdac9ced" title=" " alt="" coords="225,71,403,98"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1AreaBuf.html#a2e1dc15633648502db33304d40ba91df" title=" " alt="" coords="503,842,654,869"/>
+<area shape="rect" id="node6" href="$namespacevvenc.html#a508284b4f6c8c2933a3b91d897a05774" title=" " alt="" coords="261,173,367,199"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1UnitBuf.html#a59fa1e9c0d0dafd04140d8e96323587f" title=" " alt="" coords="247,223,381,250"/>
+<area shape="rect" id="node8" href="$namespacevvenc.html#a2a4814950acdf4a610adacb0f7417d8d" title=" " alt="" coords="218,122,410,149"/>
+<area shape="rect" id="node11" href="$namespacevvenc.html#a28fa8a875cf8e2fac67b59efcab043b3" title=" " alt="" coords="503,274,655,301"/>
+<area shape="rect" id="node12" href="$namespacevvenc.html#aa6703e40dff9faf6b5655472e130a512" title=" " alt="" coords="218,325,410,351"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1Slice.html#a0aedb7e260ba211f7465b90020b1f9cd" title=" " alt="" coords="227,426,401,453"/>
+<area shape="rect" id="node15" href="$namespacevvenc.html#a9003964e78e9d46fb169c59874f7c4a8" title=" " alt="" coords="199,477,429,503"/>
+<area shape="rect" id="node16" href="$structvvenc_1_1Picture.html#a7b8e59f547b3a21d59f72e2fd97f751c" title=" " alt="" coords="491,411,667,438"/>
+<area shape="rect" id="node18" href="$namespacevvenc_1_1BitAllocation.html#a93a44432a10df09608954892661f7c8a" title=" " alt="" coords="241,528,387,569"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1Slice.html#a5aa0670cb22e42db7d597aa009dcf219" title=" " alt="" coords="229,645,399,671"/>
+<area shape="rect" id="node25" href="$structvvenc_1_1StopClock.html#a9e481d76483d52040759b84bb09cbe53" title=" " alt="" coords="221,696,407,737"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1Slice.html#a2df1dd5ac8070482b6042070f73cffa4" title=" " alt="" coords="241,762,387,789"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1Slice.html#a530d6092c6fac441ddd03762efdf5c2f" title=" " alt="" coords="241,813,387,839"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1Slice.html#a022764e04d9a5b3e4e90b20a70d05677" title=" " alt="" coords="245,863,383,890"/>
+<area shape="rect" id="node29" href="$namespacevvenc.html#afdcc3f5f4435932506df86e4f2ca6b90" title=" " alt="" coords="269,914,359,941"/>
+<area shape="rect" id="node30" href="$namespacevvenc.html#a0aa1286e240559b8ad1a248367019e73" title=" " alt="" coords="223,965,405,991"/>
+<area shape="rect" id="node31" href="$namespacevvenc.html#a528e8743ff95d9eb8e41ae18612be62a" title=" " alt="" coords="269,1015,359,1042"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1EncGOP.html#a4eb35a2db3063e096adea90142232698" title=" " alt="" coords="243,1066,385,1093"/>
+<area shape="rect" id="node3" href="$namespacevvenc_1_1CU.html#ab722b39b132601673d1dcd3547c2c01c" title=" " alt="" coords="514,13,643,39"/>
+<area shape="rect" id="node9" href="$namespacevvenc.html#a895d72e900acda111471c0104f9bcb4c" title=" " alt="" coords="478,173,679,199"/>
+<area shape="rect" id="node10" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="756,249,863,275"/>
+<area shape="rect" id="node13" href="$namespacevvenc.html#a887392dd4249ddd4cc2fe2aea64c4b52" title=" " alt="" coords="478,325,679,351"/>
+<area shape="rect" id="node17" href="$structvvenc_1_1Picture.html#a935164c49b3eeccd1e4df1a4fdbed4d9" title=" " alt="" coords="733,411,885,438"/>
+<area shape="rect" id="node19" href="$namespacevvenc.html#a702386fc7e25ec7b47e6aef4d9ec1958" title=" " alt="" coords="495,569,663,611"/>
+<area shape="rect" id="node20" href="$structvvenc_1_1Picture.html#a00fbaddba8802f25251df7b0953e47ac" title=" " alt="" coords="477,518,680,545"/>
+<area shape="rect" id="node21" href="$structvvenc_1_1PelStorage.html#a152d389c7524c627fd78f149e531c54d" title=" " alt="" coords="741,481,878,523"/>
+<area shape="rect" id="node23" href="$structvvenc_1_1CompArea.html#a315419f26d3c59fa143b49b90a019049" title=" " alt="" coords="728,547,891,574"/>
+<area shape="rect" id="node22" href="$namespacevvenc.html#adf9f54884f3e422d16596c6d979a1814" title=" " alt="" coords="939,489,1041,515"/>
+</map>

@@ -1,0 +1,55 @@
+\hypertarget{DecLib_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\+Dec\+Lib.cpp File Reference}
+\label{DecLib_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/DecoderLib/DecLib.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/DecoderLib/DecLib.cpp}}
+
+
+decoder class  
+
+
+{\ttfamily \#include \char`\"{}N\+A\+Lread.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dec\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+codingstruct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Encoder\+Lib/\+Enc\+G\+O\+P.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include \char`\"{}Annex\+Bread.\+h\char`\"{}}\newline
+Include dependency graph for Dec\+Lib.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DecLib_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a4b8a6866b7ca3b758d7fa57dd622c0ff}{try\+Decode\+Picture}} (Picture $\ast$pc\+Enc\+Pic, const int expected\+Poc, const std\+::string \&bitstream\+File\+Name, F\+Fwd\+Decoder \&ffwd\+Decoder, Parameter\+Set\+Map$<$ A\+PS $>$ $\ast$aps\+Map, bool b\+Decode\+Until\+Poc\+Found, int debug\+P\+OC, bool copy\+To\+Enc)
+\end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7ff0ebc18ebe8da2294df06272275a17}{activate\+A\+PS}} (Pic\+Header $\ast$pic\+Header, Slice $\ast$p\+Slice, Parameter\+Set\+Manager \&parameter\+Set\+Manager, A\+PS $\ast$$\ast$apss, A\+PS $\ast$lmcs\+A\+PS, A\+PS $\ast$scaling\+List\+A\+PS)
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7ff0ebc18ebe8da2294df06272275a17}{activate\+A\+PS}} (Pic\+Header $\ast$pic\+Header, Slice $\ast$p\+Slice, Parameter\+Set\+Manager \&parameter\+Set\+Manager, A\+PS $\ast$$\ast$apss, A\+PS $\ast$lmcs\+A\+PS, A\+PS $\ast$scaling\+List\+A\+PS)
+\end{DoxyCompactItemize}
+
+
+
+\doxysubsection{Detailed Description}
+decoder class 
+

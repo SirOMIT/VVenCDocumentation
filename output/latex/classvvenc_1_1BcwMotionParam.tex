@@ -1,0 +1,336 @@
+\hypertarget{classvvenc_1_1BcwMotionParam}{}\doxysection{Bcw\+Motion\+Param}
+\label{classvvenc_1_1BcwMotionParam}\index{BcwMotionParam@{BcwMotionParam}}
+
+
+{\ttfamily \#include \char`\"{}Motion\+Info.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Bcw\+Motion\+Param\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classvvenc_1_1BcwMotionParam__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a3c5f47d1cb0d7e4ef40d949ad2c12ba7}{copy\+Affine\+Mv\+From}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}(\&rac\+Affine\+Mvs)\mbox{[}3\mbox{]}, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} ui\+Dist, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx, int b\+P4, const int mvp\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a2d5859675f1d89520140269c4d1815a9}{copy\+Affine\+Mv\+To}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Affine\+Mvs\mbox{[}3\mbox{]}, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Dist, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx, int b\+P4, int \&mvp\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a9444471ff32527e67a99de1c94f8d2e3}{copy\+From}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} ui\+Dist, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a412226c3b5b12371a91d1eb635a55dd8}{copy\+To}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Dist, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx)
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_aaa0e980abfc26be9e782113df60de741}{get\+Affine\+Mv}} (uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx, uint32\+\_\+t ui\+Affine\+Mv\+Idx, int b\+P4)
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a63c580afa62a52c24159808c11f7a04b}{get\+Mv}} (uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a205b1a87b71065c7ced869e726f01b20}{is\+Read\+Mode}} (uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a977c89bc082dcea4f5b2976cd3401b1d}{is\+Read\+Mode\+Affine}} (uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx, int b\+P4)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a1fd8169f27a1727cf364b813be1c3f0f}{set\+Read\+Mode}} (bool b, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a177bef416654af38fd196cb0cb96a1c8}{set\+Read\+Mode\+Affine}} (bool b, uint32\+\_\+t ui\+Ref\+List, uint32\+\_\+t ui\+Ref\+Idx, int b\+P4)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a50d22b319d06c4bb968a4b68fb9ddc92}{m\+\_\+dist}} \mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_abf08661b361d38f4b7ca47bde92a6697}{m\+\_\+dist\+Affine}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_afe0931ccddceee447b3c7c7012bb3dbd}{m\+\_\+mv}} \mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a8dfb5db3ab38eb5f4daf29dc7f9476a9}{m\+\_\+mv\+Affine}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\mbox{[}3\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a57839af9a8854596dd8f31a54854c6ab}{m\+\_\+mvp\+Idx}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_a5d192f93d32c6b7d71dcfd5c1a6d070d}{m\+\_\+read\+Only}} \mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BcwMotionParam_ae8b251a52d3f0e33c3e37bf70deeea70}{m\+\_\+read\+Only\+Affine}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 250 of file Motion\+Info.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a3c5f47d1cb0d7e4ef40d949ad2c12ba7}\label{classvvenc_1_1BcwMotionParam_a3c5f47d1cb0d7e4ef40d949ad2c12ba7}} 
+\index{BcwMotionParam@{BcwMotionParam}!copyAffineMvFrom@{copyAffineMvFrom}}
+\index{copyAffineMvFrom@{copyAffineMvFrom}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{copyAffineMvFrom()}{copyAffineMvFrom()}}
+{\footnotesize\ttfamily void copy\+Affine\+Mv\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}(\&)}]{rac\+Affine\+Mvs\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{ui\+Dist,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx,  }\item[{int}]{b\+P4,  }\item[{const int}]{mvp\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 306 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a3c5f47d1cb0d7e4ef40d949ad2c12ba7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a2d5859675f1d89520140269c4d1815a9}\label{classvvenc_1_1BcwMotionParam_a2d5859675f1d89520140269c4d1815a9}} 
+\index{BcwMotionParam@{BcwMotionParam}!copyAffineMvTo@{copyAffineMvTo}}
+\index{copyAffineMvTo@{copyAffineMvTo}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{copyAffineMvTo()}{copyAffineMvTo()}}
+{\footnotesize\ttfamily void copy\+Affine\+Mv\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Affine\+Mvs\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Dist,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx,  }\item[{int}]{b\+P4,  }\item[{int \&}]{mvp\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 315 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a2d5859675f1d89520140269c4d1815a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a9444471ff32527e67a99de1c94f8d2e3}\label{classvvenc_1_1BcwMotionParam_a9444471ff32527e67a99de1c94f8d2e3}} 
+\index{BcwMotionParam@{BcwMotionParam}!copyFrom@{copyFrom}}
+\index{copyFrom@{copyFrom}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{copyFrom()}{copyFrom()}}
+{\footnotesize\ttfamily void copy\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{ui\+Dist,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 292 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classvvenc_1_1BcwMotionParam_a9444471ff32527e67a99de1c94f8d2e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a412226c3b5b12371a91d1eb635a55dd8}\label{classvvenc_1_1BcwMotionParam_a412226c3b5b12371a91d1eb635a55dd8}} 
+\index{BcwMotionParam@{BcwMotionParam}!copyTo@{copyTo}}
+\index{copyTo@{copyTo}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{copyTo()}{copyTo()}}
+{\footnotesize\ttfamily void copy\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Dist,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 298 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a412226c3b5b12371a91d1eb635a55dd8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_aaa0e980abfc26be9e782113df60de741}\label{classvvenc_1_1BcwMotionParam_aaa0e980abfc26be9e782113df60de741}} 
+\index{BcwMotionParam@{BcwMotionParam}!getAffineMv@{getAffineMv}}
+\index{getAffineMv@{getAffineMv}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{getAffineMv()}{getAffineMv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& get\+Affine\+Mv (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx,  }\item[{uint32\+\_\+t}]{ui\+Affine\+Mv\+Idx,  }\item[{int}]{b\+P4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 304 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a63c580afa62a52c24159808c11f7a04b}\label{classvvenc_1_1BcwMotionParam_a63c580afa62a52c24159808c11f7a04b}} 
+\index{BcwMotionParam@{BcwMotionParam}!getMv@{getMv}}
+\index{getMv@{getMv}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{getMv()}{getMv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& get\+Mv (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 290 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a205b1a87b71065c7ced869e726f01b20}\label{classvvenc_1_1BcwMotionParam_a205b1a87b71065c7ced869e726f01b20}} 
+\index{BcwMotionParam@{BcwMotionParam}!isReadMode@{isReadMode}}
+\index{isReadMode@{isReadMode}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{isReadMode()}{isReadMode()}}
+{\footnotesize\ttfamily bool is\+Read\+Mode (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 285 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a205b1a87b71065c7ced869e726f01b20_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a977c89bc082dcea4f5b2976cd3401b1d}\label{classvvenc_1_1BcwMotionParam_a977c89bc082dcea4f5b2976cd3401b1d}} 
+\index{BcwMotionParam@{BcwMotionParam}!isReadModeAffine@{isReadModeAffine}}
+\index{isReadModeAffine@{isReadModeAffine}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{isReadModeAffine()}{isReadModeAffine()}}
+{\footnotesize\ttfamily bool is\+Read\+Mode\+Affine (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx,  }\item[{int}]{b\+P4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 288 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a977c89bc082dcea4f5b2976cd3401b1d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_ad20897c5c8bd47f5d4005989bead0e55}\label{classvvenc_1_1BcwMotionParam_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{BcwMotionParam@{BcwMotionParam}!reset@{reset}}
+\index{reset@{reset}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 263 of file Motion\+Info.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classvvenc_1_1BcwMotionParam_ad20897c5c8bd47f5d4005989bead0e55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1BcwMotionParam_ad20897c5c8bd47f5d4005989bead0e55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a1fd8169f27a1727cf364b813be1c3f0f}\label{classvvenc_1_1BcwMotionParam_a1fd8169f27a1727cf364b813be1c3f0f}} 
+\index{BcwMotionParam@{BcwMotionParam}!setReadMode@{setReadMode}}
+\index{setReadMode@{setReadMode}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{setReadMode()}{setReadMode()}}
+{\footnotesize\ttfamily void set\+Read\+Mode (\begin{DoxyParamCaption}\item[{bool}]{b,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 284 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1BcwMotionParam_a1fd8169f27a1727cf364b813be1c3f0f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a177bef416654af38fd196cb0cb96a1c8}\label{classvvenc_1_1BcwMotionParam_a177bef416654af38fd196cb0cb96a1c8}} 
+\index{BcwMotionParam@{BcwMotionParam}!setReadModeAffine@{setReadModeAffine}}
+\index{setReadModeAffine@{setReadModeAffine}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{setReadModeAffine()}{setReadModeAffine()}}
+{\footnotesize\ttfamily void set\+Read\+Mode\+Affine (\begin{DoxyParamCaption}\item[{bool}]{b,  }\item[{uint32\+\_\+t}]{ui\+Ref\+List,  }\item[{uint32\+\_\+t}]{ui\+Ref\+Idx,  }\item[{int}]{b\+P4 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 287 of file Motion\+Info.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BcwMotionParam_a177bef416654af38fd196cb0cb96a1c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a50d22b319d06c4bb968a4b68fb9ddc92}\label{classvvenc_1_1BcwMotionParam_a50d22b319d06c4bb968a4b68fb9ddc92}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_dist@{m\_dist}}
+\index{m\_dist@{m\_dist}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_dist}{m\_dist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} m\+\_\+dist\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 254 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_abf08661b361d38f4b7ca47bde92a6697}\label{classvvenc_1_1BcwMotionParam_abf08661b361d38f4b7ca47bde92a6697}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_distAffine@{m\_distAffine}}
+\index{m\_distAffine@{m\_distAffine}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_distAffine}{m\_distAffine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} m\+\_\+dist\+Affine\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 258 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_afe0931ccddceee447b3c7c7012bb3dbd}\label{classvvenc_1_1BcwMotionParam_afe0931ccddceee447b3c7c7012bb3dbd}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_mv@{m\_mv}}
+\index{m\_mv@{m\_mv}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_mv}{m\_mv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+mv\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 253 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a8dfb5db3ab38eb5f4daf29dc7f9476a9}\label{classvvenc_1_1BcwMotionParam_a8dfb5db3ab38eb5f4daf29dc7f9476a9}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_mvAffine@{m\_mvAffine}}
+\index{m\_mvAffine@{m\_mvAffine}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_mvAffine}{m\_mvAffine}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+mv\+Affine\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 257 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a57839af9a8854596dd8f31a54854c6ab}\label{classvvenc_1_1BcwMotionParam_a57839af9a8854596dd8f31a54854c6ab}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_mvpIdx@{m\_mvpIdx}}
+\index{m\_mvpIdx@{m\_mvpIdx}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_mvpIdx}{m\_mvpIdx}}
+{\footnotesize\ttfamily int m\+\_\+mvp\+Idx\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 259 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_a5d192f93d32c6b7d71dcfd5c1a6d070d}\label{classvvenc_1_1BcwMotionParam_a5d192f93d32c6b7d71dcfd5c1a6d070d}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_readOnly@{m\_readOnly}}
+\index{m\_readOnly@{m\_readOnly}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_readOnly}{m\_readOnly}}
+{\footnotesize\ttfamily bool m\+\_\+read\+Only\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 252 of file Motion\+Info.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BcwMotionParam_ae8b251a52d3f0e33c3e37bf70deeea70}\label{classvvenc_1_1BcwMotionParam_ae8b251a52d3f0e33c3e37bf70deeea70}} 
+\index{BcwMotionParam@{BcwMotionParam}!m\_readOnlyAffine@{m\_readOnlyAffine}}
+\index{m\_readOnlyAffine@{m\_readOnlyAffine}!BcwMotionParam@{BcwMotionParam}}
+\doxysubsubsection{\texorpdfstring{m\_readOnlyAffine}{m\_readOnlyAffine}}
+{\footnotesize\ttfamily bool m\+\_\+read\+Only\+Affine\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}\mbox{[}33\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 256 of file Motion\+Info.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MotionInfo_8h}{Motion\+Info.\+h}}\end{DoxyCompactItemize}

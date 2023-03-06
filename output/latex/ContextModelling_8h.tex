@@ -1,0 +1,82 @@
+\hypertarget{ContextModelling_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Context\+Modelling.h File Reference}
+\label{ContextModelling_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/ContextModelling.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/ContextModelling.h}}
+
+
+Classes providing probability descriptions and contexts (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contexts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Partitioner.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+Include dependency graph for Context\+Modelling.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ContextModelling_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ContextModelling_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1AffineMergeCtx}{Affine\+Merge\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CUCtx}{C\+U\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DeriveCtx}{Derive\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}{U\+P\+D\+A\+TE}}(x)~\{int a=abs(x);sum\+Abs+=std\+::min(4+(a\&1),a);num\+Pos+=!!a;\}
+\item 
+\#define \mbox{\hyperlink{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}{U\+P\+D\+A\+TE}}(x)~\{int a=abs(x);num\+Pos+=!!a;\}
+\item 
+\#define \mbox{\hyperlink{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}{U\+P\+D\+A\+TE}}(x)~\{int a=abs(x);num\+Pos+=!!a;\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classes providing probability descriptions and contexts (header) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}\label{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}} 
+\index{ContextModelling.h@{ContextModelling.h}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!ContextModelling.h@{ContextModelling.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\{int a=abs(x);sum\+Abs+=std\+::min(4+(a\&1),a);num\+Pos+=!!a;\}}
+
+\mbox{\Hypertarget{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}\label{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}} 
+\index{ContextModelling.h@{ContextModelling.h}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!ContextModelling.h@{ContextModelling.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\{int a=abs(x);num\+Pos+=!!a;\}}
+
+\mbox{\Hypertarget{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}\label{ContextModelling_8h_a8e0c5f4bdda4a33f4d3e5673f2e0ba10}} 
+\index{ContextModelling.h@{ContextModelling.h}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!ContextModelling.h@{ContextModelling.h}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\{int a=abs(x);num\+Pos+=!!a;\}}
+

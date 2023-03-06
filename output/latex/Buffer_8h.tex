@@ -1,0 +1,165 @@
+\hypertarget{Buffer_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Buffer.h File Reference}
+\label{Buffer_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Buffer.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Buffer.h}}
+
+
+Low-\/overhead class describing 2D memory layout.  
+
+
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Motion\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc.\+h\char`\"{}}\newline
+Include dependency graph for Buffer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buffer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Buffer_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CompStorage}{Comp\+Storage}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1PelBufferOps}{Pel\+Buffer\+Ops}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs}{Sorted\+Pel\+Unit\+Bufs$<$ Num\+Entries $>$}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_ac50f40717a06edfa54e85393c8eef360}{A\+V\+G\+\_\+\+I\+NC}}~src += stride
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_ac6dfc5872c3f6d2ab83fafff904a2820}{A\+V\+G\+\_\+\+OP}}(A\+D\+DR)~acc += src\mbox{[}A\+D\+DR\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_a05d6e8e9d1daccac253e920d8a34dcc9}{R\+E\+M\+\_\+\+H\+F\+\_\+\+I\+NC}}
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_a703695e66c3f3f3493151ce1d4c88060}{R\+E\+M\+\_\+\+H\+F\+\_\+\+OP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} =             2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_a419915c372efdf172c230a257d39ef1c}{R\+E\+M\+\_\+\+H\+F\+\_\+\+O\+P\+\_\+\+C\+L\+IP}}(A\+D\+DR)~dst\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel$<$T$>$( 2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )
+\item 
+\#define \mbox{\hyperlink{Buffer_8h_a9ca9e4fbaf73448fb4be133c4f3d41e9}{S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}}(OP,  I\+NC)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Area\+Buf$<$ const T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}}
+\item 
+typedef Area\+Buf$<$ const T\+Coeff\+Sig $>$ \mbox{\hyperlink{namespacevvenc_a1b03b4fed7fb5a0ca5872ae8ebaca2dc}{C\+Coeff\+Sig\+Buf}}
+\item 
+typedef Unit\+Buf$<$ const T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_a348c83604c05161057d0142dc7201b75}{C\+Coeff\+Unit\+Buf}}
+\item 
+typedef Area\+Buf$<$ const Loop\+Filter\+Param $>$ \mbox{\hyperlink{namespacevvenc_ac79f582eb93fe399649f76560d37ec88}{C\+L\+F\+P\+Buf}}
+\item 
+typedef Area\+Buf$<$ const Motion\+Info $>$ \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}}
+\item 
+typedef Area\+Buf$<$ T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}}
+\item 
+typedef Area\+Buf$<$ T\+Coeff\+Sig $>$ \mbox{\hyperlink{namespacevvenc_afeaf017dad6a4efc97e442d15bb908e9}{Coeff\+Sig\+Buf}}
+\item 
+typedef Unit\+Buf$<$ T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_a78c28abfee36664002633fe646836b42}{Coeff\+Unit\+Buf}}
+\item 
+typedef Area\+Buf$<$ const Pel $>$ \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}}
+\item 
+typedef Unit\+Buf$<$ const Pel $>$ \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}}
+\item 
+typedef Area\+Buf$<$ const T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_a9ca13c7ee69783cc1831da964e040077}{C\+P\+L\+Tescape\+Buf}}
+\item 
+typedef Area\+Buf$<$ const bool $>$ \mbox{\hyperlink{namespacevvenc_a90b47420f12f7adb77258d92c0aedd0e}{C\+P\+L\+Ttype\+Buf}}
+\item 
+typedef Area\+Buf$<$ Loop\+Filter\+Param $>$ \mbox{\hyperlink{namespacevvenc_a397a1cc2c50b064b940f4550c42cc9c9}{L\+F\+P\+Buf}}
+\item 
+typedef Area\+Buf$<$ Motion\+Info $>$ \mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}}
+\item 
+typedef Area\+Buf$<$ Pel $>$ \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}}
+\item 
+typedef Unit\+Buf$<$ Pel $>$ \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}
+\item 
+typedef Area\+Buf$<$ T\+Coeff $>$ \mbox{\hyperlink{namespacevvenc_a924e15f075e473ee0e5b26a0da18ac2d}{P\+L\+Tescape\+Buf}}
+\item 
+typedef Area\+Buf$<$ bool $>$ \mbox{\hyperlink{namespacevvenc_acba180c9fabb900d64c7829d21ce366b}{P\+L\+Ttype\+Buf}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_a22736d5c0c6b5c7d0d20541dcaa07115}{copy\+Pad\+To\+Pel\+Unit\+Buf}} (Pel\+Unit\+Buf pel\+Unit\+Buf, const vvenc\+Y\+U\+V\+Buffer \&yuv\+Buffer, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \&ch\+Fmt)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a269d3395a2ab5600e9e636d2127e61dc}{setup\+Yuv\+Buffer}} (const Pel\+Unit\+Buf \&pel\+Unit\+Buf, vvenc\+Y\+U\+V\+Buffer \&yuv\+Buffer, const Window $\ast$conf\+Window)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Low-\/overhead class describing 2D memory layout. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Buffer_8h_ac50f40717a06edfa54e85393c8eef360}\label{Buffer_8h_ac50f40717a06edfa54e85393c8eef360}} 
+\index{Buffer.h@{Buffer.h}!AVG\_INC@{AVG\_INC}}
+\index{AVG\_INC@{AVG\_INC}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{AVG\_INC}{AVG\_INC}}
+{\footnotesize\ttfamily \#define A\+V\+G\+\_\+\+I\+NC~src += stride}
+
+\mbox{\Hypertarget{Buffer_8h_ac6dfc5872c3f6d2ab83fafff904a2820}\label{Buffer_8h_ac6dfc5872c3f6d2ab83fafff904a2820}} 
+\index{Buffer.h@{Buffer.h}!AVG\_OP@{AVG\_OP}}
+\index{AVG\_OP@{AVG\_OP}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{AVG\_OP}{AVG\_OP}}
+{\footnotesize\ttfamily \#define A\+V\+G\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~acc += src\mbox{[}A\+D\+DR\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8h_a05d6e8e9d1daccac253e920d8a34dcc9}\label{Buffer_8h_a05d6e8e9d1daccac253e920d8a34dcc9}} 
+\index{Buffer.h@{Buffer.h}!REM\_HF\_INC@{REM\_HF\_INC}}
+\index{REM\_HF\_INC@{REM\_HF\_INC}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{REM\_HF\_INC}{REM\_HF\_INC}}
+{\footnotesize\ttfamily \#define R\+E\+M\+\_\+\+H\+F\+\_\+\+I\+NC}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  src += srcStride; \(\backslash\)}
+\DoxyCodeLine{  dst += dstStride; \(\backslash\)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{Buffer_8h_a703695e66c3f3f3493151ce1d4c88060}\label{Buffer_8h_a703695e66c3f3f3493151ce1d4c88060}} 
+\index{Buffer.h@{Buffer.h}!REM\_HF\_OP@{REM\_HF\_OP}}
+\index{REM\_HF\_OP@{REM\_HF\_OP}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{REM\_HF\_OP}{REM\_HF\_OP}}
+{\footnotesize\ttfamily \#define R\+E\+M\+\_\+\+H\+F\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} =             2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}}
+
+\mbox{\Hypertarget{Buffer_8h_a419915c372efdf172c230a257d39ef1c}\label{Buffer_8h_a419915c372efdf172c230a257d39ef1c}} 
+\index{Buffer.h@{Buffer.h}!REM\_HF\_OP\_CLIP@{REM\_HF\_OP\_CLIP}}
+\index{REM\_HF\_OP\_CLIP@{REM\_HF\_OP\_CLIP}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{REM\_HF\_OP\_CLIP}{REM\_HF\_OP\_CLIP}}
+{\footnotesize\ttfamily \#define R\+E\+M\+\_\+\+H\+F\+\_\+\+O\+P\+\_\+\+C\+L\+IP(\begin{DoxyParamCaption}\item[{}]{A\+D\+DR }\end{DoxyParamCaption})~dst\mbox{[}A\+D\+DR\mbox{]} = Clip\+Pel$<$T$>$( 2 $\ast$ dst\mbox{[}A\+D\+DR\mbox{]} -\/ src\mbox{[}A\+D\+DR\mbox{]}, clp\+Rng )}
+
+\mbox{\Hypertarget{Buffer_8h_a9ca9e4fbaf73448fb4be133c4f3d41e9}\label{Buffer_8h_a9ca9e4fbaf73448fb4be133c4f3d41e9}} 
+\index{Buffer.h@{Buffer.h}!SIZE\_AWARE\_PER\_EL\_OP@{SIZE\_AWARE\_PER\_EL\_OP}}
+\index{SIZE\_AWARE\_PER\_EL\_OP@{SIZE\_AWARE\_PER\_EL\_OP}!Buffer.h@{Buffer.h}}
+\doxysubsubsection{\texorpdfstring{SIZE\_AWARE\_PER\_EL\_OP}{SIZE\_AWARE\_PER\_EL\_OP}}
+{\footnotesize\ttfamily \#define S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{OP,  }\item[{}]{I\+NC }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file Buffer.\+h.
+

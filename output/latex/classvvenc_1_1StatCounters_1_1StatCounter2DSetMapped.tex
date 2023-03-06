@@ -1,0 +1,292 @@
+\hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{}\doxysection{Stat\+Counter2\+D\+Set\+Mapped$<$ T $>$}
+\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Stat\+Counter.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Stat\+Counter2\+D\+Set\+Mapped$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stat\+Counter2\+D\+Set\+Mapped$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ac66a03d2ad964c262271725c8723ef21}{Stat\+Counter2\+D\+Set\+Mapped}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad2eda1785ecaf10df9289ec885c00399}{Stat\+Counter2\+D\+Set\+Mapped}} (const std\+::vector$<$ int $>$ \&cnt\+Id, const std\+::vector$<$ std\+::string $>$ \&cnt\+Names\+L\+UT, size\+\_\+t x\+Dim, size\+\_\+t y\+Dim, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a2b793576af59ff394afb5f0671091e51}{Stat\+Counter2\+D\+Set\+Mapped}} (const std\+::vector$<$ int $>$ \&cnt\+Id, size\+\_\+t x\+Dim, size\+\_\+t y\+Dim, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ae013553e40fc1c08906f4e904b8fd039}{Stat\+Counter2\+D\+Set\+Mapped}} (const std\+::vector$<$ std\+::string $>$ \&cnt\+Names\+L\+UT, size\+\_\+t x\+Dim, size\+\_\+t y\+Dim, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aa68d5545654cfe520c98926b186f0525}{$\sim$\+Stat\+Counter2\+D\+Set\+Mapped}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a5e7907fe9b351dc6e2dbdb7904a55150}{add\+Counter}} (const int id, const std\+::string \&name, size\+\_\+t x\+Dim, size\+\_\+t y\+Dim, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad9842b1dd896a3a4d4c58a07dc1fd99b}{cnt}} (int idx)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a6091e47863c685cba5b27995deee0285}{cnt}} (int idx) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a82da21e607a9fa21e7c3053e2729a4ab}{cnt\+Pos}} (int cnt\+Idx) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aecf5385cfb586ab7241395e62cd1e701}{init}} (const std\+::vector$<$ int $>$ \&cnt\+Id, const std\+::vector$<$ std\+::string $>$ \&cnt\+Names\+L\+UT, size\+\_\+t x\+Dim, size\+\_\+t y\+Dim, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_af671d9f52f8ba7fd2d329ca456b204b7}{operator\mbox{[}$\,$\mbox{]}}} (int id)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aebf4fd5077b0043480fdc645f37ad162}{operator\mbox{[}$\,$\mbox{]}}} (int id) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ int, size\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a7af426e25962e2cd4f0dda7d2b988f45}{m\+\_\+id\+\_\+map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class vvenc\+::\+Stat\+Counters\+::\+Stat\+Counter2\+D\+Set\+Mapped$<$ T $>$}
+
+
+
+Definition at line 706 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ac66a03d2ad964c262271725c8723ef21}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ac66a03d2ad964c262271725c8723ef21}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!StatCounter2DSetMapped@{StatCounter2DSetMapped}}
+\index{StatCounter2DSetMapped@{StatCounter2DSetMapped}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCounter2DSetMapped()}{StatCounter2DSetMapped()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 709 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a2b793576af59ff394afb5f0671091e51}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a2b793576af59ff394afb5f0671091e51}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!StatCounter2DSetMapped@{StatCounter2DSetMapped}}
+\index{StatCounter2DSetMapped@{StatCounter2DSetMapped}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCounter2DSetMapped()}{StatCounter2DSetMapped()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{cnt\+Id,  }\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 710 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a2b793576af59ff394afb5f0671091e51_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad2eda1785ecaf10df9289ec885c00399}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad2eda1785ecaf10df9289ec885c00399}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!StatCounter2DSetMapped@{StatCounter2DSetMapped}}
+\index{StatCounter2DSetMapped@{StatCounter2DSetMapped}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCounter2DSetMapped()}{StatCounter2DSetMapped()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{cnt\+Id,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{cnt\+Names\+L\+UT,  }\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 715 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad2eda1785ecaf10df9289ec885c00399_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ae013553e40fc1c08906f4e904b8fd039}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ae013553e40fc1c08906f4e904b8fd039}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!StatCounter2DSetMapped@{StatCounter2DSetMapped}}
+\index{StatCounter2DSetMapped@{StatCounter2DSetMapped}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCounter2DSetMapped()}{StatCounter2DSetMapped()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{cnt\+Names\+L\+UT,  }\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 719 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ae013553e40fc1c08906f4e904b8fd039_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aa68d5545654cfe520c98926b186f0525}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aa68d5545654cfe520c98926b186f0525}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!````~StatCounter2DSetMapped@{$\sim$StatCounter2DSetMapped}}
+\index{````~StatCounter2DSetMapped@{$\sim$StatCounter2DSetMapped}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$StatCounter2DSetMapped()}{~StatCounter2DSetMapped()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 736 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a5e7907fe9b351dc6e2dbdb7904a55150}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a5e7907fe9b351dc6e2dbdb7904a55150}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!addCounter@{addCounter}}
+\index{addCounter@{addCounter}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addCounter()}{addCounter()}}
+{\footnotesize\ttfamily void add\+Counter (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const std\+::string \&}]{name,  }\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 738 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a5e7907fe9b351dc6e2dbdb7904a55150_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a5e7907fe9b351dc6e2dbdb7904a55150_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad9842b1dd896a3a4d4c58a07dc1fd99b}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_ad9842b1dd896a3a4d4c58a07dc1fd99b}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!cnt@{cnt}}
+\index{cnt@{cnt}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cnt()}{cnt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$T$>$\& cnt (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 753 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a6091e47863c685cba5b27995deee0285}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a6091e47863c685cba5b27995deee0285}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!cnt@{cnt}}
+\index{cnt@{cnt}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cnt()}{cnt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$T$>$\& cnt (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 754 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a82da21e607a9fa21e7c3053e2729a4ab}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a82da21e607a9fa21e7c3053e2729a4ab}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!cntPos@{cntPos}}
+\index{cntPos@{cntPos}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cntPos()}{cntPos()}}
+{\footnotesize\ttfamily size\+\_\+t cnt\+Pos (\begin{DoxyParamCaption}\item[{int}]{cnt\+Idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 743 of file Stat\+Counter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a82da21e607a9fa21e7c3053e2729a4ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aecf5385cfb586ab7241395e62cd1e701}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aecf5385cfb586ab7241395e62cd1e701}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!init@{init}}
+\index{init@{init}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{cnt\+Id,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{cnt\+Names\+L\+UT,  }\item[{size\+\_\+t}]{x\+Dim,  }\item[{size\+\_\+t}]{y\+Dim,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 727 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aecf5385cfb586ab7241395e62cd1e701_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aecf5385cfb586ab7241395e62cd1e701_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_af671d9f52f8ba7fd2d329ca456b204b7}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_af671d9f52f8ba7fd2d329ca456b204b7}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 751 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_af671d9f52f8ba7fd2d329ca456b204b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aebf4fd5077b0043480fdc645f37ad162}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aebf4fd5077b0043480fdc645f37ad162}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2D}}$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 752 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_aebf4fd5077b0043480fdc645f37ad162_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a7af426e25962e2cd4f0dda7d2b988f45}\label{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped_a7af426e25962e2cd4f0dda7d2b988f45}} 
+\index{StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}!m\_id\_map@{m\_id\_map}}
+\index{m\_id\_map@{m\_id\_map}!StatCounter2DSetMapped$<$ T $>$@{StatCounter2DSetMapped$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_id\_map}{m\_id\_map}}
+{\footnotesize\ttfamily std\+::map$<$int,size\+\_\+t$>$ m\+\_\+id\+\_\+map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 757 of file Stat\+Counter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{StatCounter_8h}{Stat\+Counter.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,326 @@
+\hypertarget{classvvenc_1_1EncModeCtrl}{}\doxysection{Enc\+Mode\+Ctrl}
+\label{classvvenc_1_1EncModeCtrl}\index{EncModeCtrl@{EncModeCtrl}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Enc\+Mode\+Ctrl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1EncModeCtrl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enc\+Mode\+Ctrl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncModeCtrl_ac57169b1683a66c4db4047414d49d9ec}{$\sim$\+Enc\+Mode\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_ac30ae80d9692ef96e30fe3f15604323a}{before\+Split}} (\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_aa595476807c112bea361226876d2a6ab}{finish\+C\+U\+Level}} (\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a6b22b49afecd5bbb055355344c5d9c10}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg, \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$p\+Rd\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a54f09fdb97c445cb09a73c8b430940c9}{init\+C\+T\+U\+Encoding}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a4d1ad3ec282953369b710a504a45b3bb}{init\+C\+U\+Level}} (\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a16a22824c1148cc2a32d4ea81fd7676f}{try\+Mode}} (const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&enc\+Testmode, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_aff98421c999218c7c5b3f17ec3d65f0b}{try\+Split}} (const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&enc\+Testmode, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&last\+Testmode)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a25c489d85e1586aa7f55fe5025cd04e5}{use\+Mode\+Result}} (const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&enc\+Testmode, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$\&temp\+CS, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const bool use\+E\+DO)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a7a0af35d0a3150acc360a452afa853f7}{compr\+C\+U\+Ctx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}},(\mbox{\hyperlink{namespacevvenc_a00ea24186f746c566300adaf3b8668a7}{M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH}}$<$$<$ 2)$>$ \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_ac7b1c4fc2aa68edefd96399c1361d837}{m\+\_\+\+Compr\+C\+U\+Ctx\+List}}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_afabc33c7c4328921490982de50e35da0}{m\+\_\+pc\+Enc\+Cfg}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_a7941a56c2fd607b45125922e737f91ea}{m\+\_\+pc\+Rd\+Cost}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1EncModeCtrl_af856cb0107ec95e182c96e6fd176f68d}{m\+\_\+skip\+Threshold\+E0023\+Fast\+Enc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 342 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_ac57169b1683a66c4db4047414d49d9ec}\label{classvvenc_1_1EncModeCtrl_ac57169b1683a66c4db4047414d49d9ec}} 
+\index{EncModeCtrl@{EncModeCtrl}!````~EncModeCtrl@{$\sim$EncModeCtrl}}
+\index{````~EncModeCtrl@{$\sim$EncModeCtrl}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncModeCtrl()}{~EncModeCtrl()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 354 of file Enc\+Mode\+Ctrl.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_ac57169b1683a66c4db4047414d49d9ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_ac30ae80d9692ef96e30fe3f15604323a}\label{classvvenc_1_1EncModeCtrl_ac30ae80d9692ef96e30fe3f15604323a}} 
+\index{EncModeCtrl@{EncModeCtrl}!beforeSplit@{beforeSplit}}
+\index{beforeSplit@{beforeSplit}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{beforeSplit()}{beforeSplit()}}
+{\footnotesize\ttfamily void before\+Split (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1042 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_ac30ae80d9692ef96e30fe3f15604323a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1EncModeCtrl_a3a80b6032f86a56bec74609034b3246f}} 
+\index{EncModeCtrl@{EncModeCtrl}!destroy@{destroy}}
+\index{destroy@{destroy}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 539 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvvenc_1_1EncModeCtrl_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classvvenc_1_1EncModeCtrl_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_aa595476807c112bea361226876d2a6ab}\label{classvvenc_1_1EncModeCtrl_aa595476807c112bea361226876d2a6ab}} 
+\index{EncModeCtrl@{EncModeCtrl}!finishCULevel@{finishCULevel}}
+\index{finishCULevel@{finishCULevel}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{finishCULevel()}{finishCULevel()}}
+{\footnotesize\ttfamily void finish\+C\+U\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 635 of file Enc\+Mode\+Ctrl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a6b22b49afecd5bbb055355344c5d9c10}\label{classvvenc_1_1EncModeCtrl_a6b22b49afecd5bbb055355344c5d9c10}} 
+\index{EncModeCtrl@{EncModeCtrl}!init@{init}}
+\index{init@{init}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg,  }\item[{\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$}]{p\+Rd\+Cost }\end{DoxyParamCaption})}
+
+
+
+Definition at line 529 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_a6b22b49afecd5bbb055355344c5d9c10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classvvenc_1_1EncModeCtrl_a6b22b49afecd5bbb055355344c5d9c10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a54f09fdb97c445cb09a73c8b430940c9}\label{classvvenc_1_1EncModeCtrl_a54f09fdb97c445cb09a73c8b430940c9}} 
+\index{EncModeCtrl@{EncModeCtrl}!initCTUEncoding@{initCTUEncoding}}
+\index{initCTUEncoding@{initCTUEncoding}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{initCTUEncoding()}{initCTUEncoding()}}
+{\footnotesize\ttfamily void init\+C\+T\+U\+Encoding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 545 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_a54f09fdb97c445cb09a73c8b430940c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a4d1ad3ec282953369b710a504a45b3bb}\label{classvvenc_1_1EncModeCtrl_a4d1ad3ec282953369b710a504a45b3bb}} 
+\index{EncModeCtrl@{EncModeCtrl}!initCULevel@{initCULevel}}
+\index{initCULevel@{initCULevel}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{initCULevel()}{initCULevel()}}
+{\footnotesize\ttfamily void init\+C\+U\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 562 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_a4d1ad3ec282953369b710a504a45b3bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a16a22824c1148cc2a32d4ea81fd7676f}\label{classvvenc_1_1EncModeCtrl_a16a22824c1148cc2a32d4ea81fd7676f}} 
+\index{EncModeCtrl@{EncModeCtrl}!tryMode@{tryMode}}
+\index{tryMode@{tryMode}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{tryMode()}{tryMode()}}
+{\footnotesize\ttfamily bool try\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{enc\+Testmode,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 875 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_a16a22824c1148cc2a32d4ea81fd7676f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_aff98421c999218c7c5b3f17ec3d65f0b}\label{classvvenc_1_1EncModeCtrl_aff98421c999218c7c5b3f17ec3d65f0b}} 
+\index{EncModeCtrl@{EncModeCtrl}!trySplit@{trySplit}}
+\index{trySplit@{trySplit}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{trySplit()}{trySplit()}}
+{\footnotesize\ttfamily bool try\+Split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{enc\+Testmode,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{last\+Testmode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 641 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_aff98421c999218c7c5b3f17ec3d65f0b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a25c489d85e1586aa7f55fe5025cd04e5}\label{classvvenc_1_1EncModeCtrl_a25c489d85e1586aa7f55fe5025cd04e5}} 
+\index{EncModeCtrl@{EncModeCtrl}!useModeResult@{useModeResult}}
+\index{useModeResult@{useModeResult}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{useModeResult()}{useModeResult()}}
+{\footnotesize\ttfamily bool use\+Mode\+Result (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{enc\+Testmode,  }\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$\&}]{temp\+CS,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const bool}]{use\+E\+DO }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1097 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncModeCtrl_a25c489d85e1586aa7f55fe5025cd04e5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a7a0af35d0a3150acc360a452afa853f7}\label{classvvenc_1_1EncModeCtrl_a7a0af35d0a3150acc360a452afa853f7}} 
+\index{EncModeCtrl@{EncModeCtrl}!comprCUCtx@{comprCUCtx}}
+\index{comprCUCtx@{comprCUCtx}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{comprCUCtx}{comprCUCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}}$\ast$ compr\+C\+U\+Ctx}
+
+
+
+Definition at line 352 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_ac7b1c4fc2aa68edefd96399c1361d837}\label{classvvenc_1_1EncModeCtrl_ac7b1c4fc2aa68edefd96399c1361d837}} 
+\index{EncModeCtrl@{EncModeCtrl}!m\_ComprCUCtxList@{m\_ComprCUCtxList}}
+\index{m\_ComprCUCtxList@{m\_ComprCUCtxList}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_ComprCUCtxList}{m\_ComprCUCtxList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}}, ( \mbox{\hyperlink{namespacevvenc_a00ea24186f746c566300adaf3b8668a7}{M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH}} $<$$<$ 2 )$>$ m\+\_\+\+Compr\+C\+U\+Ctx\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 348 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_afabc33c7c4328921490982de50e35da0}\label{classvvenc_1_1EncModeCtrl_afabc33c7c4328921490982de50e35da0}} 
+\index{EncModeCtrl@{EncModeCtrl}!m\_pcEncCfg@{m\_pcEncCfg}}
+\index{m\_pcEncCfg@{m\_pcEncCfg}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncCfg}{m\_pcEncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+pc\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 346 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_a7941a56c2fd607b45125922e737f91ea}\label{classvvenc_1_1EncModeCtrl_a7941a56c2fd607b45125922e737f91ea}} 
+\index{EncModeCtrl@{EncModeCtrl}!m\_pcRdCost@{m\_pcRdCost}}
+\index{m\_pcRdCost@{m\_pcRdCost}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_pcRdCost}{m\_pcRdCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}}$\ast$ m\+\_\+pc\+Rd\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 347 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncModeCtrl_af856cb0107ec95e182c96e6fd176f68d}\label{classvvenc_1_1EncModeCtrl_af856cb0107ec95e182c96e6fd176f68d}} 
+\index{EncModeCtrl@{EncModeCtrl}!m\_skipThresholdE0023FastEnc@{m\_skipThresholdE0023FastEnc}}
+\index{m\_skipThresholdE0023FastEnc@{m\_skipThresholdE0023FastEnc}!EncModeCtrl@{EncModeCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_skipThresholdE0023FastEnc}{m\_skipThresholdE0023FastEnc}}
+{\footnotesize\ttfamily unsigned m\+\_\+skip\+Threshold\+E0023\+Fast\+Enc\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 349 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8h}{Enc\+Mode\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8cpp}{Enc\+Mode\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

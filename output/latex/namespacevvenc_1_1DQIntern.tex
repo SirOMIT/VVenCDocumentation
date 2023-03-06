@@ -1,0 +1,135 @@
+\hypertarget{namespacevvenc_1_1DQIntern}{}\doxysection{vvenc\+::D\+Q\+Intern Namespace Reference}
+\label{namespacevvenc_1_1DQIntern}\index{vvenc::DQIntern@{vvenc::DQIntern}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1DepQuant}{Dep\+Quant}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Quantizer}{Quantizer}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom}{Rom}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}{Scan\+Pos\+Type}} \{ \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea086d3fd4f7c1ce1d0133ff785f3f8234}{S\+C\+A\+N\+\_\+\+I\+S\+C\+S\+BB}} = 0, 
+\mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea7f98622a5662cc380127b1349ec835ae}{S\+C\+A\+N\+\_\+\+S\+O\+C\+S\+BB}} = 1, 
+\mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7eaaef1258962c61ffec62e31440f3fe97d}{S\+C\+A\+N\+\_\+\+E\+O\+C\+S\+BB}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1DQIntern_afc822215a93f164fe64c845d403c9d51}{ceil\+\_\+log2}} (uint64\+\_\+t x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1DQIntern_a42da43a72843f0bdf69344e55c21acf9}{g\+\_\+go\+Rice\+Bits}} \mbox{[}4\mbox{]}\mbox{[}\mbox{\hyperlink{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}{R\+I\+C\+E\+M\+AX}}\mbox{]}
+\item 
+static const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \mbox{\hyperlink{namespacevvenc_1_1DQIntern_a31009825296e9a086adc614e5b354290}{start\+Dec}} \mbox{[}8\mbox{]} = \{\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,4),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,5),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,6),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,7)\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}\label{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}} 
+\index{vvenc::DQIntern@{vvenc::DQIntern}!ScanPosType@{ScanPosType}}
+\index{ScanPosType@{ScanPosType}!vvenc::DQIntern@{vvenc::DQIntern}}
+\doxysubsubsection{\texorpdfstring{ScanPosType}{ScanPosType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}{Scan\+Pos\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCAN\_ISCSBB@{SCAN\_ISCSBB}!vvenc::DQIntern@{vvenc::DQIntern}}\index{vvenc::DQIntern@{vvenc::DQIntern}!SCAN\_ISCSBB@{SCAN\_ISCSBB}}}\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea086d3fd4f7c1ce1d0133ff785f3f8234}\label{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea086d3fd4f7c1ce1d0133ff785f3f8234}} 
+S\+C\+A\+N\+\_\+\+I\+S\+C\+S\+BB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCAN\_SOCSBB@{SCAN\_SOCSBB}!vvenc::DQIntern@{vvenc::DQIntern}}\index{vvenc::DQIntern@{vvenc::DQIntern}!SCAN\_SOCSBB@{SCAN\_SOCSBB}}}\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea7f98622a5662cc380127b1349ec835ae}\label{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea7f98622a5662cc380127b1349ec835ae}} 
+S\+C\+A\+N\+\_\+\+S\+O\+C\+S\+BB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SCAN\_EOCSBB@{SCAN\_EOCSBB}!vvenc::DQIntern@{vvenc::DQIntern}}\index{vvenc::DQIntern@{vvenc::DQIntern}!SCAN\_EOCSBB@{SCAN\_EOCSBB}}}\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7eaaef1258962c61ffec62e31440f3fe97d}\label{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7eaaef1258962c61ffec62e31440f3fe97d}} 
+S\+C\+A\+N\+\_\+\+E\+O\+C\+S\+BB&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 86 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_afc822215a93f164fe64c845d403c9d51}\label{namespacevvenc_1_1DQIntern_afc822215a93f164fe64c845d403c9d51}} 
+\index{vvenc::DQIntern@{vvenc::DQIntern}!ceil\_log2@{ceil\_log2}}
+\index{ceil\_log2@{ceil\_log2}!vvenc::DQIntern@{vvenc::DQIntern}}
+\doxysubsubsection{\texorpdfstring{ceil\_log2()}{ceil\_log2()}}
+{\footnotesize\ttfamily int vvenc\+::\+D\+Q\+Intern\+::ceil\+\_\+log2 (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 654 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1DQIntern_afc822215a93f164fe64c845d403c9d51_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_a42da43a72843f0bdf69344e55c21acf9}\label{namespacevvenc_1_1DQIntern_a42da43a72843f0bdf69344e55c21acf9}} 
+\index{vvenc::DQIntern@{vvenc::DQIntern}!g\_goRiceBits@{g\_goRiceBits}}
+\index{g\_goRiceBits@{g\_goRiceBits}!vvenc::DQIntern@{vvenc::DQIntern}}
+\doxysubsubsection{\texorpdfstring{g\_goRiceBits}{g\_goRiceBits}}
+{\footnotesize\ttfamily const int32\+\_\+t g\+\_\+go\+Rice\+Bits\mbox{[}4\mbox{]}\mbox{[}\mbox{\hyperlink{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}{R\+I\+C\+E\+M\+AX}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    \{ 32768,  65536,  98304, 131072, 163840, 196608, 262144, 262144, 327680, 327680, 327680, 327680, 393216, 393216, 393216, 393216, 393216, 393216, 393216, 393216, 458752, 458752, 458752, 458752, 458752, 458752, 458752, 458752, 458752, 458752, 458752, 458752\},}
+\DoxyCodeLine{    \{ 65536,  65536,  98304,  98304, 131072, 131072, 163840, 163840, 196608, 196608, 229376, 229376, 294912, 294912, 294912, 294912, 360448, 360448, 360448, 360448, 360448, 360448, 360448, 360448, 425984, 425984, 425984, 425984, 425984, 425984, 425984, 425984\},}
+\DoxyCodeLine{    \{ 98304,  98304,  98304,  98304, 131072, 131072, 131072, 131072, 163840, 163840, 163840, 163840, 196608, 196608, 196608, 196608, 229376, 229376, 229376, 229376, 262144, 262144, 262144, 262144, 327680, 327680, 327680, 327680, 327680, 327680, 327680, 327680\},}
+\DoxyCodeLine{    \{131072, 131072, 131072, 131072, 131072, 131072, 131072, 131072, 163840, 163840, 163840, 163840, 163840, 163840, 163840, 163840, 196608, 196608, 196608, 196608, 196608, 196608, 196608, 196608, 229376, 229376, 229376, 229376, 229376, 229376, 229376, 229376\}}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+
+
+Definition at line 851 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{namespacevvenc_1_1DQIntern_a31009825296e9a086adc614e5b354290}\label{namespacevvenc_1_1DQIntern_a31009825296e9a086adc614e5b354290}} 
+\index{vvenc::DQIntern@{vvenc::DQIntern}!startDec@{startDec}}
+\index{startDec@{startDec}!vvenc::DQIntern@{vvenc::DQIntern}}
+\doxysubsubsection{\texorpdfstring{startDec}{startDec}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} start\+Dec\mbox{[}8\mbox{]} = \{\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,4),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,5),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,6),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,7)\}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 1330 of file Dep\+Quant.\+cpp.
+

@@ -1,0 +1,45 @@
+\hypertarget{UnitTools_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Unit\+Tools.cpp File Reference}
+\label{UnitTools_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/UnitTools.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/UnitTools.cpp}}
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for Unit\+Tools.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UnitTools_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_aac4d1da802a52f31dd2d8fb774dc22d5}{allow\+Lfnst\+With\+Mip}} (const Size \&block)
+\item 
+void \mbox{\hyperlink{namespacevvenc_acbd506f9da2872d53471baef11bc9b1d}{clip\+Col\+Pos}} (int \&posX, int \&posY, const Coding\+Unit \&cu)
+\item 
+int \mbox{\hyperlink{namespacevvenc_af4f150e83814bd592b9548547ee6f38c}{convert\+Mv\+Fixed\+To\+Float}} (int32\+\_\+t val)
+\item 
+int \mbox{\hyperlink{namespacevvenc_afd6ff1bd4222bc8c8b6a3a12173d0eae}{convert\+Mv\+Float\+To\+Fixed}} (int val)
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a39d6dbe25e619b2d4952cea225ac7e22}{get\+Available\+Affine\+Neighbours\+For\+Above\+Predictor}} (const Coding\+Unit \&cu, const Coding\+Unit $\ast$npu\mbox{[}$\,$\mbox{]}, int num\+Aff\+Neigh\+Left)
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a8a93e1efbf07036ac70811af2d617adb}{get\+Available\+Affine\+Neighbours\+For\+Left\+Predictor}} (const Coding\+Unit \&cu, const Coding\+Unit $\ast$npu\mbox{[}$\,$\mbox{]})
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a4af27e3ae3b67938969275590b6bb9c6}{get\+Ctu\+Addr}} (const Position \&pos, const Pre\+Calc\+Values \&pcv)
+\item 
+int \mbox{\hyperlink{namespacevvenc_ac53aa3c2698bd12c75de54731c239805}{get\+Mip\+Size\+Id}} (const Size \&block)
+\item 
+int \mbox{\hyperlink{namespacevvenc_a003b26a8a4642dcfd9b2a9cf87b9a551}{get\+Num\+Modes\+Mip}} (const Size \&block)
+\item 
+int \mbox{\hyperlink{namespacevvenc_a37d4b49046cc81916aae7388396525b6}{round\+Mv\+Comp}} (int x)
+\end{DoxyCompactItemize}

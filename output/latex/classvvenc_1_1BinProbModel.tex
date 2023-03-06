@@ -1,0 +1,394 @@
+\hypertarget{classvvenc_1_1BinProbModel}{}\doxysection{Bin\+Prob\+Model}
+\label{classvvenc_1_1BinProbModel}\index{BinProbModel@{BinProbModel}}
+
+
+{\ttfamily \#include \char`\"{}Contexts.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bin\+Prob\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classvvenc_1_1BinProbModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bin\+Prob\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classvvenc_1_1BinProbModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinProbModel_a1d3cd25cfd2e680385c3b52ad45fa90e}{Bin\+Prob\+Model}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a4a60349a7899df0c4c12d1d39cc8bcba}{est\+Frac\+Bits}} (unsigned bin) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinProbModel_a0fd6ebebfc7f67dbef5bb4876a52dacb}{est\+Frac\+Bits\+Update}} (unsigned bin, uint64\+\_\+t \&b)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a2a774547d2905af95e1535d0ef71a8ce}{est\+Frac\+Excess\+Bits}} (const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} \&r) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \& \mbox{\hyperlink{classvvenc_1_1BinProbModel_a6622b5e09f2b3768471977f5f8ba6287}{get\+Frac\+Bits\+Array}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a638b47f9915f1dd05434c74648e31986}{get\+L\+PS}} (unsigned range) const
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_ad128031cfa3f2b1974c9ef3047524295}{get\+State}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinProbModel_acc47565ddd1a8803d46101b3ac04aef6}{init}} (int qp, int init\+Id)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a24260fa0480231924f8383e1cd9d5674}{mps}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinProbModel_a97f2fdcf2c56a1cddb905f5e9f487cee}{set\+Log2\+Window\+Size}} (uint8\+\_\+t log2\+Window\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinProbModel_a013408119ac0b4cd6d2534ab5e03ea5d}{set\+State}} (uint16\+\_\+t p\+State)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a1742ba31694147bb406061ba27ee9ed9}{state}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinProbModel_aea3b5dbc3ab55c439f1d123b0c186543}{update}} (unsigned bin)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a971cb645a694411011da37a662a4c542}{est\+Frac\+Bits\+Trm}} (unsigned bin)
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a5008c170a9764c317918a140ce86cec5}{get\+Renorm\+Bits\+L\+PS}} (unsigned L\+PS)
+\item 
+static uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a39d2e740023bdbe3c02b2e52d0a43bea}{get\+Renorm\+Bits\+Range}} (unsigned range)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a525a1724aa0366d9dace146b38ef82f8}{m\+\_\+rate}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinProbModel_a9b4635ad0c77a7c1891ab70c3fa216d3}{m\+\_\+state}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 91 of file Contexts.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a1d3cd25cfd2e680385c3b52ad45fa90e}\label{classvvenc_1_1BinProbModel_a1d3cd25cfd2e680385c3b52ad45fa90e}} 
+\index{BinProbModel@{BinProbModel}!BinProbModel@{BinProbModel}}
+\index{BinProbModel@{BinProbModel}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{BinProbModel()}{BinProbModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Contexts.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a4a60349a7899df0c4c12d1d39cc8bcba}\label{classvvenc_1_1BinProbModel_a4a60349a7899df0c4c12d1d39cc8bcba}} 
+\index{BinProbModel@{BinProbModel}!estFracBits@{estFracBits}}
+\index{estFracBits@{estFracBits}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{estFracBits()}{estFracBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t est\+Frac\+Bits (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 127 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classvvenc_1_1BinProbModel_a4a60349a7899df0c4c12d1d39cc8bcba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classvvenc_1_1BinProbModel_a4a60349a7899df0c4c12d1d39cc8bcba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a971cb645a694411011da37a662a4c542}\label{classvvenc_1_1BinProbModel_a971cb645a694411011da37a662a4c542}} 
+\index{BinProbModel@{BinProbModel}!estFracBitsTrm@{estFracBitsTrm}}
+\index{estFracBitsTrm@{estFracBitsTrm}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{estFracBitsTrm()}{estFracBitsTrm()}}
+{\footnotesize\ttfamily static uint32\+\_\+t est\+Frac\+Bits\+Trm (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 128 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1BinProbModel_a971cb645a694411011da37a662a4c542_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a0fd6ebebfc7f67dbef5bb4876a52dacb}\label{classvvenc_1_1BinProbModel_a0fd6ebebfc7f67dbef5bb4876a52dacb}} 
+\index{BinProbModel@{BinProbModel}!estFracBitsUpdate@{estFracBitsUpdate}}
+\index{estFracBitsUpdate@{estFracBitsUpdate}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{estFracBitsUpdate()}{estFracBitsUpdate()}}
+{\footnotesize\ttfamily void est\+Frac\+Bits\+Update (\begin{DoxyParamCaption}\item[{unsigned}]{bin,  }\item[{uint64\+\_\+t \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 122 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinProbModel_a0fd6ebebfc7f67dbef5bb4876a52dacb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a2a774547d2905af95e1535d0ef71a8ce}\label{classvvenc_1_1BinProbModel_a2a774547d2905af95e1535d0ef71a8ce}} 
+\index{BinProbModel@{BinProbModel}!estFracExcessBits@{estFracExcessBits}}
+\index{estFracExcessBits@{estFracExcessBits}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{estFracExcessBits()}{estFracExcessBits()}}
+{\footnotesize\ttfamily uint64\+\_\+t est\+Frac\+Excess\+Bits (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinProbModel_a2a774547d2905af95e1535d0ef71a8ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a6622b5e09f2b3768471977f5f8ba6287}\label{classvvenc_1_1BinProbModel_a6622b5e09f2b3768471977f5f8ba6287}} 
+\index{BinProbModel@{BinProbModel}!getFracBitsArray@{getFracBitsArray}}
+\index{getFracBitsArray@{getFracBitsArray}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{getFracBitsArray()}{getFracBitsArray()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}}\& get\+Frac\+Bits\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classvvenc_1_1BinProbModel_a6622b5e09f2b3768471977f5f8ba6287_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinProbModel_a6622b5e09f2b3768471977f5f8ba6287_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a638b47f9915f1dd05434c74648e31986}\label{classvvenc_1_1BinProbModel_a638b47f9915f1dd05434c74648e31986}} 
+\index{BinProbModel@{BinProbModel}!getLPS@{getLPS}}
+\index{getLPS@{getLPS}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{getLPS()}{getLPS()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+L\+PS (\begin{DoxyParamCaption}\item[{unsigned}]{range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 133 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classvvenc_1_1BinProbModel_a638b47f9915f1dd05434c74648e31986_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classvvenc_1_1BinProbModel_a638b47f9915f1dd05434c74648e31986_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a5008c170a9764c317918a140ce86cec5}\label{classvvenc_1_1BinProbModel_a5008c170a9764c317918a140ce86cec5}} 
+\index{BinProbModel@{BinProbModel}!getRenormBitsLPS@{getRenormBitsLPS}}
+\index{getRenormBitsLPS@{getRenormBitsLPS}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{getRenormBitsLPS()}{getRenormBitsLPS()}}
+{\footnotesize\ttfamily static uint8\+\_\+t get\+Renorm\+Bits\+L\+PS (\begin{DoxyParamCaption}\item[{unsigned}]{L\+PS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 140 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classvvenc_1_1BinProbModel_a5008c170a9764c317918a140ce86cec5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a39d2e740023bdbe3c02b2e52d0a43bea}\label{classvvenc_1_1BinProbModel_a39d2e740023bdbe3c02b2e52d0a43bea}} 
+\index{BinProbModel@{BinProbModel}!getRenormBitsRange@{getRenormBitsRange}}
+\index{getRenormBitsRange@{getRenormBitsRange}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{getRenormBitsRange()}{getRenormBitsRange()}}
+{\footnotesize\ttfamily static uint8\+\_\+t get\+Renorm\+Bits\+Range (\begin{DoxyParamCaption}\item[{unsigned}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 141 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classvvenc_1_1BinProbModel_a39d2e740023bdbe3c02b2e52d0a43bea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_ad128031cfa3f2b1974c9ef3047524295}\label{classvvenc_1_1BinProbModel_ad128031cfa3f2b1974c9ef3047524295}} 
+\index{BinProbModel@{BinProbModel}!getState@{getState}}
+\index{getState@{getState}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 142 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_acc47565ddd1a8803d46101b3ac04aef6}\label{classvvenc_1_1BinProbModel_acc47565ddd1a8803d46101b3ac04aef6}} 
+\index{BinProbModel@{BinProbModel}!init@{init}}
+\index{init@{init}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{int}]{qp,  }\item[{int}]{init\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 140 of file Contexts.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a24260fa0480231924f8383e1cd9d5674}\label{classvvenc_1_1BinProbModel_a24260fa0480231924f8383e1cd9d5674}} 
+\index{BinProbModel@{BinProbModel}!mps@{mps}}
+\index{mps@{mps}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{mps()}{mps()}}
+{\footnotesize\ttfamily uint8\+\_\+t mps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classvvenc_1_1BinProbModel_a24260fa0480231924f8383e1cd9d5674_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{classvvenc_1_1BinProbModel_a24260fa0480231924f8383e1cd9d5674_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a97f2fdcf2c56a1cddb905f5e9f487cee}\label{classvvenc_1_1BinProbModel_a97f2fdcf2c56a1cddb905f5e9f487cee}} 
+\index{BinProbModel@{BinProbModel}!setLog2WindowSize@{setLog2WindowSize}}
+\index{setLog2WindowSize@{setLog2WindowSize}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{setLog2WindowSize()}{setLog2WindowSize()}}
+{\footnotesize\ttfamily void set\+Log2\+Window\+Size (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{log2\+Window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 115 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a013408119ac0b4cd6d2534ab5e03ea5d}\label{classvvenc_1_1BinProbModel_a013408119ac0b4cd6d2534ab5e03ea5d}} 
+\index{BinProbModel@{BinProbModel}!setState@{setState}}
+\index{setState@{setState}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void set\+State (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{p\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a1742ba31694147bb406061ba27ee9ed9}\label{classvvenc_1_1BinProbModel_a1742ba31694147bb406061ba27ee9ed9}} 
+\index{BinProbModel@{BinProbModel}!state@{state}}
+\index{state@{state}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily uint8\+\_\+t state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 131 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinProbModel_a1742ba31694147bb406061ba27ee9ed9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_aea3b5dbc3ab55c439f1d123b0c186543}\label{classvvenc_1_1BinProbModel_aea3b5dbc3ab55c439f1d123b0c186543}} 
+\index{BinProbModel@{BinProbModel}!update@{update}}
+\index{update@{update}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1BinProbModel_aea3b5dbc3ab55c439f1d123b0c186543_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a525a1724aa0366d9dace146b38ef82f8}\label{classvvenc_1_1BinProbModel_a525a1724aa0366d9dace146b38ef82f8}} 
+\index{BinProbModel@{BinProbModel}!m\_rate@{m\_rate}}
+\index{m\_rate@{m\_rate}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{m\_rate}{m\_rate}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 156 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinProbModel_a9b4635ad0c77a7c1891ab70c3fa216d3}\label{classvvenc_1_1BinProbModel_a9b4635ad0c77a7c1891ab70c3fa216d3}} 
+\index{BinProbModel@{BinProbModel}!m\_state@{m\_state}}
+\index{m\_state@{m\_state}!BinProbModel@{BinProbModel}}
+\doxysubsubsection{\texorpdfstring{m\_state}{m\_state}}
+{\footnotesize\ttfamily uint16\+\_\+t m\+\_\+state\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Contexts.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Contexts_8h}{Contexts.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Contexts_8cpp}{Contexts.\+cpp}}\end{DoxyCompactItemize}

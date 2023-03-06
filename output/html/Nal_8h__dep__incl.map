@@ -1,0 +1,20 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/Nal.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/Nal.h">
+<area shape="rect" id="node1" title=" " alt="" coords="603,5,798,61"/>
+<area shape="rect" id="node2" href="$NALread_8h.html" title="reading functionality for NAL units" alt="" coords="279,109,435,180"/>
+<area shape="rect" id="node4" href="$NALread_8cpp.html" title="reading functionality for NAL units" alt="" coords="99,228,255,299"/>
+<area shape="rect" id="node5" href="$EncGOP_8h.html" title="GOP encoder class (header)" alt="" coords="623,109,779,180"/>
+<area shape="rect" id="node6" href="$EncLib_8h.html" title="encoder class (header)" alt="" coords="459,228,615,299"/>
+<area shape="rect" id="node14" href="$vvencimpl_8cpp.html" title="This file contains the internal interface of the vvenc SDK." alt="" coords="358,465,571,521"/>
+<area shape="rect" id="node17" href="$NALwrite_8h.html" title=" " alt="" coords="819,109,975,180"/>
+<area shape="rect" id="node18" href="$NALwrite_8cpp.html" title=" " alt="" coords="999,228,1155,299"/>
+<area shape="rect" id="node3" href="$DecLib_8cpp.html" title="decoder class" alt="" coords="279,228,435,299"/>
+<area shape="rect" id="node15" href="$EncGOP_8cpp.html" title="GOP encoder class." alt="" coords="819,228,975,299"/>
+<area shape="rect" id="node16" href="$EncPicture_8cpp.html" title="encode picture" alt="" coords="639,228,795,299"/>
+<area shape="rect" id="node7" href="$CABACWriter_8cpp.html" title="Writer for low level syntax." alt="" coords="459,347,615,417"/>
+<area shape="rect" id="node8" href="$EncCu_8cpp.html" title="Coding Unit (CU) encoder class." alt="" coords="639,347,795,417"/>
+<area shape="rect" id="node9" href="$EncLib_8cpp.html" title="encoder class" alt="" coords="819,347,975,417"/>
+<area shape="rect" id="node10" href="$EncSlice_8cpp.html" title="slice encoder class" alt="" coords="999,347,1155,417"/>
+<area shape="rect" id="node11" href="$InterSearch_8cpp.html" title=" " alt="" coords="5,347,161,417"/>
+<area shape="rect" id="node12" href="$vvencimpl_8h.html" title=" " alt="" coords="185,354,384,410"/>
+<area shape="rect" id="node13" href="$vvenc_8cpp.html" title="This file contains the external interface of the vvenc SDK." alt="" coords="145,465,334,521"/>
+</map>

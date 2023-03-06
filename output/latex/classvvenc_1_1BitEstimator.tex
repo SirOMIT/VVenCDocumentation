@@ -1,0 +1,179 @@
+\hypertarget{classvvenc_1_1BitEstimator}{}\doxysection{Bit\+Estimator}
+\label{classvvenc_1_1BitEstimator}\index{BitEstimator@{BitEstimator}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Encoder.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bit\+Estimator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classvvenc_1_1BitEstimator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bit\+Estimator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1BitEstimator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BitEstimator_af36c0197d2baae40705a38eb15ce942e}{Bit\+Estimator}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1BitEstimator_a36382a02b66ce5b879d0847d268cf45e}{$\sim$\+Bit\+Estimator}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BitEstimator_ace6800c327865fe3506f8bd7be3df055}{encode\+Bin}} (unsigned bin, unsigned ctx\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BitEstimator_ade551e973a52be2e0e8a9eeae16fd73c}{encode\+Bin\+Trm}} (unsigned bin)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BitEstimator_a8b93f1828b8adb200fc3e9c7085a50ea}{get\+Bin\+Store}} () const
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BitEstimator_a2a331a1edd7d409d9236d524c927118c}{get\+Test\+Bin\+Encoder}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BitEstimator_a9097e080feba43fe0f24c7397291b4db}{set\+Bin\+Storage}} (bool b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \& \mbox{\hyperlink{classvvenc_1_1BitEstimator_adc73864d489c3cbfe87119eff374b778}{m\+\_\+\+Ctx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 275 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_af36c0197d2baae40705a38eb15ce942e}\label{classvvenc_1_1BitEstimator_af36c0197d2baae40705a38eb15ce942e}} 
+\index{BitEstimator@{BitEstimator}!BitEstimator@{BitEstimator}}
+\index{BitEstimator@{BitEstimator}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{BitEstimator()}{BitEstimator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BitEstimator}{Bit\+Estimator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 466 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_a36382a02b66ce5b879d0847d268cf45e}\label{classvvenc_1_1BitEstimator_a36382a02b66ce5b879d0847d268cf45e}} 
+\index{BitEstimator@{BitEstimator}!````~BitEstimator@{$\sim$BitEstimator}}
+\index{````~BitEstimator@{$\sim$BitEstimator}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{$\sim$BitEstimator()}{~BitEstimator()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BitEstimator}{Bit\+Estimator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 279 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_ace6800c327865fe3506f8bd7be3df055}\label{classvvenc_1_1BitEstimator_ace6800c327865fe3506f8bd7be3df055}} 
+\index{BitEstimator@{BitEstimator}!encodeBin@{encodeBin}}
+\index{encodeBin@{encodeBin}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{encodeBin()}{encodeBin()}}
+{\footnotesize\ttfamily void encode\+Bin (\begin{DoxyParamCaption}\item[{unsigned}]{bin,  }\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a13eeadd827b0d7e9591f2e6fa4ecbf69}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 280 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_ade551e973a52be2e0e8a9eeae16fd73c}\label{classvvenc_1_1BitEstimator_ade551e973a52be2e0e8a9eeae16fd73c}} 
+\index{BitEstimator@{BitEstimator}!encodeBinTrm@{encodeBinTrm}}
+\index{encodeBinTrm@{encodeBinTrm}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{encodeBinTrm()}{encodeBinTrm()}}
+{\footnotesize\ttfamily void encode\+Bin\+Trm (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 281 of file Bin\+Encoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvvenc_1_1BitEstimator_ade551e973a52be2e0e8a9eeae16fd73c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_a8b93f1828b8adb200fc3e9c7085a50ea}\label{classvvenc_1_1BitEstimator_a8b93f1828b8adb200fc3e9c7085a50ea}} 
+\index{BitEstimator@{BitEstimator}!getBinStore@{getBinStore}}
+\index{getBinStore@{getBinStore}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{getBinStore()}{getBinStore()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}}$\ast$ get\+Bin\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_adc3baeaa2bdbd05b66bc4aac1faf6074}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 283 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_a2a331a1edd7d409d9236d524c927118c}\label{classvvenc_1_1BitEstimator_a2a331a1edd7d409d9236d524c927118c}} 
+\index{BitEstimator@{BitEstimator}!getTestBinEncoder@{getTestBinEncoder}}
+\index{getTestBinEncoder@{getTestBinEncoder}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{getTestBinEncoder()}{getTestBinEncoder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}}$\ast$ get\+Test\+Bin\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a0e682e787bffa2a3f1ca195179b65615}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 284 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_a9097e080feba43fe0f24c7397291b4db}\label{classvvenc_1_1BitEstimator_a9097e080feba43fe0f24c7397291b4db}} 
+\index{BitEstimator@{BitEstimator}!setBinStorage@{setBinStorage}}
+\index{setBinStorage@{setBinStorage}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{setBinStorage()}{setBinStorage()}}
+{\footnotesize\ttfamily void set\+Bin\+Storage (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a629ae7f894cdbf7829e9f9545515e522}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 282 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BitEstimator_adc73864d489c3cbfe87119eff374b778}\label{classvvenc_1_1BitEstimator_adc73864d489c3cbfe87119eff374b778}} 
+\index{BitEstimator@{BitEstimator}!m\_Ctx@{m\_Ctx}}
+\index{m\_Ctx@{m\_Ctx}!BitEstimator@{BitEstimator}}
+\doxysubsubsection{\texorpdfstring{m\_Ctx}{m\_Ctx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}}\& m\+\_\+\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 286 of file Bin\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8h}{Bin\+Encoder.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8cpp}{Bin\+Encoder.\+cpp}}\end{DoxyCompactItemize}

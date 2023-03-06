@@ -1,0 +1,778 @@
+\hypertarget{classvvenc_1_1Mv}{}\doxysection{Mv}
+\label{classvvenc_1_1Mv}\index{Mv@{Mv}}
+
+
+basic motion vector class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Mv.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv_a2d415ba49e61bdb2aef994bb641bacf2}{Mv}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv_a9216d6d6674bda000214f35463da59c9}{Mv}} (int i\+Hor, int i\+Ver)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_ab58465ffbe1f213b531017e4e582550e}{change\+Affine\+Prec\+Amvr2\+Internal}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_adff6f41d923245a695197e0b0623a2ab}{change\+Affine\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_ac5016dfaa3d162fc1cb6308871627620}{change\+Ibc\+Prec\+Amvr2\+Internal}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_abb18e669a4250e02d7fba589ffdb3bc8}{change\+Ibc\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_aa593922e3fc3bf06037ad9107eac0d70}{change\+Precision}} (const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&src, const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&dst)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a5e2a7bfb346728cabdb6cb45020f8ae1}{change\+Trans\+Prec\+Amvr2\+Internal}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_ae2792dbfd34372253b7997e43f635d51}{change\+Trans\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_ac541e4f875501dce06e356504d2283cc}{clip\+To\+Storage\+Bit\+Depth}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a8666fe6595b172b6d3d8539b6e794339}{divide\+By\+Power\+Of2}} (const int i)
+\begin{DoxyCompactList}\small\item\em shift right with rounding \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1Mv_a4d6029b251201c43f81b32fb4a786fef}{get\+Abs\+Hor}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Mv_a2540ff861d99613a6e5bb0ba56433c57}{get\+Abs\+Ver}} () const
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1Mv_a13b80290d7963cd27cc751f73020a798}{get\+Symmvd\+Mv}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&cur\+Mv\+Pred, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&tar\+Mv\+Pred)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a1393c3c95d3ebc92bdbfd3a3c629ea79}{mv\+Clipto\+Storage\+Bit\+Depth}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Mv_a2724200d41910841404cc1a68cfa6fac}{operator!=}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv) const
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1Mv_a4835ababe6f4c3073601ee9abd26e3f2}{operator+}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv) const
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1Mv_a235b4e0ead40b1e5b483206fcb7d6acd}{operator+=}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&\+\_\+rc\+Mv)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1Mv_ad852e064ad5b4dd37e9a9139d0d16a0b}{operator-\/}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv) const
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1Mv_aa6a3b5c020a594d1ce9e1db249408ba4}{operator-\/=}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&\+\_\+rc\+Mv)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1Mv_a314e6a10e000e32817f24d73f95337cc}{operator$<$$<$=}} (const int i)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Mv_a9b105762340b65295c69989583fbde0e}{operator==}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv) const
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \& \mbox{\hyperlink{classvvenc_1_1Mv_a11553c1baed364cba220d2f0e6aa1b27}{operator$>$$>$=}} (const int i)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a44e382c87c7c2f4ac097f79b2c86fdfe}{round\+Affine\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_abb4bd1bd7e8ac40bb0542bbc64cd1d0c}{round\+Ibc\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a4a247be2cddc2ceb84fb7c8bc43f2795}{round\+To\+Precision}} (const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&src, const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&dst)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_ab1d8dda7a67461e9a09ec2c7a414a129}{round\+Trans\+Prec\+Internal2\+Amvr}} (const int amvr)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1Mv_aed75f15f35af7200ea97bd315f1a9c04}{scale\+Mv}} (int i\+Scale) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a244513e2313d5c3fc0517cbcb1a030e0}{set}} (int i\+Hor, int i\+Ver)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Mv_a47affd1a10b589811fc4828c1a2e0c6d}{set\+Zero}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Mv_a9b174252bf74fcf61c66527b24e23d3e}{hor}}
+\begin{DoxyCompactList}\small\item\em horizontal component of motion vector \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1Mv_a88ca8dd6d8b1535e6ba06c4d988c525b}{ver}}
+\begin{DoxyCompactList}\small\item\em vertical component of motion vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1Mv_a67c7b3822a7f7527371b5af18d365426}{hal\+Mv\+Clip\+Period}} = (1 $<$$<$ (\mbox{\hyperlink{namespacevvenc_a6f7c047b4a3c380f55284fe6ac70a0eb}{M\+V\+\_\+\+B\+I\+TS}} -\/ 1))
+\item 
+static const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \mbox{\hyperlink{classvvenc_1_1Mv_af1bfbd725f30866d4e0060b91a6ac641}{m\+\_\+amvr\+Prec\+Affine}} \mbox{[}3\mbox{]} = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8af3a8dee7f255daa5a6805e2cd900374c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+Q\+U\+A\+R\+T\+ER}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a7592137366a3f94e0b3844698e6c1483}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+S\+I\+X\+T\+E\+E\+N\+TH}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}} \}
+\item 
+static const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \mbox{\hyperlink{classvvenc_1_1Mv_a9f060985d56d4042d27866541f776e71}{m\+\_\+amvr\+Prec\+Ibc}} \mbox{[}3\mbox{]} = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a0515f94079bb68ffa3cece37a4777779}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+4\+P\+EL}} \}
+\item 
+static const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \mbox{\hyperlink{classvvenc_1_1Mv_af6972bed349fdca6cabc316213bca00f}{m\+\_\+amvr\+Precision}} \mbox{[}4\mbox{]} = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8af3a8dee7f255daa5a6805e2cd900374c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+Q\+U\+A\+R\+T\+ER}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a0515f94079bb68ffa3cece37a4777779}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+4\+P\+EL}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8ada802e2dfc785fb5a033528db1f7ca5c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+H\+A\+LF}} \}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1Mv_ad81baf30ba63b7569e3bf1b06deab2cb}{mv\+Clip\+Period}} = (1 $<$$<$ \mbox{\hyperlink{namespacevvenc_a6f7c047b4a3c380f55284fe6ac70a0eb}{M\+V\+\_\+\+B\+I\+TS}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+basic motion vector class 
+
+Definition at line 75 of file Mv.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a2d415ba49e61bdb2aef994bb641bacf2}\label{classvvenc_1_1Mv_a2d415ba49e61bdb2aef994bb641bacf2}} 
+\index{Mv@{Mv}!Mv@{Mv}}
+\index{Mv@{Mv}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{Mv()}{Mv()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 93 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a2d415ba49e61bdb2aef994bb641bacf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a9216d6d6674bda000214f35463da59c9}\label{classvvenc_1_1Mv_a9216d6d6674bda000214f35463da59c9}} 
+\index{Mv@{Mv}!Mv@{Mv}}
+\index{Mv@{Mv}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{Mv()}{Mv()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} (\begin{DoxyParamCaption}\item[{int}]{i\+Hor,  }\item[{int}]{i\+Ver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 94 of file Mv.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Mv_ab58465ffbe1f213b531017e4e582550e}\label{classvvenc_1_1Mv_ab58465ffbe1f213b531017e4e582550e}} 
+\index{Mv@{Mv}!changeAffinePrecAmvr2Internal@{changeAffinePrecAmvr2Internal}}
+\index{changeAffinePrecAmvr2Internal@{changeAffinePrecAmvr2Internal}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeAffinePrecAmvr2Internal()}{changeAffinePrecAmvr2Internal()}}
+{\footnotesize\ttfamily void change\+Affine\+Prec\+Amvr2\+Internal (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 237 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ab58465ffbe1f213b531017e4e582550e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ab58465ffbe1f213b531017e4e582550e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_adff6f41d923245a695197e0b0623a2ab}\label{classvvenc_1_1Mv_adff6f41d923245a695197e0b0623a2ab}} 
+\index{Mv@{Mv}!changeAffinePrecInternal2Amvr@{changeAffinePrecInternal2Amvr}}
+\index{changeAffinePrecInternal2Amvr@{changeAffinePrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeAffinePrecInternal2Amvr()}{changeAffinePrecInternal2Amvr()}}
+{\footnotesize\ttfamily void change\+Affine\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 232 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_adff6f41d923245a695197e0b0623a2ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_adff6f41d923245a695197e0b0623a2ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_ac5016dfaa3d162fc1cb6308871627620}\label{classvvenc_1_1Mv_ac5016dfaa3d162fc1cb6308871627620}} 
+\index{Mv@{Mv}!changeIbcPrecAmvr2Internal@{changeIbcPrecAmvr2Internal}}
+\index{changeIbcPrecAmvr2Internal@{changeIbcPrecAmvr2Internal}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeIbcPrecAmvr2Internal()}{changeIbcPrecAmvr2Internal()}}
+{\footnotesize\ttfamily void change\+Ibc\+Prec\+Amvr2\+Internal (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 253 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classvvenc_1_1Mv_ac5016dfaa3d162fc1cb6308871627620_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ac5016dfaa3d162fc1cb6308871627620_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_abb18e669a4250e02d7fba589ffdb3bc8}\label{classvvenc_1_1Mv_abb18e669a4250e02d7fba589ffdb3bc8}} 
+\index{Mv@{Mv}!changeIbcPrecInternal2Amvr@{changeIbcPrecInternal2Amvr}}
+\index{changeIbcPrecInternal2Amvr@{changeIbcPrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeIbcPrecInternal2Amvr()}{changeIbcPrecInternal2Amvr()}}
+{\footnotesize\ttfamily void change\+Ibc\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 248 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classvvenc_1_1Mv_abb18e669a4250e02d7fba589ffdb3bc8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_abb18e669a4250e02d7fba589ffdb3bc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_aa593922e3fc3bf06037ad9107eac0d70}\label{classvvenc_1_1Mv_aa593922e3fc3bf06037ad9107eac0d70}} 
+\index{Mv@{Mv}!changePrecision@{changePrecision}}
+\index{changePrecision@{changePrecision}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changePrecision()}{changePrecision()}}
+{\footnotesize\ttfamily void change\+Precision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&}]{src,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 193 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_aa593922e3fc3bf06037ad9107eac0d70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a5e2a7bfb346728cabdb6cb45020f8ae1}\label{classvvenc_1_1Mv_a5e2a7bfb346728cabdb6cb45020f8ae1}} 
+\index{Mv@{Mv}!changeTransPrecAmvr2Internal@{changeTransPrecAmvr2Internal}}
+\index{changeTransPrecAmvr2Internal@{changeTransPrecAmvr2Internal}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeTransPrecAmvr2Internal()}{changeTransPrecAmvr2Internal()}}
+{\footnotesize\ttfamily void change\+Trans\+Prec\+Amvr2\+Internal (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 221 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a5e2a7bfb346728cabdb6cb45020f8ae1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a5e2a7bfb346728cabdb6cb45020f8ae1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_ae2792dbfd34372253b7997e43f635d51}\label{classvvenc_1_1Mv_ae2792dbfd34372253b7997e43f635d51}} 
+\index{Mv@{Mv}!changeTransPrecInternal2Amvr@{changeTransPrecInternal2Amvr}}
+\index{changeTransPrecInternal2Amvr@{changeTransPrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{changeTransPrecInternal2Amvr()}{changeTransPrecInternal2Amvr()}}
+{\footnotesize\ttfamily void change\+Trans\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 216 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ae2792dbfd34372253b7997e43f635d51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ae2792dbfd34372253b7997e43f635d51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_ac541e4f875501dce06e356504d2283cc}\label{classvvenc_1_1Mv_ac541e4f875501dce06e356504d2283cc}} 
+\index{Mv@{Mv}!clipToStorageBitDepth@{clipToStorageBitDepth}}
+\index{clipToStorageBitDepth@{clipToStorageBitDepth}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{clipToStorageBitDepth()}{clipToStorageBitDepth()}}
+{\footnotesize\ttfamily void clip\+To\+Storage\+Bit\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ac541e4f875501dce06e356504d2283cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a8666fe6595b172b6d3d8539b6e794339}\label{classvvenc_1_1Mv_a8666fe6595b172b6d3d8539b6e794339}} 
+\index{Mv@{Mv}!divideByPowerOf2@{divideByPowerOf2}}
+\index{divideByPowerOf2@{divideByPowerOf2}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{divideByPowerOf2()}{divideByPowerOf2()}}
+{\footnotesize\ttfamily void divide\+By\+Power\+Of2 (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+shift right with rounding 
+
+
+
+Definition at line 138 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a8666fe6595b172b6d3d8539b6e794339_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a4d6029b251201c43f81b32fb4a786fef}\label{classvvenc_1_1Mv_a4d6029b251201c43f81b32fb4a786fef}} 
+\index{Mv@{Mv}!getAbsHor@{getAbsHor}}
+\index{getAbsHor@{getAbsHor}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{getAbsHor()}{getAbsHor()}}
+{\footnotesize\ttfamily int get\+Abs\+Hor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a4d6029b251201c43f81b32fb4a786fef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a2540ff861d99613a6e5bb0ba56433c57}\label{classvvenc_1_1Mv_a2540ff861d99613a6e5bb0ba56433c57}} 
+\index{Mv@{Mv}!getAbsVer@{getAbsVer}}
+\index{getAbsVer@{getAbsVer}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{getAbsVer()}{getAbsVer()}}
+{\footnotesize\ttfamily int get\+Abs\+Ver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 108 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a2540ff861d99613a6e5bb0ba56433c57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a13b80290d7963cd27cc751f73020a798}\label{classvvenc_1_1Mv_a13b80290d7963cd27cc751f73020a798}} 
+\index{Mv@{Mv}!getSymmvdMv@{getSymmvdMv}}
+\index{getSymmvdMv@{getSymmvdMv}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{getSymmvdMv()}{getSymmvdMv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} get\+Symmvd\+Mv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{cur\+Mv\+Pred,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{tar\+Mv\+Pred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 264 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classvvenc_1_1Mv_a13b80290d7963cd27cc751f73020a798_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a13b80290d7963cd27cc751f73020a798_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a1393c3c95d3ebc92bdbfd3a3c629ea79}\label{classvvenc_1_1Mv_a1393c3c95d3ebc92bdbfd3a3c629ea79}} 
+\index{Mv@{Mv}!mvCliptoStorageBitDepth@{mvCliptoStorageBitDepth}}
+\index{mvCliptoStorageBitDepth@{mvCliptoStorageBitDepth}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{mvCliptoStorageBitDepth()}{mvCliptoStorageBitDepth()}}
+{\footnotesize\ttfamily void mv\+Clipto\+Storage\+Bit\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 274 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a1393c3c95d3ebc92bdbfd3a3c629ea79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a2724200d41910841404cc1a68cfa6fac}\label{classvvenc_1_1Mv_a2724200d41910841404cc1a68cfa6fac}} 
+\index{Mv@{Mv}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a4835ababe6f4c3073601ee9abd26e3f2}\label{classvvenc_1_1Mv_a4835ababe6f4c3073601ee9abd26e3f2}} 
+\index{Mv@{Mv}!operator+@{operator+}}
+\index{operator+@{operator+}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classvvenc_1_1Mv_a4835ababe6f4c3073601ee9abd26e3f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a235b4e0ead40b1e5b483206fcb7d6acd}\label{classvvenc_1_1Mv_a235b4e0ead40b1e5b483206fcb7d6acd}} 
+\index{Mv@{Mv}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{\+\_\+rc\+Mv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 114 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_ad852e064ad5b4dd37e9a9139d0d16a0b}\label{classvvenc_1_1Mv_ad852e064ad5b4dd37e9a9139d0d16a0b}} 
+\index{Mv@{Mv}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classvvenc_1_1Mv_ad852e064ad5b4dd37e9a9139d0d16a0b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_aa6a3b5c020a594d1ce9e1db249408ba4}\label{classvvenc_1_1Mv_aa6a3b5c020a594d1ce9e1db249408ba4}} 
+\index{Mv@{Mv}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{\+\_\+rc\+Mv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 125 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a314e6a10e000e32817f24d73f95337cc}\label{classvvenc_1_1Mv_a314e6a10e000e32817f24d73f95337cc}} 
+\index{Mv@{Mv}!operator$<$$<$=@{operator$<$$<$=}}
+\index{operator$<$$<$=@{operator$<$$<$=}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$=()}{operator<<=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& operator$<$$<$= (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a9b105762340b65295c69989583fbde0e}\label{classvvenc_1_1Mv_a9b105762340b65295c69989583fbde0e}} 
+\index{Mv@{Mv}!operator==@{operator==}}
+\index{operator==@{operator==}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 176 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a11553c1baed364cba220d2f0e6aa1b27}\label{classvvenc_1_1Mv_a11553c1baed364cba220d2f0e6aa1b27}} 
+\index{Mv@{Mv}!operator$>$$>$=@{operator$>$$>$=}}
+\index{operator$>$$>$=@{operator$>$$>$=}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$=()}{operator>>=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}\& operator$>$$>$= (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a44e382c87c7c2f4ac097f79b2c86fdfe}\label{classvvenc_1_1Mv_a44e382c87c7c2f4ac097f79b2c86fdfe}} 
+\index{Mv@{Mv}!roundAffinePrecInternal2Amvr@{roundAffinePrecInternal2Amvr}}
+\index{roundAffinePrecInternal2Amvr@{roundAffinePrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{roundAffinePrecInternal2Amvr()}{roundAffinePrecInternal2Amvr()}}
+{\footnotesize\ttfamily void round\+Affine\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 242 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a44e382c87c7c2f4ac097f79b2c86fdfe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a44e382c87c7c2f4ac097f79b2c86fdfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_abb4bd1bd7e8ac40bb0542bbc64cd1d0c}\label{classvvenc_1_1Mv_abb4bd1bd7e8ac40bb0542bbc64cd1d0c}} 
+\index{Mv@{Mv}!roundIbcPrecInternal2Amvr@{roundIbcPrecInternal2Amvr}}
+\index{roundIbcPrecInternal2Amvr@{roundIbcPrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{roundIbcPrecInternal2Amvr()}{roundIbcPrecInternal2Amvr()}}
+{\footnotesize\ttfamily void round\+Ibc\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 258 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_abb4bd1bd7e8ac40bb0542bbc64cd1d0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_abb4bd1bd7e8ac40bb0542bbc64cd1d0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a4a247be2cddc2ceb84fb7c8bc43f2795}\label{classvvenc_1_1Mv_a4a247be2cddc2ceb84fb7c8bc43f2795}} 
+\index{Mv@{Mv}!roundToPrecision@{roundToPrecision}}
+\index{roundToPrecision@{roundToPrecision}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{roundToPrecision()}{roundToPrecision()}}
+{\footnotesize\ttfamily void round\+To\+Precision (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&}]{src,  }\item[{const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} \&}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 209 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1Mv_a4a247be2cddc2ceb84fb7c8bc43f2795_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a4a247be2cddc2ceb84fb7c8bc43f2795_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_ab1d8dda7a67461e9a09ec2c7a414a129}\label{classvvenc_1_1Mv_ab1d8dda7a67461e9a09ec2c7a414a129}} 
+\index{Mv@{Mv}!roundTransPrecInternal2Amvr@{roundTransPrecInternal2Amvr}}
+\index{roundTransPrecInternal2Amvr@{roundTransPrecInternal2Amvr}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{roundTransPrecInternal2Amvr()}{roundTransPrecInternal2Amvr()}}
+{\footnotesize\ttfamily void round\+Trans\+Prec\+Internal2\+Amvr (\begin{DoxyParamCaption}\item[{const int}]{amvr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 226 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ab1d8dda7a67461e9a09ec2c7a414a129_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_ab1d8dda7a67461e9a09ec2c7a414a129_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_aed75f15f35af7200ea97bd315f1a9c04}\label{classvvenc_1_1Mv_aed75f15f35af7200ea97bd315f1a9c04}} 
+\index{Mv@{Mv}!scaleMv@{scaleMv}}
+\index{scaleMv@{scaleMv}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{scaleMv()}{scaleMv()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} scale\+Mv (\begin{DoxyParamCaption}\item[{int}]{i\+Scale }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 186 of file Mv.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classvvenc_1_1Mv_aed75f15f35af7200ea97bd315f1a9c04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_aed75f15f35af7200ea97bd315f1a9c04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a244513e2313d5c3fc0517cbcb1a030e0}\label{classvvenc_1_1Mv_a244513e2313d5c3fc0517cbcb1a030e0}} 
+\index{Mv@{Mv}!set@{set}}
+\index{set@{set}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void set (\begin{DoxyParamCaption}\item[{int}]{i\+Hor,  }\item[{int}]{i\+Ver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a244513e2313d5c3fc0517cbcb1a030e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a47affd1a10b589811fc4828c1a2e0c6d}\label{classvvenc_1_1Mv_a47affd1a10b589811fc4828c1a2e0c6d}} 
+\index{Mv@{Mv}!setZero@{setZero}}
+\index{setZero@{setZero}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{setZero()}{setZero()}}
+{\footnotesize\ttfamily void set\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Mv.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Mv_a47affd1a10b589811fc4828c1a2e0c6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Mv_a67c7b3822a7f7527371b5af18d365426}\label{classvvenc_1_1Mv_a67c7b3822a7f7527371b5af18d365426}} 
+\index{Mv@{Mv}!halMvClipPeriod@{halMvClipPeriod}}
+\index{halMvClipPeriod@{halMvClipPeriod}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{halMvClipPeriod}{halMvClipPeriod}}
+{\footnotesize\ttfamily const int hal\+Mv\+Clip\+Period = (1 $<$$<$ (\mbox{\hyperlink{namespacevvenc_a6f7c047b4a3c380f55284fe6ac70a0eb}{M\+V\+\_\+\+B\+I\+TS}} -\/ 1))\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 83 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a9b174252bf74fcf61c66527b24e23d3e}\label{classvvenc_1_1Mv_a9b174252bf74fcf61c66527b24e23d3e}} 
+\index{Mv@{Mv}!hor@{hor}}
+\index{hor@{hor}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{hor}{hor}}
+{\footnotesize\ttfamily int hor}
+
+
+
+horizontal component of motion vector 
+
+
+
+Definition at line 86 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_af1bfbd725f30866d4e0060b91a6ac641}\label{classvvenc_1_1Mv_af1bfbd725f30866d4e0060b91a6ac641}} 
+\index{Mv@{Mv}!m\_amvrPrecAffine@{m\_amvrPrecAffine}}
+\index{m\_amvrPrecAffine@{m\_amvrPrecAffine}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{m\_amvrPrecAffine}{m\_amvrPrecAffine}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} m\+\_\+amvr\+Prec\+Affine = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8af3a8dee7f255daa5a6805e2cd900374c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+Q\+U\+A\+R\+T\+ER}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a7592137366a3f94e0b3844698e6c1483}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+S\+I\+X\+T\+E\+E\+N\+TH}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a9f060985d56d4042d27866541f776e71}\label{classvvenc_1_1Mv_a9f060985d56d4042d27866541f776e71}} 
+\index{Mv@{Mv}!m\_amvrPrecIbc@{m\_amvrPrecIbc}}
+\index{m\_amvrPrecIbc@{m\_amvrPrecIbc}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{m\_amvrPrecIbc}{m\_amvrPrecIbc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} m\+\_\+amvr\+Prec\+Ibc = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a0515f94079bb68ffa3cece37a4777779}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+4\+P\+EL}} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 80 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_af6972bed349fdca6cabc316213bca00f}\label{classvvenc_1_1Mv_af6972bed349fdca6cabc316213bca00f}} 
+\index{Mv@{Mv}!m\_amvrPrecision@{m\_amvrPrecision}}
+\index{m\_amvrPrecision@{m\_amvrPrecision}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{m\_amvrPrecision}{m\_amvrPrecision}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8}{Mv\+Precision}} m\+\_\+amvr\+Precision = \{ \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8af3a8dee7f255daa5a6805e2cd900374c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+Q\+U\+A\+R\+T\+ER}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a10472d7c99a4ca4572bad38725b41381}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+I\+NT}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8a0515f94079bb68ffa3cece37a4777779}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+4\+P\+EL}}, \mbox{\hyperlink{namespacevvenc_ab71c686caef0807c59fec6468d277dd8ada802e2dfc785fb5a033528db1f7ca5c}{M\+V\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+H\+A\+LF}} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 78 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_ad81baf30ba63b7569e3bf1b06deab2cb}\label{classvvenc_1_1Mv_ad81baf30ba63b7569e3bf1b06deab2cb}} 
+\index{Mv@{Mv}!mvClipPeriod@{mvClipPeriod}}
+\index{mvClipPeriod@{mvClipPeriod}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{mvClipPeriod}{mvClipPeriod}}
+{\footnotesize\ttfamily const int mv\+Clip\+Period = (1 $<$$<$ \mbox{\hyperlink{namespacevvenc_a6f7c047b4a3c380f55284fe6ac70a0eb}{M\+V\+\_\+\+B\+I\+TS}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Mv.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Mv_a88ca8dd6d8b1535e6ba06c4d988c525b}\label{classvvenc_1_1Mv_a88ca8dd6d8b1535e6ba06c4d988c525b}} 
+\index{Mv@{Mv}!ver@{ver}}
+\index{ver@{ver}!Mv@{Mv}}
+\doxysubsubsection{\texorpdfstring{ver}{ver}}
+{\footnotesize\ttfamily int ver}
+
+
+
+vertical component of motion vector 
+
+
+
+Definition at line 87 of file Mv.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Mv_8h}{Mv.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Mv_8cpp}{Mv.\+cpp}}\end{DoxyCompactItemize}

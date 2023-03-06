@@ -1,0 +1,273 @@
+\hypertarget{structvvenc_1_1CodedCUInfo}{}\doxysection{Coded\+C\+U\+Info}
+\label{structvvenc_1_1CodedCUInfo}\index{CodedCUInfo@{CodedCUInfo}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Coded\+C\+U\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structvvenc_1_1CodedCUInfo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a6a1848e81d42717020cec39b84c97662}{get\+Mv}} (const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int i\+Ref\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&r\+Mv) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a0f3e473ce4f36b10586f0b99cf5a7039}{set\+Mv}} (const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int i\+Ref\+Idx, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&r\+Mv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a2b627d3ab33f82adcd84ed75e56c8eee}{Bcw\+Idx}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a46052c0ebd06acf778191a07bbd0263f}{best\+Cost}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_abb96085fd82f1d43e7c0ba3c609b7d5e}{best\+Intra\+Mode}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a952474212997997c92e7d50fb04abf92}{ctu\+Rs\+Addr}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a46f908c6b61fffd1ace21b689e1e72e9}{is\+I\+BC}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a709b4d91d8009d8fb87b96aec54c60e3}{is\+Inter}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a829885842048ee912d52c1445a9f117e}{is\+Intra}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a74e5348cb816b104dba8ca32dabe6093}{is\+M\+M\+V\+D\+Skip}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a22eb0630bb751e39c26d9d879daf4073}{is\+Skip}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a321c786228bbb98d021393b285b12147}{num\+Pu\+Info\+Stored}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_af1fa96a850f404aded578d3e29dedbcb}{poc}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a3febec339e51321ea49279cbbd29a0da}{pu\+Sbt}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6893aa9903fb61f99f36ce0e2f2a034a}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+SL}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a3cf7cba421a3dd865e1ed947c4074fa4}{pu\+Sse}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6893aa9903fb61f99f36ce0e2f2a034a}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+SL}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a1be392d2a9048f1d9492a3cdb165ca34}{related\+Cu\+Is\+Valid}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_ad9ef2fe8bfffb00dab53574f3f979885}{save\+Mv}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a70257fd518fa0223ee5e1e82719d2655}{M\+A\+X\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+FS}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1CodedCUInfo_a3185d4bf3669756353752cb1bbe72315}{valid\+Mv}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a70257fd518fa0223ee5e1e82719d2655}{M\+A\+X\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+FS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 255 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a6a1848e81d42717020cec39b84c97662}\label{structvvenc_1_1CodedCUInfo_a6a1848e81d42717020cec39b84c97662}} 
+\index{CodedCUInfo@{CodedCUInfo}!getMv@{getMv}}
+\index{getMv@{getMv}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{getMv()}{getMv()}}
+{\footnotesize\ttfamily bool get\+Mv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{r\+Mv }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 183 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CodedCUInfo_a6a1848e81d42717020cec39b84c97662_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a0f3e473ce4f36b10586f0b99cf5a7039}\label{structvvenc_1_1CodedCUInfo_a0f3e473ce4f36b10586f0b99cf5a7039}} 
+\index{CodedCUInfo@{CodedCUInfo}!setMv@{setMv}}
+\index{setMv@{setMv}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{setMv()}{setMv()}}
+{\footnotesize\ttfamily void set\+Mv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{i\+Ref\+Idx,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{r\+Mv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1CodedCUInfo_a0f3e473ce4f36b10586f0b99cf5a7039_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a2b627d3ab33f82adcd84ed75e56c8eee}\label{structvvenc_1_1CodedCUInfo_a2b627d3ab33f82adcd84ed75e56c8eee}} 
+\index{CodedCUInfo@{CodedCUInfo}!BcwIdx@{BcwIdx}}
+\index{BcwIdx@{BcwIdx}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{BcwIdx}{BcwIdx}}
+{\footnotesize\ttfamily uint8\+\_\+t Bcw\+Idx}
+
+
+
+Definition at line 262 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a46052c0ebd06acf778191a07bbd0263f}\label{structvvenc_1_1CodedCUInfo_a46052c0ebd06acf778191a07bbd0263f}} 
+\index{CodedCUInfo@{CodedCUInfo}!bestCost@{bestCost}}
+\index{bestCost@{bestCost}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{bestCost}{bestCost}}
+{\footnotesize\ttfamily double best\+Cost}
+
+
+
+Definition at line 269 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_abb96085fd82f1d43e7c0ba3c609b7d5e}\label{structvvenc_1_1CodedCUInfo_abb96085fd82f1d43e7c0ba3c609b7d5e}} 
+\index{CodedCUInfo@{CodedCUInfo}!bestIntraMode@{bestIntraMode}}
+\index{bestIntraMode@{bestIntraMode}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{bestIntraMode}{bestIntraMode}}
+{\footnotesize\ttfamily int best\+Intra\+Mode}
+
+
+
+Definition at line 271 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a952474212997997c92e7d50fb04abf92}\label{structvvenc_1_1CodedCUInfo_a952474212997997c92e7d50fb04abf92}} 
+\index{CodedCUInfo@{CodedCUInfo}!ctuRsAddr@{ctuRsAddr}}
+\index{ctuRsAddr@{ctuRsAddr}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{ctuRsAddr}{ctuRsAddr}}
+{\footnotesize\ttfamily int ctu\+Rs\+Addr}
+
+
+
+Definition at line 263 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a46f908c6b61fffd1ace21b689e1e72e9}\label{structvvenc_1_1CodedCUInfo_a46f908c6b61fffd1ace21b689e1e72e9}} 
+\index{CodedCUInfo@{CodedCUInfo}!isIBC@{isIBC}}
+\index{isIBC@{isIBC}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{isIBC}{isIBC}}
+{\footnotesize\ttfamily bool is\+I\+BC}
+
+
+
+Definition at line 261 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a709b4d91d8009d8fb87b96aec54c60e3}\label{structvvenc_1_1CodedCUInfo_a709b4d91d8009d8fb87b96aec54c60e3}} 
+\index{CodedCUInfo@{CodedCUInfo}!isInter@{isInter}}
+\index{isInter@{isInter}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{isInter}{isInter}}
+{\footnotesize\ttfamily bool is\+Inter}
+
+
+
+Definition at line 257 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a829885842048ee912d52c1445a9f117e}\label{structvvenc_1_1CodedCUInfo_a829885842048ee912d52c1445a9f117e}} 
+\index{CodedCUInfo@{CodedCUInfo}!isIntra@{isIntra}}
+\index{isIntra@{isIntra}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{isIntra}{isIntra}}
+{\footnotesize\ttfamily bool is\+Intra}
+
+
+
+Definition at line 258 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a74e5348cb816b104dba8ca32dabe6093}\label{structvvenc_1_1CodedCUInfo_a74e5348cb816b104dba8ca32dabe6093}} 
+\index{CodedCUInfo@{CodedCUInfo}!isMMVDSkip@{isMMVDSkip}}
+\index{isMMVDSkip@{isMMVDSkip}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{isMMVDSkip}{isMMVDSkip}}
+{\footnotesize\ttfamily bool is\+M\+M\+V\+D\+Skip}
+
+
+
+Definition at line 260 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a22eb0630bb751e39c26d9d879daf4073}\label{structvvenc_1_1CodedCUInfo_a22eb0630bb751e39c26d9d879daf4073}} 
+\index{CodedCUInfo@{CodedCUInfo}!isSkip@{isSkip}}
+\index{isSkip@{isSkip}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{isSkip}{isSkip}}
+{\footnotesize\ttfamily bool is\+Skip}
+
+
+
+Definition at line 259 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a321c786228bbb98d021393b285b12147}\label{structvvenc_1_1CodedCUInfo_a321c786228bbb98d021393b285b12147}} 
+\index{CodedCUInfo@{CodedCUInfo}!numPuInfoStored@{numPuInfoStored}}
+\index{numPuInfoStored@{numPuInfoStored}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{numPuInfoStored}{numPuInfoStored}}
+{\footnotesize\ttfamily uint8\+\_\+t num\+Pu\+Info\+Stored}
+
+
+
+Definition at line 264 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_af1fa96a850f404aded578d3e29dedbcb}\label{structvvenc_1_1CodedCUInfo_af1fa96a850f404aded578d3e29dedbcb}} 
+\index{CodedCUInfo@{CodedCUInfo}!poc@{poc}}
+\index{poc@{poc}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{poc}{poc}}
+{\footnotesize\ttfamily int poc}
+
+
+
+Definition at line 263 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a3febec339e51321ea49279cbbd29a0da}\label{structvvenc_1_1CodedCUInfo_a3febec339e51321ea49279cbbd29a0da}} 
+\index{CodedCUInfo@{CodedCUInfo}!puSbt@{puSbt}}
+\index{puSbt@{puSbt}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{puSbt}{puSbt}}
+{\footnotesize\ttfamily uint8\+\_\+t pu\+Sbt\mbox{[}\mbox{\hyperlink{namespacevvenc_a6893aa9903fb61f99f36ce0e2f2a034a}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+SL}}\mbox{]}}
+
+
+
+Definition at line 268 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a3cf7cba421a3dd865e1ed947c4074fa4}\label{structvvenc_1_1CodedCUInfo_a3cf7cba421a3dd865e1ed947c4074fa4}} 
+\index{CodedCUInfo@{CodedCUInfo}!puSse@{puSse}}
+\index{puSse@{puSse}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{puSse}{puSse}}
+{\footnotesize\ttfamily uint32\+\_\+t pu\+Sse\mbox{[}\mbox{\hyperlink{namespacevvenc_a6893aa9903fb61f99f36ce0e2f2a034a}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+SL}}\mbox{]}}
+
+
+
+Definition at line 267 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a1be392d2a9048f1d9492a3cdb165ca34}\label{structvvenc_1_1CodedCUInfo_a1be392d2a9048f1d9492a3cdb165ca34}} 
+\index{CodedCUInfo@{CodedCUInfo}!relatedCuIsValid@{relatedCuIsValid}}
+\index{relatedCuIsValid@{relatedCuIsValid}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{relatedCuIsValid}{relatedCuIsValid}}
+{\footnotesize\ttfamily bool related\+Cu\+Is\+Valid}
+
+
+
+Definition at line 270 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_ad9ef2fe8bfffb00dab53574f3f979885}\label{structvvenc_1_1CodedCUInfo_ad9ef2fe8bfffb00dab53574f3f979885}} 
+\index{CodedCUInfo@{CodedCUInfo}!saveMv@{saveMv}}
+\index{saveMv@{saveMv}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{saveMv}{saveMv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} save\+Mv\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a70257fd518fa0223ee5e1e82719d2655}{M\+A\+X\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+FS}}\mbox{]}}
+
+
+
+Definition at line 266 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1CodedCUInfo_a3185d4bf3669756353752cb1bbe72315}\label{structvvenc_1_1CodedCUInfo_a3185d4bf3669756353752cb1bbe72315}} 
+\index{CodedCUInfo@{CodedCUInfo}!validMv@{validMv}}
+\index{validMv@{validMv}!CodedCUInfo@{CodedCUInfo}}
+\doxysubsubsection{\texorpdfstring{validMv}{validMv}}
+{\footnotesize\ttfamily bool valid\+Mv\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a70257fd518fa0223ee5e1e82719d2655}{M\+A\+X\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+FS}}\mbox{]}}
+
+
+
+Definition at line 265 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8h}{Enc\+Mode\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8cpp}{Enc\+Mode\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\hypertarget{SEI_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+S\+EI.cpp File Reference}
+\label{SEI_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/SEI.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/SEI.cpp}}
+
+
+helper functions for S\+EI handling  
+
+
+{\ttfamily \#include \char`\"{}S\+E\+I.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+Include dependency graph for S\+E\+I.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SEI_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_aed50bbecd2bbdbdfe0981da4f0a61d69}{delete\+S\+E\+Is}} (S\+E\+I\+Messages \&sei\+List)
+\begin{DoxyCompactList}\small\item\em delete list of \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages (freeing the referenced objects) \end{DoxyCompactList}\item 
+S\+E\+I\+Messages \mbox{\hyperlink{namespacevvenc_a728708fdf4957adfa8c2d1fac06c6e03}{extract\+Seis\+By\+Type}} (S\+E\+I\+Messages \&sei\+List, S\+E\+I\+::\+Payload\+Type sei\+Type)
+\begin{DoxyCompactList}\small\item\em remove a selection of \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages by payload type from the original list and return them in a new list. \end{DoxyCompactList}\item 
+S\+E\+I\+Messages \mbox{\hyperlink{namespacevvenc_a509e88ebbdb616dac2a93f6e0436d59c}{get\+Seis\+By\+Type}} (const S\+E\+I\+Messages \&sei\+List, S\+E\+I\+::\+Payload\+Type sei\+Type)
+\begin{DoxyCompactList}\small\item\em output a selection of \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages by payload type. Ownership stays in original message list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+helper functions for S\+EI handling 
+

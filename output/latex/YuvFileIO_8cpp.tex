@@ -1,0 +1,46 @@
+\hypertarget{YuvFileIO_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/apputils/\+Yuv\+File\+IO.cpp File Reference}
+\label{YuvFileIO_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/YuvFileIO.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/YuvFileIO.cpp}}
+
+
+yuv file I/O class (header)  
+
+
+{\ttfamily \#include \char`\"{}apputils/\+Yuv\+File\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Yuv\+File\+I\+O.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{YuvFileIO_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceapputils}{apputils}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int16\+\_\+t \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a1eed7b313b812a01bd54a253c44a8188}{read\+Yuv\+Plane}} (std\+::istream \&fd, vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, bool is16bit, int file\+Bit\+Depth, const int \&comp\+ID, const vvenc\+Chroma\+Format \&input\+Ch\+Fmt, const vvenc\+Chroma\+Format \&intern\+Ch\+Fmt)
+\item 
+void \mbox{\hyperlink{namespaceapputils_a5b30a810d8e7c8936ecf693a6c9d8438}{scale\+Yuv\+Plane}} (vvenc\+Y\+U\+V\+Plane \&yuv\+Plane\+Out, const vvenc\+Y\+U\+V\+Plane \&yuv\+Plane\+In, const int shift\+Bits, const L\+Pel min\+Val, const L\+Pel max\+Val)
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a2342bc95752bd2dee7e782bc84b19557}{verify\+Yuv\+Plane}} (vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, const int bit\+Depth)
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a101d9d4639079b418a1d11e488fbb2ff}{write\+Yuv\+Plane}} (std\+::ostream \&fd, const vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, bool is16bit, int file\+Bit\+Depth, int packed\+Y\+U\+V\+Output\+Mode, const int \&comp\+ID, const vvenc\+Chroma\+Format \&intern\+Ch\+Fmt, const vvenc\+Chroma\+Format \&output\+Ch\+Fmt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+yuv file I/O class (header) 
+

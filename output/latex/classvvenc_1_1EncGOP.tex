@@ -1,0 +1,1535 @@
+\hypertarget{classvvenc_1_1EncGOP}{}\doxysection{Enc\+G\+OP}
+\label{classvvenc_1_1EncGOP}\index{EncGOP@{EncGOP}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+G\+O\+P.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Enc\+G\+OP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncGOP_a156dc08211961e3e10221fad809fa422}{Enc\+G\+OP}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1EncGOP_afc55c7ec70cedfed561118110b384d10}{$\sim$\+Enc\+G\+OP}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_ae1945e4af519c73e477bdbff3b93f4b1}{any\+Frames\+In\+Output\+Queue}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a61c82aee8789605e0a9a1a9756553c79}{encode\+Pictures}} (const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&enc\+List, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&pic\+List, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&au, bool is\+Encode\+Lt\+Ref)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}} \& \mbox{\hyperlink{classvvenc_1_1EncGOP_ad11b0cd6a8ce94d007053fd3a20dbf87}{get\+Reshaper}} () const
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \& \mbox{\hyperlink{classvvenc_1_1EncGOP_a6ca961c0d32a8b0b348e16b2a6c4c38b}{get\+Shared\+Aps\+Map}} ()
+\item 
+const \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \& \mbox{\hyperlink{classvvenc_1_1EncGOP_a7075d8b7ecc2304974af89b072a727b1}{get\+Shared\+Aps\+Map}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_ac97d533c6ab25c08095ec963e70b9e27}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps, \mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} \&rate\+Ctrl, \mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} \&enc\+Hrd, \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$thread\+Pool)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a6f5528f0409fc16b374f4ba2980b48aa}{pic\+Init\+Rate\+Control}} (int gop\+Id, \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, \mbox{\hyperlink{classvvenc_1_1EncPicture}{Enc\+Picture}} $\ast$pic\+Encoder)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_af71fe96d9180ae1022ca27e0d90faac0}{print\+Out\+Summary}} (int num\+All\+Pic\+Coded, const bool print\+M\+S\+E\+Based\+S\+NR, const bool print\+Sequence\+M\+SE, const bool print\+Hex\+Psnr, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a034586d4a19770576dd53079df0a1079}{m\+\_\+gop\+Enc\+List\+Output}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_ab0c8b82bde894dcef8a3a6c05fa13836}{x\+Attach\+Slice\+Data\+To\+Nal\+Unit}} (\mbox{\hyperlink{structvvenc_1_1OutputNALUnit}{Output\+N\+A\+L\+Unit}} \&r\+Nalu, const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$pc\+Bitstream\+Redirect)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a7580390609bd5432ce32b0f5c7074501}{x\+Cabac\+Zero\+Word\+Padding}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, uint32\+\_\+t bin\+Counts\+In\+Nal\+Units, uint32\+\_\+t num\+Bytes\+In\+Vcl\+Nal\+Units, std\+::ostringstream \&nal\+Unit\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a5e624ac27c4bf95aae6b0736bb8e99ba}{x\+Calculate\+Add\+P\+S\+NR}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} c\+PicD, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&, bool print\+Frame\+M\+SE, double $\ast$P\+S\+N\+R\+\_\+Y, bool is\+Encode\+Lt\+Ref)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncGOP_a4eb35a2db3063e096adea90142232698}{x\+Find\+Distortion\+Plane}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&pic0, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&pic1, uint32\+\_\+t rshift) const
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{classvvenc_1_1EncGOP_af3139535c3b96f7ef9051cdc1d6496a7}{x\+Get\+Nal\+Unit\+Type}} (int poc\+Curr, int last\+Idr) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_ab0b52dd6e4679caaea2bdd797132fbb5}{x\+Get\+Processing\+Lists}} (std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&proc\+List, std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&rc\+Update\+List)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a6cae4dbd5bfa5c8619151d3a148479ea}{x\+Get\+Slice\+Depth}} (int poc) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_afe8d1d255565fc548a6857ccad653219}{x\+Init\+First\+Slice}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&pic\+List, bool is\+Encode\+Lt\+Ref)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a82723a78af27c50a9d10657e367d53eb}{x\+Init\+L\+M\+CS}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a8fc048e798a9392a930021e1f49b6ed8}{x\+Init\+Pics\+In\+Coding\+Order}} (const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&enc\+List, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&pic\+List, bool is\+Encode\+Lt\+Ref)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a82964fb10988db50bfe4a360391a0717}{x\+Init\+Slice\+Mvd\+L1\+Zero}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a06a1b69df3f9529738a436f4b6a479ac}{x\+Init\+Slice\+T\+M\+V\+P\+Flag}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, int gop\+Id)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_a4dd4cdec729ff680d246883671fd3a4c}{x\+Is\+Slice\+Temporal\+Switching\+Point}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&pic\+List, int gop\+Id) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a6cf7be415fe7a62e537bb2ea7a23a279}{x\+Print\+Picture\+Info}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const std\+::string \&digest\+Str, bool print\+Frame\+M\+SE, bool is\+Encode\+Lt\+Ref)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a3cf105a07a7d30676f4d458080197442}{x\+Select\+Reference\+Picture\+List}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, int cur\+Poc, int gop\+Id, int lt\+Poc)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a0ea90ce01332b6db5b3e18bcf897a630}{x\+Sync\+Alf\+Aps}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \&dst, const \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \&src)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a5867829edd40f1f59a6ad740bbd6b317}{x\+Update\+After\+Pic\+RC}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a3b83d77d88ae40b437627d9b45f4e086}{x\+Update\+Ras\+Init}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a3eab31ca394246084aa55ffc8f990637}{x\+Update\+R\+P\+Rtmvp}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a980b2d57dbde5cc09dc9085be249f54a}{x\+Update\+R\+P\+R\+Tool\+Ctrl}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_adbfcdec807e04ef8276eda273ea7e817}{x\+Write\+Access\+Unit\+Delimiter}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, bool Irap\+Or\+Gdr, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a652678a52ae3647bd679e002b7179f8c}{x\+Write\+A\+PS}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$aps, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer, vvenc\+Nal\+Unit\+Type e\+Nal\+Unit\+Type)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_ac70e95d20214f12812dae42fb3be7da2}{x\+Write\+D\+CI}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$dci, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a029228596d8e2976767454d75cf1cf65}{x\+Write\+Leading\+S\+E\+Is}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a37418e46104a10160ad1a82b4a84c44a}{x\+Write\+Parameter\+Sets}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a0c054a05da22918aed805ded0f26e2e3}{x\+Write\+Picture}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&au, bool is\+Encode\+Lt\+Ref)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a3eb09fad4d313cc915104d8ac6a05a13}{x\+Write\+Picture\+Slices}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_adb7083540b1f48d362a01ac6026e48e0}{x\+Write\+P\+PS}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$pps, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_ae96774f4a0682436f3e626bd8512a379}{x\+Write\+S\+EI}} (vvenc\+Nal\+Unit\+Type nalu\+Type, \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&sei\+Messages, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, Access\+Unit\+List\+::iterator \&au\+Pos, int temporal\+Id, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a131c8a3a388b8389d3433e1b60300d61}{x\+Write\+S\+E\+I\+Separately}} (vvenc\+Nal\+Unit\+Type nalu\+Type, \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&sei\+Messages, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, Access\+Unit\+List\+::iterator \&au\+Pos, int temporal\+Id, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a0e353762d486d76a4e658716b9c94275}{x\+Write\+S\+PS}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncGOP_a42cf817d9ab798a86ac299fab588abbe}{x\+Write\+Trailing\+S\+E\+Is}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic, \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, std\+::string \&digest\+Str)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a9b636fcfc3828e188717122422290b20}{x\+Write\+V\+PS}} (\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&access\+Unit, const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps, \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&hls\+Writer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a904e849842fe9c613d4787a304a8d8c0}{m\+\_\+\+Analyze\+All}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} \mbox{\hyperlink{classvvenc_1_1EncGOP_afef1d6a18b549ec8bd8afeda00903703}{m\+\_\+\+AnalyzeB}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a37de80ce887f835cb1ef6a108b947a29}{m\+\_\+\+AnalyzeI}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a61daa598ecb88e581bdadad44299087a}{m\+\_\+\+AnalyzeP}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_ae77ea1e40a826bc5241ca0e8c77cf0ef}{m\+\_\+applied\+Switch\+D\+QQ}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_afe7aecaa6eaa9c18d8735d345fcd7eff}{m\+\_\+associated\+I\+R\+A\+P\+P\+OC}}
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{classvvenc_1_1EncGOP_a2822731e39d19bc64fc11011791307a5}{m\+\_\+associated\+I\+R\+A\+P\+Type}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_a0602edf37e2e92d8b105c13a178f5e51}{m\+\_\+b\+First\+Init}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_abdbbd6cc7b7262c5f736b69029aec133}{m\+\_\+b\+First\+Write}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a87eba139fb9dadc5e1d20b8d4a2c1d14}{m\+\_\+\+Blk\+Stat}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_a2dc1c0b523db94ae8657986e21975608}{m\+\_\+b\+Refresh\+Pending}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_afa8102489f9fc43fde072e71904896cf}{m\+\_\+coding\+Order\+Idx}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncGOP_adae79835db0ab397ea0a9c683fe2f8f8}{m\+\_\+disable\+L\+M\+C\+S\+IP}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1FFwdDecoder}{F\+Fwd\+Decoder}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a723df49e12ed0c53c37435142d54f4d3}{m\+\_\+ffwd\+Decoder}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1EncPicture}{Enc\+Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a3670c15593395410fcea8802e7ac6a52}{m\+\_\+free\+Pic\+Encoder\+List}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a8c462de9d6ff71416a2436c09ba380cc}{m\+\_\+global\+Ctu\+Qp\+Vector}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a4d3f9ff39738766343766297be353e54}{m\+\_\+gop\+Aps\+Map}}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{classvvenc_1_1EncGOP_aa9dc44f446aae5419dc98ee0f975c95d}{m\+\_\+gop\+Enc\+Cond}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncGOP_ae9dd52508b6136c7d0c8f3849b851548}{m\+\_\+gop\+Enc\+List\+Input}}
+\item 
+std\+::mutex \mbox{\hyperlink{classvvenc_1_1EncGOP_a90143658503644fadd1111a88cf99fb8}{m\+\_\+gop\+Enc\+Mutex}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \mbox{\hyperlink{classvvenc_1_1EncGOP_a5a07d33687e130f4590088df0845892c}{m\+\_\+\+H\+L\+S\+Writer}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_afaadf7fd1de1ac6dcc928ed989b41aaa}{m\+\_\+last\+I\+DR}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_adca1f7d76cabf100211aa4cfd98e1ec8}{m\+\_\+last\+Ras\+Poc}}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncGOP_afabc33c7c4328921490982de50e35da0}{m\+\_\+pc\+Enc\+Cfg}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncGOP_ae06118c0343b4e4ec319bdc2461e5a8d}{m\+\_\+pc\+Enc\+H\+RD}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a12a91afa66dc93c2037c6418ece7ca08}{m\+\_\+pc\+Rate\+Ctrl}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncGOP_a543e2e96d2fc6e6a250b93d021bd1dfd}{m\+\_\+poc\+C\+RA}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}} \mbox{\hyperlink{classvvenc_1_1EncGOP_af13ed6fd5b7094b94e05a6a2745cbbb4}{m\+\_\+\+Reshaper}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIEncoder}{S\+E\+I\+Encoder}} \mbox{\hyperlink{classvvenc_1_1EncGOP_ab57f8e24834295cd57389bc9e1784aeb}{m\+\_\+sei\+Encoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIWriter}{S\+E\+I\+Writer}} \mbox{\hyperlink{classvvenc_1_1EncGOP_ad2c0efc494b9c34824be2204df8ada97}{m\+\_\+sei\+Writer}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncGOP_a554a6e379eb8db3d601ac16590ad3d2e}{m\+\_\+thread\+Pool}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 119 of file Enc\+G\+O\+P.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a156dc08211961e3e10221fad809fa422}\label{classvvenc_1_1EncGOP_a156dc08211961e3e10221fad809fa422}} 
+\index{EncGOP@{EncGOP}!EncGOP@{EncGOP}}
+\index{EncGOP@{EncGOP}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{EncGOP()}{EncGOP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncGOP}{Enc\+G\+OP}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Enc\+G\+O\+P.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afc55c7ec70cedfed561118110b384d10}\label{classvvenc_1_1EncGOP_afc55c7ec70cedfed561118110b384d10}} 
+\index{EncGOP@{EncGOP}!````~EncGOP@{$\sim$EncGOP}}
+\index{````~EncGOP@{$\sim$EncGOP}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncGOP()}{~EncGOP()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncGOP}{Enc\+G\+OP}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 258 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1EncGOP_afc55c7ec70cedfed561118110b384d10_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ae1945e4af519c73e477bdbff3b93f4b1}\label{classvvenc_1_1EncGOP_ae1945e4af519c73e477bdbff3b93f4b1}} 
+\index{EncGOP@{EncGOP}!anyFramesInOutputQueue@{anyFramesInOutputQueue}}
+\index{anyFramesInOutputQueue@{anyFramesInOutputQueue}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{anyFramesInOutputQueue()}{anyFramesInOutputQueue()}}
+{\footnotesize\ttfamily bool any\+Frames\+In\+Output\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 172 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a61c82aee8789605e0a9a1a9756553c79}\label{classvvenc_1_1EncGOP_a61c82aee8789605e0a9a1a9756553c79}} 
+\index{EncGOP@{EncGOP}!encodePictures@{encodePictures}}
+\index{encodePictures@{encodePictures}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{encodePictures()}{encodePictures()}}
+{\footnotesize\ttfamily void encode\+Pictures (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&}]{enc\+List,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{pic\+List,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{au,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})}
+
+
+
+Definition at line 352 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1EncGOP_a61c82aee8789605e0a9a1a9756553c79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a61c82aee8789605e0a9a1a9756553c79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ad11b0cd6a8ce94d007053fd3a20dbf87}\label{classvvenc_1_1EncGOP_ad11b0cd6a8ce94d007053fd3a20dbf87}} 
+\index{EncGOP@{EncGOP}!getReshaper@{getReshaper}}
+\index{getReshaper@{getReshaper}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{getReshaper()}{getReshaper()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}}\& get\+Reshaper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file Enc\+G\+O\+P.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ad11b0cd6a8ce94d007053fd3a20dbf87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a6ca961c0d32a8b0b348e16b2a6c4c38b}\label{classvvenc_1_1EncGOP_a6ca961c0d32a8b0b348e16b2a6c4c38b}} 
+\index{EncGOP@{EncGOP}!getSharedApsMap@{getSharedApsMap}}
+\index{getSharedApsMap@{getSharedApsMap}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{getSharedApsMap()}{getSharedApsMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$\& get\+Shared\+Aps\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 170 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a7075d8b7ecc2304974af89b072a727b1}\label{classvvenc_1_1EncGOP_a7075d8b7ecc2304974af89b072a727b1}} 
+\index{EncGOP@{EncGOP}!getSharedApsMap@{getSharedApsMap}}
+\index{getSharedApsMap@{getSharedApsMap}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{getSharedApsMap()}{getSharedApsMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$\& get\+Shared\+Aps\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ac97d533c6ab25c08095ec963e70b9e27}\label{classvvenc_1_1EncGOP_ac97d533c6ab25c08095ec963e70b9e27}} 
+\index{EncGOP@{EncGOP}!init@{init}}
+\index{init@{init}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps,  }\item[{\mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} \&}]{rate\+Ctrl,  }\item[{\mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}} \&}]{enc\+Hrd,  }\item[{\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$}]{thread\+Pool }\end{DoxyParamCaption})}
+
+
+
+Definition at line 278 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ac97d533c6ab25c08095ec963e70b9e27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ac97d533c6ab25c08095ec963e70b9e27_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a6f5528f0409fc16b374f4ba2980b48aa}\label{classvvenc_1_1EncGOP_a6f5528f0409fc16b374f4ba2980b48aa}} 
+\index{EncGOP@{EncGOP}!picInitRateControl@{picInitRateControl}}
+\index{picInitRateControl@{picInitRateControl}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{picInitRateControl()}{picInitRateControl()}}
+{\footnotesize\ttfamily void pic\+Init\+Rate\+Control (\begin{DoxyParamCaption}\item[{int}]{gop\+Id,  }\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{\mbox{\hyperlink{classvvenc_1_1EncPicture}{Enc\+Picture}} $\ast$}]{pic\+Encoder }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1740 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a6f5528f0409fc16b374f4ba2980b48aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a6f5528f0409fc16b374f4ba2980b48aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_af71fe96d9180ae1022ca27e0d90faac0}\label{classvvenc_1_1EncGOP_af71fe96d9180ae1022ca27e0d90faac0}} 
+\index{EncGOP@{EncGOP}!printOutSummary@{printOutSummary}}
+\index{printOutSummary@{printOutSummary}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{printOutSummary()}{printOutSummary()}}
+{\footnotesize\ttfamily void print\+Out\+Summary (\begin{DoxyParamCaption}\item[{int}]{num\+All\+Pic\+Coded,  }\item[{const bool}]{print\+M\+S\+E\+Based\+S\+NR,  }\item[{const bool}]{print\+Sequence\+M\+SE,  }\item[{const bool}]{print\+Hex\+Psnr,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})}
+
+
+
+Definition at line 503 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_af71fe96d9180ae1022ca27e0d90faac0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_af71fe96d9180ae1022ca27e0d90faac0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ab0c8b82bde894dcef8a3a6c05fa13836}\label{classvvenc_1_1EncGOP_ab0c8b82bde894dcef8a3a6c05fa13836}} 
+\index{EncGOP@{EncGOP}!xAttachSliceDataToNalUnit@{xAttachSliceDataToNalUnit}}
+\index{xAttachSliceDataToNalUnit@{xAttachSliceDataToNalUnit}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xAttachSliceDataToNalUnit()}{xAttachSliceDataToNalUnit()}}
+{\footnotesize\ttfamily void x\+Attach\+Slice\+Data\+To\+Nal\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1OutputNALUnit}{Output\+N\+A\+L\+Unit}} \&}]{r\+Nalu,  }\item[{const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$}]{coded\+Slice\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Attaches the input bitstream to the stream in the output N\+AL unit Updates r\+Nalu to contain concatenated bitstream. rpc\+Bitstream\+Redirect is cleared at the end of this function call. 
+\begin{DoxyParams}{Parameters}
+{\em coded\+Slice\+Data} & contains the coded slice data (bitstream) to be concatenated to r\+Nalu \\
+\hline
+{\em r\+Nalu} & target N\+AL unit \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1688 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ab0c8b82bde894dcef8a3a6c05fa13836_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ab0c8b82bde894dcef8a3a6c05fa13836_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a7580390609bd5432ce32b0f5c7074501}\label{classvvenc_1_1EncGOP_a7580390609bd5432ce32b0f5c7074501}} 
+\index{EncGOP@{EncGOP}!xCabacZeroWordPadding@{xCabacZeroWordPadding}}
+\index{xCabacZeroWordPadding@{xCabacZeroWordPadding}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xCabacZeroWordPadding()}{xCabacZeroWordPadding()}}
+{\footnotesize\ttfamily void x\+Cabac\+Zero\+Word\+Padding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{uint32\+\_\+t}]{bin\+Counts\+In\+Nal\+Units,  }\item[{uint32\+\_\+t}]{num\+Bytes\+In\+Vcl\+Nal\+Units,  }\item[{std\+::ostringstream \&}]{nal\+Unit\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1701 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a7580390609bd5432ce32b0f5c7074501_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a7580390609bd5432ce32b0f5c7074501_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a5e624ac27c4bf95aae6b0736bb8e99ba}\label{classvvenc_1_1EncGOP_a5e624ac27c4bf95aae6b0736bb8e99ba}} 
+\index{EncGOP@{EncGOP}!xCalculateAddPSNR@{xCalculateAddPSNR}}
+\index{xCalculateAddPSNR@{xCalculateAddPSNR}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xCalculateAddPSNR()}{xCalculateAddPSNR()}}
+{\footnotesize\ttfamily void x\+Calculate\+Add\+P\+S\+NR (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}}}]{c\+PicD,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{bool}]{print\+Frame\+M\+SE,  }\item[{double $\ast$}]{P\+S\+N\+R\+\_\+Y,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1881 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a5e624ac27c4bf95aae6b0736bb8e99ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a5e624ac27c4bf95aae6b0736bb8e99ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a4eb35a2db3063e096adea90142232698}\label{classvvenc_1_1EncGOP_a4eb35a2db3063e096adea90142232698}} 
+\index{EncGOP@{EncGOP}!xFindDistortionPlane@{xFindDistortionPlane}}
+\index{xFindDistortionPlane@{xFindDistortionPlane}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xFindDistortionPlane()}{xFindDistortionPlane()}}
+{\footnotesize\ttfamily uint64\+\_\+t x\+Find\+Distortion\+Plane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{pic0,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{pic1,  }\item[{uint32\+\_\+t}]{rshift }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2068 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classvvenc_1_1EncGOP_a4eb35a2db3063e096adea90142232698_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a4eb35a2db3063e096adea90142232698_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_af3139535c3b96f7ef9051cdc1d6496a7}\label{classvvenc_1_1EncGOP_af3139535c3b96f7ef9051cdc1d6496a7}} 
+\index{EncGOP@{EncGOP}!xGetNalUnitType@{xGetNalUnitType}}
+\index{xGetNalUnitType@{xGetNalUnitType}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xGetNalUnitType()}{xGetNalUnitType()}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type x\+Get\+Nal\+Unit\+Type (\begin{DoxyParamCaption}\item[{int}]{poc\+Curr,  }\item[{int}]{last\+I\+DR }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Function for deciding the nal\+\_\+unit\+\_\+type. 
+\begin{DoxyParams}{Parameters}
+{\em poc\+Curr} & P\+OC of the current picture \\
+\hline
+{\em last\+I\+DR} & P\+OC of the last I\+DR picture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the N\+AL unit type of the picture This function checks the configuration and returns the appropriate nal\+\_\+unit\+\_\+type for the picture. 
+\end{DoxyReturn}
+
+
+Definition at line 577 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_af3139535c3b96f7ef9051cdc1d6496a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ab0b52dd6e4679caaea2bdd797132fbb5}\label{classvvenc_1_1EncGOP_ab0b52dd6e4679caaea2bdd797132fbb5}} 
+\index{EncGOP@{EncGOP}!xGetProcessingLists@{xGetProcessingLists}}
+\index{xGetProcessingLists@{xGetProcessingLists}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xGetProcessingLists()}{xGetProcessingLists()}}
+{\footnotesize\ttfamily void x\+Get\+Processing\+Lists (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&}]{proc\+List,  }\item[{std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&}]{rc\+Update\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 312 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ab0b52dd6e4679caaea2bdd797132fbb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a6cae4dbd5bfa5c8619151d3a148479ea}\label{classvvenc_1_1EncGOP_a6cae4dbd5bfa5c8619151d3a148479ea}} 
+\index{EncGOP@{EncGOP}!xGetSliceDepth@{xGetSliceDepth}}
+\index{xGetSliceDepth@{xGetSliceDepth}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xGetSliceDepth()}{xGetSliceDepth()}}
+{\footnotesize\ttfamily int x\+Get\+Slice\+Depth (\begin{DoxyParamCaption}\item[{int}]{poc }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 629 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a6cae4dbd5bfa5c8619151d3a148479ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afe8d1d255565fc548a6857ccad653219}\label{classvvenc_1_1EncGOP_afe8d1d255565fc548a6857ccad653219}} 
+\index{EncGOP@{EncGOP}!xInitFirstSlice@{xInitFirstSlice}}
+\index{xInitFirstSlice@{xInitFirstSlice}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xInitFirstSlice()}{xInitFirstSlice()}}
+{\footnotesize\ttfamily void x\+Init\+First\+Slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{pic\+List,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 747 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1EncGOP_afe8d1d255565fc548a6857ccad653219_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_afe8d1d255565fc548a6857ccad653219_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a82723a78af27c50a9d10657e367d53eb}\label{classvvenc_1_1EncGOP_a82723a78af27c50a9d10657e367d53eb}} 
+\index{EncGOP@{EncGOP}!xInitLMCS@{xInitLMCS}}
+\index{xInitLMCS@{xInitLMCS}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xInitLMCS()}{xInitLMCS()}}
+{\footnotesize\ttfamily void x\+Init\+L\+M\+CS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1134 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a82723a78af27c50a9d10657e367d53eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a82723a78af27c50a9d10657e367d53eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a8fc048e798a9392a930021e1f49b6ed8}\label{classvvenc_1_1EncGOP_a8fc048e798a9392a930021e1f49b6ed8}} 
+\index{EncGOP@{EncGOP}!xInitPicsInCodingOrder@{xInitPicsInCodingOrder}}
+\index{xInitPicsInCodingOrder@{xInitPicsInCodingOrder}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xInitPicsInCodingOrder()}{xInitPicsInCodingOrder()}}
+{\footnotesize\ttfamily void x\+Init\+Pics\+In\+Coding\+Order (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \&}]{enc\+List,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{pic\+List,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 726 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a8fc048e798a9392a930021e1f49b6ed8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a8fc048e798a9392a930021e1f49b6ed8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a82964fb10988db50bfe4a360391a0717}\label{classvvenc_1_1EncGOP_a82964fb10988db50bfe4a360391a0717}} 
+\index{EncGOP@{EncGOP}!xInitSliceMvdL1Zero@{xInitSliceMvdL1Zero}}
+\index{xInitSliceMvdL1Zero@{xInitSliceMvdL1Zero}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xInitSliceMvdL1Zero()}{xInitSliceMvdL1Zero()}}
+{\footnotesize\ttfamily void x\+Init\+Slice\+Mvd\+L1\+Zero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1103 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a82964fb10988db50bfe4a360391a0717_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a82964fb10988db50bfe4a360391a0717_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a06a1b69df3f9529738a436f4b6a479ac}\label{classvvenc_1_1EncGOP_a06a1b69df3f9529738a436f4b6a479ac}} 
+\index{EncGOP@{EncGOP}!xInitSliceTMVPFlag@{xInitSliceTMVPFlag}}
+\index{xInitSliceTMVPFlag@{xInitSliceTMVPFlag}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xInitSliceTMVPFlag()}{xInitSliceTMVPFlag()}}
+{\footnotesize\ttfamily void x\+Init\+Slice\+T\+M\+V\+P\+Flag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{int}]{gop\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 982 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classvvenc_1_1EncGOP_a06a1b69df3f9529738a436f4b6a479ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a06a1b69df3f9529738a436f4b6a479ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a4dd4cdec729ff680d246883671fd3a4c}\label{classvvenc_1_1EncGOP_a4dd4cdec729ff680d246883671fd3a4c}} 
+\index{EncGOP@{EncGOP}!xIsSliceTemporalSwitchingPoint@{xIsSliceTemporalSwitchingPoint}}
+\index{xIsSliceTemporalSwitchingPoint@{xIsSliceTemporalSwitchingPoint}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xIsSliceTemporalSwitchingPoint()}{xIsSliceTemporalSwitchingPoint()}}
+{\footnotesize\ttfamily bool x\+Is\+Slice\+Temporal\+Switching\+Point (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{pic\+List,  }\item[{int}]{gop\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 657 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a4dd4cdec729ff680d246883671fd3a4c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a4dd4cdec729ff680d246883671fd3a4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a6cf7be415fe7a62e537bb2ea7a23a279}\label{classvvenc_1_1EncGOP_a6cf7be415fe7a62e537bb2ea7a23a279}} 
+\index{EncGOP@{EncGOP}!xPrintPictureInfo@{xPrintPictureInfo}}
+\index{xPrintPictureInfo@{xPrintPictureInfo}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xPrintPictureInfo()}{xPrintPictureInfo()}}
+{\footnotesize\ttfamily void x\+Print\+Picture\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const std\+::string \&}]{digest\+Str,  }\item[{bool}]{print\+Frame\+M\+SE,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2110 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a6cf7be415fe7a62e537bb2ea7a23a279_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a6cf7be415fe7a62e537bb2ea7a23a279_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a3cf105a07a7d30676f4d458080197442}\label{classvvenc_1_1EncGOP_a3cf105a07a7d30676f4d458080197442}} 
+\index{EncGOP@{EncGOP}!xSelectReferencePictureList@{xSelectReferencePictureList}}
+\index{xSelectReferencePictureList@{xSelectReferencePictureList}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xSelectReferencePictureList()}{xSelectReferencePictureList()}}
+{\footnotesize\ttfamily void x\+Select\+Reference\+Picture\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{int}]{cur\+Poc,  }\item[{int}]{gop\+Id,  }\item[{int}]{lt\+Poc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1263 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a3cf105a07a7d30676f4d458080197442_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a0ea90ce01332b6db5b3e18bcf897a630}\label{classvvenc_1_1EncGOP_a0ea90ce01332b6db5b3e18bcf897a630}} 
+\index{EncGOP@{EncGOP}!xSyncAlfAps@{xSyncAlfAps}}
+\index{xSyncAlfAps@{xSyncAlfAps}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xSyncAlfAps()}{xSyncAlfAps()}}
+{\footnotesize\ttfamily void x\+Sync\+Alf\+Aps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \&}]{dst,  }\item[{const \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1308 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classvvenc_1_1EncGOP_a0ea90ce01332b6db5b3e18bcf897a630_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a0ea90ce01332b6db5b3e18bcf897a630_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a5867829edd40f1f59a6ad740bbd6b317}\label{classvvenc_1_1EncGOP_a5867829edd40f1f59a6ad740bbd6b317}} 
+\index{EncGOP@{EncGOP}!xUpdateAfterPicRC@{xUpdateAfterPicRC}}
+\index{xUpdateAfterPicRC@{xUpdateAfterPicRC}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xUpdateAfterPicRC()}{xUpdateAfterPicRC()}}
+{\footnotesize\ttfamily void x\+Update\+After\+Pic\+RC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1850 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a5867829edd40f1f59a6ad740bbd6b317_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a5867829edd40f1f59a6ad740bbd6b317_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a3b83d77d88ae40b437627d9b45f4e086}\label{classvvenc_1_1EncGOP_a3b83d77d88ae40b437627d9b45f4e086}} 
+\index{EncGOP@{EncGOP}!xUpdateRasInit@{xUpdateRasInit}}
+\index{xUpdateRasInit@{xUpdateRasInit}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xUpdateRasInit()}{xUpdateRasInit()}}
+{\footnotesize\ttfamily void x\+Update\+Ras\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 556 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1EncGOP_a3b83d77d88ae40b437627d9b45f4e086_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a3b83d77d88ae40b437627d9b45f4e086_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a3eab31ca394246084aa55ffc8f990637}\label{classvvenc_1_1EncGOP_a3eab31ca394246084aa55ffc8f990637}} 
+\index{EncGOP@{EncGOP}!xUpdateRPRtmvp@{xUpdateRPRtmvp}}
+\index{xUpdateRPRtmvp@{xUpdateRPRtmvp}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xUpdateRPRtmvp()}{xUpdateRPRtmvp()}}
+{\footnotesize\ttfamily void x\+Update\+R\+P\+Rtmvp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1012 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classvvenc_1_1EncGOP_a3eab31ca394246084aa55ffc8f990637_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a3eab31ca394246084aa55ffc8f990637_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a980b2d57dbde5cc09dc9085be249f54a}\label{classvvenc_1_1EncGOP_a980b2d57dbde5cc09dc9085be249f54a}} 
+\index{EncGOP@{EncGOP}!xUpdateRPRToolCtrl@{xUpdateRPRToolCtrl}}
+\index{xUpdateRPRToolCtrl@{xUpdateRPRToolCtrl}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xUpdateRPRToolCtrl()}{xUpdateRPRToolCtrl()}}
+{\footnotesize\ttfamily void x\+Update\+R\+P\+R\+Tool\+Ctrl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1076 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classvvenc_1_1EncGOP_a980b2d57dbde5cc09dc9085be249f54a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a980b2d57dbde5cc09dc9085be249f54a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_adbfcdec807e04ef8276eda273ea7e817}\label{classvvenc_1_1EncGOP_adbfcdec807e04ef8276eda273ea7e817}} 
+\index{EncGOP@{EncGOP}!xWriteAccessUnitDelimiter@{xWriteAccessUnitDelimiter}}
+\index{xWriteAccessUnitDelimiter@{xWriteAccessUnitDelimiter}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteAccessUnitDelimiter()}{xWriteAccessUnitDelimiter()}}
+{\footnotesize\ttfamily void x\+Write\+Access\+Unit\+Delimiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{bool}]{Irap\+Or\+Gdr,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1643 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_adbfcdec807e04ef8276eda273ea7e817_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_adbfcdec807e04ef8276eda273ea7e817_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a652678a52ae3647bd679e002b7179f8c}\label{classvvenc_1_1EncGOP_a652678a52ae3647bd679e002b7179f8c}} 
+\index{EncGOP@{EncGOP}!xWriteAPS@{xWriteAPS}}
+\index{xWriteAPS@{xWriteAPS}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteAPS()}{xWriteAPS()}}
+{\footnotesize\ttfamily int x\+Write\+A\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{aps,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer,  }\item[{vvenc\+Nal\+Unit\+Type}]{e\+Nal\+Unit\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1633 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a652678a52ae3647bd679e002b7179f8c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a652678a52ae3647bd679e002b7179f8c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ac70e95d20214f12812dae42fb3be7da2}\label{classvvenc_1_1EncGOP_ac70e95d20214f12812dae42fb3be7da2}} 
+\index{EncGOP@{EncGOP}!xWriteDCI@{xWriteDCI}}
+\index{xWriteDCI@{xWriteDCI}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteDCI()}{xWriteDCI()}}
+{\footnotesize\ttfamily int x\+Write\+D\+CI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$}]{dci,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1598 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ac70e95d20214f12812dae42fb3be7da2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ac70e95d20214f12812dae42fb3be7da2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a029228596d8e2976767454d75cf1cf65}\label{classvvenc_1_1EncGOP_a029228596d8e2976767454d75cf1cf65}} 
+\index{EncGOP@{EncGOP}!xWriteLeadingSEIs@{xWriteLeadingSEIs}}
+\index{xWriteLeadingSEIs@{xWriteLeadingSEIs}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteLeadingSEIs()}{xWriteLeadingSEIs()}}
+{\footnotesize\ttfamily void x\+Write\+Leading\+S\+E\+Is (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1500 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a029228596d8e2976767454d75cf1cf65_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a029228596d8e2976767454d75cf1cf65_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a37418e46104a10160ad1a82b4a84c44a}\label{classvvenc_1_1EncGOP_a37418e46104a10160ad1a82b4a84c44a}} 
+\index{EncGOP@{EncGOP}!xWriteParameterSets@{xWriteParameterSets}}
+\index{xWriteParameterSets@{xWriteParameterSets}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteParameterSets()}{xWriteParameterSets()}}
+{\footnotesize\ttfamily int x\+Write\+Parameter\+Sets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1380 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a37418e46104a10160ad1a82b4a84c44a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a37418e46104a10160ad1a82b4a84c44a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a0c054a05da22918aed805ded0f26e2e3}\label{classvvenc_1_1EncGOP_a0c054a05da22918aed805ded0f26e2e3}} 
+\index{EncGOP@{EncGOP}!xWritePicture@{xWritePicture}}
+\index{xWritePicture@{xWritePicture}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWritePicture()}{xWritePicture()}}
+{\footnotesize\ttfamily void x\+Write\+Picture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{au,  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1354 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a0c054a05da22918aed805ded0f26e2e3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a0c054a05da22918aed805ded0f26e2e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a3eb09fad4d313cc915104d8ac6a05a13}\label{classvvenc_1_1EncGOP_a3eb09fad4d313cc915104d8ac6a05a13}} 
+\index{EncGOP@{EncGOP}!xWritePictureSlices@{xWritePictureSlices}}
+\index{xWritePictureSlices@{xWritePictureSlices}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWritePictureSlices()}{xWritePictureSlices()}}
+{\footnotesize\ttfamily int x\+Write\+Picture\+Slices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1465 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a3eb09fad4d313cc915104d8ac6a05a13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a3eb09fad4d313cc915104d8ac6a05a13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_adb7083540b1f48d362a01ac6026e48e0}\label{classvvenc_1_1EncGOP_adb7083540b1f48d362a01ac6026e48e0}} 
+\index{EncGOP@{EncGOP}!xWritePPS@{xWritePPS}}
+\index{xWritePPS@{xWritePPS}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWritePPS()}{xWritePPS()}}
+{\footnotesize\ttfamily int x\+Write\+P\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{pps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1623 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_adb7083540b1f48d362a01ac6026e48e0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_adb7083540b1f48d362a01ac6026e48e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ae96774f4a0682436f3e626bd8512a379}\label{classvvenc_1_1EncGOP_ae96774f4a0682436f3e626bd8512a379}} 
+\index{EncGOP@{EncGOP}!xWriteSEI@{xWriteSEI}}
+\index{xWriteSEI@{xWriteSEI}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteSEI()}{xWriteSEI()}}
+{\footnotesize\ttfamily void x\+Write\+S\+EI (\begin{DoxyParamCaption}\item[{vvenc\+Nal\+Unit\+Type}]{nalu\+Type,  }\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{sei\+Messages,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{Access\+Unit\+List\+::iterator \&}]{au\+Pos,  }\item[{int}]{temporal\+Id,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1652 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_ae96774f4a0682436f3e626bd8512a379_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a131c8a3a388b8389d3433e1b60300d61}\label{classvvenc_1_1EncGOP_a131c8a3a388b8389d3433e1b60300d61}} 
+\index{EncGOP@{EncGOP}!xWriteSEISeparately@{xWriteSEISeparately}}
+\index{xWriteSEISeparately@{xWriteSEISeparately}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteSEISeparately()}{xWriteSEISeparately()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Separately (\begin{DoxyParamCaption}\item[{vvenc\+Nal\+Unit\+Type}]{nalu\+Type,  }\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{sei\+Messages,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{Access\+Unit\+List\+::iterator \&}]{au\+Pos,  }\item[{int}]{temporal\+Id,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1665 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a131c8a3a388b8389d3433e1b60300d61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a131c8a3a388b8389d3433e1b60300d61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a0e353762d486d76a4e658716b9c94275}\label{classvvenc_1_1EncGOP_a0e353762d486d76a4e658716b9c94275}} 
+\index{EncGOP@{EncGOP}!xWriteSPS@{xWriteSPS}}
+\index{xWriteSPS@{xWriteSPS}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteSPS()}{xWriteSPS()}}
+{\footnotesize\ttfamily int x\+Write\+S\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1613 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a0e353762d486d76a4e658716b9c94275_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a0e353762d486d76a4e658716b9c94275_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a42cf817d9ab798a86ac299fab588abbe}\label{classvvenc_1_1EncGOP_a42cf817d9ab798a86ac299fab588abbe}} 
+\index{EncGOP@{EncGOP}!xWriteTrailingSEIs@{xWriteTrailingSEIs}}
+\index{xWriteTrailingSEIs@{xWriteTrailingSEIs}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteTrailingSEIs()}{xWriteTrailingSEIs()}}
+{\footnotesize\ttfamily void x\+Write\+Trailing\+S\+E\+Is (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{std\+::string \&}]{digest\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1567 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a42cf817d9ab798a86ac299fab588abbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a42cf817d9ab798a86ac299fab588abbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a9b636fcfc3828e188717122422290b20}\label{classvvenc_1_1EncGOP_a9b636fcfc3828e188717122422290b20}} 
+\index{EncGOP@{EncGOP}!xWriteVPS@{xWriteVPS}}
+\index{xWriteVPS@{xWriteVPS}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{xWriteVPS()}{xWriteVPS()}}
+{\footnotesize\ttfamily int x\+Write\+V\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{access\+Unit,  }\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps,  }\item[{\mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} \&}]{hls\+Writer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1588 of file Enc\+G\+O\+P.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a9b636fcfc3828e188717122422290b20_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncGOP_a9b636fcfc3828e188717122422290b20_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a904e849842fe9c613d4787a304a8d8c0}\label{classvvenc_1_1EncGOP_a904e849842fe9c613d4787a304a8d8c0}} 
+\index{EncGOP@{EncGOP}!m\_AnalyzeAll@{m\_AnalyzeAll}}
+\index{m\_AnalyzeAll@{m\_AnalyzeAll}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_AnalyzeAll}{m\_AnalyzeAll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} m\+\_\+\+Analyze\+All\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 122 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afef1d6a18b549ec8bd8afeda00903703}\label{classvvenc_1_1EncGOP_afef1d6a18b549ec8bd8afeda00903703}} 
+\index{EncGOP@{EncGOP}!m\_AnalyzeB@{m\_AnalyzeB}}
+\index{m\_AnalyzeB@{m\_AnalyzeB}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_AnalyzeB}{m\_AnalyzeB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} m\+\_\+\+AnalyzeB\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 125 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a37de80ce887f835cb1ef6a108b947a29}\label{classvvenc_1_1EncGOP_a37de80ce887f835cb1ef6a108b947a29}} 
+\index{EncGOP@{EncGOP}!m\_AnalyzeI@{m\_AnalyzeI}}
+\index{m\_AnalyzeI@{m\_AnalyzeI}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_AnalyzeI}{m\_AnalyzeI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} m\+\_\+\+AnalyzeI\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a61daa598ecb88e581bdadad44299087a}\label{classvvenc_1_1EncGOP_a61daa598ecb88e581bdadad44299087a}} 
+\index{EncGOP@{EncGOP}!m\_AnalyzeP@{m\_AnalyzeP}}
+\index{m\_AnalyzeP@{m\_AnalyzeP}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_AnalyzeP}{m\_AnalyzeP}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} m\+\_\+\+AnalyzeP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 124 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ae77ea1e40a826bc5241ca0e8c77cf0ef}\label{classvvenc_1_1EncGOP_ae77ea1e40a826bc5241ca0e8c77cf0ef}} 
+\index{EncGOP@{EncGOP}!m\_appliedSwitchDQQ@{m\_appliedSwitchDQQ}}
+\index{m\_appliedSwitchDQQ@{m\_appliedSwitchDQQ}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_appliedSwitchDQQ}{m\_appliedSwitchDQQ}}
+{\footnotesize\ttfamily int m\+\_\+applied\+Switch\+D\+QQ\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 135 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afe7aecaa6eaa9c18d8735d345fcd7eff}\label{classvvenc_1_1EncGOP_afe7aecaa6eaa9c18d8735d345fcd7eff}} 
+\index{EncGOP@{EncGOP}!m\_associatedIRAPPOC@{m\_associatedIRAPPOC}}
+\index{m\_associatedIRAPPOC@{m\_associatedIRAPPOC}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_associatedIRAPPOC}{m\_associatedIRAPPOC}}
+{\footnotesize\ttfamily int m\+\_\+associated\+I\+R\+A\+P\+P\+OC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a2822731e39d19bc64fc11011791307a5}\label{classvvenc_1_1EncGOP_a2822731e39d19bc64fc11011791307a5}} 
+\index{EncGOP@{EncGOP}!m\_associatedIRAPType@{m\_associatedIRAPType}}
+\index{m\_associatedIRAPType@{m\_associatedIRAPType}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_associatedIRAPType}{m\_associatedIRAPType}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type m\+\_\+associated\+I\+R\+A\+P\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a0602edf37e2e92d8b105c13a178f5e51}\label{classvvenc_1_1EncGOP_a0602edf37e2e92d8b105c13a178f5e51}} 
+\index{EncGOP@{EncGOP}!m\_bFirstInit@{m\_bFirstInit}}
+\index{m\_bFirstInit@{m\_bFirstInit}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstInit}{m\_bFirstInit}}
+{\footnotesize\ttfamily bool m\+\_\+b\+First\+Init\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 127 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_abdbbd6cc7b7262c5f736b69029aec133}\label{classvvenc_1_1EncGOP_abdbbd6cc7b7262c5f736b69029aec133}} 
+\index{EncGOP@{EncGOP}!m\_bFirstWrite@{m\_bFirstWrite}}
+\index{m\_bFirstWrite@{m\_bFirstWrite}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstWrite}{m\_bFirstWrite}}
+{\footnotesize\ttfamily bool m\+\_\+b\+First\+Write\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a87eba139fb9dadc5e1d20b8d4a2c1d14}\label{classvvenc_1_1EncGOP_a87eba139fb9dadc5e1d20b8d4a2c1d14}} 
+\index{EncGOP@{EncGOP}!m\_BlkStat@{m\_BlkStat}}
+\index{m\_BlkStat@{m\_BlkStat}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_BlkStat}{m\_BlkStat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} m\+\_\+\+Blk\+Stat\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 144 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a2dc1c0b523db94ae8657986e21975608}\label{classvvenc_1_1EncGOP_a2dc1c0b523db94ae8657986e21975608}} 
+\index{EncGOP@{EncGOP}!m\_bRefreshPending@{m\_bRefreshPending}}
+\index{m\_bRefreshPending@{m\_bRefreshPending}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_bRefreshPending}{m\_bRefreshPending}}
+{\footnotesize\ttfamily bool m\+\_\+b\+Refresh\+Pending\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 129 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afa8102489f9fc43fde072e71904896cf}\label{classvvenc_1_1EncGOP_afa8102489f9fc43fde072e71904896cf}} 
+\index{EncGOP@{EncGOP}!m\_codingOrderIdx@{m\_codingOrderIdx}}
+\index{m\_codingOrderIdx@{m\_codingOrderIdx}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_codingOrderIdx}{m\_codingOrderIdx}}
+{\footnotesize\ttfamily int m\+\_\+coding\+Order\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 131 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_adae79835db0ab397ea0a9c683fe2f8f8}\label{classvvenc_1_1EncGOP_adae79835db0ab397ea0a9c683fe2f8f8}} 
+\index{EncGOP@{EncGOP}!m\_disableLMCSIP@{m\_disableLMCSIP}}
+\index{m\_disableLMCSIP@{m\_disableLMCSIP}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_disableLMCSIP}{m\_disableLMCSIP}}
+{\footnotesize\ttfamily bool m\+\_\+disable\+L\+M\+C\+S\+IP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a723df49e12ed0c53c37435142d54f4d3}\label{classvvenc_1_1EncGOP_a723df49e12ed0c53c37435142d54f4d3}} 
+\index{EncGOP@{EncGOP}!m\_ffwdDecoder@{m\_ffwdDecoder}}
+\index{m\_ffwdDecoder@{m\_ffwdDecoder}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_ffwdDecoder}{m\_ffwdDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1FFwdDecoder}{F\+Fwd\+Decoder}} m\+\_\+ffwd\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 145 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a3670c15593395410fcea8802e7ac6a52}\label{classvvenc_1_1EncGOP_a3670c15593395410fcea8802e7ac6a52}} 
+\index{EncGOP@{EncGOP}!m\_freePicEncoderList@{m\_freePicEncoderList}}
+\index{m\_freePicEncoderList@{m\_freePicEncoderList}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_freePicEncoderList}{m\_freePicEncoderList}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classvvenc_1_1EncPicture}{Enc\+Picture}}$\ast$$>$ m\+\_\+free\+Pic\+Encoder\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 150 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a8c462de9d6ff71416a2436c09ba380cc}\label{classvvenc_1_1EncGOP_a8c462de9d6ff71416a2436c09ba380cc}} 
+\index{EncGOP@{EncGOP}!m\_globalCtuQpVector@{m\_globalCtuQpVector}}
+\index{m\_globalCtuQpVector@{m\_globalCtuQpVector}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_globalCtuQpVector}{m\_globalCtuQpVector}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ m\+\_\+global\+Ctu\+Qp\+Vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 153 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a4d3f9ff39738766343766297be353e54}\label{classvvenc_1_1EncGOP_a4d3f9ff39738766343766297be353e54}} 
+\index{EncGOP@{EncGOP}!m\_gopApsMap@{m\_gopApsMap}}
+\index{m\_gopApsMap@{m\_gopApsMap}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_gopApsMap}{m\_gopApsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$ m\+\_\+gop\+Aps\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 148 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_aa9dc44f446aae5419dc98ee0f975c95d}\label{classvvenc_1_1EncGOP_aa9dc44f446aae5419dc98ee0f975c95d}} 
+\index{EncGOP@{EncGOP}!m\_gopEncCond@{m\_gopEncCond}}
+\index{m\_gopEncCond@{m\_gopEncCond}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_gopEncCond}{m\_gopEncCond}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable m\+\_\+gop\+Enc\+Cond\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 157 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ae9dd52508b6136c7d0c8f3849b851548}\label{classvvenc_1_1EncGOP_ae9dd52508b6136c7d0c8f3849b851548}} 
+\index{EncGOP@{EncGOP}!m\_gopEncListInput@{m\_gopEncListInput}}
+\index{m\_gopEncListInput@{m\_gopEncListInput}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_gopEncListInput}{m\_gopEncListInput}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$$>$ m\+\_\+gop\+Enc\+List\+Input\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 151 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a034586d4a19770576dd53079df0a1079}\label{classvvenc_1_1EncGOP_a034586d4a19770576dd53079df0a1079}} 
+\index{EncGOP@{EncGOP}!m\_gopEncListOutput@{m\_gopEncListOutput}}
+\index{m\_gopEncListOutput@{m\_gopEncListOutput}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_gopEncListOutput}{m\_gopEncListOutput}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$$>$ m\+\_\+gop\+Enc\+List\+Output}
+
+
+
+Definition at line 160 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a90143658503644fadd1111a88cf99fb8}\label{classvvenc_1_1EncGOP_a90143658503644fadd1111a88cf99fb8}} 
+\index{EncGOP@{EncGOP}!m\_gopEncMutex@{m\_gopEncMutex}}
+\index{m\_gopEncMutex@{m\_gopEncMutex}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_gopEncMutex}{m\_gopEncMutex}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+gop\+Enc\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 156 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a5a07d33687e130f4590088df0845892c}\label{classvvenc_1_1EncGOP_a5a07d33687e130f4590088df0845892c}} 
+\index{EncGOP@{EncGOP}!m\_HLSWriter@{m\_HLSWriter}}
+\index{m\_HLSWriter@{m\_HLSWriter}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_HLSWriter}{m\_HLSWriter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}} m\+\_\+\+H\+L\+S\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 140 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afaadf7fd1de1ac6dcc928ed989b41aaa}\label{classvvenc_1_1EncGOP_afaadf7fd1de1ac6dcc928ed989b41aaa}} 
+\index{EncGOP@{EncGOP}!m\_lastIDR@{m\_lastIDR}}
+\index{m\_lastIDR@{m\_lastIDR}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_lastIDR}{m\_lastIDR}}
+{\footnotesize\ttfamily int m\+\_\+last\+I\+DR\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 132 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_adca1f7d76cabf100211aa4cfd98e1ec8}\label{classvvenc_1_1EncGOP_adca1f7d76cabf100211aa4cfd98e1ec8}} 
+\index{EncGOP@{EncGOP}!m\_lastRasPoc@{m\_lastRasPoc}}
+\index{m\_lastRasPoc@{m\_lastRasPoc}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_lastRasPoc}{m\_lastRasPoc}}
+{\footnotesize\ttfamily int m\+\_\+last\+Ras\+Poc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_afabc33c7c4328921490982de50e35da0}\label{classvvenc_1_1EncGOP_afabc33c7c4328921490982de50e35da0}} 
+\index{EncGOP@{EncGOP}!m\_pcEncCfg@{m\_pcEncCfg}}
+\index{m\_pcEncCfg@{m\_pcEncCfg}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncCfg}{m\_pcEncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+pc\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ae06118c0343b4e4ec319bdc2461e5a8d}\label{classvvenc_1_1EncGOP_ae06118c0343b4e4ec319bdc2461e5a8d}} 
+\index{EncGOP@{EncGOP}!m\_pcEncHRD@{m\_pcEncHRD}}
+\index{m\_pcEncHRD@{m\_pcEncHRD}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncHRD}{m\_pcEncHRD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncHRD}{Enc\+H\+RD}}$\ast$ m\+\_\+pc\+Enc\+H\+RD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 147 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a12a91afa66dc93c2037c6418ece7ca08}\label{classvvenc_1_1EncGOP_a12a91afa66dc93c2037c6418ece7ca08}} 
+\index{EncGOP@{EncGOP}!m\_pcRateCtrl@{m\_pcRateCtrl}}
+\index{m\_pcRateCtrl@{m\_pcRateCtrl}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_pcRateCtrl}{m\_pcRateCtrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}}$\ast$ m\+\_\+pc\+Rate\+Ctrl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 146 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a543e2e96d2fc6e6a250b93d021bd1dfd}\label{classvvenc_1_1EncGOP_a543e2e96d2fc6e6a250b93d021bd1dfd}} 
+\index{EncGOP@{EncGOP}!m\_pocCRA@{m\_pocCRA}}
+\index{m\_pocCRA@{m\_pocCRA}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_pocCRA}{m\_pocCRA}}
+{\footnotesize\ttfamily int m\+\_\+poc\+C\+RA\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 134 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_af13ed6fd5b7094b94e05a6a2745cbbb4}\label{classvvenc_1_1EncGOP_af13ed6fd5b7094b94e05a6a2745cbbb4}} 
+\index{EncGOP@{EncGOP}!m\_Reshaper@{m\_Reshaper}}
+\index{m\_Reshaper@{m\_Reshaper}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_Reshaper}{m\_Reshaper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}} m\+\_\+\+Reshaper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 143 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ab57f8e24834295cd57389bc9e1784aeb}\label{classvvenc_1_1EncGOP_ab57f8e24834295cd57389bc9e1784aeb}} 
+\index{EncGOP@{EncGOP}!m\_seiEncoder@{m\_seiEncoder}}
+\index{m\_seiEncoder@{m\_seiEncoder}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_seiEncoder}{m\_seiEncoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIEncoder}{S\+E\+I\+Encoder}} m\+\_\+sei\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 142 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_ad2c0efc494b9c34824be2204df8ada97}\label{classvvenc_1_1EncGOP_ad2c0efc494b9c34824be2204df8ada97}} 
+\index{EncGOP@{EncGOP}!m\_seiWriter@{m\_seiWriter}}
+\index{m\_seiWriter@{m\_seiWriter}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_seiWriter}{m\_seiWriter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIWriter}{S\+E\+I\+Writer}} m\+\_\+sei\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 141 of file Enc\+G\+O\+P.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncGOP_a554a6e379eb8db3d601ac16590ad3d2e}\label{classvvenc_1_1EncGOP_a554a6e379eb8db3d601ac16590ad3d2e}} 
+\index{EncGOP@{EncGOP}!m\_threadPool@{m\_threadPool}}
+\index{m\_threadPool@{m\_threadPool}!EncGOP@{EncGOP}}
+\doxysubsubsection{\texorpdfstring{m\_threadPool}{m\_threadPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}}$\ast$ m\+\_\+thread\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Enc\+G\+O\+P.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncGOP_8h}{Enc\+G\+O\+P.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncGOP_8cpp}{Enc\+G\+O\+P.\+cpp}}\end{DoxyCompactItemize}

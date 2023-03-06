@@ -1,0 +1,52 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/vvenc/vvenc.cpp" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/vvenc/vvenc.cpp">
+<area shape="rect" id="node1" title="This file contains the external interface of the vvenc SDK." alt="" coords="2295,5,2484,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="197,415,304,442"/>
+<area shape="rect" id="node3" title=" " alt="" coords="2037,736,2165,763"/>
+<area shape="rect" id="node4" title=" " alt="" coords="2615,109,2729,136"/>
+<area shape="rect" id="node5" href="$vvencimpl_8h.html" title=" " alt="" coords="1967,109,2059,136"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1986,184,2041,211"/>
+<area shape="rect" id="node7" href="$EncLib_8h.html" title="encoder class (header)" alt="" coords="1631,184,1774,211"/>
+<area shape="rect" id="node8" href="$EncGOP_8h.html" title="GOP encoder class (header)" alt="" coords="1393,259,1476,285"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1092,960,1151,987"/>
+<area shape="rect" id="node45" href="$Nal_8h.html" title=" " alt="" coords="379,333,506,360"/>
+<area shape="rect" id="node49" href="$EncHRD_8h.html" title=" " alt="" coords="1607,579,1694,606"/>
+<area shape="rect" id="node50" href="$MCTF_8h.html" title="MCTF class (header)" alt="" coords="246,497,389,524"/>
+<area shape="rect" id="node9" href="$EncSampleAdaptiveOffset_8h.html" title="estimation part of sample adaptive offset class (header)" alt="" coords="545,497,732,524"/>
+<area shape="rect" id="node12" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions." alt="" coords="1068,885,1175,912"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1785,885,1844,912"/>
+<area shape="rect" id="node18" href="$VLCWriter_8h.html" title="Writer for high level syntax." alt="" coords="1439,579,1531,606"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2406,885,2445,912"/>
+<area shape="rect" id="node25" href="$SEIwrite_8h.html" title=" " alt="" coords="1605,497,1688,524"/>
+<area shape="rect" id="node26" href="$SEIEncoder_8h.html" title=" " alt="" coords="809,497,911,524"/>
+<area shape="rect" id="node28" href="$Analyze_8h.html" title="encoder analyzer class (header)" alt="" coords="1881,333,1961,360"/>
+<area shape="rect" id="node34" href="$EncPicture_8h.html" title="encode picture (header)" alt="" coords="1057,333,1154,360"/>
+<area shape="rect" id="node36" href="$Picture_8h.html" title="Description of a coded picture." alt="" coords="940,497,1015,524"/>
+<area shape="rect" id="node39" title=" " alt="" coords="1353,579,1415,606"/>
+<area shape="rect" id="node42" href="$NoMallocThreadPool_8h.html" title="thread pool" alt="" coords="1080,408,1245,449"/>
+<area shape="rect" id="node43" title=" " alt="" coords="1219,497,1346,524"/>
+<area shape="rect" id="node44" href="$EncReshape_8h.html" title="encoder reshaping header and class (header)" alt="" coords="1473,497,1581,524"/>
+<area shape="rect" id="node47" href="$RateCtrl_8h.html" title="Rate control manager class." alt="" coords="2356,661,2439,688"/>
+<area shape="rect" id="node48" title=" " alt="" coords="1523,333,1587,360"/>
+<area shape="rect" id="node10" href="$CABACWriter_8h.html" title="Writer for low level syntax." alt="" coords="1493,661,1606,688"/>
+<area shape="rect" id="node15" href="$SampleAdaptiveOffset_8h.html" title="sample adaptive offset class (header)" alt="" coords="441,572,631,613"/>
+<area shape="rect" id="node11" href="$BitStream_8h.html" title="class for handling bitstream (header)" alt="" coords="1441,736,1607,763"/>
+<area shape="rect" id="node16" href="$Unit_8h.html" title="defines unit as a set of blocks and basic unit types (coding, prediction, transform)" alt="" coords="778,661,835,688"/>
+<area shape="rect" id="node17" href="$Common_8h.html" title="Common 2D&#45;geometrical structures." alt="" coords="1159,811,1246,837"/>
+<area shape="rect" id="node19" href="$Rom_8h.html" title="global variables &amp; functions (header)" alt="" coords="1153,736,1215,763"/>
+<area shape="rect" id="node20" href="$Slice_8h.html" title="slice header and SPS class (header)" alt="" coords="1303,661,1366,688"/>
+<area shape="rect" id="node21" href="$HRD_8h.html" title=" " alt="" coords="1783,736,1846,763"/>
+<area shape="rect" id="node24" title=" " alt="" coords="1082,736,1129,763"/>
+<area shape="rect" id="node22" href="$SEI_8h.html" title=" " alt="" coords="1847,811,1902,837"/>
+<area shape="rect" id="node27" title=" " alt="" coords="655,579,713,606"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1977,415,2039,442"/>
+<area shape="rect" id="node30" title=" " alt="" coords="2063,415,2142,442"/>
+<area shape="rect" id="node31" title=" " alt="" coords="2167,415,2236,442"/>
+<area shape="rect" id="node32" title=" " alt="" coords="1791,415,1865,442"/>
+<area shape="rect" id="node33" title=" " alt="" coords="1890,415,1953,442"/>
+<area shape="rect" id="node35" href="$EncSlice_8h.html" title="slice encoder class (header)" alt="" coords="971,415,1056,442"/>
+<area shape="rect" id="node40" href="$EncAdaptiveLoopFilter_8h.html" title="estimation part of adaptive loop filter class (header)" alt="" coords="1871,579,2033,606"/>
+<area shape="rect" id="node41" href="$LoopFilter_8h.html" title="deblocking filter (header)" alt="" coords="632,415,795,442"/>
+<area shape="rect" id="node37" href="$CodingStructure_8h.html" title="A class managing the coding information for a specific image part." alt="" coords="890,579,1017,606"/>
+<area shape="rect" id="node38" href="$Reshape_8h.html" title="reshaping header and class (header)" alt="" coords="1092,579,1177,606"/>
+<area shape="rect" id="node46" title=" " alt="" coords="296,579,365,606"/>
+</map>

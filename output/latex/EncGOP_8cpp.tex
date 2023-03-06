@@ -1,0 +1,43 @@
+\hypertarget{EncGOP_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Enc\+G\+OP.cpp File Reference}
+\label{EncGOP_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncGOP.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncGOP.cpp}}
+
+
+G\+OP encoder class.  
+
+
+{\ttfamily \#include \char`\"{}Enc\+G\+O\+P.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+A\+Lwrite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+S\+E\+I.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+codingstruct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+M\+D5.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Decoder\+Lib/\+Dec\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bit\+Allocation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Enc\+H\+R\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$list$>$}\newline
+Include dependency graph for Enc\+G\+O\+P.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncGOP_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_ab7b9d047523f361c9aa0e5047cc3c044}{is\+Pic\+Encoded}} (int target\+Poc, int cur\+Poc, int cur\+T\+Layer, int gop\+Size, int intra\+Period)
+\item 
+void \mbox{\hyperlink{namespacevvenc_adb1eeab1fc3b671e5bce71e1c9053d18}{try\+Skip\+Or\+Decode\+Picture}} (bool \&dec\+Pic, bool \&enc\+Pic, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&cfg, Picture $\ast$pic, F\+Fwd\+Decoder \&ffwd\+Decoder, Parameter\+Set\+Map$<$ A\+PS $>$ \&aps\+Map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+G\+OP encoder class. 
+

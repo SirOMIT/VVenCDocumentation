@@ -1,0 +1,806 @@
+\hypertarget{classvvenc_1_1InterpolationFilter}{}\doxysection{Interpolation\+Filter}
+\label{classvvenc_1_1InterpolationFilter}\index{InterpolationFilter@{InterpolationFilter}}
+
+
+Interpolation filter class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Interpolation\+Filter.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a8eed0a164bd72aa1c00ae81007a0b7a9}{Interpolation\+Filter}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterpolationFilter_aeabdd379d31d1029cc32dd7d494f49ac}{$\sim$\+Interpolation\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_aed5cdb9837728e178814308b49f1ef42}{filter16x16}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int fracX, int fracY, bool is\+Last, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool use\+Alt\+Hpel\+If=false, int n\+Filter\+Idx=0)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a8794560aeb5994316fbbf1e5c75a3714}{filter4x4}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int fracX, int fracY, bool is\+Last, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool use\+Alt\+Hpel\+If=false, int n\+Filter\+Idx=0)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a27d4300cae08114354c9b2afa99e09eb}{filter8x8}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int fracX, int fracY, bool is\+Last, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool use\+Alt\+Hpel\+If=false, int n\+Filter\+Idx=0)
+\item 
+{\footnotesize template$<$int N$>$ }\\void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_ae92df0a722bbb5aba3537e9c93da511d}{filter\+Hor}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, bool is\+Last, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)
+\begin{DoxyCompactList}\small\item\em Filter a block of samples (horizontal) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a61bf6023673b8c8c7eb2085646114ee6}{filter\+Hor}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int frac, bool is\+Last, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool use\+Alt\+Hpel\+If=false, int n\+Filter\+Idx=0, bool bi\+M\+C\+For\+D\+M\+VR=false)
+\begin{DoxyCompactList}\small\item\em Filter a block of Luma/\+Chroma samples (horizontal) \end{DoxyCompactList}\item 
+{\footnotesize template$<$int N$>$ }\\void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a6773e2e8d0e56f400d910b811de87125}{filter\+Ver}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, bool is\+First, bool is\+Last, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)
+\begin{DoxyCompactList}\small\item\em Filter a block of samples (vertical) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a78b1e3c171a50abd460283055a83f1e0}{filter\+Ver}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int frac, bool is\+First, bool is\+Last, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool use\+Alt\+Hpel\+If=false, int n\+Filter\+Idx=0, bool bi\+M\+C\+For\+D\+M\+VR=false)
+\begin{DoxyCompactList}\small\item\em Filter a block of Luma/\+Chroma samples (vertical) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a9f23e9a15de7839b5bb72be8c4337c08}{init\+Interpolation\+Filter}} (bool enable)
+\begin{DoxyCompactList}\small\item\em turn on S\+I\+MD fuc \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a51422efc668536b4a2c5c32190351637}{weighted\+Geo\+Blk}} (const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const uint32\+\_\+t width, const uint32\+\_\+t height, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const uint8\+\_\+t split\+Dir, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Dst, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src0, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int N, bool is\+Vertical, bool is\+First, bool is\+Last$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_aa259a9ff6acfb4c3a05978d5a6adc16e}{filter}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)
+\begin{DoxyCompactList}\small\item\em Apply F\+IR filter to a block of samples. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool is\+First, bool is\+Last$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a14a601a3efb015d65060c7cd79dd9e02}{filter\+Copy}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, bool bi\+M\+C\+For\+D\+M\+VR)
+\begin{DoxyCompactList}\small\item\em Apply unit F\+IR filter to a block of samples. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool is\+Last, int w$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_ab16b9cd2a0d0dc48881f52b17d3ff20a}{filter\+Xx\+Y\+\_\+\+N4}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)
+\item 
+{\footnotesize template$<$bool is\+Last, int w$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_ae0a8a527cdcaf864f32f29b034621392}{filter\+Xx\+Y\+\_\+\+N8}} (const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)
+\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} $\ast$const \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a28810425bfb83d1c4887f70620392dc2}{get\+Chroma\+Filter\+Table}} (const int delta\+Fract)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_ac7c6abe4b7dd9414697bc8bfc7d8c4fb}{x\+Weighted\+Geo\+Blk}} (const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const uint32\+\_\+t width, const uint32\+\_\+t height, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const uint8\+\_\+t split\+Dir, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Dst, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src0, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a454f6ab03bc274008174d107e2140256}{m\+\_\+filter16x16}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a956b8e3e0b31b395b6941755902a3ab6}{m\+\_\+filter4x4}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a82fa3a566ca2bbf1a823f1246e55ba70}{m\+\_\+filter8x8}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_adce18df631d10aa3c11b8ed4acb70d0d}{m\+\_\+filter\+Copy}} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, bool bi\+M\+C\+For\+D\+M\+VR)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a56c90d2bf401070195d119b1b557fc90}{m\+\_\+filter\+Hor}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a509834152033bd2128d7973519ec6aad}{m\+\_\+filter\+Ver}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]}\mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_ae29bf5ba595818fb5573e2d1b825bb82}{m\+\_\+weighted\+Geo\+Blk}} )(const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const uint32\+\_\+t width, const uint32\+\_\+t height, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const uint8\+\_\+t split\+Dir, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Dst, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src0, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a9d04e2d3109884ce7d3bcf8194fc92b2}{m\+\_\+bilinear\+Filter\+Prec4}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ac47d87771961bd5c9c59f2a7601ccbbd}{L\+U\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a9daa7da69d57d7914e94869003706c56}{N\+T\+A\+P\+S\+\_\+\+B\+I\+L\+I\+N\+E\+AR}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em bilinear filter taps \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a597b36da7d8e5a853031ce19fd55e108}{m\+\_\+chroma\+Filter}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abca668350d49d688c671b124b5eb4576}{C\+H\+R\+O\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6afab43841d129252e47392e4c868004}{N\+T\+A\+P\+S\+\_\+\+C\+H\+R\+O\+MA}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Chroma filter taps. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_aae41ef40aaab94a5974d1b72d7e0ebff}{m\+\_\+luma\+Alt\+Hpel\+I\+Filter}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af34252cbb46dcf09730e3ab02321ee15}{N\+T\+A\+P\+S\+\_\+\+L\+U\+MA}}\mbox{]} = \{ 0, 3, 9, 20, 20, 9, 3, 0 \}
+\begin{DoxyCompactList}\small\item\em Luma filter taps. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a840df50c1daaaefdc9770d23dfec9053}{m\+\_\+luma\+Filter}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ac47d87771961bd5c9c59f2a7601ccbbd}{L\+U\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_af34252cbb46dcf09730e3ab02321ee15}{N\+T\+A\+P\+S\+\_\+\+L\+U\+MA}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Luma filter taps. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} \mbox{\hyperlink{classvvenc_1_1InterpolationFilter_a02e79e3f137f32ed972fa7b202ab50d7}{m\+\_\+luma\+Filter4x4}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ac47d87771961bd5c9c59f2a7601ccbbd}{L\+U\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_af34252cbb46dcf09730e3ab02321ee15}{N\+T\+A\+P\+S\+\_\+\+L\+U\+MA}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interpolation filter class. 
+
+Definition at line 70 of file Interpolation\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a8eed0a164bd72aa1c00ae81007a0b7a9}\label{classvvenc_1_1InterpolationFilter_a8eed0a164bd72aa1c00ae81007a0b7a9}} 
+\index{InterpolationFilter@{InterpolationFilter}!InterpolationFilter@{InterpolationFilter}}
+\index{InterpolationFilter@{InterpolationFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{InterpolationFilter()}{InterpolationFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InterpolationFilter}{Interpolation\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a8eed0a164bd72aa1c00ae81007a0b7a9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_aeabdd379d31d1029cc32dd7d494f49ac}\label{classvvenc_1_1InterpolationFilter_aeabdd379d31d1029cc32dd7d494f49ac}} 
+\index{InterpolationFilter@{InterpolationFilter}!````~InterpolationFilter@{$\sim$InterpolationFilter}}
+\index{````~InterpolationFilter@{$\sim$InterpolationFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$InterpolationFilter()}{~InterpolationFilter()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1InterpolationFilter}{Interpolation\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Interpolation\+Filter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_aa259a9ff6acfb4c3a05978d5a6adc16e}\label{classvvenc_1_1InterpolationFilter_aa259a9ff6acfb4c3a05978d5a6adc16e}} 
+\index{InterpolationFilter@{InterpolationFilter}!filter@{filter}}
+\index{filter@{filter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily void filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeff,  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply F\+IR filter to a block of samples. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & Number of taps \\
+\hline
+{\em is\+Vertical} & Flag indicating filtering along vertical direction \\
+\hline
+{\em is\+First} & Flag indicating whether it is the first filtering operation \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Depth} & Bit depth of samples \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em coeff} & Pointer to filter taps \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 396 of file Interpolation\+Filter.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_aed5cdb9837728e178814308b49f1ef42}\label{classvvenc_1_1InterpolationFilter_aed5cdb9837728e178814308b49f1ef42}} 
+\index{InterpolationFilter@{InterpolationFilter}!filter16x16@{filter16x16}}
+\index{filter16x16@{filter16x16}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filter16x16()}{filter16x16()}}
+{\footnotesize\ttfamily void filter16x16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{fracX,  }\item[{int}]{fracY,  }\item[{bool}]{is\+Last,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{fmt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{bool}]{use\+Alt\+Hpel\+If = {\ttfamily false},  }\item[{int}]{n\+Filter\+Idx = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 726 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_aed5cdb9837728e178814308b49f1ef42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_aed5cdb9837728e178814308b49f1ef42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a8794560aeb5994316fbbf1e5c75a3714}\label{classvvenc_1_1InterpolationFilter_a8794560aeb5994316fbbf1e5c75a3714}} 
+\index{InterpolationFilter@{InterpolationFilter}!filter4x4@{filter4x4}}
+\index{filter4x4@{filter4x4}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filter4x4()}{filter4x4()}}
+{\footnotesize\ttfamily void filter4x4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{fracX,  }\item[{int}]{fracY,  }\item[{bool}]{is\+Last,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{fmt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{bool}]{use\+Alt\+Hpel\+If = {\ttfamily false},  }\item[{int}]{n\+Filter\+Idx = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 671 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a8794560aeb5994316fbbf1e5c75a3714_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a8794560aeb5994316fbbf1e5c75a3714_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a27d4300cae08114354c9b2afa99e09eb}\label{classvvenc_1_1InterpolationFilter_a27d4300cae08114354c9b2afa99e09eb}} 
+\index{InterpolationFilter@{InterpolationFilter}!filter8x8@{filter8x8}}
+\index{filter8x8@{filter8x8}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filter8x8()}{filter8x8()}}
+{\footnotesize\ttfamily void filter8x8 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{fracX,  }\item[{int}]{fracY,  }\item[{bool}]{is\+Last,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{fmt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{bool}]{use\+Alt\+Hpel\+If = {\ttfamily false},  }\item[{int}]{n\+Filter\+Idx = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 698 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a27d4300cae08114354c9b2afa99e09eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a27d4300cae08114354c9b2afa99e09eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a14a601a3efb015d65060c7cd79dd9e02}\label{classvvenc_1_1InterpolationFilter_a14a601a3efb015d65060c7cd79dd9e02}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterCopy@{filterCopy}}
+\index{filterCopy@{filterCopy}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterCopy()}{filterCopy()}}
+{\footnotesize\ttfamily void filter\+Copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Apply unit F\+IR filter to a block of samples. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Depth} & bit\+Depth of samples \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em is\+First} & Flag indicating whether it is the first filtering operation \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 249 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classvvenc_1_1InterpolationFilter_a14a601a3efb015d65060c7cd79dd9e02_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_ae92df0a722bbb5aba3537e9c93da511d}\label{classvvenc_1_1InterpolationFilter_ae92df0a722bbb5aba3537e9c93da511d}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterHor@{filterHor}}
+\index{filterHor@{filterHor}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterHor()}{filterHor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void filter\+Hor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+Last,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeff,  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR }\end{DoxyParamCaption})}
+
+
+
+Filter a block of samples (horizontal) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & Number of taps \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Depth} & Bit depth of samples \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+{\em coeff} & Pointer to filter taps \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 506 of file Interpolation\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_ae92df0a722bbb5aba3537e9c93da511d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a61bf6023673b8c8c7eb2085646114ee6}\label{classvvenc_1_1InterpolationFilter_a61bf6023673b8c8c7eb2085646114ee6}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterHor@{filterHor}}
+\index{filterHor@{filterHor}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterHor()}{filterHor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void filter\+Hor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{frac,  }\item[{bool}]{is\+Last,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{fmt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{bool}]{use\+Alt\+Hpel\+If = {\ttfamily false},  }\item[{int}]{n\+Filter\+Idx = {\ttfamily 0},  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Filter a block of Luma/\+Chroma samples (horizontal) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp\+ID} & Chroma component ID \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em frac} & Fractional sample offset \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+{\em fmt} & Chroma format \\
+\hline
+{\em bit\+Depth} & Bit depth \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 580 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a61bf6023673b8c8c7eb2085646114ee6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a6773e2e8d0e56f400d910b811de87125}\label{classvvenc_1_1InterpolationFilter_a6773e2e8d0e56f400d910b811de87125}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterVer@{filterVer}}
+\index{filterVer@{filterVer}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterVer()}{filterVer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void filter\+Ver (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{is\+First,  }\item[{bool}]{is\+Last,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeff,  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR }\end{DoxyParamCaption})}
+
+
+
+Filter a block of samples (vertical) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em N} & Number of taps \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+Depth} & Bit depth \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em is\+First} & Flag indicating whether it is the first filtering operation \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+{\em coeff} & Pointer to filter taps \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 542 of file Interpolation\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a6773e2e8d0e56f400d910b811de87125_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a78b1e3c171a50abd460283055a83f1e0}\label{classvvenc_1_1InterpolationFilter_a78b1e3c171a50abd460283055a83f1e0}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterVer@{filterVer}}
+\index{filterVer@{filterVer}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterVer()}{filterVer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void filter\+Ver (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{frac,  }\item[{bool}]{is\+First,  }\item[{bool}]{is\+Last,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{fmt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{bool}]{use\+Alt\+Hpel\+If = {\ttfamily false},  }\item[{int}]{n\+Filter\+Idx = {\ttfamily 0},  }\item[{bool}]{bi\+M\+C\+For\+D\+M\+VR = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Filter a block of Luma/\+Chroma samples (vertical) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp\+ID} & Colour component ID \\
+\hline
+{\em src} & Pointer to source samples \\
+\hline
+{\em src\+Stride} & Stride of source samples \\
+\hline
+{\em dst} & Pointer to destination samples \\
+\hline
+{\em dst\+Stride} & Stride of destination samples \\
+\hline
+{\em width} & Width of block \\
+\hline
+{\em height} & Height of block \\
+\hline
+{\em frac} & Fractional sample offset \\
+\hline
+{\em is\+First} & Flag indicating whether it is the first filtering operation \\
+\hline
+{\em is\+Last} & Flag indicating whether it is the last filtering operation \\
+\hline
+{\em fmt} & Chroma format \\
+\hline
+{\em bit\+Depth} & Bit depth \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 634 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a78b1e3c171a50abd460283055a83f1e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_ab16b9cd2a0d0dc48881f52b17d3ff20a}\label{classvvenc_1_1InterpolationFilter_ab16b9cd2a0d0dc48881f52b17d3ff20a}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterXxY\_N4@{filterXxY\_N4}}
+\index{filterXxY\_N4@{filterXxY\_N4}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterXxY\_N4()}{filterXxY\_N4()}}
+{\footnotesize\ttfamily void filter\+Xx\+Y\+\_\+\+N4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeffH,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeffV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 755 of file Interpolation\+Filter.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_ae0a8a527cdcaf864f32f29b034621392}\label{classvvenc_1_1InterpolationFilter_ae0a8a527cdcaf864f32f29b034621392}} 
+\index{InterpolationFilter@{InterpolationFilter}!filterXxY\_N8@{filterXxY\_N8}}
+\index{filterXxY\_N8@{filterXxY\_N8}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{filterXxY\_N8()}{filterXxY\_N8()}}
+{\footnotesize\ttfamily void filter\+Xx\+Y\+\_\+\+N8 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$}]{src,  }\item[{int}]{src\+Stride,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{dst,  }\item[{int}]{dst\+Stride,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeffH,  }\item[{\mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$}]{coeffV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 831 of file Interpolation\+Filter.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a28810425bfb83d1c4887f70620392dc2}\label{classvvenc_1_1InterpolationFilter_a28810425bfb83d1c4887f70620392dc2}} 
+\index{InterpolationFilter@{InterpolationFilter}!getChromaFilterTable@{getChromaFilterTable}}
+\index{getChromaFilterTable@{getChromaFilterTable}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{getChromaFilterTable()}{getChromaFilterTable()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}}$\ast$ const get\+Chroma\+Filter\+Table (\begin{DoxyParamCaption}\item[{const int}]{delta\+Fract }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 126 of file Interpolation\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a28810425bfb83d1c4887f70620392dc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a9f23e9a15de7839b5bb72be8c4337c08}\label{classvvenc_1_1InterpolationFilter_a9f23e9a15de7839b5bb72be8c4337c08}} 
+\index{InterpolationFilter@{InterpolationFilter}!initInterpolationFilter@{initInterpolationFilter}}
+\index{initInterpolationFilter@{initInterpolationFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{initInterpolationFilter()}{initInterpolationFilter()}}
+{\footnotesize\ttfamily void init\+Interpolation\+Filter (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+turn on S\+I\+MD fuc 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+En} & enabled of S\+I\+MD function for interpolation \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 992 of file Interpolation\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a9f23e9a15de7839b5bb72be8c4337c08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a51422efc668536b4a2c5c32190351637}\label{classvvenc_1_1InterpolationFilter_a51422efc668536b4a2c5c32190351637}} 
+\index{InterpolationFilter@{InterpolationFilter}!weightedGeoBlk@{weightedGeoBlk}}
+\index{weightedGeoBlk@{weightedGeoBlk}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{weightedGeoBlk()}{weightedGeoBlk()}}
+{\footnotesize\ttfamily void weighted\+Geo\+Blk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Idx,  }\item[{const uint8\+\_\+t}]{split\+Dir,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Dst,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Src0,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Src1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 917 of file Interpolation\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_a51422efc668536b4a2c5c32190351637_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_ac7c6abe4b7dd9414697bc8bfc7d8c4fb}\label{classvvenc_1_1InterpolationFilter_ac7c6abe4b7dd9414697bc8bfc7d8c4fb}} 
+\index{InterpolationFilter@{InterpolationFilter}!xWeightedGeoBlk@{xWeightedGeoBlk}}
+\index{xWeightedGeoBlk@{xWeightedGeoBlk}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{xWeightedGeoBlk()}{xWeightedGeoBlk()}}
+{\footnotesize\ttfamily void x\+Weighted\+Geo\+Blk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Idx,  }\item[{const uint8\+\_\+t}]{split\+Dir,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Dst,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Src0,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Src1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 925 of file Interpolation\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterpolationFilter_ac7c6abe4b7dd9414697bc8bfc7d8c4fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1InterpolationFilter_ac7c6abe4b7dd9414697bc8bfc7d8c4fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a9d04e2d3109884ce7d3bcf8194fc92b2}\label{classvvenc_1_1InterpolationFilter_a9d04e2d3109884ce7d3bcf8194fc92b2}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_bilinearFilterPrec4@{m\_bilinearFilterPrec4}}
+\index{m\_bilinearFilterPrec4@{m\_bilinearFilterPrec4}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_bilinearFilterPrec4}{m\_bilinearFilterPrec4}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} m\+\_\+bilinear\+Filter\+Prec4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ 16,  0, \},}
+\DoxyCodeLine{  \{ 15,  1, \},}
+\DoxyCodeLine{  \{ 14,  2, \},}
+\DoxyCodeLine{  \{ 13, 3, \},}
+\DoxyCodeLine{  \{ 12, 4, \},}
+\DoxyCodeLine{  \{ 11, 5, \},}
+\DoxyCodeLine{  \{ 10, 6, \},}
+\DoxyCodeLine{  \{ 9, 7, \},}
+\DoxyCodeLine{  \{ 8, 8, \},}
+\DoxyCodeLine{  \{ 7, 9, \},}
+\DoxyCodeLine{  \{ 6, 10, \},}
+\DoxyCodeLine{  \{ 5, 11, \},}
+\DoxyCodeLine{  \{ 4, 12, \},}
+\DoxyCodeLine{  \{ 3, 13, \},}
+\DoxyCodeLine{  \{ 2, 14, \},}
+\DoxyCodeLine{  \{ 1, 15, \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+bilinear filter taps 
+
+
+
+Definition at line 76 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a597b36da7d8e5a853031ce19fd55e108}\label{classvvenc_1_1InterpolationFilter_a597b36da7d8e5a853031ce19fd55e108}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_chromaFilter@{m\_chromaFilter}}
+\index{m\_chromaFilter@{m\_chromaFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_chromaFilter}{m\_chromaFilter}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} m\+\_\+chroma\+Filter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Chroma filter taps. 
+
+
+
+Definition at line 75 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a454f6ab03bc274008174d107e2140256}\label{classvvenc_1_1InterpolationFilter_a454f6ab03bc274008174d107e2140256}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filter16x16@{m\_filter16x16}}
+\index{m\_filter16x16@{m\_filter16x16}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filter16x16}{m\_filter16x16}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter16x16(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)}
+
+
+
+Definition at line 108 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a956b8e3e0b31b395b6941755902a3ab6}\label{classvvenc_1_1InterpolationFilter_a956b8e3e0b31b395b6941755902a3ab6}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filter4x4@{m\_filter4x4}}
+\index{m\_filter4x4@{m\_filter4x4}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filter4x4}{m\_filter4x4}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter4x4(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)}
+
+
+
+Definition at line 106 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a82fa3a566ca2bbf1a823f1246e55ba70}\label{classvvenc_1_1InterpolationFilter_a82fa3a566ca2bbf1a823f1246e55ba70}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filter8x8@{m\_filter8x8}}
+\index{m\_filter8x8@{m\_filter8x8}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filter8x8}{m\_filter8x8}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter8x8(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffH, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeffV)}
+
+
+
+Definition at line 107 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_adce18df631d10aa3c11b8ed4acb70d0d}\label{classvvenc_1_1InterpolationFilter_adce18df631d10aa3c11b8ed4acb70d0d}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filterCopy@{m\_filterCopy}}
+\index{m\_filterCopy@{m\_filterCopy}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterCopy}{m\_filterCopy}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter\+Copy(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, bool bi\+M\+C\+For\+D\+M\+VR)}
+
+
+
+Definition at line 105 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a56c90d2bf401070195d119b1b557fc90}\label{classvvenc_1_1InterpolationFilter_a56c90d2bf401070195d119b1b557fc90}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filterHor@{m\_filterHor}}
+\index{m\_filterHor@{m\_filterHor}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterHor}{m\_filterHor}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter\+Hor(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)}
+
+
+
+Definition at line 103 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a509834152033bd2128d7973519ec6aad}\label{classvvenc_1_1InterpolationFilter_a509834152033bd2128d7973519ec6aad}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_filterVer@{m\_filterVer}}
+\index{m\_filterVer@{m\_filterVer}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterVer}{m\_filterVer}}
+{\footnotesize\ttfamily void( $\ast$ m\+\_\+filter\+Ver(const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} const $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} const $\ast$coeff, bool bi\+M\+C\+For\+D\+M\+VR)}
+
+
+
+Definition at line 104 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_aae41ef40aaab94a5974d1b72d7e0ebff}\label{classvvenc_1_1InterpolationFilter_aae41ef40aaab94a5974d1b72d7e0ebff}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_lumaAltHpelIFilter@{m\_lumaAltHpelIFilter}}
+\index{m\_lumaAltHpelIFilter@{m\_lumaAltHpelIFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_lumaAltHpelIFilter}{m\_lumaAltHpelIFilter}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} m\+\_\+luma\+Alt\+Hpel\+I\+Filter = \{ 0, 3, 9, 20, 20, 9, 3, 0 \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Luma filter taps. 
+
+
+
+Definition at line 74 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a840df50c1daaaefdc9770d23dfec9053}\label{classvvenc_1_1InterpolationFilter_a840df50c1daaaefdc9770d23dfec9053}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_lumaFilter@{m\_lumaFilter}}
+\index{m\_lumaFilter@{m\_lumaFilter}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_lumaFilter}{m\_lumaFilter}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} m\+\_\+luma\+Filter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{  0, 0,   0, 64,  0,   0,  0,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/3, 63,  4,  -\/2,  1,  0 \},}
+\DoxyCodeLine{  \{ -\/1, 2,  -\/5, 62,  8,  -\/3,  1,  0 \},}
+\DoxyCodeLine{  \{ -\/1, 3,  -\/8, 60, 13,  -\/4,  1,  0 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/10, 58, 17,  -\/5,  1,  0 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/11, 52, 26,  -\/8,  3, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 3,  -\/9, 47, 31, -\/10,  4, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/11, 45, 34, -\/10,  4, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/11, 40, 40, -\/11,  4, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/10, 34, 45, -\/11,  4, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 4, -\/10, 31, 47,  -\/9,  3, -\/1 \},}
+\DoxyCodeLine{  \{ -\/1, 3,  -\/8, 26, 52, -\/11,  4, -\/1 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/5, 17, 58, -\/10,  4, -\/1 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/4, 13, 60,  -\/8,  3, -\/1 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/3,  8, 62,  -\/5,  2, -\/1 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/2,  4, 63,  -\/3,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 0,   0,  0, 64,   0,  0,  0 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Luma filter taps. 
+
+
+
+Definition at line 73 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_a02e79e3f137f32ed972fa7b202ab50d7}\label{classvvenc_1_1InterpolationFilter_a02e79e3f137f32ed972fa7b202ab50d7}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_lumaFilter4x4@{m\_lumaFilter4x4}}
+\index{m\_lumaFilter4x4@{m\_lumaFilter4x4}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_lumaFilter4x4}{m\_lumaFilter4x4}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6a1670cc47f9f090ec54faa5c48e3952}{T\+Filter\+Coeff}} m\+\_\+luma\+Filter4x4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{  0, 0,   0, 64,  0,   0,  0,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/3, 63,  4,  -\/2,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/5, 62,  8,  -\/3,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 2,  -\/8, 60, 13,  -\/4,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 3, -\/10, 58, 17,  -\/5,  1,  0 \}, }
+\DoxyCodeLine{  \{  0, 3, -\/11, 52, 26,  -\/8,  2,  0 \},}
+\DoxyCodeLine{  \{  0, 2,  -\/9, 47, 31, -\/10,  3,  0 \},}
+\DoxyCodeLine{  \{  0, 3, -\/11, 45, 34, -\/10,  3,  0 \},}
+\DoxyCodeLine{  \{  0, 3, -\/11, 40, 40, -\/11,  3,  0 \}, }
+\DoxyCodeLine{  \{  0, 3, -\/10, 34, 45, -\/11,  3,  0 \},}
+\DoxyCodeLine{  \{  0, 3, -\/10, 31, 47,  -\/9,  2,  0 \},}
+\DoxyCodeLine{  \{  0, 2,  -\/8, 26, 52, -\/11,  3,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/5, 17, 58, -\/10,  3,  0 \}, }
+\DoxyCodeLine{  \{  0, 1,  -\/4, 13, 60,  -\/8,  2,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/3,  8, 62,  -\/5,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 1,  -\/2,  4, 63,  -\/3,  1,  0 \},}
+\DoxyCodeLine{  \{  0, 0,   0,  0, 64,   0,  0,  0 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 72 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterpolationFilter_ae29bf5ba595818fb5573e2d1b825bb82}\label{classvvenc_1_1InterpolationFilter_ae29bf5ba595818fb5573e2d1b825bb82}} 
+\index{InterpolationFilter@{InterpolationFilter}!m\_weightedGeoBlk@{m\_weightedGeoBlk}}
+\index{m\_weightedGeoBlk@{m\_weightedGeoBlk}!InterpolationFilter@{InterpolationFilter}}
+\doxysubsubsection{\texorpdfstring{m\_weightedGeoBlk}{m\_weightedGeoBlk}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+weighted\+Geo\+Blk(const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const uint32\+\_\+t width, const uint32\+\_\+t height, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx, const uint8\+\_\+t split\+Dir, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Dst, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src0, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Src1)}
+
+
+
+Definition at line 109 of file Interpolation\+Filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterpolationFilter_8h}{Interpolation\+Filter.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterpolationFilter_8cpp}{Interpolation\+Filter.\+cpp}}\end{DoxyCompactItemize}

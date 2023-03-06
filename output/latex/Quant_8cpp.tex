@@ -1,0 +1,41 @@
+\hypertarget{Quant_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Quant.cpp File Reference}
+\label{Quant_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Quant.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Quant.cpp}}
+
+
+transform and quantization class  
+
+
+{\ttfamily \#include \char`\"{}Quant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+Include dependency graph for Quant.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Quant_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{namespacevvenc_a0b9894d94827684dbcbf0d6d76f56ea9}{De\+Quant\+Core}} (const int maxX, const int maxY, const int scale, const T\+Coeff\+Sig $\ast$const pi\+Q\+Coef, const size\+\_\+t pi\+Q\+Cf\+Stride, T\+Coeff $\ast$const pi\+Coef, const int right\+Shift, const int input\+Maximum, const T\+Coeff transform\+Maximum)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a08fcd7b80ffe3dd46f20a17ae5d97cbf}{fwd\+Res\+D\+P\+CM}} (Transform\+Unit \&tu, const Component\+ID comp\+ID)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a974680acf026419129a8c54ddf390ebc}{inv\+Res\+D\+P\+CM}} (const Transform\+Unit \&tu, const Component\+ID comp\+ID, Coeff\+Sig\+Buf \&dst\+Buf)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+transform and quantization class 
+

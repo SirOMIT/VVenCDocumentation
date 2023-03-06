@@ -1,0 +1,21 @@
+<map id="dequant" name="dequant">
+<area shape="rect" id="node1" title=" " alt="" coords="5,363,73,390"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1TransformUnit.html#af06878784876e3b0829bb6d446c0a5e1" title=" " alt="" coords="377,5,525,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1Quant.html#a7fb8aaee3c27276fddd4f7ed802488ba" title="get Quant Coefficent" alt="" coords="156,211,277,238"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1SPS.html#aaafa68203d5ff84fb5dbf69a1d56dcb4" title=" " alt="" coords="360,77,543,119"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#a06f591cf54f525ddb70dee2447d487b1" title=" " alt="" coords="129,262,304,289"/>
+<area shape="rect" id="node6" href="$namespacevvenc.html#a4bd30501d0d8fb15a511a4c404f86e70" title=" " alt="" coords="132,363,301,390"/>
+<area shape="rect" id="node7" href="$namespacevvenc.html#a72ff05263d9deacacf1be65a8a68157a" title=" " alt="" coords="405,363,498,390"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1Quant.html#aaf9bef209f8995d48deb0fc81a187222" title="get DeQuant Coefficent" alt="" coords="153,465,281,491"/>
+<area shape="rect" id="node10" href="$namespacevvenc.html#a974680acf026419129a8c54ddf390ebc" title=" " alt="" coords="143,110,290,137"/>
+<area shape="rect" id="node11" href="$namespacevvenc.html#a28fa8a875cf8e2fac67b59efcab043b3" title=" " alt="" coords="375,157,527,183"/>
+<area shape="rect" id="node12" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="163,515,270,542"/>
+<area shape="rect" id="node13" href="$namespacevvenc_1_1CU.html#a9dba2390376b36d2a779733a99663842" title=" " alt="" coords="141,566,293,593"/>
+<area shape="rect" id="node16" href="$namespacevvenc_1_1TU.html#afb9178ebb2f773c8998ddde95cd74f8e" title=" " alt="" coords="121,414,312,441"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1QpParam.html#af680f20ccf32a724238887f578e16788" title=" " alt="" coords="143,617,290,643"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1QpParam.html#a8754dba87ba1b3a24a66893ea203c5d4" title=" " alt="" coords="141,667,292,694"/>
+<area shape="rect" id="node19" href="$structvvenc_1_1Area.html#abafa4627ac2b6e988b13588c4eb9f48f" title=" " alt="" coords="155,718,279,745"/>
+<area shape="rect" id="node8" href="$namespacevvenc.html#a1c67fbd69415ae8f053fbe313e4a5cda" title=" " alt="" coords="601,363,719,390"/>
+<area shape="rect" id="node14" href="$namespacevvenc_1_1CS.html#a740c9fbc8b40bc5bfd3a11aeefcf13bb" title=" " alt="" coords="372,566,531,593"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1Slice.html#a022764e04d9a5b3e4e90b20a70d05677" title=" " alt="" coords="591,566,729,593"/>
+</map>

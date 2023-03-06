@@ -1,0 +1,218 @@
+\hypertarget{structvvenc_1_1WaitCounter}{}\doxysection{Wait\+Counter}
+\label{structvvenc_1_1WaitCounter}\index{WaitCounter@{WaitCounter}}
+
+
+{\ttfamily \#include \char`\"{}No\+Malloc\+Thread\+Pool.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Wait\+Counter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{structvvenc_1_1WaitCounter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter_aea8065b62e64f2134e2c138b54542ff9}{Wait\+Counter}} ()=default
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter_ae511a99166accef024bddffa846796a8}{Wait\+Counter}} (const \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter_adbb1fad38c27a5f3dc37793a1a8d3912}{Wait\+Counter}} (\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&\&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter_aac1e3f9009276de6a8e43b05796241ad}{$\sim$\+Wait\+Counter}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1WaitCounter_a9d09cce3e7420b351d67ae6946b950f9}{is\+Blocked}} () const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1WaitCounter_aac042557bdb79bddb22a4411f123a533}{operator++}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1WaitCounter_a223991a75e50cde290582136ef563dc0}{operator-\/-\/}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \& \mbox{\hyperlink{structvvenc_1_1WaitCounter_a71c88f8087b6e0d6b8ec5605a160af89}{operator=}} (const \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \& \mbox{\hyperlink{structvvenc_1_1WaitCounter_a4805154bdf61283ff91c919b5fe2d784}{operator=}} (\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{structvvenc_1_1WaitCounter_afb29bf3a27e5fdce23652fb2a912269e}{wait}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} \mbox{\hyperlink{structvvenc_1_1WaitCounter_aa7816bec6ffd5b8d516245f89ebabf53}{done}} \{ false \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{structvvenc_1_1WaitCounter_a76964a5982cf430a1d7e7b4466dc11eb}{m\+\_\+cond}}
+\item 
+unsigned int \mbox{\hyperlink{structvvenc_1_1WaitCounter_a3ead989ffdf27edd0a19bd1bf3449e2a}{m\+\_\+count}} = 0
+\item 
+std\+::mutex \mbox{\hyperlink{structvvenc_1_1WaitCounter_a410ca7583ef9a8a0b1c80254580ff2a9}{m\+\_\+lock}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 179 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_aea8065b62e64f2134e2c138b54542ff9}\label{structvvenc_1_1WaitCounter_aea8065b62e64f2134e2c138b54542ff9}} 
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{WaitCounter()}{WaitCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_aac1e3f9009276de6a8e43b05796241ad}\label{structvvenc_1_1WaitCounter_aac1e3f9009276de6a8e43b05796241ad}} 
+\index{WaitCounter@{WaitCounter}!````~WaitCounter@{$\sim$WaitCounter}}
+\index{````~WaitCounter@{$\sim$WaitCounter}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{$\sim$WaitCounter()}{~WaitCounter()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 215 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_ae511a99166accef024bddffa846796a8}\label{structvvenc_1_1WaitCounter_ae511a99166accef024bddffa846796a8}} 
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{WaitCounter()}{WaitCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_adbb1fad38c27a5f3dc37793a1a8d3912}\label{structvvenc_1_1WaitCounter_adbb1fad38c27a5f3dc37793a1a8d3912}} 
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\index{WaitCounter@{WaitCounter}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{WaitCounter()}{WaitCounter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a9d09cce3e7420b351d67ae6946b950f9}\label{structvvenc_1_1WaitCounter_a9d09cce3e7420b351d67ae6946b950f9}} 
+\index{WaitCounter@{WaitCounter}!isBlocked@{isBlocked}}
+\index{isBlocked@{isBlocked}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{isBlocked()}{isBlocked()}}
+{\footnotesize\ttfamily bool is\+Blocked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_aac042557bdb79bddb22a4411f123a533}\label{structvvenc_1_1WaitCounter_aac042557bdb79bddb22a4411f123a533}} 
+\index{WaitCounter@{WaitCounter}!operator++@{operator++}}
+\index{operator++@{operator++}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily int operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{structvvenc_1_1WaitCounter_aac042557bdb79bddb22a4411f123a533_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a223991a75e50cde290582136ef563dc0}\label{structvvenc_1_1WaitCounter_a223991a75e50cde290582136ef563dc0}} 
+\index{WaitCounter@{WaitCounter}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily int operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{structvvenc_1_1WaitCounter_a223991a75e50cde290582136ef563dc0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a71c88f8087b6e0d6b8ec5605a160af89}\label{structvvenc_1_1WaitCounter_a71c88f8087b6e0d6b8ec5605a160af89}} 
+\index{WaitCounter@{WaitCounter}!operator=@{operator=}}
+\index{operator=@{operator=}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}}\& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a4805154bdf61283ff91c919b5fe2d784}\label{structvvenc_1_1WaitCounter_a4805154bdf61283ff91c919b5fe2d784}} 
+\index{WaitCounter@{WaitCounter}!operator=@{operator=}}
+\index{operator=@{operator=}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}}\& operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_afb29bf3a27e5fdce23652fb2a912269e}\label{structvvenc_1_1WaitCounter_afb29bf3a27e5fdce23652fb2a912269e}} 
+\index{WaitCounter@{WaitCounter}!wait@{wait}}
+\index{wait@{wait}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1WaitCounter_afb29bf3a27e5fdce23652fb2a912269e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_aa7816bec6ffd5b8d516245f89ebabf53}\label{structvvenc_1_1WaitCounter_aa7816bec6ffd5b8d516245f89ebabf53}} 
+\index{WaitCounter@{WaitCounter}!done@{done}}
+\index{done@{done}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} done \{ false \}}
+
+
+
+Definition at line 223 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a76964a5982cf430a1d7e7b4466dc11eb}\label{structvvenc_1_1WaitCounter_a76964a5982cf430a1d7e7b4466dc11eb}} 
+\index{WaitCounter@{WaitCounter}!m\_cond@{m\_cond}}
+\index{m\_cond@{m\_cond}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{m\_cond}{m\_cond}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable m\+\_\+cond\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 226 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a3ead989ffdf27edd0a19bd1bf3449e2a}\label{structvvenc_1_1WaitCounter_a3ead989ffdf27edd0a19bd1bf3449e2a}} 
+\index{WaitCounter@{WaitCounter}!m\_count@{m\_count}}
+\index{m\_count@{m\_count}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{m\_count}{m\_count}}
+{\footnotesize\ttfamily unsigned int m\+\_\+count = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 228 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1WaitCounter_a410ca7583ef9a8a0b1c80254580ff2a9}\label{structvvenc_1_1WaitCounter_a410ca7583ef9a8a0b1c80254580ff2a9}} 
+\index{WaitCounter@{WaitCounter}!m\_lock@{m\_lock}}
+\index{m\_lock@{m\_lock}!WaitCounter@{WaitCounter}}
+\doxysubsubsection{\texorpdfstring{m\_lock}{m\_lock}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+lock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 227 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8h}{No\+Malloc\+Thread\+Pool.\+h}}\end{DoxyCompactItemize}

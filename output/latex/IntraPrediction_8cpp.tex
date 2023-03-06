@@ -1,0 +1,48 @@
+\hypertarget{IntraPrediction_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Intra\+Prediction.cpp File Reference}
+\label{IntraPrediction_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/IntraPrediction.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/IntraPrediction.cpp}}
+{\ttfamily \#include \char`\"{}Intra\+Prediction.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interpolation\+Filter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Common\+Def\+X86.\+h\char`\"{}}\newline
+Include dependency graph for Intra\+Prediction.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{IntraPrediction_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_a3bc17f163b413099db55e09bb395c6e4}{Intra\+Angle\+P\+D\+P\+C\+\_\+\+Core}} (Pel $\ast$p\+Dsty, const int dst\+Stride, Pel $\ast$ref\+Side, const int width, const int height, int scale, int inv\+Angle)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a89aedc3e4e7b0bcf51ab1ef692dbab76}{Intra\+Hor\+Ver\+P\+D\+P\+C\+\_\+\+Core}} (Pel $\ast$p\+Dsty, const int dst\+Stride, Pel $\ast$ref\+Side, const int width, const int height, int scale, const Pel $\ast$ref\+Main, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7bc538d2489c3273288c2f6ba5013e42}{Intra\+Pred\+Angle\+Chroma\+\_\+\+Core}} (Pel $\ast$p\+Dst\+Buf, const ptrdiff\+\_\+t dst\+Stride, int16\+\_\+t $\ast$p\+Border, int width, int height, int delta\+Pos, int intra\+Pred\+Angle)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a7d21299ddbaa9d4fdacf7615f13111b9}{Intra\+Pred\+Angle\+Luma\+\_\+\+Core}} (Pel $\ast$p\+Dst\+Buf, const ptrdiff\+\_\+t dst\+Stride, Pel $\ast$ref\+Main, int width, int height, int delta\+Pos, int intra\+Pred\+Angle, const T\+Filter\+Coeff $\ast$ff\+\_\+unused, const bool use\+Cubic\+Filter, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_af8b9c0b20d10ddee3c47ebd7e86be645}{Intra\+Pred\+Sample\+Filter\+\_\+\+Core}} (Pel\+Buf \&dst\+Buf, const C\+Pel\+Buf \&p\+Src)
+\item 
+int \mbox{\hyperlink{namespacevvenc_ab8e2903184e7abd6cd296d6ceaa42ad6}{is\+Above\+Available}} (const Coding\+Unit \&cu, const Channel\+Type \&ch\+Type, const Position \&pos\+LT, const uint32\+\_\+t num\+Units, const uint32\+\_\+t unit\+Width, bool $\ast$valid\+Flags)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a6f60e7bcd23391fa75dad05fdb9b47a9}{is\+Above\+Left\+Available}} (const Coding\+Unit \&cu, const Channel\+Type \&ch\+Type, const Position \&pos\+LT)
+\item 
+int \mbox{\hyperlink{namespacevvenc_aabab6b56221418b9519d77cc661e0155}{is\+Above\+Right\+Available}} (const Coding\+Unit \&cu, const Channel\+Type \&ch\+Type, const Position \&pos\+RT, const uint32\+\_\+t num\+Units, const uint32\+\_\+t unit\+Height, bool $\ast$valid\+Flags)
+\item 
+int \mbox{\hyperlink{namespacevvenc_a0aad83c65c7a0cf1292f4ec961e2f973}{is\+Below\+Left\+Available}} (const Coding\+Unit \&cu, const Channel\+Type \&ch\+Type, const Position \&pos\+LB, const uint32\+\_\+t num\+Units, const uint32\+\_\+t unit\+Height, bool $\ast$valid\+Flags)
+\item 
+int \mbox{\hyperlink{namespacevvenc_ab60095bf85e9f74e310ad98124c3c108}{is\+Left\+Available}} (const Coding\+Unit \&cu, const Channel\+Type \&ch\+Type, const Position \&pos\+LT, const uint32\+\_\+t num\+Units, const uint32\+\_\+t unit\+Width, bool $\ast$valid\+Flags)
+\item 
+void \mbox{\hyperlink{namespacevvenc_afa6126d6be915415dbd7def2453300b4}{x\+Pred\+Intra\+Planar\+\_\+\+Core}} (Pel\+Buf \&p\+Dst, const C\+Pel\+Buf \&p\+Src)
+\end{DoxyCompactItemize}

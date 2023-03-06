@@ -1,0 +1,52 @@
+<map id="Slice" name="Slice">
+<area shape="rect" id="node1" title="slice header class" alt="" coords="1031,844,1082,871"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1CodingStructure.html" title=" " alt="" coords="1352,1287,1468,1313"/>
+<area shape="rect" id="node28" href="$structvvenc_1_1CodingUnit.html" title=" " alt="" coords="1581,1387,1668,1413"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1SliceMap.html" title=" " alt="" coords="665,740,741,767"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1ReferencePictureList.html" title=" " alt="" coords="631,523,775,549"/>
+<area shape="rect" id="node36" href="$structvvenc_1_1PicHeader.html" title=" " alt="" coords="1771,399,1854,425"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1SPS.html" title="SPS class." alt="" coords="678,1063,727,1089"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1VUI.html" title=" " alt="" coords="306,1091,351,1117"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1BitDepths.html" title=" " alt="" coords="289,1141,369,1168"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1ProfileTierLevel.html" title=" " alt="" coords="273,939,385,965"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1ConstraintInfo.html" title=" " alt="" coords="5,939,109,965"/>
+<area shape="rect" id="node9" href="$structvvenc_1_1SPSRExt.html" title="SPS RExt class." alt="" coords="289,989,368,1016"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1ChromaQpMappingTable.html" title=" " alt="" coords="246,1040,411,1067"/>
+<area shape="rect" id="node11" href="$structvvenc_1_1OlsHrdParams.html" title=" " alt="" coords="275,868,383,895"/>
+<area shape="rect" id="node15" href="$structvvenc_1_1VPS.html" title=" " alt="" coords="678,892,727,919"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1GeneralHrdParams.html" title=" " alt="" coords="262,805,395,832"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1Window.html" title=" " alt="" coords="294,1215,363,1241"/>
+<area shape="rect" id="node20" href="$structvvenc_1_1PPS.html" title="Reference Picture Lists class." alt="" coords="678,1243,727,1269"/>
+<area shape="rect" id="node14" href="$structvvenc_1_1DCI.html" title=" " alt="" coords="679,579,726,605"/>
+<area shape="rect" id="node23" href="$structvvenc_1_1Picture.html" title=" " alt="" coords="1593,685,1656,712"/>
+<area shape="rect" id="node16" href="$structvvenc_1_1APS.html" title=" " alt="" coords="678,405,727,432"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1ParameterSetMap.html" title=" " alt="" coords="1153,367,1328,409"/>
+<area shape="rect" id="node17" href="$structvvenc_1_1AlfParam.html" title=" " alt="" coords="291,405,367,432"/>
+<area shape="rect" id="node18" href="$structvvenc_1_1CcAlfFilterParam.html" title=" " alt="" coords="267,555,390,581"/>
+<area shape="rect" id="node19" href="$structvvenc_1_1LmcsParam.html" title=" " alt="" coords="283,315,375,341"/>
+<area shape="rect" id="node41" href="$classvvenc_1_1ReshapeData.html" title=" " alt="" coords="828,179,931,205"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1PreCalcValues.html" title=" " alt="" coords="275,1395,383,1421"/>
+<area shape="rect" id="node22" href="$structvvenc_1_1ChromaQpAdj.html" title=" " alt="" coords="277,1325,381,1352"/>
+<area shape="rect" id="node24" href="$structvvenc_1_1UnitArea.html" title=" " alt="" coords="666,1523,739,1549"/>
+<area shape="rect" id="node29" href="$structvvenc_1_1TransformUnit.html" title=" " alt="" coords="1760,1447,1865,1473"/>
+<area shape="rect" id="node32" href="$structvvenc_1_1PelStorage.html" title=" " alt="" coords="1013,964,1100,991"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1static__vector.html" title=" " alt="" coords="241,1515,416,1557"/>
+<area shape="rect" id="node26" href="$structvvenc_1_1CompArea.html" title=" " alt="" coords="15,1523,99,1549"/>
+<area shape="rect" id="node30" href="$structvvenc_1_1LutMotionCand.html" title=" " alt="" coords="1001,1065,1112,1092"/>
+<area shape="rect" id="node31" href="$structvvenc_1_1Size.html" title=" " alt="" coords="1033,1304,1081,1331"/>
+<area shape="rect" id="node33" href="$structvvenc_1_1UnitBuf.html" title=" " alt="" coords="660,1012,745,1039"/>
+<area shape="rect" id="node34" href="$structvvenc_1_1UnitScale.html" title=" " alt="" coords="1017,1405,1096,1432"/>
+<area shape="rect" id="node35" href="$structvvenc_1_1MotionInfo.html" title=" " alt="" coords="1015,1456,1098,1483"/>
+<area shape="rect" id="node37" href="$structvvenc_1_1WPScalingParam.html" title=" " alt="" coords="640,343,765,369"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1dynamic__cache.html" title=" " alt="" coords="984,1584,1129,1611"/>
+<area shape="rect" id="node39" href="$structvvenc_1_1LoopFilterParam.html" title=" " alt="" coords="998,1635,1115,1661"/>
+<area shape="rect" id="node40" href="$structvvenc_1_1StopClock.html" title=" " alt="" coords="1369,747,1451,773"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1BlkStat.html" title=" " alt="" coords="1377,505,1443,532"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1EncRCPic.html" title=" " alt="" coords="1368,107,1452,133"/>
+<area shape="rect" id="node44" href="$classvvenc_1_1EncRCSeq.html" title=" " alt="" coords="659,35,747,61"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1EncRCGOP.html" title=" " alt="" coords="1009,7,1104,33"/>
+<area shape="rect" id="node45" href="$structvvenc_1_1TRCLCU.html" title=" " alt="" coords="1018,120,1095,147"/>
+<area shape="rect" id="node48" href="$structvvenc_1_1WPACDCParam.html" title=" " alt="" coords="643,791,762,817"/>
+<area shape="rect" id="node49" href="$structvvenc_1_1ClpRngs.html" title=" " alt="" coords="666,841,739,868"/>
+<area shape="rect" id="node50" href="$structvvenc_1_1ClpRng.html" title=" " alt="" coords="295,723,362,749"/>
+</map>

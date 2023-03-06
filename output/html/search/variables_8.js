@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['h_9447',['h',['../structvvenc_1_1BlkUniMvInfo.html#a16611451551e3d15916bae723c3f59f7',1,'vvenc::BlkUniMvInfo::h()'],['../structvvenc_1_1AffineMVInfo.html#a16611451551e3d15916bae723c3f59f7',1,'vvenc::AffineMVInfo::h()']]],
+  ['halmvclipperiod_9448',['halMvClipPeriod',['../classvvenc_1_1Mv.html#a67c7b3822a7f7527371b5af18d365426',1,'vvenc::Mv']]],
+  ['handlecraascvsstart_9449',['handleCraAsCvsStart',['../structvvenc_1_1PicHeader.html#a05e311d5670710892865b6bc240b4e4c',1,'vvenc::PicHeader']]],
+  ['handlegdrascvsstart_9450',['handleGdrAsCvsStart',['../structvvenc_1_1PicHeader.html#a368a382635f14a2e27a7f78599781c85',1,'vvenc::PicHeader']]],
+  ['hash_9451',['hash',['../structvvenc_1_1PictureHash.html#a6a28c33e36bc31d24581a88caa61d945',1,'vvenc::PictureHash']]],
+  ['hashtypetoenummap_9452',['HashTypeToEnumMap',['../namespaceapputils.html#a886091d0ce2a70e9bd51cf8cca17530f',1,'apputils']]],
+  ['hasmergedcandlist_9453',['hasMergedCandList',['../structvvenc_1_1MergeCtx.html#a463d72d2756cf144b2803d21ee8cdaa1',1,'vvenc::MergeCtx']]],
+  ['hasprefixnalunittype_9454',['hasPrefixNalUnitType',['../structvvenc_1_1APS.html#a517b926cfe5c09a7e542fbc27df97c43',1,'vvenc::APS']]],
+  ['hdrmodetointmap_9455',['HdrModeToIntMap',['../namespaceapputils.html#a38a590592c459c892e164d5919e21510',1,'apputils']]],
+  ['height_9456',['height',['../structvvenc_1_1Size.html#acec3c14453d8e16034230db557345f1e',1,'vvenc::Size']]],
+  ['heightinctus_9457',['heightInCtus',['../classvvenc_1_1PreCalcValues.html#a5a3ee8f84c05a268e924019c23634040',1,'vvenc::PreCalcValues']]],
+  ['highprecisionoffsetsenabled_9458',['highPrecisionOffsetsEnabled',['../structvvenc_1_1SPSRExt.html#a9c5f3b748f402e6c3179817d20f14a3b',1,'vvenc::SPSRExt']]],
+  ['hor_9459',['hor',['../classvvenc_1_1Mv.html#a9b174252bf74fcf61c66527b24e23d3e',1,'vvenc::Mv']]],
+  ['hor_5fidx_9460',['HOR_IDX',['../namespacevvenc.html#a7747751fd2c2c8737d1080e4761f2bfe',1,'vvenc']]],
+  ['horcollocatedchroma_9461',['horCollocatedChroma',['../structvvenc_1_1SPS.html#ab47254af6137c93a33d68d960e195b53',1,'vvenc::SPS']]],
+  ['horrange_9462',['horRange',['../structvvenc_1_1SEIOmniViewport_1_1OmniViewport.html#a70a37d5bd7a47e911553295541842324',1,'vvenc::SEIOmniViewport::OmniViewport']]],
+  ['hrdcpbcntminus1_9463',['hrdCpbCntMinus1',['../structvvenc_1_1GeneralHrdParams.html#a7b863355c3abc435a8da6200f83c23cf',1,'vvenc::GeneralHrdParams']]],
+  ['hrdmaxtid_9464',['hrdMaxTid',['../structvvenc_1_1VPS.html#a0f1c53f654f49e855b7f7fafe2cd7525',1,'vvenc::VPS']]],
+  ['hrdparameterspresent_9465',['hrdParametersPresent',['../structvvenc_1_1SPS.html#a169a9498fe5395edd6f0a18b65945864',1,'vvenc::SPS']]]
+];

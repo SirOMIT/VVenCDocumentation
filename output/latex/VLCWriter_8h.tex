@@ -1,0 +1,111 @@
+\hypertarget{VLCWriter_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+V\+L\+C\+Writer.h File Reference}
+\label{VLCWriter_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/VLCWriter.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/VLCWriter.h}}
+
+
+Writer for high level syntax.  
+
+
+{\ttfamily \#include \char`\"{}C\+A\+B\+A\+C\+Writer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Bit\+Stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Slice.\+h\char`\"{}}\newline
+Include dependency graph for V\+L\+C\+Writer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{VLCWriter_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{VLCWriter_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1HLSWriter}{H\+L\+S\+Writer}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1VLCWriter}{V\+L\+C\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{VLCWriter_8h_acdaa90d1f9b2f9e8970d60f11a8e2430}{W\+R\+I\+T\+E\+\_\+\+C\+O\+DE}}(value,  length,  name)~x\+Write\+Code ( value, length )
+\item 
+\#define \mbox{\hyperlink{VLCWriter_8h_ad3396b47b5614c65540597136cd81a38}{W\+R\+I\+T\+E\+\_\+\+F\+L\+AG}}(value,  name)~x\+Write\+Flag ( value )
+\item 
+\#define \mbox{\hyperlink{VLCWriter_8h_a21cb957c85de4f990618d11a0fbe062b}{W\+R\+I\+T\+E\+\_\+\+S\+C\+O\+DE}}(value,  length,  name)~x\+Write\+S\+Code ( value, length )
+\item 
+\#define \mbox{\hyperlink{VLCWriter_8h_aa7348f53376f2011489e1592add75dfd}{W\+R\+I\+T\+E\+\_\+\+S\+V\+LC}}(value,  name)~x\+Write\+Svlc ( value )
+\item 
+\#define \mbox{\hyperlink{VLCWriter_8h_aaf45ec44679bbe71292f4dbc35945172}{W\+R\+I\+T\+E\+\_\+\+U\+V\+LC}}(value,  name)~x\+Write\+Uvlc ( value )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Writer for high level syntax. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{VLCWriter_8h_acdaa90d1f9b2f9e8970d60f11a8e2430}\label{VLCWriter_8h_acdaa90d1f9b2f9e8970d60f11a8e2430}} 
+\index{VLCWriter.h@{VLCWriter.h}!WRITE\_CODE@{WRITE\_CODE}}
+\index{WRITE\_CODE@{WRITE\_CODE}!VLCWriter.h@{VLCWriter.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_CODE}{WRITE\_CODE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+C\+O\+DE(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{length,  }\item[{}]{name }\end{DoxyParamCaption})~x\+Write\+Code ( value, length )}
+
+
+
+Definition at line 77 of file V\+L\+C\+Writer.\+h.
+
+\mbox{\Hypertarget{VLCWriter_8h_ad3396b47b5614c65540597136cd81a38}\label{VLCWriter_8h_ad3396b47b5614c65540597136cd81a38}} 
+\index{VLCWriter.h@{VLCWriter.h}!WRITE\_FLAG@{WRITE\_FLAG}}
+\index{WRITE\_FLAG@{WRITE\_FLAG}!VLCWriter.h@{VLCWriter.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_FLAG}{WRITE\_FLAG}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+F\+L\+AG(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{name }\end{DoxyParamCaption})~x\+Write\+Flag ( value )}
+
+
+
+Definition at line 80 of file V\+L\+C\+Writer.\+h.
+
+\mbox{\Hypertarget{VLCWriter_8h_a21cb957c85de4f990618d11a0fbe062b}\label{VLCWriter_8h_a21cb957c85de4f990618d11a0fbe062b}} 
+\index{VLCWriter.h@{VLCWriter.h}!WRITE\_SCODE@{WRITE\_SCODE}}
+\index{WRITE\_SCODE@{WRITE\_SCODE}!VLCWriter.h@{VLCWriter.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_SCODE}{WRITE\_SCODE}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+S\+C\+O\+DE(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{length,  }\item[{}]{name }\end{DoxyParamCaption})~x\+Write\+S\+Code ( value, length )}
+
+
+
+Definition at line 76 of file V\+L\+C\+Writer.\+h.
+
+\mbox{\Hypertarget{VLCWriter_8h_aa7348f53376f2011489e1592add75dfd}\label{VLCWriter_8h_aa7348f53376f2011489e1592add75dfd}} 
+\index{VLCWriter.h@{VLCWriter.h}!WRITE\_SVLC@{WRITE\_SVLC}}
+\index{WRITE\_SVLC@{WRITE\_SVLC}!VLCWriter.h@{VLCWriter.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_SVLC}{WRITE\_SVLC}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+S\+V\+LC(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{name }\end{DoxyParamCaption})~x\+Write\+Svlc ( value )}
+
+
+
+Definition at line 79 of file V\+L\+C\+Writer.\+h.
+
+\mbox{\Hypertarget{VLCWriter_8h_aaf45ec44679bbe71292f4dbc35945172}\label{VLCWriter_8h_aaf45ec44679bbe71292f4dbc35945172}} 
+\index{VLCWriter.h@{VLCWriter.h}!WRITE\_UVLC@{WRITE\_UVLC}}
+\index{WRITE\_UVLC@{WRITE\_UVLC}!VLCWriter.h@{VLCWriter.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_UVLC}{WRITE\_UVLC}}
+{\footnotesize\ttfamily \#define W\+R\+I\+T\+E\+\_\+\+U\+V\+LC(\begin{DoxyParamCaption}\item[{}]{value,  }\item[{}]{name }\end{DoxyParamCaption})~x\+Write\+Uvlc ( value )}
+
+
+
+Definition at line 78 of file V\+L\+C\+Writer.\+h.
+

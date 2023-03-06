@@ -1,0 +1,4 @@
+<map id="vvenc_set_logging_callback" name="vvenc_set_logging_callback">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,191,39"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1VVEncImpl.html#ad5d4a03074b552d14991f0f460a5d990" title="set message output function for encoder lib. if not set, no messages will be printed." alt="" coords="239,5,421,47"/>
+</map>

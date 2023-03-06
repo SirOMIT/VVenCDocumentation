@@ -1,0 +1,52 @@
+<map id="cu_pred_data" name="cu_pred_data">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1906,105,1933"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1CABACWriter.html#a4e2933355edba2cec6856873ae7c1c72" title=" " alt="" coords="176,1341,305,1368"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1CABACWriter.html#a54e4dbc8b16671c79f2f9788a05371e7" title=" " alt="" coords="191,425,291,452"/>
+<area shape="rect" id="node9" href="$namespacevvenc_1_1CU.html#ab722b39b132601673d1dcd3547c2c01c" title=" " alt="" coords="683,1817,813,1844"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1UnitArea.html#af4fc20e5d676250d96c09bcd2ef2a6b0" title=" " alt="" coords="917,1653,1051,1680"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1CABACWriter.html#adf7e92a28d7b405d9ae959e62c06badf" title=" " alt="" coords="193,1450,288,1477"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1CABACWriter.html#a9905175366db56e42ac606b69feb4630" title=" " alt="" coords="438,70,521,97"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1CABACWriter.html#a4f2d9fb65b060ff3b3816c5ca618dfd2" title=" " alt="" coords="153,2160,328,2186"/>
+<area shape="rect" id="node28" href="$namespacevvenc_1_1CU.html#a9dba2390376b36d2a779733a99663842" title=" " alt="" coords="403,2210,555,2237"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1CABACWriter.html#a79faedf10fb9781a09afa7251363b7b5" title=" " alt="" coords="161,1830,321,1857"/>
+<area shape="rect" id="node32" href="$structvvenc_1_1CompArea.html#a315419f26d3c59fa143b49b90a019049" title=" " alt="" coords="667,2058,829,2085"/>
+<area shape="rect" id="node38" href="$namespacevvenc.html#ae73f6f2b632c978d0661ed7c8d50a685" title=" " alt="" coords="157,2312,325,2338"/>
+<area shape="rect" id="node39" href="$classvvenc_1_1CABACWriter.html#af546cdf16d6a708e4af0549a763ddf93" title=" " alt="" coords="187,802,294,829"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1BinEncIf.html#a13eeadd827b0d7e9591f2e6fa4ecbf69" title=" " alt="" coords="656,1064,840,1090"/>
+<area shape="rect" id="node4" href="$namespacevvenc_1_1CU.html#a078b8a5a9b42d087da4bb020b481b6e4" title=" " alt="" coords="376,1334,583,1375"/>
+<area shape="rect" id="node6" href="$namespacevvenc_1_1CU.html#aad70e7b98f979b650bfbd7a98d4d7a6a" title=" " alt="" coords="390,912,569,938"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1UnitArea.html#a4e90d02ac922aac526ffdc35a9f13687" title=" " alt="" coords="651,273,845,300"/>
+<area shape="rect" id="node10" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="695,1534,801,1561"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1UnitArea.html#adbbe87f880e5fcea67153030935e047a" title=" " alt="" coords="653,20,843,46"/>
+<area shape="rect" id="node14" href="$structvvenc_1_1UnitArea.html#aeba81e3c9f0d1188a63486747ec662ee" title=" " alt="" coords="667,324,829,350"/>
+<area shape="rect" id="node15" href="$structvvenc_1_1UnitArea.html#a757617e1ebf8cdcd3b69b08b778bb13f" title=" " alt="" coords="661,912,835,938"/>
+<area shape="rect" id="node16" href="$structvvenc_1_1UnitArea.html#a33ccc64f705e98a484194f765d797721" title=" " alt="" coords="669,425,827,452"/>
+<area shape="rect" id="node17" href="$namespacevvenc.html#a28fa8a875cf8e2fac67b59efcab043b3" title=" " alt="" coords="403,121,555,148"/>
+<area shape="rect" id="node11" href="$structvvenc_1_1UnitArea.html#af1fa78f94bcedbacf8bd882ce5da43f7" title=" " alt="" coords="659,602,837,629"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1UnitArea.html#a5a0489d44d1a78cf7f669e16016b424c" title=" " alt="" coords="913,146,1055,173"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1BinEncIf.html#ad84041cd0399e681f82d4d20826c7a37" title=" " alt="" coords="647,1349,849,1376"/>
+<area shape="rect" id="node20" href="$namespacevvenc_1_1CU.html#a73139b4446191d10713b95d20c51f1fd" title=" " alt="" coords="388,1450,571,1477"/>
+<area shape="rect" id="node21" href="$namespacevvenc_1_1CU.html#aa0b6f5b1ae4c0824d28f9c6af5eb5817" title=" " alt="" coords="387,324,572,350"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1Slice.html#a0794e383d8094d8b0b22a24091d94cb0" title="get tables for weighted prediction" alt="" coords="657,374,839,401"/>
+<area shape="rect" id="node24" href="$namespacevvenc_1_1CU.html#ab3f15c307a4e4dda9e1b7106bdb947de" title=" " alt="" coords="631,70,865,97"/>
+<area shape="rect" id="node25" href="$namespacevvenc_1_1CU.html#a3041ffe17dbda47017f7e074f714c544" title=" " alt="" coords="685,222,811,249"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1CABACWriter.html#a05bf4018ffa70f46a1db89edf31e3af7" title=" " alt="" coords="395,1602,563,1629"/>
+<area shape="rect" id="node29" href="$namespacevvenc_1_1CS.html#a740c9fbc8b40bc5bfd3a11aeefcf13bb" title=" " alt="" coords="669,2210,827,2237"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1CABACWriter.html#a4e477e4c9bce6a62686f9e1fe070ad17" title=" " alt="" coords="424,1754,535,1781"/>
+<area shape="rect" id="node33" href="$namespacevvenc_1_1CU.html#a01a54a79ae474d03cc0c0ec7143ab395" title=" " alt="" coords="392,1906,567,1933"/>
+<area shape="rect" id="node34" href="$classvvenc_1_1CABACWriter.html#a4f5597c26c098b7a8fcee11071e1a66d" title=" " alt="" coords="440,1704,519,1730"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1CABACWriter.html#a3d65246e1c535ea3328d2eb88a7ff9b6" title=" " alt="" coords="444,1653,515,1680"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1CABACWriter.html#a17dced288ddae81cd41de1977a689135" title=" " alt="" coords="419,2109,540,2136"/>
+<area shape="rect" id="node37" href="$classvvenc_1_1CABACWriter.html#a288515cba550b1aa671fa5331f692092" title=" " alt="" coords="408,1805,551,1832"/>
+<area shape="rect" id="node40" href="$classvvenc_1_1CABACWriter.html#a3f3bfaf3e215ade43eb4cd507f01b31b" title=" " alt="" coords="438,526,521,553"/>
+<area shape="rect" id="node41" href="$classvvenc_1_1Mv.html#adff6f41d923245a695197e0b0623a2ab" title=" " alt="" coords="382,730,577,771"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1Mv.html#abb18e669a4250e02d7fba589ffdb3bc8" title=" " alt="" coords="390,795,569,836"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1Mv.html#ae2792dbfd34372253b7997e43f635d51" title=" " alt="" coords="383,1166,576,1207"/>
+<area shape="rect" id="node44" href="$classvvenc_1_1CABACWriter.html#a3c4501d902f28437f138486d74b7eaac" title=" " alt="" coords="428,1064,531,1090"/>
+<area shape="rect" id="node45" href="$classvvenc_1_1CABACWriter.html#a25209148715302298bf0df62aed7f801" title=" " alt="" coords="434,425,525,452"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1CABACWriter.html#a1a2782bfaa4c37f7b47a39635c8047dd" title=" " alt="" coords="436,628,523,654"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1CABACWriter.html#a2125b8d6b9a2b1bc9af7eaf8146fad0a" title=" " alt="" coords="433,1282,525,1309"/>
+<area shape="rect" id="node48" href="$classvvenc_1_1CABACWriter.html#ae582cb4597328a2b7a9e894cbaa261d6" title=" " alt="" coords="442,962,517,989"/>
+<area shape="rect" id="node49" href="$classvvenc_1_1CABACWriter.html#a0f5906d1c13e380ddfab803fad8a8ca2" title=" " alt="" coords="449,861,510,888"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1CABACWriter.html#a597e050004c8f0aa4645ac8ae35ccd23" title=" " alt="" coords="433,577,526,604"/>
+</map>

@@ -1,0 +1,724 @@
+\hypertarget{structvvenc_1_1VPS}{}\doxysection{V\+PS}
+\label{structvvenc_1_1VPS}\index{VPS@{VPS}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for V\+PS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{structvvenc_1_1VPS__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1VPS_a50e0ed3078723824adafd04321058394}{V\+PS}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1VPS_a7e3292b22d94b1385ab6557a6a1fe15a}{derive\+Output\+Layer\+Sets}} ()
+\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_ae91851067890cf0cf2098e29066938ff}{get\+Max\+Dec\+Pic\+Buffering}} (int temporal\+Id) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_ad1cc6345439520c87bc10befb07b7100}{get\+Num\+Reorder\+Pics}} (int temporal\+Id) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_ac8492ac0d6ac03fb6c04d1178023f039}{all\+Independent\+Layers}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_aa76a4ba8dfcc0caa07330e64b7c9bb0c}{all\+Layers\+Same\+Num\+Sub\+Layers}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a61e0b478cf27641763eaf91423780636}{default\+Ptl\+Dpb\+Hrd\+Max\+Tid\+Flag}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a73614970fe735e806f4beb88797ec7f1}{direct\+Ref\+Layer}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a3d1743fbad30e0f3fcffc88732953637}{direct\+Ref\+Layer\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a692b14c574121c6e328b0078e312d41c}{dpb\+Max\+Temporal\+Id}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1DpbParameters}{Dpb\+Parameters}} $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a0d3ad07ee1cfcc1374198c12939cfbff}{dpb\+Parameters}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a06c1df4ce9d471cc02886da85fb01851}{each\+Layer\+Is\+An\+Ols}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a5260d183ac495fa83bbb49c60c0680f6}{extension}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} \mbox{\hyperlink{structvvenc_1_1VPS_a204719df926903a6e8ed7a1a6327f1c6}{general\+Hrd\+Params}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a4c45bab2d69db27a56203797f61d4d09}{general\+Hrd\+Params\+Present}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a704562298014e3387cbc34fae15e9868}{general\+Layer\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a0f1c53f654f49e855b7f7fafe2cd7525}{hrd\+Max\+Tid}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_ae0f4326c68cdf9631184e030fc159a01}{independent\+Layer}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a16d6c5bd6715c17d2ea18f8029ec7882}{inter\+Layer\+Ref\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a947ca21b9a6514246c4e86c75a297b3c}{layer\+Id}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{structvvenc_1_1VPS_aea6e4dbc98dda1a3df579ec5cf897002}{layer\+Id\+In\+Ols}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a8e58181a5b39878e04ef485e1d36c7e7}{max\+Layers}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a365959bcfa86d12ddd781248e7b151f9}{max\+Sub\+Layers}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a10dd326b748740673e42e3be8f3a1fb0}{max\+Tid\+Il\+Ref\+Pics\+Plus1}} \mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a4e315784dbeb5f75e4365025d525da70}{multi\+Layer\+Ols\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_aaaacee5ddef13bff9a8eacd29c91825b}{num\+Dpb\+Params}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_ac34302604ff2bc6512e473bcd7f921a8}{num\+Layers\+In\+Ols}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_ae03357995743d36de28701a9f9c3506f}{num\+Multi\+Layered\+Olss}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a15c17d0a8967fa0e95c2f65326d6ac87}{num\+Ols\+Hrd\+Params\+Minus1}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a7b5048449df2916d7e699fb6b8332e17}{num\+Output\+Layer\+Sets}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a5c083c8a938a11b077aae9e79a44a91b}{num\+Output\+Layers\+In\+Ols}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a01095038ba9754c75a85920fa5f0f52c}{num\+Ptls}}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a568d8e971f1e39313d80fecad7a95202}{num\+Sub\+Layers\+In\+Layer\+In\+O\+LS}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_afe9a1caf4bef83e6b4f34f25fa0c5ce7}{ols\+Dpb\+Bit\+Depth\+Minus8}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a07fb39cda5de8bfdfed6b4b915669152}{ols\+Dpb\+Chroma\+Format\+Idc}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_ad8dcc5839f355b96e78718fb5277eb4a}{ols\+Dpb\+Params\+Idx}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1Size}{Size}} $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a4b79ee4c4da8708f4bb43762b3548111}{ols\+Dpb\+Pic\+Size}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a158b415b95f02c6819310fc7cc7102f1}{ols\+Hrd\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1OlsHrdParams}{Ols\+Hrd\+Params}} \mbox{\hyperlink{structvvenc_1_1VPS_a3d746b5bf652a2a5c472dc9ed08c39b4}{ols\+Hrd\+Params}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a5c27c9edad2342bef8fe85ace77f29a0}{ols\+Mode\+Idc}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_ac3052f4eb3ef74650a79aeb0b65eb046}{ols\+Output\+Layer}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a2248af13525a78382553c2d72b7d049c}{ols\+Ptl\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a56201857d38e11e3b1084df21b499617}{output\+Layer\+Id\+In\+Ols}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1ProfileTierLevel}{Profile\+Tier\+Level}} $>$ \mbox{\hyperlink{structvvenc_1_1VPS_af78bd94cd0aaca981e0cd3058f7e7b38}{profile\+Tier\+Level}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_ac69cbacf3a53517b4379269ac7356025}{ptl\+Max\+Temporal\+Id}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a31ddfd7fc969ec99bf9e62ee70495f9c}{pt\+Present}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a2dfd035ae30d2dd2e60995938b0864b7}{sublayer\+Cpb\+Params\+Present}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1VPS_a3269066b09490519d930c17462845b18}{sublayer\+Dpb\+Params\+Present}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a0ab7e72d630391ae8e5c25c89438a255}{target\+Layer\+Id\+Set}}
+\begin{DoxyCompactList}\small\item\em set of Layer\+Ids to be included in the sub-\/bitstream extraction process. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_ab72527132e941aa357c5bf24b657efc1}{target\+Ols\+Idx}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{structvvenc_1_1VPS_a420e0e2b447aaaba7ac09a29a3e6d63c}{target\+Output\+Layer\+Id\+Set}}
+\begin{DoxyCompactList}\small\item\em set of Layer\+Ids to be outputted \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structvvenc_1_1VPS_afb67303cdf8aee4a76009063347ce933}{total\+Num\+O\+L\+Ss}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_aa931b0243dfb2531f0f7be6c819c0ede}{vps\+Cfg\+Pred\+Direction}} \mbox{[}\mbox{\hyperlink{namespacevvenc_acacc4bebfabeb340743b0575612b81fa}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+S\+U\+B\+L\+A\+Y\+E\+RS}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1VPS_a54c2a7678ace7afd8d80a5f486a75b3d}{vps\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 457 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1VPS_a50e0ed3078723824adafd04321058394}\label{structvvenc_1_1VPS_a50e0ed3078723824adafd04321058394}} 
+\index{VPS@{VPS}!VPS@{VPS}}
+\index{VPS@{VPS}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{VPS()}{VPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 515 of file Slice.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1VPS_a7e3292b22d94b1385ab6557a6a1fe15a}\label{structvvenc_1_1VPS_a7e3292b22d94b1385ab6557a6a1fe15a}} 
+\index{VPS@{VPS}!deriveOutputLayerSets@{deriveOutputLayerSets}}
+\index{deriveOutputLayerSets@{deriveOutputLayerSets}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{deriveOutputLayerSets()}{deriveOutputLayerSets()}}
+{\footnotesize\ttfamily void derive\+Output\+Layer\+Sets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2142 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1VPS_a7e3292b22d94b1385ab6557a6a1fe15a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1VPS_ae91851067890cf0cf2098e29066938ff}\label{structvvenc_1_1VPS_ae91851067890cf0cf2098e29066938ff}} 
+\index{VPS@{VPS}!getMaxDecPicBuffering@{getMaxDecPicBuffering}}
+\index{getMaxDecPicBuffering@{getMaxDecPicBuffering}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{getMaxDecPicBuffering()}{getMaxDecPicBuffering()}}
+{\footnotesize\ttfamily int get\+Max\+Dec\+Pic\+Buffering (\begin{DoxyParamCaption}\item[{int}]{temporal\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 545 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1VPS_ae91851067890cf0cf2098e29066938ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1VPS_ad1cc6345439520c87bc10befb07b7100}\label{structvvenc_1_1VPS_ad1cc6345439520c87bc10befb07b7100}} 
+\index{VPS@{VPS}!getNumReorderPics@{getNumReorderPics}}
+\index{getNumReorderPics@{getNumReorderPics}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{getNumReorderPics()}{getNumReorderPics()}}
+{\footnotesize\ttfamily int get\+Num\+Reorder\+Pics (\begin{DoxyParamCaption}\item[{int}]{temporal\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 546 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1VPS_ad1cc6345439520c87bc10befb07b7100_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1VPS_ac8492ac0d6ac03fb6c04d1178023f039}\label{structvvenc_1_1VPS_ac8492ac0d6ac03fb6c04d1178023f039}} 
+\index{VPS@{VPS}!allIndependentLayers@{allIndependentLayers}}
+\index{allIndependentLayers@{allIndependentLayers}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{allIndependentLayers}{allIndependentLayers}}
+{\footnotesize\ttfamily bool all\+Independent\+Layers}
+
+
+
+Definition at line 465 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_aa76a4ba8dfcc0caa07330e64b7c9bb0c}\label{structvvenc_1_1VPS_aa76a4ba8dfcc0caa07330e64b7c9bb0c}} 
+\index{VPS@{VPS}!allLayersSameNumSubLayers@{allLayersSameNumSubLayers}}
+\index{allLayersSameNumSubLayers@{allLayersSameNumSubLayers}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{allLayersSameNumSubLayers}{allLayersSameNumSubLayers}}
+{\footnotesize\ttfamily bool all\+Layers\+Same\+Num\+Sub\+Layers}
+
+
+
+Definition at line 464 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a61e0b478cf27641763eaf91423780636}\label{structvvenc_1_1VPS_a61e0b478cf27641763eaf91423780636}} 
+\index{VPS@{VPS}!defaultPtlDpbHrdMaxTidFlag@{defaultPtlDpbHrdMaxTidFlag}}
+\index{defaultPtlDpbHrdMaxTidFlag@{defaultPtlDpbHrdMaxTidFlag}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{defaultPtlDpbHrdMaxTidFlag}{defaultPtlDpbHrdMaxTidFlag}}
+{\footnotesize\ttfamily bool default\+Ptl\+Dpb\+Hrd\+Max\+Tid\+Flag}
+
+
+
+Definition at line 463 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a73614970fe735e806f4beb88797ec7f1}\label{structvvenc_1_1VPS_a73614970fe735e806f4beb88797ec7f1}} 
+\index{VPS@{VPS}!directRefLayer@{directRefLayer}}
+\index{directRefLayer@{directRefLayer}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{directRefLayer}{directRefLayer}}
+{\footnotesize\ttfamily bool direct\+Ref\+Layer\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 468 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a3d1743fbad30e0f3fcffc88732953637}\label{structvvenc_1_1VPS_a3d1743fbad30e0f3fcffc88732953637}} 
+\index{VPS@{VPS}!directRefLayerIdx@{directRefLayerIdx}}
+\index{directRefLayerIdx@{directRefLayerIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{directRefLayerIdx}{directRefLayerIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t direct\+Ref\+Layer\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 474 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a692b14c574121c6e328b0078e312d41c}\label{structvvenc_1_1VPS_a692b14c574121c6e328b0078e312d41c}} 
+\index{VPS@{VPS}!dpbMaxTemporalId@{dpbMaxTemporalId}}
+\index{dpbMaxTemporalId@{dpbMaxTemporalId}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{dpbMaxTemporalId}{dpbMaxTemporalId}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ dpb\+Max\+Temporal\+Id}
+
+
+
+Definition at line 507 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a0d3ad07ee1cfcc1374198c12939cfbff}\label{structvvenc_1_1VPS_a0d3ad07ee1cfcc1374198c12939cfbff}} 
+\index{VPS@{VPS}!dpbParameters@{dpbParameters}}
+\index{dpbParameters@{dpbParameters}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{dpbParameters}{dpbParameters}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1DpbParameters}{Dpb\+Parameters}}$>$ dpb\+Parameters}
+
+
+
+Definition at line 505 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a06c1df4ce9d471cc02886da85fb01851}\label{structvvenc_1_1VPS_a06c1df4ce9d471cc02886da85fb01851}} 
+\index{VPS@{VPS}!eachLayerIsAnOls@{eachLayerIsAnOls}}
+\index{eachLayerIsAnOls@{eachLayerIsAnOls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{eachLayerIsAnOls}{eachLayerIsAnOls}}
+{\footnotesize\ttfamily bool each\+Layer\+Is\+An\+Ols}
+
+
+
+Definition at line 470 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a5260d183ac495fa83bbb49c60c0680f6}\label{structvvenc_1_1VPS_a5260d183ac495fa83bbb49c60c0680f6}} 
+\index{VPS@{VPS}!extension@{extension}}
+\index{extension@{extension}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{extension}{extension}}
+{\footnotesize\ttfamily bool extension}
+
+
+
+Definition at line 484 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a204719df926903a6e8ed7a1a6327f1c6}\label{structvvenc_1_1VPS_a204719df926903a6e8ed7a1a6327f1c6}} 
+\index{VPS@{VPS}!generalHrdParams@{generalHrdParams}}
+\index{generalHrdParams@{generalHrdParams}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{generalHrdParams}{generalHrdParams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} general\+Hrd\+Params}
+
+
+
+Definition at line 491 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a4c45bab2d69db27a56203797f61d4d09}\label{structvvenc_1_1VPS_a4c45bab2d69db27a56203797f61d4d09}} 
+\index{VPS@{VPS}!generalHrdParamsPresent@{generalHrdParamsPresent}}
+\index{generalHrdParamsPresent@{generalHrdParamsPresent}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{generalHrdParamsPresent}{generalHrdParamsPresent}}
+{\footnotesize\ttfamily bool general\+Hrd\+Params\+Present}
+
+
+
+Definition at line 486 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a704562298014e3387cbc34fae15e9868}\label{structvvenc_1_1VPS_a704562298014e3387cbc34fae15e9868}} 
+\index{VPS@{VPS}!generalLayerIdx@{generalLayerIdx}}
+\index{generalLayerIdx@{generalLayerIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{generalLayerIdx}{generalLayerIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t general\+Layer\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 475 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a0f1c53f654f49e855b7f7fafe2cd7525}\label{structvvenc_1_1VPS_a0f1c53f654f49e855b7f7fafe2cd7525}} 
+\index{VPS@{VPS}!hrdMaxTid@{hrdMaxTid}}
+\index{hrdMaxTid@{hrdMaxTid}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{hrdMaxTid}{hrdMaxTid}}
+{\footnotesize\ttfamily uint32\+\_\+t hrd\+Max\+Tid\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 489 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ae0f4326c68cdf9631184e030fc159a01}\label{structvvenc_1_1VPS_ae0f4326c68cdf9631184e030fc159a01}} 
+\index{VPS@{VPS}!independentLayer@{independentLayer}}
+\index{independentLayer@{independentLayer}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{independentLayer}{independentLayer}}
+{\footnotesize\ttfamily bool independent\+Layer\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 467 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a16d6c5bd6715c17d2ea18f8029ec7882}\label{structvvenc_1_1VPS_a16d6c5bd6715c17d2ea18f8029ec7882}} 
+\index{VPS@{VPS}!interLayerRefIdx@{interLayerRefIdx}}
+\index{interLayerRefIdx@{interLayerRefIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{interLayerRefIdx}{interLayerRefIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t inter\+Layer\+Ref\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 483 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a947ca21b9a6514246c4e86c75a297b3c}\label{structvvenc_1_1VPS_a947ca21b9a6514246c4e86c75a297b3c}} 
+\index{VPS@{VPS}!layerId@{layerId}}
+\index{layerId@{layerId}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{layerId}{layerId}}
+{\footnotesize\ttfamily uint32\+\_\+t layer\+Id\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 462 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_aea6e4dbc98dda1a3df579ec5cf897002}\label{structvvenc_1_1VPS_aea6e4dbc98dda1a3df579ec5cf897002}} 
+\index{VPS@{VPS}!layerIdInOls@{layerIdInOls}}
+\index{layerIdInOls@{layerIdInOls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{layerIdInOls}{layerIdInOls}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ layer\+Id\+In\+Ols}
+
+
+
+Definition at line 513 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a8e58181a5b39878e04ef485e1d36c7e7}\label{structvvenc_1_1VPS_a8e58181a5b39878e04ef485e1d36c7e7}} 
+\index{VPS@{VPS}!maxLayers@{maxLayers}}
+\index{maxLayers@{maxLayers}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{maxLayers}{maxLayers}}
+{\footnotesize\ttfamily uint32\+\_\+t max\+Layers}
+
+
+
+Definition at line 460 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a365959bcfa86d12ddd781248e7b151f9}\label{structvvenc_1_1VPS_a365959bcfa86d12ddd781248e7b151f9}} 
+\index{VPS@{VPS}!maxSubLayers@{maxSubLayers}}
+\index{maxSubLayers@{maxSubLayers}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{maxSubLayers}{maxSubLayers}}
+{\footnotesize\ttfamily uint32\+\_\+t max\+Sub\+Layers}
+
+
+
+Definition at line 461 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a10dd326b748740673e42e3be8f3a1fb0}\label{structvvenc_1_1VPS_a10dd326b748740673e42e3be8f3a1fb0}} 
+\index{VPS@{VPS}!maxTidIlRefPicsPlus1@{maxTidIlRefPicsPlus1}}
+\index{maxTidIlRefPicsPlus1@{maxTidIlRefPicsPlus1}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{maxTidIlRefPicsPlus1}{maxTidIlRefPicsPlus1}}
+{\footnotesize\ttfamily uint8\+\_\+t max\+Tid\+Il\+Ref\+Pics\+Plus1\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 469 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a4e315784dbeb5f75e4365025d525da70}\label{structvvenc_1_1VPS_a4e315784dbeb5f75e4365025d525da70}} 
+\index{VPS@{VPS}!multiLayerOlsIdx@{multiLayerOlsIdx}}
+\index{multiLayerOlsIdx@{multiLayerOlsIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{multiLayerOlsIdx}{multiLayerOlsIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t multi\+Layer\+Ols\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 503 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_aaaacee5ddef13bff9a8eacd29c91825b}\label{structvvenc_1_1VPS_aaaacee5ddef13bff9a8eacd29c91825b}} 
+\index{VPS@{VPS}!numDpbParams@{numDpbParams}}
+\index{numDpbParams@{numDpbParams}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numDpbParams}{numDpbParams}}
+{\footnotesize\ttfamily int num\+Dpb\+Params}
+
+
+
+Definition at line 504 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ac34302604ff2bc6512e473bcd7f921a8}\label{structvvenc_1_1VPS_ac34302604ff2bc6512e473bcd7f921a8}} 
+\index{VPS@{VPS}!numLayersInOls@{numLayersInOls}}
+\index{numLayersInOls@{numLayersInOls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numLayersInOls}{numLayersInOls}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ num\+Layers\+In\+Ols}
+
+
+
+Definition at line 512 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ae03357995743d36de28701a9f9c3506f}\label{structvvenc_1_1VPS_ae03357995743d36de28701a9f9c3506f}} 
+\index{VPS@{VPS}!numMultiLayeredOlss@{numMultiLayeredOlss}}
+\index{numMultiLayeredOlss@{numMultiLayeredOlss}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numMultiLayeredOlss}{numMultiLayeredOlss}}
+{\footnotesize\ttfamily int num\+Multi\+Layered\+Olss}
+
+
+
+Definition at line 502 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a15c17d0a8967fa0e95c2f65326d6ac87}\label{structvvenc_1_1VPS_a15c17d0a8967fa0e95c2f65326d6ac87}} 
+\index{VPS@{VPS}!numOlsHrdParamsMinus1@{numOlsHrdParamsMinus1}}
+\index{numOlsHrdParamsMinus1@{numOlsHrdParamsMinus1}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numOlsHrdParamsMinus1}{numOlsHrdParamsMinus1}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Ols\+Hrd\+Params\+Minus1}
+
+
+
+Definition at line 488 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a7b5048449df2916d7e699fb6b8332e17}\label{structvvenc_1_1VPS_a7b5048449df2916d7e699fb6b8332e17}} 
+\index{VPS@{VPS}!numOutputLayerSets@{numOutputLayerSets}}
+\index{numOutputLayerSets@{numOutputLayerSets}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numOutputLayerSets}{numOutputLayerSets}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Output\+Layer\+Sets}
+
+
+
+Definition at line 472 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a5c083c8a938a11b077aae9e79a44a91b}\label{structvvenc_1_1VPS_a5c083c8a938a11b077aae9e79a44a91b}} 
+\index{VPS@{VPS}!numOutputLayersInOls@{numOutputLayersInOls}}
+\index{numOutputLayersInOls@{numOutputLayersInOls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numOutputLayersInOls}{numOutputLayersInOls}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ num\+Output\+Layers\+In\+Ols}
+
+
+
+Definition at line 511 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a01095038ba9754c75a85920fa5f0f52c}\label{structvvenc_1_1VPS_a01095038ba9754c75a85920fa5f0f52c}} 
+\index{VPS@{VPS}!numPtls@{numPtls}}
+\index{numPtls@{numPtls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numPtls}{numPtls}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Ptls}
+
+
+
+Definition at line 476 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a568d8e971f1e39313d80fecad7a95202}\label{structvvenc_1_1VPS_a568d8e971f1e39313d80fecad7a95202}} 
+\index{VPS@{VPS}!numSubLayersInLayerInOLS@{numSubLayersInLayerInOLS}}
+\index{numSubLayersInLayerInOLS@{numSubLayersInLayerInOLS}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{numSubLayersInLayerInOLS}{numSubLayersInLayerInOLS}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ num\+Sub\+Layers\+In\+Layer\+In\+O\+LS}
+
+
+
+Definition at line 496 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_afe9a1caf4bef83e6b4f34f25fa0c5ce7}\label{structvvenc_1_1VPS_afe9a1caf4bef83e6b4f34f25fa0c5ce7}} 
+\index{VPS@{VPS}!olsDpbBitDepthMinus8@{olsDpbBitDepthMinus8}}
+\index{olsDpbBitDepthMinus8@{olsDpbBitDepthMinus8}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsDpbBitDepthMinus8}{olsDpbBitDepthMinus8}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ ols\+Dpb\+Bit\+Depth\+Minus8}
+
+
+
+Definition at line 499 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a07fb39cda5de8bfdfed6b4b915669152}\label{structvvenc_1_1VPS_a07fb39cda5de8bfdfed6b4b915669152}} 
+\index{VPS@{VPS}!olsDpbChromaFormatIdc@{olsDpbChromaFormatIdc}}
+\index{olsDpbChromaFormatIdc@{olsDpbChromaFormatIdc}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsDpbChromaFormatIdc}{olsDpbChromaFormatIdc}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ ols\+Dpb\+Chroma\+Format\+Idc}
+
+
+
+Definition at line 498 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ad8dcc5839f355b96e78718fb5277eb4a}\label{structvvenc_1_1VPS_ad8dcc5839f355b96e78718fb5277eb4a}} 
+\index{VPS@{VPS}!olsDpbParamsIdx@{olsDpbParamsIdx}}
+\index{olsDpbParamsIdx@{olsDpbParamsIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsDpbParamsIdx}{olsDpbParamsIdx}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ ols\+Dpb\+Params\+Idx}
+
+
+
+Definition at line 494 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a4b79ee4c4da8708f4bb43762b3548111}\label{structvvenc_1_1VPS_a4b79ee4c4da8708f4bb43762b3548111}} 
+\index{VPS@{VPS}!olsDpbPicSize@{olsDpbPicSize}}
+\index{olsDpbPicSize@{olsDpbPicSize}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsDpbPicSize}{olsDpbPicSize}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1Size}{Size}}$>$ ols\+Dpb\+Pic\+Size}
+
+
+
+Definition at line 493 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a158b415b95f02c6819310fc7cc7102f1}\label{structvvenc_1_1VPS_a158b415b95f02c6819310fc7cc7102f1}} 
+\index{VPS@{VPS}!olsHrdIdx@{olsHrdIdx}}
+\index{olsHrdIdx@{olsHrdIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsHrdIdx}{olsHrdIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t ols\+Hrd\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 490 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a3d746b5bf652a2a5c472dc9ed08c39b4}\label{structvvenc_1_1VPS_a3d746b5bf652a2a5c472dc9ed08c39b4}} 
+\index{VPS@{VPS}!olsHrdParams@{olsHrdParams}}
+\index{olsHrdParams@{olsHrdParams}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsHrdParams}{olsHrdParams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1OlsHrdParams}{Ols\+Hrd\+Params}} ols\+Hrd\+Params\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}}
+
+
+
+Definition at line 492 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a5c27c9edad2342bef8fe85ace77f29a0}\label{structvvenc_1_1VPS_a5c27c9edad2342bef8fe85ace77f29a0}} 
+\index{VPS@{VPS}!olsModeIdc@{olsModeIdc}}
+\index{olsModeIdc@{olsModeIdc}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsModeIdc}{olsModeIdc}}
+{\footnotesize\ttfamily uint32\+\_\+t ols\+Mode\+Idc}
+
+
+
+Definition at line 471 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ac3052f4eb3ef74650a79aeb0b65eb046}\label{structvvenc_1_1VPS_ac3052f4eb3ef74650a79aeb0b65eb046}} 
+\index{VPS@{VPS}!olsOutputLayer@{olsOutputLayer}}
+\index{olsOutputLayer@{olsOutputLayer}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsOutputLayer}{olsOutputLayer}}
+{\footnotesize\ttfamily bool ols\+Output\+Layer\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 473 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a2248af13525a78382553c2d72b7d049c}\label{structvvenc_1_1VPS_a2248af13525a78382553c2d72b7d049c}} 
+\index{VPS@{VPS}!olsPtlIdx@{olsPtlIdx}}
+\index{olsPtlIdx@{olsPtlIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{olsPtlIdx}{olsPtlIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t ols\+Ptl\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 480 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a56201857d38e11e3b1084df21b499617}\label{structvvenc_1_1VPS_a56201857d38e11e3b1084df21b499617}} 
+\index{VPS@{VPS}!outputLayerIdInOls@{outputLayerIdInOls}}
+\index{outputLayerIdInOls@{outputLayerIdInOls}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{outputLayerIdInOls}{outputLayerIdInOls}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$int$>$ $>$ output\+Layer\+Id\+In\+Ols}
+
+
+
+Definition at line 495 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_af78bd94cd0aaca981e0cd3058f7e7b38}\label{structvvenc_1_1VPS_af78bd94cd0aaca981e0cd3058f7e7b38}} 
+\index{VPS@{VPS}!profileTierLevel@{profileTierLevel}}
+\index{profileTierLevel@{profileTierLevel}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{profileTierLevel}{profileTierLevel}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1ProfileTierLevel}{Profile\+Tier\+Level}}$>$ profile\+Tier\+Level}
+
+
+
+Definition at line 479 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ac69cbacf3a53517b4379269ac7356025}\label{structvvenc_1_1VPS_ac69cbacf3a53517b4379269ac7356025}} 
+\index{VPS@{VPS}!ptlMaxTemporalId@{ptlMaxTemporalId}}
+\index{ptlMaxTemporalId@{ptlMaxTemporalId}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{ptlMaxTemporalId}{ptlMaxTemporalId}}
+{\footnotesize\ttfamily uint32\+\_\+t ptl\+Max\+Temporal\+Id\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 478 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a31ddfd7fc969ec99bf9e62ee70495f9c}\label{structvvenc_1_1VPS_a31ddfd7fc969ec99bf9e62ee70495f9c}} 
+\index{VPS@{VPS}!ptPresent@{ptPresent}}
+\index{ptPresent@{ptPresent}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{ptPresent}{ptPresent}}
+{\footnotesize\ttfamily bool pt\+Present\mbox{[}\mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}}\mbox{]}}
+
+
+
+Definition at line 477 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a2dfd035ae30d2dd2e60995938b0864b7}\label{structvvenc_1_1VPS_a2dfd035ae30d2dd2e60995938b0864b7}} 
+\index{VPS@{VPS}!sublayerCpbParamsPresent@{sublayerCpbParamsPresent}}
+\index{sublayerCpbParamsPresent@{sublayerCpbParamsPresent}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{sublayerCpbParamsPresent}{sublayerCpbParamsPresent}}
+{\footnotesize\ttfamily bool sublayer\+Cpb\+Params\+Present}
+
+
+
+Definition at line 487 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a3269066b09490519d930c17462845b18}\label{structvvenc_1_1VPS_a3269066b09490519d930c17462845b18}} 
+\index{VPS@{VPS}!sublayerDpbParamsPresent@{sublayerDpbParamsPresent}}
+\index{sublayerDpbParamsPresent@{sublayerDpbParamsPresent}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{sublayerDpbParamsPresent}{sublayerDpbParamsPresent}}
+{\footnotesize\ttfamily bool sublayer\+Dpb\+Params\+Present}
+
+
+
+Definition at line 506 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a0ab7e72d630391ae8e5c25c89438a255}\label{structvvenc_1_1VPS_a0ab7e72d630391ae8e5c25c89438a255}} 
+\index{VPS@{VPS}!targetLayerIdSet@{targetLayerIdSet}}
+\index{targetLayerIdSet@{targetLayerIdSet}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{targetLayerIdSet}{targetLayerIdSet}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ target\+Layer\+Id\+Set}
+
+
+
+set of Layer\+Ids to be included in the sub-\/bitstream extraction process. 
+
+
+
+Definition at line 509 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_ab72527132e941aa357c5bf24b657efc1}\label{structvvenc_1_1VPS_ab72527132e941aa357c5bf24b657efc1}} 
+\index{VPS@{VPS}!targetOlsIdx@{targetOlsIdx}}
+\index{targetOlsIdx@{targetOlsIdx}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{targetOlsIdx}{targetOlsIdx}}
+{\footnotesize\ttfamily int target\+Ols\+Idx}
+
+
+
+Definition at line 510 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a420e0e2b447aaaba7ac09a29a3e6d63c}\label{structvvenc_1_1VPS_a420e0e2b447aaaba7ac09a29a3e6d63c}} 
+\index{VPS@{VPS}!targetOutputLayerIdSet@{targetOutputLayerIdSet}}
+\index{targetOutputLayerIdSet@{targetOutputLayerIdSet}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{targetOutputLayerIdSet}{targetOutputLayerIdSet}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ target\+Output\+Layer\+Id\+Set}
+
+
+
+set of Layer\+Ids to be outputted 
+
+
+
+Definition at line 508 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_afb67303cdf8aee4a76009063347ce933}\label{structvvenc_1_1VPS_afb67303cdf8aee4a76009063347ce933}} 
+\index{VPS@{VPS}!totalNumOLSs@{totalNumOLSs}}
+\index{totalNumOLSs@{totalNumOLSs}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{totalNumOLSs}{totalNumOLSs}}
+{\footnotesize\ttfamily int total\+Num\+O\+L\+Ss}
+
+
+
+Definition at line 501 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_aa931b0243dfb2531f0f7be6c819c0ede}\label{structvvenc_1_1VPS_aa931b0243dfb2531f0f7be6c819c0ede}} 
+\index{VPS@{VPS}!vpsCfgPredDirection@{vpsCfgPredDirection}}
+\index{vpsCfgPredDirection@{vpsCfgPredDirection}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{vpsCfgPredDirection}{vpsCfgPredDirection}}
+{\footnotesize\ttfamily uint32\+\_\+t vps\+Cfg\+Pred\+Direction\mbox{[}\mbox{\hyperlink{namespacevvenc_acacc4bebfabeb340743b0575612b81fa}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+S\+U\+B\+L\+A\+Y\+E\+RS}}\mbox{]}}
+
+
+
+Definition at line 466 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1VPS_a54c2a7678ace7afd8d80a5f486a75b3d}\label{structvvenc_1_1VPS_a54c2a7678ace7afd8d80a5f486a75b3d}} 
+\index{VPS@{VPS}!vpsId@{vpsId}}
+\index{vpsId@{vpsId}!VPS@{VPS}}
+\doxysubsubsection{\texorpdfstring{vpsId}{vpsId}}
+{\footnotesize\ttfamily uint32\+\_\+t vps\+Id}
+
+
+
+Definition at line 459 of file Slice.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

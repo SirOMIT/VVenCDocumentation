@@ -1,0 +1,114 @@
+\hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot}{}\doxysection{No\+Malloc\+Thread\+Pool\+::Slot}
+\label{structvvenc_1_1NoMallocThreadPool_1_1Slot}\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+
+
+Collaboration diagram for No\+Malloc\+Thread\+Pool\+::Slot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{structvvenc_1_1NoMallocThreadPool_1_1Slot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_aacb8778ea29851c5c3f3dd170c2a1f7c}{C\+Barrier\+Vec}} \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_a4902c25083daa532d98a5b5f0a569b12}{barriers}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$ \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_a35d6ea92cbb7fd824cfdc090f6d92d52}{counter}} \{ nullptr \}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} $\ast$ \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_a857d976e9ed695cd38693b4879d685c9}{done}} \{ nullptr \}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_addbc6c56be18a7515c3f21fc1a7e8f74}{func}} \{ nullptr \}
+\item 
+void $\ast$ \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_a13623f1d68513495c21f8b061b1a5aec}{param}} \{ nullptr \}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_ac2b1ba3b6d4c1f8f433eabed9856ea3d}{ready\+Check}} \{ nullptr \}
+\item 
+std\+::atomic$<$ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}{Task\+State}} $>$ \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot_a061a46e4bc41c81bce3b4d6aee8f0cb4}{state}} \{ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bceacc62d1576546f3245237e1b232d838b6}{F\+R\+EE}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 251 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_a4902c25083daa532d98a5b5f0a569b12}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_a4902c25083daa532d98a5b5f0a569b12}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!barriers@{barriers}}
+\index{barriers@{barriers}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{barriers}{barriers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aacb8778ea29851c5c3f3dd170c2a1f7c}{C\+Barrier\+Vec}} barriers}
+
+
+
+Definition at line 258 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_a35d6ea92cbb7fd824cfdc090f6d92d52}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_a35d6ea92cbb7fd824cfdc090f6d92d52}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!counter@{counter}}
+\index{counter@{counter}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}}$\ast$ counter \{ nullptr \}}
+
+
+
+Definition at line 256 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_a857d976e9ed695cd38693b4879d685c9}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_a857d976e9ed695cd38693b4879d685c9}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!done@{done}}
+\index{done@{done}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}}$\ast$ done \{ nullptr \}}
+
+
+
+Definition at line 257 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_addbc6c56be18a7515c3f21fc1a7e8f74}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_addbc6c56be18a7515c3f21fc1a7e8f74}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!func@{func}}
+\index{func@{func}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{func}{func}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} func \{ nullptr \}}
+
+
+
+Definition at line 253 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_a13623f1d68513495c21f8b061b1a5aec}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_a13623f1d68513495c21f8b061b1a5aec}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!param@{param}}
+\index{param@{param}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily void$\ast$ param \{ nullptr \}}
+
+
+
+Definition at line 255 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_ac2b1ba3b6d4c1f8f433eabed9856ea3d}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_ac2b1ba3b6d4c1f8f433eabed9856ea3d}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!readyCheck@{readyCheck}}
+\index{readyCheck@{readyCheck}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{readyCheck}{readyCheck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_af010a76909082a5ff8d482c0f1c0368e}{Task\+Func}} ready\+Check \{ nullptr \}}
+
+
+
+Definition at line 254 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NoMallocThreadPool_1_1Slot_a061a46e4bc41c81bce3b4d6aee8f0cb4}\label{structvvenc_1_1NoMallocThreadPool_1_1Slot_a061a46e4bc41c81bce3b4d6aee8f0cb4}} 
+\index{NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}!state@{state}}
+\index{state@{state}!NoMallocThreadPool::Slot@{NoMallocThreadPool::Slot}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily std\+::atomic$<$\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bce}{Task\+State}}$>$ state \{ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_a724f9ce2351c125b3b7f6c7923822bceacc62d1576546f3245237e1b232d838b6}{F\+R\+EE}} \}}
+
+
+
+Definition at line 259 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8h}{No\+Malloc\+Thread\+Pool.\+h}}\end{DoxyCompactItemize}

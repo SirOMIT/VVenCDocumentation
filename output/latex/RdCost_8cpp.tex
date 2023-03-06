@@ -1,0 +1,66 @@
+\hypertarget{RdCost_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Rd\+Cost.cpp File Reference}
+\label{RdCost_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/RdCost.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/RdCost.cpp}}
+
+
+RD cost computation class.  
+
+
+{\ttfamily \#include \char`\"{}Rd\+Cost.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Partitioner.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Search\+Space\+Counter.\+h\char`\"{}}\newline
+Include dependency graph for Rd\+Cost.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RdCost_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{RdCost_8cpp_abc51db95c593abdca1e6e0c450fdc307}{D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \mbox{\hyperlink{namespacevvenc_ac0495e87050a4cc321ca1d9774b25b47}{get\+I\+Component\+Bits\+I\+BC}} (int val)
+\item 
+Distortion \mbox{\hyperlink{namespacevvenc_a841b0ee8fbc53dd33ed6eae500de8d93}{get\+Weighted\+M\+SE}} (const Pel org, const Pel cur, const int64\+\_\+t fixed\+P\+Tweight, unsigned ui\+Shift)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_ac0ec0be653b1cadd5684a677bcfc5f21}{x\+Calc\+H\+A\+Ds16x8}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_a483b10e2d350627289c9e263e635c21b}{x\+Calc\+H\+A\+Ds4x4}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_a0e46f2fd6076061ec9ab324ebc43cf5a}{x\+Calc\+H\+A\+Ds4x8}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_aae93ae7bcf57b4dd6e4191b387544800}{x\+Calc\+H\+A\+Ds8x16}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_a2a618332ccb9480548f6726c8c368dd4}{x\+Calc\+H\+A\+Ds8x4}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static Distortion \mbox{\hyperlink{namespacevvenc_acb1e54e5e83d900ef957ec63ccf9780f}{x\+Calc\+H\+A\+Ds8x8}} (const Pel $\ast$pi\+Org, const Pel $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RD cost computation class. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{RdCost_8cpp_abc51db95c593abdca1e6e0c450fdc307}\label{RdCost_8cpp_abc51db95c593abdca1e6e0c450fdc307}} 
+\index{RdCost.cpp@{RdCost.cpp}!DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+\index{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP@{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}!RdCost.cpp@{RdCost.cpp}}
+\doxysubsubsection{\texorpdfstring{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}{DONT\_UNDEF\_SIZE\_AWARE\_PER\_EL\_OP}}
+{\footnotesize\ttfamily \#define D\+O\+N\+T\+\_\+\+U\+N\+D\+E\+F\+\_\+\+S\+I\+Z\+E\+\_\+\+A\+W\+A\+R\+E\+\_\+\+P\+E\+R\+\_\+\+E\+L\+\_\+\+OP}
+
+
+
+Definition at line 52 of file Rd\+Cost.\+cpp.
+

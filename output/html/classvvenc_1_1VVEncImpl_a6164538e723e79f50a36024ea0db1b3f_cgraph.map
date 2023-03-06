@@ -1,0 +1,52 @@
+<map id="initPass" name="initPass">
+<area shape="rect" id="node1" title=" " alt="" coords="5,884,75,911"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncLib.html#a73d1ea89c77e5beac14ae61757dfe0e3" title=" " alt="" coords="123,884,283,911"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1RateCtrl.html#a9dd6e807e3dfd65b60299ec229f51ae6" title=" " alt="" coords="642,289,809,330"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1MCTF.html#a7213f20a4859dd96dc0487c55b7b2e7e" title=" " alt="" coords="381,741,507,768"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1EncGOP.html#ac97d533c6ab25c08095ec963e70b9e27" title=" " alt="" coords="373,792,515,819"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1RateCtrl.html#ae94098c4175277c311c4bd6807cca139" title=" " alt="" coords="375,199,513,225"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1RateCtrl.html#a44454aab4f68d33cad07a7bc2213af81" title=" " alt="" coords="360,847,528,889"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1RateCtrl.html#aa147428e6e802a31501dbe56fefab751" title=" " alt="" coords="349,913,539,940"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1EncLib.html#a6cfb647a38d1a5f09607ccd53afc0943" title="initialize DCI from encoder options" alt="" coords="363,964,525,991"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1EncLib.html#ad2599508a8c13d5f287e49c876418d16" title=" " alt="" coords="331,1021,557,1048"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1EncLib.html#a0c6818410e4dbfb6204cc421e974ddd4" title="initialize PPS from encoder options" alt="" coords="361,1116,527,1143"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1EncLib.html#a2f3471113a13a192177efd5a37858f8d" title=" " alt="" coords="362,1309,526,1336"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1EncLib.html#addaebcde9a14a917a9b0973a99b8a9cd" title="initialize SPS from encoder options" alt="" coords="361,1259,527,1285"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1EncLib.html#a81ad0dea3c4ec6ebe91b14fd220a9b3c" title="initialize VPS from encoder options" alt="" coords="361,1360,527,1387"/>
+<area shape="rect" id="node44" href="$classvvenc_1_1EncLib.html#a8334078f1f59c5ff47ded6f2ffd460ac" title=" " alt="" coords="342,405,546,432"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1EncLib.html#a813bbccd9301fce515e244338420a639" title=" " alt="" coords="359,544,529,571"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1SEIEncoder.html#a34bddab6bf0d12776c6fc92f954f1fa5" title=" " alt="" coords="645,691,805,717"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1EncPicture.html#aeb040950e16c86d1161fbd525056cbf9" title=" " alt="" coords="648,741,803,768"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1EncReshape.html#a571130c2aa335541bda96e268f5b05fc" title=" " alt="" coords="643,792,808,819"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1EncSlice.html#a1a7c61e3bad2c79a67d2fd99b4d94492" title=" " alt="" coords="925,683,1068,709"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#ac7d2cd1adfc82a85d793addf4e63897c" title=" " alt="" coords="899,734,1095,775"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1Reshape.html#a7d06453dc9045ce57056341f5f324e8e" title=" " alt="" coords="901,799,1092,841"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1EncRCSeq.html#a0c6695ec3f5a446595ddcffa3a806638" title=" " alt="" coords="638,107,813,133"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1RateCtrl.html#a3a80b6032f86a56bec74609034b3246f" title=" " alt="" coords="643,355,808,381"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1EncRCSeq.html#a75ac805c2469793c17ab6b63d2e6ba62" title=" " alt="" coords="636,158,815,199"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1EncRCSeq.html#abd81d866fc4161422a991e1a9d18a590" title=" " alt="" coords="622,223,829,265"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1EncRCSeq.html#ae858753d5596f9b39e1a73afe294dd0a" title=" " alt="" coords="624,5,827,32"/>
+<area shape="rect" id="node19" href="$namespacevvenc.html#afdcc3f5f4435932506df86e4f2ca6b90" title=" " alt="" coords="680,56,771,83"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1EncRCSeq.html#a3a80b6032f86a56bec74609034b3246f" title=" " alt="" coords="905,107,1088,133"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1RateCtrl.html#a98f6c7eeb90433d8872112409d7e32f1" title=" " alt="" coords="641,843,809,885"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1RateCtrl.html#a8e9b3197dbe3e05240316465571a224f" title=" " alt="" coords="633,909,818,950"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1RateCtrl.html#a9999fe1b98bedff27bb63d4fc0668c36" title=" " alt="" coords="626,975,825,1001"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1RateCtrl.html#a561871957c2beb5abbfd5f1bcf270f72" title=" " alt="" coords="913,921,1081,962"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1EncHRD.html#a9dd6c0b56459b9b9c5d202ea1913698b" title=" " alt="" coords="605,1025,845,1052"/>
+<area shape="rect" id="node29" href="$classvvenc_1_1ProfileLevelTierFeatures.html#ac2d6dfc1740bc768d16bd27b976a96e4" title=" " alt="" coords="893,986,1100,1027"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1ProfileLevelTierFeatures.html#ad463e395735e9e35b4da4ed37b8698d7" title=" " alt="" coords="893,1051,1100,1093"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1EncHRD.html#a9e41ab46ed8d41793ec81627ba74697a" title=" " alt="" coords="900,1117,1093,1144"/>
+<area shape="rect" id="node33" href="$structvvenc_1_1PPS.html#a8505cf9dbc1bb29f5eef799af6ed805c" title=" " alt="" coords="617,1142,834,1183"/>
+<area shape="rect" id="node34" href="$structvvenc_1_1Window.html#a1d960921eaaa74a2b15fd9ca7e0a6918" title=" " alt="" coords="633,1208,818,1235"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1EncLib.html#ad8dcbc1df4f3d455dbe92f34c3982176" title=" " alt="" coords="635,1077,815,1118"/>
+<area shape="rect" id="node37" href="$structvvenc_1_1ReferencePictureList.html#a215d59aee7473603c91bf17f3578e923" title=" " alt="" coords="632,1493,819,1534"/>
+<area shape="rect" id="node39" href="$structvvenc_1_1ChromaQpMappingTable.html#a5d43dcc17d64e1bfa473ebcbe789b60e" title=" " alt="" coords="613,1310,837,1351"/>
+<area shape="rect" id="node40" href="$namespacevvenc.html#a895d72e900acda111471c0104f9bcb4c" title=" " alt="" coords="625,1376,826,1403"/>
+<area shape="rect" id="node41" href="$structvvenc_1_1ChromaQpMappingTable.html#a892100dc817bec0299baf145339c55dd" title=" " alt="" coords="621,1427,829,1469"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1EncLib.html#abdb945f71e84a0f8fdfe31adbd2dc4cf" title="initialize SPS from encoder options" alt="" coords="615,1259,835,1285"/>
+<area shape="rect" id="node45" href="$vvencCfg_8cpp.html#a9504fd603fb55078515aacea62ed1994" title=" " alt="" coords="663,405,787,432"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1NoMallocThreadPool.html#a66f10e447fba2ec82e45582ccb5d1c42" title=" " alt="" coords="632,507,819,549"/>
+<area shape="rect" id="node48" href="$classvvenc_1_1MCTF.html#afa90a5c5c3718da584a64351bf5a8876" title=" " alt="" coords="655,573,796,600"/>
+<area shape="rect" id="node49" href="$classvvenc_1_1EncLib.html#ae6986299cbf33555fd08217faa8e74e5" title=" " alt="" coords="637,625,814,666"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1EncLib.html#af72435aa2584d80019bdf18b4e2d6a41" title=" " alt="" coords="639,456,811,483"/>
+</map>

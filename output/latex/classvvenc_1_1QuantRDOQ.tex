@@ -1,0 +1,897 @@
+\hypertarget{classvvenc_1_1QuantRDOQ}{}\doxysection{Quant\+R\+D\+OQ}
+\label{classvvenc_1_1QuantRDOQ}\index{QuantRDOQ@{QuantRDOQ}}
+
+
+transform and quantization class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Quant\+R\+D\+O\+Q.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Quant\+R\+D\+OQ\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classvvenc_1_1QuantRDOQ__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Quant\+R\+D\+OQ\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{classvvenc_1_1QuantRDOQ__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \& \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a0f722b02f1bf40fd9808cd7ebb03b333}{x\+Get\+Err\+Scale\+Coeff\+No\+Scaling\+List}} (uint32\+\_\+t list, uint32\+\_\+t sizeX, uint32\+\_\+t sizeY, int qp)
+\item 
+double $\ast$ \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a191c7365441df149707968ef1b73f602}{x\+Get\+Err\+Scale\+Coeff\+SL}} (uint32\+\_\+t list, uint32\+\_\+t sizeX, uint32\+\_\+t sizeY, int qp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a9ea5c2117ef1bdfa2c3f60d6e56bbfdf}{m\+\_\+bdpcm}}
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a84afbc7079c47bf026f93d6cf43cce53}{m\+\_\+deltaU}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+double $\ast$ \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_aca119a48f1d589a99e053b428a956a21}{m\+\_\+err\+Scale}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_afa0c811b5ef83407c2a8ff97b57dee2f}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a9978c8201766ffdd3a19f30e9b5d78d3}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em array of quantization matrix coefficient 4x4 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_ab693d16a1b47eb068f3f9aa28cfb8ab8}{m\+\_\+err\+Scale\+No\+Scaling\+List}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_afa0c811b5ef83407c2a8ff97b57dee2f}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a9978c8201766ffdd3a19f30e9b5d78d3}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em array of quantization matrix coefficient 4x4 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a92b5030a53fce9ad8554f82c9d618a52}{m\+\_\+full\+Coeff}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_acc850890f41d89af7eaa1ae290167cf8}{m\+\_\+is\+Err\+Scale\+List\+Owner}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a6073540b1579e1296761d7156a441dc5}{m\+\_\+pd\+Cost\+Coeff}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a9816b7a33370e17e06020c41cd114f14}{m\+\_\+pd\+Cost\+Coeff0}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a4ed44b60029ff06b48411eff9aeec18d}{m\+\_\+pd\+Cost\+Coeff\+Group\+Sig}} \mbox{[}(\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}) $>$$>$ \mbox{\hyperlink{namespacevvenc_a617deb8c04e1b82965907d0795e9d102}{M\+L\+S\+\_\+\+C\+G\+\_\+\+S\+I\+ZE}}\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a8daf0782efe78a1096bb6524bdb5fbdf}{m\+\_\+pd\+Cost\+Sig}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_ace509afc30f94a848785f3f7793cd615}{m\+\_\+rate\+Inc\+Down}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_aae393c11e6ae5e91007d202940446d8a}{m\+\_\+rate\+Inc\+Up}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a2b1f32b3fd4f4ad29d40ba4ac30e28bc}{m\+\_\+sig\+Rate\+Delta}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_abba9fb5e5a804e1142f5b57b99c3b5cf}{m\+\_\+tested\+Levels}}
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a0d8fa6c0b52bbfe7651436ab6e6a9b9b}{Quant\+R\+D\+OQ}} (const \mbox{\hyperlink{classvvenc_1_1Quant}{Quant}} $\ast$other, bool use\+Scaling\+Lists)
+\item 
+\mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a320402ed7e76f38c2c05e943156e6aad}{$\sim$\+Quant\+R\+D\+OQ}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_aa59d7a4d1f1ca0f91fc5306828ba0b2b}{set\+Flat\+Scaling\+List}} (const int max\+Log2\+Tr\+Dynamic\+Range\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a0bb29ff38eb133b510e17716c9c84c07}{quant}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&p\+Src, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&ui\+Abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a97498ebeb30b9a861a531ea3e43023e7}{forward\+R\+D\+P\+CM}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&p\+Src, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&ui\+Abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a6c970cf0e52e8c1b82f705c5e68cf1ac}{rate\+Dist\+Opt\+Quant\+TS}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&coeffs, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&qp, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx)
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a562c15523c0af528ee33290bc682d690}{x\+Get\+Err\+Scale\+Coeff}} (const bool needs\+Sqrt2, \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} width, \mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}} height, int qp, const int max\+Log2\+Tr\+Dynamic\+Range, const int channel\+Bit\+Depth, bool b\+Transform\+Skip)
+\begin{DoxyCompactList}\small\item\em get Error Scale Coefficent \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_afac33493bd85bc7b4e03b46976337357}{x\+Init\+Scaling\+List}} (const \mbox{\hyperlink{classvvenc_1_1QuantRDOQ}{Quant\+R\+D\+OQ}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em get Error Scale Coefficent \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a1e31a3dc4391f59891d0bbec82480743}{x\+Destroy\+Scaling\+List}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a08bf8abf65e58aeb735657ca20055396}{x\+Set\+Err\+Scale\+Coeff}} (uint32\+\_\+t list, uint32\+\_\+t sizeX, uint32\+\_\+t sizeY, int qp, const int max\+Log2\+Tr\+Dynamic\+Range\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a9d5ce9046dc0c14bb29cfcfc36dc0d0b}{x\+Dequant\+Sample}} (\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&p\+Res, \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} \&coeff, const \mbox{\hyperlink{structvvenc_1_1TrQuantParams}{Tr\+Quant\+Params}} \&tr\+Quant\+Params)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a07ff2108397ea0c84c9b3b3c77d22852}{x\+Rate\+Dist\+Opt\+Quant}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&p\+Src, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&ui\+Abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_aa6f90b1c64598c1d1d9d642f9c0107d5}{x\+Get\+Coded\+Level}} (double \&rd64\+Coded\+Cost, double \&rd64\+Coded\+Cost0, double \&rd64\+Coded\+Cost\+Sig, \mbox{\hyperlink{namespacevvenc_a19c81c236ede05b64eae8326f68aaa00}{Intermediate\+\_\+\+Int}} l\+Level\+Double, uint32\+\_\+t ui\+Max\+Abs\+Level, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} $\ast$frac\+Bits\+Sig, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Par, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt1, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt2, const int rem\+Reg\+Bins, unsigned go\+Rice\+Zero, uint16\+\_\+t ui16\+Abs\+Go\+Rice, int i\+Q\+Bits, double error\+Scale, bool b\+Last, bool use\+Limited\+Prefix\+Length, const int max\+Log2\+Tr\+Dynamic\+Range) const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_ac5fda14374bc43c555f49cf9d7723238}{x\+Get\+I\+C\+Rate}} (const uint32\+\_\+t ui\+Abs\+Level, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Par, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt1, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt2, const int rem\+Reg\+Bins, unsigned go\+Rice\+Zero, const uint16\+\_\+t ui16\+Abs\+Go\+Rice, const bool use\+Limited\+Prefix\+Length, const int max\+Log2\+Tr\+Dynamic\+Range) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a068095b3752af2ec1f109167e697e598}{x\+Get\+Rate\+Last}} (const int $\ast$last\+BitsX, const int $\ast$last\+BitsY, unsigned PosX, unsigned PosY) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a78ce884880955b4fc09042445599d574}{x\+Get\+Rate\+Sig\+Coeff\+Group}} (const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Sig\+CG, unsigned ui\+Significance\+Coeff\+Group) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a16dbca1f02e884d4fbc721c1af7f8805}{x\+Get\+Rate\+Sig\+Coef}} (const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Sig, unsigned ui\+Significance) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_aa23cc3b72e237813bb270191f7f494cf}{x\+Get\+I\+Cost}} (double d\+Rate) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a5b09940841b10dc80591d20ec1bb073d}{x\+Get\+I\+E\+P\+Rate}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a4198581b8667540ca5c12650d29b504a}{x\+Get\+Coded\+Level\+T\+S\+Pred}} (double \&rd64\+Coded\+Cost, double \&rd64\+Coded\+Cost0, double \&rd64\+Coded\+Cost\+Sig, \mbox{\hyperlink{namespacevvenc_a19c81c236ede05b64eae8326f68aaa00}{Intermediate\+\_\+\+Int}} level\+Double, int q\+Bits, double error\+Scale, uint32\+\_\+t coeff\+Levels\mbox{[}$\,$\mbox{]}, double coeff\+Level\+Error\mbox{[}$\,$\mbox{]}, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} $\ast$frac\+Bits\+Sig, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Par, \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&cctx, const \mbox{\hyperlink{namespacevvenc_a93e1075f3d50fe4b31a13018e252a287}{Frac\+Bits\+Access}} \&frac\+Bits\+Access, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Sign, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt1, const uint8\+\_\+t sign, int right\+Pixel, int below\+Pixel, uint16\+\_\+t rice\+Par, bool is\+Last, bool use\+Limited\+Prefix\+Length, const int max\+Log2\+Tr\+Dynamic\+Range, int \&num\+Used\+Ctx\+Bins) const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1QuantRDOQ_a7d36e35a374c63e6ec9679c5a0040677}{x\+Get\+I\+C\+Rate\+TS}} (const uint32\+\_\+t abs\+Level, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Par, const \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&cctx, const \mbox{\hyperlink{namespacevvenc_a93e1075f3d50fe4b31a13018e252a287}{Frac\+Bits\+Access}} \&frac\+Bits\+Access, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Sign, const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&frac\+Bits\+Gt1, int \&num\+Ctx\+Bins, const uint8\+\_\+t sign, const uint16\+\_\+t rice\+Par, const bool use\+Limited\+Prefix\+Length, const int max\+Log2\+Tr\+Dynamic\+Range) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+transform and quantization class 
+
+Definition at line 68 of file Quant\+R\+D\+O\+Q.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a0d8fa6c0b52bbfe7651436ab6e6a9b9b}\label{classvvenc_1_1QuantRDOQ_a0d8fa6c0b52bbfe7651436ab6e6a9b9b}} 
+\index{QuantRDOQ@{QuantRDOQ}!QuantRDOQ@{QuantRDOQ}}
+\index{QuantRDOQ@{QuantRDOQ}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{QuantRDOQ()}{QuantRDOQ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1QuantRDOQ}{Quant\+R\+D\+OQ}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Quant}{Quant}} $\ast$}]{other,  }\item[{bool}]{use\+Scaling\+Lists }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a0d8fa6c0b52bbfe7651436ab6e6a9b9b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a320402ed7e76f38c2c05e943156e6aad}\label{classvvenc_1_1QuantRDOQ_a320402ed7e76f38c2c05e943156e6aad}} 
+\index{QuantRDOQ@{QuantRDOQ}!````~QuantRDOQ@{$\sim$QuantRDOQ}}
+\index{````~QuantRDOQ@{$\sim$QuantRDOQ}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{$\sim$QuantRDOQ()}{~QuantRDOQ()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1QuantRDOQ}{Quant\+R\+D\+OQ}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 103 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvvenc_1_1QuantRDOQ_a320402ed7e76f38c2c05e943156e6aad_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a97498ebeb30b9a861a531ea3e43023e7}\label{classvvenc_1_1QuantRDOQ_a97498ebeb30b9a861a531ea3e43023e7}} 
+\index{QuantRDOQ@{QuantRDOQ}!forwardRDPCM@{forwardRDPCM}}
+\index{forwardRDPCM@{forwardRDPCM}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{forwardRDPCM()}{forwardRDPCM()}}
+{\footnotesize\ttfamily void forward\+R\+D\+P\+CM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Src,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{ui\+Abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1387 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1QuantRDOQ_a97498ebeb30b9a861a531ea3e43023e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a97498ebeb30b9a861a531ea3e43023e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a0bb29ff38eb133b510e17716c9c84c07}\label{classvvenc_1_1QuantRDOQ_a0bb29ff38eb133b510e17716c9c84c07}} 
+\index{QuantRDOQ@{QuantRDOQ}!quant@{quant}}
+\index{quant@{quant}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{quant()}{quant()}}
+{\footnotesize\ttfamily void quant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Src,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{ui\+Abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classvvenc_1_1Quant_a0bb29ff38eb133b510e17716c9c84c07}{Quant}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classvvenc_1_1QuantRDOQ2_a0bb29ff38eb133b510e17716c9c84c07}{Quant\+R\+D\+O\+Q2}}.
+
+
+
+Definition at line 491 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1QuantRDOQ_a0bb29ff38eb133b510e17716c9c84c07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a0bb29ff38eb133b510e17716c9c84c07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a6c970cf0e52e8c1b82f705c5e68cf1ac}\label{classvvenc_1_1QuantRDOQ_a6c970cf0e52e8c1b82f705c5e68cf1ac}} 
+\index{QuantRDOQ@{QuantRDOQ}!rateDistOptQuantTS@{rateDistOptQuantTS}}
+\index{rateDistOptQuantTS@{rateDistOptQuantTS}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{rateDistOptQuantTS()}{rateDistOptQuantTS()}}
+{\footnotesize\ttfamily void rate\+Dist\+Opt\+Quant\+TS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{coeffs,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{qp,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1166 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1QuantRDOQ_a6c970cf0e52e8c1b82f705c5e68cf1ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a6c970cf0e52e8c1b82f705c5e68cf1ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_aa59d7a4d1f1ca0f91fc5306828ba0b2b}\label{classvvenc_1_1QuantRDOQ_aa59d7a4d1f1ca0f91fc5306828ba0b2b}} 
+\index{QuantRDOQ@{QuantRDOQ}!setFlatScalingList@{setFlatScalingList}}
+\index{setFlatScalingList@{setFlatScalingList}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{setFlatScalingList()}{setFlatScalingList()}}
+{\footnotesize\ttfamily void set\+Flat\+Scaling\+List (\begin{DoxyParamCaption}\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]},  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set flat matrix value to quantized coefficient 
+
+Reimplemented from \mbox{\hyperlink{classvvenc_1_1Quant_aa59d7a4d1f1ca0f91fc5306828ba0b2b}{Quant}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classvvenc_1_1QuantRDOQ2_aa59d7a4d1f1ca0f91fc5306828ba0b2b}{Quant\+R\+D\+O\+Q2}}.
+
+
+
+Definition at line 413 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_aa59d7a4d1f1ca0f91fc5306828ba0b2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classvvenc_1_1QuantRDOQ_aa59d7a4d1f1ca0f91fc5306828ba0b2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a9d5ce9046dc0c14bb29cfcfc36dc0d0b}\label{classvvenc_1_1QuantRDOQ_a9d5ce9046dc0c14bb29cfcfc36dc0d0b}} 
+\index{QuantRDOQ@{QuantRDOQ}!xDequantSample@{xDequantSample}}
+\index{xDequantSample@{xDequantSample}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xDequantSample()}{xDequantSample()}}
+{\footnotesize\ttfamily void x\+Dequant\+Sample (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{p\+Res,  }\item[{\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} \&}]{coeff,  }\item[{const \mbox{\hyperlink{structvvenc_1_1TrQuantParams}{Tr\+Quant\+Params}} \&}]{tr\+Quant\+Params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1620 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a9d5ce9046dc0c14bb29cfcfc36dc0d0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a1e31a3dc4391f59891d0bbec82480743}\label{classvvenc_1_1QuantRDOQ_a1e31a3dc4391f59891d0bbec82480743}} 
+\index{QuantRDOQ@{QuantRDOQ}!xDestroyScalingList@{xDestroyScalingList}}
+\index{xDestroyScalingList@{xDestroyScalingList}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xDestroyScalingList()}{xDestroyScalingList()}}
+{\footnotesize\ttfamily void x\+Destroy\+Scaling\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+destroy quantization matrix array 
+
+Definition at line 467 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvvenc_1_1QuantRDOQ_a1e31a3dc4391f59891d0bbec82480743_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_aa6f90b1c64598c1d1d9d642f9c0107d5}\label{classvvenc_1_1QuantRDOQ_aa6f90b1c64598c1d1d9d642f9c0107d5}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetCodedLevel@{xGetCodedLevel}}
+\index{xGetCodedLevel@{xGetCodedLevel}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetCodedLevel()}{xGetCodedLevel()}}
+{\footnotesize\ttfamily uint32\+\_\+t x\+Get\+Coded\+Level (\begin{DoxyParamCaption}\item[{double \&}]{rd64\+Coded\+Cost,  }\item[{double \&}]{rd64\+Coded\+Cost0,  }\item[{double \&}]{rd64\+Coded\+Cost\+Sig,  }\item[{\mbox{\hyperlink{namespacevvenc_a19c81c236ede05b64eae8326f68aaa00}{Intermediate\+\_\+\+Int}}}]{l\+Level\+Double,  }\item[{uint32\+\_\+t}]{ui\+Max\+Abs\+Level,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} $\ast$}]{frac\+Bits\+Sig,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Par,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt2,  }\item[{const int}]{rem\+Reg\+Bins,  }\item[{unsigned}]{go\+Rice\+Zero,  }\item[{uint16\+\_\+t}]{ui16\+Abs\+Go\+Rice,  }\item[{int}]{i\+Q\+Bits,  }\item[{double}]{error\+Scale,  }\item[{bool}]{b\+Last,  }\item[{bool}]{use\+Limited\+Prefix\+Length,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the best level in RD sense
+
+\begin{DoxyReturn}{Returns}
+best quantized transform level for given scan position
+\end{DoxyReturn}
+This method calculates the best quantized transform level for a given scan position. 
+
+Definition at line 117 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_aa6f90b1c64598c1d1d9d642f9c0107d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_aa6f90b1c64598c1d1d9d642f9c0107d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a4198581b8667540ca5c12650d29b504a}\label{classvvenc_1_1QuantRDOQ_a4198581b8667540ca5c12650d29b504a}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetCodedLevelTSPred@{xGetCodedLevelTSPred}}
+\index{xGetCodedLevelTSPred@{xGetCodedLevelTSPred}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetCodedLevelTSPred()}{xGetCodedLevelTSPred()}}
+{\footnotesize\ttfamily uint32\+\_\+t x\+Get\+Coded\+Level\+T\+S\+Pred (\begin{DoxyParamCaption}\item[{double \&}]{rd64\+Coded\+Cost,  }\item[{double \&}]{rd64\+Coded\+Cost0,  }\item[{double \&}]{rd64\+Coded\+Cost\+Sig,  }\item[{\mbox{\hyperlink{namespacevvenc_a19c81c236ede05b64eae8326f68aaa00}{Intermediate\+\_\+\+Int}}}]{level\+Double,  }\item[{int}]{q\+Bits,  }\item[{double}]{error\+Scale,  }\item[{uint32\+\_\+t}]{coeff\+Levels\mbox{[}$\,$\mbox{]},  }\item[{double}]{coeff\+Level\+Error\mbox{[}$\,$\mbox{]},  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} $\ast$}]{frac\+Bits\+Sig,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Par,  }\item[{\mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&}]{cctx,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93e1075f3d50fe4b31a13018e252a287}{Frac\+Bits\+Access}} \&}]{frac\+Bits\+Access,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Sign,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt1,  }\item[{const uint8\+\_\+t}]{sign,  }\item[{int}]{right\+Pixel,  }\item[{int}]{below\+Pixel,  }\item[{uint16\+\_\+t}]{rice\+Par,  }\item[{bool}]{is\+Last,  }\item[{bool}]{use\+Limited\+Prefix\+Length,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range,  }\item[{int \&}]{num\+Used\+Ctx\+Bins }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1634 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a4198581b8667540ca5c12650d29b504a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a4198581b8667540ca5c12650d29b504a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a562c15523c0af528ee33290bc682d690}\label{classvvenc_1_1QuantRDOQ_a562c15523c0af528ee33290bc682d690}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetErrScaleCoeff@{xGetErrScaleCoeff}}
+\index{xGetErrScaleCoeff@{xGetErrScaleCoeff}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetErrScaleCoeff()}{xGetErrScaleCoeff()}}
+{\footnotesize\ttfamily double x\+Get\+Err\+Scale\+Coeff (\begin{DoxyParamCaption}\item[{const bool}]{needs\+Sqrt2,  }\item[{\mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{width,  }\item[{\mbox{\hyperlink{namespacevvenc_ab680f160866d1fa86fe9dcf12b5fdbc8}{Size\+Type}}}]{height,  }\item[{int}]{qp,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range,  }\item[{const int}]{channel\+Bit\+Depth,  }\item[{bool}]{b\+Transform\+Skip = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get Error Scale Coefficent 
+
+
+
+Definition at line 358 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a562c15523c0af528ee33290bc682d690_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a562c15523c0af528ee33290bc682d690_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a0f722b02f1bf40fd9808cd7ebb03b333}\label{classvvenc_1_1QuantRDOQ_a0f722b02f1bf40fd9808cd7ebb03b333}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetErrScaleCoeffNoScalingList@{xGetErrScaleCoeffNoScalingList}}
+\index{xGetErrScaleCoeffNoScalingList@{xGetErrScaleCoeffNoScalingList}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetErrScaleCoeffNoScalingList()}{xGetErrScaleCoeffNoScalingList()}}
+{\footnotesize\ttfamily double\& x\+Get\+Err\+Scale\+Coeff\+No\+Scaling\+List (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{list,  }\item[{uint32\+\_\+t}]{sizeX,  }\item[{uint32\+\_\+t}]{sizeY,  }\item[{int}]{qp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Quant\+R\+D\+O\+Q.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a0f722b02f1bf40fd9808cd7ebb03b333_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a191c7365441df149707968ef1b73f602}\label{classvvenc_1_1QuantRDOQ_a191c7365441df149707968ef1b73f602}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetErrScaleCoeffSL@{xGetErrScaleCoeffSL}}
+\index{xGetErrScaleCoeffSL@{xGetErrScaleCoeffSL}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetErrScaleCoeffSL()}{xGetErrScaleCoeffSL()}}
+{\footnotesize\ttfamily double$\ast$ x\+Get\+Err\+Scale\+Coeff\+SL (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{list,  }\item[{uint32\+\_\+t}]{sizeX,  }\item[{uint32\+\_\+t}]{sizeY,  }\item[{int}]{qp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Quant\+R\+D\+O\+Q.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a191c7365441df149707968ef1b73f602_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_aa23cc3b72e237813bb270191f7f494cf}\label{classvvenc_1_1QuantRDOQ_aa23cc3b72e237813bb270191f7f494cf}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetICost@{xGetICost}}
+\index{xGetICost@{xGetICost}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetICost()}{xGetICost()}}
+{\footnotesize\ttfamily double x\+Get\+I\+Cost (\begin{DoxyParamCaption}\item[{double}]{d\+Rate }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the cost for a specific rate 
+\begin{DoxyParams}{Parameters}
+{\em d\+Rate} & rate of a bit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cost at the specific rate 
+\end{DoxyReturn}
+
+
+Definition at line 344 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_aa23cc3b72e237813bb270191f7f494cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_ac5fda14374bc43c555f49cf9d7723238}\label{classvvenc_1_1QuantRDOQ_ac5fda14374bc43c555f49cf9d7723238}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetICRate@{xGetICRate}}
+\index{xGetICRate@{xGetICRate}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetICRate()}{xGetICRate()}}
+{\footnotesize\ttfamily int x\+Get\+I\+C\+Rate (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{ui\+Abs\+Level,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Par,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt2,  }\item[{const int}]{rem\+Reg\+Bins,  }\item[{unsigned}]{go\+Rice\+Zero,  }\item[{const uint16\+\_\+t}]{ui16\+Abs\+Go\+Rice,  }\item[{const bool}]{use\+Limited\+Prefix\+Length,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Calculates the cost for specific absolute transform level 
+\begin{DoxyParams}{Parameters}
+{\em ui\+Abs\+Level} & scaled quantized level \\
+\hline
+{\em ui16\+Ctx\+Num\+One} & current ctx\+Inc for coeff\+\_\+abs\+\_\+level\+\_\+greater1 (1st bin of coeff\+\_\+abs\+\_\+level\+\_\+minus1 in A\+VC) \\
+\hline
+{\em ui16\+Ctx\+Num\+Abs} & current ctx\+Inc for coeff\+\_\+abs\+\_\+level\+\_\+greater2 (remaining bins of coeff\+\_\+abs\+\_\+level\+\_\+minus1 in A\+VC) \\
+\hline
+{\em ui16\+Abs\+Go\+Rice} & Rice parameter for coeff\+\_\+abs\+\_\+level\+\_\+minus3 \\
+\hline
+{\em c1\+Idx} & \\
+\hline
+{\em c2\+Idx} & \\
+\hline
+{\em use\+Limited\+Prefix\+Length} & \\
+\hline
+{\em max\+Log2\+Tr\+Dynamic\+Range} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cost of given absolute transform level 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{classvvenc_1_1QuantRDOQ_ac5fda14374bc43c555f49cf9d7723238_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_ac5fda14374bc43c555f49cf9d7723238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a7d36e35a374c63e6ec9679c5a0040677}\label{classvvenc_1_1QuantRDOQ_a7d36e35a374c63e6ec9679c5a0040677}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetICRateTS@{xGetICRateTS}}
+\index{xGetICRateTS@{xGetICRateTS}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetICRateTS()}{xGetICRateTS()}}
+{\footnotesize\ttfamily int x\+Get\+I\+C\+Rate\+TS (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{abs\+Level,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Par,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CoeffCodingContext}{Coeff\+Coding\+Context}} \&}]{cctx,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93e1075f3d50fe4b31a13018e252a287}{Frac\+Bits\+Access}} \&}]{frac\+Bits\+Access,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Sign,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Gt1,  }\item[{int \&}]{num\+Ctx\+Bins,  }\item[{const uint8\+\_\+t}]{sign,  }\item[{const uint16\+\_\+t}]{rice\+Par,  }\item[{const bool}]{use\+Limited\+Prefix\+Length,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1720 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a7d36e35a374c63e6ec9679c5a0040677_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a7d36e35a374c63e6ec9679c5a0040677_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a5b09940841b10dc80591d20ec1bb073d}\label{classvvenc_1_1QuantRDOQ_a5b09940841b10dc80591d20ec1bb073d}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetIEPRate@{xGetIEPRate}}
+\index{xGetIEPRate@{xGetIEPRate}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetIEPRate()}{xGetIEPRate()}}
+{\footnotesize\ttfamily double x\+Get\+I\+E\+P\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Get the cost of an equal probable bit \begin{DoxyReturn}{Returns}
+cost of equal probable bit 
+\end{DoxyReturn}
+
+
+Definition at line 352 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a5b09940841b10dc80591d20ec1bb073d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a068095b3752af2ec1f109167e697e598}\label{classvvenc_1_1QuantRDOQ_a068095b3752af2ec1f109167e697e598}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetRateLast@{xGetRateLast}}
+\index{xGetRateLast@{xGetRateLast}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetRateLast()}{xGetRateLast()}}
+{\footnotesize\ttfamily double x\+Get\+Rate\+Last (\begin{DoxyParamCaption}\item[{const int $\ast$}]{last\+BitsX,  }\item[{const int $\ast$}]{last\+BitsY,  }\item[{unsigned}]{PosX,  }\item[{unsigned}]{PosY }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Calculates the cost of signaling the last significant coefficient in the block 
+\begin{DoxyParams}{Parameters}
+{\em ui\+PosX} & X coordinate of the last significant coefficient \\
+\hline
+{\em ui\+PosY} & Y coordinate of the last significant coefficient \\
+\hline
+{\em component} & colour component ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cost of last significant coefficient 
+\end{DoxyReturn}
+
+
+Definition at line 318 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1QuantRDOQ_a068095b3752af2ec1f109167e697e598_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a068095b3752af2ec1f109167e697e598_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a16dbca1f02e884d4fbc721c1af7f8805}\label{classvvenc_1_1QuantRDOQ_a16dbca1f02e884d4fbc721c1af7f8805}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetRateSigCoef@{xGetRateSigCoef}}
+\index{xGetRateSigCoef@{xGetRateSigCoef}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetRateSigCoef()}{xGetRateSigCoef()}}
+{\footnotesize\ttfamily double x\+Get\+Rate\+Sig\+Coef (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Sig,  }\item[{unsigned}]{ui\+Significance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 335 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1QuantRDOQ_a16dbca1f02e884d4fbc721c1af7f8805_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a16dbca1f02e884d4fbc721c1af7f8805_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a78ce884880955b4fc09042445599d574}\label{classvvenc_1_1QuantRDOQ_a78ce884880955b4fc09042445599d574}} 
+\index{QuantRDOQ@{QuantRDOQ}!xGetRateSigCoeffGroup@{xGetRateSigCoeffGroup}}
+\index{xGetRateSigCoeffGroup@{xGetRateSigCoeffGroup}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xGetRateSigCoeffGroup()}{xGetRateSigCoeffGroup()}}
+{\footnotesize\ttfamily double x\+Get\+Rate\+Sig\+Coeff\+Group (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \&}]{frac\+Bits\+Sig\+CG,  }\item[{unsigned}]{ui\+Significance\+Coeff\+Group }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 304 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classvvenc_1_1QuantRDOQ_a78ce884880955b4fc09042445599d574_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a78ce884880955b4fc09042445599d574_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_afac33493bd85bc7b4e03b46976337357}\label{classvvenc_1_1QuantRDOQ_afac33493bd85bc7b4e03b46976337357}} 
+\index{QuantRDOQ@{QuantRDOQ}!xInitScalingList@{xInitScalingList}}
+\index{xInitScalingList@{xInitScalingList}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xInitScalingList()}{xInitScalingList()}}
+{\footnotesize\ttfamily void x\+Init\+Scaling\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1QuantRDOQ}{Quant\+R\+D\+OQ}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+get Error Scale Coefficent 
+
+initialization process of scaling list array 
+
+Definition at line 437 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classvvenc_1_1QuantRDOQ_afac33493bd85bc7b4e03b46976337357_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1QuantRDOQ_afac33493bd85bc7b4e03b46976337357_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a07ff2108397ea0c84c9b3b3c77d22852}\label{classvvenc_1_1QuantRDOQ_a07ff2108397ea0c84c9b3b3c77d22852}} 
+\index{QuantRDOQ@{QuantRDOQ}!xRateDistOptQuant@{xRateDistOptQuant}}
+\index{xRateDistOptQuant@{xRateDistOptQuant}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xRateDistOptQuant()}{xRateDistOptQuant()}}
+{\footnotesize\ttfamily void x\+Rate\+Dist\+Opt\+Quant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Src,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{ui\+Abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 545 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a07ff2108397ea0c84c9b3b3c77d22852_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a08bf8abf65e58aeb735657ca20055396}\label{classvvenc_1_1QuantRDOQ_a08bf8abf65e58aeb735657ca20055396}} 
+\index{QuantRDOQ@{QuantRDOQ}!xSetErrScaleCoeff@{xSetErrScaleCoeff}}
+\index{xSetErrScaleCoeff@{xSetErrScaleCoeff}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{xSetErrScaleCoeff()}{xSetErrScaleCoeff()}}
+{\footnotesize\ttfamily void x\+Set\+Err\+Scale\+Coeff (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{list,  }\item[{uint32\+\_\+t}]{sizeX,  }\item[{uint32\+\_\+t}]{sizeY,  }\item[{int}]{qp,  }\item[{const int}]{max\+Log2\+Tr\+Dynamic\+Range\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]},  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+set error scale coefficients 
+\begin{DoxyParams}{Parameters}
+{\em list} & list ID \\
+\hline
+{\em size} & \\
+\hline
+{\em qp} & quantization parameter \\
+\hline
+{\em max\+Log2\+Tr\+Dynamic\+Range} & \\
+\hline
+{\em bit\+Depths} & reference to bit depth array for all channels \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 378 of file Quant\+R\+D\+O\+Q.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a08bf8abf65e58aeb735657ca20055396_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1QuantRDOQ_a08bf8abf65e58aeb735657ca20055396_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a9ea5c2117ef1bdfa2c3f60d6e56bbfdf}\label{classvvenc_1_1QuantRDOQ_a9ea5c2117ef1bdfa2c3f60d6e56bbfdf}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_bdpcm@{m\_bdpcm}}
+\index{m\_bdpcm@{m\_bdpcm}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_bdpcm}{m\_bdpcm}}
+{\footnotesize\ttfamily int m\+\_\+bdpcm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 178 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a84afbc7079c47bf026f93d6cf43cce53}\label{classvvenc_1_1QuantRDOQ_a84afbc7079c47bf026f93d6cf43cce53}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_deltaU@{m\_deltaU}}
+\index{m\_deltaU@{m\_deltaU}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_deltaU}{m\_deltaU}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} m\+\_\+deltaU\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 176 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_aca119a48f1d589a99e053b428a956a21}\label{classvvenc_1_1QuantRDOQ_aca119a48f1d589a99e053b428a956a21}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_errScale@{m\_errScale}}
+\index{m\_errScale@{m\_errScale}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_errScale}{m\_errScale}}
+{\footnotesize\ttfamily double$\ast$ m\+\_\+err\+Scale\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_afa0c811b5ef83407c2a8ff97b57dee2f}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a9978c8201766ffdd3a19f30e9b5d78d3}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array of quantization matrix coefficient 4x4 
+
+
+
+Definition at line 166 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_ab693d16a1b47eb068f3f9aa28cfb8ab8}\label{classvvenc_1_1QuantRDOQ_ab693d16a1b47eb068f3f9aa28cfb8ab8}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_errScaleNoScalingList@{m\_errScaleNoScalingList}}
+\index{m\_errScaleNoScalingList@{m\_errScaleNoScalingList}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_errScaleNoScalingList}{m\_errScaleNoScalingList}}
+{\footnotesize\ttfamily double m\+\_\+err\+Scale\+No\+Scaling\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6f28cc9e282a72601cce9546f0d5cab4ae39466f878e0771c29bde3dc4564ac51}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_afa0c811b5ef83407c2a8ff97b57dee2f}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a9978c8201766ffdd3a19f30e9b5d78d3}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+array of quantization matrix coefficient 4x4 
+
+
+
+Definition at line 167 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a92b5030a53fce9ad8554f82c9d618a52}\label{classvvenc_1_1QuantRDOQ_a92b5030a53fce9ad8554f82c9d618a52}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_fullCoeff@{m\_fullCoeff}}
+\index{m\_fullCoeff@{m\_fullCoeff}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_fullCoeff}{m\_fullCoeff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} m\+\_\+full\+Coeff\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 177 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_acc850890f41d89af7eaa1ae290167cf8}\label{classvvenc_1_1QuantRDOQ_acc850890f41d89af7eaa1ae290167cf8}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_isErrScaleListOwner@{m\_isErrScaleListOwner}}
+\index{m\_isErrScaleListOwner@{m\_isErrScaleListOwner}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_isErrScaleListOwner}{m\_isErrScaleListOwner}}
+{\footnotesize\ttfamily bool m\+\_\+is\+Err\+Scale\+List\+Owner\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 164 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a6073540b1579e1296761d7156a441dc5}\label{classvvenc_1_1QuantRDOQ_a6073540b1579e1296761d7156a441dc5}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_pdCostCoeff@{m\_pdCostCoeff}}
+\index{m\_pdCostCoeff@{m\_pdCostCoeff}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_pdCostCoeff}{m\_pdCostCoeff}}
+{\footnotesize\ttfamily double m\+\_\+pd\+Cost\+Coeff\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 169 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a9816b7a33370e17e06020c41cd114f14}\label{classvvenc_1_1QuantRDOQ_a9816b7a33370e17e06020c41cd114f14}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_pdCostCoeff0@{m\_pdCostCoeff0}}
+\index{m\_pdCostCoeff0@{m\_pdCostCoeff0}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_pdCostCoeff0}{m\_pdCostCoeff0}}
+{\footnotesize\ttfamily double m\+\_\+pd\+Cost\+Coeff0\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 171 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a4ed44b60029ff06b48411eff9aeec18d}\label{classvvenc_1_1QuantRDOQ_a4ed44b60029ff06b48411eff9aeec18d}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_pdCostCoeffGroupSig@{m\_pdCostCoeffGroupSig}}
+\index{m\_pdCostCoeffGroupSig@{m\_pdCostCoeffGroupSig}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_pdCostCoeffGroupSig}{m\_pdCostCoeffGroupSig}}
+{\footnotesize\ttfamily double m\+\_\+pd\+Cost\+Coeff\+Group\+Sig\mbox{[}(\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}) $>$$>$ \mbox{\hyperlink{namespacevvenc_a617deb8c04e1b82965907d0795e9d102}{M\+L\+S\+\_\+\+C\+G\+\_\+\+S\+I\+ZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 172 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a8daf0782efe78a1096bb6524bdb5fbdf}\label{classvvenc_1_1QuantRDOQ_a8daf0782efe78a1096bb6524bdb5fbdf}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_pdCostSig@{m\_pdCostSig}}
+\index{m\_pdCostSig@{m\_pdCostSig}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_pdCostSig}{m\_pdCostSig}}
+{\footnotesize\ttfamily double m\+\_\+pd\+Cost\+Sig\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 170 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_ace509afc30f94a848785f3f7793cd615}\label{classvvenc_1_1QuantRDOQ_ace509afc30f94a848785f3f7793cd615}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_rateIncDown@{m\_rateIncDown}}
+\index{m\_rateIncDown@{m\_rateIncDown}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_rateIncDown}{m\_rateIncDown}}
+{\footnotesize\ttfamily int m\+\_\+rate\+Inc\+Down\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 174 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_aae393c11e6ae5e91007d202940446d8a}\label{classvvenc_1_1QuantRDOQ_aae393c11e6ae5e91007d202940446d8a}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_rateIncUp@{m\_rateIncUp}}
+\index{m\_rateIncUp@{m\_rateIncUp}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_rateIncUp}{m\_rateIncUp}}
+{\footnotesize\ttfamily int m\+\_\+rate\+Inc\+Up\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 173 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_a2b1f32b3fd4f4ad29d40ba4ac30e28bc}\label{classvvenc_1_1QuantRDOQ_a2b1f32b3fd4f4ad29d40ba4ac30e28bc}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_sigRateDelta@{m\_sigRateDelta}}
+\index{m\_sigRateDelta@{m\_sigRateDelta}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_sigRateDelta}{m\_sigRateDelta}}
+{\footnotesize\ttfamily int m\+\_\+sig\+Rate\+Delta\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 175 of file Quant\+R\+D\+O\+Q.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1QuantRDOQ_abba9fb5e5a804e1142f5b57b99c3b5cf}\label{classvvenc_1_1QuantRDOQ_abba9fb5e5a804e1142f5b57b99c3b5cf}} 
+\index{QuantRDOQ@{QuantRDOQ}!m\_testedLevels@{m\_testedLevels}}
+\index{m\_testedLevels@{m\_testedLevels}!QuantRDOQ@{QuantRDOQ}}
+\doxysubsubsection{\texorpdfstring{m\_testedLevels}{m\_testedLevels}}
+{\footnotesize\ttfamily int m\+\_\+tested\+Levels\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 179 of file Quant\+R\+D\+O\+Q.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{QuantRDOQ_8h}{Quant\+R\+D\+O\+Q.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{QuantRDOQ_8cpp}{Quant\+R\+D\+O\+Q.\+cpp}}\end{DoxyCompactItemize}

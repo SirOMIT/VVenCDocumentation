@@ -1,0 +1,1124 @@
+\hypertarget{CommonDef_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Common\+Def.h File Reference}
+\label{CommonDef_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/CommonDef.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/CommonDef.h}}
+
+
+Defines version information, constants and small in-\/line functions.  
+
+
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}Type\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+Include dependency graph for Common\+Def.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{CommonDef_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1detail}{vvenc\+::detail}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a37d2e0cbf648c9641cd10f954c79421d}{\+\_\+\+\_\+\+I\+N\+\_\+\+C\+O\+M\+M\+O\+N\+D\+E\+F\+\_\+\+H\+\_\+\+\_\+}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a1ba1cbcdbbfd4efc8da82ab9d5669a94}{\+\_\+\+A\+R\+E\+A\+\_\+\+AT}}(...)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a88891d5ff61d182b3abd1df737f62fc7}{\+\_\+\+A\+R\+E\+A\+\_\+\+C\+O\+N\+T\+A\+I\+NS}}(\+\_\+a,  \+\_\+x,  \+\_\+y)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_ad5c266077e6fd0fceab2049d762716fc}{\+\_\+\+B\+R\+E\+AK}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_aac7406d41bb6071e20e392657c6f0073}{\+\_\+\+C\+A\+SE}}(...)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_ae28e9d8d9f4f3ef0333710bdde3c24d3}{\+\_\+\+U\+N\+I\+T\+\_\+\+A\+R\+E\+A\+\_\+\+AT}}(\+\_\+a,  \+\_\+x,  \+\_\+y,  \+\_\+w,  \+\_\+h)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_aa0c44ec55b83a0b64b8bada4ef9da78b}{A\+L\+I\+G\+N\+\_\+\+D\+A\+TA}}(n\+Bytes,  v)~v \+\_\+\+\_\+attribute\+\_\+\+\_\+ ((aligned (n\+Bytes)))
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a1f9d082d1ea749a1ef3b359ac8280377}{A\+L\+I\+G\+N\+E\+D\+\_\+\+M\+A\+L\+L\+OC}}~1
+\begin{DoxyCompactList}\small\item\em use 32-\/bit aligned malloc/free \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{CommonDef_8h_aa1dec568e79152c892dcf63f445cbd7a}{A\+L\+W\+A\+Y\+S\+\_\+\+I\+N\+L\+I\+NE}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a380167a1300e5e9d9d4311695a645f6f}{C\+A\+C\+H\+E\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE}}~1024
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_af8e2dde85604978972dd0f2a87af0d7d}{C\+L\+A\+N\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+\_\+\+L\+E\+A\+ST}}(x,  y)~0
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a3c59997a991e1631537b6486402691b2}{G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+\_\+\+L\+E\+A\+ST}}(x,  y)~0
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a024715c04558a9981e960134bdf7fc05}{G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+array\+\_\+bounds}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_abeedda6c6f3250ec4e2fa04440094607}{G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+class\+\_\+memaccess}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a7740a8eb0ee730ca00a139b1849a27dd}{G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+maybe\+\_\+uninitialized}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_aa79686061aabdeab06e3a87c5059b97b}{G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+R\+E\+S\+ET}}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a53dd9b3d32e5ce06f59ae6838d11d591}{I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+A\+DD}}(c,  v)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a66f26bc63547aca30043ec8c435c2af5}{I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+D\+EC}}(c)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a48f1d35ac5779c6342bfb27603cbf17c}{I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+I\+NC}}(c)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_af29c8e8a3972b807615ad1b2e263d6a3}{I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+S\+ET}}(c,  v)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a3e043e64ed69e03f75dea4f831b6d9ec}{I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+S\+UB}}(c,  v)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a76b1bff910dc7b688b2a87a427b7da0e}{I\+T\+T\+\_\+\+S\+Y\+N\+C\+A\+CQ}}(p)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_acb7a367ae0d85a506023a0bc60db78ea}{I\+T\+T\+\_\+\+S\+Y\+N\+C\+P\+R\+EP}}(p)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a7a2a614aeedd30ac1ad91d50aa974cfe}{I\+T\+T\+\_\+\+S\+Y\+N\+C\+R\+EL}}(p)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a6b5bfcc7ec47dc1fd9969091e5470e5d}{I\+T\+T\+\_\+\+T\+A\+S\+K\+E\+ND}}(d,  t)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a588aade37aeb925ebc0129f33239d2d1}{I\+T\+T\+\_\+\+T\+A\+S\+K\+S\+T\+A\+RT}}(d,  t)
+\begin{DoxyCompactList}\small\item\em T\+R\+A\+C\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+TT. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a04331f38ee9c5646b28adcf48b06d8ce}{M\+A\+K\+E\+\_\+\+E\+N\+UM}}(V\+AR)~V\+AR,
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_af00168b6fa3d1dfaaaa67bb5f8ff17a2}{M\+A\+K\+E\+\_\+\+E\+N\+U\+M\+\_\+\+A\+N\+D\+\_\+\+S\+T\+R\+I\+N\+GS}}(source,  enum\+Name,  enum\+String\+Name)
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_ab84d440bf445458dabefcb30da18b0f7}{M\+A\+K\+E\+\_\+\+S\+T\+R\+I\+N\+GS}}(V\+AR)~\#V\+AR,
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a0f82c56d14897486d94b4fffbbddf8d2}{M\+E\+M\+O\+R\+Y\+\_\+\+A\+L\+I\+G\+N\+\_\+\+D\+E\+F\+\_\+\+S\+I\+ZE}}~32
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}~0
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a5885e0efa4ac12fa5d2456fd437c9cbe}{N\+V\+M\+\_\+\+B\+I\+TS}}~\char`\"{}\mbox{[}\%d bit\mbox{]}\char`\"{}, (sizeof(void$\ast$) == 8 ? 64 \+: 32)
+\begin{DoxyCompactList}\small\item\em used for checking 64-\/bit O/S \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{CommonDef_8h_abc675608d8dc48dd02c998db939a6653}{N\+V\+M\+\_\+\+C\+O\+M\+P\+I\+L\+E\+D\+BY}}~\char`\"{}\mbox{[}Unk-\/C\+XX\mbox{]}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a8593a6a15361c2857d8d84ffdca91a04}{N\+V\+M\+\_\+\+O\+N\+OS}}~\char`\"{}\mbox{[}Unk-\/OS\mbox{]}\char`\"{}
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_a8c5ff70b6b28cd0157c50a22406f92c4}{S\+I\+GN}}(x)~( (x) $>$= 0 ? 1 \+: -\/1 )
+\begin{DoxyCompactList}\small\item\em T\+R\+A\+C\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+TT. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{CommonDef_8h_acb5d8c131a494d7675d9e67c991c7ca1}{x\+Free}}(ptr)~free( ptr )
+\item 
+\#define \mbox{\hyperlink{CommonDef_8h_ab2e4e1768418ff5b9eec6fc99206c601}{x\+Malloc}}(type,  len)~detail\+::aligned\+\_\+malloc$<$type$>$( len, \mbox{\hyperlink{CommonDef_8h_a0f82c56d14897486d94b4fffbbddf8d2}{M\+E\+M\+O\+R\+Y\+\_\+\+A\+L\+I\+G\+N\+\_\+\+D\+E\+F\+\_\+\+S\+I\+ZE}} )
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817}{E\+Affine\+Model}} \{ \mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817af3e11392f7a24ee4a11bdb0885c2ecd0}{A\+F\+F\+I\+N\+E\+M\+O\+D\+E\+L\+\_\+4\+P\+A\+R\+AM}}, 
+\mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817ae6c396a3192e3b58b3068557d0288908}{A\+F\+F\+I\+N\+E\+M\+O\+D\+E\+L\+\_\+6\+P\+A\+R\+AM}}, 
+\mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817ad31de8c07f27f60df937b6ca4e9345f7}{A\+F\+F\+I\+N\+E\+\_\+\+M\+O\+D\+E\+L\+\_\+\+N\+UM}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{namespacevvenc_1_1detail_ad2509984abaed7eac56c2b77ec282f27}{aligned\+\_\+malloc}} (size\+\_\+t len, size\+\_\+t alignement)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a6b27649f79a36af7b6d4d42a0cf5ee6e}{ceil\+Log2}} (uint32\+\_\+t x)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacevvenc_a508284b4f6c8c2933a3b91d897a05774}{Clip\+BD}} (const T x, const int bit\+Depth)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a1c67fbd69415ae8f053fbe313e4a5cda}{floor\+Log2}} (uint32\+\_\+t x)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a895d72e900acda111471c0104f9bcb4c}{get\+Channel\+Type\+ScaleX}} (const Channel\+Type id, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a887392dd4249ddd4cc2fe2aea64c4b52}{get\+Channel\+Type\+ScaleY}} (const Channel\+Type id, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a2a4814950acdf4a610adacb0f7417d8d}{get\+Component\+ScaleX}} (const Component\+ID id, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_aa6703e40dff9faf6b5655472e130a512}{get\+Component\+ScaleY}} (const Component\+ID id, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static Component\+ID \mbox{\hyperlink{namespacevvenc_af65b3e046b6229d9e041ee8da74a89b7}{get\+First\+Component\+Of\+Channel}} (const Channel\+Type id)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a5e3b91da039b7303d0524e3ef6770c43}{get\+Number\+Valid\+Channels}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a9003964e78e9d46fb169c59874f7c4a8}{get\+Number\+Valid\+Components}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_a578f2b56504cead86b2f44f96393a42d}{is\+Chroma}} (const Channel\+Type id)
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_a17767316ca808028dc71f1c9c379da44}{is\+Chroma}} (const Component\+ID id)
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_ae73f6f2b632c978d0661ed7c8d50a685}{is\+Chroma\+Enabled}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} fmt)
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_a1f1df3533c8c33f57fd1a7fbd5b70ee2}{is\+Luma}} (const Channel\+Type id)
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_ac5289e15fcc41d93fc27a1efcde294d2}{is\+Luma}} (const Component\+ID id)
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\Value\+Type \mbox{\hyperlink{namespacevvenc_a02c936096419b46a079ce09359885f9b}{left\+ShiftU}} (const Value\+Type value, const unsigned shift)
+\item 
+void \mbox{\hyperlink{namespacevvenc_afdcc3f5f4435932506df86e4f2ca6b90}{msg}} (int level, const char $\ast$fmt,...)
+\item 
+std\+::string \mbox{\hyperlink{namespacevvenc_a528e8743ff95d9eb8e41ae18612be62a}{print}} (const char $\ast$fmt,...)
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\Value\+Type \mbox{\hyperlink{namespacevvenc_a52b75fe4fe2f5414ec50cc5c142700db}{right\+ShiftU}} (const Value\+Type value, const unsigned shift)
+\item 
+static Channel\+Type \mbox{\hyperlink{namespacevvenc_a28fa8a875cf8e2fac67b59efcab043b3}{to\+Channel\+Type}} (const Component\+ID id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a79ffec64f50a98cf339212235d605a1b}{A\+D\+A\+P\+T\+\_\+\+S\+R\+\_\+\+S\+C\+A\+LE}} = 1
+\begin{DoxyCompactList}\small\item\em division factor for adaptive search range \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{namespacevvenc_ab2835348084b72a4c2d2f703829adf0b}{A\+F\+F\+I\+N\+E\+\_\+\+M\+E\+\_\+\+L\+I\+S\+T\+\_\+\+M\+V\+P\+\_\+\+TH}} = 1.\+0
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abd5f1eb23d0b3cb2acb8d110999a74e7}{A\+F\+F\+I\+N\+E\+\_\+\+M\+E\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0bd4b3efbf6698ecfba929d447fed8fb}{A\+F\+F\+I\+N\+E\+\_\+\+M\+E\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+LD}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3cfff02d4e1dd5b282245135c7318222}{A\+F\+F\+I\+N\+E\+\_\+\+M\+I\+N\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}} = 4
+\begin{DoxyCompactList}\small\item\em Minimum affine MC block size. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8f69f38255383369c94408db149f2717}{A\+F\+F\+I\+N\+E\+\_\+\+M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}} = 5
+\begin{DoxyCompactList}\small\item\em A\+F\+F\+I\+NE M\+E\+R\+GE. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}} = 8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac23f3ed25480f1dbeca25b25690e8d62}{A\+L\+F\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+N\+UM}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a87f36e4598bf6db8029aafb8c7e953ca}{A\+L\+F\+\_\+\+V\+B\+\_\+\+P\+O\+S\+\_\+\+A\+B\+O\+V\+E\+\_\+\+C\+T\+U\+R\+O\+W\+\_\+\+C\+H\+MA}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af5804c546bc3ee16a07d8c4e56434340}{A\+L\+F\+\_\+\+V\+B\+\_\+\+P\+O\+S\+\_\+\+A\+B\+O\+V\+E\+\_\+\+C\+T\+U\+R\+O\+W\+\_\+\+L\+U\+MA}} = 4
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a73dc222e5a0ef5036b56cf7451625c83}{A\+M\+A\+X\+B\+T\+\_\+\+T\+H32}} = 15.\+0
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_ae2731be1a9c5d22536279116649b31da}{A\+M\+A\+X\+B\+T\+\_\+\+T\+H64}} = 30.\+0
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac9fc397710a518e8999e66d7f766e443}{A\+M\+V\+P\+\_\+\+D\+E\+C\+I\+M\+A\+T\+I\+O\+N\+\_\+\+F\+A\+C\+T\+OR}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a888d11a292480cce2948f275a6f9d9f0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}} = 2
+\begin{DoxyCompactList}\small\item\em A\+M\+VP\+: advanced motion vector prediction -\/ max number of final candidates. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_acce4bda29ddf83a5d3815d11f6319cc0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+D\+S\+\_\+\+M\+EM}} = 3
+\begin{DoxyCompactList}\small\item\em A\+M\+VP\+: advanced motion vector prediction -\/ max number of candidates. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a50a5532cb3f6f6dbb6ea8e99907e926b}{A\+T\+M\+V\+P\+\_\+\+S\+U\+B\+\_\+\+B\+L\+O\+C\+K\+\_\+\+S\+I\+ZE}} = 3
+\begin{DoxyCompactList}\small\item\em sub-\/block size for A\+T\+M\+VP \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab4631bf16a955dfd7bae49c7f6a71c13}{B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT}} = ((uint8\+\_\+t)(B\+C\+W\+\_\+\+N\+UM $>$$>$ 1))
+\begin{DoxyCompactList}\small\item\em Default weighting index representing for w=0.\+5. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a80132ce668e05d9cea10c4c21cebec55}{B\+C\+W\+\_\+\+N\+UM}} = 5
+\begin{DoxyCompactList}\small\item\em the number of weight options \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af5b19d8d9b49368a764977e0042f41dd}{B\+C\+W\+\_\+\+S\+I\+Z\+E\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+NT}} = 256
+\begin{DoxyCompactList}\small\item\em disabling Bcw if cu size is smaller than 256 \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af77d85400c634d89b86435b5e819c7fe}{B\+D\+O\+F\+\_\+\+E\+X\+T\+E\+N\+D\+\_\+\+S\+I\+ZE}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad7ef6ed81250ae72bd83284d8f8c0972}{B\+D\+O\+F\+\_\+\+T\+E\+M\+P\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}} = (M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE + 2 $\ast$ B\+D\+O\+F\+\_\+\+E\+X\+T\+E\+N\+D\+\_\+\+S\+I\+ZE) $\ast$ (M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE + 2 $\ast$ B\+D\+O\+F\+\_\+\+E\+X\+T\+E\+N\+D\+\_\+\+S\+I\+ZE)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a28521343d7609ba3fa74d76b135f7ab2}{B\+D\+P\+C\+M\+\_\+\+I\+DX}} = (5 $\ast$ (N\+U\+M\+\_\+\+D\+IR -\/ 1) + 2)
+\begin{DoxyCompactList}\small\item\em index for intra V\+D\+I\+A\+G\+O\+N\+AL mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad94b599ba1af2ce629a383971c91efe6}{C\+A\+B\+A\+C\+\_\+\+I\+N\+I\+T\+\_\+\+P\+R\+E\+S\+E\+N\+T\+\_\+\+F\+L\+AG}} = 1
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_a336288e441ab32bf76d5965ac8f50a27}{C\+C\+A\+L\+F\+\_\+\+B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+C\+O\+E\+F\+F\+\_\+\+L\+E\+V\+EL}} = 3
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ad56020422a73247ae1c80b2d39a7bf48}{C\+C\+A\+L\+F\+\_\+\+C\+A\+N\+D\+S\+\_\+\+C\+O\+E\+F\+F\+\_\+\+NR}} = 8
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_ad7d08a970f27ed15fbbd59b76e02ff8b}{C\+C\+A\+L\+F\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+R\+A\+N\+GE}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4f40410d8cc5f8a99aae6343bfefe42f}{C\+C\+A\+L\+F\+\_\+\+S\+M\+A\+L\+L\+\_\+\+T\+AB}} \mbox{[}C\+C\+A\+L\+F\+\_\+\+C\+A\+N\+D\+S\+\_\+\+C\+O\+E\+F\+F\+\_\+\+NR\mbox{]} = \{ 0, 1, 2, 4, 8, 16, 32, 64 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abca668350d49d688c671b124b5eb4576}{C\+H\+R\+O\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}} = 1 $<$$<$ (M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+I\+N\+T\+E\+R\+N\+AL + 1)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a12fee2631c8cd1ff94a6fa2784148857}{C\+H\+R\+O\+M\+A\+\_\+\+R\+E\+F\+I\+N\+E\+M\+E\+N\+T\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+ES}} = 8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7e7d2430aef362153260492bb6b9cf00}{C\+O\+E\+F\+\_\+\+R\+E\+M\+A\+I\+N\+\_\+\+B\+I\+N\+\_\+\+R\+E\+D\+U\+C\+T\+I\+ON}} = 5
+\begin{DoxyCompactList}\small\item\em indicates the level at which the V\+LC transitions from Golomb-\/\+Rice to T\+U+\+EG(k) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae8f58d21ca7daa0189438ce785f3ad2f}{C\+O\+M16\+\_\+\+C806\+\_\+\+T\+R\+A\+N\+S\+\_\+\+P\+R\+EC}} = 0
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a053ff437868fc90a5f56a4cc8a715ccb}{C\+S\+C\+A\+L\+E\+\_\+\+F\+P\+\_\+\+P\+R\+EC}} = 11
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1a6a8b0fcd23270fa8140521f9a51b3e}{C\+U\+\_\+\+D\+Q\+P\+\_\+\+E\+G\+\_\+k}} = 0
+\begin{DoxyCompactList}\small\item\em expgolomb order \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8b011362e9d666210ff4e04fa8bb5952}{C\+U\+\_\+\+D\+Q\+P\+\_\+\+T\+U\+\_\+\+C\+M\+AX}} = 5
+\begin{DoxyCompactList}\small\item\em max number bins for truncated unary \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a30387c23000a5c7c31c9c2251480f0ba}{D\+C\+\_\+\+I\+DX}} = 1
+\begin{DoxyCompactList}\small\item\em index for intra DC mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aaf117b1679c5f2832b2dccc285e62feb}{D\+E\+L\+T\+A\+\_\+\+Q\+P\+\_\+\+A\+CT}} \mbox{[}4\mbox{]} = \{ -\/5, 1, 3, 1 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a58224d601b8df4c6640329829b84e2db}{D\+I\+A\+\_\+\+I\+DX}} = (2 $\ast$ (N\+U\+M\+\_\+\+D\+IR -\/ 1) + 2)
+\begin{DoxyCompactList}\small\item\em index for intra D\+I\+A\+G\+O\+N\+AL mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a94972d22ba6e58c30778d227a5dfca34}{D\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+I\+DX}} = N\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+M\+O\+DE
+\begin{DoxyCompactList}\small\item\em chroma mode index for derived from luma intra mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2818d42295a4a0737ed8595b0d17854f}{D\+M\+V\+R\+\_\+\+N\+U\+M\+\_\+\+I\+T\+E\+R\+A\+T\+I\+ON}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac58e1ca48bba13215c4314648fc11d00}{D\+M\+V\+R\+\_\+\+S\+U\+B\+C\+U\+\_\+\+S\+I\+ZE}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3c989e10b2e7dd68611f4d9fe115e1c9}{D\+M\+V\+R\+\_\+\+S\+U\+B\+C\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+O\+G2}} = 4
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a9cf3b41a976d4cdfede57375e9fe9fd1}{E\+N\+C\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+W\+E\+I\+G\+H\+T\+I\+NG}} = 0.\+8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_adae1836695d2ecbd633684f957a27b3a}{E\+N\+C\+\_\+\+P\+P\+S\+\_\+\+I\+D\+\_\+\+R\+PR}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a08d4f020011a86b2b78bac1f8f24c4bc}{F\+A\+S\+T\+\_\+\+S\+K\+I\+P\+\_\+\+D\+E\+P\+TH}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac28ebd538362697e2726e1a4ab42a3e4}{F\+A\+S\+T\+\_\+\+U\+D\+I\+\_\+\+M\+A\+X\+\_\+\+R\+D\+M\+O\+D\+E\+\_\+\+N\+UM}} = (16)
+\begin{DoxyCompactList}\small\item\em maximum number of RD comparison in fast-\/\+U\+DI estimation loop \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af6f4758776fb876d168d9f1064f33607}{F\+P\+\_\+\+P\+R\+EC}} = 11
+\item 
+static constexpr double \mbox{\hyperlink{namespacevvenc_a3b24931f86fdef83ad2b6985e2a8fe8a}{F\+R\+A\+C\+\_\+\+B\+I\+T\+S\+\_\+\+S\+C\+A\+LE}} = 1.\+0 / (1 $<$$<$ S\+C\+A\+L\+E\+\_\+\+B\+I\+TS)
+\item 
+std\+::function$<$ void(void $\ast$, int, const char $\ast$, va\+\_\+list)$>$ \mbox{\hyperlink{namespacevvenc_a3f246caaf17fe6e4a5a5f1f7fa702e81}{g\+\_\+msg\+Fnc}} = nullptr
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abb1b3c3262e30727eb9f2773fdfd48b1}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+L\+O\+G2}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0d46b8c22c329d3fe538bb0381a1a423}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = 1 $<$$<$ G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+L\+O\+G2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a754a6d4c4308955f03edd37743cea8d0}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}} = G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+U\+N\+I\+\_\+\+C\+A\+N\+DS $\ast$ (G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+U\+N\+I\+\_\+\+C\+A\+N\+DS -\/ 1)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8a61275dea5a64beedea69cc42fd8318}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+U\+N\+I\+\_\+\+C\+A\+N\+DS}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af6fb3c63eb3e9ed01f5cf4e47f488cfa}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+T\+R\+Y\+\_\+\+W\+E\+I\+G\+H\+T\+E\+D\+\_\+\+S\+AD}} = 60
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a617cc4cb64b8027e1ef56cb126a8df3d}{G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+T\+R\+Y\+\_\+\+W\+E\+I\+G\+H\+T\+E\+D\+\_\+\+S\+A\+TD}} = 8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7d89370a60feeaba9c1358dd8fbdbdb0}{G\+E\+O\+\_\+\+M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a30eb4b9bccbe9bfc7c41810d1be5fddb}{G\+E\+O\+\_\+\+M\+I\+N\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = 1 $<$$<$ G\+E\+O\+\_\+\+M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a16d7acfb6eb643947da3b6d93d4dfb80}{G\+E\+O\+\_\+\+M\+V\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE}} = G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE $>$$>$ 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5121fa915fd5e79a47833ed0f02a76ba}{G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+A\+N\+G\+L\+ES}} = 32
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af875ca4d641ceae29a0a00f20a3cb50c}{G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = ( G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+L\+O\+G2 -\/ G\+E\+O\+\_\+\+M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2 ) + 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3b20741d61523a3696947b2d84f35b9b}{G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+D\+I\+S\+T\+A\+N\+C\+ES}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6218d994523ebb6e3906293d8b3a0ce0}{G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+I\+T\+I\+O\+N\+\_\+\+M\+O\+DE}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa0ed0f8dc3866faedd10f9513942282d}{G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+R\+E\+S\+T\+O\+R\+E\+D\+\_\+\+M\+A\+SK}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa4534d22bd6fef40ba3176f6dce6a255}{G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE}} = 3 $\ast$ (G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE $>$$>$ 3) $\ast$ 2 + G\+E\+O\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7747751fd2c2c8737d1080e4761f2bfe}{H\+O\+R\+\_\+\+I\+DX}} = (1 $\ast$ (N\+U\+M\+\_\+\+D\+IR -\/ 1) + 2)
+\begin{DoxyCompactList}\small\item\em index for intra H\+O\+R\+I\+Z\+O\+N\+T\+AL mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_adcd8abf293cc46466e3775136b492d03}{I\+B\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+A\+D\+A\+P\+T\+I\+V\+E\+\_\+\+S\+E\+A\+R\+C\+H\+R\+A\+N\+GE}} = 0\+X04
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2dcf397ffb65b77bd396fd16c6ce0aae}{I\+B\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+B\+U\+F\+F\+E\+R\+BV}} = 0\+X02
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6373e6cb9fa755b455122fa983156a77}{I\+B\+C\+\_\+\+F\+A\+S\+T\+\_\+\+M\+E\+T\+H\+O\+D\+\_\+\+N\+O\+I\+N\+T\+R\+A\+\_\+\+I\+B\+C\+C\+B\+F0}} = 0x01
+\begin{DoxyCompactList}\small\item\em 8 candidates BV to choose from \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab4a1309e673491ba91603dcd5f35aade}{I\+B\+C\+\_\+\+M\+A\+X\+\_\+\+C\+A\+N\+D\+\_\+\+S\+I\+ZE}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_afe096d8195a42be5863af02e7cbab3ec}{I\+B\+C\+\_\+\+M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}} = 6
+\begin{DoxyCompactList}\small\item\em I\+BC M\+E\+R\+GE. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_abe04d9b7f688253587f839144f4a5465}{I\+B\+C\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+ES}} = 64
+\begin{DoxyCompactList}\small\item\em Maximum number of candidates to store/test. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab738e2a352b1b205cb9eb5fb56897966}{I\+Q\+U\+A\+N\+T\+\_\+\+S\+H\+I\+FT}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0e93f23c459258cd8b8076c760f56494}{J\+V\+E\+T\+\_\+\+C0024\+\_\+\+Z\+E\+R\+O\+\_\+\+O\+U\+T\+\_\+\+TH}} = 32
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a671f915e027afaf2a3c92946aa3bbf0f}{L\+A\+S\+T\+\_\+\+S\+I\+G\+N\+I\+F\+I\+C\+A\+N\+T\+\_\+\+G\+R\+O\+U\+PS}} = 14
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3be47a38b2c922b6d5a3ca9d9d4eb412}{L\+D\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+F\+ER}} = 1
+\begin{DoxyCompactList}\small\item\em No need to signal mode\+\_\+constraint\+\_\+flag, and the mode\+Type of the region is inferred as M\+O\+D\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+T\+RA. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac29f0c6bc8a7504e79521c459cc89825}{L\+D\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+I\+N\+H\+E\+R\+IT}} = 0
+\begin{DoxyCompactList}\small\item\em No need to signal mode\+\_\+constraint\+\_\+flag, and the mode\+Type of the region is inherited from its parent node. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6779db4bc1f8955bb67e7efa5335b4c1}{L\+D\+T\+\_\+\+M\+O\+D\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+I\+G\+N\+AL}} = 2
+\begin{DoxyCompactList}\small\item\em Need to signal mode\+\_\+constraint\+\_\+flag, and the mode\+Type of the region is determined by the flag. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4759fd988683d93150c137c8f88f0069}{L\+F\+N\+S\+T\+\_\+\+L\+A\+S\+T\+\_\+\+S\+I\+G\+\_\+\+C\+H\+R\+O\+MA}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9bef9b1d7d4bfeaacf413f5556ddbba8}{L\+F\+N\+S\+T\+\_\+\+L\+A\+S\+T\+\_\+\+S\+I\+G\+\_\+\+L\+U\+MA}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae81a2bd5ed342b9e778004afcf97b683}{L\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+I\+DX}} = N\+U\+M\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE
+\begin{DoxyCompactList}\small\item\em chroma mode index for derived from LM mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aef2302aef155626bbffd101174d3547c}{L\+M\+\_\+\+S\+Y\+M\+B\+O\+L\+\_\+\+N\+UM}} = (1 + N\+U\+M\+\_\+\+L\+M\+C\+\_\+\+M\+O\+DE)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6e1b888a49d3785d1aaa20c67e5d837d}{L\+M\+C\+S\+\_\+\+S\+E\+G\+\_\+\+N\+UM}} = 32
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0f3bf0ac0eee08567c7629d6c6f5fa81}{L\+O\+G2\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+L\+U\+M\+N\+S\+\_\+\+M\+I\+N\+U\+S1}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8efc7012b2c5d4ca64150c9fccb953f7}{L\+O\+G2\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+O\+W\+S\+\_\+\+M\+I\+N\+U\+S1}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a42a7675ac096c6f8aee75791e0dd37ba}{L\+O\+G2\+\_\+\+P\+A\+L\+E\+T\+T\+E\+\_\+\+C\+G\+\_\+\+S\+I\+ZE}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac357cee407a805a398f90825a5adcf22}{L\+O\+G2\+\_\+\+S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+E\+U\+T\+R\+A\+L\+\_\+\+V\+A\+L\+UE}} = 4
+\begin{DoxyCompactList}\small\item\em log2 of the value that, when used in a scaling list, has no effect on quantisation \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2d1343ab22573cf208bcc6782e6cda71}{L\+O\+S\+S\+L\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+M\+I\+X\+E\+D\+\_\+\+L\+O\+S\+S\+L\+E\+S\+S\+\_\+\+R\+D\+\_\+\+C\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+QP}} = 0
+\begin{DoxyCompactList}\small\item\em QP to use for lossless coding. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5a6fdb20ebe1f7276c061ed084249129}{L\+O\+S\+S\+L\+E\+S\+S\+\_\+\+A\+N\+D\+\_\+\+M\+I\+X\+E\+D\+\_\+\+L\+O\+S\+S\+L\+E\+S\+S\+\_\+\+R\+D\+\_\+\+C\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+Q\+P\+\_\+\+P\+R\+I\+ME}} =4
+\begin{DoxyCompactList}\small\item\em QP\textquotesingle{} to use for mixed\+\_\+lossy\+\_\+lossless coding. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac47d87771961bd5c9c59f2a7601ccbbd}{L\+U\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+NS}} = 1 $<$$<$ M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+I\+N\+T\+E\+R\+N\+AL
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3fd5f22876ac32e2f502f0ce0c1f96b8}{L\+U\+M\+A\+\_\+\+I\+N\+T\+E\+R\+P\+O\+L\+A\+T\+I\+O\+N\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+U\+B\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+S\+\_\+\+S\+I\+G\+N\+AL}} = 1 $<$$<$ M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+S\+I\+G\+N\+AL
+\item 
+void $\ast$ \mbox{\hyperlink{namespacevvenc_ac39b05187ac0c99523911f35ecc7bd6f}{m\+\_\+msg\+Fnc\+Ctx}} = nullptr
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad43679969df170d5f0ad20fa534fa8ec}{M\+A\+X\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+N\+G\+TH}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa96cef22a06939b94c26182f7d558658}{M\+A\+X\+\_\+\+A\+L\+F\+\_\+\+P\+A\+D\+D\+I\+N\+G\+\_\+\+S\+I\+ZE}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0c64b76e1fc7d5038882df2e71c85ef4}{M\+A\+X\+\_\+\+B\+D\+O\+F\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+ON}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_acad8f3ea507cbc6ac57003004e975016}{M\+A\+X\+\_\+\+B\+T\+\_\+\+D\+E\+P\+TH}} = 4
+\begin{DoxyCompactList}\small\item\em $<$=7 \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a57b6787b3132f2420f0ab914bff9a7b0}{M\+A\+X\+\_\+\+B\+T\+\_\+\+D\+E\+P\+T\+H\+\_\+\+I\+N\+T\+ER}} = 4
+\begin{DoxyCompactList}\small\item\em $<$=7 \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5efd094cfd2ff54fc7e9b372adeb4a5b}{M\+A\+X\+\_\+\+B\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+N\+T\+ER}} = 128
+\begin{DoxyCompactList}\small\item\em for initialization, \mbox{[}1$<$$<$M\+I\+N\+\_\+\+B\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+N\+T\+ER, 1$<$$<$C\+T\+U\+\_\+\+L\+O\+G2\mbox{]} \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af6a58e5057f3d82df078ef7f2508e17d}{M\+A\+X\+\_\+\+C\+P\+B\+\_\+\+C\+NT}} = 32
+\begin{DoxyCompactList}\small\item\em Upper bound of (cpb\+\_\+cnt\+\_\+minus1 + 1) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a52e3e1f8cc4b2f1c17ee143d02320115}{M\+A\+X\+\_\+\+C\+U\+\_\+\+B\+L\+K\+S\+I\+Z\+E\+\_\+\+P\+LT}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a00ea24186f746c566300adaf3b8668a7}{M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH}} = 7
+\begin{DoxyCompactList}\small\item\em log2(\+C\+T\+U\+Size) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = 1$<$$<$M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad4c6299a6038ffe0d853c33e1dae9ef0}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}} = M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH + 1
+\begin{DoxyCompactList}\small\item\em 1+log2(\+C\+T\+U\+Size) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4fae6134761d9194f178e18a469d0601}{M\+A\+X\+\_\+\+D\+E\+L\+T\+A\+\_\+\+QP}} = 7
+\begin{DoxyCompactList}\small\item\em maximum supported delta QP value \end{DoxyCompactList}\item 
+static const Distortion \mbox{\hyperlink{namespacevvenc_a8b8fd77e4fe3b07a293937f3384b34f5}{M\+A\+X\+\_\+\+D\+I\+S\+T\+O\+R\+T\+I\+ON}} = std\+::numeric\+\_\+limits$<$Distortion$>$\+::max()
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_af3b8fe3c3850ac884f854414f26c76b2}{M\+A\+X\+\_\+\+D\+O\+U\+B\+LE}} = 1.\+7e+308
+\begin{DoxyCompactList}\small\item\em max. value of double-\/type value \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_adb6427c546a65495b750da60f6853b68}{M\+A\+X\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+E\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+Q\+U\+A\+L\+I\+T\+Y\+\_\+\+L\+A\+Y\+E\+RS}} = 8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4521994cc996921f223544e09d194ab9}{M\+A\+X\+\_\+\+I\+NT}} = std\+::numeric\+\_\+limits$<$int$>$\+::max()
+\begin{DoxyCompactList}\small\item\em max. value of signed 32-\/bit integer \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae7141de8f72e8cc9270a043af6d80cc3}{M\+A\+X\+\_\+\+L\+F\+N\+S\+T\+\_\+\+C\+O\+E\+F\+\_\+\+N\+UM}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a58b0a8ad361a362f0f1b8622344dad15}{M\+A\+X\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+C\+O\+E\+F\+\_\+\+N\+UM}} = 64
+\begin{DoxyCompactList}\small\item\em max coefficient number for quantization matrix \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1af1955ad53e1bfa777f483ba3f5bb16}{M\+A\+X\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM}} = 8
+\begin{DoxyCompactList}\small\item\em max size number for quantization matrix \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad44b4f6e2f405f8556d457ddece2da37}{M\+A\+X\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+N\+U\+M\+\_\+\+L\+A\+Y\+ER}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2341374279bad9351d7acf08b050c25c}{M\+A\+X\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+N\+U\+M\+\_\+\+O\+PS}} = 1024
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7b79963a6fe216db9c51d97993e32427}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+C\+O\+E\+FF}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} = 25
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8053a0a24b1dda7a9b0da99c6776e012}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+O\+E\+FF}} = M\+A\+X\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+N\+G\+TH $\ast$ M\+A\+X\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+L\+E\+N\+G\+TH / 2 + 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}} = 13
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af4d5d618782dbe8527830ad49c47aaf2}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}} = 32
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_acb296f72d56e600139234c49810e1445}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+P\+S\+\_\+\+T\+Y\+PE}} = 8
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_ac309d4fd2e2aa515de27d8bfc75c3bfa}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+C\+O\+E\+FF}} = 8
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_a3557bb82ef229e96a0eb842c612448ce}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+RS}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab89a1dcffa5d4ce7a20dd9c94773b5dc}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+D\+CI}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abe049939d2a14e5d2be8502a7149f4c3}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+H\+M\+V\+P\+\_\+\+A\+V\+M\+P\+C\+A\+N\+DS}} = 4
+\begin{DoxyCompactList}\small\item\em maximum number of H\+M\+VP candidates to be used in A\+M\+VP list \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a29e793801cf569e694e052d3d802cb0c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+H\+M\+V\+P\+\_\+\+C\+A\+N\+DS}} = (M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS-\/1)
+\begin{DoxyCompactList}\small\item\em maximum number of H\+M\+VP candidates to be stored and used in merge list \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2259d918198dccb7268a799862b9fce8}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+I\+DS}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa970e28364acdeef97ac5a4be424933c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+L\+O\+N\+G\+\_\+\+T\+E\+R\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS}} = 33
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab8a8f812589b4bd4feb7d28b0bbaeed2}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+M\+I\+P\+\_\+\+M\+O\+DE}} = 32
+\begin{DoxyCompactList}\small\item\em maximum number of M\+IP modes \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5d5b5ce29ef8ece97390190c56299bac}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+O\+L\+SS}} = 256
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad21821cd10803ba3ce718c08e973e415}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+\_\+\+I\+D\+X\+S\+\_\+\+I\+N\+\_\+\+C\+T\+U\+\_\+\+W\+I\+D\+TH}} = M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE/M\+I\+N\+\_\+\+P\+U\+\_\+\+S\+I\+ZE
+\begin{DoxyCompactList}\small\item\em maximum number of partition indices across the width of a C\+TU (or height of a C\+TU) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a392e7b4ae5123d45aff941037113ae6d}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+S\+\_\+\+I\+N\+\_\+\+C\+TU}} = ( ( M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE $\ast$ M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE ) $>$$>$ ( M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2 $<$$<$ 1 ) )
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8d4a40ad8d7eb371ec6979b7c9ccf0b9}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+I\+C\+S\+\_\+\+I\+N\+\_\+\+S\+OP}} = 1024
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2ee677914b587b15fd8f043ba94d3f9e}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+P\+PS}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad1afaebbae27aad6d105498949342a52}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+Q\+P\+\_\+\+V\+A\+L\+U\+ES}} = M\+A\+X\+\_\+\+QP + 1 -\/ M\+I\+N\+\_\+\+Q\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+F\+O\+R\+\_\+16\+\_\+\+B\+IT
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}} = 16
+\begin{DoxyCompactList}\small\item\em max. number of entries in picture reference list \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a863332e5c5a7b63f12f90904e7ed0a0f}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+L\+A\+Y\+E\+RS}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4202b8f956f5692246b096e3e981ff73}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+S\+PS}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5cd01cf5802c6e2d5cb7c2c5b3ef20f1}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+S\+U\+B\+\_\+\+P\+I\+CS}} = (1 $<$$<$ 16)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a31017ac267b1234ff51e79592218dbae}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+S\+U\+B\+C\+U\+\_\+\+D\+M\+VR}} = ((M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE $\ast$ M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE) $>$$>$ (D\+M\+V\+R\+\_\+\+S\+U\+B\+C\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+O\+G2 + D\+M\+V\+R\+\_\+\+S\+U\+B\+C\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+O\+G2))
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aecec232d53f1a3709f53bd79e029acfe}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+V\+PS}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa2aaf0a0822296d132b363aeaf9df0ca}{M\+A\+X\+\_\+\+QP}} = 63
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ada871fa5e63f6b7898c825d13c095036}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}} = 6
+\begin{DoxyCompactList}\small\item\em Maximum size of QP offset list is 6 entries. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9f01e7fa2dca2aab9c9b6fd95205b3b5}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+P\+E\+R\+C\+E\+P\+T\+\_\+\+Q\+PA}} = 42
+\begin{DoxyCompactList}\small\item\em max. base QP up to which C\+TU or sub-\/\+C\+TU Q\+PA is used instead of frame Q\+PA \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2ae2a927eaaad4394ab96c42890c7d9d}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+L\+I\+N\+E\+\_\+\+I\+DX}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a15ef77bcb3f5e2bdbb9e5130fb3fc9ea}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a414ff2bd95cf382bd083ff83a592434f}{M\+A\+X\+\_\+\+S\+C\+A\+L\+I\+N\+G\+\_\+\+R\+A\+T\+IO}} = 8
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_ad2388b6f789c9c4e13bb82f99c973cf8}{M\+A\+X\+\_\+\+S\+C\+H\+AR}} = 127
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa62a264688240eedd890d9f3f0b3332b}{M\+A\+X\+\_\+\+S\+L\+I\+C\+ES}} = 600
+\begin{DoxyCompactList}\small\item\em Maximum number of slices per picture. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a36e00219e25f0edbf2d77e73ee59fbe0}{M\+A\+X\+\_\+\+T\+B\+\_\+\+L\+O\+G2\+\_\+\+S\+I\+Z\+EY}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} = 1 $<$$<$ M\+A\+X\+\_\+\+T\+B\+\_\+\+L\+O\+G2\+\_\+\+S\+I\+Z\+EY
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a97270c35f327fbcbbe70b03e735ccbe5}{M\+A\+X\+\_\+\+T\+E\+S\+T\+E\+D\+\_\+\+Q\+Ps}} = ( 1 + 1 + ( M\+A\+X\+\_\+\+D\+E\+L\+T\+A\+\_\+\+QP $<$$<$ 1 ) )
+\begin{DoxyCompactList}\small\item\em dqp=0 +-\/ max\+\_\+delta\+\_\+qp + lossless mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac9cbc82cbd91aa335b4e6336e5b20b5f}{M\+A\+X\+\_\+\+T\+I\+L\+E\+\_\+\+C\+O\+LS}} = 20
+\begin{DoxyCompactList}\small\item\em Maximum number of tile columns. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aaac4649baa6fd90363e1e8439580ecd9}{M\+A\+X\+\_\+\+T\+I\+L\+E\+\_\+\+R\+O\+WS}} = 22
+\begin{DoxyCompactList}\small\item\em Maximum number of tile rows. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5cf05059f5c7f013f09636c8a7be61b8}{M\+A\+X\+\_\+\+T\+I\+L\+ES}} = M\+A\+X\+\_\+\+T\+I\+L\+E\+\_\+\+C\+O\+LS $\ast$ M\+A\+X\+\_\+\+T\+I\+L\+E\+\_\+\+R\+O\+WS
+\begin{DoxyCompactList}\small\item\em Maximum number of tiles. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a580d63e8c800221916daaced79f86a4f}{M\+A\+X\+\_\+\+T\+I\+M\+E\+C\+O\+D\+E\+\_\+\+S\+E\+I\+\_\+\+S\+E\+TS}} = 3
+\begin{DoxyCompactList}\small\item\em Maximum number of time sets. \end{DoxyCompactList}\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a5d72f94af3ff515d55c7b93c62aa8252}{M\+A\+X\+\_\+\+T\+M\+P\+\_\+\+B\+U\+FS}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af614a2558200978510e567cb7663e0c9}{M\+A\+X\+\_\+\+T\+U\+\_\+\+L\+E\+V\+E\+L\+\_\+\+C\+T\+X\+\_\+\+C\+O\+D\+E\+D\+\_\+\+B\+I\+N\+\_\+\+C\+O\+N\+S\+T\+R\+A\+I\+NT}} = 28
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}} = M\+A\+X\+\_\+\+T\+B\+\_\+\+L\+O\+G2\+\_\+\+S\+I\+Z\+EY + 1
+\begin{DoxyCompactList}\small\item\em 1+log2(\+Max\+Tu\+Size) \end{DoxyCompactList}\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_af837675097d4327bced55e989582462d}{M\+A\+X\+\_\+\+U\+C\+H\+AR}} = 255
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a2e7b38201fa33601f4f205aaa96fce8f}{M\+A\+X\+\_\+\+U\+I\+NT}} = 0x\+F\+F\+F\+F\+F\+F\+F\+FU
+\begin{DoxyCompactList}\small\item\em max. value of unsigned 32-\/bit integer \end{DoxyCompactList}\item 
+static const uint64\+\_\+t \mbox{\hyperlink{namespacevvenc_aad03f8c6359d3a995aa3c218d860d9b4}{M\+A\+X\+\_\+\+U\+I\+N\+T64}} = 0x\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+F\+FU
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abbbe37cb1bd5a9ce02884b550004fbcb}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+L\+A\+Y\+E\+RS}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1897b410806186aa68f6bd073d214482}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+N\+U\+M\+\_\+\+H\+R\+D\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+RS}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a539d224caa3a8709c85caf5dd8d7e6d3}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+O\+L\+S\+\_\+\+M\+O\+D\+E\+\_\+\+I\+DC}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_acacc4bebfabeb340743b0575612b81fa}{M\+A\+X\+\_\+\+V\+P\+S\+\_\+\+S\+U\+B\+L\+A\+Y\+E\+RS}} = 7
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a443819fcd74af0341398916517dd57c3}{M\+A\+X\+I\+M\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+F\+I\+L\+T\+E\+R\+E\+D\+\_\+\+H\+E\+I\+G\+HT}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa6e102ad7ba077af01b29a6c32d7fc42}{M\+A\+X\+I\+M\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+F\+I\+L\+T\+E\+R\+E\+D\+\_\+\+W\+I\+D\+TH}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a34995457ca9513bf8fd98534e2709655}{M\+A\+X\+P\+L\+T\+P\+R\+E\+D\+S\+I\+ZE}} = 63
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5710de3768b10e3d9f136112900ff15e}{M\+A\+X\+P\+L\+T\+P\+R\+E\+D\+S\+I\+Z\+E\+\_\+\+D\+U\+A\+L\+T\+R\+EE}} = 31
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a426f19a67c4ffb7330a7fcad7df186e1}{M\+A\+X\+P\+L\+T\+S\+I\+ZE}} = 31
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9fabbdba9ed9252a4fe367e8e5dee0fb}{M\+A\+X\+P\+L\+T\+S\+I\+Z\+E\+\_\+\+D\+U\+A\+L\+T\+R\+EE}} = 15
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5103e2ec4ed3709bf2528a42af289758}{M\+C\+T\+F\+\_\+\+A\+D\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+AY}} = 2 $\ast$ V\+V\+E\+N\+C\+\_\+\+M\+C\+T\+F\+\_\+\+R\+A\+N\+GE + 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae4d3f019e63d80007f7252258f257e8e}{M\+C\+T\+F\+\_\+\+P\+A\+D\+D\+I\+NG}} = 128
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af4a12e33a348593aa530de18f2c500dc}{M\+D\+L\+M\+\_\+\+L\+\_\+\+I\+DX}} = L\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+I\+DX + 1
+\begin{DoxyCompactList}\small\item\em M\+D\+L\+M\+\_\+L. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7887325dac31e8c125adef56e2f29cdd}{M\+D\+L\+M\+\_\+\+T\+\_\+\+I\+DX}} = L\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+I\+DX + 2
+\begin{DoxyCompactList}\small\item\em M\+D\+L\+M\+\_\+T. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0cc30b674bd64adbacf8319f6b9af99d}{M\+I\+N\+\_\+\+D\+U\+A\+L\+T\+R\+E\+E\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+S\+I\+ZE}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_afab17272db0bb27e6fc0d37f36028bbd}{M\+I\+N\+\_\+\+D\+U\+A\+L\+T\+R\+E\+E\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+W\+I\+D\+TH}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7058cc9150560a92caa32d92a7e7242f}{M\+I\+N\+\_\+\+I\+NT}} = std\+::numeric\+\_\+limits$<$int$>$\+::min()
+\begin{DoxyCompactList}\small\item\em min. value of signed 32-\/bit integer \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4657f04709901de6875ca807bb7e0a07}{M\+I\+N\+\_\+\+P\+U\+\_\+\+S\+I\+ZE}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab2f623ece534e3cb1c3311f5beac976f}{M\+I\+N\+\_\+\+Q\+P\+\_\+\+V\+A\+L\+U\+E\+\_\+\+F\+O\+R\+\_\+16\+\_\+\+B\+IT}} = -\/48
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5efe41a6eff5cc54f2ead6eb71919b32}{M\+I\+N\+\_\+\+T\+B\+\_\+\+L\+O\+G2\+\_\+\+S\+I\+Z\+EY}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a0e671f03bdc409593c5d28d6586dea98}{M\+I\+N\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} = 1 $<$$<$ M\+I\+N\+\_\+\+T\+B\+\_\+\+L\+O\+G2\+\_\+\+S\+I\+Z\+EY
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab111c3aa6af3a4739dc61d9dc1e41c31}{M\+I\+P\+\_\+\+M\+A\+X\+\_\+\+H\+E\+I\+G\+HT}} = M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aeaf1ce51c0b835c7c5af2876e587fec7}{M\+I\+P\+\_\+\+M\+A\+X\+\_\+\+W\+I\+D\+TH}} = M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a3c088a7fb4e53a6b31ab51e672758acf}{M\+I\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+M\+A\+T\+R\+IX}} = 32
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a49ae902dbf58569e65bbbf6d72ff76bf}{M\+I\+P\+\_\+\+S\+H\+I\+F\+T\+\_\+\+M\+A\+T\+R\+IX}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a617deb8c04e1b82965907d0795e9d102}{M\+L\+S\+\_\+\+C\+G\+\_\+\+S\+I\+ZE}} = 4
+\begin{DoxyCompactList}\small\item\em Coefficient group size of 4x4; = M\+L\+S\+\_\+\+C\+G\+\_\+\+L\+O\+G2\+\_\+\+W\+I\+D\+TH + M\+L\+S\+\_\+\+C\+G\+\_\+\+L\+O\+G2\+\_\+\+H\+E\+I\+G\+HT. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3be7827d2a4a2c35661962feb9bce427}{M\+L\+S\+\_\+\+G\+R\+P\+\_\+\+N\+UM}} = 256
+\begin{DoxyCompactList}\small\item\em Max number of coefficient groups, max(16, 256) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac8f2b352d6f0bab2f4fb94bd2b8b01c9}{M\+M\+V\+D\+\_\+\+A\+D\+D\+\_\+\+N\+UM}} = (M\+M\+V\+D\+\_\+\+M\+A\+X\+\_\+\+R\+E\+F\+I\+N\+E\+\_\+\+N\+UM $\ast$ M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM)
+\begin{DoxyCompactList}\small\item\em total number of mmvd candidate \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_adab358666fca1a1521e393bd74db62b2}{M\+M\+V\+D\+\_\+\+B\+A\+S\+E\+\_\+\+M\+V\+\_\+\+N\+UM}} = 2
+\begin{DoxyCompactList}\small\item\em max number of base candidate \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a2f0bb8f6cba8fc4f0107bfc39a9dff4c}{M\+M\+V\+D\+\_\+\+M\+A\+X\+\_\+\+R\+E\+F\+I\+N\+E\+\_\+\+N\+UM}} = (M\+M\+V\+D\+\_\+\+R\+E\+F\+I\+N\+E\+\_\+\+S\+T\+EP $\ast$ 4)
+\begin{DoxyCompactList}\small\item\em max number of candidate from a base candidate \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5aa97604b2ea00afb0c2adfa6698d66e}{M\+M\+V\+D\+\_\+\+M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+R\+D\+\_\+\+B\+U\+F\+\_\+\+N\+UM}} = (M\+M\+V\+D\+\_\+\+M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+R\+D\+\_\+\+N\+UM + 1)
+\begin{DoxyCompactList}\small\item\em increase buffer size by 1 \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5ea71e7a80ac1512bebf62de0b8d8312}{M\+M\+V\+D\+\_\+\+M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+R\+D\+\_\+\+N\+UM}} = M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a88b12ce3464b6919ba937b14a41260ee}{M\+M\+V\+D\+\_\+\+R\+E\+F\+I\+N\+E\+\_\+\+S\+T\+EP}} = 8
+\begin{DoxyCompactList}\small\item\em max number of distance step \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{namespacevvenc_a721d36fd43c30e62b1cd5106a2c1c684}{M\+R\+G\+\_\+\+F\+A\+S\+T\+\_\+\+R\+A\+T\+IO}} = 1.\+25
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a5c92713bb9d8d98f8a99d6a4b1ee56a1}{M\+R\+G\+\_\+\+F\+A\+S\+T\+\_\+\+R\+A\+T\+I\+O\+M\+YV}} \mbox{[}4\mbox{]} = \{ 1.\+15, 1.\+1, 1.\+1, 1.\+05 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6800dd7ecce563aaa43eb121de077225}{M\+R\+G\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}} = 6
+\begin{DoxyCompactList}\small\item\em M\+E\+R\+GE. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aabc9cefb803f8e9ad2318f3e7ae52cf3}{M\+R\+L\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+L\+I\+N\+ES}} = 3
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a6c947151a08651c8888e7610de135dee}{M\+T\+S\+\_\+\+I\+N\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = 32
+\begin{DoxyCompactList}\small\item\em Max Inter \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} size applying E\+MT, supported values\+: 8, 16, 32, 64, 128. \end{DoxyCompactList}\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ac660d4743dcd06add3c492a374a41ed9}{M\+T\+S\+\_\+\+I\+N\+T\+R\+A\+\_\+\+M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} = 32
+\begin{DoxyCompactList}\small\item\em Max Intra \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} size applying E\+MT, supported values\+: 8, 16, 32, 64, 128. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a52d81adea3cd5827f7e1f4e46e81d163}{M\+U\+L\+T\+I\+\_\+\+R\+E\+F\+\_\+\+L\+I\+N\+E\+\_\+\+I\+DX}} \mbox{[}3\mbox{]} = \{ 0, 1, 2 \}
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_a6f7c047b4a3c380f55284fe6ac70a0eb}{M\+V\+\_\+\+B\+I\+TS}} = 18
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_a30d4db0c0cc943bddf67f9cb1e8609bd}{M\+V\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T\+\_\+\+B\+I\+T\+C\+O\+U\+NT}} = 4
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_ae0ad3f021d877ff994e7c8a88876b9f3}{M\+V\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T\+\_\+\+M\+A\+SK}} = ((1 $<$$<$ M\+V\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T\+\_\+\+B\+I\+T\+C\+O\+U\+NT) -\/ 1)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aaf0e8d4b41cf6b7db38417dc981feb7f}{M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+D\+I\+FF}} = M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+I\+N\+T\+E\+R\+N\+AL -\/ M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+S\+I\+G\+N\+AL
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac805e492b380b892650ee0b344b0f69e}{M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+I\+N\+T\+E\+R\+N\+AL}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6cad6d2176a561a7897f2a8fd56ee4b9}{M\+V\+\_\+\+F\+R\+A\+C\+T\+I\+O\+N\+A\+L\+\_\+\+B\+I\+T\+S\+\_\+\+S\+I\+G\+N\+AL}} = 2
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_ac5f545d646f4cac487d63ca1635d3032}{M\+V\+\_\+\+M\+A\+N\+T\+I\+S\+S\+A\+\_\+\+B\+I\+T\+C\+O\+U\+NT}} = 6
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_aa61d434a12993a5adc5ec96a6b5f966a}{M\+V\+\_\+\+M\+A\+N\+T\+I\+S\+S\+A\+\_\+\+L\+I\+M\+IT}} = (1 $<$$<$ (M\+V\+\_\+\+M\+A\+N\+T\+I\+S\+S\+A\+\_\+\+B\+I\+T\+C\+O\+U\+NT -\/ 1))
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_a1c0f8422eff662c0303855d8e5096668}{M\+V\+\_\+\+M\+A\+N\+T\+I\+S\+S\+A\+\_\+\+U\+P\+P\+E\+R\+\_\+\+L\+I\+M\+IT}} = ((1 $<$$<$ (M\+V\+\_\+\+M\+A\+N\+T\+I\+S\+S\+A\+\_\+\+B\+I\+T\+C\+O\+U\+NT -\/ 1)) -\/ 1)
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_aa5c47604d0ab475cfa89c25a1fafb84c}{M\+V\+\_\+\+M\+AX}} = (1 $<$$<$ (M\+V\+\_\+\+B\+I\+TS -\/ 1)) -\/ 1
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_acd213f383247cfa7c43daf6a33d279ea}{M\+V\+\_\+\+M\+IN}} = -\/(1 $<$$<$ (M\+V\+\_\+\+B\+I\+TS -\/ 1))
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aed4f6797b90d4d7c15596b0402ce7f7b}{M\+V\+D\+\_\+\+M\+AX}} = (1 $<$$<$ 17) -\/ 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1031a2b76924aa41d63d52df89949108}{M\+V\+D\+\_\+\+M\+IN}} = -\/(1 $<$$<$ 17)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa48af90c545f529f93652a1334bc8b01}{N\+E\+I\+G\+\_\+\+N\+UM}} = 1 $<$$<$ N\+E\+I\+G\+\_\+\+N\+U\+M\+\_\+\+L\+OG
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a711ea251a7d570d33a5ca89c89fa50c0}{N\+E\+I\+G\+\_\+\+N\+U\+M\+\_\+\+L\+OG}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6de8da2feac532a1d88af89bf7c2f52c}{N\+O\+M\+O\+D\+E\+\_\+\+I\+DX}} = M\+A\+X\+\_\+\+U\+C\+H\+AR
+\begin{DoxyCompactList}\small\item\em indicating uninitialized elements \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9a8c5491ffbfe29f4c8c3a59d0741d9d}{N\+O\+T\+\_\+\+V\+A\+L\+ID}} = -\/1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9daa7da69d57d7914e94869003706c56}{N\+T\+A\+P\+S\+\_\+\+B\+I\+L\+I\+N\+E\+AR}} = 2
+\begin{DoxyCompactList}\small\item\em Number of taps for bilinear filter. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6afab43841d129252e47392e4c868004}{N\+T\+A\+P\+S\+\_\+\+C\+H\+R\+O\+MA}} = 4
+\begin{DoxyCompactList}\small\item\em Number of taps for chroma. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af34252cbb46dcf09730e3ab02321ee15}{N\+T\+A\+P\+S\+\_\+\+L\+U\+MA}} = 8
+\begin{DoxyCompactList}\small\item\em Number of taps for luma. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a621795d255e0f477daa2f0091ef58590}{N\+U\+M\+\_\+\+A\+F\+F\+\_\+\+M\+R\+G\+\_\+\+S\+A\+T\+D\+\_\+\+C\+A\+ND}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae10bb7a7307fa404b8ca5c8ad0b48e48}{N\+U\+M\+\_\+\+A\+M\+A\+X\+B\+T\+\_\+\+L\+A\+Y\+ER}} = 10
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a3807f6335f076aaa95791cfb615fd1f3}{N\+U\+M\+\_\+\+A\+P\+S\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+EN}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7ac28732008ace5c4b80c6321d4d3a40}{N\+U\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+M\+O\+DE}} = (5 + N\+U\+M\+\_\+\+L\+M\+C\+\_\+\+M\+O\+DE)
+\begin{DoxyCompactList}\small\item\em total number of chroma modes \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a4d33d2713605a953b56c0ca045b4feea}{N\+U\+M\+\_\+\+D\+IR}} = (((N\+U\+M\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE -\/ 3) $>$$>$ 2) + 1)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad8b05df9e070d0f66d4f4e39f5eebb1f}{N\+U\+M\+\_\+\+E\+X\+T\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE}} = 28
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa2eb75d7913b478fd2b70f96be80d460}{N\+U\+M\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9e937c07fe317459f8325fda56371f44}{N\+U\+M\+\_\+\+I\+N\+T\+E\+R\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+S\+A\+VE}} = 8
+\begin{DoxyCompactList}\small\item\em maximum number of inter cu information saved for fast algorithm \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6d23b800baadb1613c08c981e28bcea3}{N\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+M\+O\+DE}} = (N\+U\+M\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE + N\+U\+M\+\_\+\+L\+M\+C\+\_\+\+M\+O\+DE)
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a33ff93d0ae24ae4c49890ed6f0b2c80d}{N\+U\+M\+\_\+\+L\+F\+N\+S\+T\+\_\+\+N\+U\+M\+\_\+\+P\+E\+R\+\_\+\+S\+ET}} = 3
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_affb9d86fde96ba508338e924d72a6ac2}{N\+U\+M\+\_\+\+L\+M\+C\+\_\+\+M\+O\+DE}} = 1 + 2
+\begin{DoxyCompactList}\small\item\em L\+MC + M\+D\+L\+M\+\_\+T + M\+D\+L\+M\+\_\+L. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a13cb882e446b977f45defdf094178792}{N\+U\+M\+\_\+\+L\+O\+N\+G\+\_\+\+T\+E\+R\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+S\+PS}} = 0
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aff2e2a3fdc7fa842618975d95ecd04c9}{N\+U\+M\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE}} = 67
+\begin{DoxyCompactList}\small\item\em Planar + DC + 65 directional mode (4$\ast$16 + 1) \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7bb67b431646eb4ea50129c8e154a520}{N\+U\+M\+\_\+\+M\+O\+S\+T\+\_\+\+P\+R\+O\+B\+A\+B\+L\+E\+\_\+\+M\+O\+D\+ES}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a295a515993601e4e6735105b4f549c08}{N\+U\+M\+\_\+\+M\+R\+G\+\_\+\+S\+A\+T\+D\+\_\+\+C\+A\+ND}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_afd56fa2d86e7d83e2dc1cdd5b4cbdd99}{N\+U\+M\+\_\+\+T\+O\+T\+A\+L\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS}} = N\+U\+M\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS + A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a4f406491f3eb78a23d1dc00dee540704}{N\+U\+M\+\_\+\+T\+R\+A\+F\+O\+\_\+\+M\+O\+D\+E\+S\+\_\+\+M\+TS}} = 6
+\begin{DoxyCompactList}\small\item\em Max Intra \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} size applying E\+MT, supported values\+: 8, 16, 32, 64, 128. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_affbe032900f7cf5b229f02fe0633fd1a}{N\+U\+M\+\_\+\+T\+R\+E\+L\+L\+I\+S\+\_\+\+S\+T\+A\+TE}} = 3
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a7bff15e10bedc0bb0dc0cddfb580e019}{P\+B\+I\+N\+T\+R\+A\+\_\+\+R\+A\+T\+IO}} = 1.\+1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1501a98a1429135af9e2fa273cd8cbb6}{P\+I\+C\+\_\+\+A\+N\+A\+L\+Y\+Z\+E\+\_\+\+C\+W\+\_\+\+B\+I\+NS}} = 32
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a32e4836d748990a88514404ccf03ff92}{P\+I\+C\+\_\+\+C\+O\+D\+E\+\_\+\+C\+W\+\_\+\+B\+I\+NS}} = 16
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5a306d20dca23cb0f163d945a4f8084c}{P\+I\+C\+T\+U\+R\+E\+\_\+\+D\+I\+S\+T\+A\+N\+C\+E\+\_\+\+TH}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a7cc9bca14ee48e0ad11b4b43608949b1}{P\+L\+A\+N\+A\+R\+\_\+\+I\+DX}} = 0
+\begin{DoxyCompactList}\small\item\em index for intra P\+L\+A\+N\+AR mode \end{DoxyCompactList}\item 
+static const double \mbox{\hyperlink{namespacevvenc_a3c7e40c5469f560b3629900dd9a6d501}{P\+L\+T\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+W\+E\+I\+G\+H\+T\+I\+NG}} = 0.\+8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a743f00c2dd4725300d814400b3f51e48}{P\+L\+T\+\_\+\+E\+N\+C\+B\+I\+T\+D\+E\+P\+TH}} = 8
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1994601aaa373642cd3158807ee9b7b6}{P\+L\+T\+\_\+\+F\+A\+S\+T\+\_\+\+R\+A\+T\+IO}} = 100
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8a75e74932be138ec8b552aae5217a3b}{P\+R\+E\+D\+\_\+\+R\+E\+G\+\_\+\+M\+I\+N\+\_\+\+W\+I\+D\+TH}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_aff8f8082c0f40bbbfbf67c539d1e1701}{P\+R\+O\+F\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+E\+X\+T\+\_\+H}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1c5e297f1dd545d434b62e3f99e64dbc}{P\+R\+O\+F\+\_\+\+B\+O\+R\+D\+E\+R\+\_\+\+E\+X\+T\+\_\+W}} = 1
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad4c444fa8f357be2004e8b56ddba1bd2}{Q\+U\+A\+N\+T\+\_\+\+S\+H\+I\+FT}} = 14
+\begin{DoxyCompactList}\small\item\em Q(4) = 2$^\wedge$14. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_ac7434cfc270369ca2c897d06347885db}{R\+C\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+P\+\_\+\+V\+A\+L\+UE}} = -\/999
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae12fac0e3b5ca6b0243ae54d027e788c}{R\+Ext\+\_\+\+\_\+\+G\+O\+L\+O\+M\+B\+\_\+\+R\+I\+C\+E\+\_\+\+A\+D\+A\+P\+T\+A\+T\+I\+O\+N\+\_\+\+S\+T\+A\+T\+I\+S\+T\+I\+C\+S\+\_\+\+S\+E\+TS}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab579778c95e6fdc9fc1d0a74586456c9}{R\+Ext\+\_\+\+\_\+\+P\+R\+E\+D\+I\+C\+T\+I\+O\+N\+\_\+\+W\+E\+I\+G\+H\+T\+I\+N\+G\+\_\+\+A\+N\+A\+L\+Y\+S\+I\+S\+\_\+\+D\+C\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}} = 0
+\begin{DoxyCompactList}\small\item\em Additional fixed bit precision used during encoder-\/side weighting prediction analysis. Currently only used when high\+\_\+precision\+\_\+prediction\+\_\+weighting\+\_\+flag is set, for backwards compatibility reasons. \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aff60779d52dfb14ad5fd831d545f8c02}{R\+U\+N\+\_\+\+I\+D\+X\+\_\+\+T\+H\+RE}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5c33227d5cf42ace895098117bddd791}{R\+V\+M\+\_\+\+V\+C\+E\+G\+A\+M10\+\_\+M}} = 4
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_acd5a3921dbb8cc1b1790cfc845a08dd7}{S\+B\+H\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = 4
+\begin{DoxyCompactList}\small\item\em value of the fixed S\+BH controlling threshold \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_af26a66566901fd1c38ae809901d0f735}{S\+B\+T\+\_\+\+F\+A\+S\+T64\+\_\+\+W\+I\+D\+T\+H\+\_\+\+T\+H\+R\+E\+S\+H\+O\+LD}} = 1920
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a86118c5c9bc64acf507a54617c9c4ff6}{S\+B\+T\+\_\+\+M\+A\+X\+\_\+\+S\+I\+ZE}} = 64
+\begin{DoxyCompactList}\small\item\em maximum \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} size for using S\+BT \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8eb9b5b7e65483d0fdd92a3523e937e7}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+R\+DO}} = 2
+\begin{DoxyCompactList}\small\item\em maximum number of S\+BT mode tried for a PU \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6893aa9903fb61f99f36ce0e2f2a034a}{S\+B\+T\+\_\+\+N\+U\+M\+\_\+\+SL}} = 4
+\begin{DoxyCompactList}\small\item\em maximum number of historical PU decision saved for a \mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} \end{DoxyCompactList}\item 
+static const std\+::pair$<$ int, int $>$ \mbox{\hyperlink{namespacevvenc_ae52a7e56c0a3d6274ab5677112a7f256}{S\+C\+A\+L\+E\+\_\+1X}} = std\+::pair$<$int, int$>$( 1 $<$$<$ S\+C\+A\+L\+E\+\_\+\+R\+A\+T\+I\+O\+\_\+\+B\+I\+TS, 1 $<$$<$ S\+C\+A\+L\+E\+\_\+\+R\+A\+T\+I\+O\+\_\+\+B\+I\+TS )
+\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_abec647b6cf94dcd6aa9ce4d5fba1ee82}{S\+C\+A\+L\+E\+\_\+\+B\+I\+TS}} = 15
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ae1f4f52d0753f6023278e73a8e1fc209}{S\+C\+A\+L\+E\+\_\+\+R\+A\+T\+I\+O\+\_\+\+B\+I\+TS}} = 14
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5e1f33a4a9fd33a2b8c7186de153d140}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+B\+I\+TS}} = 8
+\begin{DoxyCompactList}\small\item\em bit depth of scaling list entries \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a31dbd29668ef5a5bca73177dbe6664f8}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+DC}} = 16
+\begin{DoxyCompactList}\small\item\em default DC value \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_afa0c811b5ef83407c2a8ff97b57dee2f}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM}} = M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP $\ast$ S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+P\+R\+E\+D\+\_\+\+M\+O\+D\+ES
+\begin{DoxyCompactList}\small\item\em list number for quantization matrix \end{DoxyCompactList}\item 
+static constexpr int \mbox{\hyperlink{namespacevvenc_ad1a044fdbc9289e098914291c0f6de10}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+P\+R\+E\+D\+\_\+\+M\+O\+D\+ES}} = 2
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9978c8201766ffdd3a19f30e9b5d78d3}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM}} = 6
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a8cb3579b4871f05ceaa353c0cdb729c7}{S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+T\+A\+R\+T\+\_\+\+V\+A\+L\+UE}} = 8
+\begin{DoxyCompactList}\small\item\em start value for dpcm mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aea6c5feb6e5373469245f65bd946d73a}{S\+K\+I\+P\+\_\+\+D\+E\+P\+TH}} = 3
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a86f7b434d71e9c4481206bbfd57ecc41}{S\+O\+R\+T\+E\+D\+\_\+\+B\+U\+FS}} = 9
+\item 
+static const Split\+Series \mbox{\hyperlink{namespacevvenc_a3a5e8b186aa1b808a01fb3a4bb6f7bc1}{S\+P\+L\+I\+T\+\_\+\+B\+I\+TS}} = 5
+\item 
+static const Split\+Series \mbox{\hyperlink{namespacevvenc_a1e827ff1a9f566d6697b680ee5d6b2a3}{S\+P\+L\+I\+T\+\_\+\+D\+M\+U\+LT}} = 5
+\item 
+static const Split\+Series \mbox{\hyperlink{namespacevvenc_aa405f6119ac5e6b7a6499dc7ca22b57a}{S\+P\+L\+I\+T\+\_\+\+M\+A\+SK}} = 31
+\begin{DoxyCompactList}\small\item\em = (1 $<$$<$ S\+P\+L\+I\+T\+\_\+\+B\+I\+TS) -\/ 1 \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_a5fa585c579c0737a3fa312b5ac847007}{V\+D\+I\+A\+\_\+\+I\+DX}} = (4 $\ast$ (N\+U\+M\+\_\+\+D\+IR -\/ 1) + 2)
+\begin{DoxyCompactList}\small\item\em index for intra V\+D\+I\+A\+G\+O\+N\+AL mode \end{DoxyCompactList}\item 
+static const int \mbox{\hyperlink{namespacevvenc_aa1a891061a2e651d18fcc9c5dd9ddc18}{V\+E\+R\+\_\+\+I\+DX}} = (3 $\ast$ (N\+U\+M\+\_\+\+D\+IR -\/ 1) + 2)
+\begin{DoxyCompactList}\small\item\em index for intra V\+E\+R\+T\+I\+C\+AL mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines version information, constants and small in-\/line functions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{CommonDef_8h_a37d2e0cbf648c9641cd10f954c79421d}\label{CommonDef_8h_a37d2e0cbf648c9641cd10f954c79421d}} 
+\index{CommonDef.h@{CommonDef.h}!\_\_IN\_COMMONDEF\_H\_\_@{\_\_IN\_COMMONDEF\_H\_\_}}
+\index{\_\_IN\_COMMONDEF\_H\_\_@{\_\_IN\_COMMONDEF\_H\_\_}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_\_IN\_COMMONDEF\_H\_\_}{\_\_IN\_COMMONDEF\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+I\+N\+\_\+\+C\+O\+M\+M\+O\+N\+D\+E\+F\+\_\+\+H\+\_\+\+\_\+}
+
+
+
+Definition at line 66 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a1ba1cbcdbbfd4efc8da82ab9d5669a94}\label{CommonDef_8h_a1ba1cbcdbbfd4efc8da82ab9d5669a94}} 
+\index{CommonDef.h@{CommonDef.h}!\_AREA\_AT@{\_AREA\_AT}}
+\index{\_AREA\_AT@{\_AREA\_AT}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_AREA\_AT}{\_AREA\_AT}}
+{\footnotesize\ttfamily \#define \+\_\+\+A\+R\+E\+A\+\_\+\+AT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 802 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a88891d5ff61d182b3abd1df737f62fc7}\label{CommonDef_8h_a88891d5ff61d182b3abd1df737f62fc7}} 
+\index{CommonDef.h@{CommonDef.h}!\_AREA\_CONTAINS@{\_AREA\_CONTAINS}}
+\index{\_AREA\_CONTAINS@{\_AREA\_CONTAINS}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_AREA\_CONTAINS}{\_AREA\_CONTAINS}}
+{\footnotesize\ttfamily \#define \+\_\+\+A\+R\+E\+A\+\_\+\+C\+O\+N\+T\+A\+I\+NS(\begin{DoxyParamCaption}\item[{}]{\+\_\+a,  }\item[{}]{\+\_\+x,  }\item[{}]{\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 803 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_ad5c266077e6fd0fceab2049d762716fc}\label{CommonDef_8h_ad5c266077e6fd0fceab2049d762716fc}} 
+\index{CommonDef.h@{CommonDef.h}!\_BREAK@{\_BREAK}}
+\index{\_BREAK@{\_BREAK}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_BREAK}{\_BREAK}}
+{\footnotesize\ttfamily \#define \+\_\+\+B\+R\+E\+AK}
+
+
+
+Definition at line 801 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_aac7406d41bb6071e20e392657c6f0073}\label{CommonDef_8h_aac7406d41bb6071e20e392657c6f0073}} 
+\index{CommonDef.h@{CommonDef.h}!\_CASE@{\_CASE}}
+\index{\_CASE@{\_CASE}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_CASE}{\_CASE}}
+{\footnotesize\ttfamily \#define \+\_\+\+C\+A\+SE(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 800 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_ae28e9d8d9f4f3ef0333710bdde3c24d3}\label{CommonDef_8h_ae28e9d8d9f4f3ef0333710bdde3c24d3}} 
+\index{CommonDef.h@{CommonDef.h}!\_UNIT\_AREA\_AT@{\_UNIT\_AREA\_AT}}
+\index{\_UNIT\_AREA\_AT@{\_UNIT\_AREA\_AT}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{\_UNIT\_AREA\_AT}{\_UNIT\_AREA\_AT}}
+{\footnotesize\ttfamily \#define \+\_\+\+U\+N\+I\+T\+\_\+\+A\+R\+E\+A\+\_\+\+AT(\begin{DoxyParamCaption}\item[{}]{\+\_\+a,  }\item[{}]{\+\_\+x,  }\item[{}]{\+\_\+y,  }\item[{}]{\+\_\+w,  }\item[{}]{\+\_\+h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 804 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_aa0c44ec55b83a0b64b8bada4ef9da78b}\label{CommonDef_8h_aa0c44ec55b83a0b64b8bada4ef9da78b}} 
+\index{CommonDef.h@{CommonDef.h}!ALIGN\_DATA@{ALIGN\_DATA}}
+\index{ALIGN\_DATA@{ALIGN\_DATA}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ALIGN\_DATA}{ALIGN\_DATA}}
+{\footnotesize\ttfamily \#define A\+L\+I\+G\+N\+\_\+\+D\+A\+TA(\begin{DoxyParamCaption}\item[{}]{n\+Bytes,  }\item[{}]{v }\end{DoxyParamCaption})~v \+\_\+\+\_\+attribute\+\_\+\+\_\+ ((aligned (n\+Bytes)))}
+
+
+
+Definition at line 667 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a1f9d082d1ea749a1ef3b359ac8280377}\label{CommonDef_8h_a1f9d082d1ea749a1ef3b359ac8280377}} 
+\index{CommonDef.h@{CommonDef.h}!ALIGNED\_MALLOC@{ALIGNED\_MALLOC}}
+\index{ALIGNED\_MALLOC@{ALIGNED\_MALLOC}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ALIGNED\_MALLOC}{ALIGNED\_MALLOC}}
+{\footnotesize\ttfamily \#define A\+L\+I\+G\+N\+E\+D\+\_\+\+M\+A\+L\+L\+OC~1}
+
+
+
+use 32-\/bit aligned malloc/free 
+
+
+
+Definition at line 632 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_aa1dec568e79152c892dcf63f445cbd7a}\label{CommonDef_8h_aa1dec568e79152c892dcf63f445cbd7a}} 
+\index{CommonDef.h@{CommonDef.h}!ALWAYS\_INLINE@{ALWAYS\_INLINE}}
+\index{ALWAYS\_INLINE@{ALWAYS\_INLINE}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ALWAYS\_INLINE}{ALWAYS\_INLINE}}
+{\footnotesize\ttfamily \#define A\+L\+W\+A\+Y\+S\+\_\+\+I\+N\+L\+I\+NE}
+
+
+
+Definition at line 689 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a380167a1300e5e9d9d4311695a645f6f}\label{CommonDef_8h_a380167a1300e5e9d9d4311695a645f6f}} 
+\index{CommonDef.h@{CommonDef.h}!CACHE\_MEM\_ALIGN\_SIZE@{CACHE\_MEM\_ALIGN\_SIZE}}
+\index{CACHE\_MEM\_ALIGN\_SIZE@{CACHE\_MEM\_ALIGN\_SIZE}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{CACHE\_MEM\_ALIGN\_SIZE}{CACHE\_MEM\_ALIGN\_SIZE}}
+{\footnotesize\ttfamily \#define C\+A\+C\+H\+E\+\_\+\+M\+E\+M\+\_\+\+A\+L\+I\+G\+N\+\_\+\+S\+I\+ZE~1024}
+
+
+
+Definition at line 630 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_af8e2dde85604978972dd0f2a87af0d7d}\label{CommonDef_8h_af8e2dde85604978972dd0f2a87af0d7d}} 
+\index{CommonDef.h@{CommonDef.h}!CLANG\_VERSION\_AT\_LEAST@{CLANG\_VERSION\_AT\_LEAST}}
+\index{CLANG\_VERSION\_AT\_LEAST@{CLANG\_VERSION\_AT\_LEAST}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{CLANG\_VERSION\_AT\_LEAST}{CLANG\_VERSION\_AT\_LEAST}}
+{\footnotesize\ttfamily \#define C\+L\+A\+N\+G\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+\_\+\+L\+E\+A\+ST(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 681 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a3c59997a991e1631537b6486402691b2}\label{CommonDef_8h_a3c59997a991e1631537b6486402691b2}} 
+\index{CommonDef.h@{CommonDef.h}!GCC\_VERSION\_AT\_LEAST@{GCC\_VERSION\_AT\_LEAST}}
+\index{GCC\_VERSION\_AT\_LEAST@{GCC\_VERSION\_AT\_LEAST}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{GCC\_VERSION\_AT\_LEAST}{GCC\_VERSION\_AT\_LEAST}}
+{\footnotesize\ttfamily \#define G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+A\+T\+\_\+\+L\+E\+A\+ST(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~0}
+
+
+
+Definition at line 675 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a024715c04558a9981e960134bdf7fc05}\label{CommonDef_8h_a024715c04558a9981e960134bdf7fc05}} 
+\index{CommonDef.h@{CommonDef.h}!GCC\_WARNING\_DISABLE\_array\_bounds@{GCC\_WARNING\_DISABLE\_array\_bounds}}
+\index{GCC\_WARNING\_DISABLE\_array\_bounds@{GCC\_WARNING\_DISABLE\_array\_bounds}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{GCC\_WARNING\_DISABLE\_array\_bounds}{GCC\_WARNING\_DISABLE\_array\_bounds}}
+{\footnotesize\ttfamily \#define G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+array\+\_\+bounds}
+
+
+
+Definition at line 96 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_abeedda6c6f3250ec4e2fa04440094607}\label{CommonDef_8h_abeedda6c6f3250ec4e2fa04440094607}} 
+\index{CommonDef.h@{CommonDef.h}!GCC\_WARNING\_DISABLE\_class\_memaccess@{GCC\_WARNING\_DISABLE\_class\_memaccess}}
+\index{GCC\_WARNING\_DISABLE\_class\_memaccess@{GCC\_WARNING\_DISABLE\_class\_memaccess}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{GCC\_WARNING\_DISABLE\_class\_memaccess}{GCC\_WARNING\_DISABLE\_class\_memaccess}}
+{\footnotesize\ttfamily \#define G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+class\+\_\+memaccess}
+
+
+
+Definition at line 95 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a7740a8eb0ee730ca00a139b1849a27dd}\label{CommonDef_8h_a7740a8eb0ee730ca00a139b1849a27dd}} 
+\index{CommonDef.h@{CommonDef.h}!GCC\_WARNING\_DISABLE\_maybe\_uninitialized@{GCC\_WARNING\_DISABLE\_maybe\_uninitialized}}
+\index{GCC\_WARNING\_DISABLE\_maybe\_uninitialized@{GCC\_WARNING\_DISABLE\_maybe\_uninitialized}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{GCC\_WARNING\_DISABLE\_maybe\_uninitialized}{GCC\_WARNING\_DISABLE\_maybe\_uninitialized}}
+{\footnotesize\ttfamily \#define G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+maybe\+\_\+uninitialized}
+
+
+
+Definition at line 94 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_aa79686061aabdeab06e3a87c5059b97b}\label{CommonDef_8h_aa79686061aabdeab06e3a87c5059b97b}} 
+\index{CommonDef.h@{CommonDef.h}!GCC\_WARNING\_RESET@{GCC\_WARNING\_RESET}}
+\index{GCC\_WARNING\_RESET@{GCC\_WARNING\_RESET}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{GCC\_WARNING\_RESET}{GCC\_WARNING\_RESET}}
+{\footnotesize\ttfamily \#define G\+C\+C\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+R\+E\+S\+ET}
+
+
+
+Definition at line 97 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a53dd9b3d32e5ce06f59ae6838d11d591}\label{CommonDef_8h_a53dd9b3d32e5ce06f59ae6838d11d591}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_COUNTADD@{ITT\_COUNTADD}}
+\index{ITT\_COUNTADD@{ITT\_COUNTADD}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_COUNTADD}{ITT\_COUNTADD}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+A\+DD(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 849 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a66f26bc63547aca30043ec8c435c2af5}\label{CommonDef_8h_a66f26bc63547aca30043ec8c435c2af5}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_COUNTDEC@{ITT\_COUNTDEC}}
+\index{ITT\_COUNTDEC@{ITT\_COUNTDEC}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_COUNTDEC}{ITT\_COUNTDEC}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+D\+EC(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 848 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a48f1d35ac5779c6342bfb27603cbf17c}\label{CommonDef_8h_a48f1d35ac5779c6342bfb27603cbf17c}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_COUNTINC@{ITT\_COUNTINC}}
+\index{ITT\_COUNTINC@{ITT\_COUNTINC}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_COUNTINC}{ITT\_COUNTINC}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+I\+NC(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 847 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_af29c8e8a3972b807615ad1b2e263d6a3}\label{CommonDef_8h_af29c8e8a3972b807615ad1b2e263d6a3}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_COUNTSET@{ITT\_COUNTSET}}
+\index{ITT\_COUNTSET@{ITT\_COUNTSET}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_COUNTSET}{ITT\_COUNTSET}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+S\+ET(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 846 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a3e043e64ed69e03f75dea4f831b6d9ec}\label{CommonDef_8h_a3e043e64ed69e03f75dea4f831b6d9ec}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_COUNTSUB@{ITT\_COUNTSUB}}
+\index{ITT\_COUNTSUB@{ITT\_COUNTSUB}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_COUNTSUB}{ITT\_COUNTSUB}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+C\+O\+U\+N\+T\+S\+UB(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{v }\end{DoxyParamCaption})}
+
+
+
+Definition at line 850 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a76b1bff910dc7b688b2a87a427b7da0e}\label{CommonDef_8h_a76b1bff910dc7b688b2a87a427b7da0e}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_SYNCACQ@{ITT\_SYNCACQ}}
+\index{ITT\_SYNCACQ@{ITT\_SYNCACQ}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_SYNCACQ}{ITT\_SYNCACQ}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+S\+Y\+N\+C\+A\+CQ(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 843 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_acb7a367ae0d85a506023a0bc60db78ea}\label{CommonDef_8h_acb7a367ae0d85a506023a0bc60db78ea}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_SYNCPREP@{ITT\_SYNCPREP}}
+\index{ITT\_SYNCPREP@{ITT\_SYNCPREP}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_SYNCPREP}{ITT\_SYNCPREP}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+S\+Y\+N\+C\+P\+R\+EP(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 842 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a7a2a614aeedd30ac1ad91d50aa974cfe}\label{CommonDef_8h_a7a2a614aeedd30ac1ad91d50aa974cfe}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_SYNCREL@{ITT\_SYNCREL}}
+\index{ITT\_SYNCREL@{ITT\_SYNCREL}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_SYNCREL}{ITT\_SYNCREL}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+S\+Y\+N\+C\+R\+EL(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 844 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a6b5bfcc7ec47dc1fd9969091e5470e5d}\label{CommonDef_8h_a6b5bfcc7ec47dc1fd9969091e5470e5d}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_TASKEND@{ITT\_TASKEND}}
+\index{ITT\_TASKEND@{ITT\_TASKEND}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_TASKEND}{ITT\_TASKEND}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+T\+A\+S\+K\+E\+ND(\begin{DoxyParamCaption}\item[{}]{d,  }\item[{}]{t }\end{DoxyParamCaption})}
+
+
+
+Definition at line 840 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a588aade37aeb925ebc0129f33239d2d1}\label{CommonDef_8h_a588aade37aeb925ebc0129f33239d2d1}} 
+\index{CommonDef.h@{CommonDef.h}!ITT\_TASKSTART@{ITT\_TASKSTART}}
+\index{ITT\_TASKSTART@{ITT\_TASKSTART}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{ITT\_TASKSTART}{ITT\_TASKSTART}}
+{\footnotesize\ttfamily \#define I\+T\+T\+\_\+\+T\+A\+S\+K\+S\+T\+A\+RT(\begin{DoxyParamCaption}\item[{}]{d,  }\item[{}]{t }\end{DoxyParamCaption})}
+
+
+
+T\+R\+A\+C\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+TT. 
+
+
+
+Definition at line 839 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a04331f38ee9c5646b28adcf48b06d8ce}\label{CommonDef_8h_a04331f38ee9c5646b28adcf48b06d8ce}} 
+\index{CommonDef.h@{CommonDef.h}!MAKE\_ENUM@{MAKE\_ENUM}}
+\index{MAKE\_ENUM@{MAKE\_ENUM}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_ENUM}{MAKE\_ENUM}}
+{\footnotesize\ttfamily \#define M\+A\+K\+E\+\_\+\+E\+N\+UM(\begin{DoxyParamCaption}\item[{}]{V\+AR }\end{DoxyParamCaption})~V\+AR,}
+
+
+
+Definition at line 808 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_af00168b6fa3d1dfaaaa67bb5f8ff17a2}\label{CommonDef_8h_af00168b6fa3d1dfaaaa67bb5f8ff17a2}} 
+\index{CommonDef.h@{CommonDef.h}!MAKE\_ENUM\_AND\_STRINGS@{MAKE\_ENUM\_AND\_STRINGS}}
+\index{MAKE\_ENUM\_AND\_STRINGS@{MAKE\_ENUM\_AND\_STRINGS}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_ENUM\_AND\_STRINGS}{MAKE\_ENUM\_AND\_STRINGS}}
+{\footnotesize\ttfamily \#define M\+A\+K\+E\+\_\+\+E\+N\+U\+M\+\_\+\+A\+N\+D\+\_\+\+S\+T\+R\+I\+N\+GS(\begin{DoxyParamCaption}\item[{}]{source,  }\item[{}]{enum\+Name,  }\item[{}]{enum\+String\+Name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{enum} enumName \{ \(\backslash\)}
+\DoxyCodeLine{    source(\mbox{\hyperlink{CommonDef_8h_a04331f38ee9c5646b28adcf48b06d8ce}{MAKE\_ENUM}}) \(\backslash\)}
+\DoxyCodeLine{    \};\(\backslash\)}
+\DoxyCodeLine{const \textcolor{keywordtype}{char}* \textcolor{keyword}{const} enumStringName[] = \{ \(\backslash\)}
+\DoxyCodeLine{    source(\mbox{\hyperlink{CommonDef_8h_ab84d440bf445458dabefcb30da18b0f7}{MAKE\_STRINGS}}) \(\backslash\)}
+\DoxyCodeLine{    \}; \(\backslash\)}
+
+\end{DoxyCode}
+
+
+Definition at line 810 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_ab84d440bf445458dabefcb30da18b0f7}\label{CommonDef_8h_ab84d440bf445458dabefcb30da18b0f7}} 
+\index{CommonDef.h@{CommonDef.h}!MAKE\_STRINGS@{MAKE\_STRINGS}}
+\index{MAKE\_STRINGS@{MAKE\_STRINGS}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_STRINGS}{MAKE\_STRINGS}}
+{\footnotesize\ttfamily \#define M\+A\+K\+E\+\_\+\+S\+T\+R\+I\+N\+GS(\begin{DoxyParamCaption}\item[{}]{V\+AR }\end{DoxyParamCaption})~\#V\+AR,}
+
+
+
+Definition at line 809 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a0f82c56d14897486d94b4fffbbddf8d2}\label{CommonDef_8h_a0f82c56d14897486d94b4fffbbddf8d2}} 
+\index{CommonDef.h@{CommonDef.h}!MEMORY\_ALIGN\_DEF\_SIZE@{MEMORY\_ALIGN\_DEF\_SIZE}}
+\index{MEMORY\_ALIGN\_DEF\_SIZE@{MEMORY\_ALIGN\_DEF\_SIZE}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{MEMORY\_ALIGN\_DEF\_SIZE}{MEMORY\_ALIGN\_DEF\_SIZE}}
+{\footnotesize\ttfamily \#define M\+E\+M\+O\+R\+Y\+\_\+\+A\+L\+I\+G\+N\+\_\+\+D\+E\+F\+\_\+\+S\+I\+ZE~32}
+
+
+
+Definition at line 629 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{CommonDef.h@{CommonDef.h}!NULL@{NULL}}
+\index{NULL@{NULL}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{NULL}{NULL}}
+{\footnotesize\ttfamily \#define N\+U\+LL~0}
+
+
+
+Definition at line 164 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a5885e0efa4ac12fa5d2456fd437c9cbe}\label{CommonDef_8h_a5885e0efa4ac12fa5d2456fd437c9cbe}} 
+\index{CommonDef.h@{CommonDef.h}!NVM\_BITS@{NVM\_BITS}}
+\index{NVM\_BITS@{NVM\_BITS}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{NVM\_BITS}{NVM\_BITS}}
+{\footnotesize\ttfamily \#define N\+V\+M\+\_\+\+B\+I\+TS~\char`\"{}\mbox{[}\%d bit\mbox{]}\char`\"{}, (sizeof(void$\ast$) == 8 ? 64 \+: 32)}
+
+
+
+used for checking 64-\/bit O/S 
+
+
+
+Definition at line 161 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_abc675608d8dc48dd02c998db939a6653}\label{CommonDef_8h_abc675608d8dc48dd02c998db939a6653}} 
+\index{CommonDef.h@{CommonDef.h}!NVM\_COMPILEDBY@{NVM\_COMPILEDBY}}
+\index{NVM\_COMPILEDBY@{NVM\_COMPILEDBY}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{NVM\_COMPILEDBY}{NVM\_COMPILEDBY}}
+{\footnotesize\ttfamily \#define N\+V\+M\+\_\+\+C\+O\+M\+P\+I\+L\+E\+D\+BY~\char`\"{}\mbox{[}Unk-\/C\+XX\mbox{]}\char`\"{}}
+
+
+
+Definition at line 146 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a8593a6a15361c2857d8d84ffdca91a04}\label{CommonDef_8h_a8593a6a15361c2857d8d84ffdca91a04}} 
+\index{CommonDef.h@{CommonDef.h}!NVM\_ONOS@{NVM\_ONOS}}
+\index{NVM\_ONOS@{NVM\_ONOS}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{NVM\_ONOS}{NVM\_ONOS}}
+{\footnotesize\ttfamily \#define N\+V\+M\+\_\+\+O\+N\+OS~\char`\"{}\mbox{[}Unk-\/OS\mbox{]}\char`\"{}}
+
+
+
+Definition at line 158 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_a8c5ff70b6b28cd0157c50a22406f92c4}\label{CommonDef_8h_a8c5ff70b6b28cd0157c50a22406f92c4}} 
+\index{CommonDef.h@{CommonDef.h}!SIGN@{SIGN}}
+\index{SIGN@{SIGN}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{SIGN}{SIGN}}
+{\footnotesize\ttfamily \#define S\+I\+GN(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~( (x) $>$= 0 ? 1 \+: -\/1 )}
+
+
+
+T\+R\+A\+C\+E\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+I\+TT. 
+
+
+
+Definition at line 853 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_acb5d8c131a494d7675d9e67c991c7ca1}\label{CommonDef_8h_acb5d8c131a494d7675d9e67c991c7ca1}} 
+\index{CommonDef.h@{CommonDef.h}!xFree@{xFree}}
+\index{xFree@{xFree}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{xFree}{xFree}}
+{\footnotesize\ttfamily \#define x\+Free(\begin{DoxyParamCaption}\item[{}]{ptr }\end{DoxyParamCaption})~free( ptr )}
+
+
+
+Definition at line 655 of file Common\+Def.\+h.
+
+\mbox{\Hypertarget{CommonDef_8h_ab2e4e1768418ff5b9eec6fc99206c601}\label{CommonDef_8h_ab2e4e1768418ff5b9eec6fc99206c601}} 
+\index{CommonDef.h@{CommonDef.h}!xMalloc@{xMalloc}}
+\index{xMalloc@{xMalloc}!CommonDef.h@{CommonDef.h}}
+\doxysubsubsection{\texorpdfstring{xMalloc}{xMalloc}}
+{\footnotesize\ttfamily \#define x\+Malloc(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{len }\end{DoxyParamCaption})~detail\+::aligned\+\_\+malloc$<$type$>$( len, \mbox{\hyperlink{CommonDef_8h_a0f82c56d14897486d94b4fffbbddf8d2}{M\+E\+M\+O\+R\+Y\+\_\+\+A\+L\+I\+G\+N\+\_\+\+D\+E\+F\+\_\+\+S\+I\+ZE}} )}
+
+
+
+Definition at line 654 of file Common\+Def.\+h.
+

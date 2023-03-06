@@ -1,0 +1,44 @@
+\hypertarget{BitAllocation_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Bit\+Allocation.cpp File Reference}
+\label{BitAllocation_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/BitAllocation.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/BitAllocation.cpp}}
+
+
+Bit allocation class for QP adaptation and, possibly, rate control.  
+
+
+{\ttfamily \#include \char`\"{}Bit\+Allocation.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc\+Cfg.\+h\char`\"{}}\newline
+Include dependency graph for Bit\+Allocation.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{BitAllocation_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{namespacevvenc_afbde938d0199e388309fedd9e143e19e}{appr\+I3\+Log2}} (const double d)
+\item 
+static double \mbox{\hyperlink{namespacevvenc_a702386fc7e25ec7b47e6aef4d9ec1958}{filter\+And\+Calculate\+Average\+Activity}} (const Pel $\ast$p\+Src, const int i\+Src\+Stride, const int height, const int width, const Pel $\ast$p\+S\+M1, const int i\+S\+M1\+Stride, const Pel $\ast$p\+S\+M2, const int i\+S\+M2\+Stride, uint32\+\_\+t frame\+Rate, const uint32\+\_\+t bit\+Depth, const bool is\+U\+HD)
+\item 
+static double \mbox{\hyperlink{namespacevvenc_aa878ecda52b724cd8d3e694697baf1d4}{get\+Average\+Picture\+Activity}} (const uint32\+\_\+t pic\+Width, const uint32\+\_\+t pic\+Height, const int scaled\+Average\+Gop\+Activity, const bool temp\+Filtering, const uint32\+\_\+t bit\+Depth)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a285c2b26e8283201956c4bba3c590ce8}{get\+Glaring\+Color\+Q\+P\+Offset}} (Picture $\ast$const pic, const int ctu\+Addr, const int bit\+Depth, uint32\+\_\+t \&avg\+Luma\+Value)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a23448c147e8351fb328586c03e63ff30}{get\+Glaring\+Color\+Q\+P\+Offset\+Sub\+Ctu}} (Picture $\ast$const pic, const Comp\+Area \&luma\+Area, const int bit\+Depth, uint32\+\_\+t \&avg\+Luma\+Value)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a7012bf24994da67b43aff671f3029d6a}{luma\+D\+Q\+P\+Offset}} (const uint32\+\_\+t avg\+Luma\+Value, const uint32\+\_\+t bit\+Depth)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bit allocation class for QP adaptation and, possibly, rate control. 
+

@@ -1,0 +1,13 @@
+<map id="BinDecoder" name="BinDecoder">
+<area shape="rect" id="node1" title=" " alt="" coords="5,737,96,764"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1BinDecoderBase.html" title=" " alt="" coords="72,661,192,688"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1Ctx.html" title=" " alt="" coords="203,572,245,599"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1ContextSetCfg.html" title=" " alt="" coords="169,483,279,509"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1CtxSet.html" title=" " alt="" coords="193,247,255,273"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1CtxStore.html" title=" " alt="" coords="35,483,109,509"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1BinProbModel.html" title=" " alt="" coords="21,247,123,273"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1BinProbModelBase.html" title=" " alt="" coords="5,171,139,197"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1ProbModelTables.html" title=" " alt="" coords="11,95,133,121"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1BinFracBits.html" title=" " alt="" coords="27,5,117,32"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1InputBitstream.html" title=" " alt="" coords="72,572,179,599"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="EncGOP" name="EncGOP">
+<area shape="rect" id="node1" title=" " alt="" coords="2447,1297,2521,1324"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncHRD.html" title=" " alt="" coords="1914,1292,1989,1319"/>
+<area shape="rect" id="node45" href="$classvvenc_1_1SEIEncoder.html" title="Initializes different SEI message types based on given encoder configuration parameters." alt="" coords="2184,1245,2276,1272"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1HRD.html" title=" " alt="" coords="1288,1128,1340,1155"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1DecLib.html" title="decoder class" alt="" coords="1920,611,1983,637"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1SEIReader.html" title=" " alt="" coords="1605,1128,1692,1155"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1SEIWriter.html" title=" " alt="" coords="2191,1409,2269,1436"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1SEIPictureTiming.html" title=" " alt="" coords="955,1079,1079,1105"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1OlsHrdParams.html" title=" " alt="" coords="275,1220,383,1247"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1VPS.html" title=" " alt="" coords="668,615,717,641"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1GeneralHrdParams.html" title=" " alt="" coords="263,997,396,1024"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1SEIBufferingPeriod.html" title=" " alt="" coords="951,1028,1084,1055"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1FFwdDecoder.html" title=" " alt="" coords="2178,856,2282,883"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1LoopFilter.html" title="deblocking filter class" alt="" coords="1609,320,1688,347"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1Slice.html" title="slice header class" alt="" coords="1623,371,1674,397"/>
+<area shape="rect" id="node15" href="$structvvenc_1_1Picture.html" title=" " alt="" coords="986,615,1049,641"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1APS.html" title=" " alt="" coords="305,165,354,192"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1ParameterSetMap.html" title=" " alt="" coords="605,158,780,199"/>
+<area shape="rect" id="node22" href="$structvvenc_1_1PicHeader.html" title=" " alt="" coords="1273,403,1355,429"/>
+<area shape="rect" id="node33" href="$classvvenc_1_1ParameterSetManager.html" title=" " alt="" coords="941,117,1093,144"/>
+<area shape="rect" id="node14" href="$structvvenc_1_1AlfParam.html" title=" " alt="" coords="11,116,87,143"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1AdaptiveLoopFilter.html" title=" " alt="" coords="435,32,566,59"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1ReshapeData.html" title=" " alt="" coords="641,888,744,915"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1Reshape.html" title=" " alt="" coords="1611,1015,1686,1041"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1BlkStat.html" title=" " alt="" coords="660,1191,725,1217"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1EncRCPic.html" title=" " alt="" coords="651,1371,735,1397"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1RateCtrl.html" title=" " alt="" coords="982,1448,1053,1475"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1EncRCSeq.html" title=" " alt="" coords="5,1432,93,1459"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1EncRCGOP.html" title=" " alt="" coords="282,1432,377,1459"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1DecCu.html" title="CU decoder class." alt="" coords="1283,851,1345,877"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1DecSlice.html" title="slice decoder class" alt="" coords="1611,851,1686,877"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1InterPrediction.html" title=" " alt="" coords="964,699,1071,725"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1TrQuant.html" title="transform and quantization class" alt="" coords="983,821,1052,848"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1IntraPrediction.html" title=" " alt="" coords="964,912,1071,939"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1SampleAdaptiveOffset.html" title=" " alt="" coords="1572,219,1725,245"/>
+<area shape="rect" id="node29" href="$structvvenc_1_1XUCache.html" title=" " alt="" coords="1609,269,1688,296"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1HLSyntaxReader.html" title=" " alt="" coords="1587,585,1710,612"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1CABACDecoder.html" title=" " alt="" coords="1255,740,1373,767"/>
+<area shape="rect" id="node34" href="$classvvenc_1_1RdCost.html" title="RD cost computation class." alt="" coords="1615,749,1682,776"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1EncReshape.html" title=" " alt="" coords="1903,1133,2000,1160"/>
+<area shape="rect" id="node37" href="$classvvenc_1_1InputByteStream.html" title=" " alt="" coords="1891,856,2011,883"/>
+<area shape="rect" id="node39" href="$structvvenc_1_1SeqInfo.html" title=" " alt="" coords="1615,1179,1682,1205"/>
+<area shape="rect" id="node40" href="$classvvenc_1_1NoMallocThreadPool.html" title=" " alt="" coords="2159,1517,2301,1544"/>
+<area shape="rect" id="node41" href="$classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue.html" title=" " alt="" coords="1881,1517,2021,1544"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk.html" title=" " alt="" coords="1619,1555,1679,1581"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator.html" title=" " alt="" coords="1920,1568,1983,1595"/>
+<area shape="rect" id="node44" href="$structvvenc_1_1NoMallocThreadPool_1_1Slot.html" title=" " alt="" coords="1626,1611,1671,1637"/>
+<area shape="rect" id="node48" href="$classvvenc_1_1VLCWriter.html" title=" " alt="" coords="1910,1348,1993,1375"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1HLSWriter.html" title=" " alt="" coords="2189,1359,2271,1385"/>
+<area shape="rect" id="node49" href="$classvvenc_1_1Analyze.html" title="encoder analyzer class" alt="" coords="2195,1584,2265,1611"/>
+</map>

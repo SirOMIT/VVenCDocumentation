@@ -1,0 +1,148 @@
+\hypertarget{DepQuant_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Dep\+Quant.cpp File Reference}
+\label{DepQuant_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/DepQuant.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/DepQuant.cpp}}
+{\ttfamily \#include \char`\"{}Dep\+Quant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Tr\+Quant.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def\+X86.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+Include dependency graph for Dep\+Quant.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DepQuant_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1DepQuant}{Dep\+Quant}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Quantizer}{Quantizer}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom}{Rom}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1DQIntern}{vvenc\+::\+D\+Q\+Intern}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(l,  p)~\{std\+::numeric\+\_\+limits$<$int64\+\_\+t$>$\+::max()$>$$>$2,l,p\}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}{R\+I\+C\+E\+M\+AX}}~32
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_aeb07da7e7c35c85f93ae88926095a48c}{T\+I\+N\+IT}}(x)~\{$\ast$this,m\+\_\+common\+Ctx,x\}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}{U\+P\+D\+A\+TE}}(k)~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs1+=std\+::min$<$T\+Coeff$>$(4+(t\&1),t); sum\+Num+=!!t; \}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}{U\+P\+D\+A\+TE}}(k)~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; \}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}{U\+P\+D\+A\+TE}}(k)~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; \}
+\item 
+\#define \mbox{\hyperlink{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}{U\+P\+D\+A\+TE}}(k)~\{T\+Coeff t=abs\+Levels\mbox{[}nb\+Out-\/$>$out\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; sum\+Abs1+=std\+::min$<$T\+Coeff$>$(4+(t\&1),t); sum\+Num+=!!t; \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}{Scan\+Pos\+Type}} \{ \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea086d3fd4f7c1ce1d0133ff785f3f8234}{S\+C\+A\+N\+\_\+\+I\+S\+C\+S\+BB}} = 0, 
+\mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7ea7f98622a5662cc380127b1349ec835ae}{S\+C\+A\+N\+\_\+\+S\+O\+C\+S\+BB}} = 1, 
+\mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7eaaef1258962c61ffec62e31440f3fe97d}{S\+C\+A\+N\+\_\+\+E\+O\+C\+S\+BB}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1DQIntern_afc822215a93f164fe64c845d403c9d51}{ceil\+\_\+log2}} (uint64\+\_\+t x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1DQIntern_a42da43a72843f0bdf69344e55c21acf9}{g\+\_\+go\+Rice\+Bits}} \mbox{[}4\mbox{]}\mbox{[}\mbox{\hyperlink{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}{R\+I\+C\+E\+M\+AX}}\mbox{]}
+\item 
+static const Decision \mbox{\hyperlink{namespacevvenc_1_1DQIntern_a31009825296e9a086adc614e5b354290}{start\+Dec}} \mbox{[}8\mbox{]} = \{\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(-\/1,-\/2),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,4),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,5),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,6),\mbox{\hyperlink{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}{D\+I\+N\+IT}}(0,7)\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}\label{DepQuant_8cpp_a3743c7b2c951d318ec222246aa781dcc}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!DINIT@{DINIT}}
+\index{DINIT@{DINIT}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{DINIT}{DINIT}}
+{\footnotesize\ttfamily \#define D\+I\+N\+IT(\begin{DoxyParamCaption}\item[{}]{l,  }\item[{}]{p }\end{DoxyParamCaption})~\{std\+::numeric\+\_\+limits$<$int64\+\_\+t$>$\+::max()$>$$>$2,l,p\}}
+
+
+
+Definition at line 1329 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}\label{DepQuant_8cpp_af5a952b3918a2e4337b48a4ba9ac178a}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!RICEMAX@{RICEMAX}}
+\index{RICEMAX@{RICEMAX}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{RICEMAX}{RICEMAX}}
+{\footnotesize\ttfamily \#define R\+I\+C\+E\+M\+AX~32}
+
+
+
+Definition at line 850 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{DepQuant_8cpp_aeb07da7e7c35c85f93ae88926095a48c}\label{DepQuant_8cpp_aeb07da7e7c35c85f93ae88926095a48c}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!TINIT@{TINIT}}
+\index{TINIT@{TINIT}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{TINIT}{TINIT}}
+{\footnotesize\ttfamily \#define T\+I\+N\+IT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~\{$\ast$this,m\+\_\+common\+Ctx,x\}}
+
+
+
+Definition at line 1333 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}\label{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{k }\end{DoxyParamCaption})~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs1+=std\+::min$<$T\+Coeff$>$(4+(t\&1),t); sum\+Num+=!!t; \}}
+
+\mbox{\Hypertarget{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}\label{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{k }\end{DoxyParamCaption})~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; \}}
+
+\mbox{\Hypertarget{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}\label{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{k }\end{DoxyParamCaption})~\{T\+Coeff t=levels\mbox{[}scan\+Info.\+next\+Nb\+Info\+Sbb.\+in\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; \}}
+
+\mbox{\Hypertarget{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}\label{DepQuant_8cpp_acea351aec0b3e71bec63f722b5557545}} 
+\index{DepQuant.cpp@{DepQuant.cpp}!UPDATE@{UPDATE}}
+\index{UPDATE@{UPDATE}!DepQuant.cpp@{DepQuant.cpp}}
+\doxysubsubsection{\texorpdfstring{UPDATE}{UPDATE}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \#define U\+P\+D\+A\+TE(\begin{DoxyParamCaption}\item[{}]{k }\end{DoxyParamCaption})~\{T\+Coeff t=abs\+Levels\mbox{[}nb\+Out-\/$>$out\+Pos\mbox{[}k\mbox{]}\mbox{]}; sum\+Abs+=t; sum\+Abs1+=std\+::min$<$T\+Coeff$>$(4+(t\&1),t); sum\+Num+=!!t; \}}
+

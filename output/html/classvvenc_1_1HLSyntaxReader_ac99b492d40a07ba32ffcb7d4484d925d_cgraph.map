@@ -1,0 +1,16 @@
+<map id="parsePictureHeader" name="parsePictureHeader">
+<area shape="rect" id="node1" title=" " alt="" coords="5,265,143,292"/>
+<area shape="rect" id="node2" href="$namespacevvenc.html#a6b27649f79a36af7b6d4d42a0cf5ee6e" title=" " alt="" coords="239,5,353,32"/>
+<area shape="rect" id="node3" href="$namespacevvenc.html#a1c67fbd69415ae8f053fbe313e4a5cda" title=" " alt="" coords="505,31,624,57"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1ReferencePictureList.html#a92895829a92b280316c969ca10d7b642" title=" " alt="" coords="203,107,389,149"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1SPS.html#aaa292fc3af4256b479f243e94d6f2b10" title=" " alt="" coords="210,173,382,200"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1ParameterSetManager.html#a95381851aae27e6d6801568b2d5dc7ec" title=" " alt="" coords="199,225,393,266"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1ParameterSetManager.html#a94988fafa81024317e16243a8e5b6d54" title=" " alt="" coords="199,290,393,331"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1HLSyntaxReader.html#a55d21f14fd1b6883308a8d870d0346eb" title="parse explicit wp tables" alt="" coords="220,356,372,383"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1HLSyntaxReader.html#a0d6d5d7ca973c1092cfc214f291b527d" title=" " alt="" coords="239,407,353,433"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1ReferencePictureList.html#a215d59aee7473603c91bf17f3578e923" title=" " alt="" coords="471,434,658,475"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1VLCReader.html#ad321aba0bd41fe51493f9821327a4cce" title=" " alt="" coords="191,509,401,550"/>
+<area shape="rect" id="node9" href="$namespacevvenc.html#a9003964e78e9d46fb169c59874f7c4a8" title=" " alt="" coords="449,323,680,349"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1Slice.html#a0794e383d8094d8b0b22a24091d94cb0" title="get tables for weighted prediction" alt="" coords="473,373,656,400"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1InputBitstream.html#ab62b144cdeac1c992b173395493acec2" title=" " alt="" coords="467,509,663,550"/>
+</map>

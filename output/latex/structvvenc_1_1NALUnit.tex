@@ -1,0 +1,199 @@
+\hypertarget{structvvenc_1_1NALUnit}{}\doxysection{N\+A\+L\+Unit}
+\label{structvvenc_1_1NALUnit}\index{NALUnit@{NALUnit}}
+
+
+{\ttfamily \#include \char`\"{}Nal.\+h\char`\"{}}
+
+
+
+Inheritance diagram for N\+A\+L\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1NALUnit__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1NALUnit_a9210a79566f58c4e4ecb43f1cc49d60f}{N\+A\+L\+Unit}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1NALUnit_abc89adb562cbf80afe1c5f606dc69073}{N\+A\+L\+Unit}} (const \mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} \&src)
+\item 
+\mbox{\hyperlink{structvvenc_1_1NALUnit_a87831964d7fdb7986aabcb1e086c43f0}{N\+A\+L\+Unit}} (vvenc\+Nal\+Unit\+Type nal\+Unit\+Type, uint32\+\_\+t temporal\+Id=0, uint32\+\_\+t nuh\+Reserved\+Zero\+Bit=0, uint32\+\_\+t forbidden\+Zero\+Bit=0, uint32\+\_\+t nuh\+Layer\+Id=0)
+\item 
+virtual \mbox{\hyperlink{structvvenc_1_1NALUnit_af573d3c0f2ea7c2750f89a1e988414d2}{$\sim$\+N\+A\+L\+Unit}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1NALUnit_a89e9ad3d9eedc1e20e534e5b3986edd2}{is\+Sei}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1NALUnit_ad0464c8499f2a61c6ef67771c27f2111}{is\+Slice}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1NALUnit_a411f1cb38354d4e6d08ecdc8ebe91cb8}{is\+Vcl}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1NALUnit_a066348f8c8998fb243d25952f698e5bf}{m\+\_\+forbidden\+Zero\+Bit}}
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{structvvenc_1_1NALUnit_a1c24a5a708046598303613b5b3c36f56}{m\+\_\+nal\+Unit\+Type}}
+\begin{DoxyCompactList}\small\item\em nal\+\_\+unit\+\_\+type \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1NALUnit_abd7f68634c3ea8e23f0b6a129376d5da}{m\+\_\+nuh\+Layer\+Id}}
+\begin{DoxyCompactList}\small\item\em nuh\+\_\+layer\+\_\+id \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1NALUnit_a89a99d0a63fc139cc13a548631131ded}{m\+\_\+nuh\+Reserved\+Zero\+Bit}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1NALUnit_a78b778433a50b1525ff54843b147343c}{m\+\_\+temporal\+Id}}
+\begin{DoxyCompactList}\small\item\em temporal\+\_\+id \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a single N\+A\+Lunit header and the associated R\+B\+S\+Payload 
+
+Definition at line 60 of file Nal.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_abc89adb562cbf80afe1c5f606dc69073}\label{structvvenc_1_1NALUnit_abc89adb562cbf80afe1c5f606dc69073}} 
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{NALUnit()}{NALUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 68 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a87831964d7fdb7986aabcb1e086c43f0}\label{structvvenc_1_1NALUnit_a87831964d7fdb7986aabcb1e086c43f0}} 
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{NALUnit()}{NALUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} (\begin{DoxyParamCaption}\item[{vvenc\+Nal\+Unit\+Type}]{nal\+Unit\+Type,  }\item[{uint32\+\_\+t}]{temporal\+Id = {\ttfamily 0},  }\item[{uint32\+\_\+t}]{nuh\+Reserved\+Zero\+Bit = {\ttfamily 0},  }\item[{uint32\+\_\+t}]{forbidden\+Zero\+Bit = {\ttfamily 0},  }\item[{uint32\+\_\+t}]{nuh\+Layer\+Id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+construct an N\+A\+Lunit structure with given header values. 
+
+Definition at line 77 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a9210a79566f58c4e4ecb43f1cc49d60f}\label{structvvenc_1_1NALUnit_a9210a79566f58c4e4ecb43f1cc49d60f}} 
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\index{NALUnit@{NALUnit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{NALUnit()}{NALUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor -\/ no initialization; must be performed by user 
+
+Definition at line 91 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_af573d3c0f2ea7c2750f89a1e988414d2}\label{structvvenc_1_1NALUnit_af573d3c0f2ea7c2750f89a1e988414d2}} 
+\index{NALUnit@{NALUnit}!````~NALUnit@{$\sim$NALUnit}}
+\index{````~NALUnit@{$\sim$NALUnit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{$\sim$NALUnit()}{~NALUnit()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{structvvenc_1_1NALUnit}{N\+A\+L\+Unit}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 93 of file Nal.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a89e9ad3d9eedc1e20e534e5b3986edd2}\label{structvvenc_1_1NALUnit_a89e9ad3d9eedc1e20e534e5b3986edd2}} 
+\index{NALUnit@{NALUnit}!isSei@{isSei}}
+\index{isSei@{isSei}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{isSei()}{isSei()}}
+{\footnotesize\ttfamily bool is\+Sei (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_ad0464c8499f2a61c6ef67771c27f2111}\label{structvvenc_1_1NALUnit_ad0464c8499f2a61c6ef67771c27f2111}} 
+\index{NALUnit@{NALUnit}!isSlice@{isSlice}}
+\index{isSlice@{isSlice}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{isSlice()}{isSlice()}}
+{\footnotesize\ttfamily bool is\+Slice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns true if the N\+A\+Lunit is a slice N\+A\+Lunit 
+
+Definition at line 96 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a411f1cb38354d4e6d08ecdc8ebe91cb8}\label{structvvenc_1_1NALUnit_a411f1cb38354d4e6d08ecdc8ebe91cb8}} 
+\index{NALUnit@{NALUnit}!isVcl@{isVcl}}
+\index{isVcl@{isVcl}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{isVcl()}{isVcl()}}
+{\footnotesize\ttfamily bool is\+Vcl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 113 of file Nal.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a066348f8c8998fb243d25952f698e5bf}\label{structvvenc_1_1NALUnit_a066348f8c8998fb243d25952f698e5bf}} 
+\index{NALUnit@{NALUnit}!m\_forbiddenZeroBit@{m\_forbiddenZeroBit}}
+\index{m\_forbiddenZeroBit@{m\_forbiddenZeroBit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{m\_forbiddenZeroBit}{m\_forbiddenZeroBit}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+forbidden\+Zero\+Bit}
+
+
+
+Definition at line 65 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a1c24a5a708046598303613b5b3c36f56}\label{structvvenc_1_1NALUnit_a1c24a5a708046598303613b5b3c36f56}} 
+\index{NALUnit@{NALUnit}!m\_nalUnitType@{m\_nalUnitType}}
+\index{m\_nalUnitType@{m\_nalUnitType}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{m\_nalUnitType}{m\_nalUnitType}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type m\+\_\+nal\+Unit\+Type}
+
+
+
+nal\+\_\+unit\+\_\+type 
+
+
+
+Definition at line 62 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_abd7f68634c3ea8e23f0b6a129376d5da}\label{structvvenc_1_1NALUnit_abd7f68634c3ea8e23f0b6a129376d5da}} 
+\index{NALUnit@{NALUnit}!m\_nuhLayerId@{m\_nuhLayerId}}
+\index{m\_nuhLayerId@{m\_nuhLayerId}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{m\_nuhLayerId}{m\_nuhLayerId}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+nuh\+Layer\+Id}
+
+
+
+nuh\+\_\+layer\+\_\+id 
+
+
+
+Definition at line 64 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a89a99d0a63fc139cc13a548631131ded}\label{structvvenc_1_1NALUnit_a89a99d0a63fc139cc13a548631131ded}} 
+\index{NALUnit@{NALUnit}!m\_nuhReservedZeroBit@{m\_nuhReservedZeroBit}}
+\index{m\_nuhReservedZeroBit@{m\_nuhReservedZeroBit}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{m\_nuhReservedZeroBit}{m\_nuhReservedZeroBit}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+nuh\+Reserved\+Zero\+Bit}
+
+
+
+Definition at line 66 of file Nal.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1NALUnit_a78b778433a50b1525ff54843b147343c}\label{structvvenc_1_1NALUnit_a78b778433a50b1525ff54843b147343c}} 
+\index{NALUnit@{NALUnit}!m\_temporalId@{m\_temporalId}}
+\index{m\_temporalId@{m\_temporalId}!NALUnit@{NALUnit}}
+\doxysubsubsection{\texorpdfstring{m\_temporalId}{m\_temporalId}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+temporal\+Id}
+
+
+
+temporal\+\_\+id 
+
+
+
+Definition at line 63 of file Nal.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Nal_8h}{Nal.\+h}}\end{DoxyCompactItemize}

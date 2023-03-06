@@ -1,0 +1,671 @@
+\hypertarget{namespaceapputils}{}\doxysection{apputils Namespace Reference}
+\label{namespaceapputils}\index{apputils@{apputils}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceapputils_1_1df}{df}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int16\+\_\+t \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a1eed7b313b812a01bd54a253c44a8188}{read\+Yuv\+Plane}} (std\+::istream \&fd, vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, bool is16bit, int file\+Bit\+Depth, const int \&comp\+ID, const vvenc\+Chroma\+Format \&input\+Ch\+Fmt, const vvenc\+Chroma\+Format \&intern\+Ch\+Fmt)
+\item 
+void \mbox{\hyperlink{namespaceapputils_a5b30a810d8e7c8936ecf693a6c9d8438}{scale\+Yuv\+Plane}} (vvenc\+Y\+U\+V\+Plane \&yuv\+Plane\+Out, const vvenc\+Y\+U\+V\+Plane \&yuv\+Plane\+In, const int shift\+Bits, const \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}} min\+Val, const \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}} max\+Val)
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a2342bc95752bd2dee7e782bc84b19557}{verify\+Yuv\+Plane}} (vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, const int bit\+Depth)
+\item 
+bool \mbox{\hyperlink{namespaceapputils_a101d9d4639079b418a1d11e488fbb2ff}{write\+Yuv\+Plane}} (std\+::ostream \&fd, const vvenc\+Y\+U\+V\+Plane \&yuv\+Plane, bool is16bit, int file\+Bit\+Depth, int packed\+Y\+U\+V\+Output\+Mode, const int \&comp\+ID, const vvenc\+Chroma\+Format \&intern\+Ch\+Fmt, const vvenc\+Chroma\+Format \&output\+Ch\+Fmt)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}{Bit\+Depth\+And\+Color\+Space}} \{ \newline
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a3769731312da76cc7e9b3fa8e7985633}{Y\+U\+V420\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a9487d7507d4dce156d16ec69789ab821}{Y\+U\+V420\+\_\+10}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a87de0f7143ded883d05fc7bb23113102}{Y\+U\+V422\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a56c90475a7bc1023be80b8fac8e12c3e}{Y\+U\+V422\+\_\+10}}, 
+\newline
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a849b7eb94a292eb1cb600f26d1cc9d4d}{Y\+U\+V444\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a8828c4821614409d8719e37d830beef9}{Y\+U\+V444\+\_\+10}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ab71c901c72d69cc97ebb50692f6501cb}{Y\+U\+V400\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ad601708e404ed26a30746724656f8239}{Y\+U\+V400\+\_\+10}}
+ \}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Msg\+Level $>$ $>$ \mbox{\hyperlink{namespaceapputils_a3d6312b5cad8eaef8c69ec2bf9807b9f}{Msg\+Level\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Preset\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_ace5b5ee54bfcef33e4139c447edbc4ea}{Preset\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Segment\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_ab1d8ac09870245037bdf6d01deea861b}{Segment\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Profile $>$ $>$ \mbox{\hyperlink{namespaceapputils_a74bf44e287326acd3767a9659426ebfe}{Profile\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Level $>$ $>$ \mbox{\hyperlink{namespaceapputils_a00299d201f7004d091147fdb4fc7a20e}{Level\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Tier $>$ $>$ \mbox{\hyperlink{namespaceapputils_aeb818e55f63cd600e52509b6c0ca0570}{Tier\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Cost\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_aed21b000468edb9380236cde58fdd96e}{Cost\+Mode\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Chroma\+Format $>$ $>$ \mbox{\hyperlink{namespaceapputils_a331f89d9875d04166ddc9a236babeb46}{Chroma\+Format\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Hash\+Type $>$ $>$ \mbox{\hyperlink{namespaceapputils_a886091d0ce2a70e9bd51cf8cca17530f}{Hash\+Type\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Decoding\+Refresh\+Type $>$ $>$ \mbox{\hyperlink{namespaceapputils_a34165923a28e78538cd58d92310e3d48}{Decoding\+Refresh\+Type\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}{Bit\+Depth\+And\+Color\+Space}} $>$ $>$ \mbox{\hyperlink{namespaceapputils_a964d3e78ea02897e63c9e43fa76fec4a}{Bit\+Color\+Space\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+H\+D\+R\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_a38a590592c459c892e164d5919e21510}{Hdr\+Mode\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_af7c09afc4d4efb7119bd652f552c4c4e}{Color\+Primaries\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a917da792d06a6613a4a9843bb631d703}{Transfer\+Characteristics\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a032fa51c1bdf08c56c73befcc644563d}{Color\+Matrix\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a67dc23ece1b928c73c9ba80c96e5c08d}{Flag\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ bool $>$ $>$ \mbox{\hyperlink{namespaceapputils_a48c2c0fee6d66685777f2040f3846e88}{Q\+P\+A\+To\+Int\+Map}}
+\item 
+void \mbox{\hyperlink{namespaceapputils_ae7d89f863e25735c6b9d84ab084d0883}{set\+Presets}} (V\+V\+Enc\+App\+Cfg $\ast$cfg, int preset)
+\item 
+void \mbox{\hyperlink{namespaceapputils_a14115b24687d6eaff0103637e6700231}{set\+Input\+Bit\+Depth\+And\+Color\+Space}} (V\+V\+Enc\+App\+Cfg $\ast$cfg, int dbcs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}\label{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}} 
+\index{apputils@{apputils}!LPel@{LPel}}
+\index{LPel@{LPel}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{LPel}{LPel}}
+{\footnotesize\ttfamily typedef int16\+\_\+t \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}}}
+
+
+
+Definition at line 71 of file Yuv\+File\+I\+O.\+cpp.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}} 
+\index{apputils@{apputils}!BitDepthAndColorSpace@{BitDepthAndColorSpace}}
+\index{BitDepthAndColorSpace@{BitDepthAndColorSpace}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{BitDepthAndColorSpace}{BitDepthAndColorSpace}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}{Bit\+Depth\+And\+Color\+Space}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV420\_8@{YUV420\_8}!apputils@{apputils}}\index{apputils@{apputils}!YUV420\_8@{YUV420\_8}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a3769731312da76cc7e9b3fa8e7985633}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a3769731312da76cc7e9b3fa8e7985633}} 
+Y\+U\+V420\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV420\_10@{YUV420\_10}!apputils@{apputils}}\index{apputils@{apputils}!YUV420\_10@{YUV420\_10}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a9487d7507d4dce156d16ec69789ab821}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a9487d7507d4dce156d16ec69789ab821}} 
+Y\+U\+V420\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV422\_8@{YUV422\_8}!apputils@{apputils}}\index{apputils@{apputils}!YUV422\_8@{YUV422\_8}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a87de0f7143ded883d05fc7bb23113102}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a87de0f7143ded883d05fc7bb23113102}} 
+Y\+U\+V422\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV422\_10@{YUV422\_10}!apputils@{apputils}}\index{apputils@{apputils}!YUV422\_10@{YUV422\_10}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a56c90475a7bc1023be80b8fac8e12c3e}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a56c90475a7bc1023be80b8fac8e12c3e}} 
+Y\+U\+V422\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV444\_8@{YUV444\_8}!apputils@{apputils}}\index{apputils@{apputils}!YUV444\_8@{YUV444\_8}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a849b7eb94a292eb1cb600f26d1cc9d4d}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a849b7eb94a292eb1cb600f26d1cc9d4d}} 
+Y\+U\+V444\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV444\_10@{YUV444\_10}!apputils@{apputils}}\index{apputils@{apputils}!YUV444\_10@{YUV444\_10}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a8828c4821614409d8719e37d830beef9}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a8828c4821614409d8719e37d830beef9}} 
+Y\+U\+V444\+\_\+10&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV400\_8@{YUV400\_8}!apputils@{apputils}}\index{apputils@{apputils}!YUV400\_8@{YUV400\_8}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ab71c901c72d69cc97ebb50692f6501cb}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ab71c901c72d69cc97ebb50692f6501cb}} 
+Y\+U\+V400\+\_\+8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YUV400\_10@{YUV400\_10}!apputils@{apputils}}\index{apputils@{apputils}!YUV400\_10@{YUV400\_10}}}\mbox{\Hypertarget{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ad601708e404ed26a30746724656f8239}\label{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ad601708e404ed26a30746724656f8239}} 
+Y\+U\+V400\+\_\+10&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 81 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceapputils_a1eed7b313b812a01bd54a253c44a8188}\label{namespaceapputils_a1eed7b313b812a01bd54a253c44a8188}} 
+\index{apputils@{apputils}!readYuvPlane@{readYuvPlane}}
+\index{readYuvPlane@{readYuvPlane}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{readYuvPlane()}{readYuvPlane()}}
+{\footnotesize\ttfamily bool apputils\+::read\+Yuv\+Plane (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{fd,  }\item[{vvenc\+Y\+U\+V\+Plane \&}]{yuv\+Plane,  }\item[{bool}]{is16bit,  }\item[{int}]{file\+Bit\+Depth,  }\item[{const int \&}]{comp\+ID,  }\item[{const vvenc\+Chroma\+Format \&}]{input\+Ch\+Fmt,  }\item[{const vvenc\+Chroma\+Format \&}]{intern\+Ch\+Fmt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 73 of file Yuv\+File\+I\+O.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a5b30a810d8e7c8936ecf693a6c9d8438}\label{namespaceapputils_a5b30a810d8e7c8936ecf693a6c9d8438}} 
+\index{apputils@{apputils}!scaleYuvPlane@{scaleYuvPlane}}
+\index{scaleYuvPlane@{scaleYuvPlane}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{scaleYuvPlane()}{scaleYuvPlane()}}
+{\footnotesize\ttfamily void apputils\+::scale\+Yuv\+Plane (\begin{DoxyParamCaption}\item[{vvenc\+Y\+U\+V\+Plane \&}]{yuv\+Plane\+Out,  }\item[{const vvenc\+Y\+U\+V\+Plane \&}]{yuv\+Plane\+In,  }\item[{const int}]{shift\+Bits,  }\item[{const \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}}}]{min\+Val,  }\item[{const \mbox{\hyperlink{namespaceapputils_a6f1cd8359039cf11848a7b004fe56210}{L\+Pel}}}]{max\+Val }\end{DoxyParamCaption})}
+
+
+
+Definition at line 432 of file Yuv\+File\+I\+O.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a14115b24687d6eaff0103637e6700231}\label{namespaceapputils_a14115b24687d6eaff0103637e6700231}} 
+\index{apputils@{apputils}!setInputBitDepthAndColorSpace@{setInputBitDepthAndColorSpace}}
+\index{setInputBitDepthAndColorSpace@{setInputBitDepthAndColorSpace}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{setInputBitDepthAndColorSpace()}{setInputBitDepthAndColorSpace()}}
+{\footnotesize\ttfamily void apputils\+::set\+Input\+Bit\+Depth\+And\+Color\+Space (\begin{DoxyParamCaption}\item[{V\+V\+Enc\+App\+Cfg $\ast$}]{cfg,  }\item[{int}]{dbcs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 353 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_ae7d89f863e25735c6b9d84ab084d0883}\label{namespaceapputils_ae7d89f863e25735c6b9d84ab084d0883}} 
+\index{apputils@{apputils}!setPresets@{setPresets}}
+\index{setPresets@{setPresets}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{setPresets()}{setPresets()}}
+{\footnotesize\ttfamily void apputils\+::set\+Presets (\begin{DoxyParamCaption}\item[{V\+V\+Enc\+App\+Cfg $\ast$}]{cfg,  }\item[{int}]{preset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 348 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{namespaceapputils_ae7d89f863e25735c6b9d84ab084d0883_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespaceapputils_a2342bc95752bd2dee7e782bc84b19557}\label{namespaceapputils_a2342bc95752bd2dee7e782bc84b19557}} 
+\index{apputils@{apputils}!verifyYuvPlane@{verifyYuvPlane}}
+\index{verifyYuvPlane@{verifyYuvPlane}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{verifyYuvPlane()}{verifyYuvPlane()}}
+{\footnotesize\ttfamily bool apputils\+::verify\+Yuv\+Plane (\begin{DoxyParamCaption}\item[{vvenc\+Y\+U\+V\+Plane \&}]{yuv\+Plane,  }\item[{const int}]{bit\+Depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 409 of file Yuv\+File\+I\+O.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a101d9d4639079b418a1d11e488fbb2ff}\label{namespaceapputils_a101d9d4639079b418a1d11e488fbb2ff}} 
+\index{apputils@{apputils}!writeYuvPlane@{writeYuvPlane}}
+\index{writeYuvPlane@{writeYuvPlane}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{writeYuvPlane()}{writeYuvPlane()}}
+{\footnotesize\ttfamily bool apputils\+::write\+Yuv\+Plane (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{fd,  }\item[{const vvenc\+Y\+U\+V\+Plane \&}]{yuv\+Plane,  }\item[{bool}]{is16bit,  }\item[{int}]{file\+Bit\+Depth,  }\item[{int}]{packed\+Y\+U\+V\+Output\+Mode,  }\item[{const int \&}]{comp\+ID,  }\item[{const vvenc\+Chroma\+Format \&}]{intern\+Ch\+Fmt,  }\item[{const vvenc\+Chroma\+Format \&}]{output\+Ch\+Fmt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file Yuv\+File\+I\+O.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceapputils_a964d3e78ea02897e63c9e43fa76fec4a}\label{namespaceapputils_a964d3e78ea02897e63c9e43fa76fec4a}} 
+\index{apputils@{apputils}!BitColorSpaceToIntMap@{BitColorSpaceToIntMap}}
+\index{BitColorSpaceToIntMap@{BitColorSpaceToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{BitColorSpaceToIntMap}{BitColorSpaceToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}{Bit\+Depth\+And\+Color\+Space}}$>$ $>$ Bit\+Color\+Space\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"yuv420"},                    \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a3769731312da76cc7e9b3fa8e7985633}{YUV420\_8}} \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"yuv420\_10"},                 \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a9487d7507d4dce156d16ec69789ab821}{YUV420\_10}} \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 225 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a331f89d9875d04166ddc9a236babeb46}\label{namespaceapputils_a331f89d9875d04166ddc9a236babeb46}} 
+\index{apputils@{apputils}!ChromaFormatToEnumMap@{ChromaFormatToEnumMap}}
+\index{ChromaFormatToEnumMap@{ChromaFormatToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{ChromaFormatToEnumMap}{ChromaFormatToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Chroma\+Format$>$ $>$ Chroma\+Format\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"400"},                     VVENC\_CHROMA\_400 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"420"},                     VVENC\_CHROMA\_420 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"422"},                     VVENC\_CHROMA\_422 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"444"},                     VVENC\_CHROMA\_444 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},                       VVENC\_NUM\_CHROMA\_FORMAT \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 189 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a032fa51c1bdf08c56c73befcc644563d}\label{namespaceapputils_a032fa51c1bdf08c56c73befcc644563d}} 
+\index{apputils@{apputils}!ColorMatrixToIntMap@{ColorMatrixToIntMap}}
+\index{ColorMatrixToIntMap@{ColorMatrixToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{ColorMatrixToIntMap}{ColorMatrixToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$int$>$ $>$ Color\+Matrix\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"gbr"},              0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt709"},            1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"unknown"},          2 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"empty"},            3 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"fcc"},              4 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt470bg"},          5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte170m"},        6 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte240m"},        7 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"ycgco"},            8 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt2020nc"},         9 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt2020c"},          10 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte2085"},        11 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"chroma-\/derived-\/nc"},12 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"chroma-\/derived-\/c"}, 13 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"ictcp"},            14 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"}, 0 \}, \{ \textcolor{stringliteral}{"1"}, 1 \}, \{ \textcolor{stringliteral}{"2"}, 2 \}, \{ \textcolor{stringliteral}{"3"}, 3 \}, \{ \textcolor{stringliteral}{"4"}, 4 \}, \{ \textcolor{stringliteral}{"5"}, 5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6"}, 6 \}, \{ \textcolor{stringliteral}{"7"}, 7 \}, \{ \textcolor{stringliteral}{"8"}, 8 \}, \{ \textcolor{stringliteral}{"9"}, 9 \}, \{ \textcolor{stringliteral}{"10"},10 \}, \{ \textcolor{stringliteral}{"11"},11 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"12"},12 \},\{ \textcolor{stringliteral}{"13"},13 \},\{ \textcolor{stringliteral}{"14"},14 \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 290 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_af7c09afc4d4efb7119bd652f552c4c4e}\label{namespaceapputils_af7c09afc4d4efb7119bd652f552c4c4e}} 
+\index{apputils@{apputils}!ColorPrimariesToIntMap@{ColorPrimariesToIntMap}}
+\index{ColorPrimariesToIntMap@{ColorPrimariesToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{ColorPrimariesToIntMap}{ColorPrimariesToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$int$>$ $>$ Color\+Primaries\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"reserved"},            0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt709"},               1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"unknown"},             2 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"empty"},               3 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt470m"},              4 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt470bg"},             5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte170m"},           6 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte240m"},           7 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"film"},                8 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt2020"},              9 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte428"},           10 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte431"},           11 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte432"},           12 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"}, 0 \}, \{ \textcolor{stringliteral}{"1"}, 1 \}, \{ \textcolor{stringliteral}{"2"}, 2 \}, \{ \textcolor{stringliteral}{"3"}, 3 \}, \{ \textcolor{stringliteral}{"4"}, 4 \}, \{ \textcolor{stringliteral}{"5"}, 5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6"}, 6 \}, \{ \textcolor{stringliteral}{"7"}, 7 \}, \{ \textcolor{stringliteral}{"8"}, 8 \}, \{ \textcolor{stringliteral}{"9"}, 9 \}, \{ \textcolor{stringliteral}{"10"},10 \}, \{ \textcolor{stringliteral}{"11"},11 \}, \{ \textcolor{stringliteral}{"12"},12 \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 244 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_aed21b000468edb9380236cde58fdd96e}\label{namespaceapputils_aed21b000468edb9380236cde58fdd96e}} 
+\index{apputils@{apputils}!CostModeToEnumMap@{CostModeToEnumMap}}
+\index{CostModeToEnumMap@{CostModeToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{CostModeToEnumMap}{CostModeToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Cost\+Mode$>$ $>$ Cost\+Mode\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"lossy"},                   VVENC\_COST\_STANDARD\_LOSSY              \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"sequence\_level\_lossless"}, VVENC\_COST\_SEQUENCE\_LEVEL\_LOSSLESS     \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"lossless"},                VVENC\_COST\_LOSSLESS\_CODING             \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"mixed\_lossless\_lossy"},    VVENC\_COST\_MIXED\_LOSSLESS\_LOSSY\_CODING \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 181 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a34165923a28e78538cd58d92310e3d48}\label{namespaceapputils_a34165923a28e78538cd58d92310e3d48}} 
+\index{apputils@{apputils}!DecodingRefreshTypeToEnumMap@{DecodingRefreshTypeToEnumMap}}
+\index{DecodingRefreshTypeToEnumMap@{DecodingRefreshTypeToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{DecodingRefreshTypeToEnumMap}{DecodingRefreshTypeToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Decoding\+Refresh\+Type$>$ $>$ Decoding\+Refresh\+Type\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"none"},                  VVENC\_DRT\_NONE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"cra"},                   VVENC\_DRT\_CRA \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"idr"},                   VVENC\_DRT\_IDR \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"rpsei"},                 VVENC\_DRT\_RECOVERY\_POINT\_SEI \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"idr2"},                  VVENC\_DRT\_IDR2 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},                     VVENC\_DRT\_NONE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},                     VVENC\_DRT\_CRA \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2"},                     VVENC\_DRT\_IDR \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3"},                     VVENC\_DRT\_RECOVERY\_POINT\_SEI \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4"},                     VVENC\_DRT\_IDR2 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 211 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a67dc23ece1b928c73c9ba80c96e5c08d}\label{namespaceapputils_a67dc23ece1b928c73c9ba80c96e5c08d}} 
+\index{apputils@{apputils}!FlagToIntMap@{FlagToIntMap}}
+\index{FlagToIntMap@{FlagToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{FlagToIntMap}{FlagToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$int$>$ $>$ Flag\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"auto"},        -\/1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"-\/1"},          -\/1 \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"off"},          0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"disable"},      0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},            0 \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"on"},           1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"enable"},       1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},            1 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 313 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a886091d0ce2a70e9bd51cf8cca17530f}\label{namespaceapputils_a886091d0ce2a70e9bd51cf8cca17530f}} 
+\index{apputils@{apputils}!HashTypeToEnumMap@{HashTypeToEnumMap}}
+\index{HashTypeToEnumMap@{HashTypeToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{HashTypeToEnumMap}{HashTypeToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Hash\+Type$>$ $>$ Hash\+Type\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"md5"},                     VVENC\_HASHTYPE\_MD5      \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"crc"},                     VVENC\_HASHTYPE\_CRC      \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"checksum"},                VVENC\_HASHTYPE\_CHECKSUM \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"off"},                     VVENC\_HASHTYPE\_NONE     \},}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},                       VVENC\_HASHTYPE\_MD5      \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2"},                       VVENC\_HASHTYPE\_CRC      \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3"},                       VVENC\_HASHTYPE\_CHECKSUM \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},                       VVENC\_HASHTYPE\_NONE     \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 198 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a38a590592c459c892e164d5919e21510}\label{namespaceapputils_a38a590592c459c892e164d5919e21510}} 
+\index{apputils@{apputils}!HdrModeToIntMap@{HdrModeToIntMap}}
+\index{HdrModeToIntMap@{HdrModeToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{HdrModeToIntMap}{HdrModeToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+H\+D\+R\+Mode$>$ $>$ Hdr\+Mode\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"off"},                 VVENC\_HDR\_OFF \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"pq"},                  VVENC\_HDR\_PQ\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"hdr10"},               VVENC\_HDR\_PQ\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"pq\_2020"},             VVENC\_HDR\_PQ\_BT2020\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"hdr10\_2020"},          VVENC\_HDR\_PQ\_BT2020\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"hlg"},                 VVENC\_HDR\_HLG\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"hlg\_2020"},            VVENC\_HDR\_HLG\_BT2020\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 232 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a00299d201f7004d091147fdb4fc7a20e}\label{namespaceapputils_a00299d201f7004d091147fdb4fc7a20e}} 
+\index{apputils@{apputils}!LevelToEnumMap@{LevelToEnumMap}}
+\index{LevelToEnumMap@{LevelToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{LevelToEnumMap}{LevelToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Level$>$ $>$ Level\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"auto"},                    VVENC\_LEVEL\_AUTO\},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},                       VVENC\_LEVEL1    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1.0"},                     VVENC\_LEVEL1    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2"},                       VVENC\_LEVEL2    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2.0"},                     VVENC\_LEVEL2    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2.1"},                     VVENC\_LEVEL2\_1  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3"},                       VVENC\_LEVEL3    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3.0"},                     VVENC\_LEVEL3    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3.1"},                     VVENC\_LEVEL3\_1  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4"},                       VVENC\_LEVEL4    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4.0"},                     VVENC\_LEVEL4    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4.1"},                     VVENC\_LEVEL4\_1  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5"},                       VVENC\_LEVEL5    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5.0"},                     VVENC\_LEVEL5    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5.1"},                     VVENC\_LEVEL5\_1  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5.2"},                     VVENC\_LEVEL5\_2  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6"},                       VVENC\_LEVEL6    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6.0"},                     VVENC\_LEVEL6    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6.1"},                     VVENC\_LEVEL6\_1  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6.2"},                     VVENC\_LEVEL6\_2  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6.3"},                     VVENC\_LEVEL6\_3  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"15.5"},                    VVENC\_LEVEL15\_5 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 149 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a3d6312b5cad8eaef8c69ec2bf9807b9f}\label{namespaceapputils_a3d6312b5cad8eaef8c69ec2bf9807b9f}} 
+\index{apputils@{apputils}!MsgLevelToEnumMap@{MsgLevelToEnumMap}}
+\index{MsgLevelToEnumMap@{MsgLevelToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{MsgLevelToEnumMap}{MsgLevelToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Msg\+Level$>$ $>$ Msg\+Level\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"silent"},  vvencMsgLevel::VVENC\_SILENT  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"error"},   vvencMsgLevel::VVENC\_ERROR   \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"warning"}, vvencMsgLevel::VVENC\_WARNING \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"info"},    vvencMsgLevel::VVENC\_INFO    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"notice"},  vvencMsgLevel::VVENC\_NOTICE  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"verbose"}, vvencMsgLevel::VVENC\_VERBOSE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"details"}, vvencMsgLevel::VVENC\_DETAILS \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},       vvencMsgLevel::VVENC\_SILENT  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},       vvencMsgLevel::VVENC\_ERROR   \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2"},       vvencMsgLevel::VVENC\_WARNING \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3"},       vvencMsgLevel::VVENC\_INFO    \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4"},       vvencMsgLevel::VVENC\_NOTICE  \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5"},       vvencMsgLevel::VVENC\_VERBOSE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6"},       vvencMsgLevel::VVENC\_DETAILS \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 96 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_ace5b5ee54bfcef33e4139c447edbc4ea}\label{namespaceapputils_ace5b5ee54bfcef33e4139c447edbc4ea}} 
+\index{apputils@{apputils}!PresetToEnumMap@{PresetToEnumMap}}
+\index{PresetToEnumMap@{PresetToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{PresetToEnumMap}{PresetToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Preset\+Mode$>$ $>$ Preset\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"none"},      vvencPresetMode::VVENC\_NONE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"faster"},    vvencPresetMode::VVENC\_FASTER \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"fast"},      vvencPresetMode::VVENC\_FAST \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"medium"},    vvencPresetMode::VVENC\_MEDIUM \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"slow"},      vvencPresetMode::VVENC\_SLOW \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"slower"},    vvencPresetMode::VVENC\_SLOWER \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"firstpass"}, vvencPresetMode::VVENC\_FIRSTPASS \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"tooltest"},  vvencPresetMode::VVENC\_TOOLTEST \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 115 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a74bf44e287326acd3767a9659426ebfe}\label{namespaceapputils_a74bf44e287326acd3767a9659426ebfe}} 
+\index{apputils@{apputils}!ProfileToEnumMap@{ProfileToEnumMap}}
+\index{ProfileToEnumMap@{ProfileToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{ProfileToEnumMap}{ProfileToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Profile$>$ $>$ Profile\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"main\_10"},                               vvencProfile::VVENC\_MAIN\_10 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"main\_10\_444"},                           vvencProfile::VVENC\_MAIN\_10\_444 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"main\_10\_still\_picture"},                 vvencProfile::VVENC\_MAIN\_10\_STILL\_PICTURE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"main\_10\_444\_still\_picture"},             vvencProfile::VVENC\_MAIN\_10\_444\_STILL\_PICTURE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"multilayer\_main\_10"},                    vvencProfile::VVENC\_MULTILAYER\_MAIN\_10 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"multilayer\_main\_10\_444"},                vvencProfile::VVENC\_MULTILAYER\_MAIN\_10\_444 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"multilayer\_main\_10\_still\_picture"},      vvencProfile::VVENC\_MULTILAYER\_MAIN\_10\_STILL\_PICTURE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"multilayer\_main\_10\_444\_still\_picture"},  vvencProfile::VVENC\_MULTILAYER\_MAIN\_10\_444\_STILL\_PICTURE \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"auto"},                                  vvencProfile::VVENC\_PROFILE\_AUTO \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 136 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a48c2c0fee6d66685777f2040f3846e88}\label{namespaceapputils_a48c2c0fee6d66685777f2040f3846e88}} 
+\index{apputils@{apputils}!QPAToIntMap@{QPAToIntMap}}
+\index{QPAToIntMap@{QPAToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{QPAToIntMap}{QPAToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$bool$>$ $>$ Q\+P\+A\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"off"},          0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"disable"},      0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"},            0 \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"on"},           1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"enable"},       1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"1"},            1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"2"},            1 \}, }
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"3"},            1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"4"},            1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"5"},            1 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 328 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_ab1d8ac09870245037bdf6d01deea861b}\label{namespaceapputils_ab1d8ac09870245037bdf6d01deea861b}} 
+\index{apputils@{apputils}!SegmentToEnumMap@{SegmentToEnumMap}}
+\index{SegmentToEnumMap@{SegmentToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{SegmentToEnumMap}{SegmentToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Segment\+Mode$>$ $>$ Segment\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"off"},      vvencSegmentMode::VVENC\_SEG\_OFF \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"first"},    vvencSegmentMode::VVENC\_SEG\_FIRST \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"mid"},      vvencSegmentMode::VVENC\_SEG\_MID \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"last"},     vvencSegmentMode::VVENC\_SEG\_LAST \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 127 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_aeb818e55f63cd600e52509b6c0ca0570}\label{namespaceapputils_aeb818e55f63cd600e52509b6c0ca0570}} 
+\index{apputils@{apputils}!TierToEnumMap@{TierToEnumMap}}
+\index{TierToEnumMap@{TierToEnumMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{TierToEnumMap}{TierToEnumMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$vvenc\+Tier$>$ $>$ Tier\+To\+Enum\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"main"},                    vvencTier::VVENC\_TIER\_MAIN \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"high"},                    vvencTier::VVENC\_TIER\_HIGH \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 175 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{namespaceapputils_a917da792d06a6613a4a9843bb631d703}\label{namespaceapputils_a917da792d06a6613a4a9843bb631d703}} 
+\index{apputils@{apputils}!TransferCharacteristicsToIntMap@{TransferCharacteristicsToIntMap}}
+\index{TransferCharacteristicsToIntMap@{TransferCharacteristicsToIntMap}!apputils@{apputils}}
+\doxysubsubsection{\texorpdfstring{TransferCharacteristicsToIntMap}{TransferCharacteristicsToIntMap}}
+{\footnotesize\ttfamily const std\+::vector$<$S\+V\+Pair$<$int$>$ $>$ Transfer\+Characteristics\+To\+Int\+Map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"auto"},               -\/1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"reserved"},            0 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt709"},               1 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"unknown"},             2 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"empty"},               3 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt470m"},              4 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt470bg"},             5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte170m"},           6 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte240m"},           7 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"linear"},              8 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"log100"},              9 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"log316"},             10 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"iec61966"},           11 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt1361e"},            12 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"iec61966-\/2-\/1"},       13 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt2020-\/10"},          14 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"bt2020-\/12"},          15 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte2084"},          16 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"smpte428"},           17 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"arib-\/std-\/b67"},       18 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"0"}, 0 \}, \{ \textcolor{stringliteral}{"1"}, 1 \}, \{ \textcolor{stringliteral}{"2"}, 2 \}, \{ \textcolor{stringliteral}{"3"}, 3 \}, \{ \textcolor{stringliteral}{"4"}, 4 \}, \{ \textcolor{stringliteral}{"5"}, 5 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"6"}, 6 \}, \{ \textcolor{stringliteral}{"7"}, 7 \}, \{ \textcolor{stringliteral}{"8"}, 8 \}, \{ \textcolor{stringliteral}{"9"}, 9 \}, \{ \textcolor{stringliteral}{"10"},10 \}, \{ \textcolor{stringliteral}{"11"},11 \},}
+\DoxyCodeLine{  \{ \textcolor{stringliteral}{"12"},12 \},\{ \textcolor{stringliteral}{"13"},13 \},\{ \textcolor{stringliteral}{"14"},14 \},\{ \textcolor{stringliteral}{"15"},15 \},\{ \textcolor{stringliteral}{"16"},16 \},\{ \textcolor{stringliteral}{"17"},17 \},\{ \textcolor{stringliteral}{"18"},18 \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 263 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+

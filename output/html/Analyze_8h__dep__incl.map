@@ -1,0 +1,16 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/EncoderLib/Analyze.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/EncoderLib/Analyze.h">
+<area shape="rect" id="node1" title="encoder analyzer class (header)" alt="" coords="867,5,1023,76"/>
+<area shape="rect" id="node2" href="$EncGOP_8h.html" title="GOP encoder class (header)" alt="" coords="719,124,875,195"/>
+<area shape="rect" id="node6" href="$EncCu_8cpp.html" title="Coding Unit (CU) encoder class." alt="" coords="1009,361,1165,432"/>
+<area shape="rect" id="node3" href="$DecLib_8cpp.html" title="decoder class" alt="" coords="359,243,515,313"/>
+<area shape="rect" id="node4" href="$EncLib_8h.html" title="encoder class (header)" alt="" coords="539,243,695,313"/>
+<area shape="rect" id="node13" href="$EncGOP_8cpp.html" title="GOP encoder class." alt="" coords="719,243,875,313"/>
+<area shape="rect" id="node14" href="$EncPicture_8cpp.html" title="encode picture" alt="" coords="899,243,1055,313"/>
+<area shape="rect" id="node5" href="$CABACWriter_8cpp.html" title="Writer for low level syntax." alt="" coords="5,361,161,432"/>
+<area shape="rect" id="node7" href="$EncLib_8cpp.html" title="encoder class" alt="" coords="185,361,341,432"/>
+<area shape="rect" id="node8" href="$EncSlice_8cpp.html" title="slice encoder class" alt="" coords="365,361,521,432"/>
+<area shape="rect" id="node9" href="$InterSearch_8cpp.html" title=" " alt="" coords="545,361,701,432"/>
+<area shape="rect" id="node10" href="$vvencimpl_8h.html" title=" " alt="" coords="725,369,924,425"/>
+<area shape="rect" id="node12" href="$vvencimpl_8cpp.html" title="This file contains the internal interface of the vvenc SDK." alt="" coords="854,480,1067,536"/>
+<area shape="rect" id="node11" href="$vvenc_8cpp.html" title="This file contains the external interface of the vvenc SDK." alt="" coords="641,480,830,536"/>
+</map>

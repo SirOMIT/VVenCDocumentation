@@ -1,0 +1,118 @@
+\hypertarget{VVEncAppCfg_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/apputils/\+V\+V\+Enc\+App\+Cfg.cpp File Reference}
+\label{VVEncAppCfg_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/VVEncAppCfg.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/VVEncAppCfg.cpp}}
+
+
+Handle encoder configuration parameters.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include \char`\"{}apputils/\+I\+Stream\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+Parse\+Arg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+V\+V\+Enc\+App\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc.\+h\char`\"{}}\newline
+Include dependency graph for V\+V\+Enc\+App\+Cfg.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{VVEncAppCfg_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceapputils}{apputils}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{VVEncAppCfg_8cpp_a764e4b9c6b654f7577c8457f6e8fb09a}{M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+NG}}(val)~\mbox{\hyperlink{VVEncAppCfg_8cpp_a7472710d657723f26dc3c1190487023e}{M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+H\+E\+L\+P\+ER}}(val)
+\item 
+\#define \mbox{\hyperlink{VVEncAppCfg_8cpp_a7472710d657723f26dc3c1190487023e}{M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+H\+E\+L\+P\+ER}}(val)~\#val
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ Bit\+Depth\+And\+Color\+Space $>$ $>$ \mbox{\hyperlink{namespaceapputils_a964d3e78ea02897e63c9e43fa76fec4a}{Bit\+Color\+Space\+To\+Int\+Map}}
+\item 
+enum \mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6}{Bit\+Depth\+And\+Color\+Space}} \{ \newline
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a3769731312da76cc7e9b3fa8e7985633}{Y\+U\+V420\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a9487d7507d4dce156d16ec69789ab821}{Y\+U\+V420\+\_\+10}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a87de0f7143ded883d05fc7bb23113102}{Y\+U\+V422\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a56c90475a7bc1023be80b8fac8e12c3e}{Y\+U\+V422\+\_\+10}}, 
+\newline
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a849b7eb94a292eb1cb600f26d1cc9d4d}{Y\+U\+V444\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6a8828c4821614409d8719e37d830beef9}{Y\+U\+V444\+\_\+10}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ab71c901c72d69cc97ebb50692f6501cb}{Y\+U\+V400\+\_\+8}}, 
+\mbox{\hyperlink{namespaceapputils_a4acd6a7fd6b445b70382b929947662d6ad601708e404ed26a30746724656f8239}{Y\+U\+V400\+\_\+10}}
+ \}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Chroma\+Format $>$ $>$ \mbox{\hyperlink{namespaceapputils_a331f89d9875d04166ddc9a236babeb46}{Chroma\+Format\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a032fa51c1bdf08c56c73befcc644563d}{Color\+Matrix\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_af7c09afc4d4efb7119bd652f552c4c4e}{Color\+Primaries\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Cost\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_aed21b000468edb9380236cde58fdd96e}{Cost\+Mode\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Decoding\+Refresh\+Type $>$ $>$ \mbox{\hyperlink{namespaceapputils_a34165923a28e78538cd58d92310e3d48}{Decoding\+Refresh\+Type\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a67dc23ece1b928c73c9ba80c96e5c08d}{Flag\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Hash\+Type $>$ $>$ \mbox{\hyperlink{namespaceapputils_a886091d0ce2a70e9bd51cf8cca17530f}{Hash\+Type\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+H\+D\+R\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_a38a590592c459c892e164d5919e21510}{Hdr\+Mode\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Level $>$ $>$ \mbox{\hyperlink{namespaceapputils_a00299d201f7004d091147fdb4fc7a20e}{Level\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Msg\+Level $>$ $>$ \mbox{\hyperlink{namespaceapputils_a3d6312b5cad8eaef8c69ec2bf9807b9f}{Msg\+Level\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Preset\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_ace5b5ee54bfcef33e4139c447edbc4ea}{Preset\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Profile $>$ $>$ \mbox{\hyperlink{namespaceapputils_a74bf44e287326acd3767a9659426ebfe}{Profile\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ bool $>$ $>$ \mbox{\hyperlink{namespaceapputils_a48c2c0fee6d66685777f2040f3846e88}{Q\+P\+A\+To\+Int\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Segment\+Mode $>$ $>$ \mbox{\hyperlink{namespaceapputils_ab1d8ac09870245037bdf6d01deea861b}{Segment\+To\+Enum\+Map}}
+\item 
+void \mbox{\hyperlink{namespaceapputils_a14115b24687d6eaff0103637e6700231}{set\+Input\+Bit\+Depth\+And\+Color\+Space}} (V\+V\+Enc\+App\+Cfg $\ast$cfg, int dbcs)
+\item 
+void \mbox{\hyperlink{namespaceapputils_ae7d89f863e25735c6b9d84ab084d0883}{set\+Presets}} (V\+V\+Enc\+App\+Cfg $\ast$cfg, int preset)
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ vvenc\+Tier $>$ $>$ \mbox{\hyperlink{namespaceapputils_aeb818e55f63cd600e52509b6c0ca0570}{Tier\+To\+Enum\+Map}}
+\item 
+const std\+::vector$<$ S\+V\+Pair$<$ int $>$ $>$ \mbox{\hyperlink{namespaceapputils_a917da792d06a6613a4a9843bb631d703}{Transfer\+Characteristics\+To\+Int\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle encoder configuration parameters. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{VVEncAppCfg_8cpp_a764e4b9c6b654f7577c8457f6e8fb09a}\label{VVEncAppCfg_8cpp_a764e4b9c6b654f7577c8457f6e8fb09a}} 
+\index{VVEncAppCfg.cpp@{VVEncAppCfg.cpp}!MACRO\_TO\_STRING@{MACRO\_TO\_STRING}}
+\index{MACRO\_TO\_STRING@{MACRO\_TO\_STRING}!VVEncAppCfg.cpp@{VVEncAppCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{MACRO\_TO\_STRING}{MACRO\_TO\_STRING}}
+{\footnotesize\ttfamily \#define M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+NG(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~\mbox{\hyperlink{VVEncAppCfg_8cpp_a7472710d657723f26dc3c1190487023e}{M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+H\+E\+L\+P\+ER}}(val)}
+
+
+
+Definition at line 66 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+
+\mbox{\Hypertarget{VVEncAppCfg_8cpp_a7472710d657723f26dc3c1190487023e}\label{VVEncAppCfg_8cpp_a7472710d657723f26dc3c1190487023e}} 
+\index{VVEncAppCfg.cpp@{VVEncAppCfg.cpp}!MACRO\_TO\_STRING\_HELPER@{MACRO\_TO\_STRING\_HELPER}}
+\index{MACRO\_TO\_STRING\_HELPER@{MACRO\_TO\_STRING\_HELPER}!VVEncAppCfg.cpp@{VVEncAppCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{MACRO\_TO\_STRING\_HELPER}{MACRO\_TO\_STRING\_HELPER}}
+{\footnotesize\ttfamily \#define M\+A\+C\+R\+O\+\_\+\+T\+O\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+H\+E\+L\+P\+ER(\begin{DoxyParamCaption}\item[{}]{val }\end{DoxyParamCaption})~\#val}
+
+
+
+Definition at line 65 of file V\+V\+Enc\+App\+Cfg.\+cpp.
+

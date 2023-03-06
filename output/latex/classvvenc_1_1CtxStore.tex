@@ -1,0 +1,327 @@
+\hypertarget{classvvenc_1_1CtxStore}{}\doxysection{Ctx\+Store}
+\label{classvvenc_1_1CtxStore}\index{CtxStore@{CtxStore}}
+
+
+{\ttfamily \#include \char`\"{}Contexts.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Ctx\+Store\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classvvenc_1_1CtxStore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxStore_a8b2d126c2e4a9105e641fcad8ab6fc35}{Ctx\+Store}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxStore_a312f4e0747f3d7b11fe83551c5fbe837}{Ctx\+Store}} (bool dummy)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtxStore_a0330c6adb0d10a67951a93d04673384f}{Ctx\+Store}} (const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&ctx\+Store)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_a9c4e02b186d3b2a393379272f28e3ae7}{copy\+From}} (const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&src)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_aaa1e150fffb6177bbe9831d1ac7788e0}{copy\+From}} (const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&src, const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \&ctx\+Set)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1CtxStore_a55e65405587bffc95ad3bdc9c8953e85}{est\+Frac\+Bits}} (unsigned bin, unsigned ctx\+Id) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \& \mbox{\hyperlink{classvvenc_1_1CtxStore_a159c86e42329a3870944826c3ffa3939}{get\+Frac\+Bits\+Array}} (unsigned ctx\+Id) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_acc47565ddd1a8803d46101b3ac04aef6}{init}} (int qp, int init\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_a34e99fb92f4e5a9edea5c4fd9f22b203}{load\+P\+States}} (const std\+::vector$<$ uint16\+\_\+t $>$ \&prob\+States)
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} \& \mbox{\hyperlink{classvvenc_1_1CtxStore_a1c85618348d84d715e7456d2a04119ef}{operator\mbox{[}$\,$\mbox{]}}} (unsigned ctx\+Id)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} \& \mbox{\hyperlink{classvvenc_1_1CtxStore_acdcee221f30c480438ee8d83776b0a1e}{operator\mbox{[}$\,$\mbox{]}}} (unsigned ctx\+Id) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_ae70c2bc9ce63d1b433658dd74cc51492}{save\+P\+States}} (std\+::vector$<$ uint16\+\_\+t $>$ \&prob\+States) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_a9d9cf8e116e22b3670218d6de25f4920}{set\+Win\+Sizes}} (const std\+::vector$<$ uint8\+\_\+t $>$ \&log2\+Window\+Sizes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtxStore_a0d416b412d44cb91aadb9ae896c44133}{check\+Init}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CtxStore_a410f6832c69e2052987a6a7de490bef6}{m\+\_\+\+Ctx}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $>$ \mbox{\hyperlink{classvvenc_1_1CtxStore_aa376c67d076c6dd6c20fe6c164fe0ba5}{m\+\_\+\+Ctx\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 283 of file Contexts.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a8b2d126c2e4a9105e641fcad8ab6fc35}\label{classvvenc_1_1CtxStore_a8b2d126c2e4a9105e641fcad8ab6fc35}} 
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{CtxStore()}{CtxStore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 882 of file Contexts.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a312f4e0747f3d7b11fe83551c5fbe837}\label{classvvenc_1_1CtxStore_a312f4e0747f3d7b11fe83551c5fbe837}} 
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{CtxStore()}{CtxStore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} (\begin{DoxyParamCaption}\item[{bool}]{dummy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 887 of file Contexts.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a0330c6adb0d10a67951a93d04673384f}\label{classvvenc_1_1CtxStore_a0330c6adb0d10a67951a93d04673384f}} 
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\index{CtxStore@{CtxStore}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{CtxStore()}{CtxStore()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&}]{ctx\+Store }\end{DoxyParamCaption})}
+
+
+
+Definition at line 892 of file Contexts.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a0d416b412d44cb91aadb9ae896c44133}\label{classvvenc_1_1CtxStore_a0d416b412d44cb91aadb9ae896c44133}} 
+\index{CtxStore@{CtxStore}!checkInit@{checkInit}}
+\index{checkInit@{checkInit}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{checkInit()}{checkInit()}}
+{\footnotesize\ttfamily void check\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 305 of file Contexts.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtxStore_a0d416b412d44cb91aadb9ae896c44133_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a9c4e02b186d3b2a393379272f28e3ae7}\label{classvvenc_1_1CtxStore_a9c4e02b186d3b2a393379272f28e3ae7}} 
+\index{CtxStore@{CtxStore}!copyFrom@{copyFrom}}
+\index{copyFrom@{copyFrom}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{copyFrom()}{copyFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 290 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classvvenc_1_1CtxStore_a9c4e02b186d3b2a393379272f28e3ae7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classvvenc_1_1CtxStore_a9c4e02b186d3b2a393379272f28e3ae7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_aaa1e150fffb6177bbe9831d1ac7788e0}\label{classvvenc_1_1CtxStore_aaa1e150fffb6177bbe9831d1ac7788e0}} 
+\index{CtxStore@{CtxStore}!copyFrom@{copyFrom}}
+\index{copyFrom@{copyFrom}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{copyFrom()}{copyFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CtxStore}{Ctx\+Store}} \&}]{src,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CtxSet}{Ctx\+Set}} \&}]{ctx\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 291 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classvvenc_1_1CtxStore_aaa1e150fffb6177bbe9831d1ac7788e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a55e65405587bffc95ad3bdc9c8953e85}\label{classvvenc_1_1CtxStore_a55e65405587bffc95ad3bdc9c8953e85}} 
+\index{CtxStore@{CtxStore}!estFracBits@{estFracBits}}
+\index{estFracBits@{estFracBits}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{estFracBits()}{estFracBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t est\+Frac\+Bits (\begin{DoxyParamCaption}\item[{unsigned}]{bin,  }\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 299 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtxStore_a55e65405587bffc95ad3bdc9c8953e85_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a159c86e42329a3870944826c3ffa3939}\label{classvvenc_1_1CtxStore_a159c86e42329a3870944826c3ffa3939}} 
+\index{CtxStore@{CtxStore}!getFracBitsArray@{getFracBitsArray}}
+\index{getFracBitsArray@{getFracBitsArray}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{getFracBitsArray()}{getFracBitsArray()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}}\& get\+Frac\+Bits\+Array (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 302 of file Contexts.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtxStore_a159c86e42329a3870944826c3ffa3939_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtxStore_a159c86e42329a3870944826c3ffa3939_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_acc47565ddd1a8803d46101b3ac04aef6}\label{classvvenc_1_1CtxStore_acc47565ddd1a8803d46101b3ac04aef6}} 
+\index{CtxStore@{CtxStore}!init@{init}}
+\index{init@{init}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{int}]{qp,  }\item[{int}]{init\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 897 of file Contexts.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classvvenc_1_1CtxStore_acc47565ddd1a8803d46101b3ac04aef6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtxStore_acc47565ddd1a8803d46101b3ac04aef6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a34e99fb92f4e5a9edea5c4fd9f22b203}\label{classvvenc_1_1CtxStore_a34e99fb92f4e5a9edea5c4fd9f22b203}} 
+\index{CtxStore@{CtxStore}!loadPStates@{loadPStates}}
+\index{loadPStates@{loadPStates}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{loadPStates()}{loadPStates()}}
+{\footnotesize\ttfamily void load\+P\+States (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint16\+\_\+t $>$ \&}]{prob\+States }\end{DoxyParamCaption})}
+
+
+
+Definition at line 924 of file Contexts.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classvvenc_1_1CtxStore_a34e99fb92f4e5a9edea5c4fd9f22b203_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a1c85618348d84d715e7456d2a04119ef}\label{classvvenc_1_1CtxStore_a1c85618348d84d715e7456d2a04119ef}} 
+\index{CtxStore@{CtxStore}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}}\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 298 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_acdcee221f30c480438ee8d83776b0a1e}\label{classvvenc_1_1CtxStore_acdcee221f30c480438ee8d83776b0a1e}} 
+\index{CtxStore@{CtxStore}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}}\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 297 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_ae70c2bc9ce63d1b433658dd74cc51492}\label{classvvenc_1_1CtxStore_ae70c2bc9ce63d1b433658dd74cc51492}} 
+\index{CtxStore@{CtxStore}!savePStates@{savePStates}}
+\index{savePStates@{savePStates}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{savePStates()}{savePStates()}}
+{\footnotesize\ttfamily void save\+P\+States (\begin{DoxyParamCaption}\item[{std\+::vector$<$ uint16\+\_\+t $>$ \&}]{prob\+States }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 934 of file Contexts.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classvvenc_1_1CtxStore_ae70c2bc9ce63d1b433658dd74cc51492_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a9d9cf8e116e22b3670218d6de25f4920}\label{classvvenc_1_1CtxStore_a9d9cf8e116e22b3670218d6de25f4920}} 
+\index{CtxStore@{CtxStore}!setWinSizes@{setWinSizes}}
+\index{setWinSizes@{setWinSizes}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{setWinSizes()}{setWinSizes()}}
+{\footnotesize\ttfamily void set\+Win\+Sizes (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{log2\+Window\+Sizes }\end{DoxyParamCaption})}
+
+
+
+Definition at line 914 of file Contexts.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_a410f6832c69e2052987a6a7de490bef6}\label{classvvenc_1_1CtxStore_a410f6832c69e2052987a6a7de490bef6}} 
+\index{CtxStore@{CtxStore}!m\_Ctx@{m\_Ctx}}
+\index{m\_Ctx@{m\_Ctx}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{m\_Ctx}{m\_Ctx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}}$\ast$ m\+\_\+\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 308 of file Contexts.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CtxStore_aa376c67d076c6dd6c20fe6c164fe0ba5}\label{classvvenc_1_1CtxStore_aa376c67d076c6dd6c20fe6c164fe0ba5}} 
+\index{CtxStore@{CtxStore}!m\_CtxBuffer@{m\_CtxBuffer}}
+\index{m\_CtxBuffer@{m\_CtxBuffer}!CtxStore@{CtxStore}}
+\doxysubsubsection{\texorpdfstring{m\_CtxBuffer}{m\_CtxBuffer}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}}$>$ m\+\_\+\+Ctx\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 307 of file Contexts.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Contexts_8h}{Contexts.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Contexts_8cpp}{Contexts.\+cpp}}\end{DoxyCompactItemize}

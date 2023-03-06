@@ -1,0 +1,30 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/MatrixIntraPrediction.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/MatrixIntraPrediction.h">
+<area shape="rect" id="node1" title="matrix&#45;based intra prediction class (header)" alt="" coords="336,5,496,76"/>
+<area shape="rect" id="node2" href="$Unit_8h.html" title="defines unit as a set of blocks and basic unit types (coding, prediction, transform)" alt="" coords="387,124,445,151"/>
+<area shape="rect" id="node3" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions." alt="" coords="307,423,413,449"/>
+<area shape="rect" id="node20" href="$Common_8h.html" title="Common 2D&#45;geometrical structures." alt="" coords="415,273,502,300"/>
+<area shape="rect" id="node21" href="$Mv_8h.html" title="motion vector class (header)" alt="" coords="273,348,322,375"/>
+<area shape="rect" id="node22" href="$MotionInfo_8h.html" title="motion information handling classes (header)" alt="" coords="297,273,391,300"/>
+<area shape="rect" id="node23" title=" " alt="" coords="626,199,689,225"/>
+<area shape="rect" id="node24" href="$Buffer_8h.html" title="Low&#45;overhead class describing 2D memory layout." alt="" coords="535,199,601,225"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,497,80,524"/>
+<area shape="rect" id="node5" title=" " alt="" coords="104,497,176,524"/>
+<area shape="rect" id="node6" title=" " alt="" coords="200,497,267,524"/>
+<area shape="rect" id="node7" title=" " alt="" coords="291,497,344,524"/>
+<area shape="rect" id="node8" title=" " alt="" coords="368,497,437,524"/>
+<area shape="rect" id="node9" title=" " alt="" coords="462,497,541,524"/>
+<area shape="rect" id="node10" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations." alt="" coords="565,497,648,524"/>
+<area shape="rect" id="node19" title=" " alt="" coords="672,497,731,524"/>
+<area shape="rect" id="node11" title=" " alt="" coords="276,572,335,599"/>
+<area shape="rect" id="node12" title=" " alt="" coords="359,572,412,599"/>
+<area shape="rect" id="node13" title=" " alt="" coords="436,572,505,599"/>
+<area shape="rect" id="node14" title=" " alt="" coords="530,572,595,599"/>
+<area shape="rect" id="node15" title=" " alt="" coords="620,572,681,599"/>
+<area shape="rect" id="node16" title=" " alt="" coords="705,572,775,599"/>
+<area shape="rect" id="node17" title=" " alt="" coords="799,572,865,599"/>
+<area shape="rect" id="node18" title=" " alt="" coords="889,572,1017,599"/>
+<area shape="rect" id="node25" title=" " alt="" coords="909,273,974,300"/>
+<area shape="rect" id="node26" title=" " alt="" coords="527,273,609,300"/>
+<area shape="rect" id="node27" title=" " alt="" coords="634,273,702,300"/>
+<area shape="rect" id="node28" title=" " alt="" coords="727,273,833,300"/>
+</map>

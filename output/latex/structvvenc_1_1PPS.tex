@@ -1,0 +1,1269 @@
+\hypertarget{structvvenc_1_1PPS}{}\doxysection{P\+PS}
+\label{structvvenc_1_1PPS}\index{PPS@{PPS}}
+
+
+Reference \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} Lists class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for P\+PS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PPS_a49a51d0a71ff2f3c7d3d81989127ac6b}{P\+PS}} ()
+\item 
+virtual \mbox{\hyperlink{structvvenc_1_1PPS_ae74c89f6082c9281836ccf7edc0e707b}{$\sim$\+P\+PS}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}} \& \mbox{\hyperlink{structvvenc_1_1PPS_a52fd78a2abd6a11c583180a4ed7f0e99}{get\+Chroma\+Qp\+Offset\+List\+Entry}} (int cu\+Chroma\+Qp\+Offset\+Idx\+Plus1) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a5a8255281697c3386e93f3ecab47fb86}{get\+Num\+Tiles}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} \& \mbox{\hyperlink{structvvenc_1_1PPS_aac35eb662bc408ab64f31ff0ef0f6c6c}{get\+Sub\+Pic\+From\+CU}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} \& \mbox{\hyperlink{structvvenc_1_1PPS_ad8ad06b01aa2c2cdea36d10999cbfc50}{get\+Sub\+Pic\+From\+Pos}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a3cc3c49d45075120bd3ea7f50235ffd2}{get\+Sub\+Pic\+Idx\+From\+Sub\+Pic\+Id}} (uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_af34c53da2177fbaddfd8315bc6f3a1d3}{sub\+Pic\+Id}}) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a1098ca84e973da53b10489faf6221d6d}{get\+Tile\+Idx}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1PPS_adbc00c65a19979e803eb29fa38b80b98}{init\+Rect\+Slices}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1PPS_ae6fa1a190cdda5ad59c4860555a07d5b}{init\+Tiles}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a3ee9e2818cc4121050896cb0b0021fe0}{is\+Ref\+Scaled}} (const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1PPS_a3646599d79ccd50e2c902a3aeff03f74}{reset\+Tile\+Slice\+Info}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1PPS_a8505cf9dbc1bb29f5eef799af6ed805c}{set\+Chroma\+Qp\+Offset\+List\+Entry}} (int cu\+Chroma\+Qp\+Offset\+Idx\+Plus1, int cb\+Offset, int cr\+Offset, int joint\+Cb\+Cr\+Offset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_aee86a270f36e72d31ff194363cf21761}{alf\+Info\+In\+Ph}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a716ba5c47a48aec1011d49e490f30fca}{cabac\+Init\+Present}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}} \mbox{\hyperlink{structvvenc_1_1PPS_ab12e1ceb2eb4027ec87bc8c7f83b5a15}{chroma\+Qp\+Adj\+Table\+Including\+Null\+Entry}} \mbox{[}1+\mbox{\hyperlink{namespacevvenc_ada871fa5e63f6b7898c825d13c095036}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array includes entry \mbox{[}0\mbox{]} for the null offset used when cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+flag=0, and entries \mbox{[}cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+idx+1...\mbox{]} otherwise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}} \mbox{\hyperlink{structvvenc_1_1PPS_a3f24886a84b0583987dfe29aae1dcd33}{Chroma\+Qp\+Adj\+Table\+Including\+Null\+Entry}} \mbox{[}1+\mbox{\hyperlink{namespacevvenc_ada871fa5e63f6b7898c825d13c095036}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array includes entry \mbox{[}0\mbox{]} for the null offset used when cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+flag=0, and entries \mbox{[}cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+idx+1...\mbox{]} otherwise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a5060232ce25b3081e1362c6e6032f157}{chroma\+Qp\+Offset}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}+1\mbox{]}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_ae821f0db840cf84f0da844e1896a878c}{chroma\+Qp\+Offset\+List\+Len}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Window}{Window}} \mbox{\hyperlink{structvvenc_1_1PPS_a78ec94df6344b12555bb17ffe9407ba9}{conformance\+Window}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a3192c2e4f8db256c8bae8a9532a5fb44}{ctu\+Size}}
+\begin{DoxyCompactList}\small\item\em C\+TU size. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_af6ed618ee30e6de64044b033e2d9057a}{ctu\+To\+Sub\+Pic\+Idx}}
+\begin{DoxyCompactList}\small\item\em mapping between C\+TU and Sub-\/picture index \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_a7df4fd47b41b5dba4d0680c2de9e2cd4}{ctu\+To\+Tile\+Col}}
+\begin{DoxyCompactList}\small\item\em mapping between C\+TU horizontal address and tile column index \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_aee6d87e76ad696f6879bffeae3fabe26}{ctu\+To\+Tile\+Row}}
+\begin{DoxyCompactList}\small\item\em mapping between C\+TU vertical address and tile row index \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a8531ce6b00bb93bf6784659c647ba56f}{dbf\+Info\+In\+Ph}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_af7ed350b66bfd02791def92702bed510}{deblocking\+Filter\+Beta\+Offset\+Div2}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ad10657fefe822cfe38fbfed46a1690a8}{deblocking\+Filter\+Control\+Present}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_aadfc8cef3858a22431d85fb8355e3f84}{deblocking\+Filter\+Disabled}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a97f9e5c125a530a09e91393fae977293}{deblocking\+Filter\+Override\+Enabled}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a7a04d5f73d609c4a43e2d96b42afdb45}{deblocking\+Filter\+Tc\+Offset\+Div2}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a1327c91c17ab52154b01b7e1bd13af8f}{joint\+Cb\+Cr\+Qp\+Offset\+Present}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a245ddfa1d0638413cec268376a45aca9}{layer\+Id}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a9a79f677bbf1b51db8ba268aded985bf}{lists\+Modification\+Present}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_aaabbcfb280c1859a354d3f7bc0a153d3}{log2\+Ctu\+Size}}
+\begin{DoxyCompactList}\small\item\em log2 of the C\+TU size -\/ required to match corresponding value in \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ad575e7e541d9cda3f3465d8a71412cb1}{loop\+Filter\+Across\+Slices\+Enabled}}
+\begin{DoxyCompactList}\small\item\em loop filtering applied across slices flag \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ae2f62aac8750d66d4d93b07d05f71584}{loop\+Filter\+Across\+Tiles\+Enabled}}
+\begin{DoxyCompactList}\small\item\em loop filtering applied across tiles flag \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_af274efb2bbd269e92efbcbe25bcd2fcf}{mixed\+Nalu\+Types\+In\+Pic}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ae4342d20e868961ac29558fc95f82efd}{no\+Pic\+Partition}}
+\begin{DoxyCompactList}\small\item\em no picture partitioning flag -\/ single slice, single tile \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_aa73c6e62e728459b11ff273f36fdd509}{num\+Exp\+Tile\+Cols}}
+\begin{DoxyCompactList}\small\item\em number of explicitly specified tile columns \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_aa2da84e748b4d0f1e0d5fea5ce0bdcc1}{num\+Exp\+Tile\+Rows}}
+\begin{DoxyCompactList}\small\item\em number of explicitly specified tile rows \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a62752ae7620d28721f777b8f738e70f9}{num\+Ref\+Idx\+L0\+Default\+Active}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a8e8138c01be91b200edf4e0b8f2e51f7}{num\+Ref\+Idx\+L1\+Default\+Active}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a6cc2a457d1cda398a5896e8fbc353349}{num\+Slices\+In\+Pic}}
+\begin{DoxyCompactList}\small\item\em number of rectangular slices in the picture (raster-\/scan slice specified at slice level) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a984e324df494256b9ca27a97cda57429}{num\+Sub\+Pics}}
+\begin{DoxyCompactList}\small\item\em number of sub-\/p \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a107a1a9ecd3ab47b84cb50120f1fc855}{num\+Tile\+Cols}}
+\begin{DoxyCompactList}\small\item\em number of tile columns \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a700d480f939518eaa59dcbe1bdc9f7f4}{num\+Tile\+Rows}}
+\begin{DoxyCompactList}\small\item\em number of tile rows \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a65e842258fb837620acc2366f1e3ddd6}{output\+Flag\+Present}}
+\begin{DoxyCompactList}\small\item\em Indicates the presence of output\+\_\+flag in slice header. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$ \mbox{\hyperlink{structvvenc_1_1PPS_a21a0b3a9fec43a2ee2d3d7301ca979c0}{pcv}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a8a70c3923283fb3c4b5fa0790ae56c4c}{pic\+Height\+In\+Ctu}}
+\begin{DoxyCompactList}\small\item\em picture height in units of C\+T\+Us \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a629ec9ecf9a6f29222d0e149bf1573c2}{pic\+Height\+In\+Luma\+Samples}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a74dcdea262be8c8babf0bff887771a7f}{pic\+Init\+Q\+P\+Minus26}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a45de7c0684e847d2f93d5b3368c07269}{picture\+Header\+Extension\+Present}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_aedbf0fcfbdd6c2f3a7beb1c58c232dc6}{pic\+Width\+In\+Ctu}}
+\begin{DoxyCompactList}\small\item\em picture width in units of C\+T\+Us \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_acbabe433162be7f154b9577ad7c5d369}{pic\+Width\+In\+Luma\+Samples}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1PPS_a17622750f23e7e85a1c6db7668b97e31}{pic\+Width\+Minus\+Wrap\+Around\+Offset}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_ac76ef35f3f5cc18bf63e1259f85666a0}{pps\+Id}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ac7ded4e534f6bd19b760ef65106fb502}{qp\+Delta\+Info\+In\+Ph}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a1206e45754586627643c935bf3c7221b}{rect\+Slice}}
+\begin{DoxyCompactList}\small\item\em rectangular slice flag \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1RectSlice}{Rect\+Slice}} $>$ \mbox{\hyperlink{structvvenc_1_1PPS_a96140274bf6e74028a962790b0cf4a05}{rect\+Slices}}
+\begin{DoxyCompactList}\small\item\em list of rectangular slice signalling parameters \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a1bd1011710b34db94d7f91ce6111d92e}{rpl1\+Idx\+Present}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a6be830b628dbffe52826c5dfc3dd3e88}{rpl\+Info\+In\+Ph}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a4d4768c1f98ee249af8537677c0119a5}{sao\+Info\+In\+Ph}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Window}{Window}} \mbox{\hyperlink{structvvenc_1_1PPS_abd35a25f325efcde537100805274bc96}{scaling\+Window}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_af03a3251daf06c0ddf29de16082644dd}{single\+Slice\+Per\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em single slice per sub-\/picture flag \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ab9ca9627608cc4ea0eff1e3c568236da}{slice\+Chroma\+Qp\+Flag}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a45a56b11200adaf2e0784c412dc3e03e}{slice\+Header\+Extension\+Present}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SliceMap}{Slice\+Map}} $>$ \mbox{\hyperlink{structvvenc_1_1PPS_afb083bbd041d26fb15a21f607591e86c}{slice\+Map}}
+\begin{DoxyCompactList}\small\item\em list of C\+TU maps for each slice in the picture \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a223bbd9ce719d2ca5b4551d52e174c0c}{sps\+Id}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_af34c53da2177fbaddfd8315bc6f3a1d3}{sub\+Pic\+Id}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5cd01cf5802c6e2d5cb7c2c5b3ef20f1}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+S\+U\+B\+\_\+\+P\+I\+CS}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em sub-\/picture ID for each sub-\/picture in the sequence \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1PPS_a89f8d25d42292f8211cce767abca69bb}{sub\+Pic\+Id\+Len}}
+\begin{DoxyCompactList}\small\item\em sub-\/picture ID length in bits \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_afcced9478a503e989a931b28cf389e94}{sub\+Pic\+Id\+Mapping\+In\+Pps}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} $>$ \mbox{\hyperlink{structvvenc_1_1PPS_aec17ace87d6586740a0f977b1c71df0e}{sub\+Pics}}
+\begin{DoxyCompactList}\small\item\em list of subpictures in the picture \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structvvenc_1_1PPS_a689318902eb8611be25e962daf89f325}{temporal\+Id}}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_a755fb760e2baf78e3b959591cb5c46d9}{tile\+Col\+Bd}}
+\begin{DoxyCompactList}\small\item\em tile column left-\/boundaries in units of C\+T\+Us \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_aab4a82ef580987c72976bf5b01f6a245}{tile\+Col\+Width}}
+\begin{DoxyCompactList}\small\item\em tile column widths in units of C\+T\+Us \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_ac03cafa4889cfeaf4993104073062ade}{tile\+Idx\+Delta\+Present}}
+\begin{DoxyCompactList}\small\item\em tile index delta present flag \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_ac5512b85897f6d80719077db1180959b}{tile\+Row\+Bd}}
+\begin{DoxyCompactList}\small\item\em tile row top-\/boundaries in units of C\+T\+Us \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1PPS_a2bbae13ff6a30678d0d4c629f04fb40b}{tile\+Row\+Height}}
+\begin{DoxyCompactList}\small\item\em tile row heights in units of C\+T\+Us \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_aa674da06f7e3f079e7fe8ecf3f84c488}{use\+D\+QP}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_af0089afb772ecfd401180f6830c8d39f}{use\+P\+P\+S\+Chroma\+Tool}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a870bb696c2e6608014a8cd4f819b12f5}{weighted\+Bi\+Pred}}
+\begin{DoxyCompactList}\small\item\em Use of Weighting Bi-\/\+Prediction (B\+\_\+\+S\+L\+I\+CE) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_aa4c211331c590baad6063c3c24824009}{weight\+Pred}}
+\begin{DoxyCompactList}\small\item\em Use of Weighting Prediction (P\+\_\+\+S\+L\+I\+CE) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_abd4232df9ef4bc505dddce15e5bcfb6b}{wp\+Info\+In\+Ph}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PPS_a9c5b988d87c66e70baf1da88d231bb88}{wrap\+Around\+Enabled}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1PPS_a393a810dbcb9cd5a3839349905ff5879}{wrap\+Around\+Offset}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reference \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} Lists class. 
+
+\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} class 
+
+Definition at line 851 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a49a51d0a71ff2f3c7d3d81989127ac6b}\label{structvvenc_1_1PPS_a49a51d0a71ff2f3c7d3d81989127ac6b}} 
+\index{PPS@{PPS}!PPS@{PPS}}
+\index{PPS@{PPS}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{PPS()}{PPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1659 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ae74c89f6082c9281836ccf7edc0e707b}\label{structvvenc_1_1PPS_ae74c89f6082c9281836ccf7edc0e707b}} 
+\index{PPS@{PPS}!````~PPS@{$\sim$PPS}}
+\index{````~PPS@{$\sim$PPS}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{$\sim$PPS()}{~PPS()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 1724 of file Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a52fd78a2abd6a11c583180a4ed7f0e99}\label{structvvenc_1_1PPS_a52fd78a2abd6a11c583180a4ed7f0e99}} 
+\index{PPS@{PPS}!getChromaQpOffsetListEntry@{getChromaQpOffsetListEntry}}
+\index{getChromaQpOffsetListEntry@{getChromaQpOffsetListEntry}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getChromaQpOffsetListEntry()}{getChromaQpOffsetListEntry()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}}\& get\+Chroma\+Qp\+Offset\+List\+Entry (\begin{DoxyParamCaption}\item[{int}]{cu\+Chroma\+Qp\+Offset\+Idx\+Plus1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 944 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_a52fd78a2abd6a11c583180a4ed7f0e99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a5a8255281697c3386e93f3ecab47fb86}\label{structvvenc_1_1PPS_a5a8255281697c3386e93f3ecab47fb86}} 
+\index{PPS@{PPS}!getNumTiles@{getNumTiles}}
+\index{getNumTiles@{getNumTiles}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getNumTiles()}{getNumTiles()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aac35eb662bc408ab64f31ff0ef0f6c6c}\label{structvvenc_1_1PPS_aac35eb662bc408ab64f31ff0ef0f6c6c}} 
+\index{PPS@{PPS}!getSubPicFromCU@{getSubPicFromCU}}
+\index{getSubPicFromCU@{getSubPicFromCU}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getSubPicFromCU()}{getSubPicFromCU()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} \& get\+Sub\+Pic\+From\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1890 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_aac35eb662bc408ab64f31ff0ef0f6c6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_aac35eb662bc408ab64f31ff0ef0f6c6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_ad8ad06b01aa2c2cdea36d10999cbfc50}\label{structvvenc_1_1PPS_ad8ad06b01aa2c2cdea36d10999cbfc50}} 
+\index{PPS@{PPS}!getSubPicFromPos@{getSubPicFromPos}}
+\index{getSubPicFromPos@{getSubPicFromPos}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getSubPicFromPos()}{getSubPicFromPos()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} \& get\+Sub\+Pic\+From\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1877 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_ad8ad06b01aa2c2cdea36d10999cbfc50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a3cc3c49d45075120bd3ea7f50235ffd2}\label{structvvenc_1_1PPS_a3cc3c49d45075120bd3ea7f50235ffd2}} 
+\index{PPS@{PPS}!getSubPicIdxFromSubPicId@{getSubPicIdxFromSubPicId}}
+\index{getSubPicIdxFromSubPicId@{getSubPicIdxFromSubPicId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getSubPicIdxFromSubPicId()}{getSubPicIdxFromSubPicId()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Sub\+Pic\+Idx\+From\+Sub\+Pic\+Id (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{sub\+Pic\+Id }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1864 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_a3cc3c49d45075120bd3ea7f50235ffd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a1098ca84e973da53b10489faf6221d6d}\label{structvvenc_1_1PPS_a1098ca84e973da53b10489faf6221d6d}} 
+\index{PPS@{PPS}!getTileIdx@{getTileIdx}}
+\index{getTileIdx@{getTileIdx}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{getTileIdx()}{getTileIdx()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Tile\+Idx (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 966 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_a1098ca84e973da53b10489faf6221d6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_adbc00c65a19979e803eb29fa38b80b98}\label{structvvenc_1_1PPS_adbc00c65a19979e803eb29fa38b80b98}} 
+\index{PPS@{PPS}!initRectSlices@{initRectSlices}}
+\index{initRectSlices@{initRectSlices}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{initRectSlices()}{initRectSlices()}}
+{\footnotesize\ttfamily void init\+Rect\+Slices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item initialize memory for rectangular slice parameters 
+\end{DoxyItemize}
+
+Definition at line 1836 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ae6fa1a190cdda5ad59c4860555a07d5b}\label{structvvenc_1_1PPS_ae6fa1a190cdda5ad59c4860555a07d5b}} 
+\index{PPS@{PPS}!initTiles@{initTiles}}
+\index{initTiles@{initTiles}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{initTiles()}{initTiles()}}
+{\footnotesize\ttfamily void init\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item initialize tile row/column sizes and boundaries 
+\end{DoxyItemize}
+
+Definition at line 1751 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a3ee9e2818cc4121050896cb0b0021fe0}\label{structvvenc_1_1PPS_a3ee9e2818cc4121050896cb0b0021fe0}} 
+\index{PPS@{PPS}!isRefScaled@{isRefScaled}}
+\index{isRefScaled@{isRefScaled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{isRefScaled()}{isRefScaled()}}
+{\footnotesize\ttfamily bool is\+Ref\+Scaled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 961 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{structvvenc_1_1PPS_a3ee9e2818cc4121050896cb0b0021fe0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1PPS_a3646599d79ccd50e2c902a3aeff03f74}\label{structvvenc_1_1PPS_a3646599d79ccd50e2c902a3aeff03f74}} 
+\index{PPS@{PPS}!resetTileSliceInfo@{resetTileSliceInfo}}
+\index{resetTileSliceInfo@{resetTileSliceInfo}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{resetTileSliceInfo()}{resetTileSliceInfo()}}
+{\footnotesize\ttfamily void reset\+Tile\+Slice\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1730 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a8505cf9dbc1bb29f5eef799af6ed805c}\label{structvvenc_1_1PPS_a8505cf9dbc1bb29f5eef799af6ed805c}} 
+\index{PPS@{PPS}!setChromaQpOffsetListEntry@{setChromaQpOffsetListEntry}}
+\index{setChromaQpOffsetListEntry@{setChromaQpOffsetListEntry}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{setChromaQpOffsetListEntry()}{setChromaQpOffsetListEntry()}}
+{\footnotesize\ttfamily void set\+Chroma\+Qp\+Offset\+List\+Entry (\begin{DoxyParamCaption}\item[{int}]{cu\+Chroma\+Qp\+Offset\+Idx\+Plus1,  }\item[{int}]{cb\+Offset,  }\item[{int}]{cr\+Offset,  }\item[{int}]{joint\+Cb\+Cr\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 951 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1PPS_a8505cf9dbc1bb29f5eef799af6ed805c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1PPS_aee86a270f36e72d31ff194363cf21761}\label{structvvenc_1_1PPS_aee86a270f36e72d31ff194363cf21761}} 
+\index{PPS@{PPS}!alfInfoInPh@{alfInfoInPh}}
+\index{alfInfoInPh@{alfInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{alfInfoInPh}{alfInfoInPh}}
+{\footnotesize\ttfamily bool alf\+Info\+In\+Ph}
+
+
+
+Definition at line 924 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a716ba5c47a48aec1011d49e490f30fca}\label{structvvenc_1_1PPS_a716ba5c47a48aec1011d49e490f30fca}} 
+\index{PPS@{PPS}!cabacInitPresent@{cabacInitPresent}}
+\index{cabacInitPresent@{cabacInitPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{cabacInitPresent}{cabacInitPresent}}
+{\footnotesize\ttfamily bool cabac\+Init\+Present}
+
+
+
+Definition at line 911 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ab12e1ceb2eb4027ec87bc8c7f83b5a15}\label{structvvenc_1_1PPS_ab12e1ceb2eb4027ec87bc8c7f83b5a15}} 
+\index{PPS@{PPS}!chromaQpAdjTableIncludingNullEntry@{chromaQpAdjTableIncludingNullEntry}}
+\index{chromaQpAdjTableIncludingNullEntry@{chromaQpAdjTableIncludingNullEntry}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{chromaQpAdjTableIncludingNullEntry}{chromaQpAdjTableIncludingNullEntry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}} chroma\+Qp\+Adj\+Table\+Including\+Null\+Entry\mbox{[}1+\mbox{\hyperlink{namespacevvenc_ada871fa5e63f6b7898c825d13c095036}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Array includes entry \mbox{[}0\mbox{]} for the null offset used when cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+flag=0, and entries \mbox{[}cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+idx+1...\mbox{]} otherwise. 
+
+
+
+Definition at line 865 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a3f24886a84b0583987dfe29aae1dcd33}\label{structvvenc_1_1PPS_a3f24886a84b0583987dfe29aae1dcd33}} 
+\index{PPS@{PPS}!ChromaQpAdjTableIncludingNullEntry@{ChromaQpAdjTableIncludingNullEntry}}
+\index{ChromaQpAdjTableIncludingNullEntry@{ChromaQpAdjTableIncludingNullEntry}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ChromaQpAdjTableIncludingNullEntry}{ChromaQpAdjTableIncludingNullEntry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}} Chroma\+Qp\+Adj\+Table\+Including\+Null\+Entry\mbox{[}1+\mbox{\hyperlink{namespacevvenc_ada871fa5e63f6b7898c825d13c095036}{M\+A\+X\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}}\mbox{]}}
+
+
+
+Array includes entry \mbox{[}0\mbox{]} for the null offset used when cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+flag=0, and entries \mbox{[}cu\+\_\+chroma\+\_\+qp\+\_\+offset\+\_\+idx+1...\mbox{]} otherwise. 
+
+
+
+Definition at line 869 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a5060232ce25b3081e1362c6e6032f157}\label{structvvenc_1_1PPS_a5060232ce25b3081e1362c6e6032f157}} 
+\index{PPS@{PPS}!chromaQpOffset@{chromaQpOffset}}
+\index{chromaQpOffset@{chromaQpOffset}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{chromaQpOffset}{chromaQpOffset}}
+{\footnotesize\ttfamily int chroma\+Qp\+Offset\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}+1\mbox{]}}
+
+
+
+Definition at line 863 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ae821f0db840cf84f0da844e1896a878c}\label{structvvenc_1_1PPS_ae821f0db840cf84f0da844e1896a878c}} 
+\index{PPS@{PPS}!chromaQpOffsetListLen@{chromaQpOffsetListLen}}
+\index{chromaQpOffsetListLen@{chromaQpOffsetListLen}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{chromaQpOffsetListLen}{chromaQpOffsetListLen}}
+{\footnotesize\ttfamily int chroma\+Qp\+Offset\+List\+Len}
+
+
+
+Definition at line 868 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a78ec94df6344b12555bb17ffe9407ba9}\label{structvvenc_1_1PPS_a78ec94df6344b12555bb17ffe9407ba9}} 
+\index{PPS@{PPS}!conformanceWindow@{conformanceWindow}}
+\index{conformanceWindow@{conformanceWindow}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{conformanceWindow}{conformanceWindow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Window}{Window}} conformance\+Window}
+
+
+
+Definition at line 930 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a3192c2e4f8db256c8bae8a9532a5fb44}\label{structvvenc_1_1PPS_a3192c2e4f8db256c8bae8a9532a5fb44}} 
+\index{PPS@{PPS}!ctuSize@{ctuSize}}
+\index{ctuSize@{ctuSize}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ctuSize}{ctuSize}}
+{\footnotesize\ttfamily uint8\+\_\+t ctu\+Size}
+
+
+
+C\+TU size. 
+
+
+
+Definition at line 885 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af6ed618ee30e6de64044b033e2d9057a}\label{structvvenc_1_1PPS_af6ed618ee30e6de64044b033e2d9057a}} 
+\index{PPS@{PPS}!ctuToSubPicIdx@{ctuToSubPicIdx}}
+\index{ctuToSubPicIdx@{ctuToSubPicIdx}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ctuToSubPicIdx}{ctuToSubPicIdx}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ ctu\+To\+Sub\+Pic\+Idx}
+
+
+
+mapping between C\+TU and Sub-\/picture index 
+
+
+
+Definition at line 901 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a7df4fd47b41b5dba4d0680c2de9e2cd4}\label{structvvenc_1_1PPS_a7df4fd47b41b5dba4d0680c2de9e2cd4}} 
+\index{PPS@{PPS}!ctuToTileCol@{ctuToTileCol}}
+\index{ctuToTileCol@{ctuToTileCol}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ctuToTileCol}{ctuToTileCol}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ ctu\+To\+Tile\+Col}
+
+
+
+mapping between C\+TU horizontal address and tile column index 
+
+
+
+Definition at line 897 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aee6d87e76ad696f6879bffeae3fabe26}\label{structvvenc_1_1PPS_aee6d87e76ad696f6879bffeae3fabe26}} 
+\index{PPS@{PPS}!ctuToTileRow@{ctuToTileRow}}
+\index{ctuToTileRow@{ctuToTileRow}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ctuToTileRow}{ctuToTileRow}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ ctu\+To\+Tile\+Row}
+
+
+
+mapping between C\+TU vertical address and tile row index 
+
+
+
+Definition at line 898 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a8531ce6b00bb93bf6784659c647ba56f}\label{structvvenc_1_1PPS_a8531ce6b00bb93bf6784659c647ba56f}} 
+\index{PPS@{PPS}!dbfInfoInPh@{dbfInfoInPh}}
+\index{dbfInfoInPh@{dbfInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{dbfInfoInPh}{dbfInfoInPh}}
+{\footnotesize\ttfamily bool dbf\+Info\+In\+Ph}
+
+
+
+Definition at line 922 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af7ed350b66bfd02791def92702bed510}\label{structvvenc_1_1PPS_af7ed350b66bfd02791def92702bed510}} 
+\index{PPS@{PPS}!deblockingFilterBetaOffsetDiv2@{deblockingFilterBetaOffsetDiv2}}
+\index{deblockingFilterBetaOffsetDiv2@{deblockingFilterBetaOffsetDiv2}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterBetaOffsetDiv2}{deblockingFilterBetaOffsetDiv2}}
+{\footnotesize\ttfamily int deblocking\+Filter\+Beta\+Offset\+Div2\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 918 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ad10657fefe822cfe38fbfed46a1690a8}\label{structvvenc_1_1PPS_ad10657fefe822cfe38fbfed46a1690a8}} 
+\index{PPS@{PPS}!deblockingFilterControlPresent@{deblockingFilterControlPresent}}
+\index{deblockingFilterControlPresent@{deblockingFilterControlPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterControlPresent}{deblockingFilterControlPresent}}
+{\footnotesize\ttfamily bool deblocking\+Filter\+Control\+Present}
+
+
+
+Definition at line 915 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aadfc8cef3858a22431d85fb8355e3f84}\label{structvvenc_1_1PPS_aadfc8cef3858a22431d85fb8355e3f84}} 
+\index{PPS@{PPS}!deblockingFilterDisabled@{deblockingFilterDisabled}}
+\index{deblockingFilterDisabled@{deblockingFilterDisabled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterDisabled}{deblockingFilterDisabled}}
+{\footnotesize\ttfamily bool deblocking\+Filter\+Disabled}
+
+
+
+Definition at line 917 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a97f9e5c125a530a09e91393fae977293}\label{structvvenc_1_1PPS_a97f9e5c125a530a09e91393fae977293}} 
+\index{PPS@{PPS}!deblockingFilterOverrideEnabled@{deblockingFilterOverrideEnabled}}
+\index{deblockingFilterOverrideEnabled@{deblockingFilterOverrideEnabled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterOverrideEnabled}{deblockingFilterOverrideEnabled}}
+{\footnotesize\ttfamily bool deblocking\+Filter\+Override\+Enabled}
+
+
+
+Definition at line 916 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a7a04d5f73d609c4a43e2d96b42afdb45}\label{structvvenc_1_1PPS_a7a04d5f73d609c4a43e2d96b42afdb45}} 
+\index{PPS@{PPS}!deblockingFilterTcOffsetDiv2@{deblockingFilterTcOffsetDiv2}}
+\index{deblockingFilterTcOffsetDiv2@{deblockingFilterTcOffsetDiv2}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterTcOffsetDiv2}{deblockingFilterTcOffsetDiv2}}
+{\footnotesize\ttfamily int deblocking\+Filter\+Tc\+Offset\+Div2\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 919 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a1327c91c17ab52154b01b7e1bd13af8f}\label{structvvenc_1_1PPS_a1327c91c17ab52154b01b7e1bd13af8f}} 
+\index{PPS@{PPS}!jointCbCrQpOffsetPresent@{jointCbCrQpOffsetPresent}}
+\index{jointCbCrQpOffsetPresent@{jointCbCrQpOffsetPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{jointCbCrQpOffsetPresent}{jointCbCrQpOffsetPresent}}
+{\footnotesize\ttfamily bool joint\+Cb\+Cr\+Qp\+Offset\+Present}
+
+
+
+Definition at line 864 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a245ddfa1d0638413cec268376a45aca9}\label{structvvenc_1_1PPS_a245ddfa1d0638413cec268376a45aca9}} 
+\index{PPS@{PPS}!layerId@{layerId}}
+\index{layerId@{layerId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{layerId}{layerId}}
+{\footnotesize\ttfamily int layer\+Id}
+
+
+
+Definition at line 859 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a9a79f677bbf1b51db8ba268aded985bf}\label{structvvenc_1_1PPS_a9a79f677bbf1b51db8ba268aded985bf}} 
+\index{PPS@{PPS}!listsModificationPresent@{listsModificationPresent}}
+\index{listsModificationPresent@{listsModificationPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{listsModificationPresent}{listsModificationPresent}}
+{\footnotesize\ttfamily bool lists\+Modification\+Present}
+
+
+
+Definition at line 920 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aaabbcfb280c1859a354d3f7bc0a153d3}\label{structvvenc_1_1PPS_aaabbcfb280c1859a354d3f7bc0a153d3}} 
+\index{PPS@{PPS}!log2CtuSize@{log2CtuSize}}
+\index{log2CtuSize@{log2CtuSize}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{log2CtuSize}{log2CtuSize}}
+{\footnotesize\ttfamily uint8\+\_\+t log2\+Ctu\+Size}
+
+
+
+log2 of the C\+TU size -\/ required to match corresponding value in \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} 
+
+
+
+Definition at line 884 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ad575e7e541d9cda3f3465d8a71412cb1}\label{structvvenc_1_1PPS_ad575e7e541d9cda3f3465d8a71412cb1}} 
+\index{PPS@{PPS}!loopFilterAcrossSlicesEnabled@{loopFilterAcrossSlicesEnabled}}
+\index{loopFilterAcrossSlicesEnabled@{loopFilterAcrossSlicesEnabled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{loopFilterAcrossSlicesEnabled}{loopFilterAcrossSlicesEnabled}}
+{\footnotesize\ttfamily bool loop\+Filter\+Across\+Slices\+Enabled}
+
+
+
+loop filtering applied across slices flag 
+
+
+
+Definition at line 909 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ae2f62aac8750d66d4d93b07d05f71584}\label{structvvenc_1_1PPS_ae2f62aac8750d66d4d93b07d05f71584}} 
+\index{PPS@{PPS}!loopFilterAcrossTilesEnabled@{loopFilterAcrossTilesEnabled}}
+\index{loopFilterAcrossTilesEnabled@{loopFilterAcrossTilesEnabled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{loopFilterAcrossTilesEnabled}{loopFilterAcrossTilesEnabled}}
+{\footnotesize\ttfamily bool loop\+Filter\+Across\+Tiles\+Enabled}
+
+
+
+loop filtering applied across tiles flag 
+
+
+
+Definition at line 908 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af274efb2bbd269e92efbcbe25bcd2fcf}\label{structvvenc_1_1PPS_af274efb2bbd269e92efbcbe25bcd2fcf}} 
+\index{PPS@{PPS}!mixedNaluTypesInPic@{mixedNaluTypesInPic}}
+\index{mixedNaluTypesInPic@{mixedNaluTypesInPic}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{mixedNaluTypesInPic}{mixedNaluTypesInPic}}
+{\footnotesize\ttfamily bool mixed\+Nalu\+Types\+In\+Pic}
+
+
+
+Definition at line 927 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ae4342d20e868961ac29558fc95f82efd}\label{structvvenc_1_1PPS_ae4342d20e868961ac29558fc95f82efd}} 
+\index{PPS@{PPS}!noPicPartition@{noPicPartition}}
+\index{noPicPartition@{noPicPartition}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{noPicPartition}{noPicPartition}}
+{\footnotesize\ttfamily bool no\+Pic\+Partition}
+
+
+
+no picture partitioning flag -\/ single slice, single tile 
+
+
+
+Definition at line 883 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aa73c6e62e728459b11ff273f36fdd509}\label{structvvenc_1_1PPS_aa73c6e62e728459b11ff273f36fdd509}} 
+\index{PPS@{PPS}!numExpTileCols@{numExpTileCols}}
+\index{numExpTileCols@{numExpTileCols}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numExpTileCols}{numExpTileCols}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Exp\+Tile\+Cols}
+
+
+
+number of explicitly specified tile columns 
+
+
+
+Definition at line 888 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aa2da84e748b4d0f1e0d5fea5ce0bdcc1}\label{structvvenc_1_1PPS_aa2da84e748b4d0f1e0d5fea5ce0bdcc1}} 
+\index{PPS@{PPS}!numExpTileRows@{numExpTileRows}}
+\index{numExpTileRows@{numExpTileRows}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numExpTileRows}{numExpTileRows}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Exp\+Tile\+Rows}
+
+
+
+number of explicitly specified tile rows 
+
+
+
+Definition at line 889 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a62752ae7620d28721f777b8f738e70f9}\label{structvvenc_1_1PPS_a62752ae7620d28721f777b8f738e70f9}} 
+\index{PPS@{PPS}!numRefIdxL0DefaultActive@{numRefIdxL0DefaultActive}}
+\index{numRefIdxL0DefaultActive@{numRefIdxL0DefaultActive}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numRefIdxL0DefaultActive}{numRefIdxL0DefaultActive}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Ref\+Idx\+L0\+Default\+Active}
+
+
+
+Definition at line 871 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a8e8138c01be91b200edf4e0b8f2e51f7}\label{structvvenc_1_1PPS_a8e8138c01be91b200edf4e0b8f2e51f7}} 
+\index{PPS@{PPS}!numRefIdxL1DefaultActive@{numRefIdxL1DefaultActive}}
+\index{numRefIdxL1DefaultActive@{numRefIdxL1DefaultActive}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numRefIdxL1DefaultActive}{numRefIdxL1DefaultActive}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Ref\+Idx\+L1\+Default\+Active}
+
+
+
+Definition at line 872 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a6cc2a457d1cda398a5896e8fbc353349}\label{structvvenc_1_1PPS_a6cc2a457d1cda398a5896e8fbc353349}} 
+\index{PPS@{PPS}!numSlicesInPic@{numSlicesInPic}}
+\index{numSlicesInPic@{numSlicesInPic}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numSlicesInPic}{numSlicesInPic}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Slices\+In\+Pic}
+
+
+
+number of rectangular slices in the picture (raster-\/scan slice specified at slice level) 
+
+
+
+Definition at line 902 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a984e324df494256b9ca27a97cda57429}\label{structvvenc_1_1PPS_a984e324df494256b9ca27a97cda57429}} 
+\index{PPS@{PPS}!numSubPics@{numSubPics}}
+\index{numSubPics@{numSubPics}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numSubPics}{numSubPics}}
+{\footnotesize\ttfamily uint8\+\_\+t num\+Sub\+Pics}
+
+
+
+number of sub-\/p 
+
+
+
+Definition at line 879 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a107a1a9ecd3ab47b84cb50120f1fc855}\label{structvvenc_1_1PPS_a107a1a9ecd3ab47b84cb50120f1fc855}} 
+\index{PPS@{PPS}!numTileCols@{numTileCols}}
+\index{numTileCols@{numTileCols}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numTileCols}{numTileCols}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Tile\+Cols}
+
+
+
+number of tile columns 
+
+
+
+Definition at line 890 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a700d480f939518eaa59dcbe1bdc9f7f4}\label{structvvenc_1_1PPS_a700d480f939518eaa59dcbe1bdc9f7f4}} 
+\index{PPS@{PPS}!numTileRows@{numTileRows}}
+\index{numTileRows@{numTileRows}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{numTileRows}{numTileRows}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Tile\+Rows}
+
+
+
+number of tile rows 
+
+
+
+Definition at line 891 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a65e842258fb837620acc2366f1e3ddd6}\label{structvvenc_1_1PPS_a65e842258fb837620acc2366f1e3ddd6}} 
+\index{PPS@{PPS}!outputFlagPresent@{outputFlagPresent}}
+\index{outputFlagPresent@{outputFlagPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{outputFlagPresent}{outputFlagPresent}}
+{\footnotesize\ttfamily bool output\+Flag\+Present}
+
+
+
+Indicates the presence of output\+\_\+flag in slice header. 
+
+
+
+Definition at line 878 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a21a0b3a9fec43a2ee2d3d7301ca979c0}\label{structvvenc_1_1PPS_a21a0b3a9fec43a2ee2d3d7301ca979c0}} 
+\index{PPS@{PPS}!pcv@{pcv}}
+\index{pcv@{pcv}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{pcv}{pcv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}}$\ast$ pcv}
+
+
+
+Definition at line 936 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a8a70c3923283fb3c4b5fa0790ae56c4c}\label{structvvenc_1_1PPS_a8a70c3923283fb3c4b5fa0790ae56c4c}} 
+\index{PPS@{PPS}!picHeightInCtu@{picHeightInCtu}}
+\index{picHeightInCtu@{picHeightInCtu}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picHeightInCtu}{picHeightInCtu}}
+{\footnotesize\ttfamily uint32\+\_\+t pic\+Height\+In\+Ctu}
+
+
+
+picture height in units of C\+T\+Us 
+
+
+
+Definition at line 887 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a629ec9ecf9a6f29222d0e149bf1573c2}\label{structvvenc_1_1PPS_a629ec9ecf9a6f29222d0e149bf1573c2}} 
+\index{PPS@{PPS}!picHeightInLumaSamples@{picHeightInLumaSamples}}
+\index{picHeightInLumaSamples@{picHeightInLumaSamples}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picHeightInLumaSamples}{picHeightInLumaSamples}}
+{\footnotesize\ttfamily uint32\+\_\+t pic\+Height\+In\+Luma\+Samples}
+
+
+
+Definition at line 929 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a74dcdea262be8c8babf0bff887771a7f}\label{structvvenc_1_1PPS_a74dcdea262be8c8babf0bff887771a7f}} 
+\index{PPS@{PPS}!picInitQPMinus26@{picInitQPMinus26}}
+\index{picInitQPMinus26@{picInitQPMinus26}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picInitQPMinus26}{picInitQPMinus26}}
+{\footnotesize\ttfamily int pic\+Init\+Q\+P\+Minus26}
+
+
+
+Definition at line 855 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a45de7c0684e847d2f93d5b3368c07269}\label{structvvenc_1_1PPS_a45de7c0684e847d2f93d5b3368c07269}} 
+\index{PPS@{PPS}!pictureHeaderExtensionPresent@{pictureHeaderExtensionPresent}}
+\index{pictureHeaderExtensionPresent@{pictureHeaderExtensionPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{pictureHeaderExtensionPresent}{pictureHeaderExtensionPresent}}
+{\footnotesize\ttfamily bool picture\+Header\+Extension\+Present}
+
+
+
+Definition at line 912 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aedbf0fcfbdd6c2f3a7beb1c58c232dc6}\label{structvvenc_1_1PPS_aedbf0fcfbdd6c2f3a7beb1c58c232dc6}} 
+\index{PPS@{PPS}!picWidthInCtu@{picWidthInCtu}}
+\index{picWidthInCtu@{picWidthInCtu}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picWidthInCtu}{picWidthInCtu}}
+{\footnotesize\ttfamily uint32\+\_\+t pic\+Width\+In\+Ctu}
+
+
+
+picture width in units of C\+T\+Us 
+
+
+
+Definition at line 886 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_acbabe433162be7f154b9577ad7c5d369}\label{structvvenc_1_1PPS_acbabe433162be7f154b9577ad7c5d369}} 
+\index{PPS@{PPS}!picWidthInLumaSamples@{picWidthInLumaSamples}}
+\index{picWidthInLumaSamples@{picWidthInLumaSamples}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picWidthInLumaSamples}{picWidthInLumaSamples}}
+{\footnotesize\ttfamily uint32\+\_\+t pic\+Width\+In\+Luma\+Samples}
+
+
+
+Definition at line 928 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a17622750f23e7e85a1c6db7668b97e31}\label{structvvenc_1_1PPS_a17622750f23e7e85a1c6db7668b97e31}} 
+\index{PPS@{PPS}!picWidthMinusWrapAroundOffset@{picWidthMinusWrapAroundOffset}}
+\index{picWidthMinusWrapAroundOffset@{picWidthMinusWrapAroundOffset}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{picWidthMinusWrapAroundOffset}{picWidthMinusWrapAroundOffset}}
+{\footnotesize\ttfamily unsigned pic\+Width\+Minus\+Wrap\+Around\+Offset}
+
+
+
+Definition at line 933 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ac76ef35f3f5cc18bf63e1259f85666a0}\label{structvvenc_1_1PPS_ac76ef35f3f5cc18bf63e1259f85666a0}} 
+\index{PPS@{PPS}!ppsId@{ppsId}}
+\index{ppsId@{ppsId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{ppsId}{ppsId}}
+{\footnotesize\ttfamily int pps\+Id}
+
+
+
+Definition at line 853 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ac7ded4e534f6bd19b760ef65106fb502}\label{structvvenc_1_1PPS_ac7ded4e534f6bd19b760ef65106fb502}} 
+\index{PPS@{PPS}!qpDeltaInfoInPh@{qpDeltaInfoInPh}}
+\index{qpDeltaInfoInPh@{qpDeltaInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{qpDeltaInfoInPh}{qpDeltaInfoInPh}}
+{\footnotesize\ttfamily bool qp\+Delta\+Info\+In\+Ph}
+
+
+
+Definition at line 926 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a1206e45754586627643c935bf3c7221b}\label{structvvenc_1_1PPS_a1206e45754586627643c935bf3c7221b}} 
+\index{PPS@{PPS}!rectSlice@{rectSlice}}
+\index{rectSlice@{rectSlice}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{rectSlice}{rectSlice}}
+{\footnotesize\ttfamily bool rect\+Slice}
+
+
+
+rectangular slice flag 
+
+
+
+Definition at line 899 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a96140274bf6e74028a962790b0cf4a05}\label{structvvenc_1_1PPS_a96140274bf6e74028a962790b0cf4a05}} 
+\index{PPS@{PPS}!rectSlices@{rectSlices}}
+\index{rectSlices@{rectSlices}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{rectSlices}{rectSlices}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1RectSlice}{Rect\+Slice}}$>$ rect\+Slices}
+
+
+
+list of rectangular slice signalling parameters 
+
+
+
+Definition at line 904 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a1bd1011710b34db94d7f91ce6111d92e}\label{structvvenc_1_1PPS_a1bd1011710b34db94d7f91ce6111d92e}} 
+\index{PPS@{PPS}!rpl1IdxPresent@{rpl1IdxPresent}}
+\index{rpl1IdxPresent@{rpl1IdxPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{rpl1IdxPresent}{rpl1IdxPresent}}
+{\footnotesize\ttfamily bool rpl1\+Idx\+Present}
+
+
+
+Definition at line 874 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a6be830b628dbffe52826c5dfc3dd3e88}\label{structvvenc_1_1PPS_a6be830b628dbffe52826c5dfc3dd3e88}} 
+\index{PPS@{PPS}!rplInfoInPh@{rplInfoInPh}}
+\index{rplInfoInPh@{rplInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{rplInfoInPh}{rplInfoInPh}}
+{\footnotesize\ttfamily bool rpl\+Info\+In\+Ph}
+
+
+
+Definition at line 921 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a4d4768c1f98ee249af8537677c0119a5}\label{structvvenc_1_1PPS_a4d4768c1f98ee249af8537677c0119a5}} 
+\index{PPS@{PPS}!saoInfoInPh@{saoInfoInPh}}
+\index{saoInfoInPh@{saoInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{saoInfoInPh}{saoInfoInPh}}
+{\footnotesize\ttfamily bool sao\+Info\+In\+Ph}
+
+
+
+Definition at line 923 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_abd35a25f325efcde537100805274bc96}\label{structvvenc_1_1PPS_abd35a25f325efcde537100805274bc96}} 
+\index{PPS@{PPS}!scalingWindow@{scalingWindow}}
+\index{scalingWindow@{scalingWindow}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{scalingWindow}{scalingWindow}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Window}{Window}} scaling\+Window}
+
+
+
+Definition at line 931 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af03a3251daf06c0ddf29de16082644dd}\label{structvvenc_1_1PPS_af03a3251daf06c0ddf29de16082644dd}} 
+\index{PPS@{PPS}!singleSlicePerSubPic@{singleSlicePerSubPic}}
+\index{singleSlicePerSubPic@{singleSlicePerSubPic}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{singleSlicePerSubPic}{singleSlicePerSubPic}}
+{\footnotesize\ttfamily bool single\+Slice\+Per\+Sub\+Pic}
+
+
+
+single slice per sub-\/picture flag 
+
+
+
+Definition at line 900 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ab9ca9627608cc4ea0eff1e3c568236da}\label{structvvenc_1_1PPS_ab9ca9627608cc4ea0eff1e3c568236da}} 
+\index{PPS@{PPS}!sliceChromaQpFlag@{sliceChromaQpFlag}}
+\index{sliceChromaQpFlag@{sliceChromaQpFlag}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{sliceChromaQpFlag}{sliceChromaQpFlag}}
+{\footnotesize\ttfamily bool slice\+Chroma\+Qp\+Flag}
+
+
+
+Definition at line 858 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a45a56b11200adaf2e0784c412dc3e03e}\label{structvvenc_1_1PPS_a45a56b11200adaf2e0784c412dc3e03e}} 
+\index{PPS@{PPS}!sliceHeaderExtensionPresent@{sliceHeaderExtensionPresent}}
+\index{sliceHeaderExtensionPresent@{sliceHeaderExtensionPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{sliceHeaderExtensionPresent}{sliceHeaderExtensionPresent}}
+{\footnotesize\ttfamily bool slice\+Header\+Extension\+Present}
+
+
+
+Definition at line 914 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_afb083bbd041d26fb15a21f607591e86c}\label{structvvenc_1_1PPS_afb083bbd041d26fb15a21f607591e86c}} 
+\index{PPS@{PPS}!sliceMap@{sliceMap}}
+\index{sliceMap@{sliceMap}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{sliceMap}{sliceMap}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SliceMap}{Slice\+Map}}$>$ slice\+Map}
+
+
+
+list of C\+TU maps for each slice in the picture 
+
+
+
+Definition at line 905 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a223bbd9ce719d2ca5b4551d52e174c0c}\label{structvvenc_1_1PPS_a223bbd9ce719d2ca5b4551d52e174c0c}} 
+\index{PPS@{PPS}!spsId@{spsId}}
+\index{spsId@{spsId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{spsId}{spsId}}
+{\footnotesize\ttfamily int sps\+Id}
+
+
+
+Definition at line 854 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af34c53da2177fbaddfd8315bc6f3a1d3}\label{structvvenc_1_1PPS_af34c53da2177fbaddfd8315bc6f3a1d3}} 
+\index{PPS@{PPS}!subPicId@{subPicId}}
+\index{subPicId@{subPicId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{subPicId}{subPicId}}
+{\footnotesize\ttfamily uint8\+\_\+t sub\+Pic\+Id\mbox{[}\mbox{\hyperlink{namespacevvenc_a5cd01cf5802c6e2d5cb7c2c5b3ef20f1}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+S\+U\+B\+\_\+\+P\+I\+CS}}\mbox{]}}
+
+
+
+sub-\/picture ID for each sub-\/picture in the sequence 
+
+
+
+Definition at line 882 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a89f8d25d42292f8211cce767abca69bb}\label{structvvenc_1_1PPS_a89f8d25d42292f8211cce767abca69bb}} 
+\index{PPS@{PPS}!subPicIdLen@{subPicIdLen}}
+\index{subPicIdLen@{subPicIdLen}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{subPicIdLen}{subPicIdLen}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Id\+Len}
+
+
+
+sub-\/picture ID length in bits 
+
+
+
+Definition at line 881 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_afcced9478a503e989a931b28cf389e94}\label{structvvenc_1_1PPS_afcced9478a503e989a931b28cf389e94}} 
+\index{PPS@{PPS}!subPicIdMappingInPps@{subPicIdMappingInPps}}
+\index{subPicIdMappingInPps@{subPicIdMappingInPps}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{subPicIdMappingInPps}{subPicIdMappingInPps}}
+{\footnotesize\ttfamily bool sub\+Pic\+Id\+Mapping\+In\+Pps}
+
+
+
+Definition at line 880 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aec17ace87d6586740a0f977b1c71df0e}\label{structvvenc_1_1PPS_aec17ace87d6586740a0f977b1c71df0e}} 
+\index{PPS@{PPS}!subPics@{subPics}}
+\index{subPics@{subPics}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{subPics}{subPics}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}}$>$ sub\+Pics}
+
+
+
+list of subpictures in the picture 
+
+
+
+Definition at line 906 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a689318902eb8611be25e962daf89f325}\label{structvvenc_1_1PPS_a689318902eb8611be25e962daf89f325}} 
+\index{PPS@{PPS}!temporalId@{temporalId}}
+\index{temporalId@{temporalId}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{temporalId}{temporalId}}
+{\footnotesize\ttfamily int temporal\+Id}
+
+
+
+Definition at line 860 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a755fb760e2baf78e3b959591cb5c46d9}\label{structvvenc_1_1PPS_a755fb760e2baf78e3b959591cb5c46d9}} 
+\index{PPS@{PPS}!tileColBd@{tileColBd}}
+\index{tileColBd@{tileColBd}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{tileColBd}{tileColBd}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ tile\+Col\+Bd}
+
+
+
+tile column left-\/boundaries in units of C\+T\+Us 
+
+
+
+Definition at line 895 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aab4a82ef580987c72976bf5b01f6a245}\label{structvvenc_1_1PPS_aab4a82ef580987c72976bf5b01f6a245}} 
+\index{PPS@{PPS}!tileColWidth@{tileColWidth}}
+\index{tileColWidth@{tileColWidth}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{tileColWidth}{tileColWidth}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ tile\+Col\+Width}
+
+
+
+tile column widths in units of C\+T\+Us 
+
+
+
+Definition at line 893 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ac03cafa4889cfeaf4993104073062ade}\label{structvvenc_1_1PPS_ac03cafa4889cfeaf4993104073062ade}} 
+\index{PPS@{PPS}!tileIdxDeltaPresent@{tileIdxDeltaPresent}}
+\index{tileIdxDeltaPresent@{tileIdxDeltaPresent}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{tileIdxDeltaPresent}{tileIdxDeltaPresent}}
+{\footnotesize\ttfamily bool tile\+Idx\+Delta\+Present}
+
+
+
+tile index delta present flag 
+
+
+
+Definition at line 903 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_ac5512b85897f6d80719077db1180959b}\label{structvvenc_1_1PPS_ac5512b85897f6d80719077db1180959b}} 
+\index{PPS@{PPS}!tileRowBd@{tileRowBd}}
+\index{tileRowBd@{tileRowBd}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{tileRowBd}{tileRowBd}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ tile\+Row\+Bd}
+
+
+
+tile row top-\/boundaries in units of C\+T\+Us 
+
+
+
+Definition at line 896 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a2bbae13ff6a30678d0d4c629f04fb40b}\label{structvvenc_1_1PPS_a2bbae13ff6a30678d0d4c629f04fb40b}} 
+\index{PPS@{PPS}!tileRowHeight@{tileRowHeight}}
+\index{tileRowHeight@{tileRowHeight}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{tileRowHeight}{tileRowHeight}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ tile\+Row\+Height}
+
+
+
+tile row heights in units of C\+T\+Us 
+
+
+
+Definition at line 894 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aa674da06f7e3f079e7fe8ecf3f84c488}\label{structvvenc_1_1PPS_aa674da06f7e3f079e7fe8ecf3f84c488}} 
+\index{PPS@{PPS}!useDQP@{useDQP}}
+\index{useDQP@{useDQP}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{useDQP}{useDQP}}
+{\footnotesize\ttfamily bool use\+D\+QP}
+
+
+
+Definition at line 856 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_af0089afb772ecfd401180f6830c8d39f}\label{structvvenc_1_1PPS_af0089afb772ecfd401180f6830c8d39f}} 
+\index{PPS@{PPS}!usePPSChromaTool@{usePPSChromaTool}}
+\index{usePPSChromaTool@{usePPSChromaTool}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{usePPSChromaTool}{usePPSChromaTool}}
+{\footnotesize\ttfamily bool use\+P\+P\+S\+Chroma\+Tool}
+
+
+
+Definition at line 857 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a870bb696c2e6608014a8cd4f819b12f5}\label{structvvenc_1_1PPS_a870bb696c2e6608014a8cd4f819b12f5}} 
+\index{PPS@{PPS}!weightedBiPred@{weightedBiPred}}
+\index{weightedBiPred@{weightedBiPred}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{weightedBiPred}{weightedBiPred}}
+{\footnotesize\ttfamily bool weighted\+Bi\+Pred}
+
+
+
+Use of Weighting Bi-\/\+Prediction (B\+\_\+\+S\+L\+I\+CE) 
+
+
+
+Definition at line 877 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_aa4c211331c590baad6063c3c24824009}\label{structvvenc_1_1PPS_aa4c211331c590baad6063c3c24824009}} 
+\index{PPS@{PPS}!weightPred@{weightPred}}
+\index{weightPred@{weightPred}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{weightPred}{weightPred}}
+{\footnotesize\ttfamily bool weight\+Pred}
+
+
+
+Use of Weighting Prediction (P\+\_\+\+S\+L\+I\+CE) 
+
+
+
+Definition at line 876 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_abd4232df9ef4bc505dddce15e5bcfb6b}\label{structvvenc_1_1PPS_abd4232df9ef4bc505dddce15e5bcfb6b}} 
+\index{PPS@{PPS}!wpInfoInPh@{wpInfoInPh}}
+\index{wpInfoInPh@{wpInfoInPh}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{wpInfoInPh}{wpInfoInPh}}
+{\footnotesize\ttfamily bool wp\+Info\+In\+Ph}
+
+
+
+Definition at line 925 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a9c5b988d87c66e70baf1da88d231bb88}\label{structvvenc_1_1PPS_a9c5b988d87c66e70baf1da88d231bb88}} 
+\index{PPS@{PPS}!wrapAroundEnabled@{wrapAroundEnabled}}
+\index{wrapAroundEnabled@{wrapAroundEnabled}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{wrapAroundEnabled}{wrapAroundEnabled}}
+{\footnotesize\ttfamily bool wrap\+Around\+Enabled}
+
+
+
+Definition at line 932 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PPS_a393a810dbcb9cd5a3839349905ff5879}\label{structvvenc_1_1PPS_a393a810dbcb9cd5a3839349905ff5879}} 
+\index{PPS@{PPS}!wrapAroundOffset@{wrapAroundOffset}}
+\index{wrapAroundOffset@{wrapAroundOffset}!PPS@{PPS}}
+\doxysubsubsection{\texorpdfstring{wrapAroundOffset}{wrapAroundOffset}}
+{\footnotesize\ttfamily unsigned wrap\+Around\+Offset}
+
+
+
+Definition at line 934 of file Slice.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

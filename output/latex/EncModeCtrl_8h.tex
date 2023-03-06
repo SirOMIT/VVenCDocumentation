@@ -1,0 +1,107 @@
+\hypertarget{EncModeCtrl_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Enc\+Mode\+Ctrl.h File Reference}
+\label{EncModeCtrl_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncModeCtrl.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncModeCtrl.h}}
+
+
+Encoder controller for trying out specific modes.  
+
+
+{\ttfamily \#include \char`\"{}Inter\+Search.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Enc\+Mode\+Ctrl.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncModeCtrl_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncModeCtrl_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache}{Best\+Enc\+Info\+Cache}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1BestEncodingInfo}{Best\+Encoding\+Info}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl}{Cache\+Blk\+Info\+Ctrl}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3e}{Enc\+Test\+Mode\+Opts}} \{ \newline
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3eabbbc4987a3731ee816baedec1899e798}{E\+T\+O\+\_\+\+S\+T\+A\+N\+D\+A\+RD}} = 0, 
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3ea807a847595b3c725ba143deaab88be13}{E\+T\+O\+\_\+\+F\+O\+R\+C\+E\+\_\+\+M\+E\+R\+GE}} = 1$<$$<$0, 
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3ea7dbe6ececfa2850f049c800883a74363}{E\+T\+O\+\_\+\+I\+M\+V\+\_\+\+S\+H\+I\+FT}} = 1, 
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3eab466f39b52980915a3a835babae8b1f3}{E\+T\+O\+\_\+\+I\+MV}} = 7$<$$<$E\+T\+O\+\_\+\+I\+M\+V\+\_\+\+S\+H\+I\+FT, 
+\newline
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3ea5fd6433d2e9ba9a403d2af9d8e412b0e}{E\+T\+O\+\_\+\+D\+U\+M\+MY}} = 1$<$$<$5, 
+\mbox{\hyperlink{namespacevvenc_a3abe4207bc531e88fa82df670e043e3eaf1fc7d213d4b8d3009d57fab6d6ee176}{E\+T\+O\+\_\+\+I\+N\+V\+A\+L\+ID}} = 0xffffffff
+ \}
+\item 
+enum \mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7}{Enc\+Test\+Mode\+Type}} \{ \newline
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a062c89316eee4d3eaa453c77fb46b637}{E\+T\+M\+\_\+\+M\+E\+R\+G\+E\+\_\+\+S\+K\+IP}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a19c8a6ee434de9ecb89e52551a8460b8}{E\+T\+M\+\_\+\+I\+N\+T\+E\+R\+\_\+\+ME}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7af8a9f1784259687fdede69477d206892}{E\+T\+M\+\_\+\+I\+N\+T\+E\+R\+\_\+\+I\+MV}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a58e8d85d07903291d81af4d55b1f907c}{E\+T\+M\+\_\+\+A\+F\+F\+I\+NE}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a781c671a479cd7fb1016be2076400ad5}{E\+T\+M\+\_\+\+M\+E\+R\+G\+E\+\_\+\+G\+EO}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a30141cda2f144995a8df322d9c3a7120}{E\+T\+M\+\_\+\+I\+N\+T\+RA}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a13c3368536f0bc64a5e79adbf7f6d74c}{E\+T\+M\+\_\+\+S\+P\+L\+I\+T\+\_\+\+QT}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7aee8c28bb90698de7a19c5b3698fce4b2}{E\+T\+M\+\_\+\+S\+P\+L\+I\+T\+\_\+\+B\+T\+\_\+H}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a68ad87b96bba7dadbe14660e446f76f9}{E\+T\+M\+\_\+\+S\+P\+L\+I\+T\+\_\+\+B\+T\+\_\+V}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a0c5667c2252f98a131be56a0761e751f}{E\+T\+M\+\_\+\+S\+P\+L\+I\+T\+\_\+\+T\+T\+\_\+H}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7ab1408f61818c13171c246f7018ac1e0e}{E\+T\+M\+\_\+\+S\+P\+L\+I\+T\+\_\+\+T\+T\+\_\+V}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a66a0ac6dbf444ce8c184cb25bdbd98ca}{E\+T\+M\+\_\+\+R\+E\+C\+O\+\_\+\+C\+A\+C\+H\+ED}}, 
+\newline
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a0840e4ada213af26cf7b2a4ec68ca654}{E\+T\+M\+\_\+\+I\+BC}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7aad3567b6c76bf54b686b3ee82fad16e2}{E\+T\+M\+\_\+\+I\+B\+C\+\_\+\+M\+E\+R\+GE}}, 
+\mbox{\hyperlink{namespacevvenc_af949f418af577be50dcc0166a93f13f7a891e64f5af1598d39b932afe27183d7c}{E\+T\+M\+\_\+\+I\+N\+V\+A\+L\+ID}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{namespacevvenc_af6fcdb72acb1320cf627e46450710f19}{get\+Area\+Idx\+New}} (const Area \&area, const Pre\+Calc\+Values \&pcv, unsigned \&idx1, unsigned \&idx2, unsigned \&idx3, unsigned \&idx4)
+\item 
+Part\+Split \mbox{\hyperlink{namespacevvenc_a8e3311404baa66b0b1da9e990f5045b7}{get\+Part\+Split}} (const Enc\+Test\+Mode \&enc\+Testmode)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a3d4677842ef913c29a21d5c4255a95ab}{is\+Mode\+Inter}} (const Enc\+Test\+Mode \&enc\+Testmode)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_afef0c86532734485246e882b11c01c40}{is\+Mode\+No\+Split}} (const Enc\+Test\+Mode \&enc\+Testmode)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_aeaa647140ba01eb82a966ce0ab2c7368}{is\+Mode\+Split}} (const Enc\+Test\+Mode \&enc\+Testmode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a70257fd518fa0223ee5e1e82719d2655}{M\+A\+X\+\_\+\+S\+T\+O\+R\+E\+D\+\_\+\+C\+U\+\_\+\+I\+N\+F\+O\+\_\+\+R\+E\+FS}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encoder controller for trying out specific modes. 
+

@@ -1,0 +1,941 @@
+\hypertarget{classvvenc_1_1SEIReader}{}\doxysection{S\+E\+I\+Reader}
+\label{classvvenc_1_1SEIReader}\index{SEIReader@{SEIReader}}
+
+
+{\ttfamily \#include \char`\"{}S\+E\+Iread.\+h\char`\"{}}
+
+
+
+Inheritance diagram for S\+E\+I\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classvvenc_1_1SEIReader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+E\+I\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIReader_afec52ad53854bb99c69aa34ed3e6c424}{S\+E\+I\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1SEIReader_a37dcd7d88783e13d315202f195407a5a}{$\sim$\+S\+E\+I\+Reader}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ae11b06ea5e0e9d67956bb742ed043362}{parse\+S\+E\+Imessage}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$bs, \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&seis, const vvenc\+Nal\+Unit\+Type nal\+Unit\+Type, const uint32\+\_\+t nuh\+\_\+layer\+\_\+id, const uint32\+\_\+t temporal\+Id, const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&hrd, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a5535414b5c7fffde2ca1459bf3603e58}{sei\+\_\+read\+\_\+code}} (std\+::ostream $\ast$p\+OS, uint32\+\_\+t ui\+Length, uint32\+\_\+t \&rui\+Code, const char $\ast$p\+Symbol\+Name)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a5f2409a7c6f1147fb3e9d46f4a5bd6dc}{sei\+\_\+read\+\_\+flag}} (std\+::ostream $\ast$p\+OS, uint32\+\_\+t \&rui\+Code, const char $\ast$p\+Symbol\+Name)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a23149bd018c5dd18838360200939c7a3}{sei\+\_\+read\+\_\+scode}} (std\+::ostream $\ast$p\+OS, uint32\+\_\+t length, int \&code, const char $\ast$p\+Symbol\+Name)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a9f5819409c861e6f14aa4f145c63055d}{sei\+\_\+read\+\_\+svlc}} (std\+::ostream $\ast$p\+OS, int \&rui\+Code, const char $\ast$p\+Symbol\+Name)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_af9b289063077f9d88e3b49f0b4f5f066}{sei\+\_\+read\+\_\+uvlc}} (std\+::ostream $\ast$p\+OS, uint32\+\_\+t \&rui\+Code, const char $\ast$p\+Symbol\+Name)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ab0b415aca5931ec8ffcb6780b82c98c6}{x\+Check\+Scalable\+Nesting\+Constraints}} (const \mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&sei, const vvenc\+Nal\+Unit\+Type nal\+Unit\+Type, const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a01d9b043ed0a3fd31ad656c7c5f17931}{x\+Parse\+S\+E\+I\+Alternative\+Transfer\+Characteristics}} (\mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} \&sei, uint32\+\_\+t pay\+Load\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a117ab2d0aff7443b9952a88dfdb495e7}{x\+Parse\+S\+E\+I\+Ambient\+Viewing\+Environment}} (\mbox{\hyperlink{classvvenc_1_1SEIAmbientViewingEnvironment}{S\+E\+I\+Ambient\+Viewing\+Environment}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ae131857e409d535205576afb370ac53f}{x\+Parse\+S\+E\+I\+Buffering\+Period}} (\mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a9dfd10f7389a1bebb5ed422e47459ae4}{x\+Parse\+S\+E\+I\+Content\+Colour\+Volume}} (\mbox{\hyperlink{classvvenc_1_1SEIContentColourVolume}{S\+E\+I\+Content\+Colour\+Volume}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a7644aa39938d2ca4e799796a1d6fc366}{x\+Parse\+S\+E\+I\+Content\+Light\+Level\+Info}} (\mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a34dc7669a426e2f9e63ac89f413bdb77}{x\+Parse\+S\+E\+I\+Decoded\+Picture\+Hash}} (\mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_aa947ff8d30aa2f98b6a0870e5ca62a0d}{x\+Parse\+S\+E\+I\+Decoding\+Unit\+Info}} (\mbox{\hyperlink{classvvenc_1_1SEIDecodingUnitInfo}{S\+E\+I\+Decoding\+Unit\+Info}} \&sei, uint32\+\_\+t payload\+Size, const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&bp, const uint32\+\_\+t temporal\+Id, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a20c0c983694ca9f33ce854a0eda545f6}{x\+Parse\+S\+E\+I\+Dependent\+R\+A\+P\+Indication}} (\mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&sei, uint32\+\_\+t pay\+Load\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a1863b70f66d7ff6fc64022aaa63d3961}{x\+Parse\+S\+E\+I\+Equirectangular\+Projection}} (\mbox{\hyperlink{classvvenc_1_1SEIEquirectangularProjection}{S\+E\+I\+Equirectangular\+Projection}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a26cdc0e3d5cbba786e9d95f0fddadc79}{x\+Parse\+S\+E\+I\+Film\+Grain\+Characteristics}} (\mbox{\hyperlink{classvvenc_1_1SEIFilmGrainCharacteristics}{S\+E\+I\+Film\+Grain\+Characteristics}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a15c0efebbcd15beed4b326c6d08ced37}{x\+Parse\+S\+E\+I\+Frame\+Fieldinfo}} (\mbox{\hyperlink{classvvenc_1_1SEIFrameFieldInfo}{S\+E\+I\+Frame\+Field\+Info}} \&sei, const \mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&pt, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a6bbff1fb73d1f93491434bbc63378b21}{x\+Parse\+S\+E\+I\+Frame\+Packing}} (\mbox{\hyperlink{classvvenc_1_1SEIFramePacking}{S\+E\+I\+Frame\+Packing}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_aa7fcbf89f1c15a851545ebbca9e91eef}{x\+Parse\+S\+E\+I\+Generalized\+Cubemap\+Projection}} (\mbox{\hyperlink{classvvenc_1_1SEIGeneralizedCubemapProjection}{S\+E\+I\+Generalized\+Cubemap\+Projection}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a8b2357943424f6afa079235874382f30}{x\+Parse\+S\+E\+I\+Mastering\+Display\+Colour\+Volume}} (\mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ab937fd90e1bbc28129c15d15aff796cf}{x\+Parse\+S\+E\+I\+Omni\+Viewport}} (\mbox{\hyperlink{classvvenc_1_1SEIOmniViewport}{S\+E\+I\+Omni\+Viewport}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ae7a50da30d99564ab06d2f47ae0545a3}{x\+Parse\+S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} (\mbox{\hyperlink{classvvenc_1_1SEIParameterSetsInclusionIndication}{S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ac83417ac68c22a23a32300d2e44c6d98}{x\+Parse\+S\+E\+I\+Picture\+Timing}} (\mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&sei, uint32\+\_\+t payload\+Size, const uint32\+\_\+t temporal\+Id, const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&bp, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a856b2f0fcfc80c2daeeab78bce2a91e8}{x\+Parse\+S\+E\+I\+Region\+Wise\+Packing}} (\mbox{\hyperlink{classvvenc_1_1SEIRegionWisePacking}{S\+E\+I\+Region\+Wise\+Packing}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_afd53bc0859ec2ea809db110ccf292749}{x\+Parse\+S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} (\mbox{\hyperlink{classvvenc_1_1SEISampleAspectRatioInfo}{S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_acbafacee5b1af1d3981bb91c3457ce10}{x\+Parse\+S\+E\+I\+Scalable\+Nesting}} (\mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&sei, const vvenc\+Nal\+Unit\+Type nal\+Unit\+Type, const uint32\+\_\+t nuh\+Layer\+Id, uint32\+\_\+t payload\+Size, const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, std\+::ostream $\ast$decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a345e92140bfd969ef312bfe7e478530b}{x\+Parse\+S\+E\+I\+Sphere\+Rotation}} (\mbox{\hyperlink{classvvenc_1_1SEISphereRotation}{S\+E\+I\+Sphere\+Rotation}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_ae9b1a8567b5eb2864bd25de8e6919a2d}{x\+Parse\+S\+E\+I\+Subpicture\+Level\+Info}} (\mbox{\hyperlink{classvvenc_1_1SEISubpicureLevelInfo}{S\+E\+I\+Subpicure\+Level\+Info}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_a70ea868cbb7750b2623cbabf49974eb6}{x\+Parse\+S\+E\+I\+User\+Data\+Registered}} (\mbox{\hyperlink{classvvenc_1_1SEIUserDataRegistered}{S\+E\+I\+User\+Data\+Registered}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_aff389ca868d9a0259ab2f9add47d2c74}{x\+Parse\+S\+E\+Iuser\+Data\+Unregistered}} (\mbox{\hyperlink{classvvenc_1_1SEIuserDataUnregistered}{S\+E\+Iuser\+Data\+Unregistered}} \&sei, uint32\+\_\+t payload\+Size, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIReader_aa1c78707b2b122f9ec37012153983731}{x\+Read\+S\+E\+Imessage}} (\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&seis, const vvenc\+Nal\+Unit\+Type nal\+Unit\+Type, const uint32\+\_\+t nuh\+\_\+layer\+\_\+id, const uint32\+\_\+t temporal\+Id, const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&hrd, std\+::ostream $\ast$p\+Decoded\+Message\+Output\+Stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \mbox{\hyperlink{classvvenc_1_1SEIReader_afdcfb23ebe436c5dbda29b92f81487db}{m\+\_\+nested\+Hrd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 64 of file S\+E\+Iread.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_afec52ad53854bb99c69aa34ed3e6c424}\label{classvvenc_1_1SEIReader_afec52ad53854bb99c69aa34ed3e6c424}} 
+\index{SEIReader@{SEIReader}!SEIReader@{SEIReader}}
+\index{SEIReader@{SEIReader}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{SEIReader()}{SEIReader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIReader}{S\+E\+I\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file S\+E\+Iread.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a37dcd7d88783e13d315202f195407a5a}\label{classvvenc_1_1SEIReader_a37dcd7d88783e13d315202f195407a5a}} 
+\index{SEIReader@{SEIReader}!````~SEIReader@{$\sim$SEIReader}}
+\index{````~SEIReader@{$\sim$SEIReader}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$SEIReader()}{~SEIReader()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1SEIReader}{S\+E\+I\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 68 of file S\+E\+Iread.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ae11b06ea5e0e9d67956bb742ed043362}\label{classvvenc_1_1SEIReader_ae11b06ea5e0e9d67956bb742ed043362}} 
+\index{SEIReader@{SEIReader}!parseSEImessage@{parseSEImessage}}
+\index{parseSEImessage@{parseSEImessage}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{parseSEImessage()}{parseSEImessage()}}
+{\footnotesize\ttfamily void parse\+S\+E\+Imessage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{bs,  }\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{seis,  }\item[{const vvenc\+Nal\+Unit\+Type}]{nal\+Unit\+Type,  }\item[{const uint32\+\_\+t}]{nuh\+\_\+layer\+\_\+id,  }\item[{const uint32\+\_\+t}]{temporal\+Id,  }\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&}]{hrd,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})}
+
+unmarshal a single \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message from bitstream bs 
+
+Definition at line 133 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae11b06ea5e0e9d67956bb742ed043362_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae11b06ea5e0e9d67956bb742ed043362_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a5535414b5c7fffde2ca1459bf3603e58}\label{classvvenc_1_1SEIReader_a5535414b5c7fffde2ca1459bf3603e58}} 
+\index{SEIReader@{SEIReader}!sei\_read\_code@{sei\_read\_code}}
+\index{sei\_read\_code@{sei\_read\_code}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{sei\_read\_code()}{sei\_read\_code()}}
+{\footnotesize\ttfamily void sei\+\_\+read\+\_\+code (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+OS,  }\item[{uint32\+\_\+t}]{ui\+Length,  }\item[{uint32\+\_\+t \&}]{rui\+Code,  }\item[{const char $\ast$}]{p\+Symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 77 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a5535414b5c7fffde2ca1459bf3603e58_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a5f2409a7c6f1147fb3e9d46f4a5bd6dc}\label{classvvenc_1_1SEIReader_a5f2409a7c6f1147fb3e9d46f4a5bd6dc}} 
+\index{SEIReader@{SEIReader}!sei\_read\_flag@{sei\_read\_flag}}
+\index{sei\_read\_flag@{sei\_read\_flag}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{sei\_read\_flag()}{sei\_read\_flag()}}
+{\footnotesize\ttfamily void sei\+\_\+read\+\_\+flag (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+OS,  }\item[{uint32\+\_\+t \&}]{rui\+Code,  }\item[{const char $\ast$}]{p\+Symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 104 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a5f2409a7c6f1147fb3e9d46f4a5bd6dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a23149bd018c5dd18838360200939c7a3}\label{classvvenc_1_1SEIReader_a23149bd018c5dd18838360200939c7a3}} 
+\index{SEIReader@{SEIReader}!sei\_read\_scode@{sei\_read\_scode}}
+\index{sei\_read\_scode@{sei\_read\_scode}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{sei\_read\_scode()}{sei\_read\_scode()}}
+{\footnotesize\ttfamily void sei\+\_\+read\+\_\+scode (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+OS,  }\item[{uint32\+\_\+t}]{length,  }\item[{int \&}]{code,  }\item[{const char $\ast$}]{p\+Symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 68 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a23149bd018c5dd18838360200939c7a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a9f5819409c861e6f14aa4f145c63055d}\label{classvvenc_1_1SEIReader_a9f5819409c861e6f14aa4f145c63055d}} 
+\index{SEIReader@{SEIReader}!sei\_read\_svlc@{sei\_read\_svlc}}
+\index{sei\_read\_svlc@{sei\_read\_svlc}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{sei\_read\_svlc()}{sei\_read\_svlc()}}
+{\footnotesize\ttfamily void sei\+\_\+read\+\_\+svlc (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+OS,  }\item[{int \&}]{rui\+Code,  }\item[{const char $\ast$}]{p\+Symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 95 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a9f5819409c861e6f14aa4f145c63055d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_af9b289063077f9d88e3b49f0b4f5f066}\label{classvvenc_1_1SEIReader_af9b289063077f9d88e3b49f0b4f5f066}} 
+\index{SEIReader@{SEIReader}!sei\_read\_uvlc@{sei\_read\_uvlc}}
+\index{sei\_read\_uvlc@{sei\_read\_uvlc}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{sei\_read\_uvlc()}{sei\_read\_uvlc()}}
+{\footnotesize\ttfamily void sei\+\_\+read\+\_\+uvlc (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+OS,  }\item[{uint32\+\_\+t \&}]{rui\+Code,  }\item[{const char $\ast$}]{p\+Symbol\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 86 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_af9b289063077f9d88e3b49f0b4f5f066_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ab0b415aca5931ec8ffcb6780b82c98c6}\label{classvvenc_1_1SEIReader_ab0b415aca5931ec8ffcb6780b82c98c6}} 
+\index{SEIReader@{SEIReader}!xCheckScalableNestingConstraints@{xCheckScalableNestingConstraints}}
+\index{xCheckScalableNestingConstraints@{xCheckScalableNestingConstraints}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xCheckScalableNestingConstraints()}{xCheckScalableNestingConstraints()}}
+{\footnotesize\ttfamily void x\+Check\+Scalable\+Nesting\+Constraints (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&}]{sei,  }\item[{const vvenc\+Nal\+Unit\+Type}]{nal\+Unit\+Type,  }\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 585 of file S\+E\+Iread.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ab0b415aca5931ec8ffcb6780b82c98c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a01d9b043ed0a3fd31ad656c7c5f17931}\label{classvvenc_1_1SEIReader_a01d9b043ed0a3fd31ad656c7c5f17931}} 
+\index{SEIReader@{SEIReader}!xParseSEIAlternativeTransferCharacteristics@{xParseSEIAlternativeTransferCharacteristics}}
+\index{xParseSEIAlternativeTransferCharacteristics@{xParseSEIAlternativeTransferCharacteristics}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIAlternativeTransferCharacteristics()}{xParseSEIAlternativeTransferCharacteristics()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Alternative\+Transfer\+Characteristics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} \&}]{sei,  }\item[{uint32\+\_\+t}]{pay\+Load\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1109 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a01d9b043ed0a3fd31ad656c7c5f17931_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a01d9b043ed0a3fd31ad656c7c5f17931_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a117ab2d0aff7443b9952a88dfdb495e7}\label{classvvenc_1_1SEIReader_a117ab2d0aff7443b9952a88dfdb495e7}} 
+\index{SEIReader@{SEIReader}!xParseSEIAmbientViewingEnvironment@{xParseSEIAmbientViewingEnvironment}}
+\index{xParseSEIAmbientViewingEnvironment@{xParseSEIAmbientViewingEnvironment}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIAmbientViewingEnvironment()}{xParseSEIAmbientViewingEnvironment()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Ambient\+Viewing\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIAmbientViewingEnvironment}{S\+E\+I\+Ambient\+Viewing\+Environment}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1203 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a117ab2d0aff7443b9952a88dfdb495e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a117ab2d0aff7443b9952a88dfdb495e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ae131857e409d535205576afb370ac53f}\label{classvvenc_1_1SEIReader_ae131857e409d535205576afb370ac53f}} 
+\index{SEIReader@{SEIReader}!xParseSEIBufferingPeriod@{xParseSEIBufferingPeriod}}
+\index{xParseSEIBufferingPeriod@{xParseSEIBufferingPeriod}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIBufferingPeriod()}{xParseSEIBufferingPeriod()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Buffering\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 677 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae131857e409d535205576afb370ac53f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae131857e409d535205576afb370ac53f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a9dfd10f7389a1bebb5ed422e47459ae4}\label{classvvenc_1_1SEIReader_a9dfd10f7389a1bebb5ed422e47459ae4}} 
+\index{SEIReader@{SEIReader}!xParseSEIContentColourVolume@{xParseSEIContentColourVolume}}
+\index{xParseSEIContentColourVolume@{xParseSEIContentColourVolume}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIContentColourVolume()}{xParseSEIContentColourVolume()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Content\+Colour\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIContentColourVolume}{S\+E\+I\+Content\+Colour\+Volume}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1213 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a9dfd10f7389a1bebb5ed422e47459ae4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a9dfd10f7389a1bebb5ed422e47459ae4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a7644aa39938d2ca4e799796a1d6fc366}\label{classvvenc_1_1SEIReader_a7644aa39938d2ca4e799796a1d6fc366}} 
+\index{SEIReader@{SEIReader}!xParseSEIContentLightLevelInfo@{xParseSEIContentLightLevelInfo}}
+\index{xParseSEIContentLightLevelInfo@{xParseSEIContentLightLevelInfo}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIContentLightLevelInfo()}{xParseSEIContentLightLevelInfo()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Content\+Light\+Level\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1194 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a7644aa39938d2ca4e799796a1d6fc366_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a7644aa39938d2ca4e799796a1d6fc366_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a34dc7669a426e2f9e63ac89f413bdb77}\label{classvvenc_1_1SEIReader_a34dc7669a426e2f9e63ac89f413bdb77}} 
+\index{SEIReader@{SEIReader}!xParseSEIDecodedPictureHash@{xParseSEIDecodedPictureHash}}
+\index{xParseSEIDecodedPictureHash@{xParseSEIDecodedPictureHash}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIDecodedPictureHash()}{xParseSEIDecodedPictureHash()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Decoded\+Picture\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+parse bitstream bs and unpack a decoded picture hash \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message of payload\+Size bytes into sei. 
+
+Definition at line 441 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a34dc7669a426e2f9e63ac89f413bdb77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a34dc7669a426e2f9e63ac89f413bdb77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_aa947ff8d30aa2f98b6a0870e5ca62a0d}\label{classvvenc_1_1SEIReader_aa947ff8d30aa2f98b6a0870e5ca62a0d}} 
+\index{SEIReader@{SEIReader}!xParseSEIDecodingUnitInfo@{xParseSEIDecodingUnitInfo}}
+\index{xParseSEIDecodingUnitInfo@{xParseSEIDecodingUnitInfo}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIDecodingUnitInfo()}{xParseSEIDecodingUnitInfo()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Decoding\+Unit\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIDecodingUnitInfo}{S\+E\+I\+Decoding\+Unit\+Info}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{bp,  }\item[{const uint32\+\_\+t}]{temporal\+Id,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 624 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa947ff8d30aa2f98b6a0870e5ca62a0d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa947ff8d30aa2f98b6a0870e5ca62a0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a20c0c983694ca9f33ce854a0eda545f6}\label{classvvenc_1_1SEIReader_a20c0c983694ca9f33ce854a0eda545f6}} 
+\index{SEIReader@{SEIReader}!xParseSEIDependentRAPIndication@{xParseSEIDependentRAPIndication}}
+\index{xParseSEIDependentRAPIndication@{xParseSEIDependentRAPIndication}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIDependentRAPIndication()}{xParseSEIDependentRAPIndication()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Dependent\+R\+A\+P\+Indication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&}]{sei,  }\item[{uint32\+\_\+t}]{pay\+Load\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1035 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a20c0c983694ca9f33ce854a0eda545f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a20c0c983694ca9f33ce854a0eda545f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a1863b70f66d7ff6fc64022aaa63d3961}\label{classvvenc_1_1SEIReader_a1863b70f66d7ff6fc64022aaa63d3961}} 
+\index{SEIReader@{SEIReader}!xParseSEIEquirectangularProjection@{xParseSEIEquirectangularProjection}}
+\index{xParseSEIEquirectangularProjection@{xParseSEIEquirectangularProjection}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIEquirectangularProjection()}{xParseSEIEquirectangularProjection()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Equirectangular\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIEquirectangularProjection}{S\+E\+I\+Equirectangular\+Projection}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1251 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a1863b70f66d7ff6fc64022aaa63d3961_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a1863b70f66d7ff6fc64022aaa63d3961_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a26cdc0e3d5cbba786e9d95f0fddadc79}\label{classvvenc_1_1SEIReader_a26cdc0e3d5cbba786e9d95f0fddadc79}} 
+\index{SEIReader@{SEIReader}!xParseSEIFilmGrainCharacteristics@{xParseSEIFilmGrainCharacteristics}}
+\index{xParseSEIFilmGrainCharacteristics@{xParseSEIFilmGrainCharacteristics}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIFilmGrainCharacteristics()}{xParseSEIFilmGrainCharacteristics()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Film\+Grain\+Characteristics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIFilmGrainCharacteristics}{S\+E\+I\+Film\+Grain\+Characteristics}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1143 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a26cdc0e3d5cbba786e9d95f0fddadc79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a26cdc0e3d5cbba786e9d95f0fddadc79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a15c0efebbcd15beed4b326c6d08ced37}\label{classvvenc_1_1SEIReader_a15c0efebbcd15beed4b326c6d08ced37}} 
+\index{SEIReader@{SEIReader}!xParseSEIFrameFieldinfo@{xParseSEIFrameFieldinfo}}
+\index{xParseSEIFrameFieldinfo@{xParseSEIFrameFieldinfo}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIFrameFieldinfo()}{xParseSEIFrameFieldinfo()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Frame\+Fieldinfo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIFrameFieldInfo}{S\+E\+I\+Frame\+Field\+Info}} \&}]{sei,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&}]{pt,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 998 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a15c0efebbcd15beed4b326c6d08ced37_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a15c0efebbcd15beed4b326c6d08ced37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a6bbff1fb73d1f93491434bbc63378b21}\label{classvvenc_1_1SEIReader_a6bbff1fb73d1f93491434bbc63378b21}} 
+\index{SEIReader@{SEIReader}!xParseSEIFramePacking@{xParseSEIFramePacking}}
+\index{xParseSEIFramePacking@{xParseSEIFramePacking}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIFramePacking()}{xParseSEIFramePacking()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Frame\+Packing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIFramePacking}{S\+E\+I\+Frame\+Packing}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1041 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a6bbff1fb73d1f93491434bbc63378b21_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a6bbff1fb73d1f93491434bbc63378b21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_aa7fcbf89f1c15a851545ebbca9e91eef}\label{classvvenc_1_1SEIReader_aa7fcbf89f1c15a851545ebbca9e91eef}} 
+\index{SEIReader@{SEIReader}!xParseSEIGeneralizedCubemapProjection@{xParseSEIGeneralizedCubemapProjection}}
+\index{xParseSEIGeneralizedCubemapProjection@{xParseSEIGeneralizedCubemapProjection}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIGeneralizedCubemapProjection()}{xParseSEIGeneralizedCubemapProjection()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Generalized\+Cubemap\+Projection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIGeneralizedCubemapProjection}{S\+E\+I\+Generalized\+Cubemap\+Projection}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1381 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa7fcbf89f1c15a851545ebbca9e91eef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa7fcbf89f1c15a851545ebbca9e91eef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a8b2357943424f6afa079235874382f30}\label{classvvenc_1_1SEIReader_a8b2357943424f6afa079235874382f30}} 
+\index{SEIReader@{SEIReader}!xParseSEIMasteringDisplayColourVolume@{xParseSEIMasteringDisplayColourVolume}}
+\index{xParseSEIMasteringDisplayColourVolume@{xParseSEIMasteringDisplayColourVolume}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIMasteringDisplayColourVolume()}{xParseSEIMasteringDisplayColourVolume()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Mastering\+Display\+Colour\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1087 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a8b2357943424f6afa079235874382f30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a8b2357943424f6afa079235874382f30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ab937fd90e1bbc28129c15d15aff796cf}\label{classvvenc_1_1SEIReader_ab937fd90e1bbc28129c15d15aff796cf}} 
+\index{SEIReader@{SEIReader}!xParseSEIOmniViewport@{xParseSEIOmniViewport}}
+\index{xParseSEIOmniViewport@{xParseSEIOmniViewport}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIOmniViewport()}{xParseSEIOmniViewport()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Omni\+Viewport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIOmniViewport}{S\+E\+I\+Omni\+Viewport}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1287 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ab937fd90e1bbc28129c15d15aff796cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ab937fd90e1bbc28129c15d15aff796cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ae7a50da30d99564ab06d2f47ae0545a3}\label{classvvenc_1_1SEIReader_ae7a50da30d99564ab06d2f47ae0545a3}} 
+\index{SEIReader@{SEIReader}!xParseSEIParameterSetsInclusionIndication@{xParseSEIParameterSetsInclusionIndication}}
+\index{xParseSEIParameterSetsInclusionIndication@{xParseSEIParameterSetsInclusionIndication}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIParameterSetsInclusionIndication()}{xParseSEIParameterSetsInclusionIndication()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIParameterSetsInclusionIndication}{S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1078 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae7a50da30d99564ab06d2f47ae0545a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae7a50da30d99564ab06d2f47ae0545a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ac83417ac68c22a23a32300d2e44c6d98}\label{classvvenc_1_1SEIReader_ac83417ac68c22a23a32300d2e44c6d98}} 
+\index{SEIReader@{SEIReader}!xParseSEIPictureTiming@{xParseSEIPictureTiming}}
+\index{xParseSEIPictureTiming@{xParseSEIPictureTiming}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIPictureTiming()}{xParseSEIPictureTiming()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Picture\+Timing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{const uint32\+\_\+t}]{temporal\+Id,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{bp,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 798 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ac83417ac68c22a23a32300d2e44c6d98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ac83417ac68c22a23a32300d2e44c6d98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a856b2f0fcfc80c2daeeab78bce2a91e8}\label{classvvenc_1_1SEIReader_a856b2f0fcfc80c2daeeab78bce2a91e8}} 
+\index{SEIReader@{SEIReader}!xParseSEIRegionWisePacking@{xParseSEIRegionWisePacking}}
+\index{xParseSEIRegionWisePacking@{xParseSEIRegionWisePacking}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIRegionWisePacking()}{xParseSEIRegionWisePacking()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Region\+Wise\+Packing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIRegionWisePacking}{S\+E\+I\+Region\+Wise\+Packing}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1317 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a856b2f0fcfc80c2daeeab78bce2a91e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a856b2f0fcfc80c2daeeab78bce2a91e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_afd53bc0859ec2ea809db110ccf292749}\label{classvvenc_1_1SEIReader_afd53bc0859ec2ea809db110ccf292749}} 
+\index{SEIReader@{SEIReader}!xParseSEISampleAspectRatioInfo@{xParseSEISampleAspectRatioInfo}}
+\index{xParseSEISampleAspectRatioInfo@{xParseSEISampleAspectRatioInfo}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEISampleAspectRatioInfo()}{xParseSEISampleAspectRatioInfo()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Sample\+Aspect\+Ratio\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEISampleAspectRatioInfo}{S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1512 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_afd53bc0859ec2ea809db110ccf292749_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_afd53bc0859ec2ea809db110ccf292749_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_acbafacee5b1af1d3981bb91c3457ce10}\label{classvvenc_1_1SEIReader_acbafacee5b1af1d3981bb91c3457ce10}} 
+\index{SEIReader@{SEIReader}!xParseSEIScalableNesting@{xParseSEIScalableNesting}}
+\index{xParseSEIScalableNesting@{xParseSEIScalableNesting}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIScalableNesting()}{xParseSEIScalableNesting()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Scalable\+Nesting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&}]{sei,  }\item[{const vvenc\+Nal\+Unit\+Type}]{nal\+Unit\+Type,  }\item[{const uint32\+\_\+t}]{nuh\+Layer\+Id,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{std\+::ostream $\ast$}]{decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 487 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_acbafacee5b1af1d3981bb91c3457ce10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_acbafacee5b1af1d3981bb91c3457ce10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a345e92140bfd969ef312bfe7e478530b}\label{classvvenc_1_1SEIReader_a345e92140bfd969ef312bfe7e478530b}} 
+\index{SEIReader@{SEIReader}!xParseSEISphereRotation@{xParseSEISphereRotation}}
+\index{xParseSEISphereRotation@{xParseSEISphereRotation}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEISphereRotation()}{xParseSEISphereRotation()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Sphere\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEISphereRotation}{S\+E\+I\+Sphere\+Rotation}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1271 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a345e92140bfd969ef312bfe7e478530b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a345e92140bfd969ef312bfe7e478530b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_ae9b1a8567b5eb2864bd25de8e6919a2d}\label{classvvenc_1_1SEIReader_ae9b1a8567b5eb2864bd25de8e6919a2d}} 
+\index{SEIReader@{SEIReader}!xParseSEISubpictureLevelInfo@{xParseSEISubpictureLevelInfo}}
+\index{xParseSEISubpictureLevelInfo@{xParseSEISubpictureLevelInfo}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEISubpictureLevelInfo()}{xParseSEISubpictureLevelInfo()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+Subpicture\+Level\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEISubpicureLevelInfo}{S\+E\+I\+Subpicure\+Level\+Info}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1426 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae9b1a8567b5eb2864bd25de8e6919a2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_ae9b1a8567b5eb2864bd25de8e6919a2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_a70ea868cbb7750b2623cbabf49974eb6}\label{classvvenc_1_1SEIReader_a70ea868cbb7750b2623cbabf49974eb6}} 
+\index{SEIReader@{SEIReader}!xParseSEIUserDataRegistered@{xParseSEIUserDataRegistered}}
+\index{xParseSEIUserDataRegistered@{xParseSEIUserDataRegistered}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIUserDataRegistered()}{xParseSEIUserDataRegistered()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+I\+User\+Data\+Registered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIUserDataRegistered}{S\+E\+I\+User\+Data\+Registered}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1117 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a70ea868cbb7750b2623cbabf49974eb6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_a70ea868cbb7750b2623cbabf49974eb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_aff389ca868d9a0259ab2f9add47d2c74}\label{classvvenc_1_1SEIReader_aff389ca868d9a0259ab2f9add47d2c74}} 
+\index{SEIReader@{SEIReader}!xParseSEIuserDataUnregistered@{xParseSEIuserDataUnregistered}}
+\index{xParseSEIuserDataUnregistered@{xParseSEIuserDataUnregistered}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xParseSEIuserDataUnregistered()}{xParseSEIuserDataUnregistered()}}
+{\footnotesize\ttfamily void x\+Parse\+S\+E\+Iuser\+Data\+Unregistered (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1SEIuserDataUnregistered}{S\+E\+Iuser\+Data\+Unregistered}} \&}]{sei,  }\item[{uint32\+\_\+t}]{payload\+Size,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+parse bitstream bs and unpack a user\+\_\+data\+\_\+unregistered \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message of payloas\+Size bytes into sei. 
+
+Definition at line 406 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aff389ca868d9a0259ab2f9add47d2c74_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aff389ca868d9a0259ab2f9add47d2c74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_aa1c78707b2b122f9ec37012153983731}\label{classvvenc_1_1SEIReader_aa1c78707b2b122f9ec37012153983731}} 
+\index{SEIReader@{SEIReader}!xReadSEImessage@{xReadSEImessage}}
+\index{xReadSEImessage@{xReadSEImessage}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{xReadSEImessage()}{xReadSEImessage()}}
+{\footnotesize\ttfamily void x\+Read\+S\+E\+Imessage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{seis,  }\item[{const vvenc\+Nal\+Unit\+Type}]{nal\+Unit\+Type,  }\item[{const uint32\+\_\+t}]{nuh\+\_\+layer\+\_\+id,  }\item[{const uint32\+\_\+t}]{temporal\+Id,  }\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&}]{hrd,  }\item[{std\+::ostream $\ast$}]{p\+Decoded\+Message\+Output\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 155 of file S\+E\+Iread.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa1c78707b2b122f9ec37012153983731_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIReader_aa1c78707b2b122f9ec37012153983731_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIReader_afdcfb23ebe436c5dbda29b92f81487db}\label{classvvenc_1_1SEIReader_afdcfb23ebe436c5dbda29b92f81487db}} 
+\index{SEIReader@{SEIReader}!m\_nestedHrd@{m\_nestedHrd}}
+\index{m\_nestedHrd@{m\_nestedHrd}!SEIReader@{SEIReader}}
+\doxysubsubsection{\texorpdfstring{m\_nestedHrd}{m\_nestedHrd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} m\+\_\+nested\+Hrd\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 106 of file S\+E\+Iread.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{SEIread_8h}{S\+E\+Iread.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{SEIread_8cpp}{S\+E\+Iread.\+cpp}}\end{DoxyCompactItemize}

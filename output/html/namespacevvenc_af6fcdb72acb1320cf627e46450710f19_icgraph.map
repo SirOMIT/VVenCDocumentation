@@ -1,0 +1,17 @@
+<map id="getAreaIdxNew" name="getAreaIdxNew">
+<area shape="rect" id="node1" title=" " alt="" coords="597,299,709,326"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1CacheBlkInfoCtrl.html#a9e6b9048415132cad893bff62bb8f315" title=" " alt="" coords="379,5,545,47"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1CacheBlkInfoCtrl.html#ac67df041ac0893256edaedd0ded4ee04" title=" " alt="" coords="379,103,545,144"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1InterSearch.html#a20ad2ab1a41da1b47cf2a94655f06ee5" title="encoder estimation &#45; inter prediction (non&#45;skip)" alt="" coords="5,231,137,272"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1CacheBlkInfoCtrl.html#a0c0bd1d58fd4058946145d28a97d2dcc" title=" " alt="" coords="379,233,545,275"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1BestEncInfoCache.html#a877fdada06d9ff8345d022cc1d34569a" title=" " alt="" coords="375,547,549,588"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1InterSearch.html#a855fa44b8d0233bd0eee95e99883e667" title=" " alt="" coords="394,351,530,392"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1CacheBlkInfoCtrl.html#a8f960aae694d200ab03bb9a90f44fed5" title=" " alt="" coords="379,416,545,457"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1BestEncInfoCache.html#a0bd39e7234eae384de671fe2b06cdd4d" title=" " alt="" coords="375,481,549,523"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1BestEncInfoCache.html#aa936f17b0c5adad4b85515e2d9f1cae9" title=" " alt="" coords="375,168,549,209"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1InterSearch.html#af1328a689e0e09c6c3b8fe514bfa2e07" title=" " alt="" coords="190,5,322,47"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1EncModeCtrl.html#ac30ae80d9692ef96e30fe3f15604323a" title=" " alt="" coords="185,201,327,243"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1EncModeCtrl.html#a16a22824c1148cc2a32d4ea81fd7676f" title=" " alt="" coords="185,71,327,112"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1InterSearch.html#aa17b8a45afa5a9835b69acd2a4372fc0" title=" " alt="" coords="187,136,325,177"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1EncModeCtrl.html#a4d1ad3ec282953369b710a504a45b3bb" title=" " alt="" coords="185,547,327,588"/>
+</map>

@@ -1,0 +1,769 @@
+\hypertarget{structvvenc_1_1AlfCovariance}{}\doxysection{Alf\+Covariance}
+\label{structvvenc_1_1AlfCovariance}\index{AlfCovariance@{AlfCovariance}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Adaptive\+Loop\+Filter.\+h\char`\"{}}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} = double\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}{T\+KE}} = \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} $\ast$$\ast$
+\item 
+using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}{T\+Ky}} = \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}} $\ast$
+\item 
+using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}} = double\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a42f12f4e8bd9a00e165901146ac921d8}{Alf\+Covariance}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9c11ca491c0d7ec6d917c0e7f72e5406}{$\sim$\+Alf\+Covariance}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ac28deddadb874f9f6063000c16e850e2}{add}} (const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&lhs, const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&rhs)
+\item 
+template$<$$>$ double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}{calc\+Diff\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const int coeff\+Before, const int coeff\+After, const int coeff\+Pos, const double inv\+Factor) const
+\item 
+template$<$$>$ double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}{calc\+Diff\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const int coeff\+Before, const int coeff\+After, const int coeff\+Pos, const double inv\+Factor) const
+\item 
+{\footnotesize template$<$bool do\+Clip$>$ }\\double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a1f824cf22fc4e3289011850de47fdd8d}{calc\+Diff\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const int num\+Coeff\+Before, const int num\+Coeff\+After, const int coeff\+Pos, const double inv\+Factor) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a2cf8e50d62cbe7a310daec2db8e0abe9}{calc\+Error\+For\+Cc\+Alf\+Coeffs}} (const int16\+\_\+t $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const double inv\+Factor) const
+\item 
+{\footnotesize template$<$bool do\+Clip$>$ }\\double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a8a3df3c8630231e51183cfc7f6b17288}{calc\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const double inv\+Factor) const
+\item 
+template$<$$>$ double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}{calc\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const double inv\+Factor) const
+\item 
+template$<$$>$ double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}{calc\+Error\+For\+Coeffs}} (const int $\ast$clip, const int $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}, const double inv\+Factor) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a147500f99ffbb366f1fc6b4cc99f3e73}{calculate\+Error}} (const int $\ast$clip) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_af15ba3fb17b16cdf70d913bf4d7fabb0}{calculate\+Error}} (const int $\ast$clip, const double $\ast$coeff) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a3d54548859fc908acc0356fbcadc6026}{calculate\+Error}} (const int $\ast$clip, const double $\ast$coeff, const int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a8a5922bca611669b7f112b167d69e7f9}{create}} (int size, int num\+\_\+bins)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9982c278ff20801a0eeab8ef0b5a9914}{get\+Clip\+Max}} (const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&alf\+Shape, int $\ast$clip\+\_\+max) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_abf358dfc245ad8f107a97e5731ddfa50}{gns\+Solve\+By\+Chol}} (\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} L\+HS, double $\ast$rhs, double $\ast$x, int num\+Eq) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \& \mbox{\hyperlink{structvvenc_1_1AlfCovariance_aad076f10b4bb10be1cfc83bcdec9f2d7}{operator+=}} (const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&src)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \& \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ac752a34dae617b33b0e066ded7c8893f}{operator-\/=}} (const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&src)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \& \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ac1bc1e3ea843bdf3b9aa23a00cba2784}{operator=}} (const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&src)
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a84fb547bd6b41135d92130e2d2b376dd}{optimize\+Filter}} (const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&alf\+Shape, int $\ast$clip, double $\ast$f, bool optimize\+\_\+clip) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a1eb4e87365b092c9e90b47b936a89c7d}{optimize\+Filter}} (const int $\ast$clip, double $\ast$f, int size) const
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a88326155c225cea5b31923ec6788d0ed}{optimize\+Filter\+Clip}} (const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&alf\+Shape, int $\ast$clip) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4df79fe0b8d5cc6b42efad11aabd97fd}{reduce\+Clip\+Cost}} (const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&alf\+Shape, int $\ast$clip) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4e8802a405fa3be361f7cc5bc418a5af}{set\+Ey\+From\+Clip}} (const int $\ast$clip, \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} \+\_\+E, \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}} \+\_\+y, int size) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a5a8633df2c5705af0a804321d72489fb}{all0}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}{T\+KE}} \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a06df119d68353ba3fe78cfec0032925c}{E}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ab147fd9a46479dee5f5ede3253e90a4c}{num\+Bins}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}{num\+Coeff}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a1677f610f27a806b0db93acab9a2aca4}{pix\+Acc}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}{T\+Ky}} \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a8141e702fbfc01100dba8e78a7e78872}{y}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a8b28dce56579ef7801e4fa54b26fbb31}{Max\+Alf\+Num\+Clipping\+Values}} = Adaptive\+Loop\+Filter\+::\+Max\+Alf\+Num\+Clipping\+Values
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ab45bd1c656e15cc0780558918a626b30}{gns\+Backsubstitution}} (\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} R, double $\ast$z, int size, double $\ast$A) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a0c476088ad9ec6c9036c242cc1119050}{gns\+Cholesky\+Dec}} (\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} inp\+Matr, \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} out\+Matr, int num\+Eq) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a05ca8c7930acb858d1f48f137679d29f}{gns\+Solve\+By\+Chol}} (const int $\ast$clip, double $\ast$x, int num\+Eq) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1AlfCovariance_acf28c4d4a5dbd43b299a67b2b2e4eda3}{gns\+Transpose\+Backsubstitution}} (\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} U, double $\ast$rhs, double $\ast$x, int order) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a193fd3cc7704dcc8ebb3925d146c3168}{\+\_\+num\+Bins\+Alloc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 65 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}\label{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}} 
+\index{AlfCovariance@{AlfCovariance}!TE@{TE}}
+\index{TE@{TE}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{TE}{TE}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}} =  double\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}}
+
+
+
+Definition at line 68 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}\label{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}} 
+\index{AlfCovariance@{AlfCovariance}!TKE@{TKE}}
+\index{TKE@{TKE}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{TKE}{TKE}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}{T\+KE}} =  \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}$\ast$$\ast$}
+
+
+
+Definition at line 70 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}\label{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}} 
+\index{AlfCovariance@{AlfCovariance}!TKy@{TKy}}
+\index{TKy@{TKy}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{TKy}{TKy}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}{T\+Ky}} =  \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}}$\ast$}
+
+
+
+Definition at line 71 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}\label{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}} 
+\index{AlfCovariance@{AlfCovariance}!Ty@{Ty}}
+\index{Ty@{Ty}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{Ty}{Ty}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}} =  double\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}}
+
+
+
+Definition at line 69 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a42f12f4e8bd9a00e165901146ac921d8}\label{structvvenc_1_1AlfCovariance_a42f12f4e8bd9a00e165901146ac921d8}} 
+\index{AlfCovariance@{AlfCovariance}!AlfCovariance@{AlfCovariance}}
+\index{AlfCovariance@{AlfCovariance}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{AlfCovariance()}{AlfCovariance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a9c11ca491c0d7ec6d917c0e7f72e5406}\label{structvvenc_1_1AlfCovariance_a9c11ca491c0d7ec6d917c0e7f72e5406}} 
+\index{AlfCovariance@{AlfCovariance}!````~AlfCovariance@{$\sim$AlfCovariance}}
+\index{````~AlfCovariance@{$\sim$AlfCovariance}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{$\sim$AlfCovariance()}{~AlfCovariance()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ac28deddadb874f9f6063000c16e850e2}\label{structvvenc_1_1AlfCovariance_ac28deddadb874f9f6063000c16e850e2}} 
+\index{AlfCovariance@{AlfCovariance}!add@{add}}
+\index{add@{add}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{structvvenc_1_1AlfCovariance_ac28deddadb874f9f6063000c16e850e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_ac28deddadb874f9f6063000c16e850e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}\label{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}} 
+\index{AlfCovariance@{AlfCovariance}!calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}}
+\index{calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcDiffErrorForCoeffs()}{calcDiffErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double calc\+Diff\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const int}]{coeff\+Before,  }\item[{const int}]{coeff\+After,  }\item[{const int}]{coeff\+Pos,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 265 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}\label{structvvenc_1_1AlfCovariance_a3b0bb5f1b9a0da13aabab8ac8db8ce34}} 
+\index{AlfCovariance@{AlfCovariance}!calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}}
+\index{calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcDiffErrorForCoeffs()}{calcDiffErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double calc\+Diff\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const int}]{coeff\+Before,  }\item[{const int}]{coeff\+After,  }\item[{const int}]{coeff\+Pos,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 298 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a1f824cf22fc4e3289011850de47fdd8d}\label{structvvenc_1_1AlfCovariance_a1f824cf22fc4e3289011850de47fdd8d}} 
+\index{AlfCovariance@{AlfCovariance}!calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}}
+\index{calcDiffErrorForCoeffs@{calcDiffErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcDiffErrorForCoeffs()}{calcDiffErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double calc\+Diff\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const int}]{num\+Coeff\+Before,  }\item[{const int}]{num\+Coeff\+After,  }\item[{const int}]{coeff\+Pos,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a1f824cf22fc4e3289011850de47fdd8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a2cf8e50d62cbe7a310daec2db8e0abe9}\label{structvvenc_1_1AlfCovariance_a2cf8e50d62cbe7a310daec2db8e0abe9}} 
+\index{AlfCovariance@{AlfCovariance}!calcErrorForCcAlfCoeffs@{calcErrorForCcAlfCoeffs}}
+\index{calcErrorForCcAlfCoeffs@{calcErrorForCcAlfCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcErrorForCcAlfCoeffs()}{calcErrorForCcAlfCoeffs()}}
+{\footnotesize\ttfamily double calc\+Error\+For\+Cc\+Alf\+Coeffs (\begin{DoxyParamCaption}\item[{const int16\+\_\+t $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 768 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a2cf8e50d62cbe7a310daec2db8e0abe9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a8a3df3c8630231e51183cfc7f6b17288}\label{structvvenc_1_1AlfCovariance_a8a3df3c8630231e51183cfc7f6b17288}} 
+\index{AlfCovariance@{AlfCovariance}!calcErrorForCoeffs@{calcErrorForCoeffs}}
+\index{calcErrorForCoeffs@{calcErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcErrorForCoeffs()}{calcErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double calc\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a8a3df3c8630231e51183cfc7f6b17288_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}\label{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}} 
+\index{AlfCovariance@{AlfCovariance}!calcErrorForCoeffs@{calcErrorForCoeffs}}
+\index{calcErrorForCoeffs@{calcErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcErrorForCoeffs()}{calcErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double calc\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 741 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}\label{structvvenc_1_1AlfCovariance_adc3b78c5dc43223b3785d79e6b471290}} 
+\index{AlfCovariance@{AlfCovariance}!calcErrorForCoeffs@{calcErrorForCoeffs}}
+\index{calcErrorForCoeffs@{calcErrorForCoeffs}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calcErrorForCoeffs()}{calcErrorForCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double calc\+Error\+For\+Coeffs (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const int $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff,  }\item[{const double}]{inv\+Factor }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 751 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a147500f99ffbb366f1fc6b4cc99f3e73}\label{structvvenc_1_1AlfCovariance_a147500f99ffbb366f1fc6b4cc99f3e73}} 
+\index{AlfCovariance@{AlfCovariance}!calculateError@{calculateError}}
+\index{calculateError@{calculateError}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calculateError()}{calculateError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily double calculate\+Error (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 797 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a147500f99ffbb366f1fc6b4cc99f3e73_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a147500f99ffbb366f1fc6b4cc99f3e73_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_af15ba3fb17b16cdf70d913bf4d7fabb0}\label{structvvenc_1_1AlfCovariance_af15ba3fb17b16cdf70d913bf4d7fabb0}} 
+\index{AlfCovariance@{AlfCovariance}!calculateError@{calculateError}}
+\index{calculateError@{calculateError}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calculateError()}{calculateError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily double calculate\+Error (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const double $\ast$}]{coeff }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 325 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structvvenc_1_1AlfCovariance_af15ba3fb17b16cdf70d913bf4d7fabb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structvvenc_1_1AlfCovariance_af15ba3fb17b16cdf70d913bf4d7fabb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a3d54548859fc908acc0356fbcadc6026}\label{structvvenc_1_1AlfCovariance_a3d54548859fc908acc0356fbcadc6026}} 
+\index{AlfCovariance@{AlfCovariance}!calculateError@{calculateError}}
+\index{calculateError@{calculateError}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{calculateError()}{calculateError()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily double calculate\+Error (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{const double $\ast$}]{coeff,  }\item[{const int}]{num\+Coeff }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 786 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a8a5922bca611669b7f112b167d69e7f9}\label{structvvenc_1_1AlfCovariance_a8a5922bca611669b7f112b167d69e7f9}} 
+\index{AlfCovariance@{AlfCovariance}!create@{create}}
+\index{create@{create}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{num\+\_\+bins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{structvvenc_1_1AlfCovariance_a8a5922bca611669b7f112b167d69e7f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a8a5922bca611669b7f112b167d69e7f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a3a80b6032f86a56bec74609034b3246f}\label{structvvenc_1_1AlfCovariance_a3a80b6032f86a56bec74609034b3246f}} 
+\index{AlfCovariance@{AlfCovariance}!destroy@{destroy}}
+\index{destroy@{destroy}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a9982c278ff20801a0eeab8ef0b5a9914}\label{structvvenc_1_1AlfCovariance_a9982c278ff20801a0eeab8ef0b5a9914}} 
+\index{AlfCovariance@{AlfCovariance}!getClipMax@{getClipMax}}
+\index{getClipMax@{getClipMax}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{getClipMax()}{getClipMax()}}
+{\footnotesize\ttfamily void get\+Clip\+Max (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&}]{alf\+Shape,  }\item[{int $\ast$}]{clip\+\_\+max }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 84 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{structvvenc_1_1AlfCovariance_a9982c278ff20801a0eeab8ef0b5a9914_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ab45bd1c656e15cc0780558918a626b30}\label{structvvenc_1_1AlfCovariance_ab45bd1c656e15cc0780558918a626b30}} 
+\index{AlfCovariance@{AlfCovariance}!gnsBacksubstitution@{gnsBacksubstitution}}
+\index{gnsBacksubstitution@{gnsBacksubstitution}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{gnsBacksubstitution()}{gnsBacksubstitution()}}
+{\footnotesize\ttfamily void gns\+Backsubstitution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{R,  }\item[{double $\ast$}]{z,  }\item[{int}]{size,  }\item[{double $\ast$}]{A }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 868 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_ab45bd1c656e15cc0780558918a626b30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a0c476088ad9ec6c9036c242cc1119050}\label{structvvenc_1_1AlfCovariance_a0c476088ad9ec6c9036c242cc1119050}} 
+\index{AlfCovariance@{AlfCovariance}!gnsCholeskyDec@{gnsCholeskyDec}}
+\index{gnsCholeskyDec@{gnsCholeskyDec}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{gnsCholeskyDec()}{gnsCholeskyDec()}}
+{\footnotesize\ttfamily int gns\+Cholesky\+Dec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{inp\+Matr,  }\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{out\+Matr,  }\item[{int}]{num\+Eq }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 812 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a0c476088ad9ec6c9036c242cc1119050_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a05ca8c7930acb858d1f48f137679d29f}\label{structvvenc_1_1AlfCovariance_a05ca8c7930acb858d1f48f137679d29f}} 
+\index{AlfCovariance@{AlfCovariance}!gnsSolveByChol@{gnsSolveByChol}}
+\index{gnsSolveByChol@{gnsSolveByChol}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{gnsSolveByChol()}{gnsSolveByChol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int gns\+Solve\+By\+Chol (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{double $\ast$}]{x,  }\item[{int}]{num\+Eq }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 886 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a05ca8c7930acb858d1f48f137679d29f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_abf358dfc245ad8f107a97e5731ddfa50}\label{structvvenc_1_1AlfCovariance_abf358dfc245ad8f107a97e5731ddfa50}} 
+\index{AlfCovariance@{AlfCovariance}!gnsSolveByChol@{gnsSolveByChol}}
+\index{gnsSolveByChol@{gnsSolveByChol}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{gnsSolveByChol()}{gnsSolveByChol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int gns\+Solve\+By\+Chol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{L\+HS,  }\item[{double $\ast$}]{rhs,  }\item[{double $\ast$}]{x,  }\item[{int}]{num\+Eq }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 895 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_abf358dfc245ad8f107a97e5731ddfa50_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_abf358dfc245ad8f107a97e5731ddfa50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_acf28c4d4a5dbd43b299a67b2b2e4eda3}\label{structvvenc_1_1AlfCovariance_acf28c4d4a5dbd43b299a67b2b2e4eda3}} 
+\index{AlfCovariance@{AlfCovariance}!gnsTransposeBacksubstitution@{gnsTransposeBacksubstitution}}
+\index{gnsTransposeBacksubstitution@{gnsTransposeBacksubstitution}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{gnsTransposeBacksubstitution()}{gnsTransposeBacksubstitution()}}
+{\footnotesize\ttfamily void gns\+Transpose\+Backsubstitution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{U,  }\item[{double $\ast$}]{rhs,  }\item[{double $\ast$}]{x,  }\item[{int}]{order }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 850 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_acf28c4d4a5dbd43b299a67b2b2e4eda3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_aad076f10b4bb10be1cfc83bcdec9f2d7}\label{structvvenc_1_1AlfCovariance_aad076f10b4bb10be1cfc83bcdec9f2d7}} 
+\index{AlfCovariance@{AlfCovariance}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}}\& operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 239 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ac752a34dae617b33b0e066ded7c8893f}\label{structvvenc_1_1AlfCovariance_ac752a34dae617b33b0e066ded7c8893f}} 
+\index{AlfCovariance@{AlfCovariance}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}}\& operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ac1bc1e3ea843bdf3b9aa23a00cba2784}\label{structvvenc_1_1AlfCovariance_ac1bc1e3ea843bdf3b9aa23a00cba2784}} 
+\index{AlfCovariance@{AlfCovariance}!operator=@{operator=}}
+\index{operator=@{operator=}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}}\& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfCovariance}{Alf\+Covariance}} \&}]{src }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{structvvenc_1_1AlfCovariance_ac1bc1e3ea843bdf3b9aa23a00cba2784_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a84fb547bd6b41135d92130e2d2b376dd}\label{structvvenc_1_1AlfCovariance_a84fb547bd6b41135d92130e2d2b376dd}} 
+\index{AlfCovariance@{AlfCovariance}!optimizeFilter@{optimizeFilter}}
+\index{optimizeFilter@{optimizeFilter}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{optimizeFilter()}{optimizeFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double optimize\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&}]{alf\+Shape,  }\item[{int $\ast$}]{clip,  }\item[{double $\ast$}]{f,  }\item[{bool}]{optimize\+\_\+clip }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 127 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a84fb547bd6b41135d92130e2d2b376dd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a1eb4e87365b092c9e90b47b936a89c7d}\label{structvvenc_1_1AlfCovariance_a1eb4e87365b092c9e90b47b936a89c7d}} 
+\index{AlfCovariance@{AlfCovariance}!optimizeFilter@{optimizeFilter}}
+\index{optimizeFilter@{optimizeFilter}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{optimizeFilter()}{optimizeFilter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double optimize\+Filter (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{double $\ast$}]{f,  }\item[{int}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 311 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a1eb4e87365b092c9e90b47b936a89c7d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a1eb4e87365b092c9e90b47b936a89c7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a88326155c225cea5b31923ec6788d0ed}\label{structvvenc_1_1AlfCovariance_a88326155c225cea5b31923ec6788d0ed}} 
+\index{AlfCovariance@{AlfCovariance}!optimizeFilterClip@{optimizeFilterClip}}
+\index{optimizeFilterClip@{optimizeFilterClip}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{optimizeFilterClip()}{optimizeFilterClip()}}
+{\footnotesize\ttfamily double optimize\+Filter\+Clip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&}]{alf\+Shape,  }\item[{int $\ast$}]{clip }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 318 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a88326155c225cea5b31923ec6788d0ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_a88326155c225cea5b31923ec6788d0ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a4df79fe0b8d5cc6b42efad11aabd97fd}\label{structvvenc_1_1AlfCovariance_a4df79fe0b8d5cc6b42efad11aabd97fd}} 
+\index{AlfCovariance@{AlfCovariance}!reduceClipCost@{reduceClipCost}}
+\index{reduceClipCost@{reduceClipCost}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{reduceClipCost()}{reduceClipCost()}}
+{\footnotesize\ttfamily void reduce\+Clip\+Cost (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} \&}]{alf\+Shape,  }\item[{int $\ast$}]{clip }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 107 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{structvvenc_1_1AlfCovariance_a4df79fe0b8d5cc6b42efad11aabd97fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ad20897c5c8bd47f5d4005989bead0e55}\label{structvvenc_1_1AlfCovariance_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{AlfCovariance@{AlfCovariance}!reset@{reset}}
+\index{reset@{reset}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 125 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1AlfCovariance_ad20897c5c8bd47f5d4005989bead0e55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a4e8802a405fa3be361f7cc5bc418a5af}\label{structvvenc_1_1AlfCovariance_a4e8802a405fa3be361f7cc5bc418a5af}} 
+\index{AlfCovariance@{AlfCovariance}!setEyFromClip@{setEyFromClip}}
+\index{setEyFromClip@{setEyFromClip}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{setEyFromClip()}{setEyFromClip()}}
+{\footnotesize\ttfamily void set\+Ey\+From\+Clip (\begin{DoxyParamCaption}\item[{const int $\ast$}]{clip,  }\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_a67b553d9bbdb4b7268175d3c4542a588}{TE}}}]{\+\_\+E,  }\item[{\mbox{\hyperlink{structvvenc_1_1AlfCovariance_ae7b19763e0493daa5b2eccc81debcf03}{Ty}}}]{\+\_\+y,  }\item[{int}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 299 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{structvvenc_1_1AlfCovariance_a4e8802a405fa3be361f7cc5bc418a5af_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a193fd3cc7704dcc8ebb3925d146c3168}\label{structvvenc_1_1AlfCovariance_a193fd3cc7704dcc8ebb3925d146c3168}} 
+\index{AlfCovariance@{AlfCovariance}!\_numBinsAlloc@{\_numBinsAlloc}}
+\index{\_numBinsAlloc@{\_numBinsAlloc}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{\_numBinsAlloc}{\_numBinsAlloc}}
+{\footnotesize\ttfamily int \+\_\+num\+Bins\+Alloc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a5a8633df2c5705af0a804321d72489fb}\label{structvvenc_1_1AlfCovariance_a5a8633df2c5705af0a804321d72489fb}} 
+\index{AlfCovariance@{AlfCovariance}!all0@{all0}}
+\index{all0@{all0}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{all0}{all0}}
+{\footnotesize\ttfamily bool all0}
+
+
+
+Definition at line 82 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a06df119d68353ba3fe78cfec0032925c}\label{structvvenc_1_1AlfCovariance_a06df119d68353ba3fe78cfec0032925c}} 
+\index{AlfCovariance@{AlfCovariance}!E@{E}}
+\index{E@{E}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AlfCovariance_abad000b84061878aa2cfef61b344d6c4}{T\+KE}} E}
+
+
+
+Definition at line 80 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a8b28dce56579ef7801e4fa54b26fbb31}\label{structvvenc_1_1AlfCovariance_a8b28dce56579ef7801e4fa54b26fbb31}} 
+\index{AlfCovariance@{AlfCovariance}!MaxAlfNumClippingValues@{MaxAlfNumClippingValues}}
+\index{MaxAlfNumClippingValues@{MaxAlfNumClippingValues}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{MaxAlfNumClippingValues}{MaxAlfNumClippingValues}}
+{\footnotesize\ttfamily constexpr int Max\+Alf\+Num\+Clipping\+Values = Adaptive\+Loop\+Filter\+::\+Max\+Alf\+Num\+Clipping\+Values\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 67 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_ab147fd9a46479dee5f5ede3253e90a4c}\label{structvvenc_1_1AlfCovariance_ab147fd9a46479dee5f5ede3253e90a4c}} 
+\index{AlfCovariance@{AlfCovariance}!numBins@{numBins}}
+\index{numBins@{numBins}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{numBins}{numBins}}
+{\footnotesize\ttfamily int num\+Bins}
+
+
+
+Definition at line 74 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}\label{structvvenc_1_1AlfCovariance_a9163db10681ed7e4fea75f80c254080e}} 
+\index{AlfCovariance@{AlfCovariance}!numCoeff@{numCoeff}}
+\index{numCoeff@{numCoeff}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{numCoeff}{numCoeff}}
+{\footnotesize\ttfamily int num\+Coeff}
+
+
+
+Definition at line 73 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a1677f610f27a806b0db93acab9a2aca4}\label{structvvenc_1_1AlfCovariance_a1677f610f27a806b0db93acab9a2aca4}} 
+\index{AlfCovariance@{AlfCovariance}!pixAcc@{pixAcc}}
+\index{pixAcc@{pixAcc}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{pixAcc}{pixAcc}}
+{\footnotesize\ttfamily double pix\+Acc}
+
+
+
+Definition at line 81 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1AlfCovariance_a8141e702fbfc01100dba8e78a7e78872}\label{structvvenc_1_1AlfCovariance_a8141e702fbfc01100dba8e78a7e78872}} 
+\index{AlfCovariance@{AlfCovariance}!y@{y}}
+\index{y@{y}!AlfCovariance@{AlfCovariance}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AlfCovariance_a4347e2b410c9b7955b3c3cb51c270fdd}{T\+Ky}} y}
+
+
+
+Definition at line 79 of file Enc\+Adaptive\+Loop\+Filter.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncAdaptiveLoopFilter_8h}{Enc\+Adaptive\+Loop\+Filter.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncAdaptiveLoopFilter_8cpp}{Enc\+Adaptive\+Loop\+Filter.\+cpp}}\end{DoxyCompactItemize}

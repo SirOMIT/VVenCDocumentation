@@ -1,0 +1,346 @@
+\hypertarget{classvvenc_1_1CtuTsIterator}{}\doxysection{Ctu\+Ts\+Iterator}
+\label{classvvenc_1_1CtuTsIterator}\index{CtuTsIterator@{CtuTsIterator}}
+
+
+Inherits iterator$<$ std\+::forward\+\_\+iterator\+\_\+tag, int $>$.
+
+
+
+Collaboration diagram for Ctu\+Ts\+Iterator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CtuTsIterator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a91ad5917484b7f179e2ea8bc50586c2e}{Ctu\+Ts\+Iterator}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&\+\_\+cs, int \+\_\+s, int \+\_\+e, bool \+\_\+wpp)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a1f39ef59784004e93ee252835dde6947}{Ctu\+Ts\+Iterator}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&\+\_\+cs, int \+\_\+s, int \+\_\+e, const std\+::vector$<$ int $>$ \&\+\_\+m)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator_aef6bde94b3f74e0b88a5e1677e24b197}{Ctu\+Ts\+Iterator}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&\+\_\+cs, int \+\_\+s, int \+\_\+e, const std\+::vector$<$ int $>$ \&\+\_\+m, int \+\_\+c)
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_af5d3b6ed88e15420caf4cee3a8450da4}{$\sim$\+Ctu\+Ts\+Iterator}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_ac2131cbf5525f8e9c9b9a9f5965cd563}{begin}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a14d82442b286cc8e36170711696aaec1}{end}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a0232960d4ff2a258c6f6015003566fcc}{operator!=}} (\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} other) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1CtuPos}{Ctu\+Pos}} \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_aa5119795ef4baa6873194eaf551d6ca3}{operator$\ast$}} () const
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} \& \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a5c60f56b1d1b42e45d6771bc582cd65b}{operator++}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a4996842c12351f8989f8544a8f77692f}{operator++}} (int)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_adf494138eb13119bfad2bcaaea82594b}{operator==}} (\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} other) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a182331b82a1acbc5dccfb33dd6dbb02c}{set\+Wpp\+Pattern}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a2bfcc1e959c56b7334ce6a7e76ba2415}{get\+Next\+Ts\+Addr}} (const int \+\_\+ts\+Addr) const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a230967d6d4249dee05654d11ff2fecef}{map\+Addr}} (const int \+\_\+addr) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \& \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_acd2058a95241930e3d3aa68d3d7035be}{cs}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_afcd90686487a0ebb93b7f3b8b81025f4}{m\+\_\+ctu\+Addr\+Map}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a4ac3d0b93c48a983e33a178992c640b9}{m\+\_\+ctu\+Ts\+Addr}}
+\item 
+const int \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a5111548e8ee1efd925d27f689fba9154}{m\+\_\+end\+Ts\+Addr}}
+\item 
+const int \mbox{\hyperlink{classvvenc_1_1CtuTsIterator_a4b04050c258046730ee9b57dc0f25589}{m\+\_\+start\+Ts\+Addr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 600 of file Enc\+Slice.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a91ad5917484b7f179e2ea8bc50586c2e}\label{classvvenc_1_1CtuTsIterator_a91ad5917484b7f179e2ea8bc50586c2e}} 
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{CtuTsIterator()}{CtuTsIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{\+\_\+cs,  }\item[{int}]{\+\_\+s,  }\item[{int}]{\+\_\+e,  }\item[{bool}]{\+\_\+wpp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 644 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classvvenc_1_1CtuTsIterator_a91ad5917484b7f179e2ea8bc50586c2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classvvenc_1_1CtuTsIterator_a91ad5917484b7f179e2ea8bc50586c2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a1f39ef59784004e93ee252835dde6947}\label{classvvenc_1_1CtuTsIterator_a1f39ef59784004e93ee252835dde6947}} 
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{CtuTsIterator()}{CtuTsIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{\+\_\+cs,  }\item[{int}]{\+\_\+s,  }\item[{int}]{\+\_\+e,  }\item[{const std\+::vector$<$ int $>$ \&}]{\+\_\+m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 645 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_aef6bde94b3f74e0b88a5e1677e24b197}\label{classvvenc_1_1CtuTsIterator_aef6bde94b3f74e0b88a5e1677e24b197}} 
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\index{CtuTsIterator@{CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{CtuTsIterator()}{CtuTsIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{\+\_\+cs,  }\item[{int}]{\+\_\+s,  }\item[{int}]{\+\_\+e,  }\item[{const std\+::vector$<$ int $>$ \&}]{\+\_\+m,  }\item[{int}]{\+\_\+c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 646 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_af5d3b6ed88e15420caf4cee3a8450da4}\label{classvvenc_1_1CtuTsIterator_af5d3b6ed88e15420caf4cee3a8450da4}} 
+\index{CtuTsIterator@{CtuTsIterator}!````~CtuTsIterator@{$\sim$CtuTsIterator}}
+\index{````~CtuTsIterator@{$\sim$CtuTsIterator}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{$\sim$CtuTsIterator()}{~CtuTsIterator()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 648 of file Enc\+Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_ac2131cbf5525f8e9c9b9a9f5965cd563}\label{classvvenc_1_1CtuTsIterator_ac2131cbf5525f8e9c9b9a9f5965cd563}} 
+\index{CtuTsIterator@{CtuTsIterator}!begin@{begin}}
+\index{begin@{begin}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 656 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classvvenc_1_1CtuTsIterator_ac2131cbf5525f8e9c9b9a9f5965cd563_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a14d82442b286cc8e36170711696aaec1}\label{classvvenc_1_1CtuTsIterator_a14d82442b286cc8e36170711696aaec1}} 
+\index{CtuTsIterator@{CtuTsIterator}!end@{end}}
+\index{end@{end}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 657 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classvvenc_1_1CtuTsIterator_a14d82442b286cc8e36170711696aaec1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a2bfcc1e959c56b7334ce6a7e76ba2415}\label{classvvenc_1_1CtuTsIterator_a2bfcc1e959c56b7334ce6a7e76ba2415}} 
+\index{CtuTsIterator@{CtuTsIterator}!getNextTsAddr@{getNextTsAddr}}
+\index{getNextTsAddr@{getNextTsAddr}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{getNextTsAddr()}{getNextTsAddr()}}
+{\footnotesize\ttfamily int get\+Next\+Ts\+Addr (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+ts\+Addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 610 of file Enc\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classvvenc_1_1CtuTsIterator_a2bfcc1e959c56b7334ce6a7e76ba2415_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a230967d6d4249dee05654d11ff2fecef}\label{classvvenc_1_1CtuTsIterator_a230967d6d4249dee05654d11ff2fecef}} 
+\index{CtuTsIterator@{CtuTsIterator}!mapAddr@{mapAddr}}
+\index{mapAddr@{mapAddr}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{mapAddr()}{mapAddr()}}
+{\footnotesize\ttfamily int map\+Addr (\begin{DoxyParamCaption}\item[{const int}]{\+\_\+addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 634 of file Enc\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classvvenc_1_1CtuTsIterator_a230967d6d4249dee05654d11ff2fecef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a0232960d4ff2a258c6f6015003566fcc}\label{classvvenc_1_1CtuTsIterator_a0232960d4ff2a258c6f6015003566fcc}} 
+\index{CtuTsIterator@{CtuTsIterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 653 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_aa5119795ef4baa6873194eaf551d6ca3}\label{classvvenc_1_1CtuTsIterator_aa5119795ef4baa6873194eaf551d6ca3}} 
+\index{CtuTsIterator@{CtuTsIterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CtuPos}{Ctu\+Pos}} operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 654 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classvvenc_1_1CtuTsIterator_aa5119795ef4baa6873194eaf551d6ca3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a5c60f56b1d1b42e45d6771bc582cd65b}\label{classvvenc_1_1CtuTsIterator_a5c60f56b1d1b42e45d6771bc582cd65b}} 
+\index{CtuTsIterator@{CtuTsIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}}\& operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 650 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classvvenc_1_1CtuTsIterator_a5c60f56b1d1b42e45d6771bc582cd65b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a4996842c12351f8989f8544a8f77692f}\label{classvvenc_1_1CtuTsIterator_a4996842c12351f8989f8544a8f77692f}} 
+\index{CtuTsIterator@{CtuTsIterator}!operator++@{operator++}}
+\index{operator++@{operator++}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}} operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 651 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_adf494138eb13119bfad2bcaaea82594b}\label{classvvenc_1_1CtuTsIterator_adf494138eb13119bfad2bcaaea82594b}} 
+\index{CtuTsIterator@{CtuTsIterator}!operator==@{operator==}}
+\index{operator==@{operator==}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CtuTsIterator}{Ctu\+Ts\+Iterator}}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 652 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a182331b82a1acbc5dccfb33dd6dbb02c}\label{classvvenc_1_1CtuTsIterator_a182331b82a1acbc5dccfb33dd6dbb02c}} 
+\index{CtuTsIterator@{CtuTsIterator}!setWppPattern@{setWppPattern}}
+\index{setWppPattern@{setWppPattern}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{setWppPattern()}{setWppPattern()}}
+{\footnotesize\ttfamily void set\+Wpp\+Pattern (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 659 of file Enc\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classvvenc_1_1CtuTsIterator_a182331b82a1acbc5dccfb33dd6dbb02c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_acd2058a95241930e3d3aa68d3d7035be}\label{classvvenc_1_1CtuTsIterator_acd2058a95241930e3d3aa68d3d7035be}} 
+\index{CtuTsIterator@{CtuTsIterator}!cs@{cs}}
+\index{cs@{cs}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{cs}{cs}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}\& cs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 603 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_afcd90686487a0ebb93b7f3b8b81025f4}\label{classvvenc_1_1CtuTsIterator_afcd90686487a0ebb93b7f3b8b81025f4}} 
+\index{CtuTsIterator@{CtuTsIterator}!m\_ctuAddrMap@{m\_ctuAddrMap}}
+\index{m\_ctuAddrMap@{m\_ctuAddrMap}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{m\_ctuAddrMap}{m\_ctuAddrMap}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ m\+\_\+ctu\+Addr\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 606 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a4ac3d0b93c48a983e33a178992c640b9}\label{classvvenc_1_1CtuTsIterator_a4ac3d0b93c48a983e33a178992c640b9}} 
+\index{CtuTsIterator@{CtuTsIterator}!m\_ctuTsAddr@{m\_ctuTsAddr}}
+\index{m\_ctuTsAddr@{m\_ctuTsAddr}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{m\_ctuTsAddr}{m\_ctuTsAddr}}
+{\footnotesize\ttfamily int m\+\_\+ctu\+Ts\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 607 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a5111548e8ee1efd925d27f689fba9154}\label{classvvenc_1_1CtuTsIterator_a5111548e8ee1efd925d27f689fba9154}} 
+\index{CtuTsIterator@{CtuTsIterator}!m\_endTsAddr@{m\_endTsAddr}}
+\index{m\_endTsAddr@{m\_endTsAddr}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{m\_endTsAddr}{m\_endTsAddr}}
+{\footnotesize\ttfamily const int m\+\_\+end\+Ts\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 605 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CtuTsIterator_a4b04050c258046730ee9b57dc0f25589}\label{classvvenc_1_1CtuTsIterator_a4b04050c258046730ee9b57dc0f25589}} 
+\index{CtuTsIterator@{CtuTsIterator}!m\_startTsAddr@{m\_startTsAddr}}
+\index{m\_startTsAddr@{m\_startTsAddr}!CtuTsIterator@{CtuTsIterator}}
+\doxysubsubsection{\texorpdfstring{m\_startTsAddr}{m\_startTsAddr}}
+{\footnotesize\ttfamily const int m\+\_\+start\+Ts\+Addr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 604 of file Enc\+Slice.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncSlice_8cpp}{Enc\+Slice.\+cpp}}\end{DoxyCompactItemize}

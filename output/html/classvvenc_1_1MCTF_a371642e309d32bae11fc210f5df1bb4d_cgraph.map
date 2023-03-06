@@ -1,0 +1,12 @@
+<map id="motionEstimationLuma" name="motionEstimationLuma">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,160,285"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1NoMallocThreadPool.html#a757c7fcfe321128ef8e62281718cbec3" title=" " alt="" coords="208,117,395,158"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1MCTF.html#af6deb41451643be9941b04366bdc4f98" title=" " alt="" coords="242,183,361,209"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1UnitBuf.html#a953720746c35b6e0479828e4017eff87" title=" " alt="" coords="659,157,785,184"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1WaitCounter.html#afb29bf3a27e5fdce23652fb2a912269e" title=" " alt="" coords="233,361,370,402"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1Array2D.html#a338d2359a2a2c27cd365646a79ba004a" title=" " alt="" coords="457,5,596,32"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1Array2D.html#a0b32e79e09d0d840d52c62f3c305a139" title=" " alt="" coords="463,56,591,83"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1MCTF.html#ac83663aa054db70e92a701a274139c15" title=" " alt="" coords="466,107,587,133"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1MotionVector.html#a3d07ca4093a653428291ed98598cfca8" title=" " alt="" coords="443,208,611,235"/>
+<area shape="rect" id="node9" href="$structvvenc_1_1Array2D.html#a6f96d3331f9ca0bf775a45f86851e45f" title=" " alt="" coords="461,259,592,285"/>
+</map>

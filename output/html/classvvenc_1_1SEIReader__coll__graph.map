@@ -1,0 +1,11 @@
+<map id="SEIReader" name="SEIReader">
+<area shape="rect" id="node1" title=" " alt="" coords="161,260,247,287"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1VLCReader.html" title=" " alt="" coords="112,171,203,197"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1InputBitstream.html" title=" " alt="" coords="5,81,112,108"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1HRD.html" title=" " alt="" coords="326,171,378,197"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1SEIPictureTiming.html" title=" " alt="" coords="137,81,261,108"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1SEI.html" title=" " alt="" coords="253,5,297,32"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1SEIBufferingPeriod.html" title=" " alt="" coords="285,81,419,108"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1OlsHrdParams.html" title=" " alt="" coords="443,81,551,108"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1GeneralHrdParams.html" title=" " alt="" coords="576,81,709,108"/>
+</map>

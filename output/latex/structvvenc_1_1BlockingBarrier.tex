@@ -1,0 +1,223 @@
+\hypertarget{structvvenc_1_1BlockingBarrier}{}\doxysection{Blocking\+Barrier}
+\label{structvvenc_1_1BlockingBarrier}\index{BlockingBarrier@{BlockingBarrier}}
+
+
+{\ttfamily \#include \char`\"{}No\+Malloc\+Thread\+Pool.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Blocking\+Barrier\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{structvvenc_1_1BlockingBarrier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a9895448251b3a3c2cdaf86b0d4496e5e}{Blocking\+Barrier}} ()=default
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a49aac158a0ebf26c8a375d30f3dba1ab}{Blocking\+Barrier}} (\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&\&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier_afb3b43503b43ef21c6534f8e06ab0657}{Blocking\+Barrier}} (const \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a66fce9c2e07e705601bf4c719778ec0d}{$\sim$\+Blocking\+Barrier}} ()
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a9d09cce3e7420b351d67ae6946b950f9}{is\+Blocked}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_aa81aed607133209dade63a226818224d}{lock}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a3ed688d433b48c55977b1cf82db66756}{operator const Barrier \&}} () const
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \& \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a222710443d0bbc2497a52245ae6f3d43}{operator=}} (\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&\&)=delete
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \& \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a50d9c83a9259f8e09be909da6d915a16}{operator=}} (const \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&)=delete
+\item 
+void \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a9278be8203e1c42e2619179882ae4403}{unlock}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_afb29bf3a27e5fdce23652fb2a912269e}{wait}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::condition\+\_\+variable \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a76964a5982cf430a1d7e7b4466dc11eb}{m\+\_\+cond}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a0154361852eb27aa3fed97db82e689ae}{m\+\_\+int\+Barrier}}
+\item 
+std\+::mutex \mbox{\hyperlink{structvvenc_1_1BlockingBarrier_a410ca7583ef9a8a0b1c80254580ff2a9}{m\+\_\+lock}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 130 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a9895448251b3a3c2cdaf86b0d4496e5e}\label{structvvenc_1_1BlockingBarrier_a9895448251b3a3c2cdaf86b0d4496e5e}} 
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{BlockingBarrier()}{BlockingBarrier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a66fce9c2e07e705601bf4c719778ec0d}\label{structvvenc_1_1BlockingBarrier_a66fce9c2e07e705601bf4c719778ec0d}} 
+\index{BlockingBarrier@{BlockingBarrier}!````~BlockingBarrier@{$\sim$BlockingBarrier}}
+\index{````~BlockingBarrier@{$\sim$BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlockingBarrier()}{~BlockingBarrier()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 162 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_afb3b43503b43ef21c6534f8e06ab0657}\label{structvvenc_1_1BlockingBarrier_afb3b43503b43ef21c6534f8e06ab0657}} 
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{BlockingBarrier()}{BlockingBarrier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a49aac158a0ebf26c8a375d30f3dba1ab}\label{structvvenc_1_1BlockingBarrier_a49aac158a0ebf26c8a375d30f3dba1ab}} 
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\index{BlockingBarrier@{BlockingBarrier}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{BlockingBarrier()}{BlockingBarrier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a9d09cce3e7420b351d67ae6946b950f9}\label{structvvenc_1_1BlockingBarrier_a9d09cce3e7420b351d67ae6946b950f9}} 
+\index{BlockingBarrier@{BlockingBarrier}!isBlocked@{isBlocked}}
+\index{isBlocked@{isBlocked}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{isBlocked()}{isBlocked()}}
+{\footnotesize\ttfamily bool is\+Blocked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 148 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{structvvenc_1_1BlockingBarrier_a9d09cce3e7420b351d67ae6946b950f9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_aa81aed607133209dade63a226818224d}\label{structvvenc_1_1BlockingBarrier_aa81aed607133209dade63a226818224d}} 
+\index{BlockingBarrier@{BlockingBarrier}!lock@{lock}}
+\index{lock@{lock}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily void lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 142 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1BlockingBarrier_aa81aed607133209dade63a226818224d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a3ed688d433b48c55977b1cf82db66756}\label{structvvenc_1_1BlockingBarrier_a3ed688d433b48c55977b1cf82db66756}} 
+\index{BlockingBarrier@{BlockingBarrier}!operator const Barrier \&@{operator const Barrier \&}}
+\index{operator const Barrier \&@{operator const Barrier \&}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{operator const Barrier \&()}{operator const Barrier \&()}}
+{\footnotesize\ttfamily operator const \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} \& (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a222710443d0bbc2497a52245ae6f3d43}\label{structvvenc_1_1BlockingBarrier_a222710443d0bbc2497a52245ae6f3d43}} 
+\index{BlockingBarrier@{BlockingBarrier}!operator=@{operator=}}
+\index{operator=@{operator=}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}}\& operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a50d9c83a9259f8e09be909da6d915a16}\label{structvvenc_1_1BlockingBarrier_a50d9c83a9259f8e09be909da6d915a16}} 
+\index{BlockingBarrier@{BlockingBarrier}!operator=@{operator=}}
+\index{operator=@{operator=}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}}\& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a9278be8203e1c42e2619179882ae4403}\label{structvvenc_1_1BlockingBarrier_a9278be8203e1c42e2619179882ae4403}} 
+\index{BlockingBarrier@{BlockingBarrier}!unlock@{unlock}}
+\index{unlock@{unlock}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily void unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{structvvenc_1_1BlockingBarrier_a9278be8203e1c42e2619179882ae4403_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_afb29bf3a27e5fdce23652fb2a912269e}\label{structvvenc_1_1BlockingBarrier_afb29bf3a27e5fdce23652fb2a912269e}} 
+\index{BlockingBarrier@{BlockingBarrier}!wait@{wait}}
+\index{wait@{wait}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily void wait (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 153 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{structvvenc_1_1BlockingBarrier_afb29bf3a27e5fdce23652fb2a912269e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a76964a5982cf430a1d7e7b4466dc11eb}\label{structvvenc_1_1BlockingBarrier_a76964a5982cf430a1d7e7b4466dc11eb}} 
+\index{BlockingBarrier@{BlockingBarrier}!m\_cond@{m\_cond}}
+\index{m\_cond@{m\_cond}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{m\_cond}{m\_cond}}
+{\footnotesize\ttfamily std\+::condition\+\_\+variable m\+\_\+cond\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 175 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a0154361852eb27aa3fed97db82e689ae}\label{structvvenc_1_1BlockingBarrier_a0154361852eb27aa3fed97db82e689ae}} 
+\index{BlockingBarrier@{BlockingBarrier}!m\_intBarrier@{m\_intBarrier}}
+\index{m\_intBarrier@{m\_intBarrier}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{m\_intBarrier}{m\_intBarrier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}} m\+\_\+int\+Barrier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 174 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1BlockingBarrier_a410ca7583ef9a8a0b1c80254580ff2a9}\label{structvvenc_1_1BlockingBarrier_a410ca7583ef9a8a0b1c80254580ff2a9}} 
+\index{BlockingBarrier@{BlockingBarrier}!m\_lock@{m\_lock}}
+\index{m\_lock@{m\_lock}!BlockingBarrier@{BlockingBarrier}}
+\doxysubsubsection{\texorpdfstring{m\_lock}{m\_lock}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+lock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 176 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8h}{No\+Malloc\+Thread\+Pool.\+h}}\end{DoxyCompactItemize}

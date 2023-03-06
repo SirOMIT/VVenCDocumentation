@@ -1,0 +1,15 @@
+<map id="xGetNewPicBuffer" name="xGetNewPicBuffer">
+<area shape="rect" id="node1" title="get picture buffer which will be processed. If ppsId&lt;0, then the ppsMap will be queried for the first..." alt="" coords="5,151,136,178"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1Picture.html#a9ed590ecb8241a4471ad371bd59bdbbe" title=" " alt="" coords="207,71,357,98"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1Picture.html#a3a80b6032f86a56bec74609034b3246f" title=" " alt="" coords="203,126,361,153"/>
+<area shape="rect" id="node11" href="$structvvenc_1_1StopClock.html#ad43a02209687d9c1e04dddd167f32c45" title=" " alt="" coords="184,177,380,203"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1Slice.html#af62b801102d51bb782750b42c97e8361" title=" " alt="" coords="200,235,364,262"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1PelStorage.html#ae71ed6a359a035891f1e1b201ed99813" title=" " alt="" coords="447,5,584,47"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1UnitArea.html#a6b3a0e04250fc1ef2e8e84cdc62d987d" title=" " alt="" coords="428,71,603,98"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1CodingStructure.html#a3a80b6032f86a56bec74609034b3246f" title=" " alt="" coords="436,173,595,215"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1PelStorage.html#a3a80b6032f86a56bec74609034b3246f" title=" " alt="" coords="661,108,799,149"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1dynamic__cache.html#a188c3ae868afd8ee7097f6594367fae6" title=" " alt="" coords="652,173,808,215"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1CodingStructure.html#ad8a3ccf30b50113d1ff0b924246103be" title=" " alt="" coords="651,239,809,280"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1CodingStructure.html#a813e0565873f1e6b5589c10d3cd5f88b" title=" " alt="" coords="651,304,809,345"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1Picture.html#abf1a8b43357468a369a08f71ff4bdd88" title=" " alt="" coords="435,239,596,266"/>
+</map>

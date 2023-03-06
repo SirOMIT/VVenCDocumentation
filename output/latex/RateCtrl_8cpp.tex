@@ -1,0 +1,70 @@
+\hypertarget{RateCtrl_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Rate\+Ctrl.cpp File Reference}
+\label{RateCtrl_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/RateCtrl.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/RateCtrl.cpp}}
+
+
+Rate control manager class.  
+
+
+{\ttfamily \#include \char`\"{}Rate\+Ctrl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Rate\+Ctrl.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RateCtrl_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a166ed3b561f2f4b2071ba9cbdda38d86}{update\+Ctu\+Data\+I\+Slice}} (const C\+Pel\+Buf buf)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a7f349632878be19b99945fca37c91813}{x\+Calc\+H\+A\+Ds8x8\+\_\+\+I\+Slice}} (const Pel $\ast$pi\+Org, const int i\+Stride\+Org)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a157d2d9b6e8ac0be6e10917e10ec39fe}{R\+C\+\_\+\+A\+L\+P\+HA}} = 6.\+7542
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_abf46a202fa78f91c371c52bc8d242cd8}{R\+C\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+UE}} = 500.\+0
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_af1539ed57ae90e2f71fdc8a91dc600ed}{R\+C\+\_\+\+A\+L\+P\+H\+A\+\_\+\+M\+I\+N\+\_\+\+V\+A\+L\+UE}} = 0.\+05
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a18c769e91b6d473f74679144f9ff4fb5}{R\+C\+\_\+\+B\+E\+T\+A1}} = 1.\+2517
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a7f107d79cd9070e86fdcd4865b8eb965}{R\+C\+\_\+\+B\+E\+T\+A2}} = 1.\+7860
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a95d815af88e0ec2f5f2edad706d9b978}{R\+C\+\_\+\+B\+E\+T\+A\+\_\+\+M\+A\+X\+\_\+\+V\+A\+L\+UE}} = -\/0.\+1
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a4f573f5f27f5af8ecb4786131b1f3b8f}{R\+C\+\_\+\+B\+E\+T\+A\+\_\+\+M\+I\+N\+\_\+\+V\+A\+L\+UE}} = -\/3.\+0
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a1aab7e3788f646db5393de39ebaa0e8d}{R\+C\+\_\+\+G\+O\+P\+\_\+\+I\+D\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+ET}} \mbox{[}6\mbox{]} = \{ 0, 0, 0, 3, 1, 1 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a59c60ed5c173ea5b12a62f25655236a1}{R\+C\+\_\+\+G\+O\+P\+\_\+\+I\+D\+\_\+\+Q\+P\+\_\+\+O\+F\+F\+S\+E\+T\+\_\+\+G\+O\+P32}} \mbox{[}7\mbox{]} = \{ 0, 0, 0, 0, 3, 1, 1 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ad8687adca4e586b6da300600d9fb022b}{R\+C\+\_\+\+I\+T\+E\+R\+A\+T\+I\+O\+N\+\_\+\+N\+UM}} = 20
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a241f2aa439bf4d008b4ab0113048c00f}{R\+C\+\_\+\+L\+A\+M\+B\+D\+A\+\_\+\+P\+R\+EC}} = 1000000
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a6afe46d36eebf50617b754793260c5f3}{R\+C\+\_\+\+M\+A\+X\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+ZE}} = 64
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_abab5f5527b53cf619014a22589afe4ce}{R\+C\+\_\+\+S\+M\+O\+O\+T\+H\+\_\+\+W\+I\+N\+D\+O\+W\+\_\+\+S\+I\+ZE}} = 40
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a744241f8e002c7492b74159ce1caf63d}{R\+C\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+H\+I\+S\+T\+O\+R\+Y\+\_\+\+L\+A\+M\+B\+DA}} = 0.\+5
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_ae9917093a0722aff03da51244f550870}{R\+C\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+P\+I\+C\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+I\+T\+\_\+\+I\+N\+\_\+\+B\+U\+F\+F\+ER}} = 1.\+0 -\/ R\+C\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+P\+I\+C\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+I\+T\+\_\+\+I\+N\+\_\+\+G\+OP
+\item 
+static const double \mbox{\hyperlink{namespacevvenc_a44f3c28eeb9a80d6ee44649e201a17fe}{R\+C\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+P\+I\+C\+\_\+\+T\+A\+R\+G\+E\+T\+\_\+\+B\+I\+T\+\_\+\+I\+N\+\_\+\+G\+OP}} = 0.\+9
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rate control manager class. 
+

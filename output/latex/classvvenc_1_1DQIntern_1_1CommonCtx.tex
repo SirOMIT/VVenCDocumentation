@@ -1,0 +1,191 @@
+\hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx}{}\doxysection{Common\+Ctx}
+\label{classvvenc_1_1DQIntern_1_1CommonCtx}\index{CommonCtx@{CommonCtx}}
+
+
+Collaboration diagram for Common\+Ctx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classvvenc_1_1DQIntern_1_1CommonCtx__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a4d136d707712fc91f97525ac8957c4a7}{Common\+Ctx}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_abdc30eb7fac000355bd8b04a6c6f8868}{reset}} (const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}} \&tu\+Pars, const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}} \&rate\+Est)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a07bca8cc0cfca0e80cac16305cac9f13}{swap}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a4d49603a3a9d317607ae28526f1f0644}{update}} (const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&scan\+Info, const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$prev\+State, \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} \&curr\+State)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}} \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a8d4103bd285ae46a5544bb49dd61ed04}{m\+\_\+all\+Sbb\+Ctx}} \mbox{[}8\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a6ff0182820568551515df682897d17b2}{m\+\_\+curr\+Sbb\+Ctx}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_aa8dbc33a237eccac7f0d5fa75f28de64}{m\+\_\+memory}} \mbox{[}8 $\ast$(\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}+\mbox{\hyperlink{namespacevvenc_a3be7827d2a4a2c35661962feb9bce427}{M\+L\+S\+\_\+\+G\+R\+P\+\_\+\+N\+UM}})\mbox{]}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a1176a73305e94b523db73bc8b7a5b024}{m\+\_\+nb\+Info}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a6271beee779b2c2764aa1a666e62ab5d}{m\+\_\+prev\+Sbb\+Ctx}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx_a2512cc7109293ed5dd334943f5b91303}{m\+\_\+sbb\+Flag\+Bits}} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 818 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a4d136d707712fc91f97525ac8957c4a7}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a4d136d707712fc91f97525ac8957c4a7}} 
+\index{CommonCtx@{CommonCtx}!CommonCtx@{CommonCtx}}
+\index{CommonCtx@{CommonCtx}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{CommonCtx()}{CommonCtx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 821 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_abdc30eb7fac000355bd8b04a6c6f8868}\label{classvvenc_1_1DQIntern_1_1CommonCtx_abdc30eb7fac000355bd8b04a6c6f8868}} 
+\index{CommonCtx@{CommonCtx}!reset@{reset}}
+\index{reset@{reset}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}} \&}]{tu\+Pars,  }\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}} \&}]{rate\+Est }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 825 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classvvenc_1_1DQIntern_1_1CommonCtx_abdc30eb7fac000355bd8b04a6c6f8868_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvvenc_1_1DQIntern_1_1CommonCtx_abdc30eb7fac000355bd8b04a6c6f8868_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a07bca8cc0cfca0e80cac16305cac9f13}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a07bca8cc0cfca0e80cac16305cac9f13}} 
+\index{CommonCtx@{CommonCtx}!swap@{swap}}
+\index{swap@{swap}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 823 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1CommonCtx_a07bca8cc0cfca0e80cac16305cac9f13_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a4d49603a3a9d317607ae28526f1f0644}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a4d49603a3a9d317607ae28526f1f0644}} 
+\index{CommonCtx@{CommonCtx}!update@{update}}
+\index{update@{update}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&}]{scan\+Info,  }\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$}]{prev\+State,  }\item[{\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} \&}]{curr\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1224 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1CommonCtx_a4d49603a3a9d317607ae28526f1f0644_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a8d4103bd285ae46a5544bb49dd61ed04}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a8d4103bd285ae46a5544bb49dd61ed04}} 
+\index{CommonCtx@{CommonCtx}!m\_allSbbCtx@{m\_allSbbCtx}}
+\index{m\_allSbbCtx@{m\_allSbbCtx}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_allSbbCtx}{m\_allSbbCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}} m\+\_\+all\+Sbb\+Ctx\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 844 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a6ff0182820568551515df682897d17b2}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a6ff0182820568551515df682897d17b2}} 
+\index{CommonCtx@{CommonCtx}!m\_currSbbCtx@{m\_currSbbCtx}}
+\index{m\_currSbbCtx@{m\_currSbbCtx}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_currSbbCtx}{m\_currSbbCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}}$\ast$ m\+\_\+curr\+Sbb\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 845 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_aa8dbc33a237eccac7f0d5fa75f28de64}\label{classvvenc_1_1DQIntern_1_1CommonCtx_aa8dbc33a237eccac7f0d5fa75f28de64}} 
+\index{CommonCtx@{CommonCtx}!m\_memory@{m\_memory}}
+\index{m\_memory@{m\_memory}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_memory}{m\_memory}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+memory\mbox{[}8 $\ast$(\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}+\mbox{\hyperlink{namespacevvenc_a3be7827d2a4a2c35661962feb9bce427}{M\+L\+S\+\_\+\+G\+R\+P\+\_\+\+N\+UM}})\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 847 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a1176a73305e94b523db73bc8b7a5b024}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a1176a73305e94b523db73bc8b7a5b024}} 
+\index{CommonCtx@{CommonCtx}!m\_nbInfo@{m\_nbInfo}}
+\index{m\_nbInfo@{m\_nbInfo}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_nbInfo}{m\_nbInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}}$\ast$ m\+\_\+nb\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 842 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a6271beee779b2c2764aa1a666e62ab5d}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a6271beee779b2c2764aa1a666e62ab5d}} 
+\index{CommonCtx@{CommonCtx}!m\_prevSbbCtx@{m\_prevSbbCtx}}
+\index{m\_prevSbbCtx@{m\_prevSbbCtx}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_prevSbbCtx}{m\_prevSbbCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1SbbCtx}{Sbb\+Ctx}}$\ast$ m\+\_\+prev\+Sbb\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 846 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1CommonCtx_a2512cc7109293ed5dd334943f5b91303}\label{classvvenc_1_1DQIntern_1_1CommonCtx_a2512cc7109293ed5dd334943f5b91303}} 
+\index{CommonCtx@{CommonCtx}!m\_sbbFlagBits@{m\_sbbFlagBits}}
+\index{m\_sbbFlagBits@{m\_sbbFlagBits}!CommonCtx@{CommonCtx}}
+\doxysubsubsection{\texorpdfstring{m\_sbbFlagBits}{m\_sbbFlagBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} m\+\_\+sbb\+Flag\+Bits\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 843 of file Dep\+Quant.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{DepQuant_8cpp}{Dep\+Quant.\+cpp}}\end{DoxyCompactItemize}

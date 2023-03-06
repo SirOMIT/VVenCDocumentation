@@ -1,0 +1,2449 @@
+\hypertarget{namespacevvenc_1_1CU}{}\doxysection{vvenc\+::CU Namespace Reference}
+\label{namespacevvenc_1_1CU}\index{vvenc::CU@{vvenc::CU}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aa73839c04d9d8b448b97cfb6166d3437}{add\+Affine\+M\+V\+P\+Cand\+Unscaled}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int ref\+Idx, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_aded1921cefd50c1b866de7e03e491188}{Mvp\+Dir}} dir, \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&affi\+Amvp\+Info)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_aba436baeadc13a8430bccdb07f559cdd}{add\+A\+M\+V\+P\+H\+M\+V\+P\+Cand}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int curr\+Ref\+P\+OC, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&info)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a5dd992e28615d49f9f13cbe25391ad7d}{add\+Merge\+H\+M\+V\+P\+Cand}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx, const int \&mrg\+Cand\+Idx, const uint32\+\_\+t max\+Num\+Merge\+Cand\+Min1, int \&cnt, const bool is\+Available\+A1, const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \&mi\+Left, const bool is\+Available\+B1, const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \&mi\+Above, const bool ibc\+Flag, const bool is\+Gt4x4)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a6aee4fdbcf09e7138d5bc3008d481922}{add\+M\+V\+P\+Cand\+Unscaled}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int i\+Ref\+Idx, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_aded1921cefd50c1b866de7e03e491188}{Mvp\+Dir}} dir, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a3b88d7ca8a2150d9009574c1146c74cf}{adjust\+Pred\+Area}} (\mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a8c430d9a4689c1e5e2c113118b52e862}{all\+Luma\+C\+B\+Fs\+Are\+Zero}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aad70e7b98f979b650bfbd7a98d4d7a6a}{bdpcm\+Allowed}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ad4f3df026153cb1fc67489b1baeda808}{can\+Use\+I\+SP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ae3caa7a5321ee4b273cf5ac11675af5b}{can\+Use\+I\+SP}} (const int width, const int height, const int max\+Tr\+Size=\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}})
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_abc5eba643853d88bd991854f375e7ce8}{can\+Use\+Lfnst\+With\+I\+SP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a570d26b1e7c1478dc716fed52c04d4ff}{can\+Use\+Lfnst\+With\+I\+SP}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&cu\+Area, const \mbox{\hyperlink{namespacevvenc_aa59912e16aac35676c8d2d9deee4f6cd}{I\+S\+P\+Type}} isp\+Split\+Type)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ad0a1b380bd9c33085d7f69ac76fcd889}{check\+Allowed\+Sbt}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab2404a38b9de790fd6aee08eaeff3463}{check\+C\+C\+L\+M\+Allowed}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ad32b1d5c2e6a40c59cb8cff81ddb56d7}{check\+D\+M\+V\+R\+Condition}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aa3f61e4d0aaa7bd89b7f73da89202953}{divide\+Tu\+In\+Rows}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_ad2843a8f1e804927a642166b2bdd4c88}{fill\+Affine\+Mvp\+Cand}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int ref\+Idx, \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&affi\+A\+M\+V\+P\+Info)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a62402c36368db2049cf01d988d38521f}{fill\+I\+B\+C\+Mvp\+Cand}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a4803d88dce4e2c5fef3b0fcb1705463a}{fill\+Mvp\+Cand}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const int ref\+Idx, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{namespacevvenc_1_1CU_a203fe752b3958bd6fccd17ad2a3e74cb}{get\+Above}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&curr)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a849a99a79258a2946fc11a6e92ce1d3a}{get\+Affine\+Control\+Point\+Cand}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} mi\mbox{[}4\mbox{]}, bool \mbox{\hyperlink{namespacevvenc_aca2f15033131b7593d24de9d045fcabd}{is\+Available}}\mbox{[}4\mbox{]}, int ver\+Idx\mbox{[}4\mbox{]}, int8\+\_\+t Bcw\+Idx, int model\+Idx, int ver\+Num, \mbox{\hyperlink{structvvenc_1_1AffineMergeCtx}{Affine\+Merge\+Ctx}} \&aff\+Mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_ae25eea29d20504313168cd64f5538fa3}{get\+Affine\+Merge\+Cand}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1AffineMergeCtx}{Affine\+Merge\+Ctx}} \&aff\+Mrg\+Ctx, const int mrg\+Cand\+Idx=-\/1)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_a8c993b6f578731c190d27deadf0bff0e}{get\+Co\+Located\+Intra\+Luma\+Mode}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \& \mbox{\hyperlink{namespacevvenc_1_1CU_aee7977f923bfcd95cb41fdce352d9a3d}{get\+Co\+Located\+Luma\+PU}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a74628ce4442e2a048e05acdcdadf2078}{get\+Colocated\+M\+VP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, const int ref\+Idx, bool sb\+Flag=false)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_a6960999b96e142254378013ea57b7683}{get\+Ctu\+Addr}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a87a6ef8ea4e0ffe36895b92a69d3bbbf}{get\+Derived\+B\+V\+I\+BC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&current\+Mv, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&derived\+Mv)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1CU_a581e3665ccf1f48de143b2766e181a26}{get\+Dist\+Scale\+Factor}} (const int curr\+P\+OC, const int curr\+Ref\+P\+OC, const int col\+P\+OC, const int col\+Ref\+P\+OC)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ac657001d4c94a3de047efaf8f60b8545}{get\+Final\+Intra\+Mode}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_ab1da201691e6f8958b1995ebaa0c729b}{get\+Geo\+Merge\+Candidates}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&Geo\+Mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_adb47e0b9f65856e19e36e2e95e93ba9b}{get\+I\+B\+C\+Merge\+Candidates}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx, const int \&mrg\+Cand\+Idx=-\/1)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a8a0b480a254f4194e6bf088d1fa04c1a}{get\+Ibc\+M\+V\+Ps\+Enc\+Only}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$mv\+Pred, int \&nb\+Pred)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a7d9fb69c7f143438eca12464b066b925}{get\+Inter\+Merge\+Candidates}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx, int mmvd\+List, const int mrg\+Cand\+Idx=-\/1)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a901f73629fc2c610a5f051265e232839}{get\+Inter\+Merge\+Sb\+T\+M\+V\+P\+Cand}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx, bool \&L\+I\+C\+Flag, const int count, int mmvd\+List)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a5139755537c8fbbf07d4fd10c6585a4e}{get\+Inter\+M\+M\+V\+D\+Merge\+Candidates}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx, const int \&mrg\+Cand\+Idx=-\/1)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a683844118c247152927cf367aaf5bcce}{get\+Intra\+Chroma\+Cand\+Modes}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, unsigned mode\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a7ac28732008ace5c4b80c6321d4d3a40}{N\+U\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+M\+O\+DE}}\mbox{]})
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_aec502b0aa6b42d08b3895be434dedf2f}{get\+Intra\+Dir\+Luma}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1CU_a01a54a79ae474d03cc0c0ec7143ab395}{get\+Intra\+M\+P\+Ms}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, unsigned $\ast$mpm)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_aa691a0bc88cee5556ca6b8c924d58725}{get\+I\+S\+P\+Split\+Dim}} (const int width, const int height, const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} isp\+Type)
+\item 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_1_1CU_aff7012e926320baebfeff537c9cef2b6}{get\+I\+S\+P\+Type}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{namespacevvenc_1_1CU_a6a372f2452826bcf6721a23b45231b4f}{get\+Left}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&curr)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1CU_a46f42ae28860a5e524238b9cb33debf3}{get\+L\+M\+Symbol\+List}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int $\ast$mode\+List)
+\item 
+\mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} \mbox{\hyperlink{namespacevvenc_1_1CU_afdf84c7176940668f8d43cefd9ac6470}{get\+Mode\+Type\+At\+Depth}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const unsigned depth)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a9a12c1c6d96698bd515260c6b2a49070}{get\+Rpr\+Scaling}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$cur\+P\+PS, \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ref\+Pic, int \&x\+Scale, int \&y\+Scale)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ab9328ea4835f0bd27c26df5998975b77}{get\+Sbt\+Idx}} (const uint8\+\_\+t sbt\+Info)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ab912be7b40b080ed8477ac55051a6a83}{get\+Sbt\+Idx\+From\+Sbt\+Mode}} (const uint8\+\_\+t sbt\+Mode)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ad76564dacc5c55751e4d2f6d96490052}{get\+Sbt\+Mode}} (const uint8\+\_\+t sbt\+Idx, const uint8\+\_\+t sbt\+Pos)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_a1a6c1bbf284be9d294f1885e24a00305}{get\+Sbt\+Pos}} (const uint8\+\_\+t sbt\+Info)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_a68b2780be5e7c21ea7c5656d99a7955e}{get\+Sbt\+Pos\+From\+Sbt\+Mode}} (const uint8\+\_\+t sbt\+Mode)
+\item 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_1_1CU_a10639af982cbc58394e930bae8f96d56}{get\+Sbt\+Tu\+Split}} (const uint8\+\_\+t sbt\+Info)
+\item 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_1_1CU_ace98b575c141742687bdd36f691a85e7}{get\+Split\+At\+Depth}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const unsigned depth)
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} const  $\ast$ \mbox{\hyperlink{namespacevvenc_1_1CU_ae773b0a93e1c20084c95aaabb0627818}{get\+TU}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_a73139b4446191d10713b95d20c51f1fd}{get\+Valid\+Bcw\+Idx}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a078b8a5a9b42d087da4bb020b481b6e4}{has\+Sub\+C\+U\+Non\+Zero\+Affine\+M\+Vd}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab3f15c307a4e4dda9e1b7106bdb947de}{has\+Sub\+C\+U\+Non\+Zero\+M\+Vd}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a733df44fc854ac1dbf408ebff5b4bbca}{is\+Add\+Neighbor\+Mv\+I\+BC}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&curr\+Mv, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$neighbor\+Mvs, int num\+Neighbor\+Mv)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aa0b6f5b1ae4c0824d28f9c6af5eb5817}{is\+Bcw\+Idx\+Coded}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab7b3611984150b94a63d89d2b45f5be3}{is\+Bi\+Pred\+From\+Different\+Dir\+Eq\+Dist\+Poc}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a7c89d15e3cd1f22016e3c0c3f506b9ca}{is\+Bipred\+Restriction}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a7f7ada0d4329568b7e464dabd3d0dbf2}{is\+Cons\+Inter}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a6c1191643ef6fa09c2976029ab5219d1}{is\+Cons\+Intra}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a55edeb1c78f3523df5be65f6d3f1567b}{is\+Diff\+M\+ER}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos1, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos2, const unsigned plevel)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a7346d51d89d6d02141b80c90a25e3d11}{is\+D\+M\+Chroma\+M\+IP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ad9329b0a36acd98756a7e8f6bc477df3}{is\+First\+T\+B\+In\+Pred\+Reg}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a3041ffe17dbda47017f7e074f714c544}{is\+I\+BC}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a84016faa0ecc6cee91707aad043d8316}{is\+Inter}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab722b39b132601673d1dcd3547c2c01c}{is\+Intra}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a6e192c103882e52242379b617671f25a}{is\+I\+S\+P\+First}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&tu\+Area, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a0eb3e1c07d35abfec71128bc40f50ccc}{is\+I\+S\+P\+Last}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&tu\+Area, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_acd8ea4ccd0df09c12542c0e079bc609f}{is\+Last\+Sub\+C\+U\+Of\+Ctu}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aeab09932e5cd9979570d9d6f897961d2}{is\+L\+M\+C\+Mode}} (unsigned mode)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab713aabf8600d0655a6fdf5969f79ae1}{is\+L\+M\+C\+Mode\+Enabled}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, unsigned mode)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ac7a79bf73d24261dff565b434d948e2e}{is\+Local\+Sep\+Tree}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_aa1e534804590abcff8d3b46610473142}{is\+M\+IP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} channel\+Type=\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a9eef8706f96e8b3511a2450e90075f59}{C\+H\+\_\+L}})
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ab7644e93295d67b5af8be7fa2925f54e}{is\+M\+T\+S\+Allowed}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_abccb0c40a5d9a2f0db54c8009371c2e4}{is\+P\+LT}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a10947d5b6236a8106ecd42d3b433f618}{is\+Pred\+Reg\+Diff\+From\+TB}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a77f1bf3bfbdd04b85899c72a39a2e259}{is\+R\+D\+P\+C\+M\+Enabled}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a6e0307efeecb99fc9edb575c53b6e645}{is\+Same\+Ctu}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a20b35d82c79c7a1c237f2fad68e31b61}{is\+Same\+Sbt\+Size}} (const uint8\+\_\+t sbt\+Info1, const uint8\+\_\+t sbt\+Info2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_af7a7f432d5602e77d100f8137a2a1633}{is\+Same\+Slice}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a16419b94eaab2cce35ffcf2a931e6298}{is\+Same\+Slice\+And\+Tile}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a925f94b0848091fcdb76dd43a775951a}{is\+Same\+Sub\+Pic}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ad3143aae0b45880e8c134e61d317f211}{is\+Same\+Tile}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu2)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_ad9826a082e7a4783645ea9c84357754e}{is\+Sbt\+Mode}} (const uint8\+\_\+t sbt\+Info)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_1_1CU_a9dba2390376b36d2a779733a99663842}{is\+Sep\+Tree}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ad41a4c5199db3aae874f45e88473fae5}{num\+Sbt\+Mode\+Rdo}} (uint8\+\_\+t sbt\+Allowed)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1CU_aab74ca0ff841ab15a7dcaf423c776a32}{predict\+QP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const int prev\+QP)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a90989553da16287cd7a257fd0d094fb0}{reset\+M\+V\+Dand\+M\+V2\+Int}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a7e2f57f2dc2c27605fb6bde3c30cabbe}{restrict\+Bi\+Pred\+Merge\+Cands\+One}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a2dd296f3d3dab7476ea54337ecbb50c8}{save\+Motion\+In\+H\+M\+VP}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const bool is\+To\+Be\+Done)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a79022b9c1d9d40b790a4c560e077609d}{set\+All\+Affine\+Mv}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} aff\+LT, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} aff\+RT, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} aff\+LB, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+List, bool clip\+C\+P\+M\+Vs=false)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_acafcc82bc0e37f9ad564b12ae4c6818a}{set\+All\+Affine\+Mv\+Field}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} $\ast$mv\+Field, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+List)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_ad05ca3273503b3f82ee0120ebffb5479}{set\+Bcw\+Idx}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, uint8\+\_\+t uh)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a154f3f605638e80be38ca16d713d5e7a}{span\+Geo\+Motion\+Info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&Geo\+Mrg\+Ctx, const uint8\+\_\+t split\+Dir, const uint8\+\_\+t cand\+Idx0, const uint8\+\_\+t cand\+Idx1)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_a88cd6fcff13e86d529ac63c3d2eca6c0}{span\+Motion\+Info}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&mrg\+Ctx=\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}}())
+\item 
+uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_1_1CU_ab683487edb1bfd2c8954ba559741298e}{target\+Sbt\+Allowed}} (uint8\+\_\+t sbt\+Idx, uint8\+\_\+t sbt\+Allowed)
+\item 
+\mbox{\hyperlink{namespacevvenc_a646b4a2982f13bfac0865d6640044321}{T\+U\+Traverser}} \mbox{\hyperlink{namespacevvenc_1_1CU_acab3eaa9f53f4abc885c949b52760b30}{traverse\+T\+Us}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+\mbox{\hyperlink{namespacevvenc_a27097cc8e1295b99c76ec30a5bf92288}{c\+T\+U\+Traverser}} \mbox{\hyperlink{namespacevvenc_1_1CU_a3ee029e85fac57db0ed217f893350ca0}{traverse\+T\+Us}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{namespacevvenc_1_1CU_ab3f84327f59a41406be3e5a43a4fa4de}{x\+Inherited\+Affine\+Mv}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$cu\+Neighbour, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} rc\+Mv\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aa73839c04d9d8b448b97cfb6166d3437}\label{namespacevvenc_1_1CU_aa73839c04d9d8b448b97cfb6166d3437}} 
+\index{vvenc::CU@{vvenc::CU}!addAffineMVPCandUnscaled@{addAffineMVPCandUnscaled}}
+\index{addAffineMVPCandUnscaled@{addAffineMVPCandUnscaled}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{addAffineMVPCandUnscaled()}{addAffineMVPCandUnscaled()}}
+{\footnotesize\ttfamily bool add\+Affine\+M\+V\+P\+Cand\+Unscaled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{ref\+Idx,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_aded1921cefd50c1b866de7e03e491188}{Mvp\+Dir}}}]{dir,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{affi\+Amvp\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1800 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa73839c04d9d8b448b97cfb6166d3437_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa73839c04d9d8b448b97cfb6166d3437_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aba436baeadc13a8430bccdb07f559cdd}\label{namespacevvenc_1_1CU_aba436baeadc13a8430bccdb07f559cdd}} 
+\index{vvenc::CU@{vvenc::CU}!addAMVPHMVPCand@{addAMVPHMVPCand}}
+\index{addAMVPHMVPCand@{addAMVPHMVPCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{addAMVPHMVPCand()}{addAMVPHMVPCand()}}
+{\footnotesize\ttfamily void add\+A\+M\+V\+P\+H\+M\+V\+P\+Cand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{curr\+Ref\+P\+OC,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2175 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aba436baeadc13a8430bccdb07f559cdd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aba436baeadc13a8430bccdb07f559cdd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a5dd992e28615d49f9f13cbe25391ad7d}\label{namespacevvenc_1_1CU_a5dd992e28615d49f9f13cbe25391ad7d}} 
+\index{vvenc::CU@{vvenc::CU}!addMergeHMVPCand@{addMergeHMVPCand}}
+\index{addMergeHMVPCand@{addMergeHMVPCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{addMergeHMVPCand()}{addMergeHMVPCand()}}
+{\footnotesize\ttfamily bool add\+Merge\+H\+M\+V\+P\+Cand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx,  }\item[{const int \&}]{mrg\+Cand\+Idx,  }\item[{const uint32\+\_\+t}]{max\+Num\+Merge\+Cand\+Min1,  }\item[{int \&}]{cnt,  }\item[{const bool}]{is\+Available\+A1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \&}]{mi\+Left,  }\item[{const bool}]{is\+Available\+B1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \&}]{mi\+Above,  }\item[{const bool}]{ibc\+Flag,  }\item[{const bool}]{is\+Gt4x4 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 720 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a5dd992e28615d49f9f13cbe25391ad7d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a5dd992e28615d49f9f13cbe25391ad7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6aee4fdbcf09e7138d5bc3008d481922}\label{namespacevvenc_1_1CU_a6aee4fdbcf09e7138d5bc3008d481922}} 
+\index{vvenc::CU@{vvenc::CU}!addMVPCandUnscaled@{addMVPCandUnscaled}}
+\index{addMVPCandUnscaled@{addMVPCandUnscaled}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{addMVPCandUnscaled()}{addMVPCandUnscaled()}}
+{\footnotesize\ttfamily bool add\+M\+V\+P\+Cand\+Unscaled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{i\+Ref\+Idx,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_aded1921cefd50c1b866de7e03e491188}{Mvp\+Dir}}}]{dir,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2120 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6aee4fdbcf09e7138d5bc3008d481922_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6aee4fdbcf09e7138d5bc3008d481922_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a3b88d7ca8a2150d9009574c1146c74cf}\label{namespacevvenc_1_1CU_a3b88d7ca8a2150d9009574c1146c74cf}} 
+\index{vvenc::CU@{vvenc::CU}!adjustPredArea@{adjustPredArea}}
+\index{adjustPredArea@{adjustPredArea}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{adjustPredArea()}{adjustPredArea()}}
+{\footnotesize\ttfamily void adjust\+Pred\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3445 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a3b88d7ca8a2150d9009574c1146c74cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a8c430d9a4689c1e5e2c113118b52e862}\label{namespacevvenc_1_1CU_a8c430d9a4689c1e5e2c113118b52e862}} 
+\index{vvenc::CU@{vvenc::CU}!allLumaCBFsAreZero@{allLumaCBFsAreZero}}
+\index{allLumaCBFsAreZero@{allLumaCBFsAreZero}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{allLumaCBFsAreZero()}{allLumaCBFsAreZero()}}
+{\footnotesize\ttfamily bool all\+Luma\+C\+B\+Fs\+Are\+Zero (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 460 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8c430d9a4689c1e5e2c113118b52e862_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8c430d9a4689c1e5e2c113118b52e862_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aad70e7b98f979b650bfbd7a98d4d7a6a}\label{namespacevvenc_1_1CU_aad70e7b98f979b650bfbd7a98d4d7a6a}} 
+\index{vvenc::CU@{vvenc::CU}!bdpcmAllowed@{bdpcmAllowed}}
+\index{bdpcmAllowed@{bdpcmAllowed}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{bdpcmAllowed()}{bdpcmAllowed()}}
+{\footnotesize\ttfamily bool bdpcm\+Allowed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3530 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aad70e7b98f979b650bfbd7a98d4d7a6a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aad70e7b98f979b650bfbd7a98d4d7a6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad4f3df026153cb1fc67489b1baeda808}\label{namespacevvenc_1_1CU_ad4f3df026153cb1fc67489b1baeda808}} 
+\index{vvenc::CU@{vvenc::CU}!canUseISP@{canUseISP}}
+\index{canUseISP@{canUseISP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{canUseISP()}{canUseISP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool can\+Use\+I\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 395 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{namespacevvenc_1_1CU_ad4f3df026153cb1fc67489b1baeda808_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad4f3df026153cb1fc67489b1baeda808_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ae3caa7a5321ee4b273cf5ac11675af5b}\label{namespacevvenc_1_1CU_ae3caa7a5321ee4b273cf5ac11675af5b}} 
+\index{vvenc::CU@{vvenc::CU}!canUseISP@{canUseISP}}
+\index{canUseISP@{canUseISP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{canUseISP()}{canUseISP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool can\+Use\+I\+SP (\begin{DoxyParamCaption}\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{const int}]{max\+Tr\+Size = {\ttfamily \mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 403 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ae3caa7a5321ee4b273cf5ac11675af5b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_abc5eba643853d88bd991854f375e7ce8}\label{namespacevvenc_1_1CU_abc5eba643853d88bd991854f375e7ce8}} 
+\index{vvenc::CU@{vvenc::CU}!canUseLfnstWithISP@{canUseLfnstWithISP}}
+\index{canUseLfnstWithISP@{canUseLfnstWithISP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{canUseLfnstWithISP()}{canUseLfnstWithISP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool can\+Use\+Lfnst\+With\+I\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 430 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_abc5eba643853d88bd991854f375e7ce8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a570d26b1e7c1478dc716fed52c04d4ff}\label{namespacevvenc_1_1CU_a570d26b1e7c1478dc716fed52c04d4ff}} 
+\index{vvenc::CU@{vvenc::CU}!canUseLfnstWithISP@{canUseLfnstWithISP}}
+\index{canUseLfnstWithISP@{canUseLfnstWithISP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{canUseLfnstWithISP()}{canUseLfnstWithISP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool can\+Use\+Lfnst\+With\+I\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{cu\+Area,  }\item[{const \mbox{\hyperlink{namespacevvenc_aa59912e16aac35676c8d2d9deee4f6cd}{I\+S\+P\+Type}}}]{isp\+Split\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 414 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a570d26b1e7c1478dc716fed52c04d4ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a570d26b1e7c1478dc716fed52c04d4ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad0a1b380bd9c33085d7f69ac76fcd889}\label{namespacevvenc_1_1CU_ad0a1b380bd9c33085d7f69ac76fcd889}} 
+\index{vvenc::CU@{vvenc::CU}!checkAllowedSbt@{checkAllowedSbt}}
+\index{checkAllowedSbt@{checkAllowedSbt}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{checkAllowedSbt()}{checkAllowedSbt()}}
+{\footnotesize\ttfamily uint8\+\_\+t check\+Allowed\+Sbt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 205 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad0a1b380bd9c33085d7f69ac76fcd889_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad0a1b380bd9c33085d7f69ac76fcd889_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab2404a38b9de790fd6aee08eaeff3463}\label{namespacevvenc_1_1CU_ab2404a38b9de790fd6aee08eaeff3463}} 
+\index{vvenc::CU@{vvenc::CU}!checkCCLMAllowed@{checkCCLMAllowed}}
+\index{checkCCLMAllowed@{checkCCLMAllowed}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{checkCCLMAllowed()}{checkCCLMAllowed()}}
+{\footnotesize\ttfamily bool check\+C\+C\+L\+M\+Allowed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 133 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab2404a38b9de790fd6aee08eaeff3463_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab2404a38b9de790fd6aee08eaeff3463_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad32b1d5c2e6a40c59cb8cff81ddb56d7}\label{namespacevvenc_1_1CU_ad32b1d5c2e6a40c59cb8cff81ddb56d7}} 
+\index{vvenc::CU@{vvenc::CU}!checkDMVRCondition@{checkDMVRCondition}}
+\index{checkDMVRCondition@{checkDMVRCondition}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{checkDMVRCondition()}{checkDMVRCondition()}}
+{\footnotesize\ttfamily bool check\+D\+M\+V\+R\+Condition (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1267 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad32b1d5c2e6a40c59cb8cff81ddb56d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad32b1d5c2e6a40c59cb8cff81ddb56d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aa3f61e4d0aaa7bd89b7f73da89202953}\label{namespacevvenc_1_1CU_aa3f61e4d0aaa7bd89b7f73da89202953}} 
+\index{vvenc::CU@{vvenc::CU}!divideTuInRows@{divideTuInRows}}
+\index{divideTuInRows@{divideTuInRows}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{divideTuInRows()}{divideTuInRows()}}
+{\footnotesize\ttfamily bool divide\+Tu\+In\+Rows (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 355 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa3f61e4d0aaa7bd89b7f73da89202953_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad2843a8f1e804927a642166b2bdd4c88}\label{namespacevvenc_1_1CU_ad2843a8f1e804927a642166b2bdd4c88}} 
+\index{vvenc::CU@{vvenc::CU}!fillAffineMvpCand@{fillAffineMvpCand}}
+\index{fillAffineMvpCand@{fillAffineMvpCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{fillAffineMvpCand()}{fillAffineMvpCand()}}
+{\footnotesize\ttfamily void fill\+Affine\+Mvp\+Cand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{ref\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{affi\+A\+M\+V\+P\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1946 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad2843a8f1e804927a642166b2bdd4c88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad2843a8f1e804927a642166b2bdd4c88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a62402c36368db2049cf01d988d38521f}\label{namespacevvenc_1_1CU_a62402c36368db2049cf01d988d38521f}} 
+\index{vvenc::CU@{vvenc::CU}!fillIBCMvpCand@{fillIBCMvpCand}}
+\index{fillIBCMvpCand@{fillIBCMvpCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{fillIBCMvpCand()}{fillIBCMvpCand()}}
+{\footnotesize\ttfamily void fill\+I\+B\+C\+Mvp\+Cand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1633 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a62402c36368db2049cf01d988d38521f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a62402c36368db2049cf01d988d38521f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a4803d88dce4e2c5fef3b0fcb1705463a}\label{namespacevvenc_1_1CU_a4803d88dce4e2c5fef3b0fcb1705463a}} 
+\index{vvenc::CU@{vvenc::CU}!fillMvpCand@{fillMvpCand}}
+\index{fillMvpCand@{fillMvpCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{fillMvpCand()}{fillMvpCand()}}
+{\footnotesize\ttfamily void fill\+Mvp\+Cand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const int}]{ref\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info }\end{DoxyParamCaption})}
+
+Constructs a list of candidates for A\+M\+VP (See specification, section \char`\"{}\+Derivation process for motion vector predictor candidates\char`\"{}) 
+\begin{DoxyParams}{Parameters}
+{\em ui\+Part\+Idx} & \\
+\hline
+{\em ui\+Part\+Addr} & \\
+\hline
+{\em ref\+Pic\+List} & \\
+\hline
+{\em i\+Ref\+Idx} & \\
+\hline
+{\em p\+Info} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1683 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a4803d88dce4e2c5fef3b0fcb1705463a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a4803d88dce4e2c5fef3b0fcb1705463a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a203fe752b3958bd6fccd17ad2a3e74cb}\label{namespacevvenc_1_1CU_a203fe752b3958bd6fccd17ad2a3e74cb}} 
+\index{vvenc::CU@{vvenc::CU}!getAbove@{getAbove}}
+\index{getAbove@{getAbove}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getAbove()}{getAbove()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+Above (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{curr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 498 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a203fe752b3958bd6fccd17ad2a3e74cb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a203fe752b3958bd6fccd17ad2a3e74cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a849a99a79258a2946fc11a6e92ce1d3a}\label{namespacevvenc_1_1CU_a849a99a79258a2946fc11a6e92ce1d3a}} 
+\index{vvenc::CU@{vvenc::CU}!getAffineControlPointCand@{getAffineControlPointCand}}
+\index{getAffineControlPointCand@{getAffineControlPointCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getAffineControlPointCand()}{getAffineControlPointCand()}}
+{\footnotesize\ttfamily void get\+Affine\+Control\+Point\+Cand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}}}]{mi\mbox{[}4\mbox{]},  }\item[{bool}]{is\+Available\mbox{[}4\mbox{]},  }\item[{int}]{ver\+Idx\mbox{[}4\mbox{]},  }\item[{int8\+\_\+t}]{Bcw\+Idx,  }\item[{int}]{model\+Idx,  }\item[{int}]{ver\+Num,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineMergeCtx}{Affine\+Merge\+Ctx}} \&}]{aff\+Mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2225 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a849a99a79258a2946fc11a6e92ce1d3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a849a99a79258a2946fc11a6e92ce1d3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ae25eea29d20504313168cd64f5538fa3}\label{namespacevvenc_1_1CU_ae25eea29d20504313168cd64f5538fa3}} 
+\index{vvenc::CU@{vvenc::CU}!getAffineMergeCand@{getAffineMergeCand}}
+\index{getAffineMergeCand@{getAffineMergeCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getAffineMergeCand()}{getAffineMergeCand()}}
+{\footnotesize\ttfamily void get\+Affine\+Merge\+Cand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineMergeCtx}{Affine\+Merge\+Ctx}} \&}]{aff\+Mrg\+Ctx,  }\item[{const int}]{mrg\+Cand\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2587 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacevvenc_1_1CU_ae25eea29d20504313168cd64f5538fa3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ae25eea29d20504313168cd64f5538fa3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a8c993b6f578731c190d27deadf0bff0e}\label{namespacevvenc_1_1CU_a8c993b6f578731c190d27deadf0bff0e}} 
+\index{vvenc::CU@{vvenc::CU}!getCoLocatedIntraLumaMode@{getCoLocatedIntraLumaMode}}
+\index{getCoLocatedIntraLumaMode@{getCoLocatedIntraLumaMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getCoLocatedIntraLumaMode()}{getCoLocatedIntraLumaMode()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Co\+Located\+Intra\+Luma\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 715 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8c993b6f578731c190d27deadf0bff0e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8c993b6f578731c190d27deadf0bff0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aee7977f923bfcd95cb41fdce352d9a3d}\label{namespacevvenc_1_1CU_aee7977f923bfcd95cb41fdce352d9a3d}} 
+\index{vvenc::CU@{vvenc::CU}!getCoLocatedLumaPU@{getCoLocatedLumaPU}}
+\index{getCoLocatedLumaPU@{getCoLocatedLumaPU}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getCoLocatedLumaPU()}{getCoLocatedLumaPU()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \& get\+Co\+Located\+Luma\+PU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 704 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aee7977f923bfcd95cb41fdce352d9a3d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aee7977f923bfcd95cb41fdce352d9a3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a74628ce4442e2a048e05acdcdadf2078}\label{namespacevvenc_1_1CU_a74628ce4442e2a048e05acdcdadf2078}} 
+\index{vvenc::CU@{vvenc::CU}!getColocatedMVP@{getColocatedMVP}}
+\index{getColocatedMVP@{getColocatedMVP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getColocatedMVP()}{getColocatedMVP()}}
+{\footnotesize\ttfamily bool get\+Colocated\+M\+VP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{const int}]{ref\+Idx,  }\item[{bool}]{sb\+Flag = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1380 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a74628ce4442e2a048e05acdcdadf2078_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a74628ce4442e2a048e05acdcdadf2078_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6960999b96e142254378013ea57b7683}\label{namespacevvenc_1_1CU_a6960999b96e142254378013ea57b7683}} 
+\index{vvenc::CU@{vvenc::CU}!getCtuAddr@{getCtuAddr}}
+\index{getCtuAddr@{getCtuAddr}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getCtuAddr()}{getCtuAddr()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Ctu\+Addr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 285 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{namespacevvenc_1_1CU_a6960999b96e142254378013ea57b7683_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a87a6ef8ea4e0ffe36895b92a69d3bbbf}\label{namespacevvenc_1_1CU_a87a6ef8ea4e0ffe36895b92a69d3bbbf}} 
+\index{vvenc::CU@{vvenc::CU}!getDerivedBVIBC@{getDerivedBVIBC}}
+\index{getDerivedBVIBC@{getDerivedBVIBC}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getDerivedBVIBC()}{getDerivedBVIBC()}}
+{\footnotesize\ttfamily bool get\+Derived\+B\+V\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{current\+Mv,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{derived\+Mv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1608 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a87a6ef8ea4e0ffe36895b92a69d3bbbf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a87a6ef8ea4e0ffe36895b92a69d3bbbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a581e3665ccf1f48de143b2766e181a26}\label{namespacevvenc_1_1CU_a581e3665ccf1f48de143b2766e181a26}} 
+\index{vvenc::CU@{vvenc::CU}!getDistScaleFactor@{getDistScaleFactor}}
+\index{getDistScaleFactor@{getDistScaleFactor}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getDistScaleFactor()}{getDistScaleFactor()}}
+{\footnotesize\ttfamily int get\+Dist\+Scale\+Factor (\begin{DoxyParamCaption}\item[{const int}]{curr\+P\+OC,  }\item[{const int}]{curr\+Ref\+P\+OC,  }\item[{const int}]{col\+P\+OC,  }\item[{const int}]{col\+Ref\+P\+OC }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1322 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a581e3665ccf1f48de143b2766e181a26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ac657001d4c94a3de047efaf8f60b8545}\label{namespacevvenc_1_1CU_ac657001d4c94a3de047efaf8f60b8545}} 
+\index{vvenc::CU@{vvenc::CU}!getFinalIntraMode@{getFinalIntraMode}}
+\index{getFinalIntraMode@{getFinalIntraMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getFinalIntraMode()}{getFinalIntraMode()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Final\+Intra\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 689 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ac657001d4c94a3de047efaf8f60b8545_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ac657001d4c94a3de047efaf8f60b8545_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab1da201691e6f8958b1995ebaa0c729b}\label{namespacevvenc_1_1CU_ab1da201691e6f8958b1995ebaa0c729b}} 
+\index{vvenc::CU@{vvenc::CU}!getGeoMergeCandidates@{getGeoMergeCandidates}}
+\index{getGeoMergeCandidates@{getGeoMergeCandidates}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getGeoMergeCandidates()}{getGeoMergeCandidates()}}
+{\footnotesize\ttfamily void get\+Geo\+Merge\+Candidates (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{Geo\+Mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3111 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab1da201691e6f8958b1995ebaa0c729b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab1da201691e6f8958b1995ebaa0c729b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_adb47e0b9f65856e19e36e2e95e93ba9b}\label{namespacevvenc_1_1CU_adb47e0b9f65856e19e36e2e95e93ba9b}} 
+\index{vvenc::CU@{vvenc::CU}!getIBCMergeCandidates@{getIBCMergeCandidates}}
+\index{getIBCMergeCandidates@{getIBCMergeCandidates}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getIBCMergeCandidates()}{getIBCMergeCandidates()}}
+{\footnotesize\ttfamily void get\+I\+B\+C\+Merge\+Candidates (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx,  }\item[{const int \&}]{mrg\+Cand\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 765 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_adb47e0b9f65856e19e36e2e95e93ba9b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_adb47e0b9f65856e19e36e2e95e93ba9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a8a0b480a254f4194e6bf088d1fa04c1a}\label{namespacevvenc_1_1CU_a8a0b480a254f4194e6bf088d1fa04c1a}} 
+\index{vvenc::CU@{vvenc::CU}!getIbcMVPsEncOnly@{getIbcMVPsEncOnly}}
+\index{getIbcMVPsEncOnly@{getIbcMVPsEncOnly}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getIbcMVPsEncOnly()}{getIbcMVPsEncOnly()}}
+{\footnotesize\ttfamily void get\+Ibc\+M\+V\+Ps\+Enc\+Only (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{mv\+Pred,  }\item[{int \&}]{nb\+Pred }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1501 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8a0b480a254f4194e6bf088d1fa04c1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a8a0b480a254f4194e6bf088d1fa04c1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a7d9fb69c7f143438eca12464b066b925}\label{namespacevvenc_1_1CU_a7d9fb69c7f143438eca12464b066b925}} 
+\index{vvenc::CU@{vvenc::CU}!getInterMergeCandidates@{getInterMergeCandidates}}
+\index{getInterMergeCandidates@{getInterMergeCandidates}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getInterMergeCandidates()}{getInterMergeCandidates()}}
+{\footnotesize\ttfamily void get\+Inter\+Merge\+Candidates (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx,  }\item[{int}]{mmvd\+List,  }\item[{const int}]{mrg\+Cand\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 867 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7d9fb69c7f143438eca12464b066b925_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7d9fb69c7f143438eca12464b066b925_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a901f73629fc2c610a5f051265e232839}\label{namespacevvenc_1_1CU_a901f73629fc2c610a5f051265e232839}} 
+\index{vvenc::CU@{vvenc::CU}!getInterMergeSbTMVPCand@{getInterMergeSbTMVPCand}}
+\index{getInterMergeSbTMVPCand@{getInterMergeSbTMVPCand}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getInterMergeSbTMVPCand()}{getInterMergeSbTMVPCand()}}
+{\footnotesize\ttfamily bool get\+Inter\+Merge\+Sb\+T\+M\+V\+P\+Cand (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx,  }\item[{bool \&}]{L\+I\+C\+Flag,  }\item[{const int}]{count,  }\item[{int}]{mmvd\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2365 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a901f73629fc2c610a5f051265e232839_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a901f73629fc2c610a5f051265e232839_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a5139755537c8fbbf07d4fd10c6585a4e}\label{namespacevvenc_1_1CU_a5139755537c8fbbf07d4fd10c6585a4e}} 
+\index{vvenc::CU@{vvenc::CU}!getInterMMVDMergeCandidates@{getInterMMVDMergeCandidates}}
+\index{getInterMMVDMergeCandidates@{getInterMMVDMergeCandidates}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getInterMMVDMergeCandidates()}{getInterMMVDMergeCandidates()}}
+{\footnotesize\ttfamily void get\+Inter\+M\+M\+V\+D\+Merge\+Candidates (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx,  }\item[{const int \&}]{mrg\+Cand\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1341 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a5139755537c8fbbf07d4fd10c6585a4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a683844118c247152927cf367aaf5bcce}\label{namespacevvenc_1_1CU_a683844118c247152927cf367aaf5bcce}} 
+\index{vvenc::CU@{vvenc::CU}!getIntraChromaCandModes@{getIntraChromaCandModes}}
+\index{getIntraChromaCandModes@{getIntraChromaCandModes}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getIntraChromaCandModes()}{getIntraChromaCandModes()}}
+{\footnotesize\ttfamily void get\+Intra\+Chroma\+Cand\+Modes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{unsigned}]{mode\+List\mbox{[}\+N\+U\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+M\+O\+D\+E\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 639 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a683844118c247152927cf367aaf5bcce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a683844118c247152927cf367aaf5bcce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aec502b0aa6b42d08b3895be434dedf2f}\label{namespacevvenc_1_1CU_aec502b0aa6b42d08b3895be434dedf2f}} 
+\index{vvenc::CU@{vvenc::CU}!getIntraDirLuma@{getIntraDirLuma}}
+\index{getIntraDirLuma@{getIntraDirLuma}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getIntraDirLuma()}{getIntraDirLuma()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Intra\+Dir\+Luma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 626 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aec502b0aa6b42d08b3895be434dedf2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aec502b0aa6b42d08b3895be434dedf2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a01a54a79ae474d03cc0c0ec7143ab395}\label{namespacevvenc_1_1CU_a01a54a79ae474d03cc0c0ec7143ab395}} 
+\index{vvenc::CU@{vvenc::CU}!getIntraMPMs@{getIntraMPMs}}
+\index{getIntraMPMs@{getIntraMPMs}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getIntraMPMs()}{getIntraMPMs()}}
+{\footnotesize\ttfamily int get\+Intra\+M\+P\+Ms (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{unsigned $\ast$}]{mpm }\end{DoxyParamCaption})}
+
+
+
+Definition at line 506 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a01a54a79ae474d03cc0c0ec7143ab395_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a01a54a79ae474d03cc0c0ec7143ab395_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aa691a0bc88cee5556ca6b8c924d58725}\label{namespacevvenc_1_1CU_aa691a0bc88cee5556ca6b8c924d58725}} 
+\index{vvenc::CU@{vvenc::CU}!getISPSplitDim@{getISPSplitDim}}
+\index{getISPSplitDim@{getISPSplitDim}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getISPSplitDim()}{getISPSplitDim()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+I\+S\+P\+Split\+Dim (\begin{DoxyParamCaption}\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{isp\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 436 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa691a0bc88cee5556ca6b8c924d58725_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa691a0bc88cee5556ca6b8c924d58725_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aff7012e926320baebfeff537c9cef2b6}\label{namespacevvenc_1_1CU_aff7012e926320baebfeff537c9cef2b6}} 
+\index{vvenc::CU@{vvenc::CU}!getISPType@{getISPType}}
+\index{getISPType@{getISPType}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getISPType()}{getISPType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} get\+I\+S\+P\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 362 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{namespacevvenc_1_1CU_aff7012e926320baebfeff537c9cef2b6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aff7012e926320baebfeff537c9cef2b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6a372f2452826bcf6721a23b45231b4f}\label{namespacevvenc_1_1CU_a6a372f2452826bcf6721a23b45231b4f}} 
+\index{vvenc::CU@{vvenc::CU}!getLeft@{getLeft}}
+\index{getLeft@{getLeft}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getLeft()}{getLeft()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+Left (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{curr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 492 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6a372f2452826bcf6721a23b45231b4f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6a372f2452826bcf6721a23b45231b4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a46f42ae28860a5e524238b9cb33debf3}\label{namespacevvenc_1_1CU_a46f42ae28860a5e524238b9cb33debf3}} 
+\index{vvenc::CU@{vvenc::CU}!getLMSymbolList@{getLMSymbolList}}
+\index{getLMSymbolList@{getLMSymbolList}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getLMSymbolList()}{getLMSymbolList()}}
+{\footnotesize\ttfamily int get\+L\+M\+Symbol\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int $\ast$}]{mode\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 679 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a46f42ae28860a5e524238b9cb33debf3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_afdf84c7176940668f8d43cefd9ac6470}\label{namespacevvenc_1_1CU_afdf84c7176940668f8d43cefd9ac6470}} 
+\index{vvenc::CU@{vvenc::CU}!getModeTypeAtDepth@{getModeTypeAtDepth}}
+\index{getModeTypeAtDepth@{getModeTypeAtDepth}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getModeTypeAtDepth()}{getModeTypeAtDepth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} get\+Mode\+Type\+At\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const unsigned}]{depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 348 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_afdf84c7176940668f8d43cefd9ac6470_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a9a12c1c6d96698bd515260c6b2a49070}\label{namespacevvenc_1_1CU_a9a12c1c6d96698bd515260c6b2a49070}} 
+\index{vvenc::CU@{vvenc::CU}!getRprScaling@{getRprScaling}}
+\index{getRprScaling@{getRprScaling}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getRprScaling()}{getRprScaling()}}
+{\footnotesize\ttfamily bool get\+Rpr\+Scaling (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{cur\+P\+PS,  }\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{ref\+Pic,  }\item[{int \&}]{x\+Scale,  }\item[{int \&}]{y\+Scale }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{namespacevvenc_1_1CU_a9a12c1c6d96698bd515260c6b2a49070_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab9328ea4835f0bd27c26df5998975b77}\label{namespacevvenc_1_1CU_ab9328ea4835f0bd27c26df5998975b77}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtIdx@{getSbtIdx}}
+\index{getSbtIdx@{getSbtIdx}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtIdx()}{getSbtIdx()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::get\+Sbt\+Idx (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 129 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab9328ea4835f0bd27c26df5998975b77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab912be7b40b080ed8477ac55051a6a83}\label{namespacevvenc_1_1CU_ab912be7b40b080ed8477ac55051a6a83}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtIdxFromSbtMode@{getSbtIdxFromSbtMode}}
+\index{getSbtIdxFromSbtMode@{getSbtIdxFromSbtMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtIdxFromSbtMode()}{getSbtIdxFromSbtMode()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::get\+Sbt\+Idx\+From\+Sbt\+Mode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 133 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab912be7b40b080ed8477ac55051a6a83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad76564dacc5c55751e4d2f6d96490052}\label{namespacevvenc_1_1CU_ad76564dacc5c55751e4d2f6d96490052}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtMode@{getSbtMode}}
+\index{getSbtMode@{getSbtMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtMode()}{getSbtMode()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::get\+Sbt\+Mode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Idx,  }\item[{const uint8\+\_\+t}]{sbt\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{namespacevvenc_1_1CU_ad76564dacc5c55751e4d2f6d96490052_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a1a6c1bbf284be9d294f1885e24a00305}\label{namespacevvenc_1_1CU_a1a6c1bbf284be9d294f1885e24a00305}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtPos@{getSbtPos}}
+\index{getSbtPos@{getSbtPos}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtPos()}{getSbtPos()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::get\+Sbt\+Pos (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 130 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a1a6c1bbf284be9d294f1885e24a00305_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a68b2780be5e7c21ea7c5656d99a7955e}\label{namespacevvenc_1_1CU_a68b2780be5e7c21ea7c5656d99a7955e}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtPosFromSbtMode@{getSbtPosFromSbtMode}}
+\index{getSbtPosFromSbtMode@{getSbtPosFromSbtMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtPosFromSbtMode()}{getSbtPosFromSbtMode()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::get\+Sbt\+Pos\+From\+Sbt\+Mode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 134 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a68b2780be5e7c21ea7c5656d99a7955e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a10639af982cbc58394e930bae8f96d56}\label{namespacevvenc_1_1CU_a10639af982cbc58394e930bae8f96d56}} 
+\index{vvenc::CU@{vvenc::CU}!getSbtTuSplit@{getSbtTuSplit}}
+\index{getSbtTuSplit@{getSbtTuSplit}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSbtTuSplit()}{getSbtTuSplit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} get\+Sbt\+Tu\+Split (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3419 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{namespacevvenc_1_1CU_a10639af982cbc58394e930bae8f96d56_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a10639af982cbc58394e930bae8f96d56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ace98b575c141742687bdd36f691a85e7}\label{namespacevvenc_1_1CU_ace98b575c141742687bdd36f691a85e7}} 
+\index{vvenc::CU@{vvenc::CU}!getSplitAtDepth@{getSplitAtDepth}}
+\index{getSplitAtDepth@{getSplitAtDepth}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getSplitAtDepth()}{getSplitAtDepth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} get\+Split\+At\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const unsigned}]{depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 331 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ace98b575c141742687bdd36f691a85e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ae773b0a93e1c20084c95aaabb0627818}\label{namespacevvenc_1_1CU_ae773b0a93e1c20084c95aaabb0627818}} 
+\index{vvenc::CU@{vvenc::CU}!getTU@{getTU}}
+\index{getTU@{getTU}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getTU()}{getTU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} const$\ast$ vvenc\+::\+C\+U\+::get\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 719 of file Loop\+Filter.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{namespacevvenc_1_1CU_ae773b0a93e1c20084c95aaabb0627818_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a73139b4446191d10713b95d20c51f1fd}\label{namespacevvenc_1_1CU_a73139b4446191d10713b95d20c51f1fd}} 
+\index{vvenc::CU@{vvenc::CU}!getValidBcwIdx@{getValidBcwIdx}}
+\index{getValidBcwIdx@{getValidBcwIdx}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{getValidBcwIdx()}{getValidBcwIdx()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Valid\+Bcw\+Idx (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3491 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a73139b4446191d10713b95d20c51f1fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a078b8a5a9b42d087da4bb020b481b6e4}\label{namespacevvenc_1_1CU_a078b8a5a9b42d087da4bb020b481b6e4}} 
+\index{vvenc::CU@{vvenc::CU}!hasSubCUNonZeroAffineMVd@{hasSubCUNonZeroAffineMVd}}
+\index{hasSubCUNonZeroAffineMVd@{hasSubCUNonZeroAffineMVd}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{hasSubCUNonZeroAffineMVd()}{hasSubCUNonZeroAffineMVd()}}
+{\footnotesize\ttfamily bool has\+Sub\+C\+U\+Non\+Zero\+Affine\+M\+Vd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3354 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a078b8a5a9b42d087da4bb020b481b6e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab3f15c307a4e4dda9e1b7106bdb947de}\label{namespacevvenc_1_1CU_ab3f15c307a4e4dda9e1b7106bdb947de}} 
+\index{vvenc::CU@{vvenc::CU}!hasSubCUNonZeroMVd@{hasSubCUNonZeroMVd}}
+\index{hasSubCUNonZeroMVd@{hasSubCUNonZeroMVd}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{hasSubCUNonZeroMVd()}{hasSubCUNonZeroMVd()}}
+{\footnotesize\ttfamily bool has\+Sub\+C\+U\+Non\+Zero\+M\+Vd (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3330 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab3f15c307a4e4dda9e1b7106bdb947de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a733df44fc854ac1dbf408ebff5b4bbca}\label{namespacevvenc_1_1CU_a733df44fc854ac1dbf408ebff5b4bbca}} 
+\index{vvenc::CU@{vvenc::CU}!isAddNeighborMvIBC@{isAddNeighborMvIBC}}
+\index{isAddNeighborMvIBC@{isAddNeighborMvIBC}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isAddNeighborMvIBC()}{isAddNeighborMvIBC()}}
+{\footnotesize\ttfamily bool is\+Add\+Neighbor\+Mv\+I\+BC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{curr\+Mv,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{neighbor\+Mvs,  }\item[{int}]{num\+Neighbor\+Mv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1588 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a733df44fc854ac1dbf408ebff5b4bbca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aa0b6f5b1ae4c0824d28f9c6af5eb5817}\label{namespacevvenc_1_1CU_aa0b6f5b1ae4c0824d28f9c6af5eb5817}} 
+\index{vvenc::CU@{vvenc::CU}!isBcwIdxCoded@{isBcwIdxCoded}}
+\index{isBcwIdxCoded@{isBcwIdxCoded}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isBcwIdxCoded()}{isBcwIdxCoded()}}
+{\footnotesize\ttfamily bool is\+Bcw\+Idx\+Coded (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3450 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa0b6f5b1ae4c0824d28f9c6af5eb5817_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa0b6f5b1ae4c0824d28f9c6af5eb5817_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab7b3611984150b94a63d89d2b45f5be3}\label{namespacevvenc_1_1CU_ab7b3611984150b94a63d89d2b45f5be3}} 
+\index{vvenc::CU@{vvenc::CU}!isBiPredFromDifferentDirEqDistPoc@{isBiPredFromDifferentDirEqDistPoc}}
+\index{isBiPredFromDifferentDirEqDistPoc@{isBiPredFromDifferentDirEqDistPoc}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isBiPredFromDifferentDirEqDistPoc()}{isBiPredFromDifferentDirEqDistPoc()}}
+{\footnotesize\ttfamily bool is\+Bi\+Pred\+From\+Different\+Dir\+Eq\+Dist\+Poc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3074 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab7b3611984150b94a63d89d2b45f5be3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab7b3611984150b94a63d89d2b45f5be3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a7c89d15e3cd1f22016e3c0c3f506b9ca}\label{namespacevvenc_1_1CU_a7c89d15e3cd1f22016e3c0c3f506b9ca}} 
+\index{vvenc::CU@{vvenc::CU}!isBipredRestriction@{isBipredRestriction}}
+\index{isBipredRestriction@{isBipredRestriction}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isBipredRestriction()}{isBipredRestriction()}}
+{\footnotesize\ttfamily bool is\+Bipred\+Restriction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2211 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7c89d15e3cd1f22016e3c0c3f506b9ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7c89d15e3cd1f22016e3c0c3f506b9ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a7f7ada0d4329568b7e464dabd3d0dbf2}\label{namespacevvenc_1_1CU_a7f7ada0d4329568b7e464dabd3d0dbf2}} 
+\index{vvenc::CU@{vvenc::CU}!isConsInter@{isConsInter}}
+\index{isConsInter@{isConsInter}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isConsInter()}{isConsInter()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Cons\+Inter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 76 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7f7ada0d4329568b7e464dabd3d0dbf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6c1191643ef6fa09c2976029ab5219d1}\label{namespacevvenc_1_1CU_a6c1191643ef6fa09c2976029ab5219d1}} 
+\index{vvenc::CU@{vvenc::CU}!isConsIntra@{isConsIntra}}
+\index{isConsIntra@{isConsIntra}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isConsIntra()}{isConsIntra()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Cons\+Intra (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6c1191643ef6fa09c2976029ab5219d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a55edeb1c78f3523df5be65f6d3f1567b}\label{namespacevvenc_1_1CU_a55edeb1c78f3523df5be65f6d3f1567b}} 
+\index{vvenc::CU@{vvenc::CU}!isDiffMER@{isDiffMER}}
+\index{isDiffMER@{isDiffMER}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isDiffMER()}{isDiffMER()}}
+{\footnotesize\ttfamily bool is\+Diff\+M\+ER (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos2,  }\item[{const unsigned}]{plevel }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1655 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a55edeb1c78f3523df5be65f6d3f1567b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a7346d51d89d6d02141b80c90a25e3d11}\label{namespacevvenc_1_1CU_a7346d51d89d6d02141b80c90a25e3d11}} 
+\index{vvenc::CU@{vvenc::CU}!isDMChromaMIP@{isDMChromaMIP}}
+\index{isDMChromaMIP@{isDMChromaMIP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isDMChromaMIP()}{isDMChromaMIP()}}
+{\footnotesize\ttfamily bool is\+D\+M\+Chroma\+M\+IP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 620 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7346d51d89d6d02141b80c90a25e3d11_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7346d51d89d6d02141b80c90a25e3d11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad9329b0a36acd98756a7e8f6bc477df3}\label{namespacevvenc_1_1CU_ad9329b0a36acd98756a7e8f6bc477df3}} 
+\index{vvenc::CU@{vvenc::CU}!isFirstTBInPredReg@{isFirstTBInPredReg}}
+\index{isFirstTBInPredReg@{isFirstTBInPredReg}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isFirstTBInPredReg()}{isFirstTBInPredReg()}}
+{\footnotesize\ttfamily bool is\+First\+T\+B\+In\+Pred\+Reg (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3440 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{namespacevvenc_1_1CU_ad9329b0a36acd98756a7e8f6bc477df3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad9329b0a36acd98756a7e8f6bc477df3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a3041ffe17dbda47017f7e074f714c544}\label{namespacevvenc_1_1CU_a3041ffe17dbda47017f7e074f714c544}} 
+\index{vvenc::CU@{vvenc::CU}!isIBC@{isIBC}}
+\index{isIBC@{isIBC}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isIBC()}{isIBC()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+I\+BC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacevvenc_1_1CU_a3041ffe17dbda47017f7e074f714c544_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a84016faa0ecc6cee91707aad043d8316}\label{namespacevvenc_1_1CU_a84016faa0ecc6cee91707aad043d8316}} 
+\index{vvenc::CU@{vvenc::CU}!isInter@{isInter}}
+\index{isInter@{isInter}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isInter()}{isInter()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Inter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 80 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a84016faa0ecc6cee91707aad043d8316_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab722b39b132601673d1dcd3547c2c01c}\label{namespacevvenc_1_1CU_ab722b39b132601673d1dcd3547c2c01c}} 
+\index{vvenc::CU@{vvenc::CU}!isIntra@{isIntra}}
+\index{isIntra@{isIntra}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isIntra()}{isIntra()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Intra (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 79 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{namespacevvenc_1_1CU_ab722b39b132601673d1dcd3547c2c01c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6e192c103882e52242379b617671f25a}\label{namespacevvenc_1_1CU_a6e192c103882e52242379b617671f25a}} 
+\index{vvenc::CU@{vvenc::CU}!isISPFirst@{isISPFirst}}
+\index{isISPFirst@{isISPFirst}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isISPFirst()}{isISPFirst()}}
+{\footnotesize\ttfamily bool is\+I\+S\+P\+First (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{tu\+Area,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 390 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6e192c103882e52242379b617671f25a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a0eb3e1c07d35abfec71128bc40f50ccc}\label{namespacevvenc_1_1CU_a0eb3e1c07d35abfec71128bc40f50ccc}} 
+\index{vvenc::CU@{vvenc::CU}!isISPLast@{isISPLast}}
+\index{isISPLast@{isISPLast}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isISPLast()}{isISPLast()}}
+{\footnotesize\ttfamily bool is\+I\+S\+P\+Last (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{tu\+Area,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 373 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a0eb3e1c07d35abfec71128bc40f50ccc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a0eb3e1c07d35abfec71128bc40f50ccc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_acd8ea4ccd0df09c12542c0e079bc609f}\label{namespacevvenc_1_1CU_acd8ea4ccd0df09c12542c0e079bc609f}} 
+\index{vvenc::CU@{vvenc::CU}!isLastSubCUOfCtu@{isLastSubCUOfCtu}}
+\index{isLastSubCUOfCtu@{isLastSubCUOfCtu}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isLastSubCUOfCtu()}{isLastSubCUOfCtu()}}
+{\footnotesize\ttfamily bool is\+Last\+Sub\+C\+U\+Of\+Ctu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 277 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_acd8ea4ccd0df09c12542c0e079bc609f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_acd8ea4ccd0df09c12542c0e079bc609f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aeab09932e5cd9979570d9d6f897961d2}\label{namespacevvenc_1_1CU_aeab09932e5cd9979570d9d6f897961d2}} 
+\index{vvenc::CU@{vvenc::CU}!isLMCMode@{isLMCMode}}
+\index{isLMCMode@{isLMCMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isLMCMode()}{isLMCMode()}}
+{\footnotesize\ttfamily bool is\+L\+M\+C\+Mode (\begin{DoxyParamCaption}\item[{unsigned}]{mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 669 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aeab09932e5cd9979570d9d6f897961d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab713aabf8600d0655a6fdf5969f79ae1}\label{namespacevvenc_1_1CU_ab713aabf8600d0655a6fdf5969f79ae1}} 
+\index{vvenc::CU@{vvenc::CU}!isLMCModeEnabled@{isLMCModeEnabled}}
+\index{isLMCModeEnabled@{isLMCModeEnabled}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isLMCModeEnabled()}{isLMCModeEnabled()}}
+{\footnotesize\ttfamily bool is\+L\+M\+C\+Mode\+Enabled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{unsigned}]{mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line 674 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab713aabf8600d0655a6fdf5969f79ae1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{namespacevvenc_1_1CU_ab713aabf8600d0655a6fdf5969f79ae1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ac7a79bf73d24261dff565b434d948e2e}\label{namespacevvenc_1_1CU_ac7a79bf73d24261dff565b434d948e2e}} 
+\index{vvenc::CU@{vvenc::CU}!isLocalSepTree@{isLocalSepTree}}
+\index{isLocalSepTree@{isLocalSepTree}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isLocalSepTree()}{isLocalSepTree()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Local\+Sep\+Tree (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Unit\+Tools.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ac7a79bf73d24261dff565b434d948e2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ac7a79bf73d24261dff565b434d948e2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aa1e534804590abcff8d3b46610473142}\label{namespacevvenc_1_1CU_aa1e534804590abcff8d3b46610473142}} 
+\index{vvenc::CU@{vvenc::CU}!isMIP@{isMIP}}
+\index{isMIP@{isMIP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isMIP()}{isMIP()}}
+{\footnotesize\ttfamily bool is\+M\+IP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{channel\+Type = {\ttfamily \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a9eef8706f96e8b3511a2450e90075f59}{C\+H\+\_\+L}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 615 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa1e534804590abcff8d3b46610473142_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aa1e534804590abcff8d3b46610473142_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab7644e93295d67b5af8be7fa2925f54e}\label{namespacevvenc_1_1CU_ab7644e93295d67b5af8be7fa2925f54e}} 
+\index{vvenc::CU@{vvenc::CU}!isMTSAllowed@{isMTSAllowed}}
+\index{isMTSAllowed@{isMTSAllowed}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isMTSAllowed()}{isMTSAllowed()}}
+{\footnotesize\ttfamily bool is\+M\+T\+S\+Allowed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3541 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{namespacevvenc_1_1CU_ab7644e93295d67b5af8be7fa2925f54e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab7644e93295d67b5af8be7fa2925f54e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_abccb0c40a5d9a2f0db54c8009371c2e4}\label{namespacevvenc_1_1CU_abccb0c40a5d9a2f0db54c8009371c2e4}} 
+\index{vvenc::CU@{vvenc::CU}!isPLT@{isPLT}}
+\index{isPLT@{isPLT}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isPLT()}{isPLT()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+P\+LT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_abccb0c40a5d9a2f0db54c8009371c2e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a10947d5b6236a8106ecd42d3b433f618}\label{namespacevvenc_1_1CU_a10947d5b6236a8106ecd42d3b433f618}} 
+\index{vvenc::CU@{vvenc::CU}!isPredRegDiffFromTB@{isPredRegDiffFromTB}}
+\index{isPredRegDiffFromTB@{isPredRegDiffFromTB}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isPredRegDiffFromTB()}{isPredRegDiffFromTB()}}
+{\footnotesize\ttfamily bool is\+Pred\+Reg\+Diff\+From\+TB (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3435 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a10947d5b6236a8106ecd42d3b433f618_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a77f1bf3bfbdd04b85899c72a39a2e259}\label{namespacevvenc_1_1CU_a77f1bf3bfbdd04b85899c72a39a2e259}} 
+\index{vvenc::CU@{vvenc::CU}!isRDPCMEnabled@{isRDPCMEnabled}}
+\index{isRDPCMEnabled@{isRDPCMEnabled}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isRDPCMEnabled()}{isRDPCMEnabled()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+R\+D\+P\+C\+M\+Enabled (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Unit\+Tools.\+h.
+
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a6e0307efeecb99fc9edb575c53b6e645}\label{namespacevvenc_1_1CU_a6e0307efeecb99fc9edb575c53b6e645}} 
+\index{vvenc::CU@{vvenc::CU}!isSameCtu@{isSameCtu}}
+\index{isSameCtu@{isSameCtu}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameCtu()}{isSameCtu()}}
+{\footnotesize\ttfamily bool is\+Same\+Ctu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a6e0307efeecb99fc9edb575c53b6e645_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a20b35d82c79c7a1c237f2fad68e31b61}\label{namespacevvenc_1_1CU_a20b35d82c79c7a1c237f2fad68e31b61}} 
+\index{vvenc::CU@{vvenc::CU}!isSameSbtSize@{isSameSbtSize}}
+\index{isSameSbtSize@{isSameSbtSize}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameSbtSize()}{isSameSbtSize()}}
+{\footnotesize\ttfamily bool is\+Same\+Sbt\+Size (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Info1,  }\item[{const uint8\+\_\+t}]{sbt\+Info2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3407 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{namespacevvenc_1_1CU_a20b35d82c79c7a1c237f2fad68e31b61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{namespacevvenc_1_1CU_a20b35d82c79c7a1c237f2fad68e31b61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_af7a7f432d5602e77d100f8137a2a1633}\label{namespacevvenc_1_1CU_af7a7f432d5602e77d100f8137a2a1633}} 
+\index{vvenc::CU@{vvenc::CU}!isSameSlice@{isSameSlice}}
+\index{isSameSlice@{isSameSlice}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameSlice()}{isSameSlice()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Same\+Slice (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_af7a7f432d5602e77d100f8137a2a1633_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a16419b94eaab2cce35ffcf2a931e6298}\label{namespacevvenc_1_1CU_a16419b94eaab2cce35ffcf2a931e6298}} 
+\index{vvenc::CU@{vvenc::CU}!isSameSliceAndTile@{isSameSliceAndTile}}
+\index{isSameSliceAndTile@{isSameSliceAndTile}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameSliceAndTile()}{isSameSliceAndTile()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Same\+Slice\+And\+Tile (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 86 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a16419b94eaab2cce35ffcf2a931e6298_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a925f94b0848091fcdb76dd43a775951a}\label{namespacevvenc_1_1CU_a925f94b0848091fcdb76dd43a775951a}} 
+\index{vvenc::CU@{vvenc::CU}!isSameSubPic@{isSameSubPic}}
+\index{isSameSubPic@{isSameSubPic}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameSubPic()}{isSameSubPic()}}
+{\footnotesize\ttfamily bool is\+Same\+Sub\+Pic (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a925f94b0848091fcdb76dd43a775951a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a925f94b0848091fcdb76dd43a775951a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad3143aae0b45880e8c134e61d317f211}\label{namespacevvenc_1_1CU_ad3143aae0b45880e8c134e61d317f211}} 
+\index{vvenc::CU@{vvenc::CU}!isSameTile@{isSameTile}}
+\index{isSameTile@{isSameTile}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSameTile()}{isSameTile()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Same\+Tile (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 85 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad3143aae0b45880e8c134e61d317f211_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad9826a082e7a4783645ea9c84357754e}\label{namespacevvenc_1_1CU_ad9826a082e7a4783645ea9c84357754e}} 
+\index{vvenc::CU@{vvenc::CU}!isSbtMode@{isSbtMode}}
+\index{isSbtMode@{isSbtMode}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSbtMode()}{isSbtMode()}}
+{\footnotesize\ttfamily bool is\+Sbt\+Mode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{sbt\+Info }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3401 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{namespacevvenc_1_1CU_ad9826a082e7a4783645ea9c84357754e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{namespacevvenc_1_1CU_ad9826a082e7a4783645ea9c84357754e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a9dba2390376b36d2a779733a99663842}\label{namespacevvenc_1_1CU_a9dba2390376b36d2a779733a99663842}} 
+\index{vvenc::CU@{vvenc::CU}!isSepTree@{isSepTree}}
+\index{isSepTree@{isSepTree}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{isSepTree()}{isSepTree()}}
+{\footnotesize\ttfamily bool vvenc\+::\+C\+U\+::is\+Sep\+Tree (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Unit\+Tools.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a9dba2390376b36d2a779733a99663842_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a9dba2390376b36d2a779733a99663842_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad41a4c5199db3aae874f45e88473fae5}\label{namespacevvenc_1_1CU_ad41a4c5199db3aae874f45e88473fae5}} 
+\index{vvenc::CU@{vvenc::CU}!numSbtModeRdo@{numSbtModeRdo}}
+\index{numSbtModeRdo@{numSbtModeRdo}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{numSbtModeRdo()}{numSbtModeRdo()}}
+{\footnotesize\ttfamily uint8\+\_\+t num\+Sbt\+Mode\+Rdo (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sbt\+Allowed }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3390 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{namespacevvenc_1_1CU_ad41a4c5199db3aae874f45e88473fae5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad41a4c5199db3aae874f45e88473fae5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_aab74ca0ff841ab15a7dcaf423c776a32}\label{namespacevvenc_1_1CU_aab74ca0ff841ab15a7dcaf423c776a32}} 
+\index{vvenc::CU@{vvenc::CU}!predictQP@{predictQP}}
+\index{predictQP@{predictQP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{predictQP()}{predictQP()}}
+{\footnotesize\ttfamily int predict\+QP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const int}]{prev\+QP }\end{DoxyParamCaption})}
+
+
+
+Definition at line 290 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aab74ca0ff841ab15a7dcaf423c776a32_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_aab74ca0ff841ab15a7dcaf423c776a32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a90989553da16287cd7a257fd0d094fb0}\label{namespacevvenc_1_1CU_a90989553da16287cd7a257fd0d094fb0}} 
+\index{vvenc::CU@{vvenc::CU}!resetMVDandMV2Int@{resetMVDandMV2Int}}
+\index{resetMVDandMV2Int@{resetMVDandMV2Int}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{resetMVDandMV2Int()}{resetMVDandMV2Int()}}
+{\footnotesize\ttfamily void reset\+M\+V\+Dand\+M\+V2\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3276 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a90989553da16287cd7a257fd0d094fb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a90989553da16287cd7a257fd0d094fb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a7e2f57f2dc2c27605fb6bde3c30cabbe}\label{namespacevvenc_1_1CU_a7e2f57f2dc2c27605fb6bde3c30cabbe}} 
+\index{vvenc::CU@{vvenc::CU}!restrictBiPredMergeCandsOne@{restrictBiPredMergeCandsOne}}
+\index{restrictBiPredMergeCandsOne@{restrictBiPredMergeCandsOne}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{restrictBiPredMergeCandsOne()}{restrictBiPredMergeCandsOne()}}
+{\footnotesize\ttfamily void restrict\+Bi\+Pred\+Merge\+Cands\+One (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3097 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7e2f57f2dc2c27605fb6bde3c30cabbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a7e2f57f2dc2c27605fb6bde3c30cabbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a2dd296f3d3dab7476ea54337ecbb50c8}\label{namespacevvenc_1_1CU_a2dd296f3d3dab7476ea54337ecbb50c8}} 
+\index{vvenc::CU@{vvenc::CU}!saveMotionInHMVP@{saveMotionInHMVP}}
+\index{saveMotionInHMVP@{saveMotionInHMVP}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{saveMotionInHMVP()}{saveMotionInHMVP()}}
+{\footnotesize\ttfamily void save\+Motion\+In\+H\+M\+VP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const bool}]{is\+To\+Be\+Done }\end{DoxyParamCaption})}
+
+
+
+Definition at line 314 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a2dd296f3d3dab7476ea54337ecbb50c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a79022b9c1d9d40b790a4c560e077609d}\label{namespacevvenc_1_1CU_a79022b9c1d9d40b790a4c560e077609d}} 
+\index{vvenc::CU@{vvenc::CU}!setAllAffineMv@{setAllAffineMv}}
+\index{setAllAffineMv@{setAllAffineMv}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{setAllAffineMv()}{setAllAffineMv()}}
+{\footnotesize\ttfamily void set\+All\+Affine\+Mv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{aff\+LT,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{aff\+RT,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{aff\+LB,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+List,  }\item[{bool}]{clip\+C\+P\+M\+Vs = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2900 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a79022b9c1d9d40b790a4c560e077609d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a79022b9c1d9d40b790a4c560e077609d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_acafcc82bc0e37f9ad564b12ae4c6818a}\label{namespacevvenc_1_1CU_acafcc82bc0e37f9ad564b12ae4c6818a}} 
+\index{vvenc::CU@{vvenc::CU}!setAllAffineMvField@{setAllAffineMvField}}
+\index{setAllAffineMvField@{setAllAffineMvField}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{setAllAffineMvField()}{setAllAffineMvField()}}
+{\footnotesize\ttfamily void set\+All\+Affine\+Mv\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} $\ast$}]{mv\+Field,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2885 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_acafcc82bc0e37f9ad564b12ae4c6818a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_acafcc82bc0e37f9ad564b12ae4c6818a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ad05ca3273503b3f82ee0120ebffb5479}\label{namespacevvenc_1_1CU_ad05ca3273503b3f82ee0120ebffb5479}} 
+\index{vvenc::CU@{vvenc::CU}!setBcwIdx@{setBcwIdx}}
+\index{setBcwIdx@{setBcwIdx}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{setBcwIdx()}{setBcwIdx()}}
+{\footnotesize\ttfamily void set\+Bcw\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{uint8\+\_\+t}]{uh }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3509 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ad05ca3273503b3f82ee0120ebffb5479_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a154f3f605638e80be38ca16d713d5e7a}\label{namespacevvenc_1_1CU_a154f3f605638e80be38ca16d713d5e7a}} 
+\index{vvenc::CU@{vvenc::CU}!spanGeoMotionInfo@{spanGeoMotionInfo}}
+\index{spanGeoMotionInfo@{spanGeoMotionInfo}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{spanGeoMotionInfo()}{spanGeoMotionInfo()}}
+{\footnotesize\ttfamily void span\+Geo\+Motion\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{Geo\+Mrg\+Ctx,  }\item[{const uint8\+\_\+t}]{split\+Dir,  }\item[{const uint8\+\_\+t}]{cand\+Idx0,  }\item[{const uint8\+\_\+t}]{cand\+Idx1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3174 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a154f3f605638e80be38ca16d713d5e7a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a154f3f605638e80be38ca16d713d5e7a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a88cd6fcff13e86d529ac63c3d2eca6c0}\label{namespacevvenc_1_1CU_a88cd6fcff13e86d529ac63c3d2eca6c0}} 
+\index{vvenc::CU@{vvenc::CU}!spanMotionInfo@{spanMotionInfo}}
+\index{spanMotionInfo@{spanMotionInfo}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{spanMotionInfo()}{spanMotionInfo()}}
+{\footnotesize\ttfamily void span\+Motion\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{mrg\+Ctx = {\ttfamily \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}}()} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3016 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a88cd6fcff13e86d529ac63c3d2eca6c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_a88cd6fcff13e86d529ac63c3d2eca6c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab683487edb1bfd2c8954ba559741298e}\label{namespacevvenc_1_1CU_ab683487edb1bfd2c8954ba559741298e}} 
+\index{vvenc::CU@{vvenc::CU}!targetSbtAllowed@{targetSbtAllowed}}
+\index{targetSbtAllowed@{targetSbtAllowed}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{targetSbtAllowed()}{targetSbtAllowed()}}
+{\footnotesize\ttfamily uint8\+\_\+t vvenc\+::\+C\+U\+::target\+Sbt\+Allowed (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sbt\+Idx,  }\item[{uint8\+\_\+t}]{sbt\+Allowed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 135 of file Unit\+Tools.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab683487edb1bfd2c8954ba559741298e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_acab3eaa9f53f4abc885c949b52760b30}\label{namespacevvenc_1_1CU_acab3eaa9f53f4abc885c949b52760b30}} 
+\index{vvenc::CU@{vvenc::CU}!traverseTUs@{traverseTUs}}
+\index{traverseTUs@{traverseTUs}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{traverseTUs()}{traverseTUs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a646b4a2982f13bfac0865d6640044321}{T\+U\+Traverser}} traverse\+T\+Us (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 482 of file Unit\+Tools.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_acab3eaa9f53f4abc885c949b52760b30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1CU_a3ee029e85fac57db0ed217f893350ca0}\label{namespacevvenc_1_1CU_a3ee029e85fac57db0ed217f893350ca0}} 
+\index{vvenc::CU@{vvenc::CU}!traverseTUs@{traverseTUs}}
+\index{traverseTUs@{traverseTUs}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{traverseTUs()}{traverseTUs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a27097cc8e1295b99c76ec30a5bf92288}{c\+T\+U\+Traverser}} traverse\+T\+Us (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 487 of file Unit\+Tools.\+cpp.
+
+\mbox{\Hypertarget{namespacevvenc_1_1CU_ab3f84327f59a41406be3e5a43a4fa4de}\label{namespacevvenc_1_1CU_ab3f84327f59a41406be3e5a43a4fa4de}} 
+\index{vvenc::CU@{vvenc::CU}!xInheritedAffineMv@{xInheritedAffineMv}}
+\index{xInheritedAffineMv@{xInheritedAffineMv}!vvenc::CU@{vvenc::CU}}
+\doxysubsubsection{\texorpdfstring{xInheritedAffineMv()}{xInheritedAffineMv()}}
+{\footnotesize\ttfamily void x\+Inherited\+Affine\+Mv (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$}]{cu\+Neighbour,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{rc\+Mv\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1869 of file Unit\+Tools.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab3f84327f59a41406be3e5a43a4fa4de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1CU_ab3f84327f59a41406be3e5a43a4fa4de_icgraph}
+\end{center}
+\end{figure}

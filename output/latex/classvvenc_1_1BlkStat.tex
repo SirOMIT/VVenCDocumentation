@@ -1,0 +1,190 @@
+\hypertarget{classvvenc_1_1BlkStat}{}\doxysection{Blk\+Stat}
+\label{classvvenc_1_1BlkStat}\index{BlkStat@{BlkStat}}
+
+
+{\ttfamily \#include \char`\"{}Picture.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BlkStat_ab5263a182571c87e922df44f8c83e0f8}{Blk\+Stat}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1BlkStat_a9cf5a773aacf4d34dac851bc5df382b4}{$\sim$\+Blk\+Stat}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BlkStat_a228780445e101eb97e07ee7c4f99ebf5}{set\+Slice\+Max\+BT}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BlkStat_a4c5888b0e37c3027dce6d4bfed8c3dc1}{store\+Blk\+Size}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BlkStat_ac814e70a0f7defcf2b2b16f9bc2dbe35}{update\+Max\+BT}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} \&blk\+Stat)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BlkStat_af833fd7e3dcb1c0d77b69c29a5c34607}{m\+\_\+b\+Reset\+A\+Max\+BT}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BlkStat_ac94a2017ac3e39e86a3dc7c048e2f7f9}{m\+\_\+ui\+Blk\+Size}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae10bb7a7307fa404b8ca5c8ad0b48e48}{N\+U\+M\+\_\+\+A\+M\+A\+X\+B\+T\+\_\+\+L\+A\+Y\+ER}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BlkStat_a6df4b62a6a7a19e8d00c408ac1f773ac}{m\+\_\+ui\+Num\+Blk}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ae10bb7a7307fa404b8ca5c8ad0b48e48}{N\+U\+M\+\_\+\+A\+M\+A\+X\+B\+T\+\_\+\+L\+A\+Y\+ER}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BlkStat_ac7671b97dd3d927e5af8349320bb62e7}{m\+\_\+ui\+Prev\+I\+Slice\+P\+OC}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 120 of file Picture.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_ab5263a182571c87e922df44f8c83e0f8}\label{classvvenc_1_1BlkStat_ab5263a182571c87e922df44f8c83e0f8}} 
+\index{BlkStat@{BlkStat}!BlkStat@{BlkStat}}
+\index{BlkStat@{BlkStat}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{BlkStat()}{BlkStat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 123 of file Picture.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_a9cf5a773aacf4d34dac851bc5df382b4}\label{classvvenc_1_1BlkStat_a9cf5a773aacf4d34dac851bc5df382b4}} 
+\index{BlkStat@{BlkStat}!````~BlkStat@{$\sim$BlkStat}}
+\index{````~BlkStat@{$\sim$BlkStat}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlkStat()}{~BlkStat()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 128 of file Picture.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_a228780445e101eb97e07ee7c4f99ebf5}\label{classvvenc_1_1BlkStat_a228780445e101eb97e07ee7c4f99ebf5}} 
+\index{BlkStat@{BlkStat}!setSliceMaxBT@{setSliceMaxBT}}
+\index{setSliceMaxBT@{setSliceMaxBT}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{setSliceMaxBT()}{setSliceMaxBT()}}
+{\footnotesize\ttfamily void set\+Slice\+Max\+BT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 102 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classvvenc_1_1BlkStat_a228780445e101eb97e07ee7c4f99ebf5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BlkStat_a228780445e101eb97e07ee7c4f99ebf5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_a4c5888b0e37c3027dce6d4bfed8c3dc1}\label{classvvenc_1_1BlkStat_a4c5888b0e37c3027dce6d4bfed8c3dc1}} 
+\index{BlkStat@{BlkStat}!storeBlkSize@{storeBlkSize}}
+\index{storeBlkSize@{storeBlkSize}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{storeBlkSize()}{storeBlkSize()}}
+{\footnotesize\ttfamily void store\+Blk\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvvenc_1_1BlkStat_a4c5888b0e37c3027dce6d4bfed8c3dc1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BlkStat_a4c5888b0e37c3027dce6d4bfed8c3dc1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_ac814e70a0f7defcf2b2b16f9bc2dbe35}\label{classvvenc_1_1BlkStat_ac814e70a0f7defcf2b2b16f9bc2dbe35}} 
+\index{BlkStat@{BlkStat}!updateMaxBT@{updateMaxBT}}
+\index{updateMaxBT@{updateMaxBT}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{updateMaxBT()}{updateMaxBT()}}
+{\footnotesize\ttfamily void update\+Max\+BT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} \&}]{blk\+Stat }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classvvenc_1_1BlkStat_ac814e70a0f7defcf2b2b16f9bc2dbe35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BlkStat_ac814e70a0f7defcf2b2b16f9bc2dbe35_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_af833fd7e3dcb1c0d77b69c29a5c34607}\label{classvvenc_1_1BlkStat_af833fd7e3dcb1c0d77b69c29a5c34607}} 
+\index{BlkStat@{BlkStat}!m\_bResetAMaxBT@{m\_bResetAMaxBT}}
+\index{m\_bResetAMaxBT@{m\_bResetAMaxBT}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{m\_bResetAMaxBT}{m\_bResetAMaxBT}}
+{\footnotesize\ttfamily bool m\+\_\+b\+Reset\+A\+Max\+BT\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 140 of file Picture.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_ac94a2017ac3e39e86a3dc7c048e2f7f9}\label{classvvenc_1_1BlkStat_ac94a2017ac3e39e86a3dc7c048e2f7f9}} 
+\index{BlkStat@{BlkStat}!m\_uiBlkSize@{m\_uiBlkSize}}
+\index{m\_uiBlkSize@{m\_uiBlkSize}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{m\_uiBlkSize}{m\_uiBlkSize}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ui\+Blk\+Size\mbox{[}\mbox{\hyperlink{namespacevvenc_ae10bb7a7307fa404b8ca5c8ad0b48e48}{N\+U\+M\+\_\+\+A\+M\+A\+X\+B\+T\+\_\+\+L\+A\+Y\+ER}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 137 of file Picture.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_a6df4b62a6a7a19e8d00c408ac1f773ac}\label{classvvenc_1_1BlkStat_a6df4b62a6a7a19e8d00c408ac1f773ac}} 
+\index{BlkStat@{BlkStat}!m\_uiNumBlk@{m\_uiNumBlk}}
+\index{m\_uiNumBlk@{m\_uiNumBlk}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{m\_uiNumBlk}{m\_uiNumBlk}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ui\+Num\+Blk\mbox{[}\mbox{\hyperlink{namespacevvenc_ae10bb7a7307fa404b8ca5c8ad0b48e48}{N\+U\+M\+\_\+\+A\+M\+A\+X\+B\+T\+\_\+\+L\+A\+Y\+ER}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 138 of file Picture.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BlkStat_ac7671b97dd3d927e5af8349320bb62e7}\label{classvvenc_1_1BlkStat_ac7671b97dd3d927e5af8349320bb62e7}} 
+\index{BlkStat@{BlkStat}!m\_uiPrevISlicePOC@{m\_uiPrevISlicePOC}}
+\index{m\_uiPrevISlicePOC@{m\_uiPrevISlicePOC}!BlkStat@{BlkStat}}
+\doxysubsubsection{\texorpdfstring{m\_uiPrevISlicePOC}{m\_uiPrevISlicePOC}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ui\+Prev\+I\+Slice\+P\+OC\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 139 of file Picture.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Picture_8h}{Picture.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Picture_8cpp}{Picture.\+cpp}}\end{DoxyCompactItemize}

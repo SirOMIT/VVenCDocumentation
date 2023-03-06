@@ -1,0 +1,585 @@
+\hypertarget{classvvenc_1_1InterPrediction}{}\doxysection{Inter\+Prediction}
+\label{classvvenc_1_1InterPrediction}\index{InterPrediction@{InterPrediction}}
+
+
+{\ttfamily \#include \char`\"{}Inter\+Prediction.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Inter\+Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classvvenc_1_1InterPrediction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Inter\+Prediction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterPrediction_a7ab8b9dd263674820cac4daf880d55af}{Inter\+Prediction}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1InterPrediction_a9eb1c62063916f3bd2c130511aff69e9}{$\sim$\+Inter\+Prediction}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_ad95ecc488e5dc47c66b40a94e4962a67}{init}} (\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$pc\+Rd\+Cost, \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chroma\+Format\+I\+DC, const int ctu\+Size)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterPrediction_a19309c6f816ca51c7cea11cb21473ffd}{is\+Luma\+Bv\+Valid\+I\+BC}} (const int ctu\+Size, const int x\+Cb, const int y\+Cb, const int width, const int height, const int x\+Bv, const int y\+Bv)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterPrediction_a5a356ccf97b9f7b33428f6650b6f9da5}{motion\+Compensation}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List=\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}}, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$pred\+Buf\+Dflt\+Wght=\mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_ae7d5980af5ef4ee4366ad79b6955feeb}{motion\+Compensation\+Geo}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, const \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&geo\+Mrg\+Ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a25fd611e79abe6a1da4d33a03f321fcb}{motion\+Compensation\+I\+BC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a077087b708345d4e9423eac9d32323ab}{reset\+I\+B\+C\+Buffer}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chroma\+Format\+I\+DC, const int ctu\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a402d98b243d45f7cee2956c1e023088a}{reset\+V\+P\+D\+Ufor\+I\+BC}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chroma\+Format\+I\+DC, const int ctu\+Size, const int v\+Size, const int x\+Pos, const int y\+Pos)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_aa1609def843feb7504a19d95ed485a2e}{x\+Fill\+I\+B\+C\+Buffer}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a825a3a015731fd4a2411e43170f6af0e}{x\+Sub\+Pu\+MC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&e\+Ref\+Pic\+List=\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1InterPrediction_a9ddbb02a220623fa10f87e6f751e77e6}{m\+\_\+curr\+Chroma\+Format}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterPrediction_a70ecd652e112cabb7dfffed8005287db}{x\+Check\+Identical\+Motion}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a8add971dc3374c5462bb54c6f5f43efc}{x\+Intra\+Block\+Copy\+I\+BC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a129ce478fba97dea28361be72409fe2d}{x\+Pred\+Inter\+Bi}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&yuv\+Pred, const bool bdof\+Applied=false, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$yuv\+Pred\+Tmp=\mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a32806fdb7cf77d4ae99f8240e2927d1e}{x\+Pred\+Inter\+Uni}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&ref\+Pic\+List, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pc\+Yuv\+Pred, const bool bi, const bool bdof\+Applied)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterPrediction_a85b0dabec975bf1a9c4adce8eb141b39}{x\+Sub\+Pu\+B\+D\+OF}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&ref\+Pic\+List=\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterPrediction_a2c781c71205a9144906280c30b759ef4}{m\+\_\+geo\+Part\+Buf}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterPrediction_a2fb4a2e1e8a89b812fa7df85799dc25b}{m\+\_\+\+I\+B\+C\+Buffer}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterPrediction_a1772f4fde0e53388a546adacdb5d444b}{m\+\_\+\+I\+B\+C\+Buffer\+Width}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterPrediction_a4e02ed9e1f4afa737de0ea7b1c65f486}{m\+\_\+sub\+Pu\+MC}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterPrediction_a3de81f16a66e23a35850efb6a0add5e0}{m\+\_\+yuv\+Pred}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 152 of file Inter\+Prediction.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a7ab8b9dd263674820cac4daf880d55af}\label{classvvenc_1_1InterPrediction_a7ab8b9dd263674820cac4daf880d55af}} 
+\index{InterPrediction@{InterPrediction}!InterPrediction@{InterPrediction}}
+\index{InterPrediction@{InterPrediction}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{InterPrediction()}{InterPrediction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file Inter\+Prediction.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a9eb1c62063916f3bd2c130511aff69e9}\label{classvvenc_1_1InterPrediction_a9eb1c62063916f3bd2c130511aff69e9}} 
+\index{InterPrediction@{InterPrediction}!````~InterPrediction@{$\sim$InterPrediction}}
+\index{````~InterPrediction@{$\sim$InterPrediction}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{$\sim$InterPrediction()}{~InterPrediction()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 237 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a9eb1c62063916f3bd2c130511aff69e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1InterPrediction_a3a80b6032f86a56bec74609034b3246f}} 
+\index{InterPrediction@{InterPrediction}!destroy@{destroy}}
+\index{destroy@{destroy}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 242 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1InterPrediction_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_ad95ecc488e5dc47c66b40a94e4962a67}\label{classvvenc_1_1InterPrediction_ad95ecc488e5dc47c66b40a94e4962a67}} 
+\index{InterPrediction@{InterPrediction}!init@{init}}
+\index{init@{init}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$}]{pc\+Rd\+Cost,  }\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{chroma\+Format\+I\+DC,  }\item[{const int}]{ctu\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 253 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_ad95ecc488e5dc47c66b40a94e4962a67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_ad95ecc488e5dc47c66b40a94e4962a67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a19309c6f816ca51c7cea11cb21473ffd}\label{classvvenc_1_1InterPrediction_a19309c6f816ca51c7cea11cb21473ffd}} 
+\index{InterPrediction@{InterPrediction}!isLumaBvValidIBC@{isLumaBvValidIBC}}
+\index{isLumaBvValidIBC@{isLumaBvValidIBC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{isLumaBvValidIBC()}{isLumaBvValidIBC()}}
+{\footnotesize\ttfamily bool is\+Luma\+Bv\+Valid\+I\+BC (\begin{DoxyParamCaption}\item[{const int}]{ctu\+Size,  }\item[{const int}]{x\+Cb,  }\item[{const int}]{y\+Cb,  }\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{const int}]{x\+Bv,  }\item[{const int}]{y\+Bv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1987 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classvvenc_1_1InterPrediction_a19309c6f816ca51c7cea11cb21473ffd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a19309c6f816ca51c7cea11cb21473ffd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a5a356ccf97b9f7b33428f6650b6f9da5}\label{classvvenc_1_1InterPrediction_a5a356ccf97b9f7b33428f6650b6f9da5}} 
+\index{InterPrediction@{InterPrediction}!motionCompensation@{motionCompensation}}
+\index{motionCompensation@{motionCompensation}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{motionCompensation()}{motionCompensation()}}
+{\footnotesize\ttfamily bool motion\+Compensation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List = {\ttfamily \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}}},  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$}]{pred\+Buf\+Dflt\+Wght = {\ttfamily \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 468 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterPrediction_a5a356ccf97b9f7b33428f6650b6f9da5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a5a356ccf97b9f7b33428f6650b6f9da5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_ae7d5980af5ef4ee4366ad79b6955feeb}\label{classvvenc_1_1InterPrediction_ae7d5980af5ef4ee4366ad79b6955feeb}} 
+\index{InterPrediction@{InterPrediction}!motionCompensationGeo@{motionCompensationGeo}}
+\index{motionCompensationGeo@{motionCompensationGeo}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{motionCompensationGeo()}{motionCompensationGeo()}}
+{\footnotesize\ttfamily void motion\+Compensation\+Geo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{const \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \&}]{geo\+Mrg\+Ctx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1032 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_ae7d5980af5ef4ee4366ad79b6955feeb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_ae7d5980af5ef4ee4366ad79b6955feeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a25fd611e79abe6a1da4d33a03f321fcb}\label{classvvenc_1_1InterPrediction_a25fd611e79abe6a1da4d33a03f321fcb}} 
+\index{InterPrediction@{InterPrediction}!motionCompensationIBC@{motionCompensationIBC}}
+\index{motionCompensationIBC@{motionCompensationIBC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{motionCompensationIBC()}{motionCompensationIBC()}}
+{\footnotesize\ttfamily void motion\+Compensation\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 446 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a25fd611e79abe6a1da4d33a03f321fcb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a25fd611e79abe6a1da4d33a03f321fcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a077087b708345d4e9423eac9d32323ab}\label{classvvenc_1_1InterPrediction_a077087b708345d4e9423eac9d32323ab}} 
+\index{InterPrediction@{InterPrediction}!resetIBCBuffer@{resetIBCBuffer}}
+\index{resetIBCBuffer@{resetIBCBuffer}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{resetIBCBuffer()}{resetIBCBuffer()}}
+{\footnotesize\ttfamily void reset\+I\+B\+C\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{chroma\+Format\+I\+DC,  }\item[{const int}]{ctu\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1976 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a077087b708345d4e9423eac9d32323ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a077087b708345d4e9423eac9d32323ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a402d98b243d45f7cee2956c1e023088a}\label{classvvenc_1_1InterPrediction_a402d98b243d45f7cee2956c1e023088a}} 
+\index{InterPrediction@{InterPrediction}!resetVPDUforIBC@{resetVPDUforIBC}}
+\index{resetVPDUforIBC@{resetVPDUforIBC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{resetVPDUforIBC()}{resetVPDUforIBC()}}
+{\footnotesize\ttfamily void reset\+V\+P\+D\+Ufor\+I\+BC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{chroma\+Format\+I\+DC,  }\item[{const int}]{ctu\+Size,  }\item[{const int}]{v\+Size,  }\item[{const int}]{x\+Pos,  }\item[{const int}]{y\+Pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1982 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a402d98b243d45f7cee2956c1e023088a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a402d98b243d45f7cee2956c1e023088a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a70ecd652e112cabb7dfffed8005287db}\label{classvvenc_1_1InterPrediction_a70ecd652e112cabb7dfffed8005287db}} 
+\index{InterPrediction@{InterPrediction}!xCheckIdenticalMotion@{xCheckIdenticalMotion}}
+\index{xCheckIdenticalMotion@{xCheckIdenticalMotion}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xCheckIdenticalMotion()}{xCheckIdenticalMotion()}}
+{\footnotesize\ttfamily bool x\+Check\+Identical\+Motion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 292 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a70ecd652e112cabb7dfffed8005287db_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a70ecd652e112cabb7dfffed8005287db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_aa1609def843feb7504a19d95ed485a2e}\label{classvvenc_1_1InterPrediction_aa1609def843feb7504a19d95ed485a2e}} 
+\index{InterPrediction@{InterPrediction}!xFillIBCBuffer@{xFillIBCBuffer}}
+\index{xFillIBCBuffer@{xFillIBCBuffer}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xFillIBCBuffer()}{xFillIBCBuffer()}}
+{\footnotesize\ttfamily void x\+Fill\+I\+B\+C\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1907 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_aa1609def843feb7504a19d95ed485a2e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_aa1609def843feb7504a19d95ed485a2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a8add971dc3374c5462bb54c6f5f43efc}\label{classvvenc_1_1InterPrediction_a8add971dc3374c5462bb54c6f5f43efc}} 
+\index{InterPrediction@{InterPrediction}!xIntraBlockCopyIBC@{xIntraBlockCopyIBC}}
+\index{xIntraBlockCopyIBC@{xIntraBlockCopyIBC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xIntraBlockCopyIBC()}{xIntraBlockCopyIBC()}}
+{\footnotesize\ttfamily void x\+Intra\+Block\+Copy\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1932 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a8add971dc3374c5462bb54c6f5f43efc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a8add971dc3374c5462bb54c6f5f43efc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a129ce478fba97dea28361be72409fe2d}\label{classvvenc_1_1InterPrediction_a129ce478fba97dea28361be72409fe2d}} 
+\index{InterPrediction@{InterPrediction}!xPredInterBi@{xPredInterBi}}
+\index{xPredInterBi@{xPredInterBi}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredInterBi()}{xPredInterBi()}}
+{\footnotesize\ttfamily void x\+Pred\+Inter\+Bi (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{yuv\+Pred,  }\item[{const bool}]{bdof\+Applied = {\ttfamily false},  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$}]{yuv\+Pred\+Tmp = {\ttfamily \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 413 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterPrediction_a129ce478fba97dea28361be72409fe2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a129ce478fba97dea28361be72409fe2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a32806fdb7cf77d4ae99f8240e2927d1e}\label{classvvenc_1_1InterPrediction_a32806fdb7cf77d4ae99f8240e2927d1e}} 
+\index{InterPrediction@{InterPrediction}!xPredInterUni@{xPredInterUni}}
+\index{xPredInterUni@{xPredInterUni}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xPredInterUni()}{xPredInterUni()}}
+{\footnotesize\ttfamily void x\+Pred\+Inter\+Uni (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pc\+Yuv\+Pred,  }\item[{const bool}]{bi,  }\item[{const bool}]{bdof\+Applied }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 361 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a32806fdb7cf77d4ae99f8240e2927d1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a32806fdb7cf77d4ae99f8240e2927d1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a85b0dabec975bf1a9c4adce8eb141b39}\label{classvvenc_1_1InterPrediction_a85b0dabec975bf1a9c4adce8eb141b39}} 
+\index{InterPrediction@{InterPrediction}!xSubPuBDOF@{xSubPuBDOF}}
+\index{xSubPuBDOF@{xSubPuBDOF}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xSubPuBDOF()}{xSubPuBDOF()}}
+{\footnotesize\ttfamily void x\+Sub\+Pu\+B\+D\+OF (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&}]{ref\+Pic\+List = {\ttfamily \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 327 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterPrediction_a85b0dabec975bf1a9c4adce8eb141b39_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a85b0dabec975bf1a9c4adce8eb141b39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a825a3a015731fd4a2411e43170f6af0e}\label{classvvenc_1_1InterPrediction_a825a3a015731fd4a2411e43170f6af0e}} 
+\index{InterPrediction@{InterPrediction}!xSubPuMC@{xSubPuMC}}
+\index{xSubPuMC@{xSubPuMC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{xSubPuMC()}{xSubPuMC()}}
+{\footnotesize\ttfamily void x\+Sub\+Pu\+MC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} \&}]{e\+Ref\+Pic\+List = {\ttfamily \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a4750af3c3dcdffb256d98e4ad103e675}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+X}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 541 of file Inter\+Prediction.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterPrediction_a825a3a015731fd4a2411e43170f6af0e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterPrediction_a825a3a015731fd4a2411e43170f6af0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a9ddbb02a220623fa10f87e6f751e77e6}\label{classvvenc_1_1InterPrediction_a9ddbb02a220623fa10f87e6f751e77e6}} 
+\index{InterPrediction@{InterPrediction}!m\_currChromaFormat@{m\_currChromaFormat}}
+\index{m\_currChromaFormat@{m\_currChromaFormat}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_currChromaFormat}{m\_currChromaFormat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} m\+\_\+curr\+Chroma\+Format\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 155 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a2c781c71205a9144906280c30b759ef4}\label{classvvenc_1_1InterPrediction_a2c781c71205a9144906280c30b759ef4}} 
+\index{InterPrediction@{InterPrediction}!m\_geoPartBuf@{m\_geoPartBuf}}
+\index{m\_geoPartBuf@{m\_geoPartBuf}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_geoPartBuf}{m\_geoPartBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+geo\+Part\+Buf\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 160 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a2fb4a2e1e8a89b812fa7df85799dc25b}\label{classvvenc_1_1InterPrediction_a2fb4a2e1e8a89b812fa7df85799dc25b}} 
+\index{InterPrediction@{InterPrediction}!m\_IBCBuffer@{m\_IBCBuffer}}
+\index{m\_IBCBuffer@{m\_IBCBuffer}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_IBCBuffer}{m\_IBCBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+\+I\+B\+C\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 162 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a1772f4fde0e53388a546adacdb5d444b}\label{classvvenc_1_1InterPrediction_a1772f4fde0e53388a546adacdb5d444b}} 
+\index{InterPrediction@{InterPrediction}!m\_IBCBufferWidth@{m\_IBCBufferWidth}}
+\index{m\_IBCBufferWidth@{m\_IBCBufferWidth}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_IBCBufferWidth}{m\_IBCBufferWidth}}
+{\footnotesize\ttfamily int m\+\_\+\+I\+B\+C\+Buffer\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 161 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a4e02ed9e1f4afa737de0ea7b1c65f486}\label{classvvenc_1_1InterPrediction_a4e02ed9e1f4afa737de0ea7b1c65f486}} 
+\index{InterPrediction@{InterPrediction}!m\_subPuMC@{m\_subPuMC}}
+\index{m\_subPuMC@{m\_subPuMC}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_subPuMC}{m\_subPuMC}}
+{\footnotesize\ttfamily bool m\+\_\+sub\+Pu\+MC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file Inter\+Prediction.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterPrediction_a3de81f16a66e23a35850efb6a0add5e0}\label{classvvenc_1_1InterPrediction_a3de81f16a66e23a35850efb6a0add5e0}} 
+\index{InterPrediction@{InterPrediction}!m\_yuvPred@{m\_yuvPred}}
+\index{m\_yuvPred@{m\_yuvPred}!InterPrediction@{InterPrediction}}
+\doxysubsubsection{\texorpdfstring{m\_yuvPred}{m\_yuvPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+yuv\+Pred\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 158 of file Inter\+Prediction.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterPrediction_8h}{Inter\+Prediction.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{InterPrediction_8cpp}{Inter\+Prediction.\+cpp}}\end{DoxyCompactItemize}

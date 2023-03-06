@@ -1,0 +1,9 @@
+<map id="xInitSPS" name="xInitSPS">
+<area shape="rect" id="node1" title="initialize SPS from encoder options" alt="" coords="5,130,80,157"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1ChromaQpMappingTable.html#a5d43dcc17d64e1bfa473ebcbe789b60e" title=" " alt="" coords="128,5,352,47"/>
+<area shape="rect" id="node3" href="$namespacevvenc.html#a895d72e900acda111471c0104f9bcb4c" title=" " alt="" coords="139,71,341,98"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1ChromaQpMappingTable.html#a892100dc817bec0299baf145339c55dd" title=" " alt="" coords="136,123,344,164"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1Window.html#a1d960921eaaa74a2b15fd9ca7e0a6918" title=" " alt="" coords="147,189,333,215"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1EncLib.html#abdb945f71e84a0f8fdfe31adbd2dc4cf" title="initialize SPS from encoder options" alt="" coords="175,239,305,266"/>
+<area shape="rect" id="node4" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="400,71,507,98"/>
+</map>

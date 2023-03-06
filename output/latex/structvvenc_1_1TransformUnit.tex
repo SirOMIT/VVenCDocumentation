@@ -1,0 +1,461 @@
+\hypertarget{structvvenc_1_1TransformUnit}{}\doxysection{Transform\+Unit}
+\label{structvvenc_1_1TransformUnit}\index{TransformUnit@{TransformUnit}}
+
+
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Transform\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{structvvenc_1_1TransformUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transform\+Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit_a73c161a7e717310324ae57b80c7e4822}{Transform\+Unit}} ()=default
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit_a00bd06459e805471cc8c051bf2eabb03}{Transform\+Unit}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&area)
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit_a239767997c8af9cdf0a0d4b282c23fbb}{Transform\+Unit}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1TransformUnit_a06f0abb90ba59ce634a81d1b81af46b4}{check\+Tu\+No\+Residual}} (unsigned \mbox{\hyperlink{structvvenc_1_1TransformUnit_aef726673a09d801a40682410390442cf}{idx}})
+\item 
+void \mbox{\hyperlink{structvvenc_1_1TransformUnit_abb1c789a9f68c865638e592d4ab2ac1e}{copy\+Component\+From}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&other, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+\mbox{\hyperlink{namespacevvenc_afeaf017dad6a4efc97e442d15bb908e9}{Coeff\+Sig\+Buf}} \mbox{\hyperlink{structvvenc_1_1TransformUnit_af06878784876e3b0829bb6d446c0a5e1}{get\+Coeffs}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} id)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a1b03b4fed7fb5a0ca5872ae8ebaca2dc}{C\+Coeff\+Sig\+Buf}} \mbox{\hyperlink{structvvenc_1_1TransformUnit_a5bc68811f425ba00465bf568b8ae28c4}{get\+Coeffs}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} id) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1TransformUnit_aa98b238af75ec407ef9c04f2b3e23257}{get\+Tb\+Area\+After\+Coef\+Zero\+Out}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1TransformUnit_a7bdb8b0b4d86e448666ee9a216acd1c3}{init}} (\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$$\ast$coeffs)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1TransformUnit_a057e50bb0d116718182997db0f1e7b53}{init\+Data}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \& \mbox{\hyperlink{structvvenc_1_1TransformUnit_a334b9cdf6f2a5b36f5ec3dbdd6ceccc2}{operator=}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1TransformUnit_ac0de654f5be7ffeb0a468a36a6f5f522}{cbf}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1TransformUnit_a68128e69afc12c69e4236eca1b1dc803}{chroma\+Adj}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \mbox{\hyperlink{structvvenc_1_1TransformUnit_a6c1e157224f4eb1ed388d13bedcbad27}{ch\+Type}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{structvvenc_1_1TransformUnit_a83dedaccc39c9d31f3ef20ff7ccb4b4f}{cs}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1TransformUnit_a8606fae661fa10aaee9e2e9ee08f16ef}{cu}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1TransformUnit_ab6f276082172be43a6041212071e377b}{depth}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1TransformUnit_aef726673a09d801a40682410390442cf}{idx}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1TransformUnit_a9c8574e5da04a261981db4c362d46ade}{joint\+Cb\+Cr}}
+\item 
+int16\+\_\+t \mbox{\hyperlink{structvvenc_1_1TransformUnit_a85b420fc0d59f69102ec37f575031e55}{last\+Pos}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structvvenc_1_1TransformUnit_a29797796fb9219a304cfd3afbcc9788b}{mts\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1TransformUnit_a6b35a1c0f248d71517f85bc623877768}{next}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1TransformUnit_ad61aa9a273106df7421a4735424caa70}{no\+Residual}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1TransformUnit_ad44d29add64dd7f1c66516716c6acef2}{prev}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+friend \mbox{\hyperlink{structvvenc_1_1TransformUnit_a864da5b701c49d64bff16bbd9a10af05}{Coding\+Structure}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$ \mbox{\hyperlink{structvvenc_1_1TransformUnit_a90bb4278c309add27a41b3ac8114c6bf}{m\+\_\+coeffs}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 404 of file Unit.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a73c161a7e717310324ae57b80c7e4822}\label{structvvenc_1_1TransformUnit_a73c161a7e717310324ae57b80c7e4822}} 
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{TransformUnit()}{TransformUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a239767997c8af9cdf0a0d4b282c23fbb}\label{structvvenc_1_1TransformUnit_a239767997c8af9cdf0a0d4b282c23fbb}} 
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{TransformUnit()}{TransformUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 481 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{structvvenc_1_1TransformUnit_a239767997c8af9cdf0a0d4b282c23fbb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a00bd06459e805471cc8c051bf2eabb03}\label{structvvenc_1_1TransformUnit_a00bd06459e805471cc8c051bf2eabb03}} 
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\index{TransformUnit@{TransformUnit}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{TransformUnit()}{TransformUnit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 491 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{structvvenc_1_1TransformUnit_a00bd06459e805471cc8c051bf2eabb03_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a06f0abb90ba59ce634a81d1b81af46b4}\label{structvvenc_1_1TransformUnit_a06f0abb90ba59ce634a81d1b81af46b4}} 
+\index{TransformUnit@{TransformUnit}!checkTuNoResidual@{checkTuNoResidual}}
+\index{checkTuNoResidual@{checkTuNoResidual}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{checkTuNoResidual()}{checkTuNoResidual()}}
+{\footnotesize\ttfamily void check\+Tu\+No\+Residual (\begin{DoxyParamCaption}\item[{unsigned}]{idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 572 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{structvvenc_1_1TransformUnit_a06f0abb90ba59ce634a81d1b81af46b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_a06f0abb90ba59ce634a81d1b81af46b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_abb1c789a9f68c865638e592d4ab2ac1e}\label{structvvenc_1_1TransformUnit_abb1c789a9f68c865638e592d4ab2ac1e}} 
+\index{TransformUnit@{TransformUnit}!copyComponentFrom@{copyComponentFrom}}
+\index{copyComponentFrom@{copyComponentFrom}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{copyComponentFrom()}{copyComponentFrom()}}
+{\footnotesize\ttfamily void copy\+Component\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{other,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 550 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{structvvenc_1_1TransformUnit_abb1c789a9f68c865638e592d4ab2ac1e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_abb1c789a9f68c865638e592d4ab2ac1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_af06878784876e3b0829bb6d446c0a5e1}\label{structvvenc_1_1TransformUnit_af06878784876e3b0829bb6d446c0a5e1}} 
+\index{TransformUnit@{TransformUnit}!getCoeffs@{getCoeffs}}
+\index{getCoeffs@{getCoeffs}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{getCoeffs()}{getCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_afeaf017dad6a4efc97e442d15bb908e9}{Coeff\+Sig\+Buf}} get\+Coeffs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 433 of file Unit.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_af06878784876e3b0829bb6d446c0a5e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a5bc68811f425ba00465bf568b8ae28c4}\label{structvvenc_1_1TransformUnit_a5bc68811f425ba00465bf568b8ae28c4}} 
+\index{TransformUnit@{TransformUnit}!getCoeffs@{getCoeffs}}
+\index{getCoeffs@{getCoeffs}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{getCoeffs()}{getCoeffs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a1b03b4fed7fb5a0ca5872ae8ebaca2dc}{C\+Coeff\+Sig\+Buf}} get\+Coeffs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 434 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_aa98b238af75ec407ef9c04f2b3e23257}\label{structvvenc_1_1TransformUnit_aa98b238af75ec407ef9c04f2b3e23257}} 
+\index{TransformUnit@{TransformUnit}!getTbAreaAfterCoefZeroOut@{getTbAreaAfterCoefZeroOut}}
+\index{getTbAreaAfterCoefZeroOut@{getTbAreaAfterCoefZeroOut}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{getTbAreaAfterCoefZeroOut()}{getTbAreaAfterCoefZeroOut()}}
+{\footnotesize\ttfamily int get\+Tb\+Area\+After\+Coef\+Zero\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 585 of file Unit.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_aa98b238af75ec407ef9c04f2b3e23257_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a7bdb8b0b4d86e448666ee9a216acd1c3}\label{structvvenc_1_1TransformUnit_a7bdb8b0b4d86e448666ee9a216acd1c3}} 
+\index{TransformUnit@{TransformUnit}!init@{init}}
+\index{init@{init}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$$\ast$}]{coeffs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 515 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{structvvenc_1_1TransformUnit_a7bdb8b0b4d86e448666ee9a216acd1c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_a7bdb8b0b4d86e448666ee9a216acd1c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a057e50bb0d116718182997db0f1e7b53}\label{structvvenc_1_1TransformUnit_a057e50bb0d116718182997db0f1e7b53}} 
+\index{TransformUnit@{TransformUnit}!initData@{initData}}
+\index{initData@{initData}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{initData()}{initData()}}
+{\footnotesize\ttfamily void init\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 501 of file Unit.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1TransformUnit_a057e50bb0d116718182997db0f1e7b53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a334b9cdf6f2a5b36f5ec3dbdd6ceccc2}\label{structvvenc_1_1TransformUnit_a334b9cdf6f2a5b36f5ec3dbdd6ceccc2}} 
+\index{TransformUnit@{TransformUnit}!operator=@{operator=}}
+\index{operator=@{operator=}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 525 of file Unit.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{structvvenc_1_1TransformUnit_a334b9cdf6f2a5b36f5ec3dbdd6ceccc2_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_ac0de654f5be7ffeb0a468a36a6f5f522}\label{structvvenc_1_1TransformUnit_ac0de654f5be7ffeb0a468a36a6f5f522}} 
+\index{TransformUnit@{TransformUnit}!cbf@{cbf}}
+\index{cbf@{cbf}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{cbf}{cbf}}
+{\footnotesize\ttfamily uint8\+\_\+t cbf\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}}
+
+
+
+Definition at line 414 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a68128e69afc12c69e4236eca1b1dc803}\label{structvvenc_1_1TransformUnit_a68128e69afc12c69e4236eca1b1dc803}} 
+\index{TransformUnit@{TransformUnit}!chromaAdj@{chromaAdj}}
+\index{chromaAdj@{chromaAdj}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{chromaAdj}{chromaAdj}}
+{\footnotesize\ttfamily int chroma\+Adj}
+
+
+
+Definition at line 409 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a6c1e157224f4eb1ed388d13bedcbad27}\label{structvvenc_1_1TransformUnit_a6c1e157224f4eb1ed388d13bedcbad27}} 
+\index{TransformUnit@{TransformUnit}!chType@{chType}}
+\index{chType@{chType}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{chType}{chType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type}
+
+
+
+Definition at line 408 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a864da5b701c49d64bff16bbd9a10af05}\label{structvvenc_1_1TransformUnit_a864da5b701c49d64bff16bbd9a10af05}} 
+\index{TransformUnit@{TransformUnit}!CodingStructure@{CodingStructure}}
+\index{CodingStructure@{CodingStructure}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{CodingStructure}{CodingStructure}}
+{\footnotesize\ttfamily friend \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 437 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a83dedaccc39c9d31f3ef20ff7ccb4b4f}\label{structvvenc_1_1TransformUnit_a83dedaccc39c9d31f3ef20ff7ccb4b4f}} 
+\index{TransformUnit@{TransformUnit}!cs@{cs}}
+\index{cs@{cs}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{cs}{cs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ cs}
+
+
+
+Definition at line 407 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a8606fae661fa10aaee9e2e9ee08f16ef}\label{structvvenc_1_1TransformUnit_a8606fae661fa10aaee9e2e9ee08f16ef}} 
+\index{TransformUnit@{TransformUnit}!cu@{cu}}
+\index{cu@{cu}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{cu}{cu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ cu}
+
+
+
+Definition at line 406 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_ab6f276082172be43a6041212071e377b}\label{structvvenc_1_1TransformUnit_ab6f276082172be43a6041212071e377b}} 
+\index{TransformUnit@{TransformUnit}!depth@{depth}}
+\index{depth@{depth}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{depth}{depth}}
+{\footnotesize\ttfamily uint8\+\_\+t depth}
+
+
+
+Definition at line 410 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_aef726673a09d801a40682410390442cf}\label{structvvenc_1_1TransformUnit_aef726673a09d801a40682410390442cf}} 
+\index{TransformUnit@{TransformUnit}!idx@{idx}}
+\index{idx@{idx}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{idx}{idx}}
+{\footnotesize\ttfamily unsigned idx}
+
+
+
+Definition at line 418 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a9c8574e5da04a261981db4c362d46ade}\label{structvvenc_1_1TransformUnit_a9c8574e5da04a261981db4c362d46ade}} 
+\index{TransformUnit@{TransformUnit}!jointCbCr@{jointCbCr}}
+\index{jointCbCr@{jointCbCr}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{jointCbCr}{jointCbCr}}
+{\footnotesize\ttfamily uint8\+\_\+t joint\+Cb\+Cr}
+
+
+
+Definition at line 412 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a85b420fc0d59f69102ec37f575031e55}\label{structvvenc_1_1TransformUnit_a85b420fc0d59f69102ec37f575031e55}} 
+\index{TransformUnit@{TransformUnit}!lastPos@{lastPos}}
+\index{lastPos@{lastPos}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{lastPos}{lastPos}}
+{\footnotesize\ttfamily int16\+\_\+t last\+Pos\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}}
+
+
+
+Definition at line 415 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a90bb4278c309add27a41b3ac8114c6bf}\label{structvvenc_1_1TransformUnit_a90bb4278c309add27a41b3ac8114c6bf}} 
+\index{TransformUnit@{TransformUnit}!m\_coeffs@{m\_coeffs}}
+\index{m\_coeffs@{m\_coeffs}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{m\_coeffs}{m\_coeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}}$\ast$ m\+\_\+coeffs\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 438 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a29797796fb9219a304cfd3afbcc9788b}\label{structvvenc_1_1TransformUnit_a29797796fb9219a304cfd3afbcc9788b}} 
+\index{TransformUnit@{TransformUnit}!mtsIdx@{mtsIdx}}
+\index{mtsIdx@{mtsIdx}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{mtsIdx}{mtsIdx}}
+{\footnotesize\ttfamily uint8\+\_\+t mts\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa555c470c9fade36f4bc57231923c0517}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS}}\mbox{]}}
+
+
+
+Definition at line 413 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_a6b35a1c0f248d71517f85bc623877768}\label{structvvenc_1_1TransformUnit_a6b35a1c0f248d71517f85bc623877768}} 
+\index{TransformUnit@{TransformUnit}!next@{next}}
+\index{next@{next}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$ next}
+
+
+
+Definition at line 419 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_ad61aa9a273106df7421a4735424caa70}\label{structvvenc_1_1TransformUnit_ad61aa9a273106df7421a4735424caa70}} 
+\index{TransformUnit@{TransformUnit}!noResidual@{noResidual}}
+\index{noResidual@{noResidual}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{noResidual}{noResidual}}
+{\footnotesize\ttfamily bool no\+Residual}
+
+
+
+Definition at line 411 of file Unit.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1TransformUnit_ad44d29add64dd7f1c66516716c6acef2}\label{structvvenc_1_1TransformUnit_ad44d29add64dd7f1c66516716c6acef2}} 
+\index{TransformUnit@{TransformUnit}!prev@{prev}}
+\index{prev@{prev}!TransformUnit@{TransformUnit}}
+\doxysubsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$ prev}
+
+
+
+Definition at line 420 of file Unit.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Unit_8h}{Unit.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Unit_8cpp}{Unit.\+cpp}}\end{DoxyCompactItemize}

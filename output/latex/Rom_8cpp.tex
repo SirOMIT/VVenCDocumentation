@@ -1,0 +1,131 @@
+\hypertarget{Rom_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Rom.cpp File Reference}
+\label{Rom_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Rom.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Rom.cpp}}
+
+
+global variables \& functions  
+
+
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+Include dependency graph for Rom.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Rom_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1ScanGenerator}{Scan\+Generator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a322d3c927766f9b057ea16d35c6e5aa3}{derive\+Weight\+Idx\+Bits}} (uint8\+\_\+t bcw\+Idx)
+\item 
+int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a2f2a8fb396fa1416e8a8ce3393fdcc93}{get\+Bcw\+Weight}} (uint8\+\_\+t bcw\+Idx, uint8\+\_\+t uh\+Ref\+Frm\+List)
+\item 
+const Scan\+Element $\ast$const \mbox{\hyperlink{namespacevvenc_ad75c7d67e2d9df2bbda389ebed6af5cd}{get\+Scan\+Order}} (int g, int w2, int h2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a93f900627a2c4685cbc080097e1aeb10}{g\+\_\+angle2mask}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+A\+N\+G\+L\+ES\mbox{]}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_adc37c043b365996e88d22f4288829380}{g\+\_\+angle2mirror}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+A\+N\+G\+L\+ES\mbox{]}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a21e11b047f992b341e4138ea4a7456ce}{g\+\_\+auc\+Chroma\+Scale}} \mbox{[}\mbox{\hyperlink{TypeDef_8h_a8f0ea84a010043a355648cdcf68dc78d}{N\+U\+M\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+F\+O\+R\+M\+AT}}\mbox{]}\mbox{[}chroma\+Q\+P\+Mapping\+Table\+Size\mbox{]}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a07a2454b165aca6833b18bf1c31de0cb}{g\+\_\+auc\+Intra\+Mode\+Num\+Fast\+\_\+\+Not\+Use\+M\+PM}} \mbox{[}M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH\mbox{]}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a859594cab1a90c84fa2d2fc1acaf9fd2}{g\+\_\+auc\+Intra\+Mode\+Num\+Fast\+\_\+\+Use\+M\+PM}} \mbox{[}M\+A\+X\+\_\+\+C\+U\+\_\+\+D\+E\+P\+TH\mbox{]}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a78a47fae1e8d750d4a50725a61c00afc}{g\+\_\+auc\+Intra\+Mode\+Num\+Fast\+\_\+\+Use\+M\+P\+M\+\_\+2D}} \mbox{[}7 -\/ M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2+1\mbox{]}\mbox{[}7 -\/ M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2+1\mbox{]}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a0725eb4c80c0f3e41c1a88ca74d2cd57}{g\+\_\+aui\+Go\+Rice\+Pars\+Coeff}} \mbox{[}32\mbox{]}
+\item 
+const static uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a5aa6056f88d2747ce63be372e2e65e2e}{g\+\_\+aui\+X\+Y\+Diag\+Scan8x8}} \mbox{[}64\mbox{]}\mbox{[}2\mbox{]}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_ab3cd0959a3f1fc37946c7efdb30a323f}{g\+\_\+\+Bcw\+Coding\+Order}} \mbox{[}B\+C\+W\+\_\+\+N\+UM\mbox{]} = \{ 4, 2, 0, 1, 3 \}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a4273378e379b3b1e42f46c3df9cf5eb1}{g\+\_\+\+Bcw\+Log2\+Weight\+Base}} = 3
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_ac3ba9ea1485f32640ad79cbc88c3529d}{g\+\_\+\+Bcw\+Parsing\+Order}} \mbox{[}B\+C\+W\+\_\+\+N\+UM\mbox{]} = \{ 2, 3, 1, 4, 0 \}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_af5bc4a74fab364974bde2dd149cde52b}{g\+\_\+\+Bcw\+Search\+Order}} \mbox{[}B\+C\+W\+\_\+\+N\+UM\mbox{]} = \{ B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT, B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT -\/ 2, B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT + 2, B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT -\/ 1, B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT + 1 \}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_af662770c8086fcf63f3f6122c33f2d60}{g\+\_\+\+Bcw\+Weight\+Base}} = (1 $<$$<$ g\+\_\+\+Bcw\+Log2\+Weight\+Base)
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_ae89eb47fff36eafdb33cec5aa84195cb}{g\+\_\+\+Bcw\+Weights}} \mbox{[}B\+C\+W\+\_\+\+N\+UM\mbox{]} = \{ -\/2, 3, 4, 5, 10 \}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a180b2bf006e2575a5295731de30b60eb}{g\+\_\+chroma422\+Intra\+Angle\+Mapping\+Table}} \mbox{[}N\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+M\+O\+DE\mbox{]}
+\item 
+const Scan\+Element \mbox{\hyperlink{namespacevvenc_ac922c3f183b18c145682bc97f5500075}{g\+\_\+coef\+Top\+Left\+Diag\+Scan8x8}} \mbox{[}M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX\mbox{]}\mbox{[}64\mbox{]}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_aaf5fdcb1421475f08fa36895e4e4720e}{g\+\_\+\+Dis}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+A\+N\+G\+L\+ES\mbox{]}
+\item 
+int16\+\_\+t \mbox{\hyperlink{namespacevvenc_a017cdef4236f3cb7e1c2294946d311f6}{g\+\_\+\+Geo\+Params}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+I\+T\+I\+O\+N\+\_\+\+M\+O\+DE\mbox{]}\mbox{[}2\mbox{]}
+\item 
+int16\+\_\+t \mbox{\hyperlink{namespacevvenc_a07acfaa4727a9ff9f9e4726c8b29bef5}{g\+\_\+global\+Geo\+Enc\+S\+A\+Dmask}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+R\+E\+S\+T\+O\+R\+E\+D\+\_\+\+M\+A\+SK\mbox{]}\mbox{[}G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE $\ast$G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+int16\+\_\+t \mbox{\hyperlink{namespacevvenc_a976527043f0b33bc468e5d0402a29d45}{g\+\_\+global\+Geo\+Weights}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+R\+E\+S\+T\+O\+R\+E\+D\+\_\+\+M\+A\+SK\mbox{]}\mbox{[}G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE $\ast$G\+E\+O\+\_\+\+W\+E\+I\+G\+H\+T\+\_\+\+M\+A\+S\+K\+\_\+\+S\+I\+ZE\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a525bee4bce0551cad1bdebc2559c1609}{g\+\_\+ict\+Modes}} \mbox{[}2\mbox{]}\mbox{[}4\mbox{]} = \{ \{ 0, 3, 1, 2 \}, \{ 0, -\/3, -\/1, -\/2 \} \}
+\item 
+const int \mbox{\hyperlink{namespacevvenc_adce8c27c4d53475fc4bbae8c582a073d}{g\+\_\+inv\+Quant\+Scales}} \mbox{[}2\mbox{]}\mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM\mbox{]}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a086208c90703cd4b85b8ff33d0afc392}{g\+\_\+lfnst4x4}} \mbox{[}4\mbox{]}\mbox{[}2\mbox{]}\mbox{[}16\mbox{]}\mbox{[}16\mbox{]}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a3566269a45ba26f5a5763db9081edc31}{g\+\_\+lfnst8x8}} \mbox{[}4\mbox{]}\mbox{[}2\mbox{]}\mbox{[}16\mbox{]}\mbox{[}48\mbox{]}
+\item 
+const uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a72bc2573e8e64daefda4d5582b553434}{g\+\_\+lfnst\+Lut}} \mbox{[}N\+U\+M\+\_\+\+I\+N\+T\+R\+A\+\_\+\+M\+O\+DE+N\+U\+M\+\_\+\+E\+X\+T\+\_\+\+L\+U\+M\+A\+\_\+\+M\+O\+DE -\/ 1\mbox{]}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ac5f54a53c353ae0547346a530e899136}{g\+\_\+log2\+Sbb\+Size}} \mbox{[}M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX\mbox{]}\mbox{[}M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX\mbox{]}\mbox{[}2\mbox{]}
+\item 
+const Unit\+Scale \mbox{\hyperlink{namespacevvenc_a320790f51783f66cf9f95a6a6ecd5b54}{g\+\_\+mi\+Scaling}} (M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2, M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2)
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a3279dc40531c2467f1f0e5b31a97a7f4}{g\+\_\+quant\+Inter\+Default8x8}} \mbox{[}8 $\ast$8\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a7140f1b335ad8ec7fea2649004b6c7e6}{g\+\_\+quant\+Intra\+Default8x8}} \mbox{[}8 $\ast$8\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a9343ba045f04f59143f284589c53c970}{g\+\_\+quant\+Scales}} \mbox{[}2\mbox{]}\mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+R\+E\+M\+\_\+\+N\+UM\mbox{]}
+\item 
+const int \mbox{\hyperlink{namespacevvenc_a452f9807eafe131cede916c45418f92b}{g\+\_\+quant\+T\+S\+Default4x4}} \mbox{[}4 $\ast$4\mbox{]}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a3313dc7bb6162bd100c3b8c7fa7a9061}{g\+\_\+scaling\+List\+Size}} \mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM\mbox{]} = \{ 1, 4, 16, 64, 256, 1024, 4096 \}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_aa8737ee7881c51a8f948b47b8615fe45}{g\+\_\+scaling\+List\+SizeX}} \mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM\mbox{]} = \{ 1, 2, 4, 8, 16, 32, 64 \}
+\item 
+const Init\+Geo\+Rom \mbox{\hyperlink{namespacevvenc_af69cd3ec9cd287499a07b3673e2a5b1a}{g\+\_\+scan\+Order\+Rom}}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a257c8419798a2e7ae559ad5613361660}{g\+\_\+ui\+Group\+Idx}} \mbox{[}M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY\mbox{]} = \{ 0,1,2,3,4,4,5,5,6,6,6,6,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9, 10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11 \}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ad9dbd5a7c153c72a7228db2a87587f89}{g\+\_\+ui\+Min\+In\+Group}} \mbox{[}L\+A\+S\+T\+\_\+\+S\+I\+G\+N\+I\+F\+I\+C\+A\+N\+T\+\_\+\+G\+R\+O\+U\+PS\mbox{]} = \{ 0,1,2,3,4,6,8,12,16,24,32,48,64,96 \}
+\item 
+int16\+\_\+t \mbox{\hyperlink{namespacevvenc_a3bd45bee399e2169facbb8638f30b183}{g\+\_\+weight\+Offset}} \mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+C\+U\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+C\+U\+\_\+\+S\+I\+ZE\mbox{]}\mbox{[}G\+E\+O\+\_\+\+N\+U\+M\+\_\+\+P\+A\+R\+T\+I\+T\+I\+O\+N\+\_\+\+M\+O\+DE\mbox{]}\mbox{[}2\mbox{]}
+\item 
+const Scan\+Element $\ast$ \mbox{\hyperlink{namespacevvenc_a825d60aad7fd17e70bf993cda660447d}{m\+\_\+scan\+Order}} \mbox{[}S\+C\+A\+N\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+G\+R\+O\+U\+P\+\_\+\+T\+Y\+P\+ES\mbox{]}\mbox{[}M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX\mbox{]}\mbox{[}M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX\mbox{]}
+\item 
+const Scan\+Element \mbox{\hyperlink{namespacevvenc_a81c5b4aae9308ac1f854612895e63c74}{m\+\_\+scan\+Order\+Buf}} \mbox{[}32258\mbox{]}
+\item 
+const char $\ast$ \mbox{\hyperlink{namespacevvenc_a9e096eb23b88f85cef87ce1d0a862d8e}{Matrix\+Type}} \mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM\mbox{]}\mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM\mbox{]}
+\item 
+const char $\ast$ \mbox{\hyperlink{namespacevvenc_a82fd850ca5adef624a82c649b203682b}{Matrix\+Type\+\_\+\+DC}} \mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+S\+I\+Z\+E\+\_\+\+N\+UM\mbox{]}\mbox{[}S\+C\+A\+L\+I\+N\+G\+\_\+\+L\+I\+S\+T\+\_\+\+N\+UM\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+global variables \& functions 
+

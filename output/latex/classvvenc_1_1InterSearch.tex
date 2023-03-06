@@ -1,0 +1,2240 @@
+\hypertarget{classvvenc_1_1InterSearch}{}\doxysection{Inter\+Search}
+\label{classvvenc_1_1InterSearch}\index{InterSearch@{InterSearch}}
+
+
+encoder search class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Inter\+Search.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Inter\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1InterSearch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Inter\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1SearchRange}{Search\+Range}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterSearch_aec99234fd92e769ccc6d0e0f46cee0bb}{Inter\+Search}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1InterSearch_a59194d848c38a0c6efdf4ea064905120}{$\sim$\+Inter\+Search}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a9c686c694eaa5ea4e414cb623bde0139}{encode\+Res\+And\+Calc\+Rd\+Inter\+CU}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const bool skip\+Residual)
+\begin{DoxyCompactList}\small\item\em set ME search range \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_af1328a689e0e09c6c3b8fe514bfa2e07}{get\+Best\+Sbt}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$temp\+CS, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$cu, uint8\+\_\+t \&hist\+Best\+Sbt, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&cur\+Pu\+Sse, uint8\+\_\+t sbt\+Allowed, bool do\+Pre\+Analyze\+Resi, bool mts\+Allowed)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a02fccf54ebd41fd6bc9712be1d326cba}{get\+Est\+Dist\+Sbt}} (uint8\+\_\+t sbt\+Mode) const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_ab70a755b26acb7f3f9db4a649c7c475f}{get\+Sbt\+Rdo\+Order}} (uint8\+\_\+t idx) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_ae737f41778ffadff9cfe387a6f52b728}{get\+Skip\+Sbt\+All}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_abd69038caf0e20410a0e13758ace1e67}{get\+Weight\+Idx\+Bits}} (uint8\+\_\+t bcw\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a497d534668188d853ef03bbb9455c752}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg, \mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$p\+Tr\+Quant, \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$p\+Rd\+Cost, \mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}} $\ast$p\+Mode\+Ctrl, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$$\ast$p\+Save\+CS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a95eb2b42d056bbeeae5145eadc91309d}{init\+Sbt\+Rdo\+Order}} (uint8\+\_\+t sbt\+Mode)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a855fa44b8d0233bd0eee95e99883e667}{load\+Global\+Uni\+Mvs}} (const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&luma\+Area, const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} \&pcv)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_aa391293054038b0549cc65f918625083}{pred\+I\+B\+C\+Search}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_a20ad2ab1a41da1b47cf2a94655f06ee5}{pred\+Inter\+Search}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, double \&best\+Cost\+Inter)
+\begin{DoxyCompactList}\small\item\em encoder estimation -\/ inter prediction (non-\/skip) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_acfb9973d949f50ad0b31b1c860b8e31e}{reset\+Buffered\+Uni\+Motions}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a1d92085205227c95ec283e50d586cead}{reset\+Ctu\+Record\+I\+BC}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_aa90c4598c609d56310a72938f1d4aa94}{reset\+Saved\+Affine\+Motion}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_aedd99d503788bcd4561c14459655fdfc}{search\+Bv\+I\+BC}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&pu, int x\+Pos, int y\+Pos, int width, int height, int pic\+Width, int pic\+Height, int x\+Bv, int y\+Bv, int ctu\+Size) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a39a6e170987936d5c938847dd38257d7}{set\+Affine\+Mode\+Selected}} (bool flag)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_aaca07f8b20ac1f70e0ce73bc01c70c90}{set\+Ctu\+Enc\+Rsrc}} (\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$cabac\+Estimator, \mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$ctx\+Cache, \mbox{\hyperlink{structvvenc_1_1ReuseUniMv}{Reuse\+Uni\+Mv}} $\ast$p\+Reuse\+Uni\+Mv, \mbox{\hyperlink{structvvenc_1_1BlkUniMvInfoBuffer}{Blk\+Uni\+Mv\+Info\+Buffer}} $\ast$p\+Blk\+Uni\+Mv\+Info\+Buffer, \mbox{\hyperlink{structvvenc_1_1AffineProfList}{Affine\+Prof\+List}} $\ast$p\+Affine\+Prof\+List, \mbox{\hyperlink{structvvenc_1_1IbcBvCand}{Ibc\+Bv\+Cand}} $\ast$p\+Cached\+Bvs)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_adb2189fa0855c297a7c6ac48658f28ff}{set\+Search\+Range}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg)
+\begin{DoxyCompactList}\small\item\em set adaptive search range based on poc difference \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_a3b688da19bcfb0ff8a8f92f82132d5da}{skip\+Sbt\+By\+R\+D\+Cost}} (int width, int height, int mt\+Depth, uint8\+\_\+t sbt\+Idx, uint8\+\_\+t sbt\+Pos, double best\+Cost, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} dist\+Sbt\+Off, double cost\+Sbt\+Off, bool root\+Cbf\+Sbt\+Off)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a91007e4c7d30c0ad661ca2222874443b}{store\+Affine\+Motion}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Affine\+Mv\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}, int16\+\_\+t affine\+Ref\+Idx\mbox{[}2\mbox{]}, \mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817}{E\+Affine\+Model}} affine\+Type, int Bcw\+Idx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AffineProfList}{Affine\+Prof\+List}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_ac98d000e44202cea8905a1bfc5f57f89}{m\+\_\+\+Affine\+Prof\+List}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BlkUniMvInfoBuffer}{Blk\+Uni\+Mv\+Info\+Buffer}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a1fd7ee960d76c3b7e2401b8d0e86b90d}{m\+\_\+\+Blk\+Uni\+Mv\+Info\+Buffer}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_a19b4deebe4b22090dcf016202d2b4f2f}{m\+\_\+clip\+Mv\+In\+Sub\+Pic}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ReuseUniMv}{Reuse\+Uni\+Mv}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a181840c5939d6651c9613ebb61a10537}{m\+\_\+\+Reuse\+Uni\+Mv}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterSearch_acfac1ad8a7754b33c46766fe254b7b97}{m\+\_\+aai\+Adapt\+SR}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a7cf3acc655efbe44b86894c075acb23c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+L\+I\+S\+T\+\_\+\+A\+D\+A\+P\+T\+\_\+\+SR}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aa99f1bbf9afbf8a3b21bb9f306663b45}{M\+A\+X\+\_\+\+I\+D\+X\+\_\+\+A\+D\+A\+P\+T\+\_\+\+SR}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_ac25bc8fcbfd5def1fec553cf38c1af4f}{m\+\_\+affine\+Mode\+Selected}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1EncAffineMotion}{Enc\+Affine\+Motion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a892956403dbe9e537368527e54365c51}{m\+\_\+affine\+Motion}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_a225fcf6af87aa6be56d6d832e730c40f}{m\+\_\+aui\+M\+V\+P\+Idx\+Cost}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a888d11a292480cce2948f275a6f9d9f0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a888d11a292480cce2948f275a6f9d9f0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}+1\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterSearch_a2c737d35b7158e64d1aaeafb34537fc6}{m\+\_\+bipred\+Search\+Range}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_af2eecbd6936ec23d3bd8962fff7e65a7}{m\+\_\+\+C\+A\+B\+A\+C\+Estimator}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a84e1cf4a0c33652ae707c15060de7817}{m\+\_\+c\+Dist\+Param}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_adc15ecb13505785bb69c278578c79980}{m\+\_\+\+Ctx\+Cache}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a6e865206f093a60bfa306a09653cc07c}{m\+\_\+est\+Min\+Dist\+Sbt}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af8c7f729a5e696502a7f5b7839d93d88a0c699bdbc1a9429237559d7ef5559bdd}{N\+U\+M\+B\+E\+R\+\_\+\+S\+B\+T\+\_\+\+M\+O\+DE}}+1\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_a4863df9000b7cee05dd496c93989b11e}{m\+\_\+est\+Weight\+Idx\+Bits}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a80132ce668e05d9cea10c4c21cebec55}{B\+C\+W\+\_\+\+N\+UM}}\mbox{]} = \{ 4, 3, 1, 2, 4 \}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a74a51773f987d540dd4d4dd02399c06a}{m\+\_\+hevc\+Cost}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterSearch_af4f690b408420e00b346d153a1e92241}{m\+\_\+i\+Search\+Range}}
+\item 
+vvenc\+M\+E\+Search\+Method \mbox{\hyperlink{classvvenc_1_1InterSearch_ae98c2fa56ca7cf3b3c994d78d3d1418b}{m\+\_\+motion\+Estimation\+Search\+Method}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterSearch_a067e085429f9049d0c4b411fb8622147}{m\+\_\+motion\+Estimation\+Search\+Method\+S\+CC}}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_afabc33c7c4328921490982de50e35da0}{m\+\_\+pc\+Enc\+Cfg}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a7941a56c2fd607b45125922e737f91ea}{m\+\_\+pc\+Rd\+Cost}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a32d8aaad5c0df7e5ba2b2ee016191768}{m\+\_\+pc\+Reshape}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_ad7990d4385ff356abe84bcbfe3ce4281}{m\+\_\+pc\+Tr\+Quant}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a9e6b286fba70f2939620587a433bd651}{m\+\_\+p\+Temp\+Pel}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_afa470f8b1c0f3cb28395539dfa4bc4cc}{m\+\_\+sbt\+Rdo\+Order}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af8c7f729a5e696502a7f5b7839d93d88a0c699bdbc1a9429237559d7ef5559bdd}{N\+U\+M\+B\+E\+R\+\_\+\+S\+B\+T\+\_\+\+M\+O\+DE}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_ab129abe12f06cef41d20e46b18c69d70}{m\+\_\+skip\+Sbt\+All}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a25a0bd912f0348713119cf2ff215ef07}{m\+\_\+sub\+Pu\+Mi\+Buf}} \mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}}) $>$$>$(\mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}$<$$<$ 1)\mbox{]}
+\item 
+int $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_aaf8e6df11c0154fc48152c8cb42ae5d0}{m\+\_\+tmp\+Affi\+Deri}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a0345a1771d19eb6e5d358993984cebbc}{m\+\_\+tmp\+Affi\+Error}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a88ad68fee052acec3e700138dcf00516}{m\+\_\+tmp\+Affi\+Storage}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BcwMotionParam}{Bcw\+Motion\+Param}} \mbox{\hyperlink{classvvenc_1_1InterSearch_ab8a6995c17585382789cecac84fe4846}{m\+\_\+uni\+Motions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a44e957b819a43dba1f284e80d49809f4}{x\+Affine\+Motion\+Estimation}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\+Pred\mbox{[}3\mbox{]}, int i\+Ref\+Idx\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\mbox{[}3\mbox{]}, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, int \&mvp\+Idx, const \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&aamvpi, bool b\+Bi=false)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_aa7a315accab25af49c40266933c681de}{x\+Calc\+Affine\+M\+V\+Bits}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} mv\+Cand\mbox{[}3\mbox{]}, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} mv\+Pred\mbox{[}3\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ae10e385d23d8c4126831cd7bd566bcbc}{x\+Calc\+Min\+Dist\+Sbt}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const uint8\+\_\+t sbt\+Allowed)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a684f4005176cc6580b29960d10514bcb}{x\+Check\+Best\+Affine\+M\+VP}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&affine\+A\+M\+V\+P\+Info, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\mbox{[}3\mbox{]}, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\+Pred\mbox{[}3\mbox{]}, int \&ri\+M\+V\+P\+Idx, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a554f238ef569ea05b99bbef4a0972ae1}{x\+Check\+Best\+M\+VP}} (\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&c\+Mv, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Pred, int \&ri\+M\+V\+P\+Idx, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, const uint8\+\_\+t imv)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a7b69f3427bf39ba0ecfa86151461ec7d}{x\+Copy\+Affine\+A\+M\+V\+P\+Info}} (\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&src, \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&dst)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a4d2693dc3415aea5989af195238f0981}{x\+Copy\+A\+M\+V\+P\+Info}} (\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} $\ast$p\+Src, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} $\ast$p\+Dst)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a23a6f1ead4939bc6154475ae86dda34b}{x\+Encode\+Inter\+Residual\+QT}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a1c8d4c0817299ee000cd3a3679a6d52d}{x\+Estimate\+Affine\+A\+M\+VP}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&affine\+A\+M\+V\+P\+Info, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\+Pred\mbox{[}3\mbox{]}, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&dist\+BiP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a3690ee43ddf352cc2fa9fab4d65d8616}{x\+Estimate\+Inter\+Residual\+QT}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$pui\+Zero\+Dist=\mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a4ff177faa51dea313e7bd4049db215e6}{x\+Estimate\+Mv\+Pred\+A\+M\+VP}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Pred, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&dist\+BiP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a4fbc68d90894a76141760cf4b61c21ba}{x\+Ext\+D\+I\+F\+Up\+SamplingH}} (\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$pc\+Pattern, bool use\+Alt\+Hpel\+If)
+\begin{DoxyCompactList}\small\item\em Generate half-\/sample interpolated block. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_af96f9b73b3e97111a195da4a3f210558}{x\+Ext\+D\+I\+F\+Up\+SamplingQ}} (\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$pc\+Pattern\+Key, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} half\+Pel\+Ref, int \&pattern\+Id)
+\begin{DoxyCompactList}\small\item\em Generate quarter-\/sample interpolated blocks. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a341b90a8f05156fa3fd4012ee38510f9}{x\+Get\+Affine\+Template\+Cost}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\+Cand\mbox{[}3\mbox{]}, int i\+M\+V\+P\+Idx, int i\+M\+V\+P\+Num, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_af67498245b43d85d1afe6c053a4eb1b6}{x\+Get\+Blk\+Bits}} (bool b\+P\+Slice, int i\+Part\+Idx, uint32\+\_\+t ui\+Last\+Mode, uint32\+\_\+t ui\+Blk\+Bit\mbox{[}3\mbox{]})
+\item 
+double \mbox{\hyperlink{classvvenc_1_1InterSearch_a38fa18d30e9c51ef390aa273da0f2cc5}{x\+Get\+M\+E\+Distortion\+Weight}} (uint8\+\_\+t Bcw\+Idx, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_ae1a5f5f359b0f586440af2d441a37544}{x\+Get\+Mvp\+Idx\+Bits}} (int i\+Idx, int i\+Num)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1InterSearch_ad63bfa3ac9511f55501c000f8dda5cd4}{x\+Get\+Symbol\+Frac\+Bits\+Inter}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_af53c99ea0459bcfb52dcf7795770cedb}{x\+Get\+Sym\+Cost}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Cur\+Ref\+Pic\+List, const \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&c\+Cur\+Mv\+Field, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&c\+Tar\+Mv\+Field, int Bcw\+Idx)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a771848baeb6a36ee61ee9bc83ededc64}{x\+Get\+Template\+Cost}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&pred\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} c\+Mv\+Cand, int i\+M\+V\+P\+Idx, int i\+M\+V\+P\+Num, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ad110b18cf976a78f734532554e21a187}{x\+I\+B\+C\+Estimation}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$pc\+Mv\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a136356f1d8568f4d1717dbf3f38fef30}{x\+I\+B\+C\+Search\+M\+V\+Cand\+Update}} (\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} ui\+Sad, int x, int y, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$ui\+Sad\+Best\+Cand, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$c\+M\+V\+Cand)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1InterSearch_a2bbe3d87d2037bae43740148ba4b8f46}{x\+I\+B\+C\+Search\+M\+V\+Chroma\+Refine}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, int i\+Roi\+Width, int i\+Roi\+Height, int cu\+PelX, int cu\+PelY, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$ui\+Sad\+Best\+Cand, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$c\+M\+V\+Cand)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ace6b0a8e41a7e3012e9dc21ccb253c68}{x\+Intra\+Pattern\+Search\+I\+BC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&pu, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$c\+Mv\+Srch\+Rng\+LT, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$c\+Mv\+Srch\+Rng\+RB, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$pc\+Mv\+Pred)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_aa17b8a45afa5a9835b69acd2a4372fc0}{x\+Motion\+Estimation}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Pred, int i\+Ref\+Idx\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, int \&ri\+M\+V\+P\+Idx, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, const \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info, bool b\+Bi=false)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a44ef45706c20f722aef32216629c45a3}{x\+Pattern\+Refinement}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$pc\+Pattern\+Key, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} base\+Ref\+Mv, int i\+Frac, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Frac, bool b\+Allow\+Use\+Of\+Hadamard, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&ui\+Dist\+Best, int \&pattern\+Id, \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$pattern, bool use\+Alt\+Hpel\+If)
+\begin{DoxyCompactList}\small\item\em sub-\/function for motion vector refinement used in fractional-\/pel accuracy \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ad546194ff2abcc407c4ad8dbeb88f37b}{x\+Pattern\+Search}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+S\+AD)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a95d4cdaf8c61540ad5d8a6646df90fe7}{x\+Pattern\+Search\+Fast}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx\+Pred, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+S\+AD, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const p\+Integer\+Mv2\+Nx2\+N\+Pred)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a3adb61022e07cfeb1c5112be359930d4}{x\+Pattern\+Search\+Frac\+D\+IF}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Int, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Half, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Qter, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a79bbecad33262eecb8522cc540c421ac}{x\+Pattern\+Search\+Int\+Refine}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Pred, int \&ri\+M\+V\+P\+Idx, uint32\+\_\+t \&ui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, const \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&amvp\+Info, double f\+Weight)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a74b43514d85787c262e18084a20d61e1}{x\+Pred\+Affine\+Inter\+Search}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, int pu\+Idx, uint32\+\_\+t \&last\+Mode, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&affine\+Cost, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} hevc\+Mv\mbox{[}2\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a15ef77bcb3f5e2bdbb9e5130fb3fc9ea}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS}}\mbox{]}, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} mv\+Affine4\+Para\mbox{[}2\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a15ef77bcb3f5e2bdbb9e5130fb3fc9ea}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS}}\mbox{]}\mbox{[}3\mbox{]}, int ref\+Idx4\+Para\mbox{[}2\mbox{]}, uint8\+\_\+t Bcw\+Idx=\mbox{\hyperlink{namespacevvenc_ab4631bf16a955dfd7bae49c7f6a71c13}{B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT}}, bool enforce\+Bcw\+Pred=false, uint32\+\_\+t Bcw\+Idx\+Bits=0)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_a2b416c27fd70dc219f0bdc256a640fb3}{x\+Read\+Buffered\+Affine\+Uni\+Mv}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+Pic\+List, int32\+\_\+t i\+Ref\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\+Pred\mbox{[}3\mbox{]}, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} ac\+Mv\mbox{[}3\mbox{]}, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, int \&mvp\+Idx, const \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&aamvpi)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1InterSearch_a5f82995c567b1a06019ec3069d2f5166}{x\+Read\+Buffered\+Uni\+Mv}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e\+Ref\+Pic\+List, int32\+\_\+t i\+Ref\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&pc\+Mv\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, uint32\+\_\+t \&rui\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ab9dff1babd6605466544eab335cbf1e1}{x\+Set\+Intra\+Search\+Range\+I\+BC}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&pu, int i\+Roi\+Width, int i\+Roi\+Height, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Srch\+Rng\+LT, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Srch\+Rng\+RB)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a923a81a518d0b94fca78be81c59716a6}{x\+Set\+Search\+Range}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&c\+Mv\+Pred, const int i\+Srch\+Rng, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1SearchRange}{Search\+Range}} \&sr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_aaf529386910fa2161fa63a3f71657e07}{x\+Sym\+Motion\+Estimation}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Cur\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Tar\+Pred, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&r\+Cur\+Mv\+Field, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&r\+Tar\+Mv\+Field, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+Cost, int Bcw\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a1014955f8421b10b97bd219860e426d1}{x\+Sym\+Mvd\+Check\+Best\+Mvp}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} cur\+Mv, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} cur\+Ref\+List, \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} amvp\+Info\mbox{[}2\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a15ef77bcb3f5e2bdbb9e5130fb3fc9ea}{M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+CS}}\mbox{]}, int32\+\_\+t Bcw\+Idx, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} c\+Mv\+Pred\+Sym\mbox{[}2\mbox{]}, int32\+\_\+t mvp\+Idx\+Sym\mbox{[}2\mbox{]}, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&best\+Cost, bool skip)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a0add32f416fb3fc9393a688e7fb27c15}{x\+Sym\+Refine\+Mv\+Search}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&orig\+Buf, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Cur\+Pred, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv\+Tar\+Pred, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&r\+Cur\+Mv\+Field, \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&r\+Tar\+Mv\+Field, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} ui\+Min\+Cost, int search\+Pattern, int n\+Search\+Step\+Shift, uint32\+\_\+t ui\+Max\+Search\+Rounds, int Bcw\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a7ef728d3e31f6b319e88d2f023ef92cf}{x\+T\+Z2\+Point\+Search}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&rc\+Struct)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ae6221582f4c06ae8910bf62fcc456069}{x\+T\+Z4\+Point\+Square\+Search}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&rc\+Struct, const int i\+StartX, const int i\+StartY, const int i\+Dist)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_af347e20a1b178bb2dc4dfc86a139a3fe}{x\+T\+Z8\+Point\+Diamond\+Search}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&rc\+Struct, const int i\+StartX, const int i\+StartY, const int i\+Dist, const bool b\+Check\+Corners\+At\+Dist1)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a68106a08253d342623282a38b62c0fae}{x\+T\+Z8\+Point\+Square\+Search}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&rc\+Struct, const int i\+StartX, const int i\+StartY, const int i\+Dist)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_ae80bf796e6ed92eba168735a7b4c40fb}{x\+T\+Z\+Search}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx\+Pred, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+S\+AD, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const p\+Integer\+Mv2\+Nx2\+N\+Pred, const bool b\+Extended\+Settings, const bool b\+Fast\+Settings=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a87f71d3bf463ad0130672557d0c65ab7}{x\+T\+Z\+Search\+Help}} (\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&rc\+Struct, const int i\+SearchX, const int i\+SearchY, const uint8\+\_\+t uc\+Point\+Nr, const uint32\+\_\+t ui\+Distance)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InterSearch_a53890dc1d8786e787c63cd6c053979ac}{x\+T\+Z\+Search\+Selective}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, \mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} ref\+Pic\+List, int i\+Ref\+Idx\+Pred, \mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&c\+Struct, \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&rui\+S\+AD, const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const p\+Integer\+Mv2\+Nx2\+N\+Pred)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a4db803e8138cb0bba7f2b6d67fd56031}{m\+\_\+ac\+B\+Vs}} \mbox{[}2 $\ast$\mbox{\hyperlink{namespacevvenc_abe04d9b7f688253587f839144f4a5465}{I\+B\+C\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+ES}}\mbox{]}
+\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{structvvenc_1_1Position}{Position}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{structvvenc_1_1Size}{Size}}, \mbox{\hyperlink{structvvenc_1_1BlkRecord}{Blk\+Record}} $>$ $>$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a4f79f54e78034e5a883a8db14dda02db}{m\+\_\+ctu\+Record}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1IbcBvCand}{Ibc\+Bv\+Cand}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_a9c5ed9f5c6203e9ceea129849c68dc87}{m\+\_\+default\+Cached\+Bvs}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \mbox{\hyperlink{classvvenc_1_1InterSearch_ab8269469fbe280b4e8aa6fc83efeb351}{m\+\_\+luma\+Clp\+Rng}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_ad78b260566db7787b860f3d09a32b591}{m\+\_\+mode\+Ctrl}}
+\item 
+unsigned int \mbox{\hyperlink{classvvenc_1_1InterSearch_ad063c8e5c76d656b32fb2cf497999008}{m\+\_\+num\+B\+Vs}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1InterSearch_ad5e48395a803d72de5136bce7a37933d}{m\+\_\+p\+Save\+CS}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterSearch_adfe7d77511de8d2d474a5dbb86f717b0}{m\+\_\+tmp\+Pred\+Storage}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1InterSearch_a9560b1449322ce25b114d6f40933c8fc}{m\+\_\+tmp\+Storage\+L\+CU}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+encoder search class 
+
+Definition at line 343 of file Inter\+Search.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aec99234fd92e769ccc6d0e0f46cee0bb}\label{classvvenc_1_1InterSearch_aec99234fd92e769ccc6d0e0f46cee0bb}} 
+\index{InterSearch@{InterSearch}!InterSearch@{InterSearch}}
+\index{InterSearch@{InterSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{InterSearch()}{InterSearch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InterSearch}{Inter\+Search}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 193 of file Inter\+Search.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a59194d848c38a0c6efdf4ea064905120}\label{classvvenc_1_1InterSearch_a59194d848c38a0c6efdf4ea064905120}} 
+\index{InterSearch@{InterSearch}!````~InterSearch@{$\sim$InterSearch}}
+\index{````~InterSearch@{$\sim$InterSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{$\sim$InterSearch()}{~InterSearch()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1InterSearch}{Inter\+Search}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 217 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a59194d848c38a0c6efdf4ea064905120_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1InterSearch_a3a80b6032f86a56bec74609034b3246f}} 
+\index{InterSearch@{InterSearch}!destroy@{destroy}}
+\index{destroy@{destroy}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1InterSearch_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classvvenc_1_1InterSearch_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a9c686c694eaa5ea4e414cb623bde0139}\label{classvvenc_1_1InterSearch_a9c686c694eaa5ea4e414cb623bde0139}} 
+\index{InterSearch@{InterSearch}!encodeResAndCalcRdInterCU@{encodeResAndCalcRdInterCU}}
+\index{encodeResAndCalcRdInterCU@{encodeResAndCalcRdInterCU}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{encodeResAndCalcRdInterCU()}{encodeResAndCalcRdInterCU()}}
+{\footnotesize\ttfamily void encode\+Res\+And\+Calc\+Rd\+Inter\+CU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const bool}]{skip\+Residual }\end{DoxyParamCaption})}
+
+
+
+set ME search range 
+
+
+
+Definition at line 4304 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterSearch_a9c686c694eaa5ea4e414cb623bde0139_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af1328a689e0e09c6c3b8fe514bfa2e07}\label{classvvenc_1_1InterSearch_af1328a689e0e09c6c3b8fe514bfa2e07}} 
+\index{InterSearch@{InterSearch}!getBestSbt@{getBestSbt}}
+\index{getBestSbt@{getBestSbt}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{getBestSbt()}{getBestSbt()}}
+{\footnotesize\ttfamily void get\+Best\+Sbt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$}]{temp\+CS,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$}]{cu,  }\item[{uint8\+\_\+t \&}]{hist\+Best\+Sbt,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{cur\+Pu\+Sse,  }\item[{uint8\+\_\+t}]{sbt\+Allowed,  }\item[{bool}]{do\+Pre\+Analyze\+Resi,  }\item[{bool}]{mts\+Allowed }\end{DoxyParamCaption})}
+
+
+
+Definition at line 375 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af1328a689e0e09c6c3b8fe514bfa2e07_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a02fccf54ebd41fd6bc9712be1d326cba}\label{classvvenc_1_1InterSearch_a02fccf54ebd41fd6bc9712be1d326cba}} 
+\index{InterSearch@{InterSearch}!getEstDistSbt@{getEstDistSbt}}
+\index{getEstDistSbt@{getEstDistSbt}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{getEstDistSbt()}{getEstDistSbt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} get\+Est\+Dist\+Sbt (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sbt\+Mode }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 428 of file Inter\+Search.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classvvenc_1_1InterSearch_a02fccf54ebd41fd6bc9712be1d326cba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ab70a755b26acb7f3f9db4a649c7c475f}\label{classvvenc_1_1InterSearch_ab70a755b26acb7f3f9db4a649c7c475f}} 
+\index{InterSearch@{InterSearch}!getSbtRdoOrder@{getSbtRdoOrder}}
+\index{getSbtRdoOrder@{getSbtRdoOrder}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{getSbtRdoOrder()}{getSbtRdoOrder()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Sbt\+Rdo\+Order (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 427 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae737f41778ffadff9cfe387a6f52b728}\label{classvvenc_1_1InterSearch_ae737f41778ffadff9cfe387a6f52b728}} 
+\index{InterSearch@{InterSearch}!getSkipSbtAll@{getSkipSbtAll}}
+\index{getSkipSbtAll@{getSkipSbtAll}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{getSkipSbtAll()}{getSkipSbtAll()}}
+{\footnotesize\ttfamily bool get\+Skip\+Sbt\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 426 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_abd69038caf0e20410a0e13758ace1e67}\label{classvvenc_1_1InterSearch_abd69038caf0e20410a0e13758ace1e67}} 
+\index{InterSearch@{InterSearch}!getWeightIdxBits@{getWeightIdxBits}}
+\index{getWeightIdxBits@{getWeightIdxBits}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{getWeightIdxBits()}{getWeightIdxBits()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Weight\+Idx\+Bits (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcw\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 438 of file Inter\+Search.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvvenc_1_1InterSearch_abd69038caf0e20410a0e13758ace1e67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a497d534668188d853ef03bbb9455c752}\label{classvvenc_1_1InterSearch_a497d534668188d853ef03bbb9455c752}} 
+\index{InterSearch@{InterSearch}!init@{init}}
+\index{init@{init}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg,  }\item[{\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$}]{p\+Tr\+Quant,  }\item[{\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} $\ast$}]{p\+Rd\+Cost,  }\item[{\mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}} $\ast$}]{p\+Mode\+Ctrl,  }\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$$\ast$}]{p\+Save\+CS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 222 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a497d534668188d853ef03bbb9455c752_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classvvenc_1_1InterSearch_a497d534668188d853ef03bbb9455c752_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a95eb2b42d056bbeeae5145eadc91309d}\label{classvvenc_1_1InterSearch_a95eb2b42d056bbeeae5145eadc91309d}} 
+\index{InterSearch@{InterSearch}!initSbtRdoOrder@{initSbtRdoOrder}}
+\index{initSbtRdoOrder@{initSbtRdoOrder}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{initSbtRdoOrder()}{initSbtRdoOrder()}}
+{\footnotesize\ttfamily void init\+Sbt\+Rdo\+Order (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{sbt\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 429 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a855fa44b8d0233bd0eee95e99883e667}\label{classvvenc_1_1InterSearch_a855fa44b8d0233bd0eee95e99883e667}} 
+\index{InterSearch@{InterSearch}!loadGlobalUniMvs@{loadGlobalUniMvs}}
+\index{loadGlobalUniMvs@{loadGlobalUniMvs}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{loadGlobalUniMvs()}{loadGlobalUniMvs()}}
+{\footnotesize\ttfamily void load\+Global\+Uni\+Mvs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{luma\+Area,  }\item[{const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} \&}]{pcv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 364 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a855fa44b8d0233bd0eee95e99883e667_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aa391293054038b0549cc65f918625083}\label{classvvenc_1_1InterSearch_aa391293054038b0549cc65f918625083}} 
+\index{InterSearch@{InterSearch}!predIBCSearch@{predIBCSearch}}
+\index{predIBCSearch@{predIBCSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{predIBCSearch()}{predIBCSearch()}}
+{\footnotesize\ttfamily bool pred\+I\+B\+C\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 6635 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aa391293054038b0549cc65f918625083_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a20ad2ab1a41da1b47cf2a94655f06ee5}\label{classvvenc_1_1InterSearch_a20ad2ab1a41da1b47cf2a94655f06ee5}} 
+\index{InterSearch@{InterSearch}!predInterSearch@{predInterSearch}}
+\index{predInterSearch@{predInterSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{predInterSearch()}{predInterSearch()}}
+{\footnotesize\ttfamily bool pred\+Inter\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{double \&}]{best\+Cost\+Inter }\end{DoxyParamCaption})}
+
+
+
+encoder estimation -\/ inter prediction (non-\/skip) 
+
+search of the best candidate for inter prediction 
+
+Definition at line 1028 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterSearch_a20ad2ab1a41da1b47cf2a94655f06ee5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_acfb9973d949f50ad0b31b1c860b8e31e}\label{classvvenc_1_1InterSearch_acfb9973d949f50ad0b31b1c860b8e31e}} 
+\index{InterSearch@{InterSearch}!resetBufferedUniMotions@{resetBufferedUniMotions}}
+\index{resetBufferedUniMotions@{resetBufferedUniMotions}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{resetBufferedUniMotions()}{resetBufferedUniMotions()}}
+{\footnotesize\ttfamily void reset\+Buffered\+Uni\+Motions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 437 of file Inter\+Search.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_acfb9973d949f50ad0b31b1c860b8e31e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a1d92085205227c95ec283e50d586cead}\label{classvvenc_1_1InterSearch_a1d92085205227c95ec283e50d586cead}} 
+\index{InterSearch@{InterSearch}!resetCtuRecordIBC@{resetCtuRecordIBC}}
+\index{resetCtuRecordIBC@{resetCtuRecordIBC}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{resetCtuRecordIBC()}{resetCtuRecordIBC()}}
+{\footnotesize\ttfamily void reset\+Ctu\+Record\+I\+BC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 435 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aa90c4598c609d56310a72938f1d4aa94}\label{classvvenc_1_1InterSearch_aa90c4598c609d56310a72938f1d4aa94}} 
+\index{InterSearch@{InterSearch}!resetSavedAffineMotion@{resetSavedAffineMotion}}
+\index{resetSavedAffineMotion@{resetSavedAffineMotion}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{resetSavedAffineMotion()}{resetSavedAffineMotion()}}
+{\footnotesize\ttfamily void reset\+Saved\+Affine\+Motion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4706 of file Inter\+Search.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aedd99d503788bcd4561c14459655fdfc}\label{classvvenc_1_1InterSearch_aedd99d503788bcd4561c14459655fdfc}} 
+\index{InterSearch@{InterSearch}!searchBvIBC@{searchBvIBC}}
+\index{searchBvIBC@{searchBvIBC}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{searchBvIBC()}{searchBvIBC()}}
+{\footnotesize\ttfamily bool search\+Bv\+I\+BC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{pu,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{pic\+Width,  }\item[{int}]{pic\+Height,  }\item[{int}]{x\+Bv,  }\item[{int}]{y\+Bv,  }\item[{int}]{ctu\+Size }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 6817 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aedd99d503788bcd4561c14459655fdfc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aedd99d503788bcd4561c14459655fdfc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a39a6e170987936d5c938847dd38257d7}\label{classvvenc_1_1InterSearch_a39a6e170987936d5c938847dd38257d7}} 
+\index{InterSearch@{InterSearch}!setAffineModeSelected@{setAffineModeSelected}}
+\index{setAffineModeSelected@{setAffineModeSelected}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{setAffineModeSelected()}{setAffineModeSelected()}}
+{\footnotesize\ttfamily void set\+Affine\+Mode\+Selected (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 439 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aaca07f8b20ac1f70e0ce73bc01c70c90}\label{classvvenc_1_1InterSearch_aaca07f8b20ac1f70e0ce73bc01c70c90}} 
+\index{InterSearch@{InterSearch}!setCtuEncRsrc@{setCtuEncRsrc}}
+\index{setCtuEncRsrc@{setCtuEncRsrc}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{setCtuEncRsrc()}{setCtuEncRsrc()}}
+{\footnotesize\ttfamily void set\+Ctu\+Enc\+Rsrc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} $\ast$}]{cabac\+Estimator,  }\item[{\mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}} $\ast$}]{ctx\+Cache,  }\item[{\mbox{\hyperlink{structvvenc_1_1ReuseUniMv}{Reuse\+Uni\+Mv}} $\ast$}]{p\+Reuse\+Uni\+Mv,  }\item[{\mbox{\hyperlink{structvvenc_1_1BlkUniMvInfoBuffer}{Blk\+Uni\+Mv\+Info\+Buffer}} $\ast$}]{p\+Blk\+Uni\+Mv\+Info\+Buffer,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineProfList}{Affine\+Prof\+List}} $\ast$}]{p\+Affine\+Prof\+List,  }\item[{\mbox{\hyperlink{structvvenc_1_1IbcBvCand}{Ibc\+Bv\+Cand}} $\ast$}]{p\+Cached\+Bvs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 307 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aaca07f8b20ac1f70e0ce73bc01c70c90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_adb2189fa0855c297a7c6ac48658f28ff}\label{classvvenc_1_1InterSearch_adb2189fa0855c297a7c6ac48658f28ff}} 
+\index{InterSearch@{InterSearch}!setSearchRange@{setSearchRange}}
+\index{setSearchRange@{setSearchRange}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{setSearchRange()}{setSearchRange()}}
+{\footnotesize\ttfamily void set\+Search\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+set adaptive search range based on poc difference 
+
+
+
+Definition at line 5999 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classvvenc_1_1InterSearch_adb2189fa0855c297a7c6ac48658f28ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classvvenc_1_1InterSearch_adb2189fa0855c297a7c6ac48658f28ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a3b688da19bcfb0ff8a8f92f82132d5da}\label{classvvenc_1_1InterSearch_a3b688da19bcfb0ff8a8f92f82132d5da}} 
+\index{InterSearch@{InterSearch}!skipSbtByRDCost@{skipSbtByRDCost}}
+\index{skipSbtByRDCost@{skipSbtByRDCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{skipSbtByRDCost()}{skipSbtByRDCost()}}
+{\footnotesize\ttfamily uint8\+\_\+t skip\+Sbt\+By\+R\+D\+Cost (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{mt\+Depth,  }\item[{uint8\+\_\+t}]{sbt\+Idx,  }\item[{uint8\+\_\+t}]{sbt\+Pos,  }\item[{double}]{best\+Cost,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{dist\+Sbt\+Off,  }\item[{double}]{cost\+Sbt\+Off,  }\item[{bool}]{root\+Cbf\+Sbt\+Off }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3637 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a3b688da19bcfb0ff8a8f92f82132d5da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a91007e4c7d30c0ad661ca2222874443b}\label{classvvenc_1_1InterSearch_a91007e4c7d30c0ad661ca2222874443b}} 
+\index{InterSearch@{InterSearch}!storeAffineMotion@{storeAffineMotion}}
+\index{storeAffineMotion@{storeAffineMotion}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{storeAffineMotion()}{storeAffineMotion()}}
+{\footnotesize\ttfamily void store\+Affine\+Motion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Affine\+Mv\mbox{[}2\mbox{]}\mbox{[}3\mbox{]},  }\item[{int16\+\_\+t}]{affine\+Ref\+Idx\mbox{[}2\mbox{]},  }\item[{\mbox{\hyperlink{namespacevvenc_ad33919387852da909ffb76eb0e777817}{E\+Affine\+Model}}}]{affine\+Type,  }\item[{int}]{Bcw\+Idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 4724 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvvenc_1_1InterSearch_a91007e4c7d30c0ad661ca2222874443b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a44e957b819a43dba1f284e80d49809f4}\label{classvvenc_1_1InterSearch_a44e957b819a43dba1f284e80d49809f4}} 
+\index{InterSearch@{InterSearch}!xAffineMotionEstimation@{xAffineMotionEstimation}}
+\index{xAffineMotionEstimation@{xAffineMotionEstimation}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xAffineMotionEstimation()}{xAffineMotionEstimation()}}
+{\footnotesize\ttfamily void x\+Affine\+Motion\+Estimation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\+Pred\mbox{[}3\mbox{]},  }\item[{int}]{i\+Ref\+Idx\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\mbox{[}3\mbox{]},  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{int \&}]{mvp\+Idx,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{aamvpi,  }\item[{bool}]{b\+Bi = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5523 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterSearch_a44e957b819a43dba1f284e80d49809f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a44e957b819a43dba1f284e80d49809f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aa7a315accab25af49c40266933c681de}\label{classvvenc_1_1InterSearch_aa7a315accab25af49c40266933c681de}} 
+\index{InterSearch@{InterSearch}!xCalcAffineMVBits@{xCalcAffineMVBits}}
+\index{xCalcAffineMVBits@{xCalcAffineMVBits}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCalcAffineMVBits()}{xCalcAffineMVBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t x\+Calc\+Affine\+M\+V\+Bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{mv\+Cand\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{mv\+Pred\mbox{[}3\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5977 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aa7a315accab25af49c40266933c681de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aa7a315accab25af49c40266933c681de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae10e385d23d8c4126831cd7bd566bcbc}\label{classvvenc_1_1InterSearch_ae10e385d23d8c4126831cd7bd566bcbc}} 
+\index{InterSearch@{InterSearch}!xCalcMinDistSbt@{xCalcMinDistSbt}}
+\index{xCalcMinDistSbt@{xCalcMinDistSbt}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCalcMinDistSbt()}{xCalcMinDistSbt()}}
+{\footnotesize\ttfamily void x\+Calc\+Min\+Dist\+Sbt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const uint8\+\_\+t}]{sbt\+Allowed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 3443 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae10e385d23d8c4126831cd7bd566bcbc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1InterSearch_ae10e385d23d8c4126831cd7bd566bcbc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a684f4005176cc6580b29960d10514bcb}\label{classvvenc_1_1InterSearch_a684f4005176cc6580b29960d10514bcb}} 
+\index{InterSearch@{InterSearch}!xCheckBestAffineMVP@{xCheckBestAffineMVP}}
+\index{xCheckBestAffineMVP@{xCheckBestAffineMVP}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCheckBestAffineMVP()}{xCheckBestAffineMVP()}}
+{\footnotesize\ttfamily void x\+Check\+Best\+Affine\+M\+VP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{affine\+A\+M\+V\+P\+Info,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\+Pred\mbox{[}3\mbox{]},  }\item[{int \&}]{ri\+M\+V\+P\+Idx,  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5469 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a684f4005176cc6580b29960d10514bcb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a684f4005176cc6580b29960d10514bcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a554f238ef569ea05b99bbef4a0972ae1}\label{classvvenc_1_1InterSearch_a554f238ef569ea05b99bbef4a0972ae1}} 
+\index{InterSearch@{InterSearch}!xCheckBestMVP@{xCheckBestMVP}}
+\index{xCheckBestMVP@{xCheckBestMVP}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCheckBestMVP()}{xCheckBestMVP()}}
+{\footnotesize\ttfamily void x\+Check\+Best\+M\+VP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{c\+Mv,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Pred,  }\item[{int \&}]{ri\+M\+V\+P\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info,  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{const uint8\+\_\+t}]{imv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1878 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a554f238ef569ea05b99bbef4a0972ae1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classvvenc_1_1InterSearch_a554f238ef569ea05b99bbef4a0972ae1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a7b69f3427bf39ba0ecfa86151461ec7d}\label{classvvenc_1_1InterSearch_a7b69f3427bf39ba0ecfa86151461ec7d}} 
+\index{InterSearch@{InterSearch}!xCopyAffineAMVPInfo@{xCopyAffineAMVPInfo}}
+\index{xCopyAffineAMVPInfo@{xCopyAffineAMVPInfo}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCopyAffineAMVPInfo()}{xCopyAffineAMVPInfo()}}
+{\footnotesize\ttfamily void x\+Copy\+Affine\+A\+M\+V\+P\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{src,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5968 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a7b69f3427bf39ba0ecfa86151461ec7d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4d2693dc3415aea5989af195238f0981}\label{classvvenc_1_1InterSearch_a4d2693dc3415aea5989af195238f0981}} 
+\index{InterSearch@{InterSearch}!xCopyAMVPInfo@{xCopyAMVPInfo}}
+\index{xCopyAMVPInfo@{xCopyAMVPInfo}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xCopyAMVPInfo()}{xCopyAMVPInfo()}}
+{\footnotesize\ttfamily void x\+Copy\+A\+M\+V\+P\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} $\ast$}]{p\+Src,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} $\ast$}]{p\+Dst }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1869 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1InterSearch_a4d2693dc3415aea5989af195238f0981_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a23a6f1ead4939bc6154475ae86dda34b}\label{classvvenc_1_1InterSearch_a23a6f1ead4939bc6154475ae86dda34b}} 
+\index{InterSearch@{InterSearch}!xEncodeInterResidualQT@{xEncodeInterResidualQT}}
+\index{xEncodeInterResidualQT@{xEncodeInterResidualQT}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xEncodeInterResidualQT()}{xEncodeInterResidualQT()}}
+{\footnotesize\ttfamily void x\+Encode\+Inter\+Residual\+QT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 3348 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a23a6f1ead4939bc6154475ae86dda34b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a23a6f1ead4939bc6154475ae86dda34b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a1c8d4c0817299ee000cd3a3679a6d52d}\label{classvvenc_1_1InterSearch_a1c8d4c0817299ee000cd3a3679a6d52d}} 
+\index{InterSearch@{InterSearch}!xEstimateAffineAMVP@{xEstimateAffineAMVP}}
+\index{xEstimateAffineAMVP@{xEstimateAffineAMVP}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xEstimateAffineAMVP()}{xEstimateAffineAMVP()}}
+{\footnotesize\ttfamily void x\+Estimate\+Affine\+A\+M\+VP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{affine\+A\+M\+V\+P\+Info,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\+Pred\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{dist\+BiP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5914 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a1c8d4c0817299ee000cd3a3679a6d52d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a1c8d4c0817299ee000cd3a3679a6d52d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a3690ee43ddf352cc2fa9fab4d65d8616}\label{classvvenc_1_1InterSearch_a3690ee43ddf352cc2fa9fab4d65d8616}} 
+\index{InterSearch@{InterSearch}!xEstimateInterResidualQT@{xEstimateInterResidualQT}}
+\index{xEstimateInterResidualQT@{xEstimateInterResidualQT}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xEstimateInterResidualQT()}{xEstimateInterResidualQT()}}
+{\footnotesize\ttfamily void x\+Estimate\+Inter\+Residual\+QT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$}]{pui\+Zero\+Dist = {\ttfamily \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 3688 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a3690ee43ddf352cc2fa9fab4d65d8616_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4ff177faa51dea313e7bd4049db215e6}\label{classvvenc_1_1InterSearch_a4ff177faa51dea313e7bd4049db215e6}} 
+\index{InterSearch@{InterSearch}!xEstimateMvPredAMVP@{xEstimateMvPredAMVP}}
+\index{xEstimateMvPredAMVP@{xEstimateMvPredAMVP}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xEstimateMvPredAMVP()}{xEstimateMvPredAMVP()}}
+{\footnotesize\ttfamily void x\+Estimate\+Mv\+Pred\+A\+M\+VP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Pred,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{dist\+BiP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1795 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a4ff177faa51dea313e7bd4049db215e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classvvenc_1_1InterSearch_a4ff177faa51dea313e7bd4049db215e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4fbc68d90894a76141760cf4b61c21ba}\label{classvvenc_1_1InterSearch_a4fbc68d90894a76141760cf4b61c21ba}} 
+\index{InterSearch@{InterSearch}!xExtDIFUpSamplingH@{xExtDIFUpSamplingH}}
+\index{xExtDIFUpSamplingH@{xExtDIFUpSamplingH}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xExtDIFUpSamplingH()}{xExtDIFUpSamplingH()}}
+{\footnotesize\ttfamily void x\+Ext\+D\+I\+F\+Up\+SamplingH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$}]{pattern,  }\item[{bool}]{use\+Alt\+Hpel\+If }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate half-\/sample interpolated block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & Reference picture R\+OI \\
+\hline
+{\em bi\+Pred} & Flag indicating whether block is for biprediction \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3089 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a4fbc68d90894a76141760cf4b61c21ba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a4fbc68d90894a76141760cf4b61c21ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af96f9b73b3e97111a195da4a3f210558}\label{classvvenc_1_1InterSearch_af96f9b73b3e97111a195da4a3f210558}} 
+\index{InterSearch@{InterSearch}!xExtDIFUpSamplingQ@{xExtDIFUpSamplingQ}}
+\index{xExtDIFUpSamplingQ@{xExtDIFUpSamplingQ}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xExtDIFUpSamplingQ()}{xExtDIFUpSamplingQ()}}
+{\footnotesize\ttfamily void x\+Ext\+D\+I\+F\+Up\+SamplingQ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$}]{pattern,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{half\+Pel\+Ref,  }\item[{int \&}]{pattern\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generate quarter-\/sample interpolated blocks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & Reference picture R\+OI \\
+\hline
+{\em half\+Pel\+Ref} & Half-\/pel mv \\
+\hline
+{\em bi\+Pred} & Flag indicating whether block is for biprediction \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3147 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af96f9b73b3e97111a195da4a3f210558_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af96f9b73b3e97111a195da4a3f210558_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a341b90a8f05156fa3fd4012ee38510f9}\label{classvvenc_1_1InterSearch_a341b90a8f05156fa3fd4012ee38510f9}} 
+\index{InterSearch@{InterSearch}!xGetAffineTemplateCost@{xGetAffineTemplateCost}}
+\index{xGetAffineTemplateCost@{xGetAffineTemplateCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetAffineTemplateCost()}{xGetAffineTemplateCost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+Affine\+Template\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\+Cand\mbox{[}3\mbox{]},  }\item[{int}]{i\+M\+V\+P\+Idx,  }\item[{int}]{i\+M\+V\+P\+Num,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 5376 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a341b90a8f05156fa3fd4012ee38510f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a341b90a8f05156fa3fd4012ee38510f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af67498245b43d85d1afe6c053a4eb1b6}\label{classvvenc_1_1InterSearch_af67498245b43d85d1afe6c053a4eb1b6}} 
+\index{InterSearch@{InterSearch}!xGetBlkBits@{xGetBlkBits}}
+\index{xGetBlkBits@{xGetBlkBits}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetBlkBits()}{xGetBlkBits()}}
+{\footnotesize\ttfamily void x\+Get\+Blk\+Bits (\begin{DoxyParamCaption}\item[{bool}]{b\+P\+Slice,  }\item[{int}]{i\+Part\+Idx,  }\item[{uint32\+\_\+t}]{ui\+Last\+Mode,  }\item[{uint32\+\_\+t}]{ui\+Blk\+Bit\mbox{[}3\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1862 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af67498245b43d85d1afe6c053a4eb1b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a38fa18d30e9c51ef390aa273da0f2cc5}\label{classvvenc_1_1InterSearch_a38fa18d30e9c51ef390aa273da0f2cc5}} 
+\index{InterSearch@{InterSearch}!xGetMEDistortionWeight@{xGetMEDistortionWeight}}
+\index{xGetMEDistortionWeight@{xGetMEDistortionWeight}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetMEDistortionWeight()}{xGetMEDistortionWeight()}}
+{\footnotesize\ttfamily double x\+Get\+M\+E\+Distortion\+Weight (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{Bcw\+Idx,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4561 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a38fa18d30e9c51ef390aa273da0f2cc5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a38fa18d30e9c51ef390aa273da0f2cc5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae1a5f5f359b0f586440af2d441a37544}\label{classvvenc_1_1InterSearch_ae1a5f5f359b0f586440af2d441a37544}} 
+\index{InterSearch@{InterSearch}!xGetMvpIdxBits@{xGetMvpIdxBits}}
+\index{xGetMvpIdxBits@{xGetMvpIdxBits}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetMvpIdxBits()}{xGetMvpIdxBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t x\+Get\+Mvp\+Idx\+Bits (\begin{DoxyParamCaption}\item[{int}]{i\+Idx,  }\item[{int}]{i\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1834 of file Inter\+Search.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae1a5f5f359b0f586440af2d441a37544_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad63bfa3ac9511f55501c000f8dda5cd4}\label{classvvenc_1_1InterSearch_ad63bfa3ac9511f55501c000f8dda5cd4}} 
+\index{InterSearch@{InterSearch}!xGetSymbolFracBitsInter@{xGetSymbolFracBitsInter}}
+\index{xGetSymbolFracBitsInter@{xGetSymbolFracBitsInter}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetSymbolFracBitsInter()}{xGetSymbolFracBitsInter()}}
+{\footnotesize\ttfamily uint64\+\_\+t x\+Get\+Symbol\+Frac\+Bits\+Inter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4525 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ad63bfa3ac9511f55501c000f8dda5cd4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ad63bfa3ac9511f55501c000f8dda5cd4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af53c99ea0459bcfb52dcf7795770cedb}\label{classvvenc_1_1InterSearch_af53c99ea0459bcfb52dcf7795770cedb}} 
+\index{InterSearch@{InterSearch}!xGetSymCost@{xGetSymCost}}
+\index{xGetSymCost@{xGetSymCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetSymCost()}{xGetSymCost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+Sym\+Cost (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Cur\+Ref\+Pic\+List,  }\item[{const \mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{c\+Cur\+Mv\+Field,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{c\+Tar\+Mv\+Field,  }\item[{int}]{Bcw\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2912 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af53c99ea0459bcfb52dcf7795770cedb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af53c99ea0459bcfb52dcf7795770cedb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a771848baeb6a36ee61ee9bc83ededc64}\label{classvvenc_1_1InterSearch_a771848baeb6a36ee61ee9bc83ededc64}} 
+\index{InterSearch@{InterSearch}!xGetTemplateCost@{xGetTemplateCost}}
+\index{xGetTemplateCost@{xGetTemplateCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xGetTemplateCost()}{xGetTemplateCost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+Template\+Cost (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{pred\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{c\+Mv\+Cand,  }\item[{int}]{i\+M\+V\+P\+Idx,  }\item[{int}]{i\+M\+V\+P\+Num,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1939 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a771848baeb6a36ee61ee9bc83ededc64_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a771848baeb6a36ee61ee9bc83ededc64_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad110b18cf976a78f734532554e21a187}\label{classvvenc_1_1InterSearch_ad110b18cf976a78f734532554e21a187}} 
+\index{InterSearch@{InterSearch}!xIBCEstimation@{xIBCEstimation}}
+\index{xIBCEstimation@{xIBCEstimation}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xIBCEstimation()}{xIBCEstimation()}}
+{\footnotesize\ttfamily void x\+I\+B\+C\+Estimation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{pc\+Mv\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 6475 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ad110b18cf976a78f734532554e21a187_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1InterSearch_ad110b18cf976a78f734532554e21a187_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a136356f1d8568f4d1717dbf3f38fef30}\label{classvvenc_1_1InterSearch_a136356f1d8568f4d1717dbf3f38fef30}} 
+\index{InterSearch@{InterSearch}!xIBCSearchMVCandUpdate@{xIBCSearchMVCandUpdate}}
+\index{xIBCSearchMVCandUpdate@{xIBCSearchMVCandUpdate}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xIBCSearchMVCandUpdate()}{xIBCSearchMVCandUpdate()}}
+{\footnotesize\ttfamily void x\+I\+B\+C\+Search\+M\+V\+Cand\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{ui\+Sad,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$}]{ui\+Sad\+Best\+Cand,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{c\+M\+V\+Cand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 6025 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classvvenc_1_1InterSearch_a136356f1d8568f4d1717dbf3f38fef30_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a136356f1d8568f4d1717dbf3f38fef30_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a2bbe3d87d2037bae43740148ba4b8f46}\label{classvvenc_1_1InterSearch_a2bbe3d87d2037bae43740148ba4b8f46}} 
+\index{InterSearch@{InterSearch}!xIBCSearchMVChromaRefine@{xIBCSearchMVChromaRefine}}
+\index{xIBCSearchMVChromaRefine@{xIBCSearchMVChromaRefine}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xIBCSearchMVChromaRefine()}{xIBCSearchMVChromaRefine()}}
+{\footnotesize\ttfamily int x\+I\+B\+C\+Search\+M\+V\+Chroma\+Refine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{int}]{i\+Roi\+Width,  }\item[{int}]{i\+Roi\+Height,  }\item[{int}]{cu\+PelX,  }\item[{int}]{cu\+PelY,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} $\ast$}]{ui\+Sad\+Best\+Cand,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{c\+M\+V\+Cand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 6048 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a2bbe3d87d2037bae43740148ba4b8f46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a2bbe3d87d2037bae43740148ba4b8f46_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ace6b0a8e41a7e3012e9dc21ccb253c68}\label{classvvenc_1_1InterSearch_ace6b0a8e41a7e3012e9dc21ccb253c68}} 
+\index{InterSearch@{InterSearch}!xIntraPatternSearchIBC@{xIntraPatternSearchIBC}}
+\index{xIntraPatternSearchIBC@{xIntraPatternSearchIBC}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xIntraPatternSearchIBC()}{xIntraPatternSearchIBC()}}
+{\footnotesize\ttfamily void x\+Intra\+Pattern\+Search\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{pu,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{c\+Mv\+Srch\+Rng\+LT,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{c\+Mv\+Srch\+Rng\+RB,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{pc\+Mv\+Pred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 6173 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ace6b0a8e41a7e3012e9dc21ccb253c68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ace6b0a8e41a7e3012e9dc21ccb253c68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aa17b8a45afa5a9835b69acd2a4372fc0}\label{classvvenc_1_1InterSearch_aa17b8a45afa5a9835b69acd2a4372fc0}} 
+\index{InterSearch@{InterSearch}!xMotionEstimation@{xMotionEstimation}}
+\index{xMotionEstimation@{xMotionEstimation}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xMotionEstimation()}{xMotionEstimation()}}
+{\footnotesize\ttfamily void x\+Motion\+Estimation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Pred,  }\item[{int}]{i\+Ref\+Idx\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{int \&}]{ri\+M\+V\+P\+Idx,  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info,  }\item[{bool}]{b\+Bi = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1965 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aa17b8a45afa5a9835b69acd2a4372fc0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1InterSearch_aa17b8a45afa5a9835b69acd2a4372fc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a44ef45706c20f722aef32216629c45a3}\label{classvvenc_1_1InterSearch_a44ef45706c20f722aef32216629c45a3}} 
+\index{InterSearch@{InterSearch}!xPatternRefinement@{xPatternRefinement}}
+\index{xPatternRefinement@{xPatternRefinement}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPatternRefinement()}{xPatternRefinement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Pattern\+Refinement (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$}]{pc\+Pattern\+Key,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{base\+Ref\+Mv,  }\item[{int}]{i\+Frac,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Frac,  }\item[{bool}]{b\+Allow\+Use\+Of\+Hadamard,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{ui\+Dist\+Best,  }\item[{int \&}]{pattern\+Id,  }\item[{\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$}]{pattern,  }\item[{bool}]{use\+Alt\+Hpel\+If }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+sub-\/function for motion vector refinement used in fractional-\/pel accuracy 
+
+
+
+Definition at line 815 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a44ef45706c20f722aef32216629c45a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a44ef45706c20f722aef32216629c45a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad546194ff2abcc407c4ad8dbeb88f37b}\label{classvvenc_1_1InterSearch_ad546194ff2abcc407c4ad8dbeb88f37b}} 
+\index{InterSearch@{InterSearch}!xPatternSearch@{xPatternSearch}}
+\index{xPatternSearch@{xPatternSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPatternSearch()}{xPatternSearch()}}
+{\footnotesize\ttfamily void x\+Pattern\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+S\+AD }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2164 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ad546194ff2abcc407c4ad8dbeb88f37b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ad546194ff2abcc407c4ad8dbeb88f37b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a95d4cdaf8c61540ad5d8a6646df90fe7}\label{classvvenc_1_1InterSearch_a95d4cdaf8c61540ad5d8a6646df90fe7}} 
+\index{InterSearch@{InterSearch}!xPatternSearchFast@{xPatternSearchFast}}
+\index{xPatternSearchFast@{xPatternSearchFast}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPatternSearchFast()}{xPatternSearchFast()}}
+{\footnotesize\ttfamily void x\+Pattern\+Search\+Fast (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx\+Pred,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+S\+AD,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const}]{p\+Integer\+Mv2\+Nx2\+N\+Pred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2209 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a95d4cdaf8c61540ad5d8a6646df90fe7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a95d4cdaf8c61540ad5d8a6646df90fe7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a3adb61022e07cfeb1c5112be359930d4}\label{classvvenc_1_1InterSearch_a3adb61022e07cfeb1c5112be359930d4}} 
+\index{InterSearch@{InterSearch}!xPatternSearchFracDIF@{xPatternSearchFracDIF}}
+\index{xPatternSearchFracDIF@{xPatternSearchFracDIF}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPatternSearchFracDIF()}{xPatternSearchFracDIF()}}
+{\footnotesize\ttfamily void x\+Pattern\+Search\+Frac\+D\+IF (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Int,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Half,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Qter,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2864 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a3adb61022e07cfeb1c5112be359930d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a3adb61022e07cfeb1c5112be359930d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a79bbecad33262eecb8522cc540c421ac}\label{classvvenc_1_1InterSearch_a79bbecad33262eecb8522cc540c421ac}} 
+\index{InterSearch@{InterSearch}!xPatternSearchIntRefine@{xPatternSearchIntRefine}}
+\index{xPatternSearchIntRefine@{xPatternSearchIntRefine}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPatternSearchIntRefine()}{xPatternSearchIntRefine()}}
+{\footnotesize\ttfamily void x\+Pattern\+Search\+Int\+Refine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Pred,  }\item[{int \&}]{ri\+M\+V\+P\+Idx,  }\item[{uint32\+\_\+t \&}]{ui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}} \&}]{amvp\+Info,  }\item[{double}]{f\+Weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2766 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a79bbecad33262eecb8522cc540c421ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a79bbecad33262eecb8522cc540c421ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a74b43514d85787c262e18084a20d61e1}\label{classvvenc_1_1InterSearch_a74b43514d85787c262e18084a20d61e1}} 
+\index{InterSearch@{InterSearch}!xPredAffineInterSearch@{xPredAffineInterSearch}}
+\index{xPredAffineInterSearch@{xPredAffineInterSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xPredAffineInterSearch()}{xPredAffineInterSearch()}}
+{\footnotesize\ttfamily void x\+Pred\+Affine\+Inter\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{int}]{pu\+Idx,  }\item[{uint32\+\_\+t \&}]{last\+Mode,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{affine\+Cost,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{hevc\+Mv\mbox{[}2\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+S\mbox{]},  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{mv\+Affine4\+Para\mbox{[}2\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+S\mbox{]}\mbox{[}3\mbox{]},  }\item[{int}]{ref\+Idx4\+Para\mbox{[}2\mbox{]},  }\item[{uint8\+\_\+t}]{Bcw\+Idx = {\ttfamily \mbox{\hyperlink{namespacevvenc_ab4631bf16a955dfd7bae49c7f6a71c13}{B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT}}},  }\item[{bool}]{enforce\+Bcw\+Pred = {\ttfamily false},  }\item[{uint32\+\_\+t}]{Bcw\+Idx\+Bits = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4753 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterSearch_a74b43514d85787c262e18084a20d61e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvvenc_1_1InterSearch_a74b43514d85787c262e18084a20d61e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a2b416c27fd70dc219f0bdc256a640fb3}\label{classvvenc_1_1InterSearch_a2b416c27fd70dc219f0bdc256a640fb3}} 
+\index{InterSearch@{InterSearch}!xReadBufferedAffineUniMv@{xReadBufferedAffineUniMv}}
+\index{xReadBufferedAffineUniMv@{xReadBufferedAffineUniMv}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xReadBufferedAffineUniMv()}{xReadBufferedAffineUniMv()}}
+{\footnotesize\ttfamily bool x\+Read\+Buffered\+Affine\+Uni\+Mv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+Pic\+List,  }\item[{int32\+\_\+t}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\+Pred\mbox{[}3\mbox{]},  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{ac\+Mv\mbox{[}3\mbox{]},  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{int \&}]{mvp\+Idx,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AffineAMVPInfo}{Affine\+A\+M\+V\+P\+Info}} \&}]{aamvpi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4595 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a2b416c27fd70dc219f0bdc256a640fb3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a2b416c27fd70dc219f0bdc256a640fb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a5f82995c567b1a06019ec3069d2f5166}\label{classvvenc_1_1InterSearch_a5f82995c567b1a06019ec3069d2f5166}} 
+\index{InterSearch@{InterSearch}!xReadBufferedUniMv@{xReadBufferedUniMv}}
+\index{xReadBufferedUniMv@{xReadBufferedUniMv}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xReadBufferedUniMv()}{xReadBufferedUniMv()}}
+{\footnotesize\ttfamily bool x\+Read\+Buffered\+Uni\+Mv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e\+Ref\+Pic\+List,  }\item[{int32\+\_\+t}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{pc\+Mv\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{uint32\+\_\+t \&}]{rui\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4573 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a5f82995c567b1a06019ec3069d2f5166_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a5f82995c567b1a06019ec3069d2f5166_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ab9dff1babd6605466544eab335cbf1e1}\label{classvvenc_1_1InterSearch_ab9dff1babd6605466544eab335cbf1e1}} 
+\index{InterSearch@{InterSearch}!xSetIntraSearchRangeIBC@{xSetIntraSearchRangeIBC}}
+\index{xSetIntraSearchRangeIBC@{xSetIntraSearchRangeIBC}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xSetIntraSearchRangeIBC()}{xSetIntraSearchRangeIBC()}}
+{\footnotesize\ttfamily void x\+Set\+Intra\+Search\+Range\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{pu,  }\item[{int}]{i\+Roi\+Width,  }\item[{int}]{i\+Roi\+Height,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Srch\+Rng\+LT,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Srch\+Rng\+RB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 6600 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ab9dff1babd6605466544eab335cbf1e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ab9dff1babd6605466544eab335cbf1e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a923a81a518d0b94fca78be81c59716a6}\label{classvvenc_1_1InterSearch_a923a81a518d0b94fca78be81c59716a6}} 
+\index{InterSearch@{InterSearch}!xSetSearchRange@{xSetSearchRange}}
+\index{xSetSearchRange@{xSetSearchRange}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xSetSearchRange()}{xSetSearchRange()}}
+{\footnotesize\ttfamily void x\+Set\+Search\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{c\+Mv\+Pred,  }\item[{const int}]{i\+Srch\+Rng,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1SearchRange}{Search\+Range}} \&}]{sr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2130 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a923a81a518d0b94fca78be81c59716a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a923a81a518d0b94fca78be81c59716a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aaf529386910fa2161fa63a3f71657e07}\label{classvvenc_1_1InterSearch_aaf529386910fa2161fa63a3f71657e07}} 
+\index{InterSearch@{InterSearch}!xSymMotionEstimation@{xSymMotionEstimation}}
+\index{xSymMotionEstimation@{xSymMotionEstimation}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xSymMotionEstimation()}{xSymMotionEstimation()}}
+{\footnotesize\ttfamily void x\+Sym\+Motion\+Estimation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Cur\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Tar\+Pred,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{r\+Cur\+Mv\+Field,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{r\+Tar\+Mv\+Field,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+Cost,  }\item[{int}]{Bcw\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 3065 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_aaf529386910fa2161fa63a3f71657e07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvvenc_1_1InterSearch_aaf529386910fa2161fa63a3f71657e07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a1014955f8421b10b97bd219860e426d1}\label{classvvenc_1_1InterSearch_a1014955f8421b10b97bd219860e426d1}} 
+\index{InterSearch@{InterSearch}!xSymMvdCheckBestMvp@{xSymMvdCheckBestMvp}}
+\index{xSymMvdCheckBestMvp@{xSymMvdCheckBestMvp}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xSymMvdCheckBestMvp()}{xSymMvdCheckBestMvp()}}
+{\footnotesize\ttfamily void x\+Sym\+Mvd\+Check\+Best\+Mvp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{cur\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{cur\+Ref\+List,  }\item[{\mbox{\hyperlink{structvvenc_1_1AMVPInfo}{A\+M\+V\+P\+Info}}}]{amvp\+Info\mbox{[}2\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+S\mbox{]},  }\item[{int32\+\_\+t}]{Bcw\+Idx,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}}]{c\+Mv\+Pred\+Sym\mbox{[}2\mbox{]},  }\item[{int32\+\_\+t}]{mvp\+Idx\+Sym\mbox{[}2\mbox{]},  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{best\+Cost,  }\item[{bool}]{skip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 4622 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1InterSearch_a1014955f8421b10b97bd219860e426d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classvvenc_1_1InterSearch_a1014955f8421b10b97bd219860e426d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a0add32f416fb3fc9393a688e7fb27c15}\label{classvvenc_1_1InterSearch_a0add32f416fb3fc9393a688e7fb27c15}} 
+\index{InterSearch@{InterSearch}!xSymRefineMvSearch@{xSymRefineMvSearch}}
+\index{xSymRefineMvSearch@{xSymRefineMvSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xSymRefineMvSearch()}{xSymRefineMvSearch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Sym\+Refine\+Mv\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{orig\+Buf,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Cur\+Pred,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv\+Tar\+Pred,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{r\+Cur\+Mv\+Field,  }\item[{\mbox{\hyperlink{structvvenc_1_1MvField}{Mv\+Field}} \&}]{r\+Tar\+Mv\+Field,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{ui\+Min\+Cost,  }\item[{int}]{search\+Pattern,  }\item[{int}]{n\+Search\+Step\+Shift,  }\item[{uint32\+\_\+t}]{ui\+Max\+Search\+Rounds,  }\item[{int}]{Bcw\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2943 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a0add32f416fb3fc9393a688e7fb27c15_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a0add32f416fb3fc9393a688e7fb27c15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a7ef728d3e31f6b319e88d2f023ef92cf}\label{classvvenc_1_1InterSearch_a7ef728d3e31f6b319e88d2f023ef92cf}} 
+\index{InterSearch@{InterSearch}!xTZ2PointSearch@{xTZ2PointSearch}}
+\index{xTZ2PointSearch@{xTZ2PointSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZ2PointSearch()}{xTZ2PointSearch()}}
+{\footnotesize\ttfamily void x\+T\+Z2\+Point\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{rc\+Struct }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 497 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a7ef728d3e31f6b319e88d2f023ef92cf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a7ef728d3e31f6b319e88d2f023ef92cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae6221582f4c06ae8910bf62fcc456069}\label{classvvenc_1_1InterSearch_ae6221582f4c06ae8910bf62fcc456069}} 
+\index{InterSearch@{InterSearch}!xTZ4PointSquareSearch@{xTZ4PointSquareSearch}}
+\index{xTZ4PointSquareSearch@{xTZ4PointSquareSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZ4PointSquareSearch()}{xTZ4PointSquareSearch()}}
+{\footnotesize\ttfamily void x\+T\+Z4\+Point\+Square\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{rc\+Struct,  }\item[{const int}]{i\+StartX,  }\item[{const int}]{i\+StartY,  }\item[{const int}]{i\+Dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 524 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae6221582f4c06ae8910bf62fcc456069_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae6221582f4c06ae8910bf62fcc456069_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af347e20a1b178bb2dc4dfc86a139a3fe}\label{classvvenc_1_1InterSearch_af347e20a1b178bb2dc4dfc86a139a3fe}} 
+\index{InterSearch@{InterSearch}!xTZ8PointDiamondSearch@{xTZ8PointDiamondSearch}}
+\index{xTZ8PointDiamondSearch@{xTZ8PointDiamondSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZ8PointDiamondSearch()}{xTZ8PointDiamondSearch()}}
+{\footnotesize\ttfamily void x\+T\+Z8\+Point\+Diamond\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{rc\+Struct,  }\item[{const int}]{i\+StartX,  }\item[{const int}]{i\+StartY,  }\item[{const int}]{i\+Dist,  }\item[{const bool}]{b\+Check\+Corners\+At\+Dist1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 612 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af347e20a1b178bb2dc4dfc86a139a3fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_af347e20a1b178bb2dc4dfc86a139a3fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a68106a08253d342623282a38b62c0fae}\label{classvvenc_1_1InterSearch_a68106a08253d342623282a38b62c0fae}} 
+\index{InterSearch@{InterSearch}!xTZ8PointSquareSearch@{xTZ8PointSquareSearch}}
+\index{xTZ8PointSquareSearch@{xTZ8PointSquareSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZ8PointSquareSearch()}{xTZ8PointSquareSearch()}}
+{\footnotesize\ttfamily void x\+T\+Z8\+Point\+Square\+Search (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{rc\+Struct,  }\item[{const int}]{i\+StartX,  }\item[{const int}]{i\+StartY,  }\item[{const int}]{i\+Dist }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 561 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a68106a08253d342623282a38b62c0fae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a68106a08253d342623282a38b62c0fae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae80bf796e6ed92eba168735a7b4c40fb}\label{classvvenc_1_1InterSearch_ae80bf796e6ed92eba168735a7b4c40fb}} 
+\index{InterSearch@{InterSearch}!xTZSearch@{xTZSearch}}
+\index{xTZSearch@{xTZSearch}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZSearch()}{xTZSearch()}}
+{\footnotesize\ttfamily void x\+T\+Z\+Search (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx\+Pred,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+S\+AD,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const}]{p\+Integer\+Mv2\+Nx2\+N\+Pred,  }\item[{const bool}]{b\+Extended\+Settings,  }\item[{const bool}]{b\+Fast\+Settings = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2262 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae80bf796e6ed92eba168735a7b4c40fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_ae80bf796e6ed92eba168735a7b4c40fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a87f71d3bf463ad0130672557d0c65ab7}\label{classvvenc_1_1InterSearch_a87f71d3bf463ad0130672557d0c65ab7}} 
+\index{InterSearch@{InterSearch}!xTZSearchHelp@{xTZSearchHelp}}
+\index{xTZSearchHelp@{xTZSearchHelp}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZSearchHelp()}{xTZSearchHelp()}}
+{\footnotesize\ttfamily void x\+T\+Z\+Search\+Help (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{rc\+Struct,  }\item[{const int}]{i\+SearchX,  }\item[{const int}]{i\+SearchY,  }\item[{const uint8\+\_\+t}]{uc\+Point\+Nr,  }\item[{const uint32\+\_\+t}]{ui\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 407 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a87f71d3bf463ad0130672557d0c65ab7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a87f71d3bf463ad0130672557d0c65ab7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a53890dc1d8786e787c63cd6c053979ac}\label{classvvenc_1_1InterSearch_a53890dc1d8786e787c63cd6c053979ac}} 
+\index{InterSearch@{InterSearch}!xTZSearchSelective@{xTZSearchSelective}}
+\index{xTZSearchSelective@{xTZSearchSelective}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{xTZSearchSelective()}{xTZSearchSelective()}}
+{\footnotesize\ttfamily void x\+T\+Z\+Search\+Selective (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{ref\+Pic\+List,  }\item[{int}]{i\+Ref\+Idx\+Pred,  }\item[{\mbox{\hyperlink{structvvenc_1_1InterSearch_1_1TZSearchStruct}{T\+Z\+Search\+Struct}} \&}]{c\+Struct,  }\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \&}]{rui\+S\+AD,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$const}]{p\+Integer\+Mv2\+Nx2\+N\+Pred }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2592 of file Inter\+Search.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a53890dc1d8786e787c63cd6c053979ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InterSearch_a53890dc1d8786e787c63cd6c053979ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_acfac1ad8a7754b33c46766fe254b7b97}\label{classvvenc_1_1InterSearch_acfac1ad8a7754b33c46766fe254b7b97}} 
+\index{InterSearch@{InterSearch}!m\_aaiAdaptSR@{m\_aaiAdaptSR}}
+\index{m\_aaiAdaptSR@{m\_aaiAdaptSR}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_aaiAdaptSR}{m\_aaiAdaptSR}}
+{\footnotesize\ttfamily int m\+\_\+aai\+Adapt\+SR\mbox{[}\mbox{\hyperlink{namespacevvenc_a7cf3acc655efbe44b86894c075acb23c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+L\+I\+S\+T\+\_\+\+A\+D\+A\+P\+T\+\_\+\+SR}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aa99f1bbf9afbf8a3b21bb9f306663b45}{M\+A\+X\+\_\+\+I\+D\+X\+\_\+\+A\+D\+A\+P\+T\+\_\+\+SR}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 371 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4db803e8138cb0bba7f2b6d67fd56031}\label{classvvenc_1_1InterSearch_a4db803e8138cb0bba7f2b6d67fd56031}} 
+\index{InterSearch@{InterSearch}!m\_acBVs@{m\_acBVs}}
+\index{m\_acBVs@{m\_acBVs}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_acBVs}{m\_acBVs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+ac\+B\+Vs\mbox{[}2 $\ast$\mbox{\hyperlink{namespacevvenc_abe04d9b7f688253587f839144f4a5465}{I\+B\+C\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+D\+I\+D\+A\+T\+ES}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 353 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ac25bc8fcbfd5def1fec553cf38c1af4f}\label{classvvenc_1_1InterSearch_ac25bc8fcbfd5def1fec553cf38c1af4f}} 
+\index{InterSearch@{InterSearch}!m\_affineModeSelected@{m\_affineModeSelected}}
+\index{m\_affineModeSelected@{m\_affineModeSelected}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_affineModeSelected}{m\_affineModeSelected}}
+{\footnotesize\ttfamily bool m\+\_\+affine\+Mode\+Selected\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 396 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a892956403dbe9e537368527e54365c51}\label{classvvenc_1_1InterSearch_a892956403dbe9e537368527e54365c51}} 
+\index{InterSearch@{InterSearch}!m\_affineMotion@{m\_affineMotion}}
+\index{m\_affineMotion@{m\_affineMotion}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_affineMotion}{m\_affineMotion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1EncAffineMotion}{Enc\+Affine\+Motion}} m\+\_\+affine\+Motion\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 380 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ac98d000e44202cea8905a1bfc5f57f89}\label{classvvenc_1_1InterSearch_ac98d000e44202cea8905a1bfc5f57f89}} 
+\index{InterSearch@{InterSearch}!m\_AffineProfList@{m\_AffineProfList}}
+\index{m\_AffineProfList@{m\_AffineProfList}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_AffineProfList}{m\_AffineProfList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AffineProfList}{Affine\+Prof\+List}}$\ast$ m\+\_\+\+Affine\+Prof\+List}
+
+
+
+Definition at line 401 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a225fcf6af87aa6be56d6d832e730c40f}\label{classvvenc_1_1InterSearch_a225fcf6af87aa6be56d6d832e730c40f}} 
+\index{InterSearch@{InterSearch}!m\_auiMVPIdxCost@{m\_auiMVPIdxCost}}
+\index{m\_auiMVPIdxCost@{m\_auiMVPIdxCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_auiMVPIdxCost}{m\_auiMVPIdxCost}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+aui\+M\+V\+P\+Idx\+Cost\mbox{[}\mbox{\hyperlink{namespacevvenc_a888d11a292480cce2948f275a6f9d9f0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}+1\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a888d11a292480cce2948f275a6f9d9f0}{A\+M\+V\+P\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+A\+N\+DS}}+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 389 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a2c737d35b7158e64d1aaeafb34537fc6}\label{classvvenc_1_1InterSearch_a2c737d35b7158e64d1aaeafb34537fc6}} 
+\index{InterSearch@{InterSearch}!m\_bipredSearchRange@{m\_bipredSearchRange}}
+\index{m\_bipredSearchRange@{m\_bipredSearchRange}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_bipredSearchRange}{m\_bipredSearchRange}}
+{\footnotesize\ttfamily int m\+\_\+bipred\+Search\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 368 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a1fd7ee960d76c3b7e2401b8d0e86b90d}\label{classvvenc_1_1InterSearch_a1fd7ee960d76c3b7e2401b8d0e86b90d}} 
+\index{InterSearch@{InterSearch}!m\_BlkUniMvInfoBuffer@{m\_BlkUniMvInfoBuffer}}
+\index{m\_BlkUniMvInfoBuffer@{m\_BlkUniMvInfoBuffer}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_BlkUniMvInfoBuffer}{m\_BlkUniMvInfoBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BlkUniMvInfoBuffer}{Blk\+Uni\+Mv\+Info\+Buffer}}$\ast$ m\+\_\+\+Blk\+Uni\+Mv\+Info\+Buffer}
+
+
+
+Definition at line 400 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af2eecbd6936ec23d3bd8962fff7e65a7}\label{classvvenc_1_1InterSearch_af2eecbd6936ec23d3bd8962fff7e65a7}} 
+\index{InterSearch@{InterSearch}!m\_CABACEstimator@{m\_CABACEstimator}}
+\index{m\_CABACEstimator@{m\_CABACEstimator}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_CABACEstimator}{m\_CABACEstimator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}}$\ast$ m\+\_\+\+C\+A\+B\+A\+C\+Estimator\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 374 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a84e1cf4a0c33652ae707c15060de7817}\label{classvvenc_1_1InterSearch_a84e1cf4a0c33652ae707c15060de7817}} 
+\index{InterSearch@{InterSearch}!m\_cDistParam@{m\_cDistParam}}
+\index{m\_cDistParam@{m\_cDistParam}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_cDistParam}{m\_cDistParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} m\+\_\+c\+Dist\+Param\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 376 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a19b4deebe4b22090dcf016202d2b4f2f}\label{classvvenc_1_1InterSearch_a19b4deebe4b22090dcf016202d2b4f2f}} 
+\index{InterSearch@{InterSearch}!m\_clipMvInSubPic@{m\_clipMvInSubPic}}
+\index{m\_clipMvInSubPic@{m\_clipMvInSubPic}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_clipMvInSubPic}{m\_clipMvInSubPic}}
+{\footnotesize\ttfamily bool m\+\_\+clip\+Mv\+In\+Sub\+Pic}
+
+
+
+Definition at line 402 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4f79f54e78034e5a883a8db14dda02db}\label{classvvenc_1_1InterSearch_a4f79f54e78034e5a883a8db14dda02db}} 
+\index{InterSearch@{InterSearch}!m\_ctuRecord@{m\_ctuRecord}}
+\index{m\_ctuRecord@{m\_ctuRecord}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_ctuRecord}{m\_ctuRecord}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{structvvenc_1_1Position}{Position}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{structvvenc_1_1Size}{Size}}, \mbox{\hyperlink{structvvenc_1_1BlkRecord}{Blk\+Record}}$>$ $>$ m\+\_\+ctu\+Record\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 356 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_adc15ecb13505785bb69c278578c79980}\label{classvvenc_1_1InterSearch_adc15ecb13505785bb69c278578c79980}} 
+\index{InterSearch@{InterSearch}!m\_CtxCache@{m\_CtxCache}}
+\index{m\_CtxCache@{m\_CtxCache}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_CtxCache}{m\_CtxCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a6b6b383f8678569f81e82722e0cf7418}{Ctx\+Cache}}$\ast$ m\+\_\+\+Ctx\+Cache\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 375 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a9c5ed9f5c6203e9ceea129849c68dc87}\label{classvvenc_1_1InterSearch_a9c5ed9f5c6203e9ceea129849c68dc87}} 
+\index{InterSearch@{InterSearch}!m\_defaultCachedBvs@{m\_defaultCachedBvs}}
+\index{m\_defaultCachedBvs@{m\_defaultCachedBvs}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_defaultCachedBvs}{m\_defaultCachedBvs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1IbcBvCand}{Ibc\+Bv\+Cand}}$\ast$ m\+\_\+default\+Cached\+Bvs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 355 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a6e865206f093a60bfa306a09653cc07c}\label{classvvenc_1_1InterSearch_a6e865206f093a60bfa306a09653cc07c}} 
+\index{InterSearch@{InterSearch}!m\_estMinDistSbt@{m\_estMinDistSbt}}
+\index{m\_estMinDistSbt@{m\_estMinDistSbt}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_estMinDistSbt}{m\_estMinDistSbt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} m\+\_\+est\+Min\+Dist\+Sbt\mbox{[}\mbox{\hyperlink{namespacevvenc_af8c7f729a5e696502a7f5b7839d93d88a0c699bdbc1a9429237559d7ef5559bdd}{N\+U\+M\+B\+E\+R\+\_\+\+S\+B\+T\+\_\+\+M\+O\+DE}}+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 390 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a4863df9000b7cee05dd496c93989b11e}\label{classvvenc_1_1InterSearch_a4863df9000b7cee05dd496c93989b11e}} 
+\index{InterSearch@{InterSearch}!m\_estWeightIdxBits@{m\_estWeightIdxBits}}
+\index{m\_estWeightIdxBits@{m\_estWeightIdxBits}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_estWeightIdxBits}{m\_estWeightIdxBits}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+est\+Weight\+Idx\+Bits\mbox{[}\mbox{\hyperlink{namespacevvenc_a80132ce668e05d9cea10c4c21cebec55}{B\+C\+W\+\_\+\+N\+UM}}\mbox{]} = \{ 4, 3, 1, 2, 4 \}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 395 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a74a51773f987d540dd4d4dd02399c06a}\label{classvvenc_1_1InterSearch_a74a51773f987d540dd4d4dd02399c06a}} 
+\index{InterSearch@{InterSearch}!m\_hevcCost@{m\_hevcCost}}
+\index{m\_hevcCost@{m\_hevcCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_hevcCost}{m\_hevcCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} m\+\_\+hevc\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 379 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_af4f690b408420e00b346d153a1e92241}\label{classvvenc_1_1InterSearch_af4f690b408420e00b346d153a1e92241}} 
+\index{InterSearch@{InterSearch}!m\_iSearchRange@{m\_iSearchRange}}
+\index{m\_iSearchRange@{m\_iSearchRange}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_iSearchRange}{m\_iSearchRange}}
+{\footnotesize\ttfamily int m\+\_\+i\+Search\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 367 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ab8269469fbe280b4e8aa6fc83efeb351}\label{classvvenc_1_1InterSearch_ab8269469fbe280b4e8aa6fc83efeb351}} 
+\index{InterSearch@{InterSearch}!m\_lumaClpRng@{m\_lumaClpRng}}
+\index{m\_lumaClpRng@{m\_lumaClpRng}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_lumaClpRng}{m\_lumaClpRng}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} m\+\_\+luma\+Clp\+Rng\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 352 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad78b260566db7787b860f3d09a32b591}\label{classvvenc_1_1InterSearch_ad78b260566db7787b860f3d09a32b591}} 
+\index{InterSearch@{InterSearch}!m\_modeCtrl@{m\_modeCtrl}}
+\index{m\_modeCtrl@{m\_modeCtrl}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_modeCtrl}{m\_modeCtrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncModeCtrl}{Enc\+Mode\+Ctrl}}$\ast$ m\+\_\+mode\+Ctrl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 346 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ae98c2fa56ca7cf3b3c994d78d3d1418b}\label{classvvenc_1_1InterSearch_ae98c2fa56ca7cf3b3c994d78d3d1418b}} 
+\index{InterSearch@{InterSearch}!m\_motionEstimationSearchMethod@{m\_motionEstimationSearchMethod}}
+\index{m\_motionEstimationSearchMethod@{m\_motionEstimationSearchMethod}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_motionEstimationSearchMethod}{m\_motionEstimationSearchMethod}}
+{\footnotesize\ttfamily vvenc\+M\+E\+Search\+Method m\+\_\+motion\+Estimation\+Search\+Method\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 369 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a067e085429f9049d0c4b411fb8622147}\label{classvvenc_1_1InterSearch_a067e085429f9049d0c4b411fb8622147}} 
+\index{InterSearch@{InterSearch}!m\_motionEstimationSearchMethodSCC@{m\_motionEstimationSearchMethodSCC}}
+\index{m\_motionEstimationSearchMethodSCC@{m\_motionEstimationSearchMethodSCC}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_motionEstimationSearchMethodSCC}{m\_motionEstimationSearchMethodSCC}}
+{\footnotesize\ttfamily int m\+\_\+motion\+Estimation\+Search\+Method\+S\+CC\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 370 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad063c8e5c76d656b32fb2cf497999008}\label{classvvenc_1_1InterSearch_ad063c8e5c76d656b32fb2cf497999008}} 
+\index{InterSearch@{InterSearch}!m\_numBVs@{m\_numBVs}}
+\index{m\_numBVs@{m\_numBVs}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_numBVs}{m\_numBVs}}
+{\footnotesize\ttfamily unsigned int m\+\_\+num\+B\+Vs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 354 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_afabc33c7c4328921490982de50e35da0}\label{classvvenc_1_1InterSearch_afabc33c7c4328921490982de50e35da0}} 
+\index{InterSearch@{InterSearch}!m\_pcEncCfg@{m\_pcEncCfg}}
+\index{m\_pcEncCfg@{m\_pcEncCfg}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncCfg}{m\_pcEncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+pc\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 360 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a7941a56c2fd607b45125922e737f91ea}\label{classvvenc_1_1InterSearch_a7941a56c2fd607b45125922e737f91ea}} 
+\index{InterSearch@{InterSearch}!m\_pcRdCost@{m\_pcRdCost}}
+\index{m\_pcRdCost@{m\_pcRdCost}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pcRdCost}{m\_pcRdCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}}$\ast$ m\+\_\+pc\+Rd\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 377 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a32d8aaad5c0df7e5ba2b2ee016191768}\label{classvvenc_1_1InterSearch_a32d8aaad5c0df7e5ba2b2ee016191768}} 
+\index{InterSearch@{InterSearch}!m\_pcReshape@{m\_pcReshape}}
+\index{m\_pcReshape@{m\_pcReshape}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pcReshape}{m\_pcReshape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncReshape}{Enc\+Reshape}}$\ast$ m\+\_\+pc\+Reshape\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 364 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad7990d4385ff356abe84bcbfe3ce4281}\label{classvvenc_1_1InterSearch_ad7990d4385ff356abe84bcbfe3ce4281}} 
+\index{InterSearch@{InterSearch}!m\_pcTrQuant@{m\_pcTrQuant}}
+\index{m\_pcTrQuant@{m\_pcTrQuant}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pcTrQuant}{m\_pcTrQuant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}}$\ast$ m\+\_\+pc\+Tr\+Quant\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 363 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ad5e48395a803d72de5136bce7a37933d}\label{classvvenc_1_1InterSearch_ad5e48395a803d72de5136bce7a37933d}} 
+\index{InterSearch@{InterSearch}!m\_pSaveCS@{m\_pSaveCS}}
+\index{m\_pSaveCS@{m\_pSaveCS}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pSaveCS}{m\_pSaveCS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$$\ast$ m\+\_\+p\+Save\+CS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 350 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a9e6b286fba70f2939620587a433bd651}\label{classvvenc_1_1InterSearch_a9e6b286fba70f2939620587a433bd651}} 
+\index{InterSearch@{InterSearch}!m\_pTempPel@{m\_pTempPel}}
+\index{m\_pTempPel@{m\_pTempPel}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_pTempPel}{m\_pTempPel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+p\+Temp\+Pel\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 386 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a181840c5939d6651c9613ebb61a10537}\label{classvvenc_1_1InterSearch_a181840c5939d6651c9613ebb61a10537}} 
+\index{InterSearch@{InterSearch}!m\_ReuseUniMv@{m\_ReuseUniMv}}
+\index{m\_ReuseUniMv@{m\_ReuseUniMv}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_ReuseUniMv}{m\_ReuseUniMv}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ReuseUniMv}{Reuse\+Uni\+Mv}}$\ast$ m\+\_\+\+Reuse\+Uni\+Mv}
+
+
+
+Definition at line 399 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_afa470f8b1c0f3cb28395539dfa4bc4cc}\label{classvvenc_1_1InterSearch_afa470f8b1c0f3cb28395539dfa4bc4cc}} 
+\index{InterSearch@{InterSearch}!m\_sbtRdoOrder@{m\_sbtRdoOrder}}
+\index{m\_sbtRdoOrder@{m\_sbtRdoOrder}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_sbtRdoOrder}{m\_sbtRdoOrder}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+sbt\+Rdo\+Order\mbox{[}\mbox{\hyperlink{namespacevvenc_af8c7f729a5e696502a7f5b7839d93d88a0c699bdbc1a9429237559d7ef5559bdd}{N\+U\+M\+B\+E\+R\+\_\+\+S\+B\+T\+\_\+\+M\+O\+DE}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 391 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ab129abe12f06cef41d20e46b18c69d70}\label{classvvenc_1_1InterSearch_ab129abe12f06cef41d20e46b18c69d70}} 
+\index{InterSearch@{InterSearch}!m\_skipSbtAll@{m\_skipSbtAll}}
+\index{m\_skipSbtAll@{m\_skipSbtAll}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_skipSbtAll}{m\_skipSbtAll}}
+{\footnotesize\ttfamily bool m\+\_\+skip\+Sbt\+All\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 392 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a25a0bd912f0348713119cf2ff215ef07}\label{classvvenc_1_1InterSearch_a25a0bd912f0348713119cf2ff215ef07}} 
+\index{InterSearch@{InterSearch}!m\_subPuMiBuf@{m\_subPuMiBuf}}
+\index{m\_subPuMiBuf@{m\_subPuMiBuf}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_subPuMiBuf}{m\_subPuMiBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} m\+\_\+sub\+Pu\+Mi\+Buf\mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}}) $>$$>$(\mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}$<$$<$ 1)\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 384 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_aaf8e6df11c0154fc48152c8cb42ae5d0}\label{classvvenc_1_1InterSearch_aaf8e6df11c0154fc48152c8cb42ae5d0}} 
+\index{InterSearch@{InterSearch}!m\_tmpAffiDeri@{m\_tmpAffiDeri}}
+\index{m\_tmpAffiDeri@{m\_tmpAffiDeri}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_tmpAffiDeri}{m\_tmpAffiDeri}}
+{\footnotesize\ttfamily int$\ast$ m\+\_\+tmp\+Affi\+Deri\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 383 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a0345a1771d19eb6e5d358993984cebbc}\label{classvvenc_1_1InterSearch_a0345a1771d19eb6e5d358993984cebbc}} 
+\index{InterSearch@{InterSearch}!m\_tmpAffiError@{m\_tmpAffiError}}
+\index{m\_tmpAffiError@{m\_tmpAffiError}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_tmpAffiError}{m\_tmpAffiError}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ m\+\_\+tmp\+Affi\+Error\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 382 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a88ad68fee052acec3e700138dcf00516}\label{classvvenc_1_1InterSearch_a88ad68fee052acec3e700138dcf00516}} 
+\index{InterSearch@{InterSearch}!m\_tmpAffiStorage@{m\_tmpAffiStorage}}
+\index{m\_tmpAffiStorage@{m\_tmpAffiStorage}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_tmpAffiStorage}{m\_tmpAffiStorage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+tmp\+Affi\+Storage\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 381 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_adfe7d77511de8d2d474a5dbb86f717b0}\label{classvvenc_1_1InterSearch_adfe7d77511de8d2d474a5dbb86f717b0}} 
+\index{InterSearch@{InterSearch}!m\_tmpPredStorage@{m\_tmpPredStorage}}
+\index{m\_tmpPredStorage@{m\_tmpPredStorage}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_tmpPredStorage}{m\_tmpPredStorage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+tmp\+Pred\+Storage\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 348 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_a9560b1449322ce25b114d6f40933c8fc}\label{classvvenc_1_1InterSearch_a9560b1449322ce25b114d6f40933c8fc}} 
+\index{InterSearch@{InterSearch}!m\_tmpStorageLCU@{m\_tmpStorageLCU}}
+\index{m\_tmpStorageLCU@{m\_tmpStorageLCU}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_tmpStorageLCU}{m\_tmpStorageLCU}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+tmp\+Storage\+L\+CU\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 349 of file Inter\+Search.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InterSearch_ab8a6995c17585382789cecac84fe4846}\label{classvvenc_1_1InterSearch_ab8a6995c17585382789cecac84fe4846}} 
+\index{InterSearch@{InterSearch}!m\_uniMotions@{m\_uniMotions}}
+\index{m\_uniMotions@{m\_uniMotions}!InterSearch@{InterSearch}}
+\doxysubsubsection{\texorpdfstring{m\_uniMotions}{m\_uniMotions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BcwMotionParam}{Bcw\+Motion\+Param}} m\+\_\+uni\+Motions\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 394 of file Inter\+Search.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{InterSearch_8h}{Inter\+Search.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{InterSearch_8cpp}{Inter\+Search.\+cpp}}\end{DoxyCompactItemize}

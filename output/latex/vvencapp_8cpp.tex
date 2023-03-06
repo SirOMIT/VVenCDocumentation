@@ -1,0 +1,174 @@
+\hypertarget{vvencapp_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+App/vvencapp/vvencapp.cpp File Reference}
+\label{vvencapp_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/App/vvencapp/vvencapp.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/App/vvencapp/vvencapp.cpp}}
+
+
+This \mbox{\hyperlink{vvencapp_8cpp}{vvencapp.\+cpp}} file contains the main entry point of the application.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/version.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+Parse\+Arg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+Yuv\+File\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+V\+V\+Enc\+App\+Cfg.\+h\char`\"{}}\newline
+Include dependency graph for vvencapp.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencapp_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{vvencapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{vvencapp_8cpp_aedbf5781ee51920322b669bfe304fc19}{msg\+App}} (void $\ast$ctx, int level, const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{vvencapp_8cpp_aaaadc7ecd391de3840dd410c5e3ba3a3}{msg\+Fnc}} (void $\ast$, int level, const char $\ast$fmt, va\+\_\+list args)
+\item 
+bool \mbox{\hyperlink{vvencapp_8cpp_a6357530cfc97044f1a7df5235b50f801}{parse\+Cfg}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, apputils\+::\+V\+V\+Enc\+App\+Cfg \&rc\+V\+V\+Enc\+App\+Cfg)
+\item 
+void \mbox{\hyperlink{vvencapp_8cpp_a3589d81b904997757e04a878260968dd}{print\+V\+V\+Enc\+Error\+Msg}} (const std\+::string c\+Appname, const std\+::string c\+Message, int code, const std\+::string c\+Err)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vvenc\+Msg\+Level \mbox{\hyperlink{vvencapp_8cpp_aefa70b8a490596622178115a5301632a}{g\+\_\+verbosity}} = V\+V\+E\+N\+C\+\_\+\+V\+E\+R\+B\+O\+SE
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This \mbox{\hyperlink{vvencapp_8cpp}{vvencapp.\+cpp}} file contains the main entry point of the application. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vvencapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{vvencapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!main@{main}}
+\index{main@{main}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file vvencapp.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{vvencapp_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencapp_8cpp_aedbf5781ee51920322b669bfe304fc19}\label{vvencapp_8cpp_aedbf5781ee51920322b669bfe304fc19}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!msgApp@{msgApp}}
+\index{msgApp@{msgApp}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{msgApp()}{msgApp()}}
+{\footnotesize\ttfamily void msg\+App (\begin{DoxyParamCaption}\item[{void $\ast$}]{ctx,  }\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file vvencapp.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{vvencapp_8cpp_aedbf5781ee51920322b669bfe304fc19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{vvencapp_8cpp_aedbf5781ee51920322b669bfe304fc19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencapp_8cpp_aaaadc7ecd391de3840dd410c5e3ba3a3}\label{vvencapp_8cpp_aaaadc7ecd391de3840dd410c5e3ba3a3}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!msgFnc@{msgFnc}}
+\index{msgFnc@{msgFnc}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{msgFnc()}{msgFnc()}}
+{\footnotesize\ttfamily void msg\+Fnc (\begin{DoxyParamCaption}\item[{void $\ast$}]{,  }\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file vvencapp.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencapp_8cpp_aaaadc7ecd391de3840dd410c5e3ba3a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencapp_8cpp_a6357530cfc97044f1a7df5235b50f801}\label{vvencapp_8cpp_a6357530cfc97044f1a7df5235b50f801}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!parseCfg@{parseCfg}}
+\index{parseCfg@{parseCfg}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{parseCfg()}{parseCfg()}}
+{\footnotesize\ttfamily bool parse\+Cfg (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{apputils\+::\+V\+V\+Enc\+App\+Cfg \&}]{rc\+V\+V\+Enc\+App\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 106 of file vvencapp.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{vvencapp_8cpp_a6357530cfc97044f1a7df5235b50f801_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{vvencapp_8cpp_a6357530cfc97044f1a7df5235b50f801_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencapp_8cpp_a3589d81b904997757e04a878260968dd}\label{vvencapp_8cpp_a3589d81b904997757e04a878260968dd}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!printVVEncErrorMsg@{printVVEncErrorMsg}}
+\index{printVVEncErrorMsg@{printVVEncErrorMsg}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{printVVEncErrorMsg()}{printVVEncErrorMsg()}}
+{\footnotesize\ttfamily void print\+V\+V\+Enc\+Error\+Msg (\begin{DoxyParamCaption}\item[{const std\+::string}]{c\+Appname,  }\item[{const std\+::string}]{c\+Message,  }\item[{int}]{code,  }\item[{const std\+::string}]{c\+Err }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file vvencapp.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{vvencapp_8cpp_a3589d81b904997757e04a878260968dd_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{vvencapp_8cpp_aefa70b8a490596622178115a5301632a}\label{vvencapp_8cpp_aefa70b8a490596622178115a5301632a}} 
+\index{vvencapp.cpp@{vvencapp.cpp}!g\_verbosity@{g\_verbosity}}
+\index{g\_verbosity@{g\_verbosity}!vvencapp.cpp@{vvencapp.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_verbosity}{g\_verbosity}}
+{\footnotesize\ttfamily vvenc\+Msg\+Level g\+\_\+verbosity = V\+V\+E\+N\+C\+\_\+\+V\+E\+R\+B\+O\+SE}
+
+
+
+Definition at line 70 of file vvencapp.\+cpp.
+

@@ -1,0 +1,148 @@
+\hypertarget{namespacevvenc_1_1BitAllocation}{}\doxysection{vvenc\+::Bit\+Allocation Namespace Reference}
+\label{namespacevvenc_1_1BitAllocation}\index{vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536}{apply\+Q\+P\+Adaptation\+Chroma}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const int slice\+QP, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, int opt\+Chroma\+Q\+P\+Offset\mbox{[}2\mbox{]}, double $\ast$pic\+Vis\+ActY=nullptr)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42}{apply\+Q\+P\+Adaptation\+Luma}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const int saved\+QP, const double lambda, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, std\+::vector$<$ uint8\+\_\+t $>$ $\ast$ctu\+R\+C\+Q\+P\+Memory, const uint32\+\_\+t ctu\+Start\+Addr, const uint32\+\_\+t ctu\+Bounding\+Addr)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad}{apply\+Q\+P\+Adaptation\+Sub\+Ctu}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&luma\+Area)
+\item 
+int \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60}{get\+Ctu\+Pumping\+Reducing\+QP}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&origY, const \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} ui\+Sad\+Best\+For\+Q\+PA, std\+::vector$<$ int $>$ \&ctu\+Pump\+Red\+QP, const uint32\+\_\+t ctu\+Rs\+Addr, const int base\+QP)
+\item 
+double \mbox{\hyperlink{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a}{get\+Pic\+Visual\+Activity}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$enc\+Cfg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536}\label{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536}} 
+\index{vvenc::BitAllocation@{vvenc::BitAllocation}!applyQPAdaptationChroma@{applyQPAdaptationChroma}}
+\index{applyQPAdaptationChroma@{applyQPAdaptationChroma}!vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsubsection{\texorpdfstring{applyQPAdaptationChroma()}{applyQPAdaptationChroma()}}
+{\footnotesize\ttfamily int apply\+Q\+P\+Adaptation\+Chroma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$}]{enc\+Cfg,  }\item[{const int}]{slice\+QP,  }\item[{std\+::vector$<$ int $>$ \&}]{ctu\+Pump\+Red\+QP,  }\item[{int}]{opt\+Chroma\+Q\+P\+Offset\mbox{[}2\mbox{]},  }\item[{double $\ast$}]{pic\+Vis\+ActY = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 316 of file Bit\+Allocation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_acb5c65f18c18f37f73602d02dbf65536_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42}\label{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42}} 
+\index{vvenc::BitAllocation@{vvenc::BitAllocation}!applyQPAdaptationLuma@{applyQPAdaptationLuma}}
+\index{applyQPAdaptationLuma@{applyQPAdaptationLuma}!vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsubsection{\texorpdfstring{applyQPAdaptationLuma()}{applyQPAdaptationLuma()}}
+{\footnotesize\ttfamily int apply\+Q\+P\+Adaptation\+Luma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$}]{enc\+Cfg,  }\item[{const int}]{saved\+QP,  }\item[{const double}]{lambda,  }\item[{std\+::vector$<$ int $>$ \&}]{ctu\+Pump\+Red\+QP,  }\item[{std\+::vector$<$ uint8\+\_\+t $>$ $\ast$}]{ctu\+R\+C\+Q\+P\+Memory,  }\item[{const uint32\+\_\+t}]{ctu\+Start\+Addr,  }\item[{const uint32\+\_\+t}]{ctu\+Bounding\+Addr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 380 of file Bit\+Allocation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_aa47a90533e2672582bc96fa5a3a2ff42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad}\label{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad}} 
+\index{vvenc::BitAllocation@{vvenc::BitAllocation}!applyQPAdaptationSubCtu@{applyQPAdaptationSubCtu}}
+\index{applyQPAdaptationSubCtu@{applyQPAdaptationSubCtu}!vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsubsection{\texorpdfstring{applyQPAdaptationSubCtu()}{applyQPAdaptationSubCtu()}}
+{\footnotesize\ttfamily int apply\+Q\+P\+Adaptation\+Sub\+Ctu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$}]{enc\+Cfg,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{luma\+Area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 561 of file Bit\+Allocation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a3d2144f2f0740b4c1ea9a44c230becad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60}\label{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60}} 
+\index{vvenc::BitAllocation@{vvenc::BitAllocation}!getCtuPumpingReducingQP@{getCtuPumpingReducingQP}}
+\index{getCtuPumpingReducingQP@{getCtuPumpingReducingQP}!vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsubsection{\texorpdfstring{getCtuPumpingReducingQP()}{getCtuPumpingReducingQP()}}
+{\footnotesize\ttfamily int get\+Ctu\+Pumping\+Reducing\+QP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{origY,  }\item[{const \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{ui\+Sad\+Best\+For\+Q\+PA,  }\item[{std\+::vector$<$ int $>$ \&}]{ctu\+Pump\+Red\+QP,  }\item[{const uint32\+\_\+t}]{ctu\+Rs\+Addr,  }\item[{const int}]{base\+QP }\end{DoxyParamCaption})}
+
+
+
+Definition at line 607 of file Bit\+Allocation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a37e9192e1678ce3ef0dbed74d25e1f60_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a}\label{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a}} 
+\index{vvenc::BitAllocation@{vvenc::BitAllocation}!getPicVisualActivity@{getPicVisualActivity}}
+\index{getPicVisualActivity@{getPicVisualActivity}!vvenc::BitAllocation@{vvenc::BitAllocation}}
+\doxysubsubsection{\texorpdfstring{getPicVisualActivity()}{getPicVisualActivity()}}
+{\footnotesize\ttfamily double get\+Pic\+Visual\+Activity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$}]{enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 633 of file Bit\+Allocation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacevvenc_1_1BitAllocation_a93a44432a10df09608954892661f7c8a_icgraph}
+\end{center}
+\end{figure}

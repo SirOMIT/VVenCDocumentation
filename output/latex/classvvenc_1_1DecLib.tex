@@ -1,0 +1,1915 @@
+\hypertarget{classvvenc_1_1DecLib}{}\doxysection{Dec\+Lib}
+\label{classvvenc_1_1DecLib}\index{DecLib@{DecLib}}
+
+
+decoder class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Dec\+Lib.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Dec\+Lib\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DecLib_1_1AccessUnitPicInfo}{Access\+Unit\+Pic\+Info}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a9cf68705b232b687a61a42c970e4beb6}{get\+Debug\+P\+OC}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a049e1f73198f6d5f494975dceda7a9e2}{get\+First\+Slice\+In\+Picture}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_aa0d87956b5944ab2ef723c214e1c209f}{get\+First\+Slice\+In\+Sequence}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a8f8ffc5136b32d38b584facf13e551e2}{get\+No\+Output\+Prior\+Pics\+Flag}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1DecLib_a7c9ba19c6f4a38b94c86993c6e25360f}{get\+Number\+Of\+Checksum\+Errors\+Detected}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a632c4ad984fd61947d90ec3d44915098}{get\+Pre\+Scaling\+List\+A\+P\+S\+Id}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a22c451c24144d877406b44ddde42e07a}{get\+Scaling\+List\+Update\+Flag}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_a79ffebdb96882572b4df6f8a690010b3}{get\+V\+PS}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a11870ef1720ef417494d1f135b4328af}{reset\+Access\+Unit\+Aps\+Nals}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a739b868e6c17af385f5b026baf664955}{reset\+Access\+Unit\+Nals}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a950c384f5c992d3219fb3d7b569f7acf}{reset\+Access\+Unit\+Pic\+Info}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_aeb3434d468c7bfa3dc70fe91ce8035d5}{set\+A\+P\+S\+Map\+Enc}} (\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ $\ast$aps\+Map)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a0807746cee97533e6e35224b9beca70d}{set\+Debug\+P\+OC}} (int debug\+P\+OC)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a826c9448926fb108a6905b91fa9ff675}{set\+Decoded\+Picture\+Hash\+S\+E\+I\+Enabled}} (int enabled)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a6b39bf00aa576f7230f1595b4d44da7b}{set\+Decoded\+S\+E\+I\+Message\+Output\+Stream}} (std\+::ostream $\ast$p\+Op\+Stream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_aeb932b6a2bc8d43a7177b22c20620557}{set\+Decoder\+In\+Encoder\+Mode}} (bool m)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a12723c214df71d751d9bb2674a9d86e0}{set\+First\+Slice\+In\+Picture}} (bool val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ae540ddb500f2a55e971a06fe5d5a1132}{set\+First\+Slice\+In\+Sequence}} (bool val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a295da4b782f6eac751c4767129093050}{set\+No\+Output\+Prior\+Pics\+Flag}} (bool val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ae5833bd3e891ee6ab81adcd322a0f09b}{set\+Pre\+Scaling\+List\+A\+P\+S\+Id}} (int id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a05bb5e0d136f9f27ad7ce684fa8df02a}{set\+Scaling\+List\+Update\+Flag}} (bool b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a0960784c6aa7e128e92ab78ac3457f1f}{m\+\_\+target\+Sub\+Pic\+Idx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a270caa0723f68f91bd1ab0d1e1092dac}{x\+Update\+Previous\+Tid0\+P\+OC}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$p\+Slice)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1DecLib_a5c7ef7fbc643d956f4e3626777e99ce0}{m\+\_\+access\+Unit\+Aps\+Nals}}
+\item 
+std\+::vector$<$ std\+::pair$<$ vvenc\+Nal\+Unit\+Type, int $>$ $>$ \mbox{\hyperlink{classvvenc_1_1DecLib_a63182ac6df8967da1940c7941664b9b9}{m\+\_\+access\+Unit\+Nals}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1DecLib_1_1AccessUnitPicInfo}{Access\+Unit\+Pic\+Info}} $>$ \mbox{\hyperlink{classvvenc_1_1DecLib_aa8380a8450383fb3fc3e5614cc81b07b}{m\+\_\+access\+Unit\+Pic\+Info}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_ad7e9c5d1531896fcbdd298812d48a01e}{m\+\_\+apc\+Slice\+Pilot}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_a9dd9ee78e57bfb17ee645250834747cb}{m\+\_\+aps\+Map\+Enc}}
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{classvvenc_1_1DecLib_a2822731e39d19bc64fc11011791307a5}{m\+\_\+associated\+I\+R\+A\+P\+Type}}
+\begin{DoxyCompactList}\small\item\em N\+AL unit type of the associated I\+R\+AP picture. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a94ab1eb2d31c35e93378bb080553d324}{m\+\_\+b\+First\+Slice\+In\+Bitstream}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_ad91287a69874a22c4cdce529ad2ee02a}{m\+\_\+b\+First\+Slice\+In\+Picture}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a10c6a007def355439eb9f940a7e4f49a}{m\+\_\+b\+First\+Slice\+In\+Sequence}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}} \mbox{\hyperlink{classvvenc_1_1DecLib_a71e57e2ea0bf81ecd9dd744a3eb0cc07}{m\+\_\+\+C\+A\+B\+A\+C\+Decoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter}{Adaptive\+Loop\+Filter}} \mbox{\hyperlink{classvvenc_1_1DecLib_a21698f9252e2fc8268a886c2c30e2479}{m\+\_\+c\+A\+LF}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} \mbox{\hyperlink{classvvenc_1_1DecLib_a8510e39242226e5549e4f4d298271ce1}{m\+\_\+c\+Cu\+Decoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} \mbox{\hyperlink{classvvenc_1_1DecLib_a37f058d2fbcc1fd42ffbb345028d7a34}{m\+\_\+c\+Inter\+Pred}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} \mbox{\hyperlink{classvvenc_1_1DecLib_a53476c29e5b87e5de8104c7ced05ff44}{m\+\_\+c\+Intra\+Pred}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \mbox{\hyperlink{classvvenc_1_1DecLib_a25aa41b0cb0c6057cefd9bf4e3fa964f}{m\+\_\+c\+List\+Pic}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} \mbox{\hyperlink{classvvenc_1_1DecLib_af9c42e9f32230b016843b41a95b7d827}{m\+\_\+c\+Loop\+Filter}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} \mbox{\hyperlink{classvvenc_1_1DecLib_a729b0a09674a85967200432dbefd727b}{m\+\_\+c\+Rd\+Cost}}
+\begin{DoxyCompactList}\small\item\em RD cost computation class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1Reshape}{Reshape}} \mbox{\hyperlink{classvvenc_1_1DecLib_abe66aafd4236b3b9cad36c040a5cea9f}{m\+\_\+c\+Reshaper}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SampleAdaptiveOffset}{Sample\+Adaptive\+Offset}} \mbox{\hyperlink{classvvenc_1_1DecLib_a48b1c1c9610ab286b8a696c0fb645b7d}{m\+\_\+c\+S\+AO}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DecSlice}{Dec\+Slice}} \mbox{\hyperlink{classvvenc_1_1DecLib_aea53a7a09e1a476abfd1e57f5a70c781}{m\+\_\+c\+Slice\+Decoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} \mbox{\hyperlink{classvvenc_1_1DecLib_a7a6432aac8b8d61305911038e76381b7}{m\+\_\+c\+Tr\+Quant}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_ac7e4c559e1da53bd42eb45b44a756a6d}{m\+\_\+debug\+P\+OC}}
+\begin{DoxyCompactList}\small\item\em Buffered up prefix \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} N\+AL Units. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a9fe9366494432e2ffe488e03ecd2b933}{m\+\_\+decoded\+Picture\+Hash\+S\+E\+I\+Enabled}}
+\begin{DoxyCompactList}\small\item\em Checksum(3)/\+C\+RC(2)/\+M\+D5(1)/disable(0) acting on decoded picture hash \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1HLSyntaxReader}{H\+L\+Syntax\+Reader}} \mbox{\hyperlink{classvvenc_1_1DecLib_aa7a4666024d7975cd600d223cc2ed11e}{m\+\_\+\+H\+L\+S\+Reader}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \mbox{\hyperlink{classvvenc_1_1DecLib_a8c82b59049ba828018942bf2f01ad8c6}{m\+\_\+\+H\+RD}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a4870fe3dad56f72c132323ab67bcd72b}{m\+\_\+i\+Max\+Ref\+Pic\+Num}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_aaf327cbb447d88b1ec007af9e18dc1b5}{m\+\_\+is\+Decoder\+In\+Encoder}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a4d4259de69320756baa2eebd46e09a4c}{m\+\_\+is\+No\+Output\+Prior\+Pics}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a9ac1ecde39e0f72e14ca5f5397043c64}{m\+\_\+last\+No\+Incorrect\+Pic\+Output\+Flag}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a30613747fc143411599f08730c08c2e7}{m\+\_\+last\+P\+O\+C\+No\+Output\+Prior\+Pics}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_adca1f7d76cabf100211aa4cfd98e1ec8}{m\+\_\+last\+Ras\+Poc}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a48bbeef84518946f6a54437b9f847d14}{m\+\_\+max\+Dec\+Slice\+Addr\+In\+Sub\+Pic}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_ab2197197750afa23e85d692855d15fe0}{m\+\_\+max\+Dec\+Sub\+Pic\+Idx}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1DecLib_a3a061c980f5fae42ba88b0e619ae70b2}{m\+\_\+number\+Of\+Checksum\+Errors\+Detected}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} \mbox{\hyperlink{classvvenc_1_1DecLib_a5b3bb9e6fd554e582b9420b4f3d5b73d}{m\+\_\+parameter\+Set\+Manager}}
+\item 
+std\+::ostream $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_a138ad470b0a2ce489e9b3dd651a6b6ba}{m\+\_\+p\+Decoded\+S\+E\+I\+Output\+Stream}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_a6072356036fe1c01bf5b152869e21395}{m\+\_\+pic}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} \mbox{\hyperlink{classvvenc_1_1DecLib_a71d5c1626f3baf5becd4338c79fae99f}{m\+\_\+pic\+Header}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a543e2e96d2fc6e6a250b93d021bd1dfd}{m\+\_\+poc\+C\+RA}}
+\begin{DoxyCompactList}\small\item\em P\+OC number of the latest C\+RA picture. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_ae53911aa0349ee1c50b3ef686aa95c4b}{m\+\_\+poc\+Random\+Access}}
+\begin{DoxyCompactList}\small\item\em P\+OC number of the random access point (the first I\+DR or C\+RA picture) \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1DecLib_a3558593b6024dcdba7ca7e94bd4fa322}{m\+\_\+prefix\+S\+E\+I\+N\+A\+L\+Us}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_ab3415ab3a9f77ee9cecb48988f692d7e}{m\+\_\+\+Pre\+Scaling\+List\+A\+P\+S\+Id}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1DecLib_ad0ed54f56e802b8b8e5f16d434c39b85}{m\+\_\+prev\+Layer\+ID}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_ac2995bc53546dff878320f0296f9cd87}{m\+\_\+prev\+P\+OC}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a416f15b2a6e6f40940653617571c5b3f}{m\+\_\+prev\+Slice\+Skipped}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a5d53276b9713476f02b874812dd9357a}{m\+\_\+prev\+Tid0\+P\+OC}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_ab9be830c9f30d781221dc2663701aff8}{m\+\_\+scaling\+List\+Update\+Flag}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIReader}{S\+E\+I\+Reader}} \mbox{\hyperlink{classvvenc_1_1DecLib_ae8b9927a3a8a9d5c9146c48fa05b3b71}{m\+\_\+sei\+Reader}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \mbox{\hyperlink{classvvenc_1_1DecLib_a1934abb953f67cd44a021eb818fc088a}{m\+\_\+\+S\+E\+Is}}
+\begin{DoxyCompactList}\small\item\em List of \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages that have been received before the first slice and between slices, excluding prefix S\+E\+Is... \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1DecLib_a97b8fc444f4251d8a450b8d47e2f3744}{m\+\_\+skipped\+P\+OC}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1DecLib_a1d0f89e6b58a30420cb12396704402c6}{m\+\_\+ui\+Slice\+Segment\+Idx}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \mbox{\hyperlink{classvvenc_1_1DecLib_aa7df47223f61f6ea876f563a5226d7bc}{m\+\_\+unit\+Cache}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_a03859f58577fb5f6d4f164c4e014408a}{m\+\_\+vps}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a2e9383dc05915872eb50bd450f837791}{m\+\_\+warning\+Message\+Skip\+Picture}}
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_acf68f12ddae314d8f686d9b57e4c7ac2}{is\+Random\+Access\+Skip\+Picture}} (int \&i\+Skip\+Frame, int \&i\+P\+O\+C\+Last\+Display)
+\item 
+\mbox{\hyperlink{classvvenc_1_1DecLib_af65436aa303bffe2ef4a8e4e950019b9}{Dec\+Lib}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1DecLib_adc1eaf1a96ee6d9b2c1b98372e06ac15}{$\sim$\+Dec\+Lib}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ae2ee59f7cc16ee42559c87e81c433039}{create}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_aaad70c3b3177aeba953e91df36b695be}{decode}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu, int \&i\+Skip\+Frame, int \&i\+P\+O\+C\+Last\+Display, int i\+Target\+Ols\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a37a2ea0a0aaefd557cbf473fb63f8711}{delete\+Pic\+Buffer}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ab669c8b8a076eba397794683699fd443}{execute\+Loop\+Filters}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a100baecba29e908f24f8589b6f40e522}{finish\+Picture}} (int \&poc, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$\&rpc\+List\+Pic, vvenc\+Msg\+Level msgl=V\+V\+E\+N\+C\+\_\+\+I\+N\+FO)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a59a307d1a94634a3ee5c6c44904e36c8}{finish\+Picture\+Light}} (int \&poc, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$\&rpc\+List\+Pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a6bdb10577841bd70d1cfbb3fb3e7f1df}{check\+No\+Output\+Prior\+Pics}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$rpc\+List\+Pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ad407b848ac9e828eb2c4f3fc9325aff7}{check\+Nal\+Unit\+Constraints}} (uint32\+\_\+t nalu\+Type)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a1f338d149dfe4748b85cb2e2fa009882}{is\+Slice\+Nalu\+First\+In\+AU}} (bool new\+Picture, \mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_ac2d31edabc581fb1db046cbd1566af36}{is\+New\+Picture}} (std\+::ifstream $\ast$bitstream\+File, class \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}} $\ast$bytestream)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a1b6298d1c8e707be140b215142137e93}{is\+New\+Access\+Unit}} (bool new\+Picture, std\+::ifstream $\ast$bitstream\+File, class \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}} $\ast$bytestream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a3b83d77d88ae40b437627d9b45f4e086}{x\+Update\+Ras\+Init}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice)
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecLib_aafa62beb7534c6a55b84766cefc448cd}{x\+Get\+New\+Pic\+Buffer}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps, const uint32\+\_\+t temporal\+Layer, const int layer\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a48127da4538750646a6bd5763c16c6c3}{x\+Create\+Lost\+Picture}} (int i\+Lost\+P\+OC, const int layer\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_afc7cc632f42247db6e27b67efb1df1a3}{x\+Activate\+Parameter\+Sets}} (const int layer\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a3412ca09a2d68331514cd69a603ab227}{x\+Check\+Parameter\+Set\+Constraints}} (const int layer\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a9bbbaf7f9d78cc694a9e0e63070fdfd7}{x\+Decode\+Pic\+Header}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DecLib_a98ee02f302658e4ce4dce89344ca660c}{x\+Decode\+Slice}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu, int \&i\+Skip\+Frame, int i\+P\+O\+C\+Last\+Display)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a7c06d9b8094aadcaf5d99a729c0128e8}{x\+Decode\+V\+PS}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a4af504df180aa70d4b31c65e2382fa3d}{x\+Decode\+D\+CI}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a6ad7fdef63a9d78cbe6876de44e78825}{x\+Decode\+S\+PS}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a34652ac897c37e48319c9d9eda663d05}{x\+Decode\+P\+PS}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_aba11911a7e1fa605ecc53f7da7766772}{x\+Decode\+A\+PS}} (\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&nalu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_ab2259d807f98a641a47c5d25015aaedd}{x\+Parse\+Prefix\+S\+E\+Imessages}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a212339c997b0f35cb3d2b5805aa19bf4}{x\+Parse\+Prefix\+S\+E\+Is\+For\+Unknown\+V\+C\+L\+Nal}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecLib_a44ac474bbecdf047aaad98288d93fc33}{x\+Check\+Nal\+Unit\+Constraint\+Flags}} (const \mbox{\hyperlink{structvvenc_1_1ConstraintInfo}{Constraint\+Info}} $\ast$c\+Info, uint32\+\_\+t nalu\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+decoder class 
+
+Definition at line 82 of file Dec\+Lib.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_af65436aa303bffe2ef4a8e4e950019b9}\label{classvvenc_1_1DecLib_af65436aa303bffe2ef4a8e4e950019b9}} 
+\index{DecLib@{DecLib}!DecLib@{DecLib}}
+\index{DecLib@{DecLib}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{DecLib()}{DecLib()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecLib}{Dec\+Lib}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 378 of file Dec\+Lib.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_adc1eaf1a96ee6d9b2c1b98372e06ac15}\label{classvvenc_1_1DecLib_adc1eaf1a96ee6d9b2c1b98372e06ac15}} 
+\index{DecLib@{DecLib}!````~DecLib@{$\sim$DecLib}}
+\index{````~DecLib@{$\sim$DecLib}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{$\sim$DecLib()}{~DecLib()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1DecLib}{Dec\+Lib}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 432 of file Dec\+Lib.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ad407b848ac9e828eb2c4f3fc9325aff7}\label{classvvenc_1_1DecLib_ad407b848ac9e828eb2c4f3fc9325aff7}} 
+\index{DecLib@{DecLib}!checkNalUnitConstraints@{checkNalUnitConstraints}}
+\index{checkNalUnitConstraints@{checkNalUnitConstraints}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{checkNalUnitConstraints()}{checkNalUnitConstraints()}}
+{\footnotesize\ttfamily void check\+Nal\+Unit\+Constraints (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{nalu\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1810 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ad407b848ac9e828eb2c4f3fc9325aff7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a6bdb10577841bd70d1cfbb3fb3e7f1df}\label{classvvenc_1_1DecLib_a6bdb10577841bd70d1cfbb3fb3e7f1df}} 
+\index{DecLib@{DecLib}!checkNoOutputPriorPics@{checkNoOutputPriorPics}}
+\index{checkNoOutputPriorPics@{checkNoOutputPriorPics}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{checkNoOutputPriorPics()}{checkNoOutputPriorPics()}}
+{\footnotesize\ttfamily void check\+No\+Output\+Prior\+Pics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$}]{rpc\+List\+Pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 685 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a6bdb10577841bd70d1cfbb3fb3e7f1df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ae2ee59f7cc16ee42559c87e81c433039}\label{classvvenc_1_1DecLib_ae2ee59f7cc16ee42559c87e81c433039}} 
+\index{DecLib@{DecLib}!create@{create}}
+\index{create@{create}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 441 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ae2ee59f7cc16ee42559c87e81c433039_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ae2ee59f7cc16ee42559c87e81c433039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aaad70c3b3177aeba953e91df36b695be}\label{classvvenc_1_1DecLib_aaad70c3b3177aeba953e91df36b695be}} 
+\index{DecLib@{DecLib}!decode@{decode}}
+\index{decode@{decode}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily bool decode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu,  }\item[{int \&}]{i\+Skip\+Frame,  }\item[{int \&}]{i\+P\+O\+C\+Last\+Display,  }\item[{int}]{i\+Target\+Ols\+Idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1653 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecLib_aaad70c3b3177aeba953e91df36b695be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aaad70c3b3177aeba953e91df36b695be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a37a2ea0a0aaefd557cbf473fb63f8711}\label{classvvenc_1_1DecLib_a37a2ea0a0aaefd557cbf473fb63f8711}} 
+\index{DecLib@{DecLib}!deletePicBuffer@{deletePicBuffer}}
+\index{deletePicBuffer@{deletePicBuffer}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{deletePicBuffer()}{deletePicBuffer()}}
+{\footnotesize\ttfamily void delete\+Pic\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 462 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a37a2ea0a0aaefd557cbf473fb63f8711_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a37a2ea0a0aaefd557cbf473fb63f8711_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1DecLib_a3a80b6032f86a56bec74609034b3246f}} 
+\index{DecLib@{DecLib}!destroy@{destroy}}
+\index{destroy@{destroy}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 448 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1DecLib_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ab669c8b8a076eba397794683699fd443}\label{classvvenc_1_1DecLib_ab669c8b8a076eba397794683699fd443}} 
+\index{DecLib@{DecLib}!executeLoopFilters@{executeLoopFilters}}
+\index{executeLoopFilters@{executeLoopFilters}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{executeLoopFilters()}{executeLoopFilters()}}
+{\footnotesize\ttfamily void execute\+Loop\+Filters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 540 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ab669c8b8a076eba397794683699fd443_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ab669c8b8a076eba397794683699fd443_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a100baecba29e908f24f8589b6f40e522}\label{classvvenc_1_1DecLib_a100baecba29e908f24f8589b6f40e522}} 
+\index{DecLib@{DecLib}!finishPicture@{finishPicture}}
+\index{finishPicture@{finishPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{finishPicture()}{finishPicture()}}
+{\footnotesize\ttfamily void finish\+Picture (\begin{DoxyParamCaption}\item[{int \&}]{poc,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$\&}]{rpc\+List\+Pic,  }\item[{vvenc\+Msg\+Level}]{msgl = {\ttfamily VVENC\+\_\+INFO} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 628 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a100baecba29e908f24f8589b6f40e522_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a100baecba29e908f24f8589b6f40e522_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a59a307d1a94634a3ee5c6c44904e36c8}\label{classvvenc_1_1DecLib_a59a307d1a94634a3ee5c6c44904e36c8}} 
+\index{DecLib@{DecLib}!finishPictureLight@{finishPictureLight}}
+\index{finishPictureLight@{finishPictureLight}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{finishPictureLight()}{finishPictureLight()}}
+{\footnotesize\ttfamily void finish\+Picture\+Light (\begin{DoxyParamCaption}\item[{int \&}]{poc,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} $\ast$\&}]{rpc\+List\+Pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 616 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a59a307d1a94634a3ee5c6c44904e36c8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a59a307d1a94634a3ee5c6c44904e36c8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a9cf68705b232b687a61a42c970e4beb6}\label{classvvenc_1_1DecLib_a9cf68705b232b687a61a42c970e4beb6}} 
+\index{DecLib@{DecLib}!getDebugPOC@{getDebugPOC}}
+\index{getDebugPOC@{getDebugPOC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getDebugPOC()}{getDebugPOC()}}
+{\footnotesize\ttfamily int get\+Debug\+P\+OC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 187 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a049e1f73198f6d5f494975dceda7a9e2}\label{classvvenc_1_1DecLib_a049e1f73198f6d5f494975dceda7a9e2}} 
+\index{DecLib@{DecLib}!getFirstSliceInPicture@{getFirstSliceInPicture}}
+\index{getFirstSliceInPicture@{getFirstSliceInPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getFirstSliceInPicture()}{getFirstSliceInPicture()}}
+{\footnotesize\ttfamily bool get\+First\+Slice\+In\+Picture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 180 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a049e1f73198f6d5f494975dceda7a9e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aa0d87956b5944ab2ef723c214e1c209f}\label{classvvenc_1_1DecLib_aa0d87956b5944ab2ef723c214e1c209f}} 
+\index{DecLib@{DecLib}!getFirstSliceInSequence@{getFirstSliceInSequence}}
+\index{getFirstSliceInSequence@{getFirstSliceInSequence}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getFirstSliceInSequence()}{getFirstSliceInSequence()}}
+{\footnotesize\ttfamily bool get\+First\+Slice\+In\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 182 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aa0d87956b5944ab2ef723c214e1c209f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a8f8ffc5136b32d38b584facf13e551e2}\label{classvvenc_1_1DecLib_a8f8ffc5136b32d38b584facf13e551e2}} 
+\index{DecLib@{DecLib}!getNoOutputPriorPicsFlag@{getNoOutputPriorPicsFlag}}
+\index{getNoOutputPriorPicsFlag@{getNoOutputPriorPicsFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getNoOutputPriorPicsFlag()}{getNoOutputPriorPicsFlag()}}
+{\footnotesize\ttfamily bool get\+No\+Output\+Prior\+Pics\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a7c9ba19c6f4a38b94c86993c6e25360f}\label{classvvenc_1_1DecLib_a7c9ba19c6f4a38b94c86993c6e25360f}} 
+\index{DecLib@{DecLib}!getNumberOfChecksumErrorsDetected@{getNumberOfChecksumErrorsDetected}}
+\index{getNumberOfChecksumErrorsDetected@{getNumberOfChecksumErrorsDetected}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getNumberOfChecksumErrorsDetected()}{getNumberOfChecksumErrorsDetected()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Number\+Of\+Checksum\+Errors\+Detected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 185 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a632c4ad984fd61947d90ec3d44915098}\label{classvvenc_1_1DecLib_a632c4ad984fd61947d90ec3d44915098}} 
+\index{DecLib@{DecLib}!getPreScalingListAPSId@{getPreScalingListAPSId}}
+\index{getPreScalingListAPSId@{getPreScalingListAPSId}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getPreScalingListAPSId()}{getPreScalingListAPSId()}}
+{\footnotesize\ttfamily int get\+Pre\+Scaling\+List\+A\+P\+S\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 199 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a22c451c24144d877406b44ddde42e07a}\label{classvvenc_1_1DecLib_a22c451c24144d877406b44ddde42e07a}} 
+\index{DecLib@{DecLib}!getScalingListUpdateFlag@{getScalingListUpdateFlag}}
+\index{getScalingListUpdateFlag@{getScalingListUpdateFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getScalingListUpdateFlag()}{getScalingListUpdateFlag()}}
+{\footnotesize\ttfamily bool get\+Scaling\+List\+Update\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 197 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a79ffebdb96882572b4df6f8a690010b3}\label{classvvenc_1_1DecLib_a79ffebdb96882572b4df6f8a690010b3}} 
+\index{DecLib@{DecLib}!getVPS@{getVPS}}
+\index{getVPS@{getVPS}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{getVPS()}{getVPS()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ get\+V\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 195 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a02fd73d861ef2e4aabb38c0c9ff82947}\label{classvvenc_1_1DecLib_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{DecLib@{DecLib}!init@{init}}
+\index{init@{init}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 456 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classvvenc_1_1DecLib_a02fd73d861ef2e4aabb38c0c9ff82947_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a1b6298d1c8e707be140b215142137e93}\label{classvvenc_1_1DecLib_a1b6298d1c8e707be140b215142137e93}} 
+\index{DecLib@{DecLib}!isNewAccessUnit@{isNewAccessUnit}}
+\index{isNewAccessUnit@{isNewAccessUnit}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{isNewAccessUnit()}{isNewAccessUnit()}}
+{\footnotesize\ttfamily bool is\+New\+Access\+Unit (\begin{DoxyParamCaption}\item[{bool}]{new\+Picture,  }\item[{std\+::ifstream $\ast$}]{bitstream\+File,  }\item[{class \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}} $\ast$}]{bytestream }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item lookahead through next N\+AL units to determine if current N\+AL unit is the first N\+AL unit in a new access unit 
+\end{DoxyItemize}
+
+Definition at line 1954 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a1b6298d1c8e707be140b215142137e93_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a1b6298d1c8e707be140b215142137e93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ac2d31edabc581fb1db046cbd1566af36}\label{classvvenc_1_1DecLib_ac2d31edabc581fb1db046cbd1566af36}} 
+\index{DecLib@{DecLib}!isNewPicture@{isNewPicture}}
+\index{isNewPicture@{isNewPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{isNewPicture()}{isNewPicture()}}
+{\footnotesize\ttfamily bool is\+New\+Picture (\begin{DoxyParamCaption}\item[{std\+::ifstream $\ast$}]{bitstream\+File,  }\item[{class \mbox{\hyperlink{classvvenc_1_1InputByteStream}{Input\+Byte\+Stream}} $\ast$}]{bytestream }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item lookahead through next N\+AL units to determine if current N\+AL unit is the first N\+AL unit in a new picture 
+\end{DoxyItemize}
+
+Definition at line 1858 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ac2d31edabc581fb1db046cbd1566af36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ac2d31edabc581fb1db046cbd1566af36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_acf68f12ddae314d8f686d9b57e4c7ac2}\label{classvvenc_1_1DecLib_acf68f12ddae314d8f686d9b57e4c7ac2}} 
+\index{DecLib@{DecLib}!isRandomAccessSkipPicture@{isRandomAccessSkipPicture}}
+\index{isRandomAccessSkipPicture@{isRandomAccessSkipPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{isRandomAccessSkipPicture()}{isRandomAccessSkipPicture()}}
+{\footnotesize\ttfamily bool is\+Random\+Access\+Skip\+Picture (\begin{DoxyParamCaption}\item[{int \&}]{i\+Skip\+Frame,  }\item[{int \&}]{i\+P\+O\+C\+Last\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Function for checking if picture should be skipped because of random access. This function checks the skipping of pictures in the case of -\/s option random access. All pictures prior to the random access point indicated by the counter i\+Skip\+Frame are skipped. It also checks the type of Nal unit type at the random access point. If the random access point is C\+R\+A/\+C\+R\+A\+N\+T/\+B\+L\+A/\+B\+L\+A\+NT, T\+FD pictures with P\+OC less than the P\+OC of the random access point are skipped. If the random access point is I\+DR all pictures after the random access point are decoded. If the random access point is none of the above, a warning is issues, and decoding of pictures with P\+OC equal to or greater than the random access point P\+OC is attempted. For non I\+D\+R/\+C\+R\+A/\+B\+LA random access point there is no guarantee that the decoder will not crash. 
+
+Definition at line 1772 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classvvenc_1_1DecLib_acf68f12ddae314d8f686d9b57e4c7ac2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_acf68f12ddae314d8f686d9b57e4c7ac2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a1f338d149dfe4748b85cb2e2fa009882}\label{classvvenc_1_1DecLib_a1f338d149dfe4748b85cb2e2fa009882}} 
+\index{DecLib@{DecLib}!isSliceNaluFirstInAU@{isSliceNaluFirstInAU}}
+\index{isSliceNaluFirstInAU@{isSliceNaluFirstInAU}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{isSliceNaluFirstInAU()}{isSliceNaluFirstInAU()}}
+{\footnotesize\ttfamily bool is\+Slice\+Nalu\+First\+In\+AU (\begin{DoxyParamCaption}\item[{bool}]{new\+Picture,  }\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item Determine if the first V\+CL N\+AL unit of a picture is also the first V\+CL N\+AL of an Access Unit 
+\end{DoxyItemize}
+
+Definition at line 764 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a1f338d149dfe4748b85cb2e2fa009882_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a1f338d149dfe4748b85cb2e2fa009882_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a11870ef1720ef417494d1f135b4328af}\label{classvvenc_1_1DecLib_a11870ef1720ef417494d1f135b4328af}} 
+\index{DecLib@{DecLib}!resetAccessUnitApsNals@{resetAccessUnitApsNals}}
+\index{resetAccessUnitApsNals@{resetAccessUnitApsNals}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{resetAccessUnitApsNals()}{resetAccessUnitApsNals()}}
+{\footnotesize\ttfamily void reset\+Access\+Unit\+Aps\+Nals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 191 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a11870ef1720ef417494d1f135b4328af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a739b868e6c17af385f5b026baf664955}\label{classvvenc_1_1DecLib_a739b868e6c17af385f5b026baf664955}} 
+\index{DecLib@{DecLib}!resetAccessUnitNals@{resetAccessUnitNals}}
+\index{resetAccessUnitNals@{resetAccessUnitNals}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{resetAccessUnitNals()}{resetAccessUnitNals()}}
+{\footnotesize\ttfamily void reset\+Access\+Unit\+Nals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a739b868e6c17af385f5b026baf664955_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a950c384f5c992d3219fb3d7b569f7acf}\label{classvvenc_1_1DecLib_a950c384f5c992d3219fb3d7b569f7acf}} 
+\index{DecLib@{DecLib}!resetAccessUnitPicInfo@{resetAccessUnitPicInfo}}
+\index{resetAccessUnitPicInfo@{resetAccessUnitPicInfo}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{resetAccessUnitPicInfo()}{resetAccessUnitPicInfo()}}
+{\footnotesize\ttfamily void reset\+Access\+Unit\+Pic\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 190 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aeb3434d468c7bfa3dc70fe91ce8035d5}\label{classvvenc_1_1DecLib_aeb3434d468c7bfa3dc70fe91ce8035d5}} 
+\index{DecLib@{DecLib}!setAPSMapEnc@{setAPSMapEnc}}
+\index{setAPSMapEnc@{setAPSMapEnc}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setAPSMapEnc()}{setAPSMapEnc()}}
+{\footnotesize\ttfamily void set\+A\+P\+S\+Map\+Enc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ $\ast$}]{aps\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aeb3434d468c7bfa3dc70fe91ce8035d5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a0807746cee97533e6e35224b9beca70d}\label{classvvenc_1_1DecLib_a0807746cee97533e6e35224b9beca70d}} 
+\index{DecLib@{DecLib}!setDebugPOC@{setDebugPOC}}
+\index{setDebugPOC@{setDebugPOC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setDebugPOC()}{setDebugPOC()}}
+{\footnotesize\ttfamily void set\+Debug\+P\+OC (\begin{DoxyParamCaption}\item[{int}]{debug\+P\+OC }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a0807746cee97533e6e35224b9beca70d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a826c9448926fb108a6905b91fa9ff675}\label{classvvenc_1_1DecLib_a826c9448926fb108a6905b91fa9ff675}} 
+\index{DecLib@{DecLib}!setDecodedPictureHashSEIEnabled@{setDecodedPictureHashSEIEnabled}}
+\index{setDecodedPictureHashSEIEnabled@{setDecodedPictureHashSEIEnabled}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setDecodedPictureHashSEIEnabled()}{setDecodedPictureHashSEIEnabled()}}
+{\footnotesize\ttfamily void set\+Decoded\+Picture\+Hash\+S\+E\+I\+Enabled (\begin{DoxyParamCaption}\item[{int}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a826c9448926fb108a6905b91fa9ff675_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a6b39bf00aa576f7230f1595b4d44da7b}\label{classvvenc_1_1DecLib_a6b39bf00aa576f7230f1595b4d44da7b}} 
+\index{DecLib@{DecLib}!setDecodedSEIMessageOutputStream@{setDecodedSEIMessageOutputStream}}
+\index{setDecodedSEIMessageOutputStream@{setDecodedSEIMessageOutputStream}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setDecodedSEIMessageOutputStream()}{setDecodedSEIMessageOutputStream()}}
+{\footnotesize\ttfamily void set\+Decoded\+S\+E\+I\+Message\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{p\+Op\+Stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 184 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aeb932b6a2bc8d43a7177b22c20620557}\label{classvvenc_1_1DecLib_aeb932b6a2bc8d43a7177b22c20620557}} 
+\index{DecLib@{DecLib}!setDecoderInEncoderMode@{setDecoderInEncoderMode}}
+\index{setDecoderInEncoderMode@{setDecoderInEncoderMode}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setDecoderInEncoderMode()}{setDecoderInEncoderMode()}}
+{\footnotesize\ttfamily void set\+Decoder\+In\+Encoder\+Mode (\begin{DoxyParamCaption}\item[{bool}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 192 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aeb932b6a2bc8d43a7177b22c20620557_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a12723c214df71d751d9bb2674a9d86e0}\label{classvvenc_1_1DecLib_a12723c214df71d751d9bb2674a9d86e0}} 
+\index{DecLib@{DecLib}!setFirstSliceInPicture@{setFirstSliceInPicture}}
+\index{setFirstSliceInPicture@{setFirstSliceInPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setFirstSliceInPicture()}{setFirstSliceInPicture()}}
+{\footnotesize\ttfamily void set\+First\+Slice\+In\+Picture (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a12723c214df71d751d9bb2674a9d86e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ae540ddb500f2a55e971a06fe5d5a1132}\label{classvvenc_1_1DecLib_ae540ddb500f2a55e971a06fe5d5a1132}} 
+\index{DecLib@{DecLib}!setFirstSliceInSequence@{setFirstSliceInSequence}}
+\index{setFirstSliceInSequence@{setFirstSliceInSequence}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setFirstSliceInSequence()}{setFirstSliceInSequence()}}
+{\footnotesize\ttfamily void set\+First\+Slice\+In\+Sequence (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 183 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ae540ddb500f2a55e971a06fe5d5a1132_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a295da4b782f6eac751c4767129093050}\label{classvvenc_1_1DecLib_a295da4b782f6eac751c4767129093050}} 
+\index{DecLib@{DecLib}!setNoOutputPriorPicsFlag@{setNoOutputPriorPicsFlag}}
+\index{setNoOutputPriorPicsFlag@{setNoOutputPriorPicsFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setNoOutputPriorPicsFlag()}{setNoOutputPriorPicsFlag()}}
+{\footnotesize\ttfamily void set\+No\+Output\+Prior\+Pics\+Flag (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 179 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ae5833bd3e891ee6ab81adcd322a0f09b}\label{classvvenc_1_1DecLib_ae5833bd3e891ee6ab81adcd322a0f09b}} 
+\index{DecLib@{DecLib}!setPreScalingListAPSId@{setPreScalingListAPSId}}
+\index{setPreScalingListAPSId@{setPreScalingListAPSId}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setPreScalingListAPSId()}{setPreScalingListAPSId()}}
+{\footnotesize\ttfamily void set\+Pre\+Scaling\+List\+A\+P\+S\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 200 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a05bb5e0d136f9f27ad7ce684fa8df02a}\label{classvvenc_1_1DecLib_a05bb5e0d136f9f27ad7ce684fa8df02a}} 
+\index{DecLib@{DecLib}!setScalingListUpdateFlag@{setScalingListUpdateFlag}}
+\index{setScalingListUpdateFlag@{setScalingListUpdateFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{setScalingListUpdateFlag()}{setScalingListUpdateFlag()}}
+{\footnotesize\ttfamily void set\+Scaling\+List\+Update\+Flag (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 198 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_afc7cc632f42247db6e27b67efb1df1a3}\label{classvvenc_1_1DecLib_afc7cc632f42247db6e27b67efb1df1a3}} 
+\index{DecLib@{DecLib}!xActivateParameterSets@{xActivateParameterSets}}
+\index{xActivateParameterSets@{xActivateParameterSets}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xActivateParameterSets()}{xActivateParameterSets()}}
+{\footnotesize\ttfamily void x\+Activate\+Parameter\+Sets (\begin{DoxyParamCaption}\item[{const int}]{layer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 941 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecLib_afc7cc632f42247db6e27b67efb1df1a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_afc7cc632f42247db6e27b67efb1df1a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a44ac474bbecdf047aaad98288d93fc33}\label{classvvenc_1_1DecLib_a44ac474bbecdf047aaad98288d93fc33}} 
+\index{DecLib@{DecLib}!xCheckNalUnitConstraintFlags@{xCheckNalUnitConstraintFlags}}
+\index{xCheckNalUnitConstraintFlags@{xCheckNalUnitConstraintFlags}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xCheckNalUnitConstraintFlags()}{xCheckNalUnitConstraintFlags()}}
+{\footnotesize\ttfamily void x\+Check\+Nal\+Unit\+Constraint\+Flags (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ConstraintInfo}{Constraint\+Info}} $\ast$}]{c\+Info,  }\item[{uint32\+\_\+t}]{nalu\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1828 of file Dec\+Lib.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a44ac474bbecdf047aaad98288d93fc33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a3412ca09a2d68331514cd69a603ab227}\label{classvvenc_1_1DecLib_a3412ca09a2d68331514cd69a603ab227}} 
+\index{DecLib@{DecLib}!xCheckParameterSetConstraints@{xCheckParameterSetConstraints}}
+\index{xCheckParameterSetConstraints@{xCheckParameterSetConstraints}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xCheckParameterSetConstraints()}{xCheckParameterSetConstraints()}}
+{\footnotesize\ttfamily void x\+Check\+Parameter\+Set\+Constraints (\begin{DoxyParamCaption}\item[{const int}]{layer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1149 of file Dec\+Lib.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a3412ca09a2d68331514cd69a603ab227_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a48127da4538750646a6bd5763c16c6c3}\label{classvvenc_1_1DecLib_a48127da4538750646a6bd5763c16c6c3}} 
+\index{DecLib@{DecLib}!xCreateLostPicture@{xCreateLostPicture}}
+\index{xCreateLostPicture@{xCreateLostPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xCreateLostPicture()}{xCreateLostPicture()}}
+{\footnotesize\ttfamily void x\+Create\+Lost\+Picture (\begin{DoxyParamCaption}\item[{int}]{i\+Lost\+P\+OC,  }\item[{const int}]{layer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 718 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a48127da4538750646a6bd5763c16c6c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a48127da4538750646a6bd5763c16c6c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aba11911a7e1fa605ecc53f7da7766772}\label{classvvenc_1_1DecLib_aba11911a7e1fa605ecc53f7da7766772}} 
+\index{DecLib@{DecLib}!xDecodeAPS@{xDecodeAPS}}
+\index{xDecodeAPS@{xDecodeAPS}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodeAPS()}{xDecodeAPS()}}
+{\footnotesize\ttfamily void x\+Decode\+A\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1639 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aba11911a7e1fa605ecc53f7da7766772_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aba11911a7e1fa605ecc53f7da7766772_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a4af504df180aa70d4b31c65e2382fa3d}\label{classvvenc_1_1DecLib_a4af504df180aa70d4b31c65e2382fa3d}} 
+\index{DecLib@{DecLib}!xDecodeDCI@{xDecodeDCI}}
+\index{xDecodeDCI@{xDecodeDCI}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodeDCI()}{xDecodeDCI()}}
+{\footnotesize\ttfamily void x\+Decode\+D\+CI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1606 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a4af504df180aa70d4b31c65e2382fa3d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a4af504df180aa70d4b31c65e2382fa3d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a9bbbaf7f9d78cc694a9e0e63070fdfd7}\label{classvvenc_1_1DecLib_a9bbbaf7f9d78cc694a9e0e63070fdfd7}} 
+\index{DecLib@{DecLib}!xDecodePicHeader@{xDecodePicHeader}}
+\index{xDecodePicHeader@{xDecodePicHeader}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodePicHeader()}{xDecodePicHeader()}}
+{\footnotesize\ttfamily void x\+Decode\+Pic\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1268 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a9bbbaf7f9d78cc694a9e0e63070fdfd7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a9bbbaf7f9d78cc694a9e0e63070fdfd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a34652ac897c37e48319c9d9eda663d05}\label{classvvenc_1_1DecLib_a34652ac897c37e48319c9d9eda663d05}} 
+\index{DecLib@{DecLib}!xDecodePPS@{xDecodePPS}}
+\index{xDecodePPS@{xDecodePPS}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodePPS()}{xDecodePPS()}}
+{\footnotesize\ttfamily void x\+Decode\+P\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1631 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a34652ac897c37e48319c9d9eda663d05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a34652ac897c37e48319c9d9eda663d05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a98ee02f302658e4ce4dce89344ca660c}\label{classvvenc_1_1DecLib_a98ee02f302658e4ce4dce89344ca660c}} 
+\index{DecLib@{DecLib}!xDecodeSlice@{xDecodeSlice}}
+\index{xDecodeSlice@{xDecodeSlice}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodeSlice()}{xDecodeSlice()}}
+{\footnotesize\ttfamily bool x\+Decode\+Slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu,  }\item[{int \&}]{i\+Skip\+Frame,  }\item[{int}]{i\+P\+O\+C\+Last\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1274 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecLib_a98ee02f302658e4ce4dce89344ca660c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a98ee02f302658e4ce4dce89344ca660c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a6ad7fdef63a9d78cbe6876de44e78825}\label{classvvenc_1_1DecLib_a6ad7fdef63a9d78cbe6876de44e78825}} 
+\index{DecLib@{DecLib}!xDecodeSPS@{xDecodeSPS}}
+\index{xDecodeSPS@{xDecodeSPS}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodeSPS()}{xDecodeSPS()}}
+{\footnotesize\ttfamily void x\+Decode\+S\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1617 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a6ad7fdef63a9d78cbe6876de44e78825_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a6ad7fdef63a9d78cbe6876de44e78825_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a7c06d9b8094aadcaf5d99a729c0128e8}\label{classvvenc_1_1DecLib_a7c06d9b8094aadcaf5d99a729c0128e8}} 
+\index{DecLib@{DecLib}!xDecodeVPS@{xDecodeVPS}}
+\index{xDecodeVPS@{xDecodeVPS}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xDecodeVPS()}{xDecodeVPS()}}
+{\footnotesize\ttfamily void x\+Decode\+V\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}} \&}]{nalu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1598 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a7c06d9b8094aadcaf5d99a729c0128e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a7c06d9b8094aadcaf5d99a729c0128e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aafa62beb7534c6a55b84766cefc448cd}\label{classvvenc_1_1DecLib_aafa62beb7534c6a55b84766cefc448cd}} 
+\index{DecLib@{DecLib}!xGetNewPicBuffer@{xGetNewPicBuffer}}
+\index{xGetNewPicBuffer@{xGetNewPicBuffer}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xGetNewPicBuffer()}{xGetNewPicBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ x\+Get\+New\+Pic\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps,  }\item[{const uint32\+\_\+t}]{temporal\+Layer,  }\item[{const int}]{layer\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 477 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aafa62beb7534c6a55b84766cefc448cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_aafa62beb7534c6a55b84766cefc448cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ab2259d807f98a641a47c5d25015aaedd}\label{classvvenc_1_1DecLib_ab2259d807f98a641a47c5d25015aaedd}} 
+\index{DecLib@{DecLib}!xParsePrefixSEImessages@{xParsePrefixSEImessages}}
+\index{xParsePrefixSEImessages@{xParsePrefixSEImessages}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xParsePrefixSEImessages()}{xParsePrefixSEImessages()}}
+{\footnotesize\ttfamily void x\+Parse\+Prefix\+S\+E\+Imessages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1257 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ab2259d807f98a641a47c5d25015aaedd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_ab2259d807f98a641a47c5d25015aaedd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a212339c997b0f35cb3d2b5805aa19bf4}\label{classvvenc_1_1DecLib_a212339c997b0f35cb3d2b5805aa19bf4}} 
+\index{DecLib@{DecLib}!xParsePrefixSEIsForUnknownVCLNal@{xParsePrefixSEIsForUnknownVCLNal}}
+\index{xParsePrefixSEIsForUnknownVCLNal@{xParsePrefixSEIsForUnknownVCLNal}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xParsePrefixSEIsForUnknownVCLNal()}{xParsePrefixSEIsForUnknownVCLNal()}}
+{\footnotesize\ttfamily void x\+Parse\+Prefix\+S\+E\+Is\+For\+Unknown\+V\+C\+L\+Nal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1245 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classvvenc_1_1DecLib_a212339c997b0f35cb3d2b5805aa19bf4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a212339c997b0f35cb3d2b5805aa19bf4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a270caa0723f68f91bd1ab0d1e1092dac}\label{classvvenc_1_1DecLib_a270caa0723f68f91bd1ab0d1e1092dac}} 
+\index{DecLib@{DecLib}!xUpdatePreviousTid0POC@{xUpdatePreviousTid0POC}}
+\index{xUpdatePreviousTid0POC@{xUpdatePreviousTid0POC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xUpdatePreviousTid0POC()}{xUpdatePreviousTid0POC()}}
+{\footnotesize\ttfamily void x\+Update\+Previous\+Tid0\+P\+OC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{p\+Slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 219 of file Dec\+Lib.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a270caa0723f68f91bd1ab0d1e1092dac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a3b83d77d88ae40b437627d9b45f4e086}\label{classvvenc_1_1DecLib_a3b83d77d88ae40b437627d9b45f4e086}} 
+\index{DecLib@{DecLib}!xUpdateRasInit@{xUpdateRasInit}}
+\index{xUpdateRasInit@{xUpdateRasInit}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{xUpdateRasInit()}{xUpdateRasInit()}}
+{\footnotesize\ttfamily void x\+Update\+Ras\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 704 of file Dec\+Lib.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1DecLib_a3b83d77d88ae40b437627d9b45f4e086_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecLib_a3b83d77d88ae40b437627d9b45f4e086_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a5c7ef7fbc643d956f4e3626777e99ce0}\label{classvvenc_1_1DecLib_a5c7ef7fbc643d956f4e3626777e99ce0}} 
+\index{DecLib@{DecLib}!m\_accessUnitApsNals@{m\_accessUnitApsNals}}
+\index{m\_accessUnitApsNals@{m\_accessUnitApsNals}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_accessUnitApsNals}{m\_accessUnitApsNals}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ m\+\_\+access\+Unit\+Aps\+Nals\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 148 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a63182ac6df8967da1940c7941664b9b9}\label{classvvenc_1_1DecLib_a63182ac6df8967da1940c7941664b9b9}} 
+\index{DecLib@{DecLib}!m\_accessUnitNals@{m\_accessUnitNals}}
+\index{m\_accessUnitNals@{m\_accessUnitNals}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_accessUnitNals}{m\_accessUnitNals}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$vvenc\+Nal\+Unit\+Type, int$>$ $>$ m\+\_\+access\+Unit\+Nals\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aa8380a8450383fb3fc3e5614cc81b07b}\label{classvvenc_1_1DecLib_aa8380a8450383fb3fc3e5614cc81b07b}} 
+\index{DecLib@{DecLib}!m\_accessUnitPicInfo@{m\_accessUnitPicInfo}}
+\index{m\_accessUnitPicInfo@{m\_accessUnitPicInfo}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_accessUnitPicInfo}{m\_accessUnitPicInfo}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1DecLib_1_1AccessUnitPicInfo}{Access\+Unit\+Pic\+Info}}$>$ m\+\_\+access\+Unit\+Pic\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 147 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ad7e9c5d1531896fcbdd298812d48a01e}\label{classvvenc_1_1DecLib_ad7e9c5d1531896fcbdd298812d48a01e}} 
+\index{DecLib@{DecLib}!m\_apcSlicePilot@{m\_apcSlicePilot}}
+\index{m\_apcSlicePilot@{m\_apcSlicePilot}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_apcSlicePilot}{m\_apcSlicePilot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}}$\ast$ m\+\_\+apc\+Slice\+Pilot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 95 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a9dd9ee78e57bfb17ee645250834747cb}\label{classvvenc_1_1DecLib_a9dd9ee78e57bfb17ee645250834747cb}} 
+\index{DecLib@{DecLib}!m\_apsMapEnc@{m\_apsMapEnc}}
+\index{m\_apsMapEnc@{m\_apsMapEnc}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_apsMapEnc}{m\_apsMapEnc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$$\ast$ m\+\_\+aps\+Map\+Enc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a2822731e39d19bc64fc11011791307a5}\label{classvvenc_1_1DecLib_a2822731e39d19bc64fc11011791307a5}} 
+\index{DecLib@{DecLib}!m\_associatedIRAPType@{m\_associatedIRAPType}}
+\index{m\_associatedIRAPType@{m\_associatedIRAPType}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_associatedIRAPType}{m\_associatedIRAPType}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type m\+\_\+associated\+I\+R\+A\+P\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+N\+AL unit type of the associated I\+R\+AP picture. 
+
+
+
+Definition at line 87 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a94ab1eb2d31c35e93378bb080553d324}\label{classvvenc_1_1DecLib_a94ab1eb2d31c35e93378bb080553d324}} 
+\index{DecLib@{DecLib}!m\_bFirstSliceInBitstream@{m\_bFirstSliceInBitstream}}
+\index{m\_bFirstSliceInBitstream@{m\_bFirstSliceInBitstream}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstSliceInBitstream}{m\_bFirstSliceInBitstream}}
+{\footnotesize\ttfamily bool m\+\_\+b\+First\+Slice\+In\+Bitstream\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 127 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ad91287a69874a22c4cdce529ad2ee02a}\label{classvvenc_1_1DecLib_ad91287a69874a22c4cdce529ad2ee02a}} 
+\index{DecLib@{DecLib}!m\_bFirstSliceInPicture@{m\_bFirstSliceInPicture}}
+\index{m\_bFirstSliceInPicture@{m\_bFirstSliceInPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstSliceInPicture}{m\_bFirstSliceInPicture}}
+{\footnotesize\ttfamily bool m\+\_\+b\+First\+Slice\+In\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a10c6a007def355439eb9f940a7e4f49a}\label{classvvenc_1_1DecLib_a10c6a007def355439eb9f940a7e4f49a}} 
+\index{DecLib@{DecLib}!m\_bFirstSliceInSequence@{m\_bFirstSliceInSequence}}
+\index{m\_bFirstSliceInSequence@{m\_bFirstSliceInSequence}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstSliceInSequence}{m\_bFirstSliceInSequence}}
+{\footnotesize\ttfamily bool m\+\_\+b\+First\+Slice\+In\+Sequence\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 124 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a71e57e2ea0bf81ecd9dd744a3eb0cc07}\label{classvvenc_1_1DecLib_a71e57e2ea0bf81ecd9dd744a3eb0cc07}} 
+\index{DecLib@{DecLib}!m\_CABACDecoder@{m\_CABACDecoder}}
+\index{m\_CABACDecoder@{m\_CABACDecoder}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_CABACDecoder}{m\_CABACDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACDecoder}{C\+A\+B\+A\+C\+Decoder}} m\+\_\+\+C\+A\+B\+A\+C\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 108 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a21698f9252e2fc8268a886c2c30e2479}\label{classvvenc_1_1DecLib_a21698f9252e2fc8268a886c2c30e2479}} 
+\index{DecLib@{DecLib}!m\_cALF@{m\_cALF}}
+\index{m\_cALF@{m\_cALF}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cALF}{m\_cALF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter}{Adaptive\+Loop\+Filter}} m\+\_\+c\+A\+LF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 114 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a8510e39242226e5549e4f4d298271ce1}\label{classvvenc_1_1DecLib_a8510e39242226e5549e4f4d298271ce1}} 
+\index{DecLib@{DecLib}!m\_cCuDecoder@{m\_cCuDecoder}}
+\index{m\_cCuDecoder@{m\_cCuDecoder}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cCuDecoder}{m\_cCuDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} m\+\_\+c\+Cu\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 106 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a37f058d2fbcc1fd42ffbb345028d7a34}\label{classvvenc_1_1DecLib_a37f058d2fbcc1fd42ffbb345028d7a34}} 
+\index{DecLib@{DecLib}!m\_cInterPred@{m\_cInterPred}}
+\index{m\_cInterPred@{m\_cInterPred}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cInterPred}{m\_cInterPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} m\+\_\+c\+Inter\+Pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a53476c29e5b87e5de8104c7ced05ff44}\label{classvvenc_1_1DecLib_a53476c29e5b87e5de8104c7ced05ff44}} 
+\index{DecLib@{DecLib}!m\_cIntraPred@{m\_cIntraPred}}
+\index{m\_cIntraPred@{m\_cIntraPred}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cIntraPred}{m\_cIntraPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} m\+\_\+c\+Intra\+Pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a25aa41b0cb0c6057cefd9bf4e3fa964f}\label{classvvenc_1_1DecLib_a25aa41b0cb0c6057cefd9bf4e3fa964f}} 
+\index{DecLib@{DecLib}!m\_cListPic@{m\_cListPic}}
+\index{m\_cListPic@{m\_cListPic}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cListPic}{m\_cListPic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} m\+\_\+c\+List\+Pic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_af9c42e9f32230b016843b41a95b7d827}\label{classvvenc_1_1DecLib_af9c42e9f32230b016843b41a95b7d827}} 
+\index{DecLib@{DecLib}!m\_cLoopFilter@{m\_cLoopFilter}}
+\index{m\_cLoopFilter@{m\_cLoopFilter}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cLoopFilter}{m\_cLoopFilter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} m\+\_\+c\+Loop\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 110 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a729b0a09674a85967200432dbefd727b}\label{classvvenc_1_1DecLib_a729b0a09674a85967200432dbefd727b}} 
+\index{DecLib@{DecLib}!m\_cRdCost@{m\_cRdCost}}
+\index{m\_cRdCost@{m\_cRdCost}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cRdCost}{m\_cRdCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} m\+\_\+c\+Rd\+Cost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+RD cost computation class. 
+
+
+
+Definition at line 115 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_abe66aafd4236b3b9cad36c040a5cea9f}\label{classvvenc_1_1DecLib_abe66aafd4236b3b9cad36c040a5cea9f}} 
+\index{DecLib@{DecLib}!m\_cReshaper@{m\_cReshaper}}
+\index{m\_cReshaper@{m\_cReshaper}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cReshaper}{m\_cReshaper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Reshape}{Reshape}} m\+\_\+c\+Reshaper\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 112 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a48b1c1c9610ab286b8a696c0fb645b7d}\label{classvvenc_1_1DecLib_a48b1c1c9610ab286b8a696c0fb645b7d}} 
+\index{DecLib@{DecLib}!m\_cSAO@{m\_cSAO}}
+\index{m\_cSAO@{m\_cSAO}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cSAO}{m\_cSAO}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SampleAdaptiveOffset}{Sample\+Adaptive\+Offset}} m\+\_\+c\+S\+AO\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 111 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aea53a7a09e1a476abfd1e57f5a70c781}\label{classvvenc_1_1DecLib_aea53a7a09e1a476abfd1e57f5a70c781}} 
+\index{DecLib@{DecLib}!m\_cSliceDecoder@{m\_cSliceDecoder}}
+\index{m\_cSliceDecoder@{m\_cSliceDecoder}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cSliceDecoder}{m\_cSliceDecoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecSlice}{Dec\+Slice}} m\+\_\+c\+Slice\+Decoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 105 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a7a6432aac8b8d61305911038e76381b7}\label{classvvenc_1_1DecLib_a7a6432aac8b8d61305911038e76381b7}} 
+\index{DecLib@{DecLib}!m\_cTrQuant@{m\_cTrQuant}}
+\index{m\_cTrQuant@{m\_cTrQuant}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_cTrQuant}{m\_cTrQuant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} m\+\_\+c\+Tr\+Quant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 104 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ac7e4c559e1da53bd42eb45b44a756a6d}\label{classvvenc_1_1DecLib_ac7e4c559e1da53bd42eb45b44a756a6d}} 
+\index{DecLib@{DecLib}!m\_debugPOC@{m\_debugPOC}}
+\index{m\_debugPOC@{m\_debugPOC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_debugPOC}{m\_debugPOC}}
+{\footnotesize\ttfamily int m\+\_\+debug\+P\+OC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Buffered up prefix \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} N\+AL Units. 
+
+
+
+Definition at line 137 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a9fe9366494432e2ffe488e03ecd2b933}\label{classvvenc_1_1DecLib_a9fe9366494432e2ffe488e03ecd2b933}} 
+\index{DecLib@{DecLib}!m\_decodedPictureHashSEIEnabled@{m\_decodedPictureHashSEIEnabled}}
+\index{m\_decodedPictureHashSEIEnabled@{m\_decodedPictureHashSEIEnabled}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_decodedPictureHashSEIEnabled}{m\_decodedPictureHashSEIEnabled}}
+{\footnotesize\ttfamily int m\+\_\+decoded\+Picture\+Hash\+S\+E\+I\+Enabled\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checksum(3)/\+C\+RC(2)/\+M\+D5(1)/disable(0) acting on decoded picture hash \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message. 
+
+
+
+Definition at line 132 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aa7a4666024d7975cd600d223cc2ed11e}\label{classvvenc_1_1DecLib_aa7a4666024d7975cd600d223cc2ed11e}} 
+\index{DecLib@{DecLib}!m\_HLSReader@{m\_HLSReader}}
+\index{m\_HLSReader@{m\_HLSReader}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_HLSReader}{m\_HLSReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader}{H\+L\+Syntax\+Reader}} m\+\_\+\+H\+L\+S\+Reader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 107 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a8c82b59049ba828018942bf2f01ad8c6}\label{classvvenc_1_1DecLib_a8c82b59049ba828018942bf2f01ad8c6}} 
+\index{DecLib@{DecLib}!m\_HRD@{m\_HRD}}
+\index{m\_HRD@{m\_HRD}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_HRD}{m\_HRD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} m\+\_\+\+H\+RD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 113 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a4870fe3dad56f72c132323ab67bcd72b}\label{classvvenc_1_1DecLib_a4870fe3dad56f72c132323ab67bcd72b}} 
+\index{DecLib@{DecLib}!m\_iMaxRefPicNum@{m\_iMaxRefPicNum}}
+\index{m\_iMaxRefPicNum@{m\_iMaxRefPicNum}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_iMaxRefPicNum}{m\_iMaxRefPicNum}}
+{\footnotesize\ttfamily int m\+\_\+i\+Max\+Ref\+Pic\+Num\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aaf327cbb447d88b1ec007af9e18dc1b5}\label{classvvenc_1_1DecLib_aaf327cbb447d88b1ec007af9e18dc1b5}} 
+\index{DecLib@{DecLib}!m\_isDecoderInEncoder@{m\_isDecoderInEncoder}}
+\index{m\_isDecoderInEncoder@{m\_isDecoderInEncoder}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_isDecoderInEncoder}{m\_isDecoderInEncoder}}
+{\footnotesize\ttfamily bool m\+\_\+is\+Decoder\+In\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 138 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a4d4259de69320756baa2eebd46e09a4c}\label{classvvenc_1_1DecLib_a4d4259de69320756baa2eebd46e09a4c}} 
+\index{DecLib@{DecLib}!m\_isNoOutputPriorPics@{m\_isNoOutputPriorPics}}
+\index{m\_isNoOutputPriorPics@{m\_isNoOutputPriorPics}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_isNoOutputPriorPics}{m\_isNoOutputPriorPics}}
+{\footnotesize\ttfamily bool m\+\_\+is\+No\+Output\+Prior\+Pics\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 129 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a9ac1ecde39e0f72e14ca5f5397043c64}\label{classvvenc_1_1DecLib_a9ac1ecde39e0f72e14ca5f5397043c64}} 
+\index{DecLib@{DecLib}!m\_lastNoIncorrectPicOutputFlag@{m\_lastNoIncorrectPicOutputFlag}}
+\index{m\_lastNoIncorrectPicOutputFlag@{m\_lastNoIncorrectPicOutputFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_lastNoIncorrectPicOutputFlag}{m\_lastNoIncorrectPicOutputFlag}}
+{\footnotesize\ttfamily bool m\+\_\+last\+No\+Incorrect\+Pic\+Output\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a30613747fc143411599f08730c08c2e7}\label{classvvenc_1_1DecLib_a30613747fc143411599f08730c08c2e7}} 
+\index{DecLib@{DecLib}!m\_lastPOCNoOutputPriorPics@{m\_lastPOCNoOutputPriorPics}}
+\index{m\_lastPOCNoOutputPriorPics@{m\_lastPOCNoOutputPriorPics}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_lastPOCNoOutputPriorPics}{m\_lastPOCNoOutputPriorPics}}
+{\footnotesize\ttfamily int m\+\_\+last\+P\+O\+C\+No\+Output\+Prior\+Pics\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_adca1f7d76cabf100211aa4cfd98e1ec8}\label{classvvenc_1_1DecLib_adca1f7d76cabf100211aa4cfd98e1ec8}} 
+\index{DecLib@{DecLib}!m\_lastRasPoc@{m\_lastRasPoc}}
+\index{m\_lastRasPoc@{m\_lastRasPoc}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_lastRasPoc}{m\_lastRasPoc}}
+{\footnotesize\ttfamily int m\+\_\+last\+Ras\+Poc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 90 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a48bbeef84518946f6a54437b9f847d14}\label{classvvenc_1_1DecLib_a48bbeef84518946f6a54437b9f847d14}} 
+\index{DecLib@{DecLib}!m\_maxDecSliceAddrInSubPic@{m\_maxDecSliceAddrInSubPic}}
+\index{m\_maxDecSliceAddrInSubPic@{m\_maxDecSliceAddrInSubPic}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_maxDecSliceAddrInSubPic}{m\_maxDecSliceAddrInSubPic}}
+{\footnotesize\ttfamily int m\+\_\+max\+Dec\+Slice\+Addr\+In\+Sub\+Pic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 154 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ab2197197750afa23e85d692855d15fe0}\label{classvvenc_1_1DecLib_ab2197197750afa23e85d692855d15fe0}} 
+\index{DecLib@{DecLib}!m\_maxDecSubPicIdx@{m\_maxDecSubPicIdx}}
+\index{m\_maxDecSubPicIdx@{m\_maxDecSubPicIdx}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_maxDecSubPicIdx}{m\_maxDecSubPicIdx}}
+{\footnotesize\ttfamily int m\+\_\+max\+Dec\+Sub\+Pic\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 153 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a3a061c980f5fae42ba88b0e619ae70b2}\label{classvvenc_1_1DecLib_a3a061c980f5fae42ba88b0e619ae70b2}} 
+\index{DecLib@{DecLib}!m\_numberOfChecksumErrorsDetected@{m\_numberOfChecksumErrorsDetected}}
+\index{m\_numberOfChecksumErrorsDetected@{m\_numberOfChecksumErrorsDetected}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_numberOfChecksumErrorsDetected}{m\_numberOfChecksumErrorsDetected}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+number\+Of\+Checksum\+Errors\+Detected\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a5b3bb9e6fd554e582b9420b4f3d5b73d}\label{classvvenc_1_1DecLib_a5b3bb9e6fd554e582b9420b4f3d5b73d}} 
+\index{DecLib@{DecLib}!m\_parameterSetManager@{m\_parameterSetManager}}
+\index{m\_parameterSetManager@{m\_parameterSetManager}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_parameterSetManager}{m\_parameterSetManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} m\+\_\+parameter\+Set\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 93 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a138ad470b0a2ce489e9b3dd651a6b6ba}\label{classvvenc_1_1DecLib_a138ad470b0a2ce489e9b3dd651a6b6ba}} 
+\index{DecLib@{DecLib}!m\_pDecodedSEIOutputStream@{m\_pDecodedSEIOutputStream}}
+\index{m\_pDecodedSEIOutputStream@{m\_pDecodedSEIOutputStream}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_pDecodedSEIOutputStream}{m\_pDecodedSEIOutputStream}}
+{\footnotesize\ttfamily std\+::ostream$\ast$ m\+\_\+p\+Decoded\+S\+E\+I\+Output\+Stream\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 131 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a6072356036fe1c01bf5b152869e21395}\label{classvvenc_1_1DecLib_a6072356036fe1c01bf5b152869e21395}} 
+\index{DecLib@{DecLib}!m\_pic@{m\_pic}}
+\index{m\_pic@{m\_pic}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_pic}{m\_pic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$ m\+\_\+pic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a71d5c1626f3baf5becd4338c79fae99f}\label{classvvenc_1_1DecLib_a71d5c1626f3baf5becd4338c79fae99f}} 
+\index{DecLib@{DecLib}!m\_picHeader@{m\_picHeader}}
+\index{m\_picHeader@{m\_picHeader}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_picHeader}{m\_picHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} m\+\_\+pic\+Header\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 94 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a543e2e96d2fc6e6a250b93d021bd1dfd}\label{classvvenc_1_1DecLib_a543e2e96d2fc6e6a250b93d021bd1dfd}} 
+\index{DecLib@{DecLib}!m\_pocCRA@{m\_pocCRA}}
+\index{m\_pocCRA@{m\_pocCRA}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_pocCRA}{m\_pocCRA}}
+{\footnotesize\ttfamily int m\+\_\+poc\+C\+RA\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+P\+OC number of the latest C\+RA picture. 
+
+
+
+Definition at line 88 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ae53911aa0349ee1c50b3ef686aa95c4b}\label{classvvenc_1_1DecLib_ae53911aa0349ee1c50b3ef686aa95c4b}} 
+\index{DecLib@{DecLib}!m\_pocRandomAccess@{m\_pocRandomAccess}}
+\index{m\_pocRandomAccess@{m\_pocRandomAccess}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_pocRandomAccess}{m\_pocRandomAccess}}
+{\footnotesize\ttfamily int m\+\_\+poc\+Random\+Access\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+P\+OC number of the random access point (the first I\+DR or C\+RA picture) 
+
+
+
+Definition at line 89 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a3558593b6024dcdba7ca7e94bd4fa322}\label{classvvenc_1_1DecLib_a3558593b6024dcdba7ca7e94bd4fa322}} 
+\index{DecLib@{DecLib}!m\_prefixSEINALUs@{m\_prefixSEINALUs}}
+\index{m\_prefixSEINALUs@{m\_prefixSEINALUs}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_prefixSEINALUs}{m\_prefixSEINALUs}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classvvenc_1_1InputNALUnit}{Input\+N\+A\+L\+Unit}}$\ast$$>$ m\+\_\+prefix\+S\+E\+I\+N\+A\+L\+Us\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ab3415ab3a9f77ee9cecb48988f692d7e}\label{classvvenc_1_1DecLib_ab3415ab3a9f77ee9cecb48988f692d7e}} 
+\index{DecLib@{DecLib}!m\_PreScalingListAPSId@{m\_PreScalingListAPSId}}
+\index{m\_PreScalingListAPSId@{m\_PreScalingListAPSId}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_PreScalingListAPSId}{m\_PreScalingListAPSId}}
+{\footnotesize\ttfamily int m\+\_\+\+Pre\+Scaling\+List\+A\+P\+S\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 152 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ad0ed54f56e802b8b8e5f16d434c39b85}\label{classvvenc_1_1DecLib_ad0ed54f56e802b8b8e5f16d434c39b85}} 
+\index{DecLib@{DecLib}!m\_prevLayerID@{m\_prevLayerID}}
+\index{m\_prevLayerID@{m\_prevLayerID}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_prevLayerID}{m\_prevLayerID}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+prev\+Layer\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 120 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ac2995bc53546dff878320f0296f9cd87}\label{classvvenc_1_1DecLib_ac2995bc53546dff878320f0296f9cd87}} 
+\index{DecLib@{DecLib}!m\_prevPOC@{m\_prevPOC}}
+\index{m\_prevPOC@{m\_prevPOC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_prevPOC}{m\_prevPOC}}
+{\footnotesize\ttfamily int m\+\_\+prev\+P\+OC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 121 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a416f15b2a6e6f40940653617571c5b3f}\label{classvvenc_1_1DecLib_a416f15b2a6e6f40940653617571c5b3f}} 
+\index{DecLib@{DecLib}!m\_prevSliceSkipped@{m\_prevSliceSkipped}}
+\index{m\_prevSliceSkipped@{m\_prevSliceSkipped}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_prevSliceSkipped}{m\_prevSliceSkipped}}
+{\footnotesize\ttfamily bool m\+\_\+prev\+Slice\+Skipped\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 125 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a5d53276b9713476f02b874812dd9357a}\label{classvvenc_1_1DecLib_a5d53276b9713476f02b874812dd9357a}} 
+\index{DecLib@{DecLib}!m\_prevTid0POC@{m\_prevTid0POC}}
+\index{m\_prevTid0POC@{m\_prevTid0POC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_prevTid0POC}{m\_prevTid0POC}}
+{\footnotesize\ttfamily int m\+\_\+prev\+Tid0\+P\+OC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 122 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ab9be830c9f30d781221dc2663701aff8}\label{classvvenc_1_1DecLib_ab9be830c9f30d781221dc2663701aff8}} 
+\index{DecLib@{DecLib}!m\_scalingListUpdateFlag@{m\_scalingListUpdateFlag}}
+\index{m\_scalingListUpdateFlag@{m\_scalingListUpdateFlag}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_scalingListUpdateFlag}{m\_scalingListUpdateFlag}}
+{\footnotesize\ttfamily bool m\+\_\+scaling\+List\+Update\+Flag\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 151 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_ae8b9927a3a8a9d5c9146c48fa05b3b71}\label{classvvenc_1_1DecLib_ae8b9927a3a8a9d5c9146c48fa05b3b71}} 
+\index{DecLib@{DecLib}!m\_seiReader@{m\_seiReader}}
+\index{m\_seiReader@{m\_seiReader}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_seiReader}{m\_seiReader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIReader}{S\+E\+I\+Reader}} m\+\_\+sei\+Reader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 109 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a1934abb953f67cd44a021eb818fc088a}\label{classvvenc_1_1DecLib_a1934abb953f67cd44a021eb818fc088a}} 
+\index{DecLib@{DecLib}!m\_SEIs@{m\_SEIs}}
+\index{m\_SEIs@{m\_SEIs}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_SEIs}{m\_SEIs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} m\+\_\+\+S\+E\+Is\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages that have been received before the first slice and between slices, excluding prefix S\+E\+Is... 
+
+
+
+Definition at line 98 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a97b8fc444f4251d8a450b8d47e2f3744}\label{classvvenc_1_1DecLib_a97b8fc444f4251d8a450b8d47e2f3744}} 
+\index{DecLib@{DecLib}!m\_skippedPOC@{m\_skippedPOC}}
+\index{m\_skippedPOC@{m\_skippedPOC}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_skippedPOC}{m\_skippedPOC}}
+{\footnotesize\ttfamily int m\+\_\+skipped\+P\+OC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 126 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a0960784c6aa7e128e92ab78ac3457f1f}\label{classvvenc_1_1DecLib_a0960784c6aa7e128e92ab78ac3457f1f}} 
+\index{DecLib@{DecLib}!m\_targetSubPicIdx@{m\_targetSubPicIdx}}
+\index{m\_targetSubPicIdx@{m\_targetSubPicIdx}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_targetSubPicIdx}{m\_targetSubPicIdx}}
+{\footnotesize\ttfamily int m\+\_\+target\+Sub\+Pic\+Idx}
+
+
+
+Definition at line 158 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a1d0f89e6b58a30420cb12396704402c6}\label{classvvenc_1_1DecLib_a1d0f89e6b58a30420cb12396704402c6}} 
+\index{DecLib@{DecLib}!m\_uiSliceSegmentIdx@{m\_uiSliceSegmentIdx}}
+\index{m\_uiSliceSegmentIdx@{m\_uiSliceSegmentIdx}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_uiSliceSegmentIdx}{m\_uiSliceSegmentIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ui\+Slice\+Segment\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_aa7df47223f61f6ea876f563a5226d7bc}\label{classvvenc_1_1DecLib_aa7df47223f61f6ea876f563a5226d7bc}} 
+\index{DecLib@{DecLib}!m\_unitCache@{m\_unitCache}}
+\index{m\_unitCache@{m\_unitCache}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_unitCache}{m\_unitCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} m\+\_\+unit\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 116 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a03859f58577fb5f6d4f164c4e014408a}\label{classvvenc_1_1DecLib_a03859f58577fb5f6d4f164c4e014408a}} 
+\index{DecLib@{DecLib}!m\_vps@{m\_vps}}
+\index{m\_vps@{m\_vps}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_vps}{m\_vps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ m\+\_\+vps\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 150 of file Dec\+Lib.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecLib_a2e9383dc05915872eb50bd450f837791}\label{classvvenc_1_1DecLib_a2e9383dc05915872eb50bd450f837791}} 
+\index{DecLib@{DecLib}!m\_warningMessageSkipPicture@{m\_warningMessageSkipPicture}}
+\index{m\_warningMessageSkipPicture@{m\_warningMessageSkipPicture}!DecLib@{DecLib}}
+\doxysubsubsection{\texorpdfstring{m\_warningMessageSkipPicture}{m\_warningMessageSkipPicture}}
+{\footnotesize\ttfamily bool m\+\_\+warning\+Message\+Skip\+Picture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 134 of file Dec\+Lib.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecLib_8h}{Dec\+Lib.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecLib_8cpp}{Dec\+Lib.\+cpp}}\end{DoxyCompactItemize}

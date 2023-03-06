@@ -1,0 +1,52 @@
+<map id="decode" name="decode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,365,69,391"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1ParameterSetManager.html#aa59c6fadca1280a8f5e632999fda06ab" title=" " alt="" coords="142,5,337,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1ParameterSetManager.html#aae7593bef380b88140bc069f8062bd88" title=" " alt="" coords="142,71,337,112"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1InputNALUnit.html#ad0e665b644a4daaa4c8a2cc19f31b5cb" title=" " alt="" coords="463,208,607,249"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#afdcc3f5f4435932506df86e4f2ca6b90" title=" " alt="" coords="770,2163,861,2190"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1AUDReader.html#a8c9682c2ffca492b4daafb992632474a" title=" " alt="" coords="425,717,645,759"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1SEIReader.html#ae11b06ea5e0e9d67956bb742ed043362" title=" " alt="" coords="117,834,361,861"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1DecLib.html#aba11911a7e1fa605ecc53f7da7766772" title=" " alt="" coords="189,137,290,163"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1DecLib.html#a4af504df180aa70d4b31c65e2382fa3d" title=" " alt="" coords="190,339,289,366"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1DecLib.html#a9bbbaf7f9d78cc694a9e0e63070fdfd7" title=" " alt="" coords="172,441,307,467"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1DecLib.html#a34652ac897c37e48319c9d9eda663d05" title=" " alt="" coords="189,390,290,417"/>
+<area shape="rect" id="node29" href="$classvvenc_1_1DecLib.html#a98ee02f302658e4ce4dce89344ca660c" title=" " alt="" coords="188,1514,291,1541"/>
+<area shape="rect" id="node48" href="$classvvenc_1_1DecLib.html#a6ad7fdef63a9d78cbe6876de44e78825" title=" " alt="" coords="189,289,290,315"/>
+<area shape="rect" id="node49" href="$classvvenc_1_1DecLib.html#a7c06d9b8094aadcaf5d99a729c0128e8" title=" " alt="" coords="189,187,290,214"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1DecLib.html#a212339c997b0f35cb3d2b5805aa19bf4" title=" " alt="" coords="139,2291,339,2332"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1VLCReader.html#a0b98eeee77b103b25cbad24c488a07b2" title=" " alt="" coords="708,783,923,810"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1VLCReader.html#ad321aba0bd41fe51493f9821327a4cce" title=" " alt="" coords="710,587,921,628"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1InputBitstream.html#ab62b144cdeac1c992b173395493acec2" title=" " alt="" coords="971,833,1167,875"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1InputBitstream.html#a2eaa3a4b000480b12c473e5614c34099" title=" " alt="" coords="740,1021,891,1063"/>
+<area shape="rect" id="node12" href="$namespacevvenc.html#a509e88ebbdb616dac2a93f6e0436d59c" title="output a selection of SEI messages by payload type. Ownership stays in original message list." alt="" coords="458,834,611,861"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1SEIReader.html#aa1c78707b2b122f9ec37012153983731" title=" " alt="" coords="409,986,660,1013"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1InputBitstream.html#afb152153715e0e326bbbe5691ed1121e" title=" " alt="" coords="459,143,610,184"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1HLSyntaxReader.html#a56fa10c9cf541d87afe32e26780f8034" title=" " alt="" coords="452,77,617,119"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1HLSyntaxReader.html#a0b98eeee77b103b25cbad24c488a07b2" title=" " alt="" coords="452,273,617,315"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1ParameterSetManager.html#a0a3e0fc3c7c37fae248e7b702ba502ad" title=" " alt="" coords="437,12,632,53"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1HLSyntaxReader.html#af3b835b83adcd1779fe3a0119470abdb" title=" " alt="" coords="452,404,617,445"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1ParameterSetManager.html#ad1369672dc3905f5fb82598f37277cfe" title=" " alt="" coords="437,339,632,380"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1HLSyntaxReader.html#ac99b492d40a07ba32ffcb7d4484d925d" title=" " alt="" coords="452,652,617,693"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1ParameterSetManager.html#a95381851aae27e6d6801568b2d5dc7ec" title=" " alt="" coords="718,717,913,759"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1ParameterSetManager.html#a94988fafa81024317e16243a8e5b6d54" title=" " alt="" coords="718,652,913,693"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1HLSyntaxReader.html#a839a9f4626efdbbc0f9e54bf53113a8f" title=" " alt="" coords="452,535,617,576"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1ParameterSetManager.html#a4691dbb9c369c6340d8735a214212558" title=" " alt="" coords="437,469,632,511"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1Slice.html#a2347e55595d0cb2edb4a0ed6f3ad6cd0" title=" " alt="" coords="451,1255,618,1282"/>
+<area shape="rect" id="node31" href="$structvvenc_1_1Picture.html#abf1a8b43357468a369a08f71ff4bdd88" title=" " alt="" coords="735,1285,896,1311"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1Slice.html#aa9ee0a90be4bc764b6a4c7960c2af321" title=" " alt="" coords="445,1657,624,1699"/>
+<area shape="rect" id="node33" href="$classvvenc_1_1Slice.html#a7ae40a330f93d2efb4d17460d0c10389" title=" " alt="" coords="446,1307,623,1348"/>
+<area shape="rect" id="node34" href="$classvvenc_1_1Reshape.html#a8cdd575e5c5f6a5d40e77c8310248f68" title=" " alt="" coords="445,1475,624,1516"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1ReshapeData.html#a1ba82b1bdabc365ecbbe78550d924bd1" title=" " alt="" coords="462,1540,607,1581"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1Slice.html#a76b60df908a82283e1609a5cb329de67" title=" " alt="" coords="444,1606,625,1633"/>
+<area shape="rect" id="node37" href="$classvvenc_1_1DecSlice.html#a0c4e2ff7c4b76591f7254f9a325d2607" title=" " alt="" coords="436,1139,633,1180"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1CodingStructure.html#ab589e5276aaffb42c5942d17e8111934" title=" " alt="" coords="453,1723,616,1764"/>
+<area shape="rect" id="node39" href="$classvvenc_1_1Slice.html#a53891fdd98cdd4dc1fa0b58ded2af261" title=" " alt="" coords="441,1789,629,1815"/>
+<area shape="rect" id="node40" href="$classvvenc_1_1Slice.html#ae599e53f303dfb53f417ba15c0b57669" title=" " alt="" coords="455,1839,615,1866"/>
+<area shape="rect" id="node41" href="$classvvenc_1_1ReshapeData.html#a96d54e4e261b10dafccd9109787fd3a5" title=" " alt="" coords="457,1891,612,1932"/>
+<area shape="rect" id="node42" href="$structvvenc_1_1PPS.html#a3cc3c49d45075120bd3ea7f50235ffd2" title=" " alt="" coords="445,1956,624,1997"/>
+<area shape="rect" id="node43" href="$classvvenc_1_1ParameterSetManager.html#ade1f6e9ccf9cb237f2f83062e42de80d" title=" " alt="" coords="437,2021,632,2063"/>
+<area shape="rect" id="node44" href="$classvvenc_1_1Slice.html#a2df1dd5ac8070482b6042070f73cffa4" title=" " alt="" coords="461,2087,608,2114"/>
+<area shape="rect" id="node45" href="$classvvenc_1_1Slice.html#a022764e04d9a5b3e4e90b20a70d05677" title=" " alt="" coords="465,1373,604,1399"/>
+<area shape="rect" id="node46" href="$classvvenc_1_1Slice.html#ae712c51e5029cc6e18d4272f9df547cf" title=" " alt="" coords="463,1423,607,1450"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1DecLib.html#acf68f12ddae314d8f686d9b57e4c7ac2" title=" " alt="" coords="439,2189,631,2215"/>
+</map>

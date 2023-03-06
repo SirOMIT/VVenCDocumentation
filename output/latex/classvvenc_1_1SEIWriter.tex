@@ -1,0 +1,681 @@
+\hypertarget{classvvenc_1_1SEIWriter}{}\doxysection{S\+E\+I\+Writer}
+\label{classvvenc_1_1SEIWriter}\index{SEIWriter@{SEIWriter}}
+
+
+{\ttfamily \#include \char`\"{}S\+E\+Iwrite.\+h\char`\"{}}
+
+
+
+Inheritance diagram for S\+E\+I\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classvvenc_1_1SEIWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+E\+I\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1SEIWriter_a38d40067e53c7684eb73eb1aa6e03ab7}{S\+E\+I\+Writer}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1SEIWriter_aea6e24382d29e48b14d3214d0c8fea39}{$\sim$\+S\+E\+I\+Writer}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a760b115ca76db470751830ebacb7a4b5}{write\+S\+E\+Imessages}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&bs, const \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&sei\+List, \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&hrd, bool is\+Nested, const uint32\+\_\+t temporal\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a3735d8c403218464a66f124150f5d23d}{x\+Write\+Byte\+Align}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a177bb99ee056971ad3e09b794a285d10}{x\+Write\+S\+E\+I\+Alternative\+Transfer\+Characteristics}} (const \mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a7f307a3d059ec541563871b272cabf70}{x\+Write\+S\+E\+I\+Ambient\+Viewing\+Environment}} (const \mbox{\hyperlink{classvvenc_1_1SEIAmbientViewingEnvironment}{S\+E\+I\+Ambient\+Viewing\+Environment}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a656c229f8fa164a4593e42c06f2da508}{x\+Write\+S\+E\+I\+Buffering\+Period}} (const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a70c28e2ac68531d38fe4fb9d7a30a953}{x\+Write\+S\+E\+I\+Content\+Colour\+Volume}} (const \mbox{\hyperlink{classvvenc_1_1SEIContentColourVolume}{S\+E\+I\+Content\+Colour\+Volume}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a151453ee0ac55aea9d222b00ec3b448b}{x\+Write\+S\+E\+I\+Content\+Light\+Level\+Info}} (const \mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a777467685c0511b19171aa8c8c5b8f82}{x\+Write\+S\+E\+I\+Decoded\+Picture\+Hash}} (const \mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_ab80bdc9733d588f5af53bae49fdc9a75}{x\+Write\+S\+E\+I\+Decoding\+Unit\+Info}} (const \mbox{\hyperlink{classvvenc_1_1SEIDecodingUnitInfo}{S\+E\+I\+Decoding\+Unit\+Info}} \&sei, const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&bp, const uint32\+\_\+t temporal\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a38ba8824c4014ad65be30c210a169f19}{x\+Write\+S\+E\+I\+Dependent\+R\+A\+P\+Indication}} (const \mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_afae2ab877ab978a9800f0da5a8ee2af4}{x\+Write\+S\+E\+I\+Equirectangular\+Projection}} (const \mbox{\hyperlink{classvvenc_1_1SEIEquirectangularProjection}{S\+E\+I\+Equirectangular\+Projection}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a4487afa45dad334635e547867827521a}{x\+Write\+S\+E\+I\+Film\+Grain\+Characteristics}} (const \mbox{\hyperlink{classvvenc_1_1SEIFilmGrainCharacteristics}{S\+E\+I\+Film\+Grain\+Characteristics}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a4f38a7fe86e061703fc44a5a8cf79715}{x\+Write\+S\+E\+I\+Frame\+Field\+Info}} (const \mbox{\hyperlink{classvvenc_1_1SEIFrameFieldInfo}{S\+E\+I\+Frame\+Field\+Info}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a677364d43db963774d1e650b144729ca}{x\+Write\+S\+E\+I\+Frame\+Packing}} (const \mbox{\hyperlink{classvvenc_1_1SEIFramePacking}{S\+E\+I\+Frame\+Packing}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a7cf53fe32035799c9f83dbe5cb1a96e1}{x\+Write\+S\+E\+I\+Generalized\+Cubemap\+Projection}} (const \mbox{\hyperlink{classvvenc_1_1SEIGeneralizedCubemapProjection}{S\+E\+I\+Generalized\+Cubemap\+Projection}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a50abb43a10e6e0e33202117466a2773e}{x\+Write\+S\+E\+I\+Mastering\+Display\+Colour\+Volume}} (const \mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_ad6a033f138ad14452155e64eaf4cad0b}{x\+Write\+S\+E\+I\+Omni\+Viewport}} (const \mbox{\hyperlink{classvvenc_1_1SEIOmniViewport}{S\+E\+I\+Omni\+Viewport}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a46e4fa9cee880184d386b28b6e087251}{x\+Write\+S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} (const \mbox{\hyperlink{classvvenc_1_1SEIParameterSetsInclusionIndication}{S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a2c0b4c71f7f75b38139e663339259923}{x\+Write\+S\+E\+Ipayload\+Data}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&bs, const \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} \&sei, \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&hrd, const uint32\+\_\+t temporal\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a242b5bbd1033b151ae07efb76f5da07e}{x\+Write\+S\+E\+I\+Picture\+Timing}} (const \mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&sei, const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&bp, const uint32\+\_\+t temporal\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_ad83ca22deb1acaa589f645da2c652b74}{x\+Write\+S\+E\+I\+Region\+Wise\+Packing}} (const \mbox{\hyperlink{classvvenc_1_1SEIRegionWisePacking}{S\+E\+I\+Region\+Wise\+Packing}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_aa89c52da0c047138dbddc3dc9eab21c9}{x\+Write\+S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} (const \mbox{\hyperlink{classvvenc_1_1SEISampleAspectRatioInfo}{S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a33c00cd4bdbd4db3d2b528829573bf8e}{x\+Write\+S\+E\+I\+Scalable\+Nesting}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&bs, const \mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_a751541071240a10d4b3ac7b8146582f8}{x\+Write\+S\+E\+I\+Sphere\+Rotation}} (const \mbox{\hyperlink{classvvenc_1_1SEISphereRotation}{S\+E\+I\+Sphere\+Rotation}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_afe84976bee1e65e7342715c8aeda63b3}{x\+Write\+S\+E\+I\+Subpicture\+Level\+Info}} (const \mbox{\hyperlink{classvvenc_1_1SEISubpicureLevelInfo}{S\+E\+I\+Subpicure\+Level\+Info}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_aeee123043b5387c4f5ef2ab2952b3e0a}{x\+Write\+S\+E\+I\+User\+Data\+Registered}} (const \mbox{\hyperlink{classvvenc_1_1SEIUserDataRegistered}{S\+E\+I\+User\+Data\+Registered}} \&sei)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1SEIWriter_aaf47be88dcd4b2cf1618273e7d7572bd}{x\+Write\+S\+E\+Iuser\+Data\+Unregistered}} (const \mbox{\hyperlink{classvvenc_1_1SEIuserDataUnregistered}{S\+E\+Iuser\+Data\+Unregistered}} \&sei)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \mbox{\hyperlink{classvvenc_1_1SEIWriter_a7e303bfbef2e33884c8855f9b19aeb37}{m\+\_\+nesting\+Hrd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 61 of file S\+E\+Iwrite.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a38d40067e53c7684eb73eb1aa6e03ab7}\label{classvvenc_1_1SEIWriter_a38d40067e53c7684eb73eb1aa6e03ab7}} 
+\index{SEIWriter@{SEIWriter}!SEIWriter@{SEIWriter}}
+\index{SEIWriter@{SEIWriter}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{SEIWriter()}{SEIWriter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1SEIWriter}{S\+E\+I\+Writer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 64 of file S\+E\+Iwrite.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_aea6e24382d29e48b14d3214d0c8fea39}\label{classvvenc_1_1SEIWriter_aea6e24382d29e48b14d3214d0c8fea39}} 
+\index{SEIWriter@{SEIWriter}!````~SEIWriter@{$\sim$SEIWriter}}
+\index{````~SEIWriter@{$\sim$SEIWriter}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$SEIWriter()}{~SEIWriter()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1SEIWriter}{S\+E\+I\+Writer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 65 of file S\+E\+Iwrite.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a760b115ca76db470751830ebacb7a4b5}\label{classvvenc_1_1SEIWriter_a760b115ca76db470751830ebacb7a4b5}} 
+\index{SEIWriter@{SEIWriter}!writeSEImessages@{writeSEImessages}}
+\index{writeSEImessages@{writeSEImessages}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{writeSEImessages()}{writeSEImessages()}}
+{\footnotesize\ttfamily void write\+S\+E\+Imessages (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&}]{bs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \&}]{sei\+List,  }\item[{\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&}]{hrd,  }\item[{bool}]{is\+Nested,  }\item[{const uint32\+\_\+t}]{temporal\+Id }\end{DoxyParamCaption})}
+
+marshal all \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} messages in provided list into one bitstream bs 
+
+Definition at line 154 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a760b115ca76db470751830ebacb7a4b5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a760b115ca76db470751830ebacb7a4b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a3735d8c403218464a66f124150f5d23d}\label{classvvenc_1_1SEIWriter_a3735d8c403218464a66f124150f5d23d}} 
+\index{SEIWriter@{SEIWriter}!xWriteByteAlign@{xWriteByteAlign}}
+\index{xWriteByteAlign@{xWriteByteAlign}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteByteAlign()}{xWriteByteAlign()}}
+{\footnotesize\ttfamily void x\+Write\+Byte\+Align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 616 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classvvenc_1_1SEIWriter_a3735d8c403218464a66f124150f5d23d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a3735d8c403218464a66f124150f5d23d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a177bb99ee056971ad3e09b794a285d10}\label{classvvenc_1_1SEIWriter_a177bb99ee056971ad3e09b794a285d10}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIAlternativeTransferCharacteristics@{xWriteSEIAlternativeTransferCharacteristics}}
+\index{xWriteSEIAlternativeTransferCharacteristics@{xWriteSEIAlternativeTransferCharacteristics}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIAlternativeTransferCharacteristics()}{xWriteSEIAlternativeTransferCharacteristics()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Alternative\+Transfer\+Characteristics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIAlternativeTransferCharacteristics}{S\+E\+I\+Alternative\+Transfer\+Characteristics}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 628 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a177bb99ee056971ad3e09b794a285d10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a7f307a3d059ec541563871b272cabf70}\label{classvvenc_1_1SEIWriter_a7f307a3d059ec541563871b272cabf70}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIAmbientViewingEnvironment@{xWriteSEIAmbientViewingEnvironment}}
+\index{xWriteSEIAmbientViewingEnvironment@{xWriteSEIAmbientViewingEnvironment}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIAmbientViewingEnvironment()}{xWriteSEIAmbientViewingEnvironment()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Ambient\+Viewing\+Environment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIAmbientViewingEnvironment}{S\+E\+I\+Ambient\+Viewing\+Environment}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 886 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a7f307a3d059ec541563871b272cabf70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a656c229f8fa164a4593e42c06f2da508}\label{classvvenc_1_1SEIWriter_a656c229f8fa164a4593e42c06f2da508}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIBufferingPeriod@{xWriteSEIBufferingPeriod}}
+\index{xWriteSEIBufferingPeriod@{xWriteSEIBufferingPeriod}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIBufferingPeriod()}{xWriteSEIBufferingPeriod()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Buffering\+Period (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 279 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a656c229f8fa164a4593e42c06f2da508_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a70c28e2ac68531d38fe4fb9d7a30a953}\label{classvvenc_1_1SEIWriter_a70c28e2ac68531d38fe4fb9d7a30a953}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIContentColourVolume@{xWriteSEIContentColourVolume}}
+\index{xWriteSEIContentColourVolume@{xWriteSEIContentColourVolume}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIContentColourVolume()}{xWriteSEIContentColourVolume()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Content\+Colour\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIContentColourVolume}{S\+E\+I\+Content\+Colour\+Volume}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 893 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a70c28e2ac68531d38fe4fb9d7a30a953_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a151453ee0ac55aea9d222b00ec3b448b}\label{classvvenc_1_1SEIWriter_a151453ee0ac55aea9d222b00ec3b448b}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIContentLightLevelInfo@{xWriteSEIContentLightLevelInfo}}
+\index{xWriteSEIContentLightLevelInfo@{xWriteSEIContentLightLevelInfo}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIContentLightLevelInfo()}{xWriteSEIContentLightLevelInfo()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Content\+Light\+Level\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIContentLightLevelInfo}{S\+E\+I\+Content\+Light\+Level\+Info}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 880 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a151453ee0ac55aea9d222b00ec3b448b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a777467685c0511b19171aa8c8c5b8f82}\label{classvvenc_1_1SEIWriter_a777467685c0511b19171aa8c8c5b8f82}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIDecodedPictureHash@{xWriteSEIDecodedPictureHash}}
+\index{xWriteSEIDecodedPictureHash@{xWriteSEIDecodedPictureHash}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIDecodedPictureHash()}{xWriteSEIDecodedPictureHash()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Decoded\+Picture\+Hash (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIDecodedPictureHash}{S\+E\+I\+Decoded\+Picture\+Hash}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+marshal a decoded picture hash \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message, storing the marshalled representation in bitstream bs. 
+
+Definition at line 230 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a777467685c0511b19171aa8c8c5b8f82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_ab80bdc9733d588f5af53bae49fdc9a75}\label{classvvenc_1_1SEIWriter_ab80bdc9733d588f5af53bae49fdc9a75}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIDecodingUnitInfo@{xWriteSEIDecodingUnitInfo}}
+\index{xWriteSEIDecodingUnitInfo@{xWriteSEIDecodingUnitInfo}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIDecodingUnitInfo()}{xWriteSEIDecodingUnitInfo()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Decoding\+Unit\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIDecodingUnitInfo}{S\+E\+I\+Decoding\+Unit\+Info}} \&}]{sei,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{bp,  }\item[{const uint32\+\_\+t}]{temporal\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 254 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_ab80bdc9733d588f5af53bae49fdc9a75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a38ba8824c4014ad65be30c210a169f19}\label{classvvenc_1_1SEIWriter_a38ba8824c4014ad65be30c210a169f19}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIDependentRAPIndication@{xWriteSEIDependentRAPIndication}}
+\index{xWriteSEIDependentRAPIndication@{xWriteSEIDependentRAPIndication}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIDependentRAPIndication()}{xWriteSEIDependentRAPIndication()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Dependent\+R\+A\+P\+Indication (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIDependentRAPIndication}{S\+E\+I\+Dependent\+R\+A\+P\+Indication}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 497 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a38ba8824c4014ad65be30c210a169f19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_afae2ab877ab978a9800f0da5a8ee2af4}\label{classvvenc_1_1SEIWriter_afae2ab877ab978a9800f0da5a8ee2af4}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIEquirectangularProjection@{xWriteSEIEquirectangularProjection}}
+\index{xWriteSEIEquirectangularProjection@{xWriteSEIEquirectangularProjection}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIEquirectangularProjection()}{xWriteSEIEquirectangularProjection()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Equirectangular\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIEquirectangularProjection}{S\+E\+I\+Equirectangular\+Projection}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 633 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_afae2ab877ab978a9800f0da5a8ee2af4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a4487afa45dad334635e547867827521a}\label{classvvenc_1_1SEIWriter_a4487afa45dad334635e547867827521a}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIFilmGrainCharacteristics@{xWriteSEIFilmGrainCharacteristics}}
+\index{xWriteSEIFilmGrainCharacteristics@{xWriteSEIFilmGrainCharacteristics}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIFilmGrainCharacteristics()}{xWriteSEIFilmGrainCharacteristics()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Film\+Grain\+Characteristics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIFilmGrainCharacteristics}{S\+E\+I\+Film\+Grain\+Characteristics}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 827 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a4487afa45dad334635e547867827521a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a4f38a7fe86e061703fc44a5a8cf79715}\label{classvvenc_1_1SEIWriter_a4f38a7fe86e061703fc44a5a8cf79715}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIFrameFieldInfo@{xWriteSEIFrameFieldInfo}}
+\index{xWriteSEIFrameFieldInfo@{xWriteSEIFrameFieldInfo}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIFrameFieldInfo()}{xWriteSEIFrameFieldInfo()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Frame\+Field\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIFrameFieldInfo}{S\+E\+I\+Frame\+Field\+Info}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 472 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a4f38a7fe86e061703fc44a5a8cf79715_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a677364d43db963774d1e650b144729ca}\label{classvvenc_1_1SEIWriter_a677364d43db963774d1e650b144729ca}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIFramePacking@{xWriteSEIFramePacking}}
+\index{xWriteSEIFramePacking@{xWriteSEIFramePacking}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIFramePacking()}{xWriteSEIFramePacking()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Frame\+Packing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIFramePacking}{S\+E\+I\+Frame\+Packing}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 558 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a677364d43db963774d1e650b144729ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a7cf53fe32035799c9f83dbe5cb1a96e1}\label{classvvenc_1_1SEIWriter_a7cf53fe32035799c9f83dbe5cb1a96e1}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIGeneralizedCubemapProjection@{xWriteSEIGeneralizedCubemapProjection}}
+\index{xWriteSEIGeneralizedCubemapProjection@{xWriteSEIGeneralizedCubemapProjection}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIGeneralizedCubemapProjection()}{xWriteSEIGeneralizedCubemapProjection()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Generalized\+Cubemap\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIGeneralizedCubemapProjection}{S\+E\+I\+Generalized\+Cubemap\+Projection}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 727 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a7cf53fe32035799c9f83dbe5cb1a96e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a50abb43a10e6e0e33202117466a2773e}\label{classvvenc_1_1SEIWriter_a50abb43a10e6e0e33202117466a2773e}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIMasteringDisplayColourVolume@{xWriteSEIMasteringDisplayColourVolume}}
+\index{xWriteSEIMasteringDisplayColourVolume@{xWriteSEIMasteringDisplayColourVolume}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIMasteringDisplayColourVolume()}{xWriteSEIMasteringDisplayColourVolume()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Mastering\+Display\+Colour\+Volume (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIMasteringDisplayColourVolume}{S\+E\+I\+Mastering\+Display\+Colour\+Volume}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 598 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a50abb43a10e6e0e33202117466a2773e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_ad6a033f138ad14452155e64eaf4cad0b}\label{classvvenc_1_1SEIWriter_ad6a033f138ad14452155e64eaf4cad0b}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIOmniViewport@{xWriteSEIOmniViewport}}
+\index{xWriteSEIOmniViewport@{xWriteSEIOmniViewport}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIOmniViewport()}{xWriteSEIOmniViewport()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Omni\+Viewport (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIOmniViewport}{S\+E\+I\+Omni\+Viewport}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 663 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_ad6a033f138ad14452155e64eaf4cad0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a46e4fa9cee880184d386b28b6e087251}\label{classvvenc_1_1SEIWriter_a46e4fa9cee880184d386b28b6e087251}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIParameterSetsInclusionIndication@{xWriteSEIParameterSetsInclusionIndication}}
+\index{xWriteSEIParameterSetsInclusionIndication@{xWriteSEIParameterSetsInclusionIndication}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIParameterSetsInclusionIndication()}{xWriteSEIParameterSetsInclusionIndication()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIParameterSetsInclusionIndication}{S\+E\+I\+Parameter\+Sets\+Inclusion\+Indication}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 593 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a46e4fa9cee880184d386b28b6e087251_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a2c0b4c71f7f75b38139e663339259923}\label{classvvenc_1_1SEIWriter_a2c0b4c71f7f75b38139e663339259923}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIpayloadData@{xWriteSEIpayloadData}}
+\index{xWriteSEIpayloadData@{xWriteSEIpayloadData}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIpayloadData()}{xWriteSEIpayloadData()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+Ipayload\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&}]{bs,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} \&}]{sei,  }\item[{\mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} \&}]{hrd,  }\item[{const uint32\+\_\+t}]{temporal\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 60 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a2c0b4c71f7f75b38139e663339259923_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a2c0b4c71f7f75b38139e663339259923_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a242b5bbd1033b151ae07efb76f5da07e}\label{classvvenc_1_1SEIWriter_a242b5bbd1033b151ae07efb76f5da07e}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIPictureTiming@{xWriteSEIPictureTiming}}
+\index{xWriteSEIPictureTiming@{xWriteSEIPictureTiming}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIPictureTiming()}{xWriteSEIPictureTiming()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Picture\+Timing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIPictureTiming}{S\+E\+I\+Picture\+Timing}} \&}]{sei,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIBufferingPeriod}{S\+E\+I\+Buffering\+Period}} \&}]{bp,  }\item[{const uint32\+\_\+t}]{temporal\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 368 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a242b5bbd1033b151ae07efb76f5da07e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a242b5bbd1033b151ae07efb76f5da07e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_ad83ca22deb1acaa589f645da2c652b74}\label{classvvenc_1_1SEIWriter_ad83ca22deb1acaa589f645da2c652b74}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIRegionWisePacking@{xWriteSEIRegionWisePacking}}
+\index{xWriteSEIRegionWisePacking@{xWriteSEIRegionWisePacking}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIRegionWisePacking()}{xWriteSEIRegionWisePacking()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Region\+Wise\+Packing (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIRegionWisePacking}{S\+E\+I\+Region\+Wise\+Packing}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 684 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_ad83ca22deb1acaa589f645da2c652b74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_aa89c52da0c047138dbddc3dc9eab21c9}\label{classvvenc_1_1SEIWriter_aa89c52da0c047138dbddc3dc9eab21c9}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEISampleAspectRatioInfo@{xWriteSEISampleAspectRatioInfo}}
+\index{xWriteSEISampleAspectRatioInfo@{xWriteSEISampleAspectRatioInfo}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEISampleAspectRatioInfo()}{xWriteSEISampleAspectRatioInfo()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Sample\+Aspect\+Ratio\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEISampleAspectRatioInfo}{S\+E\+I\+Sample\+Aspect\+Ratio\+Info}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 798 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_aa89c52da0c047138dbddc3dc9eab21c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a33c00cd4bdbd4db3d2b528829573bf8e}\label{classvvenc_1_1SEIWriter_a33c00cd4bdbd4db3d2b528829573bf8e}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIScalableNesting@{xWriteSEIScalableNesting}}
+\index{xWriteSEIScalableNesting@{xWriteSEIScalableNesting}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIScalableNesting()}{xWriteSEIScalableNesting()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Scalable\+Nesting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&}]{bs,  }\item[{const \mbox{\hyperlink{classvvenc_1_1SEIScalableNesting}{S\+E\+I\+Scalable\+Nesting}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 502 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a33c00cd4bdbd4db3d2b528829573bf8e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a33c00cd4bdbd4db3d2b528829573bf8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a751541071240a10d4b3ac7b8146582f8}\label{classvvenc_1_1SEIWriter_a751541071240a10d4b3ac7b8146582f8}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEISphereRotation@{xWriteSEISphereRotation}}
+\index{xWriteSEISphereRotation@{xWriteSEISphereRotation}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEISphereRotation()}{xWriteSEISphereRotation()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Sphere\+Rotation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEISphereRotation}{S\+E\+I\+Sphere\+Rotation}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 650 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_a751541071240a10d4b3ac7b8146582f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_afe84976bee1e65e7342715c8aeda63b3}\label{classvvenc_1_1SEIWriter_afe84976bee1e65e7342715c8aeda63b3}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEISubpictureLevelInfo@{xWriteSEISubpictureLevelInfo}}
+\index{xWriteSEISubpictureLevelInfo@{xWriteSEISubpictureLevelInfo}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEISubpictureLevelInfo()}{xWriteSEISubpictureLevelInfo()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+Subpicture\+Level\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEISubpicureLevelInfo}{S\+E\+I\+Subpicure\+Level\+Info}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 758 of file S\+E\+Iwrite.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_afe84976bee1e65e7342715c8aeda63b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_afe84976bee1e65e7342715c8aeda63b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_aeee123043b5387c4f5ef2ab2952b3e0a}\label{classvvenc_1_1SEIWriter_aeee123043b5387c4f5ef2ab2952b3e0a}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIUserDataRegistered@{xWriteSEIUserDataRegistered}}
+\index{xWriteSEIUserDataRegistered@{xWriteSEIUserDataRegistered}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIUserDataRegistered()}{xWriteSEIUserDataRegistered()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+I\+User\+Data\+Registered (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIUserDataRegistered}{S\+E\+I\+User\+Data\+Registered}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 813 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_aeee123043b5387c4f5ef2ab2952b3e0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_aaf47be88dcd4b2cf1618273e7d7572bd}\label{classvvenc_1_1SEIWriter_aaf47be88dcd4b2cf1618273e7d7572bd}} 
+\index{SEIWriter@{SEIWriter}!xWriteSEIuserDataUnregistered@{xWriteSEIuserDataUnregistered}}
+\index{xWriteSEIuserDataUnregistered@{xWriteSEIuserDataUnregistered}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSEIuserDataUnregistered()}{xWriteSEIuserDataUnregistered()}}
+{\footnotesize\ttfamily void x\+Write\+S\+E\+Iuser\+Data\+Unregistered (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1SEIuserDataUnregistered}{S\+E\+Iuser\+Data\+Unregistered}} \&}]{sei }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+marshal a user\+\_\+data\+\_\+unregistered \mbox{\hyperlink{classvvenc_1_1SEI}{S\+EI}} message sei, storing the marshalled representation in bitstream bs. 
+
+Definition at line 213 of file S\+E\+Iwrite.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1SEIWriter_aaf47be88dcd4b2cf1618273e7d7572bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1SEIWriter_a7e303bfbef2e33884c8855f9b19aeb37}\label{classvvenc_1_1SEIWriter_a7e303bfbef2e33884c8855f9b19aeb37}} 
+\index{SEIWriter@{SEIWriter}!m\_nestingHrd@{m\_nestingHrd}}
+\index{m\_nestingHrd@{m\_nestingHrd}!SEIWriter@{SEIWriter}}
+\doxysubsubsection{\texorpdfstring{m\_nestingHrd}{m\_nestingHrd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1HRD}{H\+RD}} m\+\_\+nesting\+Hrd\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 98 of file S\+E\+Iwrite.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{SEIwrite_8h}{S\+E\+Iwrite.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{SEIwrite_8cpp}{S\+E\+Iwrite.\+cpp}}\end{DoxyCompactItemize}

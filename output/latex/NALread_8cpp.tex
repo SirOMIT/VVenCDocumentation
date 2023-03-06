@@ -1,0 +1,45 @@
+\hypertarget{NALread_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\+N\+A\+Lread.cpp File Reference}
+\label{NALread_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/DecoderLib/NALread.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/DecoderLib/NALread.cpp}}
+
+
+reading functionality for N\+AL units  
+
+
+{\ttfamily \#include \char`\"{}N\+A\+Lread.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Bit\+Stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Nal.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+Include dependency graph for N\+A\+Lread.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NALread_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a292555255322f03a5737d3e4f2cedddf}{check\+Picture\+Header\+In\+Slice\+Header\+Flag}} (Input\+N\+A\+L\+Unit \&nalu)
+\item 
+static void \mbox{\hyperlink{namespacevvenc_a950c0dd9679c679eaa4d5c00a44a93e7}{convert\+Payload\+To\+R\+B\+SP}} (std\+::vector$<$ uint8\+\_\+t $>$ \&nal\+Unit\+Buf, Input\+Bitstream $\ast$bitstream, bool is\+Vcl\+Nal\+Unit)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ada2e032eb36134825cc9427d82deca0c}{read}} (Input\+N\+A\+L\+Unit \&nalu)
+\item 
+void \mbox{\hyperlink{namespacevvenc_ab2efc0a2c44fd68e5fa27adf44e82db9}{read\+Nal\+Unit\+Header}} (Input\+N\+A\+L\+Unit \&nalu)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+reading functionality for N\+AL units 
+

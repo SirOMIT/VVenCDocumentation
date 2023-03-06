@@ -1,0 +1,165 @@
+\hypertarget{classvvenc_1_1MD5}{}\doxysection{M\+D5}
+\label{classvvenc_1_1MD5}\index{MD5@{MD5}}
+
+
+{\ttfamily \#include \char`\"{}M\+D5.\+h\char`\"{}}
+
+
+
+Collaboration diagram for M\+D5\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classvvenc_1_1MD5__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1MD5_1_1__context__md5__t}{\+\_\+context\+\_\+md5\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structvvenc_1_1MD5_1_1__context__md5__t}{vvenc\+::\+M\+D5\+::\+\_\+context\+\_\+md5\+\_\+t}} \mbox{\hyperlink{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}{context\+\_\+md5\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1MD5_a5b1c09b071a871c8829a13e808bbce3a}{M\+D5}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MD5_a89628e0d5f3178023b5f52113c001cba}{finalize}} (unsigned char digest\mbox{[}\mbox{\hyperlink{namespacevvenc_afc6f4f61bba05f8a814442fa5fa488ed}{M\+D5\+\_\+\+D\+I\+G\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+TH}}\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MD5_ad364f98d0046f701fb456bddf717a562}{update}} (unsigned char $\ast$buf, unsigned len)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1MD5_a5fb4a187f613d69ed798e8f6fe8e673f}{M\+D5\+Transform}} (uint32\+\_\+t buf\mbox{[}4\mbox{]}, uint32\+\_\+t const in\mbox{[}16\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}{context\+\_\+md5\+\_\+t}} \mbox{\hyperlink{classvvenc_1_1MD5_af7c365f3a0ca5967fb2eeed66596d3b8}{ctx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 82 of file M\+D5.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}\label{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}} 
+\index{MD5@{MD5}!context\_md5\_t@{context\_md5\_t}}
+\index{context\_md5\_t@{context\_md5\_t}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{context\_md5\_t}{context\_md5\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structvvenc_1_1MD5_1_1__context__md5__t}{vvenc\+::\+M\+D5\+::\+\_\+context\+\_\+md5\+\_\+t}} \mbox{\hyperlink{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}{context\+\_\+md5\+\_\+t}}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MD5_a5b1c09b071a871c8829a13e808bbce3a}\label{classvvenc_1_1MD5_a5b1c09b071a871c8829a13e808bbce3a}} 
+\index{MD5@{MD5}!MD5@{MD5}}
+\index{MD5@{MD5}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{MD5()}{MD5()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1MD5}{M\+D5}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+initialize digest state 
+
+Definition at line 100 of file M\+D5.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MD5_a89628e0d5f3178023b5f52113c001cba}\label{classvvenc_1_1MD5_a89628e0d5f3178023b5f52113c001cba}} 
+\index{MD5@{MD5}!finalize@{finalize}}
+\index{finalize@{finalize}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily void finalize (\begin{DoxyParamCaption}\item[{unsigned char}]{digest\mbox{[}\+M\+D5\+\_\+\+D\+I\+G\+E\+S\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+L\+E\+N\+G\+T\+H\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+flush any outstanding \mbox{\hyperlink{classvvenc_1_1MD5}{M\+D5}} data, write the digest into digest. 
+
+Definition at line 162 of file M\+D5.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classvvenc_1_1MD5_a89628e0d5f3178023b5f52113c001cba_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MD5_a89628e0d5f3178023b5f52113c001cba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MD5_a5fb4a187f613d69ed798e8f6fe8e673f}\label{classvvenc_1_1MD5_a5fb4a187f613d69ed798e8f6fe8e673f}} 
+\index{MD5@{MD5}!MD5Transform@{MD5Transform}}
+\index{MD5Transform@{MD5Transform}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{MD5Transform()}{MD5Transform()}}
+{\footnotesize\ttfamily static void M\+D5\+Transform (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{buf\mbox{[}4\mbox{]},  }\item[{uint32\+\_\+t const}]{in\mbox{[}16\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 230 of file M\+D5.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MD5_a5fb4a187f613d69ed798e8f6fe8e673f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MD5_ad364f98d0046f701fb456bddf717a562}\label{classvvenc_1_1MD5_ad364f98d0046f701fb456bddf717a562}} 
+\index{MD5@{MD5}!update@{update}}
+\index{update@{update}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void update (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buf,  }\item[{unsigned}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+compute digest over buf of length len. multiple calls may extend the digest over more data. 
+
+Definition at line 115 of file M\+D5.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{classvvenc_1_1MD5_ad364f98d0046f701fb456bddf717a562_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classvvenc_1_1MD5_ad364f98d0046f701fb456bddf717a562_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MD5_af7c365f3a0ca5967fb2eeed66596d3b8}\label{classvvenc_1_1MD5_af7c365f3a0ca5967fb2eeed66596d3b8}} 
+\index{MD5@{MD5}!ctx@{ctx}}
+\index{ctx@{ctx}!MD5@{MD5}}
+\doxysubsubsection{\texorpdfstring{ctx}{ctx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1MD5_a324485396678c8a2566715e103a4ba13}{context\+\_\+md5\+\_\+t}} ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 314 of file M\+D5.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MD5_8h}{M\+D5.\+h}}\end{DoxyCompactItemize}

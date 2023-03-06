@@ -1,0 +1,455 @@
+\hypertarget{classvvenc_1_1DecCu}{}\doxysection{Dec\+Cu}
+\label{classvvenc_1_1DecCu}\index{DecCu@{DecCu}}
+
+
+\mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} decoder class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Dec\+Cu.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Dec\+Cu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classvvenc_1_1DecCu__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dec\+Cu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DecCu_a48735fc0d7c2e3e328f53755c7a7b0e6}{Dec\+Cu}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1DecCu_ac05ae98ac3b046fb83827716a41e4eab}{$\sim$\+Dec\+Cu}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_ac65c68e5db506859fc962df5f28ed0dc}{decompress\+Ctu}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a48c0ae15be946d1568ec676ab968496d}{init}} (\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$pc\+Tr\+Quant, \mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} $\ast$pc\+Intra, \mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} $\ast$pc\+Inter, \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chr\+Format)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a6a1e6367f62d5fefecf02b4a920623fb}{x\+Decode\+Inter\+Texture}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a7437f20ca590005876b40dde989f6ee0}{x\+Decode\+Inter\+TU}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a2732fa9070f37cb4dd03f2287352fccd}{x\+Derive\+C\+U\+MV}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a0ae25c4476a09a8f6f9422a496d8388f}{x\+Intra\+Rec\+Blk}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a803d3c73546aaf1f41db1080e8ac70c9}{x\+Intra\+Rec\+QT}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_ab324f93ddc8fd6b8f85d3917c831c87f}{x\+Recon\+Inter}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DecCu_a20a30992dc4cfbbdd01e1407213159a1}{x\+Recon\+Intra\+QT}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \mbox{\hyperlink{classvvenc_1_1DecCu_aaabe172f8210ffe29941d2e8b74b95c7}{m\+\_\+geo\+Mrg\+Ctx}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecCu_a5c20f2a7095d340ede55d46e2a879aec}{m\+\_\+pc\+Inter\+Pred}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecCu_a32499fccfeb7338da0111983325236fc}{m\+\_\+pc\+Intra\+Pred}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DecCu_ad7990d4385ff356abe84bcbfe3ce4281}{m\+\_\+pc\+Tr\+Quant}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1DecCu_ae41f649888566eb5fd9e2885280b9d77}{m\+\_\+\+Pred\+Buffer}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \mbox{\hyperlink{classvvenc_1_1DecCu_a25a0bd912f0348713119cf2ff215ef07}{m\+\_\+sub\+Pu\+Mi\+Buf}} \mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}}) $>$$>$(\mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}$<$$<$ 1)\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1DecCu_a20c61fdf017556d5670ee28fa9ab66b0}{m\+\_\+\+Tmp\+Buffer}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} \mbox{\hyperlink{classvvenc_1_1DecCu_a81f05f9beee1b1316717d34886cb7cb2}{m\+\_\+triangle\+Mrg\+Ctx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespacevvenc_1_1CU}{CU}} decoder class. 
+
+Definition at line 68 of file Dec\+Cu.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a48735fc0d7c2e3e328f53755c7a7b0e6}\label{classvvenc_1_1DecCu_a48735fc0d7c2e3e328f53755c7a7b0e6}} 
+\index{DecCu@{DecCu}!DecCu@{DecCu}}
+\index{DecCu@{DecCu}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{DecCu()}{DecCu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 71 of file Dec\+Cu.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_ac05ae98ac3b046fb83827716a41e4eab}\label{classvvenc_1_1DecCu_ac05ae98ac3b046fb83827716a41e4eab}} 
+\index{DecCu@{DecCu}!````~DecCu@{$\sim$DecCu}}
+\index{````~DecCu@{$\sim$DecCu}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{$\sim$DecCu()}{~DecCu()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1DecCu}{Dec\+Cu}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 75 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1DecCu_ac05ae98ac3b046fb83827716a41e4eab_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_ac65c68e5db506859fc962df5f28ed0dc}\label{classvvenc_1_1DecCu_ac65c68e5db506859fc962df5f28ed0dc}} 
+\index{DecCu@{DecCu}!decompressCtu@{decompressCtu}}
+\index{decompressCtu@{decompressCtu}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{decompressCtu()}{decompressCtu()}}
+{\footnotesize\ttfamily void decompress\+Ctu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 96 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecCu_ac65c68e5db506859fc962df5f28ed0dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_ac65c68e5db506859fc962df5f28ed0dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a48c0ae15be946d1568ec676ab968496d}\label{classvvenc_1_1DecCu_a48c0ae15be946d1568ec676ab968496d}} 
+\index{DecCu@{DecCu}!init@{init}}
+\index{init@{init}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} $\ast$}]{pc\+Tr\+Quant,  }\item[{\mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}} $\ast$}]{pc\+Intra,  }\item[{\mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}} $\ast$}]{pc\+Inter,  }\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{chr\+Format }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classvvenc_1_1DecCu_a48c0ae15be946d1568ec676ab968496d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a48c0ae15be946d1568ec676ab968496d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a6a1e6367f62d5fefecf02b4a920623fb}\label{classvvenc_1_1DecCu_a6a1e6367f62d5fefecf02b4a920623fb}} 
+\index{DecCu@{DecCu}!xDecodeInterTexture@{xDecodeInterTexture}}
+\index{xDecodeInterTexture@{xDecodeInterTexture}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xDecodeInterTexture()}{xDecodeInterTexture()}}
+{\footnotesize\ttfamily void x\+Decode\+Inter\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 484 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a6a1e6367f62d5fefecf02b4a920623fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a6a1e6367f62d5fefecf02b4a920623fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a7437f20ca590005876b40dde989f6ee0}\label{classvvenc_1_1DecCu_a7437f20ca590005876b40dde989f6ee0}} 
+\index{DecCu@{DecCu}!xDecodeInterTU@{xDecodeInterTU}}
+\index{xDecodeInterTU@{xDecodeInterTU}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xDecodeInterTU()}{xDecodeInterTU()}}
+{\footnotesize\ttfamily void x\+Decode\+Inter\+TU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 435 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a7437f20ca590005876b40dde989f6ee0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a7437f20ca590005876b40dde989f6ee0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a2732fa9070f37cb4dd03f2287352fccd}\label{classvvenc_1_1DecCu_a2732fa9070f37cb4dd03f2287352fccd}} 
+\index{DecCu@{DecCu}!xDeriveCUMV@{xDeriveCUMV}}
+\index{xDeriveCUMV@{xDeriveCUMV}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xDeriveCUMV()}{xDeriveCUMV()}}
+{\footnotesize\ttfamily void x\+Derive\+C\+U\+MV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 510 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecCu_a2732fa9070f37cb4dd03f2287352fccd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a2732fa9070f37cb4dd03f2287352fccd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a0ae25c4476a09a8f6f9422a496d8388f}\label{classvvenc_1_1DecCu_a0ae25c4476a09a8f6f9422a496d8388f}} 
+\index{DecCu@{DecCu}!xIntraRecBlk@{xIntraRecBlk}}
+\index{xIntraRecBlk@{xIntraRecBlk}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xIntraRecBlk()}{xIntraRecBlk()}}
+{\footnotesize\ttfamily void x\+Intra\+Rec\+Blk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 157 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecCu_a0ae25c4476a09a8f6f9422a496d8388f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a0ae25c4476a09a8f6f9422a496d8388f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a803d3c73546aaf1f41db1080e8ac70c9}\label{classvvenc_1_1DecCu_a803d3c73546aaf1f41db1080e8ac70c9}} 
+\index{DecCu@{DecCu}!xIntraRecQT@{xIntraRecQT}}
+\index{xIntraRecQT@{xIntraRecQT}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xIntraRecQT()}{xIntraRecQT()}}
+{\footnotesize\ttfamily void x\+Intra\+Rec\+QT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function for deriving reconstructed P\+U/\+CU chroma samples with Q\+Tree structure 
+\begin{DoxyParams}{Parameters}
+{\em pc\+Reco\+Yuv} & pointer to reconstructed sample arrays \\
+\hline
+{\em pc\+Pred\+Yuv} & pointer to prediction sample arrays \\
+\hline
+{\em pc\+Resi\+Yuv} & pointer to residue sample arrays \\
+\hline
+{\em ch\+Type} & texture channel type (luma/chroma) \\
+\hline
+{\em r\+Tu} & reference to transform data\\
+\hline
+\end{DoxyParams}
+\textbackslash{} This function derives reconstructed P\+U/\+CU chroma samples with Q\+Tree recursive structure 
+
+Definition at line 306 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecCu_a803d3c73546aaf1f41db1080e8ac70c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a803d3c73546aaf1f41db1080e8ac70c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_ab324f93ddc8fd6b8f85d3917c831c87f}\label{classvvenc_1_1DecCu_ab324f93ddc8fd6b8f85d3917c831c87f}} 
+\index{DecCu@{DecCu}!xReconInter@{xReconInter}}
+\index{xReconInter@{xReconInter}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xReconInter()}{xReconInter()}}
+{\footnotesize\ttfamily void x\+Recon\+Inter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 327 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1DecCu_ab324f93ddc8fd6b8f85d3917c831c87f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_ab324f93ddc8fd6b8f85d3917c831c87f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a20a30992dc4cfbbdd01e1407213159a1}\label{classvvenc_1_1DecCu_a20a30992dc4cfbbdd01e1407213159a1}} 
+\index{DecCu@{DecCu}!xReconIntraQT@{xReconIntraQT}}
+\index{xReconIntraQT@{xReconIntraQT}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{xReconIntraQT()}{xReconIntraQT()}}
+{\footnotesize\ttfamily void x\+Recon\+Intra\+QT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 283 of file Dec\+Cu.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a20a30992dc4cfbbdd01e1407213159a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DecCu_a20a30992dc4cfbbdd01e1407213159a1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DecCu_aaabe172f8210ffe29941d2e8b74b95c7}\label{classvvenc_1_1DecCu_aaabe172f8210ffe29941d2e8b74b95c7}} 
+\index{DecCu@{DecCu}!m\_geoMrgCtx@{m\_geoMrgCtx}}
+\index{m\_geoMrgCtx@{m\_geoMrgCtx}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_geoMrgCtx}{m\_geoMrgCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} m\+\_\+geo\+Mrg\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 98 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a5c20f2a7095d340ede55d46e2a879aec}\label{classvvenc_1_1DecCu_a5c20f2a7095d340ede55d46e2a879aec}} 
+\index{DecCu@{DecCu}!m\_pcInterPred@{m\_pcInterPred}}
+\index{m\_pcInterPred@{m\_pcInterPred}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_pcInterPred}{m\_pcInterPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InterPrediction}{Inter\+Prediction}}$\ast$ m\+\_\+pc\+Inter\+Pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 92 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a32499fccfeb7338da0111983325236fc}\label{classvvenc_1_1DecCu_a32499fccfeb7338da0111983325236fc}} 
+\index{DecCu@{DecCu}!m\_pcIntraPred@{m\_pcIntraPred}}
+\index{m\_pcIntraPred@{m\_pcIntraPred}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_pcIntraPred}{m\_pcIntraPred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1IntraPrediction}{Intra\+Prediction}}$\ast$ m\+\_\+pc\+Intra\+Pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 91 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_ad7990d4385ff356abe84bcbfe3ce4281}\label{classvvenc_1_1DecCu_ad7990d4385ff356abe84bcbfe3ce4281}} 
+\index{DecCu@{DecCu}!m\_pcTrQuant@{m\_pcTrQuant}}
+\index{m\_pcTrQuant@{m\_pcTrQuant}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_pcTrQuant}{m\_pcTrQuant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}}$\ast$ m\+\_\+pc\+Tr\+Quant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 90 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_ae41f649888566eb5fd9e2885280b9d77}\label{classvvenc_1_1DecCu_ae41f649888566eb5fd9e2885280b9d77}} 
+\index{DecCu@{DecCu}!m\_PredBuffer@{m\_PredBuffer}}
+\index{m\_PredBuffer@{m\_PredBuffer}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_PredBuffer}{m\_PredBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+\+Pred\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 96 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a25a0bd912f0348713119cf2ff215ef07}\label{classvvenc_1_1DecCu_a25a0bd912f0348713119cf2ff215ef07}} 
+\index{DecCu@{DecCu}!m\_subPuMiBuf@{m\_subPuMiBuf}}
+\index{m\_subPuMiBuf@{m\_subPuMiBuf}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_subPuMiBuf}{m\_subPuMiBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} m\+\_\+sub\+Pu\+Mi\+Buf\mbox{[}(\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $\ast$\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}}) $>$$>$(\mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}$<$$<$ 1)\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 97 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a20c61fdf017556d5670ee28fa9ab66b0}\label{classvvenc_1_1DecCu_a20c61fdf017556d5670ee28fa9ab66b0}} 
+\index{DecCu@{DecCu}!m\_TmpBuffer@{m\_TmpBuffer}}
+\index{m\_TmpBuffer@{m\_TmpBuffer}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_TmpBuffer}{m\_TmpBuffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+\+Tmp\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 95 of file Dec\+Cu.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DecCu_a81f05f9beee1b1316717d34886cb7cb2}\label{classvvenc_1_1DecCu_a81f05f9beee1b1316717d34886cb7cb2}} 
+\index{DecCu@{DecCu}!m\_triangleMrgCtx@{m\_triangleMrgCtx}}
+\index{m\_triangleMrgCtx@{m\_triangleMrgCtx}!DecCu@{DecCu}}
+\doxysubsubsection{\texorpdfstring{m\_triangleMrgCtx}{m\_triangleMrgCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MergeCtx}{Merge\+Ctx}} m\+\_\+triangle\+Mrg\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 94 of file Dec\+Cu.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecCu_8h}{Dec\+Cu.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{DecCu_8cpp}{Dec\+Cu.\+cpp}}\end{DoxyCompactItemize}

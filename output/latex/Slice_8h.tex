@@ -1,0 +1,114 @@
+\hypertarget{Slice_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Slice.h File Reference}
+\label{Slice_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Slice.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Slice.h}}
+
+
+slice header and S\+PS class (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Alf\+Parameters.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Motion\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}H\+R\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Slice.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Slice_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Slice_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ChromaQpAdj}{Chroma\+Qp\+Adj}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ChromaQpMappingTable}{Chroma\+Qp\+Mapping\+Table}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ConstraintInfo}{Constraint\+Info}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1DpbParameters}{Dpb\+Parameters}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1LmcsParam}{Lmcs\+Param}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ParameterSetMap_1_1MapData}{Parameter\+Set\+Map$<$ T $>$\+::\+Map\+Data$<$ Tm $>$}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}
+\begin{DoxyCompactList}\small\item\em Reference \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} Lists class. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ProfileTierLevel}{Profile\+Tier\+Level}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1RectSlice}{Rect\+Slice}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}}
+\begin{DoxyCompactList}\small\item\em slice header class \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structvvenc_1_1SliceMap}{Slice\+Map}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} class. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structvvenc_1_1SPSRExt}{S\+P\+S\+R\+Ext}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} R\+Ext class. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1VUI}{V\+UI}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1Window}{Window}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1WPACDCParam}{W\+P\+A\+C\+D\+C\+Param}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ Reference\+Picture\+List $>$ \mbox{\hyperlink{namespacevvenc_a92b295bcec1ad03e084d4fac250d8440}{R\+P\+L\+List}}
+\begin{DoxyCompactList}\small\item\em Reference \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} List set class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespacevvenc_a36fcb9867aba2db3202b1723e1c41a49}{calculate\+Parameter\+Set\+Changed\+Flag}} (bool \&b\+Changed, const std\+::vector$<$ uint8\+\_\+t $>$ $\ast$p\+Old\+Data, const std\+::vector$<$ uint8\+\_\+t $>$ $\ast$p\+New\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ad4856673ec4189fabc3ab8c299b2e3dd}{R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+\+N\+U\+M\+\_\+\+I\+DX}} =32
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+slice header and S\+PS class (header) 
+

@@ -1,0 +1,68 @@
+\hypertarget{vvencimpl_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/vvenc/vvencimpl.cpp File Reference}
+\label{vvencimpl_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/vvenc/vvencimpl.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/vvenc/vvencimpl.cpp}}
+
+
+This file contains the internal interface of the vvenc S\+DK.  
+
+
+{\ttfamily \#include \char`\"{}vvencimpl.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/version.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Nal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Encoder\+Lib/\+Enc\+Lib.\+h\char`\"{}}\newline
+Include dependency graph for vvencimpl.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencimpl_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{vvencimpl_8cpp_a73a99fc60a9bf8ffddc04db9f324cd85}{H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}~1
+\item 
+\#define \mbox{\hyperlink{vvencimpl_8cpp_a4213c136e65b9ab6f33bbce9da9ab5c1}{R\+O\+T\+P\+A\+R\+A\+MS}}(x,  message)~if(x) \{ rc\+Error\+String = message; return V\+V\+E\+N\+C\+\_\+\+E\+R\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER;\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a4b8a6866b7ca3b758d7fa57dd622c0ff}{try\+Decode\+Picture}} (Picture $\ast$pc\+Enc\+Pic, const int expected\+Poc, const std\+::string \&bitstream\+File\+Name, F\+Fwd\+Decoder \&ffwd\+Decoder, Parameter\+Set\+Map$<$ A\+PS $>$ $\ast$aps\+Map, bool b\+Decode\+Until\+Poc\+Found, int debug\+P\+OC, bool copy\+To\+Enc)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the internal interface of the vvenc S\+DK. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{vvencimpl_8cpp_a73a99fc60a9bf8ffddc04db9f324cd85}\label{vvencimpl_8cpp_a73a99fc60a9bf8ffddc04db9f324cd85}} 
+\index{vvencimpl.cpp@{vvencimpl.cpp}!HANDLE\_EXCEPTION@{HANDLE\_EXCEPTION}}
+\index{HANDLE\_EXCEPTION@{HANDLE\_EXCEPTION}!vvencimpl.cpp@{vvencimpl.cpp}}
+\doxysubsubsection{\texorpdfstring{HANDLE\_EXCEPTION}{HANDLE\_EXCEPTION}}
+{\footnotesize\ttfamily \#define H\+A\+N\+D\+L\+E\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON~1}
+
+
+
+Definition at line 77 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{vvencimpl_8cpp_a4213c136e65b9ab6f33bbce9da9ab5c1}\label{vvencimpl_8cpp_a4213c136e65b9ab6f33bbce9da9ab5c1}} 
+\index{vvencimpl.cpp@{vvencimpl.cpp}!ROTPARAMS@{ROTPARAMS}}
+\index{ROTPARAMS@{ROTPARAMS}!vvencimpl.cpp@{vvencimpl.cpp}}
+\doxysubsubsection{\texorpdfstring{ROTPARAMS}{ROTPARAMS}}
+{\footnotesize\ttfamily \#define R\+O\+T\+P\+A\+R\+A\+MS(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{message }\end{DoxyParamCaption})~if(x) \{ rc\+Error\+String = message; return V\+V\+E\+N\+C\+\_\+\+E\+R\+R\+\_\+\+P\+A\+R\+A\+M\+E\+T\+ER;\}}
+
+
+
+Definition at line 83 of file vvencimpl.\+cpp.
+

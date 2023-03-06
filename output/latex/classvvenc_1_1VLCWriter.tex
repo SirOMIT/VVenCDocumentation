@@ -1,0 +1,274 @@
+\hypertarget{classvvenc_1_1VLCWriter}{}\doxysection{V\+L\+C\+Writer}
+\label{classvvenc_1_1VLCWriter}\index{VLCWriter@{VLCWriter}}
+
+
+{\ttfamily \#include \char`\"{}V\+L\+C\+Writer.\+h\char`\"{}}
+
+
+
+Inheritance diagram for V\+L\+C\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classvvenc_1_1VLCWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+L\+C\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classvvenc_1_1VLCWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1VLCWriter_a28c46b01c7c5f5c26c62611284c00b51}{V\+L\+C\+Writer}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1VLCWriter_a8994bf4f9180e62d343c0a657a3c9463}{$\sim$\+V\+L\+C\+Writer}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1VLCWriter_a8c81ad4fb2c30fa7d5a2350a25337057}{is\+Byte\+Aligned}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a9f39f0e805401bf13c33d75a0300415b}{set\+Bitstream}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$p)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a130d201b982b03b7272c301cf37f8471}{x\+Write\+Code}} (uint32\+\_\+t ui\+Code, uint32\+\_\+t ui\+Length)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a0205cc29801f06570de82a861d8445c5}{x\+Write\+Flag}} (bool flag)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a5cf061102261b75ae6de5613089ceeca}{x\+Write\+Rbsp\+Trailing\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_aec2cec0f54baf1b08e09614cffd4ee6c}{x\+Write\+S\+Code}} (int code, uint32\+\_\+t length)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a0ff7bd33f16e3236e773bbb3df5fc38b}{x\+Write\+Svlc}} (int i\+Code)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCWriter_a4f784d94e056b7aa9ec0bbd5eaee6cd4}{x\+Write\+Uvlc}} (uint32\+\_\+t ui\+Code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1VLCWriter_a4b314369623a13eb437df97b370dc76c}{m\+\_\+pc\+Bit\+If}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 85 of file V\+L\+C\+Writer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a28c46b01c7c5f5c26c62611284c00b51}\label{classvvenc_1_1VLCWriter_a28c46b01c7c5f5c26c62611284c00b51}} 
+\index{VLCWriter@{VLCWriter}!VLCWriter@{VLCWriter}}
+\index{VLCWriter@{VLCWriter}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{VLCWriter()}{VLCWriter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1VLCWriter}{V\+L\+C\+Writer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 91 of file V\+L\+C\+Writer.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a8994bf4f9180e62d343c0a657a3c9463}\label{classvvenc_1_1VLCWriter_a8994bf4f9180e62d343c0a657a3c9463}} 
+\index{VLCWriter@{VLCWriter}!````~VLCWriter@{$\sim$VLCWriter}}
+\index{````~VLCWriter@{$\sim$VLCWriter}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{$\sim$VLCWriter()}{~VLCWriter()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1VLCWriter}{V\+L\+C\+Writer}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 92 of file V\+L\+C\+Writer.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a8c81ad4fb2c30fa7d5a2350a25337057}\label{classvvenc_1_1VLCWriter_a8c81ad4fb2c30fa7d5a2350a25337057}} 
+\index{VLCWriter@{VLCWriter}!isByteAligned@{isByteAligned}}
+\index{isByteAligned@{isByteAligned}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{isByteAligned()}{isByteAligned()}}
+{\footnotesize\ttfamily bool is\+Byte\+Aligned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 108 of file V\+L\+C\+Writer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classvvenc_1_1VLCWriter_a8c81ad4fb2c30fa7d5a2350a25337057_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCWriter_a8c81ad4fb2c30fa7d5a2350a25337057_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a9f39f0e805401bf13c33d75a0300415b}\label{classvvenc_1_1VLCWriter_a9f39f0e805401bf13c33d75a0300415b}} 
+\index{VLCWriter@{VLCWriter}!setBitstream@{setBitstream}}
+\index{setBitstream@{setBitstream}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{setBitstream()}{setBitstream()}}
+{\footnotesize\ttfamily void set\+Bitstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 94 of file V\+L\+C\+Writer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCWriter_a9f39f0e805401bf13c33d75a0300415b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a130d201b982b03b7272c301cf37f8471}\label{classvvenc_1_1VLCWriter_a130d201b982b03b7272c301cf37f8471}} 
+\index{VLCWriter@{VLCWriter}!xWriteCode@{xWriteCode}}
+\index{xWriteCode@{xWriteCode}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteCode()}{xWriteCode()}}
+{\footnotesize\ttfamily void x\+Write\+Code (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Code,  }\item[{uint32\+\_\+t}]{ui\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 137 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classvvenc_1_1VLCWriter_a130d201b982b03b7272c301cf37f8471_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a0205cc29801f06570de82a861d8445c5}\label{classvvenc_1_1VLCWriter_a0205cc29801f06570de82a861d8445c5}} 
+\index{VLCWriter@{VLCWriter}!xWriteFlag@{xWriteFlag}}
+\index{xWriteFlag@{xWriteFlag}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteFlag()}{xWriteFlag()}}
+{\footnotesize\ttfamily void x\+Write\+Flag (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 166 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvvenc_1_1VLCWriter_a0205cc29801f06570de82a861d8445c5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a5cf061102261b75ae6de5613089ceeca}\label{classvvenc_1_1VLCWriter_a5cf061102261b75ae6de5613089ceeca}} 
+\index{VLCWriter@{VLCWriter}!xWriteRbspTrailingBits@{xWriteRbspTrailingBits}}
+\index{xWriteRbspTrailingBits@{xWriteRbspTrailingBits}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteRbspTrailingBits()}{xWriteRbspTrailingBits()}}
+{\footnotesize\ttfamily void x\+Write\+Rbsp\+Trailing\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 171 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCWriter_a5cf061102261b75ae6de5613089ceeca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCWriter_a5cf061102261b75ae6de5613089ceeca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_aec2cec0f54baf1b08e09614cffd4ee6c}\label{classvvenc_1_1VLCWriter_aec2cec0f54baf1b08e09614cffd4ee6c}} 
+\index{VLCWriter@{VLCWriter}!xWriteSCode@{xWriteSCode}}
+\index{xWriteSCode@{xWriteSCode}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSCode()}{xWriteSCode()}}
+{\footnotesize\ttfamily void x\+Write\+S\+Code (\begin{DoxyParamCaption}\item[{int}]{code,  }\item[{uint32\+\_\+t}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 130 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classvvenc_1_1VLCWriter_aec2cec0f54baf1b08e09614cffd4ee6c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a0ff7bd33f16e3236e773bbb3df5fc38b}\label{classvvenc_1_1VLCWriter_a0ff7bd33f16e3236e773bbb3df5fc38b}} 
+\index{VLCWriter@{VLCWriter}!xWriteSvlc@{xWriteSvlc}}
+\index{xWriteSvlc@{xWriteSvlc}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteSvlc()}{xWriteSvlc()}}
+{\footnotesize\ttfamily void x\+Write\+Svlc (\begin{DoxyParamCaption}\item[{int}]{i\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 160 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCWriter_a0ff7bd33f16e3236e773bbb3df5fc38b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a4f784d94e056b7aa9ec0bbd5eaee6cd4}\label{classvvenc_1_1VLCWriter_a4f784d94e056b7aa9ec0bbd5eaee6cd4}} 
+\index{VLCWriter@{VLCWriter}!xWriteUvlc@{xWriteUvlc}}
+\index{xWriteUvlc@{xWriteUvlc}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{xWriteUvlc()}{xWriteUvlc()}}
+{\footnotesize\ttfamily void x\+Write\+Uvlc (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 143 of file V\+L\+C\+Writer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{classvvenc_1_1VLCWriter_a4f784d94e056b7aa9ec0bbd5eaee6cd4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classvvenc_1_1VLCWriter_a4f784d94e056b7aa9ec0bbd5eaee6cd4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCWriter_a4b314369623a13eb437df97b370dc76c}\label{classvvenc_1_1VLCWriter_a4b314369623a13eb437df97b370dc76c}} 
+\index{VLCWriter@{VLCWriter}!m\_pcBitIf@{m\_pcBitIf}}
+\index{m\_pcBitIf@{m\_pcBitIf}!VLCWriter@{VLCWriter}}
+\doxysubsubsection{\texorpdfstring{m\_pcBitIf}{m\_pcBitIf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}}$\ast$ m\+\_\+pc\+Bit\+If\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 89 of file V\+L\+C\+Writer.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{VLCWriter_8h}{V\+L\+C\+Writer.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{VLCWriter_8cpp}{V\+L\+C\+Writer.\+cpp}}\end{DoxyCompactItemize}

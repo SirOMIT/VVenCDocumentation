@@ -1,0 +1,269 @@
+\hypertarget{classvvenc_1_1AccessUnitList}{}\doxysection{Access\+Unit\+List}
+\label{classvvenc_1_1AccessUnitList}\index{AccessUnitList@{AccessUnitList}}
+
+
+{\ttfamily \#include \char`\"{}Nal.\+h\char`\"{}}
+
+
+
+Inherits list$<$ N\+A\+L\+Unit\+E\+B\+S\+P $\ast$ $>$.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1AccessUnitList_ae5e8bc1b86213c8dd55a2a9a69f147ce}{Access\+Unit\+List}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1AccessUnitList_a551ed8660052ec698e5fea7d9519c7b3}{$\sim$\+Access\+Unit\+List}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AccessUnitList_ad602e1e6601488a9294b6e922498c2ab}{clear\+Au}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a14050394e707f3e161142beefaf7415a}{cts}}
+\begin{DoxyCompactList}\small\item\em composition time stamp \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a1aedd1ab91b3b73f59fce57af8b4b42a}{cts\+Valid}}
+\begin{DoxyCompactList}\small\item\em composition time stamp valid flag \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a43b56d1de9a28d065ec033fd3e0282b3}{dts}}
+\begin{DoxyCompactList}\small\item\em decoding time stamp \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a6942f351c28d86a13f3af0e146cf65b4}{dts\+Valid}}
+\begin{DoxyCompactList}\small\item\em decoding time stamp valid flag \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a9408bfd8f9367244161c906ac11702a5}{Info\+String}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1AccessUnitList_af987af22aae1c6aaf2bc514f693d42eb}{poc}}
+\begin{DoxyCompactList}\small\item\em picture order count \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a24accdbd8b7d5e195d5fcfa62c775473}{rap}}
+\begin{DoxyCompactList}\small\item\em random access point flag \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1AccessUnitList_ab2047d19f8e65f73084223a1289521a8}{ref\+Pic}}
+\begin{DoxyCompactList}\small\item\em reference picture \end{DoxyCompactList}\item 
+vvenc\+Slice\+Type \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a7ea15d247816b1b84434f215e9bfde9e}{slice\+Type}}
+\begin{DoxyCompactList}\small\item\em slice type (I/\+P/B) $\ast$/ \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a6e27f49150e9a14580fb313cc2777e00}{status}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AccessUnitList_a6563b227bb64fed2e3c445a33b213bad}{temporal\+Layer}}
+\begin{DoxyCompactList}\small\item\em temporal layer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Access\+Unit is a list of one or more N\+AL units, according to the working draft. All N\+AL units within the object belong to the same access unit.
+
+N\+A\+L\+Units held in the Access\+Unit list are in E\+B\+SP format. Attempting to insert an \mbox{\hyperlink{structvvenc_1_1OutputNALUnit}{Output\+N\+A\+L\+Unit}} into the access unit will automatically cause the nalunit to have its headers written and anti-\/emulation performed.
+
+The Access\+Unit owns all pointers stored within. Destroying the Access\+Unit will delete all contained objects. 
+
+Definition at line 159 of file Nal.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_ae5e8bc1b86213c8dd55a2a9a69f147ce}\label{classvvenc_1_1AccessUnitList_ae5e8bc1b86213c8dd55a2a9a69f147ce}} 
+\index{AccessUnitList@{AccessUnitList}!AccessUnitList@{AccessUnitList}}
+\index{AccessUnitList@{AccessUnitList}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{AccessUnitList()}{AccessUnitList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 162 of file Nal.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{classvvenc_1_1AccessUnitList_ae5e8bc1b86213c8dd55a2a9a69f147ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a551ed8660052ec698e5fea7d9519c7b3}\label{classvvenc_1_1AccessUnitList_a551ed8660052ec698e5fea7d9519c7b3}} 
+\index{AccessUnitList@{AccessUnitList}!````~AccessUnitList@{$\sim$AccessUnitList}}
+\index{````~AccessUnitList@{$\sim$AccessUnitList}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{$\sim$AccessUnitList()}{~AccessUnitList()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 167 of file Nal.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classvvenc_1_1AccessUnitList_a551ed8660052ec698e5fea7d9519c7b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_ad602e1e6601488a9294b6e922498c2ab}\label{classvvenc_1_1AccessUnitList_ad602e1e6601488a9294b6e922498c2ab}} 
+\index{AccessUnitList@{AccessUnitList}!clearAu@{clearAu}}
+\index{clearAu@{clearAu}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{clearAu()}{clearAu()}}
+{\footnotesize\ttfamily void clear\+Au (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 172 of file Nal.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AccessUnitList_ad602e1e6601488a9294b6e922498c2ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a14050394e707f3e161142beefaf7415a}\label{classvvenc_1_1AccessUnitList_a14050394e707f3e161142beefaf7415a}} 
+\index{AccessUnitList@{AccessUnitList}!cts@{cts}}
+\index{cts@{cts}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{cts}{cts}}
+{\footnotesize\ttfamily uint64\+\_\+t cts}
+
+
+
+composition time stamp 
+
+
+
+Definition at line 193 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a1aedd1ab91b3b73f59fce57af8b4b42a}\label{classvvenc_1_1AccessUnitList_a1aedd1ab91b3b73f59fce57af8b4b42a}} 
+\index{AccessUnitList@{AccessUnitList}!ctsValid@{ctsValid}}
+\index{ctsValid@{ctsValid}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{ctsValid}{ctsValid}}
+{\footnotesize\ttfamily bool cts\+Valid}
+
+
+
+composition time stamp valid flag 
+
+
+
+Definition at line 199 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a43b56d1de9a28d065ec033fd3e0282b3}\label{classvvenc_1_1AccessUnitList_a43b56d1de9a28d065ec033fd3e0282b3}} 
+\index{AccessUnitList@{AccessUnitList}!dts@{dts}}
+\index{dts@{dts}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{dts}{dts}}
+{\footnotesize\ttfamily uint64\+\_\+t dts}
+
+
+
+decoding time stamp 
+
+
+
+Definition at line 194 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a6942f351c28d86a13f3af0e146cf65b4}\label{classvvenc_1_1AccessUnitList_a6942f351c28d86a13f3af0e146cf65b4}} 
+\index{AccessUnitList@{AccessUnitList}!dtsValid@{dtsValid}}
+\index{dtsValid@{dtsValid}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{dtsValid}{dtsValid}}
+{\footnotesize\ttfamily bool dts\+Valid}
+
+
+
+decoding time stamp valid flag 
+
+
+
+Definition at line 200 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a9408bfd8f9367244161c906ac11702a5}\label{classvvenc_1_1AccessUnitList_a9408bfd8f9367244161c906ac11702a5}} 
+\index{AccessUnitList@{AccessUnitList}!InfoString@{InfoString}}
+\index{InfoString@{InfoString}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{InfoString}{InfoString}}
+{\footnotesize\ttfamily std\+::string Info\+String}
+
+
+
+Definition at line 203 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_af987af22aae1c6aaf2bc514f693d42eb}\label{classvvenc_1_1AccessUnitList_af987af22aae1c6aaf2bc514f693d42eb}} 
+\index{AccessUnitList@{AccessUnitList}!poc@{poc}}
+\index{poc@{poc}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{poc}{poc}}
+{\footnotesize\ttfamily uint64\+\_\+t poc}
+
+
+
+picture order count 
+
+
+
+Definition at line 195 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a24accdbd8b7d5e195d5fcfa62c775473}\label{classvvenc_1_1AccessUnitList_a24accdbd8b7d5e195d5fcfa62c775473}} 
+\index{AccessUnitList@{AccessUnitList}!rap@{rap}}
+\index{rap@{rap}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{rap}{rap}}
+{\footnotesize\ttfamily bool rap}
+
+
+
+random access point flag 
+
+
+
+Definition at line 201 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_ab2047d19f8e65f73084223a1289521a8}\label{classvvenc_1_1AccessUnitList_ab2047d19f8e65f73084223a1289521a8}} 
+\index{AccessUnitList@{AccessUnitList}!refPic@{refPic}}
+\index{refPic@{refPic}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{refPic}{refPic}}
+{\footnotesize\ttfamily bool ref\+Pic}
+
+
+
+reference picture 
+
+
+
+Definition at line 202 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a7ea15d247816b1b84434f215e9bfde9e}\label{classvvenc_1_1AccessUnitList_a7ea15d247816b1b84434f215e9bfde9e}} 
+\index{AccessUnitList@{AccessUnitList}!sliceType@{sliceType}}
+\index{sliceType@{sliceType}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{sliceType}{sliceType}}
+{\footnotesize\ttfamily vvenc\+Slice\+Type slice\+Type}
+
+
+
+slice type (I/\+P/B) $\ast$/ 
+
+
+
+Definition at line 196 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a6e27f49150e9a14580fb313cc2777e00}\label{classvvenc_1_1AccessUnitList_a6e27f49150e9a14580fb313cc2777e00}} 
+\index{AccessUnitList@{AccessUnitList}!status@{status}}
+\index{status@{status}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily int status}
+
+
+
+Definition at line 198 of file Nal.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AccessUnitList_a6563b227bb64fed2e3c445a33b213bad}\label{classvvenc_1_1AccessUnitList_a6563b227bb64fed2e3c445a33b213bad}} 
+\index{AccessUnitList@{AccessUnitList}!temporalLayer@{temporalLayer}}
+\index{temporalLayer@{temporalLayer}!AccessUnitList@{AccessUnitList}}
+\doxysubsubsection{\texorpdfstring{temporalLayer}{temporalLayer}}
+{\footnotesize\ttfamily int temporal\+Layer}
+
+
+
+temporal layer 
+
+
+
+Definition at line 197 of file Nal.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Nal_8h}{Nal.\+h}}\end{DoxyCompactItemize}

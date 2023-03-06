@@ -1,0 +1,12 @@
+<map id="mip_pred_mode" name="mip_pred_mode">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,120,133"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1BinDecoderBase.html#a663c133ea93e68091465a9894a73ff2d" title=" " alt="" coords="391,150,553,191"/>
+<area shape="rect" id="node4" href="$namespacevvenc.html#a003b26a8a4642dcfd9b2a9cf87b9a551" title=" " alt="" coords="170,5,341,32"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1UnitArea.html#a757617e1ebf8cdcd3b69b08b778bb13f" title=" " alt="" coords="168,107,343,133"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1UnitArea.html#af4fc20e5d676250d96c09bcd2ef2a6b0" title=" " alt="" coords="405,77,539,104"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1CABACReader.html#afbcb76fd9cbce3f7a2ca94fc38c4a081" title=" " alt="" coords="184,208,327,235"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1InputBitstream.html#a851f98b4b9141bd0910ce136b93b8b14" title=" " alt="" coords="812,209,963,250"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#ac53aa3c2698bd12c75de54731c239805" title=" " alt="" coords="401,5,543,32"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1BinDecoderBase.html#a2895766cc40263ce1f3d71df4dd9f8be" title=" " alt="" coords="391,215,553,257"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1BinDecoderBase.html#a851e0041e268b44562278b4d23f49bbf" title=" " alt="" coords="601,209,764,250"/>
+</map>

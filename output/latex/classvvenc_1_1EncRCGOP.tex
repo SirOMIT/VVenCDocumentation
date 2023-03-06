@@ -1,0 +1,306 @@
+\hypertarget{classvvenc_1_1EncRCGOP}{}\doxysection{Enc\+R\+C\+G\+OP}
+\label{classvvenc_1_1EncRCGOP}\index{EncRCGOP@{EncRCGOP}}
+
+
+{\ttfamily \#include \char`\"{}Rate\+Ctrl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Enc\+R\+C\+G\+OP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classvvenc_1_1EncRCGOP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCGOP_a06ab26652030f26f2a8e26a911b67b0b}{Enc\+R\+C\+G\+OP}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCGOP_a2e06e436d43f9a78d380ad6239d1499f}{$\sim$\+Enc\+R\+C\+G\+OP}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a39d3ea6b32b0fb45ae6b9f56609b19b9}{create}} (\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$enc\+R\+C\+Seq, int num\+Pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a1c0b9204320936cee8de0940ee484836}{update\+After\+Picture}} (int bits\+Cost)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a7192b8cd46d8604a40846c7a736b84fe}{bits\+Left}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a3a2e8b59f1816785bf9179457a42032a}{max\+Est\+Lambda}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a9fc04d1dbe9e90211adae22edf1aa4ea}{min\+Est\+Lambda}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCGOP_aaaa6ab10c878338e74a04f5ca10b0fbb}{num\+Pics}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a4c47890a64ad759a83b19844a364d7d5}{pics\+Left}}
+\item 
+int $\ast$ \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a605565fdf0a219dff93994674ba113e9}{pic\+Target\+Bit\+In\+G\+OP}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a4973b73ee65d239c9bec2f8bf78846a3}{target\+Bits}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a28145de951dbb6373090a892b7869eff}{x\+Cal\+Equa\+Coeff}} (\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$enc\+R\+C\+Seq, double $\ast$lambda\+Ratio, double $\ast$equa\+CoeffA, double $\ast$equa\+CoeffB, int G\+O\+P\+Size)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a38746d97776368ee9ef0edfe8462fee9}{x\+Est\+G\+O\+P\+Target\+Bits}} (\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$enc\+R\+C\+Seq, int G\+O\+P\+Size)
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a5616af21697c6fbd66212a2ef31035fc}{x\+Solve\+Equa}} (\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$enc\+R\+C\+Seq, double target\+Bpp, double $\ast$equa\+CoeffA, double $\ast$equa\+CoeffB, int G\+O\+P\+Size)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncRCGOP_a011b1e71a29b3f4cf510174141783c64}{enc\+Rc\+Seq}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 160 of file Rate\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a06ab26652030f26f2a8e26a911b67b0b}\label{classvvenc_1_1EncRCGOP_a06ab26652030f26f2a8e26a911b67b0b}} 
+\index{EncRCGOP@{EncRCGOP}!EncRCGOP@{EncRCGOP}}
+\index{EncRCGOP@{EncRCGOP}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{EncRCGOP()}{EncRCGOP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCGOP}{Enc\+R\+C\+G\+OP}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 280 of file Rate\+Ctrl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a2e06e436d43f9a78d380ad6239d1499f}\label{classvvenc_1_1EncRCGOP_a2e06e436d43f9a78d380ad6239d1499f}} 
+\index{EncRCGOP@{EncRCGOP}!````~EncRCGOP@{$\sim$EncRCGOP}}
+\index{````~EncRCGOP@{$\sim$EncRCGOP}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncRCGOP()}{~EncRCGOP()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncRCGOP}{Enc\+R\+C\+G\+OP}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 292 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classvvenc_1_1EncRCGOP_a2e06e436d43f9a78d380ad6239d1499f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a39d3ea6b32b0fb45ae6b9f56609b19b9}\label{classvvenc_1_1EncRCGOP_a39d3ea6b32b0fb45ae6b9f56609b19b9}} 
+\index{EncRCGOP@{EncRCGOP}!create@{create}}
+\index{create@{create}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$}]{enc\+R\+C\+Seq,  }\item[{int}]{num\+Pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 297 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a39d3ea6b32b0fb45ae6b9f56609b19b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a39d3ea6b32b0fb45ae6b9f56609b19b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1EncRCGOP_a3a80b6032f86a56bec74609034b3246f}} 
+\index{EncRCGOP@{EncRCGOP}!destroy@{destroy}}
+\index{destroy@{destroy}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 500 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a1c0b9204320936cee8de0940ee484836}\label{classvvenc_1_1EncRCGOP_a1c0b9204320936cee8de0940ee484836}} 
+\index{EncRCGOP@{EncRCGOP}!updateAfterPicture@{updateAfterPicture}}
+\index{updateAfterPicture@{updateAfterPicture}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{updateAfterPicture()}{updateAfterPicture()}}
+{\footnotesize\ttfamily void update\+After\+Picture (\begin{DoxyParamCaption}\item[{int}]{bits\+Cost }\end{DoxyParamCaption})}
+
+
+
+Definition at line 558 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a1c0b9204320936cee8de0940ee484836_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a28145de951dbb6373090a892b7869eff}\label{classvvenc_1_1EncRCGOP_a28145de951dbb6373090a892b7869eff}} 
+\index{EncRCGOP@{EncRCGOP}!xCalEquaCoeff@{xCalEquaCoeff}}
+\index{xCalEquaCoeff@{xCalEquaCoeff}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{xCalEquaCoeff()}{xCalEquaCoeff()}}
+{\footnotesize\ttfamily void x\+Cal\+Equa\+Coeff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$}]{enc\+R\+C\+Seq,  }\item[{double $\ast$}]{lambda\+Ratio,  }\item[{double $\ast$}]{equa\+CoeffA,  }\item[{double $\ast$}]{equa\+CoeffB,  }\item[{int}]{G\+O\+P\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 510 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a28145de951dbb6373090a892b7869eff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a38746d97776368ee9ef0edfe8462fee9}\label{classvvenc_1_1EncRCGOP_a38746d97776368ee9ef0edfe8462fee9}} 
+\index{EncRCGOP@{EncRCGOP}!xEstGOPTargetBits@{xEstGOPTargetBits}}
+\index{xEstGOPTargetBits@{xEstGOPTargetBits}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{xEstGOPTargetBits()}{xEstGOPTargetBits()}}
+{\footnotesize\ttfamily int x\+Est\+G\+O\+P\+Target\+Bits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$}]{enc\+R\+C\+Seq,  }\item[{int}]{G\+O\+P\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 564 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a38746d97776368ee9ef0edfe8462fee9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a5616af21697c6fbd66212a2ef31035fc}\label{classvvenc_1_1EncRCGOP_a5616af21697c6fbd66212a2ef31035fc}} 
+\index{EncRCGOP@{EncRCGOP}!xSolveEqua@{xSolveEqua}}
+\index{xSolveEqua@{xSolveEqua}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{xSolveEqua()}{xSolveEqua()}}
+{\footnotesize\ttfamily double x\+Solve\+Equa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$}]{enc\+R\+C\+Seq,  }\item[{double}]{target\+Bpp,  }\item[{double $\ast$}]{equa\+CoeffA,  }\item[{double $\ast$}]{equa\+CoeffB,  }\item[{int}]{G\+O\+P\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 522 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCGOP_a5616af21697c6fbd66212a2ef31035fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a7192b8cd46d8604a40846c7a736b84fe}\label{classvvenc_1_1EncRCGOP_a7192b8cd46d8604a40846c7a736b84fe}} 
+\index{EncRCGOP@{EncRCGOP}!bitsLeft@{bitsLeft}}
+\index{bitsLeft@{bitsLeft}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{bitsLeft}{bitsLeft}}
+{\footnotesize\ttfamily int bits\+Left}
+
+
+
+Definition at line 179 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a011b1e71a29b3f4cf510174141783c64}\label{classvvenc_1_1EncRCGOP_a011b1e71a29b3f4cf510174141783c64}} 
+\index{EncRCGOP@{EncRCGOP}!encRcSeq@{encRcSeq}}
+\index{encRcSeq@{encRcSeq}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{encRcSeq}{encRcSeq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}}$\ast$ enc\+Rc\+Seq\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 185 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a3a2e8b59f1816785bf9179457a42032a}\label{classvvenc_1_1EncRCGOP_a3a2e8b59f1816785bf9179457a42032a}} 
+\index{EncRCGOP@{EncRCGOP}!maxEstLambda@{maxEstLambda}}
+\index{maxEstLambda@{maxEstLambda}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{maxEstLambda}{maxEstLambda}}
+{\footnotesize\ttfamily double max\+Est\+Lambda}
+
+
+
+Definition at line 182 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a9fc04d1dbe9e90211adae22edf1aa4ea}\label{classvvenc_1_1EncRCGOP_a9fc04d1dbe9e90211adae22edf1aa4ea}} 
+\index{EncRCGOP@{EncRCGOP}!minEstLambda@{minEstLambda}}
+\index{minEstLambda@{minEstLambda}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{minEstLambda}{minEstLambda}}
+{\footnotesize\ttfamily double min\+Est\+Lambda}
+
+
+
+Definition at line 181 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_aaaa6ab10c878338e74a04f5ca10b0fbb}\label{classvvenc_1_1EncRCGOP_aaaa6ab10c878338e74a04f5ca10b0fbb}} 
+\index{EncRCGOP@{EncRCGOP}!numPics@{numPics}}
+\index{numPics@{numPics}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{numPics}{numPics}}
+{\footnotesize\ttfamily int num\+Pics}
+
+
+
+Definition at line 176 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a4c47890a64ad759a83b19844a364d7d5}\label{classvvenc_1_1EncRCGOP_a4c47890a64ad759a83b19844a364d7d5}} 
+\index{EncRCGOP@{EncRCGOP}!picsLeft@{picsLeft}}
+\index{picsLeft@{picsLeft}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{picsLeft}{picsLeft}}
+{\footnotesize\ttfamily int pics\+Left}
+
+
+
+Definition at line 178 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a605565fdf0a219dff93994674ba113e9}\label{classvvenc_1_1EncRCGOP_a605565fdf0a219dff93994674ba113e9}} 
+\index{EncRCGOP@{EncRCGOP}!picTargetBitInGOP@{picTargetBitInGOP}}
+\index{picTargetBitInGOP@{picTargetBitInGOP}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{picTargetBitInGOP}{picTargetBitInGOP}}
+{\footnotesize\ttfamily int$\ast$ pic\+Target\+Bit\+In\+G\+OP}
+
+
+
+Definition at line 180 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCGOP_a4973b73ee65d239c9bec2f8bf78846a3}\label{classvvenc_1_1EncRCGOP_a4973b73ee65d239c9bec2f8bf78846a3}} 
+\index{EncRCGOP@{EncRCGOP}!targetBits@{targetBits}}
+\index{targetBits@{targetBits}!EncRCGOP@{EncRCGOP}}
+\doxysubsubsection{\texorpdfstring{targetBits}{targetBits}}
+{\footnotesize\ttfamily int target\+Bits}
+
+
+
+Definition at line 177 of file Rate\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8h}{Rate\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8cpp}{Rate\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

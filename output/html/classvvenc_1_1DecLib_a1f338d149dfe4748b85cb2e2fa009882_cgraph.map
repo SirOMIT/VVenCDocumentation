@@ -1,0 +1,9 @@
+<map id="isSliceNaluFirstInAU" name="isSliceNaluFirstInAU">
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,149,105"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1InputNALUnit.html#ad0e665b644a4daaa4c8a2cc19f31b5cb" title=" " alt="" coords="208,5,352,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1HLSyntaxReader.html#a9257a8fdbed1ff9c532a7e7d34421177" title=" " alt="" coords="197,71,363,112"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1HLSyntaxReader.html#a0b98eeee77b103b25cbad24c488a07b2" title=" " alt="" coords="197,136,363,177"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1Slice.html#a9eab1b90766d3b0d907951e3e6a13a19" title=" " alt="" coords="419,19,597,46"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1ParameterSetManager.html#a95381851aae27e6d6801568b2d5dc7ec" title=" " alt="" coords="411,71,605,112"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1ParameterSetManager.html#a94988fafa81024317e16243a8e5b6d54" title=" " alt="" coords="411,136,605,177"/>
+</map>

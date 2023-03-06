@@ -1,0 +1,7 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/EncoderLib/BitAllocation.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/EncoderLib/BitAllocation.h">
+<area shape="rect" id="node1" title="Bit allocation class for QP adaptation and, possibly, rate control (header)" alt="" coords="275,5,431,76"/>
+<area shape="rect" id="node2" href="$BitAllocation_8cpp.html" title="Bit allocation class for QP adaptation and, possibly, rate control." alt="" coords="5,124,161,195"/>
+<area shape="rect" id="node3" href="$EncCu_8cpp.html" title="Coding Unit (CU) encoder class." alt="" coords="185,124,341,195"/>
+<area shape="rect" id="node4" href="$EncGOP_8cpp.html" title="GOP encoder class." alt="" coords="365,124,521,195"/>
+<area shape="rect" id="node5" href="$EncSlice_8cpp.html" title="slice encoder class" alt="" coords="545,124,701,195"/>
+</map>

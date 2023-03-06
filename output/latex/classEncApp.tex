@@ -1,0 +1,364 @@
+\hypertarget{classEncApp}{}\doxysection{Enc\+App}
+\label{classEncApp}\index{EncApp@{EncApp}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+App.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEncApp_ab1812d9c141295f24b0a4bfd848cc470}{Enc\+App}} ()
+\item 
+virtual \mbox{\hyperlink{classEncApp_a21cea1370d35ec22ffe809c8733ac990}{$\sim$\+Enc\+App}} ()
+\item 
+bool \mbox{\hyperlink{classEncApp_aa234f998a894c9a5628171969888983f}{is\+Show\+Version}} ()
+\item 
+void \mbox{\hyperlink{classEncApp_a0c20f92b62220a1bc011a15b82bd4207}{msg\+Fnc}} (int level, const char $\ast$fmt, va\+\_\+list args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::fstream \mbox{\hyperlink{classEncApp_ae636dc1ce7f12cea4c79f08dd74e3772}{m\+\_\+bitstream}}
+\begin{DoxyCompactList}\small\item\em output bitstream file \end{DoxyCompactList}\item 
+apputils\+::\+V\+V\+Enc\+App\+Cfg \mbox{\hyperlink{classEncApp_a3b027ee08b7fec5810c52ba9f4fb501a}{m\+\_\+c\+Enc\+App\+Cfg}}
+\begin{DoxyCompactList}\small\item\em encoder configuration \end{DoxyCompactList}\item 
+vvenc\+Encoder $\ast$ \mbox{\hyperlink{classEncApp_a884cbc041efdcc7e582a5f07b8f49d7e}{m\+\_\+enc\+Ctx}}
+\begin{DoxyCompactList}\small\item\em encoder library class \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classEncApp_a5ed7a15b8f0e0e3d81351d54642b3120}{m\+\_\+essential\+Bytes}}
+\item 
+unsigned \mbox{\hyperlink{classEncApp_a97c4819f9f7dfd34a96e7ddae6105471}{m\+\_\+total\+Bytes}}
+\item 
+apputils\+::\+Yuv\+File\+IO \mbox{\hyperlink{classEncApp_a48df55bee8e584b58cd4a15030c027d9}{m\+\_\+yuv\+Input\+File}}
+\begin{DoxyCompactList}\small\item\em input Y\+UV file \end{DoxyCompactList}\item 
+apputils\+::\+Yuv\+File\+IO \mbox{\hyperlink{classEncApp_a9eac32a775b3d077dc1444f69a677e7e}{m\+\_\+yuv\+Recon\+File}}
+\begin{DoxyCompactList}\small\item\em output Y\+UV reconstruction file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classEncApp_afd3242744c5b250a6198c2a6feaaa14c}{parse\+Cfg}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em parse configuration file to fill member variables \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEncApp_a201eddecd65dcf1a76105a867d021ef4}{encode}} ()
+\begin{DoxyCompactList}\small\item\em main encoding function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEncApp_afcabe1317b20264ccf7356128532f022}{output\+AU}} (const vvenc\+Access\+Unit \&au)
+\begin{DoxyCompactList}\small\item\em write encoded access units to bitstream \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classEncApp_a3d44ea851510cb92dc9935ce8396d11d}{output\+Yuv}} (void $\ast$, vvenc\+Y\+U\+V\+Buffer $\ast$)
+\begin{DoxyCompactList}\small\item\em write reconstructed yuv output \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classEncApp_a73552c16b13019451a8911f2e4ee9672}{open\+File\+IO}} ()
+\item 
+void \mbox{\hyperlink{classEncApp_a9ad0203ee6870ad2baa23443924afcb2}{close\+File\+IO}} ()
+\item 
+void \mbox{\hyperlink{classEncApp_afd50a397a9043c6500fbe8c8d33a0a0c}{print\+Rate\+Summary}} (int frames\+Rcvd)
+\item 
+void \mbox{\hyperlink{classEncApp_a446eecdc5f224be39e4656098c82c5cd}{print\+Chroma\+Format}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 75 of file Enc\+App.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEncApp_ab1812d9c141295f24b0a4bfd848cc470}\label{classEncApp_ab1812d9c141295f24b0a4bfd848cc470}} 
+\index{EncApp@{EncApp}!EncApp@{EncApp}}
+\index{EncApp@{EncApp}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{EncApp()}{EncApp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEncApp}{Enc\+App}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a21cea1370d35ec22ffe809c8733ac990}\label{classEncApp_a21cea1370d35ec22ffe809c8733ac990}} 
+\index{EncApp@{EncApp}!````~EncApp@{$\sim$EncApp}}
+\index{````~EncApp@{$\sim$EncApp}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncApp()}{~EncApp()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classEncApp}{Enc\+App}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 93 of file Enc\+App.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEncApp_a9ad0203ee6870ad2baa23443924afcb2}\label{classEncApp_a9ad0203ee6870ad2baa23443924afcb2}} 
+\index{EncApp@{EncApp}!closeFileIO@{closeFileIO}}
+\index{closeFileIO@{closeFileIO}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{closeFileIO()}{closeFileIO()}}
+{\footnotesize\ttfamily void close\+File\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 339 of file Enc\+App.\+cpp.
+
+\mbox{\Hypertarget{classEncApp_a201eddecd65dcf1a76105a867d021ef4}\label{classEncApp_a201eddecd65dcf1a76105a867d021ef4}} 
+\index{EncApp@{EncApp}!encode@{encode}}
+\index{encode@{encode}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily int encode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main encoding function 
+
+main encode function 
+
+Definition at line 112 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncApp_a201eddecd65dcf1a76105a867d021ef4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classEncApp_a201eddecd65dcf1a76105a867d021ef4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEncApp_aa234f998a894c9a5628171969888983f}\label{classEncApp_aa234f998a894c9a5628171969888983f}} 
+\index{EncApp@{EncApp}!isShowVersion@{isShowVersion}}
+\index{isShowVersion@{isShowVersion}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{isShowVersion()}{isShowVersion()}}
+{\footnotesize\ttfamily bool is\+Show\+Version (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file Enc\+App.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classEncApp_aa234f998a894c9a5628171969888983f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEncApp_a0c20f92b62220a1bc011a15b82bd4207}\label{classEncApp_a0c20f92b62220a1bc011a15b82bd4207}} 
+\index{EncApp@{EncApp}!msgFnc@{msgFnc}}
+\index{msgFnc@{msgFnc}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{msgFnc()}{msgFnc()}}
+{\footnotesize\ttfamily void msg\+Fnc (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a73552c16b13019451a8911f2e4ee9672}\label{classEncApp_a73552c16b13019451a8911f2e4ee9672}} 
+\index{EncApp@{EncApp}!openFileIO@{openFileIO}}
+\index{openFileIO@{openFileIO}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{openFileIO()}{openFileIO()}}
+{\footnotesize\ttfamily bool open\+File\+IO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 315 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classEncApp_a73552c16b13019451a8911f2e4ee9672_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEncApp_afcabe1317b20264ccf7356128532f022}\label{classEncApp_afcabe1317b20264ccf7356128532f022}} 
+\index{EncApp@{EncApp}!outputAU@{outputAU}}
+\index{outputAU@{outputAU}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{outputAU()}{outputAU()}}
+{\footnotesize\ttfamily void output\+AU (\begin{DoxyParamCaption}\item[{const vvenc\+Access\+Unit \&}]{au }\end{DoxyParamCaption})}
+
+
+
+write encoded access units to bitstream 
+
+
+
+Definition at line 289 of file Enc\+App.\+cpp.
+
+\mbox{\Hypertarget{classEncApp_a3d44ea851510cb92dc9935ce8396d11d}\label{classEncApp_a3d44ea851510cb92dc9935ce8396d11d}} 
+\index{EncApp@{EncApp}!outputYuv@{outputYuv}}
+\index{outputYuv@{outputYuv}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{outputYuv()}{outputYuv()}}
+{\footnotesize\ttfamily void output\+Yuv (\begin{DoxyParamCaption}\item[{void $\ast$}]{ctx,  }\item[{vvenc\+Y\+U\+V\+Buffer $\ast$}]{yuv\+Out\+Buf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+write reconstructed yuv output 
+
+
+
+Definition at line 299 of file Enc\+App.\+cpp.
+
+\mbox{\Hypertarget{classEncApp_afd3242744c5b250a6198c2a6feaaa14c}\label{classEncApp_afd3242744c5b250a6198c2a6feaaa14c}} 
+\index{EncApp@{EncApp}!parseCfg@{parseCfg}}
+\index{parseCfg@{parseCfg}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{parseCfg()}{parseCfg()}}
+{\footnotesize\ttfamily bool parse\+Cfg (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+parse configuration file to fill member variables 
+
+
+
+Definition at line 91 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classEncApp_afd3242744c5b250a6198c2a6feaaa14c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classEncApp_afd3242744c5b250a6198c2a6feaaa14c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEncApp_a446eecdc5f224be39e4656098c82c5cd}\label{classEncApp_a446eecdc5f224be39e4656098c82c5cd}} 
+\index{EncApp@{EncApp}!printChromaFormat@{printChromaFormat}}
+\index{printChromaFormat@{printChromaFormat}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{printChromaFormat()}{printChromaFormat()}}
+{\footnotesize\ttfamily void print\+Chroma\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 359 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncApp_a446eecdc5f224be39e4656098c82c5cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classEncApp_afd50a397a9043c6500fbe8c8d33a0a0c}\label{classEncApp_afd50a397a9043c6500fbe8c8d33a0a0c}} 
+\index{EncApp@{EncApp}!printRateSummary@{printRateSummary}}
+\index{printRateSummary@{printRateSummary}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{printRateSummary()}{printRateSummary()}}
+{\footnotesize\ttfamily void print\+Rate\+Summary (\begin{DoxyParamCaption}\item[{int}]{frames\+Rcvd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 347 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEncApp_afd50a397a9043c6500fbe8c8d33a0a0c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEncApp_ae636dc1ce7f12cea4c79f08dd74e3772}\label{classEncApp_ae636dc1ce7f12cea4c79f08dd74e3772}} 
+\index{EncApp@{EncApp}!m\_bitstream@{m\_bitstream}}
+\index{m\_bitstream@{m\_bitstream}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_bitstream}{m\_bitstream}}
+{\footnotesize\ttfamily std\+::fstream m\+\_\+bitstream\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+output bitstream file 
+
+
+
+Definition at line 82 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a3b027ee08b7fec5810c52ba9f4fb501a}\label{classEncApp_a3b027ee08b7fec5810c52ba9f4fb501a}} 
+\index{EncApp@{EncApp}!m\_cEncAppCfg@{m\_cEncAppCfg}}
+\index{m\_cEncAppCfg@{m\_cEncAppCfg}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_cEncAppCfg}{m\_cEncAppCfg}}
+{\footnotesize\ttfamily apputils\+::\+V\+V\+Enc\+App\+Cfg m\+\_\+c\+Enc\+App\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+encoder configuration 
+
+
+
+Definition at line 78 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a884cbc041efdcc7e582a5f07b8f49d7e}\label{classEncApp_a884cbc041efdcc7e582a5f07b8f49d7e}} 
+\index{EncApp@{EncApp}!m\_encCtx@{m\_encCtx}}
+\index{m\_encCtx@{m\_encCtx}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_encCtx}{m\_encCtx}}
+{\footnotesize\ttfamily vvenc\+Encoder$\ast$ m\+\_\+enc\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+encoder library class 
+
+
+
+Definition at line 79 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a5ed7a15b8f0e0e3d81351d54642b3120}\label{classEncApp_a5ed7a15b8f0e0e3d81351d54642b3120}} 
+\index{EncApp@{EncApp}!m\_essentialBytes@{m\_essentialBytes}}
+\index{m\_essentialBytes@{m\_essentialBytes}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_essentialBytes}{m\_essentialBytes}}
+{\footnotesize\ttfamily unsigned m\+\_\+essential\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 83 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a97c4819f9f7dfd34a96e7ddae6105471}\label{classEncApp_a97c4819f9f7dfd34a96e7ddae6105471}} 
+\index{EncApp@{EncApp}!m\_totalBytes@{m\_totalBytes}}
+\index{m\_totalBytes@{m\_totalBytes}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_totalBytes}{m\_totalBytes}}
+{\footnotesize\ttfamily unsigned m\+\_\+total\+Bytes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a48df55bee8e584b58cd4a15030c027d9}\label{classEncApp_a48df55bee8e584b58cd4a15030c027d9}} 
+\index{EncApp@{EncApp}!m\_yuvInputFile@{m\_yuvInputFile}}
+\index{m\_yuvInputFile@{m\_yuvInputFile}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_yuvInputFile}{m\_yuvInputFile}}
+{\footnotesize\ttfamily apputils\+::\+Yuv\+File\+IO m\+\_\+yuv\+Input\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+input Y\+UV file 
+
+
+
+Definition at line 80 of file Enc\+App.\+h.
+
+\mbox{\Hypertarget{classEncApp_a9eac32a775b3d077dc1444f69a677e7e}\label{classEncApp_a9eac32a775b3d077dc1444f69a677e7e}} 
+\index{EncApp@{EncApp}!m\_yuvReconFile@{m\_yuvReconFile}}
+\index{m\_yuvReconFile@{m\_yuvReconFile}!EncApp@{EncApp}}
+\doxysubsubsection{\texorpdfstring{m\_yuvReconFile}{m\_yuvReconFile}}
+{\footnotesize\ttfamily apputils\+::\+Yuv\+File\+IO m\+\_\+yuv\+Recon\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+output Y\+UV reconstruction file 
+
+
+
+Definition at line 81 of file Enc\+App.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+App/vvenc\+F\+Fapp/\mbox{\hyperlink{EncApp_8h}{Enc\+App.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+App/vvenc\+F\+Fapp/\mbox{\hyperlink{EncApp_8cpp}{Enc\+App.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,449 @@
+\hypertarget{classvvenc_1_1BinDecoderBase}{}\doxysection{Bin\+Decoder\+Base}
+\label{classvvenc_1_1BinDecoderBase}\index{BinDecoderBase@{BinDecoderBase}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Decoder.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bin\+Decoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{classvvenc_1_1BinDecoderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bin\+Decoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1BinDecoderBase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a1f49b79f5586c90e36991d2b33312e33}{$\sim$\+Bin\+Decoder\+Base}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}{align}} ()
+\item 
+virtual unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a5e061c18d443942cbb928e1f5416c3e6}{decode\+Bin}} (unsigned ctx\+Id)=0
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a663c133ea93e68091465a9894a73ff2d}{decode\+Bin\+EP}} ()
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a2895766cc40263ce1f3d71df4dd9f8be}{decode\+Bins\+EP}} (unsigned num\+Bins)
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a1d105f6488c0cf6415e8d55f3eab70a6}{decode\+Bin\+Trm}} ()
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_ae03c79b221ab54d02c7b336aae6207b1}{decode\+Rem\+Abs\+EP}} (unsigned go\+Rice\+Par, unsigned cutoff, int max\+Log2\+Tr\+Dynamic\+Range)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}{finish}} ()
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a4ad2fdc38a6a6e3b06de4fef2f5184eb}{get\+Num\+Bits\+Read}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a8a301460b46f794a2ad828bf169f25fa}{init}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$bitstream)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a929021ea9913c7d4da3f20233fbbb61a}{reset}} (int qp, int init\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a60de64d75454385b23995437f1d72669}{start}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_afa90a5c5c3718da584a64351bf5a8876}{uninit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinDecoderBase_ae2a17c09a826f0f0220fac14d5439710}{Bin\+Decoder\+Base}} (const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$dummy)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_aca0c2595bd7b5412f84c5d7761d17f5e}{m\+\_\+bits\+Needed}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a1f29296d7394ceada639c38be5cf2e4b}{m\+\_\+\+Bitstream}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a90df4df84c8434a6e7806035deae873e}{m\+\_\+\+Range}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a9948446886acfe490dc9bc03dec19e91}{m\+\_\+\+Value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinDecoderBase_a851e0041e268b44562278b4d23f49bbf}{decode\+Aligned\+Bins\+EP}} (unsigned num\+Bins)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 61 of file Bin\+Decoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_ae2a17c09a826f0f0220fac14d5439710}\label{classvvenc_1_1BinDecoderBase_ae2a17c09a826f0f0220fac14d5439710}} 
+\index{BinDecoderBase@{BinDecoderBase}!BinDecoderBase@{BinDecoderBase}}
+\index{BinDecoderBase@{BinDecoderBase}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{BinDecoderBase()}{BinDecoderBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 65 of file Bin\+Decoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a1f49b79f5586c90e36991d2b33312e33}\label{classvvenc_1_1BinDecoderBase_a1f49b79f5586c90e36991d2b33312e33}} 
+\index{BinDecoderBase@{BinDecoderBase}!````~BinDecoderBase@{$\sim$BinDecoderBase}}
+\index{````~BinDecoderBase@{$\sim$BinDecoderBase}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinDecoderBase()}{~BinDecoderBase()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BinDecoderBase}{Bin\+Decoder\+Base}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Bin\+Decoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}\label{classvvenc_1_1BinDecoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}} 
+\index{BinDecoderBase@{BinDecoderBase}!align@{align}}
+\index{align@{align}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{align()}{align()}}
+{\footnotesize\ttfamily void align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 242 of file Bin\+Decoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a851e0041e268b44562278b4d23f49bbf}\label{classvvenc_1_1BinDecoderBase_a851e0041e268b44562278b4d23f49bbf}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeAlignedBinsEP@{decodeAlignedBinsEP}}
+\index{decodeAlignedBinsEP@{decodeAlignedBinsEP}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeAlignedBinsEP()}{decodeAlignedBinsEP()}}
+{\footnotesize\ttfamily unsigned decode\+Aligned\+Bins\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{num\+Bins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 248 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classvvenc_1_1BinDecoderBase_a851e0041e268b44562278b4d23f49bbf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a851e0041e268b44562278b4d23f49bbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a5e061c18d443942cbb928e1f5416c3e6}\label{classvvenc_1_1BinDecoderBase_a5e061c18d443942cbb928e1f5416c3e6}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeBin@{decodeBin}}
+\index{decodeBin@{decodeBin}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeBin()}{decodeBin()}}
+{\footnotesize\ttfamily virtual unsigned decode\+Bin (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BinDecoder_aa25d400698c0c8ab0b7e870fa89bdb3d}{Bin\+Decoder}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1BinDecoderBase_a5e061c18d443942cbb928e1f5416c3e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a663c133ea93e68091465a9894a73ff2d}\label{classvvenc_1_1BinDecoderBase_a663c133ea93e68091465a9894a73ff2d}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeBinEP@{decodeBinEP}}
+\index{decodeBinEP@{decodeBinEP}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeBinEP()}{decodeBinEP()}}
+{\footnotesize\ttfamily unsigned decode\+Bin\+EP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{classvvenc_1_1BinDecoderBase_a663c133ea93e68091465a9894a73ff2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a663c133ea93e68091465a9894a73ff2d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a2895766cc40263ce1f3d71df4dd9f8be}\label{classvvenc_1_1BinDecoderBase_a2895766cc40263ce1f3d71df4dd9f8be}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeBinsEP@{decodeBinsEP}}
+\index{decodeBinsEP@{decodeBinsEP}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeBinsEP()}{decodeBinsEP()}}
+{\footnotesize\ttfamily unsigned decode\+Bins\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{num\+Bins }\end{DoxyParamCaption})}
+
+
+
+Definition at line 132 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a2895766cc40263ce1f3d71df4dd9f8be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a2895766cc40263ce1f3d71df4dd9f8be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a1d105f6488c0cf6415e8d55f3eab70a6}\label{classvvenc_1_1BinDecoderBase_a1d105f6488c0cf6415e8d55f3eab70a6}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeBinTrm@{decodeBinTrm}}
+\index{decodeBinTrm@{decodeBinTrm}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeBinTrm()}{decodeBinTrm()}}
+{\footnotesize\ttfamily unsigned decode\+Bin\+Trm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 217 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1BinDecoderBase_a1d105f6488c0cf6415e8d55f3eab70a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a1d105f6488c0cf6415e8d55f3eab70a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_ae03c79b221ab54d02c7b336aae6207b1}\label{classvvenc_1_1BinDecoderBase_ae03c79b221ab54d02c7b336aae6207b1}} 
+\index{BinDecoderBase@{BinDecoderBase}!decodeRemAbsEP@{decodeRemAbsEP}}
+\index{decodeRemAbsEP@{decodeRemAbsEP}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{decodeRemAbsEP()}{decodeRemAbsEP()}}
+{\footnotesize\ttfamily unsigned decode\+Rem\+Abs\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{go\+Rice\+Par,  }\item[{unsigned}]{cutoff,  }\item[{int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_ae03c79b221ab54d02c7b336aae6207b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_ae03c79b221ab54d02c7b336aae6207b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}\label{classvvenc_1_1BinDecoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}} 
+\index{BinDecoderBase@{BinDecoderBase}!finish@{finish}}
+\index{finish@{finish}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily void finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classvvenc_1_1BinDecoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a4ad2fdc38a6a6e3b06de4fef2f5184eb}\label{classvvenc_1_1BinDecoderBase_a4ad2fdc38a6a6e3b06de4fef2f5184eb}} 
+\index{BinDecoderBase@{BinDecoderBase}!getNumBitsRead@{getNumBitsRead}}
+\index{getNumBitsRead@{getNumBitsRead}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{getNumBitsRead()}{getNumBitsRead()}}
+{\footnotesize\ttfamily unsigned get\+Num\+Bits\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Bin\+Decoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classvvenc_1_1BinDecoderBase_a4ad2fdc38a6a6e3b06de4fef2f5184eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classvvenc_1_1BinDecoderBase_a4ad2fdc38a6a6e3b06de4fef2f5184eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a8a301460b46f794a2ad828bf169f25fa}\label{classvvenc_1_1BinDecoderBase_a8a301460b46f794a2ad828bf169f25fa}} 
+\index{BinDecoderBase@{BinDecoderBase}!init@{init}}
+\index{init@{init}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{bitstream }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file Bin\+Decoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a8a301460b46f794a2ad828bf169f25fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a929021ea9913c7d4da3f20233fbbb61a}\label{classvvenc_1_1BinDecoderBase_a929021ea9913c7d4da3f20233fbbb61a}} 
+\index{BinDecoderBase@{BinDecoderBase}!reset@{reset}}
+\index{reset@{reset}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{int}]{qp,  }\item[{int}]{init\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 104 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a929021ea9913c7d4da3f20233fbbb61a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a929021ea9913c7d4da3f20233fbbb61a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a60de64d75454385b23995437f1d72669}\label{classvvenc_1_1BinDecoderBase_a60de64d75454385b23995437f1d72669}} 
+\index{BinDecoderBase@{BinDecoderBase}!start@{start}}
+\index{start@{start}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 86 of file Bin\+Decoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvvenc_1_1BinDecoderBase_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinDecoderBase_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_afa90a5c5c3718da584a64351bf5a8876}\label{classvvenc_1_1BinDecoderBase_afa90a5c5c3718da584a64351bf5a8876}} 
+\index{BinDecoderBase@{BinDecoderBase}!uninit@{uninit}}
+\index{uninit@{uninit}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{uninit()}{uninit()}}
+{\footnotesize\ttfamily void uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 80 of file Bin\+Decoder.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_aca0c2595bd7b5412f84c5d7761d17f5e}\label{classvvenc_1_1BinDecoderBase_aca0c2595bd7b5412f84c5d7761d17f5e}} 
+\index{BinDecoderBase@{BinDecoderBase}!m\_bitsNeeded@{m\_bitsNeeded}}
+\index{m\_bitsNeeded@{m\_bitsNeeded}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_bitsNeeded}{m\_bitsNeeded}}
+{\footnotesize\ttfamily int32\+\_\+t m\+\_\+bits\+Needed\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 90 of file Bin\+Decoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a1f29296d7394ceada639c38be5cf2e4b}\label{classvvenc_1_1BinDecoderBase_a1f29296d7394ceada639c38be5cf2e4b}} 
+\index{BinDecoderBase@{BinDecoderBase}!m\_Bitstream@{m\_Bitstream}}
+\index{m\_Bitstream@{m\_Bitstream}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Bitstream}{m\_Bitstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}}$\ast$ m\+\_\+\+Bitstream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 87 of file Bin\+Decoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a90df4df84c8434a6e7806035deae873e}\label{classvvenc_1_1BinDecoderBase_a90df4df84c8434a6e7806035deae873e}} 
+\index{BinDecoderBase@{BinDecoderBase}!m\_Range@{m\_Range}}
+\index{m\_Range@{m\_Range}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Range}{m\_Range}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 88 of file Bin\+Decoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinDecoderBase_a9948446886acfe490dc9bc03dec19e91}\label{classvvenc_1_1BinDecoderBase_a9948446886acfe490dc9bc03dec19e91}} 
+\index{BinDecoderBase@{BinDecoderBase}!m\_Value@{m\_Value}}
+\index{m\_Value@{m\_Value}!BinDecoderBase@{BinDecoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Value}{m\_Value}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 89 of file Bin\+Decoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{BinDecoder_8h}{Bin\+Decoder.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{BinDecoder_8cpp}{Bin\+Decoder.\+cpp}}\end{DoxyCompactItemize}

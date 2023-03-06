@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['valgrind_5fmemclear_12169',['VALGRIND_MEMCLEAR',['../TypeDef_8h.html#afb6934a3583b11db9dd2ca4beb240545',1,'TypeDef.h']]],
+  ['vs_5ffile_5fversion_12170',['VS_FILE_VERSION',['../App_2vvencapp_2resource__version_8h.html#ae54c12cc16d913732d5611069684f604',1,'VS_FILE_VERSION():&#160;resource_version.h'],['../App_2vvencFFapp_2resource__version_8h.html#ae54c12cc16d913732d5611069684f604',1,'VS_FILE_VERSION():&#160;resource_version.h'],['../Lib_2apputils_2resource__version_8h.html#ae54c12cc16d913732d5611069684f604',1,'VS_FILE_VERSION():&#160;resource_version.h'],['../Lib_2vvenc_2resource__version_8h.html#ae54c12cc16d913732d5611069684f604',1,'VS_FILE_VERSION():&#160;resource_version.h']]],
+  ['vs_5ffile_5fversion_5fstr_12171',['VS_FILE_VERSION_STR',['../App_2vvencapp_2resource__version_8h.html#a0d1093b5d359aa6763d23c123565b381',1,'VS_FILE_VERSION_STR():&#160;resource_version.h'],['../App_2vvencFFapp_2resource__version_8h.html#a0d1093b5d359aa6763d23c123565b381',1,'VS_FILE_VERSION_STR():&#160;resource_version.h'],['../Lib_2apputils_2resource__version_8h.html#a0d1093b5d359aa6763d23c123565b381',1,'VS_FILE_VERSION_STR():&#160;resource_version.h'],['../Lib_2vvenc_2resource__version_8h.html#a0d1093b5d359aa6763d23c123565b381',1,'VS_FILE_VERSION_STR():&#160;resource_version.h']]]
+];

@@ -1,0 +1,309 @@
+\hypertarget{classvvenc_1_1VLCReader}{}\doxysection{V\+L\+C\+Reader}
+\label{classvvenc_1_1VLCReader}\index{VLCReader@{VLCReader}}
+
+
+{\ttfamily \#include \char`\"{}V\+L\+C\+Reader.\+h\char`\"{}}
+
+
+
+Inheritance diagram for V\+L\+C\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classvvenc_1_1VLCReader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+L\+C\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classvvenc_1_1VLCReader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1VLCReader_aff9f677cb9c5a04904cc559915848360}{get\+Bitstream}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_a0b98eeee77b103b25cbad24c488a07b2}{set\+Bitstream}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1VLCReader_a71c04418dcf65094017c91d875bafdf0}{V\+L\+C\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1VLCReader_ad57735c91d4e7b8f14f106b02b344adb}{$\sim$\+V\+L\+C\+Reader}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1VLCReader_a8c81ad4fb2c30fa7d5a2350a25337057}{is\+Byte\+Aligned}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_a629ed4319228029e11063a9b0610fa4a}{x\+Read\+Code}} (uint32\+\_\+t length, uint32\+\_\+t \&val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_ae6a64ac536f14d7cb60e8f28745d6e15}{x\+Read\+Flag}} (bool \&val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_a313aabd133afbfd394b38d18a4ab7a77}{x\+Read\+Flag}} (uint32\+\_\+t \&val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_ad321aba0bd41fe51493f9821327a4cce}{x\+Read\+Rbsp\+Trailing\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_a15cc6cd35fa64ec06565f39f7c5c7dfa}{x\+Read\+S\+Code}} (uint32\+\_\+t length, int \&val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_abe814ff52850b2c14c23b6a76fefd2bb}{x\+Read\+Svlc}} (int \&val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1VLCReader_aa8c1a98efe8b2454d67135fc27fdbaca}{x\+Read\+Uvlc}} (uint32\+\_\+t \&val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1VLCReader_aa97690ab0d62f9614ea3f8363df0dbc5}{m\+\_\+pc\+Bitstream}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 87 of file V\+L\+C\+Reader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a71c04418dcf65094017c91d875bafdf0}\label{classvvenc_1_1VLCReader_a71c04418dcf65094017c91d875bafdf0}} 
+\index{VLCReader@{VLCReader}!VLCReader@{VLCReader}}
+\index{VLCReader@{VLCReader}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{VLCReader()}{VLCReader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1VLCReader}{V\+L\+C\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 92 of file V\+L\+C\+Reader.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_ad57735c91d4e7b8f14f106b02b344adb}\label{classvvenc_1_1VLCReader_ad57735c91d4e7b8f14f106b02b344adb}} 
+\index{VLCReader@{VLCReader}!````~VLCReader@{$\sim$VLCReader}}
+\index{````~VLCReader@{$\sim$VLCReader}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$VLCReader()}{~VLCReader()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1VLCReader}{V\+L\+C\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 93 of file V\+L\+C\+Reader.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_aff9f677cb9c5a04904cc559915848360}\label{classvvenc_1_1VLCReader_aff9f677cb9c5a04904cc559915848360}} 
+\index{VLCReader@{VLCReader}!getBitstream@{getBitstream}}
+\index{getBitstream@{getBitstream}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{getBitstream()}{getBitstream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}}$\ast$ get\+Bitstream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 111 of file V\+L\+C\+Reader.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCReader_aff9f677cb9c5a04904cc559915848360_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a8c81ad4fb2c30fa7d5a2350a25337057}\label{classvvenc_1_1VLCReader_a8c81ad4fb2c30fa7d5a2350a25337057}} 
+\index{VLCReader@{VLCReader}!isByteAligned@{isByteAligned}}
+\index{isByteAligned@{isByteAligned}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{isByteAligned()}{isByteAligned()}}
+{\footnotesize\ttfamily bool is\+Byte\+Aligned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 115 of file V\+L\+C\+Reader.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classvvenc_1_1VLCReader_a8c81ad4fb2c30fa7d5a2350a25337057_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCReader_a8c81ad4fb2c30fa7d5a2350a25337057_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a0b98eeee77b103b25cbad24c488a07b2}\label{classvvenc_1_1VLCReader_a0b98eeee77b103b25cbad24c488a07b2}} 
+\index{VLCReader@{VLCReader}!setBitstream@{setBitstream}}
+\index{setBitstream@{setBitstream}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{setBitstream()}{setBitstream()}}
+{\footnotesize\ttfamily void set\+Bitstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 110 of file V\+L\+C\+Reader.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCReader_a0b98eeee77b103b25cbad24c488a07b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a629ed4319228029e11063a9b0610fa4a}\label{classvvenc_1_1VLCReader_a629ed4319228029e11063a9b0610fa4a}} 
+\index{VLCReader@{VLCReader}!xReadCode@{xReadCode}}
+\index{xReadCode@{xReadCode}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadCode()}{xReadCode()}}
+{\footnotesize\ttfamily void x\+Read\+Code (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{length,  }\item[{uint32\+\_\+t \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 132 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1VLCReader_a629ed4319228029e11063a9b0610fa4a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_ae6a64ac536f14d7cb60e8f28745d6e15}\label{classvvenc_1_1VLCReader_ae6a64ac536f14d7cb60e8f28745d6e15}} 
+\index{VLCReader@{VLCReader}!xReadFlag@{xReadFlag}}
+\index{xReadFlag@{xReadFlag}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadFlag()}{xReadFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void x\+Read\+Flag (\begin{DoxyParamCaption}\item[{bool \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 193 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvvenc_1_1VLCReader_ae6a64ac536f14d7cb60e8f28745d6e15_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a313aabd133afbfd394b38d18a4ab7a77}\label{classvvenc_1_1VLCReader_a313aabd133afbfd394b38d18a4ab7a77}} 
+\index{VLCReader@{VLCReader}!xReadFlag@{xReadFlag}}
+\index{xReadFlag@{xReadFlag}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadFlag()}{xReadFlag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void x\+Read\+Flag (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 188 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classvvenc_1_1VLCReader_a313aabd133afbfd394b38d18a4ab7a77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_ad321aba0bd41fe51493f9821327a4cce}\label{classvvenc_1_1VLCReader_ad321aba0bd41fe51493f9821327a4cce}} 
+\index{VLCReader@{VLCReader}!xReadRbspTrailingBits@{xReadRbspTrailingBits}}
+\index{xReadRbspTrailingBits@{xReadRbspTrailingBits}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadRbspTrailingBits()}{xReadRbspTrailingBits()}}
+{\footnotesize\ttfamily void x\+Read\+Rbsp\+Trailing\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 200 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCReader_ad321aba0bd41fe51493f9821327a4cce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VLCReader_ad321aba0bd41fe51493f9821327a4cce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_a15cc6cd35fa64ec06565f39f7c5c7dfa}\label{classvvenc_1_1VLCReader_a15cc6cd35fa64ec06565f39f7c5c7dfa}} 
+\index{VLCReader@{VLCReader}!xReadSCode@{xReadSCode}}
+\index{xReadSCode@{xReadSCode}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadSCode()}{xReadSCode()}}
+{\footnotesize\ttfamily void x\+Read\+S\+Code (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{length,  }\item[{int \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 121 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classvvenc_1_1VLCReader_a15cc6cd35fa64ec06565f39f7c5c7dfa_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_abe814ff52850b2c14c23b6a76fefd2bb}\label{classvvenc_1_1VLCReader_abe814ff52850b2c14c23b6a76fefd2bb}} 
+\index{VLCReader@{VLCReader}!xReadSvlc@{xReadSvlc}}
+\index{xReadSvlc@{xReadSvlc}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadSvlc()}{xReadSvlc()}}
+{\footnotesize\ttfamily void x\+Read\+Svlc (\begin{DoxyParamCaption}\item[{int \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 163 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classvvenc_1_1VLCReader_abe814ff52850b2c14c23b6a76fefd2bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_aa8c1a98efe8b2454d67135fc27fdbaca}\label{classvvenc_1_1VLCReader_aa8c1a98efe8b2454d67135fc27fdbaca}} 
+\index{VLCReader@{VLCReader}!xReadUvlc@{xReadUvlc}}
+\index{xReadUvlc@{xReadUvlc}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{xReadUvlc()}{xReadUvlc()}}
+{\footnotesize\ttfamily void x\+Read\+Uvlc (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 138 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{classvvenc_1_1VLCReader_aa8c1a98efe8b2454d67135fc27fdbaca_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VLCReader_aa97690ab0d62f9614ea3f8363df0dbc5}\label{classvvenc_1_1VLCReader_aa97690ab0d62f9614ea3f8363df0dbc5}} 
+\index{VLCReader@{VLCReader}!m\_pcBitstream@{m\_pcBitstream}}
+\index{m\_pcBitstream@{m\_pcBitstream}!VLCReader@{VLCReader}}
+\doxysubsubsection{\texorpdfstring{m\_pcBitstream}{m\_pcBitstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}}$\ast$ m\+\_\+pc\+Bitstream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 90 of file V\+L\+C\+Reader.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{VLCReader_8h}{V\+L\+C\+Reader.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{VLCReader_8cpp}{V\+L\+C\+Reader.\+cpp}}\end{DoxyCompactItemize}

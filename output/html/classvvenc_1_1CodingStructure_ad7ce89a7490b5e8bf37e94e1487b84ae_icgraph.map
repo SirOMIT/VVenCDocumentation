@@ -1,0 +1,28 @@
+<map id="getOrgBuf" name="getOrgBuf">
+<area shape="rect" id="node1" title=" " alt="" coords="917,545,999,571"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1InterSearch.html#a9c686c694eaa5ea4e414cb623bde0139" title="set ME search range" alt="" coords="660,5,869,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1IntraSearch.html#a2f2d24beeac934b8e930618a1bc94799" title=" " alt="" coords="217,163,382,204"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1EncModeCtrl.html#a4d1ad3ec282953369b710a504a45b3bb" title=" " alt="" coords="694,355,835,396"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1InterSearch.html#aa391293054038b0549cc65f918625083" title=" " alt="" coords="15,449,147,491"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1InterSearch.html#a20ad2ab1a41da1b47cf2a94655f06ee5" title="encoder estimation &#45; inter prediction (non&#45;skip)" alt="" coords="699,537,831,579"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1EncModeCtrl.html#a16a22824c1148cc2a32d4ea81fd7676f" title=" " alt="" coords="694,603,835,644"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1EncCu.html#acf0c6550d24ca89cf44af3c071fef70e" title=" " alt="" coords="663,669,866,695"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1InterSearch.html#ae10e385d23d8c4126831cd7bd566bcbc" title=" " alt="" coords="699,720,831,761"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1EncCu.html#ae1057760dcb778380b3be8f81052455f" title=" " alt="" coords="669,786,861,813"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1EncCu.html#a7103b0783ef89134258f7c91bb3a2b8b" title=" " alt="" coords="669,837,860,879"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1EncCu.html#a30b2db976f3abc3a7cc2aacfaf89247a" title=" " alt="" coords="661,903,868,944"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1EncCu.html#aba062f994924313093623fba76258127" title=" " alt="" coords="661,968,868,1009"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1EncCu.html#a2e5e665d78ee04a1e44b4e1ade85857f" title=" " alt="" coords="661,1033,868,1075"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1EncCu.html#a80efd046255da3b038da3afe991ecb1f" title=" " alt="" coords="664,1099,865,1126"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1IntraSearch.html#a0a0576a391a467b58c55ba890914bda2" title=" " alt="" coords="204,76,395,117"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1InterSearch.html#a2bbe3d87d2037bae43740148ba4b8f46" title=" " alt="" coords="662,420,867,461"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1IntraSearch.html#a910e25be08ac1ad3b7d22e4c1af784a3" title=" " alt="" coords="443,173,611,215"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1IntraSearch.html#a596b206741287b3176fb061196d41142" title=" " alt="" coords="687,289,842,331"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1IntraSearch.html#a0c75e7ca4f50a4d128e58c626e5c8056" title=" " alt="" coords="699,224,831,265"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1InterSearch.html#af1328a689e0e09c6c3b8fe514bfa2e07" title=" " alt="" coords="461,720,593,761"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1IntraSearch.html#a15cada00b0f72aac01cae54c3a12b57a" title=" " alt="" coords="5,167,156,208"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1InterSearch.html#ace6b0a8e41a7e3012e9dc21ccb253c68" title=" " alt="" coords="443,420,612,461"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1InterSearch.html#ad110b18cf976a78f734532554e21a187" title=" " alt="" coords="233,420,365,461"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1IntraSearch.html#a369dfd77f4e587823f799f45db5cdfd6" title=" " alt="" coords="222,257,377,299"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1IntraSearch.html#adaaf9526c2f40027b1fb9e9523ee9a23" title=" " alt="" coords="461,341,593,383"/>
+</map>

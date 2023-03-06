@@ -1,0 +1,11 @@
+<map id="initPic" name="initPic">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,64,138"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1ReshapeData.html#a7d22b1559ee09a73cd4b076d9dbe419f" title=" " alt="" coords="165,5,310,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1ReshapeData.html#a34ac9531488c3771de7a716ae05c37e9" title=" " alt="" coords="112,71,363,112"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1RdCost.html#a6a0bb76def7dd5098d4247032ec12957" title=" " alt="" coords="143,136,331,177"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1InterSearch.html#adb2189fa0855c297a7c6ac48658f28ff" title="set adaptive search range based on poc difference" alt="" coords="171,201,303,243"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1Picture.html#abf1a8b43357468a369a08f71ff4bdd88" title=" " alt="" coords="411,133,572,159"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1Slice.html#ae599e53f303dfb53f417ba15c0b57669" title=" " alt="" coords="411,183,571,210"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1Slice.html#a530d6092c6fac441ddd03762efdf5c2f" title=" " alt="" coords="418,234,565,261"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1Slice.html#ae712c51e5029cc6e18d4272f9df547cf" title=" " alt="" coords="419,285,563,311"/>
+</map>

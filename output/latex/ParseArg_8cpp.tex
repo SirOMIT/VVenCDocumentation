@@ -1,0 +1,67 @@
+\hypertarget{ParseArg_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/apputils/\+Parse\+Arg.cpp File Reference}
+\label{ParseArg_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/ParseArg.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/apputils/ParseArg.cpp}}
+{\ttfamily \#include \char`\"{}apputils/\+Parse\+Arg.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$regex$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+Include dependency graph for Parse\+Arg.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ParseArg_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1ArgvParser}{Argv\+Parser}}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1CfgStreamParser}{Cfg\+Stream\+Parser}}
+\item 
+struct \mbox{\hyperlink{structapputils_1_1df_1_1program__options__lite_1_1OptionWriter}{Option\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceapputils}{apputils}}
+\item 
+ \mbox{\hyperlink{namespaceapputils_1_1df}{apputils\+::df}}
+\item 
+ \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite}{apputils\+::df\+::program\+\_\+options\+\_\+lite}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a20db85ddaa48adb8dad2868fbbb08d82}{do\+Help}} (std\+::ostream \&out, Options \&opts, unsigned columns)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_af932d54483b50454bd320bed03672249}{do\+Help\+Opt}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned pad\+\_\+short=0)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a1b12fa5483c206cbfdff0aaebe1acbca}{do\+Print\+Help\+Entry}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned desc\+\_\+width, unsigned opt\+\_\+width, unsigned pad\+\_\+short=0)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_ab6b4255b87b2eee0186accee08e75303}{parse\+Config\+File}} (Options \&opts, const std\+::string \&filename, Error\+Reporter \&error\+\_\+reporter)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a512acb340d098d1058e45022b9f57c1e}{print\+Formatted\+Config\+Entry}} (std\+::ostream \&out, const Options\+::\+Names \&entry, unsigned desc\+\_\+width, unsigned opt\+\_\+width, unsigned opt\+\_\+value\+\_\+width)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a1e02196bdf429a5daac28d7f49475feb}{save\+Config}} (std\+::ostream \&out, Options \&opts, std\+::list$<$ std\+::string $>$ ignore\+Param\+Lst, unsigned columns)
+\item 
+std\+::list$<$ const char $\ast$ $>$ \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a3ef42a6bd4d667340a62b2cc569e7eee}{scan\+Argv}} (Options \&opts, unsigned argc, const char $\ast$argv\mbox{[}$\,$\mbox{]}, Error\+Reporter \&error\+\_\+reporter)
+\item 
+void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_af21015f87a9074b44f8ee84872e0a2b3}{set\+Defaults}} (Options \&opts)
+\item 
+static void \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a7c9bed7ff43d848e10e723e6cf878f53}{set\+Options}} (Options\+::\+Names\+Ptr\+List \&opt\+\_\+list, const std\+::string \&value, Error\+Reporter \&error\+\_\+reporter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Error\+Reporter \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_ad916cd953fa5f3c647ea737d231d8e6f}{default\+\_\+error\+\_\+reporter}}
+\item 
+static const char \mbox{\hyperlink{namespaceapputils_1_1df_1_1program__options__lite_a12a273467de0bb4c5993aac2c03a8d3d}{spaces}} \mbox{[}41\mbox{]} = \char`\"{} \char`\"{}
+\end{DoxyCompactItemize}

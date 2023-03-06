@@ -1,0 +1,108 @@
+\hypertarget{Unit_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Unit.h File Reference}
+\label{Unit_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Unit.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Unit.h}}
+
+
+defines unit as a set of blocks and basic unit types (coding, prediction, transform)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Motion\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iterator$>$}\newline
+{\ttfamily \#include \char`\"{}Buffer.\+h\char`\"{}}\newline
+Include dependency graph for Unit.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Unit_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Unit_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1InterPredictionData}{Inter\+Prediction\+Data}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1IntraPredictionData}{Intra\+Prediction\+Data}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1UnitAreaRelative}{Unit\+Area\+Relative}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1UnitIterator}{Unit\+Iterator$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1UnitTraverser}{Unit\+Traverser$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Unit_8h_a156fe8c7f0119b881807b603a195efa8}{\+\_\+\+\_\+\+I\+N\+\_\+\+U\+N\+I\+T\+\_\+\+H\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef Unit\+Traverser$<$ const Coding\+Unit $>$ \mbox{\hyperlink{namespacevvenc_a9efa99fc7c7ab16a423e00e40fc6db13}{c\+C\+U\+Traverser}}
+\item 
+typedef Unit\+Traverser$<$ const Transform\+Unit $>$ \mbox{\hyperlink{namespacevvenc_a27097cc8e1295b99c76ec30a5bf92288}{c\+T\+U\+Traverser}}
+\item 
+typedef Unit\+Traverser$<$ Coding\+Unit $>$ \mbox{\hyperlink{namespacevvenc_adc904614c6f115e997cbe2b79d299221}{C\+U\+Traverser}}
+\item 
+typedef Unit\+Traverser$<$ Transform\+Unit $>$ \mbox{\hyperlink{namespacevvenc_a646b4a2982f13bfac0865d6640044321}{T\+U\+Traverser}}
+\item 
+typedef static\+\_\+vector$<$ Comp\+Area, M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+T\+B\+L\+O\+C\+KS $>$ \mbox{\hyperlink{namespacevvenc_a7115c1edba7d90fba5e9b18776828f1a}{Unit\+Blocks\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Comp\+Area \mbox{\hyperlink{namespacevvenc_aaa2206e9bda45f7ae991a7ba99f6b9da}{clip\+Area}} (const Comp\+Area \&comp\+Area, const Area \&bounding\+Box)
+\item 
+Unit\+Area \mbox{\hyperlink{namespacevvenc_ab76753e42615e9c1cc62243c0aea29c6}{clip\+Area}} (const Unit\+Area \&area, const Unit\+Area \&bounding\+Box)
+\item 
+Position \mbox{\hyperlink{namespacevvenc_a53579a28ee885b4b31028ff0ca72b0d6}{recalc\+Position}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+cf, const Channel\+Type src\+C\+Ht, const Channel\+Type dst\+C\+Ht, const Position \&pos)
+\item 
+Position \mbox{\hyperlink{namespacevvenc_ab743383a0d1f0f5b7f3180a19b3e3b99}{recalc\+Position}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+cf, const Component\+ID src\+C\+Id, const Component\+ID dst\+C\+Id, const Position \&pos)
+\item 
+Size \mbox{\hyperlink{namespacevvenc_aee885b8f2473e41a8be9ec58ea8f68b8}{recalc\+Size}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+cf, const Channel\+Type src\+C\+Ht, const Channel\+Type dst\+C\+Ht, const Size \&size)
+\item 
+Size \mbox{\hyperlink{namespacevvenc_a0ab4c66b52d38f1a05058296ff79224d}{recalc\+Size}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+cf, const Component\+ID src\+C\+Id, const Component\+ID dst\+C\+Id, const Size \&size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+defines unit as a set of blocks and basic unit types (coding, prediction, transform) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Unit_8h_a156fe8c7f0119b881807b603a195efa8}\label{Unit_8h_a156fe8c7f0119b881807b603a195efa8}} 
+\index{Unit.h@{Unit.h}!\_\_IN\_UNIT\_H\_\_@{\_\_IN\_UNIT\_H\_\_}}
+\index{\_\_IN\_UNIT\_H\_\_@{\_\_IN\_UNIT\_H\_\_}!Unit.h@{Unit.h}}
+\doxysubsubsection{\texorpdfstring{\_\_IN\_UNIT\_H\_\_}{\_\_IN\_UNIT\_H\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+I\+N\+\_\+\+U\+N\+I\+T\+\_\+\+H\+\_\+\+\_\+}
+
+
+
+Definition at line 284 of file Unit.\+h.
+

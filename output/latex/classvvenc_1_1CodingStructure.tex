@@ -1,0 +1,2986 @@
+\hypertarget{classvvenc_1_1CodingStructure}{}\doxysection{Coding\+Structure}
+\label{classvvenc_1_1CodingStructure}\index{CodingStructure@{CodingStructure}}
+
+
+{\ttfamily \#include \char`\"{}Coding\+Structure.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Coding\+Structure\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure_a48f6a54e81cbd68e54ad396b29cf89d6}{Coding\+Structure}} (\mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \&unit\+Cache, std\+::mutex $\ast$mutex)
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_ab8d7c6f1f74987701adcbb8f16b5cfe9}{add\+CU}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$cu\+Init=nullptr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a19852e52eee8260a242359ede1e23084}{add\+Empty\+T\+Us}} (\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_af20c40a7e35ac4f521d2870360b17571}{add\+Mi\+To\+Lut}} (\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1HPMVInfo}{H\+P\+M\+V\+Info}}, \mbox{\hyperlink{namespacevvenc_a29e793801cf569e694e052d3d802cb0c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+H\+M\+V\+P\+\_\+\+C\+A\+N\+DS}} $>$ \&lut, const \mbox{\hyperlink{structvvenc_1_1HPMVInfo}{H\+P\+M\+V\+Info}} \&mi)
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_adc4eacf3bc04920048d835c3370b3922}{add\+TU}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$cu, \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$tu\+Init=nullptr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5ce4476d29757a7fc5717358cc353003}{allocate\+Vectors\+At\+Pic\+Level}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7dc9a34daab4df2ec4942c7a01d3c069}{clear\+C\+Us}} (bool force=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac0a8e9885f1c7c492a6949e06c15c834}{clear\+T\+Us}} (bool force=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9438393d97917de85923c5ba948b1fa5}{compact\+Resize}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\mbox{\hyperlink{classvvenc_1_1CodingStructure_abce2e87aaf7e3dd8fb0a930b2f1fb82f}{area}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a15510b8ee2c0b3c9cfd4f4c84f85966d}{copy\+Structure}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} tree\+Type, const bool copy\+T\+Us=false, const bool copy\+Reco\+Buffer=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9181db8d2378a393dbda75a651fa491d}{create}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&\+\_\+area, const bool is\+Top\+Layer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_adffc8b7436b3ccc0105909a200197ad9}{create}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const bool is\+Top\+Layer, const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$\+\_\+pcv)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a89b7acbaaa996f6d56436411a74e0fa6}{create\+Coeffs}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a12a3d621536ecbfdcb60851de8d83d61}{create\+Temp\+Buffers}} (const bool is\+Top\+Layer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad8a3ccf30b50113d1ff0b924246103be}{destroy\+Coeffs}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a813e0565873f1e6b5589c10d3cd5f88b}{destroy\+Temp\+Buffers}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a06239777dc199325835220c894ba5898}{get\+CU}} (const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&\+\_\+ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} \+\_\+tree\+Type)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aad71fc024846fd5c208850ff41295546}{get\+CU}} (const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&\+\_\+ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} \+\_\+tree\+Type) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a04a8966a272288393328b8fad8fcc216}{get\+CU}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} \+\_\+tree\+Type)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac1fb6d2f0f24ad434b770a78ba00d30a}{get\+CU}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} \+\_\+tree\+Type) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_ae3dafa58ebfeb6e20ea40c98c1fc5a77}{get\+C\+U\+Restricted}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cur\+Cu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a86c4b3c5ad185ff01aa830180d0a7d10}{get\+C\+U\+Restricted}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} cur\+Pos, const unsigned cur\+Slice\+Idx, const unsigned cur\+Tile\+Idx, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} tree\+Type) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3e72738182945b9719af23a69d776871}{get\+L\+F\+P\+Map\+Ptr}} (const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} edge\+Dir)
+\item 
+\mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} const  $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9f3d2c2f4f5f4419be857e752c528141}{get\+L\+F\+P\+Map\+Ptr}} (const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} edge\+Dir) const
+\item 
+ptrdiff\+\_\+t \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3cd548b5c0ac3206112ea482136cf0c0}{get\+L\+F\+P\+Map\+Stride}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a397a1cc2c50b064b940f4550c42cc9c9}{L\+F\+P\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ab589e5276aaffb42c5942d17e8111934}{get\+Loop\+Filter\+Param\+Buf}} (const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} \&edge\+Dir)
+\item 
+const \mbox{\hyperlink{namespacevvenc_ac79f582eb93fe399649f76560d37ec88}{C\+L\+F\+P\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a414216dfe6a767dd5820d83d3e1f841a}{get\+Loop\+Filter\+Param\+Buf}} (const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} \&edge\+Dir) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_af512a5486dc48b9f7c1893a6d0128f76}{get\+Luma\+CU}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos)
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_accf7bce0a090945d381aa2b5a7f9f204}{get\+Mi\+Map\+Ptr}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} const  $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3c77df4dc66e58f3a29df83ae28342f4}{get\+Mi\+Map\+Ptr}} () const
+\item 
+ptrdiff\+\_\+t \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad31155e41b991deca06377ae18b63c90}{get\+Mi\+Map\+Stride}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a1408150be1e47e771e3d1cf29c3bf910}{get\+Motion\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5a02d2ef75ac71543163044c7bcf708a}{get\+Motion\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9cc3d16d58715898ebea5b8a5ea91abd}{get\+Motion\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&\+\_\+area)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af1d903390e6bc6ed6d1f72039f88109c}{get\+Motion\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&\+\_\+area) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a852019aa0cb7a36ab413e59991b99d04}{get\+Motion\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+area)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9acfeed21045190687d0036c8871152a}{get\+Motion\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+area) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5d64571c0440bcae38f0e977f819163e}{get\+Motion\+Info}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad4bcc838947b7f72605b6be4ed770d93}{get\+Motion\+Info}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7197532c0854f18987672c11d3517ac2}{get\+Org\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0e7bf5952c3ea092d59a5012b311a147}{get\+Org\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad7ce89a7490b5e8bf37e94e1487b84ae}{get\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a526280aa3ef2166a385461c78f4e8b01}{get\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a684cdbde6cb416acbfbdb081e8558617}{get\+Org\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a19180c13a8b0af498ba4f2ff5cc75ea6}{get\+Org\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a92590d327b8c1e54afb57a7f705dfc7f}{get\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af50b496372bf57713dabf648dcd73d75}{get\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a76a5cc74a4c2e4af27ff1ed92f48979e}{get\+Pred\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af9b8e3617587669d3740d714fa993ade}{get\+Pred\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3ea2538f1e59894e5c5069a1e2037a3a}{get\+Pred\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af72ec5776fafa435a69238cf3a7cfcdd}{get\+Pred\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aa7f36b7fab968b87f312a96fa5397d05}{get\+Pred\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aec9e2131ee4d03801ca86d425f62562e}{get\+Pred\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a505fdd56209118a64de54a38c2ba7830}{get\+Pred\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a77824a3146be0d491ea9b0014f12eb7e}{get\+Pred\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0a9d9e09800544956f3b0933f0eaefa3}{get\+Reco\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9cbcf6cbd2fa744e7de01cfe4ad3f316}{get\+Reco\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad77d144af5cd4d736ee529e3e74a7367}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af0c9ce95be3df4219ecedb27f2762234}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aee021e1a0b2774638746e6e9e76a5519}{get\+Reco\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a318ee043b69487a1597339d3abbb8075}{get\+Reco\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a1aa6a89b4c9854f3e3a1a7207a4162da}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aac7fcee6fcb0e5c67e109ad6f27437dc}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5eb8ac6504657fb728a189efd838bfc9}{get\+Reco\+Buf\+Ref}} ()
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad693826e1c6895736c4619268e3b38a3}{get\+Resi\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a32ec995cfecb8e170fa29b190df7fbf7}{get\+Resi\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a1f0cc4c41acf6121c238f776a9ceb422}{get\+Resi\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a6d4a8fc38c20302930bfe1cb8873d3cf}{get\+Resi\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3fe3f68b466d3ef13da2238266b5a13d}{get\+Resi\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a22aa2346b875399fec2545c18c11ab54}{get\+Resi\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af25de3ecd73445454edbbfa9b72d2a12}{get\+Resi\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9ab5075c73e0bbd4fb9f7efe0d5987c0}{get\+Resi\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7e085c1e4911d02dcb59840d2e95c89a}{get\+Rsp\+Org\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac1ba4fb333012bd5df466e41b48b716f}{get\+Rsp\+Org\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af3b393634f7347dadafa6b2698fa0b45}{get\+Rsp\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a94f2e4db0c3a687850757ddf4ef2d6cf}{get\+Rsp\+Org\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac78614fd2368af284c49052b6cd17e70}{get\+Rsp\+Reco\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a156d4868d58c46d93f68257b65e131f3}{get\+Rsp\+Reco\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ae1b62ea8953effa1be0f1bea3865fbbb}{get\+Rsp\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7479b226cd73789dcb8dc65390dc860a}{get\+Rsp\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitScale}{Unit\+Scale}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ab44a35666c387bdd9e18faeeeb6756b3}{get\+Scaling}} (const \mbox{\hyperlink{structvvenc_1_1UnitScale_a5c7685a8c1aef62133308288d8c47803}{Unit\+Scale\+::\+Scalining\+Type}} type, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type=\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a9eef8706f96e8b3511a2450e90075f59}{C\+H\+\_\+L}}) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a241a044b809bd5c7ae79fd5d15566c28}{get\+TU}} (const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&\+\_\+ch\+Type)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac1580bd6629efcd2d3d0d8830b6279f8}{get\+TU}} (const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&\+\_\+ch\+Type) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a6c41c6c76165546883bb78f1be449635}{get\+TU}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const int sub\+Tu\+Idx=-\/1)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aae3934300792aab8eab2a4a906952424}{get\+TU}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const int sub\+Tu\+Idx=-\/1) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a38a7a517ca343b6073d7584b927b3860}{get\+T\+U\+Restricted}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos, const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&cur\+Tu, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_addbc9f48f7c8a1aa7b176c60c517f5b0}{init\+Struct\+Data}} (const int QP=\mbox{\hyperlink{namespacevvenc_a4521994cc996921f223544e09d194ab9}{M\+A\+X\+\_\+\+I\+NT}}, const bool skip\+Mot\+Buf=false, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} $\ast$\mbox{\hyperlink{classvvenc_1_1CodingStructure_abce2e87aaf7e3dd8fb0a930b2f1fb82f}{area}}=nullptr, bool force=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a8bf56cf33951dd9eda176c617c509eb0}{init\+Sub\+Structure}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&sub\+Area, const bool is\+Tu\+Enc, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$p\+Org\+Buffer=nullptr, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$p\+Rsp\+Buffer=nullptr)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a6e35010343a078f4492b68c984412bb6}{rebind\+Pic\+Bufs}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_ab28e0caee71d21ed19f59303e11a1ef7}{release\+Intermediate\+Data}} ()
+\item 
+const int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7d7b085ea8df31ea722fd63e0c8eb0bf}{signal\+Mode\+Cons}} (const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}}, \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, const \mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} mode\+Type\+Parent) const
+\item 
+\mbox{\hyperlink{namespacevvenc_adc904614c6f115e997cbe2b79d299221}{C\+U\+Traverser}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_abcabe4e83e1b016f96a7682d16b12a1a}{traverse\+C\+Us}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type)
+\item 
+\mbox{\hyperlink{namespacevvenc_a9efa99fc7c7ab16a423e00e40fc6db13}{c\+C\+U\+Traverser}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9f163e7d34fafc3e1bfd519948031b49}{traverse\+C\+Us}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a646b4a2982f13bfac0865d6640044321}{T\+U\+Traverser}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0fe73397dafd172ff20c334c5e410663}{traverse\+T\+Us}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type)
+\item 
+\mbox{\hyperlink{namespacevvenc_a27097cc8e1295b99c76ec30a5bf92288}{c\+T\+U\+Traverser}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a905d66f15f3a79258b7a004aca1b3fc5}{traverse\+T\+Us}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_a6cbe682149541a426b984c71fc83baa8}{use\+Sub\+Structure}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} tree\+Type, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&sub\+Area, const bool cpy\+Reco)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad8da28e117cd579c2efed006ee8c555d}{\+\_\+max\+Area}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aab413be1475a125aac0f29686ec5b10f}{alf\+Aps}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_abce2e87aaf7e3dd8fb0a930b2f1fb82f}{area}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0fd35faa6fadcc0a4763e965cbdd208f}{base\+QP}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a782edc6e5457f86d9578f3db5deb344c}{best\+CS}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a1ed6bffd8a78efbd91dab2d307c6d321}{best\+Parent}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a90b0e7cac00c09f4da8743cd7d9f3235}{chroma\+Qp\+Adj}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1CodingStructure_ae3db8bd7af8828db0c0fdc98c13412e2}{cost}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1CodingStructure_a291715c9fa3a65c1864b2d1915a942b7}{cost\+Db\+Offset}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a06c2c8df07798d18ae9a214e39e17fce}{curr\+QP}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aedfd3facd93f80f4784e8ea0c7a82c64}{cus}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad3276d58621d10268304a4a6e5ba682d}{dist}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1CodingStructure_a98e9c7b0b34cfffdc8617b827573abda}{frac\+Bits}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a250ae55c3c365bfb3a4da33e40484069}{inter\+Had}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a056efd77bd0e350d09f6c93386fbfb7b}{lmcs\+Aps}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1CodingStructure_a3f0b84cf198a6de41e0279c4e0b9b7ca}{luma\+Cost}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1LutMotionCand}{Lut\+Motion\+Cand}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_af3299ffac82260ca18191ac0f7b851dd}{motion\+Lut}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1LutMotionCand}{Lut\+Motion\+Cand}} $>$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a1989ff575d49a46478bfcb77dec98ef0}{motion\+Lut\+Buf}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9ef26ec7fe929d5b60b8b99ddf37838d}{parent}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5e9c1ca891ed69b925ad083b0e92c641}{pcv}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a86e63267f0b87eb319b151d10ad84e0f}{pic\+Header}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aef3335e97d85120b669725bab3b7b5f7}{picture}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0705c021d68ecb01bbf299f0aa4fe327}{pps}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a10fcb1303cd3fe55054f17360dc340b7}{prev\+QP}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a4a56efa523b800707d4c66ddc9771e74}{ref\+CS}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CodingStructure_af652fc173ed566f1b471016926a22040}{reset\+I\+B\+C\+Buffer}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a7fa3fd59397232b6efe15fb6355e215d}{scalinglist\+Aps}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a0dadb78ffff3ac601aa8042a12d06d90}{slice}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a2d3ec636d347d8ea142e64ca27ceaad4}{sps}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a4e591e79f5c8f5c0145e9088bb273703}{tus}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitScale}{Unit\+Scale}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad1a2dca79fc1e5683f3b4b464522715f}{unit\+Scale}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}{vps}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CodingStructure_af0f4886e3ca2668af68a541a3131900f}{create\+Internals}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&\+\_\+unit, const bool is\+Top\+Layer)
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ae04a7a6b7805d4c732936bad7a4d3b80}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad4110648c085a3a0e73f23741183c878}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a123d6388c595a963bf8283d98d6c7273}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a445237644b6e6d56d432501c7e9e8161}{m\+\_\+coeffs}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacevvenc_a7036b7f643e61ca228c88e9cc62ffff2}{C\+U\+Cache}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a940d99c8737fbdad50bb6ec89b91d08f}{m\+\_\+cu\+Cache}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a776d4cd657782d634b8d8e807c8ae014}{m\+\_\+cu\+Ptr}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $>$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_ac9e143a6db538dad1b5f89ce874e0077}{m\+\_\+dmvr\+Mv\+Cache}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_af56c10057904924871adcf88dda15fef}{m\+\_\+dmvr\+Mv\+Cache\+Offset}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CodingStructure_a34f39c4e2cd16beaa845cd2e4b1c9844}{m\+\_\+is\+Tu\+Enc}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a50392aa089e3ee9becf9fa9ed98e33f1}{m\+\_\+lf\+Param}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Size}{Size}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5858aa6bfa40ac9f60cc1b4744442f4c}{m\+\_\+map\+Size}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_ad95f11b7eaacfd753ce1658d2fd2174e}{m\+\_\+motion\+Buf}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CodingStructure_a2ff4b884f67e871ff94b98b4f2b496ae}{m\+\_\+num\+C\+Us}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1CodingStructure_aed27fa2a6b61989c94fed542995353db}{m\+\_\+num\+T\+Us}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CodingStructure_a69d554d1809cf3aee789cbdb4b203131}{m\+\_\+offsets}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a5f0f708a86c9fe0d390d0dd2a3086fdb}{m\+\_\+org}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_aa8106224a8282648708c48851871d328}{m\+\_\+pred}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_acbf22a73a4e42c25320d9d32755ba995}{m\+\_\+reco}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a295bbbecb1ed19afa8ca8901457a016b}{m\+\_\+resi}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a9240590aed97d9765f267480511ab849}{m\+\_\+rsporg}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1CodingStructure_a6ec29ca79d68affe686e88a23a05efda}{m\+\_\+rspreco}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $>$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_aebe9a893da3ab9e43ed8cc8ede589ad0}{m\+\_\+sao}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a26d2e265f2cfb4f7e9b247adab52b2f9}{T\+U\+Cache}} \& \mbox{\hyperlink{classvvenc_1_1CodingStructure_a87b857a2d795b44a21f963929712e8a9}{m\+\_\+tu\+Cache}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a50ec70d1d2b618aa72cc48d4ae1a0575}{m\+\_\+tu\+Ptr}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+std\+::mutex $\ast$ \mbox{\hyperlink{classvvenc_1_1CodingStructure_a582311c0f6b88ebe459acbbcad7c1632}{m\+\_\+unit\+Cache\+Mutex}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 86 of file Coding\+Structure.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a48f6a54e81cbd68e54ad396b29cf89d6}\label{classvvenc_1_1CodingStructure_a48f6a54e81cbd68e54ad396b29cf89d6}} 
+\index{CodingStructure@{CodingStructure}!CodingStructure@{CodingStructure}}
+\index{CodingStructure@{CodingStructure}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{CodingStructure()}{CodingStructure()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \&}]{unit\+Cache,  }\item[{std\+::mutex $\ast$}]{mutex }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Coding\+Structure.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ab8d7c6f1f74987701adcbb8f16b5cfe9}\label{classvvenc_1_1CodingStructure_ab8d7c6f1f74987701adcbb8f16b5cfe9}} 
+\index{CodingStructure@{CodingStructure}!addCU@{addCU}}
+\index{addCU@{addCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{addCU()}{addCU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \& add\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$}]{cu\+Init = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 292 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab8d7c6f1f74987701adcbb8f16b5cfe9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab8d7c6f1f74987701adcbb8f16b5cfe9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a19852e52eee8260a242359ede1e23084}\label{classvvenc_1_1CodingStructure_a19852e52eee8260a242359ede1e23084}} 
+\index{CodingStructure@{CodingStructure}!addEmptyTUs@{addEmptyTUs}}
+\index{addEmptyTUs@{addEmptyTUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{addEmptyTUs()}{addEmptyTUs()}}
+{\footnotesize\ttfamily void add\+Empty\+T\+Us (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 476 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a19852e52eee8260a242359ede1e23084_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a19852e52eee8260a242359ede1e23084_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af20c40a7e35ac4f521d2870360b17571}\label{classvvenc_1_1CodingStructure_af20c40a7e35ac4f521d2870360b17571}} 
+\index{CodingStructure@{CodingStructure}!addMiToLut@{addMiToLut}}
+\index{addMiToLut@{addMiToLut}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{addMiToLut()}{addMiToLut()}}
+{\footnotesize\ttfamily void add\+Mi\+To\+Lut (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1HPMVInfo}{H\+P\+M\+V\+Info}}, \mbox{\hyperlink{namespacevvenc_a29e793801cf569e694e052d3d802cb0c}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+H\+M\+V\+P\+\_\+\+C\+A\+N\+DS}} $>$ \&}]{lut,  }\item[{const \mbox{\hyperlink{structvvenc_1_1HPMVInfo}{H\+P\+M\+V\+Info}} \&}]{mi }\end{DoxyParamCaption})}
+
+
+
+Definition at line 696 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classvvenc_1_1CodingStructure_af20c40a7e35ac4f521d2870360b17571_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af20c40a7e35ac4f521d2870360b17571_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_adc4eacf3bc04920048d835c3370b3922}\label{classvvenc_1_1CodingStructure_adc4eacf3bc04920048d835c3370b3922}} 
+\index{CodingStructure@{CodingStructure}!addTU@{addTU}}
+\index{addTU@{addTU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{addTU()}{addTU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \& add\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$}]{cu,  }\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$}]{tu\+Init = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 377 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_adc4eacf3bc04920048d835c3370b3922_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_adc4eacf3bc04920048d835c3370b3922_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5ce4476d29757a7fc5717358cc353003}\label{classvvenc_1_1CodingStructure_a5ce4476d29757a7fc5717358cc353003}} 
+\index{CodingStructure@{CodingStructure}!allocateVectorsAtPicLevel@{allocateVectorsAtPicLevel}}
+\index{allocateVectorsAtPicLevel@{allocateVectorsAtPicLevel}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{allocateVectorsAtPicLevel()}{allocateVectorsAtPicLevel()}}
+{\footnotesize\ttfamily void allocate\+Vectors\+At\+Pic\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 588 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a5ce4476d29757a7fc5717358cc353003_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a5ce4476d29757a7fc5717358cc353003_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7dc9a34daab4df2ec4942c7a01d3c069}\label{classvvenc_1_1CodingStructure_a7dc9a34daab4df2ec4942c7a01d3c069}} 
+\index{CodingStructure@{CodingStructure}!clearCUs@{clearCUs}}
+\index{clearCUs@{clearCUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{clearCUs()}{clearCUs()}}
+{\footnotesize\ttfamily void clear\+C\+Us (\begin{DoxyParamCaption}\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1084 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classvvenc_1_1CodingStructure_a7dc9a34daab4df2ec4942c7a01d3c069_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a7dc9a34daab4df2ec4942c7a01d3c069_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac0a8e9885f1c7c492a6949e06c15c834}\label{classvvenc_1_1CodingStructure_ac0a8e9885f1c7c492a6949e06c15c834}} 
+\index{CodingStructure@{CodingStructure}!clearTUs@{clearTUs}}
+\index{clearTUs@{clearTUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{clearTUs()}{clearTUs()}}
+{\footnotesize\ttfamily void clear\+T\+Us (\begin{DoxyParamCaption}\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1053 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classvvenc_1_1CodingStructure_ac0a8e9885f1c7c492a6949e06c15c834_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ac0a8e9885f1c7c492a6949e06c15c834_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9438393d97917de85923c5ba948b1fa5}\label{classvvenc_1_1CodingStructure_a9438393d97917de85923c5ba948b1fa5}} 
+\index{CodingStructure@{CodingStructure}!compactResize@{compactResize}}
+\index{compactResize@{compactResize}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{compactResize()}{compactResize()}}
+{\footnotesize\ttfamily void compact\+Resize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1007 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9438393d97917de85923c5ba948b1fa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9438393d97917de85923c5ba948b1fa5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a15510b8ee2c0b3c9cfd4f4c84f85966d}\label{classvvenc_1_1CodingStructure_a15510b8ee2c0b3c9cfd4f4c84f85966d}} 
+\index{CodingStructure@{CodingStructure}!copyStructure@{copyStructure}}
+\index{copyStructure@{copyStructure}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{copyStructure()}{copyStructure()}}
+{\footnotesize\ttfamily void copy\+Structure (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{tree\+Type,  }\item[{const bool}]{copy\+T\+Us = {\ttfamily false},  }\item[{const bool}]{copy\+Reco\+Buffer = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 936 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a15510b8ee2c0b3c9cfd4f4c84f85966d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a15510b8ee2c0b3c9cfd4f4c84f85966d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9181db8d2378a393dbda75a651fa491d}\label{classvvenc_1_1CodingStructure_a9181db8d2378a393dbda75a651fa491d}} 
+\index{CodingStructure@{CodingStructure}!create@{create}}
+\index{create@{create}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{\+\_\+area,  }\item[{const bool}]{is\+Top\+Layer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 599 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9181db8d2378a393dbda75a651fa491d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_adffc8b7436b3ccc0105909a200197ad9}\label{classvvenc_1_1CodingStructure_adffc8b7436b3ccc0105909a200197ad9}} 
+\index{CodingStructure@{CodingStructure}!create@{create}}
+\index{create@{create}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const bool}]{is\+Top\+Layer,  }\item[{const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$}]{\+\_\+pcv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 611 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_adffc8b7436b3ccc0105909a200197ad9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_adffc8b7436b3ccc0105909a200197ad9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a89b7acbaaa996f6d56436411a74e0fa6}\label{classvvenc_1_1CodingStructure_a89b7acbaaa996f6d56436411a74e0fa6}} 
+\index{CodingStructure@{CodingStructure}!createCoeffs@{createCoeffs}}
+\index{createCoeffs@{createCoeffs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{createCoeffs()}{createCoeffs()}}
+{\footnotesize\ttfamily void create\+Coeffs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 733 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a89b7acbaaa996f6d56436411a74e0fa6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a89b7acbaaa996f6d56436411a74e0fa6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af0f4886e3ca2668af68a541a3131900f}\label{classvvenc_1_1CodingStructure_af0f4886e3ca2668af68a541a3131900f}} 
+\index{CodingStructure@{CodingStructure}!createInternals@{createInternals}}
+\index{createInternals@{createInternals}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{createInternals()}{createInternals()}}
+{\footnotesize\ttfamily void create\+Internals (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const bool}]{is\+Top\+Layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 625 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af0f4886e3ca2668af68a541a3131900f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classvvenc_1_1CodingStructure_af0f4886e3ca2668af68a541a3131900f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a12a3d621536ecbfdcb60851de8d83d61}\label{classvvenc_1_1CodingStructure_a12a3d621536ecbfdcb60851de8d83d61}} 
+\index{CodingStructure@{CodingStructure}!createTempBuffers@{createTempBuffers}}
+\index{createTempBuffers@{createTempBuffers}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{createTempBuffers()}{createTempBuffers()}}
+{\footnotesize\ttfamily void create\+Temp\+Buffers (\begin{DoxyParamCaption}\item[{const bool}]{is\+Top\+Layer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 651 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a12a3d621536ecbfdcb60851de8d83d61_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a12a3d621536ecbfdcb60851de8d83d61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1CodingStructure_a3a80b6032f86a56bec74609034b3246f}} 
+\index{CodingStructure@{CodingStructure}!destroy@{destroy}}
+\index{destroy@{destroy}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvvenc_1_1CodingStructure_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad8a3ccf30b50113d1ff0b924246103be}\label{classvvenc_1_1CodingStructure_ad8a3ccf30b50113d1ff0b924246103be}} 
+\index{CodingStructure@{CodingStructure}!destroyCoeffs@{destroyCoeffs}}
+\index{destroyCoeffs@{destroyCoeffs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{destroyCoeffs()}{destroyCoeffs()}}
+{\footnotesize\ttfamily void destroy\+Coeffs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 748 of file Coding\+Structure.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad8a3ccf30b50113d1ff0b924246103be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a813e0565873f1e6b5589c10d3cd5f88b}\label{classvvenc_1_1CodingStructure_a813e0565873f1e6b5589c10d3cd5f88b}} 
+\index{CodingStructure@{CodingStructure}!destroyTempBuffers@{destroyTempBuffers}}
+\index{destroyTempBuffers@{destroyTempBuffers}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{destroyTempBuffers()}{destroyTempBuffers()}}
+{\footnotesize\ttfamily void destroy\+Temp\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 675 of file Coding\+Structure.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a813e0565873f1e6b5589c10d3cd5f88b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}\label{classvvenc_1_1CodingStructure_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}} 
+\index{CodingStructure@{CodingStructure}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1147 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_aefac05fc7bdf7aa9d14ca78ad2ad3a6d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CodingStructure_aefac05fc7bdf7aa9d14ca78ad2ad3a6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ae04a7a6b7805d4c732936bad7a4d3b80}\label{classvvenc_1_1CodingStructure_ae04a7a6b7805d4c732936bad7a4d3b80}} 
+\index{CodingStructure@{CodingStructure}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1186 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ae04a7a6b7805d4c732936bad7a4d3b80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad4110648c085a3a0e73f23741183c878}\label{classvvenc_1_1CodingStructure_ad4110648c085a3a0e73f23741183c878}} 
+\index{CodingStructure@{CodingStructure}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1225 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad4110648c085a3a0e73f23741183c878_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a123d6388c595a963bf8283d98d6c7273}\label{classvvenc_1_1CodingStructure_a123d6388c595a963bf8283d98d6c7273}} 
+\index{CodingStructure@{CodingStructure}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1238 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a123d6388c595a963bf8283d98d6c7273_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a06239777dc199325835220c894ba5898}\label{classvvenc_1_1CodingStructure_a06239777dc199325835220c894ba5898}} 
+\index{CodingStructure@{CodingStructure}!getCU@{getCU}}
+\index{getCU@{getCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCU()}{getCU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ get\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{\+\_\+tree\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 140 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classvvenc_1_1CodingStructure_a06239777dc199325835220c894ba5898_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classvvenc_1_1CodingStructure_a06239777dc199325835220c894ba5898_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aad71fc024846fd5c208850ff41295546}\label{classvvenc_1_1CodingStructure_aad71fc024846fd5c208850ff41295546}} 
+\index{CodingStructure@{CodingStructure}!getCU@{getCU}}
+\index{getCU@{getCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCU()}{getCU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ get\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{\+\_\+tree\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 137 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classvvenc_1_1CodingStructure_aad71fc024846fd5c208850ff41295546_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=125pt]{classvvenc_1_1CodingStructure_aad71fc024846fd5c208850ff41295546_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a04a8966a272288393328b8fad8fcc216}\label{classvvenc_1_1CodingStructure_a04a8966a272288393328b8fad8fcc216}} 
+\index{CodingStructure@{CodingStructure}!getCU@{getCU}}
+\index{getCU@{getCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCU()}{getCU()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{\+\_\+tree\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 172 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classvvenc_1_1CodingStructure_a04a8966a272288393328b8fad8fcc216_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac1fb6d2f0f24ad434b770a78ba00d30a}\label{classvvenc_1_1CodingStructure_ac1fb6d2f0f24ad434b770a78ba00d30a}} 
+\index{CodingStructure@{CodingStructure}!getCU@{getCU}}
+\index{getCU@{getCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCU()}{getCU()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{\+\_\+tree\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 190 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classvvenc_1_1CodingStructure_ac1fb6d2f0f24ad434b770a78ba00d30a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1CodingStructure_ac1fb6d2f0f24ad434b770a78ba00d30a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ae3dafa58ebfeb6e20ea40c98c1fc5a77}\label{classvvenc_1_1CodingStructure_ae3dafa58ebfeb6e20ea40c98c1fc5a77}} 
+\index{CodingStructure@{CodingStructure}!getCURestricted@{getCURestricted}}
+\index{getCURestricted@{getCURestricted}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCURestricted()}{getCURestricted()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+C\+U\+Restricted (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cur\+Cu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1251 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ae3dafa58ebfeb6e20ea40c98c1fc5a77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a86c4b3c5ad185ff01aa830180d0a7d10}\label{classvvenc_1_1CodingStructure_a86c4b3c5ad185ff01aa830180d0a7d10}} 
+\index{CodingStructure@{CodingStructure}!getCURestricted@{getCURestricted}}
+\index{getCURestricted@{getCURestricted}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getCURestricted()}{getCURestricted()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+C\+U\+Restricted (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}}}]{cur\+Pos,  }\item[{const unsigned}]{cur\+Slice\+Idx,  }\item[{const unsigned}]{cur\+Tile\+Idx,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{tree\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1266 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a86c4b3c5ad185ff01aa830180d0a7d10_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a86c4b3c5ad185ff01aa830180d0a7d10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3e72738182945b9719af23a69d776871}\label{classvvenc_1_1CodingStructure_a3e72738182945b9719af23a69d776871}} 
+\index{CodingStructure@{CodingStructure}!getLFPMapPtr@{getLFPMapPtr}}
+\index{getLFPMapPtr@{getLFPMapPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLFPMapPtr()}{getLFPMapPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}}$\ast$ get\+L\+F\+P\+Map\+Ptr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}}}]{edge\+Dir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 253 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9f3d2c2f4f5f4419be857e752c528141}\label{classvvenc_1_1CodingStructure_a9f3d2c2f4f5f4419be857e752c528141}} 
+\index{CodingStructure@{CodingStructure}!getLFPMapPtr@{getLFPMapPtr}}
+\index{getLFPMapPtr@{getLFPMapPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLFPMapPtr()}{getLFPMapPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}} const$\ast$ get\+L\+F\+P\+Map\+Ptr (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}}}]{edge\+Dir }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 252 of file Coding\+Structure.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9f3d2c2f4f5f4419be857e752c528141_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3cd548b5c0ac3206112ea482136cf0c0}\label{classvvenc_1_1CodingStructure_a3cd548b5c0ac3206112ea482136cf0c0}} 
+\index{CodingStructure@{CodingStructure}!getLFPMapStride@{getLFPMapStride}}
+\index{getLFPMapStride@{getLFPMapStride}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLFPMapStride()}{getLFPMapStride()}}
+{\footnotesize\ttfamily ptrdiff\+\_\+t get\+L\+F\+P\+Map\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 254 of file Coding\+Structure.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a3cd548b5c0ac3206112ea482136cf0c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ab589e5276aaffb42c5942d17e8111934}\label{classvvenc_1_1CodingStructure_ab589e5276aaffb42c5942d17e8111934}} 
+\index{CodingStructure@{CodingStructure}!getLoopFilterParamBuf@{getLoopFilterParamBuf}}
+\index{getLoopFilterParamBuf@{getLoopFilterParamBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLoopFilterParamBuf()}{getLoopFilterParamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a397a1cc2c50b064b940f4550c42cc9c9}{L\+F\+P\+Buf}} get\+Loop\+Filter\+Param\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} \&}]{edge\+Dir }\end{DoxyParamCaption})}
+
+
+
+Definition at line 575 of file Coding\+Structure.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab589e5276aaffb42c5942d17e8111934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a414216dfe6a767dd5820d83d3e1f841a}\label{classvvenc_1_1CodingStructure_a414216dfe6a767dd5820d83d3e1f841a}} 
+\index{CodingStructure@{CodingStructure}!getLoopFilterParamBuf@{getLoopFilterParamBuf}}
+\index{getLoopFilterParamBuf@{getLoopFilterParamBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLoopFilterParamBuf()}{getLoopFilterParamBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_ac79f582eb93fe399649f76560d37ec88}{C\+L\+F\+P\+Buf}} get\+Loop\+Filter\+Param\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007}{Deblock\+Edge\+Dir}} \&}]{edge\+Dir }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 580 of file Coding\+Structure.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af512a5486dc48b9f7c1893a6d0128f76}\label{classvvenc_1_1CodingStructure_af512a5486dc48b9f7c1893a6d0128f76}} 
+\index{CodingStructure@{CodingStructure}!getLumaCU@{getLumaCU}}
+\index{getLumaCU@{getLumaCU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getLumaCU()}{getLumaCU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ get\+Luma\+CU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 163 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1CodingStructure_af512a5486dc48b9f7c1893a6d0128f76_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af512a5486dc48b9f7c1893a6d0128f76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_accf7bce0a090945d381aa2b5a7f9f204}\label{classvvenc_1_1CodingStructure_accf7bce0a090945d381aa2b5a7f9f204}} 
+\index{CodingStructure@{CodingStructure}!getMiMapPtr@{getMiMapPtr}}
+\index{getMiMapPtr@{getMiMapPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMiMapPtr()}{getMiMapPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}}$\ast$ get\+Mi\+Map\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 246 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3c77df4dc66e58f3a29df83ae28342f4}\label{classvvenc_1_1CodingStructure_a3c77df4dc66e58f3a29df83ae28342f4}} 
+\index{CodingStructure@{CodingStructure}!getMiMapPtr@{getMiMapPtr}}
+\index{getMiMapPtr@{getMiMapPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMiMapPtr()}{getMiMapPtr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} const$\ast$ get\+Mi\+Map\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 245 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad31155e41b991deca06377ae18b63c90}\label{classvvenc_1_1CodingStructure_ad31155e41b991deca06377ae18b63c90}} 
+\index{CodingStructure@{CodingStructure}!getMiMapStride@{getMiMapStride}}
+\index{getMiMapStride@{getMiMapStride}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMiMapStride()}{getMiMapStride()}}
+{\footnotesize\ttfamily ptrdiff\+\_\+t get\+Mi\+Map\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 247 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classvvenc_1_1CodingStructure_ad31155e41b991deca06377ae18b63c90_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a1408150be1e47e771e3d1cf29c3bf910}\label{classvvenc_1_1CodingStructure_a1408150be1e47e771e3d1cf29c3bf910}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 236 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_a1408150be1e47e771e3d1cf29c3bf910_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a1408150be1e47e771e3d1cf29c3bf910_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5a02d2ef75ac71543163044c7bcf708a}\label{classvvenc_1_1CodingStructure_a5a02d2ef75ac71543163044c7bcf708a}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 240 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_a5a02d2ef75ac71543163044c7bcf708a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classvvenc_1_1CodingStructure_a5a02d2ef75ac71543163044c7bcf708a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9cc3d16d58715898ebea5b8a5ea91abd}\label{classvvenc_1_1CodingStructure_a9cc3d16d58715898ebea5b8a5ea91abd}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{\+\_\+area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1101 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classvvenc_1_1CodingStructure_a9cc3d16d58715898ebea5b8a5ea91abd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9cc3d16d58715898ebea5b8a5ea91abd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af1d903390e6bc6ed6d1f72039f88109c}\label{classvvenc_1_1CodingStructure_af1d903390e6bc6ed6d1f72039f88109c}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{\+\_\+area }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1113 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classvvenc_1_1CodingStructure_af1d903390e6bc6ed6d1f72039f88109c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a852019aa0cb7a36ab413e59991b99d04}\label{classvvenc_1_1CodingStructure_a852019aa0cb7a36ab413e59991b99d04}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2277abb2f66824237e308581168c16b6}{Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+area }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 235 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_a852019aa0cb7a36ab413e59991b99d04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classvvenc_1_1CodingStructure_a852019aa0cb7a36ab413e59991b99d04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9acfeed21045190687d0036c8871152a}\label{classvvenc_1_1CodingStructure_a9acfeed21045190687d0036c8871152a}} 
+\index{CodingStructure@{CodingStructure}!getMotionBuf@{getMotionBuf}}
+\index{getMotionBuf@{getMotionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionBuf()}{getMotionBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a6e35e4fdc57b316851b0cff950465f62}{C\+Motion\+Buf}} get\+Motion\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+area }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 239 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_a9acfeed21045190687d0036c8871152a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classvvenc_1_1CodingStructure_a9acfeed21045190687d0036c8871152a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5d64571c0440bcae38f0e977f819163e}\label{classvvenc_1_1CodingStructure_a5d64571c0440bcae38f0e977f819163e}} 
+\index{CodingStructure@{CodingStructure}!getMotionInfo@{getMotionInfo}}
+\index{getMotionInfo@{getMotionInfo}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionInfo()}{getMotionInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \& get\+Motion\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1125 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a5d64571c0440bcae38f0e977f819163e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a5d64571c0440bcae38f0e977f819163e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad4bcc838947b7f72605b6be4ed770d93}\label{classvvenc_1_1CodingStructure_ad4bcc838947b7f72605b6be4ed770d93}} 
+\index{CodingStructure@{CodingStructure}!getMotionInfo@{getMotionInfo}}
+\index{getMotionInfo@{getMotionInfo}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getMotionInfo()}{getMotionInfo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}} \& get\+Motion\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1136 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad4bcc838947b7f72605b6be4ed770d93_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7197532c0854f18987672c11d3517ac2}\label{classvvenc_1_1CodingStructure_a7197532c0854f18987672c11d3517ac2}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Org\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 300 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0e7bf5952c3ea092d59a5012b311a147}\label{classvvenc_1_1CodingStructure_a0e7bf5952c3ea092d59a5012b311a147}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 301 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad7ce89a7490b5e8bf37e94e1487b84ae}\label{classvvenc_1_1CodingStructure_ad7ce89a7490b5e8bf37e94e1487b84ae}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 280 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad7ce89a7490b5e8bf37e94e1487b84ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad7ce89a7490b5e8bf37e94e1487b84ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a526280aa3ef2166a385461c78f4e8b01}\label{classvvenc_1_1CodingStructure_a526280aa3ef2166a385461c78f4e8b01}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 281 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a526280aa3ef2166a385461c78f4e8b01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a684cdbde6cb416acbfbdb081e8558617}\label{classvvenc_1_1CodingStructure_a684cdbde6cb416acbfbdb081e8558617}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 298 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classvvenc_1_1CodingStructure_a684cdbde6cb416acbfbdb081e8558617_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a19180c13a8b0af498ba4f2ff5cc75ea6}\label{classvvenc_1_1CodingStructure_a19180c13a8b0af498ba4f2ff5cc75ea6}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 299 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classvvenc_1_1CodingStructure_a19180c13a8b0af498ba4f2ff5cc75ea6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a92590d327b8c1e54afb57a7f705dfc7f}\label{classvvenc_1_1CodingStructure_a92590d327b8c1e54afb57a7f705dfc7f}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 282 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a92590d327b8c1e54afb57a7f705dfc7f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af50b496372bf57713dabf648dcd73d75}\label{classvvenc_1_1CodingStructure_af50b496372bf57713dabf648dcd73d75}} 
+\index{CodingStructure@{CodingStructure}!getOrgBuf@{getOrgBuf}}
+\index{getOrgBuf@{getOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getOrgBuf()}{getOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 283 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af50b496372bf57713dabf648dcd73d75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a76a5cc74a4c2e4af27ff1ed92f48979e}\label{classvvenc_1_1CodingStructure_a76a5cc74a4c2e4af27ff1ed92f48979e}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Pred\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 306 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af9b8e3617587669d3740d714fa993ade}\label{classvvenc_1_1CodingStructure_af9b8e3617587669d3740d714fa993ade}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 307 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3ea2538f1e59894e5c5069a1e2037a3a}\label{classvvenc_1_1CodingStructure_a3ea2538f1e59894e5c5069a1e2037a3a}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 265 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a3ea2538f1e59894e5c5069a1e2037a3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a3ea2538f1e59894e5c5069a1e2037a3a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af72ec5776fafa435a69238cf3a7cfcdd}\label{classvvenc_1_1CodingStructure_af72ec5776fafa435a69238cf3a7cfcdd}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 266 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af72ec5776fafa435a69238cf3a7cfcdd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aa7f36b7fab968b87f312a96fa5397d05}\label{classvvenc_1_1CodingStructure_aa7f36b7fab968b87f312a96fa5397d05}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 304 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvvenc_1_1CodingStructure_aa7f36b7fab968b87f312a96fa5397d05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aec9e2131ee4d03801ca86d425f62562e}\label{classvvenc_1_1CodingStructure_aec9e2131ee4d03801ca86d425f62562e}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 305 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvvenc_1_1CodingStructure_aec9e2131ee4d03801ca86d425f62562e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a505fdd56209118a64de54a38c2ba7830}\label{classvvenc_1_1CodingStructure_a505fdd56209118a64de54a38c2ba7830}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 267 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a505fdd56209118a64de54a38c2ba7830_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a77824a3146be0d491ea9b0014f12eb7e}\label{classvvenc_1_1CodingStructure_a77824a3146be0d491ea9b0014f12eb7e}} 
+\index{CodingStructure@{CodingStructure}!getPredBuf@{getPredBuf}}
+\index{getPredBuf@{getPredBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getPredBuf()}{getPredBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Pred\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 268 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a77824a3146be0d491ea9b0014f12eb7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0a9d9e09800544956f3b0933f0eaefa3}\label{classvvenc_1_1CodingStructure_a0a9d9e09800544956f3b0933f0eaefa3}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 318 of file Coding\+Structure.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a0a9d9e09800544956f3b0933f0eaefa3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9cbcf6cbd2fa744e7de01cfe4ad3f316}\label{classvvenc_1_1CodingStructure_a9cbcf6cbd2fa744e7de01cfe4ad3f316}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 319 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad77d144af5cd4d736ee529e3e74a7367}\label{classvvenc_1_1CodingStructure_ad77d144af5cd4d736ee529e3e74a7367}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 275 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad77d144af5cd4d736ee529e3e74a7367_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ad77d144af5cd4d736ee529e3e74a7367_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af0c9ce95be3df4219ecedb27f2762234}\label{classvvenc_1_1CodingStructure_af0c9ce95be3df4219ecedb27f2762234}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 276 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af0c9ce95be3df4219ecedb27f2762234_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aee021e1a0b2774638746e6e9e76a5519}\label{classvvenc_1_1CodingStructure_aee021e1a0b2774638746e6e9e76a5519}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 317 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1CodingStructure_aee021e1a0b2774638746e6e9e76a5519_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a318ee043b69487a1597339d3abbb8075}\label{classvvenc_1_1CodingStructure_a318ee043b69487a1597339d3abbb8075}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 316 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1CodingStructure_a318ee043b69487a1597339d3abbb8075_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a1aa6a89b4c9854f3e3a1a7207a4162da}\label{classvvenc_1_1CodingStructure_a1aa6a89b4c9854f3e3a1a7207a4162da}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 277 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a1aa6a89b4c9854f3e3a1a7207a4162da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aac7fcee6fcb0e5c67e109ad6f27437dc}\label{classvvenc_1_1CodingStructure_aac7fcee6fcb0e5c67e109ad6f27437dc}} 
+\index{CodingStructure@{CodingStructure}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 278 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_aac7fcee6fcb0e5c67e109ad6f27437dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5eb8ac6504657fb728a189efd838bfc9}\label{classvvenc_1_1CodingStructure_a5eb8ac6504657fb728a189efd838bfc9}} 
+\index{CodingStructure@{CodingStructure}!getRecoBufRef@{getRecoBufRef}}
+\index{getRecoBufRef@{getRecoBufRef}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRecoBufRef()}{getRecoBufRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Reco\+Buf\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 291 of file Coding\+Structure.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a5eb8ac6504657fb728a189efd838bfc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad693826e1c6895736c4619268e3b38a3}\label{classvvenc_1_1CodingStructure_ad693826e1c6895736c4619268e3b38a3}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Resi\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 312 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a32ec995cfecb8e170fa29b190df7fbf7}\label{classvvenc_1_1CodingStructure_a32ec995cfecb8e170fa29b190df7fbf7}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 313 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a1f0cc4c41acf6121c238f776a9ceb422}\label{classvvenc_1_1CodingStructure_a1f0cc4c41acf6121c238f776a9ceb422}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 270 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a1f0cc4c41acf6121c238f776a9ceb422_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a1f0cc4c41acf6121c238f776a9ceb422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a6d4a8fc38c20302930bfe1cb8873d3cf}\label{classvvenc_1_1CodingStructure_a6d4a8fc38c20302930bfe1cb8873d3cf}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 271 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6d4a8fc38c20302930bfe1cb8873d3cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3fe3f68b466d3ef13da2238266b5a13d}\label{classvvenc_1_1CodingStructure_a3fe3f68b466d3ef13da2238266b5a13d}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 310 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvvenc_1_1CodingStructure_a3fe3f68b466d3ef13da2238266b5a13d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a22aa2346b875399fec2545c18c11ab54}\label{classvvenc_1_1CodingStructure_a22aa2346b875399fec2545c18c11ab54}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 311 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classvvenc_1_1CodingStructure_a22aa2346b875399fec2545c18c11ab54_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af25de3ecd73445454edbbfa9b72d2a12}\label{classvvenc_1_1CodingStructure_af25de3ecd73445454edbbfa9b72d2a12}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 272 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af25de3ecd73445454edbbfa9b72d2a12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9ab5075c73e0bbd4fb9f7efe0d5987c0}\label{classvvenc_1_1CodingStructure_a9ab5075c73e0bbd4fb9f7efe0d5987c0}} 
+\index{CodingStructure@{CodingStructure}!getResiBuf@{getResiBuf}}
+\index{getResiBuf@{getResiBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getResiBuf()}{getResiBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Resi\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 273 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9ab5075c73e0bbd4fb9f7efe0d5987c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7e085c1e4911d02dcb59840d2e95c89a}\label{classvvenc_1_1CodingStructure_a7e085c1e4911d02dcb59840d2e95c89a}} 
+\index{CodingStructure@{CodingStructure}!getRspOrgBuf@{getRspOrgBuf}}
+\index{getRspOrgBuf@{getRspOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspOrgBuf()}{getRspOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}}\& get\+Rsp\+Org\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 295 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_a7e085c1e4911d02dcb59840d2e95c89a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac1ba4fb333012bd5df466e41b48b716f}\label{classvvenc_1_1CodingStructure_ac1ba4fb333012bd5df466e41b48b716f}} 
+\index{CodingStructure@{CodingStructure}!getRspOrgBuf@{getRspOrgBuf}}
+\index{getRspOrgBuf@{getRspOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspOrgBuf()}{getRspOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Org\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 296 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1CodingStructure_ac1ba4fb333012bd5df466e41b48b716f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af3b393634f7347dadafa6b2698fa0b45}\label{classvvenc_1_1CodingStructure_af3b393634f7347dadafa6b2698fa0b45}} 
+\index{CodingStructure@{CodingStructure}!getRspOrgBuf@{getRspOrgBuf}}
+\index{getRspOrgBuf@{getRspOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspOrgBuf()}{getRspOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Rsp\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 285 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af3b393634f7347dadafa6b2698fa0b45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_af3b393634f7347dadafa6b2698fa0b45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a94f2e4db0c3a687850757ddf4ef2d6cf}\label{classvvenc_1_1CodingStructure_a94f2e4db0c3a687850757ddf4ef2d6cf}} 
+\index{CodingStructure@{CodingStructure}!getRspOrgBuf@{getRspOrgBuf}}
+\index{getRspOrgBuf@{getRspOrgBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspOrgBuf()}{getRspOrgBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Org\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 286 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a94f2e4db0c3a687850757ddf4ef2d6cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac78614fd2368af284c49052b6cd17e70}\label{classvvenc_1_1CodingStructure_ac78614fd2368af284c49052b6cd17e70}} 
+\index{CodingStructure@{CodingStructure}!getRspRecoBuf@{getRspRecoBuf}}
+\index{getRspRecoBuf@{getRspRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspRecoBuf()}{getRspRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}}\& get\+Rsp\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 292 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1CodingStructure_ac78614fd2368af284c49052b6cd17e70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a156d4868d58c46d93f68257b65e131f3}\label{classvvenc_1_1CodingStructure_a156d4868d58c46d93f68257b65e131f3}} 
+\index{CodingStructure@{CodingStructure}!getRspRecoBuf@{getRspRecoBuf}}
+\index{getRspRecoBuf@{getRspRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspRecoBuf()}{getRspRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 293 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1CodingStructure_a156d4868d58c46d93f68257b65e131f3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ae1b62ea8953effa1be0f1bea3865fbbb}\label{classvvenc_1_1CodingStructure_ae1b62ea8953effa1be0f1bea3865fbbb}} 
+\index{CodingStructure@{CodingStructure}!getRspRecoBuf@{getRspRecoBuf}}
+\index{getRspRecoBuf@{getRspRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspRecoBuf()}{getRspRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Rsp\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 288 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ae1b62ea8953effa1be0f1bea3865fbbb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ae1b62ea8953effa1be0f1bea3865fbbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7479b226cd73789dcb8dc65390dc860a}\label{classvvenc_1_1CodingStructure_a7479b226cd73789dcb8dc65390dc860a}} 
+\index{CodingStructure@{CodingStructure}!getRspRecoBuf@{getRspRecoBuf}}
+\index{getRspRecoBuf@{getRspRecoBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getRspRecoBuf()}{getRspRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 289 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a7479b226cd73789dcb8dc65390dc860a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ab44a35666c387bdd9e18faeeeb6756b3}\label{classvvenc_1_1CodingStructure_ab44a35666c387bdd9e18faeeeb6756b3}} 
+\index{CodingStructure@{CodingStructure}!getScaling@{getScaling}}
+\index{getScaling@{getScaling}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getScaling()}{getScaling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitScale}{Unit\+Scale}} get\+Scaling (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitScale_a5c7685a8c1aef62133308288d8c47803}{Unit\+Scale\+::\+Scalining\+Type}}}]{type,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type = {\ttfamily \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a9eef8706f96e8b3511a2450e90075f59}{C\+H\+\_\+L}}} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 256 of file Coding\+Structure.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab44a35666c387bdd9e18faeeeb6756b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a241a044b809bd5c7ae79fd5d15566c28}\label{classvvenc_1_1CodingStructure_a241a044b809bd5c7ae79fd5d15566c28}} 
+\index{CodingStructure@{CodingStructure}!getTU@{getTU}}
+\index{getTU@{getTU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getTU()}{getTU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$ get\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&}]{\+\_\+ch\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classvvenc_1_1CodingStructure_a241a044b809bd5c7ae79fd5d15566c28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classvvenc_1_1CodingStructure_a241a044b809bd5c7ae79fd5d15566c28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac1580bd6629efcd2d3d0d8830b6279f8}\label{classvvenc_1_1CodingStructure_ac1580bd6629efcd2d3d0d8830b6279f8}} 
+\index{CodingStructure@{CodingStructure}!getTU@{getTU}}
+\index{getTU@{getTU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getTU()}{getTU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$ get\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \&}]{\+\_\+ch\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 138 of file Coding\+Structure.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classvvenc_1_1CodingStructure_ac1580bd6629efcd2d3d0d8830b6279f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{classvvenc_1_1CodingStructure_ac1580bd6629efcd2d3d0d8830b6279f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a6c41c6c76165546883bb78f1be449635}\label{classvvenc_1_1CodingStructure_a6c41c6c76165546883bb78f1be449635}} 
+\index{CodingStructure@{CodingStructure}!getTU@{getTU}}
+\index{getTU@{getTU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getTU()}{getTU()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ get\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const int}]{sub\+Tu\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 208 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6c41c6c76165546883bb78f1be449635_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aae3934300792aab8eab2a4a906952424}\label{classvvenc_1_1CodingStructure_aae3934300792aab8eab2a4a906952424}} 
+\index{CodingStructure@{CodingStructure}!getTU@{getTU}}
+\index{getTU@{getTU}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getTU()}{getTU()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ get\+TU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const int}]{sub\+Tu\+Idx = {\ttfamily -\/1} }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 250 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_aae3934300792aab8eab2a4a906952424_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_aae3934300792aab8eab2a4a906952424_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a38a7a517ca343b6073d7584b927b3860}\label{classvvenc_1_1CodingStructure_a38a7a517ca343b6073d7584b927b3860}} 
+\index{CodingStructure@{CodingStructure}!getTURestricted@{getTURestricted}}
+\index{getTURestricted@{getTURestricted}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{getTURestricted()}{getTURestricted()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ get\+T\+U\+Restricted (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos,  }\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{cur\+Tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1281 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a38a7a517ca343b6073d7584b927b3860_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_addbc9f48f7c8a1aa7b176c60c517f5b0}\label{classvvenc_1_1CodingStructure_addbc9f48f7c8a1aa7b176c60c517f5b0}} 
+\index{CodingStructure@{CodingStructure}!initStructData@{initStructData}}
+\index{initStructData@{initStructData}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{initStructData()}{initStructData()}}
+{\footnotesize\ttfamily void init\+Struct\+Data (\begin{DoxyParamCaption}\item[{const int}]{QP = {\ttfamily \mbox{\hyperlink{namespacevvenc_a4521994cc996921f223544e09d194ab9}{M\+A\+X\+\_\+\+I\+NT}}},  }\item[{const bool}]{skip\+Mot\+Buf = {\ttfamily false},  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} $\ast$}]{area = {\ttfamily nullptr},  }\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1025 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_addbc9f48f7c8a1aa7b176c60c517f5b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_addbc9f48f7c8a1aa7b176c60c517f5b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a8bf56cf33951dd9eda176c617c509eb0}\label{classvvenc_1_1CodingStructure_a8bf56cf33951dd9eda176c617c509eb0}} 
+\index{CodingStructure@{CodingStructure}!initSubStructure@{initSubStructure}}
+\index{initSubStructure@{initSubStructure}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{initSubStructure()}{initSubStructure()}}
+{\footnotesize\ttfamily void init\+Sub\+Structure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{sub\+Area,  }\item[{const bool}]{is\+Tu\+Enc,  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$}]{p\+Org\+Buffer = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$}]{p\+Rsp\+Buffer = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 756 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a8bf56cf33951dd9eda176c617c509eb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a8bf56cf33951dd9eda176c617c509eb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a6e35010343a078f4492b68c984412bb6}\label{classvvenc_1_1CodingStructure_a6e35010343a078f4492b68c984412bb6}} 
+\index{CodingStructure@{CodingStructure}!rebindPicBufs@{rebindPicBufs}}
+\index{rebindPicBufs@{rebindPicBufs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{rebindPicBufs()}{rebindPicBufs()}}
+{\footnotesize\ttfamily void rebind\+Pic\+Bufs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 721 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6e35010343a078f4492b68c984412bb6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6e35010343a078f4492b68c984412bb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ab28e0caee71d21ed19f59303e11a1ef7}\label{classvvenc_1_1CodingStructure_ab28e0caee71d21ed19f59303e11a1ef7}} 
+\index{CodingStructure@{CodingStructure}!releaseIntermediateData@{releaseIntermediateData}}
+\index{releaseIntermediateData@{releaseIntermediateData}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{releaseIntermediateData()}{releaseIntermediateData()}}
+{\footnotesize\ttfamily void release\+Intermediate\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 139 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab28e0caee71d21ed19f59303e11a1ef7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_ab28e0caee71d21ed19f59303e11a1ef7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7d7b085ea8df31ea722fd63e0c8eb0bf}\label{classvvenc_1_1CodingStructure_a7d7b085ea8df31ea722fd63e0c8eb0bf}} 
+\index{CodingStructure@{CodingStructure}!signalModeCons@{signalModeCons}}
+\index{signalModeCons@{signalModeCons}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{signalModeCons()}{signalModeCons()}}
+{\footnotesize\ttfamily const int signal\+Mode\+Cons (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split,  }\item[{\mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{const \mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}}}]{mode\+Type\+Parent }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 145 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a7d7b085ea8df31ea722fd63e0c8eb0bf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a7d7b085ea8df31ea722fd63e0c8eb0bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_abcabe4e83e1b016f96a7682d16b12a1a}\label{classvvenc_1_1CodingStructure_abcabe4e83e1b016f96a7682d16b12a1a}} 
+\index{CodingStructure@{CodingStructure}!traverseCUs@{traverseCUs}}
+\index{traverseCUs@{traverseCUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{traverseCUs()}{traverseCUs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_adc904614c6f115e997cbe2b79d299221}{C\+U\+Traverser}} traverse\+C\+Us (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 499 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_abcabe4e83e1b016f96a7682d16b12a1a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_abcabe4e83e1b016f96a7682d16b12a1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9f163e7d34fafc3e1bfd519948031b49}\label{classvvenc_1_1CodingStructure_a9f163e7d34fafc3e1bfd519948031b49}} 
+\index{CodingStructure@{CodingStructure}!traverseCUs@{traverseCUs}}
+\index{traverseCUs@{traverseCUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{traverseCUs()}{traverseCUs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9efa99fc7c7ab16a423e00e40fc6db13}{c\+C\+U\+Traverser}} traverse\+C\+Us (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 553 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a9f163e7d34fafc3e1bfd519948031b49_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0fe73397dafd172ff20c334c5e410663}\label{classvvenc_1_1CodingStructure_a0fe73397dafd172ff20c334c5e410663}} 
+\index{CodingStructure@{CodingStructure}!traverseTUs@{traverseTUs}}
+\index{traverseTUs@{traverseTUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{traverseTUs()}{traverseTUs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a646b4a2982f13bfac0865d6640044321}{T\+U\+Traverser}} traverse\+T\+Us (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 543 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a0fe73397dafd172ff20c334c5e410663_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a0fe73397dafd172ff20c334c5e410663_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a905d66f15f3a79258b7a004aca1b3fc5}\label{classvvenc_1_1CodingStructure_a905d66f15f3a79258b7a004aca1b3fc5}} 
+\index{CodingStructure@{CodingStructure}!traverseTUs@{traverseTUs}}
+\index{traverseTUs@{traverseTUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{traverseTUs()}{traverseTUs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a27097cc8e1295b99c76ec30a5bf92288}{c\+T\+U\+Traverser}} traverse\+T\+Us (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{\+\_\+unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 563 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a905d66f15f3a79258b7a004aca1b3fc5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a6cbe682149541a426b984c71fc83baa8}\label{classvvenc_1_1CodingStructure_a6cbe682149541a426b984c71fc83baa8}} 
+\index{CodingStructure@{CodingStructure}!useSubStructure@{useSubStructure}}
+\index{useSubStructure@{useSubStructure}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{useSubStructure()}{useSubStructure()}}
+{\footnotesize\ttfamily void use\+Sub\+Structure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{tree\+Type,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{sub\+Area,  }\item[{const bool}]{cpy\+Reco }\end{DoxyParamCaption})}
+
+
+
+Definition at line 826 of file Coding\+Structure.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6cbe682149541a426b984c71fc83baa8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CodingStructure_a6cbe682149541a426b984c71fc83baa8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad8da28e117cd579c2efed006ee8c555d}\label{classvvenc_1_1CodingStructure_ad8da28e117cd579c2efed006ee8c555d}} 
+\index{CodingStructure@{CodingStructure}!\_maxArea@{\_maxArea}}
+\index{\_maxArea@{\_maxArea}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{\_maxArea}{\_maxArea}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \+\_\+max\+Area}
+
+
+
+Definition at line 91 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aab413be1475a125aac0f29686ec5b10f}\label{classvvenc_1_1CodingStructure_aab413be1475a125aac0f29686ec5b10f}} 
+\index{CodingStructure@{CodingStructure}!alfAps@{alfAps}}
+\index{alfAps@{alfAps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{alfAps}{alfAps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ alf\+Aps\mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}}
+
+
+
+Definition at line 108 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_abce2e87aaf7e3dd8fb0a930b2f1fb82f}\label{classvvenc_1_1CodingStructure_abce2e87aaf7e3dd8fb0a930b2f1fb82f}} 
+\index{CodingStructure@{CodingStructure}!area@{area}}
+\index{area@{area}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{area}{area}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} area}
+
+
+
+Definition at line 90 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0fd35faa6fadcc0a4763e965cbdd208f}\label{classvvenc_1_1CodingStructure_a0fd35faa6fadcc0a4763e965cbdd208f}} 
+\index{CodingStructure@{CodingStructure}!baseQP@{baseQP}}
+\index{baseQP@{baseQP}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{baseQP}{baseQP}}
+{\footnotesize\ttfamily int base\+QP}
+
+
+
+Definition at line 101 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a782edc6e5457f86d9578f3db5deb344c}\label{classvvenc_1_1CodingStructure_a782edc6e5457f86d9578f3db5deb344c}} 
+\index{CodingStructure@{CodingStructure}!bestCS@{bestCS}}
+\index{bestCS@{bestCS}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{bestCS}{bestCS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ best\+CS}
+
+
+
+Definition at line 96 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a1ed6bffd8a78efbd91dab2d307c6d321}\label{classvvenc_1_1CodingStructure_a1ed6bffd8a78efbd91dab2d307c6d321}} 
+\index{CodingStructure@{CodingStructure}!bestParent@{bestParent}}
+\index{bestParent@{bestParent}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{bestParent}{bestParent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ best\+Parent}
+
+
+
+Definition at line 231 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a90b0e7cac00c09f4da8743cd7d9f3235}\label{classvvenc_1_1CodingStructure_a90b0e7cac00c09f4da8743cd7d9f3235}} 
+\index{CodingStructure@{CodingStructure}!chromaQpAdj@{chromaQpAdj}}
+\index{chromaQpAdj@{chromaQpAdj}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{chromaQpAdj}{chromaQpAdj}}
+{\footnotesize\ttfamily int chroma\+Qp\+Adj}
+
+
+
+Definition at line 104 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ae3db8bd7af8828db0c0fdc98c13412e2}\label{classvvenc_1_1CodingStructure_ae3db8bd7af8828db0c0fdc98c13412e2}} 
+\index{CodingStructure@{CodingStructure}!cost@{cost}}
+\index{cost@{cost}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double cost}
+
+
+
+Definition at line 160 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a291715c9fa3a65c1864b2d1915a942b7}\label{classvvenc_1_1CodingStructure_a291715c9fa3a65c1864b2d1915a942b7}} 
+\index{CodingStructure@{CodingStructure}!costDbOffset@{costDbOffset}}
+\index{costDbOffset@{costDbOffset}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{costDbOffset}{costDbOffset}}
+{\footnotesize\ttfamily double cost\+Db\+Offset}
+
+
+
+Definition at line 161 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a06c2c8df07798d18ae9a214e39e17fce}\label{classvvenc_1_1CodingStructure_a06c2c8df07798d18ae9a214e39e17fce}} 
+\index{CodingStructure@{CodingStructure}!currQP@{currQP}}
+\index{currQP@{currQP}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{currQP}{currQP}}
+{\footnotesize\ttfamily int curr\+QP\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}}
+
+
+
+Definition at line 103 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aedfd3facd93f80f4784e8ea0c7a82c64}\label{classvvenc_1_1CodingStructure_aedfd3facd93f80f4784e8ea0c7a82c64}} 
+\index{CodingStructure@{CodingStructure}!cus@{cus}}
+\index{cus@{cus}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{cus}{cus}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$$>$ cus}
+
+
+
+Definition at line 186 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad3276d58621d10268304a4a6e5ba682d}\label{classvvenc_1_1CodingStructure_ad3276d58621d10268304a4a6e5ba682d}} 
+\index{CodingStructure@{CodingStructure}!dist@{dist}}
+\index{dist@{dist}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{dist}{dist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} dist}
+
+
+
+Definition at line 164 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a98e9c7b0b34cfffdc8617b827573abda}\label{classvvenc_1_1CodingStructure_a98e9c7b0b34cfffdc8617b827573abda}} 
+\index{CodingStructure@{CodingStructure}!fracBits@{fracBits}}
+\index{fracBits@{fracBits}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{fracBits}{fracBits}}
+{\footnotesize\ttfamily uint64\+\_\+t frac\+Bits}
+
+
+
+Definition at line 163 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a250ae55c3c365bfb3a4da33e40484069}\label{classvvenc_1_1CodingStructure_a250ae55c3c365bfb3a4da33e40484069}} 
+\index{CodingStructure@{CodingStructure}!interHad@{interHad}}
+\index{interHad@{interHad}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{interHad}{interHad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} inter\+Had}
+
+
+
+Definition at line 165 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a056efd77bd0e350d09f6c93386fbfb7b}\label{classvvenc_1_1CodingStructure_a056efd77bd0e350d09f6c93386fbfb7b}} 
+\index{CodingStructure@{CodingStructure}!lmcsAps@{lmcsAps}}
+\index{lmcsAps@{lmcsAps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{lmcsAps}{lmcsAps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ lmcs\+Aps}
+
+
+
+Definition at line 109 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a3f0b84cf198a6de41e0279c4e0b9b7ca}\label{classvvenc_1_1CodingStructure_a3f0b84cf198a6de41e0279c4e0b9b7ca}} 
+\index{CodingStructure@{CodingStructure}!lumaCost@{lumaCost}}
+\index{lumaCost@{lumaCost}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{lumaCost}{lumaCost}}
+{\footnotesize\ttfamily double luma\+Cost}
+
+
+
+Definition at line 162 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a445237644b6e6d56d432501c7e9e8161}\label{classvvenc_1_1CodingStructure_a445237644b6e6d56d432501c7e9e8161}} 
+\index{CodingStructure@{CodingStructure}!m\_coeffs@{m\_coeffs}}
+\index{m\_coeffs@{m\_coeffs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_coeffs}{m\_coeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}}$\ast$ m\+\_\+coeffs\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 217 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a940d99c8737fbdad50bb6ec89b91d08f}\label{classvvenc_1_1CodingStructure_a940d99c8737fbdad50bb6ec89b91d08f}} 
+\index{CodingStructure@{CodingStructure}!m\_cuCache@{m\_cuCache}}
+\index{m\_cuCache@{m\_cuCache}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_cuCache}{m\_cuCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a7036b7f643e61ca228c88e9cc62ffff2}{C\+U\+Cache}}\& m\+\_\+cu\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 204 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a776d4cd657782d634b8d8e807c8ae014}\label{classvvenc_1_1CodingStructure_a776d4cd657782d634b8d8e807c8ae014}} 
+\index{CodingStructure@{CodingStructure}!m\_cuPtr@{m\_cuPtr}}
+\index{m\_cuPtr@{m\_cuPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_cuPtr}{m\_cuPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$$\ast$ m\+\_\+cu\+Ptr\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 198 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ac9e143a6db538dad1b5f89ce874e0077}\label{classvvenc_1_1CodingStructure_ac9e143a6db538dad1b5f89ce874e0077}} 
+\index{CodingStructure@{CodingStructure}!m\_dmvrMvCache@{m\_dmvrMvCache}}
+\index{m\_dmvrMvCache@{m\_dmvrMvCache}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_dmvrMvCache}{m\_dmvrMvCache}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}$>$ m\+\_\+dmvr\+Mv\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 220 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af56c10057904924871adcf88dda15fef}\label{classvvenc_1_1CodingStructure_af56c10057904924871adcf88dda15fef}} 
+\index{CodingStructure@{CodingStructure}!m\_dmvrMvCacheOffset@{m\_dmvrMvCacheOffset}}
+\index{m\_dmvrMvCacheOffset@{m\_dmvrMvCacheOffset}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_dmvrMvCacheOffset}{m\_dmvrMvCacheOffset}}
+{\footnotesize\ttfamily int m\+\_\+dmvr\+Mv\+Cache\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 221 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a34f39c4e2cd16beaa845cd2e4b1c9844}\label{classvvenc_1_1CodingStructure_a34f39c4e2cd16beaa845cd2e4b1c9844}} 
+\index{CodingStructure@{CodingStructure}!m\_isTuEnc@{m\_isTuEnc}}
+\index{m\_isTuEnc@{m\_isTuEnc}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_isTuEnc}{m\_isTuEnc}}
+{\footnotesize\ttfamily bool m\+\_\+is\+Tu\+Enc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 196 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a50392aa089e3ee9becf9fa9ed98e33f1}\label{classvvenc_1_1CodingStructure_a50392aa089e3ee9becf9fa9ed98e33f1}} 
+\index{CodingStructure@{CodingStructure}!m\_lfParam@{m\_lfParam}}
+\index{m\_lfParam@{m\_lfParam}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_lfParam}{m\_lfParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1LoopFilterParam}{Loop\+Filter\+Param}}$\ast$ m\+\_\+lf\+Param\mbox{[}\mbox{\hyperlink{namespacevvenc_a461fdc0911ad8f4e1fa86045d52cc007af7517df0021a3656aa9dcd970dbaefa4}{N\+U\+M\+\_\+\+E\+D\+G\+E\+\_\+\+D\+IR}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 225 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5858aa6bfa40ac9f60cc1b4744442f4c}\label{classvvenc_1_1CodingStructure_a5858aa6bfa40ac9f60cc1b4744442f4c}} 
+\index{CodingStructure@{CodingStructure}!m\_mapSize@{m\_mapSize}}
+\index{m\_mapSize@{m\_mapSize}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_mapSize}{m\_mapSize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Size}{Size}} m\+\_\+map\+Size\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 227 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad95f11b7eaacfd753ce1658d2fd2174e}\label{classvvenc_1_1CodingStructure_ad95f11b7eaacfd753ce1658d2fd2174e}} 
+\index{CodingStructure@{CodingStructure}!m\_motionBuf@{m\_motionBuf}}
+\index{m\_motionBuf@{m\_motionBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_motionBuf}{m\_motionBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1MotionInfo}{Motion\+Info}}$\ast$ m\+\_\+motion\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 223 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a2ff4b884f67e871ff94b98b4f2b496ae}\label{classvvenc_1_1CodingStructure_a2ff4b884f67e871ff94b98b4f2b496ae}} 
+\index{CodingStructure@{CodingStructure}!m\_numCUs@{m\_numCUs}}
+\index{m\_numCUs@{m\_numCUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_numCUs}{m\_numCUs}}
+{\footnotesize\ttfamily unsigned m\+\_\+num\+C\+Us\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 201 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aed27fa2a6b61989c94fed542995353db}\label{classvvenc_1_1CodingStructure_aed27fa2a6b61989c94fed542995353db}} 
+\index{CodingStructure@{CodingStructure}!m\_numTUs@{m\_numTUs}}
+\index{m\_numTUs@{m\_numTUs}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_numTUs}{m\_numTUs}}
+{\footnotesize\ttfamily unsigned m\+\_\+num\+T\+Us\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 202 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a69d554d1809cf3aee789cbdb4b203131}\label{classvvenc_1_1CodingStructure_a69d554d1809cf3aee789cbdb4b203131}} 
+\index{CodingStructure@{CodingStructure}!m\_offsets@{m\_offsets}}
+\index{m\_offsets@{m\_offsets}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_offsets}{m\_offsets}}
+{\footnotesize\ttfamily int m\+\_\+offsets\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 218 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5f0f708a86c9fe0d390d0dd2a3086fdb}\label{classvvenc_1_1CodingStructure_a5f0f708a86c9fe0d390d0dd2a3086fdb}} 
+\index{CodingStructure@{CodingStructure}!m\_org@{m\_org}}
+\index{m\_org@{m\_org}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_org}{m\_org}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}$\ast$ m\+\_\+org\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 214 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aa8106224a8282648708c48851871d328}\label{classvvenc_1_1CodingStructure_aa8106224a8282648708c48851871d328}} 
+\index{CodingStructure@{CodingStructure}!m\_pred@{m\_pred}}
+\index{m\_pred@{m\_pred}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_pred}{m\_pred}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+pred\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 210 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_acbf22a73a4e42c25320d9d32755ba995}\label{classvvenc_1_1CodingStructure_acbf22a73a4e42c25320d9d32755ba995}} 
+\index{CodingStructure@{CodingStructure}!m\_reco@{m\_reco}}
+\index{m\_reco@{m\_reco}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_reco}{m\_reco}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+reco\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 212 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a295bbbecb1ed19afa8ca8901457a016b}\label{classvvenc_1_1CodingStructure_a295bbbecb1ed19afa8ca8901457a016b}} 
+\index{CodingStructure@{CodingStructure}!m\_resi@{m\_resi}}
+\index{m\_resi@{m\_resi}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_resi}{m\_resi}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+resi\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 211 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9240590aed97d9765f267480511ab849}\label{classvvenc_1_1CodingStructure_a9240590aed97d9765f267480511ab849}} 
+\index{CodingStructure@{CodingStructure}!m\_rsporg@{m\_rsporg}}
+\index{m\_rsporg@{m\_rsporg}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_rsporg}{m\_rsporg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}$\ast$ m\+\_\+rsporg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 215 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a6ec29ca79d68affe686e88a23a05efda}\label{classvvenc_1_1CodingStructure_a6ec29ca79d68affe686e88a23a05efda}} 
+\index{CodingStructure@{CodingStructure}!m\_rspreco@{m\_rspreco}}
+\index{m\_rspreco@{m\_rspreco}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_rspreco}{m\_rspreco}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+rspreco\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 213 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aebe9a893da3ab9e43ed8cc8ede589ad0}\label{classvvenc_1_1CodingStructure_aebe9a893da3ab9e43ed8cc8ede589ad0}} 
+\index{CodingStructure@{CodingStructure}!m\_sao@{m\_sao}}
+\index{m\_sao@{m\_sao}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_sao}{m\_sao}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}}$>$ m\+\_\+sao\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 208 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a87b857a2d795b44a21f963929712e8a9}\label{classvvenc_1_1CodingStructure_a87b857a2d795b44a21f963929712e8a9}} 
+\index{CodingStructure@{CodingStructure}!m\_tuCache@{m\_tuCache}}
+\index{m\_tuCache@{m\_tuCache}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_tuCache}{m\_tuCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a26d2e265f2cfb4f7e9b247adab52b2f9}{T\+U\+Cache}}\& m\+\_\+tu\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 205 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a50ec70d1d2b618aa72cc48d4ae1a0575}\label{classvvenc_1_1CodingStructure_a50ec70d1d2b618aa72cc48d4ae1a0575}} 
+\index{CodingStructure@{CodingStructure}!m\_tuPtr@{m\_tuPtr}}
+\index{m\_tuPtr@{m\_tuPtr}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_tuPtr}{m\_tuPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$$\ast$ m\+\_\+tu\+Ptr\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 199 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a582311c0f6b88ebe459acbbcad7c1632}\label{classvvenc_1_1CodingStructure_a582311c0f6b88ebe459acbbcad7c1632}} 
+\index{CodingStructure@{CodingStructure}!m\_unitCacheMutex@{m\_unitCacheMutex}}
+\index{m\_unitCacheMutex@{m\_unitCacheMutex}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{m\_unitCacheMutex}{m\_unitCacheMutex}}
+{\footnotesize\ttfamily std\+::mutex$\ast$ m\+\_\+unit\+Cache\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 206 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af3299ffac82260ca18191ac0f7b851dd}\label{classvvenc_1_1CodingStructure_af3299ffac82260ca18191ac0f7b851dd}} 
+\index{CodingStructure@{CodingStructure}!motionLut@{motionLut}}
+\index{motionLut@{motionLut}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{motionLut}{motionLut}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1LutMotionCand}{Lut\+Motion\+Cand}} motion\+Lut}
+
+
+
+Definition at line 189 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a1989ff575d49a46478bfcb77dec98ef0}\label{classvvenc_1_1CodingStructure_a1989ff575d49a46478bfcb77dec98ef0}} 
+\index{CodingStructure@{CodingStructure}!motionLutBuf@{motionLutBuf}}
+\index{motionLutBuf@{motionLutBuf}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{motionLutBuf}{motionLutBuf}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1LutMotionCand}{Lut\+Motion\+Cand}}$>$ motion\+Lut\+Buf}
+
+
+
+Definition at line 190 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a9ef26ec7fe929d5b60b8b99ddf37838d}\label{classvvenc_1_1CodingStructure_a9ef26ec7fe929d5b60b8b99ddf37838d}} 
+\index{CodingStructure@{CodingStructure}!parent@{parent}}
+\index{parent@{parent}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ parent}
+
+
+
+Definition at line 94 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a5e9c1ca891ed69b925ad083b0e92c641}\label{classvvenc_1_1CodingStructure_a5e9c1ca891ed69b925ad083b0e92c641}} 
+\index{CodingStructure@{CodingStructure}!pcv@{pcv}}
+\index{pcv@{pcv}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{pcv}{pcv}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}}$\ast$ pcv}
+
+
+
+Definition at line 112 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a86e63267f0b87eb319b151d10ad84e0f}\label{classvvenc_1_1CodingStructure_a86e63267f0b87eb319b151d10ad84e0f}} 
+\index{CodingStructure@{CodingStructure}!picHeader@{picHeader}}
+\index{picHeader@{picHeader}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{picHeader}{picHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}}$\ast$ pic\+Header}
+
+
+
+Definition at line 107 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_aef3335e97d85120b669725bab3b7b5f7}\label{classvvenc_1_1CodingStructure_aef3335e97d85120b669725bab3b7b5f7}} 
+\index{CodingStructure@{CodingStructure}!picture@{picture}}
+\index{picture@{picture}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{picture}{picture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$ picture}
+
+
+
+Definition at line 93 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0705c021d68ecb01bbf299f0aa4fe327}\label{classvvenc_1_1CodingStructure_a0705c021d68ecb01bbf299f0aa4fe327}} 
+\index{CodingStructure@{CodingStructure}!pps@{pps}}
+\index{pps@{pps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{pps}{pps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}$\ast$ pps}
+
+
+
+Definition at line 106 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a10fcb1303cd3fe55054f17360dc340b7}\label{classvvenc_1_1CodingStructure_a10fcb1303cd3fe55054f17360dc340b7}} 
+\index{CodingStructure@{CodingStructure}!prevQP@{prevQP}}
+\index{prevQP@{prevQP}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{prevQP}{prevQP}}
+{\footnotesize\ttfamily int prev\+QP\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}}
+
+
+
+Definition at line 102 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a4a56efa523b800707d4c66ddc9771e74}\label{classvvenc_1_1CodingStructure_a4a56efa523b800707d4c66ddc9771e74}} 
+\index{CodingStructure@{CodingStructure}!refCS@{refCS}}
+\index{refCS@{refCS}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{refCS}{refCS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ ref\+CS}
+
+
+
+Definition at line 95 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_af652fc173ed566f1b471016926a22040}\label{classvvenc_1_1CodingStructure_af652fc173ed566f1b471016926a22040}} 
+\index{CodingStructure@{CodingStructure}!resetIBCBuffer@{resetIBCBuffer}}
+\index{resetIBCBuffer@{resetIBCBuffer}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{resetIBCBuffer}{resetIBCBuffer}}
+{\footnotesize\ttfamily bool reset\+I\+B\+C\+Buffer}
+
+
+
+Definition at line 232 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a7fa3fd59397232b6efe15fb6355e215d}\label{classvvenc_1_1CodingStructure_a7fa3fd59397232b6efe15fb6355e215d}} 
+\index{CodingStructure@{CodingStructure}!scalinglistAps@{scalinglistAps}}
+\index{scalinglistAps@{scalinglistAps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{scalinglistAps}{scalinglistAps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ scalinglist\+Aps}
+
+
+
+Definition at line 110 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a0dadb78ffff3ac601aa8042a12d06d90}\label{classvvenc_1_1CodingStructure_a0dadb78ffff3ac601aa8042a12d06d90}} 
+\index{CodingStructure@{CodingStructure}!slice@{slice}}
+\index{slice@{slice}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{slice}{slice}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}}$\ast$ slice}
+
+
+
+Definition at line 97 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a2d3ec636d347d8ea142e64ca27ceaad4}\label{classvvenc_1_1CodingStructure_a2d3ec636d347d8ea142e64ca27ceaad4}} 
+\index{CodingStructure@{CodingStructure}!sps@{sps}}
+\index{sps@{sps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{sps}{sps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$\ast$ sps}
+
+
+
+Definition at line 105 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a4e591e79f5c8f5c0145e9088bb273703}\label{classvvenc_1_1CodingStructure_a4e591e79f5c8f5c0145e9088bb273703}} 
+\index{CodingStructure@{CodingStructure}!tus@{tus}}
+\index{tus@{tus}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{tus}{tus}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$$>$ tus}
+
+
+
+Definition at line 187 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_ad1a2dca79fc1e5683f3b4b464522715f}\label{classvvenc_1_1CodingStructure_ad1a2dca79fc1e5683f3b4b464522715f}} 
+\index{CodingStructure@{CodingStructure}!unitScale@{unitScale}}
+\index{unitScale@{unitScale}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{unitScale}{unitScale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitScale}{Unit\+Scale}} unit\+Scale\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 99 of file Coding\+Structure.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CodingStructure_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}\label{classvvenc_1_1CodingStructure_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}} 
+\index{CodingStructure@{CodingStructure}!vps@{vps}}
+\index{vps@{vps}!CodingStructure@{CodingStructure}}
+\doxysubsubsection{\texorpdfstring{vps}{vps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ vps}
+
+
+
+Definition at line 111 of file Coding\+Structure.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{CodingStructure_8h}{Coding\+Structure.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{CodingStructure_8cpp}{Coding\+Structure.\+cpp}}\end{DoxyCompactItemize}

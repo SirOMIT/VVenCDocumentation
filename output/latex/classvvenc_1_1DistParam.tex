@@ -1,0 +1,241 @@
+\hypertarget{classvvenc_1_1DistParam}{}\doxysection{Dist\+Param}
+\label{classvvenc_1_1DistParam}\index{DistParam@{DistParam}}
+
+
+distortion parameter class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Rd\+Cost.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Dist\+Param\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DistParam__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DistParam_abe6a2a3b9591075034897a5bc48be267}{Dist\+Param}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1DistParam_a598d35a79d8113fa3fd25273ef56d3aa}{Dist\+Param}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&\+\_\+org, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&\+\_\+cur, \mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}} \+\_\+dist\+Func, int \+\_\+bit\+Depth, int \+\_\+sub\+Shift, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \+\_\+comp\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DistParam_a376b84e918ff45ec7456fffdff298487}{apply\+Weight}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DistParam_ac77b590e38a8e565a52609ab911451d1}{bit\+Depth}}
+\item 
+\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \mbox{\hyperlink{classvvenc_1_1DistParam_a92af6a6ef8338ca29f938e48beb16be7}{comp\+ID}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1DistParam_a2a778981aa07ec37b20d3ca3ca0e4096}{cur}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}} \mbox{\hyperlink{classvvenc_1_1DistParam_a8e49433c232922a8af6b1252e0919bab}{dist\+Func}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DistParam_ae155b47d9582f1fc83ddfb9a243944a3}{mask}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DistParam_a21a2ea4263ccaf5a944c35f9d50fa220}{mask\+Stride}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DistParam_ae7db8406ac20756b743f50332ce6c725}{mask\+Stride2}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1DistParam_acae113ecd739d9c74b8ff82f4a131500}{maximum\+Distortion\+For\+Early\+Exit}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{classvvenc_1_1DistParam_ae716301fedc5457b5fd5e1c937423cc6}{org}}
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DistParam_a34d0fb3ac7b38b903cdb097d74e4ba09}{org\+Luma}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DistParam_a96762ee6a6d114a99c52c7065d5a1f70}{stepX}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DistParam_aa8a6f3a3091d3ec0bda883c1a8caa41f}{sub\+Shift}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DistParam_ac5340dffb78c00bbf49c6689f0e1a298}{wp\+Cur}}
+\begin{DoxyCompactList}\small\item\em During cost calculations, if distortion exceeds this value, cost calculations may early-\/terminate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+distortion parameter class 
+
+Definition at line 78 of file Rd\+Cost.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a598d35a79d8113fa3fd25273ef56d3aa}\label{classvvenc_1_1DistParam_a598d35a79d8113fa3fd25273ef56d3aa}} 
+\index{DistParam@{DistParam}!DistParam@{DistParam}}
+\index{DistParam@{DistParam}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{DistParam()}{DistParam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{\+\_\+org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{\+\_\+cur,  }\item[{\mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}}}]{\+\_\+dist\+Func,  }\item[{int}]{\+\_\+bit\+Depth,  }\item[{int}]{\+\_\+sub\+Shift,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{\+\_\+comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_abe6a2a3b9591075034897a5bc48be267}\label{classvvenc_1_1DistParam_abe6a2a3b9591075034897a5bc48be267}} 
+\index{DistParam@{DistParam}!DistParam@{DistParam}}
+\index{DistParam@{DistParam}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{DistParam()}{DistParam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Rd\+Cost.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a376b84e918ff45ec7456fffdff298487}\label{classvvenc_1_1DistParam_a376b84e918ff45ec7456fffdff298487}} 
+\index{DistParam@{DistParam}!applyWeight@{applyWeight}}
+\index{applyWeight@{applyWeight}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{applyWeight}{applyWeight}}
+{\footnotesize\ttfamily bool apply\+Weight}
+
+
+
+Definition at line 90 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_ac77b590e38a8e565a52609ab911451d1}\label{classvvenc_1_1DistParam_ac77b590e38a8e565a52609ab911451d1}} 
+\index{DistParam@{DistParam}!bitDepth@{bitDepth}}
+\index{bitDepth@{bitDepth}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{bitDepth}{bitDepth}}
+{\footnotesize\ttfamily int bit\+Depth}
+
+
+
+Definition at line 87 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a92af6a6ef8338ca29f938e48beb16be7}\label{classvvenc_1_1DistParam_a92af6a6ef8338ca29f938e48beb16be7}} 
+\index{DistParam@{DistParam}!compID@{compID}}
+\index{compID@{compID}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{compID}{compID}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID}
+
+
+
+Definition at line 89 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a2a778981aa07ec37b20d3ca3ca0e4096}\label{classvvenc_1_1DistParam_a2a778981aa07ec37b20d3ca3ca0e4096}} 
+\index{DistParam@{DistParam}!cur@{cur}}
+\index{cur@{cur}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{cur}{cur}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} cur}
+
+
+
+Definition at line 82 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a8e49433c232922a8af6b1252e0919bab}\label{classvvenc_1_1DistParam_a8e49433c232922a8af6b1252e0919bab}} 
+\index{DistParam@{DistParam}!distFunc@{distFunc}}
+\index{distFunc@{distFunc}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{distFunc}{distFunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}} dist\+Func}
+
+
+
+Definition at line 83 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_ae155b47d9582f1fc83ddfb9a243944a3}\label{classvvenc_1_1DistParam_ae155b47d9582f1fc83ddfb9a243944a3}} 
+\index{DistParam@{DistParam}!mask@{mask}}
+\index{mask@{mask}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$\ast$ mask}
+
+
+
+Definition at line 95 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a21a2ea4263ccaf5a944c35f9d50fa220}\label{classvvenc_1_1DistParam_a21a2ea4263ccaf5a944c35f9d50fa220}} 
+\index{DistParam@{DistParam}!maskStride@{maskStride}}
+\index{maskStride@{maskStride}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{maskStride}{maskStride}}
+{\footnotesize\ttfamily int mask\+Stride}
+
+
+
+Definition at line 96 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_ae7db8406ac20756b743f50332ce6c725}\label{classvvenc_1_1DistParam_ae7db8406ac20756b743f50332ce6c725}} 
+\index{DistParam@{DistParam}!maskStride2@{maskStride2}}
+\index{maskStride2@{maskStride2}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{maskStride2}{maskStride2}}
+{\footnotesize\ttfamily int mask\+Stride2}
+
+
+
+Definition at line 98 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_acae113ecd739d9c74b8ff82f4a131500}\label{classvvenc_1_1DistParam_acae113ecd739d9c74b8ff82f4a131500}} 
+\index{DistParam@{DistParam}!maximumDistortionForEarlyExit@{maximumDistortionForEarlyExit}}
+\index{maximumDistortionForEarlyExit@{maximumDistortionForEarlyExit}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{maximumDistortionForEarlyExit}{maximumDistortionForEarlyExit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} maximum\+Distortion\+For\+Early\+Exit}
+
+
+
+Definition at line 91 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_ae716301fedc5457b5fd5e1c937423cc6}\label{classvvenc_1_1DistParam_ae716301fedc5457b5fd5e1c937423cc6}} 
+\index{DistParam@{DistParam}!org@{org}}
+\index{org@{org}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{org}{org}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} org}
+
+
+
+Definition at line 81 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a34d0fb3ac7b38b903cdb097d74e4ba09}\label{classvvenc_1_1DistParam_a34d0fb3ac7b38b903cdb097d74e4ba09}} 
+\index{DistParam@{DistParam}!orgLuma@{orgLuma}}
+\index{orgLuma@{orgLuma}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{orgLuma}{orgLuma}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}}$\ast$ org\+Luma}
+
+
+
+Definition at line 93 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_a96762ee6a6d114a99c52c7065d5a1f70}\label{classvvenc_1_1DistParam_a96762ee6a6d114a99c52c7065d5a1f70}} 
+\index{DistParam@{DistParam}!stepX@{stepX}}
+\index{stepX@{stepX}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{stepX}{stepX}}
+{\footnotesize\ttfamily int stepX}
+
+
+
+Definition at line 97 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_aa8a6f3a3091d3ec0bda883c1a8caa41f}\label{classvvenc_1_1DistParam_aa8a6f3a3091d3ec0bda883c1a8caa41f}} 
+\index{DistParam@{DistParam}!subShift@{subShift}}
+\index{subShift@{subShift}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{subShift}{subShift}}
+{\footnotesize\ttfamily int sub\+Shift}
+
+
+
+Definition at line 88 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1DistParam_ac5340dffb78c00bbf49c6689f0e1a298}\label{classvvenc_1_1DistParam_ac5340dffb78c00bbf49c6689f0e1a298}} 
+\index{DistParam@{DistParam}!wpCur@{wpCur}}
+\index{wpCur@{wpCur}!DistParam@{DistParam}}
+\doxysubsubsection{\texorpdfstring{wpCur}{wpCur}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}}$\ast$ wp\+Cur}
+
+
+
+During cost calculations, if distortion exceeds this value, cost calculations may early-\/terminate. 
+
+
+
+Definition at line 92 of file Rd\+Cost.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{RdCost_8h}{Rd\+Cost.\+h}}\end{DoxyCompactItemize}

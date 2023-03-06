@@ -1,0 +1,72 @@
+\hypertarget{Quant_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Quant.h File Reference}
+\label{Quant_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Quant.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Quant.h}}
+
+
+base quantization class (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Contexts.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Partitioner.\+h\char`\"{}}\newline
+Include dependency graph for Quant.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Quant_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Quant_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}}
+\begin{DoxyCompactList}\small\item\em QP struct. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classvvenc_1_1Quant}{Quant}}
+\begin{DoxyCompactList}\small\item\em transform and quantization class \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structvvenc_1_1TrQuantParams}{Tr\+Quant\+Params}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Quant_8h_ad50724501485602f56226e92f60141f9}{Q\+P\+\_\+\+B\+I\+TS}}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a06f591cf54f525ddb70dee2447d487b1}{get\+Scaling\+List\+Type}} (const Pred\+Mode pred\+Mode, const Component\+ID comp\+ID)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a4bd30501d0d8fb15a511a4c404f86e70}{get\+Transform\+Shift}} (const int channel\+Bit\+Depth, const Size size, const int max\+Log2\+Tr\+Dynamic\+Range)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+base quantization class (header) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Quant_8h_ad50724501485602f56226e92f60141f9}\label{Quant_8h_ad50724501485602f56226e92f60141f9}} 
+\index{Quant.h@{Quant.h}!QP\_BITS@{QP\_BITS}}
+\index{QP\_BITS@{QP\_BITS}!Quant.h@{Quant.h}}
+\doxysubsubsection{\texorpdfstring{QP\_BITS}{QP\_BITS}}
+{\footnotesize\ttfamily \#define Q\+P\+\_\+\+B\+I\+TS~15}
+
+
+
+Definition at line 67 of file Quant.\+h.
+

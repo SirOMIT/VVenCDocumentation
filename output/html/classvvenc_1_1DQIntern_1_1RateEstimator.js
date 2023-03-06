@@ -1,0 +1,25 @@
+var classvvenc_1_1DQIntern_1_1RateEstimator =
+[
+    [ "RateEstimator", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a6d5ae310f29119afa5304e379f15576e", null ],
+    [ "~RateEstimator", "classvvenc_1_1DQIntern_1_1RateEstimator.html#aeb8f250f63ae27795d044a1a34f0917f", null ],
+    [ "gtxFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#abc1034041d28cf937bda6a5b03a05923", null ],
+    [ "initCtx", "classvvenc_1_1DQIntern_1_1RateEstimator.html#abf159307c339137095e0ee2beb90ac87", null ],
+    [ "lastOffset", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a93a67c710b48404669946b7cc40336cd", null ],
+    [ "sigFlagBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#aac02d848cc6a07fb9a2b570abc98d016", null ],
+    [ "sigSbbFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a9cecd43ddebf3619807e7adb93d26111", null ],
+    [ "xSetGtxFlagBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a4d83f08579795d654f55a711c4c502c3", null ],
+    [ "xSetLastCoeffOffset", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a4ed9d86935f598b8a38fc75808244c5b", null ],
+    [ "xSetSigFlagBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#aa6483ec15fa4f541b1d74151c51b2baa", null ],
+    [ "xSetSigSbbFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a6713f999150a33c455788a7638fa8ac3", null ],
+    [ "m_gtxFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a6cc74b732b689620814fa8e72cac9a31", null ],
+    [ "m_lastBitsX", "classvvenc_1_1DQIntern_1_1RateEstimator.html#ad0530b231dc187a37757879104d0e281", null ],
+    [ "m_lastBitsY", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a2b96abb59563ac62fddc10b6867361ad", null ],
+    [ "m_scanId2Pos", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a9eb76fa00e4f35892895396fdcdb3339", null ],
+    [ "m_sigFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a3c7553487023e38d6dac5d880f04f9f9", null ],
+    [ "m_sigSbbFracBits", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a5e7cf02bfb5c92b4df0b26cfc32e786b", null ],
+    [ "sm_maxNumGtxCtx", "classvvenc_1_1DQIntern_1_1RateEstimator.html#ac46123d7bf8babab21dbad96a4f8c88a", null ],
+    [ "sm_maxNumSigCtx", "classvvenc_1_1DQIntern_1_1RateEstimator.html#aa3f01771fc55e45dc585a5304a877410", null ],
+    [ "sm_maxNumSigSbbCtx", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a88be2a59bb30d729ba3ab24eb352e8db", null ],
+    [ "sm_numCtxSetsGtx", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a2622965b4a3fbb3fa34f34a93a58650c", null ],
+    [ "sm_numCtxSetsSig", "classvvenc_1_1DQIntern_1_1RateEstimator.html#a234db86ec01f3a3960ab95507f4f3b74", null ]
+];

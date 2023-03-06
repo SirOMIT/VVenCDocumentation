@@ -1,0 +1,48 @@
+\hypertarget{dtrace_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/dtrace.cpp File Reference}
+\label{dtrace_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/dtrace.cpp}}
+
+
+Implementation of trace messages support for debugging.  
+
+
+{\ttfamily \#include \char`\"{}dtrace.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+Include dependency graph for dtrace.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dtrace_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a157e29dfb4edf216aab21ae7067d1124}{\+\_\+cf\+\_\+eq}} (int bound, int val)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_ad1da2f7126f7c240138203a8286b7551}{\+\_\+cf\+\_\+ge}} (int bound, int val)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a124eaae12d6882adcf35e32c06017881}{\+\_\+cf\+\_\+le}} (int bound, int val)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a12e0fb41a5c63934409aa072783032f8}{\+\_\+cf\+\_\+neq}} (int bound, int val)
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{namespacevvenc_a901ad6f54c37a98e09a543891d17b7e3}{split}} (const std\+::string \&s, char delim)
+\item 
+static std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}} (const std\+::string \&s, char delim, std\+::vector$<$ std\+::string $>$ \&elems)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of trace messages support for debugging. 
+

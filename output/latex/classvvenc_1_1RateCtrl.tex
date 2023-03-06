@@ -1,0 +1,531 @@
+\hypertarget{classvvenc_1_1RateCtrl}{}\doxysection{Rate\+Ctrl}
+\label{classvvenc_1_1RateCtrl}\index{RateCtrl@{RateCtrl}}
+
+
+{\ttfamily \#include \char`\"{}Rate\+Ctrl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Rate\+Ctrl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RateCtrl_a0e994a827dec227d6f8ad66e170645b2}{Rate\+Ctrl}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1RateCtrl_abdf88f286c886ea0348082c091a22ad3}{$\sim$\+Rate\+Ctrl}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a98f6c7eeb90433d8872112409d7e32f1}{adapt\+To\+Scene\+Changes}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_ab932255b352c7d7ccade22225676ef05}{add\+R\+C\+Pass\+Stats}} (const int poc, const int qp, const double lambda, const uint16\+\_\+t vis\+ActY, const uint32\+\_\+t num\+Bits, const double psnrY, const bool is\+Intra, const int temp\+Layer)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a79f7acf16b464529fa6bb95693ce8c8f}{destroy\+R\+C\+G\+OP}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a8e9b3197dbe3e05240316465571a224f}{detect\+New\+Scene}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}} $>$ \& \mbox{\hyperlink{classvvenc_1_1RateCtrl_a9dd6e807e3dfd65b60299ec229f51ae6}{get\+First\+Pass\+Stats}} ()
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ $\ast$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_a14836ee67d68b7a5871aefea5dc0ca70}{get\+Intra\+P\+Q\+P\+A\+Stats}} ()
+\item 
+std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}} $\ast$ $>$ \& \mbox{\hyperlink{classvvenc_1_1RateCtrl_a4f6ef322ba068bd051222b3079670b3b}{get\+Pic\+List}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1RateCtrl_a561871957c2beb5abbfd5f1bcf270f72}{get\+Total\+Bits\+In\+First\+Pass}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_ae94098c4175277c311c4bd6807cca139}{init}} (int tot\+Frames, int target\+Bitrate, int frame\+Rate, int intra\+Period, int G\+O\+P\+Size, int pic\+Width, int pic\+Height, int L\+C\+U\+Width, int L\+C\+U\+Height, int bit\+Depth, const vvenc\+G\+O\+P\+Entry G\+O\+P\+List\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+G\+OP\mbox{]}, int max\+Parallel\+Frames)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a6f7e3186e9dcbb329b169bf869bee0f9}{init\+R\+C\+G\+OP}} (const int number\+Of\+Pictures)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a44454aab4f68d33cad07a7bc2213af81}{process\+First\+Pass\+Data}} (const int second\+Pass\+Base\+QP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_a9999fe1b98bedff27bb63d4fc0668c36}{process\+Gops}} (const int second\+Pass\+Base\+QP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RateCtrl_aa147428e6e802a31501dbe56fefab751}{set\+R\+C\+Pass}} (const int pass, const int max\+Pass)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCGOP}{Enc\+R\+C\+G\+OP}} $\ast$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_a2b5fcef61b77355d86a065adc308528e}{enc\+R\+C\+G\+OP}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}} $\ast$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_afd36d4c3cfe408edbe75579fd69bafd0}{enc\+R\+C\+Pic}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} $\ast$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_ac792156088c1bfd18ac85b5835b95540}{enc\+R\+C\+Seq}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1RateCtrl_a9f42bf2ad9de6fce9ed88e35a325d442}{flush\+P\+OC}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_a4849a16cf9c140b9f8194af1a2f0db23}{m\+\_\+list\+R\+C\+Pictures}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1RateCtrl_a5a6de978047f62096b6c0d20659e756b}{rc\+Is\+Final\+Pass}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1RateCtrl_a7314a6a143d85804239b97a36965755f}{rc\+Max\+Pass}}
+\item 
+std\+::mutex \mbox{\hyperlink{classvvenc_1_1RateCtrl_ae56a2e4d80da65e2f9ff9d0573fcc2a1}{rc\+Mutex}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1RateCtrl_ab4eb30394f0c5fe824c23077d4258bf6}{rc\+Pass}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}} $>$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_a61918dfad5b3d7354ea66212c73e62d1}{m\+\_\+list\+R\+C\+First\+Pass\+Stats}}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1RateCtrl_a952e365de717e72f6e2c964c4c3f6280}{m\+\_\+list\+R\+C\+Intra\+P\+Q\+P\+A\+Stats}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 247 of file Rate\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a0e994a827dec227d6f8ad66e170645b2}\label{classvvenc_1_1RateCtrl_a0e994a827dec227d6f8ad66e170645b2}} 
+\index{RateCtrl@{RateCtrl}!RateCtrl@{RateCtrl}}
+\index{RateCtrl@{RateCtrl}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{RateCtrl()}{RateCtrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1108 of file Rate\+Ctrl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_abdf88f286c886ea0348082c091a22ad3}\label{classvvenc_1_1RateCtrl_abdf88f286c886ea0348082c091a22ad3}} 
+\index{RateCtrl@{RateCtrl}!````~RateCtrl@{$\sim$RateCtrl}}
+\index{````~RateCtrl@{$\sim$RateCtrl}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{$\sim$RateCtrl()}{~RateCtrl()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1119 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classvvenc_1_1RateCtrl_abdf88f286c886ea0348082c091a22ad3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a98f6c7eeb90433d8872112409d7e32f1}\label{classvvenc_1_1RateCtrl_a98f6c7eeb90433d8872112409d7e32f1}} 
+\index{RateCtrl@{RateCtrl}!adaptToSceneChanges@{adaptToSceneChanges}}
+\index{adaptToSceneChanges@{adaptToSceneChanges}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{adaptToSceneChanges()}{adaptToSceneChanges()}}
+{\footnotesize\ttfamily void adapt\+To\+Scene\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1424 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a98f6c7eeb90433d8872112409d7e32f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_ab932255b352c7d7ccade22225676ef05}\label{classvvenc_1_1RateCtrl_ab932255b352c7d7ccade22225676ef05}} 
+\index{RateCtrl@{RateCtrl}!addRCPassStats@{addRCPassStats}}
+\index{addRCPassStats@{addRCPassStats}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{addRCPassStats()}{addRCPassStats()}}
+{\footnotesize\ttfamily void add\+R\+C\+Pass\+Stats (\begin{DoxyParamCaption}\item[{const int}]{poc,  }\item[{const int}]{qp,  }\item[{const double}]{lambda,  }\item[{const uint16\+\_\+t}]{vis\+ActY,  }\item[{const uint32\+\_\+t}]{num\+Bits,  }\item[{const double}]{psnrY,  }\item[{const bool}]{is\+Intra,  }\item[{const int}]{temp\+Layer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1468 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classvvenc_1_1RateCtrl_ab932255b352c7d7ccade22225676ef05_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_ab932255b352c7d7ccade22225676ef05_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1RateCtrl_a3a80b6032f86a56bec74609034b3246f}} 
+\index{RateCtrl@{RateCtrl}!destroy@{destroy}}
+\index{destroy@{destroy}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1124 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a79f7acf16b464529fa6bb95693ce8c8f}\label{classvvenc_1_1RateCtrl_a79f7acf16b464529fa6bb95693ce8c8f}} 
+\index{RateCtrl@{RateCtrl}!destroyRCGOP@{destroyRCGOP}}
+\index{destroyRCGOP@{destroyRCGOP}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{destroyRCGOP()}{destroyRCGOP()}}
+{\footnotesize\ttfamily void destroy\+R\+C\+G\+OP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1339 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a79f7acf16b464529fa6bb95693ce8c8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a8e9b3197dbe3e05240316465571a224f}\label{classvvenc_1_1RateCtrl_a8e9b3197dbe3e05240316465571a224f}} 
+\index{RateCtrl@{RateCtrl}!detectNewScene@{detectNewScene}}
+\index{detectNewScene@{detectNewScene}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{detectNewScene()}{detectNewScene()}}
+{\footnotesize\ttfamily void detect\+New\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1381 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a8e9b3197dbe3e05240316465571a224f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a9dd6e807e3dfd65b60299ec229f51ae6}\label{classvvenc_1_1RateCtrl_a9dd6e807e3dfd65b60299ec229f51ae6}} 
+\index{RateCtrl@{RateCtrl}!getFirstPassStats@{getFirstPassStats}}
+\index{getFirstPassStats@{getFirstPassStats}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{getFirstPassStats()}{getFirstPassStats()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}}$>$\& get\+First\+Pass\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file Rate\+Ctrl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a9dd6e807e3dfd65b60299ec229f51ae6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a14836ee67d68b7a5871aefea5dc0ca70}\label{classvvenc_1_1RateCtrl_a14836ee67d68b7a5871aefea5dc0ca70}} 
+\index{RateCtrl@{RateCtrl}!getIntraPQPAStats@{getIntraPQPAStats}}
+\index{getIntraPQPAStats@{getIntraPQPAStats}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{getIntraPQPAStats()}{getIntraPQPAStats()}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$$\ast$ get\+Intra\+P\+Q\+P\+A\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 270 of file Rate\+Ctrl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a14836ee67d68b7a5871aefea5dc0ca70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a4f6ef322ba068bd051222b3079670b3b}\label{classvvenc_1_1RateCtrl_a4f6ef322ba068bd051222b3079670b3b}} 
+\index{RateCtrl@{RateCtrl}!getPicList@{getPicList}}
+\index{getPicList@{getPicList}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{getPicList()}{getPicList()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}}$\ast$$>$\& get\+Pic\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 268 of file Rate\+Ctrl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a4f6ef322ba068bd051222b3079670b3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a561871957c2beb5abbfd5f1bcf270f72}\label{classvvenc_1_1RateCtrl_a561871957c2beb5abbfd5f1bcf270f72}} 
+\index{RateCtrl@{RateCtrl}!getTotalBitsInFirstPass@{getTotalBitsInFirstPass}}
+\index{getTotalBitsInFirstPass@{getTotalBitsInFirstPass}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{getTotalBitsInFirstPass()}{getTotalBitsInFirstPass()}}
+{\footnotesize\ttfamily uint64\+\_\+t get\+Total\+Bits\+In\+First\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1368 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a561871957c2beb5abbfd5f1bcf270f72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_ae94098c4175277c311c4bd6807cca139}\label{classvvenc_1_1RateCtrl_ae94098c4175277c311c4bd6807cca139}} 
+\index{RateCtrl@{RateCtrl}!init@{init}}
+\index{init@{init}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{int}]{tot\+Frames,  }\item[{int}]{target\+Bitrate,  }\item[{int}]{frame\+Rate,  }\item[{int}]{intra\+Period,  }\item[{int}]{G\+O\+P\+Size,  }\item[{int}]{pic\+Width,  }\item[{int}]{pic\+Height,  }\item[{int}]{L\+C\+U\+Width,  }\item[{int}]{L\+C\+U\+Height,  }\item[{int}]{bit\+Depth,  }\item[{const vvenc\+G\+O\+P\+Entry}]{G\+O\+P\+List\mbox{[}\+V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+G\+O\+P\mbox{]},  }\item[{int}]{max\+Parallel\+Frames }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1144 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_ae94098c4175277c311c4bd6807cca139_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_ae94098c4175277c311c4bd6807cca139_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a6f7e3186e9dcbb329b169bf869bee0f9}\label{classvvenc_1_1RateCtrl_a6f7e3186e9dcbb329b169bf869bee0f9}} 
+\index{RateCtrl@{RateCtrl}!initRCGOP@{initRCGOP}}
+\index{initRCGOP@{initRCGOP}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{initRCGOP()}{initRCGOP()}}
+{\footnotesize\ttfamily void init\+R\+C\+G\+OP (\begin{DoxyParamCaption}\item[{const int}]{number\+Of\+Pictures }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1333 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a6f7e3186e9dcbb329b169bf869bee0f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a6f7e3186e9dcbb329b169bf869bee0f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a44454aab4f68d33cad07a7bc2213af81}\label{classvvenc_1_1RateCtrl_a44454aab4f68d33cad07a7bc2213af81}} 
+\index{RateCtrl@{RateCtrl}!processFirstPassData@{processFirstPassData}}
+\index{processFirstPassData@{processFirstPassData}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{processFirstPassData()}{processFirstPassData()}}
+{\footnotesize\ttfamily void process\+First\+Pass\+Data (\begin{DoxyParamCaption}\item[{const int}]{second\+Pass\+Base\+QP }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1352 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a44454aab4f68d33cad07a7bc2213af81_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a44454aab4f68d33cad07a7bc2213af81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a9999fe1b98bedff27bb63d4fc0668c36}\label{classvvenc_1_1RateCtrl_a9999fe1b98bedff27bb63d4fc0668c36}} 
+\index{RateCtrl@{RateCtrl}!processGops@{processGops}}
+\index{processGops@{processGops}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{processGops()}{processGops()}}
+{\footnotesize\ttfamily void process\+Gops (\begin{DoxyParamCaption}\item[{const int}]{second\+Pass\+Base\+QP }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1395 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1RateCtrl_a9999fe1b98bedff27bb63d4fc0668c36_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_a9999fe1b98bedff27bb63d4fc0668c36_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_aa147428e6e802a31501dbe56fefab751}\label{classvvenc_1_1RateCtrl_aa147428e6e802a31501dbe56fefab751}} 
+\index{RateCtrl@{RateCtrl}!setRCPass@{setRCPass}}
+\index{setRCPass@{setRCPass}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{setRCPass()}{setRCPass()}}
+{\footnotesize\ttfamily void set\+R\+C\+Pass (\begin{DoxyParamCaption}\item[{const int}]{pass,  }\item[{const int}]{max\+Pass }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1345 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RateCtrl_aa147428e6e802a31501dbe56fefab751_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a2b5fcef61b77355d86a065adc308528e}\label{classvvenc_1_1RateCtrl_a2b5fcef61b77355d86a065adc308528e}} 
+\index{RateCtrl@{RateCtrl}!encRCGOP@{encRCGOP}}
+\index{encRCGOP@{encRCGOP}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{encRCGOP}{encRCGOP}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCGOP}{Enc\+R\+C\+G\+OP}}$\ast$ enc\+R\+C\+G\+OP}
+
+
+
+Definition at line 275 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_afd36d4c3cfe408edbe75579fd69bafd0}\label{classvvenc_1_1RateCtrl_afd36d4c3cfe408edbe75579fd69bafd0}} 
+\index{RateCtrl@{RateCtrl}!encRCPic@{encRCPic}}
+\index{encRCPic@{encRCPic}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{encRCPic}{encRCPic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}}$\ast$ enc\+R\+C\+Pic}
+
+
+
+Definition at line 276 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_ac792156088c1bfd18ac85b5835b95540}\label{classvvenc_1_1RateCtrl_ac792156088c1bfd18ac85b5835b95540}} 
+\index{RateCtrl@{RateCtrl}!encRCSeq@{encRCSeq}}
+\index{encRCSeq@{encRCSeq}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{encRCSeq}{encRCSeq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}}$\ast$ enc\+R\+C\+Seq}
+
+
+
+Definition at line 274 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a9f42bf2ad9de6fce9ed88e35a325d442}\label{classvvenc_1_1RateCtrl_a9f42bf2ad9de6fce9ed88e35a325d442}} 
+\index{RateCtrl@{RateCtrl}!flushPOC@{flushPOC}}
+\index{flushPOC@{flushPOC}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{flushPOC}{flushPOC}}
+{\footnotesize\ttfamily int flush\+P\+OC}
+
+
+
+Definition at line 278 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a61918dfad5b3d7354ea66212c73e62d1}\label{classvvenc_1_1RateCtrl_a61918dfad5b3d7354ea66212c73e62d1}} 
+\index{RateCtrl@{RateCtrl}!m\_listRCFirstPassStats@{m\_listRCFirstPassStats}}
+\index{m\_listRCFirstPassStats@{m\_listRCFirstPassStats}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_listRCFirstPassStats}{m\_listRCFirstPassStats}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}}$>$ m\+\_\+list\+R\+C\+First\+Pass\+Stats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 284 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a952e365de717e72f6e2c964c4c3f6280}\label{classvvenc_1_1RateCtrl_a952e365de717e72f6e2c964c4c3f6280}} 
+\index{RateCtrl@{RateCtrl}!m\_listRCIntraPQPAStats@{m\_listRCIntraPQPAStats}}
+\index{m\_listRCIntraPQPAStats@{m\_listRCIntraPQPAStats}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_listRCIntraPQPAStats}{m\_listRCIntraPQPAStats}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ m\+\_\+list\+R\+C\+Intra\+P\+Q\+P\+A\+Stats\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 285 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a4849a16cf9c140b9f8194af1a2f0db23}\label{classvvenc_1_1RateCtrl_a4849a16cf9c140b9f8194af1a2f0db23}} 
+\index{RateCtrl@{RateCtrl}!m\_listRCPictures@{m\_listRCPictures}}
+\index{m\_listRCPictures@{m\_listRCPictures}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_listRCPictures}{m\_listRCPictures}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}}$\ast$$>$ m\+\_\+list\+R\+C\+Pictures}
+
+
+
+Definition at line 273 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a5a6de978047f62096b6c0d20659e756b}\label{classvvenc_1_1RateCtrl_a5a6de978047f62096b6c0d20659e756b}} 
+\index{RateCtrl@{RateCtrl}!rcIsFinalPass@{rcIsFinalPass}}
+\index{rcIsFinalPass@{rcIsFinalPass}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{rcIsFinalPass}{rcIsFinalPass}}
+{\footnotesize\ttfamily bool rc\+Is\+Final\+Pass}
+
+
+
+Definition at line 281 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_a7314a6a143d85804239b97a36965755f}\label{classvvenc_1_1RateCtrl_a7314a6a143d85804239b97a36965755f}} 
+\index{RateCtrl@{RateCtrl}!rcMaxPass@{rcMaxPass}}
+\index{rcMaxPass@{rcMaxPass}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{rcMaxPass}{rcMaxPass}}
+{\footnotesize\ttfamily int rc\+Max\+Pass}
+
+
+
+Definition at line 280 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_ae56a2e4d80da65e2f9ff9d0573fcc2a1}\label{classvvenc_1_1RateCtrl_ae56a2e4d80da65e2f9ff9d0573fcc2a1}} 
+\index{RateCtrl@{RateCtrl}!rcMutex@{rcMutex}}
+\index{rcMutex@{rcMutex}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{rcMutex}{rcMutex}}
+{\footnotesize\ttfamily std\+::mutex rc\+Mutex}
+
+
+
+Definition at line 277 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RateCtrl_ab4eb30394f0c5fe824c23077d4258bf6}\label{classvvenc_1_1RateCtrl_ab4eb30394f0c5fe824c23077d4258bf6}} 
+\index{RateCtrl@{RateCtrl}!rcPass@{rcPass}}
+\index{rcPass@{rcPass}!RateCtrl@{RateCtrl}}
+\doxysubsubsection{\texorpdfstring{rcPass}{rcPass}}
+{\footnotesize\ttfamily int rc\+Pass}
+
+
+
+Definition at line 279 of file Rate\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8h}{Rate\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8cpp}{Rate\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

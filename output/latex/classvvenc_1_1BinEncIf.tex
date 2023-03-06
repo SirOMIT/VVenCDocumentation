@@ -1,0 +1,439 @@
+\hypertarget{classvvenc_1_1BinEncIf}{}\doxysection{Bin\+Enc\+If}
+\label{classvvenc_1_1BinEncIf}\index{BinEncIf@{BinEncIf}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Encoder.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bin\+Enc\+If\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classvvenc_1_1BinEncIf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bin\+Enc\+If\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1BinEncIf__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1BinEncIf_ade9eede2563653daafe061aa8029a0b3}{$\sim$\+Bin\+Enc\+If}} ()
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_ab377c4091dc6379dd47b97a6826340db}{align}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a13eeadd827b0d7e9591f2e6fa4ecbf69}{encode\+Bin}} (unsigned bin, unsigned ctx\+Id)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_ad84041cd0399e681f82d4d20826c7a37}{encode\+Bin\+EP}} (unsigned bin)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a869e1c5b3c7baebf7c38f458a92a248c}{encode\+Bins\+EP}} (unsigned bins, unsigned num\+Bins)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82}{encode\+Bin\+Trm}} (unsigned bin)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a98ac525c567dc71bd7288f09f99edf0e}{encode\+Rem\+Abs\+EP}} (unsigned bins, unsigned go\+Rice\+Par, unsigned cutoff, int max\+Log2\+Tr\+Dynamic\+Range)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a900b6847ae4fd385bb99477a49400a96}{finish}} ()=0
+\item 
+virtual const \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BinEncIf_adc3baeaa2bdbd05b66bc4aac1faf6074}{get\+Bin\+Store}} () const =0
+\item 
+virtual uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncIf_a373d64cb990b7e8448b0019e06fe2fa9}{get\+Est\+Frac\+Bits}} () const =0
+\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncIf_a6deec7e6bc89a60fa0ba2d9b054f3e40}{get\+Num\+Bins}} ()=0
+\item 
+virtual unsigned \mbox{\hyperlink{classvvenc_1_1BinEncIf_a9378d6f7e5df480f64ff0ddd2fb37804}{get\+Num\+Bins}} (unsigned ctx\+Id) const =0
+\item 
+virtual unsigned \mbox{\hyperlink{classvvenc_1_1BinEncIf_a2f96cd8acdf369ed122528ba289d7b8b}{get\+Num\+Written\+Bits}} ()=0
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BinEncIf_a0e682e787bffa2a3f1ca195179b65615}{get\+Test\+Bin\+Encoder}} () const =0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a6b76f782d43ac1a2021828a5876d5ecc}{init}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$bitstream)=0
+\item 
+virtual bool \mbox{\hyperlink{classvvenc_1_1BinEncIf_ae739bf55a7f746a28ed964588a1b5158}{is\+Encoding}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a1bf414c03105667e5e1797ac1a754ff0}{reset}} (int qp, int init\+Id)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a7026369a8d5dfac0006c026cf161609b}{reset\+Bits}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_aa8850ed68fa313e7a4f87647f106b754}{restart}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a629ae7f894cdbf7829e9f9545515e522}{set\+Bin\+Storage}} (bool b)=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_ac0ae5f26cd2001d772aed9d2ea97d41c}{start}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classvvenc_1_1BinEncIf_a28ed1dc6f35ec1d8f7b73df0c8fe742d}{uninit}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Bin\+Prob\+Model $>$ }\\\mbox{\hyperlink{classvvenc_1_1BinEncIf_aae089668b3dffa98a6418876d6d70b97}{Bin\+Enc\+If}} (const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$dummy)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 111 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_aae089668b3dffa98a6418876d6d70b97}\label{classvvenc_1_1BinEncIf_aae089668b3dffa98a6418876d6d70b97}} 
+\index{BinEncIf@{BinEncIf}!BinEncIf@{BinEncIf}}
+\index{BinEncIf@{BinEncIf}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{BinEncIf()}{BinEncIf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 115 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_ade9eede2563653daafe061aa8029a0b3}\label{classvvenc_1_1BinEncIf_ade9eede2563653daafe061aa8029a0b3}} 
+\index{BinEncIf@{BinEncIf}!````~BinEncIf@{$\sim$BinEncIf}}
+\index{````~BinEncIf@{$\sim$BinEncIf}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinEncIf()}{~BinEncIf()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 117 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_ab377c4091dc6379dd47b97a6826340db}\label{classvvenc_1_1BinEncIf_ab377c4091dc6379dd47b97a6826340db}} 
+\index{BinEncIf@{BinEncIf}!align@{align}}
+\index{align@{align}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{align()}{align()}}
+{\footnotesize\ttfamily virtual void align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}{Bin\+Encoder\+Base}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a13eeadd827b0d7e9591f2e6fa4ecbf69}\label{classvvenc_1_1BinEncIf_a13eeadd827b0d7e9591f2e6fa4ecbf69}} 
+\index{BinEncIf@{BinEncIf}!encodeBin@{encodeBin}}
+\index{encodeBin@{encodeBin}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{encodeBin()}{encodeBin()}}
+{\footnotesize\ttfamily virtual void encode\+Bin (\begin{DoxyParamCaption}\item[{unsigned}]{bin,  }\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimator_ace6800c327865fe3506f8bd7be3df055}{Bit\+Estimator}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoder_ace6800c327865fe3506f8bd7be3df055}{Bin\+Encoder}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1BinEncIf_a13eeadd827b0d7e9591f2e6fa4ecbf69_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_ad84041cd0399e681f82d4d20826c7a37}\label{classvvenc_1_1BinEncIf_ad84041cd0399e681f82d4d20826c7a37}} 
+\index{BinEncIf@{BinEncIf}!encodeBinEP@{encodeBinEP}}
+\index{encodeBinEP@{encodeBinEP}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{encodeBinEP()}{encodeBinEP()}}
+{\footnotesize\ttfamily virtual void encode\+Bin\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_ac435b8e0a7b520e42c271b3ed27a9ebd}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ac435b8e0a7b520e42c271b3ed27a9ebd}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_ad84041cd0399e681f82d4d20826c7a37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a869e1c5b3c7baebf7c38f458a92a248c}\label{classvvenc_1_1BinEncIf_a869e1c5b3c7baebf7c38f458a92a248c}} 
+\index{BinEncIf@{BinEncIf}!encodeBinsEP@{encodeBinsEP}}
+\index{encodeBinsEP@{encodeBinsEP}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{encodeBinsEP()}{encodeBinsEP()}}
+{\footnotesize\ttfamily virtual void encode\+Bins\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bins,  }\item[{unsigned}]{num\+Bins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a1a0cb55256889059bf8cd8a713317394}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a869e1c5b3c7baebf7c38f458a92a248c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82}\label{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82}} 
+\index{BinEncIf@{BinEncIf}!encodeBinTrm@{encodeBinTrm}}
+\index{encodeBinTrm@{encodeBinTrm}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{encodeBinTrm()}{encodeBinTrm()}}
+{\footnotesize\ttfamily virtual void encode\+Bin\+Trm (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimator_ade551e973a52be2e0e8a9eeae16fd73c}{Bit\+Estimator}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ade551e973a52be2e0e8a9eeae16fd73c}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a98ac525c567dc71bd7288f09f99edf0e}\label{classvvenc_1_1BinEncIf_a98ac525c567dc71bd7288f09f99edf0e}} 
+\index{BinEncIf@{BinEncIf}!encodeRemAbsEP@{encodeRemAbsEP}}
+\index{encodeRemAbsEP@{encodeRemAbsEP}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{encodeRemAbsEP()}{encodeRemAbsEP()}}
+{\footnotesize\ttfamily virtual void encode\+Rem\+Abs\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bins,  }\item[{unsigned}]{go\+Rice\+Par,  }\item[{unsigned}]{cutoff,  }\item[{int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_af74a1f27de25301814bee4644b53e939}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_af74a1f27de25301814bee4644b53e939}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a98ac525c567dc71bd7288f09f99edf0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a900b6847ae4fd385bb99477a49400a96}\label{classvvenc_1_1BinEncIf_a900b6847ae4fd385bb99477a49400a96}} 
+\index{BinEncIf@{BinEncIf}!finish@{finish}}
+\index{finish@{finish}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily virtual void finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a900b6847ae4fd385bb99477a49400a96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_adc3baeaa2bdbd05b66bc4aac1faf6074}\label{classvvenc_1_1BinEncIf_adc3baeaa2bdbd05b66bc4aac1faf6074}} 
+\index{BinEncIf@{BinEncIf}!getBinStore@{getBinStore}}
+\index{getBinStore@{getBinStore}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getBinStore()}{getBinStore()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}}$\ast$ get\+Bin\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimator_a8b93f1828b8adb200fc3e9c7085a50ea}{Bit\+Estimator}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoder_a8b93f1828b8adb200fc3e9c7085a50ea}{Bin\+Encoder}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a373d64cb990b7e8448b0019e06fe2fa9}\label{classvvenc_1_1BinEncIf_a373d64cb990b7e8448b0019e06fe2fa9}} 
+\index{BinEncIf@{BinEncIf}!getEstFracBits@{getEstFracBits}}
+\index{getEstFracBits@{getEstFracBits}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getEstFracBits()}{getEstFracBits()}}
+{\footnotesize\ttfamily virtual uint64\+\_\+t get\+Est\+Frac\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a88bb703eac6229fa13e371d365da83e9}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a88bb703eac6229fa13e371d365da83e9}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a373d64cb990b7e8448b0019e06fe2fa9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a6deec7e6bc89a60fa0ba2d9b054f3e40}\label{classvvenc_1_1BinEncIf_a6deec7e6bc89a60fa0ba2d9b054f3e40}} 
+\index{BinEncIf@{BinEncIf}!getNumBins@{getNumBins}}
+\index{getNumBins@{getNumBins}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getNumBins()}{getNumBins()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual uint32\+\_\+t get\+Num\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a4b712d82380bb0af705fb824e6eb2f95}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a4b712d82380bb0af705fb824e6eb2f95}{Bin\+Encoder\+Base}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a9378d6f7e5df480f64ff0ddd2fb37804}\label{classvvenc_1_1BinEncIf_a9378d6f7e5df480f64ff0ddd2fb37804}} 
+\index{BinEncIf@{BinEncIf}!getNumBins@{getNumBins}}
+\index{getNumBins@{getNumBins}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getNumBins()}{getNumBins()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual unsigned get\+Num\+Bins (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a30926f3ebb09c2f9af0f49c9ac7a8b89}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a30926f3ebb09c2f9af0f49c9ac7a8b89}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a9378d6f7e5df480f64ff0ddd2fb37804_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a2f96cd8acdf369ed122528ba289d7b8b}\label{classvvenc_1_1BinEncIf_a2f96cd8acdf369ed122528ba289d7b8b}} 
+\index{BinEncIf@{BinEncIf}!getNumWrittenBits@{getNumWrittenBits}}
+\index{getNumWrittenBits@{getNumWrittenBits}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getNumWrittenBits()}{getNumWrittenBits()}}
+{\footnotesize\ttfamily virtual unsigned get\+Num\+Written\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a760974dff490135426a34f4274255729}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a760974dff490135426a34f4274255729}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvvenc_1_1BinEncIf_a2f96cd8acdf369ed122528ba289d7b8b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a0e682e787bffa2a3f1ca195179b65615}\label{classvvenc_1_1BinEncIf_a0e682e787bffa2a3f1ca195179b65615}} 
+\index{BinEncIf@{BinEncIf}!getTestBinEncoder@{getTestBinEncoder}}
+\index{getTestBinEncoder@{getTestBinEncoder}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{getTestBinEncoder()}{getTestBinEncoder()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classvvenc_1_1BinEncIf}{Bin\+Enc\+If}}$\ast$ get\+Test\+Bin\+Encoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimator_a2a331a1edd7d409d9236d524c927118c}{Bit\+Estimator}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoder_ab4281b05ffa04c943f71418cbf29548c}{Bin\+Encoder}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a6b76f782d43ac1a2021828a5876d5ecc}\label{classvvenc_1_1BinEncIf_a6b76f782d43ac1a2021828a5876d5ecc}} 
+\index{BinEncIf@{BinEncIf}!init@{init}}
+\index{init@{init}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$}]{bitstream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_ab38fbd9946563d0595c44f74f35be53a}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ab38fbd9946563d0595c44f74f35be53a}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a6b76f782d43ac1a2021828a5876d5ecc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_ae739bf55a7f746a28ed964588a1b5158}\label{classvvenc_1_1BinEncIf_ae739bf55a7f746a28ed964588a1b5158}} 
+\index{BinEncIf@{BinEncIf}!isEncoding@{isEncoding}}
+\index{isEncoding@{isEncoding}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{isEncoding()}{isEncoding()}}
+{\footnotesize\ttfamily virtual bool is\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a12c36201481dcbc2dbd05eb672fc2e4a}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a12c36201481dcbc2dbd05eb672fc2e4a}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_ae739bf55a7f746a28ed964588a1b5158_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a1bf414c03105667e5e1797ac1a754ff0}\label{classvvenc_1_1BinEncIf_a1bf414c03105667e5e1797ac1a754ff0}} 
+\index{BinEncIf@{BinEncIf}!reset@{reset}}
+\index{reset@{reset}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily virtual void reset (\begin{DoxyParamCaption}\item[{int}]{qp,  }\item[{int}]{init\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a929021ea9913c7d4da3f20233fbbb61a}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a929021ea9913c7d4da3f20233fbbb61a}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a1bf414c03105667e5e1797ac1a754ff0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a7026369a8d5dfac0006c026cf161609b}\label{classvvenc_1_1BinEncIf_a7026369a8d5dfac0006c026cf161609b}} 
+\index{BinEncIf@{BinEncIf}!resetBits@{resetBits}}
+\index{resetBits@{resetBits}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{resetBits()}{resetBits()}}
+{\footnotesize\ttfamily virtual void reset\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a209a5181202adb6f81eb753d0cad3ccb}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a209a5181202adb6f81eb753d0cad3ccb}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncIf_a7026369a8d5dfac0006c026cf161609b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_aa8850ed68fa313e7a4f87647f106b754}\label{classvvenc_1_1BinEncIf_aa8850ed68fa313e7a4f87647f106b754}} 
+\index{BinEncIf@{BinEncIf}!restart@{restart}}
+\index{restart@{restart}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily virtual void restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a22ee094ca3f45aa4156b97d34fe678bf}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a22ee094ca3f45aa4156b97d34fe678bf}{Bin\+Encoder\+Base}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a629ae7f894cdbf7829e9f9545515e522}\label{classvvenc_1_1BinEncIf_a629ae7f894cdbf7829e9f9545515e522}} 
+\index{BinEncIf@{BinEncIf}!setBinStorage@{setBinStorage}}
+\index{setBinStorage@{setBinStorage}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{setBinStorage()}{setBinStorage()}}
+{\footnotesize\ttfamily virtual void set\+Bin\+Storage (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimator_a9097e080feba43fe0f24c7397291b4db}{Bit\+Estimator}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoder_a9097e080feba43fe0f24c7397291b4db}{Bin\+Encoder}}.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_ac0ae5f26cd2001d772aed9d2ea97d41c}\label{classvvenc_1_1BinEncIf_ac0ae5f26cd2001d772aed9d2ea97d41c}} 
+\index{BinEncIf@{BinEncIf}!start@{start}}
+\index{start@{start}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_a60de64d75454385b23995437f1d72669}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669}{Bin\+Encoder\+Base}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classvvenc_1_1BinEncIf_ac0ae5f26cd2001d772aed9d2ea97d41c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncIf_a28ed1dc6f35ec1d8f7b73df0c8fe742d}\label{classvvenc_1_1BinEncIf_a28ed1dc6f35ec1d8f7b73df0c8fe742d}} 
+\index{BinEncIf@{BinEncIf}!uninit@{uninit}}
+\index{uninit@{uninit}!BinEncIf@{BinEncIf}}
+\doxysubsubsection{\texorpdfstring{uninit()}{uninit()}}
+{\footnotesize\ttfamily virtual void uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classvvenc_1_1BitEstimatorBase_afa90a5c5c3718da584a64351bf5a8876}{Bit\+Estimator\+Base}}, and \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_afa90a5c5c3718da584a64351bf5a8876}{Bin\+Encoder\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8h}{Bin\+Encoder.\+h}}\end{DoxyCompactItemize}

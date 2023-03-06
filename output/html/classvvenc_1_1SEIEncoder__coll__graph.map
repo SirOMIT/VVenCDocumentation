@@ -1,0 +1,10 @@
+<map id="SEIEncoder" name="SEIEncoder">
+<area shape="rect" id="node1" title="Initializes different SEI message types based on given encoder configuration parameters." alt="" coords="247,336,339,363"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncHRD.html" title=" " alt="" coords="255,247,330,273"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1HRD.html" title=" " alt="" coords="267,171,319,197"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1SEIPictureTiming.html" title=" " alt="" coords="5,81,129,108"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1SEI.html" title=" " alt="" coords="121,5,165,32"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1SEIBufferingPeriod.html" title=" " alt="" coords="154,81,287,108"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1OlsHrdParams.html" title=" " alt="" coords="312,81,420,108"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1GeneralHrdParams.html" title=" " alt="" coords="445,81,578,108"/>
+</map>

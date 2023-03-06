@@ -1,0 +1,7 @@
+<map id="filterHor" name="filterHor">
+<area shape="rect" id="node1" title="Filter a block of Luma/Chroma samples (horizontal)" alt="" coords="5,81,73,108"/>
+<area shape="rect" id="node2" href="$namespacevvenc.html#a2a4814950acdf4a610adacb0f7417d8d" title=" " alt="" coords="121,56,313,83"/>
+<area shape="rect" id="node4" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="611,56,717,83"/>
+<area shape="rect" id="node3" href="$namespacevvenc.html#a895d72e900acda111471c0104f9bcb4c" title=" " alt="" coords="361,5,563,32"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#a28fa8a875cf8e2fac67b59efcab043b3" title=" " alt="" coords="386,56,538,83"/>
+</map>

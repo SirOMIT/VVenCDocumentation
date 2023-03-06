@@ -1,0 +1,6 @@
+<map id="resetTimer" name="resetTimer">
+<area shape="rect" id="node1" title=" " alt="" coords="713,13,797,39"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncLib.html#a258d944cf8c857f95e9e82c467ef06be" title="get picture buffer which will be processed. If ppsId&lt;0, then the ppsMap will be queried for the first..." alt="" coords="479,5,665,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,13,431,39"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,13,187,39"/>
+</map>

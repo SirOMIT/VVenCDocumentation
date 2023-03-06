@@ -1,0 +1,13 @@
+<map id="cu_bcw_flag" name="cu_bcw_flag">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,100,134"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1BinDecoderBase.html#a5e061c18d443942cbb928e1f5416c3e6" title=" " alt="" coords="159,5,322,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1BinDecoderBase.html#a663c133ea93e68091465a9894a73ff2d" title=" " alt="" coords="159,71,322,112"/>
+<area shape="rect" id="node5" href="$namespacevvenc_1_1CU.html#aa0b6f5b1ae4c0824d28f9c6af5eb5817" title=" " alt="" coords="148,137,333,163"/>
+<area shape="rect" id="node11" href="$namespacevvenc_1_1CU.html#ad05ca3273503b3f82ee0120ebffb5479" title=" " alt="" coords="163,187,318,214"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1InputBitstream.html#a851f98b4b9141bd0910ce136b93b8b14" title=" " alt="" coords="397,20,548,61"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1Slice.html#a0794e383d8094d8b0b22a24091d94cb0" title="get tables for weighted prediction" alt="" coords="381,86,564,113"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1Slice.html#a530d6092c6fac441ddd03762efdf5c2f" title=" " alt="" coords="399,137,546,163"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1UnitArea.html#aeba81e3c9f0d1188a63486747ec662ee" title=" " alt="" coords="391,187,554,214"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1UnitArea.html#a33ccc64f705e98a484194f765d797721" title=" " alt="" coords="393,238,552,265"/>
+<area shape="rect" id="node9" href="$structvvenc_1_1UnitArea.html#af4fc20e5d676250d96c09bcd2ef2a6b0" title=" " alt="" coords="612,213,745,239"/>
+</map>

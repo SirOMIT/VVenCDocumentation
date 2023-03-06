@@ -1,0 +1,12 @@
+<map id="mip_pred_modes" name="mip_pred_modes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,127,285"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1CABACWriter.html#ad7db04fa264f72c548bdef07cf980651" title=" " alt="" coords="199,132,313,159"/>
+<area shape="rect" id="node7" href="$structvvenc_1_1UnitArea.html#af4fc20e5d676250d96c09bcd2ef2a6b0" title=" " alt="" coords="674,208,807,235"/>
+<area shape="rect" id="node10" href="$structvvenc_1_1CompArea.html#a315419f26d3c59fa143b49b90a019049" title=" " alt="" coords="175,309,337,336"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1BinEncIf.html#ad84041cd0399e681f82d4d20826c7a37" title=" " alt="" coords="385,56,588,83"/>
+<area shape="rect" id="node4" href="$namespacevvenc.html#a003b26a8a4642dcfd9b2a9cf87b9a551" title=" " alt="" coords="401,107,572,133"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1UnitArea.html#a757617e1ebf8cdcd3b69b08b778bb13f" title=" " alt="" coords="399,157,574,184"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1CABACWriter.html#a288515cba550b1aa671fa5331f692092" title=" " alt="" coords="415,5,558,32"/>
+<area shape="rect" id="node5" href="$namespacevvenc.html#ac53aa3c2698bd12c75de54731c239805" title=" " alt="" coords="670,107,811,133"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1BinEncIf.html#a869e1c5b3c7baebf7c38f458a92a248c" title=" " alt="" coords="636,5,845,32"/>
+</map>

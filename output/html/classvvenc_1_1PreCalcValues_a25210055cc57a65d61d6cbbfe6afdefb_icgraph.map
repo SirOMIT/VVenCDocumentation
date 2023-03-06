@@ -1,0 +1,12 @@
+<map id="getCtuArea" name="getCtuArea">
+<area shape="rect" id="node1" title=" " alt="" coords="1427,110,1515,137"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a225f457adcd383f4f9ba5367add80b1d" title=" " alt="" coords="1177,71,1373,112"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1EncSlice.html#a45a2f8654b9ec99a028383708f2149f1" title=" " alt="" coords="1171,139,1379,166"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#ae59d71ba426c315648c90f129bfb4d02" title=" " alt="" coords="927,5,1123,47"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1EncSlice.html#a1ae3f14919d9f85da8569dd27d10b468" title=" " alt="" coords="935,71,1115,112"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1EncSlice.html#a97e60d70e5757358cd2f6ca08e7cb3c0" title="analysis stage of slice s" alt="" coords="933,136,1116,177"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1EncPicture.html#a3d97b2aabb8ed53cc627154351f94c54" title=" " alt="" coords="741,136,879,177"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1EncGOP.html#a61c82aee8789605e0a9a1a9756553c79" title=" " alt="" coords="479,143,693,170"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,143,431,170"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,143,187,170"/>
+</map>

@@ -1,0 +1,381 @@
+\hypertarget{structvvenc_1_1SubPic}{}\doxysection{Sub\+Pic}
+\label{structvvenc_1_1SubPic}\index{SubPic@{SubPic}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1SubPic_a2088f825b898f53c6d785a2d884bfaad}{Sub\+Pic}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SubPic_af538509765fe00188ffc860462537147}{init}} (unsigned pic\+With\+In\+Ctu, unsigned pic\+Height\+In\+Ctu, unsigned pic\+With\+In\+Samples, unsigned pic\+Heighth\+In\+Samples)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1SubPic_a05e539eb859683eda5f5200aa9761946}{is\+Containing\+Pos}} (const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&pos) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1SubPic_a5e9e1a7134b3d10ad6a5e871400799e9}{ctu\+Addr\+In\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em raster scan addresses of all the C\+T\+Us in the slice \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a0d3d27a73354704bc838d521d07fd8d9}{first\+Ctu\+In\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em the raster scan index of the first C\+TU in a subpicture \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a07876349f76ae2a6e3d4220398751800}{last\+Ctu\+In\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em the raster scan index of the last C\+TU in a subpicture \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1SubPic_ac9c4f4a2a2323105aaf155ac0c146a65}{loop\+Filter\+Across\+Sub\+Pic\+Enabled}}
+\begin{DoxyCompactList}\small\item\em whether in-\/loop filtering operations may be performed across the boundaries of the subpicture \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_aba06e5a87e89713075fa6f3251d69e6a}{num\+C\+T\+Us\+In\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em number of C\+T\+Us contained in this sub-\/picture \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_ac6e032bf91f2f5d3b693678a98e7f0ec}{num\+Slices\+In\+Sub\+Pic}}
+\begin{DoxyCompactList}\small\item\em Number of slices contained in this subpicture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_aa09739365685609b0aba7f61af65c65f}{sub\+Pic\+Bottom}}
+\begin{DoxyCompactList}\small\item\em the position of bottom boundary \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a46dd9bc089eb65950f5535ad2c57f7e7}{sub\+Pic\+Ctu\+Top\+LeftX}}
+\begin{DoxyCompactList}\small\item\em horizontal position of top left C\+TU of the subpicture in unit of C\+TU \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a895491ef5a8801db2aa7d0213b2fabba}{sub\+Pic\+Ctu\+Top\+LeftY}}
+\begin{DoxyCompactList}\small\item\em vertical position of top left C\+TU of the subpicture in unit of C\+TU \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a3b515694c808fcc6bb0ed578ba3fcc3a}{sub\+Pic\+Height}}
+\begin{DoxyCompactList}\small\item\em the height of subpicture in units of C\+TU \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a4de9a5161af7f53c2367058fae25d158}{sub\+Pic\+Height\+In\+Luma\+Sample}}
+\begin{DoxyCompactList}\small\item\em the height of subpicture in units of luma sample \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_ae9030f9dda693bcc9895b137b8324834}{sub\+Pic\+ID}}
+\begin{DoxyCompactList}\small\item\em ID of subpicture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a2dcd82ed2fa3ee013aff098bb536ffcd}{sub\+Pic\+Idx}}
+\begin{DoxyCompactList}\small\item\em Index of subpicture. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a839eecf9336d55f496cc757fcd3c60aa}{sub\+Pic\+Left}}
+\begin{DoxyCompactList}\small\item\em the position of left boundary \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_af4f8cc73157be6b7a5bd7e381f57a905}{sub\+Pic\+Right}}
+\begin{DoxyCompactList}\small\item\em the position of right boundary \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_afea9273fde3d76812b638b739d945ee4}{sub\+Pic\+Top}}
+\begin{DoxyCompactList}\small\item\em the position of top boundary \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a04b560364b5863187f4438e0a09c84d2}{sub\+Pic\+Width}}
+\begin{DoxyCompactList}\small\item\em the width of subpicture in units of C\+TU \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1SubPic_a60002f4439a1ffe37fba9586ec5d6040}{sub\+Pic\+Width\+In\+Luma\+Sample}}
+\begin{DoxyCompactList}\small\item\em the width of subpicture in units of luma sample \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structvvenc_1_1SubPic_a709346d06bdc55b07eb6fc39cc99ebe3}{treated\+As\+Pic}}
+\begin{DoxyCompactList}\small\item\em whether the subpicture is treated as a picture in the decoding process excluding in-\/loop filtering operations \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 380 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a2088f825b898f53c6d785a2d884bfaad}\label{structvvenc_1_1SubPic_a2088f825b898f53c6d785a2d884bfaad}} 
+\index{SubPic@{SubPic}!SubPic@{SubPic}}
+\index{SubPic@{SubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{SubPic()}{SubPic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1SubPic}{Sub\+Pic}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 426 of file Slice.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1SubPic_af538509765fe00188ffc860462537147}\label{structvvenc_1_1SubPic_af538509765fe00188ffc860462537147}} 
+\index{SubPic@{SubPic}!init@{init}}
+\index{init@{init}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{unsigned}]{pic\+With\+In\+Ctu,  }\item[{unsigned}]{pic\+Height\+In\+Ctu,  }\item[{unsigned}]{pic\+With\+In\+Samples,  }\item[{unsigned}]{pic\+Heighth\+In\+Samples }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 408 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a05e539eb859683eda5f5200aa9761946}\label{structvvenc_1_1SubPic_a05e539eb859683eda5f5200aa9761946}} 
+\index{SubPic@{SubPic}!isContainingPos@{isContainingPos}}
+\index{isContainingPos@{isContainingPos}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{isContainingPos()}{isContainingPos()}}
+{\footnotesize\ttfamily bool is\+Containing\+Pos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Position}{Position}} \&}]{pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 403 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SubPic_a05e539eb859683eda5f5200aa9761946_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a5e9e1a7134b3d10ad6a5e871400799e9}\label{structvvenc_1_1SubPic_a5e9e1a7134b3d10ad6a5e871400799e9}} 
+\index{SubPic@{SubPic}!ctuAddrInSubPic@{ctuAddrInSubPic}}
+\index{ctuAddrInSubPic@{ctuAddrInSubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{ctuAddrInSubPic}{ctuAddrInSubPic}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ ctu\+Addr\+In\+Sub\+Pic}
+
+
+
+raster scan addresses of all the C\+T\+Us in the slice 
+
+
+
+Definition at line 397 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a0d3d27a73354704bc838d521d07fd8d9}\label{structvvenc_1_1SubPic_a0d3d27a73354704bc838d521d07fd8d9}} 
+\index{SubPic@{SubPic}!firstCtuInSubPic@{firstCtuInSubPic}}
+\index{firstCtuInSubPic@{firstCtuInSubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{firstCtuInSubPic}{firstCtuInSubPic}}
+{\footnotesize\ttfamily uint32\+\_\+t first\+Ctu\+In\+Sub\+Pic}
+
+
+
+the raster scan index of the first C\+TU in a subpicture 
+
+
+
+Definition at line 391 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a07876349f76ae2a6e3d4220398751800}\label{structvvenc_1_1SubPic_a07876349f76ae2a6e3d4220398751800}} 
+\index{SubPic@{SubPic}!lastCtuInSubPic@{lastCtuInSubPic}}
+\index{lastCtuInSubPic@{lastCtuInSubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{lastCtuInSubPic}{lastCtuInSubPic}}
+{\footnotesize\ttfamily uint32\+\_\+t last\+Ctu\+In\+Sub\+Pic}
+
+
+
+the raster scan index of the last C\+TU in a subpicture 
+
+
+
+Definition at line 392 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_ac9c4f4a2a2323105aaf155ac0c146a65}\label{structvvenc_1_1SubPic_ac9c4f4a2a2323105aaf155ac0c146a65}} 
+\index{SubPic@{SubPic}!loopFilterAcrossSubPicEnabled@{loopFilterAcrossSubPicEnabled}}
+\index{loopFilterAcrossSubPicEnabled@{loopFilterAcrossSubPicEnabled}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{loopFilterAcrossSubPicEnabled}{loopFilterAcrossSubPicEnabled}}
+{\footnotesize\ttfamily bool loop\+Filter\+Across\+Sub\+Pic\+Enabled}
+
+
+
+whether in-\/loop filtering operations may be performed across the boundaries of the subpicture 
+
+
+
+Definition at line 400 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_aba06e5a87e89713075fa6f3251d69e6a}\label{structvvenc_1_1SubPic_aba06e5a87e89713075fa6f3251d69e6a}} 
+\index{SubPic@{SubPic}!numCTUsInSubPic@{numCTUsInSubPic}}
+\index{numCTUsInSubPic@{numCTUsInSubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{numCTUsInSubPic}{numCTUsInSubPic}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+C\+T\+Us\+In\+Sub\+Pic}
+
+
+
+number of C\+T\+Us contained in this sub-\/picture 
+
+
+
+Definition at line 384 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_ac6e032bf91f2f5d3b693678a98e7f0ec}\label{structvvenc_1_1SubPic_ac6e032bf91f2f5d3b693678a98e7f0ec}} 
+\index{SubPic@{SubPic}!numSlicesInSubPic@{numSlicesInSubPic}}
+\index{numSlicesInSubPic@{numSlicesInSubPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{numSlicesInSubPic}{numSlicesInSubPic}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Slices\+In\+Sub\+Pic}
+
+
+
+Number of slices contained in this subpicture. 
+
+
+
+Definition at line 401 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_aa09739365685609b0aba7f61af65c65f}\label{structvvenc_1_1SubPic_aa09739365685609b0aba7f61af65c65f}} 
+\index{SubPic@{SubPic}!subPicBottom@{subPicBottom}}
+\index{subPicBottom@{subPicBottom}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicBottom}{subPicBottom}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Bottom}
+
+
+
+the position of bottom boundary 
+
+
+
+Definition at line 396 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a46dd9bc089eb65950f5535ad2c57f7e7}\label{structvvenc_1_1SubPic_a46dd9bc089eb65950f5535ad2c57f7e7}} 
+\index{SubPic@{SubPic}!subPicCtuTopLeftX@{subPicCtuTopLeftX}}
+\index{subPicCtuTopLeftX@{subPicCtuTopLeftX}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicCtuTopLeftX}{subPicCtuTopLeftX}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Ctu\+Top\+LeftX}
+
+
+
+horizontal position of top left C\+TU of the subpicture in unit of C\+TU 
+
+
+
+Definition at line 385 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a895491ef5a8801db2aa7d0213b2fabba}\label{structvvenc_1_1SubPic_a895491ef5a8801db2aa7d0213b2fabba}} 
+\index{SubPic@{SubPic}!subPicCtuTopLeftY@{subPicCtuTopLeftY}}
+\index{subPicCtuTopLeftY@{subPicCtuTopLeftY}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicCtuTopLeftY}{subPicCtuTopLeftY}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Ctu\+Top\+LeftY}
+
+
+
+vertical position of top left C\+TU of the subpicture in unit of C\+TU 
+
+
+
+Definition at line 386 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a3b515694c808fcc6bb0ed578ba3fcc3a}\label{structvvenc_1_1SubPic_a3b515694c808fcc6bb0ed578ba3fcc3a}} 
+\index{SubPic@{SubPic}!subPicHeight@{subPicHeight}}
+\index{subPicHeight@{subPicHeight}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicHeight}{subPicHeight}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Height}
+
+
+
+the height of subpicture in units of C\+TU 
+
+
+
+Definition at line 388 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a4de9a5161af7f53c2367058fae25d158}\label{structvvenc_1_1SubPic_a4de9a5161af7f53c2367058fae25d158}} 
+\index{SubPic@{SubPic}!subPicHeightInLumaSample@{subPicHeightInLumaSample}}
+\index{subPicHeightInLumaSample@{subPicHeightInLumaSample}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicHeightInLumaSample}{subPicHeightInLumaSample}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Height\+In\+Luma\+Sample}
+
+
+
+the height of subpicture in units of luma sample 
+
+
+
+Definition at line 390 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_ae9030f9dda693bcc9895b137b8324834}\label{structvvenc_1_1SubPic_ae9030f9dda693bcc9895b137b8324834}} 
+\index{SubPic@{SubPic}!subPicID@{subPicID}}
+\index{subPicID@{subPicID}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicID}{subPicID}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+ID}
+
+
+
+ID of subpicture. 
+
+
+
+Definition at line 382 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a2dcd82ed2fa3ee013aff098bb536ffcd}\label{structvvenc_1_1SubPic_a2dcd82ed2fa3ee013aff098bb536ffcd}} 
+\index{SubPic@{SubPic}!subPicIdx@{subPicIdx}}
+\index{subPicIdx@{subPicIdx}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicIdx}{subPicIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Idx}
+
+
+
+Index of subpicture. 
+
+
+
+Definition at line 383 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a839eecf9336d55f496cc757fcd3c60aa}\label{structvvenc_1_1SubPic_a839eecf9336d55f496cc757fcd3c60aa}} 
+\index{SubPic@{SubPic}!subPicLeft@{subPicLeft}}
+\index{subPicLeft@{subPicLeft}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicLeft}{subPicLeft}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Left}
+
+
+
+the position of left boundary 
+
+
+
+Definition at line 393 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_af4f8cc73157be6b7a5bd7e381f57a905}\label{structvvenc_1_1SubPic_af4f8cc73157be6b7a5bd7e381f57a905}} 
+\index{SubPic@{SubPic}!subPicRight@{subPicRight}}
+\index{subPicRight@{subPicRight}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicRight}{subPicRight}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Right}
+
+
+
+the position of right boundary 
+
+
+
+Definition at line 394 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_afea9273fde3d76812b638b739d945ee4}\label{structvvenc_1_1SubPic_afea9273fde3d76812b638b739d945ee4}} 
+\index{SubPic@{SubPic}!subPicTop@{subPicTop}}
+\index{subPicTop@{subPicTop}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicTop}{subPicTop}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Top}
+
+
+
+the position of top boundary 
+
+
+
+Definition at line 395 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a04b560364b5863187f4438e0a09c84d2}\label{structvvenc_1_1SubPic_a04b560364b5863187f4438e0a09c84d2}} 
+\index{SubPic@{SubPic}!subPicWidth@{subPicWidth}}
+\index{subPicWidth@{subPicWidth}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicWidth}{subPicWidth}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Width}
+
+
+
+the width of subpicture in units of C\+TU 
+
+
+
+Definition at line 387 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a60002f4439a1ffe37fba9586ec5d6040}\label{structvvenc_1_1SubPic_a60002f4439a1ffe37fba9586ec5d6040}} 
+\index{SubPic@{SubPic}!subPicWidthInLumaSample@{subPicWidthInLumaSample}}
+\index{subPicWidthInLumaSample@{subPicWidthInLumaSample}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{subPicWidthInLumaSample}{subPicWidthInLumaSample}}
+{\footnotesize\ttfamily uint32\+\_\+t sub\+Pic\+Width\+In\+Luma\+Sample}
+
+
+
+the width of subpicture in units of luma sample 
+
+
+
+Definition at line 389 of file Slice.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SubPic_a709346d06bdc55b07eb6fc39cc99ebe3}\label{structvvenc_1_1SubPic_a709346d06bdc55b07eb6fc39cc99ebe3}} 
+\index{SubPic@{SubPic}!treatedAsPic@{treatedAsPic}}
+\index{treatedAsPic@{treatedAsPic}!SubPic@{SubPic}}
+\doxysubsubsection{\texorpdfstring{treatedAsPic}{treatedAsPic}}
+{\footnotesize\ttfamily bool treated\+As\+Pic}
+
+
+
+whether the subpicture is treated as a picture in the decoding process excluding in-\/loop filtering operations 
+
+
+
+Definition at line 399 of file Slice.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\end{DoxyCompactItemize}

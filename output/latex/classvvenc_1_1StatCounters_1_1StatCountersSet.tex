@@ -1,0 +1,430 @@
+\hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet}{}\doxysection{Stat\+Counters\+Set$<$ T $>$}
+\label{classvvenc_1_1StatCounters_1_1StatCountersSet}\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Stat\+Counter.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Stat\+Counters\+Set$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classvvenc_1_1StatCounters_1_1StatCountersSet__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a5bbdc3255aaebb93c00cdcff946b7334}{Stat\+Counters\+Set}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_aa8afbe841c891faeef20eda13cfa66da}{Stat\+Counters\+Set}} (size\+\_\+t num\+\_\+counters, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a3f5f44f5c49fd02a2638154b0e450f75}{Stat\+Counters\+Set}} (std\+::vector$<$ std\+::string $>$ cnt\+Names, T init\+\_\+val=0)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a8d3369a3c0557dd31ad1cb34870404d2}{$\sim$\+Stat\+Counters\+Set}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_ad954e451532799980e1cbe87bc168fe6}{add}} (int cnt\+Idx, T val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a51885e6a9887e25ebf5f557fcddb2ffd}{add\+Counter}} (const int id, const std\+::string \&name, T init\+\_\+val=0)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a2bd7abe497ee3e5bc8f9822a374219fc}{inc}} (int cnt\+Idx)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_af337ffd75e4f019ce15302c60715d84b}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_aa022db703f9704ad6701b0c61e79b223}{operator+=}} (const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_af85becbe39fe65c7e61d31565cfdaf5a}{operator-\/=}} (const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a4c4b2fc0583006647308718179f35b4f}{operator/=}} (const T \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e90d6ed785627c4863d417986b72e5d}{operator=}} (const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a8e6fba2d6a9a7b656f3f871af1cceae8}{operator=}} (const T \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_ab144589894d4a4417933cae0a633d69b}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t idx)
+\item 
+const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$ T $>$ \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_aaa93e3f22fe2ea0ad958c08dad17f468}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t idx) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e132ce62166976c8a13a48f85a4dcc1}{reset}} (T val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a79f90da4dffafde16d8099dfa0ee293c}{resize}} (size\+\_\+t num\+\_\+counters, T init\+\_\+val)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a6f01c04d7c1ad43d8749d2d9615b225e}{scale}} (T val)
+\item 
+size\+\_\+t \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a259cb5a711406a8c3e5d937eb9350cca}{size}} () const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_aa47e46ffec2910955183021df9a347f3}{stream\+Out\+Names}} (std\+::ostream \&os, size\+\_\+t w) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a02e4a311df51df31756e6132d9b51f38}{stream\+Out\+Results}} (std\+::ostream \&os, size\+\_\+t w, bool is\+Horizontal=true)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a83241899f296aa6bd5280337bda7e92f}{stream\+Out\+Values}} (std\+::ostream \&os, size\+\_\+t w) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a9c7a5d36b5e758b0d6beea59f7a2ace2}{stream\+Out\+Values\+In\+Percentage}} (std\+::ostream \&os)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_ad1f3f8f7223e1a46da2d5642e438ee8a}{stream\+Out\+Values\+In\+Percentage}} (std\+::ostream \&os, const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$ T $>$ \&cnt\+Dep, int w) const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a1c2bf5c40ceea04896e2abc70e20c03d}{stream\+Out\+Values\+In\+Percentage}} (std\+::ostream \&os, T dep, int w) const
+\item 
+T \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_ae5fae76600daf109be4b6d1072e7fd92}{sum\+Up}} (size\+\_\+t from\+Pos=0, T accum=0)
+\item 
+T \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_a8ef7a5dcb1f14425d926837a04cb9527}{total}} (T accum=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$ T $>$ $>$ \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet_affa601f9f30ea1a7132b784b4f7bfe9d}{m\+\_\+counters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class vvenc\+::\+Stat\+Counters\+::\+Stat\+Counters\+Set$<$ T $>$}
+
+
+
+Definition at line 200 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a5bbdc3255aaebb93c00cdcff946b7334}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a5bbdc3255aaebb93c00cdcff946b7334}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!StatCountersSet@{StatCountersSet}}
+\index{StatCountersSet@{StatCountersSet}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCountersSet()}{StatCountersSet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_aa8afbe841c891faeef20eda13cfa66da}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_aa8afbe841c891faeef20eda13cfa66da}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!StatCountersSet@{StatCountersSet}}
+\index{StatCountersSet@{StatCountersSet}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCountersSet()}{StatCountersSet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+\_\+counters,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 204 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a3f5f44f5c49fd02a2638154b0e450f75}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a3f5f44f5c49fd02a2638154b0e450f75}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!StatCountersSet@{StatCountersSet}}
+\index{StatCountersSet@{StatCountersSet}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{StatCountersSet()}{StatCountersSet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{cnt\+Names,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 205 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a3f5f44f5c49fd02a2638154b0e450f75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a8d3369a3c0557dd31ad1cb34870404d2}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a8d3369a3c0557dd31ad1cb34870404d2}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!````~StatCountersSet@{$\sim$StatCountersSet}}
+\index{````~StatCountersSet@{$\sim$StatCountersSet}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$StatCountersSet()}{~StatCountersSet()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 213 of file Stat\+Counter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_ad954e451532799980e1cbe87bc168fe6}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_ad954e451532799980e1cbe87bc168fe6}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!add@{add}}
+\index{add@{add}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void add (\begin{DoxyParamCaption}\item[{int}]{cnt\+Idx,  }\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 273 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a51885e6a9887e25ebf5f557fcddb2ffd}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a51885e6a9887e25ebf5f557fcddb2ffd}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!addCounter@{addCounter}}
+\index{addCounter@{addCounter}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addCounter()}{addCounter()}}
+{\footnotesize\ttfamily void add\+Counter (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const std\+::string \&}]{name,  }\item[{T}]{init\+\_\+val = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 215 of file Stat\+Counter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a51885e6a9887e25ebf5f557fcddb2ffd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a2bd7abe497ee3e5bc8f9822a374219fc}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a2bd7abe497ee3e5bc8f9822a374219fc}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!inc@{inc}}
+\index{inc@{inc}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{inc()}{inc()}}
+{\footnotesize\ttfamily void inc (\begin{DoxyParamCaption}\item[{int}]{cnt\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 268 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_af337ffd75e4f019ce15302c60715d84b}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_af337ffd75e4f019ce15302c60715d84b}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 382 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_aa022db703f9704ad6701b0c61e79b223}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_aa022db703f9704ad6701b0c61e79b223}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}\& operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 227 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_af85becbe39fe65c7e61d31565cfdaf5a}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_af85becbe39fe65c7e61d31565cfdaf5a}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}\& operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 236 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a4c4b2fc0583006647308718179f35b4f}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a4c4b2fc0583006647308718179f35b4f}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}\& operator/= (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 251 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e90d6ed785627c4863d417986b72e5d}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e90d6ed785627c4863d417986b72e5d}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}\& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 258 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a8e6fba2d6a9a7b656f3f871af1cceae8}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a8e6fba2d6a9a7b656f3f871af1cceae8}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set}}\& operator= (\begin{DoxyParamCaption}\item[{const T \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 245 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_ab144589894d4a4417933cae0a633d69b}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_ab144589894d4a4417933cae0a633d69b}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 265 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_aaa93e3f22fe2ea0ad958c08dad17f468}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_aaa93e3f22fe2ea0ad958c08dad17f468}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$T$>$\& operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 266 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e132ce62166976c8a13a48f85a4dcc1}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a7e132ce62166976c8a13a48f85a4dcc1}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!reset@{reset}}
+\index{reset@{reset}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 278 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a79f90da4dffafde16d8099dfa0ee293c}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a79f90da4dffafde16d8099dfa0ee293c}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void resize (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{num\+\_\+counters,  }\item[{T}]{init\+\_\+val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 220 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a6f01c04d7c1ad43d8749d2d9615b225e}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a6f01c04d7c1ad43d8749d2d9615b225e}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!scale@{scale}}
+\index{scale@{scale}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{scale()}{scale()}}
+{\footnotesize\ttfamily void scale (\begin{DoxyParamCaption}\item[{T}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 284 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a259cb5a711406a8c3e5d937eb9350cca}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a259cb5a711406a8c3e5d937eb9350cca}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!size@{size}}
+\index{size@{size}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 290 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_aa47e46ffec2910955183021df9a347f3}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_aa47e46ffec2910955183021df9a347f3}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutNames@{streamOutNames}}
+\index{streamOutNames@{streamOutNames}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutNames()}{streamOutNames()}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Names (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{size\+\_\+t}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 310 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a02e4a311df51df31756e6132d9b51f38}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a02e4a311df51df31756e6132d9b51f38}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutResults@{streamOutResults}}
+\index{streamOutResults@{streamOutResults}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutResults()}{streamOutResults()}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Results (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{size\+\_\+t}]{w,  }\item[{bool}]{is\+Horizontal = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 348 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a02e4a311df51df31756e6132d9b51f38_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a83241899f296aa6bd5280337bda7e92f}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a83241899f296aa6bd5280337bda7e92f}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutValues@{streamOutValues}}
+\index{streamOutValues@{streamOutValues}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutValues()}{streamOutValues()}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Values (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{size\+\_\+t}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 337 of file Stat\+Counter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a83241899f296aa6bd5280337bda7e92f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a9c7a5d36b5e758b0d6beea59f7a2ace2}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a9c7a5d36b5e758b0d6beea59f7a2ace2}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutValuesInPercentage@{streamOutValuesInPercentage}}
+\index{streamOutValuesInPercentage@{streamOutValuesInPercentage}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutValuesInPercentage()}{streamOutValuesInPercentage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Values\+In\+Percentage (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 374 of file Stat\+Counter.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a9c7a5d36b5e758b0d6beea59f7a2ace2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_ad1f3f8f7223e1a46da2d5642e438ee8a}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_ad1f3f8f7223e1a46da2d5642e438ee8a}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutValuesInPercentage@{streamOutValuesInPercentage}}
+\index{streamOutValuesInPercentage@{streamOutValuesInPercentage}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutValuesInPercentage()}{streamOutValuesInPercentage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Values\+In\+Percentage (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$ T $>$ \&}]{cnt\+Dep,  }\item[{int}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 327 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a1c2bf5c40ceea04896e2abc70e20c03d}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a1c2bf5c40ceea04896e2abc70e20c03d}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!streamOutValuesInPercentage@{streamOutValuesInPercentage}}
+\index{streamOutValuesInPercentage@{streamOutValuesInPercentage}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{streamOutValuesInPercentage()}{streamOutValuesInPercentage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::ostream\& stream\+Out\+Values\+In\+Percentage (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{T}]{dep,  }\item[{int}]{w }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 317 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_ae5fae76600daf109be4b6d1072e7fd92}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_ae5fae76600daf109be4b6d1072e7fd92}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!sumUp@{sumUp}}
+\index{sumUp@{sumUp}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sumUp()}{sumUp()}}
+{\footnotesize\ttfamily T sum\+Up (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{from\+Pos = {\ttfamily 0},  }\item[{T}]{accum = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 300 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_a8ef7a5dcb1f14425d926837a04cb9527}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_a8ef7a5dcb1f14425d926837a04cb9527}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!total@{total}}
+\index{total@{total}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily T total (\begin{DoxyParamCaption}\item[{T}]{accum = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 292 of file Stat\+Counter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1StatCounters_1_1StatCountersSet_a8ef7a5dcb1f14425d926837a04cb9527_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1StatCounters_1_1StatCountersSet_affa601f9f30ea1a7132b784b4f7bfe9d}\label{classvvenc_1_1StatCounters_1_1StatCountersSet_affa601f9f30ea1a7132b784b4f7bfe9d}} 
+\index{StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}!m\_counters@{m\_counters}}
+\index{m\_counters@{m\_counters}!StatCountersSet$<$ T $>$@{StatCountersSet$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_counters}{m\_counters}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter}}$<$T$>$ $>$ m\+\_\+counters\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 413 of file Stat\+Counter.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{StatCounter_8h}{Stat\+Counter.\+h}}\end{DoxyCompactItemize}

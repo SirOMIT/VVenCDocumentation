@@ -1,0 +1,29 @@
+<map id="isSameSubPic" name="isSameSubPic">
+<area shape="rect" id="node1" title=" " alt="" coords="1989,166,2097,193"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1EncSampleAdaptiveOffset.html#a0ba5c959a402ebb1a0e85782b0b3b053" title=" " alt="" coords="1728,57,1941,113"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1AdaptiveLoopFilter.html#a97c2a2eacbacf1df48628879ecf52c0c" title=" " alt="" coords="1731,249,1938,291"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1EncSampleAdaptiveOffset.html#ab2d0f7e48f014bb76a4e09c179c8d9c3" title=" " alt="" coords="1247,35,1429,76"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1EncSampleAdaptiveOffset.html#aff19b9e5067ff9405c60185af2a21ef6" title=" " alt="" coords="1491,5,1673,47"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1EncSlice.html#a1ae3f14919d9f85da8569dd27d10b468" title=" " alt="" coords="1004,93,1184,135"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1AdaptiveLoopFilter.html#aad77a81e931e11b77f93aca0626ab947" title=" " alt="" coords="1495,283,1669,324"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1AdaptiveLoopFilter.html#a516cb3453fdadcc72b7aeb682ab11d53" title=" " alt="" coords="1495,348,1669,389"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a922f94f2937b5da6e6378db09b76c9d3" title=" " alt="" coords="1484,413,1680,455"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#aff6f292dba868a4fdd93135aa70c2793" title=" " alt="" coords="1484,152,1680,193"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#aa0b8f5e2b2f3863d4b0b5ae0e01a02f8" title=" " alt="" coords="1484,217,1680,259"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1DecLib.html#ab669c8b8a076eba397794683699fd443" title=" " alt="" coords="1244,283,1432,324"/>
+<area shape="rect" id="node9" href="$namespacevvenc.html#a4b8a6866b7ca3b758d7fa57dd622c0ff" title=" " alt="" coords="1011,290,1177,317"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1VVEncImpl.html#a738995bb8f5f1f9372177ec270bcc902" title=" " alt="" coords="754,283,935,324"/>
+<area shape="rect" id="node14" href="$namespacevvenc.html#adb1eeab1fc3b671e5bce71e1c9053d18" title=" " alt="" coords="741,349,948,375"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1EncGOP.html#afc55c7ec70cedfed561118110b384d10" title=" " alt="" coords="752,231,937,258"/>
+<area shape="rect" id="node11" href="$vvenc_8cpp.html#ad004900a48a00c04fcd1193f117efb82" title=" " alt="" coords="503,290,669,317"/>
+<area shape="rect" id="node12" href="$classEncApp.html#a201eddecd65dcf1a76105a867d021ef4" title="main encoding function" alt="" coords="273,290,392,317"/>
+<area shape="rect" id="node13" href="$encmain_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="71,290,121,317"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1EncGOP.html#a61c82aee8789605e0a9a1a9756553c79" title=" " alt="" coords="479,378,693,405"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,378,431,405"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,378,187,405"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a1e6d439d7167af03a266abc60a9f36cd" title=" " alt="" coords="1240,400,1436,441"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1EncPicture.html#a1923d4a8c3829e889669c0524c768843" title=" " alt="" coords="776,400,913,441"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a9ac07751cba4bd424eba0e351b184b21" title=" " alt="" coords="1240,152,1436,193"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a225f457adcd383f4f9ba5367add80b1d" title=" " alt="" coords="1240,217,1436,259"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#ae59d71ba426c315648c90f129bfb4d02" title=" " alt="" coords="996,217,1192,259"/>
+</map>

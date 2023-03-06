@@ -1,0 +1,122 @@
+\hypertarget{EncApp_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+App/vvenc\+F\+Fapp/\+Enc\+App.h File Reference}
+\label{EncApp_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/App/vvencFFapp/EncApp.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/App/vvencFFapp/EncApp.h}}
+
+
+Encoder application class (header)  
+
+
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+Yuv\+File\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}apputils/\+V\+V\+Enc\+App\+Cfg.\+h\char`\"{}}\newline
+Include dependency graph for Enc\+App.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncApp_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncApp_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEncApp}{Enc\+App}}
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+vvenc\+Msg\+Level \mbox{\hyperlink{EncApp_8h_aefa70b8a490596622178115a5301632a}{g\+\_\+verbosity}}
+\item 
+void \mbox{\hyperlink{EncApp_8h_a759a141656462a7ca232190f14c35b91}{msg\+App}} (int level, const char $\ast$fmt,...)
+\item 
+void \mbox{\hyperlink{EncApp_8h_aaaadc7ecd391de3840dd410c5e3ba3a3}{msg\+Fnc}} (void $\ast$, int level, const char $\ast$fmt, va\+\_\+list args)
+\item 
+typedef struct \mbox{\hyperlink{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}{vvenc\+Enc\+App}} \mbox{\hyperlink{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}{vvenc\+Enc\+App}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encoder application class (header) 
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}\label{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}} 
+\index{EncApp.h@{EncApp.h}!vvencEncApp@{vvencEncApp}}
+\index{vvencEncApp@{vvencEncApp}!EncApp.h@{EncApp.h}}
+\doxysubsubsection{\texorpdfstring{vvencEncApp}{vvencEncApp}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}{vvenc\+Enc\+App}} \mbox{\hyperlink{EncApp_8h_ae5c197de7cac931891ee4b0a711efca4}{vvenc\+Enc\+App}}}
+
+
+
+Definition at line 72 of file Enc\+App.\+h.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{EncApp_8h_a759a141656462a7ca232190f14c35b91}\label{EncApp_8h_a759a141656462a7ca232190f14c35b91}} 
+\index{EncApp.h@{EncApp.h}!msgApp@{msgApp}}
+\index{msgApp@{msgApp}!EncApp.h@{EncApp.h}}
+\doxysubsubsection{\texorpdfstring{msgApp()}{msgApp()}}
+{\footnotesize\ttfamily void msg\+App (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 81 of file Enc\+App.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{EncApp_8h_a759a141656462a7ca232190f14c35b91_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncApp_8h_a759a141656462a7ca232190f14c35b91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{EncApp_8h_aaaadc7ecd391de3840dd410c5e3ba3a3}\label{EncApp_8h_aaaadc7ecd391de3840dd410c5e3ba3a3}} 
+\index{EncApp.h@{EncApp.h}!msgFnc@{msgFnc}}
+\index{msgFnc@{msgFnc}!EncApp.h@{EncApp.h}}
+\doxysubsubsection{\texorpdfstring{msgFnc()}{msgFnc()}}
+{\footnotesize\ttfamily void msg\+Fnc (\begin{DoxyParamCaption}\item[{void $\ast$}]{,  }\item[{int}]{level,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{args }\end{DoxyParamCaption})}
+
+
+
+Definition at line 72 of file vvencapp.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncApp_8h_aaaadc7ecd391de3840dd410c5e3ba3a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{EncApp_8h_aefa70b8a490596622178115a5301632a}\label{EncApp_8h_aefa70b8a490596622178115a5301632a}} 
+\index{EncApp.h@{EncApp.h}!g\_verbosity@{g\_verbosity}}
+\index{g\_verbosity@{g\_verbosity}!EncApp.h@{EncApp.h}}
+\doxysubsubsection{\texorpdfstring{g\_verbosity}{g\_verbosity}}
+{\footnotesize\ttfamily vvenc\+Msg\+Level g\+\_\+verbosity}
+
+
+
+Definition at line 70 of file vvencapp.\+cpp.
+

@@ -1,0 +1,598 @@
+\hypertarget{classvvenc_1_1BinEncoderBase}{}\doxysection{Bin\+Encoder\+Base}
+\label{classvvenc_1_1BinEncoderBase}\index{BinEncoderBase@{BinEncoderBase}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Encoder.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bin\+Encoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classvvenc_1_1BinEncoderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bin\+Encoder\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a5b9969f2d481563b9feed757dda01ca7}{$\sim$\+Bin\+Encoder\+Base}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}{align}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ac435b8e0a7b520e42c271b3ed27a9ebd}{encode\+Bin\+EP}} (unsigned bin)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394}{encode\+Bins\+EP}} (unsigned bins, unsigned num\+Bins)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ade551e973a52be2e0e8a9eeae16fd73c}{encode\+Bin\+Trm}} (unsigned bin)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_af74a1f27de25301814bee4644b53e939}{encode\+Rem\+Abs\+EP}} (unsigned bins, unsigned go\+Rice\+Par, unsigned cutoff, int max\+Log2\+Tr\+Dynamic\+Range)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}{finish}} ()
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a88bb703eac6229fa13e371d365da83e9}{get\+Est\+Frac\+Bits}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a4b712d82380bb0af705fb824e6eb2f95}{get\+Num\+Bins}} ()
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a30926f3ebb09c2f9af0f49c9ac7a8b89}{get\+Num\+Bins}} (unsigned ctx\+Id) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a760974dff490135426a34f4274255729}{get\+Num\+Written\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ab38fbd9946563d0595c44f74f35be53a}{init}} (\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$bitstream)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a12c36201481dcbc2dbd05eb672fc2e4a}{is\+Encoding}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a929021ea9913c7d4da3f20233fbbb61a}{reset}} (int qp, int init\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a209a5181202adb6f81eb753d0cad3ccb}{reset\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a22ee094ca3f45aa4156b97d34fe678bf}{restart}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669}{start}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_afa90a5c5c3718da584a64351bf5a8876}{uninit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinEncoderBase_aaa4c51435af29e3926b8737b36f1849e}{Bin\+Encoder\+Base}} (const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$dummy)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a8adcb7876f8abaf1aa7d61d2d7e75ada}{encode\+Aligned\+Bins\+EP}} (unsigned bins, unsigned num\+Bins)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_af88d967ccafedec33578342020b94a34}{write\+Out}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a6052f6efed88606594c73ec48a42b75c}{m\+\_\+\+Bin\+Store}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_ad4eb575a6601ac72ee49c30e4dd561f9}{m\+\_\+bits\+Left}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_aec03fd652c95e2b8f001614c93df12b1}{m\+\_\+\+Bitstream}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a95ab2617f639bce31e49acfa5b29115e}{m\+\_\+buffered\+Byte}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a0647621b6a52025ba8f3f0f9237b9452}{m\+\_\+\+Low}}
+\item 
+int32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a8981d347d951085d343d195c54de5064}{m\+\_\+num\+Buffered\+Bytes}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinEncoderBase_a90df4df84c8434a6e7806035deae873e}{m\+\_\+\+Range}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 175 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_aaa4c51435af29e3926b8737b36f1849e}\label{classvvenc_1_1BinEncoderBase_aaa4c51435af29e3926b8737b36f1849e}} 
+\index{BinEncoderBase@{BinEncoderBase}!BinEncoderBase@{BinEncoderBase}}
+\index{BinEncoderBase@{BinEncoderBase}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{BinEncoderBase()}{BinEncoderBase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinEncoderBase}{Bin\+Encoder\+Base}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1BinProbModel}{Bin\+Prob\+Model}} $\ast$}]{dummy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 89 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a5b9969f2d481563b9feed757dda01ca7}\label{classvvenc_1_1BinEncoderBase_a5b9969f2d481563b9feed757dda01ca7}} 
+\index{BinEncoderBase@{BinEncoderBase}!````~BinEncoderBase@{$\sim$BinEncoderBase}}
+\index{````~BinEncoderBase@{$\sim$BinEncoderBase}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinEncoderBase()}{~BinEncoderBase()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BinEncoderBase}{Bin\+Encoder\+Base}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 180 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}\label{classvvenc_1_1BinEncoderBase_a5ddcfa2f4d10d9d6e13b020205a14ee3}} 
+\index{BinEncoderBase@{BinEncoderBase}!align@{align}}
+\index{align@{align}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{align()}{align()}}
+{\footnotesize\ttfamily void align (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_ab377c4091dc6379dd47b97a6826340db}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 289 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a8adcb7876f8abaf1aa7d61d2d7e75ada}\label{classvvenc_1_1BinEncoderBase_a8adcb7876f8abaf1aa7d61d2d7e75ada}} 
+\index{BinEncoderBase@{BinEncoderBase}!encodeAlignedBinsEP@{encodeAlignedBinsEP}}
+\index{encodeAlignedBinsEP@{encodeAlignedBinsEP}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{encodeAlignedBinsEP()}{encodeAlignedBinsEP()}}
+{\footnotesize\ttfamily void encode\+Aligned\+Bins\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bins,  }\item[{unsigned}]{num\+Bins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 295 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_a8adcb7876f8abaf1aa7d61d2d7e75ada_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_a8adcb7876f8abaf1aa7d61d2d7e75ada_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_ac435b8e0a7b520e42c271b3ed27a9ebd}\label{classvvenc_1_1BinEncoderBase_ac435b8e0a7b520e42c271b3ed27a9ebd}} 
+\index{BinEncoderBase@{BinEncoderBase}!encodeBinEP@{encodeBinEP}}
+\index{encodeBinEP@{encodeBinEP}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{encodeBinEP()}{encodeBinEP()}}
+{\footnotesize\ttfamily void encode\+Bin\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_ad84041cd0399e681f82d4d20826c7a37}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 171 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_ac435b8e0a7b520e42c271b3ed27a9ebd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394}\label{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394}} 
+\index{BinEncoderBase@{BinEncoderBase}!encodeBinsEP@{encodeBinsEP}}
+\index{encodeBinsEP@{encodeBinsEP}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{encodeBinsEP()}{encodeBinsEP()}}
+{\footnotesize\ttfamily void encode\+Bins\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bins,  }\item[{unsigned}]{num\+Bins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a869e1c5b3c7baebf7c38f458a92a248c}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 188 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classvvenc_1_1BinEncoderBase_a1a0cb55256889059bf8cd8a713317394_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_ade551e973a52be2e0e8a9eeae16fd73c}\label{classvvenc_1_1BinEncoderBase_ade551e973a52be2e0e8a9eeae16fd73c}} 
+\index{BinEncoderBase@{BinEncoderBase}!encodeBinTrm@{encodeBinTrm}}
+\index{encodeBinTrm@{encodeBinTrm}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{encodeBinTrm()}{encodeBinTrm()}}
+{\footnotesize\ttfamily void encode\+Bin\+Trm (\begin{DoxyParamCaption}\item[{unsigned}]{bin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_abd70947c1a8a9339b6377ed4c9d37a82}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 261 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_ade551e973a52be2e0e8a9eeae16fd73c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_af74a1f27de25301814bee4644b53e939}\label{classvvenc_1_1BinEncoderBase_af74a1f27de25301814bee4644b53e939}} 
+\index{BinEncoderBase@{BinEncoderBase}!encodeRemAbsEP@{encodeRemAbsEP}}
+\index{encodeRemAbsEP@{encodeRemAbsEP}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{encodeRemAbsEP()}{encodeRemAbsEP()}}
+{\footnotesize\ttfamily void encode\+Rem\+Abs\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{bins,  }\item[{unsigned}]{go\+Rice\+Par,  }\item[{unsigned}]{cutoff,  }\item[{int}]{max\+Log2\+Tr\+Dynamic\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a98ac525c567dc71bd7288f09f99edf0e}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 223 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_af74a1f27de25301814bee4644b53e939_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}\label{classvvenc_1_1BinEncoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342}} 
+\index{BinEncoderBase@{BinEncoderBase}!finish@{finish}}
+\index{finish@{finish}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily void finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a900b6847ae4fd385bb99477a49400a96}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 120 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classvvenc_1_1BinEncoderBase_a6dfe1abe0d1eb3ddc1ca081de98b5342_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a88bb703eac6229fa13e371d365da83e9}\label{classvvenc_1_1BinEncoderBase_a88bb703eac6229fa13e371d365da83e9}} 
+\index{BinEncoderBase@{BinEncoderBase}!getEstFracBits@{getEstFracBits}}
+\index{getEstFracBits@{getEstFracBits}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{getEstFracBits()}{getEstFracBits()}}
+{\footnotesize\ttfamily uint64\+\_\+t get\+Est\+Frac\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a373d64cb990b7e8448b0019e06fe2fa9}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 190 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a4b712d82380bb0af705fb824e6eb2f95}\label{classvvenc_1_1BinEncoderBase_a4b712d82380bb0af705fb824e6eb2f95}} 
+\index{BinEncoderBase@{BinEncoderBase}!getNumBins@{getNumBins}}
+\index{getNumBins@{getNumBins}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{getNumBins()}{getNumBins()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a6deec7e6bc89a60fa0ba2d9b054f3e40}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 203 of file Bin\+Encoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classvvenc_1_1BinEncoderBase_a4b712d82380bb0af705fb824e6eb2f95_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a30926f3ebb09c2f9af0f49c9ac7a8b89}\label{classvvenc_1_1BinEncoderBase_a30926f3ebb09c2f9af0f49c9ac7a8b89}} 
+\index{BinEncoderBase@{BinEncoderBase}!getNumBins@{getNumBins}}
+\index{getNumBins@{getNumBins}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{getNumBins()}{getNumBins()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily unsigned get\+Num\+Bins (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a9378d6f7e5df480f64ff0ddd2fb37804}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 191 of file Bin\+Encoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{classvvenc_1_1BinEncoderBase_a30926f3ebb09c2f9af0f49c9ac7a8b89_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a760974dff490135426a34f4274255729}\label{classvvenc_1_1BinEncoderBase_a760974dff490135426a34f4274255729}} 
+\index{BinEncoderBase@{BinEncoderBase}!getNumWrittenBits@{getNumWrittenBits}}
+\index{getNumWrittenBits@{getNumWrittenBits}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{getNumWrittenBits()}{getNumWrittenBits()}}
+{\footnotesize\ttfamily unsigned get\+Num\+Written\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a2f96cd8acdf369ed122528ba289d7b8b}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 201 of file Bin\+Encoder.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classvvenc_1_1BinEncoderBase_a760974dff490135426a34f4274255729_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_ab38fbd9946563d0595c44f74f35be53a}\label{classvvenc_1_1BinEncoderBase_ab38fbd9946563d0595c44f74f35be53a}} 
+\index{BinEncoderBase@{BinEncoderBase}!init@{init}}
+\index{init@{init}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $\ast$}]{bitstream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a6b76f782d43ac1a2021828a5876d5ecc}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 99 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a12c36201481dcbc2dbd05eb672fc2e4a}\label{classvvenc_1_1BinEncoderBase_a12c36201481dcbc2dbd05eb672fc2e4a}} 
+\index{BinEncoderBase@{BinEncoderBase}!isEncoding@{isEncoding}}
+\index{isEncoding@{isEncoding}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{isEncoding()}{isEncoding()}}
+{\footnotesize\ttfamily bool is\+Encoding (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_ae739bf55a7f746a28ed964588a1b5158}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 204 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a929021ea9913c7d4da3f20233fbbb61a}\label{classvvenc_1_1BinEncoderBase_a929021ea9913c7d4da3f20233fbbb61a}} 
+\index{BinEncoderBase@{BinEncoderBase}!reset@{reset}}
+\index{reset@{reset}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}\item[{int}]{qp,  }\item[{int}]{init\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a1bf414c03105667e5e1797ac1a754ff0}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 156 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_a929021ea9913c7d4da3f20233fbbb61a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a209a5181202adb6f81eb753d0cad3ccb}\label{classvvenc_1_1BinEncoderBase_a209a5181202adb6f81eb753d0cad3ccb}} 
+\index{BinEncoderBase@{BinEncoderBase}!resetBits@{resetBits}}
+\index{resetBits@{resetBits}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{resetBits()}{resetBits()}}
+{\footnotesize\ttfamily void reset\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a7026369a8d5dfac0006c026cf161609b}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 162 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classvvenc_1_1BinEncoderBase_a209a5181202adb6f81eb753d0cad3ccb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a22ee094ca3f45aa4156b97d34fe678bf}\label{classvvenc_1_1BinEncoderBase_a22ee094ca3f45aa4156b97d34fe678bf}} 
+\index{BinEncoderBase@{BinEncoderBase}!restart@{restart}}
+\index{restart@{restart}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_aa8850ed68fa313e7a4f87647f106b754}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 147 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669}\label{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669}} 
+\index{BinEncoderBase@{BinEncoderBase}!start@{start}}
+\index{start@{start}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_ac0ae5f26cd2001d772aed9d2ea97d41c}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 109 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classvvenc_1_1BinEncoderBase_a60de64d75454385b23995437f1d72669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_afa90a5c5c3718da584a64351bf5a8876}\label{classvvenc_1_1BinEncoderBase_afa90a5c5c3718da584a64351bf5a8876}} 
+\index{BinEncoderBase@{BinEncoderBase}!uninit@{uninit}}
+\index{uninit@{uninit}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{uninit()}{uninit()}}
+{\footnotesize\ttfamily void uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classvvenc_1_1BinEncIf_a28ed1dc6f35ec1d8f7b73df0c8fe742d}{Bin\+Enc\+If}}.
+
+
+
+Definition at line 104 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_af88d967ccafedec33578342020b94a34}\label{classvvenc_1_1BinEncoderBase_af88d967ccafedec33578342020b94a34}} 
+\index{BinEncoderBase@{BinEncoderBase}!writeOut@{writeOut}}
+\index{writeOut@{writeOut}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{writeOut()}{writeOut()}}
+{\footnotesize\ttfamily void write\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 328 of file Bin\+Encoder.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classvvenc_1_1BinEncoderBase_af88d967ccafedec33578342020b94a34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinEncoderBase_af88d967ccafedec33578342020b94a34_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a6052f6efed88606594c73ec48a42b75c}\label{classvvenc_1_1BinEncoderBase_a6052f6efed88606594c73ec48a42b75c}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_BinStore@{m\_BinStore}}
+\index{m\_BinStore@{m\_BinStore}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_BinStore}{m\_BinStore}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinStore}{Bin\+Store}} m\+\_\+\+Bin\+Store\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 215 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_ad4eb575a6601ac72ee49c30e4dd561f9}\label{classvvenc_1_1BinEncoderBase_ad4eb575a6601ac72ee49c30e4dd561f9}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_bitsLeft@{m\_bitsLeft}}
+\index{m\_bitsLeft@{m\_bitsLeft}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_bitsLeft}{m\_bitsLeft}}
+{\footnotesize\ttfamily int32\+\_\+t m\+\_\+bits\+Left\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 214 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_aec03fd652c95e2b8f001614c93df12b1}\label{classvvenc_1_1BinEncoderBase_aec03fd652c95e2b8f001614c93df12b1}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_Bitstream@{m\_Bitstream}}
+\index{m\_Bitstream@{m\_Bitstream}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Bitstream}{m\_Bitstream}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}}$\ast$ m\+\_\+\+Bitstream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 209 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a95ab2617f639bce31e49acfa5b29115e}\label{classvvenc_1_1BinEncoderBase_a95ab2617f639bce31e49acfa5b29115e}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_bufferedByte@{m\_bufferedByte}}
+\index{m\_bufferedByte@{m\_bufferedByte}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_bufferedByte}{m\_bufferedByte}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+buffered\+Byte\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 212 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a0647621b6a52025ba8f3f0f9237b9452}\label{classvvenc_1_1BinEncoderBase_a0647621b6a52025ba8f3f0f9237b9452}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_Low@{m\_Low}}
+\index{m\_Low@{m\_Low}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Low}{m\_Low}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Low\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 210 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a8981d347d951085d343d195c54de5064}\label{classvvenc_1_1BinEncoderBase_a8981d347d951085d343d195c54de5064}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_numBufferedBytes@{m\_numBufferedBytes}}
+\index{m\_numBufferedBytes@{m\_numBufferedBytes}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_numBufferedBytes}{m\_numBufferedBytes}}
+{\footnotesize\ttfamily int32\+\_\+t m\+\_\+num\+Buffered\+Bytes\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 213 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinEncoderBase_a90df4df84c8434a6e7806035deae873e}\label{classvvenc_1_1BinEncoderBase_a90df4df84c8434a6e7806035deae873e}} 
+\index{BinEncoderBase@{BinEncoderBase}!m\_Range@{m\_Range}}
+\index{m\_Range@{m\_Range}!BinEncoderBase@{BinEncoderBase}}
+\doxysubsubsection{\texorpdfstring{m\_Range}{m\_Range}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 211 of file Bin\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8h}{Bin\+Encoder.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8cpp}{Bin\+Encoder.\+cpp}}\end{DoxyCompactItemize}

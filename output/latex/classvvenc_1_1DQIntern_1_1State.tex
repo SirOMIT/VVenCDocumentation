@@ -1,0 +1,402 @@
+\hypertarget{classvvenc_1_1DQIntern_1_1State}{}\doxysection{State}
+\label{classvvenc_1_1DQIntern_1_1State}\index{State@{State}}
+
+
+Collaboration diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a291664c514b9fa29d8ec800374482e3b}{State}} (const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}} \&rate\+Est, \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}} \&common\+Ctx, const int state\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a85d68b462a274317862440b71c6d0708}{check\+Rd\+Costs}} (const \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}{Scan\+Pos\+Type}} spt, const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&pq\+DataA, const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&pq\+DataB, \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decisionA, \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decisionB) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_ae5317d5f0d3a931155290a0599d775c7}{check\+Rd\+Cost\+Skip\+Sbb}} (\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decision) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_ac61ed60261b011ada3f87349d726ca5b}{check\+Rd\+Cost\+Skip\+Sbb\+Zero\+Out}} (\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decision) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_af50c707b734808587f44b5cb5b2015ce}{check\+Rd\+Cost\+Start}} (int32\+\_\+t last\+Offset, const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&pq\+Data, \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decision) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\item 
+{\footnotesize template$<$uint8\+\_\+t num\+I\+Pos$>$ }\\void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a8448c79e39fa5f0aa5f84a36f728fac7}{update\+State}} (const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&scan\+Info, const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$prev\+States, const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decision)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a605434bd8eb4a35f25cc3367bb92f5d7}{update\+State\+E\+OS}} (const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&scan\+Info, const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$prev\+States, const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$skip\+States, const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&decision)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_ad7451a79641a36ddb080ef0df56ac72c}{eff\+Height}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a8f513482ad167ae69619d15441ff1faa}{eff\+Width}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a5aa48d3e9494cf13f1fd9e09c7019b28}{m\+\_\+abs\+Levels\+And\+Ctx\+Init}} \mbox{[}24\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}} \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a4a0648fe8171fbd8b617b65955359912}{m\+\_\+coeff\+Frac\+Bits}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}} \& \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a43ad77f295c7696e7b212d73526cd670}{m\+\_\+common\+Ctx}}
+\item 
+int8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_aebbab41221b865a94decd3fc85607e40}{m\+\_\+go\+Rice\+Par}}
+\item 
+int8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a70e90cc42ce9bacbff7d64a4d3660cd1}{m\+\_\+go\+Rice\+Zero}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}} $\ast$const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a8245abccb73ba8550d8f61c1a24d59b0}{m\+\_\+gtx\+Frac\+Bits\+Array}}
+\item 
+int8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a87d92944b9150bcde80806617f12e52f}{m\+\_\+num\+Sig\+Sbb}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_adcdef38f15a96d3d7a5f6737d0fb0658}{m\+\_\+rd\+Cost}}
+\item 
+int8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a6b39bd080c4882c31680cf0027859eb0}{m\+\_\+ref\+Sbb\+Ctx\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_ab1aa53a98890213e22cd2f00e2e5129e}{m\+\_\+rem\+Reg\+Bins}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a994c5914c0f45033d45a8f8cae438270}{m\+\_\+sbb\+Frac\+Bits}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a818861232c77215dcf5f4f3ee0e8c5d0}{m\+\_\+sig\+Frac\+Bits}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} $\ast$const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a1c2ad914f6babf2733ed449d525734e5}{m\+\_\+sig\+Frac\+Bits\+Array}}
+\item 
+const int8\+\_\+t \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State_a67c1bd84ba9704b1478e7805d1aa3cc0}{m\+\_\+state\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 859 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a291664c514b9fa29d8ec800374482e3b}\label{classvvenc_1_1DQIntern_1_1State_a291664c514b9fa29d8ec800374482e3b}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1RateEstimator}{Rate\+Estimator}} \&}]{rate\+Est,  }\item[{\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}} \&}]{common\+Ctx,  }\item[{const int}]{state\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1022 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a85d68b462a274317862440b71c6d0708}\label{classvvenc_1_1DQIntern_1_1State_a85d68b462a274317862440b71c6d0708}} 
+\index{State@{State}!checkRdCosts@{checkRdCosts}}
+\index{checkRdCosts@{checkRdCosts}!State@{State}}
+\doxysubsubsection{\texorpdfstring{checkRdCosts()}{checkRdCosts()}}
+{\footnotesize\ttfamily void check\+Rd\+Costs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_1_1DQIntern_ae2f4b9de31144336d5e0cfeb141d1d7e}{Scan\+Pos\+Type}}}]{spt,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&}]{pq\+DataA,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&}]{pq\+DataB,  }\item[{\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decisionA,  }\item[{\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decisionB }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 882 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_a85d68b462a274317862440b71c6d0708_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_ae5317d5f0d3a931155290a0599d775c7}\label{classvvenc_1_1DQIntern_1_1State_ae5317d5f0d3a931155290a0599d775c7}} 
+\index{State@{State}!checkRdCostSkipSbb@{checkRdCostSkipSbb}}
+\index{checkRdCostSkipSbb@{checkRdCostSkipSbb}!State@{State}}
+\doxysubsubsection{\texorpdfstring{checkRdCostSkipSbb()}{checkRdCostSkipSbb()}}
+{\footnotesize\ttfamily void check\+Rd\+Cost\+Skip\+Sbb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 982 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_ae5317d5f0d3a931155290a0599d775c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_ac61ed60261b011ada3f87349d726ca5b}\label{classvvenc_1_1DQIntern_1_1State_ac61ed60261b011ada3f87349d726ca5b}} 
+\index{State@{State}!checkRdCostSkipSbbZeroOut@{checkRdCostSkipSbbZeroOut}}
+\index{checkRdCostSkipSbbZeroOut@{checkRdCostSkipSbbZeroOut}!State@{State}}
+\doxysubsubsection{\texorpdfstring{checkRdCostSkipSbbZeroOut()}{checkRdCostSkipSbbZeroOut()}}
+{\footnotesize\ttfamily void check\+Rd\+Cost\+Skip\+Sbb\+Zero\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 993 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_ac61ed60261b011ada3f87349d726ca5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_af50c707b734808587f44b5cb5b2015ce}\label{classvvenc_1_1DQIntern_1_1State_af50c707b734808587f44b5cb5b2015ce}} 
+\index{State@{State}!checkRdCostStart@{checkRdCostStart}}
+\index{checkRdCostStart@{checkRdCostStart}!State@{State}}
+\doxysubsubsection{\texorpdfstring{checkRdCostStart()}{checkRdCostStart()}}
+{\footnotesize\ttfamily void check\+Rd\+Cost\+Start (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{last\+Offset,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1PQData}{P\+Q\+Data}} \&}]{pq\+Data,  }\item[{\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decision }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 962 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_af50c707b734808587f44b5cb5b2015ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a02fd73d861ef2e4aabb38c0c9ff82947}\label{classvvenc_1_1DQIntern_1_1State_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{State@{State}!init@{init}}
+\index{init@{init}!State@{State}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 870 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classvvenc_1_1DQIntern_1_1State_a02fd73d861ef2e4aabb38c0c9ff82947_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a8448c79e39fa5f0aa5f84a36f728fac7}\label{classvvenc_1_1DQIntern_1_1State_a8448c79e39fa5f0aa5f84a36f728fac7}} 
+\index{State@{State}!updateState@{updateState}}
+\index{updateState@{updateState}!State@{State}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily void update\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&}]{scan\+Info,  }\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$}]{prev\+States,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1032 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classvvenc_1_1DQIntern_1_1State_a8448c79e39fa5f0aa5f84a36f728fac7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_a8448c79e39fa5f0aa5f84a36f728fac7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a605434bd8eb4a35f25cc3367bb92f5d7}\label{classvvenc_1_1DQIntern_1_1State_a605434bd8eb4a35f25cc3367bb92f5d7}} 
+\index{State@{State}!updateStateEOS@{updateStateEOS}}
+\index{updateStateEOS@{updateStateEOS}!State@{State}}
+\doxysubsubsection{\texorpdfstring{updateStateEOS()}{updateStateEOS()}}
+{\footnotesize\ttfamily void update\+State\+E\+OS (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1ScanInfo}{Scan\+Info}} \&}]{scan\+Info,  }\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$}]{prev\+States,  }\item[{const \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1State}{State}} $\ast$}]{skip\+States,  }\item[{const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1Decision}{Decision}} \&}]{decision }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1186 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_a605434bd8eb4a35f25cc3367bb92f5d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1State_a605434bd8eb4a35f25cc3367bb92f5d7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_ad7451a79641a36ddb080ef0df56ac72c}\label{classvvenc_1_1DQIntern_1_1State_ad7451a79641a36ddb080ef0df56ac72c}} 
+\index{State@{State}!effHeight@{effHeight}}
+\index{effHeight@{effHeight}!State@{State}}
+\doxysubsubsection{\texorpdfstring{effHeight}{effHeight}}
+{\footnotesize\ttfamily unsigned eff\+Height}
+
+
+
+Definition at line 1018 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a8f513482ad167ae69619d15441ff1faa}\label{classvvenc_1_1DQIntern_1_1State_a8f513482ad167ae69619d15441ff1faa}} 
+\index{State@{State}!effWidth@{effWidth}}
+\index{effWidth@{effWidth}!State@{State}}
+\doxysubsubsection{\texorpdfstring{effWidth}{effWidth}}
+{\footnotesize\ttfamily unsigned eff\+Width}
+
+
+
+Definition at line 1017 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a5aa48d3e9494cf13f1fd9e09c7019b28}\label{classvvenc_1_1DQIntern_1_1State_a5aa48d3e9494cf13f1fd9e09c7019b28}} 
+\index{State@{State}!m\_absLevelsAndCtxInit@{m\_absLevelsAndCtxInit}}
+\index{m\_absLevelsAndCtxInit@{m\_absLevelsAndCtxInit}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_absLevelsAndCtxInit}{m\_absLevelsAndCtxInit}}
+{\footnotesize\ttfamily uint16\+\_\+t m\+\_\+abs\+Levels\+And\+Ctx\+Init\mbox{[}24\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1003 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a4a0648fe8171fbd8b617b65955359912}\label{classvvenc_1_1DQIntern_1_1State_a4a0648fe8171fbd8b617b65955359912}} 
+\index{State@{State}!m\_coeffFracBits@{m\_coeffFracBits}}
+\index{m\_coeffFracBits@{m\_coeffFracBits}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_coeffFracBits}{m\_coeffFracBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}} m\+\_\+coeff\+Frac\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1009 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a43ad77f295c7696e7b212d73526cd670}\label{classvvenc_1_1DQIntern_1_1State_a43ad77f295c7696e7b212d73526cd670}} 
+\index{State@{State}!m\_commonCtx@{m\_commonCtx}}
+\index{m\_commonCtx@{m\_commonCtx}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_commonCtx}{m\_commonCtx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1CommonCtx}{Common\+Ctx}}\& m\+\_\+common\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1015 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_aebbab41221b865a94decd3fc85607e40}\label{classvvenc_1_1DQIntern_1_1State_aebbab41221b865a94decd3fc85607e40}} 
+\index{State@{State}!m\_goRicePar@{m\_goRicePar}}
+\index{m\_goRicePar@{m\_goRicePar}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_goRicePar}{m\_goRicePar}}
+{\footnotesize\ttfamily int8\+\_\+t m\+\_\+go\+Rice\+Par\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1010 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a70e90cc42ce9bacbff7d64a4d3660cd1}\label{classvvenc_1_1DQIntern_1_1State_a70e90cc42ce9bacbff7d64a4d3660cd1}} 
+\index{State@{State}!m\_goRiceZero@{m\_goRiceZero}}
+\index{m\_goRiceZero@{m\_goRiceZero}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_goRiceZero}{m\_goRiceZero}}
+{\footnotesize\ttfamily int8\+\_\+t m\+\_\+go\+Rice\+Zero\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1011 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a8245abccb73ba8550d8f61c1a24d59b0}\label{classvvenc_1_1DQIntern_1_1State_a8245abccb73ba8550d8f61c1a24d59b0}} 
+\index{State@{State}!m\_gtxFracBitsArray@{m\_gtxFracBitsArray}}
+\index{m\_gtxFracBitsArray@{m\_gtxFracBitsArray}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_gtxFracBitsArray}{m\_gtxFracBitsArray}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1CoeffFracBits}{Coeff\+Frac\+Bits}}$\ast$ const m\+\_\+gtx\+Frac\+Bits\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1014 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a87d92944b9150bcde80806617f12e52f}\label{classvvenc_1_1DQIntern_1_1State_a87d92944b9150bcde80806617f12e52f}} 
+\index{State@{State}!m\_numSigSbb@{m\_numSigSbb}}
+\index{m\_numSigSbb@{m\_numSigSbb}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_numSigSbb}{m\_numSigSbb}}
+{\footnotesize\ttfamily int8\+\_\+t m\+\_\+num\+Sig\+Sbb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1004 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_adcdef38f15a96d3d7a5f6737d0fb0658}\label{classvvenc_1_1DQIntern_1_1State_adcdef38f15a96d3d7a5f6737d0fb0658}} 
+\index{State@{State}!m\_rdCost@{m\_rdCost}}
+\index{m\_rdCost@{m\_rdCost}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_rdCost}{m\_rdCost}}
+{\footnotesize\ttfamily int64\+\_\+t m\+\_\+rd\+Cost\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1002 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a6b39bd080c4882c31680cf0027859eb0}\label{classvvenc_1_1DQIntern_1_1State_a6b39bd080c4882c31680cf0027859eb0}} 
+\index{State@{State}!m\_refSbbCtxId@{m\_refSbbCtxId}}
+\index{m\_refSbbCtxId@{m\_refSbbCtxId}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_refSbbCtxId}{m\_refSbbCtxId}}
+{\footnotesize\ttfamily int8\+\_\+t m\+\_\+ref\+Sbb\+Ctx\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1006 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_ab1aa53a98890213e22cd2f00e2e5129e}\label{classvvenc_1_1DQIntern_1_1State_ab1aa53a98890213e22cd2f00e2e5129e}} 
+\index{State@{State}!m\_remRegBins@{m\_remRegBins}}
+\index{m\_remRegBins@{m\_remRegBins}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_remRegBins}{m\_remRegBins}}
+{\footnotesize\ttfamily int m\+\_\+rem\+Reg\+Bins\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1005 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a994c5914c0f45033d45a8f8cae438270}\label{classvvenc_1_1DQIntern_1_1State_a994c5914c0f45033d45a8f8cae438270}} 
+\index{State@{State}!m\_sbbFracBits@{m\_sbbFracBits}}
+\index{m\_sbbFracBits@{m\_sbbFracBits}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_sbbFracBits}{m\_sbbFracBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} m\+\_\+sbb\+Frac\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1007 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a818861232c77215dcf5f4f3ee0e8c5d0}\label{classvvenc_1_1DQIntern_1_1State_a818861232c77215dcf5f4f3ee0e8c5d0}} 
+\index{State@{State}!m\_sigFracBits@{m\_sigFracBits}}
+\index{m\_sigFracBits@{m\_sigFracBits}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_sigFracBits}{m\_sigFracBits}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}} m\+\_\+sig\+Frac\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1008 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a1c2ad914f6babf2733ed449d525734e5}\label{classvvenc_1_1DQIntern_1_1State_a1c2ad914f6babf2733ed449d525734e5}} 
+\index{State@{State}!m\_sigFracBitsArray@{m\_sigFracBitsArray}}
+\index{m\_sigFracBitsArray@{m\_sigFracBitsArray}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_sigFracBitsArray}{m\_sigFracBitsArray}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1BinFracBits}{Bin\+Frac\+Bits}}$\ast$ const m\+\_\+sig\+Frac\+Bits\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1013 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1State_a67c1bd84ba9704b1478e7805d1aa3cc0}\label{classvvenc_1_1DQIntern_1_1State_a67c1bd84ba9704b1478e7805d1aa3cc0}} 
+\index{State@{State}!m\_stateId@{m\_stateId}}
+\index{m\_stateId@{m\_stateId}!State@{State}}
+\doxysubsubsection{\texorpdfstring{m\_stateId}{m\_stateId}}
+{\footnotesize\ttfamily const int8\+\_\+t m\+\_\+state\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1012 of file Dep\+Quant.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{DepQuant_8cpp}{Dep\+Quant.\+cpp}}\end{DoxyCompactItemize}

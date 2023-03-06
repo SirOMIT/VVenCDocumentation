@@ -1,0 +1,33 @@
+<map id="getFracBitsArray" name="getFracBitsArray">
+<area shape="rect" id="node1" title=" " alt="" coords="3016,255,3136,281"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1BinProbModel.html#a4a60349a7899df0c4c12d1d39cc8bcba" title=" " alt="" coords="2839,81,2928,108"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1CtxStore.html#a159c86e42329a3870944826c3ffa3939" title=" " alt="" coords="2799,359,2968,401"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1CtxStore.html#a55e65405587bffc95ad3bdc9c8953e85" title=" " alt="" coords="2537,5,2729,32"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1BinProbModel.html#a0fd6ebebfc7f67dbef5bb4876a52dacb" title=" " alt="" coords="2568,56,2699,83"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1BinProbModel.html#a2a774547d2905af95e1535d0ef71a8ce" title=" " alt="" coords="2567,107,2700,133"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1QuantRDOQ.html#a97498ebeb30b9a861a531ea3e43023e7" title=" " alt="" coords="2013,157,2203,198"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1QuantRDOQ.html#a6c970cf0e52e8c1b82f705c5e68cf1ac" title=" " alt="" coords="2011,274,2205,315"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1QuantRDOQ.html#a7d36e35a374c63e6ec9679c5a0040677" title=" " alt="" coords="2516,283,2751,309"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1QuantRDOQ.html#a07ff2108397ea0c84c9b3b3c77d22852" title=" " alt="" coords="2257,209,2464,250"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1QuantRDOQ2.html#a2750f19555389250fd92a0f37c9e9786" title=" " alt="" coords="2552,389,2715,430"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1DQIntern_1_1RateEstimator.html#a4d83f08579795d654f55a711c4c502c3" title=" " alt="" coords="2528,585,2739,626"/>
+<area shape="rect" id="node29" href="$classvvenc_1_1DQIntern_1_1RateEstimator.html#a4ed9d86935f598b8a38fc75808244c5b" title=" " alt="" coords="2528,650,2739,691"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1DQIntern_1_1RateEstimator.html#aa6483ec15fa4f541b1d74151c51b2baa" title=" " alt="" coords="2528,454,2739,495"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1DQIntern_1_1RateEstimator.html#a6713f999150a33c455788a7638fa8ac3" title=" " alt="" coords="2528,519,2739,561"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1QuantRDOQ.html#a0bb29ff38eb133b510e17716c9c84c07" title=" " alt="" coords="1783,223,1963,249"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1QuantRDOQ2.html#a0bb29ff38eb133b510e17716c9c84c07" title=" " alt="" coords="1580,215,1735,257"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1DepQuant.html#a0bb29ff38eb133b510e17716c9c84c07" title=" " alt="" coords="1368,223,1532,249"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1TrQuant.html#a8452675699cff8e3e66a1588ea356d51" title=" " alt="" coords="1157,223,1320,249"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1TrQuant.html#aa75cb739cc3a76b68078e6696558b79d" title=" " alt="" coords="907,223,1109,249"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1InterSearch.html#a3690ee43ddf352cc2fa9fab4d65d8616" title=" " alt="" coords="675,166,859,207"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1IntraSearch.html#a596b206741287b3176fb061196d41142" title=" " alt="" coords="689,247,844,289"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1InterSearch.html#a9c686c694eaa5ea4e414cb623bde0139" title="set ME search range" alt="" coords="417,149,627,190"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1IntraSearch.html#a910e25be08ac1ad3b7d22e4c1af784a3" title=" " alt="" coords="438,214,606,255"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1IntraSearch.html#a369dfd77f4e587823f799f45db5cdfd6" title=" " alt="" coords="209,309,364,350"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1IntraSearch.html#adaaf9526c2f40027b1fb9e9523ee9a23" title=" " alt="" coords="456,279,588,321"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1IntraSearch.html#a2f2d24beeac934b8e930618a1bc94799" title=" " alt="" coords="204,214,369,255"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1IntraSearch.html#a15cada00b0f72aac01cae54c3a12b57a" title=" " alt="" coords="5,309,156,350"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1QuantRDOQ.html#a4198581b8667540ca5c12650d29b504a" title=" " alt="" coords="2253,274,2468,315"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1DQIntern_1_1RateEstimator.html#abf159307c339137095e0ee2beb90ac87" title=" " alt="" coords="2255,551,2466,593"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1DQIntern_1_1DepQuant.html#a947a981a4df6d237358a369e81517ad9" title=" " alt="" coords="2015,551,2201,593"/>
+</map>

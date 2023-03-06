@@ -1,0 +1,35 @@
+var UnitPartitioner_8h =
+[
+    [ "Partitioner", "classvvenc_1_1Partitioner.html", "classvvenc_1_1Partitioner" ],
+    [ "PartLevel", "structvvenc_1_1PartLevel.html", "structvvenc_1_1PartLevel" ],
+    [ "Partitioning", "UnitPartitioner_8h.html#a45ddda1c3ad32d58cc1b7528304036ec", null ],
+    [ "PartitioningStack", "UnitPartitioner_8h.html#ab3ba51166babca685b5af2a1ac7af2e4", null ],
+    [ "PartSplit", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691da", [
+      [ "CTU_LEVEL", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa089f86450e6e8e9755749e6f88438327", null ],
+      [ "CU_QUAD_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa5f271ee24260631e632460583d28a51e", null ],
+      [ "CU_HORZ_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daaeea769e763d6528084529497fffd3c64", null ],
+      [ "CU_VERT_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daaa486793146c0647069205824697ef8fe", null ],
+      [ "CU_TRIH_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daaa4913c5d007af4f59d31efc38ee8fc1c", null ],
+      [ "CU_TRIV_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa9ec1b74592ecc43bd20e8ae7bfb04192", null ],
+      [ "TU_MAX_TR_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daace67cf9457923a7d2f148eb60025de3d", null ],
+      [ "TU_NO_ISP", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daac857994f6db53579c3fa66889565d977", null ],
+      [ "TU_1D_HORZ_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa32130f90e55368031319863ebf1718ff", null ],
+      [ "TU_1D_VERT_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa9eac6a9b6747e7f6b6fa9ebb836663af", null ],
+      [ "SBT_VER_HALF_POS0_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa68bc55b11ba7a911d098075c06b395fb", null ],
+      [ "SBT_VER_HALF_POS1_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa6677d1b6b598e1dce989209a76d96ec5", null ],
+      [ "SBT_HOR_HALF_POS0_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daaf56ec3055d092d0123b9c920f3895e94", null ],
+      [ "SBT_HOR_HALF_POS1_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa2fab8cb6b9dffc729b45705454b9344c", null ],
+      [ "SBT_VER_QUAD_POS0_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa09c2f1c2b44ad3db25ca44fa0b27da89", null ],
+      [ "SBT_VER_QUAD_POS1_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daac75de78ea87cf4544c54acf5decb7974", null ],
+      [ "SBT_HOR_QUAD_POS0_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa0c8e22139411e4d34c4e195d2c4dddc6", null ],
+      [ "SBT_HOR_QUAD_POS1_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa9a8aea39b2f8da6cfdfa59146b3cf3fb", null ],
+      [ "NUM_PART_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daad758c283af0de1eadd1fe6b7e484ed9e", null ],
+      [ "CU_MT_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daac74275492a03ceb5bbd71e8e01243c5a", null ],
+      [ "CU_BT_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa7bd1fa13fc2130301d96876898b892ac", null ],
+      [ "CU_DONT_SPLIT", "UnitPartitioner_8h.html#a468243d03af504bd2e985e3ab56691daa1a3d4c89bb5b2ed4f35aac92996f025d", null ]
+    ] ],
+    [ "getCUSubPartitions", "UnitPartitioner_8h.html#a872b8ed86ac79c44c476feae4d143fa0", null ],
+    [ "getMaxTuTiling", "UnitPartitioner_8h.html#a7f590ef42b38db873b89a3a59e815879", null ],
+    [ "getSbtTuTiling", "UnitPartitioner_8h.html#a2f0c4c6c208609e13c01df186c6e6323", null ],
+    [ "getTUIntraSubPartitions", "UnitPartitioner_8h.html#aa410b40857fdc564a472ba8c45179fd3", null ]
+];

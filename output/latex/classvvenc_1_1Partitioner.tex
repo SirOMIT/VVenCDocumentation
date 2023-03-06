@@ -1,0 +1,911 @@
+\hypertarget{classvvenc_1_1Partitioner}{}\doxysection{Partitioner}
+\label{classvvenc_1_1Partitioner}\index{Partitioner@{Partitioner}}
+
+
+{\ttfamily \#include \char`\"{}Unit\+Partitioner.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Partitioner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1Partitioner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_afc3590e71c99e7ca3234f3e27442abc2}{can\+Split}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, bool \&can\+No, bool \&can\+Qt, bool \&can\+Bh, bool \&can\+Bv, bool \&can\+Th, bool \&can\+Tv)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a4af34e3b4077d59720cb778a4991aa66}{can\+Split}} (const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}}, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a81177344ff8524c600afbdea452c09e7}{can\+Split\+I\+SP}} (const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}}, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a6d356f9e1d75f215ba200ac71d80ca59}{copy\+State}} (const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&other)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \& \mbox{\hyperlink{classvvenc_1_1Partitioner_a979d8cb627dcb558d29ff7f0a14de0a1}{curr\+Area}} () const
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_ac71f852bf800be16d8fad4f0024c78ad}{curr\+Part\+Idx}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1PartLevel}{Part\+Level}} \& \mbox{\hyperlink{classvvenc_1_1Partitioner_a40d8f7af8646e2426fd30d9a75e2f01d}{curr\+Part\+Level}} () const
+\item 
+const bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a6b0e4b2a9ee69300394e3fcd4dc1b167}{curr\+Qg\+Chroma\+Enable}} () const
+\item 
+const bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a31bdfc7d287df8772de1006f279c3f66}{curr\+Qg\+Enable}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a959a14b1ba27b7cc28352007af5eafe7}{exit\+Curr\+Split}} ()
+\item 
+\mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{classvvenc_1_1Partitioner_adbecef1d50a2d1f9fd98334a74bb4b90}{get\+Implicit\+Split}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+\mbox{\hyperlink{namespacevvenc_ad27d55ac74b5e58d40f12db296f431c3}{Mode\+Type\+Series}} \mbox{\hyperlink{classvvenc_1_1Partitioner_adb3abe89b6d517df5531416d3ced8ca3}{get\+Mode\+Type\+Series}} () const
+\item 
+const \mbox{\hyperlink{namespacevvenc_ab3ba51166babca685b5af2a1ac7af2e4}{Partitioning\+Stack}} \& \mbox{\hyperlink{classvvenc_1_1Partitioner_a5f67f602120818e5c9f815b55ceb630b}{get\+Part\+Stack}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a27e39e4771fc2c2035bd65e57ca85ead}{Split\+Series}} \mbox{\hyperlink{classvvenc_1_1Partitioner_ac223a32e6e9f39e8ef8dac3b68a5d5ba}{get\+Split\+Series}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_acc5ace3d92e1128112b26359d29f3569}{has\+Next\+Part}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a2b9dd57601cf330837e776d36b7be91d}{init\+Ctu}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ctu\+Area, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \+\_\+ch\+Type, const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a8af4965cdd52f37201bda122191ce3c3}{is\+Cons\+Inter}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_add599efa6e2e5899f294e7c66236f6e1}{is\+Cons\+Intra}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_aa28f1b23eee02f13dd86ff4ff72c3d4b}{is\+Sep\+Tree}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_a4387c356e828b7861fc1d47499aead0a}{is\+Split\+Implicit}} (const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}}, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Partitioner_acfc0e74841898a7fcb4981551881b552}{next\+Part}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, bool auto\+Pop=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a17896193fb64f152bf89d9c0ff41f0d4}{set\+C\+U\+Data}} (\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a0eb34a1a27cfc5eebf872d128d422a4a}{set\+Max\+Min\+Depth}} (unsigned \&min\+Depth, unsigned \&max\+Depth, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, bool refine\+Min\+Max) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Partitioner_a7d54121d05bf25e1dcf3127b87ed43e8}{split\+Curr\+Area}} (const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} \mbox{\hyperlink{namespacevvenc_a466828c7ddb3e821834ec05c44dc09de}{split}}, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a6c1e157224f4eb1ed388d13bedcbad27}{ch\+Type}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a7ab2dc2b3b69581a450469eedf3e255b}{curr\+Bt\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a3bb3b504a05ebad0872ff47e8e11c625}{curr\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_afe5dcaa36766f0dc20e07826308a50f2}{curr\+Implicit\+Bt\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a9a07f024ae743637869504d970f14095}{curr\+Mt\+Depth}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Position}{Position}} \mbox{\hyperlink{classvvenc_1_1Partitioner_adcdf905d7dc409881a6d79d5adb56d62}{curr\+Qg\+Chroma\+Pos}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Position}{Position}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a0d5de2fc339e4c22ddd411d5f5511824}{curr\+Qg\+Pos}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_abb984412dbbdd96d4b6de1b2a5422ff3}{curr\+Qt\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_afa8df5cb29daad85b1d0914302ded5b3}{curr\+Subdiv}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a11a11dea891ee137a4a756ba94caaed1}{curr\+Tr\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a01376428571aeddbbcc73e1bec8536a7}{max\+B\+TD}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a685a198d64c090731f86365867e1cbf2}{max\+Bt\+Size}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a6ea97803b2abbe2ce93cbb0192873e54}{max\+Tt\+Size}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_a1e4b869381acf065068ab55273f31e9e}{min\+Qt\+Size}}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Partitioner_abea4ddb5c9527deb6ea6ae30a8e7380c}{min\+T\+Size}}
+\item 
+\mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a94e6ea2d0eb1fcb0de228eb7eafc6529}{mode\+Type}}
+\item 
+\mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a5807aec71a4db132719a28dc3f094714}{tree\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a4ba52b9d7414f6efe7e94b1a71ebd910}{m\+\_\+curr\+Area}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \mbox{\hyperlink{classvvenc_1_1Partitioner_a84d91d00eb65325a341e8c336ed05154}{m\+\_\+part\+Buf}} \mbox{[}\mbox{\hyperlink{classvvenc_1_1Partitioner_a2dec51628423031180e6d70cdb8331a8}{part\+Buf\+Size}}\mbox{]}
+\item 
+ptrdiff\+\_\+t \mbox{\hyperlink{classvvenc_1_1Partitioner_a2cad033d8884a0b635c01230eea91b85}{m\+\_\+part\+Buf\+Idx}}
+\item 
+\mbox{\hyperlink{namespacevvenc_ab3ba51166babca685b5af2a1ac7af2e4}{Partitioning\+Stack}} \mbox{\hyperlink{classvvenc_1_1Partitioner_ac39ccdf23fd896083aa061f4daf58263}{m\+\_\+part\+Stack}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classvvenc_1_1Partitioner_a2dec51628423031180e6d70cdb8331a8}{part\+Buf\+Size}} = 128
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 122 of file Unit\+Partitioner.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_afc3590e71c99e7ca3234f3e27442abc2}\label{classvvenc_1_1Partitioner_afc3590e71c99e7ca3234f3e27442abc2}} 
+\index{Partitioner@{Partitioner}!canSplit@{canSplit}}
+\index{canSplit@{canSplit}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{canSplit()}{canSplit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void can\+Split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{bool \&}]{can\+No,  }\item[{bool \&}]{can\+Qt,  }\item[{bool \&}]{can\+Bh,  }\item[{bool \&}]{can\+Bv,  }\item[{bool \&}]{can\+Th,  }\item[{bool \&}]{can\+Tv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 411 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_afc3590e71c99e7ca3234f3e27442abc2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_afc3590e71c99e7ca3234f3e27442abc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a4af34e3b4077d59720cb778a4991aa66}\label{classvvenc_1_1Partitioner_a4af34e3b4077d59720cb778a4991aa66}} 
+\index{Partitioner@{Partitioner}!canSplit@{canSplit}}
+\index{canSplit@{canSplit}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{canSplit()}{canSplit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool can\+Split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 495 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a4af34e3b4077d59720cb778a4991aa66_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a81177344ff8524c600afbdea452c09e7}\label{classvvenc_1_1Partitioner_a81177344ff8524c600afbdea452c09e7}} 
+\index{Partitioner@{Partitioner}!canSplitISP@{canSplitISP}}
+\index{canSplitISP@{canSplitISP}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{canSplitISP()}{canSplitISP()}}
+{\footnotesize\ttfamily bool can\+Split\+I\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 548 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a81177344ff8524c600afbdea452c09e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a81177344ff8524c600afbdea452c09e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a6d356f9e1d75f215ba200ac71d80ca59}\label{classvvenc_1_1Partitioner_a6d356f9e1d75f215ba200ac71d80ca59}} 
+\index{Partitioner@{Partitioner}!copyState@{copyState}}
+\index{copyState@{copyState}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{copyState()}{copyState()}}
+{\footnotesize\ttfamily void copy\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file Unit\+Partitioner.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a979d8cb627dcb558d29ff7f0a14de0a1}\label{classvvenc_1_1Partitioner_a979d8cb627dcb558d29ff7f0a14de0a1}} 
+\index{Partitioner@{Partitioner}!currArea@{currArea}}
+\index{currArea@{currArea}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currArea()}{currArea()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}}\& curr\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Unit\+Partitioner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a979d8cb627dcb558d29ff7f0a14de0a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a979d8cb627dcb558d29ff7f0a14de0a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_ac71f852bf800be16d8fad4f0024c78ad}\label{classvvenc_1_1Partitioner_ac71f852bf800be16d8fad4f0024c78ad}} 
+\index{Partitioner@{Partitioner}!currPartIdx@{currPartIdx}}
+\index{currPartIdx@{currPartIdx}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currPartIdx()}{currPartIdx()}}
+{\footnotesize\ttfamily const unsigned curr\+Part\+Idx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 156 of file Unit\+Partitioner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_ac71f852bf800be16d8fad4f0024c78ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_ac71f852bf800be16d8fad4f0024c78ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a40d8f7af8646e2426fd30d9a75e2f01d}\label{classvvenc_1_1Partitioner_a40d8f7af8646e2426fd30d9a75e2f01d}} 
+\index{Partitioner@{Partitioner}!currPartLevel@{currPartLevel}}
+\index{currPartLevel@{currPartLevel}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currPartLevel()}{currPartLevel()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1PartLevel}{Part\+Level}}\& curr\+Part\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Unit\+Partitioner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvvenc_1_1Partitioner_a40d8f7af8646e2426fd30d9a75e2f01d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a40d8f7af8646e2426fd30d9a75e2f01d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a6b0e4b2a9ee69300394e3fcd4dc1b167}\label{classvvenc_1_1Partitioner_a6b0e4b2a9ee69300394e3fcd4dc1b167}} 
+\index{Partitioner@{Partitioner}!currQgChromaEnable@{currQgChromaEnable}}
+\index{currQgChromaEnable@{currQgChromaEnable}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currQgChromaEnable()}{currQgChromaEnable()}}
+{\footnotesize\ttfamily const bool curr\+Qg\+Chroma\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 159 of file Unit\+Partitioner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a6b0e4b2a9ee69300394e3fcd4dc1b167_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a6b0e4b2a9ee69300394e3fcd4dc1b167_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a31bdfc7d287df8772de1006f279c3f66}\label{classvvenc_1_1Partitioner_a31bdfc7d287df8772de1006f279c3f66}} 
+\index{Partitioner@{Partitioner}!currQgEnable@{currQgEnable}}
+\index{currQgEnable@{currQgEnable}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currQgEnable()}{currQgEnable()}}
+{\footnotesize\ttfamily const bool curr\+Qg\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 158 of file Unit\+Partitioner.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a31bdfc7d287df8772de1006f279c3f66_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a31bdfc7d287df8772de1006f279c3f66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a959a14b1ba27b7cc28352007af5eafe7}\label{classvvenc_1_1Partitioner_a959a14b1ba27b7cc28352007af5eafe7}} 
+\index{Partitioner@{Partitioner}!exitCurrSplit@{exitCurrSplit}}
+\index{exitCurrSplit@{exitCurrSplit}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{exitCurrSplit()}{exitCurrSplit()}}
+{\footnotesize\ttfamily void exit\+Curr\+Split (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 630 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a959a14b1ba27b7cc28352007af5eafe7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a959a14b1ba27b7cc28352007af5eafe7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_adbecef1d50a2d1f9fd98334a74bb4b90}\label{classvvenc_1_1Partitioner_adbecef1d50a2d1f9fd98334a74bb4b90}} 
+\index{Partitioner@{Partitioner}!getImplicitSplit@{getImplicitSplit}}
+\index{getImplicitSplit@{getImplicitSplit}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{getImplicitSplit()}{getImplicitSplit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}} get\+Implicit\+Split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 577 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_adbecef1d50a2d1f9fd98334a74bb4b90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_adbecef1d50a2d1f9fd98334a74bb4b90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_adb3abe89b6d517df5531416d3ced8ca3}\label{classvvenc_1_1Partitioner_adb3abe89b6d517df5531416d3ced8ca3}} 
+\index{Partitioner@{Partitioner}!getModeTypeSeries@{getModeTypeSeries}}
+\index{getModeTypeSeries@{getModeTypeSeries}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{getModeTypeSeries()}{getModeTypeSeries()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_ad27d55ac74b5e58d40f12db296f431c3}{Mode\+Type\+Series}} get\+Mode\+Type\+Series (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 114 of file Unit\+Partitioner.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_adb3abe89b6d517df5531416d3ced8ca3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a5f67f602120818e5c9f815b55ceb630b}\label{classvvenc_1_1Partitioner_a5f67f602120818e5c9f815b55ceb630b}} 
+\index{Partitioner@{Partitioner}!getPartStack@{getPartStack}}
+\index{getPartStack@{getPartStack}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{getPartStack()}{getPartStack()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_ab3ba51166babca685b5af2a1ac7af2e4}{Partitioning\+Stack}}\& get\+Part\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 157 of file Unit\+Partitioner.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a5f67f602120818e5c9f815b55ceb630b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_ac223a32e6e9f39e8ef8dac3b68a5d5ba}\label{classvvenc_1_1Partitioner_ac223a32e6e9f39e8ef8dac3b68a5d5ba}} 
+\index{Partitioner@{Partitioner}!getSplitSeries@{getSplitSeries}}
+\index{getSplitSeries@{getSplitSeries}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{getSplitSeries()}{getSplitSeries()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a27e39e4771fc2c2035bd65e57ca85ead}{Split\+Series}} get\+Split\+Series (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 98 of file Unit\+Partitioner.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_ac223a32e6e9f39e8ef8dac3b68a5d5ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_acc5ace3d92e1128112b26359d29f3569}\label{classvvenc_1_1Partitioner_acc5ace3d92e1128112b26359d29f3569}} 
+\index{Partitioner@{Partitioner}!hasNextPart@{hasNextPart}}
+\index{hasNextPart@{hasNextPart}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{hasNextPart()}{hasNextPart()}}
+{\footnotesize\ttfamily bool has\+Next\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 731 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1Partitioner_acc5ace3d92e1128112b26359d29f3569_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a2b9dd57601cf330837e776d36b7be91d}\label{classvvenc_1_1Partitioner_a2b9dd57601cf330837e776d36b7be91d}} 
+\index{Partitioner@{Partitioner}!initCtu@{initCtu}}
+\index{initCtu@{initCtu}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{initCtu()}{initCtu()}}
+{\footnotesize\ttfamily void init\+Ctu (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ctu\+Area,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{\+\_\+ch\+Type,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 255 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a2b9dd57601cf330837e776d36b7be91d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a2b9dd57601cf330837e776d36b7be91d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a8af4965cdd52f37201bda122191ce3c3}\label{classvvenc_1_1Partitioner_a8af4965cdd52f37201bda122191ce3c3}} 
+\index{Partitioner@{Partitioner}!isConsInter@{isConsInter}}
+\index{isConsInter@{isConsInter}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{isConsInter()}{isConsInter()}}
+{\footnotesize\ttfamily bool is\+Cons\+Inter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file Unit\+Partitioner.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classvvenc_1_1Partitioner_a8af4965cdd52f37201bda122191ce3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_add599efa6e2e5899f294e7c66236f6e1}\label{classvvenc_1_1Partitioner_add599efa6e2e5899f294e7c66236f6e1}} 
+\index{Partitioner@{Partitioner}!isConsIntra@{isConsIntra}}
+\index{isConsIntra@{isConsIntra}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{isConsIntra()}{isConsIntra()}}
+{\footnotesize\ttfamily bool is\+Cons\+Intra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 182 of file Unit\+Partitioner.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classvvenc_1_1Partitioner_add599efa6e2e5899f294e7c66236f6e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_aa28f1b23eee02f13dd86ff4ff72c3d4b}\label{classvvenc_1_1Partitioner_aa28f1b23eee02f13dd86ff4ff72c3d4b}} 
+\index{Partitioner@{Partitioner}!isSepTree@{isSepTree}}
+\index{isSepTree@{isSepTree}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{isSepTree()}{isSepTree()}}
+{\footnotesize\ttfamily bool is\+Sep\+Tree (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 130 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_aa28f1b23eee02f13dd86ff4ff72c3d4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_aa28f1b23eee02f13dd86ff4ff72c3d4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a4387c356e828b7861fc1d47499aead0a}\label{classvvenc_1_1Partitioner_a4387c356e828b7861fc1d47499aead0a}} 
+\index{Partitioner@{Partitioner}!isSplitImplicit@{isSplitImplicit}}
+\index{isSplitImplicit@{isSplitImplicit}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{isSplitImplicit()}{isSplitImplicit()}}
+{\footnotesize\ttfamily bool is\+Split\+Implicit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 572 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a4387c356e828b7861fc1d47499aead0a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a4387c356e828b7861fc1d47499aead0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_acfc0e74841898a7fcb4981551881b552}\label{classvvenc_1_1Partitioner_acfc0e74841898a7fcb4981551881b552}} 
+\index{Partitioner@{Partitioner}!nextPart@{nextPart}}
+\index{nextPart@{nextPart}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{nextPart()}{nextPart()}}
+{\footnotesize\ttfamily bool next\+Part (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{bool}]{auto\+Pop = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 690 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_acfc0e74841898a7fcb4981551881b552_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_acfc0e74841898a7fcb4981551881b552_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a17896193fb64f152bf89d9c0ff41f0d4}\label{classvvenc_1_1Partitioner_a17896193fb64f152bf89d9c0ff41f0d4}} 
+\index{Partitioner@{Partitioner}!setCUData@{setCUData}}
+\index{setCUData@{setCUData}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{setCUData()}{setCUData()}}
+{\footnotesize\ttfamily void set\+C\+U\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1Partitioner_a17896193fb64f152bf89d9c0ff41f0d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a17896193fb64f152bf89d9c0ff41f0d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a0eb34a1a27cfc5eebf872d128d422a4a}\label{classvvenc_1_1Partitioner_a0eb34a1a27cfc5eebf872d128d422a4a}} 
+\index{Partitioner@{Partitioner}!setMaxMinDepth@{setMaxMinDepth}}
+\index{setMaxMinDepth@{setMaxMinDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{setMaxMinDepth()}{setMaxMinDepth()}}
+{\footnotesize\ttfamily void set\+Max\+Min\+Depth (\begin{DoxyParamCaption}\item[{unsigned \&}]{min\+Depth,  }\item[{unsigned \&}]{max\+Depth,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{bool}]{refine\+Min\+Max }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 167 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a0eb34a1a27cfc5eebf872d128d422a4a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classvvenc_1_1Partitioner_a0eb34a1a27cfc5eebf872d128d422a4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a7d54121d05bf25e1dcf3127b87ed43e8}\label{classvvenc_1_1Partitioner_a7d54121d05bf25e1dcf3127b87ed43e8}} 
+\index{Partitioner@{Partitioner}!splitCurrArea@{splitCurrArea}}
+\index{splitCurrArea@{splitCurrArea}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{splitCurrArea()}{splitCurrArea()}}
+{\footnotesize\ttfamily void split\+Curr\+Area (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a468243d03af504bd2e985e3ab56691da}{Part\+Split}}}]{split,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 291 of file Unit\+Partitioner.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a7d54121d05bf25e1dcf3127b87ed43e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Partitioner_a7d54121d05bf25e1dcf3127b87ed43e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a6c1e157224f4eb1ed388d13bedcbad27}\label{classvvenc_1_1Partitioner_a6c1e157224f4eb1ed388d13bedcbad27}} 
+\index{Partitioner@{Partitioner}!chType@{chType}}
+\index{chType@{chType}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{chType}{chType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type}
+
+
+
+Definition at line 144 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a7ab2dc2b3b69581a450469eedf3e255b}\label{classvvenc_1_1Partitioner_a7ab2dc2b3b69581a450469eedf3e255b}} 
+\index{Partitioner@{Partitioner}!currBtDepth@{currBtDepth}}
+\index{currBtDepth@{currBtDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currBtDepth}{currBtDepth}}
+{\footnotesize\ttfamily unsigned curr\+Bt\+Depth}
+
+
+
+Definition at line 137 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a3bb3b504a05ebad0872ff47e8e11c625}\label{classvvenc_1_1Partitioner_a3bb3b504a05ebad0872ff47e8e11c625}} 
+\index{Partitioner@{Partitioner}!currDepth@{currDepth}}
+\index{currDepth@{currDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currDepth}{currDepth}}
+{\footnotesize\ttfamily unsigned curr\+Depth}
+
+
+
+Definition at line 134 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_afe5dcaa36766f0dc20e07826308a50f2}\label{classvvenc_1_1Partitioner_afe5dcaa36766f0dc20e07826308a50f2}} 
+\index{Partitioner@{Partitioner}!currImplicitBtDepth@{currImplicitBtDepth}}
+\index{currImplicitBtDepth@{currImplicitBtDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currImplicitBtDepth}{currImplicitBtDepth}}
+{\footnotesize\ttfamily unsigned curr\+Implicit\+Bt\+Depth}
+
+
+
+Definition at line 143 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a9a07f024ae743637869504d970f14095}\label{classvvenc_1_1Partitioner_a9a07f024ae743637869504d970f14095}} 
+\index{Partitioner@{Partitioner}!currMtDepth@{currMtDepth}}
+\index{currMtDepth@{currMtDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currMtDepth}{currMtDepth}}
+{\footnotesize\ttfamily unsigned curr\+Mt\+Depth}
+
+
+
+Definition at line 138 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_adcdf905d7dc409881a6d79d5adb56d62}\label{classvvenc_1_1Partitioner_adcdf905d7dc409881a6d79d5adb56d62}} 
+\index{Partitioner@{Partitioner}!currQgChromaPos@{currQgChromaPos}}
+\index{currQgChromaPos@{currQgChromaPos}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currQgChromaPos}{currQgChromaPos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Position}{Position}} curr\+Qg\+Chroma\+Pos}
+
+
+
+Definition at line 141 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a0d5de2fc339e4c22ddd411d5f5511824}\label{classvvenc_1_1Partitioner_a0d5de2fc339e4c22ddd411d5f5511824}} 
+\index{Partitioner@{Partitioner}!currQgPos@{currQgPos}}
+\index{currQgPos@{currQgPos}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currQgPos}{currQgPos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Position}{Position}} curr\+Qg\+Pos}
+
+
+
+Definition at line 140 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_abb984412dbbdd96d4b6de1b2a5422ff3}\label{classvvenc_1_1Partitioner_abb984412dbbdd96d4b6de1b2a5422ff3}} 
+\index{Partitioner@{Partitioner}!currQtDepth@{currQtDepth}}
+\index{currQtDepth@{currQtDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currQtDepth}{currQtDepth}}
+{\footnotesize\ttfamily unsigned curr\+Qt\+Depth}
+
+
+
+Definition at line 135 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_afa8df5cb29daad85b1d0914302ded5b3}\label{classvvenc_1_1Partitioner_afa8df5cb29daad85b1d0914302ded5b3}} 
+\index{Partitioner@{Partitioner}!currSubdiv@{currSubdiv}}
+\index{currSubdiv@{currSubdiv}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currSubdiv}{currSubdiv}}
+{\footnotesize\ttfamily unsigned curr\+Subdiv}
+
+
+
+Definition at line 139 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a11a11dea891ee137a4a756ba94caaed1}\label{classvvenc_1_1Partitioner_a11a11dea891ee137a4a756ba94caaed1}} 
+\index{Partitioner@{Partitioner}!currTrDepth@{currTrDepth}}
+\index{currTrDepth@{currTrDepth}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{currTrDepth}{currTrDepth}}
+{\footnotesize\ttfamily unsigned curr\+Tr\+Depth}
+
+
+
+Definition at line 136 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a4ba52b9d7414f6efe7e94b1a71ebd910}\label{classvvenc_1_1Partitioner_a4ba52b9d7414f6efe7e94b1a71ebd910}} 
+\index{Partitioner@{Partitioner}!m\_currArea@{m\_currArea}}
+\index{m\_currArea@{m\_currArea}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{m\_currArea}{m\_currArea}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} m\+\_\+curr\+Area\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 127 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a84d91d00eb65325a341e8c336ed05154}\label{classvvenc_1_1Partitioner_a84d91d00eb65325a341e8c336ed05154}} 
+\index{Partitioner@{Partitioner}!m\_partBuf@{m\_partBuf}}
+\index{m\_partBuf@{m\_partBuf}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{m\_partBuf}{m\_partBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} m\+\_\+part\+Buf\mbox{[}\mbox{\hyperlink{classvvenc_1_1Partitioner_a2dec51628423031180e6d70cdb8331a8}{part\+Buf\+Size}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 130 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a2cad033d8884a0b635c01230eea91b85}\label{classvvenc_1_1Partitioner_a2cad033d8884a0b635c01230eea91b85}} 
+\index{Partitioner@{Partitioner}!m\_partBufIdx@{m\_partBufIdx}}
+\index{m\_partBufIdx@{m\_partBufIdx}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{m\_partBufIdx}{m\_partBufIdx}}
+{\footnotesize\ttfamily ptrdiff\+\_\+t m\+\_\+part\+Buf\+Idx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 131 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_ac39ccdf23fd896083aa061f4daf58263}\label{classvvenc_1_1Partitioner_ac39ccdf23fd896083aa061f4daf58263}} 
+\index{Partitioner@{Partitioner}!m\_partStack@{m\_partStack}}
+\index{m\_partStack@{m\_partStack}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{m\_partStack}{m\_partStack}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_ab3ba51166babca685b5af2a1ac7af2e4}{Partitioning\+Stack}} m\+\_\+part\+Stack\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 125 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a01376428571aeddbbcc73e1bec8536a7}\label{classvvenc_1_1Partitioner_a01376428571aeddbbcc73e1bec8536a7}} 
+\index{Partitioner@{Partitioner}!maxBTD@{maxBTD}}
+\index{maxBTD@{maxBTD}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{maxBTD}{maxBTD}}
+{\footnotesize\ttfamily unsigned max\+B\+TD}
+
+
+
+Definition at line 148 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a685a198d64c090731f86365867e1cbf2}\label{classvvenc_1_1Partitioner_a685a198d64c090731f86365867e1cbf2}} 
+\index{Partitioner@{Partitioner}!maxBtSize@{maxBtSize}}
+\index{maxBtSize@{maxBtSize}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{maxBtSize}{maxBtSize}}
+{\footnotesize\ttfamily unsigned max\+Bt\+Size}
+
+
+
+Definition at line 149 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a6ea97803b2abbe2ce93cbb0192873e54}\label{classvvenc_1_1Partitioner_a6ea97803b2abbe2ce93cbb0192873e54}} 
+\index{Partitioner@{Partitioner}!maxTtSize@{maxTtSize}}
+\index{maxTtSize@{maxTtSize}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{maxTtSize}{maxTtSize}}
+{\footnotesize\ttfamily unsigned max\+Tt\+Size}
+
+
+
+Definition at line 151 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a1e4b869381acf065068ab55273f31e9e}\label{classvvenc_1_1Partitioner_a1e4b869381acf065068ab55273f31e9e}} 
+\index{Partitioner@{Partitioner}!minQtSize@{minQtSize}}
+\index{minQtSize@{minQtSize}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{minQtSize}{minQtSize}}
+{\footnotesize\ttfamily unsigned min\+Qt\+Size}
+
+
+
+Definition at line 152 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_abea4ddb5c9527deb6ea6ae30a8e7380c}\label{classvvenc_1_1Partitioner_abea4ddb5c9527deb6ea6ae30a8e7380c}} 
+\index{Partitioner@{Partitioner}!minTSize@{minTSize}}
+\index{minTSize@{minTSize}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{minTSize}{minTSize}}
+{\footnotesize\ttfamily unsigned min\+T\+Size}
+
+
+
+Definition at line 150 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a94e6ea2d0eb1fcb0de228eb7eafc6529}\label{classvvenc_1_1Partitioner_a94e6ea2d0eb1fcb0de228eb7eafc6529}} 
+\index{Partitioner@{Partitioner}!modeType@{modeType}}
+\index{modeType@{modeType}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{modeType}{modeType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_affedf11c575f5d8463807348d4f7f71b}{Mode\+Type}} mode\+Type}
+
+
+
+Definition at line 146 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a2dec51628423031180e6d70cdb8331a8}\label{classvvenc_1_1Partitioner_a2dec51628423031180e6d70cdb8331a8}} 
+\index{Partitioner@{Partitioner}!partBufSize@{partBufSize}}
+\index{partBufSize@{partBufSize}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{partBufSize}{partBufSize}}
+{\footnotesize\ttfamily const size\+\_\+t part\+Buf\+Size = 128\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 129 of file Unit\+Partitioner.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Partitioner_a5807aec71a4db132719a28dc3f094714}\label{classvvenc_1_1Partitioner_a5807aec71a4db132719a28dc3f094714}} 
+\index{Partitioner@{Partitioner}!treeType@{treeType}}
+\index{treeType@{treeType}!Partitioner@{Partitioner}}
+\doxysubsubsection{\texorpdfstring{treeType}{treeType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} tree\+Type}
+
+
+
+Definition at line 145 of file Unit\+Partitioner.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{UnitPartitioner_8h}{Unit\+Partitioner.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{UnitPartitioner_8cpp}{Unit\+Partitioner.\+cpp}}\end{DoxyCompactItemize}

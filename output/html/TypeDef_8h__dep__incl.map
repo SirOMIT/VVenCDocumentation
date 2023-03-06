@@ -1,0 +1,52 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/TypeDef.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/TypeDef.h">
+<area shape="rect" id="node1" title="Define macros, basic types, new types and enumerations." alt="" coords="2750,5,2910,76"/>
+<area shape="rect" id="node2" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions." alt="" coords="2691,124,2851,195"/>
+<area shape="rect" id="node44" href="$AffineGradientSearch_8h.html" title="Declaration of AffineGradientSearch class." alt="" coords="4769,243,4930,313"/>
+<area shape="rect" id="node3" href="$AdaptiveLoopFilter_8h.html" title="adaptive loop filter class (header)" alt="" coords="2888,717,3048,788"/>
+<area shape="rect" id="node4" href="$DecLib_8h.html" title="decoder class (header)" alt="" coords="2814,1548,2970,1619"/>
+<area shape="rect" id="node5" href="$Unit_8h.html" title="defines unit as a set of blocks and basic unit types (coding, prediction, transform)" alt="" coords="1656,599,1816,669"/>
+<area shape="rect" id="node6" href="$UnitPartitioner_8h.html" title="Provides a class for partitioning management." alt="" coords="494,717,654,788"/>
+<area shape="rect" id="node7" href="$ContextModelling_8h.html" title="Classes providing probability descriptions and contexts (header)" alt="" coords="614,836,774,907"/>
+<area shape="rect" id="node8" href="$QuantRDOQ2_8h.html" title="RDOQ class (header)" alt="" coords="462,1192,622,1263"/>
+<area shape="rect" id="node9" href="$DepQuant_8h.html" title=" " alt="" coords="462,1311,622,1381"/>
+<area shape="rect" id="node10" href="$TrQuant_8h.html" title="transform and quantization class (header)" alt="" coords="352,1429,512,1500"/>
+<area shape="rect" id="node11" href="$QuantRDOQ_8h.html" title="RDOQ class (header)" alt="" coords="462,1073,622,1144"/>
+<area shape="rect" id="node12" href="$Quant_8h.html" title="base quantization class (header)" alt="" coords="462,955,622,1025"/>
+<area shape="rect" id="node13" href="$CodingStructure_8h.html" title="A class managing the coding information for a specific image part." alt="" coords="1672,836,1832,907"/>
+<area shape="rect" id="node14" href="$Picture_8h.html" title="Description of a coded picture." alt="" coords="2462,955,2622,1025"/>
+<area shape="rect" id="node15" href="$LoopFilter_8h.html" title="deblocking filter (header)" alt="" coords="2647,1073,2807,1144"/>
+<area shape="rect" id="node16" href="$Slice_8cpp.html" title="slice header and SPS class" alt="" coords="1387,1073,1547,1144"/>
+<area shape="rect" id="node17" href="$SEIread_8cpp.html" title="reading funtionality for SEI messages" alt="" coords="3574,1073,3730,1144"/>
+<area shape="rect" id="node18" href="$dtrace__codingstruct_8h.html" title="Easy to use dtrace calls concerning coding structures." alt="" coords="1723,955,1883,1025"/>
+<area shape="rect" id="node19" href="$InterpolationFilter_8h.html" title="Declaration of InterpolationFilter class." alt="" coords="1926,717,2086,788"/>
+<area shape="rect" id="node20" href="$Reshape_8h.html" title="reshaping header and class (header)" alt="" coords="2462,717,2622,788"/>
+<area shape="rect" id="node21" href="$RdCost_8h.html" title="RD cost computation classes (header)" alt="" coords="779,717,939,788"/>
+<area shape="rect" id="node22" href="$dtrace__buffer_8h.html" title="Easy to use dtrace calls concerning buffers." alt="" coords="3456,717,3616,788"/>
+<area shape="rect" id="node23" href="$SampleAdaptiveOffset_8h.html" title="sample adaptive offset class (header)" alt="" coords="2696,717,2864,788"/>
+<area shape="rect" id="node24" href="$SearchSpaceCounter_8cpp.html" title=" " alt="" coords="2110,717,2285,788"/>
+<area shape="rect" id="node25" href="$Common_8h.html" title="Common 2D&#45;geometrical structures." alt="" coords="2024,361,2184,432"/>
+<area shape="rect" id="node26" href="$Buffer_8h.html" title="Low&#45;overhead class describing 2D memory layout." alt="" coords="1831,480,1991,551"/>
+<area shape="rect" id="node27" href="$Rom_8h.html" title="global variables &amp; functions (header)" alt="" coords="2574,487,2776,543"/>
+<area shape="rect" id="node28" href="$Slice_8h.html" title="slice header and SPS class (header)" alt="" coords="1251,599,1411,669"/>
+<area shape="rect" id="node29" href="$Contexts_8h.html" title="Classes providing probability descriptions and contexts (header)" alt="" coords="208,717,368,788"/>
+<area shape="rect" id="node30" href="$dtrace__next_8h.html" title="DTrace support for next software." alt="" coords="3496,599,3656,669"/>
+<area shape="rect" id="node31" href="$dtrace_8cpp.html" title="Implementation of trace messages support for debugging." alt="" coords="3792,717,3952,788"/>
+<area shape="rect" id="node32" href="$SEI_8cpp.html" title="helper functions for SEI handling" alt="" coords="4310,717,4470,788"/>
+<area shape="rect" id="node33" href="$NALread_8cpp.html" title="reading functionality for NAL units" alt="" coords="3073,717,3229,788"/>
+<area shape="rect" id="node34" href="$VLCReader_8cpp.html" title=" " alt="" coords="3977,717,4133,788"/>
+<area shape="rect" id="node35" href="$Mv_8h.html" title="motion vector class (header)" alt="" coords="1464,250,1654,306"/>
+<area shape="rect" id="node36" href="$MotionInfo_8h.html" title="motion information handling classes (header)" alt="" coords="1730,361,1890,432"/>
+<area shape="rect" id="node37" href="$TimeProfiler_8h.html" title="profiling of run&#45;time behavior (header)" alt="" coords="2574,361,2734,432"/>
+<area shape="rect" id="node38" href="$AlfParameters_8h.html" title="Define types for storing ALF parameters." alt="" coords="1032,361,1192,432"/>
+<area shape="rect" id="node39" href="$SEI_8h.html" title=" " alt="" coords="4459,606,4656,662"/>
+<area shape="rect" id="node40" href="$BitStream_8h.html" title="class for handling bitstream (header)" alt="" coords="3059,480,3219,551"/>
+<area shape="rect" id="node41" href="$NALread_8h.html" title="reading functionality for NAL units" alt="" coords="2961,599,3117,669"/>
+<area shape="rect" id="node42" href="$DecSlice_8h.html" title="slice decoder class (header)" alt="" coords="4194,599,4350,669"/>
+<area shape="rect" id="node43" href="$dtrace_8h.html" title="Implementation of trace messages support for debugging." alt="" coords="3344,480,3504,551"/>
+<area shape="rect" id="node45" href="$ProfileLevelTier_8h.html" title=" " alt="" coords="3648,243,3808,313"/>
+<area shape="rect" id="node46" href="$StatCounter_8cpp.html" title=" " alt="" coords="3832,243,3992,313"/>
+<area shape="rect" id="node47" href="$TrQuant__EMT_8h.html" title="transform and quantization class (header)" alt="" coords="4067,243,4227,313"/>
+<area shape="rect" id="node48" href="$TrafoX86_8h.html" title="SIMD averaging." alt="" coords="4067,361,4227,432"/>
+<area shape="rect" id="node49" href="$CommonDefX86_8h.html" title=" " alt="" coords="4251,243,4411,313"/>
+<area shape="rect" id="node50" href="$AnnexBread_8h.html" title="reading functions for Annex B byte streams" alt="" coords="4436,243,4592,313"/>
+</map>

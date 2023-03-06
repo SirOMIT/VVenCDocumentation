@@ -1,0 +1,30 @@
+<map id="extendBorderPel" name="extendBorderPel">
+<area shape="rect" id="node1" title=" " alt="" coords="1749,293,1868,319"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1AdaptiveLoopFilter.html#aad77a81e931e11b77f93aca0626ab947" title=" " alt="" coords="1512,44,1685,85"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1AdaptiveLoopFilter.html#a516cb3453fdadcc72b7aeb682ab11d53" title=" " alt="" coords="1512,109,1685,151"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a1e6d439d7167af03a266abc60a9f36cd" title=" " alt="" coords="1252,168,1448,209"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1MCTF.html#af467096d7b5cdcb8fcaa5865c5c7d476" title=" " alt="" coords="741,293,960,319"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a922f94f2937b5da6e6378db09b76c9d3" title=" " alt="" coords="1501,227,1697,268"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1MCTF.html#a627b85715167089df19dc6ab17cb0277" title=" " alt="" coords="1283,343,1417,370"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#aff6f292dba868a4fdd93135aa70c2793" title=" " alt="" coords="1501,445,1697,487"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#aa0b8f5e2b2f3863d4b0b5ae0e01a02f8" title=" " alt="" coords="1501,511,1697,552"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1MCTF.html#af3951f6c749a1b891251c81b28d1f636" title=" " alt="" coords="1496,394,1701,421"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1DecLib.html#ab669c8b8a076eba397794683699fd443" title=" " alt="" coords="1256,49,1444,91"/>
+<area shape="rect" id="node4" href="$namespacevvenc.html#a4b8a6866b7ca3b758d7fa57dd622c0ff" title=" " alt="" coords="1023,67,1189,94"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1VVEncImpl.html#a738995bb8f5f1f9372177ec270bcc902" title=" " alt="" coords="760,5,941,47"/>
+<area shape="rect" id="node9" href="$namespacevvenc.html#adb1eeab1fc3b671e5bce71e1c9053d18" title=" " alt="" coords="747,71,954,98"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1EncGOP.html#afc55c7ec70cedfed561118110b384d10" title=" " alt="" coords="758,122,943,149"/>
+<area shape="rect" id="node6" href="$vvenc_8cpp.html#ad004900a48a00c04fcd1193f117efb82" title=" " alt="" coords="503,13,669,39"/>
+<area shape="rect" id="node7" href="$classEncApp.html#a201eddecd65dcf1a76105a867d021ef4" title="main encoding function" alt="" coords="273,13,392,39"/>
+<area shape="rect" id="node8" href="$encmain_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="71,13,121,39"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1EncGOP.html#a61c82aee8789605e0a9a1a9756553c79" title=" " alt="" coords="479,175,693,202"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1EncLib.html#a2303c1e40df0d38ed231d13f999baa8b" title=" " alt="" coords="235,267,431,294"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1VVEncImpl.html#a3a15613e1639e852c006e3d440aa2885" title=" " alt="" coords="5,267,187,294"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1EncPicture.html#a1923d4a8c3829e889669c0524c768843" title=" " alt="" coords="1037,168,1175,209"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1MCTF.html#a25707f539783571f456bb27e494e07d7" title=" " alt="" coords="488,242,684,269"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1MCTF.html#a6997a7747aaa8f3a468b396d07e2d2f8" title=" " alt="" coords="489,293,683,319"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a9ac07751cba4bd424eba0e351b184b21" title=" " alt="" coords="1252,395,1448,436"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1EncSlice.html#a1ae3f14919d9f85da8569dd27d10b468" title=" " alt="" coords="1016,453,1196,495"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#a225f457adcd383f4f9ba5367add80b1d" title=" " alt="" coords="1252,512,1448,553"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1EncAdaptiveLoopFilter.html#ae59d71ba426c315648c90f129bfb4d02" title=" " alt="" coords="1008,519,1204,560"/>
+</map>

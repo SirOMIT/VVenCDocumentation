@@ -1,0 +1,722 @@
+\hypertarget{structvvenc_1_1UnitBuf}{}\doxysection{Unit\+Buf$<$ T $>$}
+\label{structvvenc_1_1UnitBuf}\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Buffer.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Unit\+Buf$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{structvvenc_1_1UnitBuf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unit\+Buf$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{structvvenc_1_1UnitBuf__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ const T $>$, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}} $>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_a73bcb52a2b44c46af14bf45eb0e5fe4e}{Const\+Unit\+Buf\+Buffers}}
+\item 
+typedef \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}} $>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a2fb8f9f9283a4fec59232122d71b1164}{Unit\+Buf}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a37c20c621addb903aa2ff477807af857}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&blkY)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a3fce36226404f5790697325bf0ec9a89}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&blkY, \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&blk\+Cb, \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&blk\+Cr)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a2d2ce463543f0956d4b7644c7b826969}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&blkY)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_aeea049a04c8d65b8ec05d1b389ce9a01}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&blkY, const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&blk\+Cb, const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&blk\+Cr)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a7b62615eb035bf34e697090b56f0521b}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} \&\+\_\+bufs)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a574ebe38620978684acf6d83234ac47a}{Unit\+Buf}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} \&\&\+\_\+bufs)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a6f7ad08953b5293a8ee3fa9f82b3c28d}{add\+Avg}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other1, const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other2, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const bool chroma\+Only=false, const bool luma\+Only=false)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_aa479ded3aa5c5160f29c9f7f6bd2af5a}{add\+Weighted\+Avg}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other1, const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other2, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const uint8\+\_\+t Bcw\+Idx=\mbox{\hyperlink{namespacevvenc_ab4631bf16a955dfd7bae49c7f6a71c13}{B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT}}, const bool chroma\+Only=false, const bool luma\+Only=false)
+\item 
+\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_ad90881994b2968bd1c48e4fb16723fd5}{Cb}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a190807141cd866a335ff779dc2ba04c8}{Cb}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_afa8eee74acb75e00759027807ecd0de3}{copy\+Clip}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&src, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, const bool luma\+Only=false, const bool chroma\+Only=false)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_ae234f3d4d1911a5f0e1b61a5425c320f}{copy\+From}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other)
+\item 
+\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a0d5f330a76f9f3b4b896a8589b8acb47}{Cr}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a6c15f01b812fb1e609f8a0a65b61847a}{Cr}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a5b0075b4c42b9b08230e5bd746f8195a}{extend\+Border\+Pel}} (unsigned margin, bool scale=false)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a1193aab7bfa1fc16a0fd771e439718d0}{extend\+Border\+Pel\+Bot}} (int x, int size, int margin)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_ab33e1df8cbc10bad14cd6a0588cf83cc}{extend\+Border\+Pel\+Lft}} (int y, int size, int margin)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a0d882ab892b2106937fc675ec89c6eb7}{extend\+Border\+Pel\+Rgt}} (int y, int size, int margin)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a843915c5fcfbcc80e8aa3e6e71cabb41}{extend\+Border\+Pel\+Top}} (int x, int size, int margin)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_a34b3e020ef4d15f9b2442bfff37f19b8}{fill}} (const T \&val)
+\item 
+\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a59fa1e9c0d0dafd04140d8e96323587f}{get}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a790a45a04b9338843b51dcc4d4d2e068}{get}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a4dc793ce2120e3499450eccbd6fa769b}{operator Unit\+Buf$<$ const T $>$}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_abf42dce0ff2cad06b880adb82ed14ddf}{pad\+Border\+Pel}} (unsigned margin, int dir)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_ac82c4e48a0b0aab937f98f95451d3128}{reconstruct}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&pred, const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&resi, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_af907ad3e49a30f4c2990626baf9bde6a}{remove\+High\+Freq}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&other, const bool b\+Clip, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs)
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ T $>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_a10c5121cbb1d265bbf057595ba224b35}{sub\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&sub\+Area)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_aa579522d4458c0e57365600ae352a09d}{sub\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&sub\+Area) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1UnitBuf_aa96916cf49ce848620c20b065ffef091}{subtract}} (const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&minuend, const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&subtrahend)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1UnitBuf_a315419f26d3c59fa143b49b90a019049}{valid}} () const
+\item 
+\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a953720746c35b6e0479828e4017eff87}{Y}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \& \mbox{\hyperlink{structvvenc_1_1UnitBuf_a620b85d5d759776100c31dfb38fed23f}{Y}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} \mbox{\hyperlink{structvvenc_1_1UnitBuf_a56d2ab7fcab62c2fd8d6f1dd4febae6a}{bufs}}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{structvvenc_1_1UnitBuf_aa6f3e16df807424717e8e8e307c7b629}{chroma\+Format}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct vvenc\+::\+Unit\+Buf$<$ T $>$}
+
+
+
+Definition at line 655 of file Buffer.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a73bcb52a2b44c46af14bf45eb0e5fe4e}\label{structvvenc_1_1UnitBuf_a73bcb52a2b44c46af14bf45eb0e5fe4e}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!ConstUnitBufBuffers@{ConstUnitBufBuffers}}
+\index{ConstUnitBufBuffers@{ConstUnitBufBuffers}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConstUnitBufBuffers}{ConstUnitBufBuffers}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$const T$>$, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}$>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_a73bcb52a2b44c46af14bf45eb0e5fe4e}{Const\+Unit\+Buf\+Buffers}}}
+
+
+
+Definition at line 658 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}\label{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBufBuffers@{UnitBufBuffers}}
+\index{UnitBufBuffers@{UnitBufBuffers}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBufBuffers}{UnitBufBuffers}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}$>$ \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}}}
+
+
+
+Definition at line 657 of file Buffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a2fb8f9f9283a4fec59232122d71b1164}\label{structvvenc_1_1UnitBuf_a2fb8f9f9283a4fec59232122d71b1164}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 663 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a7b62615eb035bf34e697090b56f0521b}\label{structvvenc_1_1UnitBuf_a7b62615eb035bf34e697090b56f0521b}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} \&}]{\+\_\+bufs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 664 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a574ebe38620978684acf6d83234ac47a}\label{structvvenc_1_1UnitBuf_a574ebe38620978684acf6d83234ac47a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{\mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} \&\&}]{\+\_\+bufs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 665 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a2d2ce463543f0956d4b7644c7b826969}\label{structvvenc_1_1UnitBuf_a2d2ce463543f0956d4b7644c7b826969}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&}]{blkY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 666 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a37c20c621addb903aa2ff477807af857}\label{structvvenc_1_1UnitBuf_a37c20c621addb903aa2ff477807af857}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&}]{blkY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 667 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_aeea049a04c8d65b8ec05d1b389ce9a01}\label{structvvenc_1_1UnitBuf_aeea049a04c8d65b8ec05d1b389ce9a01}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&}]{blkY,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&}]{blk\+Cb,  }\item[{const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&}]{blk\+Cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 668 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a3fce36226404f5790697325bf0ec9a89}\label{structvvenc_1_1UnitBuf_a3fce36226404f5790697325bf0ec9a89}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!UnitBuf@{UnitBuf}}
+\index{UnitBuf@{UnitBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{UnitBuf()}{UnitBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&}]{blkY,  }\item[{\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&}]{blk\+Cb,  }\item[{\mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$ T $>$ \&\&}]{blk\+Cr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 669 of file Buffer.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a6f7ad08953b5293a8ee3fa9f82b3c28d}\label{structvvenc_1_1UnitBuf_a6f7ad08953b5293a8ee3fa9f82b3c28d}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!addAvg@{addAvg}}
+\index{addAvg@{addAvg}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addAvg()}{addAvg()}}
+{\footnotesize\ttfamily void add\+Avg (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other2,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const bool}]{chroma\+Only = {\ttfamily false},  }\item[{const bool}]{luma\+Only = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 773 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a6f7ad08953b5293a8ee3fa9f82b3c28d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_aa479ded3aa5c5160f29c9f7f6bd2af5a}\label{structvvenc_1_1UnitBuf_aa479ded3aa5c5160f29c9f7f6bd2af5a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!addWeightedAvg@{addWeightedAvg}}
+\index{addWeightedAvg@{addWeightedAvg}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addWeightedAvg()}{addWeightedAvg()}}
+{\footnotesize\ttfamily void add\+Weighted\+Avg (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other1,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other2,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const uint8\+\_\+t}]{Bcw\+Idx = {\ttfamily \mbox{\hyperlink{namespacevvenc_ab4631bf16a955dfd7bae49c7f6a71c13}{B\+C\+W\+\_\+\+D\+E\+F\+A\+U\+LT}}},  }\item[{const bool}]{chroma\+Only = {\ttfamily false},  }\item[{const bool}]{luma\+Only = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 787 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_aa479ded3aa5c5160f29c9f7f6bd2af5a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_ad90881994b2968bd1c48e4fb16723fd5}\label{structvvenc_1_1UnitBuf_ad90881994b2968bd1c48e4fb16723fd5}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Cb@{Cb}}
+\index{Cb@{Cb}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cb()}{Cb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Cb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 681 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_ad90881994b2968bd1c48e4fb16723fd5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a190807141cd866a335ff779dc2ba04c8}\label{structvvenc_1_1UnitBuf_a190807141cd866a335ff779dc2ba04c8}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Cb@{Cb}}
+\index{Cb@{Cb}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cb()}{Cb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Cb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 682 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_afa8eee74acb75e00759027807ecd0de3}\label{structvvenc_1_1UnitBuf_afa8eee74acb75e00759027807ecd0de3}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!copyClip@{copyClip}}
+\index{copyClip@{copyClip}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{copyClip()}{copyClip()}}
+{\footnotesize\ttfamily void copy\+Clip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{src,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{const bool}]{luma\+Only = {\ttfamily false},  }\item[{const bool}]{chroma\+Only = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 747 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_afa8eee74acb75e00759027807ecd0de3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_ae234f3d4d1911a5f0e1b61a5425c320f}\label{structvvenc_1_1UnitBuf_ae234f3d4d1911a5f0e1b61a5425c320f}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!copyFrom@{copyFrom}}
+\index{copyFrom@{copyFrom}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{copyFrom()}{copyFrom()}}
+{\footnotesize\ttfamily void copy\+From (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 723 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_ae234f3d4d1911a5f0e1b61a5425c320f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a0d5f330a76f9f3b4b896a8589b8acb47}\label{structvvenc_1_1UnitBuf_a0d5f330a76f9f3b4b896a8589b8acb47}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Cr@{Cr}}
+\index{Cr@{Cr}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cr()}{Cr()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Cr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 683 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a0d5f330a76f9f3b4b896a8589b8acb47_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a6c15f01b812fb1e609f8a0a65b61847a}\label{structvvenc_1_1UnitBuf_a6c15f01b812fb1e609f8a0a65b61847a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Cr@{Cr}}
+\index{Cr@{Cr}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cr()}{Cr()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Cr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 684 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a5b0075b4c42b9b08230e5bd746f8195a}\label{structvvenc_1_1UnitBuf_a5b0075b4c42b9b08230e5bd746f8195a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!extendBorderPel@{extendBorderPel}}
+\index{extendBorderPel@{extendBorderPel}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{extendBorderPel()}{extendBorderPel()}}
+{\footnotesize\ttfamily void extend\+Border\+Pel (\begin{DoxyParamCaption}\item[{unsigned}]{margin,  }\item[{bool}]{scale = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 845 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a5b0075b4c42b9b08230e5bd746f8195a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a5b0075b4c42b9b08230e5bd746f8195a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a1193aab7bfa1fc16a0fd771e439718d0}\label{structvvenc_1_1UnitBuf_a1193aab7bfa1fc16a0fd771e439718d0}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!extendBorderPelBot@{extendBorderPelBot}}
+\index{extendBorderPelBot@{extendBorderPelBot}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{extendBorderPelBot()}{extendBorderPelBot()}}
+{\footnotesize\ttfamily void extend\+Border\+Pel\+Bot (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{size,  }\item[{int}]{margin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 812 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a1193aab7bfa1fc16a0fd771e439718d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a1193aab7bfa1fc16a0fd771e439718d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_ab33e1df8cbc10bad14cd6a0588cf83cc}\label{structvvenc_1_1UnitBuf_ab33e1df8cbc10bad14cd6a0588cf83cc}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!extendBorderPelLft@{extendBorderPelLft}}
+\index{extendBorderPelLft@{extendBorderPelLft}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{extendBorderPelLft()}{extendBorderPelLft()}}
+{\footnotesize\ttfamily void extend\+Border\+Pel\+Lft (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{size,  }\item[{int}]{margin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 823 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_ab33e1df8cbc10bad14cd6a0588cf83cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_ab33e1df8cbc10bad14cd6a0588cf83cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a0d882ab892b2106937fc675ec89c6eb7}\label{structvvenc_1_1UnitBuf_a0d882ab892b2106937fc675ec89c6eb7}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!extendBorderPelRgt@{extendBorderPelRgt}}
+\index{extendBorderPelRgt@{extendBorderPelRgt}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{extendBorderPelRgt()}{extendBorderPelRgt()}}
+{\footnotesize\ttfamily void extend\+Border\+Pel\+Rgt (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{size,  }\item[{int}]{margin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 834 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a0d882ab892b2106937fc675ec89c6eb7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a0d882ab892b2106937fc675ec89c6eb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a843915c5fcfbcc80e8aa3e6e71cabb41}\label{structvvenc_1_1UnitBuf_a843915c5fcfbcc80e8aa3e6e71cabb41}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!extendBorderPelTop@{extendBorderPelTop}}
+\index{extendBorderPelTop@{extendBorderPelTop}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{extendBorderPelTop()}{extendBorderPelTop()}}
+{\footnotesize\ttfamily void extend\+Border\+Pel\+Top (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{size,  }\item[{int}]{margin }\end{DoxyParamCaption})}
+
+
+
+Definition at line 801 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a843915c5fcfbcc80e8aa3e6e71cabb41_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a843915c5fcfbcc80e8aa3e6e71cabb41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a34b3e020ef4d15f9b2442bfff37f19b8}\label{structvvenc_1_1UnitBuf_a34b3e020ef4d15f9b2442bfff37f19b8}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!fill@{fill}}
+\index{fill@{fill}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void fill (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})}
+
+
+
+Definition at line 714 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a59fa1e9c0d0dafd04140d8e96323587f}\label{structvvenc_1_1UnitBuf_a59fa1e9c0d0dafd04140d8e96323587f}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!get@{get}}
+\index{get@{get}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 676 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structvvenc_1_1UnitBuf_a59fa1e9c0d0dafd04140d8e96323587f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a790a45a04b9338843b51dcc4d4d2e068}\label{structvvenc_1_1UnitBuf_a790a45a04b9338843b51dcc4d4d2e068}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!get@{get}}
+\index{get@{get}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 677 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a4dc793ce2120e3499450eccbd6fa769b}\label{structvvenc_1_1UnitBuf_a4dc793ce2120e3499450eccbd6fa769b}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!operator UnitBuf$<$ const T $>$@{operator UnitBuf$<$ const T $>$}}
+\index{operator UnitBuf$<$ const T $>$@{operator UnitBuf$<$ const T $>$}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator UnitBuf$<$ const T $>$()}{operator UnitBuf< const T >()}}
+{\footnotesize\ttfamily operator \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 671 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a4dc793ce2120e3499450eccbd6fa769b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_abf42dce0ff2cad06b880adb82ed14ddf}\label{structvvenc_1_1UnitBuf_abf42dce0ff2cad06b880adb82ed14ddf}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!padBorderPel@{padBorderPel}}
+\index{padBorderPel@{padBorderPel}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{padBorderPel()}{padBorderPel()}}
+{\footnotesize\ttfamily void pad\+Border\+Pel (\begin{DoxyParamCaption}\item[{unsigned}]{margin,  }\item[{int}]{dir }\end{DoxyParamCaption})}
+
+
+
+Definition at line 864 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_abf42dce0ff2cad06b880adb82ed14ddf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_abf42dce0ff2cad06b880adb82ed14ddf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_ac82c4e48a0b0aab937f98f95451d3128}\label{structvvenc_1_1UnitBuf_ac82c4e48a0b0aab937f98f95451d3128}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!reconstruct@{reconstruct}}
+\index{reconstruct@{reconstruct}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reconstruct()}{reconstruct()}}
+{\footnotesize\ttfamily void reconstruct (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{pred,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{resi,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 761 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_af907ad3e49a30f4c2990626baf9bde6a}\label{structvvenc_1_1UnitBuf_af907ad3e49a30f4c2990626baf9bde6a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!removeHighFreq@{removeHighFreq}}
+\index{removeHighFreq@{removeHighFreq}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeHighFreq()}{removeHighFreq()}}
+{\footnotesize\ttfamily void remove\+High\+Freq (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{other,  }\item[{const bool}]{b\+Clip,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 873 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_af907ad3e49a30f4c2990626baf9bde6a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a10c5121cbb1d265bbf057595ba224b35}\label{structvvenc_1_1UnitBuf_a10c5121cbb1d265bbf057595ba224b35}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!subBuf@{subBuf}}
+\index{subBuf@{subBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{subBuf()}{subBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ T $>$ sub\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{sub\+Area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 879 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{structvvenc_1_1UnitBuf_a10c5121cbb1d265bbf057595ba224b35_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a10c5121cbb1d265bbf057595ba224b35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_aa579522d4458c0e57365600ae352a09d}\label{structvvenc_1_1UnitBuf_aa579522d4458c0e57365600ae352a09d}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!subBuf@{subBuf}}
+\index{subBuf@{subBuf}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{subBuf()}{subBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ sub\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{sub\+Area }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 896 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{structvvenc_1_1UnitBuf_aa579522d4458c0e57365600ae352a09d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_aa96916cf49ce848620c20b065ffef091}\label{structvvenc_1_1UnitBuf_aa96916cf49ce848620c20b065ffef091}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!subtract@{subtract}}
+\index{subtract@{subtract}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily void subtract (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{minuend,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitBuf}{Unit\+Buf}}$<$ const T $>$ \&}]{subtrahend }\end{DoxyParamCaption})}
+
+
+
+Definition at line 735 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a315419f26d3c59fa143b49b90a019049}\label{structvvenc_1_1UnitBuf_a315419f26d3c59fa143b49b90a019049}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!valid@{valid}}
+\index{valid@{valid}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{valid()}{valid()}}
+{\footnotesize\ttfamily bool valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 685 of file Buffer.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{structvvenc_1_1UnitBuf_a315419f26d3c59fa143b49b90a019049_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a315419f26d3c59fa143b49b90a019049_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a953720746c35b6e0479828e4017eff87}\label{structvvenc_1_1UnitBuf_a953720746c35b6e0479828e4017eff87}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Y@{Y}}
+\index{Y@{Y}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Y()}{Y()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 679 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1UnitBuf_a953720746c35b6e0479828e4017eff87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a620b85d5d759776100c31dfb38fed23f}\label{structvvenc_1_1UnitBuf_a620b85d5d759776100c31dfb38fed23f}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!Y@{Y}}
+\index{Y@{Y}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Y()}{Y()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1AreaBuf}{Area\+Buf}}$<$T$>$\& Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 680 of file Buffer.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_a56d2ab7fcab62c2fd8d6f1dd4febae6a}\label{structvvenc_1_1UnitBuf_a56d2ab7fcab62c2fd8d6f1dd4febae6a}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!bufs@{bufs}}
+\index{bufs@{bufs}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{bufs}{bufs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1UnitBuf_a82e6f31521d62c110cb094a2ad3d58bf}{Unit\+Buf\+Buffers}} bufs}
+
+
+
+Definition at line 661 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1UnitBuf_aa6f3e16df807424717e8e8e307c7b629}\label{structvvenc_1_1UnitBuf_aa6f3e16df807424717e8e8e307c7b629}} 
+\index{UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}!chromaFormat@{chromaFormat}}
+\index{chromaFormat@{chromaFormat}!UnitBuf$<$ T $>$@{UnitBuf$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{chromaFormat}{chromaFormat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chroma\+Format}
+
+
+
+Definition at line 660 of file Buffer.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Buffer_8h}{Buffer.\+h}}\end{DoxyCompactItemize}

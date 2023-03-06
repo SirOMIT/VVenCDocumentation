@@ -1,0 +1,48 @@
+\hypertarget{InterSearch_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Inter\+Search.cpp File Reference}
+\label{InterSearch_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/InterSearch.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/InterSearch.cpp}}
+{\ttfamily \#include \char`\"{}Inter\+Search.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Enc\+Lib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Rom.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Motion\+Info.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Reshape.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+next.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Time\+Profiler.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for Inter\+Search.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{InterSearch_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_a159e0290b97daf4943ec29343199e1f3}{is\+Y\+Part\+Before}} (Split\+Series series, const int ctu\+Size\+Log2, const Position \&ref\+Pos, const Position \&pos)
+\item 
+void \mbox{\hyperlink{namespacevvenc_addfbcd7236d485fdef78287e1c6693d6}{solve\+Equal}} (double $\ast$$\ast$d\+Equal\+Coeff, int i\+Order, double $\ast$d\+Affine\+Para)
+\item 
+static unsigned int \mbox{\hyperlink{namespacevvenc_adea48f6d363ff5bbe0929be6e484d805}{x\+Merge\+Cand\+Lists}} (Mv $\ast$dst, unsigned int dn, unsigned int dst\+Total\+Length, Mv $\ast$src, unsigned int sn)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const Mv \mbox{\hyperlink{namespacevvenc_af2648f21b6c0719f45e956a186b081ac}{s\+\_\+ac\+Mv\+RefineH}} \mbox{[}9\mbox{]}
+\item 
+static const Mv \mbox{\hyperlink{namespacevvenc_ab83ea82b402e856995ef959d069a10cf}{s\+\_\+ac\+Mv\+RefineQ}} \mbox{[}9\mbox{]}
+\item 
+static const bool \mbox{\hyperlink{namespacevvenc_a0b1bbd6fc4d26dbf1f9b4b748690afce}{s\+\_\+do\+InterpQ}} \mbox{[}42\mbox{]}\mbox{[}14\mbox{]}
+\item 
+static const bool \mbox{\hyperlink{namespacevvenc_a96b5e1460105e65e10de81c48c2d7d1f}{s\+\_\+skip\+Qpel\+Position}} \mbox{[}42\mbox{]}\mbox{[}9\mbox{]}
+\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="xExtDIFUpSamplingQ" name="xExtDIFUpSamplingQ">
+<area shape="rect" id="node1" title="Generate quarter&#45;sample interpolated blocks." alt="" coords="5,46,157,73"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1InterpolationFilter.html#ae92df0a722bbb5aba3537e9c93da511d" title="Filter a block of samples (horizontal)" alt="" coords="205,5,371,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1InterpolationFilter.html#a6773e2e8d0e56f400d910b811de87125" title="Filter a block of samples (vertical)" alt="" coords="205,71,371,112"/>
+</map>

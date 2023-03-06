@@ -1,0 +1,411 @@
+\hypertarget{structvvenc_1_1PelBufferOps}{}\doxysection{Pel\+Buffer\+Ops}
+\label{structvvenc_1_1PelBufferOps}\index{PelBufferOps@{PelBufferOps}}
+
+
+{\ttfamily \#include \char`\"{}Buffer.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelBufferOps_a205854f9522f03f0e804250305fdf1ad}{Pel\+Buffer\+Ops}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a54feec9a43b7286043a68b892ab2db13}{add\+Avg}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int numsamples, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ad10e1390e86e7c5716b459671215c9d4}{add\+Avg16}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a0fc1d7607b9fe6110a6d424ebd4f381e}{add\+Avg4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ae3bf310ca2f9357e77fd7f8455cffa09}{add\+Avg8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a323b11b1ea6d23608a78b561dc9ff345}{apply\+Lut}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, const ptrdiff\+\_\+t src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, ptrdiff\+\_\+t dst\+Stride, int width, int height, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$lut)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a1b7c0960360072ca8f35cc7fba44f7b6}{copy\+Buffer}} )(const char $\ast$src, int src\+Stride, char $\ast$dst, int dst\+Stride, int width, int height)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ad1fe33250cf977f8a00959776900becc}{copy\+Clip}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int num\+Samples, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a35745f25d269fcb514ad2fded00d2351}{copy\+Clip4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a35ac5bcf46ac9267a8a18797ffd981cb}{copy\+Clip8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_aeb547db1464380e3b88aef8c0ab00f32}{fill\+Ptr\+Map}} )(void $\ast$$\ast$ptr\+Map, const ptrdiff\+\_\+t map\+Stride, int width, int height, void $\ast$val)
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a4fb3293faf4fa77c8b9763a377656737}{is\+Init\+X86\+Done}}
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a8faa00fce260b71a2ac9f2c99d32f34d}{lin\+Tf4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int scale, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool b\+Clip)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ab01efb6992564dbfde4657997fa69f4e}{lin\+Tf8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int scale, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool b\+Clip)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a6b74fe73fd023e6775c9cc81036894eb}{mip\+Matrix\+Mul\+\_\+4\+\_\+4}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a04e1f2c9f6e873fdfd458271b142d96e}{mip\+Matrix\+Mul\+\_\+8\+\_\+4}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a9f57ae88a62e0017bac04c6b3fe2e745}{mip\+Matrix\+Mul\+\_\+8\+\_\+8}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_aefd9cc10a3fad76326910e2819b82288}{reco}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int num\+Samples, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a830d3c8ba56a201df256c0865ac426f5}{reco4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_aa60e005a9ef6fccaa3269f43250e2432}{reco8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_adfba25cef97549b3219ffc195eab541a}{remove\+High\+Freq4}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, int width, int height)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ad024e1974c2c6ae13b1e8720d543640d}{remove\+High\+Freq8}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, int width, int height)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ac1d9af79b83d55ff7ef8868ae5ab59e6}{round\+Geo}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dest, const int num\+Samples, unsigned rshift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_ae86843e2c23c010bf673f6af42b0df2f}{round\+Int\+Vector}} )(int $\ast$v, int size, unsigned int n\+Shift, const int dmv\+Limit)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a46a2cefbe3aef634e6b8d606674e7cdb}{sub4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_af56300dec6081b1ddfc4c60049e73b1d}{sub8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a176b65f0e88c4bd21d1ca2aa82484d98}{transpose4x4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_afd74d3294698b1c8421624ce8631eb59}{transpose8x8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a7fe9dd31bdafc4437351de565840f11f}{weight\+Ciip}} )(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$intra, const int num\+Samples, int num\+Intra)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a785a49124f68abfab807f1e578a48e29}{wght\+Avg4}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, int w0, int w1, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\item 
+void($\ast$ \mbox{\hyperlink{structvvenc_1_1PelBufferOps_a2f953ff2ad12eed089285b63a172d1a8}{wght\+Avg8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, int w0, int w1, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 77 of file Buffer.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a205854f9522f03f0e804250305fdf1ad}\label{structvvenc_1_1PelBufferOps_a205854f9522f03f0e804250305fdf1ad}} 
+\index{PelBufferOps@{PelBufferOps}!PelBufferOps@{PelBufferOps}}
+\index{PelBufferOps@{PelBufferOps}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{PelBufferOps()}{PelBufferOps()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelBufferOps}{Pel\+Buffer\+Ops}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 338 of file Buffer.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{structvvenc_1_1PelBufferOps_a205854f9522f03f0e804250305fdf1ad_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a54feec9a43b7286043a68b892ab2db13}\label{structvvenc_1_1PelBufferOps_a54feec9a43b7286043a68b892ab2db13}} 
+\index{PelBufferOps@{PelBufferOps}!addAvg@{addAvg}}
+\index{addAvg@{addAvg}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{addAvg}{addAvg}}
+{\footnotesize\ttfamily void( $\ast$ add\+Avg(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int numsamples, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 89 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ad10e1390e86e7c5716b459671215c9d4}\label{structvvenc_1_1PelBufferOps_ad10e1390e86e7c5716b459671215c9d4}} 
+\index{PelBufferOps@{PelBufferOps}!addAvg16@{addAvg16}}
+\index{addAvg16@{addAvg16}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{addAvg16}{addAvg16}}
+{\footnotesize\ttfamily void( $\ast$ add\+Avg16(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 94 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a0fc1d7607b9fe6110a6d424ebd4f381e}\label{structvvenc_1_1PelBufferOps_a0fc1d7607b9fe6110a6d424ebd4f381e}} 
+\index{PelBufferOps@{PelBufferOps}!addAvg4@{addAvg4}}
+\index{addAvg4@{addAvg4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{addAvg4}{addAvg4}}
+{\footnotesize\ttfamily void( $\ast$ add\+Avg4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 92 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ae3bf310ca2f9357e77fd7f8455cffa09}\label{structvvenc_1_1PelBufferOps_ae3bf310ca2f9357e77fd7f8455cffa09}} 
+\index{PelBufferOps@{PelBufferOps}!addAvg8@{addAvg8}}
+\index{addAvg8@{addAvg8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{addAvg8}{addAvg8}}
+{\footnotesize\ttfamily void( $\ast$ add\+Avg8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 93 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a323b11b1ea6d23608a78b561dc9ff345}\label{structvvenc_1_1PelBufferOps_a323b11b1ea6d23608a78b561dc9ff345}} 
+\index{PelBufferOps@{PelBufferOps}!applyLut@{applyLut}}
+\index{applyLut@{applyLut}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{applyLut}{applyLut}}
+{\footnotesize\ttfamily void( $\ast$ apply\+Lut(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, const ptrdiff\+\_\+t src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, ptrdiff\+\_\+t dst\+Stride, int width, int height, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$lut)}
+
+
+
+Definition at line 115 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a1b7c0960360072ca8f35cc7fba44f7b6}\label{structvvenc_1_1PelBufferOps_a1b7c0960360072ca8f35cc7fba44f7b6}} 
+\index{PelBufferOps@{PelBufferOps}!copyBuffer@{copyBuffer}}
+\index{copyBuffer@{copyBuffer}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{copyBuffer}{copyBuffer}}
+{\footnotesize\ttfamily void( $\ast$ copy\+Buffer(const char $\ast$src, int src\+Stride, char $\ast$dst, int dst\+Stride, int width, int height)}
+
+
+
+Definition at line 105 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ad1fe33250cf977f8a00959776900becc}\label{structvvenc_1_1PelBufferOps_ad1fe33250cf977f8a00959776900becc}} 
+\index{PelBufferOps@{PelBufferOps}!copyClip@{copyClip}}
+\index{copyClip@{copyClip}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{copyClip}{copyClip}}
+{\footnotesize\ttfamily void( $\ast$ copy\+Clip(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int num\+Samples, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 91 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a35745f25d269fcb514ad2fded00d2351}\label{structvvenc_1_1PelBufferOps_a35745f25d269fcb514ad2fded00d2351}} 
+\index{PelBufferOps@{PelBufferOps}!copyClip4@{copyClip4}}
+\index{copyClip4@{copyClip4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{copyClip4}{copyClip4}}
+{\footnotesize\ttfamily void( $\ast$ copy\+Clip4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 99 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a35ac5bcf46ac9267a8a18797ffd981cb}\label{structvvenc_1_1PelBufferOps_a35ac5bcf46ac9267a8a18797ffd981cb}} 
+\index{PelBufferOps@{PelBufferOps}!copyClip8@{copyClip8}}
+\index{copyClip8@{copyClip8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{copyClip8}{copyClip8}}
+{\footnotesize\ttfamily void( $\ast$ copy\+Clip8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 100 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_aeb547db1464380e3b88aef8c0ab00f32}\label{structvvenc_1_1PelBufferOps_aeb547db1464380e3b88aef8c0ab00f32}} 
+\index{PelBufferOps@{PelBufferOps}!fillPtrMap@{fillPtrMap}}
+\index{fillPtrMap@{fillPtrMap}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{fillPtrMap}{fillPtrMap}}
+{\footnotesize\ttfamily void( $\ast$ fill\+Ptr\+Map(void $\ast$$\ast$ptr\+Map, const ptrdiff\+\_\+t map\+Stride, int width, int height, void $\ast$val)}
+
+
+
+Definition at line 116 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a4fb3293faf4fa77c8b9763a377656737}\label{structvvenc_1_1PelBufferOps_a4fb3293faf4fa77c8b9763a377656737}} 
+\index{PelBufferOps@{PelBufferOps}!isInitX86Done@{isInitX86Done}}
+\index{isInitX86Done@{isInitX86Done}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{isInitX86Done}{isInitX86Done}}
+{\footnotesize\ttfamily bool is\+Init\+X86\+Done}
+
+
+
+Definition at line 81 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a8faa00fce260b71a2ac9f2c99d32f34d}\label{structvvenc_1_1PelBufferOps_a8faa00fce260b71a2ac9f2c99d32f34d}} 
+\index{PelBufferOps@{PelBufferOps}!linTf4@{linTf4}}
+\index{linTf4@{linTf4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{linTf4}{linTf4}}
+{\footnotesize\ttfamily void( $\ast$ lin\+Tf4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int scale, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool b\+Clip)}
+
+
+
+Definition at line 103 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ab01efb6992564dbfde4657997fa69f4e}\label{structvvenc_1_1PelBufferOps_ab01efb6992564dbfde4657997fa69f4e}} 
+\index{PelBufferOps@{PelBufferOps}!linTf8@{linTf8}}
+\index{linTf8@{linTf8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{linTf8}{linTf8}}
+{\footnotesize\ttfamily void( $\ast$ lin\+Tf8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, int scale, unsigned shift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, bool b\+Clip)}
+
+
+
+Definition at line 104 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a6b74fe73fd023e6775c9cc81036894eb}\label{structvvenc_1_1PelBufferOps_a6b74fe73fd023e6775c9cc81036894eb}} 
+\index{PelBufferOps@{PelBufferOps}!mipMatrixMul\_4\_4@{mipMatrixMul\_4\_4}}
+\index{mipMatrixMul\_4\_4@{mipMatrixMul\_4\_4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{mipMatrixMul\_4\_4}{mipMatrixMul\_4\_4}}
+{\footnotesize\ttfamily void( $\ast$ mip\+Matrix\+Mul\+\_\+4\+\_\+4(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)}
+
+
+
+Definition at line 111 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a04e1f2c9f6e873fdfd458271b142d96e}\label{structvvenc_1_1PelBufferOps_a04e1f2c9f6e873fdfd458271b142d96e}} 
+\index{PelBufferOps@{PelBufferOps}!mipMatrixMul\_8\_4@{mipMatrixMul\_8\_4}}
+\index{mipMatrixMul\_8\_4@{mipMatrixMul\_8\_4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{mipMatrixMul\_8\_4}{mipMatrixMul\_8\_4}}
+{\footnotesize\ttfamily void( $\ast$ mip\+Matrix\+Mul\+\_\+8\+\_\+4(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)}
+
+
+
+Definition at line 112 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a9f57ae88a62e0017bac04c6b3fe2e745}\label{structvvenc_1_1PelBufferOps_a9f57ae88a62e0017bac04c6b3fe2e745}} 
+\index{PelBufferOps@{PelBufferOps}!mipMatrixMul\_8\_8@{mipMatrixMul\_8\_8}}
+\index{mipMatrixMul\_8\_8@{mipMatrixMul\_8\_8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{mipMatrixMul\_8\_8}{mipMatrixMul\_8\_8}}
+{\footnotesize\ttfamily void( $\ast$ mip\+Matrix\+Mul\+\_\+8\+\_\+8(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$input, const uint8\+\_\+t $\ast$weight, const int max\+Val, const int offset, bool transpose)}
+
+
+
+Definition at line 113 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_aefd9cc10a3fad76326910e2819b82288}\label{structvvenc_1_1PelBufferOps_aefd9cc10a3fad76326910e2819b82288}} 
+\index{PelBufferOps@{PelBufferOps}!reco@{reco}}
+\index{reco@{reco}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{reco}{reco}}
+{\footnotesize\ttfamily void( $\ast$ reco(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int num\+Samples, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 90 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a830d3c8ba56a201df256c0865ac426f5}\label{structvvenc_1_1PelBufferOps_a830d3c8ba56a201df256c0865ac426f5}} 
+\index{PelBufferOps@{PelBufferOps}!reco4@{reco4}}
+\index{reco4@{reco4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{reco4}{reco4}}
+{\footnotesize\ttfamily void( $\ast$ reco4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 101 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_aa60e005a9ef6fccaa3269f43250e2432}\label{structvvenc_1_1PelBufferOps_aa60e005a9ef6fccaa3269f43250e2432}} 
+\index{PelBufferOps@{PelBufferOps}!reco8@{reco8}}
+\index{reco8@{reco8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{reco8}{reco8}}
+{\footnotesize\ttfamily void( $\ast$ reco8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 102 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_adfba25cef97549b3219ffc195eab541a}\label{structvvenc_1_1PelBufferOps_adfba25cef97549b3219ffc195eab541a}} 
+\index{PelBufferOps@{PelBufferOps}!removeHighFreq4@{removeHighFreq4}}
+\index{removeHighFreq4@{removeHighFreq4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{removeHighFreq4}{removeHighFreq4}}
+{\footnotesize\ttfamily void( $\ast$ remove\+High\+Freq4(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, int width, int height)}
+
+
+
+Definition at line 107 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ad024e1974c2c6ae13b1e8720d543640d}\label{structvvenc_1_1PelBufferOps_ad024e1974c2c6ae13b1e8720d543640d}} 
+\index{PelBufferOps@{PelBufferOps}!removeHighFreq8@{removeHighFreq8}}
+\index{removeHighFreq8@{removeHighFreq8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{removeHighFreq8}{removeHighFreq8}}
+{\footnotesize\ttfamily void( $\ast$ remove\+High\+Freq8(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, int width, int height)}
+
+
+
+Definition at line 106 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ac1d9af79b83d55ff7ef8868ae5ab59e6}\label{structvvenc_1_1PelBufferOps_ac1d9af79b83d55ff7ef8868ae5ab59e6}} 
+\index{PelBufferOps@{PelBufferOps}!roundGeo@{roundGeo}}
+\index{roundGeo@{roundGeo}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{roundGeo}{roundGeo}}
+{\footnotesize\ttfamily void( $\ast$ round\+Geo(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dest, const int num\+Samples, unsigned rshift, int offset, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 88 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_ae86843e2c23c010bf673f6af42b0df2f}\label{structvvenc_1_1PelBufferOps_ae86843e2c23c010bf673f6af42b0df2f}} 
+\index{PelBufferOps@{PelBufferOps}!roundIntVector@{roundIntVector}}
+\index{roundIntVector@{roundIntVector}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{roundIntVector}{roundIntVector}}
+{\footnotesize\ttfamily void( $\ast$ round\+Int\+Vector(int $\ast$v, int size, unsigned int n\+Shift, const int dmv\+Limit)}
+
+
+
+Definition at line 110 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a46a2cefbe3aef634e6b8d606674e7cdb}\label{structvvenc_1_1PelBufferOps_a46a2cefbe3aef634e6b8d606674e7cdb}} 
+\index{PelBufferOps@{PelBufferOps}!sub4@{sub4}}
+\index{sub4@{sub4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{sub4}{sub4}}
+{\footnotesize\ttfamily void( $\ast$ sub4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height)}
+
+
+
+Definition at line 95 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_af56300dec6081b1ddfc4c60049e73b1d}\label{structvvenc_1_1PelBufferOps_af56300dec6081b1ddfc4c60049e73b1d}} 
+\index{PelBufferOps@{PelBufferOps}!sub8@{sub8}}
+\index{sub8@{sub8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{sub8}{sub8}}
+{\footnotesize\ttfamily void( $\ast$ sub8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height)}
+
+
+
+Definition at line 96 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a176b65f0e88c4bd21d1ca2aa82484d98}\label{structvvenc_1_1PelBufferOps_a176b65f0e88c4bd21d1ca2aa82484d98}} 
+\index{PelBufferOps@{PelBufferOps}!transpose4x4@{transpose4x4}}
+\index{transpose4x4@{transpose4x4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{transpose4x4}{transpose4x4}}
+{\footnotesize\ttfamily void( $\ast$ transpose4x4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride)}
+
+
+
+Definition at line 108 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_afd74d3294698b1c8421624ce8631eb59}\label{structvvenc_1_1PelBufferOps_afd74d3294698b1c8421624ce8631eb59}} 
+\index{PelBufferOps@{PelBufferOps}!transpose8x8@{transpose8x8}}
+\index{transpose8x8@{transpose8x8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{transpose8x8}{transpose8x8}}
+{\footnotesize\ttfamily void( $\ast$ transpose8x8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src, int src\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride)}
+
+
+
+Definition at line 109 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a7fe9dd31bdafc4437351de565840f11f}\label{structvvenc_1_1PelBufferOps_a7fe9dd31bdafc4437351de565840f11f}} 
+\index{PelBufferOps@{PelBufferOps}!weightCiip@{weightCiip}}
+\index{weightCiip@{weightCiip}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{weightCiip}{weightCiip}}
+{\footnotesize\ttfamily void( $\ast$ weight\+Ciip(\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$res, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$intra, const int num\+Samples, int num\+Intra)}
+
+
+
+Definition at line 114 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a785a49124f68abfab807f1e578a48e29}\label{structvvenc_1_1PelBufferOps_a785a49124f68abfab807f1e578a48e29}} 
+\index{PelBufferOps@{PelBufferOps}!wghtAvg4@{wghtAvg4}}
+\index{wghtAvg4@{wghtAvg4}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{wghtAvg4}{wghtAvg4}}
+{\footnotesize\ttfamily void( $\ast$ wght\+Avg4(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, int w0, int w1, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 97 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1PelBufferOps_a2f953ff2ad12eed089285b63a172d1a8}\label{structvvenc_1_1PelBufferOps_a2f953ff2ad12eed089285b63a172d1a8}} 
+\index{PelBufferOps@{PelBufferOps}!wghtAvg8@{wghtAvg8}}
+\index{wghtAvg8@{wghtAvg8}!PelBufferOps@{PelBufferOps}}
+\doxysubsubsection{\texorpdfstring{wghtAvg8}{wghtAvg8}}
+{\footnotesize\ttfamily void( $\ast$ wght\+Avg8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src0, int src0\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$src1, int src1\+Stride, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$dst, int dst\+Stride, int width, int height, unsigned shift, int offset, int w0, int w1, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng)}
+
+
+
+Definition at line 98 of file Buffer.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Buffer_8h}{Buffer.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Buffer_8cpp}{Buffer.\+cpp}}\end{DoxyCompactItemize}

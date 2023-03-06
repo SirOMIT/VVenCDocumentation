@@ -1,0 +1,66 @@
+\hypertarget{Picture_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Picture.h File Reference}
+\label{Picture_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Picture.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Picture.h}}
+
+
+Description of a coded picture.  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bit\+Stream.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Reshape.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$deque$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+Include dependency graph for Picture.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Picture_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Picture_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1Brick}{Brick}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1StopClock}{Stop\+Clock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ Picture $\ast$ $>$ \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}}
+\item 
+typedef std\+::list$<$ S\+EI $\ast$ $>$ \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_aa3633de1caaeace47d78b3495f32710b}{calc\+And\+Print\+Hash\+Status}} (const C\+Pel\+Unit\+Buf \&pic, const S\+E\+I\+Decoded\+Picture\+Hash $\ast$picture\+Hash\+S\+EI, const Bit\+Depths \&bit\+Depths, const vvenc\+Msg\+Level msgl)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Description of a coded picture. 
+

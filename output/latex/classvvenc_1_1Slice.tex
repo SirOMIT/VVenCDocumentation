@@ -1,0 +1,1932 @@
+\hypertarget{classvvenc_1_1Slice}{}\doxysection{Slice}
+\label{classvvenc_1_1Slice}\index{Slice@{Slice}}
+
+
+slice header class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Slice_aa4483b2ec0b48ea218f6cba6134558f7}{Slice}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1Slice_a2cf1f462285418ce66aa0ff66315a56d}{$\sim$\+Slice}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a7771d2d3398bc77247419ec6b9adbf1a}{add\+Substream\+Size}} (uint32\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a63face051327cfe5aff8a75e7e2a59c1}{apply\+Reference\+Picture\+List\+Based\+Marking}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L0, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L1, const int layer\+Id, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&\mbox{\hyperlink{classvvenc_1_1Slice_a0705c021d68ecb01bbf299f0aa4fe327}{pps}}) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ad96a96a40a1073f810bd40ffead69f4f}{check\+Col\+Ref\+Idx}} (uint32\+\_\+t cur\+Slice\+Segment\+Idx, const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$\mbox{\hyperlink{classvvenc_1_1Slice_aa53b89271f07f77f17af4ad8b79f9a4f}{pic}}) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a2347e55595d0cb2edb4a0ed6f3ad6cd0}{check\+C\+RA}} (const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L0, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L1, int \&poc\+C\+RA, vvenc\+Nal\+Unit\+Type \&\mbox{\hyperlink{classvvenc_1_1Slice_a5922c71ae31fb8db63422d1ac78d8804}{associated\+I\+R\+A\+P\+Type}}, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_aca54bb2c53158954156b4abf0d2dc5b1}{check\+Leading\+Picture\+Restrictions}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_aaf33957d369027a4df691a421cb8f4fe}{check\+Ref\+Pics\+Reconstructed}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_aa9ee0a90be4bc764b6a4c7960c2af321}{check\+That\+All\+Ref\+Pics\+Are\+Available}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+PL, int \mbox{\hyperlink{classvvenc_1_1Slice_a753aa02c736668b65aa9ec4b66e36f6d}{rpl\+Idx}}, bool print\+Errors) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a91c75ec6e07ca5878803a25f23e7a61d}{clear\+Substream\+Sizes}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a7ae40a330f93d2efb4d17460d0c10389}{construct\+Ref\+Pic\+List}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic, bool ext\+Border)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a76b60df908a82283e1609a5cb329de67}{copy\+Slice\+Info}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, bool cpy\+Almost\+All=true)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a9ed1d0d3748ba05c7ecc2757efb8bbc4}{create\+Explicit\+Reference\+Picture\+Set\+From\+Reference}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L0, const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$p\+R\+P\+L1)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a9eab1b90766d3b0d907951e3e6a13a19}{get\+Idr\+Pic\+Flag}} () const
+\item 
+const double $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a0aedb7e260ba211f7465b90020b1f9cd}{get\+Lambdas}} () const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1Slice_a101be95bbdc5be9bfbae5c62032ffcfb}{get\+Min\+Picture\+Distance}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_af31d471fef3f6240365291c7ba386acc}{get\+Number\+Of\+Substream\+Sizes}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_ae35e1cc47e4783f851a98cd27ad060df}{get\+Num\+Entry\+Points}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&\mbox{\hyperlink{classvvenc_1_1Slice_a2d3ec636d347d8ea142e64ca27ceaad4}{sps}}, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&\mbox{\hyperlink{classvvenc_1_1Slice_a0705c021d68ecb01bbf299f0aa4fe327}{pps}}) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a53891fdd98cdd4dc1fa0b58ded2af261}{get\+Rap\+Pic\+Flag}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_ae599e53f303dfb53f417ba15c0b57669}{get\+Ref\+Pic}} (\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e, int i\+Ref\+Idx) const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a5aa0670cb22e42db7d597aa009dcf219}{get\+Ref\+P\+OC}} (\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e, int i\+Ref\+Idx) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_a21af5687d518df38e4a59445cade088d}{get\+Substream\+Size}} (uint32\+\_\+t idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a0794e383d8094d8b0b22a24091d94cb0}{get\+Wp\+Scaling}} (\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}} e, int i\+Ref\+Idx, \mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}} $\ast$\&wp) const
+\begin{DoxyCompactList}\small\item\em get tables for weighted prediction \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ad6c769415772c5eba7257ce02b95d0dc}{is\+I\+D\+Ror\+B\+LA}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a2df1dd5ac8070482b6042070f73cffa4}{is\+InterB}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a530d6092c6fac441ddd03762efdf5c2f}{is\+InterP}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a022764e04d9a5b3e4e90b20a70d05677}{is\+Intra}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ae712c51e5029cc6e18d4272f9df547cf}{is\+I\+R\+AP}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a1ea64cab2abcad8eee19f3ca555ae71f}{is\+Poc\+Restricted\+By\+D\+R\+AP}} (int \mbox{\hyperlink{classvvenc_1_1Slice_af1fa96a850f404aded578d3e29dedbcb}{poc}}, bool preceding\+D\+R\+A\+P\+In\+Decoding\+Order) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_abc946e46235055703d7758c900d077ec}{is\+Stepwise\+Temporal\+Layer\+Switching\+Point\+Candidate}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_aae9b2d4a84707d094e007fe46f3aea21}{is\+Temporal\+Layer\+Switching\+Point}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a02407cca53b8d0c3f4efffc5aaa0077e}{reset\+Slice\+Part}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ab6fbe448df09af8a5254981e0f35f533}{reset\+Wp\+Scaling}} ()
+\begin{DoxyCompactList}\small\item\em reset Default WP tables settings \+: no weight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a7488c352bf1e49f78a08d8cc975ed4f6}{set\+Alf\+Aps\+Ids}} (const std\+::vector$<$ int $>$ \&Aps\+I\+Ds)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a63864f74919fb811e7f8a13e81034a2c}{set\+Alf\+A\+P\+Ss}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$$\ast$apss)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ae87acabed6b8f681984cf8c2ec85ef6f}{set\+Decoding\+Refresh\+Marking}} (int \&poc\+C\+RA, bool \&b\+Refresh\+Pending, \mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ac41f4be43a9375a8bf1cdd8d6d10ebbf}{set\+Default\+Clp\+Rng}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&\mbox{\hyperlink{classvvenc_1_1Slice_a2d3ec636d347d8ea142e64ca27ceaad4}{sps}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ad89a33306ad1f6e795ff5eb27b2327b0}{set\+Lambdas}} (const double lambdas\+\_\+\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a164edf417fa66d56811837584428cc92}{set\+List1\+Idx\+To\+List0\+Idx}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ae99fa70f596cce138bc94998adf56478}{set\+Ref\+P\+O\+C\+List}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_ad81158cf6b63232a127a0f9e4cb73234}{set\+S\+M\+V\+D\+Param}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Slice_a6edcbd35a870765780580287238a693f}{update\+Ref\+Pic\+Counter}} (int step)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1Slice_af62b801102d51bb782750b42c97e8361}{sort\+Pic\+List}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_aab413be1475a125aac0f29686ec5b10f}{alf\+Aps}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a4f52498d4a46139ed7d9a5ad5a32cc20}{associated\+I\+R\+AP}}
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{classvvenc_1_1Slice_a5922c71ae31fb8db63422d1ac78d8804}{associated\+I\+R\+A\+P\+Type}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a2691ed25bc1d2b21926bfe74a8dff013}{bi\+Dir\+Pred}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ab2dbac6e2334b2297779a6e485fe979e}{cabac\+Init\+Flag}}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a92a285005cb40ee6c3b070c2f595f447}{cc\+Alf\+Filter\+Control}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}} \mbox{\hyperlink{classvvenc_1_1Slice_ab5e7e135052a03249c36439c03e6bb1d}{cc\+Alf\+Filter\+Param}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a3b6992dd0d30d043f87cb65a22bceb38}{check\+L\+DC}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a360c5c05400e7c028706a9f340bea214}{chroma\+Qp\+Adj\+Enabled}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \mbox{\hyperlink{classvvenc_1_1Slice_a3ede79b23abc164cf6937e8183626a8a}{clp\+Rngs}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a1a8e30a30c5385c4bff3aeae61f3fdbd}{col\+From\+L0\+Flag}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a8fe7ab701b054f1b44ab6117ae4874b0}{colour\+Plane\+Id}}
+\begin{DoxyCompactList}\small\item\em 4\+:4\+:4 colour plane ID \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_a5a74dc0f67a681a941ac4dd7a5fc88b7}{col\+Ref\+Idx}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a0af3b03af999b3b41480e6ba7071f36a}{dci}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_af7ed350b66bfd02791def92702bed510}{deblocking\+Filter\+Beta\+Offset\+Div2}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ac34a632d969fe223ced32a177927a8eb}{deblocking\+Filter\+Disable}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a627a3f2f5924fb76c40731cdea7b5d02}{deblocking\+Filter\+Override\+Flag}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a7a04d5f73d609c4a43e2d96b42afdb45}{deblocking\+Filter\+Tc\+Offset\+Div2}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a64ff1224314f1a6ad7696ac10d16615a}{dep\+Quant\+Enabled}}
+\begin{DoxyCompactList}\small\item\em dependent quantization enabled flag \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_acb5ba97551079e0b072c62c21d784ac5}{depth}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a9088a71f37087d134a4cd8d9418a7395}{disable\+S\+A\+T\+D\+For\+Rd}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a5fc3860d05454f3f759d0f49badd8a42}{enable\+D\+R\+A\+P\+S\+EI}}
+\item 
+\mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} \mbox{\hyperlink{classvvenc_1_1Slice_a3e208239011a73005a5e7636690d6a43}{enc\+C\+A\+B\+A\+C\+Table\+Idx}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ab3988c5e5a8299722635de1328b66002}{explicit\+Scaling\+List\+Used}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_a7ad51fe755589200446925da0502af70}{independent\+Slice\+Idx}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ac9b3cc7b21d669e3b7dcd7ec5d6dec1d}{is\+D\+R\+AP}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a63e35249dbd29a6d5aff101a0a8e3d28}{is\+Lossless}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_afb114dc9a5d7a80e8e6450463a045a75}{is\+Used\+As\+Long\+Term}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Slice_a4020e33ef1ee5e7f0035843d94278279}{lambdas}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a17d513e16dc930568a75f723c77dd545}{last\+I\+DR}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_ad195f7db8a29cd976af7bbc95be4fc43}{latest\+D\+R\+A\+P\+P\+OC}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a75a83a0a00e270faf5de49d10aaa9463}{list1\+Idx\+To\+List0\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a77595e65f2f2cfeba44ad6c366f713fb}{lm\+Chroma\+Check\+Disable}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a75027878ba07c729f99e49e63d3495d9}{lmcs\+Enabled}}
+\item 
+vvenc\+Nal\+Unit\+Type \mbox{\hyperlink{classvvenc_1_1Slice_a8ab7706f5b7ef85bfd6f8992c007cd55}{nal\+Unit\+Type}}
+\begin{DoxyCompactList}\small\item\em Nal unit type for the slice. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_ac3e8dc71f2ac043cc9142e1b1205491c}{nuh\+Layer\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_ae1bbbd55def18448ddeabb935a7737b6}{num\+Ref\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a76b193969465a68f38982efa1cc05aec}{pending\+Ras\+Init}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_aa53b89271f07f77f17af4ad8b79f9a4f}{pic}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a86e63267f0b87eb319b151d10ad84e0f}{pic\+Header}}
+\begin{DoxyCompactList}\small\item\em pointer to picture header structure \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_ad5cd9686c32140dd0fee8028361722bf}{picture\+Header\+In\+Slice\+Header}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_af1fa96a850f404aded578d3e29dedbcb}{poc}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a0705c021d68ecb01bbf299f0aa4fe327}{pps}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_ac76ef35f3f5cc18bf63e1259f85666a0}{pps\+Id}}
+\begin{DoxyCompactList}\small\item\em picture parameter set ID \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a5e6df4bb3e4d200eae04196cab760b56}{prev\+G\+D\+R\+In\+Same\+Layer\+P\+OC}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a890cda239fa378847366808e2e15e24b}{ref\+Pic\+List}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a0ac0c7c27524802141aa09dab91cae75}{ref\+P\+O\+C\+List}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_aa45fb4654b49867d35a3db5ec99b35ad}{rpl}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a753aa02c736668b65aa9ec4b66e36f6d}{rpl\+Idx}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} \mbox{\hyperlink{classvvenc_1_1Slice_a722c4139470f87784c32e37059b2577e}{rpl\+Local}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a8ff5497b97bfc199e85dc2282d15d9d6}{sao\+Enabled}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a9b2722904763856e460f52b9293db1b2}{sign\+Data\+Hiding\+Enabled}}
+\begin{DoxyCompactList}\small\item\em sign data hiding enabled flag \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a5afe283aed2862c3e75099f3420776e4}{slice\+Chroma\+Qp\+Delta}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}+1\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1SliceMap}{Slice\+Map}} \mbox{\hyperlink{classvvenc_1_1Slice_a95357138b8ab36a7fa4c51c24dbccfad}{slice\+Map}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a508c08bc126bef2837ba572ad52a9892}{slice\+Qp}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_a9a8c31c9fd3a91f895bbfbd4fa84d4b5}{slice\+Sub\+Pic\+Id}}
+\item 
+\mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} \mbox{\hyperlink{classvvenc_1_1Slice_a3e0cec306640905b662a1bb0ef53a40f}{slice\+Type}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a2d3ec636d347d8ea142e64ca27ceaad4}{sps}}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1Slice_aed1a456e26f13ade0c04ba6ebb656788}{substream\+Sizes}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a8c0a668a25b6180c50283588b195fec8}{sym\+Ref\+Idx}} \mbox{[}2\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a98d6e8c638d90feb69f1fe4aadb1ab08}{tile\+Group\+Alf\+Enabled}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a1054939d2c73762f8b2e4d1d905cf52c}{tile\+Group\+Cc\+Alf\+Cb\+Aps\+Id}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a5f864d16169df083342be6e44a5bad03}{tile\+Group\+Cc\+Alf\+Cb\+Enabled}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_afba20bc078f12be85f54ef89a77e4589}{tile\+Group\+Cc\+Alf\+Cr\+Aps\+Id}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a67196f9b735e90d7baded699a646116b}{tile\+Group\+Cc\+Alf\+Cr\+Enabled}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a5cf667be0e6cac92124782bf95dba79e}{tile\+Group\+Chroma\+Aps\+Id}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1Slice_ad05d65634ee00b7f06c930e5826ef067}{tile\+Group\+Luma\+Aps\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Slice_a5914820103c6bb19b9c3699eb380a9a8}{tile\+Group\+Num\+Aps}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Slice_a2828614629c4cd261f778db8c85fcf58}{T\+Layer}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_a6c34e8b8befc60a8ce5aae3127b547fd}{T\+Layer\+Switching\+Flag}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_afe06b79d3b95a72cc1071aa62628393a}{ts\+Residual\+Coding\+Disabled}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Slice_aa54e2660939b598986fc46c781fdfc37}{use\+L\+Tfor\+D\+R\+AP}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}{vps}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1WPACDCParam}{W\+P\+A\+C\+D\+C\+Param}} \mbox{\hyperlink{classvvenc_1_1Slice_a2dfc5a5cf48f579f9fa9fad048fe7bf5}{weight\+A\+C\+D\+C\+Param}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}} \mbox{\hyperlink{classvvenc_1_1Slice_accda314fc483768a976b4e20de7a56af}{weight\+Pred\+Table}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1Slice_a9f503b1718be439bff2f67c1bc1eabb0}{x\+Get\+Long\+Term\+Ref\+Pic}} (\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&rc\+List\+Pic, int \mbox{\hyperlink{classvvenc_1_1Slice_af1fa96a850f404aded578d3e29dedbcb}{poc}}, bool poc\+Has\+Msb)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+slice header class 
+
+Definition at line 1178 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Slice_aa4483b2ec0b48ea218f6cba6134558f7}\label{classvvenc_1_1Slice_aa4483b2ec0b48ea218f6cba6134558f7}} 
+\index{Slice@{Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{Slice()}{Slice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 64 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2cf1f462285418ce66aa0ff66315a56d}\label{classvvenc_1_1Slice_a2cf1f462285418ce66aa0ff66315a56d}} 
+\index{Slice@{Slice}!````~Slice@{$\sim$Slice}}
+\index{````~Slice@{$\sim$Slice}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{$\sim$Slice()}{~Slice()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 146 of file Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a7771d2d3398bc77247419ec6b9adbf1a}\label{classvvenc_1_1Slice_a7771d2d3398bc77247419ec6b9adbf1a}} 
+\index{Slice@{Slice}!addSubstreamSize@{addSubstreamSize}}
+\index{addSubstreamSize@{addSubstreamSize}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{addSubstreamSize()}{addSubstreamSize()}}
+{\footnotesize\ttfamily void add\+Substream\+Size (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1313 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a7771d2d3398bc77247419ec6b9adbf1a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a63face051327cfe5aff8a75e7e2a59c1}\label{classvvenc_1_1Slice_a63face051327cfe5aff8a75e7e2a59c1}} 
+\index{Slice@{Slice}!applyReferencePictureListBasedMarking@{applyReferencePictureListBasedMarking}}
+\index{applyReferencePictureListBasedMarking@{applyReferencePictureListBasedMarking}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{applyReferencePictureListBasedMarking()}{applyReferencePictureListBasedMarking()}}
+{\footnotesize\ttfamily void apply\+Reference\+Picture\+List\+Based\+Marking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L0,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L1,  }\item[{const int}]{layer\+Id,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 872 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a63face051327cfe5aff8a75e7e2a59c1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a63face051327cfe5aff8a75e7e2a59c1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad96a96a40a1073f810bd40ffead69f4f}\label{classvvenc_1_1Slice_ad96a96a40a1073f810bd40ffead69f4f}} 
+\index{Slice@{Slice}!checkColRefIdx@{checkColRefIdx}}
+\index{checkColRefIdx@{checkColRefIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkColRefIdx()}{checkColRefIdx()}}
+{\footnotesize\ttfamily void check\+Col\+Ref\+Idx (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{cur\+Slice\+Segment\+Idx,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 471 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classvvenc_1_1Slice_ad96a96a40a1073f810bd40ffead69f4f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ad96a96a40a1073f810bd40ffead69f4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2347e55595d0cb2edb4a0ed6f3ad6cd0}\label{classvvenc_1_1Slice_a2347e55595d0cb2edb4a0ed6f3ad6cd0}} 
+\index{Slice@{Slice}!checkCRA@{checkCRA}}
+\index{checkCRA@{checkCRA}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkCRA()}{checkCRA()}}
+{\footnotesize\ttfamily void check\+C\+RA (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L0,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L1,  }\item[{int \&}]{poc\+C\+RA,  }\item[{vvenc\+Nal\+Unit\+Type \&}]{associated\+I\+R\+A\+P\+Type,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 494 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classvvenc_1_1Slice_a2347e55595d0cb2edb4a0ed6f3ad6cd0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a2347e55595d0cb2edb4a0ed6f3ad6cd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_aca54bb2c53158954156b4abf0d2dc5b1}\label{classvvenc_1_1Slice_aca54bb2c53158954156b4abf0d2dc5b1}} 
+\index{Slice@{Slice}!checkLeadingPictureRestrictions@{checkLeadingPictureRestrictions}}
+\index{checkLeadingPictureRestrictions@{checkLeadingPictureRestrictions}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkLeadingPictureRestrictions()}{checkLeadingPictureRestrictions()}}
+{\footnotesize\ttfamily void check\+Leading\+Picture\+Restrictions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 765 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_aca54bb2c53158954156b4abf0d2dc5b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_aaf33957d369027a4df691a421cb8f4fe}\label{classvvenc_1_1Slice_aaf33957d369027a4df691a421cb8f4fe}} 
+\index{Slice@{Slice}!checkRefPicsReconstructed@{checkRefPicsReconstructed}}
+\index{checkRefPicsReconstructed@{checkRefPicsReconstructed}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkRefPicsReconstructed()}{checkRefPicsReconstructed()}}
+{\footnotesize\ttfamily bool check\+Ref\+Pics\+Reconstructed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 454 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_aa9ee0a90be4bc764b6a4c7960c2af321}\label{classvvenc_1_1Slice_aa9ee0a90be4bc764b6a4c7960c2af321}} 
+\index{Slice@{Slice}!checkThatAllRefPicsAreAvailable@{checkThatAllRefPicsAreAvailable}}
+\index{checkThatAllRefPicsAreAvailable@{checkThatAllRefPicsAreAvailable}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkThatAllRefPicsAreAvailable()}{checkThatAllRefPicsAreAvailable()}}
+{\footnotesize\ttfamily int check\+That\+All\+Ref\+Pics\+Are\+Available (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+PL,  }\item[{int}]{rpl\+Idx,  }\item[{bool}]{print\+Errors }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 971 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_aa9ee0a90be4bc764b6a4c7960c2af321_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_aa9ee0a90be4bc764b6a4c7960c2af321_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a91c75ec6e07ca5878803a25f23e7a61d}\label{classvvenc_1_1Slice_a91c75ec6e07ca5878803a25f23e7a61d}} 
+\index{Slice@{Slice}!clearSubstreamSizes@{clearSubstreamSizes}}
+\index{clearSubstreamSizes@{clearSubstreamSizes}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{clearSubstreamSizes()}{clearSubstreamSizes()}}
+{\footnotesize\ttfamily void clear\+Substream\+Sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1311 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a91c75ec6e07ca5878803a25f23e7a61d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a7ae40a330f93d2efb4d17460d0c10389}\label{classvvenc_1_1Slice_a7ae40a330f93d2efb4d17460d0c10389}} 
+\index{Slice@{Slice}!constructRefPicList@{constructRefPicList}}
+\index{constructRefPicList@{constructRefPicList}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{constructRefPicList()}{constructRefPicList()}}
+{\footnotesize\ttfamily void construct\+Ref\+Pic\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic,  }\item[{bool}]{ext\+Border }\end{DoxyParamCaption})}
+
+
+
+Definition at line 385 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a7ae40a330f93d2efb4d17460d0c10389_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a7ae40a330f93d2efb4d17460d0c10389_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a76b60df908a82283e1609a5cb329de67}\label{classvvenc_1_1Slice_a76b60df908a82283e1609a5cb329de67}} 
+\index{Slice@{Slice}!copySliceInfo@{copySliceInfo}}
+\index{copySliceInfo@{copySliceInfo}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{copySliceInfo()}{copySliceInfo()}}
+{\footnotesize\ttfamily void copy\+Slice\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{bool}]{cpy\+Almost\+All = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 622 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{classvvenc_1_1Slice_a76b60df908a82283e1609a5cb329de67_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a76b60df908a82283e1609a5cb329de67_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9ed1d0d3748ba05c7ecc2757efb8bbc4}\label{classvvenc_1_1Slice_a9ed1d0d3748ba05c7ecc2757efb8bbc4}} 
+\index{Slice@{Slice}!createExplicitReferencePictureSetFromReference@{createExplicitReferencePictureSetFromReference}}
+\index{createExplicitReferencePictureSetFromReference@{createExplicitReferencePictureSetFromReference}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{createExplicitReferencePictureSetFromReference()}{createExplicitReferencePictureSetFromReference()}}
+{\footnotesize\ttfamily void create\+Explicit\+Reference\+Picture\+Set\+From\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L0,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{p\+R\+P\+L1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1078 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a9ed1d0d3748ba05c7ecc2757efb8bbc4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a9ed1d0d3748ba05c7ecc2757efb8bbc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9eab1b90766d3b0d907951e3e6a13a19}\label{classvvenc_1_1Slice_a9eab1b90766d3b0d907951e3e6a13a19}} 
+\index{Slice@{Slice}!getIdrPicFlag@{getIdrPicFlag}}
+\index{getIdrPicFlag@{getIdrPicFlag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getIdrPicFlag()}{getIdrPicFlag()}}
+{\footnotesize\ttfamily bool get\+Idr\+Pic\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1283 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a9eab1b90766d3b0d907951e3e6a13a19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a0aedb7e260ba211f7465b90020b1f9cd}\label{classvvenc_1_1Slice_a0aedb7e260ba211f7465b90020b1f9cd}} 
+\index{Slice@{Slice}!getLambdas@{getLambdas}}
+\index{getLambdas@{getLambdas}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getLambdas()}{getLambdas()}}
+{\footnotesize\ttfamily const double$\ast$ get\+Lambdas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1294 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a0aedb7e260ba211f7465b90020b1f9cd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a101be95bbdc5be9bfbae5c62032ffcfb}\label{classvvenc_1_1Slice_a101be95bbdc5be9bfbae5c62032ffcfb}} 
+\index{Slice@{Slice}!getMinPictureDistance@{getMinPictureDistance}}
+\index{getMinPictureDistance@{getMinPictureDistance}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getMinPictureDistance()}{getMinPictureDistance()}}
+{\footnotesize\ttfamily unsigned get\+Min\+Picture\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1320 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classvvenc_1_1Slice_a101be95bbdc5be9bfbae5c62032ffcfb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{classvvenc_1_1Slice_a101be95bbdc5be9bfbae5c62032ffcfb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_af31d471fef3f6240365291c7ba386acc}\label{classvvenc_1_1Slice_af31d471fef3f6240365291c7ba386acc}} 
+\index{Slice@{Slice}!getNumberOfSubstreamSizes@{getNumberOfSubstreamSizes}}
+\index{getNumberOfSubstreamSizes@{getNumberOfSubstreamSizes}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getNumberOfSubstreamSizes()}{getNumberOfSubstreamSizes()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Number\+Of\+Substream\+Sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1312 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_af31d471fef3f6240365291c7ba386acc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae35e1cc47e4783f851a98cd27ad060df}\label{classvvenc_1_1Slice_ae35e1cc47e4783f851a98cd27ad060df}} 
+\index{Slice@{Slice}!getNumEntryPoints@{getNumEntryPoints}}
+\index{getNumEntryPoints@{getNumEntryPoints}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getNumEntryPoints()}{getNumEntryPoints()}}
+{\footnotesize\ttfamily int get\+Num\+Entry\+Points (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1843 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae35e1cc47e4783f851a98cd27ad060df_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a53891fdd98cdd4dc1fa0b58ded2af261}\label{classvvenc_1_1Slice_a53891fdd98cdd4dc1fa0b58ded2af261}} 
+\index{Slice@{Slice}!getRapPicFlag@{getRapPicFlag}}
+\index{getRapPicFlag@{getRapPicFlag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getRapPicFlag()}{getRapPicFlag()}}
+{\footnotesize\ttfamily bool get\+Rap\+Pic\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 187 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a53891fdd98cdd4dc1fa0b58ded2af261_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae599e53f303dfb53f417ba15c0b57669}\label{classvvenc_1_1Slice_ae599e53f303dfb53f417ba15c0b57669}} 
+\index{Slice@{Slice}!getRefPic@{getRefPic}}
+\index{getRefPic@{getRefPic}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getRefPic()}{getRefPic()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$ get\+Ref\+Pic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e,  }\item[{int}]{i\+Ref\+Idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1278 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae599e53f303dfb53f417ba15c0b57669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5aa0670cb22e42db7d597aa009dcf219}\label{classvvenc_1_1Slice_a5aa0670cb22e42db7d597aa009dcf219}} 
+\index{Slice@{Slice}!getRefPOC@{getRefPOC}}
+\index{getRefPOC@{getRefPOC}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getRefPOC()}{getRefPOC()}}
+{\footnotesize\ttfamily int get\+Ref\+P\+OC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e,  }\item[{int}]{i\+Ref\+Idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1279 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a5aa0670cb22e42db7d597aa009dcf219_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a21af5687d518df38e4a59445cade088d}\label{classvvenc_1_1Slice_a21af5687d518df38e4a59445cade088d}} 
+\index{Slice@{Slice}!getSubstreamSize@{getSubstreamSize}}
+\index{getSubstreamSize@{getSubstreamSize}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getSubstreamSize()}{getSubstreamSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Substream\+Size (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1314 of file Slice.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a21af5687d518df38e4a59445cade088d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a21af5687d518df38e4a59445cade088d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a0794e383d8094d8b0b22a24091d94cb0}\label{classvvenc_1_1Slice_a0794e383d8094d8b0b22a24091d94cb0}} 
+\index{Slice@{Slice}!getWpScaling@{getWpScaling}}
+\index{getWpScaling@{getWpScaling}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{getWpScaling()}{getWpScaling()}}
+{\footnotesize\ttfamily void get\+Wp\+Scaling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384}{Ref\+Pic\+List}}}]{e,  }\item[{int}]{i\+Ref\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}} $\ast$\&}]{wp }\end{DoxyParamCaption}) const}
+
+
+
+get tables for weighted prediction 
+
+
+
+Definition at line 1289 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a0794e383d8094d8b0b22a24091d94cb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad6c769415772c5eba7257ce02b95d0dc}\label{classvvenc_1_1Slice_ad6c769415772c5eba7257ce02b95d0dc}} 
+\index{Slice@{Slice}!isIDRorBLA@{isIDRorBLA}}
+\index{isIDRorBLA@{isIDRorBLA}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isIDRorBLA()}{isIDRorBLA()}}
+{\footnotesize\ttfamily bool is\+I\+D\+Ror\+B\+LA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1285 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ad6c769415772c5eba7257ce02b95d0dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2df1dd5ac8070482b6042070f73cffa4}\label{classvvenc_1_1Slice_a2df1dd5ac8070482b6042070f73cffa4}} 
+\index{Slice@{Slice}!isInterB@{isInterB}}
+\index{isInterB@{isInterB}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isInterB()}{isInterB()}}
+{\footnotesize\ttfamily bool is\+InterB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1290 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a2df1dd5ac8070482b6042070f73cffa4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a530d6092c6fac441ddd03762efdf5c2f}\label{classvvenc_1_1Slice_a530d6092c6fac441ddd03762efdf5c2f}} 
+\index{Slice@{Slice}!isInterP@{isInterP}}
+\index{isInterP@{isInterP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isInterP()}{isInterP()}}
+{\footnotesize\ttfamily bool is\+InterP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1291 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a530d6092c6fac441ddd03762efdf5c2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a022764e04d9a5b3e4e90b20a70d05677}\label{classvvenc_1_1Slice_a022764e04d9a5b3e4e90b20a70d05677}} 
+\index{Slice@{Slice}!isIntra@{isIntra}}
+\index{isIntra@{isIntra}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isIntra()}{isIntra()}}
+{\footnotesize\ttfamily bool is\+Intra (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1289 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae712c51e5029cc6e18d4272f9df547cf}\label{classvvenc_1_1Slice_ae712c51e5029cc6e18d4272f9df547cf}} 
+\index{Slice@{Slice}!isIRAP@{isIRAP}}
+\index{isIRAP@{isIRAP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isIRAP()}{isIRAP()}}
+{\footnotesize\ttfamily bool is\+I\+R\+AP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1284 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae712c51e5029cc6e18d4272f9df547cf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a1ea64cab2abcad8eee19f3ca555ae71f}\label{classvvenc_1_1Slice_a1ea64cab2abcad8eee19f3ca555ae71f}} 
+\index{Slice@{Slice}!isPocRestrictedByDRAP@{isPocRestrictedByDRAP}}
+\index{isPocRestrictedByDRAP@{isPocRestrictedByDRAP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isPocRestrictedByDRAP()}{isPocRestrictedByDRAP()}}
+{\footnotesize\ttfamily bool is\+Poc\+Restricted\+By\+D\+R\+AP (\begin{DoxyParamCaption}\item[{int}]{poc,  }\item[{bool}]{preceding\+D\+R\+A\+P\+In\+Decoding\+Order }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 1346 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a1ea64cab2abcad8eee19f3ca555ae71f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_abc946e46235055703d7758c900d077ec}\label{classvvenc_1_1Slice_abc946e46235055703d7758c900d077ec}} 
+\index{Slice@{Slice}!isStepwiseTemporalLayerSwitchingPointCandidate@{isStepwiseTemporalLayerSwitchingPointCandidate}}
+\index{isStepwiseTemporalLayerSwitchingPointCandidate@{isStepwiseTemporalLayerSwitchingPointCandidate}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isStepwiseTemporalLayerSwitchingPointCandidate()}{isStepwiseTemporalLayerSwitchingPointCandidate()}}
+{\footnotesize\ttfamily bool is\+Stepwise\+Temporal\+Layer\+Switching\+Point\+Candidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption}) const}
+
+Function for checking if this is a S\+T\+SA candidate 
+
+Definition at line 747 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_abc946e46235055703d7758c900d077ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_aae9b2d4a84707d094e007fe46f3aea21}\label{classvvenc_1_1Slice_aae9b2d4a84707d094e007fe46f3aea21}} 
+\index{Slice@{Slice}!isTemporalLayerSwitchingPoint@{isTemporalLayerSwitchingPoint}}
+\index{isTemporalLayerSwitchingPoint@{isTemporalLayerSwitchingPoint}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isTemporalLayerSwitchingPoint()}{isTemporalLayerSwitchingPoint()}}
+{\footnotesize\ttfamily bool is\+Temporal\+Layer\+Switching\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption}) const}
+
+Function for checking if this is a switching-\/point 
+
+Definition at line 727 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a02407cca53b8d0c3f4efffc5aaa0077e}\label{classvvenc_1_1Slice_a02407cca53b8d0c3f4efffc5aaa0077e}} 
+\index{Slice@{Slice}!resetSlicePart@{resetSlicePart}}
+\index{resetSlicePart@{resetSlicePart}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{resetSlicePart()}{resetSlicePart()}}
+{\footnotesize\ttfamily void reset\+Slice\+Part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 151 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classvvenc_1_1Slice_a02407cca53b8d0c3f4efffc5aaa0077e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a02407cca53b8d0c3f4efffc5aaa0077e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ab6fbe448df09af8a5254981e0f35f533}\label{classvvenc_1_1Slice_ab6fbe448df09af8a5254981e0f35f533}} 
+\index{Slice@{Slice}!resetWpScaling@{resetWpScaling}}
+\index{resetWpScaling@{resetWpScaling}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{resetWpScaling()}{resetWpScaling()}}
+{\footnotesize\ttfamily void reset\+Wp\+Scaling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+reset Default WP tables settings \+: no weight. 
+
+
+
+Definition at line 1302 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a7488c352bf1e49f78a08d8cc975ed4f6}\label{classvvenc_1_1Slice_a7488c352bf1e49f78a08d8cc975ed4f6}} 
+\index{Slice@{Slice}!setAlfApsIds@{setAlfApsIds}}
+\index{setAlfApsIds@{setAlfApsIds}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setAlfApsIds()}{setAlfApsIds()}}
+{\footnotesize\ttfamily void set\+Alf\+Aps\+Ids (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{Aps\+I\+Ds }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1355 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a7488c352bf1e49f78a08d8cc975ed4f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a63864f74919fb811e7f8a13e81034a2c}\label{classvvenc_1_1Slice_a63864f74919fb811e7f8a13e81034a2c}} 
+\index{Slice@{Slice}!setAlfAPSs@{setAlfAPSs}}
+\index{setAlfAPSs@{setAlfAPSs}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setAlfAPSs()}{setAlfAPSs()}}
+{\footnotesize\ttfamily void set\+Alf\+A\+P\+Ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$$\ast$}]{apss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1276 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae87acabed6b8f681984cf8c2ec85ef6f}\label{classvvenc_1_1Slice_ae87acabed6b8f681984cf8c2ec85ef6f}} 
+\index{Slice@{Slice}!setDecodingRefreshMarking@{setDecodingRefreshMarking}}
+\index{setDecodingRefreshMarking@{setDecodingRefreshMarking}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setDecodingRefreshMarking()}{setDecodingRefreshMarking()}}
+{\footnotesize\ttfamily void set\+Decoding\+Refresh\+Marking (\begin{DoxyParamCaption}\item[{int \&}]{poc\+C\+RA,  }\item[{bool \&}]{b\+Refresh\+Pending,  }\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption})}
+
+Function for marking the reference pictures when an I\+D\+R/\+C\+R\+A/\+C\+R\+A\+N\+T/\+B\+L\+A/\+B\+L\+A\+NT is encountered. 
+\begin{DoxyParams}{Parameters}
+{\em poc\+C\+RA} & P\+OC of the C\+R\+A/\+C\+R\+A\+N\+T/\+B\+L\+A/\+B\+L\+A\+NT picture \\
+\hline
+{\em b\+Refresh\+Pending} & flag indicating if a deferred decoding refresh is pending \\
+\hline
+{\em rc\+List\+Pic} & reference to the reference picture list This function marks the reference pictures as \char`\"{}unused for reference\char`\"{} in the following conditions. If the nal\+\_\+unit\+\_\+type is I\+D\+R/\+B\+L\+A/\+B\+L\+A\+NT, all pictures in the reference picture list are marked as \char`\"{}unused for reference\char`\"{} If the nal\+\_\+unit\+\_\+type is B\+L\+A/\+B\+L\+A\+NT, set the poc\+C\+RA to the temporal reference of the current picture. Otherwise If the b\+Refresh\+Pending flag is true (a deferred decoding refresh is pending) and the current temporal reference is greater than the temporal reference of the latest C\+R\+A/\+C\+R\+A\+N\+T/\+B\+L\+A/\+B\+L\+A\+NT picture (poc\+C\+RA), mark all reference pictures except the latest C\+R\+A/\+C\+R\+A\+N\+T/\+B\+L\+A/\+B\+L\+A\+NT picture as \char`\"{}unused for reference\char`\"{} and set the b\+Refresh\+Pending flag to false. If the nal\+\_\+unit\+\_\+type is C\+R\+A/\+C\+R\+A\+NT, set the b\+Refresh\+Pending flag to true and poc\+C\+RA to the temporal reference of the current picture. Note that the current picture is already placed in the reference list and its marking is not changed. If the current picture has a nal\+\_\+ref\+\_\+idc that is not 0, it will remain marked as \char`\"{}used for reference\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 553 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae87acabed6b8f681984cf8c2ec85ef6f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae87acabed6b8f681984cf8c2ec85ef6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ac41f4be43a9375a8bf1cdd8d6d10ebbf}\label{classvvenc_1_1Slice_ac41f4be43a9375a8bf1cdd8d6d10ebbf}} 
+\index{Slice@{Slice}!setDefaultClpRng@{setDefaultClpRng}}
+\index{setDefaultClpRng@{setDefaultClpRng}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setDefaultClpRng()}{setDefaultClpRng()}}
+{\footnotesize\ttfamily void set\+Default\+Clp\+Rng (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ac41f4be43a9375a8bf1cdd8d6d10ebbf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad89a33306ad1f6e795ff5eb27b2327b0}\label{classvvenc_1_1Slice_ad89a33306ad1f6e795ff5eb27b2327b0}} 
+\index{Slice@{Slice}!setLambdas@{setLambdas}}
+\index{setLambdas@{setLambdas}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setLambdas()}{setLambdas()}}
+{\footnotesize\ttfamily void set\+Lambdas (\begin{DoxyParamCaption}\item[{const double}]{lambdas\+\_\+\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1293 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ad89a33306ad1f6e795ff5eb27b2327b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a164edf417fa66d56811837584428cc92}\label{classvvenc_1_1Slice_a164edf417fa66d56811837584428cc92}} 
+\index{Slice@{Slice}!setList1IdxToList0Idx@{setList1IdxToList0Idx}}
+\index{setList1IdxToList0Idx@{setList1IdxToList0Idx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setList1IdxToList0Idx()}{setList1IdxToList0Idx()}}
+{\footnotesize\ttfamily void set\+List1\+Idx\+To\+List0\+Idx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 368 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a164edf417fa66d56811837584428cc92_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae99fa70f596cce138bc94998adf56478}\label{classvvenc_1_1Slice_ae99fa70f596cce138bc94998adf56478}} 
+\index{Slice@{Slice}!setRefPOCList@{setRefPOCList}}
+\index{setRefPOCList@{setRefPOCList}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setRefPOCList()}{setRefPOCList()}}
+{\footnotesize\ttfamily void set\+Ref\+P\+O\+C\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 275 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvvenc_1_1Slice_ae99fa70f596cce138bc94998adf56478_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ae99fa70f596cce138bc94998adf56478_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad81158cf6b63232a127a0f9e4cb73234}\label{classvvenc_1_1Slice_ad81158cf6b63232a127a0f9e4cb73234}} 
+\index{Slice@{Slice}!setSMVDParam@{setSMVDParam}}
+\index{setSMVDParam@{setSMVDParam}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{setSMVDParam()}{setSMVDParam()}}
+{\footnotesize\ttfamily void set\+S\+M\+V\+D\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 287 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classvvenc_1_1Slice_ad81158cf6b63232a127a0f9e4cb73234_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_ad81158cf6b63232a127a0f9e4cb73234_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_af62b801102d51bb782750b42c97e8361}\label{classvvenc_1_1Slice_af62b801102d51bb782750b42c97e8361}} 
+\index{Slice@{Slice}!sortPicList@{sortPicList}}
+\index{sortPicList@{sortPicList}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sortPicList()}{sortPicList()}}
+{\footnotesize\ttfamily void sort\+Pic\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 195 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1Slice_af62b801102d51bb782750b42c97e8361_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_af62b801102d51bb782750b42c97e8361_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a6edcbd35a870765780580287238a693f}\label{classvvenc_1_1Slice_a6edcbd35a870765780580287238a693f}} 
+\index{Slice@{Slice}!updateRefPicCounter@{updateRefPicCounter}}
+\index{updateRefPicCounter@{updateRefPicCounter}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{updateRefPicCounter()}{updateRefPicCounter()}}
+{\footnotesize\ttfamily void update\+Ref\+Pic\+Counter (\begin{DoxyParamCaption}\item[{int}]{step }\end{DoxyParamCaption})}
+
+
+
+Definition at line 442 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a6edcbd35a870765780580287238a693f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9f503b1718be439bff2f67c1bc1eabb0}\label{classvvenc_1_1Slice_a9f503b1718be439bff2f67c1bc1eabb0}} 
+\index{Slice@{Slice}!xGetLongTermRefPic@{xGetLongTermRefPic}}
+\index{xGetLongTermRefPic@{xGetLongTermRefPic}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{xGetLongTermRefPic()}{xGetLongTermRefPic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ x\+Get\+Long\+Term\+Ref\+Pic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_a75808c632f164a4e90099967af68affa}{Pic\+List}} \&}]{rc\+List\+Pic,  }\item[{int}]{poc,  }\item[{bool}]{poc\+Has\+Msb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 234 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Slice_a9f503b1718be439bff2f67c1bc1eabb0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Slice_aab413be1475a125aac0f29686ec5b10f}\label{classvvenc_1_1Slice_aab413be1475a125aac0f29686ec5b10f}} 
+\index{Slice@{Slice}!alfAps@{alfAps}}
+\index{alfAps@{alfAps}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{alfAps}{alfAps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ alf\+Aps\mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}}
+
+
+
+Definition at line 1251 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a4f52498d4a46139ed7d9a5ad5a32cc20}\label{classvvenc_1_1Slice_a4f52498d4a46139ed7d9a5ad5a32cc20}} 
+\index{Slice@{Slice}!associatedIRAP@{associatedIRAP}}
+\index{associatedIRAP@{associatedIRAP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{associatedIRAP}{associatedIRAP}}
+{\footnotesize\ttfamily int associated\+I\+R\+AP}
+
+
+
+Definition at line 1188 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5922c71ae31fb8db63422d1ac78d8804}\label{classvvenc_1_1Slice_a5922c71ae31fb8db63422d1ac78d8804}} 
+\index{Slice@{Slice}!associatedIRAPType@{associatedIRAPType}}
+\index{associatedIRAPType@{associatedIRAPType}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{associatedIRAPType}{associatedIRAPType}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type associated\+I\+R\+A\+P\+Type}
+
+
+
+Definition at line 1189 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2691ed25bc1d2b21926bfe74a8dff013}\label{classvvenc_1_1Slice_a2691ed25bc1d2b21926bfe74a8dff013}} 
+\index{Slice@{Slice}!biDirPred@{biDirPred}}
+\index{biDirPred@{biDirPred}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{biDirPred}{biDirPred}}
+{\footnotesize\ttfamily bool bi\+Dir\+Pred}
+
+
+
+Definition at line 1218 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ab2dbac6e2334b2297779a6e485fe979e}\label{classvvenc_1_1Slice_ab2dbac6e2334b2297779a6e485fe979e}} 
+\index{Slice@{Slice}!cabacInitFlag@{cabacInitFlag}}
+\index{cabacInitFlag@{cabacInitFlag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{cabacInitFlag}{cabacInitFlag}}
+{\footnotesize\ttfamily bool cabac\+Init\+Flag}
+
+
+
+Definition at line 1248 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a92a285005cb40ee6c3b070c2f595f447}\label{classvvenc_1_1Slice_a92a285005cb40ee6c3b070c2f595f447}} 
+\index{Slice@{Slice}!ccAlfFilterControl@{ccAlfFilterControl}}
+\index{ccAlfFilterControl@{ccAlfFilterControl}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{ccAlfFilterControl}{ccAlfFilterControl}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ cc\+Alf\+Filter\+Control\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 1264 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ab5e7e135052a03249c36439c03e6bb1d}\label{classvvenc_1_1Slice_ab5e7e135052a03249c36439c03e6bb1d}} 
+\index{Slice@{Slice}!ccAlfFilterParam@{ccAlfFilterParam}}
+\index{ccAlfFilterParam@{ccAlfFilterParam}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{ccAlfFilterParam}{ccAlfFilterParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}} cc\+Alf\+Filter\+Param}
+
+
+
+Definition at line 1263 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a3b6992dd0d30d043f87cb65a22bceb38}\label{classvvenc_1_1Slice_a3b6992dd0d30d043f87cb65a22bceb38}} 
+\index{Slice@{Slice}!checkLDC@{checkLDC}}
+\index{checkLDC@{checkLDC}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{checkLDC}{checkLDC}}
+{\footnotesize\ttfamily bool check\+L\+DC}
+
+
+
+Definition at line 1217 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a360c5c05400e7c028706a9f340bea214}\label{classvvenc_1_1Slice_a360c5c05400e7c028706a9f340bea214}} 
+\index{Slice@{Slice}!chromaQpAdjEnabled@{chromaQpAdjEnabled}}
+\index{chromaQpAdjEnabled@{chromaQpAdjEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{chromaQpAdjEnabled}{chromaQpAdjEnabled}}
+{\footnotesize\ttfamily bool chroma\+Qp\+Adj\+Enabled}
+
+
+
+Definition at line 1204 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a3ede79b23abc164cf6937e8183626a8a}\label{classvvenc_1_1Slice_a3ede79b23abc164cf6937e8183626a8a}} 
+\index{Slice@{Slice}!clpRngs@{clpRngs}}
+\index{clpRngs@{clpRngs}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{clpRngs}{clpRngs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} clp\+Rngs}
+
+
+
+Definition at line 1246 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a1a8e30a30c5385c4bff3aeae61f3fdbd}\label{classvvenc_1_1Slice_a1a8e30a30c5385c4bff3aeae61f3fdbd}} 
+\index{Slice@{Slice}!colFromL0Flag@{colFromL0Flag}}
+\index{colFromL0Flag@{colFromL0Flag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{colFromL0Flag}{colFromL0Flag}}
+{\footnotesize\ttfamily bool col\+From\+L0\+Flag}
+
+
+
+Definition at line 1237 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a8fe7ab701b054f1b44ab6117ae4874b0}\label{classvvenc_1_1Slice_a8fe7ab701b054f1b44ab6117ae4874b0}} 
+\index{Slice@{Slice}!colourPlaneId@{colourPlaneId}}
+\index{colourPlaneId@{colourPlaneId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{colourPlaneId}{colourPlaneId}}
+{\footnotesize\ttfamily int colour\+Plane\+Id}
+
+
+
+4\+:4\+:4 colour plane ID 
+
+
+
+Definition at line 1198 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5a74dc0f67a681a941ac4dd7a5fc88b7}\label{classvvenc_1_1Slice_a5a74dc0f67a681a941ac4dd7a5fc88b7}} 
+\index{Slice@{Slice}!colRefIdx@{colRefIdx}}
+\index{colRefIdx@{colRefIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{colRefIdx}{colRefIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t col\+Ref\+Idx}
+
+
+
+Definition at line 1238 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a0af3b03af999b3b41480e6ba7071f36a}\label{classvvenc_1_1Slice_a0af3b03af999b3b41480e6ba7071f36a}} 
+\index{Slice@{Slice}!dci@{dci}}
+\index{dci@{dci}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{dci}{dci}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}}$\ast$ dci}
+
+
+
+Definition at line 1232 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_af7ed350b66bfd02791def92702bed510}\label{classvvenc_1_1Slice_af7ed350b66bfd02791def92702bed510}} 
+\index{Slice@{Slice}!deblockingFilterBetaOffsetDiv2@{deblockingFilterBetaOffsetDiv2}}
+\index{deblockingFilterBetaOffsetDiv2@{deblockingFilterBetaOffsetDiv2}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterBetaOffsetDiv2}{deblockingFilterBetaOffsetDiv2}}
+{\footnotesize\ttfamily int deblocking\+Filter\+Beta\+Offset\+Div2\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1209 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ac34a632d969fe223ced32a177927a8eb}\label{classvvenc_1_1Slice_ac34a632d969fe223ced32a177927a8eb}} 
+\index{Slice@{Slice}!deblockingFilterDisable@{deblockingFilterDisable}}
+\index{deblockingFilterDisable@{deblockingFilterDisable}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterDisable}{deblockingFilterDisable}}
+{\footnotesize\ttfamily bool deblocking\+Filter\+Disable}
+
+
+
+Definition at line 1207 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a627a3f2f5924fb76c40731cdea7b5d02}\label{classvvenc_1_1Slice_a627a3f2f5924fb76c40731cdea7b5d02}} 
+\index{Slice@{Slice}!deblockingFilterOverrideFlag@{deblockingFilterOverrideFlag}}
+\index{deblockingFilterOverrideFlag@{deblockingFilterOverrideFlag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterOverrideFlag}{deblockingFilterOverrideFlag}}
+{\footnotesize\ttfamily bool deblocking\+Filter\+Override\+Flag}
+
+
+
+Definition at line 1208 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a7a04d5f73d609c4a43e2d96b42afdb45}\label{classvvenc_1_1Slice_a7a04d5f73d609c4a43e2d96b42afdb45}} 
+\index{Slice@{Slice}!deblockingFilterTcOffsetDiv2@{deblockingFilterTcOffsetDiv2}}
+\index{deblockingFilterTcOffsetDiv2@{deblockingFilterTcOffsetDiv2}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{deblockingFilterTcOffsetDiv2}{deblockingFilterTcOffsetDiv2}}
+{\footnotesize\ttfamily int deblocking\+Filter\+Tc\+Offset\+Div2\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1210 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a64ff1224314f1a6ad7696ac10d16615a}\label{classvvenc_1_1Slice_a64ff1224314f1a6ad7696ac10d16615a}} 
+\index{Slice@{Slice}!depQuantEnabled@{depQuantEnabled}}
+\index{depQuantEnabled@{depQuantEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{depQuantEnabled}{depQuantEnabled}}
+{\footnotesize\ttfamily bool dep\+Quant\+Enabled}
+
+
+
+dependent quantization enabled flag 
+
+
+
+Definition at line 1211 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_acb5ba97551079e0b072c62c21d784ac5}\label{classvvenc_1_1Slice_acb5ba97551079e0b072c62c21d784ac5}} 
+\index{Slice@{Slice}!depth@{depth}}
+\index{depth@{depth}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{depth}{depth}}
+{\footnotesize\ttfamily int depth}
+
+
+
+Definition at line 1227 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9088a71f37087d134a4cd8d9418a7395}\label{classvvenc_1_1Slice_a9088a71f37087d134a4cd8d9418a7395}} 
+\index{Slice@{Slice}!disableSATDForRd@{disableSATDForRd}}
+\index{disableSATDForRd@{disableSATDForRd}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{disableSATDForRd}{disableSATDForRd}}
+{\footnotesize\ttfamily bool disable\+S\+A\+T\+D\+For\+Rd}
+
+
+
+Definition at line 1261 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5fc3860d05454f3f759d0f49badd8a42}\label{classvvenc_1_1Slice_a5fc3860d05454f3f759d0f49badd8a42}} 
+\index{Slice@{Slice}!enableDRAPSEI@{enableDRAPSEI}}
+\index{enableDRAPSEI@{enableDRAPSEI}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{enableDRAPSEI}{enableDRAPSEI}}
+{\footnotesize\ttfamily bool enable\+D\+R\+A\+P\+S\+EI}
+
+
+
+Definition at line 1190 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a3e208239011a73005a5e7636690d6a43}\label{classvvenc_1_1Slice_a3e208239011a73005a5e7636690d6a43}} 
+\index{Slice@{Slice}!encCABACTableIdx@{encCABACTableIdx}}
+\index{encCABACTableIdx@{encCABACTableIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{encCABACTableIdx}{encCABACTableIdx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} enc\+C\+A\+B\+A\+C\+Table\+Idx}
+
+
+
+Definition at line 1250 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ab3988c5e5a8299722635de1328b66002}\label{classvvenc_1_1Slice_ab3988c5e5a8299722635de1328b66002}} 
+\index{Slice@{Slice}!explicitScalingListUsed@{explicitScalingListUsed}}
+\index{explicitScalingListUsed@{explicitScalingListUsed}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{explicitScalingListUsed}{explicitScalingListUsed}}
+{\footnotesize\ttfamily bool explicit\+Scaling\+List\+Used}
+
+
+
+Definition at line 1206 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a7ad51fe755589200446925da0502af70}\label{classvvenc_1_1Slice_a7ad51fe755589200446925da0502af70}} 
+\index{Slice@{Slice}!independentSliceIdx@{independentSliceIdx}}
+\index{independentSliceIdx@{independentSliceIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{independentSliceIdx}{independentSliceIdx}}
+{\footnotesize\ttfamily uint32\+\_\+t independent\+Slice\+Idx}
+
+
+
+Definition at line 1243 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ac9b3cc7b21d669e3b7dcd7ec5d6dec1d}\label{classvvenc_1_1Slice_ac9b3cc7b21d669e3b7dcd7ec5d6dec1d}} 
+\index{Slice@{Slice}!isDRAP@{isDRAP}}
+\index{isDRAP@{isDRAP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isDRAP}{isDRAP}}
+{\footnotesize\ttfamily bool is\+D\+R\+AP}
+
+
+
+Definition at line 1192 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a63e35249dbd29a6d5aff101a0a8e3d28}\label{classvvenc_1_1Slice_a63e35249dbd29a6d5aff101a0a8e3d28}} 
+\index{Slice@{Slice}!isLossless@{isLossless}}
+\index{isLossless@{isLossless}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isLossless}{isLossless}}
+{\footnotesize\ttfamily bool is\+Lossless}
+
+
+
+Definition at line 1262 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_afb114dc9a5d7a80e8e6450463a045a75}\label{classvvenc_1_1Slice_afb114dc9a5d7a80e8e6450463a045a75}} 
+\index{Slice@{Slice}!isUsedAsLongTerm@{isUsedAsLongTerm}}
+\index{isUsedAsLongTerm@{isUsedAsLongTerm}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{isUsedAsLongTerm}{isUsedAsLongTerm}}
+{\footnotesize\ttfamily bool is\+Used\+As\+Long\+Term\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}}
+
+
+
+Definition at line 1226 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a4020e33ef1ee5e7f0035843d94278279}\label{classvvenc_1_1Slice_a4020e33ef1ee5e7f0035843d94278279}} 
+\index{Slice@{Slice}!lambdas@{lambdas}}
+\index{lambdas@{lambdas}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{lambdas}{lambdas}}
+{\footnotesize\ttfamily double lambdas\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1239 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a17d513e16dc930568a75f723c77dd545}\label{classvvenc_1_1Slice_a17d513e16dc930568a75f723c77dd545}} 
+\index{Slice@{Slice}!lastIDR@{lastIDR}}
+\index{lastIDR@{lastIDR}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{lastIDR}{lastIDR}}
+{\footnotesize\ttfamily int last\+I\+DR}
+
+
+
+Definition at line 1186 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad195f7db8a29cd976af7bbc95be4fc43}\label{classvvenc_1_1Slice_ad195f7db8a29cd976af7bbc95be4fc43}} 
+\index{Slice@{Slice}!latestDRAPPOC@{latestDRAPPOC}}
+\index{latestDRAPPOC@{latestDRAPPOC}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{latestDRAPPOC}{latestDRAPPOC}}
+{\footnotesize\ttfamily int latest\+D\+R\+A\+P\+P\+OC}
+
+
+
+Definition at line 1193 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a75a83a0a00e270faf5de49d10aaa9463}\label{classvvenc_1_1Slice_a75a83a0a00e270faf5de49d10aaa9463}} 
+\index{Slice@{Slice}!list1IdxToList0Idx@{list1IdxToList0Idx}}
+\index{list1IdxToList0Idx@{list1IdxToList0Idx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{list1IdxToList0Idx}{list1IdxToList0Idx}}
+{\footnotesize\ttfamily int list1\+Idx\+To\+List0\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}\mbox{]}}
+
+
+
+Definition at line 1214 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a77595e65f2f2cfeba44ad6c366f713fb}\label{classvvenc_1_1Slice_a77595e65f2f2cfeba44ad6c366f713fb}} 
+\index{Slice@{Slice}!lmChromaCheckDisable@{lmChromaCheckDisable}}
+\index{lmChromaCheckDisable@{lmChromaCheckDisable}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{lmChromaCheckDisable}{lmChromaCheckDisable}}
+{\footnotesize\ttfamily bool lm\+Chroma\+Check\+Disable}
+
+
+
+Definition at line 1219 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a75027878ba07c729f99e49e63d3495d9}\label{classvvenc_1_1Slice_a75027878ba07c729f99e49e63d3495d9}} 
+\index{Slice@{Slice}!lmcsEnabled@{lmcsEnabled}}
+\index{lmcsEnabled@{lmcsEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{lmcsEnabled}{lmcsEnabled}}
+{\footnotesize\ttfamily bool lmcs\+Enabled}
+
+
+
+Definition at line 1205 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a8ab7706f5b7ef85bfd6f8992c007cd55}\label{classvvenc_1_1Slice_a8ab7706f5b7ef85bfd6f8992c007cd55}} 
+\index{Slice@{Slice}!nalUnitType@{nalUnitType}}
+\index{nalUnitType@{nalUnitType}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{nalUnitType}{nalUnitType}}
+{\footnotesize\ttfamily vvenc\+Nal\+Unit\+Type nal\+Unit\+Type}
+
+
+
+Nal unit type for the slice. 
+
+
+
+Definition at line 1201 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ac3e8dc71f2ac043cc9142e1b1205491c}\label{classvvenc_1_1Slice_ac3e8dc71f2ac043cc9142e1b1205491c}} 
+\index{Slice@{Slice}!nuhLayerId@{nuhLayerId}}
+\index{nuhLayerId@{nuhLayerId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{nuhLayerId}{nuhLayerId}}
+{\footnotesize\ttfamily uint32\+\_\+t nuh\+Layer\+Id}
+
+
+
+Definition at line 1200 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ae1bbbd55def18448ddeabb935a7737b6}\label{classvvenc_1_1Slice_ae1bbbd55def18448ddeabb935a7737b6}} 
+\index{Slice@{Slice}!numRefIdx@{numRefIdx}}
+\index{numRefIdx@{numRefIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{numRefIdx}{numRefIdx}}
+{\footnotesize\ttfamily int num\+Ref\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}}
+
+
+
+Definition at line 1215 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a76b193969465a68f38982efa1cc05aec}\label{classvvenc_1_1Slice_a76b193969465a68f38982efa1cc05aec}} 
+\index{Slice@{Slice}!pendingRasInit@{pendingRasInit}}
+\index{pendingRasInit@{pendingRasInit}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{pendingRasInit}{pendingRasInit}}
+{\footnotesize\ttfamily bool pending\+Ras\+Init}
+
+
+
+Definition at line 1216 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_aa53b89271f07f77f17af4ad8b79f9a4f}\label{classvvenc_1_1Slice_aa53b89271f07f77f17af4ad8b79f9a4f}} 
+\index{Slice@{Slice}!pic@{pic}}
+\index{pic@{pic}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{pic}{pic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$ pic}
+
+
+
+Definition at line 1235 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a86e63267f0b87eb319b151d10ad84e0f}\label{classvvenc_1_1Slice_a86e63267f0b87eb319b151d10ad84e0f}} 
+\index{Slice@{Slice}!picHeader@{picHeader}}
+\index{picHeader@{picHeader}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{picHeader}{picHeader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}}$\ast$ pic\+Header}
+
+
+
+pointer to picture header structure 
+
+
+
+Definition at line 1236 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad5cd9686c32140dd0fee8028361722bf}\label{classvvenc_1_1Slice_ad5cd9686c32140dd0fee8028361722bf}} 
+\index{Slice@{Slice}!pictureHeaderInSliceHeader@{pictureHeaderInSliceHeader}}
+\index{pictureHeaderInSliceHeader@{pictureHeaderInSliceHeader}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{pictureHeaderInSliceHeader}{pictureHeaderInSliceHeader}}
+{\footnotesize\ttfamily bool picture\+Header\+In\+Slice\+Header}
+
+
+
+Definition at line 1199 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_af1fa96a850f404aded578d3e29dedbcb}\label{classvvenc_1_1Slice_af1fa96a850f404aded578d3e29dedbcb}} 
+\index{Slice@{Slice}!poc@{poc}}
+\index{poc@{poc}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{poc}{poc}}
+{\footnotesize\ttfamily int poc}
+
+
+
+Definition at line 1185 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a0705c021d68ecb01bbf299f0aa4fe327}\label{classvvenc_1_1Slice_a0705c021d68ecb01bbf299f0aa4fe327}} 
+\index{Slice@{Slice}!pps@{pps}}
+\index{pps@{pps}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{pps}{pps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}$\ast$ pps}
+
+
+
+Definition at line 1234 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ac76ef35f3f5cc18bf63e1259f85666a0}\label{classvvenc_1_1Slice_ac76ef35f3f5cc18bf63e1259f85666a0}} 
+\index{Slice@{Slice}!ppsId@{ppsId}}
+\index{ppsId@{ppsId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{ppsId}{ppsId}}
+{\footnotesize\ttfamily int pps\+Id}
+
+
+
+picture parameter set ID 
+
+
+
+Definition at line 1184 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5e6df4bb3e4d200eae04196cab760b56}\label{classvvenc_1_1Slice_a5e6df4bb3e4d200eae04196cab760b56}} 
+\index{Slice@{Slice}!prevGDRInSameLayerPOC@{prevGDRInSameLayerPOC}}
+\index{prevGDRInSameLayerPOC@{prevGDRInSameLayerPOC}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{prevGDRInSameLayerPOC}{prevGDRInSameLayerPOC}}
+{\footnotesize\ttfamily int prev\+G\+D\+R\+In\+Same\+Layer\+P\+OC}
+
+
+
+Definition at line 1187 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a890cda239fa378847366808e2e15e24b}\label{classvvenc_1_1Slice_a890cda239fa378847366808e2e15e24b}} 
+\index{Slice@{Slice}!refPicList@{refPicList}}
+\index{refPicList@{refPicList}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{refPicList}{refPicList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$ ref\+Pic\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}}
+
+
+
+Definition at line 1224 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a0ac0c7c27524802141aa09dab91cae75}\label{classvvenc_1_1Slice_a0ac0c7c27524802141aa09dab91cae75}} 
+\index{Slice@{Slice}!refPOCList@{refPOCList}}
+\index{refPOCList@{refPOCList}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{refPOCList}{refPOCList}}
+{\footnotesize\ttfamily int ref\+P\+O\+C\+List\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}+1\mbox{]}}
+
+
+
+Definition at line 1225 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_aa45fb4654b49867d35a3db5ec99b35ad}\label{classvvenc_1_1Slice_aa45fb4654b49867d35a3db5ec99b35ad}} 
+\index{Slice@{Slice}!rpl@{rpl}}
+\index{rpl@{rpl}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{rpl}{rpl}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}}$\ast$ rpl\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}}
+
+
+
+Definition at line 1195 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a753aa02c736668b65aa9ec4b66e36f6d}\label{classvvenc_1_1Slice_a753aa02c736668b65aa9ec4b66e36f6d}} 
+\index{Slice@{Slice}!rplIdx@{rplIdx}}
+\index{rplIdx@{rplIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{rplIdx}{rplIdx}}
+{\footnotesize\ttfamily int rpl\+Idx\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}}
+
+
+
+Definition at line 1197 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a722c4139470f87784c32e37059b2577e}\label{classvvenc_1_1Slice_a722c4139470f87784c32e37059b2577e}} 
+\index{Slice@{Slice}!rplLocal@{rplLocal}}
+\index{rplLocal@{rplLocal}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{rplLocal}{rplLocal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} rpl\+Local\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}}
+
+
+
+Definition at line 1196 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a8ff5497b97bfc199e85dc2282d15d9d6}\label{classvvenc_1_1Slice_a8ff5497b97bfc199e85dc2282d15d9d6}} 
+\index{Slice@{Slice}!saoEnabled@{saoEnabled}}
+\index{saoEnabled@{saoEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{saoEnabled}{saoEnabled}}
+{\footnotesize\ttfamily bool sao\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}}
+
+
+
+Definition at line 1183 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9b2722904763856e460f52b9293db1b2}\label{classvvenc_1_1Slice_a9b2722904763856e460f52b9293db1b2}} 
+\index{Slice@{Slice}!signDataHidingEnabled@{signDataHidingEnabled}}
+\index{signDataHidingEnabled@{signDataHidingEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{signDataHidingEnabled}{signDataHidingEnabled}}
+{\footnotesize\ttfamily bool sign\+Data\+Hiding\+Enabled}
+
+
+
+sign data hiding enabled flag 
+
+
+
+Definition at line 1212 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5afe283aed2862c3e75099f3420776e4}\label{classvvenc_1_1Slice_a5afe283aed2862c3e75099f3420776e4}} 
+\index{Slice@{Slice}!sliceChromaQpDelta@{sliceChromaQpDelta}}
+\index{sliceChromaQpDelta@{sliceChromaQpDelta}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sliceChromaQpDelta}{sliceChromaQpDelta}}
+{\footnotesize\ttfamily int slice\+Chroma\+Qp\+Delta\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}+1\mbox{]}}
+
+
+
+Definition at line 1223 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a95357138b8ab36a7fa4c51c24dbccfad}\label{classvvenc_1_1Slice_a95357138b8ab36a7fa4c51c24dbccfad}} 
+\index{Slice@{Slice}!sliceMap@{sliceMap}}
+\index{sliceMap@{sliceMap}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sliceMap}{sliceMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1SliceMap}{Slice\+Map}} slice\+Map}
+
+
+
+Definition at line 1242 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a508c08bc126bef2837ba572ad52a9892}\label{classvvenc_1_1Slice_a508c08bc126bef2837ba572ad52a9892}} 
+\index{Slice@{Slice}!sliceQp@{sliceQp}}
+\index{sliceQp@{sliceQp}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sliceQp}{sliceQp}}
+{\footnotesize\ttfamily int slice\+Qp}
+
+
+
+Definition at line 1203 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a9a8c31c9fd3a91f895bbfbd4fa84d4b5}\label{classvvenc_1_1Slice_a9a8c31c9fd3a91f895bbfbd4fa84d4b5}} 
+\index{Slice@{Slice}!sliceSubPicId@{sliceSubPicId}}
+\index{sliceSubPicId@{sliceSubPicId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sliceSubPicId}{sliceSubPicId}}
+{\footnotesize\ttfamily uint32\+\_\+t slice\+Sub\+Pic\+Id}
+
+
+
+Definition at line 1249 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a3e0cec306640905b662a1bb0ef53a40f}\label{classvvenc_1_1Slice_a3e0cec306640905b662a1bb0ef53a40f}} 
+\index{Slice@{Slice}!sliceType@{sliceType}}
+\index{sliceType@{sliceType}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sliceType}{sliceType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} slice\+Type}
+
+
+
+Definition at line 1202 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2d3ec636d347d8ea142e64ca27ceaad4}\label{classvvenc_1_1Slice_a2d3ec636d347d8ea142e64ca27ceaad4}} 
+\index{Slice@{Slice}!sps@{sps}}
+\index{sps@{sps}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{sps}{sps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$\ast$ sps}
+
+
+
+Definition at line 1233 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_aed1a456e26f13ade0c04ba6ebb656788}\label{classvvenc_1_1Slice_aed1a456e26f13ade0c04ba6ebb656788}} 
+\index{Slice@{Slice}!substreamSizes@{substreamSizes}}
+\index{substreamSizes@{substreamSizes}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{substreamSizes}{substreamSizes}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ substream\+Sizes}
+
+
+
+Definition at line 1247 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a8c0a668a25b6180c50283588b195fec8}\label{classvvenc_1_1Slice_a8c0a668a25b6180c50283588b195fec8}} 
+\index{Slice@{Slice}!symRefIdx@{symRefIdx}}
+\index{symRefIdx@{symRefIdx}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{symRefIdx}{symRefIdx}}
+{\footnotesize\ttfamily int sym\+Ref\+Idx\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 1220 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a98d6e8c638d90feb69f1fe4aadb1ab08}\label{classvvenc_1_1Slice_a98d6e8c638d90feb69f1fe4aadb1ab08}} 
+\index{Slice@{Slice}!tileGroupAlfEnabled@{tileGroupAlfEnabled}}
+\index{tileGroupAlfEnabled@{tileGroupAlfEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupAlfEnabled}{tileGroupAlfEnabled}}
+{\footnotesize\ttfamily bool tile\+Group\+Alf\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1252 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a1054939d2c73762f8b2e4d1d905cf52c}\label{classvvenc_1_1Slice_a1054939d2c73762f8b2e4d1d905cf52c}} 
+\index{Slice@{Slice}!tileGroupCcAlfCbApsId@{tileGroupCcAlfCbApsId}}
+\index{tileGroupCcAlfCbApsId@{tileGroupCcAlfCbApsId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupCcAlfCbApsId}{tileGroupCcAlfCbApsId}}
+{\footnotesize\ttfamily int tile\+Group\+Cc\+Alf\+Cb\+Aps\+Id}
+
+
+
+Definition at line 1258 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5f864d16169df083342be6e44a5bad03}\label{classvvenc_1_1Slice_a5f864d16169df083342be6e44a5bad03}} 
+\index{Slice@{Slice}!tileGroupCcAlfCbEnabled@{tileGroupCcAlfCbEnabled}}
+\index{tileGroupCcAlfCbEnabled@{tileGroupCcAlfCbEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupCcAlfCbEnabled}{tileGroupCcAlfCbEnabled}}
+{\footnotesize\ttfamily bool tile\+Group\+Cc\+Alf\+Cb\+Enabled}
+
+
+
+Definition at line 1256 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_afba20bc078f12be85f54ef89a77e4589}\label{classvvenc_1_1Slice_afba20bc078f12be85f54ef89a77e4589}} 
+\index{Slice@{Slice}!tileGroupCcAlfCrApsId@{tileGroupCcAlfCrApsId}}
+\index{tileGroupCcAlfCrApsId@{tileGroupCcAlfCrApsId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupCcAlfCrApsId}{tileGroupCcAlfCrApsId}}
+{\footnotesize\ttfamily int tile\+Group\+Cc\+Alf\+Cr\+Aps\+Id}
+
+
+
+Definition at line 1259 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a67196f9b735e90d7baded699a646116b}\label{classvvenc_1_1Slice_a67196f9b735e90d7baded699a646116b}} 
+\index{Slice@{Slice}!tileGroupCcAlfCrEnabled@{tileGroupCcAlfCrEnabled}}
+\index{tileGroupCcAlfCrEnabled@{tileGroupCcAlfCrEnabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupCcAlfCrEnabled}{tileGroupCcAlfCrEnabled}}
+{\footnotesize\ttfamily bool tile\+Group\+Cc\+Alf\+Cr\+Enabled}
+
+
+
+Definition at line 1257 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5cf667be0e6cac92124782bf95dba79e}\label{classvvenc_1_1Slice_a5cf667be0e6cac92124782bf95dba79e}} 
+\index{Slice@{Slice}!tileGroupChromaApsId@{tileGroupChromaApsId}}
+\index{tileGroupChromaApsId@{tileGroupChromaApsId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupChromaApsId}{tileGroupChromaApsId}}
+{\footnotesize\ttfamily int tile\+Group\+Chroma\+Aps\+Id}
+
+
+
+Definition at line 1255 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_ad05d65634ee00b7f06c930e5826ef067}\label{classvvenc_1_1Slice_ad05d65634ee00b7f06c930e5826ef067}} 
+\index{Slice@{Slice}!tileGroupLumaApsId@{tileGroupLumaApsId}}
+\index{tileGroupLumaApsId@{tileGroupLumaApsId}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupLumaApsId}{tileGroupLumaApsId}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ tile\+Group\+Luma\+Aps\+Id}
+
+
+
+Definition at line 1254 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a5914820103c6bb19b9c3699eb380a9a8}\label{classvvenc_1_1Slice_a5914820103c6bb19b9c3699eb380a9a8}} 
+\index{Slice@{Slice}!tileGroupNumAps@{tileGroupNumAps}}
+\index{tileGroupNumAps@{tileGroupNumAps}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tileGroupNumAps}{tileGroupNumAps}}
+{\footnotesize\ttfamily int tile\+Group\+Num\+Aps}
+
+
+
+Definition at line 1253 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2828614629c4cd261f778db8c85fcf58}\label{classvvenc_1_1Slice_a2828614629c4cd261f778db8c85fcf58}} 
+\index{Slice@{Slice}!TLayer@{TLayer}}
+\index{TLayer@{TLayer}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{TLayer}{TLayer}}
+{\footnotesize\ttfamily uint32\+\_\+t T\+Layer}
+
+
+
+Definition at line 1240 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a6c34e8b8befc60a8ce5aae3127b547fd}\label{classvvenc_1_1Slice_a6c34e8b8befc60a8ce5aae3127b547fd}} 
+\index{Slice@{Slice}!TLayerSwitchingFlag@{TLayerSwitchingFlag}}
+\index{TLayerSwitchingFlag@{TLayerSwitchingFlag}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{TLayerSwitchingFlag}{TLayerSwitchingFlag}}
+{\footnotesize\ttfamily bool T\+Layer\+Switching\+Flag}
+
+
+
+Definition at line 1241 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_afe06b79d3b95a72cc1071aa62628393a}\label{classvvenc_1_1Slice_afe06b79d3b95a72cc1071aa62628393a}} 
+\index{Slice@{Slice}!tsResidualCodingDisabled@{tsResidualCodingDisabled}}
+\index{tsResidualCodingDisabled@{tsResidualCodingDisabled}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{tsResidualCodingDisabled}{tsResidualCodingDisabled}}
+{\footnotesize\ttfamily bool ts\+Residual\+Coding\+Disabled}
+
+
+
+Definition at line 1213 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_aa54e2660939b598986fc46c781fdfc37}\label{classvvenc_1_1Slice_aa54e2660939b598986fc46c781fdfc37}} 
+\index{Slice@{Slice}!useLTforDRAP@{useLTforDRAP}}
+\index{useLTforDRAP@{useLTforDRAP}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{useLTforDRAP}{useLTforDRAP}}
+{\footnotesize\ttfamily bool use\+L\+Tfor\+D\+R\+AP}
+
+
+
+Definition at line 1191 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}\label{classvvenc_1_1Slice_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}} 
+\index{Slice@{Slice}!vps@{vps}}
+\index{vps@{vps}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{vps}{vps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ vps}
+
+
+
+Definition at line 1231 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_a2dfc5a5cf48f579f9fa9fad048fe7bf5}\label{classvvenc_1_1Slice_a2dfc5a5cf48f579f9fa9fad048fe7bf5}} 
+\index{Slice@{Slice}!weightACDCParam@{weightACDCParam}}
+\index{weightACDCParam@{weightACDCParam}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{weightACDCParam}{weightACDCParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WPACDCParam}{W\+P\+A\+C\+D\+C\+Param}} weight\+A\+C\+D\+C\+Param\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1245 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Slice_accda314fc483768a976b4e20de7a56af}\label{classvvenc_1_1Slice_accda314fc483768a976b4e20de7a56af}} 
+\index{Slice@{Slice}!weightPredTable@{weightPredTable}}
+\index{weightPredTable@{weightPredTable}!Slice@{Slice}}
+\doxysubsubsection{\texorpdfstring{weightPredTable}{weightPredTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WPScalingParam}{W\+P\+Scaling\+Param}} weight\+Pred\+Table\mbox{[}\mbox{\hyperlink{namespacevvenc_a93cea48eb9dcfd661168dee82e41b384a92f766c130fd9d4eee2981bb182d20cb}{N\+U\+M\+\_\+\+R\+E\+F\+\_\+\+P\+I\+C\+\_\+\+L\+I\+S\+T\+\_\+01}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_aad1274aed379d90a576a2fd338fc2353}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+R\+EF}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 1244 of file Slice.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

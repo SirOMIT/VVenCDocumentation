@@ -1,0 +1,605 @@
+\hypertarget{classvvenc_1_1VVEncImpl}{}\doxysection{V\+V\+Enc\+Impl}
+\label{classvvenc_1_1VVEncImpl}\index{VVEncImpl@{VVEncImpl}}
+
+
+{\ttfamily \#include \char`\"{}vvencimpl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for V\+V\+Enc\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}{V\+V\+Enc\+Internal\+State}} \{ \newline
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa0b4dbe3e377253c3caf1680a7fa7bc5a}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}} = 0, 
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa7599590d82c358cf82d58e7f5c2902ae}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}} = 1, 
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6014f18f7c4b2ed00631cc52e9557558}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+E\+N\+C\+O\+D\+I\+NG}} = 2, 
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6298ab13264de88265cf94807d127a92}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+L\+U\+S\+H\+I\+NG}} = 3, 
+\newline
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa4a45e8b681ec28d2c7c485fa97c6fbb3}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+I\+N\+A\+L\+I\+Z\+ED}} = 4
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_af3bedc17af5ff24529b790898641b30d}{V\+V\+Enc\+Impl}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a00c33aa725d2917ab55b05c6abbf7ee4}{$\sim$\+V\+V\+Enc\+Impl}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a160d29ae64d8a857161c67bf58b673ca}{check\+Config}} (const vvenc\+\_\+config \&rc\+V\+V\+Enc\+Cfg)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a3a15613e1639e852c006e3d440aa2885}{encode}} (vvenc\+Y\+U\+V\+Buffer $\ast$pc\+Y\+U\+V\+Buffer, vvenc\+Access\+Unit $\ast$pc\+Access\+Unit, bool $\ast$pb\+Encode\+Done)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a947065f2fa86832c09bb4a8ac808c386}{get\+Config}} (vvenc\+\_\+config \&rc\+V\+V\+Enc\+Cfg) const
+\item 
+const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_aca09b95cb901bb87ab7ad957c77384d9}{get\+Encoder\+Info}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ad8793b853ec9f4bb04306873b751e42e}{get\+Last\+Error}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a6d2809599ede67fd3367cc1d5247935e}{get\+Num\+Lead\+Frames}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ab53e076c69aba7531b82cd7b484549de}{get\+Num\+Trail\+Frames}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a809c348dba9e24a409c63298ad97221d}{init}} (const vvenc\+\_\+config \&rc\+V\+V\+Enc\+Cfg)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a6164538e723e79f50a36024ea0db1b3f}{init\+Pass}} (int pass)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a161d75a220f87c68d6975112f0bff3f6}{is\+Initialized}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a0d31cc5464a036990058464f8f992bf6}{print\+Summary}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ad295021e485e1111ce2aa52cec9b8e10}{reconfig}} (const vvenc\+\_\+config \&rc\+V\+V\+Enc\+Cfg)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a28e8622b507b8ffd6b5ee19e62f5e8ed}{set\+And\+Ret\+Error\+Msg}} (int Ret)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a4e9f4fbe945aaf1f65e809096a1eba32}{set\+Rec\+Y\+U\+V\+Buffer\+Callback}} (void $\ast$, vvenc\+Rec\+Y\+U\+V\+Buffer\+Callback)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a7e13b8ea1b81ac774cdabb8c1d68deef}{uninit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a738995bb8f5f1f9372177ec270bcc902}{decode\+Bitstream}} (const char $\ast$File\+Name, const char $\ast$trc\+File, const char $\ast$trc\+Rule)
+\item 
+static const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_aa03a450a94d39274ead10433405289bf}{get\+Compile\+Info\+String}} ()
+\item 
+static const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a99dc5c3b9eef1b1ab23199f4751b5d3b}{get\+Error\+Msg}} (int n\+Ret)
+\item 
+static const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ab6ef279ceb63abb0dc889ed339e7f196}{get\+Version\+Number}} ()
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ad5d4a03074b552d14991f0f460a5d990}{register\+Msg\+Cbf}} (void $\ast$ctx, vvenc\+Logging\+Callback \mbox{\hyperlink{EncApp_8h_aaaadc7ecd391de3840dd410c5e3ba3a3}{msg\+Fnc}})
+\begin{DoxyCompactList}\small\item\em set message output function for encoder lib. if not set, no messages will be printed. \end{DoxyCompactList}\item 
+static const char $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_aaddff0c0eafc6ad7618ca84b2c555257}{set\+S\+I\+M\+D\+Extension}} (const char $\ast$simd\+Id)
+\begin{DoxyCompactList}\small\item\em tries to set given simd extensions used. if not supported by cpu, highest possible extension level will be set and returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a4238fc9c3e8ae7912a056e462282f257}{x\+Copy\+Au}} (vvenc\+Access\+Unit \&rc\+Access\+Unit, const \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&rc\+Au)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a4202c18eb26454df683e329f6a8d4830}{x\+Get\+Access\+Units\+Size}} (const \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{vvenc\+::\+Access\+Unit\+List}} \&rc\+Au\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a01403de1637d0cafa432e1b43f585d88}{m\+\_\+b\+Initialized}} = false
+\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a8782484b26f0758fc7f274cbadcc4dca}{m\+\_\+c\+Encoder\+Info}}
+\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a0996fa69ba8817944e239ffc38a3bce8}{m\+\_\+c\+Error\+String}}
+\item 
+vvenc\+\_\+config \mbox{\hyperlink{classvvenc_1_1VVEncImpl_ab1a3924660907d8cff478f6319975bc5}{m\+\_\+c\+V\+V\+Enc\+Cfg}}
+\item 
+vvenc\+\_\+config \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a8eef720de477522478e8f7a63fd4c445}{m\+\_\+c\+V\+V\+Enc\+Cfg\+Ext}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}{V\+V\+Enc\+Internal\+State}} \mbox{\hyperlink{classvvenc_1_1VVEncImpl_adee66412adb06ce9ad2c63f77376f407}{m\+\_\+e\+State}} = \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa0b4dbe3e377253c3caf1680a7fa7bc5a}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncLib}{Enc\+Lib}} $\ast$ \mbox{\hyperlink{classvvenc_1_1VVEncImpl_afc093efb9c84f0601c8a50f81af40018}{m\+\_\+p\+Enc\+Lib}} = nullptr
+\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a353c42654bb18aed1193ca34041ca204}{m\+\_\+s\+Encoder\+Capabilities}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class Hhi\+Vvc\+Dec provides the decoder user interface. The simplest way to use the decoder is to call \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a809c348dba9e24a409c63298ad97221d}{init()}} to initialize an decoder instance with the the given V\+V\+C\+Decoder\+Parameters. After initialization the decoding of the video is performed by using the decoder() method to hand over compressed packets (bitstream chunks) in decoding order and retrieve uncompressed pictures. The decoding can be end by calling flush() that causes the decoder to finish decoding of all pending packets. Finally calling \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a7e13b8ea1b81ac774cdabb8c1d68deef}{uninit()}} releases all allocated resources held by the decoder internally. 
+
+Definition at line 83 of file vvencimpl.\+h.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}} 
+\index{VVEncImpl@{VVEncImpl}!VVEncInternalState@{VVEncInternalState}}
+\index{VVEncInternalState@{VVEncInternalState}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{VVEncInternalState}{VVEncInternalState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}{V\+V\+Enc\+Internal\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_STATE\_UNINITIALIZED@{INTERNAL\_STATE\_UNINITIALIZED}!VVEncImpl@{VVEncImpl}}\index{VVEncImpl@{VVEncImpl}!INTERNAL\_STATE\_UNINITIALIZED@{INTERNAL\_STATE\_UNINITIALIZED}}}\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa0b4dbe3e377253c3caf1680a7fa7bc5a}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa0b4dbe3e377253c3caf1680a7fa7bc5a}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_STATE\_INITIALIZED@{INTERNAL\_STATE\_INITIALIZED}!VVEncImpl@{VVEncImpl}}\index{VVEncImpl@{VVEncImpl}!INTERNAL\_STATE\_INITIALIZED@{INTERNAL\_STATE\_INITIALIZED}}}\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa7599590d82c358cf82d58e7f5c2902ae}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa7599590d82c358cf82d58e7f5c2902ae}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_STATE\_ENCODING@{INTERNAL\_STATE\_ENCODING}!VVEncImpl@{VVEncImpl}}\index{VVEncImpl@{VVEncImpl}!INTERNAL\_STATE\_ENCODING@{INTERNAL\_STATE\_ENCODING}}}\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6014f18f7c4b2ed00631cc52e9557558}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6014f18f7c4b2ed00631cc52e9557558}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+E\+N\+C\+O\+D\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_STATE\_FLUSHING@{INTERNAL\_STATE\_FLUSHING}!VVEncImpl@{VVEncImpl}}\index{VVEncImpl@{VVEncImpl}!INTERNAL\_STATE\_FLUSHING@{INTERNAL\_STATE\_FLUSHING}}}\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6298ab13264de88265cf94807d127a92}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa6298ab13264de88265cf94807d127a92}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+L\+U\+S\+H\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_STATE\_FINALIZED@{INTERNAL\_STATE\_FINALIZED}!VVEncImpl@{VVEncImpl}}\index{VVEncImpl@{VVEncImpl}!INTERNAL\_STATE\_FINALIZED@{INTERNAL\_STATE\_FINALIZED}}}\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa4a45e8b681ec28d2c7c485fa97c6fbb3}\label{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa4a45e8b681ec28d2c7c485fa97c6fbb3}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+F\+I\+N\+A\+L\+I\+Z\+ED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 87 of file vvencimpl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_af3bedc17af5ff24529b790898641b30d}\label{classvvenc_1_1VVEncImpl_af3bedc17af5ff24529b790898641b30d}} 
+\index{VVEncImpl@{VVEncImpl}!VVEncImpl@{VVEncImpl}}
+\index{VVEncImpl@{VVEncImpl}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{VVEncImpl()}{VVEncImpl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1VVEncImpl}{V\+V\+Enc\+Impl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a00c33aa725d2917ab55b05c6abbf7ee4}\label{classvvenc_1_1VVEncImpl_a00c33aa725d2917ab55b05c6abbf7ee4}} 
+\index{VVEncImpl@{VVEncImpl}!````~VVEncImpl@{$\sim$VVEncImpl}}
+\index{````~VVEncImpl@{$\sim$VVEncImpl}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{$\sim$VVEncImpl()}{~VVEncImpl()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1VVEncImpl}{V\+V\+Enc\+Impl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 98 of file vvencimpl.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a160d29ae64d8a857161c67bf58b673ca}\label{classvvenc_1_1VVEncImpl_a160d29ae64d8a857161c67bf58b673ca}} 
+\index{VVEncImpl@{VVEncImpl}!checkConfig@{checkConfig}}
+\index{checkConfig@{checkConfig}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{checkConfig()}{checkConfig()}}
+{\footnotesize\ttfamily int check\+Config (\begin{DoxyParamCaption}\item[{const vvenc\+\_\+config \&}]{rc\+V\+V\+Enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a160d29ae64d8a857161c67bf58b673ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a738995bb8f5f1f9372177ec270bcc902}\label{classvvenc_1_1VVEncImpl_a738995bb8f5f1f9372177ec270bcc902}} 
+\index{VVEncImpl@{VVEncImpl}!decodeBitstream@{decodeBitstream}}
+\index{decodeBitstream@{decodeBitstream}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{decodeBitstream()}{decodeBitstream()}}
+{\footnotesize\ttfamily int decode\+Bitstream (\begin{DoxyParamCaption}\item[{const char $\ast$}]{File\+Name,  }\item[{const char $\ast$}]{trc\+File,  }\item[{const char $\ast$}]{trc\+Rule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 685 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1VVEncImpl_a738995bb8f5f1f9372177ec270bcc902_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a738995bb8f5f1f9372177ec270bcc902_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a3a15613e1639e852c006e3d440aa2885}\label{classvvenc_1_1VVEncImpl_a3a15613e1639e852c006e3d440aa2885}} 
+\index{VVEncImpl@{VVEncImpl}!encode@{encode}}
+\index{encode@{encode}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily int encode (\begin{DoxyParamCaption}\item[{vvenc\+Y\+U\+V\+Buffer $\ast$}]{pc\+Y\+U\+V\+Buffer,  }\item[{vvenc\+Access\+Unit $\ast$}]{pc\+Access\+Unit,  }\item[{bool $\ast$}]{pb\+Encode\+Done }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a3a15613e1639e852c006e3d440aa2885_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_aa03a450a94d39274ead10433405289bf}\label{classvvenc_1_1VVEncImpl_aa03a450a94d39274ead10433405289bf}} 
+\index{VVEncImpl@{VVEncImpl}!getCompileInfoString@{getCompileInfoString}}
+\index{getCompileInfoString@{getCompileInfoString}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getCompileInfoString()}{getCompileInfoString()}}
+{\footnotesize\ttfamily static const char$\ast$ get\+Compile\+Info\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_aa03a450a94d39274ead10433405289bf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a947065f2fa86832c09bb4a8ac808c386}\label{classvvenc_1_1VVEncImpl_a947065f2fa86832c09bb4a8ac808c386}} 
+\index{VVEncImpl@{VVEncImpl}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}}
+{\footnotesize\ttfamily int get\+Config (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config \&}]{rc\+V\+V\+Enc\+Cfg }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 103 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_aca09b95cb901bb87ab7ad957c77384d9}\label{classvvenc_1_1VVEncImpl_aca09b95cb901bb87ab7ad957c77384d9}} 
+\index{VVEncImpl@{VVEncImpl}!getEncoderInfo@{getEncoderInfo}}
+\index{getEncoderInfo@{getEncoderInfo}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getEncoderInfo()}{getEncoderInfo()}}
+{\footnotesize\ttfamily const char $\ast$ get\+Encoder\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 418 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a99dc5c3b9eef1b1ab23199f4751b5d3b}\label{classvvenc_1_1VVEncImpl_a99dc5c3b9eef1b1ab23199f4751b5d3b}} 
+\index{VVEncImpl@{VVEncImpl}!getErrorMsg@{getErrorMsg}}
+\index{getErrorMsg@{getErrorMsg}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getErrorMsg()}{getErrorMsg()}}
+{\footnotesize\ttfamily const char $\ast$ get\+Error\+Msg (\begin{DoxyParamCaption}\item[{int}]{n\+Ret }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 428 of file vvencimpl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvvenc_1_1VVEncImpl_a99dc5c3b9eef1b1ab23199f4751b5d3b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ad8793b853ec9f4bb04306873b751e42e}\label{classvvenc_1_1VVEncImpl_ad8793b853ec9f4bb04306873b751e42e}} 
+\index{VVEncImpl@{VVEncImpl}!getLastError@{getLastError}}
+\index{getLastError@{getLastError}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getLastError()}{getLastError()}}
+{\footnotesize\ttfamily const char $\ast$ get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 423 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a6d2809599ede67fd3367cc1d5247935e}\label{classvvenc_1_1VVEncImpl_a6d2809599ede67fd3367cc1d5247935e}} 
+\index{VVEncImpl@{VVEncImpl}!getNumLeadFrames@{getNumLeadFrames}}
+\index{getNumLeadFrames@{getNumLeadFrames}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getNumLeadFrames()}{getNumLeadFrames()}}
+{\footnotesize\ttfamily int get\+Num\+Lead\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 456 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ab53e076c69aba7531b82cd7b484549de}\label{classvvenc_1_1VVEncImpl_ab53e076c69aba7531b82cd7b484549de}} 
+\index{VVEncImpl@{VVEncImpl}!getNumTrailFrames@{getNumTrailFrames}}
+\index{getNumTrailFrames@{getNumTrailFrames}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getNumTrailFrames()}{getNumTrailFrames()}}
+{\footnotesize\ttfamily int get\+Num\+Trail\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 461 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ab6ef279ceb63abb0dc889ed339e7f196}\label{classvvenc_1_1VVEncImpl_ab6ef279ceb63abb0dc889ed339e7f196}} 
+\index{VVEncImpl@{VVEncImpl}!getVersionNumber@{getVersionNumber}}
+\index{getVersionNumber@{getVersionNumber}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{getVersionNumber()}{getVersionNumber()}}
+{\footnotesize\ttfamily const char $\ast$ get\+Version\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 413 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a809c348dba9e24a409c63298ad97221d}\label{classvvenc_1_1VVEncImpl_a809c348dba9e24a409c63298ad97221d}} 
+\index{VVEncImpl@{VVEncImpl}!init@{init}}
+\index{init@{init}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int init (\begin{DoxyParamCaption}\item[{const vvenc\+\_\+config \&}]{rc\+V\+V\+Enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 128 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a809c348dba9e24a409c63298ad97221d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a6164538e723e79f50a36024ea0db1b3f}\label{classvvenc_1_1VVEncImpl_a6164538e723e79f50a36024ea0db1b3f}} 
+\index{VVEncImpl@{VVEncImpl}!initPass@{initPass}}
+\index{initPass@{initPass}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{initPass()}{initPass()}}
+{\footnotesize\ttfamily int init\+Pass (\begin{DoxyParamCaption}\item[{int}]{pass }\end{DoxyParamCaption})}
+
+
+
+Definition at line 175 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a6164538e723e79f50a36024ea0db1b3f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a161d75a220f87c68d6975112f0bff3f6}\label{classvvenc_1_1VVEncImpl_a161d75a220f87c68d6975112f0bff3f6}} 
+\index{VVEncImpl@{VVEncImpl}!isInitialized@{isInitialized}}
+\index{isInitialized@{isInitialized}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{isInitialized()}{isInitialized()}}
+{\footnotesize\ttfamily bool is\+Initialized (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 247 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a0d31cc5464a036990058464f8f992bf6}\label{classvvenc_1_1VVEncImpl_a0d31cc5464a036990058464f8f992bf6}} 
+\index{VVEncImpl@{VVEncImpl}!printSummary@{printSummary}}
+\index{printSummary@{printSummary}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{printSummary()}{printSummary()}}
+{\footnotesize\ttfamily int print\+Summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 466 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a0d31cc5464a036990058464f8f992bf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ad295021e485e1111ce2aa52cec9b8e10}\label{classvvenc_1_1VVEncImpl_ad295021e485e1111ce2aa52cec9b8e10}} 
+\index{VVEncImpl@{VVEncImpl}!reconfig@{reconfig}}
+\index{reconfig@{reconfig}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{reconfig()}{reconfig()}}
+{\footnotesize\ttfamily int reconfig (\begin{DoxyParamCaption}\item[{const vvenc\+\_\+config \&}]{rc\+V\+V\+Enc\+Cfg }\end{DoxyParamCaption})}
+
+
+
+Definition at line 111 of file vvencimpl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ad5d4a03074b552d14991f0f460a5d990}\label{classvvenc_1_1VVEncImpl_ad5d4a03074b552d14991f0f460a5d990}} 
+\index{VVEncImpl@{VVEncImpl}!registerMsgCbf@{registerMsgCbf}}
+\index{registerMsgCbf@{registerMsgCbf}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{registerMsgCbf()}{registerMsgCbf()}}
+{\footnotesize\ttfamily static void register\+Msg\+Cbf (\begin{DoxyParamCaption}\item[{void $\ast$}]{ctx,  }\item[{vvenc\+Logging\+Callback}]{msg\+Fnc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+set message output function for encoder lib. if not set, no messages will be printed. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_ad5d4a03074b552d14991f0f460a5d990_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a28e8622b507b8ffd6b5ee19e62f5e8ed}\label{classvvenc_1_1VVEncImpl_a28e8622b507b8ffd6b5ee19e62f5e8ed}} 
+\index{VVEncImpl@{VVEncImpl}!setAndRetErrorMsg@{setAndRetErrorMsg}}
+\index{setAndRetErrorMsg@{setAndRetErrorMsg}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{setAndRetErrorMsg()}{setAndRetErrorMsg()}}
+{\footnotesize\ttfamily int set\+And\+Ret\+Error\+Msg (\begin{DoxyParamCaption}\item[{int}]{Ret }\end{DoxyParamCaption})}
+
+
+
+Definition at line 446 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classvvenc_1_1VVEncImpl_a28e8622b507b8ffd6b5ee19e62f5e8ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a4e9f4fbe945aaf1f65e809096a1eba32}\label{classvvenc_1_1VVEncImpl_a4e9f4fbe945aaf1f65e809096a1eba32}} 
+\index{VVEncImpl@{VVEncImpl}!setRecYUVBufferCallback@{setRecYUVBufferCallback}}
+\index{setRecYUVBufferCallback@{setRecYUVBufferCallback}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{setRecYUVBufferCallback()}{setRecYUVBufferCallback()}}
+{\footnotesize\ttfamily int set\+Rec\+Y\+U\+V\+Buffer\+Callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{ctx,  }\item[{vvenc\+Rec\+Y\+U\+V\+Buffer\+Callback}]{callback }\end{DoxyParamCaption})}
+
+
+
+Definition at line 252 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a4e9f4fbe945aaf1f65e809096a1eba32_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_aaddff0c0eafc6ad7618ca84b2c555257}\label{classvvenc_1_1VVEncImpl_aaddff0c0eafc6ad7618ca84b2c555257}} 
+\index{VVEncImpl@{VVEncImpl}!setSIMDExtension@{setSIMDExtension}}
+\index{setSIMDExtension@{setSIMDExtension}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{setSIMDExtension()}{setSIMDExtension()}}
+{\footnotesize\ttfamily static const char$\ast$ set\+S\+I\+M\+D\+Extension (\begin{DoxyParamCaption}\item[{const char $\ast$}]{simd\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+tries to set given simd extensions used. if not supported by cpu, highest possible extension level will be set and returned. 
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a7e13b8ea1b81ac774cdabb8c1d68deef}\label{classvvenc_1_1VVEncImpl_a7e13b8ea1b81ac774cdabb8c1d68deef}} 
+\index{VVEncImpl@{VVEncImpl}!uninit@{uninit}}
+\index{uninit@{uninit}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{uninit()}{uninit()}}
+{\footnotesize\ttfamily int uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 215 of file vvencimpl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1VVEncImpl_a7e13b8ea1b81ac774cdabb8c1d68deef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a4238fc9c3e8ae7912a056e462282f257}\label{classvvenc_1_1VVEncImpl_a4238fc9c3e8ae7912a056e462282f257}} 
+\index{VVEncImpl@{VVEncImpl}!xCopyAu@{xCopyAu}}
+\index{xCopyAu@{xCopyAu}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{xCopyAu()}{xCopyAu()}}
+{\footnotesize\ttfamily int x\+Copy\+Au (\begin{DoxyParamCaption}\item[{vvenc\+Access\+Unit \&}]{rc\+Access\+Unit,  }\item[{const \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{Access\+Unit\+List}} \&}]{rc\+Au }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{classvvenc_1_1VVEncImpl_a4238fc9c3e8ae7912a056e462282f257_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a4202c18eb26454df683e329f6a8d4830}\label{classvvenc_1_1VVEncImpl_a4202c18eb26454df683e329f6a8d4830}} 
+\index{VVEncImpl@{VVEncImpl}!xGetAccessUnitsSize@{xGetAccessUnitsSize}}
+\index{xGetAccessUnitsSize@{xGetAccessUnitsSize}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{xGetAccessUnitsSize()}{xGetAccessUnitsSize()}}
+{\footnotesize\ttfamily int x\+Get\+Access\+Units\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1AccessUnitList}{vvenc\+::\+Access\+Unit\+List}} \&}]{rc\+Au\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 475 of file vvencimpl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classvvenc_1_1VVEncImpl_a4202c18eb26454df683e329f6a8d4830_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a01403de1637d0cafa432e1b43f585d88}\label{classvvenc_1_1VVEncImpl_a01403de1637d0cafa432e1b43f585d88}} 
+\index{VVEncImpl@{VVEncImpl}!m\_bInitialized@{m\_bInitialized}}
+\index{m\_bInitialized@{m\_bInitialized}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_bInitialized}{m\_bInitialized}}
+{\footnotesize\ttfamily bool m\+\_\+b\+Initialized = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 139 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a8782484b26f0758fc7f274cbadcc4dca}\label{classvvenc_1_1VVEncImpl_a8782484b26f0758fc7f274cbadcc4dca}} 
+\index{VVEncImpl@{VVEncImpl}!m\_cEncoderInfo@{m\_cEncoderInfo}}
+\index{m\_cEncoderInfo@{m\_cEncoderInfo}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_cEncoderInfo}{m\_cEncoderInfo}}
+{\footnotesize\ttfamily std\+::string m\+\_\+c\+Encoder\+Info\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 145 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a0996fa69ba8817944e239ffc38a3bce8}\label{classvvenc_1_1VVEncImpl_a0996fa69ba8817944e239ffc38a3bce8}} 
+\index{VVEncImpl@{VVEncImpl}!m\_cErrorString@{m\_cErrorString}}
+\index{m\_cErrorString@{m\_cErrorString}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_cErrorString}{m\_cErrorString}}
+{\footnotesize\ttfamily std\+::string m\+\_\+c\+Error\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 144 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_ab1a3924660907d8cff478f6319975bc5}\label{classvvenc_1_1VVEncImpl_ab1a3924660907d8cff478f6319975bc5}} 
+\index{VVEncImpl@{VVEncImpl}!m\_cVVEncCfg@{m\_cVVEncCfg}}
+\index{m\_cVVEncCfg@{m\_cVVEncCfg}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_cVVEncCfg}{m\_cVVEncCfg}}
+{\footnotesize\ttfamily vvenc\+\_\+config m\+\_\+c\+V\+V\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 142 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a8eef720de477522478e8f7a63fd4c445}\label{classvvenc_1_1VVEncImpl_a8eef720de477522478e8f7a63fd4c445}} 
+\index{VVEncImpl@{VVEncImpl}!m\_cVVEncCfgExt@{m\_cVVEncCfgExt}}
+\index{m\_cVVEncCfgExt@{m\_cVVEncCfgExt}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_cVVEncCfgExt}{m\_cVVEncCfgExt}}
+{\footnotesize\ttfamily vvenc\+\_\+config m\+\_\+c\+V\+V\+Enc\+Cfg\+Ext\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 141 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_adee66412adb06ce9ad2c63f77376f407}\label{classvvenc_1_1VVEncImpl_adee66412adb06ce9ad2c63f77376f407}} 
+\index{VVEncImpl@{VVEncImpl}!m\_eState@{m\_eState}}
+\index{m\_eState@{m\_eState}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_eState}{m\_eState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3f}{V\+V\+Enc\+Internal\+State}} m\+\_\+e\+State = \mbox{\hyperlink{classvvenc_1_1VVEncImpl_a5e913183a9cd60962096ed5eedb58b3fa0b4dbe3e377253c3caf1680a7fa7bc5a}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+S\+T\+A\+T\+E\+\_\+\+U\+N\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 138 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_afc093efb9c84f0601c8a50f81af40018}\label{classvvenc_1_1VVEncImpl_afc093efb9c84f0601c8a50f81af40018}} 
+\index{VVEncImpl@{VVEncImpl}!m\_pEncLib@{m\_pEncLib}}
+\index{m\_pEncLib@{m\_pEncLib}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_pEncLib}{m\_pEncLib}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncLib}{Enc\+Lib}}$\ast$ m\+\_\+p\+Enc\+Lib = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 148 of file vvencimpl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1VVEncImpl_a353c42654bb18aed1193ca34041ca204}\label{classvvenc_1_1VVEncImpl_a353c42654bb18aed1193ca34041ca204}} 
+\index{VVEncImpl@{VVEncImpl}!m\_sEncoderCapabilities@{m\_sEncoderCapabilities}}
+\index{m\_sEncoderCapabilities@{m\_sEncoderCapabilities}!VVEncImpl@{VVEncImpl}}
+\doxysubsubsection{\texorpdfstring{m\_sEncoderCapabilities}{m\_sEncoderCapabilities}}
+{\footnotesize\ttfamily std\+::string m\+\_\+s\+Encoder\+Capabilities\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 146 of file vvencimpl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/vvenc/\mbox{\hyperlink{vvencimpl_8h}{vvencimpl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/vvenc/\mbox{\hyperlink{vvencimpl_8cpp}{vvencimpl.\+cpp}}\end{DoxyCompactItemize}

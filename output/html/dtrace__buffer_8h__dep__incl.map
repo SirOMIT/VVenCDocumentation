@@ -1,0 +1,21 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/dtrace_buffer.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/dtrace_buffer.h">
+<area shape="rect" id="node1" title="Easy to use dtrace calls concerning buffers." alt="" coords="1589,5,1749,76"/>
+<area shape="rect" id="node2" href="$InterPrediction_8cpp.html" title=" " alt="" coords="5,124,165,195"/>
+<area shape="rect" id="node3" href="$LoopFilter_8cpp.html" title="deblocking filter" alt="" coords="189,124,349,195"/>
+<area shape="rect" id="node4" href="$MCTF_8cpp.html" title="MCTF class." alt="" coords="373,124,533,195"/>
+<area shape="rect" id="node5" href="$Quant_8cpp.html" title="transform and quantization class" alt="" coords="557,124,717,195"/>
+<area shape="rect" id="node6" href="$QuantRDOQ_8cpp.html" title="transform and quantization class" alt="" coords="741,124,901,195"/>
+<area shape="rect" id="node7" href="$QuantRDOQ2_8cpp.html" title="transform and quantization class" alt="" coords="925,124,1085,195"/>
+<area shape="rect" id="node8" href="$SampleAdaptiveOffset_8cpp.html" title="sample adaptive offset class" alt="" coords="1110,124,1293,195"/>
+<area shape="rect" id="node9" href="$TrQuant_8cpp.html" title="transform and quantization class" alt="" coords="1317,124,1477,195"/>
+<area shape="rect" id="node10" href="$DecCu_8cpp.html" title="CU decoder class." alt="" coords="1502,124,1658,195"/>
+<area shape="rect" id="node11" href="$DecLib_8cpp.html" title="decoder class" alt="" coords="1682,124,1838,195"/>
+<area shape="rect" id="node12" href="$CABACWriter_8cpp.html" title="Writer for low level syntax." alt="" coords="1862,124,2018,195"/>
+<area shape="rect" id="node13" href="$EncAdaptiveLoopFilter_8cpp.html" title="estimation part of adaptive loop filter class" alt="" coords="2043,124,2224,195"/>
+<area shape="rect" id="node14" href="$EncCu_8cpp.html" title="Coding Unit (CU) encoder class." alt="" coords="2249,124,2405,195"/>
+<area shape="rect" id="node15" href="$EncGOP_8cpp.html" title="GOP encoder class." alt="" coords="2429,124,2585,195"/>
+<area shape="rect" id="node16" href="$EncPicture_8cpp.html" title="encode picture" alt="" coords="2609,124,2765,195"/>
+<area shape="rect" id="node17" href="$EncSampleAdaptiveOffset_8cpp.html" title="estimation part of sample adaptive offset class" alt="" coords="2789,124,2995,195"/>
+<area shape="rect" id="node18" href="$InterSearch_8cpp.html" title=" " alt="" coords="3019,124,3175,195"/>
+<area shape="rect" id="node19" href="$IntraSearch_8cpp.html" title=" " alt="" coords="3199,124,3355,195"/>
+</map>

@@ -1,0 +1,103 @@
+\hypertarget{EncAdaptiveLoopFilter_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\+Enc\+Adaptive\+Loop\+Filter.cpp File Reference}
+\label{EncAdaptiveLoopFilter_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncAdaptiveLoopFilter.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/EncoderLib/EncAdaptiveLoopFilter.cpp}}
+
+
+estimation part of adaptive loop filter class  
+
+
+{\ttfamily \#include \char`\"{}Enc\+Adaptive\+Loop\+Filter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Coding\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Time\+Profiler.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include \char`\"{}vvenc/vvenc\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utilities/\+No\+Malloc\+Thread\+Pool.\+h\char`\"{}}\newline
+Include dependency graph for Enc\+Adaptive\+Loop\+Filter.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{EncAdaptiveLoopFilter_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1FilterIdxCount}{Filter\+Idx\+Count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{EncAdaptiveLoopFilter_8cpp_a4181c62c5846305dc28b94b25fef2a39}{Alf\+Ctx}}(c)~Sub\+Ctx( Ctx\+::\+Alf, c)
+\item 
+\#define \mbox{\hyperlink{EncAdaptiveLoopFilter_8cpp_ac12997fa537ec8cbf0f69bf8228cc2a0}{R\+EG}}~0.\+0001
+\item 
+\#define \mbox{\hyperlink{EncAdaptiveLoopFilter_8cpp_ae7df443c9de60919830393561271c24f}{R\+E\+G\+\_\+\+S\+QR}}~0.\+0000001
+\item 
+\#define \mbox{\hyperlink{EncAdaptiveLoopFilter_8cpp_af6b649b1ed94420c340e1260e646dcc7}{R\+O\+U\+ND}}(a)~(((a) $<$ 0)? (int)((a) -\/ 0.\+5) \+: (int)((a) + 0.\+5))
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int num\+Coeff$>$ }\\static double \mbox{\hyperlink{namespacevvenc_ab1b0d7506fa62aba40cf00e18a893f80}{calc\+Error\+For\+Coeffs\+Lin}} (const Alf\+Covariance\+::\+T\+KE \&E, const Alf\+Covariance\+::\+T\+Ky \&y, const int $\ast$coeff, const double inv\+Factor)
+\item 
+{\footnotesize template$<$int num\+Coeff$>$ }\\static double \mbox{\hyperlink{namespacevvenc_ad74310608dc2ac8810ae525fc40fb8dc}{calc\+Error\+For\+Coeffs\+Non\+Lin}} (const Alf\+Covariance\+::\+T\+KE \&E, const Alf\+Covariance\+::\+T\+Ky \&y, const int $\ast$clip, const int $\ast$coeff, const double inv\+Factor)
+\item 
+{\footnotesize template$<$bool clip\+To\+Bdry$>$ }\\int \mbox{\hyperlink{namespacevvenc_aa6a17006046592b6a1570b4b3104554a}{clip\+Idx}} (int i, int clip)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_ad46e32dec06bbd34490cc4e4d78c9bc8}{compare\+Counts}} (Filter\+Idx\+Count a, Filter\+Idx\+Count b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+estimation part of adaptive loop filter class 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{EncAdaptiveLoopFilter_8cpp_a4181c62c5846305dc28b94b25fef2a39}\label{EncAdaptiveLoopFilter_8cpp_a4181c62c5846305dc28b94b25fef2a39}} 
+\index{EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}!AlfCtx@{AlfCtx}}
+\index{AlfCtx@{AlfCtx}!EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{AlfCtx}{AlfCtx}}
+{\footnotesize\ttfamily \#define Alf\+Ctx(\begin{DoxyParamCaption}\item[{}]{c }\end{DoxyParamCaption})~Sub\+Ctx( Ctx\+::\+Alf, c)}
+
+
+
+Definition at line 82 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{EncAdaptiveLoopFilter_8cpp_ac12997fa537ec8cbf0f69bf8228cc2a0}\label{EncAdaptiveLoopFilter_8cpp_ac12997fa537ec8cbf0f69bf8228cc2a0}} 
+\index{EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}!REG@{REG}}
+\index{REG@{REG}!EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{REG}{REG}}
+{\footnotesize\ttfamily \#define R\+EG~0.\+0001}
+
+
+
+Definition at line 808 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{EncAdaptiveLoopFilter_8cpp_ae7df443c9de60919830393561271c24f}\label{EncAdaptiveLoopFilter_8cpp_ae7df443c9de60919830393561271c24f}} 
+\index{EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}!REG\_SQR@{REG\_SQR}}
+\index{REG\_SQR@{REG\_SQR}!EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{REG\_SQR}{REG\_SQR}}
+{\footnotesize\ttfamily \#define R\+E\+G\+\_\+\+S\+QR~0.\+0000001}
+
+
+
+Definition at line 809 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{EncAdaptiveLoopFilter_8cpp_af6b649b1ed94420c340e1260e646dcc7}\label{EncAdaptiveLoopFilter_8cpp_af6b649b1ed94420c340e1260e646dcc7}} 
+\index{EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}!ROUND@{ROUND}}
+\index{ROUND@{ROUND}!EncAdaptiveLoopFilter.cpp@{EncAdaptiveLoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{ROUND}{ROUND}}
+{\footnotesize\ttfamily \#define R\+O\+U\+ND(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~(((a) $<$ 0)? (int)((a) -\/ 0.\+5) \+: (int)((a) + 0.\+5))}
+
+
+
+Definition at line 807 of file Enc\+Adaptive\+Loop\+Filter.\+cpp.
+

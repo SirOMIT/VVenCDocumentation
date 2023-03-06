@@ -1,0 +1,932 @@
+\hypertarget{classvvenc_1_1MCTF}{}\doxysection{M\+C\+TF}
+\label{classvvenc_1_1MCTF}\index{MCTF@{MCTF}}
+
+
+{\ttfamily \#include \char`\"{}M\+C\+T\+F.\+h\char`\"{}}
+
+
+
+Collaboration diagram for M\+C\+TF\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1MCTF_a3bad979500948ea32ee3d6778c78f5a8}{M\+C\+TF}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1MCTF_a68895adb1cec74b63685626c6aa16b5d}{$\sim$\+M\+C\+TF}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a25707f539783571f456bb27e494e07d7}{add\+Lead\+Frame}} (const vvenc\+Y\+U\+V\+Buffer \&yuv\+In\+Buf)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a6997a7747aaa8f3a468b396d07e2d2f8}{add\+Trail\+Frame}} (const vvenc\+Y\+U\+V\+Buffer \&yuv\+In\+Buf)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a6ead7eccff643e39f6e8ce93e54faaa7}{assign\+Qpa\+Bufs}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a627b85715167089df19dc6ab17cb0277}{filter}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_a641b80264b916e49d6ef5e50434e3fa0}{get\+Cur\+Delay}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_a6d2809599ede67fd3367cc1d5247935e}{get\+Num\+Lead\+Frames}} () const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_ab53e076c69aba7531b82cd7b484549de}{get\+Num\+Trail\+Frames}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a7213f20a4859dd96dc0487c55b7b2e7e}{init}} (const int internal\+Bit\+Depth\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}, const int width, const int height, const int ctu\+Size, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} input\+Chroma, const int qp, const vvenc\+M\+C\+TF M\+C\+T\+F\+Cfg, const int frames\+To\+Be\+Encoded, \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$thread\+Pool)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_afa90a5c5c3718da584a64351bf5a8876}{uninit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_ae651f3c3a706fee136735f74f05f6e9c}{apply\+Motion\+Ln}} (const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&mvs, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&input, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&output, int block\+NumY, int comp) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_ac02b5aaf35ce51ced68d20b1559751f0}{bilateral\+Filter}} (const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&org\+Pic, const std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1TemporalFilterSourcePicInfo}{Temporal\+Filter\+Source\+Pic\+Info}} $>$ \&src\+Frame\+Info, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&new\+Org\+Pic, double overall\+Strength) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_af467096d7b5cdcb8fcaa5865c5c7d476}{create\+Lead\+Trail\+Pic}} (const vvenc\+Y\+U\+V\+Buffer \&yuv\+In\+Buf, const int poc)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_af6deb41451643be9941b04366bdc4f98}{estimate\+Luma\+Ln}} (\mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&mvs, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&orig, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&buffer, const int block\+Size, const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ $\ast$previous, const int factor, const bool double\+Res, int blockY) const
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_ac83663aa054db70e92a701a274139c15}{motion\+Error\+Luma}} (const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&orig, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&buffer, const int x, const int y, int dx, int dy, const int bs, const int besterror) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a371642e309d32bae11fc210f5df1bb4d}{motion\+Estimation\+Luma}} (\mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&mvs, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&orig, const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&buffer, const int bs, const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ $\ast$previous=0, const int factor=1, const bool double\+Res=false) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_af3951f6c749a1b891251c81b28d1f636}{subsample\+Luma}} (const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&input, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&output, const int factor=2) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1MCTF_a793a6eda5f98109cda6a7ca3016bdc6b}{x\+Finalize\+Blk\+Line}} (const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&org\+Pic, const std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1TemporalFilterSourcePicInfo}{Temporal\+Filter\+Source\+Pic\+Info}} $>$ \&src\+Frame\+Info, \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&new\+Org\+Pic, std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $>$ \&corrected\+Pics, int y\+Start, const double sigma\+Sq\+Ch\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}, const std\+::vector$<$ double $>$ ref\+Strength\+Ch\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Area}{Area}} \mbox{\hyperlink{classvvenc_1_1MCTF_a490b185944244970274ebd5158000d73}{m\+\_\+area}}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1MCTF_ae4e901226ba4f0e08e82ecfe898efe75}{m\+\_\+chroma\+Format\+I\+DC}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_af20955a543248d88bbed4c62c6db3226}{m\+\_\+ctu\+Size}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_a58dad08f3ff7ce4c5e4047ab18b434c6}{m\+\_\+cur\+\_\+delay}}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1MCTF_a230abfcb735bb862757f54fe04f35061}{m\+\_\+\+Filter\+Frames}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1MCTF_af154a2742eb9060bb28dada5c8303f11}{m\+\_\+filter\+Future\+Reference}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classvvenc_1_1MCTF_a915e6e603e0608ecd783cfeb0bb974a4}{m\+\_\+\+Filter\+Strengths}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_afa8db2033c7752d49bc1b69a2bfcb6d0}{m\+\_\+frames\+To\+Be\+Encoded}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1MCTF_a7f5ec644cafbd3de5f5898d8483daf1b}{m\+\_\+input\+\_\+cnt}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_a5999b17d711af31dc313e20ce92db3f2}{m\+\_\+internal\+Bit\+Depth}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1MCTF_ab421524a9e457285de034591cca98774}{m\+\_\+lead\+Fifo}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_ae5e7827161d48ccaed5ccd98bd6fab55}{m\+\_\+\+M\+C\+T\+F\+Mode}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_abf22b07349edfde457482d2e794ca109}{m\+\_\+\+M\+C\+T\+F\+Speed\+Val}}
+\item 
+int($\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_a29094cd861e3f28a5f656ba95d38af14}{m\+\_\+motion\+Error\+Luma\+Frac8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int16\+\_\+t $\ast$x\+Filter, const int16\+\_\+t $\ast$y\+Filter, const int bit\+Depth, const int besterror)
+\item 
+int($\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_ab28c1f1d2e060e75f040a4afbf0e9d44}{m\+\_\+motion\+Error\+Luma\+FracX}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int16\+\_\+t $\ast$x\+Filter, const int16\+\_\+t $\ast$y\+Filter, const int bit\+Depth, const int besterror)
+\item 
+int($\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_a57e427d0bf5446143d76315920313358}{m\+\_\+motion\+Error\+Luma\+Int8}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int besterror)
+\item 
+int($\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_a195ae472b1a6cd809755bbbd9e27d28f}{m\+\_\+motion\+Error\+Luma\+IntX}} )(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int besterror)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_ae63681f532d4b1716d7b2aaa16b17a01}{m\+\_\+num\+Lead\+Frames}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_abbb3738f38ba8ec66216a0710ae131f2}{m\+\_\+num\+Trail\+Frames}}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1MCTF_a5c2b4ddd5d9271ce05b3ced2848a18b1}{m\+\_\+pic\+Fifo}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1MCTF_a597ff67e51a721bf31825fae2ab31544}{m\+\_\+\+QP}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$ \mbox{\hyperlink{classvvenc_1_1MCTF_a554a6e379eb8db3d601ac16590ad3d2e}{m\+\_\+thread\+Pool}}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1MCTF_a36c54393bec88db7437608dd68bf5e91}{m\+\_\+trail\+Fifo}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{classvvenc_1_1MCTF_ae4e49f46b6f29f10360dc90a8a9e8596}{m\+\_\+chroma\+Factor}} = 0.\+55
+\item 
+static const int16\+\_\+t \mbox{\hyperlink{classvvenc_1_1MCTF_ab43d9152ef9024cd2f9e954631f5ca66}{m\+\_\+interpolation\+Filter}} \mbox{[}16\mbox{]}\mbox{[}8\mbox{]}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1MCTF_a0130c6b6d19a620072504aa157a7b962}{m\+\_\+motion\+Vector\+Factor}} = 16
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1MCTF_a05cf351b3be6ba0073181b0efa25e336}{m\+\_\+padding}} = \mbox{\hyperlink{namespacevvenc_ae4d3f019e63d80007f7252258f257e8e}{M\+C\+T\+F\+\_\+\+P\+A\+D\+D\+I\+NG}}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1MCTF_a027a0b3305bf41ca03436a0e37493508}{m\+\_\+range}} = V\+V\+E\+N\+C\+\_\+\+M\+C\+T\+F\+\_\+\+R\+A\+N\+GE
+\item 
+static const double \mbox{\hyperlink{classvvenc_1_1MCTF_a2bc9d99c7ad650e42116a33d1f8caad0}{m\+\_\+ref\+Strengths}} \mbox{[}3\mbox{]}\mbox{[}2\mbox{]}
+\item 
+static const double \mbox{\hyperlink{classvvenc_1_1MCTF_a616963f8d2d3d5fac12f839495396a39}{m\+\_\+sigma\+Multiplier}} = 9.\+0
+\item 
+static const double \mbox{\hyperlink{classvvenc_1_1MCTF_a26f461b4528d43514119025596cbe371}{m\+\_\+sigma\+Zero\+Point}} = 10.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 120 of file M\+C\+T\+F.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a3bad979500948ea32ee3d6778c78f5a8}\label{classvvenc_1_1MCTF_a3bad979500948ea32ee3d6778c78f5a8}} 
+\index{MCTF@{MCTF}!MCTF@{MCTF}}
+\index{MCTF@{MCTF}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{MCTF()}{MCTF()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1MCTF}{M\+C\+TF}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 187 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1MCTF_a3bad979500948ea32ee3d6778c78f5a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a68895adb1cec74b63685626c6aa16b5d}\label{classvvenc_1_1MCTF_a68895adb1cec74b63685626c6aa16b5d}} 
+\index{MCTF@{MCTF}!````~MCTF@{$\sim$MCTF}}
+\index{````~MCTF@{$\sim$MCTF}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{$\sim$MCTF()}{~MCTF()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1MCTF}{M\+C\+TF}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 200 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a68895adb1cec74b63685626c6aa16b5d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a25707f539783571f456bb27e494e07d7}\label{classvvenc_1_1MCTF_a25707f539783571f456bb27e494e07d7}} 
+\index{MCTF@{MCTF}!addLeadFrame@{addLeadFrame}}
+\index{addLeadFrame@{addLeadFrame}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{addLeadFrame()}{addLeadFrame()}}
+{\footnotesize\ttfamily void add\+Lead\+Frame (\begin{DoxyParamCaption}\item[{const vvenc\+Y\+U\+V\+Buffer \&}]{yuv\+In\+Buf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 287 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a25707f539783571f456bb27e494e07d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a25707f539783571f456bb27e494e07d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a6997a7747aaa8f3a468b396d07e2d2f8}\label{classvvenc_1_1MCTF_a6997a7747aaa8f3a468b396d07e2d2f8}} 
+\index{MCTF@{MCTF}!addTrailFrame@{addTrailFrame}}
+\index{addTrailFrame@{addTrailFrame}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{addTrailFrame()}{addTrailFrame()}}
+{\footnotesize\ttfamily void add\+Trail\+Frame (\begin{DoxyParamCaption}\item[{const vvenc\+Y\+U\+V\+Buffer \&}]{yuv\+In\+Buf }\end{DoxyParamCaption})}
+
+
+
+Definition at line 300 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a6997a7747aaa8f3a468b396d07e2d2f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a6997a7747aaa8f3a468b396d07e2d2f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ae651f3c3a706fee136735f74f05f6e9c}\label{classvvenc_1_1MCTF_ae651f3c3a706fee136735f74f05f6e9c}} 
+\index{MCTF@{MCTF}!applyMotionLn@{applyMotionLn}}
+\index{applyMotionLn@{applyMotionLn}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{applyMotionLn()}{applyMotionLn()}}
+{\footnotesize\ttfamily void apply\+Motion\+Ln (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&}]{mvs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{input,  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{output,  }\item[{int}]{block\+NumY,  }\item[{int}]{comp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 686 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ae651f3c3a706fee136735f74f05f6e9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ae651f3c3a706fee136735f74f05f6e9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a6ead7eccff643e39f6e8ce93e54faaa7}\label{classvvenc_1_1MCTF_a6ead7eccff643e39f6e8ce93e54faaa7}} 
+\index{MCTF@{MCTF}!assignQpaBufs@{assignQpaBufs}}
+\index{assignQpaBufs@{assignQpaBufs}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{assignQpaBufs()}{assignQpaBufs()}}
+{\footnotesize\ttfamily void assign\+Qpa\+Bufs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 314 of file M\+C\+T\+F.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a6ead7eccff643e39f6e8ce93e54faaa7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ac02b5aaf35ce51ced68d20b1559751f0}\label{classvvenc_1_1MCTF_ac02b5aaf35ce51ced68d20b1559751f0}} 
+\index{MCTF@{MCTF}!bilateralFilter@{bilateralFilter}}
+\index{bilateralFilter@{bilateralFilter}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{bilateralFilter()}{bilateralFilter()}}
+{\footnotesize\ttfamily void bilateral\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{org\+Pic,  }\item[{const std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1TemporalFilterSourcePicInfo}{Temporal\+Filter\+Source\+Pic\+Info}} $>$ \&}]{src\+Frame\+Info,  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{new\+Org\+Pic,  }\item[{double}]{overall\+Strength }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 821 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ac02b5aaf35ce51ced68d20b1559751f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ac02b5aaf35ce51ced68d20b1559751f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_af467096d7b5cdcb8fcaa5865c5c7d476}\label{classvvenc_1_1MCTF_af467096d7b5cdcb8fcaa5865c5c7d476}} 
+\index{MCTF@{MCTF}!createLeadTrailPic@{createLeadTrailPic}}
+\index{createLeadTrailPic@{createLeadTrailPic}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{createLeadTrailPic()}{createLeadTrailPic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$ create\+Lead\+Trail\+Pic (\begin{DoxyParamCaption}\item[{const vvenc\+Y\+U\+V\+Buffer \&}]{yuv\+In\+Buf,  }\item[{const int}]{poc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 270 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af467096d7b5cdcb8fcaa5865c5c7d476_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af467096d7b5cdcb8fcaa5865c5c7d476_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_af6deb41451643be9941b04366bdc4f98}\label{classvvenc_1_1MCTF_af6deb41451643be9941b04366bdc4f98}} 
+\index{MCTF@{MCTF}!estimateLumaLn@{estimateLumaLn}}
+\index{estimateLumaLn@{estimateLumaLn}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{estimateLumaLn()}{estimateLumaLn()}}
+{\footnotesize\ttfamily void estimate\+Luma\+Ln (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&}]{mvs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{orig,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{buffer,  }\item[{const int}]{block\+Size,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ $\ast$}]{previous,  }\item[{const int}]{factor,  }\item[{const bool}]{double\+Res,  }\item[{int}]{blockY }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 539 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af6deb41451643be9941b04366bdc4f98_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af6deb41451643be9941b04366bdc4f98_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a627b85715167089df19dc6ab17cb0277}\label{classvvenc_1_1MCTF_a627b85715167089df19dc6ab17cb0277}} 
+\index{MCTF@{MCTF}!filter@{filter}}
+\index{filter@{filter}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily void filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 334 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a627b85715167089df19dc6ab17cb0277_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a627b85715167089df19dc6ab17cb0277_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a641b80264b916e49d6ef5e50434e3fa0}\label{classvvenc_1_1MCTF_a641b80264b916e49d6ef5e50434e3fa0}} 
+\index{MCTF@{MCTF}!getCurDelay@{getCurDelay}}
+\index{getCurDelay@{getCurDelay}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{getCurDelay()}{getCurDelay()}}
+{\footnotesize\ttfamily int get\+Cur\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file M\+C\+T\+F.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a641b80264b916e49d6ef5e50434e3fa0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a6d2809599ede67fd3367cc1d5247935e}\label{classvvenc_1_1MCTF_a6d2809599ede67fd3367cc1d5247935e}} 
+\index{MCTF@{MCTF}!getNumLeadFrames@{getNumLeadFrames}}
+\index{getNumLeadFrames@{getNumLeadFrames}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{getNumLeadFrames()}{getNumLeadFrames()}}
+{\footnotesize\ttfamily int get\+Num\+Lead\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 140 of file M\+C\+T\+F.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a6d2809599ede67fd3367cc1d5247935e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ab53e076c69aba7531b82cd7b484549de}\label{classvvenc_1_1MCTF_ab53e076c69aba7531b82cd7b484549de}} 
+\index{MCTF@{MCTF}!getNumTrailFrames@{getNumTrailFrames}}
+\index{getNumTrailFrames@{getNumTrailFrames}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{getNumTrailFrames()}{getNumTrailFrames()}}
+{\footnotesize\ttfamily int get\+Num\+Trail\+Frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file M\+C\+T\+F.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ab53e076c69aba7531b82cd7b484549de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a7213f20a4859dd96dc0487c55b7b2e7e}\label{classvvenc_1_1MCTF_a7213f20a4859dd96dc0487c55b7b2e7e}} 
+\index{MCTF@{MCTF}!init@{init}}
+\index{init@{init}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const int}]{internal\+Bit\+Depth\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]},  }\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{const int}]{ctu\+Size,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{input\+Chroma,  }\item[{const int}]{qp,  }\item[{const vvenc\+M\+C\+TF}]{M\+C\+T\+F\+Cfg,  }\item[{const int}]{frames\+To\+Be\+Encoded,  }\item[{\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$}]{thread\+Pool }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file M\+C\+T\+F.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a7213f20a4859dd96dc0487c55b7b2e7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ac83663aa054db70e92a701a274139c15}\label{classvvenc_1_1MCTF_ac83663aa054db70e92a701a274139c15}} 
+\index{MCTF@{MCTF}!motionErrorLuma@{motionErrorLuma}}
+\index{motionErrorLuma@{motionErrorLuma}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{motionErrorLuma()}{motionErrorLuma()}}
+{\footnotesize\ttfamily int motion\+Error\+Luma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{orig,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{buffer,  }\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{int}]{dx,  }\item[{int}]{dy,  }\item[{const int}]{bs,  }\item[{const int}]{besterror = {\ttfamily 8~$\ast$~8~$\ast$~1024~$\ast$~1024} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 493 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classvvenc_1_1MCTF_ac83663aa054db70e92a701a274139c15_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_ac83663aa054db70e92a701a274139c15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a371642e309d32bae11fc210f5df1bb4d}\label{classvvenc_1_1MCTF_a371642e309d32bae11fc210f5df1bb4d}} 
+\index{MCTF@{MCTF}!motionEstimationLuma@{motionEstimationLuma}}
+\index{motionEstimationLuma@{motionEstimationLuma}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{motionEstimationLuma()}{motionEstimationLuma()}}
+{\footnotesize\ttfamily void motion\+Estimation\+Luma (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ \&}]{mvs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{orig,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{buffer,  }\item[{const int}]{bs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Array2D}{Array2D}}$<$ \mbox{\hyperlink{structvvenc_1_1MotionVector}{Motion\+Vector}} $>$ $\ast$}]{previous = {\ttfamily 0},  }\item[{const int}]{factor = {\ttfamily 1},  }\item[{const bool}]{double\+Res = {\ttfamily false} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 625 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a371642e309d32bae11fc210f5df1bb4d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a371642e309d32bae11fc210f5df1bb4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_af3951f6c749a1b891251c81b28d1f636}\label{classvvenc_1_1MCTF_af3951f6c749a1b891251c81b28d1f636}} 
+\index{MCTF@{MCTF}!subsampleLuma@{subsampleLuma}}
+\index{subsampleLuma@{subsampleLuma}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{subsampleLuma()}{subsampleLuma()}}
+{\footnotesize\ttfamily void subsample\+Luma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{input,  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{output,  }\item[{const int}]{factor = {\ttfamily 2} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 466 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af3951f6c749a1b891251c81b28d1f636_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_af3951f6c749a1b891251c81b28d1f636_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_afa90a5c5c3718da584a64351bf5a8876}\label{classvvenc_1_1MCTF_afa90a5c5c3718da584a64351bf5a8876}} 
+\index{MCTF@{MCTF}!uninit@{uninit}}
+\index{uninit@{uninit}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{uninit()}{uninit()}}
+{\footnotesize\ttfamily void uninit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 206 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_afa90a5c5c3718da584a64351bf5a8876_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_afa90a5c5c3718da584a64351bf5a8876_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a793a6eda5f98109cda6a7ca3016bdc6b}\label{classvvenc_1_1MCTF_a793a6eda5f98109cda6a7ca3016bdc6b}} 
+\index{MCTF@{MCTF}!xFinalizeBlkLine@{xFinalizeBlkLine}}
+\index{xFinalizeBlkLine@{xFinalizeBlkLine}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{xFinalizeBlkLine()}{xFinalizeBlkLine()}}
+{\footnotesize\ttfamily void x\+Finalize\+Blk\+Line (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{org\+Pic,  }\item[{const std\+::deque$<$ \mbox{\hyperlink{structvvenc_1_1TemporalFilterSourcePicInfo}{Temporal\+Filter\+Source\+Pic\+Info}} $>$ \&}]{src\+Frame\+Info,  }\item[{\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \&}]{new\+Org\+Pic,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $>$ \&}]{corrected\+Pics,  }\item[{int}]{y\+Start,  }\item[{const double}]{sigma\+Sq\+Ch\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]},  }\item[{const std\+::vector$<$ double $>$}]{ref\+Strength\+Ch\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 765 of file M\+C\+T\+F.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a793a6eda5f98109cda6a7ca3016bdc6b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1MCTF_a793a6eda5f98109cda6a7ca3016bdc6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a490b185944244970274ebd5158000d73}\label{classvvenc_1_1MCTF_a490b185944244970274ebd5158000d73}} 
+\index{MCTF@{MCTF}!m\_area@{m\_area}}
+\index{m\_area@{m\_area}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_area}{m\_area}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Area}{Area}} m\+\_\+area\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 180 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ae4e49f46b6f29f10360dc90a8a9e8596}\label{classvvenc_1_1MCTF_ae4e49f46b6f29f10360dc90a8a9e8596}} 
+\index{MCTF@{MCTF}!m\_chromaFactor@{m\_chromaFactor}}
+\index{m\_chromaFactor@{m\_chromaFactor}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_chromaFactor}{m\_chromaFactor}}
+{\footnotesize\ttfamily const double m\+\_\+chroma\+Factor = 0.\+55\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 163 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ae4e901226ba4f0e08e82ecfe898efe75}\label{classvvenc_1_1MCTF_ae4e901226ba4f0e08e82ecfe898efe75}} 
+\index{MCTF@{MCTF}!m\_chromaFormatIDC@{m\_chromaFormatIDC}}
+\index{m\_chromaFormatIDC@{m\_chromaFormatIDC}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_chromaFormatIDC}{m\_chromaFormatIDC}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} m\+\_\+chroma\+Format\+I\+DC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 176 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_af20955a543248d88bbed4c62c6db3226}\label{classvvenc_1_1MCTF_af20955a543248d88bbed4c62c6db3226}} 
+\index{MCTF@{MCTF}!m\_ctuSize@{m\_ctuSize}}
+\index{m\_ctuSize@{m\_ctuSize}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_ctuSize}{m\_ctuSize}}
+{\footnotesize\ttfamily int m\+\_\+ctu\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 181 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a58dad08f3ff7ce4c5e4047ab18b434c6}\label{classvvenc_1_1MCTF_a58dad08f3ff7ce4c5e4047ab18b434c6}} 
+\index{MCTF@{MCTF}!m\_cur\_delay@{m\_cur\_delay}}
+\index{m\_cur\_delay@{m\_cur\_delay}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_cur\_delay}{m\_cur\_delay}}
+{\footnotesize\ttfamily int m\+\_\+cur\+\_\+delay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 174 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a230abfcb735bb862757f54fe04f35061}\label{classvvenc_1_1MCTF_a230abfcb735bb862757f54fe04f35061}} 
+\index{MCTF@{MCTF}!m\_FilterFrames@{m\_FilterFrames}}
+\index{m\_FilterFrames@{m\_FilterFrames}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_FilterFrames}{m\_FilterFrames}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ m\+\_\+\+Filter\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 178 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_af154a2742eb9060bb28dada5c8303f11}\label{classvvenc_1_1MCTF_af154a2742eb9060bb28dada5c8303f11}} 
+\index{MCTF@{MCTF}!m\_filterFutureReference@{m\_filterFutureReference}}
+\index{m\_filterFutureReference@{m\_filterFutureReference}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_filterFutureReference}{m\_filterFutureReference}}
+{\footnotesize\ttfamily bool m\+\_\+filter\+Future\+Reference\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 182 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a915e6e603e0608ecd783cfeb0bb974a4}\label{classvvenc_1_1MCTF_a915e6e603e0608ecd783cfeb0bb974a4}} 
+\index{MCTF@{MCTF}!m\_FilterStrengths@{m\_FilterStrengths}}
+\index{m\_FilterStrengths@{m\_FilterStrengths}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_FilterStrengths}{m\_FilterStrengths}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ m\+\_\+\+Filter\+Strengths\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 179 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_afa8db2033c7752d49bc1b69a2bfcb6d0}\label{classvvenc_1_1MCTF_afa8db2033c7752d49bc1b69a2bfcb6d0}} 
+\index{MCTF@{MCTF}!m\_framesToBeEncoded@{m\_framesToBeEncoded}}
+\index{m\_framesToBeEncoded@{m\_framesToBeEncoded}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_framesToBeEncoded}{m\_framesToBeEncoded}}
+{\footnotesize\ttfamily int m\+\_\+frames\+To\+Be\+Encoded\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 186 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a7f5ec644cafbd3de5f5898d8483daf1b}\label{classvvenc_1_1MCTF_a7f5ec644cafbd3de5f5898d8483daf1b}} 
+\index{MCTF@{MCTF}!m\_input\_cnt@{m\_input\_cnt}}
+\index{m\_input\_cnt@{m\_input\_cnt}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_input\_cnt}{m\_input\_cnt}}
+{\footnotesize\ttfamily int64\+\_\+t m\+\_\+input\+\_\+cnt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 173 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a5999b17d711af31dc313e20ce92db3f2}\label{classvvenc_1_1MCTF_a5999b17d711af31dc313e20ce92db3f2}} 
+\index{MCTF@{MCTF}!m\_internalBitDepth@{m\_internalBitDepth}}
+\index{m\_internalBitDepth@{m\_internalBitDepth}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_internalBitDepth}{m\_internalBitDepth}}
+{\footnotesize\ttfamily int m\+\_\+internal\+Bit\+Depth\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 175 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ab43d9152ef9024cd2f9e954631f5ca66}\label{classvvenc_1_1MCTF_ab43d9152ef9024cd2f9e954631f5ca66}} 
+\index{MCTF@{MCTF}!m\_interpolationFilter@{m\_interpolationFilter}}
+\index{m\_interpolationFilter@{m\_interpolationFilter}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_interpolationFilter}{m\_interpolationFilter}}
+{\footnotesize\ttfamily const int16\+\_\+t m\+\_\+interpolation\+Filter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{   0,   0,   0,  64,   0,   0,   0,   0 \},   }
+\DoxyCodeLine{  \{   0,   1,  -\/3,  64,   4,  -\/2,   0,   0 \},   }
+\DoxyCodeLine{  \{   0,   1,  -\/6,  62,   9,  -\/3,   1,   0 \},   }
+\DoxyCodeLine{  \{   0,   2,  -\/8,  60,  14,  -\/5,   1,   0 \},   }
+\DoxyCodeLine{  \{   0,   2,  -\/9,  57,  19,  -\/7,   2,   0 \},   }
+\DoxyCodeLine{  \{   0,   3, -\/10,  53,  24,  -\/8,   2,   0 \},   }
+\DoxyCodeLine{  \{   0,   3, -\/11,  50,  29,  -\/9,   2,   0 \},   }
+\DoxyCodeLine{  \{   0,   3, -\/11,  44,  35, -\/10,   3,   0 \},   }
+\DoxyCodeLine{  \{   0,   1,  -\/7,  38,  38,  -\/7,   1,   0 \},   }
+\DoxyCodeLine{  \{   0,   3, -\/10,  35,  44, -\/11,   3,   0 \},   }
+\DoxyCodeLine{  \{   0,   2,  -\/9,  29,  50, -\/11,   3,   0 \},   }
+\DoxyCodeLine{  \{   0,   2,  -\/8,  24,  53, -\/10,   3,   0 \},   }
+\DoxyCodeLine{  \{   0,   2,  -\/7,  19,  57,  -\/9,   2,   0 \},   }
+\DoxyCodeLine{  \{   0,   1,  -\/5,  14,  60,  -\/8,   2,   0 \},   }
+\DoxyCodeLine{  \{   0,   1,  -\/3,   9,  62,  -\/6,   1,   0 \},   }
+\DoxyCodeLine{  \{   0,   0,  -\/2,   4,  64,  -\/3,   1,   0 \}    }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 169 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ab421524a9e457285de034591cca98774}\label{classvvenc_1_1MCTF_ab421524a9e457285de034591cca98774}} 
+\index{MCTF@{MCTF}!m\_leadFifo@{m\_leadFifo}}
+\index{m\_leadFifo@{m\_leadFifo}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_leadFifo}{m\_leadFifo}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$$>$ m\+\_\+lead\+Fifo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 191 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ae5e7827161d48ccaed5ccd98bd6fab55}\label{classvvenc_1_1MCTF_ae5e7827161d48ccaed5ccd98bd6fab55}} 
+\index{MCTF@{MCTF}!m\_MCTFMode@{m\_MCTFMode}}
+\index{m\_MCTFMode@{m\_MCTFMode}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_MCTFMode}{m\_MCTFMode}}
+{\footnotesize\ttfamily int m\+\_\+\+M\+C\+T\+F\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 183 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_abf22b07349edfde457482d2e794ca109}\label{classvvenc_1_1MCTF_abf22b07349edfde457482d2e794ca109}} 
+\index{MCTF@{MCTF}!m\_MCTFSpeedVal@{m\_MCTFSpeedVal}}
+\index{m\_MCTFSpeedVal@{m\_MCTFSpeedVal}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_MCTFSpeedVal}{m\_MCTFSpeedVal}}
+{\footnotesize\ttfamily int m\+\_\+\+M\+C\+T\+F\+Speed\+Val\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 187 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a29094cd861e3f28a5f656ba95d38af14}\label{classvvenc_1_1MCTF_a29094cd861e3f28a5f656ba95d38af14}} 
+\index{MCTF@{MCTF}!m\_motionErrorLumaFrac8@{m\_motionErrorLumaFrac8}}
+\index{m\_motionErrorLumaFrac8@{m\_motionErrorLumaFrac8}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_motionErrorLumaFrac8}{m\_motionErrorLumaFrac8}}
+{\footnotesize\ttfamily int( $\ast$ m\+\_\+motion\+Error\+Luma\+Frac8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int16\+\_\+t $\ast$x\+Filter, const int16\+\_\+t $\ast$y\+Filter, const int bit\+Depth, const int besterror)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 159 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ab28c1f1d2e060e75f040a4afbf0e9d44}\label{classvvenc_1_1MCTF_ab28c1f1d2e060e75f040a4afbf0e9d44}} 
+\index{MCTF@{MCTF}!m\_motionErrorLumaFracX@{m\_motionErrorLumaFracX}}
+\index{m\_motionErrorLumaFracX@{m\_motionErrorLumaFracX}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_motionErrorLumaFracX}{m\_motionErrorLumaFracX}}
+{\footnotesize\ttfamily int( $\ast$ m\+\_\+motion\+Error\+Luma\+FracX(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int16\+\_\+t $\ast$x\+Filter, const int16\+\_\+t $\ast$y\+Filter, const int bit\+Depth, const int besterror)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 158 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a57e427d0bf5446143d76315920313358}\label{classvvenc_1_1MCTF_a57e427d0bf5446143d76315920313358}} 
+\index{MCTF@{MCTF}!m\_motionErrorLumaInt8@{m\_motionErrorLumaInt8}}
+\index{m\_motionErrorLumaInt8@{m\_motionErrorLumaInt8}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_motionErrorLumaInt8}{m\_motionErrorLumaInt8}}
+{\footnotesize\ttfamily int( $\ast$ m\+\_\+motion\+Error\+Luma\+Int8(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int besterror)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 156 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a195ae472b1a6cd809755bbbd9e27d28f}\label{classvvenc_1_1MCTF_a195ae472b1a6cd809755bbbd9e27d28f}} 
+\index{MCTF@{MCTF}!m\_motionErrorLumaIntX@{m\_motionErrorLumaIntX}}
+\index{m\_motionErrorLumaIntX@{m\_motionErrorLumaIntX}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_motionErrorLumaIntX}{m\_motionErrorLumaIntX}}
+{\footnotesize\ttfamily int( $\ast$ m\+\_\+motion\+Error\+Luma\+IntX(const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$orig\+Origin, const ptrdiff\+\_\+t orig\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$buff\+Origin, const ptrdiff\+\_\+t buff\+Stride, const int bs, const int x, const int y, const int dx, const int dy, const int besterror)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a0130c6b6d19a620072504aa157a7b962}\label{classvvenc_1_1MCTF_a0130c6b6d19a620072504aa157a7b962}} 
+\index{MCTF@{MCTF}!m\_motionVectorFactor@{m\_motionVectorFactor}}
+\index{m\_motionVectorFactor@{m\_motionVectorFactor}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_motionVectorFactor}{m\_motionVectorFactor}}
+{\footnotesize\ttfamily const int m\+\_\+motion\+Vector\+Factor = 16\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 167 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_ae63681f532d4b1716d7b2aaa16b17a01}\label{classvvenc_1_1MCTF_ae63681f532d4b1716d7b2aaa16b17a01}} 
+\index{MCTF@{MCTF}!m\_numLeadFrames@{m\_numLeadFrames}}
+\index{m\_numLeadFrames@{m\_numLeadFrames}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_numLeadFrames}{m\_numLeadFrames}}
+{\footnotesize\ttfamily int m\+\_\+num\+Lead\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 184 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_abbb3738f38ba8ec66216a0710ae131f2}\label{classvvenc_1_1MCTF_abbb3738f38ba8ec66216a0710ae131f2}} 
+\index{MCTF@{MCTF}!m\_numTrailFrames@{m\_numTrailFrames}}
+\index{m\_numTrailFrames@{m\_numTrailFrames}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_numTrailFrames}{m\_numTrailFrames}}
+{\footnotesize\ttfamily int m\+\_\+num\+Trail\+Frames\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 185 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a05cf351b3be6ba0073181b0efa25e336}\label{classvvenc_1_1MCTF_a05cf351b3be6ba0073181b0efa25e336}} 
+\index{MCTF@{MCTF}!m\_padding@{m\_padding}}
+\index{m\_padding@{m\_padding}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_padding}{m\_padding}}
+{\footnotesize\ttfamily const int m\+\_\+padding = \mbox{\hyperlink{namespacevvenc_ae4d3f019e63d80007f7252258f257e8e}{M\+C\+T\+F\+\_\+\+P\+A\+D\+D\+I\+NG}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 168 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a5c2b4ddd5d9271ce05b3ced2848a18b1}\label{classvvenc_1_1MCTF_a5c2b4ddd5d9271ce05b3ced2848a18b1}} 
+\index{MCTF@{MCTF}!m\_picFifo@{m\_picFifo}}
+\index{m\_picFifo@{m\_picFifo}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_picFifo}{m\_picFifo}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$$>$ m\+\_\+pic\+Fifo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 190 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a597ff67e51a721bf31825fae2ab31544}\label{classvvenc_1_1MCTF_a597ff67e51a721bf31825fae2ab31544}} 
+\index{MCTF@{MCTF}!m\_QP@{m\_QP}}
+\index{m\_QP@{m\_QP}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_QP}{m\_QP}}
+{\footnotesize\ttfamily int m\+\_\+\+QP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 177 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a027a0b3305bf41ca03436a0e37493508}\label{classvvenc_1_1MCTF_a027a0b3305bf41ca03436a0e37493508}} 
+\index{MCTF@{MCTF}!m\_range@{m\_range}}
+\index{m\_range@{m\_range}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_range}{m\_range}}
+{\footnotesize\ttfamily const int m\+\_\+range = V\+V\+E\+N\+C\+\_\+\+M\+C\+T\+F\+\_\+\+R\+A\+N\+GE\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 166 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a2bc9d99c7ad650e42116a33d1f8caad0}\label{classvvenc_1_1MCTF_a2bc9d99c7ad650e42116a33d1f8caad0}} 
+\index{MCTF@{MCTF}!m\_refStrengths@{m\_refStrengths}}
+\index{m\_refStrengths@{m\_refStrengths}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_refStrengths}{m\_refStrengths}}
+{\footnotesize\ttfamily const double m\+\_\+ref\+Strengths\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{ }
+\DoxyCodeLine{  }
+\DoxyCodeLine{  \{0.85, 0.60\},  }
+\DoxyCodeLine{  \{1.20, 1.00\},  }
+\DoxyCodeLine{  \{0.30, 0.30\}   }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 170 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a616963f8d2d3d5fac12f839495396a39}\label{classvvenc_1_1MCTF_a616963f8d2d3d5fac12f839495396a39}} 
+\index{MCTF@{MCTF}!m\_sigmaMultiplier@{m\_sigmaMultiplier}}
+\index{m\_sigmaMultiplier@{m\_sigmaMultiplier}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_sigmaMultiplier}{m\_sigmaMultiplier}}
+{\footnotesize\ttfamily const double m\+\_\+sigma\+Multiplier = 9.\+0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 164 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a26f461b4528d43514119025596cbe371}\label{classvvenc_1_1MCTF_a26f461b4528d43514119025596cbe371}} 
+\index{MCTF@{MCTF}!m\_sigmaZeroPoint@{m\_sigmaZeroPoint}}
+\index{m\_sigmaZeroPoint@{m\_sigmaZeroPoint}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_sigmaZeroPoint}{m\_sigmaZeroPoint}}
+{\footnotesize\ttfamily const double m\+\_\+sigma\+Zero\+Point = 10.\+0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 165 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a554a6e379eb8db3d601ac16590ad3d2e}\label{classvvenc_1_1MCTF_a554a6e379eb8db3d601ac16590ad3d2e}} 
+\index{MCTF@{MCTF}!m\_threadPool@{m\_threadPool}}
+\index{m\_threadPool@{m\_threadPool}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_threadPool}{m\_threadPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}}$\ast$ m\+\_\+thread\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 188 of file M\+C\+T\+F.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1MCTF_a36c54393bec88db7437608dd68bf5e91}\label{classvvenc_1_1MCTF_a36c54393bec88db7437608dd68bf5e91}} 
+\index{MCTF@{MCTF}!m\_trailFifo@{m\_trailFifo}}
+\index{m\_trailFifo@{m\_trailFifo}!MCTF@{MCTF}}
+\doxysubsubsection{\texorpdfstring{m\_trailFifo}{m\_trailFifo}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}}$\ast$$>$ m\+\_\+trail\+Fifo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 192 of file M\+C\+T\+F.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MCTF_8h}{M\+C\+T\+F.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{MCTF_8cpp}{M\+C\+T\+F.\+cpp}}\end{DoxyCompactItemize}

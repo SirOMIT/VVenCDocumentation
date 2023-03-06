@@ -1,0 +1,1052 @@
+\hypertarget{classvvenc_1_1AdaptiveLoopFilter}{}\doxysection{Adaptive\+Loop\+Filter}
+\label{classvvenc_1_1AdaptiveLoopFilter}\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+
+
+{\ttfamily \#include \char`\"{}Adaptive\+Loop\+Filter.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Adaptive\+Loop\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classvvenc_1_1AdaptiveLoopFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adaptive\+Loop\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8d09b38a88b7c8eab10c323debfcd991}{Adaptive\+Loop\+Filter}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ac99f3b3e8ac3b74ae0ec209ce7e6d141}{$\sim$\+Adaptive\+Loop\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aad77a81e931e11b77f93aca0626ab947}{A\+L\+F\+Process}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a516cb3453fdadcc72b7aeb682ab11d53}{apply\+Cc\+Alf\+Filter}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&dst\+Buf, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Yuv\+Ext, uint8\+\_\+t $\ast$filter\+Control, const short filter\+Set\mbox{[}\mbox{\hyperlink{namespacevvenc_a3557bb82ef229e96a0eb842c612448ce}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ac309d4fd2e2aa515de27d8bfc75c3bfa}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}, const int selected\+Filter\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a25831a939472002aed5c2b5aff789393}{create}} (const int pic\+Width, const int pic\+Height, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} format, const int max\+C\+U\+Width, const int max\+C\+U\+Height, const int max\+C\+U\+Depth, const int input\+Bit\+Depth\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_afc75291fba53d4fdfdc32c02a0a2db45}{derive\+Classification}} (\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&src\+Luma, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_af06516a944edb638618f51959479d479}{get\+Cc\+Alf\+Control\+Idc}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+\mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}} \& \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aa5875568886f9e63999ec52ebcb5a5b4}{get\+Cc\+Alf\+Filter\+Param}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a34c79fad02704e0915b7fceb2d00eacc}{reconstruct\+Coeff}} (\mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}} \&alf\+Param, \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} channel, const bool is\+Rdo, const bool is\+Redo=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a6830c6e696751b1b5f088f9acb9bfcfb}{reconstruct\+Coeff\+A\+P\+Ss}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, bool luma, bool chroma, bool is\+Rdo)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a58948d63481d64a0e7b51ccace6a8ec5}{clip\+A\+LF}} (const int clip, const int val0, const int val1)
+\item 
+static int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a97787fa838cd927be9ad7bd2f4a8abd6}{clip\+A\+LF}} (const int clip, const short ref, const short val0, const short val1)
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a02c3d3a8dcfe22d04488816e9c76c50e}{derive\+Classification\+Blk}} (\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&src\+Luma, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const int shift, const int vb\+C\+T\+U\+Height, int vb\+Pos)
+\item 
+{\footnotesize template$<$Alf\+Filter\+Type filt\+Type$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a9327bdbbfeac801b3ea63399acd17656}{filter\+Blk}} (const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Dst, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const short $\ast$filter\+Set, const short $\ast$f\+Clip\+Set, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int vb\+C\+T\+U\+Height, int vb\+Pos)
+\item 
+{\footnotesize template$<$Alf\+Filter\+Type filt\+Type\+Cc\+Alf$>$ }\\static void \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_af8e0077e911add2fd94ccd1c90356d79}{filter\+Blk\+Cc\+Alf}} (const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&dst\+Buf, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Src, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const int16\+\_\+t $\ast$filter\+Coeff, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, int vb\+C\+T\+U\+Height, int vb\+Pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a64c3854383730553709394e10cdd4fbe}{m\+\_\+cc\+Alf\+Filter\+Control}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}} \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a28f9c1f016ebe04344cb4d82eccc1ec1}{m\+\_\+cc\+Alf\+Filter\+Param}}
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aa8606d3341c775e45ba642a34304153d}{m\+\_\+derive\+Classification\+Blk}} )(\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&src\+Luma, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const int shift, const int vb\+C\+T\+U\+Height, int vb\+Pos)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ad00857ab436d284b35116be56ed07047}{m\+\_\+filter5x5\+Blk}} \mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Dst, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const short $\ast$filter\+Set, const short $\ast$f\+Clip\+Set, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int vb\+C\+T\+U\+Height, int vb\+Pos)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a70b0f41c6d07d523440f7fa8bcb97d3a}{m\+\_\+filter7x7\+Blk}} \mbox{[}2\mbox{]})(const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Dst, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const short $\ast$filter\+Set, const short $\ast$f\+Clip\+Set, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int vb\+C\+T\+U\+Height, int vb\+Pos)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a62e9abb86053db47a49d9764d4bea030}{m\+\_\+filter\+Cc\+Alf}} )(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&dst\+Buf, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Src, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const int16\+\_\+t $\ast$filter\+Coeff, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, int vb\+C\+T\+U\+Height, int vb\+Pos)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a7a73fe65e0db8104778e2e3c31d45113}{Alf\+Num\+Clipping\+Values}} = 4
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ab895f3c0ad889ee603b06635261cc2dc}{m\+\_\+\+A\+L\+F\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+C\+L\+A\+S\+S\+I\+DX}} = 255
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a13474806acdd9d1297c3fd7baddae07f}{m\+\_\+\+A\+L\+F\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+T\+R\+A\+N\+S\+P\+O\+S\+I\+DX}} = 255
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a0832a79319dce1d185e220bd841c7ad2}{m\+\_\+\+C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+B\+L\+K\+\_\+\+S\+I\+ZE}} = 128
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a14e1af9f636f437eeb23e10d274dacee}{m\+\_\+\+N\+U\+M\+\_\+\+B\+I\+TS}} = 8
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a053337a52d97fc3a785420b2318467e7}{m\+\_\+scale\+Bits}} = 7
+\item 
+static constexpr int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8b28dce56579ef7801e4fa54b26fbb31}{Max\+Alf\+Num\+Clipping\+Values}} = 4
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a97c2a2eacbacf1df48628879ecf52c0c}{is\+Crossed\+By\+Virtual\+Boundaries}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int x\+Pos, const int y\+Pos, const int width, const int height, bool \&clip\+Top, bool \&clip\+Bottom, bool \&clip\+Left, bool \&clip\+Right, int \&num\+Hor\+Vir\+Bndry, int \&num\+Ver\+Vir\+Bndry, int hor\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]}, int ver\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]}, int \&raster\+Slice\+Alf\+Pad)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a4cfb8c46e6ec91967428339b2b05fbc1}{m\+\_\+alf\+Clipping\+Values}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\mbox{[}\mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8b28dce56579ef7801e4fa54b26fbb31}{Max\+Alf\+Num\+Clipping\+Values}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}} $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8da705b7445379091360ec88a5dc4eda}{m\+\_\+alf\+Param\+Chroma}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_afd5de791f245eacd2cd8f948b9331052}{m\+\_\+alf\+V\+B\+Chma\+C\+T\+U\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8ea076f041b154d2c7af9a961e0acada}{m\+\_\+alf\+V\+B\+Chma\+Pos}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a2311bcaa698b5c73d77cd3774dafe251}{m\+\_\+alf\+V\+B\+Luma\+C\+T\+U\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a53717fb4e91a5849d9de1ad1e61def7a}{m\+\_\+alf\+V\+B\+Luma\+Pos}}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ae220f0dee6d5a9b53ba6bb82183ec0cc}{m\+\_\+chroma\+Clipp\+Final}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+S\+\_\+\+C\+H\+R\+O\+MA\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a42ae09501cafa79afd8a81bd6d6ad181}{m\+\_\+chroma\+Coeff\+Final}} \mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+S\+\_\+\+C\+H\+R\+O\+MA\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a7846ec507da14d9979ce8fabcfe169d4}{m\+\_\+chroma\+Format}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aaa47cac63d999790620c4ab6acdcba84}{m\+\_\+classifier}}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a9ae5a67ded26c5b1cafedf7cdd2273b9}{m\+\_\+clip\+Default}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aacf81fc361d2bf027d42c24a36937d62}{m\+\_\+clipp\+Aps\+Luma}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}} $\ast$\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}}\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a799adef0be9184aa9a5149933efb1473}{m\+\_\+clipp\+Final}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a12cd94ad5e878f282c49d93ac0caeb19}{m\+\_\+coeff\+Aps\+Luma}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}} $\ast$\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}}\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ab0ae199504e8dbba4143212946bc251a}{m\+\_\+coeff\+Final}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a850cf50dcc2c590b6c1ebb6d927fb41e}{m\+\_\+created}} = false
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_abf23ea6b3ac649d4ded311ca2c5c529f}{m\+\_\+ctu\+Alternative}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_af973f08e87262babc973d73df497b854}{m\+\_\+ctu\+Enable\+Flag}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} $>$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ae4a7ea3a2cbc7d15205d968e84319a8a}{m\+\_\+filter\+Shapes}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}} $>$ \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_adc689226a2a3eb1046a0656ab2f286dc}{m\+\_\+filter\+Shapes\+Cc\+Alf}} \mbox{[}2\mbox{]}
+\item 
+short \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a7756fda8dffbcdc169bf8de1f23bb958}{m\+\_\+fixed\+Filter\+Set\+Coeff\+Dec}} \mbox{[}\mbox{\hyperlink{namespacevvenc_aa2eb75d7913b478fd2b70f96be80d460}{N\+U\+M\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a481468ed3c1ad38a7d5ed083ee89c337}{m\+\_\+input\+Bit\+Depth}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a0fd15213a8a92c2bdf447f7b410f931b}{m\+\_\+max\+C\+U\+Depth}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a776dd979e7f974d302201c1d852b475e}{m\+\_\+max\+C\+U\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a03f59e2b638cb9eeb072d77c2a582758}{m\+\_\+max\+C\+U\+Width}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a66fa1c21ff24d6fcfac2971c4c2223e1}{m\+\_\+num\+C\+T\+Us\+In\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a7728865466e9cb95e7612db9fc9c3f25}{m\+\_\+num\+C\+T\+Us\+In\+Pic}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_af39ec88b270a98538982a9c932467cd9}{m\+\_\+num\+C\+T\+Us\+In\+Width}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ad1c7f202d77e740d3203bec378bfc8ae}{m\+\_\+pic\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_aee92058ce5fafb53a0dfc94181913ce7}{m\+\_\+pic\+Width}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a034410ef3daf52900cc3f4604a89bad4}{m\+\_\+temp\+Buf}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a582b7cf3223f0c58efff6b2dae60a8bc}{m\+\_\+temp\+Buf2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_ac7dd92e50d61488c5d0a0bff6f0c7f02}{m\+\_\+class\+To\+Filter\+Mapping}} \mbox{[}\mbox{\hyperlink{namespacevvenc_aa2eb75d7913b478fd2b70f96be80d460}{N\+U\+M\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}}\mbox{]}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a9afb4f972e2e4929760e74118d739cbc}{m\+\_\+fixed\+Filter\+Set\+Coeff}} \mbox{[}\mbox{\hyperlink{namespacevvenc_ac23f3ed25480f1dbeca25b25690e8d62}{A\+L\+F\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+N\+UM}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 83 of file Adaptive\+Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a8d09b38a88b7c8eab10c323debfcd991}\label{classvvenc_1_1AdaptiveLoopFilter_a8d09b38a88b7c8eab10c323debfcd991}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{AdaptiveLoopFilter()}{AdaptiveLoopFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter}{Adaptive\+Loop\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a8d09b38a88b7c8eab10c323debfcd991_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ac99f3b3e8ac3b74ae0ec209ce7e6d141}\label{classvvenc_1_1AdaptiveLoopFilter_ac99f3b3e8ac3b74ae0ec209ce7e6d141}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!````~AdaptiveLoopFilter@{$\sim$AdaptiveLoopFilter}}
+\index{````~AdaptiveLoopFilter@{$\sim$AdaptiveLoopFilter}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{$\sim$AdaptiveLoopFilter()}{~AdaptiveLoopFilter()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter}{Adaptive\+Loop\+Filter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 104 of file Adaptive\+Loop\+Filter.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aad77a81e931e11b77f93aca0626ab947}\label{classvvenc_1_1AdaptiveLoopFilter_aad77a81e931e11b77f93aca0626ab947}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!ALFProcess@{ALFProcess}}
+\index{ALFProcess@{ALFProcess}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{ALFProcess()}{ALFProcess()}}
+{\footnotesize\ttfamily void A\+L\+F\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_aad77a81e931e11b77f93aca0626ab947_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_aad77a81e931e11b77f93aca0626ab947_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a516cb3453fdadcc72b7aeb682ab11d53}\label{classvvenc_1_1AdaptiveLoopFilter_a516cb3453fdadcc72b7aeb682ab11d53}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!applyCcAlfFilter@{applyCcAlfFilter}}
+\index{applyCcAlfFilter@{applyCcAlfFilter}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{applyCcAlfFilter()}{applyCcAlfFilter()}}
+{\footnotesize\ttfamily void apply\+Cc\+Alf\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{dst\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{rec\+Yuv\+Ext,  }\item[{uint8\+\_\+t $\ast$}]{filter\+Control,  }\item[{const short}]{filter\+Set\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+F\+I\+L\+T\+E\+R\+S\mbox{]}\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+C\+\_\+\+A\+L\+F\+\_\+\+C\+H\+R\+O\+M\+A\+\_\+\+C\+O\+E\+F\+F\mbox{]},  }\item[{const int}]{selected\+Filter\+Idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 312 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a516cb3453fdadcc72b7aeb682ab11d53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a516cb3453fdadcc72b7aeb682ab11d53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a58948d63481d64a0e7b51ccace6a8ec5}\label{classvvenc_1_1AdaptiveLoopFilter_a58948d63481d64a0e7b51ccace6a8ec5}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!clipALF@{clipALF}}
+\index{clipALF@{clipALF}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{clipALF()}{clipALF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int clip\+A\+LF (\begin{DoxyParamCaption}\item[{const int}]{clip,  }\item[{const int}]{val0,  }\item[{const int}]{val1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 91 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a97787fa838cd927be9ad7bd2f4a8abd6}\label{classvvenc_1_1AdaptiveLoopFilter_a97787fa838cd927be9ad7bd2f4a8abd6}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!clipALF@{clipALF}}
+\index{clipALF@{clipALF}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{clipALF()}{clipALF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int clip\+A\+LF (\begin{DoxyParamCaption}\item[{const int}]{clip,  }\item[{const short}]{ref,  }\item[{const short}]{val0,  }\item[{const short}]{val1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 86 of file Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a97787fa838cd927be9ad7bd2f4a8abd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a25831a939472002aed5c2b5aff789393}\label{classvvenc_1_1AdaptiveLoopFilter_a25831a939472002aed5c2b5aff789393}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!create@{create}}
+\index{create@{create}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{const int}]{pic\+Width,  }\item[{const int}]{pic\+Height,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{format,  }\item[{const int}]{max\+C\+U\+Width,  }\item[{const int}]{max\+C\+U\+Height,  }\item[{const int}]{max\+C\+U\+Depth,  }\item[{const int}]{input\+Bit\+Depth\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+H\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 723 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classvvenc_1_1AdaptiveLoopFilter_a25831a939472002aed5c2b5aff789393_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a25831a939472002aed5c2b5aff789393_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_afc75291fba53d4fdfdc32c02a0a2db45}\label{classvvenc_1_1AdaptiveLoopFilter_afc75291fba53d4fdfdc32c02a0a2db45}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!deriveClassification@{deriveClassification}}
+\index{deriveClassification@{deriveClassification}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{deriveClassification()}{deriveClassification()}}
+{\footnotesize\ttfamily void derive\+Classification (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$}]{classifier,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{src\+Luma,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk\+Dst,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk }\end{DoxyParamCaption})}
+
+
+
+Definition at line 838 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classvvenc_1_1AdaptiveLoopFilter_afc75291fba53d4fdfdc32c02a0a2db45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_afc75291fba53d4fdfdc32c02a0a2db45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a02c3d3a8dcfe22d04488816e9c76c50e}\label{classvvenc_1_1AdaptiveLoopFilter_a02c3d3a8dcfe22d04488816e9c76c50e}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!deriveClassificationBlk@{deriveClassificationBlk}}
+\index{deriveClassificationBlk@{deriveClassificationBlk}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{deriveClassificationBlk()}{deriveClassificationBlk()}}
+{\footnotesize\ttfamily void derive\+Classification\+Blk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$}]{classifier,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{src\+Luma,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk\+Dst,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk,  }\item[{const int}]{shift,  }\item[{const int}]{vb\+C\+T\+U\+Height,  }\item[{int}]{vb\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 857 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classvvenc_1_1AdaptiveLoopFilter_a02c3d3a8dcfe22d04488816e9c76c50e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classvvenc_1_1AdaptiveLoopFilter_a02c3d3a8dcfe22d04488816e9c76c50e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1AdaptiveLoopFilter_a3a80b6032f86a56bec74609034b3246f}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!destroy@{destroy}}
+\index{destroy@{destroy}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 802 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classvvenc_1_1AdaptiveLoopFilter_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a9327bdbbfeac801b3ea63399acd17656}\label{classvvenc_1_1AdaptiveLoopFilter_a9327bdbbfeac801b3ea63399acd17656}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!filterBlk@{filterBlk}}
+\index{filterBlk@{filterBlk}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{filterBlk()}{filterBlk()}}
+{\footnotesize\ttfamily void filter\+Blk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$}]{classifier,  }\item[{const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&}]{rec\+Dst,  }\item[{const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{rec\+Src,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk\+Dst,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id,  }\item[{const short $\ast$}]{filter\+Set,  }\item[{const short $\ast$}]{f\+Clip\+Set,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&}]{clp\+Rng,  }\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const int}]{vb\+C\+T\+U\+Height,  }\item[{int}]{vb\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 1064 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{classvvenc_1_1AdaptiveLoopFilter_a9327bdbbfeac801b3ea63399acd17656_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_af8e0077e911add2fd94ccd1c90356d79}\label{classvvenc_1_1AdaptiveLoopFilter_af8e0077e911add2fd94ccd1c90356d79}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!filterBlkCcAlf@{filterBlkCcAlf}}
+\index{filterBlkCcAlf@{filterBlkCcAlf}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{filterBlkCcAlf()}{filterBlkCcAlf()}}
+{\footnotesize\ttfamily void filter\+Blk\+Cc\+Alf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{dst\+Buf,  }\item[{const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&}]{rec\+Src,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk\+Dst,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{blk\+Src,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id,  }\item[{const int16\+\_\+t $\ast$}]{filter\+Coeff,  }\item[{const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&}]{clp\+Rngs,  }\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{int}]{vb\+C\+T\+U\+Height,  }\item[{int}]{vb\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 1302 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_af8e0077e911add2fd94ccd1c90356d79_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_af06516a944edb638618f51959479d479}\label{classvvenc_1_1AdaptiveLoopFilter_af06516a944edb638618f51959479d479}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!getCcAlfControlIdc@{getCcAlfControlIdc}}
+\index{getCcAlfControlIdc@{getCcAlfControlIdc}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{getCcAlfControlIdc()}{getCcAlfControlIdc()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ get\+Cc\+Alf\+Control\+Idc (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 133 of file Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_af06516a944edb638618f51959479d479_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aa5875568886f9e63999ec52ebcb5a5b4}\label{classvvenc_1_1AdaptiveLoopFilter_aa5875568886f9e63999ec52ebcb5a5b4}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!getCcAlfFilterParam@{getCcAlfFilterParam}}
+\index{getCcAlfFilterParam@{getCcAlfFilterParam}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{getCcAlfFilterParam()}{getCcAlfFilterParam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}}\& get\+Cc\+Alf\+Filter\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 132 of file Adaptive\+Loop\+Filter.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_aa5875568886f9e63999ec52ebcb5a5b4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a97c2a2eacbacf1df48628879ecf52c0c}\label{classvvenc_1_1AdaptiveLoopFilter_a97c2a2eacbacf1df48628879ecf52c0c}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!isCrossedByVirtualBoundaries@{isCrossedByVirtualBoundaries}}
+\index{isCrossedByVirtualBoundaries@{isCrossedByVirtualBoundaries}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{isCrossedByVirtualBoundaries()}{isCrossedByVirtualBoundaries()}}
+{\footnotesize\ttfamily bool is\+Crossed\+By\+Virtual\+Boundaries (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const int}]{x\+Pos,  }\item[{const int}]{y\+Pos,  }\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{bool \&}]{clip\+Top,  }\item[{bool \&}]{clip\+Bottom,  }\item[{bool \&}]{clip\+Left,  }\item[{bool \&}]{clip\+Right,  }\item[{int \&}]{num\+Hor\+Vir\+Bndry,  }\item[{int \&}]{num\+Ver\+Vir\+Bndry,  }\item[{int}]{hor\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]},  }\item[{int}]{ver\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]},  }\item[{int \&}]{raster\+Slice\+Alf\+Pad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 90 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a97c2a2eacbacf1df48628879ecf52c0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a97c2a2eacbacf1df48628879ecf52c0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a34c79fad02704e0915b7fceb2d00eacc}\label{classvvenc_1_1AdaptiveLoopFilter_a34c79fad02704e0915b7fceb2d00eacc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!reconstructCoeff@{reconstructCoeff}}
+\index{reconstructCoeff@{reconstructCoeff}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{reconstructCoeff()}{reconstructCoeff()}}
+{\footnotesize\ttfamily void reconstruct\+Coeff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}} \&}]{alf\+Param,  }\item[{\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{channel,  }\item[{const bool}]{is\+Rdo,  }\item[{const bool}]{is\+Redo = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 667 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{classvvenc_1_1AdaptiveLoopFilter_a34c79fad02704e0915b7fceb2d00eacc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a34c79fad02704e0915b7fceb2d00eacc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a6830c6e696751b1b5f088f9acb9bfcfb}\label{classvvenc_1_1AdaptiveLoopFilter_a6830c6e696751b1b5f088f9acb9bfcfb}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!reconstructCoeffAPSs@{reconstructCoeffAPSs}}
+\index{reconstructCoeffAPSs@{reconstructCoeffAPSs}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{reconstructCoeffAPSs()}{reconstructCoeffAPSs()}}
+{\footnotesize\ttfamily void reconstruct\+Coeff\+A\+P\+Ss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{bool}]{luma,  }\item[{bool}]{chroma,  }\item[{bool}]{is\+Rdo }\end{DoxyParamCaption})}
+
+
+
+Definition at line 636 of file Adaptive\+Loop\+Filter.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a6830c6e696751b1b5f088f9acb9bfcfb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1AdaptiveLoopFilter_a6830c6e696751b1b5f088f9acb9bfcfb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a7a73fe65e0db8104778e2e3c31d45113}\label{classvvenc_1_1AdaptiveLoopFilter_a7a73fe65e0db8104778e2e3c31d45113}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!AlfNumClippingValues@{AlfNumClippingValues}}
+\index{AlfNumClippingValues@{AlfNumClippingValues}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{AlfNumClippingValues}{AlfNumClippingValues}}
+{\footnotesize\ttfamily constexpr int Alf\+Num\+Clipping\+Values = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 96 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ab895f3c0ad889ee603b06635261cc2dc}\label{classvvenc_1_1AdaptiveLoopFilter_ab895f3c0ad889ee603b06635261cc2dc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ALF\_UNUSED\_CLASSIDX@{m\_ALF\_UNUSED\_CLASSIDX}}
+\index{m\_ALF\_UNUSED\_CLASSIDX@{m\_ALF\_UNUSED\_CLASSIDX}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ALF\_UNUSED\_CLASSIDX}{m\_ALF\_UNUSED\_CLASSIDX}}
+{\footnotesize\ttfamily constexpr int m\+\_\+\+A\+L\+F\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+C\+L\+A\+S\+S\+I\+DX = 255\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 100 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a13474806acdd9d1297c3fd7baddae07f}\label{classvvenc_1_1AdaptiveLoopFilter_a13474806acdd9d1297c3fd7baddae07f}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ALF\_UNUSED\_TRANSPOSIDX@{m\_ALF\_UNUSED\_TRANSPOSIDX}}
+\index{m\_ALF\_UNUSED\_TRANSPOSIDX@{m\_ALF\_UNUSED\_TRANSPOSIDX}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ALF\_UNUSED\_TRANSPOSIDX}{m\_ALF\_UNUSED\_TRANSPOSIDX}}
+{\footnotesize\ttfamily constexpr int m\+\_\+\+A\+L\+F\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+T\+R\+A\+N\+S\+P\+O\+S\+I\+DX = 255\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 101 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a4cfb8c46e6ec91967428339b2b05fbc1}\label{classvvenc_1_1AdaptiveLoopFilter_a4cfb8c46e6ec91967428339b2b05fbc1}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfClippingValues@{m\_alfClippingValues}}
+\index{m\_alfClippingValues@{m\_alfClippingValues}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfClippingValues}{m\_alfClippingValues}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} m\+\_\+alf\+Clipping\+Values\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\mbox{[}\mbox{\hyperlink{classvvenc_1_1AdaptiveLoopFilter_a8b28dce56579ef7801e4fa54b26fbb31}{Max\+Alf\+Num\+Clipping\+Values}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 161 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a8da705b7445379091360ec88a5dc4eda}\label{classvvenc_1_1AdaptiveLoopFilter_a8da705b7445379091360ec88a5dc4eda}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfParamChroma@{m\_alfParamChroma}}
+\index{m\_alfParamChroma@{m\_alfParamChroma}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfParamChroma}{m\_alfParamChroma}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}}$\ast$ m\+\_\+alf\+Param\+Chroma\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 160 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_afd5de791f245eacd2cd8f948b9331052}\label{classvvenc_1_1AdaptiveLoopFilter_afd5de791f245eacd2cd8f948b9331052}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfVBChmaCTUHeight@{m\_alfVBChmaCTUHeight}}
+\index{m\_alfVBChmaCTUHeight@{m\_alfVBChmaCTUHeight}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfVBChmaCTUHeight}{m\_alfVBChmaCTUHeight}}
+{\footnotesize\ttfamily int m\+\_\+alf\+V\+B\+Chma\+C\+T\+U\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 184 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a8ea076f041b154d2c7af9a961e0acada}\label{classvvenc_1_1AdaptiveLoopFilter_a8ea076f041b154d2c7af9a961e0acada}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfVBChmaPos@{m\_alfVBChmaPos}}
+\index{m\_alfVBChmaPos@{m\_alfVBChmaPos}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfVBChmaPos}{m\_alfVBChmaPos}}
+{\footnotesize\ttfamily int m\+\_\+alf\+V\+B\+Chma\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 182 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a2311bcaa698b5c73d77cd3774dafe251}\label{classvvenc_1_1AdaptiveLoopFilter_a2311bcaa698b5c73d77cd3774dafe251}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfVBLumaCTUHeight@{m\_alfVBLumaCTUHeight}}
+\index{m\_alfVBLumaCTUHeight@{m\_alfVBLumaCTUHeight}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfVBLumaCTUHeight}{m\_alfVBLumaCTUHeight}}
+{\footnotesize\ttfamily int m\+\_\+alf\+V\+B\+Luma\+C\+T\+U\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 183 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a53717fb4e91a5849d9de1ad1e61def7a}\label{classvvenc_1_1AdaptiveLoopFilter_a53717fb4e91a5849d9de1ad1e61def7a}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_alfVBLumaPos@{m\_alfVBLumaPos}}
+\index{m\_alfVBLumaPos@{m\_alfVBLumaPos}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_alfVBLumaPos}{m\_alfVBLumaPos}}
+{\footnotesize\ttfamily int m\+\_\+alf\+V\+B\+Luma\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 181 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a64c3854383730553709394e10cdd4fbe}\label{classvvenc_1_1AdaptiveLoopFilter_a64c3854383730553709394e10cdd4fbe}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ccAlfFilterControl@{m\_ccAlfFilterControl}}
+\index{m\_ccAlfFilterControl@{m\_ccAlfFilterControl}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ccAlfFilterControl}{m\_ccAlfFilterControl}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ m\+\_\+cc\+Alf\+Filter\+Control\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 190 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a28f9c1f016ebe04344cb4d82eccc1ec1}\label{classvvenc_1_1AdaptiveLoopFilter_a28f9c1f016ebe04344cb4d82eccc1ec1}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ccAlfFilterParam@{m\_ccAlfFilterParam}}
+\index{m\_ccAlfFilterParam@{m\_ccAlfFilterParam}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ccAlfFilterParam}{m\_ccAlfFilterParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CcAlfFilterParam}{Cc\+Alf\+Filter\+Param}} m\+\_\+cc\+Alf\+Filter\+Param}
+
+
+
+Definition at line 189 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ae220f0dee6d5a9b53ba6bb82183ec0cc}\label{classvvenc_1_1AdaptiveLoopFilter_ae220f0dee6d5a9b53ba6bb82183ec0cc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_chromaClippFinal@{m\_chromaClippFinal}}
+\index{m\_chromaClippFinal@{m\_chromaClippFinal}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_chromaClippFinal}{m\_chromaClippFinal}}
+{\footnotesize\ttfamily short m\+\_\+chroma\+Clipp\+Final\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+S\+\_\+\+C\+H\+R\+O\+MA\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 167 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a42ae09501cafa79afd8a81bd6d6ad181}\label{classvvenc_1_1AdaptiveLoopFilter_a42ae09501cafa79afd8a81bd6d6ad181}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_chromaCoeffFinal@{m\_chromaCoeffFinal}}
+\index{m\_chromaCoeffFinal@{m\_chromaCoeffFinal}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_chromaCoeffFinal}{m\_chromaCoeffFinal}}
+{\footnotesize\ttfamily short m\+\_\+chroma\+Coeff\+Final\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+S\+\_\+\+C\+H\+R\+O\+MA\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 159 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a7846ec507da14d9979ce8fabcfe169d4}\label{classvvenc_1_1AdaptiveLoopFilter_a7846ec507da14d9979ce8fabcfe169d4}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_chromaFormat@{m\_chromaFormat}}
+\index{m\_chromaFormat@{m\_chromaFormat}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_chromaFormat}{m\_chromaFormat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} m\+\_\+chroma\+Format\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 185 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a0832a79319dce1d185e220bd841c7ad2}\label{classvvenc_1_1AdaptiveLoopFilter_a0832a79319dce1d185e220bd841c7ad2}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_CLASSIFICATION\_BLK\_SIZE@{m\_CLASSIFICATION\_BLK\_SIZE}}
+\index{m\_CLASSIFICATION\_BLK\_SIZE@{m\_CLASSIFICATION\_BLK\_SIZE}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_CLASSIFICATION\_BLK\_SIZE}{m\_CLASSIFICATION\_BLK\_SIZE}}
+{\footnotesize\ttfamily constexpr int m\+\_\+\+C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+O\+N\+\_\+\+B\+L\+K\+\_\+\+S\+I\+ZE = 128\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 99 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aaa47cac63d999790620c4ab6acdcba84}\label{classvvenc_1_1AdaptiveLoopFilter_aaa47cac63d999790620c4ab6acdcba84}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_classifier@{m\_classifier}}
+\index{m\_classifier@{m\_classifier}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_classifier}{m\_classifier}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}}$\ast$ m\+\_\+classifier\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 164 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ac7dd92e50d61488c5d0a0bff6f0c7f02}\label{classvvenc_1_1AdaptiveLoopFilter_ac7dd92e50d61488c5d0a0bff6f0c7f02}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_classToFilterMapping@{m\_classToFilterMapping}}
+\index{m\_classToFilterMapping@{m\_classToFilterMapping}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_classToFilterMapping}{m\_classToFilterMapping}}
+{\footnotesize\ttfamily const int m\+\_\+class\+To\+Filter\+Mapping\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \{ 8,   2,   2,   2,   3,   4,  53,   9,   9,  52,   4,   4,   5,   9,   2,   8,  10,   9,   1,   3,  39,  39,  10,   9,  52 \},}
+\DoxyCodeLine{  \{ 11,  12,  13,  14,  15,  30,  11,  17,  18,  19,  16,  20,  20,   4,  53,  21,  22,  23,  14,  25,  26,  26,  27,  28,  10 \},}
+\DoxyCodeLine{  \{ 16,  12,  31,  32,  14,  16,  30,  33,  53,  34,  35,  16,  20,   4,   7,  16,  21,  36,  18,  19,  21,  26,  37,  38,  39 \},}
+\DoxyCodeLine{  \{ 35,  11,  13,  14,  43,  35,  16,   4,  34,  62,  35,  35,  30,  56,   7,  35,  21,  38,  24,  40,  16,  21,  48,  57,  39 \},}
+\DoxyCodeLine{  \{ 11,  31,  32,  43,  44,  16,   4,  17,  34,  45,  30,  20,  20,   7,   5,  21,  22,  46,  40,  47,  26,  48,  63,  58,  10 \},}
+\DoxyCodeLine{  \{ 12,  13,  50,  51,  52,  11,  17,  53,  45,   9,  30,   4,  53,  19,   0,  22,  23,  25,  43,  44,  37,  27,  28,  10,  55 \},}
+\DoxyCodeLine{  \{ 30,  33,  62,  51,  44,  20,  41,  56,  34,  45,  20,  41,  41,  56,   5,  30,  56,  38,  40,  47,  11,  37,  42,  57,   8 \},}
+\DoxyCodeLine{  \{ 35,  11,  23,  32,  14,  35,  20,   4,  17,  18,  21,  20,  20,  20,   4,  16,  21,  36,  46,  25,  41,  26,  48,  49,  58 \},}
+\DoxyCodeLine{  \{ 12,  31,  59,  59,   3,  33,  33,  59,  59,  52,   4,  33,  17,  59,  55,  22,  36,  59,  59,  60,  22,  36,  59,  25,  55 \},}
+\DoxyCodeLine{  \{ 31,  25,  15,  60,  60,  22,  17,  19,  55,  55,  20,  20,  53,  19,  55,  22,  46,  25,  43,  60,  37,  28,  10,  55,  52 \},}
+\DoxyCodeLine{  \{ 12,  31,  32,  50,  51,  11,  33,  53,  19,  45,  16,   4,   4,  53,   5,  22,  36,  18,  25,  43,  26,  27,  27,  28,  10 \},}
+\DoxyCodeLine{  \{ 5,   2,  44,  52,   3,   4,  53,  45,   9,   3,   4,  56,   5,   0,   2,   5,  10,  47,  52,   3,  63,  39,  10,   9,  52 \},}
+\DoxyCodeLine{  \{ 12,  34,  44,  44,   3,  56,  56,  62,  45,   9,  56,  56,   7,   5,   0,  22,  38,  40,  47,  52,  48,  57,  39,  10,   9 \},}
+\DoxyCodeLine{  \{ 35,  11,  23,  14,  51,  35,  20,  41,  56,  62,  16,  20,  41,  56,   7,  16,  21,  38,  24,  40,  26,  26,  42,  57,  39 \},}
+\DoxyCodeLine{  \{ 33,  34,  51,  51,  52,  41,  41,  34,  62,   0,  41,  41,  56,   7,   5,  56,  38,  38,  40,  44,  37,  42,  57,  39,  10 \},}
+\DoxyCodeLine{  \{ 16,  31,  32,  15,  60,  30,   4,  17,  19,  25,  22,  20,   4,  53,  19,  21,  22,  46,  25,  55,  26,  48,  63,  58,  55 \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Definition at line 152 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a9ae5a67ded26c5b1cafedf7cdd2273b9}\label{classvvenc_1_1AdaptiveLoopFilter_a9ae5a67ded26c5b1cafedf7cdd2273b9}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_clipDefault@{m\_clipDefault}}
+\index{m\_clipDefault@{m\_clipDefault}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_clipDefault}{m\_clipDefault}}
+{\footnotesize\ttfamily short m\+\_\+clip\+Default\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 157 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aacf81fc361d2bf027d42c24a36937d62}\label{classvvenc_1_1AdaptiveLoopFilter_aacf81fc361d2bf027d42c24a36937d62}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_clippApsLuma@{m\_clippApsLuma}}
+\index{m\_clippApsLuma@{m\_clippApsLuma}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_clippApsLuma}{m\_clippApsLuma}}
+{\footnotesize\ttfamily short m\+\_\+clipp\+Aps\+Luma\mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}} $\ast$\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 156 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a799adef0be9184aa9a5149933efb1473}\label{classvvenc_1_1AdaptiveLoopFilter_a799adef0be9184aa9a5149933efb1473}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_clippFinal@{m\_clippFinal}}
+\index{m\_clippFinal@{m\_clippFinal}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_clippFinal}{m\_clippFinal}}
+{\footnotesize\ttfamily short m\+\_\+clipp\+Final\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 166 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a12cd94ad5e878f282c49d93ac0caeb19}\label{classvvenc_1_1AdaptiveLoopFilter_a12cd94ad5e878f282c49d93ac0caeb19}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_coeffApsLuma@{m\_coeffApsLuma}}
+\index{m\_coeffApsLuma@{m\_coeffApsLuma}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_coeffApsLuma}{m\_coeffApsLuma}}
+{\footnotesize\ttfamily short m\+\_\+coeff\+Aps\+Luma\mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}} $\ast$\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 155 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ab0ae199504e8dbba4143212946bc251a}\label{classvvenc_1_1AdaptiveLoopFilter_ab0ae199504e8dbba4143212946bc251a}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_coeffFinal@{m\_coeffFinal}}
+\index{m\_coeffFinal@{m\_coeffFinal}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_coeffFinal}{m\_coeffFinal}}
+{\footnotesize\ttfamily short m\+\_\+coeff\+Final\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 165 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a850cf50dcc2c590b6c1ebb6d927fb41e}\label{classvvenc_1_1AdaptiveLoopFilter_a850cf50dcc2c590b6c1ebb6d927fb41e}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_created@{m\_created}}
+\index{m\_created@{m\_created}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_created}{m\_created}}
+{\footnotesize\ttfamily bool m\+\_\+created = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 158 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_abf23ea6b3ac649d4ded311ca2c5c529f}\label{classvvenc_1_1AdaptiveLoopFilter_abf23ea6b3ac649d4ded311ca2c5c529f}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ctuAlternative@{m\_ctuAlternative}}
+\index{m\_ctuAlternative@{m\_ctuAlternative}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ctuAlternative}{m\_ctuAlternative}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ m\+\_\+ctu\+Alternative\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 169 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_af973f08e87262babc973d73df497b854}\label{classvvenc_1_1AdaptiveLoopFilter_af973f08e87262babc973d73df497b854}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_ctuEnableFlag@{m\_ctuEnableFlag}}
+\index{m\_ctuEnableFlag@{m\_ctuEnableFlag}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_ctuEnableFlag}{m\_ctuEnableFlag}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ m\+\_\+ctu\+Enable\+Flag\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 168 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aa8606d3341c775e45ba642a34304153d}\label{classvvenc_1_1AdaptiveLoopFilter_aa8606d3341c775e45ba642a34304153d}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_deriveClassificationBlk@{m\_deriveClassificationBlk}}
+\index{m\_deriveClassificationBlk@{m\_deriveClassificationBlk}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_deriveClassificationBlk}{m\_deriveClassificationBlk}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+derive\+Classification\+Blk(\mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&src\+Luma, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const int shift, const int vb\+C\+T\+U\+Height, int vb\+Pos)}
+
+
+
+Definition at line 124 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ad00857ab436d284b35116be56ed07047}\label{classvvenc_1_1AdaptiveLoopFilter_ad00857ab436d284b35116be56ed07047}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_filter5x5Blk@{m\_filter5x5Blk}}
+\index{m\_filter5x5Blk@{m\_filter5x5Blk}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filter5x5Blk}{m\_filter5x5Blk}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+filter5x5\+Blk(const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Dst, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const short $\ast$filter\+Set, const short $\ast$f\+Clip\+Set, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int vb\+C\+T\+U\+Height, int vb\+Pos)}
+
+
+
+Definition at line 134 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a70b0f41c6d07d523440f7fa8bcb97d3a}\label{classvvenc_1_1AdaptiveLoopFilter_a70b0f41c6d07d523440f7fa8bcb97d3a}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_filter7x7Blk@{m\_filter7x7Blk}}
+\index{m\_filter7x7Blk@{m\_filter7x7Blk}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filter7x7Blk}{m\_filter7x7Blk}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+filter7x7\+Blk(const \mbox{\hyperlink{structvvenc_1_1AlfClassifier}{Alf\+Classifier}} $\ast$classifier, const \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \&rec\+Dst, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const short $\ast$filter\+Set, const short $\ast$f\+Clip\+Set, const \mbox{\hyperlink{structvvenc_1_1ClpRng}{Clp\+Rng}} \&clp\+Rng, const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const int vb\+C\+T\+U\+Height, int vb\+Pos)}
+
+
+
+Definition at line 138 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a62e9abb86053db47a49d9764d4bea030}\label{classvvenc_1_1AdaptiveLoopFilter_a62e9abb86053db47a49d9764d4bea030}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_filterCcAlf@{m\_filterCcAlf}}
+\index{m\_filterCcAlf@{m\_filterCcAlf}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterCcAlf}{m\_filterCcAlf}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+filter\+Cc\+Alf(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&dst\+Buf, const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \&rec\+Src, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Dst, const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&blk\+Src, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, const int16\+\_\+t $\ast$filter\+Coeff, const \mbox{\hyperlink{structvvenc_1_1ClpRngs}{Clp\+Rngs}} \&clp\+Rngs, \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, int vb\+C\+T\+U\+Height, int vb\+Pos)}
+
+
+
+Definition at line 125 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ae4a7ea3a2cbc7d15205d968e84319a8a}\label{classvvenc_1_1AdaptiveLoopFilter_ae4a7ea3a2cbc7d15205d968e84319a8a}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_filterShapes@{m\_filterShapes}}
+\index{m\_filterShapes@{m\_filterShapes}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterShapes}{m\_filterShapes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}}$>$ m\+\_\+filter\+Shapes\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 163 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_adc689226a2a3eb1046a0656ab2f286dc}\label{classvvenc_1_1AdaptiveLoopFilter_adc689226a2a3eb1046a0656ab2f286dc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_filterShapesCcAlf@{m\_filterShapesCcAlf}}
+\index{m\_filterShapesCcAlf@{m\_filterShapesCcAlf}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_filterShapesCcAlf}{m\_filterShapesCcAlf}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1AlfFilterShape}{Alf\+Filter\+Shape}}$>$ m\+\_\+filter\+Shapes\+Cc\+Alf\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 162 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a9afb4f972e2e4929760e74118d739cbc}\label{classvvenc_1_1AdaptiveLoopFilter_a9afb4f972e2e4929760e74118d739cbc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_fixedFilterSetCoeff@{m\_fixedFilterSetCoeff}}
+\index{m\_fixedFilterSetCoeff@{m\_fixedFilterSetCoeff}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_fixedFilterSetCoeff}{m\_fixedFilterSetCoeff}}
+{\footnotesize\ttfamily const int m\+\_\+fixed\+Filter\+Set\+Coeff\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 153 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a7756fda8dffbcdc169bf8de1f23bb958}\label{classvvenc_1_1AdaptiveLoopFilter_a7756fda8dffbcdc169bf8de1f23bb958}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_fixedFilterSetCoeffDec@{m\_fixedFilterSetCoeffDec}}
+\index{m\_fixedFilterSetCoeffDec@{m\_fixedFilterSetCoeffDec}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_fixedFilterSetCoeffDec}{m\_fixedFilterSetCoeffDec}}
+{\footnotesize\ttfamily short m\+\_\+fixed\+Filter\+Set\+Coeff\+Dec\mbox{[}\mbox{\hyperlink{namespacevvenc_aa2eb75d7913b478fd2b70f96be80d460}{N\+U\+M\+\_\+\+F\+I\+X\+E\+D\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+S\+E\+TS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ab82f97cad1f99278561b2bd8241518c4}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+C\+L\+A\+S\+S\+ES}} $\ast$\mbox{\hyperlink{namespacevvenc_ab373cb57731a1100ee351de64b8ead6a}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+L\+F\+\_\+\+L\+U\+M\+A\+\_\+\+C\+O\+E\+FF}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 154 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a481468ed3c1ad38a7d5ed083ee89c337}\label{classvvenc_1_1AdaptiveLoopFilter_a481468ed3c1ad38a7d5ed083ee89c337}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_inputBitDepth@{m\_inputBitDepth}}
+\index{m\_inputBitDepth@{m\_inputBitDepth}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_inputBitDepth}{m\_inputBitDepth}}
+{\footnotesize\ttfamily int m\+\_\+input\+Bit\+Depth\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 172 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a0fd15213a8a92c2bdf447f7b410f931b}\label{classvvenc_1_1AdaptiveLoopFilter_a0fd15213a8a92c2bdf447f7b410f931b}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_maxCUDepth@{m\_maxCUDepth}}
+\index{m\_maxCUDepth@{m\_maxCUDepth}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_maxCUDepth}{m\_maxCUDepth}}
+{\footnotesize\ttfamily int m\+\_\+max\+C\+U\+Depth\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 177 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a776dd979e7f974d302201c1d852b475e}\label{classvvenc_1_1AdaptiveLoopFilter_a776dd979e7f974d302201c1d852b475e}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_maxCUHeight@{m\_maxCUHeight}}
+\index{m\_maxCUHeight@{m\_maxCUHeight}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_maxCUHeight}{m\_maxCUHeight}}
+{\footnotesize\ttfamily int m\+\_\+max\+C\+U\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 176 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a03f59e2b638cb9eeb072d77c2a582758}\label{classvvenc_1_1AdaptiveLoopFilter_a03f59e2b638cb9eeb072d77c2a582758}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_maxCUWidth@{m\_maxCUWidth}}
+\index{m\_maxCUWidth@{m\_maxCUWidth}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_maxCUWidth}{m\_maxCUWidth}}
+{\footnotesize\ttfamily int m\+\_\+max\+C\+U\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 175 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a14e1af9f636f437eeb23e10d274dacee}\label{classvvenc_1_1AdaptiveLoopFilter_a14e1af9f636f437eeb23e10d274dacee}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_NUM\_BITS@{m\_NUM\_BITS}}
+\index{m\_NUM\_BITS@{m\_NUM\_BITS}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_NUM\_BITS}{m\_NUM\_BITS}}
+{\footnotesize\ttfamily constexpr int m\+\_\+\+N\+U\+M\+\_\+\+B\+I\+TS = 8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 98 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a66fa1c21ff24d6fcfac2971c4c2223e1}\label{classvvenc_1_1AdaptiveLoopFilter_a66fa1c21ff24d6fcfac2971c4c2223e1}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_numCTUsInHeight@{m\_numCTUsInHeight}}
+\index{m\_numCTUsInHeight@{m\_numCTUsInHeight}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_numCTUsInHeight}{m\_numCTUsInHeight}}
+{\footnotesize\ttfamily int m\+\_\+num\+C\+T\+Us\+In\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 179 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a7728865466e9cb95e7612db9fc9c3f25}\label{classvvenc_1_1AdaptiveLoopFilter_a7728865466e9cb95e7612db9fc9c3f25}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_numCTUsInPic@{m\_numCTUsInPic}}
+\index{m\_numCTUsInPic@{m\_numCTUsInPic}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_numCTUsInPic}{m\_numCTUsInPic}}
+{\footnotesize\ttfamily int m\+\_\+num\+C\+T\+Us\+In\+Pic\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 180 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_af39ec88b270a98538982a9c932467cd9}\label{classvvenc_1_1AdaptiveLoopFilter_af39ec88b270a98538982a9c932467cd9}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_numCTUsInWidth@{m\_numCTUsInWidth}}
+\index{m\_numCTUsInWidth@{m\_numCTUsInWidth}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_numCTUsInWidth}{m\_numCTUsInWidth}}
+{\footnotesize\ttfamily int m\+\_\+num\+C\+T\+Us\+In\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 178 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_ad1c7f202d77e740d3203bec378bfc8ae}\label{classvvenc_1_1AdaptiveLoopFilter_ad1c7f202d77e740d3203bec378bfc8ae}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_picHeight@{m\_picHeight}}
+\index{m\_picHeight@{m\_picHeight}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_picHeight}{m\_picHeight}}
+{\footnotesize\ttfamily int m\+\_\+pic\+Height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 174 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_aee92058ce5fafb53a0dfc94181913ce7}\label{classvvenc_1_1AdaptiveLoopFilter_aee92058ce5fafb53a0dfc94181913ce7}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_picWidth@{m\_picWidth}}
+\index{m\_picWidth@{m\_picWidth}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_picWidth}{m\_picWidth}}
+{\footnotesize\ttfamily int m\+\_\+pic\+Width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 173 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a053337a52d97fc3a785420b2318467e7}\label{classvvenc_1_1AdaptiveLoopFilter_a053337a52d97fc3a785420b2318467e7}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_scaleBits@{m\_scaleBits}}
+\index{m\_scaleBits@{m\_scaleBits}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_scaleBits}{m\_scaleBits}}
+{\footnotesize\ttfamily constexpr int m\+\_\+scale\+Bits = 7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 188 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a034410ef3daf52900cc3f4604a89bad4}\label{classvvenc_1_1AdaptiveLoopFilter_a034410ef3daf52900cc3f4604a89bad4}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_tempBuf@{m\_tempBuf}}
+\index{m\_tempBuf@{m\_tempBuf}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_tempBuf}{m\_tempBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+temp\+Buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 170 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a582b7cf3223f0c58efff6b2dae60a8bc}\label{classvvenc_1_1AdaptiveLoopFilter_a582b7cf3223f0c58efff6b2dae60a8bc}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!m\_tempBuf2@{m\_tempBuf2}}
+\index{m\_tempBuf2@{m\_tempBuf2}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{m\_tempBuf2}{m\_tempBuf2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+temp\+Buf2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 171 of file Adaptive\+Loop\+Filter.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1AdaptiveLoopFilter_a8b28dce56579ef7801e4fa54b26fbb31}\label{classvvenc_1_1AdaptiveLoopFilter_a8b28dce56579ef7801e4fa54b26fbb31}} 
+\index{AdaptiveLoopFilter@{AdaptiveLoopFilter}!MaxAlfNumClippingValues@{MaxAlfNumClippingValues}}
+\index{MaxAlfNumClippingValues@{MaxAlfNumClippingValues}!AdaptiveLoopFilter@{AdaptiveLoopFilter}}
+\doxysubsubsection{\texorpdfstring{MaxAlfNumClippingValues}{MaxAlfNumClippingValues}}
+{\footnotesize\ttfamily constexpr int Max\+Alf\+Num\+Clipping\+Values = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 97 of file Adaptive\+Loop\+Filter.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{AdaptiveLoopFilter_8h}{Adaptive\+Loop\+Filter.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{AdaptiveLoopFilter_8cpp}{Adaptive\+Loop\+Filter.\+cpp}}\end{DoxyCompactItemize}

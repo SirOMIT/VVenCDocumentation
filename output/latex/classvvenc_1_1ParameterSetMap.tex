@@ -1,0 +1,447 @@
+\hypertarget{classvvenc_1_1ParameterSetMap}{}\doxysection{Parameter\+Set\+Map$<$ T $>$}
+\label{classvvenc_1_1ParameterSetMap}\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ParameterSetMap_1_1MapData}{Map\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a209ec46b5ebde067a796f9036f7d61a6}{Parameter\+Set\+Map}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a634ccf3569ea8a9a6c23896d12c2f443}{Parameter\+Set\+Map}} (int max\+Id)
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a874b0dac49f316f787656761582c4a79}{$\sim$\+Parameter\+Set\+Map}} ()
+\item 
+T $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a01d7c66f790821738dd9333b2721d320}{allocate\+PS}} (const int ps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a323f894b86639f571ec7e44fb20fbfea}{clear\+Active}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a735725df5a966011b903b459f7e8951e}{clear\+Changed\+Flag}} (int ps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a285d18ae9a7eace7b8772e6564d2542e}{clear\+Map}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ac7105dc81d6023f9b1521d9851036720}{get\+Aps\+Id\+Start}} ()
+\item 
+const int \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ae898f077a42c64cd12f59a678bed3c53}{get\+Aps\+Id\+Start}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ae6f836c3eb674938789363268f920a4c}{get\+Changed\+Flag}} (int ps\+Id) const
+\item 
+T $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ade445fc0617e35ea3d212eff95ff2f94}{get\+First\+PS}} ()
+\item 
+T $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ab5c0a595479940edd4352a0748ef6791}{get\+PS}} (int ps\+Id)
+\item 
+const T $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a7a1e1d1bda807be399e81d460382ee72}{get\+PS}} (int ps\+Id) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a8e49be59469d96b7faf0c710e60cf50c}{set\+Active}} (int ps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a6ca1fe7fc5a42068a3476c58c610885e}{set\+Aps\+Id\+Start}} (const int id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a3b463d7ea39e2abaecf5a982ec562f12}{set\+Changed\+Flag}} (int ps\+Id, bool b\+Changed=true)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a9751b375b559232524e900f71ded73ec}{store\+PS}} (int ps\+Id, T $\ast$ps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a9c005e098e233e89a0ef9eea52f4cb2e}{store\+PS}} (int ps\+Id, T $\ast$ps, const std\+::vector$<$ uint8\+\_\+t $>$ $\ast$p\+Nalu\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a9894cc2cad54533eaccbaac6858607cc}{set\+ID}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$parameter\+Set, const int ps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a7a95ea184b0309a9d5870db65ce599cc}{set\+ID}} (\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$parameter\+Set, const int ps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_af1c6c96b865e6064df27c864c1e7692d}{set\+ID}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$parameter\+Set, const int ps\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a54d6007ee5b5962acd222004fbbb6ff4}{set\+ID}} (T $\ast$parameter\+Set, const int ps\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ab2fc3c695c2326a87786ac3f48ee9e58}{m\+\_\+active\+Ps\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a0d1df02a9b1256f588da83bcd017882b}{m\+\_\+aps\+Id\+Start}}
+\item 
+T $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a6107d5e65018202dccf63e262ea495f5}{m\+\_\+last\+Active\+Parameter\+Set}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_ac3ee1c87b2bbf36f579593f8f4b35520}{m\+\_\+max\+Id}}
+\item 
+std\+::map$<$ int, \mbox{\hyperlink{structvvenc_1_1ParameterSetMap_1_1MapData}{Map\+Data}}$<$ T $>$ $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetMap_a635c4ff961d68d1f8058354898ae450c}{m\+\_\+paramset\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class vvenc\+::\+Parameter\+Set\+Map$<$ T $>$}
+
+
+
+Definition at line 1327 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a209ec46b5ebde067a796f9036f7d61a6}\label{classvvenc_1_1ParameterSetMap_a209ec46b5ebde067a796f9036f7d61a6}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!ParameterSetMap@{ParameterSetMap}}
+\index{ParameterSetMap@{ParameterSetMap}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParameterSetMap()}{ParameterSetMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1347 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a634ccf3569ea8a9a6c23896d12c2f443}\label{classvvenc_1_1ParameterSetMap_a634ccf3569ea8a9a6c23896d12c2f443}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!ParameterSetMap@{ParameterSetMap}}
+\index{ParameterSetMap@{ParameterSetMap}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ParameterSetMap()}{ParameterSetMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}} (\begin{DoxyParamCaption}\item[{int}]{max\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1355 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a874b0dac49f316f787656761582c4a79}\label{classvvenc_1_1ParameterSetMap_a874b0dac49f316f787656761582c4a79}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!````~ParameterSetMap@{$\sim$ParameterSetMap}}
+\index{````~ParameterSetMap@{$\sim$ParameterSetMap}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParameterSetMap()}{~ParameterSetMap()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1363 of file Slice.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a01d7c66f790821738dd9333b2721d320}\label{classvvenc_1_1ParameterSetMap_a01d7c66f790821738dd9333b2721d320}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!allocatePS@{allocatePS}}
+\index{allocatePS@{allocatePS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{allocatePS()}{allocatePS()}}
+{\footnotesize\ttfamily T$\ast$ allocate\+PS (\begin{DoxyParamCaption}\item[{const int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1368 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_a01d7c66f790821738dd9333b2721d320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a323f894b86639f571ec7e44fb20fbfea}\label{classvvenc_1_1ParameterSetMap_a323f894b86639f571ec7e44fb20fbfea}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!clearActive@{clearActive}}
+\index{clearActive@{clearActive}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clearActive()}{clearActive()}}
+{\footnotesize\ttfamily void clear\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1490 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_a323f894b86639f571ec7e44fb20fbfea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a735725df5a966011b903b459f7e8951e}\label{classvvenc_1_1ParameterSetMap_a735725df5a966011b903b459f7e8951e}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!clearChangedFlag@{clearChangedFlag}}
+\index{clearChangedFlag@{clearChangedFlag}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clearChangedFlag()}{clearChangedFlag()}}
+{\footnotesize\ttfamily void clear\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1454 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_a735725df5a966011b903b459f7e8951e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a285d18ae9a7eace7b8772e6564d2542e}\label{classvvenc_1_1ParameterSetMap_a285d18ae9a7eace7b8772e6564d2542e}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!clearMap@{clearMap}}
+\index{clearMap@{clearMap}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clearMap()}{clearMap()}}
+{\footnotesize\ttfamily void clear\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1381 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classvvenc_1_1ParameterSetMap_a285d18ae9a7eace7b8772e6564d2542e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ac7105dc81d6023f9b1521d9851036720}\label{classvvenc_1_1ParameterSetMap_ac7105dc81d6023f9b1521d9851036720}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getApsIdStart@{getApsIdStart}}
+\index{getApsIdStart@{getApsIdStart}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getApsIdStart()}{getApsIdStart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int get\+Aps\+Id\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1491 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_ac7105dc81d6023f9b1521d9851036720_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ae898f077a42c64cd12f59a678bed3c53}\label{classvvenc_1_1ParameterSetMap_ae898f077a42c64cd12f59a678bed3c53}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getApsIdStart@{getApsIdStart}}
+\index{getApsIdStart@{getApsIdStart}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getApsIdStart()}{getApsIdStart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int get\+Aps\+Id\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1492 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ae6f836c3eb674938789363268f920a4c}\label{classvvenc_1_1ParameterSetMap_ae6f836c3eb674938789363268f920a4c}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getChangedFlag@{getChangedFlag}}
+\index{getChangedFlag@{getChangedFlag}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getChangedFlag()}{getChangedFlag()}}
+{\footnotesize\ttfamily bool get\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{ps\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1462 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_ae6f836c3eb674938789363268f920a4c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ade445fc0617e35ea3d212eff95ff2f94}\label{classvvenc_1_1ParameterSetMap_ade445fc0617e35ea3d212eff95ff2f94}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getFirstPS@{getFirstPS}}
+\index{getFirstPS@{getFirstPS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getFirstPS()}{getFirstPS()}}
+{\footnotesize\ttfamily T$\ast$ get\+First\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1484 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ab5c0a595479940edd4352a0748ef6791}\label{classvvenc_1_1ParameterSetMap_ab5c0a595479940edd4352a0748ef6791}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getPS@{getPS}}
+\index{getPS@{getPS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getPS()}{getPS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily T$\ast$ get\+PS (\begin{DoxyParamCaption}\item[{int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1472 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_ab5c0a595479940edd4352a0748ef6791_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a7a1e1d1bda807be399e81d460382ee72}\label{classvvenc_1_1ParameterSetMap_a7a1e1d1bda807be399e81d460382ee72}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!getPS@{getPS}}
+\index{getPS@{getPS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getPS()}{getPS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const T$\ast$ get\+PS (\begin{DoxyParamCaption}\item[{int}]{ps\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1478 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a8e49be59469d96b7faf0c710e60cf50c}\label{classvvenc_1_1ParameterSetMap_a8e49be59469d96b7faf0c710e60cf50c}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setActive@{setActive}}
+\index{setActive@{setActive}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void set\+Active (\begin{DoxyParamCaption}\item[{int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1489 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a6ca1fe7fc5a42068a3476c58c610885e}\label{classvvenc_1_1ParameterSetMap_a6ca1fe7fc5a42068a3476c58c610885e}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setApsIdStart@{setApsIdStart}}
+\index{setApsIdStart@{setApsIdStart}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setApsIdStart()}{setApsIdStart()}}
+{\footnotesize\ttfamily void set\+Aps\+Id\+Start (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1493 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_a6ca1fe7fc5a42068a3476c58c610885e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a3b463d7ea39e2abaecf5a982ec562f12}\label{classvvenc_1_1ParameterSetMap_a3b463d7ea39e2abaecf5a982ec562f12}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setChangedFlag@{setChangedFlag}}
+\index{setChangedFlag@{setChangedFlag}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setChangedFlag()}{setChangedFlag()}}
+{\footnotesize\ttfamily void set\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{ps\+Id,  }\item[{bool}]{b\+Changed = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1446 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetMap_a3b463d7ea39e2abaecf5a982ec562f12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a9894cc2cad54533eaccbaac6858607cc}\label{classvvenc_1_1ParameterSetMap_a9894cc2cad54533eaccbaac6858607cc}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setID@{setID}}
+\index{setID@{setID}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void set\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{parameter\+Set,  }\item[{const int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2043 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a7a95ea184b0309a9d5870db65ce599cc}\label{classvvenc_1_1ParameterSetMap_a7a95ea184b0309a9d5870db65ce599cc}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setID@{setID}}
+\index{setID@{setID}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void set\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{parameter\+Set,  }\item[{const int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2048 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_af1c6c96b865e6064df27c864c1e7692d}\label{classvvenc_1_1ParameterSetMap_af1c6c96b865e6064df27c864c1e7692d}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setID@{setID}}
+\index{setID@{setID}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void set\+ID (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{parameter\+Set,  }\item[{const int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2054 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a54d6007ee5b5962acd222004fbbb6ff4}\label{classvvenc_1_1ParameterSetMap_a54d6007ee5b5962acd222004fbbb6ff4}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!setID@{setID}}
+\index{setID@{setID}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setID()}{setID()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static void set\+ID (\begin{DoxyParamCaption}\item[{T $\ast$}]{parameter\+Set,  }\item[{const int}]{ps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvvenc_1_1ParameterSetMap_a54d6007ee5b5962acd222004fbbb6ff4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a9751b375b559232524e900f71ded73ec}\label{classvvenc_1_1ParameterSetMap_a9751b375b559232524e900f71ded73ec}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!storePS@{storePS}}
+\index{storePS@{storePS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{storePS()}{storePS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void store\+PS (\begin{DoxyParamCaption}\item[{int}]{ps\+Id,  }\item[{T $\ast$}]{ps }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1393 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a9c005e098e233e89a0ef9eea52f4cb2e}\label{classvvenc_1_1ParameterSetMap_a9c005e098e233e89a0ef9eea52f4cb2e}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!storePS@{storePS}}
+\index{storePS@{storePS}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{storePS()}{storePS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void store\+PS (\begin{DoxyParamCaption}\item[{int}]{ps\+Id,  }\item[{T $\ast$}]{ps,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ $\ast$}]{p\+Nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1404 of file Slice.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ab2fc3c695c2326a87786ac3f48ee9e58}\label{classvvenc_1_1ParameterSetMap_ab2fc3c695c2326a87786ac3f48ee9e58}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!m\_activePsId@{m\_activePsId}}
+\index{m\_activePsId@{m\_activePsId}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_activePsId}{m\_activePsId}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ m\+\_\+active\+Ps\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1342 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a0d1df02a9b1256f588da83bcd017882b}\label{classvvenc_1_1ParameterSetMap_a0d1df02a9b1256f588da83bcd017882b}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!m\_apsIdStart@{m\_apsIdStart}}
+\index{m\_apsIdStart@{m\_apsIdStart}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_apsIdStart}{m\_apsIdStart}}
+{\footnotesize\ttfamily int m\+\_\+aps\+Id\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1344 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a6107d5e65018202dccf63e262ea495f5}\label{classvvenc_1_1ParameterSetMap_a6107d5e65018202dccf63e262ea495f5}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!m\_lastActiveParameterSet@{m\_lastActiveParameterSet}}
+\index{m\_lastActiveParameterSet@{m\_lastActiveParameterSet}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_lastActiveParameterSet}{m\_lastActiveParameterSet}}
+{\footnotesize\ttfamily T$\ast$ m\+\_\+last\+Active\+Parameter\+Set\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1343 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_ac3ee1c87b2bbf36f579593f8f4b35520}\label{classvvenc_1_1ParameterSetMap_ac3ee1c87b2bbf36f579593f8f4b35520}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!m\_maxId@{m\_maxId}}
+\index{m\_maxId@{m\_maxId}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_maxId}{m\_maxId}}
+{\footnotesize\ttfamily int m\+\_\+max\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1341 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetMap_a635c4ff961d68d1f8058354898ae450c}\label{classvvenc_1_1ParameterSetMap_a635c4ff961d68d1f8058354898ae450c}} 
+\index{ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}!m\_paramsetMap@{m\_paramsetMap}}
+\index{m\_paramsetMap@{m\_paramsetMap}!ParameterSetMap$<$ T $>$@{ParameterSetMap$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_paramsetMap}{m\_paramsetMap}}
+{\footnotesize\ttfamily std\+::map$<$int,\mbox{\hyperlink{structvvenc_1_1ParameterSetMap_1_1MapData}{Map\+Data}}$<$T$>$ $>$ m\+\_\+paramset\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1340 of file Slice.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\end{DoxyCompactItemize}

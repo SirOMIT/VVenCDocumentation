@@ -1,0 +1,309 @@
+\hypertarget{classvvenc_1_1BestEncInfoCache}{}\doxysection{Best\+Enc\+Info\+Cache}
+\label{classvvenc_1_1BestEncInfoCache}\index{BestEncInfoCache@{BestEncInfoCache}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Best\+Enc\+Info\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{classvvenc_1_1BestEncInfoCache__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Best\+Enc\+Info\+Cache\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aa59c4e99f04d3cc0e47abe69eb387772}{Best\+Enc\+Info\+Cache}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a02715bbaf45ffb3c8fbe946a0ec2c2d9}{$\sim$\+Best\+Enc\+Info\+Cache}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_acfc619505f837e598bf26aebe00ccbcb}{init}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a877fdada06d9ff8345d022cc1d34569a}{is\+Reusing\+Cu\+Valid}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, int qp)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a0bd39e7234eae384de671fe2b06cdd4d}{set\+Cs\+From}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&test\+Mode, const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner) const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aa936f17b0c5adad4b85515e2d9f1cae9}{set\+From\+Cs}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&test\+Mode, const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aab2a3df932a4c6e03f486821659cd63a}{create}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} ch\+Fmt)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BestEncodingInfo}{Best\+Encoding\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aa99a6f6e6debbfa65c054fe91d94c96c}{m\+\_\+best\+Enc\+Info}} \mbox{[}6\mbox{]}\mbox{[}6\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aaea9b5638658241c14c12853dd695e77}{m\+\_\+dmvr\+Mv\+Buf}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aea9b3bdbc7ebe7b2ec82c6b0c5e1deaf}{m\+\_\+dummy\+Cache}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aa61d21312ef790ee4ec433d228a23751}{m\+\_\+dummy\+CS}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1BestEncodingInfo}{Best\+Encoding\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a0c034aeff153fc1a70d9ca8e2a6ae1bb}{m\+\_\+enc\+Info\+Buf}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_aef6aaa0e9d331995982e21b324821891}{m\+\_\+p\+Coeff}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$ \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache_a085ec8c66a84c17e3e486687bf201904}{m\+\_\+pcv}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 312 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aa59c4e99f04d3cc0e47abe69eb387772}\label{classvvenc_1_1BestEncInfoCache_aa59c4e99f04d3cc0e47abe69eb387772}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!BestEncInfoCache@{BestEncInfoCache}}
+\index{BestEncInfoCache@{BestEncInfoCache}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{BestEncInfoCache()}{BestEncInfoCache()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BestEncInfoCache}{Best\+Enc\+Info\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 328 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a02715bbaf45ffb3c8fbe946a0ec2c2d9}\label{classvvenc_1_1BestEncInfoCache_a02715bbaf45ffb3c8fbe946a0ec2c2d9}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!````~BestEncInfoCache@{$\sim$BestEncInfoCache}}
+\index{````~BestEncInfoCache@{$\sim$BestEncInfoCache}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{$\sim$BestEncInfoCache()}{~BestEncInfoCache()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BestEncInfoCache}{Best\+Enc\+Info\+Cache}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 329 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aab2a3df932a4c6e03f486821659cd63a}\label{classvvenc_1_1BestEncInfoCache_aab2a3df932a4c6e03f486821659cd63a}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!create@{create}}
+\index{create@{create}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{ch\+Fmt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 263 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_aab2a3df932a4c6e03f486821659cd63a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_aab2a3df932a4c6e03f486821659cd63a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1BestEncInfoCache_a3a80b6032f86a56bec74609034b3246f}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!destroy@{destroy}}
+\index{destroy@{destroy}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 400 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_acfc619505f837e598bf26aebe00ccbcb}\label{classvvenc_1_1BestEncInfoCache_acfc619505f837e598bf26aebe00ccbcb}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!init@{init}}
+\index{init@{init}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 414 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classvvenc_1_1BestEncInfoCache_acfc619505f837e598bf26aebe00ccbcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a877fdada06d9ff8345d022cc1d34569a}\label{classvvenc_1_1BestEncInfoCache_a877fdada06d9ff8345d022cc1d34569a}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!isReusingCuValid@{isReusingCuValid}}
+\index{isReusingCuValid@{isReusingCuValid}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{isReusingCuValid()}{isReusingCuValid()}}
+{\footnotesize\ttfamily bool is\+Reusing\+Cu\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{int}]{qp }\end{DoxyParamCaption})}
+
+
+
+Definition at line 452 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_a877fdada06d9ff8345d022cc1d34569a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classvvenc_1_1BestEncInfoCache_a877fdada06d9ff8345d022cc1d34569a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a0bd39e7234eae384de671fe2b06cdd4d}\label{classvvenc_1_1BestEncInfoCache_a0bd39e7234eae384de671fe2b06cdd4d}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!setCsFrom@{setCsFrom}}
+\index{setCsFrom@{setCsFrom}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{setCsFrom()}{setCsFrom()}}
+{\footnotesize\ttfamily bool set\+Cs\+From (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{test\+Mode,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 485 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_a0bd39e7234eae384de671fe2b06cdd4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aa936f17b0c5adad4b85515e2d9f1cae9}\label{classvvenc_1_1BestEncInfoCache_aa936f17b0c5adad4b85515e2d9f1cae9}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!setFromCs@{setFromCs}}
+\index{setFromCs@{setFromCs}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{setFromCs()}{setFromCs()}}
+{\footnotesize\ttfamily bool set\+From\+Cs (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \&}]{test\+Mode,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner }\end{DoxyParamCaption})}
+
+
+
+Definition at line 425 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BestEncInfoCache_aa936f17b0c5adad4b85515e2d9f1cae9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{classvvenc_1_1BestEncInfoCache_aa936f17b0c5adad4b85515e2d9f1cae9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aa99a6f6e6debbfa65c054fe91d94c96c}\label{classvvenc_1_1BestEncInfoCache_aa99a6f6e6debbfa65c054fe91d94c96c}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_bestEncInfo@{m\_bestEncInfo}}
+\index{m\_bestEncInfo@{m\_bestEncInfo}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_bestEncInfo}{m\_bestEncInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BestEncodingInfo}{Best\+Encoding\+Info}}$\ast$ m\+\_\+best\+Enc\+Info\mbox{[}6\mbox{]}\mbox{[}6\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 316 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aaea9b5638658241c14c12853dd695e77}\label{classvvenc_1_1BestEncInfoCache_aaea9b5638658241c14c12853dd695e77}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_dmvrMvBuf@{m\_dmvrMvBuf}}
+\index{m\_dmvrMvBuf@{m\_dmvrMvBuf}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_dmvrMvBuf}{m\_dmvrMvBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}}$\ast$ m\+\_\+dmvr\+Mv\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 319 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aea9b3bdbc7ebe7b2ec82c6b0c5e1deaf}\label{classvvenc_1_1BestEncInfoCache_aea9b3bdbc7ebe7b2ec82c6b0c5e1deaf}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_dummyCache@{m\_dummyCache}}
+\index{m\_dummyCache@{m\_dummyCache}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_dummyCache}{m\_dummyCache}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} m\+\_\+dummy\+Cache\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 321 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aa61d21312ef790ee4ec433d228a23751}\label{classvvenc_1_1BestEncInfoCache_aa61d21312ef790ee4ec433d228a23751}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_dummyCS@{m\_dummyCS}}
+\index{m\_dummyCS@{m\_dummyCS}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_dummyCS}{m\_dummyCS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} m\+\_\+dummy\+CS\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 320 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a0c034aeff153fc1a70d9ca8e2a6ae1bb}\label{classvvenc_1_1BestEncInfoCache_a0c034aeff153fc1a70d9ca8e2a6ae1bb}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_encInfoBuf@{m\_encInfoBuf}}
+\index{m\_encInfoBuf@{m\_encInfoBuf}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_encInfoBuf}{m\_encInfoBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1BestEncodingInfo}{Best\+Encoding\+Info}}$\ast$ m\+\_\+enc\+Info\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 318 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_aef6aaa0e9d331995982e21b324821891}\label{classvvenc_1_1BestEncInfoCache_aef6aaa0e9d331995982e21b324821891}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_pCoeff@{m\_pCoeff}}
+\index{m\_pCoeff@{m\_pCoeff}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_pCoeff}{m\_pCoeff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a2d252c6114b303c2522df4f14b0f693b}{T\+Coeff\+Sig}}$\ast$ m\+\_\+p\+Coeff\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 317 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BestEncInfoCache_a085ec8c66a84c17e3e486687bf201904}\label{classvvenc_1_1BestEncInfoCache_a085ec8c66a84c17e3e486687bf201904}} 
+\index{BestEncInfoCache@{BestEncInfoCache}!m\_pcv@{m\_pcv}}
+\index{m\_pcv@{m\_pcv}!BestEncInfoCache@{BestEncInfoCache}}
+\doxysubsubsection{\texorpdfstring{m\_pcv}{m\_pcv}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}}$\ast$ m\+\_\+pcv\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 315 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8h}{Enc\+Mode\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8cpp}{Enc\+Mode\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

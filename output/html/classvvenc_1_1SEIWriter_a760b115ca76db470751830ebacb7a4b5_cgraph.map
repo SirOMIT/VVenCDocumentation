@@ -1,0 +1,40 @@
+<map id="writeSEImessages" name="writeSEImessages">
+<area shape="rect" id="node1" title=" " alt="" coords="5,189,137,215"/>
+<area shape="rect" id="node2" href="$classvvenc_1_1OutputBitstream.html#ac8bb3912a3ce86b15842e79d0b421204" title=" " alt="" coords="209,5,369,47"/>
+<area shape="rect" id="node3" href="$classvvenc_1_1OutputBitstream.html#a0ad94d9c30bf00771fdfbf0dbf206a29" title=" " alt="" coords="736,136,908,177"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1SEI.html#a7cc819067add92b91e1231a7b83eb3b7" title=" " alt="" coords="195,123,383,164"/>
+<area shape="rect" id="node6" href="$classvvenc_1_1VLCWriter.html#a9f39f0e805401bf13c33d75a0300415b" title=" " alt="" coords="185,1569,392,1595"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1VLCWriter.html#a5cf061102261b75ae6de5613089ceeca" title=" " alt="" coords="737,1341,907,1383"/>
+<area shape="rect" id="node9" href="$classvvenc_1_1SEIWriter.html#a2c0b4c71f7f75b38139e663339259923" title=" " alt="" coords="211,777,366,803"/>
+<area shape="rect" id="node5" href="$classvvenc_1_1SEI.html#a62f56cd460959b9dc731e40f5815ea12" title=" " alt="" coords="480,122,648,149"/>
+<area shape="rect" id="node8" href="$classvvenc_1_1OutputBitstream.html#a0561bb123b0520accdbf3e504067ecb7" title=" " alt="" coords="956,1139,1152,1180"/>
+<area shape="rect" id="node10" href="$classvvenc_1_1SEIWriter.html#a3735d8c403218464a66f124150f5d23d" title=" " alt="" coords="507,457,621,483"/>
+<area shape="rect" id="node11" href="$classvvenc_1_1SEIWriter.html#a177bb99ee056971ad3e09b794a285d10" title=" " alt="" coords="469,929,659,971"/>
+<area shape="rect" id="node12" href="$classvvenc_1_1SEIWriter.html#a7f307a3d059ec541563871b272cabf70" title=" " alt="" coords="440,995,688,1022"/>
+<area shape="rect" id="node13" href="$classvvenc_1_1SEIWriter.html#a656c229f8fa164a4593e42c06f2da508" title=" " alt="" coords="479,1046,649,1073"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1SEIWriter.html#a70c28e2ac68531d38fe4fb9d7a30a953" title=" " alt="" coords="459,1097,669,1123"/>
+<area shape="rect" id="node15" href="$classvvenc_1_1SEIWriter.html#a151453ee0ac55aea9d222b00ec3b448b" title=" " alt="" coords="460,1147,668,1174"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1SEIWriter.html#a777467685c0511b19171aa8c8c5b8f82" title=" " alt="" coords="461,1198,667,1225"/>
+<area shape="rect" id="node17" href="$classvvenc_1_1SEIWriter.html#ab80bdc9733d588f5af53bae49fdc9a75" title=" " alt="" coords="473,1249,655,1275"/>
+<area shape="rect" id="node18" href="$classvvenc_1_1SEIWriter.html#a38ba8824c4014ad65be30c210a169f19" title=" " alt="" coords="450,1299,678,1326"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1SEIWriter.html#afae2ab877ab978a9800f0da5a8ee2af4" title=" " alt="" coords="479,1351,649,1392"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1SEIWriter.html#a4487afa45dad334635e547867827521a" title=" " alt="" coords="451,1417,677,1443"/>
+<area shape="rect" id="node21" href="$classvvenc_1_1SEIWriter.html#a4f38a7fe86e061703fc44a5a8cf79715" title=" " alt="" coords="480,1467,648,1494"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1SEIWriter.html#a677364d43db963774d1e650b144729ca" title=" " alt="" coords="481,223,647,250"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1SEIWriter.html#a7cf53fe32035799c9f83dbe5cb1a96e1" title=" " alt="" coords="461,275,667,316"/>
+<area shape="rect" id="node24" href="$classvvenc_1_1SEIWriter.html#a50abb43a10e6e0e33202117466a2773e" title=" " alt="" coords="473,340,655,381"/>
+<area shape="rect" id="node25" href="$classvvenc_1_1SEIWriter.html#ad6a033f138ad14452155e64eaf4cad0b" title=" " alt="" coords="483,406,645,433"/>
+<area shape="rect" id="node26" href="$classvvenc_1_1SEIWriter.html#a46e4fa9cee880184d386b28b6e087251" title=" " alt="" coords="454,508,674,549"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1SEIWriter.html#a242b5bbd1033b151ae07efb76f5da07e" title=" " alt="" coords="483,675,645,702"/>
+<area shape="rect" id="node30" href="$classvvenc_1_1SEIWriter.html#ad83ca22deb1acaa589f645da2c652b74" title=" " alt="" coords="465,574,663,601"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1SEIWriter.html#aa89c52da0c047138dbddc3dc9eab21c9" title=" " alt="" coords="455,625,673,651"/>
+<area shape="rect" id="node32" href="$classvvenc_1_1SEIWriter.html#a33c00cd4bdbd4db3d2b528829573bf8e" title=" " alt="" coords="476,173,652,199"/>
+<area shape="rect" id="node34" href="$classvvenc_1_1SEIWriter.html#a751541071240a10d4b3ac7b8146582f8" title=" " alt="" coords="479,726,649,753"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1SEIWriter.html#afe84976bee1e65e7342715c8aeda63b3" title=" " alt="" coords="466,777,662,803"/>
+<area shape="rect" id="node37" href="$classvvenc_1_1SEIWriter.html#aeee123043b5387c4f5ef2ab2952b3e0a" title=" " alt="" coords="464,827,664,854"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1SEIWriter.html#aaf47be88dcd4b2cf1618273e7d7572bd" title=" " alt="" coords="460,878,668,905"/>
+<area shape="rect" id="node28" href="$namespacevvenc.html#a6b27649f79a36af7b6d4d42a0cf5ee6e" title=" " alt="" coords="765,675,879,702"/>
+<area shape="rect" id="node29" href="$namespacevvenc.html#a1c67fbd69415ae8f053fbe313e4a5cda" title=" " alt="" coords="995,675,1113,702"/>
+<area shape="rect" id="node33" href="$namespacevvenc.html#a509e88ebbdb616dac2a93f6e0436d59c" title="output a selection of SEI messages by payload type. Ownership stays in original message list." alt="" coords="745,202,899,229"/>
+<area shape="rect" id="node36" href="$classvvenc_1_1VLCWriter.html#a8c81ad4fb2c30fa7d5a2350a25337057" title=" " alt="" coords="737,1107,907,1148"/>
+</map>

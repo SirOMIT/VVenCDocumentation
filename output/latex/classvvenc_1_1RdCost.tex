@@ -1,0 +1,1298 @@
+\hypertarget{classvvenc_1_1RdCost}{}\doxysection{Rd\+Cost}
+\label{classvvenc_1_1RdCost}\index{RdCost@{RdCost}}
+
+
+RD cost computation class.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Rd\+Cost.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Rd\+Cost\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1RdCost_afb73eb53fc6e23aa4edac32d17eb41b5}{Rd\+Cost}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1RdCost_a0facd817ea4c7b4f700448365f998fb6}{$\sim$\+Rd\+Cost}} ()
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a00c9c94645c657790e9edb01a94d592b}{calc\+Rd\+Cost}} (uint64\+\_\+t frac\+Bits, \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} distortion, bool use\+Unadjusted\+Lambda=true) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_ae2ee59f7cc16ee42559c87e81c433039}{create}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1RdCost_ac035b35d90e1d9ee57b109a0a3a29333}{get\+Bits\+Of\+Vector\+With\+Predictor}} (const int x, const int y, const unsigned imv\+Shift)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a871ad2a0f6e481e30b56323a3a5d124c}{get\+Bv\+Cost\+Multiple\+Preds\+I\+BC}} (int x, int y, bool use\+I\+MV)
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_ac6a8561b7d9b7867c09f54438aad305a}{get\+Chroma\+Weight}} ()
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a33fcb1c5e4c723ee387b60e35fc8e0f4}{get\+Cost}} (uint32\+\_\+t b) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a805805c10672bc0477d70e8bd97646ec}{get\+Cost\+Of\+Vector\+With\+Predictor}} (const int x, const int y, const unsigned imv\+Shift)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a08bb4d946d60ab36df65da2f76b5055d}{get\+Dist\+Part}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&org, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&cur, int bit\+Depth, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id, \mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8}{D\+Func}} e\+D\+Func, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$org\+Luma=\mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a3cb303814c4b04ed6b5eb6be8fb89f39}{get\+Lambda}} (bool unadj=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a904c3bb814a77ca8b36717aa757235f7}{get\+Motion\+Cost\+I\+BC}} (int add)
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a89dc4f9e5e766e8af98371b27835776f}{get\+Motion\+Lambda}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_ac418cfb26a7ec10158a28912a7065f75}{save\+Unadjusted\+Lambda}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_ade7e91ebda6f8dce573eac07a1278a6c}{select\+Motion\+Lambda}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a9d91bcc8ff349d3519b006193eb6b813}{set\+Cost\+Mode}} (vvenc\+Cost\+Mode m)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a2ef9dd728d58741e83d3a6b51b434ccf}{set\+Cost\+Scale}} (int i\+Cost\+Scale)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a83c2c671a9b2f63b98471e361e3bb00a}{set\+Distortion\+Weight}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const double distortion\+Weight)
+\item 
+\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \mbox{\hyperlink{classvvenc_1_1RdCost_a4b395003026571583ba8d73afbc053e3}{set\+Dist\+Param}} (const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&org, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&cur, int bit\+Depth, \mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8}{D\+Func}} dfunc)
+\item 
+\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \mbox{\hyperlink{classvvenc_1_1RdCost_a42f759d2cddf079892222906af3ceffe}{set\+Dist\+Param}} (const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$p\+Org, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+RefY, int i\+Org\+Stride, int i\+Ref\+Stride, int bit\+Depth, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, int width, int height, int sub\+Shift, bool is\+D\+M\+VR=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a615b0ae447d27969b70c4306f57dec7c}{set\+Dist\+Param}} (\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&rc\+DP, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&org, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+RefY, int i\+Ref\+Stride, int bit\+Depth, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, int sub\+Shift\+Mode=0, bool use\+Hadamard=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_afd140a0209a94d8bdd6cb1503543b986}{set\+Dist\+Param\+Geo}} (\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&rc\+DP, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&org, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+RefY, int i\+Ref\+Stride, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$mask, int i\+Mask\+Stride, int stepX, int i\+Mask\+Stride2, int bit\+Depth, \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_aa00ca33ac125df789e908c437a9295ad}{set\+Lambda}} (double d\+Lambda, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a3949a9fccd6973d7b79db254c57f885a}{set\+Predictor}} (const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&rc\+Mv)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a683c4efab3fe6050a8d58dd6a81a8793}{set\+Predictors\+I\+BC}} (\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$pc\+Mv)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_ad56123ec018563e1f1a18861b536ac97}{set\+Reshape\+Info}} (uint32\+\_\+t type, int luma\+BD, \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} cf)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1RdCost_a6a0bb76def7dd5098d4247032ec12957}{set\+Reshape\+Params}} (const uint32\+\_\+t $\ast$p\+P\+L\+UT, double chr\+Wght)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1RdCost_a14191de8fc64cbb512eab6e85a4592dc}{x\+Get\+Exp\+Golomb\+Number\+Of\+Bits}} (int i\+Val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classvvenc_1_1RdCost_a2455899d3e6d0722efb56bee0b5109f9}{get\+Bits\+Multiple\+Preds\+I\+BC}} (int x, int y, bool use\+I\+MV)
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a316de872de7b438e78944fe16d97acca}{x\+Get\+S\+S\+E\+\_\+\+W\+TD}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a824eba7b08de7fd7521cc331704211aa}{x\+Calc\+H\+A\+Ds2x2}} (const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+Org, const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$pi\+Cur, int i\+Stride\+Org, int i\+Stride\+Cur)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_adf777b69949129a0b18ce66a2944ac9e}{x\+Get\+H\+A\+D2\+S\+A\+Ds}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_ab0bee764690e96aaf695e4e32c182763}{x\+Get\+H\+A\+Ds}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_af95973f40b5e30059bd819a7a981dfd6}{x\+Get\+S\+AD}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a5ef551c258729bfe560cb933f47a8109}{x\+Get\+S\+A\+D128}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a9346f0c78e378f9c9176729b0d7df344}{x\+Get\+S\+A\+D16}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a2e49206bfc9486bb6feb2347869515f2}{x\+Get\+S\+A\+D32}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_af1d41cf724e0c83634ea097cef4107a1}{x\+Get\+S\+A\+D4}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a2c6d0eb96d0f52af443ff2a507ea8fd0}{x\+Get\+S\+A\+D64}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_aea801ee39e9b7c6f5451dd7a4a8b8feb}{x\+Get\+S\+A\+D8}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a92b02ac7e25751a0457ea4f7d50d7c50}{x\+Get\+S\+A\+Dw\+Mask}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a1e8d6a95643576bd64f91b156f409a68}{x\+Get\+S\+SE}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a5e0f18f7f90738ce5d93cb606a3a995f}{x\+Get\+S\+S\+E128}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_a2be6322e376a7dcef02dbc06133ae144}{x\+Get\+S\+S\+E16}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_adb6a974afd25ac03e04a7d35bc7968e1}{x\+Get\+S\+S\+E32}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_aa8dacc5104eac1dd2d1051fd40d4b2f3}{x\+Get\+S\+S\+E4}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_aff1378e98378174f23a70f70015e4668}{x\+Get\+S\+S\+E64}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\item 
+static \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{classvvenc_1_1RdCost_aed8b1dfd2ab724c165d60b7600ff3ea2}{x\+Get\+S\+S\+E8}} (const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&pc\+Dt\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}} \mbox{\hyperlink{classvvenc_1_1RdCost_abc8ed3ee98722f899b7cd5389bb65120}{m\+\_\+afp\+Distort\+Func}} \mbox{[}2\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8a80c726c4e5e1232a957d2fdabd0e3c13}{D\+F\+\_\+\+T\+O\+T\+A\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}}\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1RdCost_a5df53f25fdb24abab2b2cd2bf974bbf0}{m\+\_\+bv\+Predictors}} \mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1RdCost_ad9afffedfcdcbcf3fe70b9a9063f50e6}{m\+\_\+cf}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a9ad94622a62c47d18a1d7ba482de05c7}{m\+\_\+chroma\+Weight}}
+\item 
+vvenc\+Cost\+Mode \mbox{\hyperlink{classvvenc_1_1RdCost_a0b3f9b298d0e0fb8c3326691dc8e9233}{m\+\_\+cost\+Mode}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_ad934a666aa3d7c58a275ac3c1617c489}{m\+\_\+d\+Cost\+I\+BC}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a64f04b3c0517bdd91927ec74d50528dd}{m\+\_\+distortion\+Weight}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a43dabb41236bc4536e53093bdfc74c73}{m\+\_\+\+Dist\+Scale}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_afd80c45e29d626c5ec8b14d2c8a2e0bd}{m\+\_\+\+Dist\+Scale\+Unadjusted}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_ab35ec44e7d142557602f65f3c98cb1a0}{m\+\_\+d\+Lambda}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_a026e167ddbcb77d331eade11990ac356}{m\+\_\+d\+Lambda\+\_\+unadjusted}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_ac7838e13c9bb4a90854beab66fba4fcd}{m\+\_\+d\+Lambda\+Motion\+S\+AD}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1RdCost_a135168cb2f7947eb7e7f9e24c310c783}{m\+\_\+i\+Cost\+Scale}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1RdCost_ac996373da6a4f4cf5710a05335c52f76}{m\+\_\+luma\+BD}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1RdCost_ab5d6827fd27918f093ce5053c92ac84c}{m\+\_\+motion\+Lambda}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \mbox{\hyperlink{classvvenc_1_1RdCost_aefdd75223380088f420a53ba7fe09c40}{m\+\_\+mv\+Predictor}}
+\item 
+const uint32\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1RdCost_a952be62439b36a05ce1e0c2527216002}{m\+\_\+reshape\+Luma\+Level\+To\+Weight\+P\+L\+UT}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1RdCost_ac11f806d70faab7445913ea476d45fa2}{m\+\_\+signal\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RD cost computation class. 
+
+Definition at line 111 of file Rd\+Cost.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_afb73eb53fc6e23aa4edac32d17eb41b5}\label{classvvenc_1_1RdCost_afb73eb53fc6e23aa4edac32d17eb41b5}} 
+\index{RdCost@{RdCost}!RdCost@{RdCost}}
+\index{RdCost@{RdCost}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{RdCost()}{RdCost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 65 of file Rd\+Cost.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a0facd817ea4c7b4f700448365f998fb6}\label{classvvenc_1_1RdCost_a0facd817ea4c7b4f700448365f998fb6}} 
+\index{RdCost@{RdCost}!````~RdCost@{$\sim$RdCost}}
+\index{````~RdCost@{$\sim$RdCost}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{$\sim$RdCost()}{~RdCost()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1RdCost}{Rd\+Cost}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 70 of file Rd\+Cost.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a00c9c94645c657790e9edb01a94d592b}\label{classvvenc_1_1RdCost_a00c9c94645c657790e9edb01a94d592b}} 
+\index{RdCost@{RdCost}!calcRdCost@{calcRdCost}}
+\index{calcRdCost@{calcRdCost}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{calcRdCost()}{calcRdCost()}}
+{\footnotesize\ttfamily double calc\+Rd\+Cost (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{frac\+Bits,  }\item[{\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}}}]{distortion,  }\item[{bool}]{use\+Unadjusted\+Lambda = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 156 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a00c9c94645c657790e9edb01a94d592b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ae2ee59f7cc16ee42559c87e81c433039}\label{classvvenc_1_1RdCost_ae2ee59f7cc16ee42559c87e81c433039}} 
+\index{RdCost@{RdCost}!create@{create}}
+\index{create@{create}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1RdCost_ae2ee59f7cc16ee42559c87e81c433039_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ae2ee59f7cc16ee42559c87e81c433039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a2455899d3e6d0722efb56bee0b5109f9}\label{classvvenc_1_1RdCost_a2455899d3e6d0722efb56bee0b5109f9}} 
+\index{RdCost@{RdCost}!getBitsMultiplePredsIBC@{getBitsMultiplePredsIBC}}
+\index{getBitsMultiplePredsIBC@{getBitsMultiplePredsIBC}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getBitsMultiplePredsIBC()}{getBitsMultiplePredsIBC()}}
+{\footnotesize\ttfamily unsigned int get\+Bits\+Multiple\+Preds\+I\+BC (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{use\+I\+MV }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1995 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2455899d3e6d0722efb56bee0b5109f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2455899d3e6d0722efb56bee0b5109f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac035b35d90e1d9ee57b109a0a3a29333}\label{classvvenc_1_1RdCost_ac035b35d90e1d9ee57b109a0a3a29333}} 
+\index{RdCost@{RdCost}!getBitsOfVectorWithPredictor@{getBitsOfVectorWithPredictor}}
+\index{getBitsOfVectorWithPredictor@{getBitsOfVectorWithPredictor}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getBitsOfVectorWithPredictor()}{getBitsOfVectorWithPredictor()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Bits\+Of\+Vector\+With\+Predictor (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const unsigned}]{imv\+Shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 192 of file Rd\+Cost.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ac035b35d90e1d9ee57b109a0a3a29333_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ac035b35d90e1d9ee57b109a0a3a29333_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a871ad2a0f6e481e30b56323a3a5d124c}\label{classvvenc_1_1RdCost_a871ad2a0f6e481e30b56323a3a5d124c}} 
+\index{RdCost@{RdCost}!getBvCostMultiplePredsIBC@{getBvCostMultiplePredsIBC}}
+\index{getBvCostMultiplePredsIBC@{getBvCostMultiplePredsIBC}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getBvCostMultiplePredsIBC()}{getBvCostMultiplePredsIBC()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} get\+Bv\+Cost\+Multiple\+Preds\+I\+BC (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{bool}]{use\+I\+MV }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1981 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a871ad2a0f6e481e30b56323a3a5d124c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a871ad2a0f6e481e30b56323a3a5d124c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac6a8561b7d9b7867c09f54438aad305a}\label{classvvenc_1_1RdCost_ac6a8561b7d9b7867c09f54438aad305a}} 
+\index{RdCost@{RdCost}!getChromaWeight@{getChromaWeight}}
+\index{getChromaWeight@{getChromaWeight}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getChromaWeight()}{getChromaWeight()}}
+{\footnotesize\ttfamily double get\+Chroma\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ac6a8561b7d9b7867c09f54438aad305a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a33fcb1c5e4c723ee387b60e35fc8e0f4}\label{classvvenc_1_1RdCost_a33fcb1c5e4c723ee387b60e35fc8e0f4}} 
+\index{RdCost@{RdCost}!getCost@{getCost}}
+\index{getCost@{getCost}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} get\+Cost (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{b }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 170 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a33fcb1c5e4c723ee387b60e35fc8e0f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a805805c10672bc0477d70e8bd97646ec}\label{classvvenc_1_1RdCost_a805805c10672bc0477d70e8bd97646ec}} 
+\index{RdCost@{RdCost}!getCostOfVectorWithPredictor@{getCostOfVectorWithPredictor}}
+\index{getCostOfVectorWithPredictor@{getCostOfVectorWithPredictor}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getCostOfVectorWithPredictor()}{getCostOfVectorWithPredictor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} get\+Cost\+Of\+Vector\+With\+Predictor (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const unsigned}]{imv\+Shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 191 of file Rd\+Cost.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a805805c10672bc0477d70e8bd97646ec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a805805c10672bc0477d70e8bd97646ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a08bb4d946d60ab36df65da2f76b5055d}\label{classvvenc_1_1RdCost_a08bb4d946d60ab36df65da2f76b5055d}} 
+\index{RdCost@{RdCost}!getDistPart@{getDistPart}}
+\index{getDistPart@{getDistPart}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getDistPart()}{getDistPart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} get\+Dist\+Part (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{cur,  }\item[{int}]{bit\+Depth,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id,  }\item[{\mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8}{D\+Func}}}]{e\+D\+Func,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} $\ast$}]{org\+Luma = {\ttfamily \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 264 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a08bb4d946d60ab36df65da2f76b5055d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a08bb4d946d60ab36df65da2f76b5055d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a3cb303814c4b04ed6b5eb6be8fb89f39}\label{classvvenc_1_1RdCost_a3cb303814c4b04ed6b5eb6be8fb89f39}} 
+\index{RdCost@{RdCost}!getLambda@{getLambda}}
+\index{getLambda@{getLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getLambda()}{getLambda()}}
+{\footnotesize\ttfamily double get\+Lambda (\begin{DoxyParamCaption}\item[{bool}]{unadj = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 154 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a904c3bb814a77ca8b36717aa757235f7}\label{classvvenc_1_1RdCost_a904c3bb814a77ca8b36717aa757235f7}} 
+\index{RdCost@{RdCost}!getMotionCostIBC@{getMotionCostIBC}}
+\index{getMotionCostIBC@{getMotionCostIBC}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getMotionCostIBC()}{getMotionCostIBC()}}
+{\footnotesize\ttfamily void get\+Motion\+Cost\+I\+BC (\begin{DoxyParamCaption}\item[{int}]{add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 203 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a904c3bb814a77ca8b36717aa757235f7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a89dc4f9e5e766e8af98371b27835776f}\label{classvvenc_1_1RdCost_a89dc4f9e5e766e8af98371b27835776f}} 
+\index{RdCost@{RdCost}!getMotionLambda@{getMotionLambda}}
+\index{getMotionLambda@{getMotionLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{getMotionLambda()}{getMotionLambda()}}
+{\footnotesize\ttfamily double get\+Motion\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a89dc4f9e5e766e8af98371b27835776f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac418cfb26a7ec10158a28912a7065f75}\label{classvvenc_1_1RdCost_ac418cfb26a7ec10158a28912a7065f75}} 
+\index{RdCost@{RdCost}!saveUnadjustedLambda@{saveUnadjustedLambda}}
+\index{saveUnadjustedLambda@{saveUnadjustedLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{saveUnadjustedLambda()}{saveUnadjustedLambda()}}
+{\footnotesize\ttfamily void save\+Unadjusted\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1835 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ac418cfb26a7ec10158a28912a7065f75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ade7e91ebda6f8dce573eac07a1278a6c}\label{classvvenc_1_1RdCost_ade7e91ebda6f8dce573eac07a1278a6c}} 
+\index{RdCost@{RdCost}!selectMotionLambda@{selectMotionLambda}}
+\index{selectMotionLambda@{selectMotionLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{selectMotionLambda()}{selectMotionLambda()}}
+{\footnotesize\ttfamily void select\+Motion\+Lambda (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 167 of file Rd\+Cost.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classvvenc_1_1RdCost_ade7e91ebda6f8dce573eac07a1278a6c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ade7e91ebda6f8dce573eac07a1278a6c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a9d91bcc8ff349d3519b006193eb6b813}\label{classvvenc_1_1RdCost_a9d91bcc8ff349d3519b006193eb6b813}} 
+\index{RdCost@{RdCost}!setCostMode@{setCostMode}}
+\index{setCostMode@{setCostMode}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setCostMode()}{setCostMode()}}
+{\footnotesize\ttfamily void set\+Cost\+Mode (\begin{DoxyParamCaption}\item[{vvenc\+Cost\+Mode}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 152 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a9d91bcc8ff349d3519b006193eb6b813_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a2ef9dd728d58741e83d3a6b51b434ccf}\label{classvvenc_1_1RdCost_a2ef9dd728d58741e83d3a6b51b434ccf}} 
+\index{RdCost@{RdCost}!setCostScale@{setCostScale}}
+\index{setCostScale@{setCostScale}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setCostScale()}{setCostScale()}}
+{\footnotesize\ttfamily void set\+Cost\+Scale (\begin{DoxyParamCaption}\item[{int}]{i\+Cost\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2ef9dd728d58741e83d3a6b51b434ccf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a83c2c671a9b2f63b98471e361e3bb00a}\label{classvvenc_1_1RdCost_a83c2c671a9b2f63b98471e361e3bb00a}} 
+\index{RdCost@{RdCost}!setDistortionWeight@{setDistortionWeight}}
+\index{setDistortionWeight@{setDistortionWeight}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setDistortionWeight()}{setDistortionWeight()}}
+{\footnotesize\ttfamily void set\+Distortion\+Weight (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const double}]{distortion\+Weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 150 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a83c2c671a9b2f63b98471e361e3bb00a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a4b395003026571583ba8d73afbc053e3}\label{classvvenc_1_1RdCost_a4b395003026571583ba8d73afbc053e3}} 
+\index{RdCost@{RdCost}!setDistParam@{setDistParam}}
+\index{setDistParam@{setDistParam}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setDistParam()}{setDistParam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} set\+Dist\+Param (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{cur,  }\item[{int}]{bit\+Depth,  }\item[{\mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8}{D\+Func}}}]{dfunc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 211 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a4b395003026571583ba8d73afbc053e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a42f759d2cddf079892222906af3ceffe}\label{classvvenc_1_1RdCost_a42f759d2cddf079892222906af3ceffe}} 
+\index{RdCost@{RdCost}!setDistParam@{setDistParam}}
+\index{setDistParam@{setDistParam}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setDistParam()}{setDistParam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} set\+Dist\+Param (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{p\+Org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{pi\+RefY,  }\item[{int}]{i\+Org\+Stride,  }\item[{int}]{i\+Ref\+Stride,  }\item[{int}]{bit\+Depth,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{sub\+Shift,  }\item[{bool}]{is\+D\+M\+VR = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a42f759d2cddf079892222906af3ceffe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a615b0ae447d27969b70c4306f57dec7c}\label{classvvenc_1_1RdCost_a615b0ae447d27969b70c4306f57dec7c}} 
+\index{RdCost@{RdCost}!setDistParam@{setDistParam}}
+\index{setDistParam@{setDistParam}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setDistParam()}{setDistParam()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void set\+Dist\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{rc\+DP,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{pi\+RefY,  }\item[{int}]{i\+Ref\+Stride,  }\item[{int}]{bit\+Depth,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{int}]{sub\+Shift\+Mode = {\ttfamily 0},  }\item[{bool}]{use\+Hadamard = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 141 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a615b0ae447d27969b70c4306f57dec7c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a615b0ae447d27969b70c4306f57dec7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_afd140a0209a94d8bdd6cb1503543b986}\label{classvvenc_1_1RdCost_afd140a0209a94d8bdd6cb1503543b986}} 
+\index{RdCost@{RdCost}!setDistParamGeo@{setDistParamGeo}}
+\index{setDistParamGeo@{setDistParamGeo}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setDistParamGeo()}{setDistParamGeo()}}
+{\footnotesize\ttfamily void set\+Dist\+Param\+Geo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{rc\+DP,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{pi\+RefY,  }\item[{int}]{i\+Ref\+Stride,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{mask,  }\item[{int}]{i\+Mask\+Stride,  }\item[{int}]{stepX,  }\item[{int}]{i\+Mask\+Stride2,  }\item[{int}]{bit\+Depth,  }\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1922 of file Rd\+Cost.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aa00ca33ac125df789e908c437a9295ad}\label{classvvenc_1_1RdCost_aa00ca33ac125df789e908c437a9295ad}} 
+\index{RdCost@{RdCost}!setLambda@{setLambda}}
+\index{setLambda@{setLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setLambda()}{setLambda()}}
+{\footnotesize\ttfamily void set\+Lambda (\begin{DoxyParamCaption}\item[{double}]{d\+Lambda,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})}
+
+
+
+Definition at line 74 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classvvenc_1_1RdCost_aa00ca33ac125df789e908c437a9295ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a3949a9fccd6973d7b79db254c57f885a}\label{classvvenc_1_1RdCost_a3949a9fccd6973d7b79db254c57f885a}} 
+\index{RdCost@{RdCost}!setPredictor@{setPredictor}}
+\index{setPredictor@{setPredictor}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setPredictor()}{setPredictor()}}
+{\footnotesize\ttfamily void set\+Predictor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} \&}]{rc\+Mv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 168 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a3949a9fccd6973d7b79db254c57f885a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a683c4efab3fe6050a8d58dd6a81a8793}\label{classvvenc_1_1RdCost_a683c4efab3fe6050a8d58dd6a81a8793}} 
+\index{RdCost@{RdCost}!setPredictorsIBC@{setPredictorsIBC}}
+\index{setPredictorsIBC@{setPredictorsIBC}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setPredictorsIBC()}{setPredictorsIBC()}}
+{\footnotesize\ttfamily void set\+Predictors\+I\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} $\ast$}]{pc\+Mv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 196 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a683c4efab3fe6050a8d58dd6a81a8793_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ad56123ec018563e1f1a18861b536ac97}\label{classvvenc_1_1RdCost_ad56123ec018563e1f1a18861b536ac97}} 
+\index{RdCost@{RdCost}!setReshapeInfo@{setReshapeInfo}}
+\index{setReshapeInfo@{setReshapeInfo}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setReshapeInfo()}{setReshapeInfo()}}
+{\footnotesize\ttfamily void set\+Reshape\+Info (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{type,  }\item[{int}]{luma\+BD,  }\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{cf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 195 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1RdCost_ad56123ec018563e1f1a18861b536ac97_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a6a0bb76def7dd5098d4247032ec12957}\label{classvvenc_1_1RdCost_a6a0bb76def7dd5098d4247032ec12957}} 
+\index{RdCost@{RdCost}!setReshapeParams@{setReshapeParams}}
+\index{setReshapeParams@{setReshapeParams}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{setReshapeParams()}{setReshapeParams()}}
+{\footnotesize\ttfamily void set\+Reshape\+Params (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{p\+P\+L\+UT,  }\item[{double}]{chr\+Wght }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 149 of file Rd\+Cost.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classvvenc_1_1RdCost_a6a0bb76def7dd5098d4247032ec12957_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a824eba7b08de7fd7521cc331704211aa}\label{classvvenc_1_1RdCost_a824eba7b08de7fd7521cc331704211aa}} 
+\index{RdCost@{RdCost}!xCalcHADs2x2@{xCalcHADs2x2}}
+\index{xCalcHADs2x2@{xCalcHADs2x2}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xCalcHADs2x2()}{xCalcHADs2x2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Calc\+H\+A\+Ds2x2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{pi\+Org,  }\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{pi\+Cur,  }\item[{int}]{i\+Stride\+Org,  }\item[{int}]{i\+Stride\+Cur }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1012 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a824eba7b08de7fd7521cc331704211aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a14191de8fc64cbb512eab6e85a4592dc}\label{classvvenc_1_1RdCost_a14191de8fc64cbb512eab6e85a4592dc}} 
+\index{RdCost@{RdCost}!xGetExpGolombNumberOfBits@{xGetExpGolombNumberOfBits}}
+\index{xGetExpGolombNumberOfBits@{xGetExpGolombNumberOfBits}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetExpGolombNumberOfBits()}{xGetExpGolombNumberOfBits()}}
+{\footnotesize\ttfamily static uint32\+\_\+t x\+Get\+Exp\+Golomb\+Number\+Of\+Bits (\begin{DoxyParamCaption}\item[{int}]{i\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 172 of file Rd\+Cost.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a14191de8fc64cbb512eab6e85a4592dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a14191de8fc64cbb512eab6e85a4592dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_adf777b69949129a0b18ce66a2944ac9e}\label{classvvenc_1_1RdCost_adf777b69949129a0b18ce66a2944ac9e}} 
+\index{RdCost@{RdCost}!xGetHAD2SADs@{xGetHAD2SADs}}
+\index{xGetHAD2SADs@{xGetHAD2SADs}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetHAD2SADs()}{xGetHAD2SADs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+H\+A\+D2\+S\+A\+Ds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1675 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_adf777b69949129a0b18ce66a2944ac9e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_adf777b69949129a0b18ce66a2944ac9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ab0bee764690e96aaf695e4e32c182763}\label{classvvenc_1_1RdCost_ab0bee764690e96aaf695e4e32c182763}} 
+\index{RdCost@{RdCost}!xGetHADs@{xGetHADs}}
+\index{xGetHADs@{xGetHADs}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetHADs()}{xGetHADs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+H\+A\+Ds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1725 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1RdCost_ab0bee764690e96aaf695e4e32c182763_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_ab0bee764690e96aaf695e4e32c182763_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_af95973f40b5e30059bd819a7a981dfd6}\label{classvvenc_1_1RdCost_af95973f40b5e30059bd819a7a981dfd6}} 
+\index{RdCost@{RdCost}!xGetSAD@{xGetSAD}}
+\index{xGetSAD@{xGetSAD}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD()}{xGetSAD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+AD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 307 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_af95973f40b5e30059bd819a7a981dfd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a5ef551c258729bfe560cb933f47a8109}\label{classvvenc_1_1RdCost_a5ef551c258729bfe560cb933f47a8109}} 
+\index{RdCost@{RdCost}!xGetSAD128@{xGetSAD128}}
+\index{xGetSAD128@{xGetSAD128}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD128()}{xGetSAD128()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D128 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 457 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a5ef551c258729bfe560cb933f47a8109_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a9346f0c78e378f9c9176729b0d7df344}\label{classvvenc_1_1RdCost_a9346f0c78e378f9c9176729b0d7df344}} 
+\index{RdCost@{RdCost}!xGetSAD16@{xGetSAD16}}
+\index{xGetSAD16@{xGetSAD16}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD16()}{xGetSAD16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 412 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a9346f0c78e378f9c9176729b0d7df344_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a2e49206bfc9486bb6feb2347869515f2}\label{classvvenc_1_1RdCost_a2e49206bfc9486bb6feb2347869515f2}} 
+\index{RdCost@{RdCost}!xGetSAD32@{xGetSAD32}}
+\index{xGetSAD32@{xGetSAD32}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD32()}{xGetSAD32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 499 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2e49206bfc9486bb6feb2347869515f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_af1d41cf724e0c83634ea097cef4107a1}\label{classvvenc_1_1RdCost_af1d41cf724e0c83634ea097cef4107a1}} 
+\index{RdCost@{RdCost}!xGetSAD4@{xGetSAD4}}
+\index{xGetSAD4@{xGetSAD4}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD4()}{xGetSAD4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 344 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_af1d41cf724e0c83634ea097cef4107a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a2c6d0eb96d0f52af443ff2a507ea8fd0}\label{classvvenc_1_1RdCost_a2c6d0eb96d0f52af443ff2a507ea8fd0}} 
+\index{RdCost@{RdCost}!xGetSAD64@{xGetSAD64}}
+\index{xGetSAD64@{xGetSAD64}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD64()}{xGetSAD64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D64 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 560 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2c6d0eb96d0f52af443ff2a507ea8fd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aea801ee39e9b7c6f5451dd7a4a8b8feb}\label{classvvenc_1_1RdCost_aea801ee39e9b7c6f5451dd7a4a8b8feb}} 
+\index{RdCost@{RdCost}!xGetSAD8@{xGetSAD8}}
+\index{xGetSAD8@{xGetSAD8}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSAD8()}{xGetSAD8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+D8 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 376 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_aea801ee39e9b7c6f5451dd7a4a8b8feb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a92b02ac7e25751a0457ea4f7d50d7c50}\label{classvvenc_1_1RdCost_a92b02ac7e25751a0457ea4f7d50d7c50}} 
+\index{RdCost@{RdCost}!xGetSADwMask@{xGetSADwMask}}
+\index{xGetSADwMask@{xGetSADwMask}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSADwMask()}{xGetSADwMask()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+A\+Dw\+Mask (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 1948 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a92b02ac7e25751a0457ea4f7d50d7c50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a1e8d6a95643576bd64f91b156f409a68}\label{classvvenc_1_1RdCost_a1e8d6a95643576bd64f91b156f409a68}} 
+\index{RdCost@{RdCost}!xGetSSE@{xGetSSE}}
+\index{xGetSSE@{xGetSSE}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE()}{xGetSSE()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+SE (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 657 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a1e8d6a95643576bd64f91b156f409a68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a5e0f18f7f90738ce5d93cb606a3a995f}\label{classvvenc_1_1RdCost_a5e0f18f7f90738ce5d93cb606a3a995f}} 
+\index{RdCost@{RdCost}!xGetSSE128@{xGetSSE128}}
+\index{xGetSSE128@{xGetSSE128}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE128()}{xGetSSE128()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E128 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 807 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a5e0f18f7f90738ce5d93cb606a3a995f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a2be6322e376a7dcef02dbc06133ae144}\label{classvvenc_1_1RdCost_a2be6322e376a7dcef02dbc06133ae144}} 
+\index{RdCost@{RdCost}!xGetSSE16@{xGetSSE16}}
+\index{xGetSSE16@{xGetSSE16}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE16()}{xGetSSE16()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E16 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 761 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a2be6322e376a7dcef02dbc06133ae144_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_adb6a974afd25ac03e04a7d35bc7968e1}\label{classvvenc_1_1RdCost_adb6a974afd25ac03e04a7d35bc7968e1}} 
+\index{RdCost@{RdCost}!xGetSSE32@{xGetSSE32}}
+\index{xGetSSE32@{xGetSSE32}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE32()}{xGetSSE32()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E32 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 855 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_adb6a974afd25ac03e04a7d35bc7968e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aa8dacc5104eac1dd2d1051fd40d4b2f3}\label{classvvenc_1_1RdCost_aa8dacc5104eac1dd2d1051fd40d4b2f3}} 
+\index{RdCost@{RdCost}!xGetSSE4@{xGetSSE4}}
+\index{xGetSSE4@{xGetSSE4}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE4()}{xGetSSE4()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E4 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 690 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_aa8dacc5104eac1dd2d1051fd40d4b2f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aff1378e98378174f23a70f70015e4668}\label{classvvenc_1_1RdCost_aff1378e98378174f23a70f70015e4668}} 
+\index{RdCost@{RdCost}!xGetSSE64@{xGetSSE64}}
+\index{xGetSSE64@{xGetSSE64}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE64()}{xGetSSE64()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E64 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 916 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_aff1378e98378174f23a70f70015e4668_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aed8b1dfd2ab724c165d60b7600ff3ea2}\label{classvvenc_1_1RdCost_aed8b1dfd2ab724c165d60b7600ff3ea2}} 
+\index{RdCost@{RdCost}!xGetSSE8@{xGetSSE8}}
+\index{xGetSSE8@{xGetSSE8}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE8()}{xGetSSE8()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E8 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 724 of file Rd\+Cost.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_aed8b1dfd2ab724c165d60b7600ff3ea2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a316de872de7b438e78944fe16d97acca}\label{classvvenc_1_1RdCost_a316de872de7b438e78944fe16d97acca}} 
+\index{RdCost@{RdCost}!xGetSSE\_WTD@{xGetSSE\_WTD}}
+\index{xGetSSE\_WTD@{xGetSSE\_WTD}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{xGetSSE\_WTD()}{xGetSSE\_WTD()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} x\+Get\+S\+S\+E\+\_\+\+W\+TD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1DistParam}{Dist\+Param}} \&}]{pc\+Dt\+Param }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1848 of file Rd\+Cost.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a316de872de7b438e78944fe16d97acca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1RdCost_a316de872de7b438e78944fe16d97acca_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1RdCost_abc8ed3ee98722f899b7cd5389bb65120}\label{classvvenc_1_1RdCost_abc8ed3ee98722f899b7cd5389bb65120}} 
+\index{RdCost@{RdCost}!m\_afpDistortFunc@{m\_afpDistortFunc}}
+\index{m\_afpDistortFunc@{m\_afpDistortFunc}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_afpDistortFunc}{m\_afpDistortFunc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a35d245269059fa9cb5c445fbe158604e}{Fp\+Dist\+Func}} m\+\_\+afp\+Distort\+Func\mbox{[}2\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ac19dbe1a542fc0c0bc8a94fcc55907c8a80c726c4e5e1232a957d2fdabd0e3c13}{D\+F\+\_\+\+T\+O\+T\+A\+L\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 116 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a5df53f25fdb24abab2b2cd2bf974bbf0}\label{classvvenc_1_1RdCost_a5df53f25fdb24abab2b2cd2bf974bbf0}} 
+\index{RdCost@{RdCost}!m\_bvPredictors@{m\_bvPredictors}}
+\index{m\_bvPredictors@{m\_bvPredictors}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_bvPredictors}{m\_bvPredictors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+bv\+Predictors\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 134 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ad9afffedfcdcbcf3fe70b9a9063f50e6}\label{classvvenc_1_1RdCost_ad9afffedfcdcbcf3fe70b9a9063f50e6}} 
+\index{RdCost@{RdCost}!m\_cf@{m\_cf}}
+\index{m\_cf@{m\_cf}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_cf}{m\_cf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} m\+\_\+cf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 128 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a9ad94622a62c47d18a1d7ba482de05c7}\label{classvvenc_1_1RdCost_a9ad94622a62c47d18a1d7ba482de05c7}} 
+\index{RdCost@{RdCost}!m\_chromaWeight@{m\_chromaWeight}}
+\index{m\_chromaWeight@{m\_chromaWeight}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_chromaWeight}{m\_chromaWeight}}
+{\footnotesize\ttfamily double m\+\_\+chroma\+Weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 126 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a0b3f9b298d0e0fb8c3326691dc8e9233}\label{classvvenc_1_1RdCost_a0b3f9b298d0e0fb8c3326691dc8e9233}} 
+\index{RdCost@{RdCost}!m\_costMode@{m\_costMode}}
+\index{m\_costMode@{m\_costMode}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_costMode}{m\_costMode}}
+{\footnotesize\ttfamily vvenc\+Cost\+Mode m\+\_\+cost\+Mode\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 117 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ad934a666aa3d7c58a275ac3c1617c489}\label{classvvenc_1_1RdCost_ad934a666aa3d7c58a275ac3c1617c489}} 
+\index{RdCost@{RdCost}!m\_dCostIBC@{m\_dCostIBC}}
+\index{m\_dCostIBC@{m\_dCostIBC}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_dCostIBC}{m\_dCostIBC}}
+{\footnotesize\ttfamily double m\+\_\+d\+Cost\+I\+BC\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 137 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a64f04b3c0517bdd91927ec74d50528dd}\label{classvvenc_1_1RdCost_a64f04b3c0517bdd91927ec74d50528dd}} 
+\index{RdCost@{RdCost}!m\_distortionWeight@{m\_distortionWeight}}
+\index{m\_distortionWeight@{m\_distortionWeight}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_distortionWeight}{m\_distortionWeight}}
+{\footnotesize\ttfamily double m\+\_\+distortion\+Weight\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a43dabb41236bc4536e53093bdfc74c73}\label{classvvenc_1_1RdCost_a43dabb41236bc4536e53093bdfc74c73}} 
+\index{RdCost@{RdCost}!m\_DistScale@{m\_DistScale}}
+\index{m\_DistScale@{m\_DistScale}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_DistScale}{m\_DistScale}}
+{\footnotesize\ttfamily double m\+\_\+\+Dist\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 129 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_afd80c45e29d626c5ec8b14d2c8a2e0bd}\label{classvvenc_1_1RdCost_afd80c45e29d626c5ec8b14d2c8a2e0bd}} 
+\index{RdCost@{RdCost}!m\_DistScaleUnadjusted@{m\_DistScaleUnadjusted}}
+\index{m\_DistScaleUnadjusted@{m\_DistScaleUnadjusted}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_DistScaleUnadjusted}{m\_DistScaleUnadjusted}}
+{\footnotesize\ttfamily double m\+\_\+\+Dist\+Scale\+Unadjusted\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 121 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ab35ec44e7d142557602f65f3c98cb1a0}\label{classvvenc_1_1RdCost_ab35ec44e7d142557602f65f3c98cb1a0}} 
+\index{RdCost@{RdCost}!m\_dLambda@{m\_dLambda}}
+\index{m\_dLambda@{m\_dLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_dLambda}{m\_dLambda}}
+{\footnotesize\ttfamily double m\+\_\+d\+Lambda\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a026e167ddbcb77d331eade11990ac356}\label{classvvenc_1_1RdCost_a026e167ddbcb77d331eade11990ac356}} 
+\index{RdCost@{RdCost}!m\_dLambda\_unadjusted@{m\_dLambda\_unadjusted}}
+\index{m\_dLambda\_unadjusted@{m\_dLambda\_unadjusted}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_dLambda\_unadjusted}{m\_dLambda\_unadjusted}}
+{\footnotesize\ttfamily double m\+\_\+d\+Lambda\+\_\+unadjusted\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 120 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac7838e13c9bb4a90854beab66fba4fcd}\label{classvvenc_1_1RdCost_ac7838e13c9bb4a90854beab66fba4fcd}} 
+\index{RdCost@{RdCost}!m\_dLambdaMotionSAD@{m\_dLambdaMotionSAD}}
+\index{m\_dLambdaMotionSAD@{m\_dLambdaMotionSAD}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_dLambdaMotionSAD}{m\_dLambdaMotionSAD}}
+{\footnotesize\ttfamily double m\+\_\+d\+Lambda\+Motion\+S\+AD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 130 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a135168cb2f7947eb7e7f9e24c310c783}\label{classvvenc_1_1RdCost_a135168cb2f7947eb7e7f9e24c310c783}} 
+\index{RdCost@{RdCost}!m\_iCostScale@{m\_iCostScale}}
+\index{m\_iCostScale@{m\_iCostScale}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_iCostScale}{m\_iCostScale}}
+{\footnotesize\ttfamily int m\+\_\+i\+Cost\+Scale\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 136 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac996373da6a4f4cf5710a05335c52f76}\label{classvvenc_1_1RdCost_ac996373da6a4f4cf5710a05335c52f76}} 
+\index{RdCost@{RdCost}!m\_lumaBD@{m\_lumaBD}}
+\index{m\_lumaBD@{m\_lumaBD}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_lumaBD}{m\_lumaBD}}
+{\footnotesize\ttfamily int m\+\_\+luma\+BD\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 127 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ab5d6827fd27918f093ce5053c92ac84c}\label{classvvenc_1_1RdCost_ab5d6827fd27918f093ce5053c92ac84c}} 
+\index{RdCost@{RdCost}!m\_motionLambda@{m\_motionLambda}}
+\index{m\_motionLambda@{m\_motionLambda}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_motionLambda}{m\_motionLambda}}
+{\footnotesize\ttfamily double m\+\_\+motion\+Lambda\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 135 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_aefdd75223380088f420a53ba7fe09c40}\label{classvvenc_1_1RdCost_aefdd75223380088f420a53ba7fe09c40}} 
+\index{RdCost@{RdCost}!m\_mvPredictor@{m\_mvPredictor}}
+\index{m\_mvPredictor@{m\_mvPredictor}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_mvPredictor}{m\_mvPredictor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Mv}{Mv}} m\+\_\+mv\+Predictor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 133 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_a952be62439b36a05ce1e0c2527216002}\label{classvvenc_1_1RdCost_a952be62439b36a05ce1e0c2527216002}} 
+\index{RdCost@{RdCost}!m\_reshapeLumaLevelToWeightPLUT@{m\_reshapeLumaLevelToWeightPLUT}}
+\index{m\_reshapeLumaLevelToWeightPLUT@{m\_reshapeLumaLevelToWeightPLUT}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_reshapeLumaLevelToWeightPLUT}{m\_reshapeLumaLevelToWeightPLUT}}
+{\footnotesize\ttfamily const uint32\+\_\+t$\ast$ m\+\_\+reshape\+Luma\+Level\+To\+Weight\+P\+L\+UT\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Rd\+Cost.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1RdCost_ac11f806d70faab7445913ea476d45fa2}\label{classvvenc_1_1RdCost_ac11f806d70faab7445913ea476d45fa2}} 
+\index{RdCost@{RdCost}!m\_signalType@{m\_signalType}}
+\index{m\_signalType@{m\_signalType}!RdCost@{RdCost}}
+\doxysubsubsection{\texorpdfstring{m\_signalType}{m\_signalType}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+signal\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 125 of file Rd\+Cost.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{RdCost_8h}{Rd\+Cost.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{RdCost_8cpp}{Rd\+Cost.\+cpp}}\end{DoxyCompactItemize}

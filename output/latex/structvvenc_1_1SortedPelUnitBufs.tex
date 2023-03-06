@@ -1,0 +1,259 @@
+\hypertarget{structvvenc_1_1SortedPelUnitBufs}{}\doxysection{Sorted\+Pel\+Unit\+Bufs$<$ Num\+Entries $>$}
+\label{structvvenc_1_1SortedPelUnitBufs}\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+
+
+{\ttfamily \#include \char`\"{}Buffer.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Sorted\+Pel\+Unit\+Bufs$<$ Num\+Entries $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a589b434eafdf08a9399cb5cf4b617ae5}{create}} (\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} cform, int max\+Width, int max\+Height)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$ \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a5a68b977ee15f47d4881c65b4843f2fd}{get\+Buf\+From\+Sorted\+List}} (int idx) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \& \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a9b2b6a0798cdc6f02c973ebca3d10d61}{get\+Test\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \& \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_aaf8b45717e4a3ac7858493ce33706a0d}{get\+Test\+Buf}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Id) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_aaba1719723729536e5232fc09c3913ad}{insert}} (int insert\+Pos, int Rd\+List\+Size)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_aea41f130df77330887879e046e38d790}{prepare}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ua, int num\+Modes)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_aacb243b827309ddcd5a8585de70b97d4}{reduce\+To}} (int num\+Modes)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a62323d74b4d8bd2d82ceaa500b775312}{swap}} (unsigned pos1, unsigned pos2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}, Num\+Entries+1 $>$ \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a4a911bd95db880c0ccdb0f93b6ca16b6}{m\+\_\+ac\+Storage}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}, Num\+Entries+1 $>$ \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_afaf0598a012c0609acfa31223a6c0014}{m\+\_\+pac\+Bufs}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$ \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$, Num\+Entries $>$ \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a9b2f03b474952d6170a3d6ff008abae6}{m\+\_\+sorted\+List}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} $\ast$ \mbox{\hyperlink{structvvenc_1_1SortedPelUnitBufs_a7d4d935e27376a94f22ba31b5f7a28dc}{m\+\_\+\+Test\+Buf}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int Num\+Entries$>$\newline
+struct vvenc\+::\+Sorted\+Pel\+Unit\+Bufs$<$ Num\+Entries $>$}
+
+
+
+Definition at line 982 of file Buffer.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a589b434eafdf08a9399cb5cf4b617ae5}\label{structvvenc_1_1SortedPelUnitBufs_a589b434eafdf08a9399cb5cf4b617ae5}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!create@{create}}
+\index{create@{create}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{cform,  }\item[{int}]{max\+Width,  }\item[{int}]{max\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 984 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a3a80b6032f86a56bec74609034b3246f}\label{structvvenc_1_1SortedPelUnitBufs_a3a80b6032f86a56bec74609034b3246f}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 994 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a5a68b977ee15f47d4881c65b4843f2fd}\label{structvvenc_1_1SortedPelUnitBufs_a5a68b977ee15f47d4881c65b4843f2fd}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!getBufFromSortedList@{getBufFromSortedList}}
+\index{getBufFromSortedList@{getBufFromSortedList}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{getBufFromSortedList()}{getBufFromSortedList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}$\ast$ get\+Buf\+From\+Sorted\+List (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1027 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{structvvenc_1_1SortedPelUnitBufs_a5a68b977ee15f47d4881c65b4843f2fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a9b2b6a0798cdc6f02c973ebca3d10d61}\label{structvvenc_1_1SortedPelUnitBufs_a9b2b6a0798cdc6f02c973ebca3d10d61}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!getTestBuf@{getTestBuf}}
+\index{getTestBuf@{getTestBuf}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{getTestBuf()}{getTestBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}\& get\+Test\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1029 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_aaf8b45717e4a3ac7858493ce33706a0d}\label{structvvenc_1_1SortedPelUnitBufs_aaf8b45717e4a3ac7858493ce33706a0d}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!getTestBuf@{getTestBuf}}
+\index{getTestBuf@{getTestBuf}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{getTestBuf()}{getTestBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}}\& get\+Test\+Buf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1028 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs_aaf8b45717e4a3ac7858493ce33706a0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_aaba1719723729536e5232fc09c3913ad}\label{structvvenc_1_1SortedPelUnitBufs_aaba1719723729536e5232fc09c3913ad}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!insert@{insert}}
+\index{insert@{insert}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void insert (\begin{DoxyParamCaption}\item[{int}]{insert\+Pos,  }\item[{int}]{Rd\+List\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1038 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs_aaba1719723729536e5232fc09c3913ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_aea41f130df77330887879e046e38d790}\label{structvvenc_1_1SortedPelUnitBufs_aea41f130df77330887879e046e38d790}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!prepare@{prepare}}
+\index{prepare@{prepare}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily void prepare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ua,  }\item[{int}]{num\+Modes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1013 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs_aea41f130df77330887879e046e38d790_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_aacb243b827309ddcd5a8585de70b97d4}\label{structvvenc_1_1SortedPelUnitBufs_aacb243b827309ddcd5a8585de70b97d4}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!reduceTo@{reduceTo}}
+\index{reduceTo@{reduceTo}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{reduceTo()}{reduceTo()}}
+{\footnotesize\ttfamily void reduce\+To (\begin{DoxyParamCaption}\item[{int}]{num\+Modes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1007 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs_aacb243b827309ddcd5a8585de70b97d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_ad20897c5c8bd47f5d4005989bead0e55}\label{structvvenc_1_1SortedPelUnitBufs_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!reset@{reset}}
+\index{reset@{reset}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1002 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a62323d74b4d8bd2d82ceaa500b775312}\label{structvvenc_1_1SortedPelUnitBufs_a62323d74b4d8bd2d82ceaa500b775312}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!swap@{swap}}
+\index{swap@{swap}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{unsigned}]{pos1,  }\item[{unsigned}]{pos2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1031 of file Buffer.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1SortedPelUnitBufs_a62323d74b4d8bd2d82ceaa500b775312_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a4a911bd95db880c0ccdb0f93b6ca16b6}\label{structvvenc_1_1SortedPelUnitBufs_a4a911bd95db880c0ccdb0f93b6ca16b6}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!m\_acStorage@{m\_acStorage}}
+\index{m\_acStorage@{m\_acStorage}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{m\_acStorage}{m\_acStorage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}, Num\+Entries+1$>$ m\+\_\+ac\+Storage\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1054 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_afaf0598a012c0609acfa31223a6c0014}\label{structvvenc_1_1SortedPelUnitBufs_afaf0598a012c0609acfa31223a6c0014}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!m\_pacBufs@{m\_pacBufs}}
+\index{m\_pacBufs@{m\_pacBufs}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{m\_pacBufs}{m\_pacBufs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}, Num\+Entries+1$>$ m\+\_\+pac\+Bufs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1053 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a9b2f03b474952d6170a3d6ff008abae6}\label{structvvenc_1_1SortedPelUnitBufs_a9b2f03b474952d6170a3d6ff008abae6}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!m\_sortedList@{m\_sortedList}}
+\index{m\_sortedList@{m\_sortedList}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{m\_sortedList}{m\_sortedList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1static__vector}{static\+\_\+vector}}$<$\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}$\ast$,Num\+Entries$>$ m\+\_\+sorted\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1052 of file Buffer.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1SortedPelUnitBufs_a7d4d935e27376a94f22ba31b5f7a28dc}\label{structvvenc_1_1SortedPelUnitBufs_a7d4d935e27376a94f22ba31b5f7a28dc}} 
+\index{SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}!m\_TestBuf@{m\_TestBuf}}
+\index{m\_TestBuf@{m\_TestBuf}!SortedPelUnitBufs$<$ NumEntries $>$@{SortedPelUnitBufs$<$ NumEntries $>$}}
+\doxysubsubsection{\texorpdfstring{m\_TestBuf}{m\_TestBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}}$\ast$ m\+\_\+\+Test\+Buf\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1051 of file Buffer.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Buffer_8h}{Buffer.\+h}}\end{DoxyCompactItemize}

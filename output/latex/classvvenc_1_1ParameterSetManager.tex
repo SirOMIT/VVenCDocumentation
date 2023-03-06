@@ -1,0 +1,675 @@
+\hypertarget{classvvenc_1_1ParameterSetManager}{}\doxysection{Parameter\+Set\+Manager}
+\label{classvvenc_1_1ParameterSetManager}\index{ParameterSetManager@{ParameterSetManager}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Parameter\+Set\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a7eff2e6313de8ee55780463e714bed81}{Parameter\+Set\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a6547e0dbbda5c5b9bfa222b1b0776438}{$\sim$\+Parameter\+Set\+Manager}} ()
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a733b31bcdb8d326ea64c569ba6481004}{activate\+A\+PS}} (int aps\+Id, int aps\+Type)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a1a60da112903615ac5707d1ad148c2d6}{activate\+P\+PS}} (int pps\+Id, bool is\+I\+R\+AP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a2e621a6363aaeb347211460b6c759449}{clear\+A\+P\+S\+Changed\+Flag}} (int aps\+Id, int aps\+Type)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aa356aa32e7fd28e16801b5b796887f7c}{clear\+P\+P\+S\+Changed\+Flag}} (int pps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a24831489ce9a7aaeb2d3a0341dcc54d7}{clear\+S\+P\+S\+Changed\+Flag}} (int sps\+Id)
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a7d4854fb58bce877f09a854f0f791b96}{get\+Active\+D\+CI}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aa59c6fadca1280a8f5e632999fda06ab}{get\+Active\+S\+PS}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aae7593bef380b88140bc069f8062bd88}{get\+Active\+V\+PS}} () const
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a8f8c6b53d461350d7680ce3826e853a0}{get\+A\+PS}} (int aps\+Id, int aps\+Type)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aa84f3628bf7eab6222ffa9f48c7dcdba}{get\+A\+P\+S\+Changed\+Flag}} (int aps\+Id, int aps\+Type) const
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_acea39ee479f6cac33cefc9edd1480baa}{get\+Aps\+Map}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a7bb9f214f4f9b624281a941f63923940}{get\+A\+P\+Ss}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ac5a5c11fa490a6988efd2f2893d30132}{get\+First\+P\+PS}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ae7eb8272f77a8cc174381ebca688d290}{get\+First\+S\+PS}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a95381851aae27e6d6801568b2d5dc7ec}{get\+P\+PS}} (int pps\+Id)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a780dd8e828d3f84354aea231612f6cd6}{get\+P\+P\+S\+Changed\+Flag}} (int pps\+Id) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a94988fafa81024317e16243a8e5b6d54}{get\+S\+PS}} (int sps\+Id)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a6c110223b8c73983f46221563c626b6d}{get\+S\+P\+S\+Changed\+Flag}} (int sps\+Id) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ade1f6e9ccf9cb237f2f83062e42de80d}{get\+V\+PS}} (int vps\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a0a3e0fc3c7c37fae248e7b702ba502ad}{store\+A\+PS}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$aps, const std\+::vector$<$ uint8\+\_\+t $>$ \&nalu\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ad1369672dc3905f5fb82598f37277cfe}{store\+D\+CI}} (\mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$dci, const std\+::vector$<$ uint8\+\_\+t $>$ \&nalu\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a4691dbb9c369c6340d8735a214212558}{store\+P\+PS}} (\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$pps, const std\+::vector$<$ uint8\+\_\+t $>$ \&nalu\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ab70c142365e72a509d6a5e3d0ac145f3}{store\+S\+PS}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, const std\+::vector$<$ uint8\+\_\+t $>$ \&nalu\+Data)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aa7925b5994ec0dc6c94f593f81ee7358}{store\+V\+PS}} (\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$vps, const std\+::vector$<$ uint8\+\_\+t $>$ \&nalu\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a9f6c0c331efc856d3ec9c581da38f286}{m\+\_\+active\+D\+C\+I\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a69ae01d553998efb92164123027a8d3e}{m\+\_\+active\+S\+P\+S\+Id}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a5e49bfdfeb4b33e74da0b2de14e49fd0}{m\+\_\+active\+V\+P\+S\+Id}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_adb1be480e7990b721cb786c97830023c}{m\+\_\+aps\+Map}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_aa075068c1cd0989d71306e5c3d9dd0f7}{m\+\_\+apss}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a6dfe8da2e653821f2905aa6ad7df8ad8}{m\+\_\+dci\+Map}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a48341171f82a2ef4981b954db462bc88}{m\+\_\+pps\+Map}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_a4b4fb4300d4baaf434a7ba93e729df1f}{m\+\_\+sps\+Map}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $>$ \mbox{\hyperlink{classvvenc_1_1ParameterSetManager_ab36e29ee49d96cd41310f5aeb5ce939c}{m\+\_\+vps\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1507 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a7eff2e6313de8ee55780463e714bed81}\label{classvvenc_1_1ParameterSetManager_a7eff2e6313de8ee55780463e714bed81}} 
+\index{ParameterSetManager@{ParameterSetManager}!ParameterSetManager@{ParameterSetManager}}
+\index{ParameterSetManager@{ParameterSetManager}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{ParameterSetManager()}{ParameterSetManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1940 of file Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a6547e0dbbda5c5b9bfa222b1b0776438}\label{classvvenc_1_1ParameterSetManager_a6547e0dbbda5c5b9bfa222b1b0776438}} 
+\index{ParameterSetManager@{ParameterSetManager}!````~ParameterSetManager@{$\sim$ParameterSetManager}}
+\index{````~ParameterSetManager@{$\sim$ParameterSetManager}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParameterSetManager()}{~ParameterSetManager()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 1953 of file Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a733b31bcdb8d326ea64c569ba6481004}\label{classvvenc_1_1ParameterSetManager_a733b31bcdb8d326ea64c569ba6481004}} 
+\index{ParameterSetManager@{ParameterSetManager}!activateAPS@{activateAPS}}
+\index{activateAPS@{activateAPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{activateAPS()}{activateAPS()}}
+{\footnotesize\ttfamily bool activate\+A\+PS (\begin{DoxyParamCaption}\item[{int}]{aps\+Id,  }\item[{int}]{aps\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2027 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classvvenc_1_1ParameterSetManager_a733b31bcdb8d326ea64c569ba6481004_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a733b31bcdb8d326ea64c569ba6481004_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a1a60da112903615ac5707d1ad148c2d6}\label{classvvenc_1_1ParameterSetManager_a1a60da112903615ac5707d1ad148c2d6}} 
+\index{ParameterSetManager@{ParameterSetManager}!activatePPS@{activatePPS}}
+\index{activatePPS@{activatePPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{activatePPS()}{activatePPS()}}
+{\footnotesize\ttfamily bool activate\+P\+PS (\begin{DoxyParamCaption}\item[{int}]{pps\+Id,  }\item[{bool}]{is\+I\+R\+AP }\end{DoxyParamCaption})}
+
+activate a \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} and depending on is\+I\+DR parameter also \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \begin{DoxyReturn}{Returns}
+true, if activation is successful 
+\end{DoxyReturn}
+
+
+Definition at line 1960 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classvvenc_1_1ParameterSetManager_a1a60da112903615ac5707d1ad148c2d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a1a60da112903615ac5707d1ad148c2d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a2e621a6363aaeb347211460b6c759449}\label{classvvenc_1_1ParameterSetManager_a2e621a6363aaeb347211460b6c759449}} 
+\index{ParameterSetManager@{ParameterSetManager}!clearAPSChangedFlag@{clearAPSChangedFlag}}
+\index{clearAPSChangedFlag@{clearAPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{clearAPSChangedFlag()}{clearAPSChangedFlag()}}
+{\footnotesize\ttfamily void clear\+A\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{aps\+Id,  }\item[{int}]{aps\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1536 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a2e621a6363aaeb347211460b6c759449_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aa356aa32e7fd28e16801b5b796887f7c}\label{classvvenc_1_1ParameterSetManager_aa356aa32e7fd28e16801b5b796887f7c}} 
+\index{ParameterSetManager@{ParameterSetManager}!clearPPSChangedFlag@{clearPPSChangedFlag}}
+\index{clearPPSChangedFlag@{clearPPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{clearPPSChangedFlag()}{clearPPSChangedFlag()}}
+{\footnotesize\ttfamily void clear\+P\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{pps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1527 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_aa356aa32e7fd28e16801b5b796887f7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a24831489ce9a7aaeb2d3a0341dcc54d7}\label{classvvenc_1_1ParameterSetManager_a24831489ce9a7aaeb2d3a0341dcc54d7}} 
+\index{ParameterSetManager@{ParameterSetManager}!clearSPSChangedFlag@{clearSPSChangedFlag}}
+\index{clearSPSChangedFlag@{clearSPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{clearSPSChangedFlag()}{clearSPSChangedFlag()}}
+{\footnotesize\ttfamily void clear\+S\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{sps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1521 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a24831489ce9a7aaeb2d3a0341dcc54d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a7d4854fb58bce877f09a854f0f791b96}\label{classvvenc_1_1ParameterSetManager_a7d4854fb58bce877f09a854f0f791b96}} 
+\index{ParameterSetManager@{ParameterSetManager}!getActiveDCI@{getActiveDCI}}
+\index{getActiveDCI@{getActiveDCI}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getActiveDCI()}{getActiveDCI()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}}$\ast$ get\+Active\+D\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1540 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classvvenc_1_1ParameterSetManager_a7d4854fb58bce877f09a854f0f791b96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aa59c6fadca1280a8f5e632999fda06ab}\label{classvvenc_1_1ParameterSetManager_aa59c6fadca1280a8f5e632999fda06ab}} 
+\index{ParameterSetManager@{ParameterSetManager}!getActiveSPS@{getActiveSPS}}
+\index{getActiveSPS@{getActiveSPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getActiveSPS()}{getActiveSPS()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$\ast$ get\+Active\+S\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1539 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_aa59c6fadca1280a8f5e632999fda06ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aae7593bef380b88140bc069f8062bd88}\label{classvvenc_1_1ParameterSetManager_aae7593bef380b88140bc069f8062bd88}} 
+\index{ParameterSetManager@{ParameterSetManager}!getActiveVPS@{getActiveVPS}}
+\index{getActiveVPS@{getActiveVPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getActiveVPS()}{getActiveVPS()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ get\+Active\+V\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1538 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_aae7593bef380b88140bc069f8062bd88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a8f8c6b53d461350d7680ce3826e853a0}\label{classvvenc_1_1ParameterSetManager_a8f8c6b53d461350d7680ce3826e853a0}} 
+\index{ParameterSetManager@{ParameterSetManager}!getAPS@{getAPS}}
+\index{getAPS@{getAPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getAPS()}{getAPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ get\+A\+PS (\begin{DoxyParamCaption}\item[{int}]{aps\+Id,  }\item[{int}]{aps\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1534 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a8f8c6b53d461350d7680ce3826e853a0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aa84f3628bf7eab6222ffa9f48c7dcdba}\label{classvvenc_1_1ParameterSetManager_aa84f3628bf7eab6222ffa9f48c7dcdba}} 
+\index{ParameterSetManager@{ParameterSetManager}!getAPSChangedFlag@{getAPSChangedFlag}}
+\index{getAPSChangedFlag@{getAPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getAPSChangedFlag()}{getAPSChangedFlag()}}
+{\footnotesize\ttfamily bool get\+A\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{aps\+Id,  }\item[{int}]{aps\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1535 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_aa84f3628bf7eab6222ffa9f48c7dcdba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_acea39ee479f6cac33cefc9edd1480baa}\label{classvvenc_1_1ParameterSetManager_acea39ee479f6cac33cefc9edd1480baa}} 
+\index{ParameterSetManager@{ParameterSetManager}!getApsMap@{getApsMap}}
+\index{getApsMap@{getApsMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getApsMap()}{getApsMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$$\ast$ get\+Aps\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1532 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_acea39ee479f6cac33cefc9edd1480baa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a7bb9f214f4f9b624281a941f63923940}\label{classvvenc_1_1ParameterSetManager_a7bb9f214f4f9b624281a941f63923940}} 
+\index{ParameterSetManager@{ParameterSetManager}!getAPSs@{getAPSs}}
+\index{getAPSs@{getAPSs}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getAPSs()}{getAPSs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$$\ast$ get\+A\+P\+Ss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1531 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a7bb9f214f4f9b624281a941f63923940_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ac5a5c11fa490a6988efd2f2893d30132}\label{classvvenc_1_1ParameterSetManager_ac5a5c11fa490a6988efd2f2893d30132}} 
+\index{ParameterSetManager@{ParameterSetManager}!getFirstPPS@{getFirstPPS}}
+\index{getFirstPPS@{getFirstPPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getFirstPPS()}{getFirstPPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}$\ast$ get\+First\+P\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1528 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_ac5a5c11fa490a6988efd2f2893d30132_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ae7eb8272f77a8cc174381ebca688d290}\label{classvvenc_1_1ParameterSetManager_ae7eb8272f77a8cc174381ebca688d290}} 
+\index{ParameterSetManager@{ParameterSetManager}!getFirstSPS@{getFirstSPS}}
+\index{getFirstSPS@{getFirstSPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getFirstSPS()}{getFirstSPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$\ast$ get\+First\+S\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1522 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_ae7eb8272f77a8cc174381ebca688d290_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a95381851aae27e6d6801568b2d5dc7ec}\label{classvvenc_1_1ParameterSetManager_a95381851aae27e6d6801568b2d5dc7ec}} 
+\index{ParameterSetManager@{ParameterSetManager}!getPPS@{getPPS}}
+\index{getPPS@{getPPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getPPS()}{getPPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}$\ast$ get\+P\+PS (\begin{DoxyParamCaption}\item[{int}]{pps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1525 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a95381851aae27e6d6801568b2d5dc7ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a780dd8e828d3f84354aea231612f6cd6}\label{classvvenc_1_1ParameterSetManager_a780dd8e828d3f84354aea231612f6cd6}} 
+\index{ParameterSetManager@{ParameterSetManager}!getPPSChangedFlag@{getPPSChangedFlag}}
+\index{getPPSChangedFlag@{getPPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getPPSChangedFlag()}{getPPSChangedFlag()}}
+{\footnotesize\ttfamily bool get\+P\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{pps\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1526 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a780dd8e828d3f84354aea231612f6cd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a94988fafa81024317e16243a8e5b6d54}\label{classvvenc_1_1ParameterSetManager_a94988fafa81024317e16243a8e5b6d54}} 
+\index{ParameterSetManager@{ParameterSetManager}!getSPS@{getSPS}}
+\index{getSPS@{getSPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getSPS()}{getSPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$\ast$ get\+S\+PS (\begin{DoxyParamCaption}\item[{int}]{sps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1519 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a94988fafa81024317e16243a8e5b6d54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a6c110223b8c73983f46221563c626b6d}\label{classvvenc_1_1ParameterSetManager_a6c110223b8c73983f46221563c626b6d}} 
+\index{ParameterSetManager@{ParameterSetManager}!getSPSChangedFlag@{getSPSChangedFlag}}
+\index{getSPSChangedFlag@{getSPSChangedFlag}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getSPSChangedFlag()}{getSPSChangedFlag()}}
+{\footnotesize\ttfamily bool get\+S\+P\+S\+Changed\+Flag (\begin{DoxyParamCaption}\item[{int}]{sps\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1520 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a6c110223b8c73983f46221563c626b6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ade1f6e9ccf9cb237f2f83062e42de80d}\label{classvvenc_1_1ParameterSetManager_ade1f6e9ccf9cb237f2f83062e42de80d}} 
+\index{ParameterSetManager@{ParameterSetManager}!getVPS@{getVPS}}
+\index{getVPS@{getVPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{getVPS()}{getVPS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ get\+V\+PS (\begin{DoxyParamCaption}\item[{int}]{vps\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1513 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_ade1f6e9ccf9cb237f2f83062e42de80d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a0a3e0fc3c7c37fae248e7b702ba502ad}\label{classvvenc_1_1ParameterSetManager_a0a3e0fc3c7c37fae248e7b702ba502ad}} 
+\index{ParameterSetManager@{ParameterSetManager}!storeAPS@{storeAPS}}
+\index{storeAPS@{storeAPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{storeAPS()}{storeAPS()}}
+{\footnotesize\ttfamily void store\+A\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{aps,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1533 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a0a3e0fc3c7c37fae248e7b702ba502ad_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ad1369672dc3905f5fb82598f37277cfe}\label{classvvenc_1_1ParameterSetManager_ad1369672dc3905f5fb82598f37277cfe}} 
+\index{ParameterSetManager@{ParameterSetManager}!storeDCI@{storeDCI}}
+\index{storeDCI@{storeDCI}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{storeDCI()}{storeDCI()}}
+{\footnotesize\ttfamily void store\+D\+CI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$}]{dci,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1515 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_ad1369672dc3905f5fb82598f37277cfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a4691dbb9c369c6340d8735a214212558}\label{classvvenc_1_1ParameterSetManager_a4691dbb9c369c6340d8735a214212558}} 
+\index{ParameterSetManager@{ParameterSetManager}!storePPS@{storePPS}}
+\index{storePPS@{storePPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{storePPS()}{storePPS()}}
+{\footnotesize\ttfamily void store\+P\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{pps,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1524 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_a4691dbb9c369c6340d8735a214212558_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ab70c142365e72a509d6a5e3d0ac145f3}\label{classvvenc_1_1ParameterSetManager_ab70c142365e72a509d6a5e3d0ac145f3}} 
+\index{ParameterSetManager@{ParameterSetManager}!storeSPS@{storeSPS}}
+\index{storeSPS@{storeSPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{storeSPS()}{storeSPS()}}
+{\footnotesize\ttfamily void store\+S\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1518 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_ab70c142365e72a509d6a5e3d0ac145f3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aa7925b5994ec0dc6c94f593f81ee7358}\label{classvvenc_1_1ParameterSetManager_aa7925b5994ec0dc6c94f593f81ee7358}} 
+\index{ParameterSetManager@{ParameterSetManager}!storeVPS@{storeVPS}}
+\index{storeVPS@{storeVPS}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{storeVPS()}{storeVPS()}}
+{\footnotesize\ttfamily void store\+V\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{vps,  }\item[{const std\+::vector$<$ uint8\+\_\+t $>$ \&}]{nalu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1512 of file Slice.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ParameterSetManager_aa7925b5994ec0dc6c94f593f81ee7358_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a9f6c0c331efc856d3ec9c581da38f286}\label{classvvenc_1_1ParameterSetManager_a9f6c0c331efc856d3ec9c581da38f286}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_activeDCIId@{m\_activeDCIId}}
+\index{m\_activeDCIId@{m\_activeDCIId}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_activeDCIId}{m\_activeDCIId}}
+{\footnotesize\ttfamily int m\+\_\+active\+D\+C\+I\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1551 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a69ae01d553998efb92164123027a8d3e}\label{classvvenc_1_1ParameterSetManager_a69ae01d553998efb92164123027a8d3e}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_activeSPSId@{m\_activeSPSId}}
+\index{m\_activeSPSId@{m\_activeSPSId}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_activeSPSId}{m\_activeSPSId}}
+{\footnotesize\ttfamily int m\+\_\+active\+S\+P\+S\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1552 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a5e49bfdfeb4b33e74da0b2de14e49fd0}\label{classvvenc_1_1ParameterSetManager_a5e49bfdfeb4b33e74da0b2de14e49fd0}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_activeVPSId@{m\_activeVPSId}}
+\index{m\_activeVPSId@{m\_activeVPSId}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_activeVPSId}{m\_activeVPSId}}
+{\footnotesize\ttfamily int m\+\_\+active\+V\+P\+S\+Id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1553 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_adb1be480e7990b721cb786c97830023c}\label{classvvenc_1_1ParameterSetManager_adb1be480e7990b721cb786c97830023c}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_apsMap@{m\_apsMap}}
+\index{m\_apsMap@{m\_apsMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_apsMap}{m\_apsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$ m\+\_\+aps\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1545 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_aa075068c1cd0989d71306e5c3d9dd0f7}\label{classvvenc_1_1ParameterSetManager_aa075068c1cd0989d71306e5c3d9dd0f7}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_apss@{m\_apss}}
+\index{m\_apss@{m\_apss}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_apss}{m\_apss}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$\ast$ m\+\_\+apss\mbox{[}\mbox{\hyperlink{namespacevvenc_a5060b69f3d0a778e6695e17871369f6a}{A\+L\+F\+\_\+\+C\+T\+B\+\_\+\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+A\+PS}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1549 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a6dfe8da2e653821f2905aa6ad7df8ad8}\label{classvvenc_1_1ParameterSetManager_a6dfe8da2e653821f2905aa6ad7df8ad8}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_dciMap@{m\_dciMap}}
+\index{m\_dciMap@{m\_dciMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_dciMap}{m\_dciMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}}$>$ m\+\_\+dci\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1546 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a48341171f82a2ef4981b954db462bc88}\label{classvvenc_1_1ParameterSetManager_a48341171f82a2ef4981b954db462bc88}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_ppsMap@{m\_ppsMap}}
+\index{m\_ppsMap@{m\_ppsMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_ppsMap}{m\_ppsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}}$>$ m\+\_\+pps\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1544 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_a4b4fb4300d4baaf434a7ba93e729df1f}\label{classvvenc_1_1ParameterSetManager_a4b4fb4300d4baaf434a7ba93e729df1f}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_spsMap@{m\_spsMap}}
+\index{m\_spsMap@{m\_spsMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_spsMap}{m\_spsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}}$>$ m\+\_\+sps\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1540 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ParameterSetManager_ab36e29ee49d96cd41310f5aeb5ce939c}\label{classvvenc_1_1ParameterSetManager_ab36e29ee49d96cd41310f5aeb5ce939c}} 
+\index{ParameterSetManager@{ParameterSetManager}!m\_vpsMap@{m\_vpsMap}}
+\index{m\_vpsMap@{m\_vpsMap}!ParameterSetManager@{ParameterSetManager}}
+\doxysubsubsection{\texorpdfstring{m\_vpsMap}{m\_vpsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$>$ m\+\_\+vps\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 1547 of file Slice.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

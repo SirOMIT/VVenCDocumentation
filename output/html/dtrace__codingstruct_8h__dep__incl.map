@@ -1,0 +1,11 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/dtrace_codingstruct.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/dtrace_codingstruct.h">
+<area shape="rect" id="node1" title="Easy to use dtrace calls concerning coding structures." alt="" coords="664,5,824,76"/>
+<area shape="rect" id="node2" href="$LoopFilter_8cpp.html" title="deblocking filter" alt="" coords="5,124,165,195"/>
+<area shape="rect" id="node3" href="$SampleAdaptiveOffset_8cpp.html" title="sample adaptive offset class" alt="" coords="190,124,373,195"/>
+<area shape="rect" id="node4" href="$DecLib_8cpp.html" title="decoder class" alt="" coords="397,124,553,195"/>
+<area shape="rect" id="node5" href="$EncCu_8cpp.html" title="Coding Unit (CU) encoder class." alt="" coords="577,124,733,195"/>
+<area shape="rect" id="node6" href="$EncGOP_8cpp.html" title="GOP encoder class." alt="" coords="757,124,913,195"/>
+<area shape="rect" id="node7" href="$EncPicture_8cpp.html" title="encode picture" alt="" coords="937,124,1093,195"/>
+<area shape="rect" id="node8" href="$EncSampleAdaptiveOffset_8cpp.html" title="estimation part of sample adaptive offset class" alt="" coords="1117,124,1323,195"/>
+<area shape="rect" id="node9" href="$EncSlice_8cpp.html" title="slice encoder class" alt="" coords="1347,124,1503,195"/>
+</map>

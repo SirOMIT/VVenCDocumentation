@@ -1,0 +1,664 @@
+\hypertarget{classvvenc_1_1EncSlice}{}\doxysection{Enc\+Slice}
+\label{classvvenc_1_1EncSlice}\index{EncSlice@{EncSlice}}
+
+
+slice encoder class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Enc\+Slice.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Enc\+Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncSlice_aa5a0d07f524bdb3ad98ad3128cd2e3d8}{Enc\+Slice}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1EncSlice_a14dce513ca55d4eedaa4fcd02cded630}{$\sim$\+Enc\+Slice}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a97e60d70e5757358cd2f6ca08e7cb3c0}{compress\+Slice}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic)
+\begin{DoxyCompactList}\small\item\em analysis stage of slice s \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a5ce9a47a17a7e7ef82fde50ee7d06241}{encode\+Slice\+Data}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a7dfd397e59a956995caa8656433c5b7b}{finish\+Compress\+Slice}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic, \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a1a7c61e3bad2c79a67d2fd99b4d94492}{init}} (const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&enc\+Cfg, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps, std\+::vector$<$ int $>$ $\ast$const global\+Ctu\+Qp\+Vector, \mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} \&loop\+Filter, \mbox{\hyperlink{classvvenc_1_1EncAdaptiveLoopFilter}{Enc\+Adaptive\+Loop\+Filter}} \&alf, \mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} \&rate\+Ctrl, \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$thread\+Pool, \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$ctu\+Tasks\+Done\+Counter)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a362f99eceadcaac2b81d79ae2227948d}{init\+Pic}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic, int gop\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a862c99f1fbddb1e567c2d42d10933895}{reset\+QP}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic, int slice\+QP, double \&lambda)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_acbf1eb8697ea7f4d958e1ff861c6868b}{sao\+Disabled\+Rate}} (\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$recon\+Params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncSlice_a1b12cc6420e832ad0fad435344ed3954}{x\+Calculate\+Lambda}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, const int G\+O\+Pid, const int depth, const double ref\+QP, const double d\+QP, int \&i\+QP)
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncSlice_a4f978713c98cc3fdc0a365cb0b52552a}{x\+Get\+Q\+P\+For\+Picture}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, unsigned gop\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_ad03a837836dae8afa70c584516348fb5}{x\+Init\+Slice\+Lambda\+QP}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, int gop\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncSlice_a45a2f8654b9ec99a028383708f2149f1}{x\+Process\+Ctus}} (\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$pic, const unsigned start\+Ctu\+Ts\+Addr, const unsigned bounding\+Ctu\+Ts\+Addr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$bool check\+Ready\+State = false$>$ }\\static bool \mbox{\hyperlink{classvvenc_1_1EncSlice_a1ae3f14919d9f85da8569dd27d10b468}{x\+Process\+Ctu\+Task}} (int task\+Idx, \mbox{\hyperlink{structvvenc_1_1CtuEncParam}{Ctu\+Enc\+Param}} $\ast$ctu\+Enc\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1CtuEncParam}{Ctu\+Enc\+Param}} $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a1cad4dff08432cf48f3401c8adc47454}{ctu\+Enc\+Params}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinEncoder}{Bin\+Encoder}} \mbox{\hyperlink{classvvenc_1_1EncSlice_a06e6926a5b9d978f044dbebdcc059020}{m\+\_\+\+Bin\+Encoder}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} \mbox{\hyperlink{classvvenc_1_1EncSlice_a67bce1d0022ddfa6bf1fa3aa37443cd7}{m\+\_\+\+C\+A\+B\+A\+C\+Writer}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncSlice_a274448b0a0e01cde0ebae3b270d13fc2}{m\+\_\+ctu\+Enc\+Delay}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1PerThreadRsrc}{Per\+Thread\+Rsrc}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_aa69f8b05411c9d4968083d9776a71a22}{m\+\_\+\+Ctu\+Task\+Rsrc}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a4907d9027b70bf45c44fdf17c746156a}{m\+\_\+ctu\+Tasks\+Done\+Counter}}
+\item 
+\mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} \mbox{\hyperlink{classvvenc_1_1EncSlice_ae4a2522d3fdb9980cad9ec8661ae93da}{m\+\_\+enc\+C\+A\+B\+A\+C\+Table\+Idx}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \mbox{\hyperlink{classvvenc_1_1EncSlice_ab39e61080d033fbe06bdf936e9da195a}{m\+\_\+entropy\+Coding\+Sync\+Context\+State}}
+\begin{DoxyCompactList}\small\item\em context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row used for writing \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1LineEncRsrc}{Line\+Enc\+Rsrc}} $\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_aea364dca02df554ce600fcaceca737d1}{m\+\_\+\+Line\+Enc\+Rsrc}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncAdaptiveLoopFilter}{Enc\+Adaptive\+Loop\+Filter}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_ad09cf09db03baef213b131b2124b80df}{m\+\_\+p\+A\+LF}}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_afabc33c7c4328921490982de50e35da0}{m\+\_\+pc\+Enc\+Cfg}}
+\begin{DoxyCompactList}\small\item\em encoder configuration class \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a12a91afa66dc93c2037c6418ece7ca08}{m\+\_\+pc\+Rate\+Ctrl}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a56e5d16d0a45118f4e6116250d4c1c23}{m\+\_\+p\+Loop\+Filter}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacevvenc_af23d8e62c24d2cefaaa375a31f5b6b4a}{Process\+Ctu\+State}} $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a736bed8210532853ada1e5dfd5ca6912}{m\+\_\+process\+States}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncSlice_ab5101a69e24c36de2c731d82576de969}{m\+\_\+sao\+All\+Disabled}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncSlice_a10a3b0428eb655e488c6d39f1d777945}{m\+\_\+sao\+Disabled\+Rate}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncSlice_ab949f8b226172216a17be4f660440d29}{m\+\_\+sao\+Enabled}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a72d8e9348fd2b54b752ad30385a32d78}{m\+\_\+sao\+Recon\+Params}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}} $\ast$$\ast$ $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a55eee85a09b848af151a700e982853af}{m\+\_\+sao\+Stat\+Data}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} $>$ \mbox{\hyperlink{classvvenc_1_1EncSlice_aaa13bf056d67bc05a6ce438ef63238c1}{m\+\_\+sync\+Pic\+Ctx}}
+\begin{DoxyCompactList}\small\item\em context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row used for estimation \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncSlice_a554a6e379eb8db3d601ac16590ad3d2e}{m\+\_\+thread\+Pool}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+slice encoder class 
+
+Definition at line 94 of file Enc\+Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_aa5a0d07f524bdb3ad98ad3128cd2e3d8}\label{classvvenc_1_1EncSlice_aa5a0d07f524bdb3ad98ad3128cd2e3d8}} 
+\index{EncSlice@{EncSlice}!EncSlice@{EncSlice}}
+\index{EncSlice@{EncSlice}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{EncSlice()}{EncSlice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncSlice}{Enc\+Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file Enc\+Slice.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a14dce513ca55d4eedaa4fcd02cded630}\label{classvvenc_1_1EncSlice_a14dce513ca55d4eedaa4fcd02cded630}} 
+\index{EncSlice@{EncSlice}!````~EncSlice@{$\sim$EncSlice}}
+\index{````~EncSlice@{$\sim$EncSlice}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncSlice()}{~EncSlice()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncSlice}{Enc\+Slice}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 139 of file Enc\+Slice.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a97e60d70e5757358cd2f6ca08e7cb3c0}\label{classvvenc_1_1EncSlice_a97e60d70e5757358cd2f6ca08e7cb3c0}} 
+\index{EncSlice@{EncSlice}!compressSlice@{compressSlice}}
+\index{compressSlice@{compressSlice}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{compressSlice()}{compressSlice()}}
+{\footnotesize\ttfamily void compress\+Slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption})}
+
+
+
+analysis stage of slice s 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pic} & picture class \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 515 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a97e60d70e5757358cd2f6ca08e7cb3c0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a97e60d70e5757358cd2f6ca08e7cb3c0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a5ce9a47a17a7e7ef82fde50ee7d06241}\label{classvvenc_1_1EncSlice_a5ce9a47a17a7e7ef82fde50ee7d06241}} 
+\index{EncSlice@{EncSlice}!encodeSliceData@{encodeSliceData}}
+\index{encodeSliceData@{encodeSliceData}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{encodeSliceData()}{encodeSliceData()}}
+{\footnotesize\ttfamily void encode\+Slice\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1134 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a5ce9a47a17a7e7ef82fde50ee7d06241_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a5ce9a47a17a7e7ef82fde50ee7d06241_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a7dfd397e59a956995caa8656433c5b7b}\label{classvvenc_1_1EncSlice_a7dfd397e59a956995caa8656433c5b7b}} 
+\index{EncSlice@{EncSlice}!finishCompressSlice@{finishCompressSlice}}
+\index{finishCompressSlice@{finishCompressSlice}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{finishCompressSlice()}{finishCompressSlice()}}
+{\footnotesize\ttfamily void finish\+Compress\+Slice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic,  }\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})}
+
+
+
+Definition at line 691 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a7dfd397e59a956995caa8656433c5b7b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classvvenc_1_1EncSlice_a7dfd397e59a956995caa8656433c5b7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a1a7c61e3bad2c79a67d2fd99b4d94492}\label{classvvenc_1_1EncSlice_a1a7c61e3bad2c79a67d2fd99b4d94492}} 
+\index{EncSlice@{EncSlice}!init@{init}}
+\index{init@{init}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}} \&}]{enc\+Cfg,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps,  }\item[{std\+::vector$<$ int $>$ $\ast$const}]{global\+Ctu\+Qp\+Vector,  }\item[{\mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}} \&}]{loop\+Filter,  }\item[{\mbox{\hyperlink{classvvenc_1_1EncAdaptiveLoopFilter}{Enc\+Adaptive\+Loop\+Filter}} \&}]{alf,  }\item[{\mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}} \&}]{rate\+Ctrl,  }\item[{\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}} $\ast$}]{thread\+Pool,  }\item[{\mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}} $\ast$}]{ctu\+Tasks\+Done\+Counter }\end{DoxyParamCaption})}
+
+
+
+Definition at line 166 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classvvenc_1_1EncSlice_a1a7c61e3bad2c79a67d2fd99b4d94492_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a1a7c61e3bad2c79a67d2fd99b4d94492_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a362f99eceadcaac2b81d79ae2227948d}\label{classvvenc_1_1EncSlice_a362f99eceadcaac2b81d79ae2227948d}} 
+\index{EncSlice@{EncSlice}!initPic@{initPic}}
+\index{initPic@{initPic}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{initPic()}{initPic()}}
+{\footnotesize\ttfamily void init\+Pic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic,  }\item[{int}]{gop\+Id }\end{DoxyParamCaption})}
+
+
+
+Definition at line 232 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a362f99eceadcaac2b81d79ae2227948d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a362f99eceadcaac2b81d79ae2227948d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a862c99f1fbddb1e567c2d42d10933895}\label{classvvenc_1_1EncSlice_a862c99f1fbddb1e567c2d42d10933895}} 
+\index{EncSlice@{EncSlice}!resetQP@{resetQP}}
+\index{resetQP@{resetQP}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{resetQP()}{resetQP()}}
+{\footnotesize\ttfamily void reset\+QP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic,  }\item[{int}]{slice\+QP,  }\item[{double \&}]{lambda }\end{DoxyParamCaption})}
+
+
+
+Definition at line 369 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classvvenc_1_1EncSlice_a862c99f1fbddb1e567c2d42d10933895_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a862c99f1fbddb1e567c2d42d10933895_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_acbf1eb8697ea7f4d958e1ff861c6868b}\label{classvvenc_1_1EncSlice_acbf1eb8697ea7f4d958e1ff861c6868b}} 
+\index{EncSlice@{EncSlice}!saoDisabledRate@{saoDisabledRate}}
+\index{saoDisabledRate@{saoDisabledRate}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{saoDisabledRate()}{saoDisabledRate()}}
+{\footnotesize\ttfamily void sao\+Disabled\+Rate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$}]{recon\+Params }\end{DoxyParamCaption})}
+
+
+
+Definition at line 686 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_acbf1eb8697ea7f4d958e1ff861c6868b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_acbf1eb8697ea7f4d958e1ff861c6868b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a1b12cc6420e832ad0fad435344ed3954}\label{classvvenc_1_1EncSlice_a1b12cc6420e832ad0fad435344ed3954}} 
+\index{EncSlice@{EncSlice}!xCalculateLambda@{xCalculateLambda}}
+\index{xCalculateLambda@{xCalculateLambda}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{xCalculateLambda()}{xCalculateLambda()}}
+{\footnotesize\ttfamily double x\+Calculate\+Lambda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{const int}]{G\+O\+Pid,  }\item[{const int}]{depth,  }\item[{const double}]{ref\+QP,  }\item[{const double}]{d\+QP,  }\item[{int \&}]{i\+QP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 426 of file Enc\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a1b12cc6420e832ad0fad435344ed3954_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a4f978713c98cc3fdc0a365cb0b52552a}\label{classvvenc_1_1EncSlice_a4f978713c98cc3fdc0a365cb0b52552a}} 
+\index{EncSlice@{EncSlice}!xGetQPForPicture@{xGetQPForPicture}}
+\index{xGetQPForPicture@{xGetQPForPicture}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{xGetQPForPicture()}{xGetQPForPicture()}}
+{\footnotesize\ttfamily int x\+Get\+Q\+P\+For\+Picture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{unsigned}]{gop\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 388 of file Enc\+Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a4f978713c98cc3fdc0a365cb0b52552a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ad03a837836dae8afa70c584516348fb5}\label{classvvenc_1_1EncSlice_ad03a837836dae8afa70c584516348fb5}} 
+\index{EncSlice@{EncSlice}!xInitSliceLambdaQP@{xInitSliceLambdaQP}}
+\index{xInitSliceLambdaQP@{xInitSliceLambdaQP}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{xInitSliceLambdaQP()}{xInitSliceLambdaQP()}}
+{\footnotesize\ttfamily void x\+Init\+Slice\+Lambda\+QP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{int}]{gop\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 265 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_ad03a837836dae8afa70c584516348fb5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_ad03a837836dae8afa70c584516348fb5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a45a2f8654b9ec99a028383708f2149f1}\label{classvvenc_1_1EncSlice_a45a2f8654b9ec99a028383708f2149f1}} 
+\index{EncSlice@{EncSlice}!xProcessCtus@{xProcessCtus}}
+\index{xProcessCtus@{xProcessCtus}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{xProcessCtus()}{xProcessCtus()}}
+{\footnotesize\ttfamily void x\+Process\+Ctus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} $\ast$}]{pic,  }\item[{const unsigned}]{start\+Ctu\+Ts\+Addr,  }\item[{const unsigned}]{bounding\+Ctu\+Ts\+Addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 716 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a45a2f8654b9ec99a028383708f2149f1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncSlice_a45a2f8654b9ec99a028383708f2149f1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a1ae3f14919d9f85da8569dd27d10b468}\label{classvvenc_1_1EncSlice_a1ae3f14919d9f85da8569dd27d10b468}} 
+\index{EncSlice@{EncSlice}!xProcessCtuTask@{xProcessCtuTask}}
+\index{xProcessCtuTask@{xProcessCtuTask}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{xProcessCtuTask()}{xProcessCtuTask()}}
+{\footnotesize\ttfamily bool x\+Process\+Ctu\+Task (\begin{DoxyParamCaption}\item[{int}]{task\+Idx,  }\item[{\mbox{\hyperlink{structvvenc_1_1CtuEncParam}{Ctu\+Enc\+Param}} $\ast$}]{ctu\+Enc\+Param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 797 of file Enc\+Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classvvenc_1_1EncSlice_a1ae3f14919d9f85da8569dd27d10b468_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a1cad4dff08432cf48f3401c8adc47454}\label{classvvenc_1_1EncSlice_a1cad4dff08432cf48f3401c8adc47454}} 
+\index{EncSlice@{EncSlice}!ctuEncParams@{ctuEncParams}}
+\index{ctuEncParams@{ctuEncParams}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{ctuEncParams}{ctuEncParams}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1CtuEncParam}{Ctu\+Enc\+Param}}$>$ ctu\+Enc\+Params\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 122 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a06e6926a5b9d978f044dbebdcc059020}\label{classvvenc_1_1EncSlice_a06e6926a5b9d978f044dbebdcc059020}} 
+\index{EncSlice@{EncSlice}!m\_BinEncoder@{m\_BinEncoder}}
+\index{m\_BinEncoder@{m\_BinEncoder}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_BinEncoder}{m\_BinEncoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinEncoder}{Bin\+Encoder}} m\+\_\+\+Bin\+Encoder\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 110 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a67bce1d0022ddfa6bf1fa3aa37443cd7}\label{classvvenc_1_1EncSlice_a67bce1d0022ddfa6bf1fa3aa37443cd7}} 
+\index{EncSlice@{EncSlice}!m\_CABACWriter@{m\_CABACWriter}}
+\index{m\_CABACWriter@{m\_CABACWriter}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_CABACWriter}{m\_CABACWriter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CABACWriter}{C\+A\+B\+A\+C\+Writer}} m\+\_\+\+C\+A\+B\+A\+C\+Writer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 111 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a274448b0a0e01cde0ebae3b270d13fc2}\label{classvvenc_1_1EncSlice_a274448b0a0e01cde0ebae3b270d13fc2}} 
+\index{EncSlice@{EncSlice}!m\_ctuEncDelay@{m\_ctuEncDelay}}
+\index{m\_ctuEncDelay@{m\_ctuEncDelay}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_ctuEncDelay}{m\_ctuEncDelay}}
+{\footnotesize\ttfamily int m\+\_\+ctu\+Enc\+Delay\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 105 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_aa69f8b05411c9d4968083d9776a71a22}\label{classvvenc_1_1EncSlice_aa69f8b05411c9d4968083d9776a71a22}} 
+\index{EncSlice@{EncSlice}!m\_CtuTaskRsrc@{m\_CtuTaskRsrc}}
+\index{m\_CtuTaskRsrc@{m\_CtuTaskRsrc}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_CtuTaskRsrc}{m\_CtuTaskRsrc}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1PerThreadRsrc}{Per\+Thread\+Rsrc}}$\ast$$>$ m\+\_\+\+Ctu\+Task\+Rsrc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 100 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a4907d9027b70bf45c44fdf17c746156a}\label{classvvenc_1_1EncSlice_a4907d9027b70bf45c44fdf17c746156a}} 
+\index{EncSlice@{EncSlice}!m\_ctuTasksDoneCounter@{m\_ctuTasksDoneCounter}}
+\index{m\_ctuTasksDoneCounter@{m\_ctuTasksDoneCounter}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_ctuTasksDoneCounter}{m\_ctuTasksDoneCounter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}}$\ast$ m\+\_\+ctu\+Tasks\+Done\+Counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 103 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ae4a2522d3fdb9980cad9ec8661ae93da}\label{classvvenc_1_1EncSlice_ae4a2522d3fdb9980cad9ec8661ae93da}} 
+\index{EncSlice@{EncSlice}!m\_encCABACTableIdx@{m\_encCABACTableIdx}}
+\index{m\_encCABACTableIdx@{m\_encCABACTableIdx}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_encCABACTableIdx}{m\_encCABACTableIdx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} m\+\_\+enc\+C\+A\+B\+A\+C\+Table\+Idx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 115 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ab39e61080d033fbe06bdf936e9da195a}\label{classvvenc_1_1EncSlice_ab39e61080d033fbe06bdf936e9da195a}} 
+\index{EncSlice@{EncSlice}!m\_entropyCodingSyncContextState@{m\_entropyCodingSyncContextState}}
+\index{m\_entropyCodingSyncContextState@{m\_entropyCodingSyncContextState}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_entropyCodingSyncContextState}{m\_entropyCodingSyncContextState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} m\+\_\+entropy\+Coding\+Sync\+Context\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row used for writing 
+
+
+
+Definition at line 113 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_aea364dca02df554ce600fcaceca737d1}\label{classvvenc_1_1EncSlice_aea364dca02df554ce600fcaceca737d1}} 
+\index{EncSlice@{EncSlice}!m\_LineEncRsrc@{m\_LineEncRsrc}}
+\index{m\_LineEncRsrc@{m\_LineEncRsrc}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_LineEncRsrc}{m\_LineEncRsrc}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1LineEncRsrc}{Line\+Enc\+Rsrc}}$\ast$$>$ m\+\_\+\+Line\+Enc\+Rsrc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 101 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ad09cf09db03baef213b131b2124b80df}\label{classvvenc_1_1EncSlice_ad09cf09db03baef213b131b2124b80df}} 
+\index{EncSlice@{EncSlice}!m\_pALF@{m\_pALF}}
+\index{m\_pALF@{m\_pALF}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_pALF}{m\_pALF}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncAdaptiveLoopFilter}{Enc\+Adaptive\+Loop\+Filter}}$\ast$ m\+\_\+p\+A\+LF\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 108 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_afabc33c7c4328921490982de50e35da0}\label{classvvenc_1_1EncSlice_afabc33c7c4328921490982de50e35da0}} 
+\index{EncSlice@{EncSlice}!m\_pcEncCfg@{m\_pcEncCfg}}
+\index{m\_pcEncCfg@{m\_pcEncCfg}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_pcEncCfg}{m\_pcEncCfg}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_ace15b38db4c343877cb8fc77e0155236}{V\+V\+Enc\+Cfg}}$\ast$ m\+\_\+pc\+Enc\+Cfg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+encoder configuration class 
+
+
+
+Definition at line 98 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a12a91afa66dc93c2037c6418ece7ca08}\label{classvvenc_1_1EncSlice_a12a91afa66dc93c2037c6418ece7ca08}} 
+\index{EncSlice@{EncSlice}!m\_pcRateCtrl@{m\_pcRateCtrl}}
+\index{m\_pcRateCtrl@{m\_pcRateCtrl}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_pcRateCtrl}{m\_pcRateCtrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1RateCtrl}{Rate\+Ctrl}}$\ast$ m\+\_\+pc\+Rate\+Ctrl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 109 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a56e5d16d0a45118f4e6116250d4c1c23}\label{classvvenc_1_1EncSlice_a56e5d16d0a45118f4e6116250d4c1c23}} 
+\index{EncSlice@{EncSlice}!m\_pLoopFilter@{m\_pLoopFilter}}
+\index{m\_pLoopFilter@{m\_pLoopFilter}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_pLoopFilter}{m\_pLoopFilter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1LoopFilter}{Loop\+Filter}}$\ast$ m\+\_\+p\+Loop\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 107 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a736bed8210532853ada1e5dfd5ca6912}\label{classvvenc_1_1EncSlice_a736bed8210532853ada1e5dfd5ca6912}} 
+\index{EncSlice@{EncSlice}!m\_processStates@{m\_processStates}}
+\index{m\_processStates@{m\_processStates}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_processStates}{m\_processStates}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacevvenc_af23d8e62c24d2cefaaa375a31f5b6b4a}{Process\+Ctu\+State}}$>$ m\+\_\+process\+States\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 104 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ab5101a69e24c36de2c731d82576de969}\label{classvvenc_1_1EncSlice_ab5101a69e24c36de2c731d82576de969}} 
+\index{EncSlice@{EncSlice}!m\_saoAllDisabled@{m\_saoAllDisabled}}
+\index{m\_saoAllDisabled@{m\_saoAllDisabled}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_saoAllDisabled}{m\_saoAllDisabled}}
+{\footnotesize\ttfamily bool m\+\_\+sao\+All\+Disabled\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a10a3b0428eb655e488c6d39f1d777945}\label{classvvenc_1_1EncSlice_a10a3b0428eb655e488c6d39f1d777945}} 
+\index{EncSlice@{EncSlice}!m\_saoDisabledRate@{m\_saoDisabledRate}}
+\index{m\_saoDisabledRate@{m\_saoDisabledRate}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_saoDisabledRate}{m\_saoDisabledRate}}
+{\footnotesize\ttfamily double m\+\_\+sao\+Disabled\+Rate\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\mbox{[}V\+V\+E\+N\+C\+\_\+\+M\+A\+X\+\_\+\+T\+L\+A\+Y\+ER\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 117 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_ab949f8b226172216a17be4f660440d29}\label{classvvenc_1_1EncSlice_ab949f8b226172216a17be4f660440d29}} 
+\index{EncSlice@{EncSlice}!m\_saoEnabled@{m\_saoEnabled}}
+\index{m\_saoEnabled@{m\_saoEnabled}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_saoEnabled}{m\_saoEnabled}}
+{\footnotesize\ttfamily bool m\+\_\+sao\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a72d8e9348fd2b54b752ad30385a32d78}\label{classvvenc_1_1EncSlice_a72d8e9348fd2b54b752ad30385a32d78}} 
+\index{EncSlice@{EncSlice}!m\_saoReconParams@{m\_saoReconParams}}
+\index{m\_saoReconParams@{m\_saoReconParams}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_saoReconParams}{m\_saoReconParams}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}}$>$ m\+\_\+sao\+Recon\+Params\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 120 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a55eee85a09b848af151a700e982853af}\label{classvvenc_1_1EncSlice_a55eee85a09b848af151a700e982853af}} 
+\index{EncSlice@{EncSlice}!m\_saoStatData@{m\_saoStatData}}
+\index{m\_saoStatData@{m\_saoStatData}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_saoStatData}{m\_saoStatData}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SAOStatData}{S\+A\+O\+Stat\+Data}}$\ast$$\ast$$>$ m\+\_\+sao\+Stat\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 121 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_aaa13bf056d67bc05a6ce438ef63238c1}\label{classvvenc_1_1EncSlice_aaa13bf056d67bc05a6ce438ef63238c1}} 
+\index{EncSlice@{EncSlice}!m\_syncPicCtx@{m\_syncPicCtx}}
+\index{m\_syncPicCtx@{m\_syncPicCtx}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_syncPicCtx}{m\_syncPicCtx}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}}$>$ m\+\_\+sync\+Pic\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+context storage for state of contexts at the wavefront/\+W\+P\+P/entropy-\/coding-\/sync second C\+TU of tile-\/row used for estimation 
+
+
+
+Definition at line 114 of file Enc\+Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncSlice_a554a6e379eb8db3d601ac16590ad3d2e}\label{classvvenc_1_1EncSlice_a554a6e379eb8db3d601ac16590ad3d2e}} 
+\index{EncSlice@{EncSlice}!m\_threadPool@{m\_threadPool}}
+\index{m\_threadPool@{m\_threadPool}!EncSlice@{EncSlice}}
+\doxysubsubsection{\texorpdfstring{m\_threadPool}{m\_threadPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}}$\ast$ m\+\_\+thread\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file Enc\+Slice.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncSlice_8h}{Enc\+Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncSlice_8cpp}{Enc\+Slice.\+cpp}}\end{DoxyCompactItemize}

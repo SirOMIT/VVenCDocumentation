@@ -1,0 +1,84 @@
+\hypertarget{StatCounter_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Stat\+Counter.h File Reference}
+\label{StatCounter_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/StatCounter.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/StatCounter.h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for Stat\+Counter.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{StatCounter_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{StatCounter_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter}{Counter$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1Counter2D}{Counter2\+D$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter}{Stat\+Counter$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2D}{Stat\+Counter2\+D$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSet}{Stat\+Counter2\+D\+Set$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounter2DSetMapped}{Stat\+Counter2\+D\+Set\+Mapped$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCounterSetMapped}{Stat\+Counter\+Set\+Mapped$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1StatCounters_1_1StatCountersSet}{Stat\+Counters\+Set$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1StatCounters}{vvenc\+::\+Stat\+Counters}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8h_a87a0b8601d301b04efad305d35b8ba20}{C\+H\+E\+CK}}(c,  x)~if(c)\{ \mbox{\hyperlink{TypeDef_8h_a27264efd631c4f584ddcb2f5888ae6ed}{T\+H\+R\+OW}}(x); \}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8h_a27264efd631c4f584ddcb2f5888ae6ed}{T\+H\+R\+OW}}(x)~throw( Exception( \char`\"{}\textbackslash{}n\+E\+R\+R\+O\+R\+: In function \textbackslash{}\char`\"{}\char`\"{} ) $<$$<$ \+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+ $<$$<$ \char`\"{}\textbackslash{}\char`\"{} in \char`\"{} $<$$<$ \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+ $<$$<$ \char`\"{}\+:\char`\"{} $<$$<$ \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $<$$<$ \char`\"{}\+: \char`\"{} $<$$<$ x )
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacevvenc_1_1StatCounters_ab405bf0e18fb0b40d2ab1b8e60ac4078}{report2D}} (std\+::ostream \&os, const Stat\+Counter2\+D\+Set$<$ T $>$ \&counters, bool axis\+In\+Block\+Sizes=false, bool absolute\+Numbers=true, bool weighted\+By\+Area=false, bool second\+Column\+In\+Percentage=false, bool ratios\+Within\+Single\+Element=false, int ref\+Cnt\+Id=-\/1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{StatCounter_8h_a87a0b8601d301b04efad305d35b8ba20}\label{StatCounter_8h_a87a0b8601d301b04efad305d35b8ba20}} 
+\index{StatCounter.h@{StatCounter.h}!CHECK@{CHECK}}
+\index{CHECK@{CHECK}!StatCounter.h@{StatCounter.h}}
+\doxysubsubsection{\texorpdfstring{CHECK}{CHECK}}
+{\footnotesize\ttfamily \#define C\+H\+E\+CK(\begin{DoxyParamCaption}\item[{}]{c,  }\item[{}]{x }\end{DoxyParamCaption})~if(c)\{ \mbox{\hyperlink{TypeDef_8h_a27264efd631c4f584ddcb2f5888ae6ed}{T\+H\+R\+OW}}(x); \}}
+
+
+
+Definition at line 59 of file Stat\+Counter.\+h.
+
+\mbox{\Hypertarget{StatCounter_8h_a27264efd631c4f584ddcb2f5888ae6ed}\label{StatCounter_8h_a27264efd631c4f584ddcb2f5888ae6ed}} 
+\index{StatCounter.h@{StatCounter.h}!THROW@{THROW}}
+\index{THROW@{THROW}!StatCounter.h@{StatCounter.h}}
+\doxysubsubsection{\texorpdfstring{THROW}{THROW}}
+{\footnotesize\ttfamily \#define T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~throw( Exception( \char`\"{}\textbackslash{}n\+E\+R\+R\+O\+R\+: In function \textbackslash{}\char`\"{}\char`\"{} ) $<$$<$ \+\_\+\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N\+\_\+\+\_\+ $<$$<$ \char`\"{}\textbackslash{}\char`\"{} in \char`\"{} $<$$<$ \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+ $<$$<$ \char`\"{}\+:\char`\"{} $<$$<$ \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $<$$<$ \char`\"{}\+: \char`\"{} $<$$<$ x )}
+
+
+
+Definition at line 56 of file Stat\+Counter.\+h.
+

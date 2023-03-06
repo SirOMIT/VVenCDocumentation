@@ -1,0 +1,39 @@
+\hypertarget{PicYuvMD5_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Pic\+Yuv\+M\+D5.cpp File Reference}
+\label{PicYuvMD5_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/PicYuvMD5.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/PicYuvMD5.cpp}}
+{\ttfamily \#include \char`\"{}Pic\+Yuv\+M\+D5.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}M\+D5.\+h\char`\"{}}\newline
+Include dependency graph for Pic\+Yuv\+M\+D5.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{PicYuvMD5_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacevvenc_aa3633de1caaeace47d78b3495f32710b}{calc\+And\+Print\+Hash\+Status}} (const C\+Pel\+Unit\+Buf \&pic, const S\+E\+I\+Decoded\+Picture\+Hash $\ast$picture\+Hash\+S\+EI, const Bit\+Depths \&bit\+Depths, const vvenc\+Msg\+Level msgl)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a857ea19ed5c94f3498d9ed0e9ca7aac4}{calc\+Checksum}} (const C\+Pel\+Unit\+Buf \&pic, Picture\+Hash \&digest, const Bit\+Depths \&bit\+Depths)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a7f934a16a7536edc2989bb78156d0b7b}{calc\+C\+RC}} (const C\+Pel\+Unit\+Buf \&pic, Picture\+Hash \&digest, const Bit\+Depths \&bit\+Depths)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a00c21d60c8584d88cc2e7d6817bd2a8f}{calc\+M\+D5}} (const C\+Pel\+Unit\+Buf \&pic, Picture\+Hash \&digest, const Bit\+Depths \&bit\+Depths)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_ac50e8be9076b2afbc7045ddd915c0bdb}{comp\+Checksum}} (int bitdepth, const Pel $\ast$plane, uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t stride, Picture\+Hash \&digest, const Bit\+Depths \&)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a0a40c90bb2f2b14f14f0c3024c8c060d}{comp\+C\+RC}} (int bitdepth, const Pel $\ast$plane, uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t stride, Picture\+Hash \&digest)
+\item 
+std\+::string \mbox{\hyperlink{namespacevvenc_abbbff9c067d0daf178a3eaddc21bde4e}{hash\+To\+String}} (const Picture\+Hash \&digest, int num\+Char)
+\item 
+{\footnotesize template$<$uint32\+\_\+t O\+U\+T\+P\+U\+T\+\_\+\+B\+I\+T\+D\+E\+P\+T\+H\+\_\+\+D\+I\+V8$>$ }\\static void \mbox{\hyperlink{namespacevvenc_a7fce149331b2da4a431b26c6bfcf3445}{md5\+\_\+block}} (M\+D5 \&md5, const Pel $\ast$plane, uint32\+\_\+t n)
+\item 
+{\footnotesize template$<$uint32\+\_\+t O\+U\+T\+P\+U\+T\+\_\+\+B\+I\+T\+D\+E\+P\+T\+H\+\_\+\+D\+I\+V8$>$ }\\static void \mbox{\hyperlink{namespacevvenc_afe3b059ec14a0775f9b2888a95325245}{md5\+\_\+plane}} (M\+D5 \&md5, const Pel $\ast$plane, uint32\+\_\+t width, uint32\+\_\+t height, uint32\+\_\+t stride)
+\end{DoxyCompactItemize}

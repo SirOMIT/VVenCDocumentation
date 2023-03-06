@@ -1,0 +1,346 @@
+\hypertarget{classvvenc_1_1Analyze}{}\doxysection{Analyze}
+\label{classvvenc_1_1Analyze}\index{Analyze@{Analyze}}
+
+
+encoder analyzer class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Analyze.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Analyze_a3158626801c0cc1828626c64df3c93a9}{Analyze}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1Analyze_aff5bc813268dbd625fe492ae663499c5}{$\sim$\+Analyze}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_abdb09027eb23b59e0000b9d5bdac9ced}{add\+Result}} (double psnr\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}, double bits, const double M\+S\+Eyuvframe\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}, bool is\+Encode\+Lt\+Ref)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_aeecfefe8b299aa80a3de809f5fbd9a9f}{calculate\+Combined\+Values}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} ch\+Fmt, double \&P\+S\+N\+Ryuv, double \&M\+S\+Eyuv, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_ac8bb3912a3ce86b15842e79d0b421204}{clear}} ()
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_af5843e7a88d2144011cfe9661f1f667e}{get\+Bits}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Analyze_aea4a10c8e64b1d4a7d9d332e4407616b}{get\+Num\+Pic}} () const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_ae417f6bba9caf41a21d77355451643b2}{get\+Psnr}} (\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_abfcb809f82283c26dd6e5854446d0639}{print\+Out}} (char c\+Delim, const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} ch\+Fmt, const bool print\+M\+S\+E\+Based\+S\+NR, const bool print\+Sequence\+M\+SE, const bool print\+Hex\+Psnr, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_a1f6824e43ad6a371787f59c318f3170d}{print\+Summary}} (const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} ch\+Fmt, const bool print\+Sequence\+M\+SE, const bool print\+Hex\+Psnr, const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&bit\+Depths, const std\+::string \&s\+Filename)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_acf89a4b81e6b588e5d1f523916a2a030}{set\+Bits}} (double num\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Analyze_a804404925d6e0831df458263e382f62b}{set\+Frm\+Rate}} (double d\+Frame\+Rate)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_ae64e7e0258add50b90cf4718263e8402}{m\+\_\+d\+Add\+Bits}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_a7fa0b0dc6ad7161d79c2649e3b1d863a}{m\+\_\+d\+Frm\+Rate}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_ad08177a31629a4074c4ecd81a4025042}{m\+\_\+d\+P\+S\+N\+R\+Sum}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1Analyze_a3456a3862ec45e120dcfb44cd6591ea9}{m\+\_\+\+M\+S\+Eyuvframe}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Analyze_ad21aa83308676a97510bf2671f6de1d3}{m\+\_\+ui\+Num\+Pic}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+encoder analyzer class 
+
+Definition at line 70 of file Analyze.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_aff5bc813268dbd625fe492ae663499c5}\label{classvvenc_1_1Analyze_aff5bc813268dbd625fe492ae663499c5}} 
+\index{Analyze@{Analyze}!````~Analyze@{$\sim$Analyze}}
+\index{````~Analyze@{$\sim$Analyze}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{$\sim$Analyze()}{~Analyze()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 80 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_a3158626801c0cc1828626c64df3c93a9}\label{classvvenc_1_1Analyze_a3158626801c0cc1828626c64df3c93a9}} 
+\index{Analyze@{Analyze}!Analyze@{Analyze}}
+\index{Analyze@{Analyze}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{Analyze()}{Analyze()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Analyze}{Analyze}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 81 of file Analyze.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classvvenc_1_1Analyze_a3158626801c0cc1828626c64df3c93a9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_abdb09027eb23b59e0000b9d5bdac9ced}\label{classvvenc_1_1Analyze_abdb09027eb23b59e0000b9d5bdac9ced}} 
+\index{Analyze@{Analyze}!addResult@{addResult}}
+\index{addResult@{addResult}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{addResult()}{addResult()}}
+{\footnotesize\ttfamily void add\+Result (\begin{DoxyParamCaption}\item[{double}]{psnr\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]},  }\item[{double}]{bits,  }\item[{const double}]{M\+S\+Eyuvframe\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]},  }\item[{bool}]{is\+Encode\+Lt\+Ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 83 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_abdb09027eb23b59e0000b9d5bdac9ced_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_aeecfefe8b299aa80a3de809f5fbd9a9f}\label{classvvenc_1_1Analyze_aeecfefe8b299aa80a3de809f5fbd9a9f}} 
+\index{Analyze@{Analyze}!calculateCombinedValues@{calculateCombinedValues}}
+\index{calculateCombinedValues@{calculateCombinedValues}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{calculateCombinedValues()}{calculateCombinedValues()}}
+{\footnotesize\ttfamily void calculate\+Combined\+Values (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{ch\+Fmt,  }\item[{double \&}]{P\+S\+N\+Ryuv,  }\item[{double \&}]{M\+S\+Eyuv,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 116 of file Analyze.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_aeecfefe8b299aa80a3de809f5fbd9a9f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_aeecfefe8b299aa80a3de809f5fbd9a9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_ac8bb3912a3ce86b15842e79d0b421204}\label{classvvenc_1_1Analyze_ac8bb3912a3ce86b15842e79d0b421204}} 
+\index{Analyze@{Analyze}!clear@{clear}}
+\index{clear@{clear}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classvvenc_1_1Analyze_ac8bb3912a3ce86b15842e79d0b421204_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_af5843e7a88d2144011cfe9661f1f667e}\label{classvvenc_1_1Analyze_af5843e7a88d2144011cfe9661f1f667e}} 
+\index{Analyze@{Analyze}!getBits@{getBits}}
+\index{getBits@{getBits}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{getBits()}{getBits()}}
+{\footnotesize\ttfamily double get\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 99 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_af5843e7a88d2144011cfe9661f1f667e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_aea4a10c8e64b1d4a7d9d332e4407616b}\label{classvvenc_1_1Analyze_aea4a10c8e64b1d4a7d9d332e4407616b}} 
+\index{Analyze@{Analyze}!getNumPic@{getNumPic}}
+\index{getNumPic@{getNumPic}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{getNumPic()}{getNumPic()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Pic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_aea4a10c8e64b1d4a7d9d332e4407616b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_ae417f6bba9caf41a21d77355451643b2}\label{classvvenc_1_1Analyze_ae417f6bba9caf41a21d77355451643b2}} 
+\index{Analyze@{Analyze}!getPsnr@{getPsnr}}
+\index{getPsnr@{getPsnr}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{getPsnr()}{getPsnr()}}
+{\footnotesize\ttfamily double get\+Psnr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 98 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_ae417f6bba9caf41a21d77355451643b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_abfcb809f82283c26dd6e5854446d0639}\label{classvvenc_1_1Analyze_abfcb809f82283c26dd6e5854446d0639}} 
+\index{Analyze@{Analyze}!printOut@{printOut}}
+\index{printOut@{printOut}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{printOut()}{printOut()}}
+{\footnotesize\ttfamily void print\+Out (\begin{DoxyParamCaption}\item[{char}]{c\+Delim,  }\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{ch\+Fmt,  }\item[{const bool}]{print\+M\+S\+E\+Based\+S\+NR,  }\item[{const bool}]{print\+Sequence\+M\+SE,  }\item[{const bool}]{print\+Hex\+Psnr,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 151 of file Analyze.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_abfcb809f82283c26dd6e5854446d0639_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_abfcb809f82283c26dd6e5854446d0639_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_a1f6824e43ad6a371787f59c318f3170d}\label{classvvenc_1_1Analyze_a1f6824e43ad6a371787f59c318f3170d}} 
+\index{Analyze@{Analyze}!printSummary@{printSummary}}
+\index{printSummary@{printSummary}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{printSummary()}{printSummary()}}
+{\footnotesize\ttfamily void print\+Summary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{ch\+Fmt,  }\item[{const bool}]{print\+Sequence\+M\+SE,  }\item[{const bool}]{print\+Hex\+Psnr,  }\item[{const \mbox{\hyperlink{structvvenc_1_1BitDepths}{Bit\+Depths}} \&}]{bit\+Depths,  }\item[{const std\+::string \&}]{s\+Filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 415 of file Analyze.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_a1f6824e43ad6a371787f59c318f3170d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_a1f6824e43ad6a371787f59c318f3170d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_acf89a4b81e6b588e5d1f523916a2a030}\label{classvvenc_1_1Analyze_acf89a4b81e6b588e5d1f523916a2a030}} 
+\index{Analyze@{Analyze}!setBits@{setBits}}
+\index{setBits@{setBits}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{setBits()}{setBits()}}
+{\footnotesize\ttfamily void set\+Bits (\begin{DoxyParamCaption}\item[{double}]{num\+Bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 100 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_a804404925d6e0831df458263e382f62b}\label{classvvenc_1_1Analyze_a804404925d6e0831df458263e382f62b}} 
+\index{Analyze@{Analyze}!setFrmRate@{setFrmRate}}
+\index{setFrmRate@{setFrmRate}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{setFrmRate()}{setFrmRate()}}
+{\footnotesize\ttfamily void set\+Frm\+Rate (\begin{DoxyParamCaption}\item[{double}]{d\+Frame\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Analyze.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Analyze_a804404925d6e0831df458263e382f62b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Analyze_ae64e7e0258add50b90cf4718263e8402}\label{classvvenc_1_1Analyze_ae64e7e0258add50b90cf4718263e8402}} 
+\index{Analyze@{Analyze}!m\_dAddBits@{m\_dAddBits}}
+\index{m\_dAddBits@{m\_dAddBits}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{m\_dAddBits}{m\_dAddBits}}
+{\footnotesize\ttfamily double m\+\_\+d\+Add\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 74 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_a7fa0b0dc6ad7161d79c2649e3b1d863a}\label{classvvenc_1_1Analyze_a7fa0b0dc6ad7161d79c2649e3b1d863a}} 
+\index{Analyze@{Analyze}!m\_dFrmRate@{m\_dFrmRate}}
+\index{m\_dFrmRate@{m\_dFrmRate}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{m\_dFrmRate}{m\_dFrmRate}}
+{\footnotesize\ttfamily double m\+\_\+d\+Frm\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_ad08177a31629a4074c4ecd81a4025042}\label{classvvenc_1_1Analyze_ad08177a31629a4074c4ecd81a4025042}} 
+\index{Analyze@{Analyze}!m\_dPSNRSum@{m\_dPSNRSum}}
+\index{m\_dPSNRSum@{m\_dPSNRSum}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{m\_dPSNRSum}{m\_dPSNRSum}}
+{\footnotesize\ttfamily double m\+\_\+d\+P\+S\+N\+R\+Sum\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 73 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_a3456a3862ec45e120dcfb44cd6591ea9}\label{classvvenc_1_1Analyze_a3456a3862ec45e120dcfb44cd6591ea9}} 
+\index{Analyze@{Analyze}!m\_MSEyuvframe@{m\_MSEyuvframe}}
+\index{m\_MSEyuvframe@{m\_MSEyuvframe}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{m\_MSEyuvframe}{m\_MSEyuvframe}}
+{\footnotesize\ttfamily double m\+\_\+\+M\+S\+Eyuvframe\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Analyze.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Analyze_ad21aa83308676a97510bf2671f6de1d3}\label{classvvenc_1_1Analyze_ad21aa83308676a97510bf2671f6de1d3}} 
+\index{Analyze@{Analyze}!m\_uiNumPic@{m\_uiNumPic}}
+\index{m\_uiNumPic@{m\_uiNumPic}!Analyze@{Analyze}}
+\doxysubsubsection{\texorpdfstring{m\_uiNumPic}{m\_uiNumPic}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+ui\+Num\+Pic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 75 of file Analyze.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{Analyze_8h}{Analyze.\+h}}\end{DoxyCompactItemize}

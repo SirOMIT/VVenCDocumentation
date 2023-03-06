@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['u_11423',['u',['../structvvenc_1_1ChromaQpAdj.html#aace629a577115a5e583500f6101874e8',1,'vvenc::ChromaQpAdj']]],
+  ['ucpointnr_11424',['ucPointNr',['../structvvenc_1_1InterSearch_1_1TZSearchStruct.html#a752293b08128c71d8ab60b7073bfe108',1,'vvenc::InterSearch::TZSearchStruct']]],
+  ['uibestdistance_11425',['uiBestDistance',['../structvvenc_1_1InterSearch_1_1TZSearchStruct.html#ae103fd996569d9263bf3df7e19147ac0',1,'vvenc::InterSearch::TZSearchStruct']]],
+  ['uibestround_11426',['uiBestRound',['../structvvenc_1_1InterSearch_1_1TZSearchStruct.html#aee5982fc05f357997165c49af206bd3f',1,'vvenc::InterSearch::TZSearchStruct']]],
+  ['uibestsad_11427',['uiBestSad',['../structvvenc_1_1InterSearch_1_1TZSearchStruct.html#a7e66ac110ccf6db80e180f3d79b51788',1,'vvenc::InterSearch::TZSearchStruct']]],
+  ['unimvs_11428',['uniMvs',['../structvvenc_1_1BlkUniMvInfo.html#a25405e0363e78f4d7b1670ff1710a892',1,'vvenc::BlkUniMvInfo']]],
+  ['unitscale_11429',['unitScale',['../classvvenc_1_1CodingStructure.html#ad1a2dca79fc1e5683f3b4b464522715f',1,'vvenc::CodingStructure']]],
+  ['unitscalearray_11430',['UnitScaleArray',['../namespacevvenc.html#aad5c493efa208a1c9c6d7bc191d88131',1,'vvenc']]],
+  ['upsampledaspectratio_11431',['upsampledAspectRatio',['../classvvenc_1_1SEIFramePacking.html#ab5a33f54727cbd24b092d2b7fd748042',1,'vvenc::SEIFramePacking']]],
+  ['usealtcpbparamsflag_11432',['useAltCpbParamsFlag',['../classvvenc_1_1SEIBufferingPeriod.html#a49c74c91a6e086ef022c9c3849c5e49d',1,'vvenc::SEIBufferingPeriod']]],
+  ['usealthpelif_11433',['useAltHpelIf',['../structvvenc_1_1MergeCtx.html#a8143a5b48b378d60c28814705a378c7d',1,'vvenc::MergeCtx::useAltHpelIf()'],['../structvvenc_1_1HPMVInfo.html#a3d559b877ba707a765a8152b4cb2ad59',1,'vvenc::HPMVInfo::useAltHpelIf()'],['../structvvenc_1_1InterSearch_1_1TZSearchStruct.html#a3d559b877ba707a765a8152b4cb2ad59',1,'vvenc::InterSearch::TZSearchStruct::useAltHpelIf()']]],
+  ['usecolortrans_11434',['useColorTrans',['../structvvenc_1_1SPS.html#a81882d20e20fcf497aae3102fea59daf',1,'vvenc::SPS']]],
+  ['usedbycurrpicltsps_11435',['usedByCurrPicLtSPS',['../structvvenc_1_1SPS.html#aaad128597ad73207354e8a881e9eb110',1,'vvenc::SPS']]],
+  ['usedqp_11436',['useDQP',['../structvvenc_1_1PPS.html#aa674da06f7e3f079e7fe8ecf3f84c488',1,'vvenc::PPS']]],
+  ['useltfordrap_11437',['useLTforDRAP',['../classvvenc_1_1Slice.html#aa54e2660939b598986fc46c781fdfc37',1,'vvenc::Slice']]],
+  ['useppschromatool_11438',['usePPSChromaTool',['../structvvenc_1_1PPS.html#af0089afb772ecfd401180f6830c8d39f',1,'vvenc::PPS']]],
+  ['userdata_11439',['userData',['../classvvenc_1_1SEIuserDataUnregistered.html#a1351a87c375e5147e0d8f690caee85fb',1,'vvenc::SEIuserDataUnregistered::userData()'],['../classvvenc_1_1SEIUserDataRegistered.html#a709313c6cf2b7db620de11bb6e8d058b',1,'vvenc::SEIUserDataRegistered::userData()']]],
+  ['userdatalength_11440',['userDataLength',['../classvvenc_1_1SEIuserDataUnregistered.html#aad32221b8dfe0ead322b28d16044a552',1,'vvenc::SEIuserDataUnregistered']]],
+  ['usescbdpcm_11441',['useScBDPCM',['../structvvenc_1_1Picture.html#a4f19a95cea282bc8005140e9c92aa701',1,'vvenc::Picture']]],
+  ['usescibc_11442',['useScIBC',['../structvvenc_1_1Picture.html#a4022b93c1f82c1dd815e6375a8701e6e',1,'vvenc::Picture']]],
+  ['usesclmcs_11443',['useScLMCS',['../structvvenc_1_1Picture.html#a251171a6633404b34365b828a7cbad01',1,'vvenc::Picture']]],
+  ['usescmctf_11444',['useScMCTF',['../structvvenc_1_1Picture.html#a490f36f84bc983779931000c7e800ab6',1,'vvenc::Picture']]],
+  ['usescme_11445',['useScME',['../structvvenc_1_1Picture.html#a235d0e90175a94236f1f3ebac8ec0e35',1,'vvenc::Picture']]],
+  ['usescts_11446',['useScTS',['../structvvenc_1_1Picture.html#ac2177ac5931e79008f369548ea5aa533',1,'vvenc::Picture']]],
+  ['uuid_5fiso_5fiec_5f11578_11447',['uuid_iso_iec_11578',['../classvvenc_1_1SEIuserDataUnregistered.html#a0cec1ade48cfd4067a740bcc3ede691c',1,'vvenc::SEIuserDataUnregistered']]]
+];

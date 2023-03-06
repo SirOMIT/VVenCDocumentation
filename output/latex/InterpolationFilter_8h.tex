@@ -1,0 +1,127 @@
+\hypertarget{InterpolationFilter_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Interpolation\+Filter.h File Reference}
+\label{InterpolationFilter_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/InterpolationFilter.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/InterpolationFilter.h}}
+
+
+Declaration of Interpolation\+Filter class.  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+Include dependency graph for Interpolation\+Filter.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{InterpolationFilter_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{InterpolationFilter_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1InterpolationFilter}{Interpolation\+Filter}}
+\begin{DoxyCompactList}\small\item\em Interpolation filter class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{InterpolationFilter_8h_ae567391434fac07da371c6cb860f2601}{I\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+EC}}~6
+\begin{DoxyCompactList}\small\item\em Log2 of sum of filter taps. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{InterpolationFilter_8h_afb7c5374ed7e4a67bbe6df33eb2b21bd}{I\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E\+C\+\_\+\+B\+I\+L\+I\+N\+E\+AR}}~4
+\begin{DoxyCompactList}\small\item\em Bilinear filter coeff precision so that intermediate value will not exceed 16 bit for S\+I\+MD -\/ bit exact. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{InterpolationFilter_8h_a97675faf3a08fc4732c1a353989b7b06}{I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+FS}}~(1$<$$<$(\mbox{\hyperlink{InterpolationFilter_8h_aef59c550b45cba746964f3be34f31caa}{I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+EC}}-\/1))
+\begin{DoxyCompactList}\small\item\em Offset used internally. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{InterpolationFilter_8h_aef59c550b45cba746964f3be34f31caa}{I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+EC}}~14
+\begin{DoxyCompactList}\small\item\em Number of bits for internal precision. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{InterpolationFilter_8h_a53f6412b4a8f9469cddbe04dbfe07bc2}{I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+E\+C\+\_\+\+B\+I\+L\+I\+N\+E\+AR}}~10
+\begin{DoxyCompactList}\small\item\em Number of bits for internal precision. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaration of Interpolation\+Filter class. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{InterpolationFilter_8h_ae567391434fac07da371c6cb860f2601}\label{InterpolationFilter_8h_ae567391434fac07da371c6cb860f2601}} 
+\index{InterpolationFilter.h@{InterpolationFilter.h}!IF\_FILTER\_PREC@{IF\_FILTER\_PREC}}
+\index{IF\_FILTER\_PREC@{IF\_FILTER\_PREC}!InterpolationFilter.h@{InterpolationFilter.h}}
+\doxysubsubsection{\texorpdfstring{IF\_FILTER\_PREC}{IF\_FILTER\_PREC}}
+{\footnotesize\ttfamily \#define I\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+EC~6}
+
+
+
+Log2 of sum of filter taps. 
+
+
+
+Definition at line 63 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{InterpolationFilter_8h_afb7c5374ed7e4a67bbe6df33eb2b21bd}\label{InterpolationFilter_8h_afb7c5374ed7e4a67bbe6df33eb2b21bd}} 
+\index{InterpolationFilter.h@{InterpolationFilter.h}!IF\_FILTER\_PREC\_BILINEAR@{IF\_FILTER\_PREC\_BILINEAR}}
+\index{IF\_FILTER\_PREC\_BILINEAR@{IF\_FILTER\_PREC\_BILINEAR}!InterpolationFilter.h@{InterpolationFilter.h}}
+\doxysubsubsection{\texorpdfstring{IF\_FILTER\_PREC\_BILINEAR}{IF\_FILTER\_PREC\_BILINEAR}}
+{\footnotesize\ttfamily \#define I\+F\+\_\+\+F\+I\+L\+T\+E\+R\+\_\+\+P\+R\+E\+C\+\_\+\+B\+I\+L\+I\+N\+E\+AR~4}
+
+
+
+Bilinear filter coeff precision so that intermediate value will not exceed 16 bit for S\+I\+MD -\/ bit exact. 
+
+
+
+Definition at line 66 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{InterpolationFilter_8h_a97675faf3a08fc4732c1a353989b7b06}\label{InterpolationFilter_8h_a97675faf3a08fc4732c1a353989b7b06}} 
+\index{InterpolationFilter.h@{InterpolationFilter.h}!IF\_INTERNAL\_OFFS@{IF\_INTERNAL\_OFFS}}
+\index{IF\_INTERNAL\_OFFS@{IF\_INTERNAL\_OFFS}!InterpolationFilter.h@{InterpolationFilter.h}}
+\doxysubsubsection{\texorpdfstring{IF\_INTERNAL\_OFFS}{IF\_INTERNAL\_OFFS}}
+{\footnotesize\ttfamily \#define I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+O\+F\+FS~(1$<$$<$(\mbox{\hyperlink{InterpolationFilter_8h_aef59c550b45cba746964f3be34f31caa}{I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+EC}}-\/1))}
+
+
+
+Offset used internally. 
+
+
+
+Definition at line 64 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{InterpolationFilter_8h_aef59c550b45cba746964f3be34f31caa}\label{InterpolationFilter_8h_aef59c550b45cba746964f3be34f31caa}} 
+\index{InterpolationFilter.h@{InterpolationFilter.h}!IF\_INTERNAL\_PREC@{IF\_INTERNAL\_PREC}}
+\index{IF\_INTERNAL\_PREC@{IF\_INTERNAL\_PREC}!InterpolationFilter.h@{InterpolationFilter.h}}
+\doxysubsubsection{\texorpdfstring{IF\_INTERNAL\_PREC}{IF\_INTERNAL\_PREC}}
+{\footnotesize\ttfamily \#define I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+EC~14}
+
+
+
+Number of bits for internal precision. 
+
+
+
+Definition at line 62 of file Interpolation\+Filter.\+h.
+
+\mbox{\Hypertarget{InterpolationFilter_8h_a53f6412b4a8f9469cddbe04dbfe07bc2}\label{InterpolationFilter_8h_a53f6412b4a8f9469cddbe04dbfe07bc2}} 
+\index{InterpolationFilter.h@{InterpolationFilter.h}!IF\_INTERNAL\_PREC\_BILINEAR@{IF\_INTERNAL\_PREC\_BILINEAR}}
+\index{IF\_INTERNAL\_PREC\_BILINEAR@{IF\_INTERNAL\_PREC\_BILINEAR}!InterpolationFilter.h@{InterpolationFilter.h}}
+\doxysubsubsection{\texorpdfstring{IF\_INTERNAL\_PREC\_BILINEAR}{IF\_INTERNAL\_PREC\_BILINEAR}}
+{\footnotesize\ttfamily \#define I\+F\+\_\+\+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+P\+R\+E\+C\+\_\+\+B\+I\+L\+I\+N\+E\+AR~10}
+
+
+
+Number of bits for internal precision. 
+
+
+
+Definition at line 65 of file Interpolation\+Filter.\+h.
+

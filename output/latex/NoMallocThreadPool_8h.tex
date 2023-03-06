@@ -1,0 +1,88 @@
+\hypertarget{NoMallocThreadPool_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\+No\+Malloc\+Thread\+Pool.h File Reference}
+\label{NoMallocThreadPool_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/Utilities/NoMallocThreadPool.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/Utilities/NoMallocThreadPool.h}}
+
+
+thread pool  
+
+
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+Include dependency graph for No\+Malloc\+Thread\+Pool.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NoMallocThreadPool_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{NoMallocThreadPool_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1Barrier}{Barrier}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1BlockingBarrier}{Blocking\+Barrier}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool}{No\+Malloc\+Thread\+Pool}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{No\+Malloc\+Thread\+Pool\+::\+Chunked\+Task\+Queue}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{No\+Malloc\+Thread\+Pool\+::\+Chunked\+Task\+Queue\+::\+Chunk}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{No\+Malloc\+Thread\+Pool\+::\+Chunked\+Task\+Queue\+::\+Iterator}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1NoMallocThreadPool_1_1Slot}{No\+Malloc\+Thread\+Pool\+::\+Slot}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1WaitCounter}{Wait\+Counter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{NoMallocThreadPool_8h_ac2991202f0daa480e549acf390167482}{A\+D\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+FE}}~1
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespacevvenc_aacb8778ea29851c5c3f3dd170c2a1f7c}{C\+Barrier\+Vec}} = std\+::vector$<$ const Barrier $\ast$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const static auto \mbox{\hyperlink{namespacevvenc_ada5c509a8cc1825118bd888af7545e4f}{B\+U\+S\+Y\+\_\+\+W\+A\+I\+T\+\_\+\+T\+I\+ME}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+thread pool 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{NoMallocThreadPool_8h_ac2991202f0daa480e549acf390167482}\label{NoMallocThreadPool_8h_ac2991202f0daa480e549acf390167482}} 
+\index{NoMallocThreadPool.h@{NoMallocThreadPool.h}!ADD\_TASK\_THREAD\_SAFE@{ADD\_TASK\_THREAD\_SAFE}}
+\index{ADD\_TASK\_THREAD\_SAFE@{ADD\_TASK\_THREAD\_SAFE}!NoMallocThreadPool.h@{NoMallocThreadPool.h}}
+\doxysubsubsection{\texorpdfstring{ADD\_TASK\_THREAD\_SAFE}{ADD\_TASK\_THREAD\_SAFE}}
+{\footnotesize\ttfamily \#define A\+D\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+H\+R\+E\+A\+D\+\_\+\+S\+A\+FE~1}
+
+
+
+Definition at line 92 of file No\+Malloc\+Thread\+Pool.\+h.
+

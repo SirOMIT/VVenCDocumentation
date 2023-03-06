@@ -1,0 +1,460 @@
+\hypertarget{structvvenc_1_1ComprCUCtx}{}\doxysection{Compr\+C\+U\+Ctx}
+\label{structvvenc_1_1ComprCUCtx}\index{ComprCUCtx@{ComprCUCtx}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Compr\+C\+U\+Ctx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1ComprCUCtx__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a87fe76832d963058cbb532ba223145e5}{Compr\+C\+U\+Ctx}} ()
+\item 
+\mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a225f051351c6cb7aaf4f3ecb41b0ffa2}{Compr\+C\+U\+Ctx}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const uint32\+\_\+t \+\_\+min\+Depth, const uint32\+\_\+t \+\_\+max\+Depth)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_ab0938b8efdfea3d06fca7eb9a4c521a1}{best\+Cost\+Horz\+Split}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_ad3156be3a7590dbe656b52b2d10a5fe8}{best\+Cost\+Imv}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a4bed670fc1637b0b77d5e16c41bb95a1}{best\+Cost\+No\+Imv}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a9259e1cdb84d5e60ba0427ba9d9b188e}{best\+Cost\+Tri\+Horz\+Split}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a054b57e2765a87010dba1fbf4d63d86e}{best\+Cost\+Tri\+Vert\+Split}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_aae24ee42014c6ffa37dbb6983c68888c}{best\+Cost\+Vert\+Split}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a782edc6e5457f86d9578f3db5deb344c}{best\+CS}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a30e123e780f79dac12bb4780e98c02ff}{best\+CU}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a62be0f781c618071b934333b8d88d09f}{best\+Inter\+Cost}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_abb96085fd82f1d43e7c0ba3c609b7d5e}{best\+Intra\+Mode}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_aca4de1c14bf8a326de05b84a8fe98a18}{best\+Mode}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a8bb2dadf222e48f64c3719cc7a781765}{best\+TU}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_aad19ae045bbc0a23e24f504aa8abeddc}{did\+Horz\+Split}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a212477f32df5ae5c2898ebace830b16b}{did\+Quad\+Split}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_ae7afe318c2e7891d4367d0712a37ec40}{did\+Vert\+Split}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a2694904a8e9ca8fa1350c1abe36f7836}{do\+More\+Splits}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a402a5611ababbff3ff3539b95db1e711}{do\+Tri\+Horz\+Split}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a6abe325a9c2147e9dd9a210210d151db}{do\+Tri\+Vert\+Split}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_aec498f424a1340180bad72088f48c6a9}{grad\+\_\+dow\+Val}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a9c58adcd3dc9a01959de43b5ec31836d}{grad\+\_\+dup\+Val}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a42f3ec6bb093d350b94826bf5901511e}{grad\+\_\+hor\+Val}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a50a9523de17ca5de3281aeb3a26fa133}{grad\+\_\+ver\+Val}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a250ae55c3c365bfb3a4da33e40484069}{inter\+Had}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a4775114d160cb6e39e5817c2725024ee}{intra\+Was\+Tested}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a586ff7a18a49e7f36cd6656d5f65e520}{is\+Best\+No\+Split\+Skip}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a829885842048ee912d52c1445a9f117e}{is\+Intra}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a228466a4033e06e815419bbc6ec6d856}{is\+Reusing\+Cu}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a7250dac12668933f3240df17037154ec}{max\+Depth}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_ab2fd0514a6ed1409e564d73435189863}{max\+Qt\+Sub\+Depth}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a5fb8fd78ddb9ba3bc3d827eab102c6f3}{min\+Depth}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a86987114e990d5a9407d33ee44ae5077}{qt\+Before\+Bt}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_a1be392d2a9048f1d9492a3cdb165ca34}{related\+Cu\+Is\+Valid}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1ComprCUCtx_aa8965b72b26cdd40ee36b8570b9932a0}{skip\+Second\+M\+T\+S\+Pass}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 172 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a87fe76832d963058cbb532ba223145e5}\label{structvvenc_1_1ComprCUCtx_a87fe76832d963058cbb532ba223145e5}} 
+\index{ComprCUCtx@{ComprCUCtx}!ComprCUCtx@{ComprCUCtx}}
+\index{ComprCUCtx@{ComprCUCtx}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{ComprCUCtx()}{ComprCUCtx()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a225f051351c6cb7aaf4f3ecb41b0ffa2}\label{structvvenc_1_1ComprCUCtx_a225f051351c6cb7aaf4f3ecb41b0ffa2}} 
+\index{ComprCUCtx@{ComprCUCtx}!ComprCUCtx@{ComprCUCtx}}
+\index{ComprCUCtx@{ComprCUCtx}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{ComprCUCtx()}{ComprCUCtx()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1ComprCUCtx}{Compr\+C\+U\+Ctx}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const uint32\+\_\+t}]{\+\_\+min\+Depth,  }\item[{const uint32\+\_\+t}]{\+\_\+max\+Depth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_ab0938b8efdfea3d06fca7eb9a4c521a1}\label{structvvenc_1_1ComprCUCtx_ab0938b8efdfea3d06fca7eb9a4c521a1}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostHorzSplit@{bestCostHorzSplit}}
+\index{bestCostHorzSplit@{bestCostHorzSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostHorzSplit}{bestCostHorzSplit}}
+{\footnotesize\ttfamily double best\+Cost\+Horz\+Split}
+
+
+
+Definition at line 222 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_ad3156be3a7590dbe656b52b2d10a5fe8}\label{structvvenc_1_1ComprCUCtx_ad3156be3a7590dbe656b52b2d10a5fe8}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostImv@{bestCostImv}}
+\index{bestCostImv@{bestCostImv}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostImv}{bestCostImv}}
+{\footnotesize\ttfamily double best\+Cost\+Imv}
+
+
+
+Definition at line 225 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a4bed670fc1637b0b77d5e16c41bb95a1}\label{structvvenc_1_1ComprCUCtx_a4bed670fc1637b0b77d5e16c41bb95a1}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostNoImv@{bestCostNoImv}}
+\index{bestCostNoImv@{bestCostNoImv}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostNoImv}{bestCostNoImv}}
+{\footnotesize\ttfamily double best\+Cost\+No\+Imv}
+
+
+
+Definition at line 226 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a9259e1cdb84d5e60ba0427ba9d9b188e}\label{structvvenc_1_1ComprCUCtx_a9259e1cdb84d5e60ba0427ba9d9b188e}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostTriHorzSplit@{bestCostTriHorzSplit}}
+\index{bestCostTriHorzSplit@{bestCostTriHorzSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostTriHorzSplit}{bestCostTriHorzSplit}}
+{\footnotesize\ttfamily double best\+Cost\+Tri\+Horz\+Split}
+
+
+
+Definition at line 224 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a054b57e2765a87010dba1fbf4d63d86e}\label{structvvenc_1_1ComprCUCtx_a054b57e2765a87010dba1fbf4d63d86e}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostTriVertSplit@{bestCostTriVertSplit}}
+\index{bestCostTriVertSplit@{bestCostTriVertSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostTriVertSplit}{bestCostTriVertSplit}}
+{\footnotesize\ttfamily double best\+Cost\+Tri\+Vert\+Split}
+
+
+
+Definition at line 223 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_aae24ee42014c6ffa37dbb6983c68888c}\label{structvvenc_1_1ComprCUCtx_aae24ee42014c6ffa37dbb6983c68888c}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCostVertSplit@{bestCostVertSplit}}
+\index{bestCostVertSplit@{bestCostVertSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCostVertSplit}{bestCostVertSplit}}
+{\footnotesize\ttfamily double best\+Cost\+Vert\+Split}
+
+
+
+Definition at line 221 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a782edc6e5457f86d9578f3db5deb344c}\label{structvvenc_1_1ComprCUCtx_a782edc6e5457f86d9578f3db5deb344c}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCS@{bestCS}}
+\index{bestCS@{bestCS}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCS}{bestCS}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ best\+CS}
+
+
+
+Definition at line 216 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a30e123e780f79dac12bb4780e98c02ff}\label{structvvenc_1_1ComprCUCtx_a30e123e780f79dac12bb4780e98c02ff}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestCU@{bestCU}}
+\index{bestCU@{bestCU}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestCU}{bestCU}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ best\+CU}
+
+
+
+Definition at line 217 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a62be0f781c618071b934333b8d88d09f}\label{structvvenc_1_1ComprCUCtx_a62be0f781c618071b934333b8d88d09f}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestInterCost@{bestInterCost}}
+\index{bestInterCost@{bestInterCost}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestInterCost}{bestInterCost}}
+{\footnotesize\ttfamily double best\+Inter\+Cost}
+
+
+
+Definition at line 220 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_abb96085fd82f1d43e7c0ba3c609b7d5e}\label{structvvenc_1_1ComprCUCtx_abb96085fd82f1d43e7c0ba3c609b7d5e}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestIntraMode@{bestIntraMode}}
+\index{bestIntraMode@{bestIntraMode}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestIntraMode}{bestIntraMode}}
+{\footnotesize\ttfamily int best\+Intra\+Mode}
+
+
+
+Definition at line 245 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_aca4de1c14bf8a326de05b84a8fe98a18}\label{structvvenc_1_1ComprCUCtx_aca4de1c14bf8a326de05b84a8fe98a18}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestMode@{bestMode}}
+\index{bestMode@{bestMode}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestMode}{bestMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1EncTestMode}{Enc\+Test\+Mode}} best\+Mode}
+
+
+
+Definition at line 219 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a8bb2dadf222e48f64c3719cc7a781765}\label{structvvenc_1_1ComprCUCtx_a8bb2dadf222e48f64c3719cc7a781765}} 
+\index{ComprCUCtx@{ComprCUCtx}!bestTU@{bestTU}}
+\index{bestTU@{bestTU}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{bestTU}{bestTU}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}}$\ast$ best\+TU}
+
+
+
+Definition at line 218 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_aad19ae045bbc0a23e24f504aa8abeddc}\label{structvvenc_1_1ComprCUCtx_aad19ae045bbc0a23e24f504aa8abeddc}} 
+\index{ComprCUCtx@{ComprCUCtx}!didHorzSplit@{didHorzSplit}}
+\index{didHorzSplit@{didHorzSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{didHorzSplit}{didHorzSplit}}
+{\footnotesize\ttfamily bool did\+Horz\+Split}
+
+
+
+Definition at line 239 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a212477f32df5ae5c2898ebace830b16b}\label{structvvenc_1_1ComprCUCtx_a212477f32df5ae5c2898ebace830b16b}} 
+\index{ComprCUCtx@{ComprCUCtx}!didQuadSplit@{didQuadSplit}}
+\index{didQuadSplit@{didQuadSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{didQuadSplit}{didQuadSplit}}
+{\footnotesize\ttfamily bool did\+Quad\+Split}
+
+
+
+Definition at line 238 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_ae7afe318c2e7891d4367d0712a37ec40}\label{structvvenc_1_1ComprCUCtx_ae7afe318c2e7891d4367d0712a37ec40}} 
+\index{ComprCUCtx@{ComprCUCtx}!didVertSplit@{didVertSplit}}
+\index{didVertSplit@{didVertSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{didVertSplit}{didVertSplit}}
+{\footnotesize\ttfamily bool did\+Vert\+Split}
+
+
+
+Definition at line 240 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a2694904a8e9ca8fa1350c1abe36f7836}\label{structvvenc_1_1ComprCUCtx_a2694904a8e9ca8fa1350c1abe36f7836}} 
+\index{ComprCUCtx@{ComprCUCtx}!doMoreSplits@{doMoreSplits}}
+\index{doMoreSplits@{doMoreSplits}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{doMoreSplits}{doMoreSplits}}
+{\footnotesize\ttfamily int do\+More\+Splits}
+
+
+
+Definition at line 237 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a402a5611ababbff3ff3539b95db1e711}\label{structvvenc_1_1ComprCUCtx_a402a5611ababbff3ff3539b95db1e711}} 
+\index{ComprCUCtx@{ComprCUCtx}!doTriHorzSplit@{doTriHorzSplit}}
+\index{doTriHorzSplit@{doTriHorzSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{doTriHorzSplit}{doTriHorzSplit}}
+{\footnotesize\ttfamily bool do\+Tri\+Horz\+Split}
+
+
+
+Definition at line 235 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a6abe325a9c2147e9dd9a210210d151db}\label{structvvenc_1_1ComprCUCtx_a6abe325a9c2147e9dd9a210210d151db}} 
+\index{ComprCUCtx@{ComprCUCtx}!doTriVertSplit@{doTriVertSplit}}
+\index{doTriVertSplit@{doTriVertSplit}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{doTriVertSplit}{doTriVertSplit}}
+{\footnotesize\ttfamily bool do\+Tri\+Vert\+Split}
+
+
+
+Definition at line 236 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_aec498f424a1340180bad72088f48c6a9}\label{structvvenc_1_1ComprCUCtx_aec498f424a1340180bad72088f48c6a9}} 
+\index{ComprCUCtx@{ComprCUCtx}!grad\_dowVal@{grad\_dowVal}}
+\index{grad\_dowVal@{grad\_dowVal}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{grad\_dowVal}{grad\_dowVal}}
+{\footnotesize\ttfamily double grad\+\_\+dow\+Val}
+
+
+
+Definition at line 230 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a9c58adcd3dc9a01959de43b5ec31836d}\label{structvvenc_1_1ComprCUCtx_a9c58adcd3dc9a01959de43b5ec31836d}} 
+\index{ComprCUCtx@{ComprCUCtx}!grad\_dupVal@{grad\_dupVal}}
+\index{grad\_dupVal@{grad\_dupVal}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{grad\_dupVal}{grad\_dupVal}}
+{\footnotesize\ttfamily double grad\+\_\+dup\+Val}
+
+
+
+Definition at line 229 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a42f3ec6bb093d350b94826bf5901511e}\label{structvvenc_1_1ComprCUCtx_a42f3ec6bb093d350b94826bf5901511e}} 
+\index{ComprCUCtx@{ComprCUCtx}!grad\_horVal@{grad\_horVal}}
+\index{grad\_horVal@{grad\_horVal}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{grad\_horVal}{grad\_horVal}}
+{\footnotesize\ttfamily double grad\+\_\+hor\+Val}
+
+
+
+Definition at line 227 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a50a9523de17ca5de3281aeb3a26fa133}\label{structvvenc_1_1ComprCUCtx_a50a9523de17ca5de3281aeb3a26fa133}} 
+\index{ComprCUCtx@{ComprCUCtx}!grad\_verVal@{grad\_verVal}}
+\index{grad\_verVal@{grad\_verVal}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{grad\_verVal}{grad\_verVal}}
+{\footnotesize\ttfamily double grad\+\_\+ver\+Val}
+
+
+
+Definition at line 228 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a250ae55c3c365bfb3a4da33e40484069}\label{structvvenc_1_1ComprCUCtx_a250ae55c3c365bfb3a4da33e40484069}} 
+\index{ComprCUCtx@{ComprCUCtx}!interHad@{interHad}}
+\index{interHad@{interHad}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{interHad}{interHad}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a5ff00740d73b2c0c0b6672b27205c001}{Distortion}} inter\+Had}
+
+
+
+Definition at line 231 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a4775114d160cb6e39e5817c2725024ee}\label{structvvenc_1_1ComprCUCtx_a4775114d160cb6e39e5817c2725024ee}} 
+\index{ComprCUCtx@{ComprCUCtx}!intraWasTested@{intraWasTested}}
+\index{intraWasTested@{intraWasTested}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{intraWasTested}{intraWasTested}}
+{\footnotesize\ttfamily bool intra\+Was\+Tested}
+
+
+
+Definition at line 243 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a586ff7a18a49e7f36cd6656d5f65e520}\label{structvvenc_1_1ComprCUCtx_a586ff7a18a49e7f36cd6656d5f65e520}} 
+\index{ComprCUCtx@{ComprCUCtx}!isBestNoSplitSkip@{isBestNoSplitSkip}}
+\index{isBestNoSplitSkip@{isBestNoSplitSkip}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{isBestNoSplitSkip}{isBestNoSplitSkip}}
+{\footnotesize\ttfamily bool is\+Best\+No\+Split\+Skip}
+
+
+
+Definition at line 241 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a829885842048ee912d52c1445a9f117e}\label{structvvenc_1_1ComprCUCtx_a829885842048ee912d52c1445a9f117e}} 
+\index{ComprCUCtx@{ComprCUCtx}!isIntra@{isIntra}}
+\index{isIntra@{isIntra}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{isIntra}{isIntra}}
+{\footnotesize\ttfamily bool is\+Intra}
+
+
+
+Definition at line 246 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a228466a4033e06e815419bbc6ec6d856}\label{structvvenc_1_1ComprCUCtx_a228466a4033e06e815419bbc6ec6d856}} 
+\index{ComprCUCtx@{ComprCUCtx}!isReusingCu@{isReusingCu}}
+\index{isReusingCu@{isReusingCu}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{isReusingCu}{isReusingCu}}
+{\footnotesize\ttfamily bool is\+Reusing\+Cu}
+
+
+
+Definition at line 233 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a7250dac12668933f3240df17037154ec}\label{structvvenc_1_1ComprCUCtx_a7250dac12668933f3240df17037154ec}} 
+\index{ComprCUCtx@{ComprCUCtx}!maxDepth@{maxDepth}}
+\index{maxDepth@{maxDepth}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{maxDepth}{maxDepth}}
+{\footnotesize\ttfamily unsigned max\+Depth}
+
+
+
+Definition at line 215 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_ab2fd0514a6ed1409e564d73435189863}\label{structvvenc_1_1ComprCUCtx_ab2fd0514a6ed1409e564d73435189863}} 
+\index{ComprCUCtx@{ComprCUCtx}!maxQtSubDepth@{maxQtSubDepth}}
+\index{maxQtSubDepth@{maxQtSubDepth}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{maxQtSubDepth}{maxQtSubDepth}}
+{\footnotesize\ttfamily int max\+Qt\+Sub\+Depth}
+
+
+
+Definition at line 232 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a5fb8fd78ddb9ba3bc3d827eab102c6f3}\label{structvvenc_1_1ComprCUCtx_a5fb8fd78ddb9ba3bc3d827eab102c6f3}} 
+\index{ComprCUCtx@{ComprCUCtx}!minDepth@{minDepth}}
+\index{minDepth@{minDepth}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{minDepth}{minDepth}}
+{\footnotesize\ttfamily unsigned min\+Depth}
+
+
+
+Definition at line 214 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a86987114e990d5a9407d33ee44ae5077}\label{structvvenc_1_1ComprCUCtx_a86987114e990d5a9407d33ee44ae5077}} 
+\index{ComprCUCtx@{ComprCUCtx}!qtBeforeBt@{qtBeforeBt}}
+\index{qtBeforeBt@{qtBeforeBt}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{qtBeforeBt}{qtBeforeBt}}
+{\footnotesize\ttfamily bool qt\+Before\+Bt}
+
+
+
+Definition at line 234 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_a1be392d2a9048f1d9492a3cdb165ca34}\label{structvvenc_1_1ComprCUCtx_a1be392d2a9048f1d9492a3cdb165ca34}} 
+\index{ComprCUCtx@{ComprCUCtx}!relatedCuIsValid@{relatedCuIsValid}}
+\index{relatedCuIsValid@{relatedCuIsValid}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{relatedCuIsValid}{relatedCuIsValid}}
+{\footnotesize\ttfamily bool related\+Cu\+Is\+Valid}
+
+
+
+Definition at line 244 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1ComprCUCtx_aa8965b72b26cdd40ee36b8570b9932a0}\label{structvvenc_1_1ComprCUCtx_aa8965b72b26cdd40ee36b8570b9932a0}} 
+\index{ComprCUCtx@{ComprCUCtx}!skipSecondMTSPass@{skipSecondMTSPass}}
+\index{skipSecondMTSPass@{skipSecondMTSPass}!ComprCUCtx@{ComprCUCtx}}
+\doxysubsubsection{\texorpdfstring{skipSecondMTSPass}{skipSecondMTSPass}}
+{\footnotesize\ttfamily bool skip\+Second\+M\+T\+S\+Pass}
+
+
+
+Definition at line 242 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8h}{Enc\+Mode\+Ctrl.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,118 @@
+\hypertarget{Rom_8h}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Rom.h File Reference}
+\label{Rom_8h}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Rom.h@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/Rom.h}}
+
+
+global variables \& functions (header)  
+
+
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Time\+Profiler.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Rom.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Rom_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Rom_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1InitGeoRom}{Init\+Geo\+Rom}}
+\item 
+struct \mbox{\hyperlink{structvvenc_1_1ScanElement}{Scan\+Element}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Rom_8h_a511976e35cd8a0f4a3f586edaffb4b10}{S\+T\+A\+T\+\_\+\+C\+O\+U\+N\+T\+\_\+\+C\+U\+\_\+\+M\+O\+D\+ES}}(cond, ...)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a322d3c927766f9b057ea16d35c6e5aa3}{derive\+Weight\+Idx\+Bits}} (uint8\+\_\+t bcw\+Idx)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{namespacevvenc_a834be69f46df5bf788af4764f547599d}{g\+\_\+aui\+Go\+Rice\+Pos\+Coeff0}} (int st, uint32\+\_\+t rice\+Par)
+\item 
+int8\+\_\+t \mbox{\hyperlink{namespacevvenc_a2f2a8fb396fa1416e8a8ce3393fdcc93}{get\+Bcw\+Weight}} (uint8\+\_\+t bcw\+Idx, uint8\+\_\+t uh\+Ref\+Frm\+List)
+\item 
+const Scan\+Element $\ast$const \mbox{\hyperlink{namespacevvenc_ad75c7d67e2d9df2bbda389ebed6af5cd}{get\+Scan\+Order}} (int g, int w2, int h2)
+\item 
+int \mbox{\hyperlink{namespacevvenc_a72ff05263d9deacacf1be65a8a68157a}{Log2}} (uint32\+\_\+t x)
+\item 
+void \mbox{\hyperlink{namespacevvenc_acd1ca94cd938e295b2f804eda41472b2}{reset\+Bcw\+Coding\+Order}} (bool b\+Run\+Decoding, const Coding\+Structure \&cs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_ab2461e6e73f95bce1a1f3795713f5f41}{chroma\+Q\+P\+Mapping\+Table\+Size}} = (M\+A\+X\+\_\+\+QP + 7)
+\item 
+const int \mbox{\hyperlink{namespacevvenc_aab4a0fb21e9fd29dafe535417fed25a5}{g\+\_\+\+I\+B\+C\+Buffer\+Size}} = 256 $\ast$ 128
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a22d985cd2de9dea62c7891ad28354888}{g\+\_\+num\+Transform\+Matrix\+Sizes}} = 6
+\item 
+constexpr uint8\+\_\+t \mbox{\hyperlink{namespacevvenc_a0f0b771e110de8e8e59f7846a4175dc1}{g\+\_\+tb\+Max}} \mbox{[}257\mbox{]}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a9e5f4f4ff688ff482488c877975c433c}{g\+\_\+transform\+Matrix\+Shift}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]} = \{ 6, 6 \}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a980d9afbed2a2fdcc18fa288b969f1b2}{g\+\_\+tr\+Core\+D\+C\+T2\+P16}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}16\mbox{]}\mbox{[}16\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_ae428963739a21228ab2d4747f4480dec}{g\+\_\+tr\+Core\+D\+C\+T2\+P2}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_afe516c3779cc008c5ebb4c5350dcf6f5}{g\+\_\+tr\+Core\+D\+C\+T2\+P32}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}32\mbox{]}\mbox{[}32\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_aacab15bafa08db7b4aa9b5dc935896bc}{g\+\_\+tr\+Core\+D\+C\+T2\+P4}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a30f7eeba34e38e7ec66c1bae72f7cd49}{g\+\_\+tr\+Core\+D\+C\+T2\+P64}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}64\mbox{]}\mbox{[}64\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a4fa2a09b7bd7f0d489336af6508dfe03}{g\+\_\+tr\+Core\+D\+C\+T2\+P8}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_ae570940650c20eef3679304b24e731cf}{g\+\_\+tr\+Core\+D\+C\+T8\+P16}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}16\mbox{]}\mbox{[}16\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a4e9fda71d0d629a85ab3d0cf1aadf1b7}{g\+\_\+tr\+Core\+D\+C\+T8\+P32}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}32\mbox{]}\mbox{[}32\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_aea904968e537a21029dd35da37e8c48d}{g\+\_\+tr\+Core\+D\+C\+T8\+P4}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a3d6ea7f20c44aaa8c205aea465395f14}{g\+\_\+tr\+Core\+D\+C\+T8\+P8}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a6a1f0fb87821ec0c3d89b77f1a55d823}{g\+\_\+tr\+Core\+D\+S\+T7\+P16}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}16\mbox{]}\mbox{[}16\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_adc62f843cddfe1b7bc9f204b9aaef060}{g\+\_\+tr\+Core\+D\+S\+T7\+P32}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}32\mbox{]}\mbox{[}32\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_ad27b0fc1170120441587b63c9eaffb24}{g\+\_\+tr\+Core\+D\+S\+T7\+P4}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\item 
+const T\+Matrix\+Coeff \mbox{\hyperlink{namespacevvenc_a11ebef92c64b434837e6a897b3407495}{g\+\_\+tr\+Core\+D\+S\+T7\+P8}} \mbox{[}T\+R\+A\+N\+S\+F\+O\+R\+M\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+NS\mbox{]}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+global variables \& functions (header) 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Rom_8h_a511976e35cd8a0f4a3f586edaffb4b10}\label{Rom_8h_a511976e35cd8a0f4a3f586edaffb4b10}} 
+\index{Rom.h@{Rom.h}!STAT\_COUNT\_CU\_MODES@{STAT\_COUNT\_CU\_MODES}}
+\index{STAT\_COUNT\_CU\_MODES@{STAT\_COUNT\_CU\_MODES}!Rom.h@{Rom.h}}
+\doxysubsubsection{\texorpdfstring{STAT\_COUNT\_CU\_MODES}{STAT\_COUNT\_CU\_MODES}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+\_\+\+C\+O\+U\+N\+T\+\_\+\+C\+U\+\_\+\+M\+O\+D\+ES(\begin{DoxyParamCaption}\item[{}]{cond,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 248 of file Rom.\+h.
+

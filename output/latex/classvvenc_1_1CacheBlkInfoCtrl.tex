@@ -1,0 +1,273 @@
+\hypertarget{classvvenc_1_1CacheBlkInfoCtrl}{}\doxysection{Cache\+Blk\+Info\+Ctrl}
+\label{classvvenc_1_1CacheBlkInfoCtrl}\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+
+
+{\ttfamily \#include \char`\"{}Enc\+Mode\+Ctrl.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Cache\+Blk\+Info\+Ctrl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classvvenc_1_1CacheBlkInfoCtrl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cache\+Blk\+Info\+Ctrl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classvvenc_1_1CacheBlkInfoCtrl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_ab7afa49ce6e73d5fbc1682746dcd3a69}{Cache\+Blk\+Info\+Ctrl}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a36ab7e75aea5af8b338a74b2f979f5ab}{$\sim$\+Cache\+Blk\+Info\+Ctrl}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a9e6b9048415132cad893bff62bb8f315}{find\+Best\+Sbt}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area, const uint32\+\_\+t cur\+Pu\+Sse)
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}} \& \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_ac67df041ac0893256edaedd0ded4ee04}{get\+Blk\+Info}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a0c0bd1d58fd4058946145d28a97d2dcc}{init\+Blk}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area, int poc)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a8f960aae694d200ab03bb9a90f44fed5}{save\+Best\+Sbt}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&area, const uint32\+\_\+t cur\+Pu\+Sse, const uint8\+\_\+t cur\+Pu\+Sbt)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_ae2ee59f7cc16ee42559c87e81c433039}{create}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_acfc619505f837e598bf26aebe00ccbcb}{init}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a294f7a4c0e465b46f52b23509c7dde1a}{m\+\_\+coded\+C\+U\+Info}} \mbox{[}6\mbox{]}\mbox{[}6\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a89f082981c0ecd6ab25082c6df03c3b1}{m\+\_\+coded\+C\+U\+Info\+Buf}}
+\item 
+const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} $\ast$ \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl_a085ec8c66a84c17e3e486687bf201904}{m\+\_\+pcv}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 277 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_ab7afa49ce6e73d5fbc1682746dcd3a69}\label{classvvenc_1_1CacheBlkInfoCtrl_ab7afa49ce6e73d5fbc1682746dcd3a69}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{CacheBlkInfoCtrl()}{CacheBlkInfoCtrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl}{Cache\+Blk\+Info\+Ctrl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 292 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a36ab7e75aea5af8b338a74b2f979f5ab}\label{classvvenc_1_1CacheBlkInfoCtrl_a36ab7e75aea5af8b338a74b2f979f5ab}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!````~CacheBlkInfoCtrl@{$\sim$CacheBlkInfoCtrl}}
+\index{````~CacheBlkInfoCtrl@{$\sim$CacheBlkInfoCtrl}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{$\sim$CacheBlkInfoCtrl()}{~CacheBlkInfoCtrl()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1CacheBlkInfoCtrl}{Cache\+Blk\+Info\+Ctrl}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 293 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_ae2ee59f7cc16ee42559c87e81c433039}\label{classvvenc_1_1CacheBlkInfoCtrl_ae2ee59f7cc16ee42559c87e81c433039}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!create@{create}}
+\index{create@{create}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 68 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_ae2ee59f7cc16ee42559c87e81c433039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1CacheBlkInfoCtrl_a3a80b6032f86a56bec74609034b3246f}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!destroy@{destroy}}
+\index{destroy@{destroy}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 137 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a9e6b9048415132cad893bff62bb8f315}\label{classvvenc_1_1CacheBlkInfoCtrl_a9e6b9048415132cad893bff62bb8f315}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!findBestSbt@{findBestSbt}}
+\index{findBestSbt@{findBestSbt}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{findBestSbt()}{findBestSbt()}}
+{\footnotesize\ttfamily uint8\+\_\+t find\+Best\+Sbt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area,  }\item[{const uint32\+\_\+t}]{cur\+Pu\+Sse }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_a9e6b9048415132cad893bff62bb8f315_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{classvvenc_1_1CacheBlkInfoCtrl_a9e6b9048415132cad893bff62bb8f315_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_ac67df041ac0893256edaedd0ded4ee04}\label{classvvenc_1_1CacheBlkInfoCtrl_ac67df041ac0893256edaedd0ded4ee04}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!getBlkInfo@{getBlkInfo}}
+\index{getBlkInfo@{getBlkInfo}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{getBlkInfo()}{getBlkInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}} \& get\+Blk\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_ac67df041ac0893256edaedd0ded4ee04_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_ac67df041ac0893256edaedd0ded4ee04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_acfc619505f837e598bf26aebe00ccbcb}\label{classvvenc_1_1CacheBlkInfoCtrl_acfc619505f837e598bf26aebe00ccbcb}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!init@{init}}
+\index{init@{init}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 143 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classvvenc_1_1CacheBlkInfoCtrl_acfc619505f837e598bf26aebe00ccbcb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a0c0bd1d58fd4058946145d28a97d2dcc}\label{classvvenc_1_1CacheBlkInfoCtrl_a0c0bd1d58fd4058946145d28a97d2dcc}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!initBlk@{initBlk}}
+\index{initBlk@{initBlk}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{initBlk()}{initBlk()}}
+{\footnotesize\ttfamily void init\+Blk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area,  }\item[{int}]{poc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 156 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_a0c0bd1d58fd4058946145d28a97d2dcc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a8f960aae694d200ab03bb9a90f44fed5}\label{classvvenc_1_1CacheBlkInfoCtrl_a8f960aae694d200ab03bb9a90f44fed5}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!saveBestSbt@{saveBestSbt}}
+\index{saveBestSbt@{saveBestSbt}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{saveBestSbt()}{saveBestSbt()}}
+{\footnotesize\ttfamily bool save\+Best\+Sbt (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{area,  }\item[{const uint32\+\_\+t}]{cur\+Pu\+Sse,  }\item[{const uint8\+\_\+t}]{cur\+Pu\+Sbt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file Enc\+Mode\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1CacheBlkInfoCtrl_a8f960aae694d200ab03bb9a90f44fed5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a294f7a4c0e465b46f52b23509c7dde1a}\label{classvvenc_1_1CacheBlkInfoCtrl_a294f7a4c0e465b46f52b23509c7dde1a}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!m\_codedCUInfo@{m\_codedCUInfo}}
+\index{m\_codedCUInfo@{m\_codedCUInfo}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_codedCUInfo}{m\_codedCUInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}}$\ast$ m\+\_\+coded\+C\+U\+Info\mbox{[}6\mbox{]}\mbox{[}6\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b2d6efc65c5ae913296de1f6068f68b}{M\+A\+X\+\_\+\+C\+U\+\_\+\+S\+I\+ZE}} $>$$>$ \mbox{\hyperlink{namespacevvenc_a7cc71bf11f858c29047e8e66e244d1bc}{M\+I\+N\+\_\+\+C\+U\+\_\+\+L\+O\+G2}}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 281 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a89f082981c0ecd6ab25082c6df03c3b1}\label{classvvenc_1_1CacheBlkInfoCtrl_a89f082981c0ecd6ab25082c6df03c3b1}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!m\_codedCUInfoBuf@{m\_codedCUInfoBuf}}
+\index{m\_codedCUInfoBuf@{m\_codedCUInfoBuf}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_codedCUInfoBuf}{m\_codedCUInfoBuf}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1CodedCUInfo}{Coded\+C\+U\+Info}}$\ast$ m\+\_\+coded\+C\+U\+Info\+Buf\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 282 of file Enc\+Mode\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CacheBlkInfoCtrl_a085ec8c66a84c17e3e486687bf201904}\label{classvvenc_1_1CacheBlkInfoCtrl_a085ec8c66a84c17e3e486687bf201904}} 
+\index{CacheBlkInfoCtrl@{CacheBlkInfoCtrl}!m\_pcv@{m\_pcv}}
+\index{m\_pcv@{m\_pcv}!CacheBlkInfoCtrl@{CacheBlkInfoCtrl}}
+\doxysubsubsection{\texorpdfstring{m\_pcv}{m\_pcv}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}}$\ast$ m\+\_\+pcv\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 283 of file Enc\+Mode\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8h}{Enc\+Mode\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{EncModeCtrl_8cpp}{Enc\+Mode\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,272 @@
+\hypertarget{classvvenc_1_1BinCounter}{}\doxysection{Bin\+Counter}
+\label{classvvenc_1_1BinCounter}\index{BinCounter@{BinCounter}}
+
+
+{\ttfamily \#include \char`\"{}Bin\+Encoder.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Bin\+Counter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classvvenc_1_1BinCounter__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinCounter_af7b845bd133af4abf99451c3283f37b7}{Bin\+Counter}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1BinCounter_a4854df5133249958db61d0bc8050905c}{$\sim$\+Bin\+Counter}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinCounter_aca9471fa1cd4ab90f173ecda425a81ec}{add\+Ctx}} (unsigned ctx\+Id)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinCounter_a4d6a8bab03f55e2e47eba01b0cd53012}{add\+EP}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinCounter_a6ced9b8c0f2fe3cfe1fa1344b65da61a}{add\+EP}} (unsigned num)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinCounter_aa2cb50bf90f6f7e81e3fd40d933c3b14}{add\+Trm}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_af0360097bbb26aaf8becbb07a559b421}{get\+All}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_a929ef3c192c8fafefd74adaf909b95cc}{get\+Ctx}} (unsigned ctx\+Id) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_a0a3a5211028da2d7062fa5fa61d5a9b8}{get\+EP}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_a189d6511704660266bffe976c66592c5}{get\+Trm}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1BinCounter_ad20897c5c8bd47f5d4005989bead0e55}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1BinCounter_afd6fec1eccd1a209112bbc4d5a1d6074}{m\+\_\+\+Ctx\+Bins\+Coded\+Buffer}}
+\item 
+uint32\+\_\+t $\ast$ \mbox{\hyperlink{classvvenc_1_1BinCounter_a2821ac7117507109a09822176738e604}{m\+\_\+\+Num\+Bins\+Ctx}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_aa1cbee5f43413bb8102f8d1d89473d7d}{m\+\_\+\+Num\+Bins\+EP}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1BinCounter_ab6216b38c84225e50576c2fb8e4e242b}{m\+\_\+\+Num\+Bins\+Trm}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 151 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_af7b845bd133af4abf99451c3283f37b7}\label{classvvenc_1_1BinCounter_af7b845bd133af4abf99451c3283f37b7}} 
+\index{BinCounter@{BinCounter}!BinCounter@{BinCounter}}
+\index{BinCounter@{BinCounter}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{BinCounter()}{BinCounter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BinCounter}{Bin\+Counter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 58 of file Bin\+Encoder.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a4854df5133249958db61d0bc8050905c}\label{classvvenc_1_1BinCounter_a4854df5133249958db61d0bc8050905c}} 
+\index{BinCounter@{BinCounter}!````~BinCounter@{$\sim$BinCounter}}
+\index{````~BinCounter@{$\sim$BinCounter}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{$\sim$BinCounter()}{~BinCounter()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1BinCounter}{Bin\+Counter}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 155 of file Bin\+Encoder.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_aca9471fa1cd4ab90f173ecda425a81ec}\label{classvvenc_1_1BinCounter_aca9471fa1cd4ab90f173ecda425a81ec}} 
+\index{BinCounter@{BinCounter}!addCtx@{addCtx}}
+\index{addCtx@{addCtx}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{addCtx()}{addCtx()}}
+{\footnotesize\ttfamily void add\+Ctx (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 158 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{classvvenc_1_1BinCounter_aca9471fa1cd4ab90f173ecda425a81ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a4d6a8bab03f55e2e47eba01b0cd53012}\label{classvvenc_1_1BinCounter_a4d6a8bab03f55e2e47eba01b0cd53012}} 
+\index{BinCounter@{BinCounter}!addEP@{addEP}}
+\index{addEP@{addEP}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{addEP()}{addEP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void add\+EP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 160 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinCounter_a4d6a8bab03f55e2e47eba01b0cd53012_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a6ced9b8c0f2fe3cfe1fa1344b65da61a}\label{classvvenc_1_1BinCounter_a6ced9b8c0f2fe3cfe1fa1344b65da61a}} 
+\index{BinCounter@{BinCounter}!addEP@{addEP}}
+\index{addEP@{addEP}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{addEP()}{addEP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void add\+EP (\begin{DoxyParamCaption}\item[{unsigned}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 159 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_aa2cb50bf90f6f7e81e3fd40d933c3b14}\label{classvvenc_1_1BinCounter_aa2cb50bf90f6f7e81e3fd40d933c3b14}} 
+\index{BinCounter@{BinCounter}!addTrm@{addTrm}}
+\index{addTrm@{addTrm}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{addTrm()}{addTrm()}}
+{\footnotesize\ttfamily void add\+Trm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 161 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classvvenc_1_1BinCounter_aa2cb50bf90f6f7e81e3fd40d933c3b14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_af0360097bbb26aaf8becbb07a559b421}\label{classvvenc_1_1BinCounter_af0360097bbb26aaf8becbb07a559b421}} 
+\index{BinCounter@{BinCounter}!getAll@{getAll}}
+\index{getAll@{getAll}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 77 of file Bin\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{classvvenc_1_1BinCounter_af0360097bbb26aaf8becbb07a559b421_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a929ef3c192c8fafefd74adaf909b95cc}\label{classvvenc_1_1BinCounter_a929ef3c192c8fafefd74adaf909b95cc}} 
+\index{BinCounter@{BinCounter}!getCtx@{getCtx}}
+\index{getCtx@{getCtx}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{getCtx()}{getCtx()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Ctx (\begin{DoxyParamCaption}\item[{unsigned}]{ctx\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file Bin\+Encoder.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classvvenc_1_1BinCounter_a929ef3c192c8fafefd74adaf909b95cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a0a3a5211028da2d7062fa5fa61d5a9b8}\label{classvvenc_1_1BinCounter_a0a3a5211028da2d7062fa5fa61d5a9b8}} 
+\index{BinCounter@{BinCounter}!getEP@{getEP}}
+\index{getEP@{getEP}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{getEP()}{getEP()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+EP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 164 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a189d6511704660266bffe976c66592c5}\label{classvvenc_1_1BinCounter_a189d6511704660266bffe976c66592c5}} 
+\index{BinCounter@{BinCounter}!getTrm@{getTrm}}
+\index{getTrm@{getTrm}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{getTrm()}{getTrm()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Trm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 165 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_ad20897c5c8bd47f5d4005989bead0e55}\label{classvvenc_1_1BinCounter_ad20897c5c8bd47f5d4005989bead0e55}} 
+\index{BinCounter@{BinCounter}!reset@{reset}}
+\index{reset@{reset}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 66 of file Bin\+Encoder.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1BinCounter_ad20897c5c8bd47f5d4005989bead0e55_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_afd6fec1eccd1a209112bbc4d5a1d6074}\label{classvvenc_1_1BinCounter_afd6fec1eccd1a209112bbc4d5a1d6074}} 
+\index{BinCounter@{BinCounter}!m\_CtxBinsCodedBuffer@{m\_CtxBinsCodedBuffer}}
+\index{m\_CtxBinsCodedBuffer@{m\_CtxBinsCodedBuffer}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{m\_CtxBinsCodedBuffer}{m\_CtxBinsCodedBuffer}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ m\+\_\+\+Ctx\+Bins\+Coded\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 167 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_a2821ac7117507109a09822176738e604}\label{classvvenc_1_1BinCounter_a2821ac7117507109a09822176738e604}} 
+\index{BinCounter@{BinCounter}!m\_NumBinsCtx@{m\_NumBinsCtx}}
+\index{m\_NumBinsCtx@{m\_NumBinsCtx}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{m\_NumBinsCtx}{m\_NumBinsCtx}}
+{\footnotesize\ttfamily uint32\+\_\+t$\ast$ m\+\_\+\+Num\+Bins\+Ctx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 168 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_aa1cbee5f43413bb8102f8d1d89473d7d}\label{classvvenc_1_1BinCounter_aa1cbee5f43413bb8102f8d1d89473d7d}} 
+\index{BinCounter@{BinCounter}!m\_NumBinsEP@{m\_NumBinsEP}}
+\index{m\_NumBinsEP@{m\_NumBinsEP}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{m\_NumBinsEP}{m\_NumBinsEP}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Num\+Bins\+EP\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 169 of file Bin\+Encoder.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1BinCounter_ab6216b38c84225e50576c2fb8e4e242b}\label{classvvenc_1_1BinCounter_ab6216b38c84225e50576c2fb8e4e242b}} 
+\index{BinCounter@{BinCounter}!m\_NumBinsTrm@{m\_NumBinsTrm}}
+\index{m\_NumBinsTrm@{m\_NumBinsTrm}!BinCounter@{BinCounter}}
+\doxysubsubsection{\texorpdfstring{m\_NumBinsTrm}{m\_NumBinsTrm}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+\+Num\+Bins\+Trm\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 170 of file Bin\+Encoder.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8h}{Bin\+Encoder.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{BinEncoder_8cpp}{Bin\+Encoder.\+cpp}}\end{DoxyCompactItemize}

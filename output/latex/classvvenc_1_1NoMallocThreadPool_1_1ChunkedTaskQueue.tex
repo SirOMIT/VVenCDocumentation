@@ -1,0 +1,185 @@
+\hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{}\doxysection{No\+Malloc\+Thread\+Pool\+::Chunked\+Task\+Queue}
+\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+
+
+Collaboration diagram for No\+Malloc\+Thread\+Pool\+::Chunked\+Task\+Queue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{Chunk}}
+\item 
+class \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a4e4a7037bd3c19569a5dce45ced3115c}{Chunked\+Task\+Queue}} ()=default
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a93febc1c630b33c004200b8826583772}{Chunked\+Task\+Queue}} (\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} \&\&)=delete
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a9591d3d1f0b61b2e216e176c8b125e3b}{Chunked\+Task\+Queue}} (const \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} \&)=delete
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a22ee18d246c580edd66f863d7ed0965f}{$\sim$\+Chunked\+Task\+Queue}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a2387033802383edbdc95f9bbb12a707e}{begin}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_ab45dae688fc5d8983727abffa4389003}{end}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a30b19751bcc6857c1db05e3185b89c27}{grow}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{Chunk}} \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_acaa10f09fc19fd3c35b021cddd9d5b53}{m\+\_\+first\+Chunk}} \{ \&m\+\_\+first\+Chunk \}
+\item 
+\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{Chunk}} $\ast$ \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a0a7e6e724b21ccb62d93cbc615dc0990}{m\+\_\+last\+Chunk}} = \&\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_acaa10f09fc19fd3c35b021cddd9d5b53}{m\+\_\+first\+Chunk}}
+\item 
+std\+::mutex \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a055e4c5ddd12cce76245684c6e27a3b1}{m\+\_\+resize\+Mutex}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static int \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a87632c83b56fa0c3d180c944661e3118}{Chunk\+Size}} = 128
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 263 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a4e4a7037bd3c19569a5dce45ced3115c}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a4e4a7037bd3c19569a5dce45ced3115c}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!ChunkedTaskQueue@{ChunkedTaskQueue}}
+\index{ChunkedTaskQueue@{ChunkedTaskQueue}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{ChunkedTaskQueue()}{ChunkedTaskQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a22ee18d246c580edd66f863d7ed0965f}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a22ee18d246c580edd66f863d7ed0965f}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!````~ChunkedTaskQueue@{$\sim$ChunkedTaskQueue}}
+\index{````~ChunkedTaskQueue@{$\sim$ChunkedTaskQueue}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{$\sim$ChunkedTaskQueue()}{~ChunkedTaskQueue()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 346 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a9591d3d1f0b61b2e216e176c8b125e3b}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a9591d3d1f0b61b2e216e176c8b125e3b}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!ChunkedTaskQueue@{ChunkedTaskQueue}}
+\index{ChunkedTaskQueue@{ChunkedTaskQueue}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{ChunkedTaskQueue()}{ChunkedTaskQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a93febc1c630b33c004200b8826583772}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a93febc1c630b33c004200b8826583772}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!ChunkedTaskQueue@{ChunkedTaskQueue}}
+\index{ChunkedTaskQueue@{ChunkedTaskQueue}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{ChunkedTaskQueue()}{ChunkedTaskQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue}{Chunked\+Task\+Queue}} \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a2387033802383edbdc95f9bbb12a707e}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a2387033802383edbdc95f9bbb12a707e}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!begin@{begin}}
+\index{begin@{begin}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 372 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a2387033802383edbdc95f9bbb12a707e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_ab45dae688fc5d8983727abffa4389003}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_ab45dae688fc5d8983727abffa4389003}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!end@{end}}
+\index{end@{end}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 373 of file No\+Malloc\+Thread\+Pool.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_ab45dae688fc5d8983727abffa4389003_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a30b19751bcc6857c1db05e3185b89c27}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a30b19751bcc6857c1db05e3185b89c27}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!grow@{grow}}
+\index{grow@{grow}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Iterator}{Iterator}} grow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 361 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a87632c83b56fa0c3d180c944661e3118}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a87632c83b56fa0c3d180c944661e3118}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!ChunkSize@{ChunkSize}}
+\index{ChunkSize@{ChunkSize}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{ChunkSize}{ChunkSize}}
+{\footnotesize\ttfamily constexpr static int Chunk\+Size = 128\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+Definition at line 265 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_acaa10f09fc19fd3c35b021cddd9d5b53}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_acaa10f09fc19fd3c35b021cddd9d5b53}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!m\_firstChunk@{m\_firstChunk}}
+\index{m\_firstChunk@{m\_firstChunk}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{m\_firstChunk}{m\_firstChunk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{Chunk}} m\+\_\+first\+Chunk \{ \&m\+\_\+first\+Chunk \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 376 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a0a7e6e724b21ccb62d93cbc615dc0990}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a0a7e6e724b21ccb62d93cbc615dc0990}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!m\_lastChunk@{m\_lastChunk}}
+\index{m\_lastChunk@{m\_lastChunk}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{m\_lastChunk}{m\_lastChunk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_1_1Chunk}{Chunk}}$\ast$ m\+\_\+last\+Chunk = \&\mbox{\hyperlink{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_acaa10f09fc19fd3c35b021cddd9d5b53}{m\+\_\+first\+Chunk}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 377 of file No\+Malloc\+Thread\+Pool.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a055e4c5ddd12cce76245684c6e27a3b1}\label{classvvenc_1_1NoMallocThreadPool_1_1ChunkedTaskQueue_a055e4c5ddd12cce76245684c6e27a3b1}} 
+\index{NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}!m\_resizeMutex@{m\_resizeMutex}}
+\index{m\_resizeMutex@{m\_resizeMutex}!NoMallocThreadPool::ChunkedTaskQueue@{NoMallocThreadPool::ChunkedTaskQueue}}
+\doxysubsubsection{\texorpdfstring{m\_resizeMutex}{m\_resizeMutex}}
+{\footnotesize\ttfamily std\+::mutex m\+\_\+resize\+Mutex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 379 of file No\+Malloc\+Thread\+Pool.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Utilities/\mbox{\hyperlink{NoMallocThreadPool_8h}{No\+Malloc\+Thread\+Pool.\+h}}\end{DoxyCompactItemize}

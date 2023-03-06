@@ -1,0 +1,258 @@
+\hypertarget{classvvenc_1_1DQIntern_1_1Rom}{}\doxysection{Rom}
+\label{classvvenc_1_1DQIntern_1_1Rom}\index{Rom@{Rom}}
+
+
+Collaboration diagram for Rom\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1Rom__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_ad199f74afbdb18f1d508e25188befa7b}{Rom}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a4067ed62dffa915b2f61813dcc4d9067}{$\sim$\+Rom}} ()
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a751def7e7ca5a16350dfc7f4123668e3}{get\+Nb\+Info\+Out}} (int hd, int vd) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a5313482644d6ac7460ac5f99bca5ad79}{get\+Nb\+Info\+Sbb}} (int hd, int vd) const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_aa0d8528c0521b1c5c833242917c23b57}{get\+T\+U\+Pars}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&area, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a02fd73d861ef2e4aabb38c0c9ff82947}{init}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a6c84375830e5ece92dcad2c8456ce2be}{x\+Init\+Scan\+Arrays}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a7454d15ade357d70e1678c3916c4303c}{x\+Uninit\+Scan\+Arrays}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a9836c73f728f3d7da49d050fdf7b3807}{m\+\_\+scan\+Id2\+Nb\+Info\+Out\+Array}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a0fc5bd757b5f80f24689080399293e7b}{m\+\_\+scan\+Id2\+Nb\+Info\+Sbb\+Array}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_a17d3b5b278877bf84b7b85ba5693cf38}{m\+\_\+scans\+Initialized}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}} $\ast$ \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom_aebb14449f9ced9f30ad9d7b8494de0b2}{m\+\_\+tu\+Parameters}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 138 of file Dep\+Quant.\+cpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_ad199f74afbdb18f1d508e25188befa7b}\label{classvvenc_1_1DQIntern_1_1Rom_ad199f74afbdb18f1d508e25188befa7b}} 
+\index{Rom@{Rom}!Rom@{Rom}}
+\index{Rom@{Rom}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{Rom()}{Rom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom}{Rom}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a4067ed62dffa915b2f61813dcc4d9067}\label{classvvenc_1_1DQIntern_1_1Rom_a4067ed62dffa915b2f61813dcc4d9067}} 
+\index{Rom@{Rom}!````~Rom@{$\sim$Rom}}
+\index{````~Rom@{$\sim$Rom}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{$\sim$Rom()}{~Rom()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1DQIntern_1_1Rom}{Rom}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 142 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classvvenc_1_1DQIntern_1_1Rom_a4067ed62dffa915b2f61813dcc4d9067_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a751def7e7ca5a16350dfc7f4123668e3}\label{classvvenc_1_1DQIntern_1_1Rom_a751def7e7ca5a16350dfc7f4123668e3}} 
+\index{Rom@{Rom}!getNbInfoOut@{getNbInfoOut}}
+\index{getNbInfoOut@{getNbInfoOut}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{getNbInfoOut()}{getNbInfoOut()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}}$\ast$ get\+Nb\+Info\+Out (\begin{DoxyParamCaption}\item[{int}]{hd,  }\item[{int}]{vd }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 145 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classvvenc_1_1DQIntern_1_1Rom_a751def7e7ca5a16350dfc7f4123668e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a5313482644d6ac7460ac5f99bca5ad79}\label{classvvenc_1_1DQIntern_1_1Rom_a5313482644d6ac7460ac5f99bca5ad79}} 
+\index{Rom@{Rom}!getNbInfoSbb@{getNbInfoSbb}}
+\index{getNbInfoSbb@{getNbInfoSbb}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{getNbInfoSbb()}{getNbInfoSbb()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}}$\ast$ get\+Nb\+Info\+Sbb (\begin{DoxyParamCaption}\item[{int}]{hd,  }\item[{int}]{vd }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 144 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1Rom_a5313482644d6ac7460ac5f99bca5ad79_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_aa0d8528c0521b1c5c833242917c23b57}\label{classvvenc_1_1DQIntern_1_1Rom_aa0d8528c0521b1c5c833242917c23b57}} 
+\index{Rom@{Rom}!getTUPars@{getTUPars}}
+\index{getTUPars@{getTUPars}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{getTUPars()}{getTUPars()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}}$\ast$ get\+T\+U\+Pars (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{area,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 146 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1Rom_aa0d8528c0521b1c5c833242917c23b57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{classvvenc_1_1DQIntern_1_1Rom_aa0d8528c0521b1c5c833242917c23b57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a02fd73d861ef2e4aabb38c0c9ff82947}\label{classvvenc_1_1DQIntern_1_1Rom_a02fd73d861ef2e4aabb38c0c9ff82947}} 
+\index{Rom@{Rom}!init@{init}}
+\index{init@{init}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1Rom_a02fd73d861ef2e4aabb38c0c9ff82947_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a6c84375830e5ece92dcad2c8456ce2be}\label{classvvenc_1_1DQIntern_1_1Rom_a6c84375830e5ece92dcad2c8456ce2be}} 
+\index{Rom@{Rom}!xInitScanArrays@{xInitScanArrays}}
+\index{xInitScanArrays@{xInitScanArrays}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{xInitScanArrays()}{xInitScanArrays()}}
+{\footnotesize\ttfamily void x\+Init\+Scan\+Arrays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 160 of file Dep\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1DQIntern_1_1Rom_a6c84375830e5ece92dcad2c8456ce2be_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classvvenc_1_1DQIntern_1_1Rom_a6c84375830e5ece92dcad2c8456ce2be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a7454d15ade357d70e1678c3916c4303c}\label{classvvenc_1_1DQIntern_1_1Rom_a7454d15ade357d70e1678c3916c4303c}} 
+\index{Rom@{Rom}!xUninitScanArrays@{xUninitScanArrays}}
+\index{xUninitScanArrays@{xUninitScanArrays}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{xUninitScanArrays()}{xUninitScanArrays()}}
+{\footnotesize\ttfamily void x\+Uninit\+Scan\+Arrays (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 311 of file Dep\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{classvvenc_1_1DQIntern_1_1Rom_a7454d15ade357d70e1678c3916c4303c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a9836c73f728f3d7da49d050fdf7b3807}\label{classvvenc_1_1DQIntern_1_1Rom_a9836c73f728f3d7da49d050fdf7b3807}} 
+\index{Rom@{Rom}!m\_scanId2NbInfoOutArray@{m\_scanId2NbInfoOutArray}}
+\index{m\_scanId2NbInfoOutArray@{m\_scanId2NbInfoOutArray}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{m\_scanId2NbInfoOutArray}{m\_scanId2NbInfoOutArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoOut}{Nb\+Info\+Out}}$\ast$ m\+\_\+scan\+Id2\+Nb\+Info\+Out\+Array\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 156 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a0fc5bd757b5f80f24689080399293e7b}\label{classvvenc_1_1DQIntern_1_1Rom_a0fc5bd757b5f80f24689080399293e7b}} 
+\index{Rom@{Rom}!m\_scanId2NbInfoSbbArray@{m\_scanId2NbInfoSbbArray}}
+\index{m\_scanId2NbInfoSbbArray@{m\_scanId2NbInfoSbbArray}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{m\_scanId2NbInfoSbbArray}{m\_scanId2NbInfoSbbArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1NbInfoSbb}{Nb\+Info\+Sbb}}$\ast$ m\+\_\+scan\+Id2\+Nb\+Info\+Sbb\+Array\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_a17d3b5b278877bf84b7b85ba5693cf38}\label{classvvenc_1_1DQIntern_1_1Rom_a17d3b5b278877bf84b7b85ba5693cf38}} 
+\index{Rom@{Rom}!m\_scansInitialized@{m\_scansInitialized}}
+\index{m\_scansInitialized@{m\_scansInitialized}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{m\_scansInitialized}{m\_scansInitialized}}
+{\footnotesize\ttfamily bool m\+\_\+scans\+Initialized\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 154 of file Dep\+Quant.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1DQIntern_1_1Rom_aebb14449f9ced9f30ad9d7b8494de0b2}\label{classvvenc_1_1DQIntern_1_1Rom_aebb14449f9ced9f30ad9d7b8494de0b2}} 
+\index{Rom@{Rom}!m\_tuParameters@{m\_tuParameters}}
+\index{m\_tuParameters@{m\_tuParameters}!Rom@{Rom}}
+\doxysubsubsection{\texorpdfstring{m\_tuParameters}{m\_tuParameters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1DQIntern_1_1TUParameters}{T\+U\+Parameters}}$\ast$ m\+\_\+tu\+Parameters\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a6b0c0724f3d872665e20bfce0f4e38b6}{M\+A\+X\+\_\+\+T\+U\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 157 of file Dep\+Quant.\+cpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{DepQuant_8cpp}{Dep\+Quant.\+cpp}}\end{DoxyCompactItemize}

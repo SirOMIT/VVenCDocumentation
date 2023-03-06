@@ -1,0 +1,6 @@
+<map id="xInitPPS" name="xInitPPS">
+<area shape="rect" id="node1" title="initialize PPS from encoder options" alt="" coords="5,71,80,98"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1PPS.html#a8505cf9dbc1bb29f5eef799af6ed805c" title=" " alt="" coords="128,5,345,47"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1Window.html#a1d960921eaaa74a2b15fd9ca7e0a6918" title=" " alt="" coords="144,71,329,98"/>
+<area shape="rect" id="node4" href="$classvvenc_1_1EncLib.html#ad8dcbc1df4f3d455dbe92f34c3982176" title=" " alt="" coords="178,122,295,149"/>
+</map>

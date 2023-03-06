@@ -1,0 +1,436 @@
+\hypertarget{classvvenc_1_1CDTrace}{}\doxysection{C\+D\+Trace}
+\label{classvvenc_1_1CDTrace}\index{CDTrace@{CDTrace}}
+
+
+{\ttfamily \#include \char`\"{}dtrace.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_a3ab568ebaa33ee61178a43c222c8d983}{C\+D\+Trace}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_af790f3d7e5f10b177311a1853fb2ed09}{C\+D\+Trace}} (const \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&other)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_a0970486d16d567d0655e98977c049de7}{C\+D\+Trace}} (const char $\ast$filename, const \mbox{\hyperlink{namespacevvenc_a50870709a0b27e1f8e16faeeaa8d5b73}{dtrace\+\_\+channels\+\_\+t}} \&channels)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_a607bc297651b64d69b17b0e0eb7e0111}{C\+D\+Trace}} (const char $\ast$filename, \mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}} channel\+\_\+names)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_ac253e11e1bb03a1b5f4b1334efa79acf}{C\+D\+Trace}} (const std\+::string \&s\+Tracing\+File, const std\+::string \&s\+Tracing\+Rule, const \mbox{\hyperlink{namespacevvenc_a50870709a0b27e1f8e16faeeaa8d5b73}{dtrace\+\_\+channels\+\_\+t}} \&channels)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace_a6cfc57c567dff805bdd5ebacbebbe307}{$\sim$\+C\+D\+Trace}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CDTrace_a99a2775c099d3f2e90502149e83a0a9b}{add\+Rule}} (std\+::string rulestring)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CDTrace_abe5583841409d98711e624a8defbbef1}{decrement\+Channel\+Counter}} (int channel)
+\item 
+{\footnotesize template$<$bool b\+Count$>$ }\\void \mbox{\hyperlink{classvvenc_1_1CDTrace_a1ec91adc2f51619095a06f2de2cef88a}{dtrace}} (int, const char $\ast$format,...)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CDTrace_a372419626b467f3b2c0b021272d7a795}{dtrace\+\_\+repeat}} (int, int i\+\_\+times, const char $\ast$format,...)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1CDTrace_a7f1e5c0d7ec520deaf635eea310f7c44}{get\+Channel\+Counter}} (int channel)
+\item 
+const char $\ast$ \mbox{\hyperlink{classvvenc_1_1CDTrace_aec1a10494f9a66f2da6358ed92d0729d}{get\+Channel\+Name}} (int channel\+\_\+number)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CDTrace_a005ebb060402b1e5717b74455af223fb}{get\+Channels\+List}} (std\+::string \&s\+Channels)
+\item 
+std\+::string \mbox{\hyperlink{classvvenc_1_1CDTrace_a29c3602e90856287950097b4b89db9e3}{get\+Err\+Message}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CDTrace_ac21949d55d67e835061fed83fbc8c77f}{get\+Last\+Error}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CDTrace_a74b5cf3b206d2c25ddfdf7eaa7f16817}{init}} (\mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}} channel\+\_\+names)
+\item 
+\mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \& \mbox{\hyperlink{classvvenc_1_1CDTrace_a6b5f7b6d260f89a7720a3c6469ed8d79}{operator=}} (const \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&other)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1CDTrace_a3c836caeb9c03d5cb06bbe71acb8a6b6}{swap}} (\mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&other)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CDTrace_af03cfd4de601d69172a4e954ce286b2d}{update}} (\mbox{\hyperlink{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}{state\+\_\+type}} stateval)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a8f51156a5ac0a3be7428a28f384ee614}{channel\+\_\+map\+\_\+t}}
+\item 
+typedef std\+::string \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}
+\item 
+typedef std\+::pair$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}{state\+\_\+type}}
+\item 
+typedef std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1Channel}{Channel}} $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_ab0e98f6ee0b70efddbcb9d021be1ba1b}{chan\+Rules}}
+\item 
+\mbox{\hyperlink{Lib_2vvenc_2CMakeLists_8txt_aca28ad08286c9f7360a12cf00f97abfb}{std\+::set}}$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}} $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a01a2522133a7ee8e4a18d688982f983e}{condition\+\_\+types}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1CDTrace_acad86cc31af25e3d02b6d43041d0c6e9}{copy}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a6aea66b3aedd936bd94529cadeff3e23}{deserialization\+Table}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1CDTrace_add3a1e6e345459f5786f3275440b45fc}{m\+\_\+error\+\_\+code}}
+\item 
+F\+I\+LE $\ast$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a3eb0b082ab8cd60c3ee3ae2051d6bbe9}{m\+\_\+trace\+\_\+file}}
+\item 
+std\+::map$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a03a28ab542faaedb52756dcf021c0280}{state}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 108 of file dtrace.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a8f51156a5ac0a3be7428a28f384ee614}\label{classvvenc_1_1CDTrace_a8f51156a5ac0a3be7428a28f384ee614}} 
+\index{CDTrace@{CDTrace}!channel\_map\_t@{channel\_map\_t}}
+\index{channel\_map\_t@{channel\_map\_t}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{channel\_map\_t}{channel\_map\_t}}
+{\footnotesize\ttfamily typedef std\+::map$<$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a8f51156a5ac0a3be7428a28f384ee614}{channel\+\_\+map\+\_\+t}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}\label{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}} 
+\index{CDTrace@{CDTrace}!Key@{Key}}
+\index{Key@{Key}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{Key}{Key}}
+{\footnotesize\ttfamily typedef std\+::string \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 117 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}\label{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}} 
+\index{CDTrace@{CDTrace}!state\_type@{state\_type}}
+\index{state\_type@{state\_type}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{state\_type}{state\_type}}
+{\footnotesize\ttfamily typedef std\+::pair$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}{state\+\_\+type}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 110 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}\label{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}} 
+\index{CDTrace@{CDTrace}!vstring@{vstring}}
+\index{vstring@{vstring}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{vstring}{vstring}}
+{\footnotesize\ttfamily typedef std\+::vector$<$std\+::string$>$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file dtrace.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a3ab568ebaa33ee61178a43c222c8d983}\label{classvvenc_1_1CDTrace_a3ab568ebaa33ee61178a43c222c8d983}} 
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{CDTrace()}{CDTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 126 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a607bc297651b64d69b17b0e0eb7e0111}\label{classvvenc_1_1CDTrace_a607bc297651b64d69b17b0e0eb7e0111}} 
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{CDTrace()}{CDTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{\mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}}}]{channel\+\_\+names }\end{DoxyParamCaption})}
+
+
+
+Definition at line 122 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a0970486d16d567d0655e98977c049de7}\label{classvvenc_1_1CDTrace_a0970486d16d567d0655e98977c049de7}} 
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{CDTrace()}{CDTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{const \mbox{\hyperlink{namespacevvenc_a50870709a0b27e1f8e16faeeaa8d5b73}{dtrace\+\_\+channels\+\_\+t}} \&}]{channels }\end{DoxyParamCaption})}
+
+
+
+Definition at line 135 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_ac253e11e1bb03a1b5f4b1334efa79acf}\label{classvvenc_1_1CDTrace_ac253e11e1bb03a1b5f4b1334efa79acf}} 
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{CDTrace()}{CDTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s\+Tracing\+File,  }\item[{const std\+::string \&}]{s\+Tracing\+Rule,  }\item[{const \mbox{\hyperlink{namespacevvenc_a50870709a0b27e1f8e16faeeaa8d5b73}{dtrace\+\_\+channels\+\_\+t}} \&}]{channels }\end{DoxyParamCaption})}
+
+
+
+Definition at line 159 of file dtrace.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classvvenc_1_1CDTrace_ac253e11e1bb03a1b5f4b1334efa79acf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_af790f3d7e5f10b177311a1853fb2ed09}\label{classvvenc_1_1CDTrace_af790f3d7e5f10b177311a1853fb2ed09}} 
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\index{CDTrace@{CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{CDTrace()}{CDTrace()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 148 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a6cfc57c567dff805bdd5ebacbebbe307}\label{classvvenc_1_1CDTrace_a6cfc57c567dff805bdd5ebacbebbe307}} 
+\index{CDTrace@{CDTrace}!````~CDTrace@{$\sim$CDTrace}}
+\index{````~CDTrace@{$\sim$CDTrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDTrace()}{~CDTrace()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 189 of file dtrace.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a99a2775c099d3f2e90502149e83a0a9b}\label{classvvenc_1_1CDTrace_a99a2775c099d3f2e90502149e83a0a9b}} 
+\index{CDTrace@{CDTrace}!addRule@{addRule}}
+\index{addRule@{addRule}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{addRule()}{addRule()}}
+{\footnotesize\ttfamily int add\+Rule (\begin{DoxyParamCaption}\item[{std\+::string}]{rulestring }\end{DoxyParamCaption})}
+
+
+
+Definition at line 200 of file dtrace.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classvvenc_1_1CDTrace_a99a2775c099d3f2e90502149e83a0a9b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classvvenc_1_1CDTrace_a99a2775c099d3f2e90502149e83a0a9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_abe5583841409d98711e624a8defbbef1}\label{classvvenc_1_1CDTrace_abe5583841409d98711e624a8defbbef1}} 
+\index{CDTrace@{CDTrace}!decrementChannelCounter@{decrementChannelCounter}}
+\index{decrementChannelCounter@{decrementChannelCounter}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{decrementChannelCounter()}{decrementChannelCounter()}}
+{\footnotesize\ttfamily void decrement\+Channel\+Counter (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 145 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a1ec91adc2f51619095a06f2de2cef88a}\label{classvvenc_1_1CDTrace_a1ec91adc2f51619095a06f2de2cef88a}} 
+\index{CDTrace@{CDTrace}!dtrace@{dtrace}}
+\index{dtrace@{dtrace}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{dtrace()}{dtrace()}}
+{\footnotesize\ttfamily void dtrace (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 305 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a372419626b467f3b2c0b021272d7a795}\label{classvvenc_1_1CDTrace_a372419626b467f3b2c0b021272d7a795}} 
+\index{CDTrace@{CDTrace}!dtrace\_repeat@{dtrace\_repeat}}
+\index{dtrace\_repeat@{dtrace\_repeat}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{dtrace\_repeat()}{dtrace\_repeat()}}
+{\footnotesize\ttfamily void dtrace\+\_\+repeat (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{int}]{i\+\_\+times,  }\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Definition at line 323 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a7f1e5c0d7ec520deaf635eea310f7c44}\label{classvvenc_1_1CDTrace_a7f1e5c0d7ec520deaf635eea310f7c44}} 
+\index{CDTrace@{CDTrace}!getChannelCounter@{getChannelCounter}}
+\index{getChannelCounter@{getChannelCounter}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{getChannelCounter()}{getChannelCounter()}}
+{\footnotesize\ttfamily int64\+\_\+t get\+Channel\+Counter (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 144 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_aec1a10494f9a66f2da6358ed92d0729d}\label{classvvenc_1_1CDTrace_aec1a10494f9a66f2da6358ed92d0729d}} 
+\index{CDTrace@{CDTrace}!getChannelName@{getChannelName}}
+\index{getChannelName@{getChannelName}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{getChannelName()}{getChannelName()}}
+{\footnotesize\ttfamily const char $\ast$ get\+Channel\+Name (\begin{DoxyParamCaption}\item[{int}]{channel\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+Definition at line 274 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a005ebb060402b1e5717b74455af223fb}\label{classvvenc_1_1CDTrace_a005ebb060402b1e5717b74455af223fb}} 
+\index{CDTrace@{CDTrace}!getChannelsList@{getChannelsList}}
+\index{getChannelsList@{getChannelsList}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{getChannelsList()}{getChannelsList()}}
+{\footnotesize\ttfamily void get\+Channels\+List (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s\+Channels }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a29c3602e90856287950097b4b89db9e3}\label{classvvenc_1_1CDTrace_a29c3602e90856287950097b4b89db9e3}} 
+\index{CDTrace@{CDTrace}!getErrMessage@{getErrMessage}}
+\index{getErrMessage@{getErrMessage}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{getErrMessage()}{getErrMessage()}}
+{\footnotesize\ttfamily std\+::string get\+Err\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 286 of file dtrace.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_ac21949d55d67e835061fed83fbc8c77f}\label{classvvenc_1_1CDTrace_ac21949d55d67e835061fed83fbc8c77f}} 
+\index{CDTrace@{CDTrace}!getLastError@{getLastError}}
+\index{getLastError@{getLastError}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{getLastError()}{getLastError()}}
+{\footnotesize\ttfamily int get\+Last\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 140 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a74b5cf3b206d2c25ddfdf7eaa7f16817}\label{classvvenc_1_1CDTrace_a74b5cf3b206d2c25ddfdf7eaa7f16817}} 
+\index{CDTrace@{CDTrace}!init@{init}}
+\index{init@{init}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CDTrace_a7d70a96a95b70351868c5d43cceda8cd}{vstring}}}]{channel\+\_\+names }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a6b5f7b6d260f89a7720a3c6469ed8d79}\label{classvvenc_1_1CDTrace_a6b5f7b6d260f89a7720a3c6469ed8d79}} 
+\index{CDTrace@{CDTrace}!operator=@{operator=}}
+\index{operator=@{operator=}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 182 of file dtrace.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classvvenc_1_1CDTrace_a6b5f7b6d260f89a7720a3c6469ed8d79_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a3c836caeb9c03d5cb06bbe71acb8a6b6}\label{classvvenc_1_1CDTrace_a3c836caeb9c03d5cb06bbe71acb8a6b6}} 
+\index{CDTrace@{CDTrace}!swap@{swap}}
+\index{swap@{swap}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily void swap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CDTrace}{C\+D\+Trace}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Definition at line 169 of file dtrace.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classvvenc_1_1CDTrace_a3c836caeb9c03d5cb06bbe71acb8a6b6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_af03cfd4de601d69172a4e954ce286b2d}\label{classvvenc_1_1CDTrace_af03cfd4de601d69172a4e954ce286b2d}} 
+\index{CDTrace@{CDTrace}!update@{update}}
+\index{update@{update}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1CDTrace_a8366f699608f2d90f6a3ecaf7bf753d5}{state\+\_\+type}}}]{stateval }\end{DoxyParamCaption})}
+
+
+
+Definition at line 250 of file dtrace.\+cpp.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_ab0e98f6ee0b70efddbcb9d021be1ba1b}\label{classvvenc_1_1CDTrace_ab0e98f6ee0b70efddbcb9d021be1ba1b}} 
+\index{CDTrace@{CDTrace}!chanRules@{chanRules}}
+\index{chanRules@{chanRules}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{chanRules}{chanRules}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1Channel}{Channel}} $>$ chan\+Rules\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 120 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a01a2522133a7ee8e4a18d688982f983e}\label{classvvenc_1_1CDTrace_a01a2522133a7ee8e4a18d688982f983e}} 
+\index{CDTrace@{CDTrace}!condition\_types@{condition\_types}}
+\index{condition\_types@{condition\_types}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{condition\_types}{condition\_types}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Lib_2vvenc_2CMakeLists_8txt_aca28ad08286c9f7360a12cf00f97abfb}{std\+::set}}$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}} $>$ condition\+\_\+types\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 121 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_acad86cc31af25e3d02b6d43041d0c6e9}\label{classvvenc_1_1CDTrace_acad86cc31af25e3d02b6d43041d0c6e9}} 
+\index{CDTrace@{CDTrace}!copy@{copy}}
+\index{copy@{copy}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily bool copy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 113 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a6aea66b3aedd936bd94529cadeff3e23}\label{classvvenc_1_1CDTrace_a6aea66b3aedd936bd94529cadeff3e23}} 
+\index{CDTrace@{CDTrace}!deserializationTable@{deserializationTable}}
+\index{deserializationTable@{deserializationTable}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{deserializationTable}{deserializationTable}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{classvvenc_1_1CDTrace_a73dcb4d9d94689058779bdd912dba7de}{Key}}, int $>$ deserialization\+Table\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_add3a1e6e345459f5786f3275440b45fc}\label{classvvenc_1_1CDTrace_add3a1e6e345459f5786f3275440b45fc}} 
+\index{CDTrace@{CDTrace}!m\_error\_code@{m\_error\_code}}
+\index{m\_error\_code@{m\_error\_code}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{m\_error\_code}{m\_error\_code}}
+{\footnotesize\ttfamily int m\+\_\+error\+\_\+code\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 115 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a3eb0b082ab8cd60c3ee3ae2051d6bbe9}\label{classvvenc_1_1CDTrace_a3eb0b082ab8cd60c3ee3ae2051d6bbe9}} 
+\index{CDTrace@{CDTrace}!m\_trace\_file@{m\_trace\_file}}
+\index{m\_trace\_file@{m\_trace\_file}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{m\_trace\_file}{m\_trace\_file}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ m\+\_\+trace\+\_\+file\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 114 of file dtrace.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1CDTrace_a03a28ab542faaedb52756dcf021c0280}\label{classvvenc_1_1CDTrace_a03a28ab542faaedb52756dcf021c0280}} 
+\index{CDTrace@{CDTrace}!state@{state}}
+\index{state@{state}!CDTrace@{CDTrace}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{namespacevvenc_a64e38454d10ce47f0a533081012fb601}{C\+Type}}, int $>$ state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 122 of file dtrace.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{dtrace_8h}{dtrace.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{dtrace_8cpp}{dtrace.\+cpp}}\end{DoxyCompactItemize}

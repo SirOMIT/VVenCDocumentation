@@ -1,0 +1,37 @@
+The V\+V\+Encoder\+App is a free application for encoding H.\+266/\+V\+VC bitstream from R\+AW Y\+UV files.\hypertarget{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md0}{}\doxysection{What it does}\label{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md0}
+This tool encodes R\+AW Y\+UV input with the H.\+266/\+V\+VC standard.
+
+Output of this tool is decodable V\+VC bitstream.\hypertarget{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md1}{}\doxysection{Usage}\label{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{VVEncoderApp -\/i input.yuv [options] -\/o bitstreamfile}
+\end{DoxyCode}
+
+
+show help by running\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{VVEncoderApp -\/-\/help}
+\DoxyCodeLine{VVEncoderApp -\/-\/fullhelp}
+\end{DoxyCode}
+\hypertarget{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md2}{}\doxysection{Application binaries}\label{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md2}
+The software supports builds for Windows, Linux and Mac\+O\+SX.\hypertarget{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md3}{}\doxysection{Building}\label{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md3}
+The cmake build system scripts are provided to maintain cross platform experience and simplify generation of I\+D\+E-\/s projects like Visual Studio.
+
+To use it
+
+
+\begin{DoxyItemize}
+\item install cmake from \href{http://cmake.org}{\texttt{ cmake.\+org}} Build by Makefile usage\+:
+\item go into the project folder (where C\+Make\+Lists.\+txt is located)
+\item Build Binary by calling \textquotesingle{}make release\textquotesingle{}
+\item 
+\item Build/install everything for distribution\+:
+\item call \textquotesingle{}make install\textquotesingle{} to build all suitable binaries, libraries and include directories; output is copied into the directory \textquotesingle{}install\textquotesingle{} by default
+\item Manually build steps\+:
+\item create folder \textquotesingle{}build\textquotesingle{} inside project root folder (where C\+Make\+Lists.\+txt is located)
+\item cd to this folder
+\item configure project using following command line cmake ..
+\item build project using your platform\textquotesingle{}s default build system, say Visual Studio on Windows and make on U\+N\+IX
+\end{DoxyItemize}\hypertarget{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md4}{}\doxysection{Restrictions}\label{md__home_itaabane_Bureau_vvencp_vvenc-master_source_App_vvencapp_readme_autotoc_md4}

@@ -1,0 +1,383 @@
+\hypertarget{classvvenc_1_1Reshape}{}\doxysection{Reshape}
+\label{classvvenc_1_1Reshape}\index{Reshape@{Reshape}}
+
+
+{\ttfamily \#include \char`\"{}Reshape.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Reshape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classvvenc_1_1Reshape__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reshape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classvvenc_1_1Reshape__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1Reshape_ae5b21a86cb528cb22bb033fc512b4a85}{Reshape}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1Reshape_a0af10ad56543c6b171ca0b8972c91a0b}{$\sim$\+Reshape}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_a8cdd575e5c5f6a5d40e77c8310248f68}{construct\+Reshaper}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_a274f7b360e906fdf945840ce2ea1fe72}{create\+Dec}} (int bit\+Depth)
+\item 
+const double $\ast$ \mbox{\hyperlink{classvvenc_1_1Reshape_a72f4a997076e5e119227349c4d75074f}{getluma\+Level\+To\+Weight\+P\+L\+UT}} () const
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Reshape_a90d118055a8c2b48d26417568e0d07e7}{get\+Reshape\+Flag}} () const
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_a7d06453dc9045ce57056341f5f324e8e}{init\+Luma\+Level\+To\+Weight\+Table\+Reshape}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_ad820051abe566067c0dacb90b148c1a8}{restore\+Reshape\+Luma\+Level\+To\+Weight\+Table}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_a5e932ee1f1dad15e28b1b7cc96fbc9b3}{set\+Reshape\+Flag}} (bool b)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_ae00b0e814ec1507a20a10bd95e8319ba}{update\+Reshape\+Luma\+Level\+To\+Weight\+Table}} (\mbox{\hyperlink{structvvenc_1_1LmcsParam}{Lmcs\+Param}} \&slice\+Reshape, \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$wt\+Table, double cwt)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1Reshape_a7c36ae03ddd26787686a9a304b6367de}{update\+Reshape\+Luma\+Level\+To\+Weight\+Table\+Chroma\+MD}} (const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$I\+L\+UT)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1Reshape_a8204040fbec5a9e28d17db4dbfdfbc8e}{m\+\_\+bin\+CW}}
+\item 
+std\+::vector$<$ int32\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1Reshape_a531a52347ff71a13833430c64aa3e429}{m\+\_\+fwd\+Scale\+Coef}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classvvenc_1_1Reshape_af89d929b2a85d8f089c822a688b87c59}{m\+\_\+init\+CW}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $>$ \mbox{\hyperlink{classvvenc_1_1Reshape_a1e6626dc5a31d09e8908e91c59f67a83}{m\+\_\+input\+Pivot}}
+\item 
+std\+::vector$<$ int32\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1Reshape_aae23c443f571fcfdf72570f07068825d}{m\+\_\+inv\+Scale\+Coef}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classvvenc_1_1Reshape_a03cc5df1c7f9d146a9b145536a757918}{m\+\_\+luma\+Level\+To\+Weight\+P\+L\+UT}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1Reshape_a848308234b8ac370216353df8c83956a}{m\+\_\+reshape}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1Reshape_a97cf3ac5b72e59a4e314abb696d99b58}{m\+\_\+reshape\+L\+U\+T\+Size}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1Reshape_ac11f806d70faab7445913ea476d45fa2}{m\+\_\+signal\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 116 of file Reshape.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_ae5b21a86cb528cb22bb033fc512b4a85}\label{classvvenc_1_1Reshape_ae5b21a86cb528cb22bb033fc512b4a85}} 
+\index{Reshape@{Reshape}!Reshape@{Reshape}}
+\index{Reshape@{Reshape}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{Reshape()}{Reshape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Reshape}{Reshape}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 131 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a0af10ad56543c6b171ca0b8972c91a0b}\label{classvvenc_1_1Reshape_a0af10ad56543c6b171ca0b8972c91a0b}} 
+\index{Reshape@{Reshape}!````~Reshape@{$\sim$Reshape}}
+\index{````~Reshape@{$\sim$Reshape}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{$\sim$Reshape()}{~Reshape()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1Reshape}{Reshape}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 135 of file Reshape.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a8cdd575e5c5f6a5d40e77c8310248f68}\label{classvvenc_1_1Reshape_a8cdd575e5c5f6a5d40e77c8310248f68}} 
+\index{Reshape@{Reshape}!constructReshaper@{constructReshaper}}
+\index{constructReshaper@{constructReshaper}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{constructReshaper()}{constructReshaper()}}
+{\footnotesize\ttfamily void construct\+Reshaper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Construct reshaper from syntax 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file Reshape.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classvvenc_1_1Reshape_a8cdd575e5c5f6a5d40e77c8310248f68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a8cdd575e5c5f6a5d40e77c8310248f68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a274f7b360e906fdf945840ce2ea1fe72}\label{classvvenc_1_1Reshape_a274f7b360e906fdf945840ce2ea1fe72}} 
+\index{Reshape@{Reshape}!createDec@{createDec}}
+\index{createDec@{createDec}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{createDec()}{createDec()}}
+{\footnotesize\ttfamily void create\+Dec (\begin{DoxyParamCaption}\item[{int}]{bit\+Depth }\end{DoxyParamCaption})}
+
+
+
+Definition at line 161 of file Reshape.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a274f7b360e906fdf945840ce2ea1fe72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a72f4a997076e5e119227349c4d75074f}\label{classvvenc_1_1Reshape_a72f4a997076e5e119227349c4d75074f}} 
+\index{Reshape@{Reshape}!getlumaLevelToWeightPLUT@{getlumaLevelToWeightPLUT}}
+\index{getlumaLevelToWeightPLUT@{getlumaLevelToWeightPLUT}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{getlumaLevelToWeightPLUT()}{getlumaLevelToWeightPLUT()}}
+{\footnotesize\ttfamily const double$\ast$ getluma\+Level\+To\+Weight\+P\+L\+UT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file Reshape.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a72f4a997076e5e119227349c4d75074f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a90d118055a8c2b48d26417568e0d07e7}\label{classvvenc_1_1Reshape_a90d118055a8c2b48d26417568e0d07e7}} 
+\index{Reshape@{Reshape}!getReshapeFlag@{getReshapeFlag}}
+\index{getReshapeFlag@{getReshapeFlag}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{getReshapeFlag()}{getReshapeFlag()}}
+{\footnotesize\ttfamily bool get\+Reshape\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 141 of file Reshape.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a90d118055a8c2b48d26417568e0d07e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a7d06453dc9045ce57056341f5f324e8e}\label{classvvenc_1_1Reshape_a7d06453dc9045ce57056341f5f324e8e}} 
+\index{Reshape@{Reshape}!initLumaLevelToWeightTableReshape@{initLumaLevelToWeightTableReshape}}
+\index{initLumaLevelToWeightTableReshape@{initLumaLevelToWeightTableReshape}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{initLumaLevelToWeightTableReshape()}{initLumaLevelToWeightTableReshape()}}
+{\footnotesize\ttfamily void init\+Luma\+Level\+To\+Weight\+Table\+Reshape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Reshape.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a7d06453dc9045ce57056341f5f324e8e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_ad820051abe566067c0dacb90b148c1a8}\label{classvvenc_1_1Reshape_ad820051abe566067c0dacb90b148c1a8}} 
+\index{Reshape@{Reshape}!restoreReshapeLumaLevelToWeightTable@{restoreReshapeLumaLevelToWeightTable}}
+\index{restoreReshapeLumaLevelToWeightTable@{restoreReshapeLumaLevelToWeightTable}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{restoreReshapeLumaLevelToWeightTable()}{restoreReshapeLumaLevelToWeightTable()}}
+{\footnotesize\ttfamily void restore\+Reshape\+Luma\+Level\+To\+Weight\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 269 of file Reshape.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_ad820051abe566067c0dacb90b148c1a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a5e932ee1f1dad15e28b1b7cc96fbc9b3}\label{classvvenc_1_1Reshape_a5e932ee1f1dad15e28b1b7cc96fbc9b3}} 
+\index{Reshape@{Reshape}!setReshapeFlag@{setReshapeFlag}}
+\index{setReshapeFlag@{setReshapeFlag}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{setReshapeFlag()}{setReshapeFlag()}}
+{\footnotesize\ttfamily void set\+Reshape\+Flag (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 142 of file Reshape.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a5e932ee1f1dad15e28b1b7cc96fbc9b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_ae00b0e814ec1507a20a10bd95e8319ba}\label{classvvenc_1_1Reshape_ae00b0e814ec1507a20a10bd95e8319ba}} 
+\index{Reshape@{Reshape}!updateReshapeLumaLevelToWeightTable@{updateReshapeLumaLevelToWeightTable}}
+\index{updateReshapeLumaLevelToWeightTable@{updateReshapeLumaLevelToWeightTable}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{updateReshapeLumaLevelToWeightTable()}{updateReshapeLumaLevelToWeightTable()}}
+{\footnotesize\ttfamily void update\+Reshape\+Luma\+Level\+To\+Weight\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1LmcsParam}{Lmcs\+Param}} \&}]{slice\+Reshape,  }\item[{\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{wt\+Table,  }\item[{double}]{cwt }\end{DoxyParamCaption})}
+
+
+
+Definition at line 278 of file Reshape.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_ae00b0e814ec1507a20a10bd95e8319ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a7c36ae03ddd26787686a9a304b6367de}\label{classvvenc_1_1Reshape_a7c36ae03ddd26787686a9a304b6367de}} 
+\index{Reshape@{Reshape}!updateReshapeLumaLevelToWeightTableChromaMD@{updateReshapeLumaLevelToWeightTableChromaMD}}
+\index{updateReshapeLumaLevelToWeightTableChromaMD@{updateReshapeLumaLevelToWeightTableChromaMD}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{updateReshapeLumaLevelToWeightTableChromaMD()}{updateReshapeLumaLevelToWeightTableChromaMD()}}
+{\footnotesize\ttfamily void update\+Reshape\+Luma\+Level\+To\+Weight\+Table\+Chroma\+MD (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$}]{I\+L\+UT }\end{DoxyParamCaption})}
+
+
+
+Definition at line 260 of file Reshape.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1Reshape_a7c36ae03ddd26787686a9a304b6367de_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a8204040fbec5a9e28d17db4dbfdfbc8e}\label{classvvenc_1_1Reshape_a8204040fbec5a9e28d17db4dbfdfbc8e}} 
+\index{Reshape@{Reshape}!m\_binCW@{m\_binCW}}
+\index{m\_binCW@{m\_binCW}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_binCW}{m\_binCW}}
+{\footnotesize\ttfamily std\+::vector$<$uint16\+\_\+t$>$ m\+\_\+bin\+CW\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 119 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a531a52347ff71a13833430c64aa3e429}\label{classvvenc_1_1Reshape_a531a52347ff71a13833430c64aa3e429}} 
+\index{Reshape@{Reshape}!m\_fwdScaleCoef@{m\_fwdScaleCoef}}
+\index{m\_fwdScaleCoef@{m\_fwdScaleCoef}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_fwdScaleCoef}{m\_fwdScaleCoef}}
+{\footnotesize\ttfamily std\+::vector$<$int32\+\_\+t$>$ m\+\_\+fwd\+Scale\+Coef\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 123 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_af89d929b2a85d8f089c822a688b87c59}\label{classvvenc_1_1Reshape_af89d929b2a85d8f089c822a688b87c59}} 
+\index{Reshape@{Reshape}!m\_initCW@{m\_initCW}}
+\index{m\_initCW@{m\_initCW}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_initCW}{m\_initCW}}
+{\footnotesize\ttfamily uint16\+\_\+t m\+\_\+init\+CW\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 120 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a1e6626dc5a31d09e8908e91c59f67a83}\label{classvvenc_1_1Reshape_a1e6626dc5a31d09e8908e91c59f67a83}} 
+\index{Reshape@{Reshape}!m\_inputPivot@{m\_inputPivot}}
+\index{m\_inputPivot@{m\_inputPivot}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_inputPivot}{m\_inputPivot}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$>$ m\+\_\+input\+Pivot\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 122 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_aae23c443f571fcfdf72570f07068825d}\label{classvvenc_1_1Reshape_aae23c443f571fcfdf72570f07068825d}} 
+\index{Reshape@{Reshape}!m\_invScaleCoef@{m\_invScaleCoef}}
+\index{m\_invScaleCoef@{m\_invScaleCoef}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_invScaleCoef}{m\_invScaleCoef}}
+{\footnotesize\ttfamily std\+::vector$<$int32\+\_\+t$>$ m\+\_\+inv\+Scale\+Coef\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 124 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a03cc5df1c7f9d146a9b145536a757918}\label{classvvenc_1_1Reshape_a03cc5df1c7f9d146a9b145536a757918}} 
+\index{Reshape@{Reshape}!m\_lumaLevelToWeightPLUT@{m\_lumaLevelToWeightPLUT}}
+\index{m\_lumaLevelToWeightPLUT@{m\_lumaLevelToWeightPLUT}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_lumaLevelToWeightPLUT}{m\_lumaLevelToWeightPLUT}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ m\+\_\+luma\+Level\+To\+Weight\+P\+L\+UT\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 128 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a848308234b8ac370216353df8c83956a}\label{classvvenc_1_1Reshape_a848308234b8ac370216353df8c83956a}} 
+\index{Reshape@{Reshape}!m\_reshape@{m\_reshape}}
+\index{m\_reshape@{m\_reshape}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_reshape}{m\_reshape}}
+{\footnotesize\ttfamily bool m\+\_\+reshape\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 121 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_a97cf3ac5b72e59a4e314abb696d99b58}\label{classvvenc_1_1Reshape_a97cf3ac5b72e59a4e314abb696d99b58}} 
+\index{Reshape@{Reshape}!m\_reshapeLUTSize@{m\_reshapeLUTSize}}
+\index{m\_reshapeLUTSize@{m\_reshapeLUTSize}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_reshapeLUTSize}{m\_reshapeLUTSize}}
+{\footnotesize\ttfamily int m\+\_\+reshape\+L\+U\+T\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 125 of file Reshape.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1Reshape_ac11f806d70faab7445913ea476d45fa2}\label{classvvenc_1_1Reshape_ac11f806d70faab7445913ea476d45fa2}} 
+\index{Reshape@{Reshape}!m\_signalType@{m\_signalType}}
+\index{m\_signalType@{m\_signalType}!Reshape@{Reshape}}
+\doxysubsubsection{\texorpdfstring{m\_signalType}{m\_signalType}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+signal\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 127 of file Reshape.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Reshape_8h}{Reshape.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Reshape_8cpp}{Reshape.\+cpp}}\end{DoxyCompactItemize}

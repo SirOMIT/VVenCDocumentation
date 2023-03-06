@@ -1,0 +1,1813 @@
+\hypertarget{structvvenc_1_1Picture}{}\doxysection{Picture}
+\label{structvvenc_1_1Picture}\index{Picture@{Picture}}
+
+
+{\ttfamily \#include \char`\"{}Picture.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Picture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=135pt]{structvvenc_1_1Picture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Picture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structvvenc_1_1Picture_aaefd749dbc6c83b365e7a47c1b0938b9}{Picture}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a7b4a78dd70b2b9f1c85c787d7e532256}{allocate\+New\+Slice}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_ae82c52635aebf837983e323a87e42154}{copy\+S\+AO}} (const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&src, int dstid)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a9ed590ecb8241a4471ad371bd59bdbbe}{create}} (\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \+\_\+chroma\+Format, const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&size, unsigned \+\_\+max\+C\+U\+Size, unsigned \+\_\+margin, bool \+\_\+decoder, int \+\_\+padding)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a6a05775d80805f512e03598ce8a5e4e2}{create\+Temp\+Buffers}} (unsigned \+\_\+max\+C\+U\+Size)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a813e0565873f1e6b5589c10d3cd5f88b}{destroy\+Temp\+Buffers}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_af7e40e5dcb32caa7ac71a644551c4041}{extend\+Pic\+Border}} ()
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_ad971791c6aef31352085a9ec1fc1dbce}{final\+Init}} (const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} \&\mbox{\hyperlink{structvvenc_1_1Picture_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}{vps}}, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps, \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \&unit\+Cache, std\+::mutex $\ast$mutex, \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$$\ast$alf\+Aps, \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$lmcs\+Aps)
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \& \mbox{\hyperlink{structvvenc_1_1Picture_ae4e8dfefa32e8e3dce020e149c9c71f2}{get\+Filtered\+Orig\+Buffer}} ()
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a7b8e59f547b3a21d59f72e2fd97f751c}{get\+Orig\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a5facb1f44de6a1c7476467c5920b4312}{get\+Orig\+Buf}} () const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a5d1f9c8c61fdf604a3191d71f23e2797}{get\+Orig\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a7c528776b062993a7ed38a25bf851f9c}{get\+Orig\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a068e4f36d080b6126829bb2df604e61f}{get\+Orig\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a617c65d462083cad853e40b73b279f46}{get\+Orig\+Buf\+Prev}} (const bool minus2) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a00fbaddba8802f25251df7b0953e47ac}{get\+Orig\+Buf\+Prev}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk, const bool minus2) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a880ee0a0716238ea02e1f72c7c8a93de}{get\+Orig\+Buf\+Prev}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const bool minus2) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a5af4cc188bb9aa5b89eb738cc540b793}{get\+Origin}} (const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} \&type, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_abf1a8b43357468a369a08f71ff4bdd88}{get\+P\+OC}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a34866fd2b82c594d24054e67caf9aa58}{get\+Reco\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a9cbcf6cbd2fa744e7de01cfe4ad3f316}{get\+Reco\+Buf}} () const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_ad77d144af5cd4d736ee529e3e74a7367}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_af0c9ce95be3df4219ecedb27f2762234}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aee021e1a0b2774638746e6e9e76a5519}{get\+Reco\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a318ee043b69487a1597339d3abbb8075}{get\+Reco\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a1aa6a89b4c9854f3e3a1a7207a4162da}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aac7fcee6fcb0e5c67e109ad6f27437dc}{get\+Reco\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aac3763818db5b4b361de379ab89d37e6}{get\+Reco\+Wrap\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_afae1813b88756a76ce4e11506ef290a4}{get\+Reco\+Wrap\+Buf}} () const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aead8e8fae3f8d8e49381937d39ce2c28}{get\+Reco\+Wrap\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_adfeeb46910b1ca91b82e20aace08b92a}{get\+Reco\+Wrap\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_adcc78fc6eb6cf678c4ded7fe3a3958f2}{get\+Reco\+Wrap\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a0abcb1f18752aeaeed142a6b9aff7f82}{get\+Rsp\+Orig\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a3322eadf3f28fb185e6d31cb5a9ad607}{get\+Rsp\+Orig\+Buf}} () const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a3af45ca400f39fc79cc20c885dde89d6}{get\+Rsp\+Orig\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a157d59287bd7f097e67c5820e79ede64}{get\+Rsp\+Orig\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID) const
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a67098e9c2fd1871629f98aaa356f1fce}{get\+Rsp\+Orig\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit) const
+\item 
+\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_ad75d38b008cc1490d1b08a8e7dfca9c6}{get\+S\+AO}} (int id=0)
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a3831394024ddead86eb4930104aebb00}{get\+Sao\+Buf}} ()
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a6fe48a8a02e50136128436c64817423d}{get\+Sao\+Buf}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a9bb1bc5905c65ba110112701d8229921}{resize\+Alf\+Ctu\+Buffers}} (int num\+Entries)
+\item 
+void \mbox{\hyperlink{structvvenc_1_1Picture_a540b2d9ce8991abdba03683e16ebb46c}{resize\+S\+AO}} (unsigned num\+Entries, int dstid)
+\item 
+\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a7af4588e179af98805dd0291e79f2c20}{swap\+Slice\+Object}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$p, uint32\+\_\+t i)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a8c45147b058d76b8f04cd33cbc7a78bd}{actual\+Head\+Bits}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_af2ac98bd694308e21ccdcb78b4144a28}{actual\+Total\+Bits}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a83dedaccc39c9d31f3ef20ff7ccb4b4f}{cs}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structvvenc_1_1Picture_a14050394e707f3e161142beefaf7415a}{cts}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a1aedd1ab91b3b73f59fce57af8b4b42a}{cts\+Valid}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a711a3309d28547ac544dc9003ed0309c}{ctu\+Adapted\+QP}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a51ac88a704b53579d47fdd55333dfd8e}{ctu\+Qpa\+Lambda}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a0af3b03af999b3b41480e6ba7071f36a}{dci}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a24a2e8bd1c031dfaa7fb2c2d8ab10595}{enc\+Pic}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_afd36d4c3cfe408edbe75579fd69bafd0}{enc\+R\+C\+Pic}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1StopClock}{Stop\+Clock}} \mbox{\hyperlink{structvvenc_1_1Picture_a34bf84a00862829eae9bd39d0b980b6d}{enc\+Time}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a5641b061a4335e2412457690b3c2c215}{gop\+Id}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a06f72908a9084c9a532b26896c216053}{is\+Border\+Extended}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a0e40c5fb8a37c60628678563bfea6975}{is\+Finished}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_af2a1775ef7c9ed678b6892d1f59000a4}{is\+Init\+Done}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a02e636e41ebb8cba558949035fb52661}{is\+Long\+Term}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a3f842b974b1d446c54ffd189fa920415}{is\+Mctf\+Processed}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_aff7881f94b47d6b4a9906c8e6fd96de1}{is\+Needed\+For\+Output}}
+\item 
+std\+::atomic\+\_\+bool \mbox{\hyperlink{structvvenc_1_1Picture_ad26ec5c4cbe4715920eea97dc856b7ff}{is\+Reconstructed}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_ab86d36bba9a3e545df27b97373549691}{is\+Referenced}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a5da88a7c14f220452b0f2240fcf77868}{is\+Sub\+Pic\+Border\+Saved}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a245ddfa1d0638413cec268376a45aca9}{layer\+Id}}
+\item 
+std\+::vector$<$ short $>$ \mbox{\hyperlink{structvvenc_1_1Picture_adac3106c5bbd4b187d2e3710eb9a1437}{m\+\_\+alf\+Ctb\+Filter\+Index}}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a8c547830ccc6823f5865b33c1044913a}{m\+\_\+alf\+Ctu\+Alternative}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a860a7f74cbeb23a3701a7e67ac997b7d}{m\+\_\+alf\+Ctu\+Enabled}} \mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} \mbox{\hyperlink{structvvenc_1_1Picture_a52d86033a9190ff8351a6639bdf56298}{m\+\_\+bufs}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3a2d910238473e9fd54710dfc5cb474bab}{N\+U\+M\+\_\+\+P\+I\+C\+\_\+\+T\+Y\+P\+ES}}\mbox{]}
+\item 
+\mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a068f1e1cd84c5c2e22edc6dc8776b2ae}{m\+\_\+bufs\+Orig\+Prev}} \mbox{[}2\mbox{]}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}} $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a5a14c52ef6a0d76690f1458a4d4daedd}{m\+\_\+sao}} \mbox{[}2\mbox{]}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{structvvenc_1_1Picture_a8fcf1a2bcac93481a369099b9498eeb6}{margin}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$ \mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $>$ \mbox{\hyperlink{structvvenc_1_1Picture_ada39a6d06bcabc649acc88a18cf6ba71}{pic\+Aps\+Map}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} \mbox{\hyperlink{structvvenc_1_1Picture_aca8027146fa42e12de06c875b0abd0f5}{pic\+Blk\+Stat}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_aa36878de90156ed22765182bedc897c5}{pic\+Initial\+QP}}
+\item 
+double \mbox{\hyperlink{structvvenc_1_1Picture_a9cf013a756c4b0c589f7dc952f62caea}{pic\+Vis\+ActY}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_af1fa96a850f404aded578d3e29dedbcb}{poc}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a02918e7e9145e0b46e42947571935d0b}{preceding\+D\+R\+AP}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a166b361eddf214b13bba8bb03218a165}{rc\+Idx\+In\+Gop}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a6517898e0b561627450e674e5ea4e91a}{ref\+Counter}}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ReshapeData}{Reshape\+Data}} \mbox{\hyperlink{structvvenc_1_1Picture_a2487e6c4ee0e4106a128c09f68105170}{reshape\+Data}}
+\item 
+\mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} \mbox{\hyperlink{structvvenc_1_1Picture_a178a073d46f983ffdf98540996ef20f8}{S\+E\+Is}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a70644c68e3742f868ad13db685037092}{seq\+Base\+Qp}}
+\item 
+int \mbox{\hyperlink{structvvenc_1_1Picture_a4414d04ace3eec029ac7338f7fb10398}{slice\+Data\+Num\+Bins}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a38a469274bd257d83da0bfa43d8e0fb7}{slice\+Data\+Streams}}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ $>$ \mbox{\hyperlink{structvvenc_1_1Picture_a38d5dab03c13fa1bc076945fe1fc17fd}{slices}}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1Picture_a866d09a71218ee36b783ade7292c8025}{T\+Layer}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a4f19a95cea282bc8005140e9c92aa701}{use\+Sc\+B\+D\+P\+CM}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a4022b93c1f82c1dd815e6375a8701e6e}{use\+Sc\+I\+BC}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a251171a6633404b34365b828a7cbad01}{use\+Sc\+L\+M\+CS}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a490f36f84bc983779931000c7e800ab6}{use\+Sc\+M\+C\+TF}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_a235d0e90175a94236f1f3ebac8ec0e35}{use\+Sc\+ME}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_ac2177ac5931e79008f369548ea5aa533}{use\+Sc\+TS}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$ \mbox{\hyperlink{structvvenc_1_1Picture_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}{vps}}
+\item 
+std\+::mutex \mbox{\hyperlink{structvvenc_1_1Picture_a06ac0ce84a6386d859792117a597c31c}{wpp\+Mutex}}
+\item 
+bool \mbox{\hyperlink{structvvenc_1_1Picture_aad846589ba1ecb7df1fcbf2e937608ce}{write\+Pic}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_ae04a7a6b7805d4c732936bad7a4d3b80}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&blk, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a2c53eb4a599717452b9228f36c17ab03}{get\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_aa25e82140f26ee5d923f907c1f6e7869}{get\+Buf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a935164c49b3eeccd1e4df1a4fdbed4d9}{get\+Buf}} (const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_ac949a9cb730f5e9cb9b7635266853a5a}{get\+Buf}} (const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\item 
+\mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_ad4110648c085a3a0e73f23741183c878}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type)
+\item 
+const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} \mbox{\hyperlink{structvvenc_1_1Picture_a123d6388c595a963bf8283d98d6c7273}{get\+Buf}} (const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&unit, const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} type) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 143 of file Picture.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aaefd749dbc6c83b365e7a47c1b0938b9}\label{structvvenc_1_1Picture_aaefd749dbc6c83b365e7a47c1b0938b9}} 
+\index{Picture@{Picture}!Picture@{Picture}}
+\index{Picture@{Picture}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{Picture()}{Picture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 154 of file Picture.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a7b4a78dd70b2b9f1c85c787d7e532256}\label{structvvenc_1_1Picture_a7b4a78dd70b2b9f1c85c787d7e532256}} 
+\index{Picture@{Picture}!allocateNewSlice@{allocateNewSlice}}
+\index{allocateNewSlice@{allocateNewSlice}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{allocateNewSlice()}{allocateNewSlice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ allocate\+New\+Slice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 311 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a7b4a78dd70b2b9f1c85c787d7e532256_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a7b4a78dd70b2b9f1c85c787d7e532256_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ae82c52635aebf837983e323a87e42154}\label{structvvenc_1_1Picture_ae82c52635aebf837983e323a87e42154}} 
+\index{Picture@{Picture}!copySAO@{copySAO}}
+\index{copySAO@{copySAO}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{copySAO()}{copySAO()}}
+{\footnotesize\ttfamily void copy\+S\+AO (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Picture}{Picture}} \&}]{src,  }\item[{int}]{dstid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 270 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ae82c52635aebf837983e323a87e42154_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a9ed590ecb8241a4471ad371bd59bdbbe}\label{structvvenc_1_1Picture_a9ed590ecb8241a4471ad371bd59bdbbe}} 
+\index{Picture@{Picture}!create@{create}}
+\index{create@{create}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}}}]{\+\_\+chroma\+Format,  }\item[{const \mbox{\hyperlink{structvvenc_1_1Size}{Size}} \&}]{size,  }\item[{unsigned}]{\+\_\+max\+C\+U\+Size,  }\item[{unsigned}]{\+\_\+margin,  }\item[{bool}]{\+\_\+decoder,  }\item[{int}]{\+\_\+padding }\end{DoxyParamCaption})}
+
+
+
+Definition at line 196 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{structvvenc_1_1Picture_a9ed590ecb8241a4471ad371bd59bdbbe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a9ed590ecb8241a4471ad371bd59bdbbe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a6a05775d80805f512e03598ce8a5e4e2}\label{structvvenc_1_1Picture_a6a05775d80805f512e03598ce8a5e4e2}} 
+\index{Picture@{Picture}!createTempBuffers@{createTempBuffers}}
+\index{createTempBuffers@{createTempBuffers}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{createTempBuffers()}{createTempBuffers()}}
+{\footnotesize\ttfamily void create\+Temp\+Buffers (\begin{DoxyParamCaption}\item[{unsigned}]{\+\_\+max\+C\+U\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 242 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a6a05775d80805f512e03598ce8a5e4e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a6a05775d80805f512e03598ce8a5e4e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a3a80b6032f86a56bec74609034b3246f}\label{structvvenc_1_1Picture_a3a80b6032f86a56bec74609034b3246f}} 
+\index{Picture@{Picture}!destroy@{destroy}}
+\index{destroy@{destroy}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 214 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a3a80b6032f86a56bec74609034b3246f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a813e0565873f1e6b5589c10d3cd5f88b}\label{structvvenc_1_1Picture_a813e0565873f1e6b5589c10d3cd5f88b}} 
+\index{Picture@{Picture}!destroyTempBuffers@{destroyTempBuffers}}
+\index{destroyTempBuffers@{destroyTempBuffers}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{destroyTempBuffers()}{destroyTempBuffers()}}
+{\footnotesize\ttfamily void destroy\+Temp\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 251 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a813e0565873f1e6b5589c10d3cd5f88b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a813e0565873f1e6b5589c10d3cd5f88b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_af7e40e5dcb32caa7ac71a644551c4041}\label{structvvenc_1_1Picture_af7e40e5dcb32caa7ac71a644551c4041}} 
+\index{Picture@{Picture}!extendPicBorder@{extendPicBorder}}
+\index{extendPicBorder@{extendPicBorder}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{extendPicBorder()}{extendPicBorder()}}
+{\footnotesize\ttfamily void extend\+Pic\+Border (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 350 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_af7e40e5dcb32caa7ac71a644551c4041_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_af7e40e5dcb32caa7ac71a644551c4041_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ad971791c6aef31352085a9ec1fc1dbce}\label{structvvenc_1_1Picture_ad971791c6aef31352085a9ec1fc1dbce}} 
+\index{Picture@{Picture}!finalInit@{finalInit}}
+\index{finalInit@{finalInit}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{finalInit()}{finalInit()}}
+{\footnotesize\ttfamily void final\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} \&}]{vps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps,  }\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{structvvenc_1_1XUCache}{X\+U\+Cache}} \&}]{unit\+Cache,  }\item[{std\+::mutex $\ast$}]{mutex,  }\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$$\ast$}]{alf\+Aps,  }\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{lmcs\+Aps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ad971791c6aef31352085a9ec1fc1dbce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ad971791c6aef31352085a9ec1fc1dbce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}\label{structvvenc_1_1Picture_aefac05fc7bdf7aa9d14ca78ad2ad3a6d}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 200 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_aefac05fc7bdf7aa9d14ca78ad2ad3a6d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ae04a7a6b7805d4c732936bad7a4d3b80}\label{structvvenc_1_1Picture_ae04a7a6b7805d4c732936bad7a4d3b80}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 201 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ae04a7a6b7805d4c732936bad7a4d3b80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a2c53eb4a599717452b9228f36c17ab03}\label{structvvenc_1_1Picture_a2c53eb4a599717452b9228f36c17ab03}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 198 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a2c53eb4a599717452b9228f36c17ab03_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aa25e82140f26ee5d923f907c1f6e7869}\label{structvvenc_1_1Picture_aa25e82140f26ee5d923f907c1f6e7869}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 199 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_aa25e82140f26ee5d923f907c1f6e7869_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a935164c49b3eeccd1e4df1a4fdbed4d9}\label{structvvenc_1_1Picture_a935164c49b3eeccd1e4df1a4fdbed4d9}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 196 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structvvenc_1_1Picture_a935164c49b3eeccd1e4df1a4fdbed4d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ac949a9cb730f5e9cb9b7635266853a5a}\label{structvvenc_1_1Picture_ac949a9cb730f5e9cb9b7635266853a5a}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 197 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_ad4110648c085a3a0e73f23741183c878}\label{structvvenc_1_1Picture_ad4110648c085a3a0e73f23741183c878}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 434 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{structvvenc_1_1Picture_ad4110648c085a3a0e73f23741183c878_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a123d6388c595a963bf8283d98d6c7273}\label{structvvenc_1_1Picture_a123d6388c595a963bf8283d98d6c7273}} 
+\index{Picture@{Picture}!getBuf@{getBuf}}
+\index{getBuf@{getBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getBuf()}{getBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}}}]{type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 446 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{structvvenc_1_1Picture_a123d6388c595a963bf8283d98d6c7273_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ae4e8dfefa32e8e3dce020e149c9c71f2}\label{structvvenc_1_1Picture_ae4e8dfefa32e8e3dce020e149c9c71f2}} 
+\index{Picture@{Picture}!getFilteredOrigBuffer@{getFilteredOrigBuffer}}
+\index{getFilteredOrigBuffer@{getFilteredOrigBuffer}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getFilteredOrigBuffer()}{getFilteredOrigBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}\& get\+Filtered\+Orig\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 183 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ae4e8dfefa32e8e3dce020e149c9c71f2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a7b8e59f547b3a21d59f72e2fd97f751c}\label{structvvenc_1_1Picture_a7b8e59f547b3a21d59f72e2fd97f751c}} 
+\index{Picture@{Picture}!getOrigBuf@{getOrigBuf}}
+\index{getOrigBuf@{getOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBuf()}{getOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Orig\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 160 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structvvenc_1_1Picture_a7b8e59f547b3a21d59f72e2fd97f751c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a7b8e59f547b3a21d59f72e2fd97f751c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5facb1f44de6a1c7476467c5920b4312}\label{structvvenc_1_1Picture_a5facb1f44de6a1c7476467c5920b4312}} 
+\index{Picture@{Picture}!getOrigBuf@{getOrigBuf}}
+\index{getOrigBuf@{getOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBuf()}{getOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Orig\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 161 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structvvenc_1_1Picture_a5facb1f44de6a1c7476467c5920b4312_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5d1f9c8c61fdf604a3191d71f23e2797}\label{structvvenc_1_1Picture_a5d1f9c8c61fdf604a3191d71f23e2797}} 
+\index{Picture@{Picture}!getOrigBuf@{getOrigBuf}}
+\index{getOrigBuf@{getOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBuf()}{getOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 163 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structvvenc_1_1Picture_a5d1f9c8c61fdf604a3191d71f23e2797_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a7c528776b062993a7ed38a25bf851f9c}\label{structvvenc_1_1Picture_a7c528776b062993a7ed38a25bf851f9c}} 
+\index{Picture@{Picture}!getOrigBuf@{getOrigBuf}}
+\index{getOrigBuf@{getOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBuf()}{getOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 162 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structvvenc_1_1Picture_a7c528776b062993a7ed38a25bf851f9c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a068e4f36d080b6126829bb2df604e61f}\label{structvvenc_1_1Picture_a068e4f36d080b6126829bb2df604e61f}} 
+\index{Picture@{Picture}!getOrigBuf@{getOrigBuf}}
+\index{getOrigBuf@{getOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBuf()}{getOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 164 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{structvvenc_1_1Picture_a068e4f36d080b6126829bb2df604e61f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a617c65d462083cad853e40b73b279f46}\label{structvvenc_1_1Picture_a617c65d462083cad853e40b73b279f46}} 
+\index{Picture@{Picture}!getOrigBufPrev@{getOrigBufPrev}}
+\index{getOrigBufPrev@{getOrigBufPrev}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBufPrev()}{getOrigBufPrev()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Orig\+Buf\+Prev (\begin{DoxyParamCaption}\item[{const bool}]{minus2 }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 259 of file Picture.\+cpp.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a00fbaddba8802f25251df7b0953e47ac}\label{structvvenc_1_1Picture_a00fbaddba8802f25251df7b0953e47ac}} 
+\index{Picture@{Picture}!getOrigBufPrev@{getOrigBufPrev}}
+\index{getOrigBufPrev@{getOrigBufPrev}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBufPrev()}{getOrigBufPrev()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Orig\+Buf\+Prev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk,  }\item[{const bool}]{minus2 }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 258 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a00fbaddba8802f25251df7b0953e47ac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a00fbaddba8802f25251df7b0953e47ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a880ee0a0716238ea02e1f72c7c8a93de}\label{structvvenc_1_1Picture_a880ee0a0716238ea02e1f72c7c8a93de}} 
+\index{Picture@{Picture}!getOrigBufPrev@{getOrigBufPrev}}
+\index{getOrigBufPrev@{getOrigBufPrev}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigBufPrev()}{getOrigBufPrev()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Orig\+Buf\+Prev (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const bool}]{minus2 }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 260 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{structvvenc_1_1Picture_a880ee0a0716238ea02e1f72c7c8a93de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5af4cc188bb9aa5b89eb738cc540b793}\label{structvvenc_1_1Picture_a5af4cc188bb9aa5b89eb738cc540b793}} 
+\index{Picture@{Picture}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}} $\ast$ get\+Origin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3}{Picture\+Type}} \&}]{type,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 458 of file Picture.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{structvvenc_1_1Picture_a5af4cc188bb9aa5b89eb738cc540b793_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_abf1a8b43357468a369a08f71ff4bdd88}\label{structvvenc_1_1Picture_abf1a8b43357468a369a08f71ff4bdd88}} 
+\index{Picture@{Picture}!getPOC@{getPOC}}
+\index{getPOC@{getPOC}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getPOC()}{getPOC()}}
+{\footnotesize\ttfamily int get\+P\+OC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 157 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_abf1a8b43357468a369a08f71ff4bdd88_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a34866fd2b82c594d24054e67caf9aa58}\label{structvvenc_1_1Picture_a34866fd2b82c594d24054e67caf9aa58}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 172 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_a34866fd2b82c594d24054e67caf9aa58_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a9cbcf6cbd2fa744e7de01cfe4ad3f316}\label{structvvenc_1_1Picture_a9cbcf6cbd2fa744e7de01cfe4ad3f316}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 173 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_a9cbcf6cbd2fa744e7de01cfe4ad3f316_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ad77d144af5cd4d736ee529e3e74a7367}\label{structvvenc_1_1Picture_ad77d144af5cd4d736ee529e3e74a7367}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 168 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_ad77d144af5cd4d736ee529e3e74a7367_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_af0c9ce95be3df4219ecedb27f2762234}\label{structvvenc_1_1Picture_af0c9ce95be3df4219ecedb27f2762234}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_af0c9ce95be3df4219ecedb27f2762234_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aee021e1a0b2774638746e6e9e76a5519}\label{structvvenc_1_1Picture_aee021e1a0b2774638746e6e9e76a5519}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 166 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_aee021e1a0b2774638746e6e9e76a5519_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_aee021e1a0b2774638746e6e9e76a5519_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a318ee043b69487a1597339d3abbb8075}\label{structvvenc_1_1Picture_a318ee043b69487a1597339d3abbb8075}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 167 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_a318ee043b69487a1597339d3abbb8075_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a1aa6a89b4c9854f3e3a1a7207a4162da}\label{structvvenc_1_1Picture_a1aa6a89b4c9854f3e3a1a7207a4162da}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 170 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_a1aa6a89b4c9854f3e3a1a7207a4162da_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aac7fcee6fcb0e5c67e109ad6f27437dc}\label{structvvenc_1_1Picture_aac7fcee6fcb0e5c67e109ad6f27437dc}} 
+\index{Picture@{Picture}!getRecoBuf@{getRecoBuf}}
+\index{getRecoBuf@{getRecoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoBuf()}{getRecoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 171 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{structvvenc_1_1Picture_aac7fcee6fcb0e5c67e109ad6f27437dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aac3763818db5b4b361de379ab89d37e6}\label{structvvenc_1_1Picture_aac3763818db5b4b361de379ab89d37e6}} 
+\index{Picture@{Picture}!getRecoWrapBuf@{getRecoWrapBuf}}
+\index{getRecoWrapBuf@{getRecoWrapBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoWrapBuf()}{getRecoWrapBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Reco\+Wrap\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1Picture_aac3763818db5b4b361de379ab89d37e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_afae1813b88756a76ce4e11506ef290a4}\label{structvvenc_1_1Picture_afae1813b88756a76ce4e11506ef290a4}} 
+\index{Picture@{Picture}!getRecoWrapBuf@{getRecoWrapBuf}}
+\index{getRecoWrapBuf@{getRecoWrapBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoWrapBuf()}{getRecoWrapBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Wrap\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 179 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1Picture_afae1813b88756a76ce4e11506ef290a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_aead8e8fae3f8d8e49381937d39ce2c28}\label{structvvenc_1_1Picture_aead8e8fae3f8d8e49381937d39ce2c28}} 
+\index{Picture@{Picture}!getRecoWrapBuf@{getRecoWrapBuf}}
+\index{getRecoWrapBuf@{getRecoWrapBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoWrapBuf()}{getRecoWrapBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Wrap\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 176 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1Picture_aead8e8fae3f8d8e49381937d39ce2c28_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_adfeeb46910b1ca91b82e20aace08b92a}\label{structvvenc_1_1Picture_adfeeb46910b1ca91b82e20aace08b92a}} 
+\index{Picture@{Picture}!getRecoWrapBuf@{getRecoWrapBuf}}
+\index{getRecoWrapBuf@{getRecoWrapBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoWrapBuf()}{getRecoWrapBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Reco\+Wrap\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 175 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1Picture_adfeeb46910b1ca91b82e20aace08b92a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_adfeeb46910b1ca91b82e20aace08b92a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_adcc78fc6eb6cf678c4ded7fe3a3958f2}\label{structvvenc_1_1Picture_adcc78fc6eb6cf678c4ded7fe3a3958f2}} 
+\index{Picture@{Picture}!getRecoWrapBuf@{getRecoWrapBuf}}
+\index{getRecoWrapBuf@{getRecoWrapBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRecoWrapBuf()}{getRecoWrapBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Reco\+Wrap\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 177 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{structvvenc_1_1Picture_adcc78fc6eb6cf678c4ded7fe3a3958f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a0abcb1f18752aeaeed142a6b9aff7f82}\label{structvvenc_1_1Picture_a0abcb1f18752aeaeed142a6b9aff7f82}} 
+\index{Picture@{Picture}!getRspOrigBuf@{getRspOrigBuf}}
+\index{getRspOrigBuf@{getRspOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRspOrigBuf()}{getRspOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Rsp\+Orig\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 185 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{structvvenc_1_1Picture_a0abcb1f18752aeaeed142a6b9aff7f82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a0abcb1f18752aeaeed142a6b9aff7f82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a3322eadf3f28fb185e6d31cb5a9ad607}\label{structvvenc_1_1Picture_a3322eadf3f28fb185e6d31cb5a9ad607}} 
+\index{Picture@{Picture}!getRspOrigBuf@{getRspOrigBuf}}
+\index{getRspOrigBuf@{getRspOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRspOrigBuf()}{getRspOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Rsp\+Orig\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 186 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{structvvenc_1_1Picture_a3322eadf3f28fb185e6d31cb5a9ad607_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a3af45ca400f39fc79cc20c885dde89d6}\label{structvvenc_1_1Picture_a3af45ca400f39fc79cc20c885dde89d6}} 
+\index{Picture@{Picture}!getRspOrigBuf@{getRspOrigBuf}}
+\index{getRspOrigBuf@{getRspOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRspOrigBuf()}{getRspOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CompArea}{Comp\+Area}} \&}]{blk }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 188 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{structvvenc_1_1Picture_a3af45ca400f39fc79cc20c885dde89d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a157d59287bd7f097e67c5820e79ede64}\label{structvvenc_1_1Picture_a157d59287bd7f097e67c5820e79ede64}} 
+\index{Picture@{Picture}!getRspOrigBuf@{getRspOrigBuf}}
+\index{getRspOrigBuf@{getRspOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRspOrigBuf()}{getRspOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} get\+Rsp\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 187 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{structvvenc_1_1Picture_a157d59287bd7f097e67c5820e79ede64_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a67098e9c2fd1871629f98aaa356f1fce}\label{structvvenc_1_1Picture_a67098e9c2fd1871629f98aaa356f1fce}} 
+\index{Picture@{Picture}!getRspOrigBuf@{getRspOrigBuf}}
+\index{getRspOrigBuf@{getRspOrigBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getRspOrigBuf()}{getRspOrigBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Rsp\+Orig\+Buf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{unit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{structvvenc_1_1Picture_a67098e9c2fd1871629f98aaa356f1fce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_ad75d38b008cc1490d1b08a8e7dfca9c6}\label{structvvenc_1_1Picture_ad75d38b008cc1490d1b08a8e7dfca9c6}} 
+\index{Picture@{Picture}!getSAO@{getSAO}}
+\index{getSAO@{getSAO}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getSAO()}{getSAO()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}}$\ast$ get\+S\+AO (\begin{DoxyParamCaption}\item[{int}]{id = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 268 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_ad75d38b008cc1490d1b08a8e7dfca9c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a3831394024ddead86eb4930104aebb00}\label{structvvenc_1_1Picture_a3831394024ddead86eb4930104aebb00}} 
+\index{Picture@{Picture}!getSaoBuf@{getSaoBuf}}
+\index{getSaoBuf@{getSaoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getSaoBuf()}{getSaoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a68135d02e2a8b2b05724b91abd7b83b3}{Pel\+Unit\+Buf}} get\+Sao\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 181 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structvvenc_1_1Picture_a3831394024ddead86eb4930104aebb00_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a3831394024ddead86eb4930104aebb00_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a6fe48a8a02e50136128436c64817423d}\label{structvvenc_1_1Picture_a6fe48a8a02e50136128436c64817423d}} 
+\index{Picture@{Picture}!getSaoBuf@{getSaoBuf}}
+\index{getSaoBuf@{getSaoBuf}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{getSaoBuf()}{getSaoBuf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespacevvenc_aab58447b4769df54b9659420fcbb321b}{C\+Pel\+Unit\+Buf}} get\+Sao\+Buf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 182 of file Picture.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structvvenc_1_1Picture_a6fe48a8a02e50136128436c64817423d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a9bb1bc5905c65ba110112701d8229921}\label{structvvenc_1_1Picture_a9bb1bc5905c65ba110112701d8229921}} 
+\index{Picture@{Picture}!resizeAlfCtuBuffers@{resizeAlfCtuBuffers}}
+\index{resizeAlfCtuBuffers@{resizeAlfCtuBuffers}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{resizeAlfCtuBuffers()}{resizeAlfCtuBuffers()}}
+{\footnotesize\ttfamily void resize\+Alf\+Ctu\+Buffers (\begin{DoxyParamCaption}\item[{int}]{num\+Entries }\end{DoxyParamCaption})}
+
+
+
+Definition at line 464 of file Picture.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a9bb1bc5905c65ba110112701d8229921_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a540b2d9ce8991abdba03683e16ebb46c}\label{structvvenc_1_1Picture_a540b2d9ce8991abdba03683e16ebb46c}} 
+\index{Picture@{Picture}!resizeSAO@{resizeSAO}}
+\index{resizeSAO@{resizeSAO}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{resizeSAO()}{resizeSAO()}}
+{\footnotesize\ttfamily void resize\+S\+AO (\begin{DoxyParamCaption}\item[{unsigned}]{num\+Entries,  }\item[{int}]{dstid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 269 of file Picture.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a540b2d9ce8991abdba03683e16ebb46c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a7af4588e179af98805dd0291e79f2c20}\label{structvvenc_1_1Picture_a7af4588e179af98805dd0291e79f2c20}} 
+\index{Picture@{Picture}!swapSliceObject@{swapSliceObject}}
+\index{swapSliceObject@{swapSliceObject}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{swapSliceObject()}{swapSliceObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$ swap\+Slice\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{p,  }\item[{uint32\+\_\+t}]{i }\end{DoxyParamCaption})}
+
+
+
+Definition at line 331 of file Picture.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1Picture_a7af4588e179af98805dd0291e79f2c20_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1Picture_a8c45147b058d76b8f04cd33cbc7a78bd}\label{structvvenc_1_1Picture_a8c45147b058d76b8f04cd33cbc7a78bd}} 
+\index{Picture@{Picture}!actualHeadBits@{actualHeadBits}}
+\index{actualHeadBits@{actualHeadBits}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{actualHeadBits}{actualHeadBits}}
+{\footnotesize\ttfamily int actual\+Head\+Bits}
+
+
+
+Definition at line 255 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_af2ac98bd694308e21ccdcb78b4144a28}\label{structvvenc_1_1Picture_af2ac98bd694308e21ccdcb78b4144a28}} 
+\index{Picture@{Picture}!actualTotalBits@{actualTotalBits}}
+\index{actualTotalBits@{actualTotalBits}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{actualTotalBits}{actualTotalBits}}
+{\footnotesize\ttfamily int actual\+Total\+Bits}
+
+
+
+Definition at line 256 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a83dedaccc39c9d31f3ef20ff7ccb4b4f}\label{structvvenc_1_1Picture_a83dedaccc39c9d31f3ef20ff7ccb4b4f}} 
+\index{Picture@{Picture}!cs@{cs}}
+\index{cs@{cs}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{cs}{cs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}}$\ast$ cs}
+
+
+
+Definition at line 206 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a14050394e707f3e161142beefaf7415a}\label{structvvenc_1_1Picture_a14050394e707f3e161142beefaf7415a}} 
+\index{Picture@{Picture}!cts@{cts}}
+\index{cts@{cts}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{cts}{cts}}
+{\footnotesize\ttfamily uint64\+\_\+t cts}
+
+
+
+Definition at line 236 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a1aedd1ab91b3b73f59fce57af8b4b42a}\label{structvvenc_1_1Picture_a1aedd1ab91b3b73f59fce57af8b4b42a}} 
+\index{Picture@{Picture}!ctsValid@{ctsValid}}
+\index{ctsValid@{ctsValid}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{ctsValid}{ctsValid}}
+{\footnotesize\ttfamily bool cts\+Valid}
+
+
+
+Definition at line 237 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a711a3309d28547ac544dc9003ed0309c}\label{structvvenc_1_1Picture_a711a3309d28547ac544dc9003ed0309c}} 
+\index{Picture@{Picture}!ctuAdaptedQP@{ctuAdaptedQP}}
+\index{ctuAdaptedQP@{ctuAdaptedQP}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{ctuAdaptedQP}{ctuAdaptedQP}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{namespacevvenc_a788273bea30966f2f3088cc9d64f2f33}{Pel}}$>$ ctu\+Adapted\+QP}
+
+
+
+Definition at line 243 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a51ac88a704b53579d47fdd55333dfd8e}\label{structvvenc_1_1Picture_a51ac88a704b53579d47fdd55333dfd8e}} 
+\index{Picture@{Picture}!ctuQpaLambda@{ctuQpaLambda}}
+\index{ctuQpaLambda@{ctuQpaLambda}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{ctuQpaLambda}{ctuQpaLambda}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ ctu\+Qpa\+Lambda}
+
+
+
+Definition at line 242 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a0af3b03af999b3b41480e6ba7071f36a}\label{structvvenc_1_1Picture_a0af3b03af999b3b41480e6ba7071f36a}} 
+\index{Picture@{Picture}!dci@{dci}}
+\index{dci@{dci}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{dci}{dci}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}}$\ast$ dci}
+
+
+
+Definition at line 208 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a24a2e8bd1c031dfaa7fb2c2d8ab10595}\label{structvvenc_1_1Picture_a24a2e8bd1c031dfaa7fb2c2d8ab10595}} 
+\index{Picture@{Picture}!encPic@{encPic}}
+\index{encPic@{encPic}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{encPic}{encPic}}
+{\footnotesize\ttfamily bool enc\+Pic}
+
+
+
+Definition at line 224 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_afd36d4c3cfe408edbe75579fd69bafd0}\label{structvvenc_1_1Picture_afd36d4c3cfe408edbe75579fd69bafd0}} 
+\index{Picture@{Picture}!encRCPic@{encRCPic}}
+\index{encRCPic@{encRCPic}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{encRCPic}{encRCPic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCPic}{Enc\+R\+C\+Pic}}$\ast$ enc\+R\+C\+Pic}
+
+
+
+Definition at line 257 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a34bf84a00862829eae9bd39d0b980b6d}\label{structvvenc_1_1Picture_a34bf84a00862829eae9bd39d0b980b6d}} 
+\index{Picture@{Picture}!encTime@{encTime}}
+\index{encTime@{encTime}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{encTime}{encTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1StopClock}{Stop\+Clock}} enc\+Time}
+
+
+
+Definition at line 247 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5641b061a4335e2412457690b3c2c215}\label{structvvenc_1_1Picture_a5641b061a4335e2412457690b3c2c215}} 
+\index{Picture@{Picture}!gopId@{gopId}}
+\index{gopId@{gopId}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{gopId}{gopId}}
+{\footnotesize\ttfamily int gop\+Id}
+
+
+
+Definition at line 230 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a06f72908a9084c9a532b26896c216053}\label{structvvenc_1_1Picture_a06f72908a9084c9a532b26896c216053}} 
+\index{Picture@{Picture}!isBorderExtended@{isBorderExtended}}
+\index{isBorderExtended@{isBorderExtended}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isBorderExtended}{isBorderExtended}}
+{\footnotesize\ttfamily bool is\+Border\+Extended}
+
+
+
+Definition at line 219 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a0e40c5fb8a37c60628678563bfea6975}\label{structvvenc_1_1Picture_a0e40c5fb8a37c60628678563bfea6975}} 
+\index{Picture@{Picture}!isFinished@{isFinished}}
+\index{isFinished@{isFinished}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isFinished}{isFinished}}
+{\footnotesize\ttfamily bool is\+Finished}
+
+
+
+Definition at line 222 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_af2a1775ef7c9ed678b6892d1f59000a4}\label{structvvenc_1_1Picture_af2a1775ef7c9ed678b6892d1f59000a4}} 
+\index{Picture@{Picture}!isInitDone@{isInitDone}}
+\index{isInitDone@{isInitDone}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isInitDone}{isInitDone}}
+{\footnotesize\ttfamily bool is\+Init\+Done}
+
+
+
+Definition at line 217 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a02e636e41ebb8cba558949035fb52661}\label{structvvenc_1_1Picture_a02e636e41ebb8cba558949035fb52661}} 
+\index{Picture@{Picture}!isLongTerm@{isLongTerm}}
+\index{isLongTerm@{isLongTerm}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isLongTerm}{isLongTerm}}
+{\footnotesize\ttfamily bool is\+Long\+Term}
+
+
+
+Definition at line 223 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a3f842b974b1d446c54ffd189fa920415}\label{structvvenc_1_1Picture_a3f842b974b1d446c54ffd189fa920415}} 
+\index{Picture@{Picture}!isMctfProcessed@{isMctfProcessed}}
+\index{isMctfProcessed@{isMctfProcessed}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isMctfProcessed}{isMctfProcessed}}
+{\footnotesize\ttfamily bool is\+Mctf\+Processed}
+
+
+
+Definition at line 216 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_aff7881f94b47d6b4a9906c8e6fd96de1}\label{structvvenc_1_1Picture_aff7881f94b47d6b4a9906c8e6fd96de1}} 
+\index{Picture@{Picture}!isNeededForOutput@{isNeededForOutput}}
+\index{isNeededForOutput@{isNeededForOutput}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isNeededForOutput}{isNeededForOutput}}
+{\footnotesize\ttfamily bool is\+Needed\+For\+Output}
+
+
+
+Definition at line 221 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_ad26ec5c4cbe4715920eea97dc856b7ff}\label{structvvenc_1_1Picture_ad26ec5c4cbe4715920eea97dc856b7ff}} 
+\index{Picture@{Picture}!isReconstructed@{isReconstructed}}
+\index{isReconstructed@{isReconstructed}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isReconstructed}{isReconstructed}}
+{\footnotesize\ttfamily std\+::atomic\+\_\+bool is\+Reconstructed}
+
+
+
+Definition at line 218 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_ab86d36bba9a3e545df27b97373549691}\label{structvvenc_1_1Picture_ab86d36bba9a3e545df27b97373549691}} 
+\index{Picture@{Picture}!isReferenced@{isReferenced}}
+\index{isReferenced@{isReferenced}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isReferenced}{isReferenced}}
+{\footnotesize\ttfamily bool is\+Referenced}
+
+
+
+Definition at line 220 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5da88a7c14f220452b0f2240fcf77868}\label{structvvenc_1_1Picture_a5da88a7c14f220452b0f2240fcf77868}} 
+\index{Picture@{Picture}!isSubPicBorderSaved@{isSubPicBorderSaved}}
+\index{isSubPicBorderSaved@{isSubPicBorderSaved}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{isSubPicBorderSaved}{isSubPicBorderSaved}}
+{\footnotesize\ttfamily bool is\+Sub\+Pic\+Border\+Saved}
+
+
+
+Definition at line 234 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a245ddfa1d0638413cec268376a45aca9}\label{structvvenc_1_1Picture_a245ddfa1d0638413cec268376a45aca9}} 
+\index{Picture@{Picture}!layerId@{layerId}}
+\index{layerId@{layerId}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{layerId}{layerId}}
+{\footnotesize\ttfamily int layer\+Id}
+
+
+
+Definition at line 233 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_adac3106c5bbd4b187d2e3710eb9a1437}\label{structvvenc_1_1Picture_adac3106c5bbd4b187d2e3710eb9a1437}} 
+\index{Picture@{Picture}!m\_alfCtbFilterIndex@{m\_alfCtbFilterIndex}}
+\index{m\_alfCtbFilterIndex@{m\_alfCtbFilterIndex}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_alfCtbFilterIndex}{m\_alfCtbFilterIndex}}
+{\footnotesize\ttfamily std\+::vector$<$short$>$ m\+\_\+alf\+Ctb\+Filter\+Index}
+
+
+
+Definition at line 261 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a8c547830ccc6823f5865b33c1044913a}\label{structvvenc_1_1Picture_a8c547830ccc6823f5865b33c1044913a}} 
+\index{Picture@{Picture}!m\_alfCtuAlternative@{m\_alfCtuAlternative}}
+\index{m\_alfCtuAlternative@{m\_alfCtuAlternative}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_alfCtuAlternative}{m\_alfCtuAlternative}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ m\+\_\+alf\+Ctu\+Alternative\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 262 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a860a7f74cbeb23a3701a7e67ac997b7d}\label{structvvenc_1_1Picture_a860a7f74cbeb23a3701a7e67ac997b7d}} 
+\index{Picture@{Picture}!m\_alfCtuEnabled@{m\_alfCtuEnabled}}
+\index{m\_alfCtuEnabled@{m\_alfCtuEnabled}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_alfCtuEnabled}{m\_alfCtuEnabled}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ m\+\_\+alf\+Ctu\+Enabled\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}}
+
+
+
+Definition at line 260 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a52d86033a9190ff8351a6639bdf56298}\label{structvvenc_1_1Picture_a52d86033a9190ff8351a6639bdf56298}} 
+\index{Picture@{Picture}!m\_bufs@{m\_bufs}}
+\index{m\_bufs@{m\_bufs}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_bufs}{m\_bufs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}} m\+\_\+bufs\mbox{[}\mbox{\hyperlink{namespacevvenc_a4f37629f775549c508f4c5625ae348b3a2d910238473e9fd54710dfc5cb474bab}{N\+U\+M\+\_\+\+P\+I\+C\+\_\+\+T\+Y\+P\+ES}}\mbox{]}}
+
+
+
+Definition at line 239 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a068f1e1cd84c5c2e22edc6dc8776b2ae}\label{structvvenc_1_1Picture_a068f1e1cd84c5c2e22edc6dc8776b2ae}} 
+\index{Picture@{Picture}!m\_bufsOrigPrev@{m\_bufsOrigPrev}}
+\index{m\_bufsOrigPrev@{m\_bufsOrigPrev}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_bufsOrigPrev}{m\_bufsOrigPrev}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1PelStorage}{Pel\+Storage}}$\ast$ m\+\_\+bufs\+Orig\+Prev\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 240 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a5a14c52ef6a0d76690f1458a4d4daedd}\label{structvvenc_1_1Picture_a5a14c52ef6a0d76690f1458a4d4daedd}} 
+\index{Picture@{Picture}!m\_sao@{m\_sao}}
+\index{m\_sao@{m\_sao}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{m\_sao}{m\_sao}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structvvenc_1_1SAOBlkParam}{S\+A\+O\+Blk\+Param}}$>$ m\+\_\+sao\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 259 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a8fcf1a2bcac93481a369099b9498eeb6}\label{structvvenc_1_1Picture_a8fcf1a2bcac93481a369099b9498eeb6}} 
+\index{Picture@{Picture}!margin@{margin}}
+\index{margin@{margin}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{margin}{margin}}
+{\footnotesize\ttfamily uint32\+\_\+t margin}
+
+
+
+Definition at line 145 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_ada39a6d06bcabc649acc88a18cf6ba71}\label{structvvenc_1_1Picture_ada39a6d06bcabc649acc88a18cf6ba71}} 
+\index{Picture@{Picture}!picApsMap@{picApsMap}}
+\index{picApsMap@{picApsMap}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{picApsMap}{picApsMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ParameterSetMap}{Parameter\+Set\+Map}}$<$\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}}$>$ pic\+Aps\+Map}
+
+
+
+Definition at line 209 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_aca8027146fa42e12de06c875b0abd0f5}\label{structvvenc_1_1Picture_aca8027146fa42e12de06c875b0abd0f5}} 
+\index{Picture@{Picture}!picBlkStat@{picBlkStat}}
+\index{picBlkStat@{picBlkStat}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{picBlkStat}{picBlkStat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1BlkStat}{Blk\+Stat}} pic\+Blk\+Stat}
+
+
+
+Definition at line 213 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_aa36878de90156ed22765182bedc897c5}\label{structvvenc_1_1Picture_aa36878de90156ed22765182bedc897c5}} 
+\index{Picture@{Picture}!picInitialQP@{picInitialQP}}
+\index{picInitialQP@{picInitialQP}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{picInitialQP}{picInitialQP}}
+{\footnotesize\ttfamily int pic\+Initial\+QP}
+
+
+
+Definition at line 245 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a9cf013a756c4b0c589f7dc952f62caea}\label{structvvenc_1_1Picture_a9cf013a756c4b0c589f7dc952f62caea}} 
+\index{Picture@{Picture}!picVisActY@{picVisActY}}
+\index{picVisActY@{picVisActY}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{picVisActY}{picVisActY}}
+{\footnotesize\ttfamily double pic\+Vis\+ActY}
+
+
+
+Definition at line 246 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_af1fa96a850f404aded578d3e29dedbcb}\label{structvvenc_1_1Picture_af1fa96a850f404aded578d3e29dedbcb}} 
+\index{Picture@{Picture}!poc@{poc}}
+\index{poc@{poc}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{poc}{poc}}
+{\footnotesize\ttfamily int poc}
+
+
+
+Definition at line 229 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a02918e7e9145e0b46e42947571935d0b}\label{structvvenc_1_1Picture_a02918e7e9145e0b46e42947571935d0b}} 
+\index{Picture@{Picture}!precedingDRAP@{precedingDRAP}}
+\index{precedingDRAP@{precedingDRAP}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{precedingDRAP}{precedingDRAP}}
+{\footnotesize\ttfamily bool preceding\+D\+R\+AP}
+
+
+
+Definition at line 226 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a166b361eddf214b13bba8bb03218a165}\label{structvvenc_1_1Picture_a166b361eddf214b13bba8bb03218a165}} 
+\index{Picture@{Picture}!rcIdxInGop@{rcIdxInGop}}
+\index{rcIdxInGop@{rcIdxInGop}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{rcIdxInGop}{rcIdxInGop}}
+{\footnotesize\ttfamily int rc\+Idx\+In\+Gop}
+
+
+
+Definition at line 231 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a6517898e0b561627450e674e5ea4e91a}\label{structvvenc_1_1Picture_a6517898e0b561627450e674e5ea4e91a}} 
+\index{Picture@{Picture}!refCounter@{refCounter}}
+\index{refCounter@{refCounter}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{refCounter}{refCounter}}
+{\footnotesize\ttfamily int ref\+Counter}
+
+
+
+Definition at line 228 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a2487e6c4ee0e4106a128c09f68105170}\label{structvvenc_1_1Picture_a2487e6c4ee0e4106a128c09f68105170}} 
+\index{Picture@{Picture}!reshapeData@{reshapeData}}
+\index{reshapeData@{reshapeData}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{reshapeData}{reshapeData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ReshapeData}{Reshape\+Data}} reshape\+Data}
+
+
+
+Definition at line 211 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a178a073d46f983ffdf98540996ef20f8}\label{structvvenc_1_1Picture_a178a073d46f983ffdf98540996ef20f8}} 
+\index{Picture@{Picture}!SEIs@{SEIs}}
+\index{SEIs@{SEIs}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{SEIs}{SEIs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_a9e4da6110e21587478e656e4aaec9d46}{S\+E\+I\+Messages}} S\+E\+Is}
+
+
+
+Definition at line 212 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a70644c68e3742f868ad13db685037092}\label{structvvenc_1_1Picture_a70644c68e3742f868ad13db685037092}} 
+\index{Picture@{Picture}!seqBaseQp@{seqBaseQp}}
+\index{seqBaseQp@{seqBaseQp}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{seqBaseQp}{seqBaseQp}}
+{\footnotesize\ttfamily int seq\+Base\+Qp}
+
+
+
+Definition at line 254 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a4414d04ace3eec029ac7338f7fb10398}\label{structvvenc_1_1Picture_a4414d04ace3eec029ac7338f7fb10398}} 
+\index{Picture@{Picture}!sliceDataNumBins@{sliceDataNumBins}}
+\index{sliceDataNumBins@{sliceDataNumBins}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{sliceDataNumBins}{sliceDataNumBins}}
+{\footnotesize\ttfamily int slice\+Data\+Num\+Bins}
+
+
+
+Definition at line 235 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a38a469274bd257d83da0bfa43d8e0fb7}\label{structvvenc_1_1Picture_a38a469274bd257d83da0bfa43d8e0fb7}} 
+\index{Picture@{Picture}!sliceDataStreams@{sliceDataStreams}}
+\index{sliceDataStreams@{sliceDataStreams}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{sliceDataStreams}{sliceDataStreams}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}}$>$ slice\+Data\+Streams}
+
+
+
+Definition at line 214 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a38d5dab03c13fa1bc076945fe1fc17fd}\label{structvvenc_1_1Picture_a38d5dab03c13fa1bc076945fe1fc17fd}} 
+\index{Picture@{Picture}!slices@{slices}}
+\index{slices@{slices}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{slices}{slices}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}}$\ast$$>$ slices}
+
+
+
+Definition at line 210 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a866d09a71218ee36b783ade7292c8025}\label{structvvenc_1_1Picture_a866d09a71218ee36b783ade7292c8025}} 
+\index{Picture@{Picture}!TLayer@{TLayer}}
+\index{TLayer@{TLayer}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{TLayer}{TLayer}}
+{\footnotesize\ttfamily unsigned T\+Layer}
+
+
+
+Definition at line 232 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a4f19a95cea282bc8005140e9c92aa701}\label{structvvenc_1_1Picture_a4f19a95cea282bc8005140e9c92aa701}} 
+\index{Picture@{Picture}!useScBDPCM@{useScBDPCM}}
+\index{useScBDPCM@{useScBDPCM}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScBDPCM}{useScBDPCM}}
+{\footnotesize\ttfamily bool use\+Sc\+B\+D\+P\+CM}
+
+
+
+Definition at line 251 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a4022b93c1f82c1dd815e6375a8701e6e}\label{structvvenc_1_1Picture_a4022b93c1f82c1dd815e6375a8701e6e}} 
+\index{Picture@{Picture}!useScIBC@{useScIBC}}
+\index{useScIBC@{useScIBC}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScIBC}{useScIBC}}
+{\footnotesize\ttfamily bool use\+Sc\+I\+BC}
+
+
+
+Definition at line 252 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a251171a6633404b34365b828a7cbad01}\label{structvvenc_1_1Picture_a251171a6633404b34365b828a7cbad01}} 
+\index{Picture@{Picture}!useScLMCS@{useScLMCS}}
+\index{useScLMCS@{useScLMCS}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScLMCS}{useScLMCS}}
+{\footnotesize\ttfamily bool use\+Sc\+L\+M\+CS}
+
+
+
+Definition at line 253 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a490f36f84bc983779931000c7e800ab6}\label{structvvenc_1_1Picture_a490f36f84bc983779931000c7e800ab6}} 
+\index{Picture@{Picture}!useScMCTF@{useScMCTF}}
+\index{useScMCTF@{useScMCTF}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScMCTF}{useScMCTF}}
+{\footnotesize\ttfamily bool use\+Sc\+M\+C\+TF}
+
+
+
+Definition at line 249 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a235d0e90175a94236f1f3ebac8ec0e35}\label{structvvenc_1_1Picture_a235d0e90175a94236f1f3ebac8ec0e35}} 
+\index{Picture@{Picture}!useScME@{useScME}}
+\index{useScME@{useScME}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScME}{useScME}}
+{\footnotesize\ttfamily bool use\+Sc\+ME}
+
+
+
+Definition at line 248 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_ac2177ac5931e79008f369548ea5aa533}\label{structvvenc_1_1Picture_ac2177ac5931e79008f369548ea5aa533}} 
+\index{Picture@{Picture}!useScTS@{useScTS}}
+\index{useScTS@{useScTS}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{useScTS}{useScTS}}
+{\footnotesize\ttfamily bool use\+Sc\+TS}
+
+
+
+Definition at line 250 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}\label{structvvenc_1_1Picture_a8ec4b1bd7507e973ed0d2f4ebd70d8c6}} 
+\index{Picture@{Picture}!vps@{vps}}
+\index{vps@{vps}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{vps}{vps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}}$\ast$ vps}
+
+
+
+Definition at line 207 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_a06ac0ce84a6386d859792117a597c31c}\label{structvvenc_1_1Picture_a06ac0ce84a6386d859792117a597c31c}} 
+\index{Picture@{Picture}!wppMutex@{wppMutex}}
+\index{wppMutex@{wppMutex}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{wppMutex}{wppMutex}}
+{\footnotesize\ttfamily std\+::mutex wpp\+Mutex}
+
+
+
+Definition at line 244 of file Picture.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1Picture_aad846589ba1ecb7df1fcbf2e937608ce}\label{structvvenc_1_1Picture_aad846589ba1ecb7df1fcbf2e937608ce}} 
+\index{Picture@{Picture}!writePic@{writePic}}
+\index{writePic@{writePic}!Picture@{Picture}}
+\doxysubsubsection{\texorpdfstring{writePic}{writePic}}
+{\footnotesize\ttfamily bool write\+Pic}
+
+
+
+Definition at line 225 of file Picture.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Picture_8h}{Picture.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Picture_8cpp}{Picture.\+cpp}}\end{DoxyCompactItemize}

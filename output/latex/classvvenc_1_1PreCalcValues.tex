@@ -1,0 +1,532 @@
+\hypertarget{classvvenc_1_1PreCalcValues}{}\doxysection{Pre\+Calc\+Values}
+\label{classvvenc_1_1PreCalcValues}\index{PreCalcValues@{PreCalcValues}}
+
+
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1PreCalcValues_a7859c2e42b95052451e4cb4da18f98ba}{Pre\+Calc\+Values}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&pps, bool \+\_\+is\+Encoder)
+\item 
+\mbox{\hyperlink{structvvenc_1_1Area}{Area}} \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a25210055cc57a65d61d6cbbfe6afdefb}{get\+Ctu\+Area}} (const int ctu\+PosX, const int ctu\+PosY) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a25652bce3eaa00c2600368bc9e4181e5}{get\+Max\+Bt\+Size}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_aba4a7e3d97a25022ababf994aba2472d}{get\+Max\+Depth}} (const \mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}} slicetype, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_ab58d1f62415146c8b065b1d8b4b6e80f}{get\+Max\+M\+T\+T\+Depth}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a9264a1f814064497cacd02b65ea83ead}{get\+Max\+Tt\+Size}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_aa2f665caa4008106a432fde5a6ea7329}{get\+Min\+Qt\+Size}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a31a1b8ad6e974c92cc1cf412fd1ab7e8}{get\+Min\+T\+Size}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} \mbox{\hyperlink{classvvenc_1_1PreCalcValues_accd995becc51735172dd859be536687a}{chr\+Format}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a1b6df5a0782b9733644363af4f189d08}{fast\+Delta\+Q\+P\+Cu\+Max\+Size}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a5a3ee8f84c05a268e924019c23634040}{height\+In\+Ctus}}
+\item 
+const bool \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a4b9f442d9f4cc3c61366feebe24b8dc1}{is\+Encoder}}
+\item 
+const bool \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a25098d41070efabab4c4db6d60dbbf10}{I\+Single\+Tree}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_af17e83769be75df61e6eee524af767a0}{luma\+Height}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a83cf297779a1afc59e7d71a87d575861}{luma\+Width}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_afcdcde8a5587ac7f5495cd5b31fefb17}{max\+C\+U\+Size}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_ae8aaf60ea387f3179ca6fb7e15a9b361}{max\+C\+U\+Size\+Log2}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a84d4567f939e276ed00d14a58073ce22}{max\+C\+U\+Size\+Mask}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_ac8487865dbc550d35a02eff7f97b4391}{min\+C\+U\+Size}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_af856d506f0c48ca3493279f18089c17f}{min\+C\+U\+Size\+Log2}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a35cdf8c77d50d0d66f95b0cb009b3cda}{parts\+In\+Ctu}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a5e8d9e233a3d3d7f7a48ef1caa02ab61}{parts\+In\+Ctu\+Width}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a52cdd32a3b7ffde866c7f2d6cd7d7df6}{size\+In\+Ctus}}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a38f9d60d3484f67626f5198df8170b51}{width\+In\+Ctus}}
+\item 
+const bool \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a00540ef615848135e5a210605f902ecd}{wrap\+Arround}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a498f02aef35bd5cb09e6b2a297834f3e}{get\+Val\+Idx}} (const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&slice, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch\+Type) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_aa6a8b6e9394a272d0aad18687a0f522a}{max\+Bt\+Size}} \mbox{[}3\mbox{]}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_aafeaf044d69d5f8ba75adbb080a574ca}{max\+M\+T\+T\+Depth}} \mbox{[}3\mbox{]}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a52645ede1422e065c30102e8e681579a}{max\+Tt\+Size}} \mbox{[}3\mbox{]}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_a32053ee618fddf52d348def0d56596f2}{min\+Qt\+Size}} \mbox{[}3\mbox{]}
+\item 
+const unsigned \mbox{\hyperlink{classvvenc_1_1PreCalcValues_ab6b32d91c04771cac1cd33cf688011a3}{min\+T\+Size}} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 1556 of file Slice.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a7859c2e42b95052451e4cb4da18f98ba}\label{classvvenc_1_1PreCalcValues_a7859c2e42b95052451e4cb4da18f98ba}} 
+\index{PreCalcValues@{PreCalcValues}!PreCalcValues@{PreCalcValues}}
+\index{PreCalcValues@{PreCalcValues}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{PreCalcValues()}{PreCalcValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1PreCalcValues}{Pre\+Calc\+Values}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} \&}]{pps,  }\item[{bool}]{\+\_\+is\+Encoder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1559 of file Slice.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a25210055cc57a65d61d6cbbfe6afdefb}\label{classvvenc_1_1PreCalcValues_a25210055cc57a65d61d6cbbfe6afdefb}} 
+\index{PreCalcValues@{PreCalcValues}!getCtuArea@{getCtuArea}}
+\index{getCtuArea@{getCtuArea}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getCtuArea()}{getCtuArea()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1Area}{Area}} get\+Ctu\+Area (\begin{DoxyParamCaption}\item[{const int}]{ctu\+PosX,  }\item[{const int}]{ctu\+PosY }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2131 of file Slice.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a25210055cc57a65d61d6cbbfe6afdefb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a25652bce3eaa00c2600368bc9e4181e5}\label{classvvenc_1_1PreCalcValues_a25652bce3eaa00c2600368bc9e4181e5}} 
+\index{PreCalcValues@{PreCalcValues}!getMaxBtSize@{getMaxBtSize}}
+\index{getMaxBtSize@{getMaxBtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMaxBtSize()}{getMaxBtSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Max\+Bt\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2107 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a25652bce3eaa00c2600368bc9e4181e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a25652bce3eaa00c2600368bc9e4181e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_aba4a7e3d97a25022ababf994aba2472d}\label{classvvenc_1_1PreCalcValues_aba4a7e3d97a25022ababf994aba2472d}} 
+\index{PreCalcValues@{PreCalcValues}!getMaxDepth@{getMaxDepth}}
+\index{getMaxDepth@{getMaxDepth}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMaxDepth()}{getMaxDepth()}}
+{\footnotesize\ttfamily unsigned get\+Max\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TypeDef_8h_ac670918873d1623fbf91921b90e09a9d}{Slice\+Type}}}]{slicetype,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 1618 of file Slice.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_aba4a7e3d97a25022ababf994aba2472d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_aba4a7e3d97a25022ababf994aba2472d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_ab58d1f62415146c8b065b1d8b4b6e80f}\label{classvvenc_1_1PreCalcValues_ab58d1f62415146c8b065b1d8b4b6e80f}} 
+\index{PreCalcValues@{PreCalcValues}!getMaxMTTDepth@{getMaxMTTDepth}}
+\index{getMaxMTTDepth@{getMaxMTTDepth}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMaxMTTDepth()}{getMaxMTTDepth()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Max\+M\+T\+T\+Depth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2094 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_ab58d1f62415146c8b065b1d8b4b6e80f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_ab58d1f62415146c8b065b1d8b4b6e80f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a9264a1f814064497cacd02b65ea83ead}\label{classvvenc_1_1PreCalcValues_a9264a1f814064497cacd02b65ea83ead}} 
+\index{PreCalcValues@{PreCalcValues}!getMaxTtSize@{getMaxTtSize}}
+\index{getMaxTtSize@{getMaxTtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMaxTtSize()}{getMaxTtSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Max\+Tt\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2115 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a9264a1f814064497cacd02b65ea83ead_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a9264a1f814064497cacd02b65ea83ead_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_aa2f665caa4008106a432fde5a6ea7329}\label{classvvenc_1_1PreCalcValues_aa2f665caa4008106a432fde5a6ea7329}} 
+\index{PreCalcValues@{PreCalcValues}!getMinQtSize@{getMinQtSize}}
+\index{getMinQtSize@{getMinQtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMinQtSize()}{getMinQtSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Min\+Qt\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2123 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_aa2f665caa4008106a432fde5a6ea7329_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_aa2f665caa4008106a432fde5a6ea7329_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a31a1b8ad6e974c92cc1cf412fd1ab7e8}\label{classvvenc_1_1PreCalcValues_a31a1b8ad6e974c92cc1cf412fd1ab7e8}} 
+\index{PreCalcValues@{PreCalcValues}!getMinTSize@{getMinTSize}}
+\index{getMinTSize@{getMinTSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getMinTSize()}{getMinTSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Min\+T\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 2102 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a31a1b8ad6e974c92cc1cf412fd1ab7e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a31a1b8ad6e974c92cc1cf412fd1ab7e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a498f02aef35bd5cb09e6b2a297834f3e}\label{classvvenc_1_1PreCalcValues_a498f02aef35bd5cb09e6b2a297834f3e}} 
+\index{PreCalcValues@{PreCalcValues}!getValIdx@{getValIdx}}
+\index{getValIdx@{getValIdx}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{getValIdx()}{getValIdx()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Val\+Idx (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} \&}]{slice,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch\+Type }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 2089 of file Slice.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classvvenc_1_1PreCalcValues_a498f02aef35bd5cb09e6b2a297834f3e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1PreCalcValues_a498f02aef35bd5cb09e6b2a297834f3e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_accd995becc51735172dd859be536687a}\label{classvvenc_1_1PreCalcValues_accd995becc51735172dd859be536687a}} 
+\index{PreCalcValues@{PreCalcValues}!chrFormat@{chrFormat}}
+\index{chrFormat@{chrFormat}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{chrFormat}{chrFormat}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{TypeDef_8h_a70dfa957a71cae40f75782ea972c130e}{Chroma\+Format}} chr\+Format}
+
+
+
+Definition at line 1584 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a1b6df5a0782b9733644363af4f189d08}\label{classvvenc_1_1PreCalcValues_a1b6df5a0782b9733644363af4f189d08}} 
+\index{PreCalcValues@{PreCalcValues}!fastDeltaQPCuMaxSize@{fastDeltaQPCuMaxSize}}
+\index{fastDeltaQPCuMaxSize@{fastDeltaQPCuMaxSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{fastDeltaQPCuMaxSize}{fastDeltaQPCuMaxSize}}
+{\footnotesize\ttfamily const unsigned fast\+Delta\+Q\+P\+Cu\+Max\+Size}
+
+
+
+Definition at line 1598 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a5a3ee8f84c05a268e924019c23634040}\label{classvvenc_1_1PreCalcValues_a5a3ee8f84c05a268e924019c23634040}} 
+\index{PreCalcValues@{PreCalcValues}!heightInCtus@{heightInCtus}}
+\index{heightInCtus@{heightInCtus}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{heightInCtus}{heightInCtus}}
+{\footnotesize\ttfamily const unsigned height\+In\+Ctus}
+
+
+
+Definition at line 1594 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a4b9f442d9f4cc3c61366feebe24b8dc1}\label{classvvenc_1_1PreCalcValues_a4b9f442d9f4cc3c61366feebe24b8dc1}} 
+\index{PreCalcValues@{PreCalcValues}!isEncoder@{isEncoder}}
+\index{isEncoder@{isEncoder}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{isEncoder}{isEncoder}}
+{\footnotesize\ttfamily const bool is\+Encoder}
+
+
+
+Definition at line 1599 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a25098d41070efabab4c4db6d60dbbf10}\label{classvvenc_1_1PreCalcValues_a25098d41070efabab4c4db6d60dbbf10}} 
+\index{PreCalcValues@{PreCalcValues}!ISingleTree@{ISingleTree}}
+\index{ISingleTree@{ISingleTree}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{ISingleTree}{ISingleTree}}
+{\footnotesize\ttfamily const bool I\+Single\+Tree}
+
+
+
+Definition at line 1600 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_af17e83769be75df61e6eee524af767a0}\label{classvvenc_1_1PreCalcValues_af17e83769be75df61e6eee524af767a0}} 
+\index{PreCalcValues@{PreCalcValues}!lumaHeight@{lumaHeight}}
+\index{lumaHeight@{lumaHeight}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{lumaHeight}{lumaHeight}}
+{\footnotesize\ttfamily const unsigned luma\+Height}
+
+
+
+Definition at line 1597 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a83cf297779a1afc59e7d71a87d575861}\label{classvvenc_1_1PreCalcValues_a83cf297779a1afc59e7d71a87d575861}} 
+\index{PreCalcValues@{PreCalcValues}!lumaWidth@{lumaWidth}}
+\index{lumaWidth@{lumaWidth}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{lumaWidth}{lumaWidth}}
+{\footnotesize\ttfamily const unsigned luma\+Width}
+
+
+
+Definition at line 1596 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_aa6a8b6e9394a272d0aad18687a0f522a}\label{classvvenc_1_1PreCalcValues_aa6a8b6e9394a272d0aad18687a0f522a}} 
+\index{PreCalcValues@{PreCalcValues}!maxBtSize@{maxBtSize}}
+\index{maxBtSize@{maxBtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxBtSize}{maxBtSize}}
+{\footnotesize\ttfamily const unsigned max\+Bt\+Size\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1606 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_afcdcde8a5587ac7f5495cd5b31fefb17}\label{classvvenc_1_1PreCalcValues_afcdcde8a5587ac7f5495cd5b31fefb17}} 
+\index{PreCalcValues@{PreCalcValues}!maxCUSize@{maxCUSize}}
+\index{maxCUSize@{maxCUSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxCUSize}{maxCUSize}}
+{\footnotesize\ttfamily const unsigned max\+C\+U\+Size}
+
+
+
+Definition at line 1585 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_ae8aaf60ea387f3179ca6fb7e15a9b361}\label{classvvenc_1_1PreCalcValues_ae8aaf60ea387f3179ca6fb7e15a9b361}} 
+\index{PreCalcValues@{PreCalcValues}!maxCUSizeLog2@{maxCUSizeLog2}}
+\index{maxCUSizeLog2@{maxCUSizeLog2}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxCUSizeLog2}{maxCUSizeLog2}}
+{\footnotesize\ttfamily const unsigned max\+C\+U\+Size\+Log2}
+
+
+
+Definition at line 1588 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a84d4567f939e276ed00d14a58073ce22}\label{classvvenc_1_1PreCalcValues_a84d4567f939e276ed00d14a58073ce22}} 
+\index{PreCalcValues@{PreCalcValues}!maxCUSizeMask@{maxCUSizeMask}}
+\index{maxCUSizeMask@{maxCUSizeMask}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxCUSizeMask}{maxCUSizeMask}}
+{\footnotesize\ttfamily const unsigned max\+C\+U\+Size\+Mask}
+
+
+
+Definition at line 1587 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_aafeaf044d69d5f8ba75adbb080a574ca}\label{classvvenc_1_1PreCalcValues_aafeaf044d69d5f8ba75adbb080a574ca}} 
+\index{PreCalcValues@{PreCalcValues}!maxMTTDepth@{maxMTTDepth}}
+\index{maxMTTDepth@{maxMTTDepth}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxMTTDepth}{maxMTTDepth}}
+{\footnotesize\ttfamily const unsigned max\+M\+T\+T\+Depth\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1604 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a52645ede1422e065c30102e8e681579a}\label{classvvenc_1_1PreCalcValues_a52645ede1422e065c30102e8e681579a}} 
+\index{PreCalcValues@{PreCalcValues}!maxTtSize@{maxTtSize}}
+\index{maxTtSize@{maxTtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{maxTtSize}{maxTtSize}}
+{\footnotesize\ttfamily const unsigned max\+Tt\+Size\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1607 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_ac8487865dbc550d35a02eff7f97b4391}\label{classvvenc_1_1PreCalcValues_ac8487865dbc550d35a02eff7f97b4391}} 
+\index{PreCalcValues@{PreCalcValues}!minCUSize@{minCUSize}}
+\index{minCUSize@{minCUSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{minCUSize}{minCUSize}}
+{\footnotesize\ttfamily const unsigned min\+C\+U\+Size}
+
+
+
+Definition at line 1589 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_af856d506f0c48ca3493279f18089c17f}\label{classvvenc_1_1PreCalcValues_af856d506f0c48ca3493279f18089c17f}} 
+\index{PreCalcValues@{PreCalcValues}!minCUSizeLog2@{minCUSizeLog2}}
+\index{minCUSizeLog2@{minCUSizeLog2}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{minCUSizeLog2}{minCUSizeLog2}}
+{\footnotesize\ttfamily const unsigned min\+C\+U\+Size\+Log2}
+
+
+
+Definition at line 1590 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a32053ee618fddf52d348def0d56596f2}\label{classvvenc_1_1PreCalcValues_a32053ee618fddf52d348def0d56596f2}} 
+\index{PreCalcValues@{PreCalcValues}!minQtSize@{minQtSize}}
+\index{minQtSize@{minQtSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{minQtSize}{minQtSize}}
+{\footnotesize\ttfamily const unsigned min\+Qt\+Size\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1608 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_ab6b32d91c04771cac1cd33cf688011a3}\label{classvvenc_1_1PreCalcValues_ab6b32d91c04771cac1cd33cf688011a3}} 
+\index{PreCalcValues@{PreCalcValues}!minTSize@{minTSize}}
+\index{minTSize@{minTSize}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{minTSize}{minTSize}}
+{\footnotesize\ttfamily const unsigned min\+T\+Size\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1605 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a35cdf8c77d50d0d66f95b0cb009b3cda}\label{classvvenc_1_1PreCalcValues_a35cdf8c77d50d0d66f95b0cb009b3cda}} 
+\index{PreCalcValues@{PreCalcValues}!partsInCtu@{partsInCtu}}
+\index{partsInCtu@{partsInCtu}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{partsInCtu}{partsInCtu}}
+{\footnotesize\ttfamily const unsigned parts\+In\+Ctu}
+
+
+
+Definition at line 1592 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a5e8d9e233a3d3d7f7a48ef1caa02ab61}\label{classvvenc_1_1PreCalcValues_a5e8d9e233a3d3d7f7a48ef1caa02ab61}} 
+\index{PreCalcValues@{PreCalcValues}!partsInCtuWidth@{partsInCtuWidth}}
+\index{partsInCtuWidth@{partsInCtuWidth}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{partsInCtuWidth}{partsInCtuWidth}}
+{\footnotesize\ttfamily const unsigned parts\+In\+Ctu\+Width}
+
+
+
+Definition at line 1591 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a52cdd32a3b7ffde866c7f2d6cd7d7df6}\label{classvvenc_1_1PreCalcValues_a52cdd32a3b7ffde866c7f2d6cd7d7df6}} 
+\index{PreCalcValues@{PreCalcValues}!sizeInCtus@{sizeInCtus}}
+\index{sizeInCtus@{sizeInCtus}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{sizeInCtus}{sizeInCtus}}
+{\footnotesize\ttfamily const unsigned size\+In\+Ctus}
+
+
+
+Definition at line 1595 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a38f9d60d3484f67626f5198df8170b51}\label{classvvenc_1_1PreCalcValues_a38f9d60d3484f67626f5198df8170b51}} 
+\index{PreCalcValues@{PreCalcValues}!widthInCtus@{widthInCtus}}
+\index{widthInCtus@{widthInCtus}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{widthInCtus}{widthInCtus}}
+{\footnotesize\ttfamily const unsigned width\+In\+Ctus}
+
+
+
+Definition at line 1593 of file Slice.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1PreCalcValues_a00540ef615848135e5a210605f902ecd}\label{classvvenc_1_1PreCalcValues_a00540ef615848135e5a210605f902ecd}} 
+\index{PreCalcValues@{PreCalcValues}!wrapArround@{wrapArround}}
+\index{wrapArround@{wrapArround}!PreCalcValues@{PreCalcValues}}
+\doxysubsubsection{\texorpdfstring{wrapArround}{wrapArround}}
+{\footnotesize\ttfamily const bool wrap\+Arround}
+
+
+
+Definition at line 1601 of file Slice.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8h}{Slice.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{Slice_8cpp}{Slice.\+cpp}}\end{DoxyCompactItemize}

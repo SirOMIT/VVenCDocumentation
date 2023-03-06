@@ -1,0 +1,52 @@
+<map id="xPredInterBi" name="xPredInterBi">
+<area shape="rect" id="node1" title=" " alt="" coords="5,655,100,681"/>
+<area shape="rect" id="node2" href="$structvvenc_1_1PelStorage.html#a114bf71d73b0b822dc0d52fd1650ad9b" title=" " alt="" coords="174,179,311,221"/>
+<area shape="rect" id="node10" href="$namespacevvenc_1_1CU.html#a3041ffe17dbda47017f7e074f714c544" title=" " alt="" coords="699,1540,826,1567"/>
+<area shape="rect" id="node11" href="$namespacevvenc_1_1CU.html#a84016faa0ecc6cee91707aad043d8316" title=" " alt="" coords="178,1671,307,1697"/>
+<area shape="rect" id="node12" href="$structvvenc_1_1UnitArea.html#aeba81e3c9f0d1188a63486747ec662ee" title=" " alt="" coords="411,376,574,403"/>
+<area shape="rect" id="node13" href="$structvvenc_1_1UnitArea.html#a33ccc64f705e98a484194f765d797721" title=" " alt="" coords="413,629,572,656"/>
+<area shape="rect" id="node14" href="$classvvenc_1_1InterPrediction.html#a32806fdb7cf77d4ae99f8240e2927d1e" title=" " alt="" coords="191,604,294,631"/>
+<area shape="rect" id="node42" href="$classvvenc_1_1InterPredInterpolation.html#ac01cbc2e2c9ab8e51abefea450c1836c" title=" " alt="" coords="148,1605,337,1646"/>
+<area shape="rect" id="node3" href="$structvvenc_1_1UnitArea.html#a5a0489d44d1a78cf7f669e16016b424c" title=" " alt="" coords="422,5,563,32"/>
+<area shape="rect" id="node4" href="$structvvenc_1_1UnitBuf.html#ad90881994b2968bd1c48e4fb16723fd5" title=" " alt="" coords="425,56,560,83"/>
+<area shape="rect" id="node5" href="$structvvenc_1_1UnitArea.html#a99aa1d55fe1d3675ee4df41ac0692e8f" title=" " alt="" coords="423,107,562,133"/>
+<area shape="rect" id="node6" href="$structvvenc_1_1UnitBuf.html#a0d5f330a76f9f3b4b896a8589b8acb47" title=" " alt="" coords="427,157,558,184"/>
+<area shape="rect" id="node7" href="$classvvenc_1_1static__vector.html#a0d6996214d87e5196adcf4b164fdff66" title=" " alt="" coords="423,209,563,250"/>
+<area shape="rect" id="node8" href="$structvvenc_1_1UnitArea.html#af4fc20e5d676250d96c09bcd2ef2a6b0" title=" " alt="" coords="696,200,829,227"/>
+<area shape="rect" id="node9" href="$structvvenc_1_1UnitBuf.html#a953720746c35b6e0479828e4017eff87" title=" " alt="" coords="429,325,556,352"/>
+<area shape="rect" id="node15" href="$namespacevvenc.html#a38dff9c8fb08768ec4b32b79bfbfb9d1" title=" " alt="" coords="441,579,544,605"/>
+<area shape="rect" id="node16" href="$classvvenc_1_1Slice.html#ae599e53f303dfb53f417ba15c0b57669" title=" " alt="" coords="413,528,573,555"/>
+<area shape="rect" id="node17" href="$structvvenc_1_1UnitArea.html#a757617e1ebf8cdcd3b69b08b778bb13f" title=" " alt="" coords="405,477,580,504"/>
+<area shape="rect" id="node18" href="$structvvenc_1_1UnitArea.html#af1fa78f94bcedbacf8bd882ce5da43f7" title=" " alt="" coords="403,427,582,453"/>
+<area shape="rect" id="node19" href="$classvvenc_1_1static__vector.html#a60304b65bf89363bcc3165d3cde67f86" title=" " alt="" coords="693,1474,833,1515"/>
+<area shape="rect" id="node20" href="$classvvenc_1_1InterPredInterpolation.html#aed661f58d6fe05e1522dfab76c0d27ec" title=" " alt="" coords="398,681,587,722"/>
+<area shape="rect" id="node38" href="$classvvenc_1_1InterPredInterpolation.html#ac5bedb7997fc561b55c47c2f1713bb59" title=" " alt="" coords="398,1125,587,1166"/>
+<area shape="rect" id="node21" href="$structvvenc_1_1AreaBuf.html#a2e1dc15633648502db33304d40ba91df" title=" " alt="" coords="687,251,838,277"/>
+<area shape="rect" id="node22" href="$classvvenc_1_1Mv.html#ac541e4f875501dce06e356504d2283cc" title=" " alt="" coords="677,302,848,343"/>
+<area shape="rect" id="node23" href="$classvvenc_1_1InterpolationFilter.html#a8794560aeb5994316fbbf1e5c75a3714" title=" " alt="" coords="680,1125,845,1166"/>
+<area shape="rect" id="node24" href="$namespacevvenc.html#a2a4814950acdf4a610adacb0f7417d8d" title=" " alt="" coords="925,1132,1117,1159"/>
+<area shape="rect" id="node25" href="$namespacevvenc.html#aa6703e40dff9faf6b5655472e130a512" title=" " alt="" coords="925,1197,1117,1224"/>
+<area shape="rect" id="node27" href="$classvvenc_1_1InterpolationFilter.html#ae92df0a722bbb5aba3537e9c93da511d" title="Filter a block of samples (horizontal)" alt="" coords="680,841,845,882"/>
+<area shape="rect" id="node28" href="$classvvenc_1_1InterpolationFilter.html#a6773e2e8d0e56f400d910b811de87125" title="Filter a block of samples (vertical)" alt="" coords="680,906,845,947"/>
+<area shape="rect" id="node29" href="$namespacevvenc.html#a1c67fbd69415ae8f053fbe313e4a5cda" title=" " alt="" coords="962,536,1081,563"/>
+<area shape="rect" id="node30" href="$structvvenc_1_1Picture.html#aee021e1a0b2774638746e6e9e76a5519" title=" " alt="" coords="671,972,854,999"/>
+<area shape="rect" id="node31" href="$classvvenc_1_1InterPredInterpolation.html#a24f3a67fc5a4930221c22cc7b94ff120" title=" " alt="" coords="648,419,877,461"/>
+<area shape="rect" id="node32" href="$namespacevvenc.html#a02c936096419b46a079ce09359885f9b" title=" " alt="" coords="703,1023,823,1049"/>
+<area shape="rect" id="node33" href="$namespacevvenc.html#a72ff05263d9deacacf1be65a8a68157a" title=" " alt="" coords="716,536,809,563"/>
+<area shape="rect" id="node34" href="$namespacevvenc.html#a73942a45402ce654d35f505f148b08fb" title=" " alt="" coords="688,485,837,512"/>
+<area shape="rect" id="node35" href="$classvvenc_1_1Mv.html#a244513e2313d5c3fc0517cbcb1a030e0" title=" " alt="" coords="708,587,817,613"/>
+<area shape="rect" id="node36" href="$structvvenc_1_1AreaBuf.html#a8c201d90d561f2f966982ae9b7125132" title=" " alt="" coords="682,637,843,664"/>
+<area shape="rect" id="node37" href="$namespacevvenc.html#a24afc1a31bf13037ec3b4a87cc51b97b" title=" " alt="" coords="695,789,830,816"/>
+<area shape="rect" id="node26" href="$namespacevvenc.html#ac5289e15fcc41d93fc27a1efcde294d2" title=" " alt="" coords="968,1255,1075,1281"/>
+<area shape="rect" id="node39" href="$classvvenc_1_1InterpolationFilter.html#aed5cdb9837728e178814308b49f1ef42" title=" " alt="" coords="680,1255,845,1297"/>
+<area shape="rect" id="node40" href="$classvvenc_1_1InterpolationFilter.html#a27d4300cae08114354c9b2afa99e09eb" title=" " alt="" coords="680,1190,845,1231"/>
+<area shape="rect" id="node41" href="$structvvenc_1_1Picture.html#adfeeb46910b1ca91b82e20aace08b92a" title=" " alt="" coords="656,1372,869,1399"/>
+<area shape="rect" id="node43" href="$structvvenc_1_1UnitBuf.html#a6f7ad08953b5293a8ee3fa9f82b3c28d" title=" " alt="" coords="412,1641,573,1668"/>
+<area shape="rect" id="node44" href="$structvvenc_1_1UnitBuf.html#aa479ded3aa5c5160f29c9f7f6bd2af5a" title=" " alt="" coords="385,1692,600,1719"/>
+<area shape="rect" id="node45" href="$structvvenc_1_1UnitBuf.html#afa8eee74acb75e00759027807ecd0de3" title=" " alt="" coords="409,1743,577,1769"/>
+<area shape="rect" id="node46" href="$structvvenc_1_1UnitBuf.html#ae234f3d4d1911a5f0e1b61a5425c320f" title=" " alt="" coords="405,1793,580,1820"/>
+<area shape="rect" id="node47" href="$classvvenc_1_1InterPredInterpolation.html#af86ba175d5f2400288a15a408b551bf4" title=" " alt="" coords="398,1575,587,1617"/>
+<area shape="rect" id="node48" href="$namespacevvenc.html#aac80466f25299fe368ead1f5c8432a3c" title=" " alt="" coords="676,1657,849,1684"/>
+<area shape="rect" id="node49" href="$namespacevvenc.html#a0761f5d05ac23551d521dfee49635e7a" title=" " alt="" coords="669,1708,857,1735"/>
+<area shape="rect" id="node50" href="$classvvenc_1_1InterPredInterpolation.html#ae0212336ddb9d74291608d7d303dea01" title=" " alt="" coords="668,1591,857,1633"/>
+</map>

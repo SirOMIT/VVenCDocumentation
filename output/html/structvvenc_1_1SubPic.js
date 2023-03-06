@@ -1,0 +1,25 @@
+var structvvenc_1_1SubPic =
+[
+    [ "SubPic", "structvvenc_1_1SubPic.html#a2088f825b898f53c6d785a2d884bfaad", null ],
+    [ "init", "structvvenc_1_1SubPic.html#af538509765fe00188ffc860462537147", null ],
+    [ "isContainingPos", "structvvenc_1_1SubPic.html#a05e539eb859683eda5f5200aa9761946", null ],
+    [ "ctuAddrInSubPic", "structvvenc_1_1SubPic.html#a5e9e1a7134b3d10ad6a5e871400799e9", null ],
+    [ "firstCtuInSubPic", "structvvenc_1_1SubPic.html#a0d3d27a73354704bc838d521d07fd8d9", null ],
+    [ "lastCtuInSubPic", "structvvenc_1_1SubPic.html#a07876349f76ae2a6e3d4220398751800", null ],
+    [ "loopFilterAcrossSubPicEnabled", "structvvenc_1_1SubPic.html#ac9c4f4a2a2323105aaf155ac0c146a65", null ],
+    [ "numCTUsInSubPic", "structvvenc_1_1SubPic.html#aba06e5a87e89713075fa6f3251d69e6a", null ],
+    [ "numSlicesInSubPic", "structvvenc_1_1SubPic.html#ac6e032bf91f2f5d3b693678a98e7f0ec", null ],
+    [ "subPicBottom", "structvvenc_1_1SubPic.html#aa09739365685609b0aba7f61af65c65f", null ],
+    [ "subPicCtuTopLeftX", "structvvenc_1_1SubPic.html#a46dd9bc089eb65950f5535ad2c57f7e7", null ],
+    [ "subPicCtuTopLeftY", "structvvenc_1_1SubPic.html#a895491ef5a8801db2aa7d0213b2fabba", null ],
+    [ "subPicHeight", "structvvenc_1_1SubPic.html#a3b515694c808fcc6bb0ed578ba3fcc3a", null ],
+    [ "subPicHeightInLumaSample", "structvvenc_1_1SubPic.html#a4de9a5161af7f53c2367058fae25d158", null ],
+    [ "subPicID", "structvvenc_1_1SubPic.html#ae9030f9dda693bcc9895b137b8324834", null ],
+    [ "subPicIdx", "structvvenc_1_1SubPic.html#a2dcd82ed2fa3ee013aff098bb536ffcd", null ],
+    [ "subPicLeft", "structvvenc_1_1SubPic.html#a839eecf9336d55f496cc757fcd3c60aa", null ],
+    [ "subPicRight", "structvvenc_1_1SubPic.html#af4f8cc73157be6b7a5bd7e381f57a905", null ],
+    [ "subPicTop", "structvvenc_1_1SubPic.html#afea9273fde3d76812b638b739d945ee4", null ],
+    [ "subPicWidth", "structvvenc_1_1SubPic.html#a04b560364b5863187f4438e0a09c84d2", null ],
+    [ "subPicWidthInLumaSample", "structvvenc_1_1SubPic.html#a60002f4439a1ffe37fba9586ec5d6040", null ],
+    [ "treatedAsPic", "structvvenc_1_1SubPic.html#a709346d06bdc55b07eb6fc39cc99ebe3", null ]
+];

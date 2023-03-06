@@ -1,0 +1,679 @@
+\hypertarget{classvvenc_1_1InputBitstream}{}\doxysection{Input\+Bitstream}
+\label{classvvenc_1_1InputBitstream}\index{InputBitstream@{InputBitstream}}
+
+
+{\ttfamily \#include \char`\"{}Bit\+Stream.\+h\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream_aa99f3d09f5f92b3898c34eda05d5ad18}{Input\+Bitstream}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream_aac9f20f645bb0061be8186b114c439dd}{Input\+Bitstream}} (const \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} \&src)
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1InputBitstream_a5a7271ed9b38fe77703118df64a73dff}{$\sim$\+Input\+Bitstream}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a1835a01174f8196829286fb4c321fe29}{clear\+Emulation\+Prevention\+Byte\+Location}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ \mbox{\hyperlink{classvvenc_1_1InputBitstream_a4e43bdd69b65de7956a3397fcefe2abd}{extract\+Substream}} (uint32\+\_\+t ui\+Num\+Bits)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_aea71136f5910a17af4c008e55d9b8161}{get\+Byte\+Location}} ()
+\item 
+const std\+::vector$<$ uint32\+\_\+t $>$ \& \mbox{\hyperlink{classvvenc_1_1InputBitstream_a99c57b56fc231169a294159099d967ab}{get\+Emulation\+Prevention\+Byte\+Location}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a9114eb791f55aa6efc54c2e43fd9fc0e}{get\+Emulation\+Prevention\+Byte\+Location}} (uint32\+\_\+t idx)
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \& \mbox{\hyperlink{classvvenc_1_1InputBitstream_a8a282ee041a4e958cb3d905137afbcba}{get\+Fifo}} ()
+\item 
+const std\+::vector$<$ uint8\+\_\+t $>$ \& \mbox{\hyperlink{classvvenc_1_1InputBitstream_afb152153715e0e326bbbe5691ed1121e}{get\+Fifo}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}{get\+Held\+Bits}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a2eaa3a4b000480b12c473e5614c34099}{get\+Num\+Bits\+Left}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a51fcee7ea1325e50cf9c9a3283a76627}{get\+Num\+Bits\+Read}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_ab62b144cdeac1c992b173395493acec2}{get\+Num\+Bits\+Until\+Byte\+Aligned}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a8019b7e99259e00d88ff65d827a959fe}{num\+Emulation\+Prevention\+Bytes\+Read}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \& \mbox{\hyperlink{classvvenc_1_1InputBitstream_a66056f8fcacdb3e8809279bc8615f5b4}{operator=}} (const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&src)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_aa5f75500da9e43b608eb3e22eadc196c}{peek\+Bits}} (uint32\+\_\+t ui\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_afef0e412db28dcdf2d73617cbad0df5c}{peek\+Previous\+Byte}} (uint32\+\_\+t \&byte)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a930ac77e53f4f702ac41bb7ca95b2fe7}{pseudo\+Read}} (uint32\+\_\+t ui\+Number\+Of\+Bits, uint32\+\_\+t \&rui\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a23c98da316efb59958cfc2167b702590}{push\+Emulation\+Prevention\+Byte\+Location}} (uint32\+\_\+t pos)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a80eed6c452604bccea7b52bcf5b4a367}{read}} (uint32\+\_\+t number\+Of\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a13f0deed3a1651d4b0477dc1d1a8d9fc}{read}} (uint32\+\_\+t ui\+Number\+Of\+Bits, uint32\+\_\+t \&rui\+Bits)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_aa0dd026735d73cb3a3769b76043d5ba8}{read\+Byte}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a851f98b4b9141bd0910ce136b93b8b14}{read\+Byte}} (uint32\+\_\+t \&rui\+Bits)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a2f764590d45f21c0956f5f9585e2fd2b}{read\+Byte\+Alignment}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a5d49023134a5a8d23d1c71ccd656586d}{read\+Out\+Trailing\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_a530472c4666346a9d590b97fc990fe70}{reset\+To\+Start}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1InputBitstream_ae184854117575735ffeea718606bb108}{set\+Emulation\+Prevention\+Byte\+Location}} (const std\+::vector$<$ uint32\+\_\+t $>$ \&vec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1InputBitstream_af3c412591d9ca2a877113ae64c07ef9b}{m\+\_\+emulation\+Prevention\+Byte\+Location}}
+\begin{DoxyCompactList}\small\item\em F\+I\+FO for storage of complete bytes. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1InputBitstream_ab61f584eff07357d17450dae15cd579f}{m\+\_\+fifo}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_a437be8cbdc8f2b734b9a70c226d6719f}{m\+\_\+fifo\+\_\+idx}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_ad9c1102ded3d932c9ee83c42456739ca}{m\+\_\+held\+\_\+bits}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_ac8fc4991c89fedb6a533383aa16671dd}{m\+\_\+num\+\_\+held\+\_\+bits}}
+\begin{DoxyCompactList}\small\item\em Read index into m\+\_\+fifo. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1InputBitstream_aba39ea88c8343da1605574994c5c8c3c}{m\+\_\+num\+Bits\+Read}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Model of an input bitstream that extracts bits from a predefined bytestream. 
+
+Definition at line 155 of file Bit\+Stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aa99f3d09f5f92b3898c34eda05d5ad18}\label{classvvenc_1_1InputBitstream_aa99f3d09f5f92b3898c34eda05d5ad18}} 
+\index{InputBitstream@{InputBitstream}!InputBitstream@{InputBitstream}}
+\index{InputBitstream@{InputBitstream}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{InputBitstream()}{InputBitstream()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create a new bitstream reader object that reads from buf. 
+
+Definition at line 79 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_aa99f3d09f5f92b3898c34eda05d5ad18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a5a7271ed9b38fe77703118df64a73dff}\label{classvvenc_1_1InputBitstream_a5a7271ed9b38fe77703118df64a73dff}} 
+\index{InputBitstream@{InputBitstream}!````~InputBitstream@{$\sim$InputBitstream}}
+\index{````~InputBitstream@{$\sim$InputBitstream}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{$\sim$InputBitstream()}{~InputBitstream()}}
+{\footnotesize\ttfamily virtual $\sim$\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 172 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aac9f20f645bb0061be8186b114c439dd}\label{classvvenc_1_1InputBitstream_aac9f20f645bb0061be8186b114c439dd}} 
+\index{InputBitstream@{InputBitstream}!InputBitstream@{InputBitstream}}
+\index{InputBitstream@{InputBitstream}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{InputBitstream()}{InputBitstream()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} \&}]{src }\end{DoxyParamCaption})}
+
+
+
+Definition at line 88 of file Bit\+Stream.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a1835a01174f8196829286fb4c321fe29}\label{classvvenc_1_1InputBitstream_a1835a01174f8196829286fb4c321fe29}} 
+\index{InputBitstream@{InputBitstream}!clearEmulationPreventionByteLocation@{clearEmulationPreventionByteLocation}}
+\index{clearEmulationPreventionByteLocation@{clearEmulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{clearEmulationPreventionByteLocation()}{clearEmulationPreventionByteLocation()}}
+{\footnotesize\ttfamily void clear\+Emulation\+Prevention\+Byte\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 216 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a1835a01174f8196829286fb4c321fe29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a4e43bdd69b65de7956a3397fcefe2abd}\label{classvvenc_1_1InputBitstream_a4e43bdd69b65de7956a3397fcefe2abd}} 
+\index{InputBitstream@{InputBitstream}!extractSubstream@{extractSubstream}}
+\index{extractSubstream@{extractSubstream}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{extractSubstream()}{extractSubstream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$ extract\+Substream (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Num\+Bits }\end{DoxyParamCaption})}
+
+Extract substream from the current bitstream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ui\+Num\+Bits} & number of bits to transfer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 362 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{classvvenc_1_1InputBitstream_a4e43bdd69b65de7956a3397fcefe2abd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a4e43bdd69b65de7956a3397fcefe2abd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aea71136f5910a17af4c008e55d9b8161}\label{classvvenc_1_1InputBitstream_aea71136f5910a17af4c008e55d9b8161}} 
+\index{InputBitstream@{InputBitstream}!getByteLocation@{getByteLocation}}
+\index{getByteLocation@{getByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getByteLocation()}{getByteLocation()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Byte\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 198 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_aea71136f5910a17af4c008e55d9b8161_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a99c57b56fc231169a294159099d967ab}\label{classvvenc_1_1InputBitstream_a99c57b56fc231169a294159099d967ab}} 
+\index{InputBitstream@{InputBitstream}!getEmulationPreventionByteLocation@{getEmulationPreventionByteLocation}}
+\index{getEmulationPreventionByteLocation@{getEmulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getEmulationPreventionByteLocation()}{getEmulationPreventionByteLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$uint32\+\_\+t$>$\& get\+Emulation\+Prevention\+Byte\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 214 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a99c57b56fc231169a294159099d967ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a9114eb791f55aa6efc54c2e43fd9fc0e}\label{classvvenc_1_1InputBitstream_a9114eb791f55aa6efc54c2e43fd9fc0e}} 
+\index{InputBitstream@{InputBitstream}!getEmulationPreventionByteLocation@{getEmulationPreventionByteLocation}}
+\index{getEmulationPreventionByteLocation@{getEmulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getEmulationPreventionByteLocation()}{getEmulationPreventionByteLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Emulation\+Prevention\+Byte\+Location (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 215 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a8a282ee041a4e958cb3d905137afbcba}\label{classvvenc_1_1InputBitstream_a8a282ee041a4e958cb3d905137afbcba}} 
+\index{InputBitstream@{InputBitstream}!getFifo@{getFifo}}
+\index{getFifo@{getFifo}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getFifo()}{getFifo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$\& get\+Fifo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 220 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_afb152153715e0e326bbbe5691ed1121e}\label{classvvenc_1_1InputBitstream_afb152153715e0e326bbbe5691ed1121e}} 
+\index{InputBitstream@{InputBitstream}!getFifo@{getFifo}}
+\index{getFifo@{getFifo}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getFifo()}{getFifo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$uint8\+\_\+t$>$\& get\+Fifo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 219 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_afb152153715e0e326bbbe5691ed1121e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}\label{classvvenc_1_1InputBitstream_aa1030bc6b8be6f050808cfb9a32f6c01}} 
+\index{InputBitstream@{InputBitstream}!getHeldBits@{getHeldBits}}
+\index{getHeldBits@{getHeldBits}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getHeldBits()}{getHeldBits()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+Held\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 196 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a2eaa3a4b000480b12c473e5614c34099}\label{classvvenc_1_1InputBitstream_a2eaa3a4b000480b12c473e5614c34099}} 
+\index{InputBitstream@{InputBitstream}!getNumBitsLeft@{getNumBitsLeft}}
+\index{getNumBitsLeft@{getNumBitsLeft}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getNumBitsLeft()}{getNumBitsLeft()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Bits\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 207 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a2eaa3a4b000480b12c473e5614c34099_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a51fcee7ea1325e50cf9c9a3283a76627}\label{classvvenc_1_1InputBitstream_a51fcee7ea1325e50cf9c9a3283a76627}} 
+\index{InputBitstream@{InputBitstream}!getNumBitsRead@{getNumBitsRead}}
+\index{getNumBitsRead@{getNumBitsRead}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getNumBitsRead()}{getNumBitsRead()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Bits\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 209 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a51fcee7ea1325e50cf9c9a3283a76627_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_ab62b144cdeac1c992b173395493acec2}\label{classvvenc_1_1InputBitstream_ab62b144cdeac1c992b173395493acec2}} 
+\index{InputBitstream@{InputBitstream}!getNumBitsUntilByteAligned@{getNumBitsUntilByteAligned}}
+\index{getNumBitsUntilByteAligned@{getNumBitsUntilByteAligned}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{getNumBitsUntilByteAligned()}{getNumBitsUntilByteAligned()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Num\+Bits\+Until\+Byte\+Aligned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 206 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_ab62b144cdeac1c992b173395493acec2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a8019b7e99259e00d88ff65d827a959fe}\label{classvvenc_1_1InputBitstream_a8019b7e99259e00d88ff65d827a959fe}} 
+\index{InputBitstream@{InputBitstream}!numEmulationPreventionBytesRead@{numEmulationPreventionBytesRead}}
+\index{numEmulationPreventionBytesRead@{numEmulationPreventionBytesRead}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{numEmulationPreventionBytesRead()}{numEmulationPreventionBytesRead()}}
+{\footnotesize\ttfamily uint32\+\_\+t num\+Emulation\+Prevention\+Bytes\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 213 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a8019b7e99259e00d88ff65d827a959fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a66056f8fcacdb3e8809279bc8615f5b4}\label{classvvenc_1_1InputBitstream_a66056f8fcacdb3e8809279bc8615f5b4}} 
+\index{InputBitstream@{InputBitstream}!operator=@{operator=}}
+\index{operator=@{operator=}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}}\& operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1OutputBitstream}{Output\+Bitstream}} \&}]{src }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aa5f75500da9e43b608eb3e22eadc196c}\label{classvvenc_1_1InputBitstream_aa5f75500da9e43b608eb3e22eadc196c}} 
+\index{InputBitstream@{InputBitstream}!peekBits@{peekBits}}
+\index{peekBits@{peekBits}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{peekBits()}{peekBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t peek\+Bits (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 201 of file Bit\+Stream.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_aa5f75500da9e43b608eb3e22eadc196c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_aa5f75500da9e43b608eb3e22eadc196c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_afef0e412db28dcdf2d73617cbad0df5c}\label{classvvenc_1_1InputBitstream_afef0e412db28dcdf2d73617cbad0df5c}} 
+\index{InputBitstream@{InputBitstream}!peekPreviousByte@{peekPreviousByte}}
+\index{peekPreviousByte@{peekPreviousByte}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{peekPreviousByte()}{peekPreviousByte()}}
+{\footnotesize\ttfamily void peek\+Previous\+Byte (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 189 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_afef0e412db28dcdf2d73617cbad0df5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a930ac77e53f4f702ac41bb7ca95b2fe7}\label{classvvenc_1_1InputBitstream_a930ac77e53f4f702ac41bb7ca95b2fe7}} 
+\index{InputBitstream@{InputBitstream}!pseudoRead@{pseudoRead}}
+\index{pseudoRead@{pseudoRead}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{pseudoRead()}{pseudoRead()}}
+{\footnotesize\ttfamily void pseudo\+Read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Number\+Of\+Bits,  }\item[{uint32\+\_\+t \&}]{rui\+Bits }\end{DoxyParamCaption})}
+
+read ui\+Number\+Of\+Bits from bitstream without updating the bitstream state, storing the result in rui\+Bits.
+
+If reading ui\+Number\+Of\+Bits would overrun the bitstream buffer, the bitstream is effectively padded with sufficient zero-\/bits to avoid the overrun. 
+
+Definition at line 254 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classvvenc_1_1InputBitstream_a930ac77e53f4f702ac41bb7ca95b2fe7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a930ac77e53f4f702ac41bb7ca95b2fe7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a23c98da316efb59958cfc2167b702590}\label{classvvenc_1_1InputBitstream_a23c98da316efb59958cfc2167b702590}} 
+\index{InputBitstream@{InputBitstream}!pushEmulationPreventionByteLocation@{pushEmulationPreventionByteLocation}}
+\index{pushEmulationPreventionByteLocation@{pushEmulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{pushEmulationPreventionByteLocation()}{pushEmulationPreventionByteLocation()}}
+{\footnotesize\ttfamily void push\+Emulation\+Prevention\+Byte\+Location (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 212 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a23c98da316efb59958cfc2167b702590_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a80eed6c452604bccea7b52bcf5b4a367}\label{classvvenc_1_1InputBitstream_a80eed6c452604bccea7b52bcf5b4a367}} 
+\index{InputBitstream@{InputBitstream}!read@{read}}
+\index{read@{read}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{number\+Of\+Bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 204 of file Bit\+Stream.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=115pt]{classvvenc_1_1InputBitstream_a80eed6c452604bccea7b52bcf5b4a367_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=115pt]{classvvenc_1_1InputBitstream_a80eed6c452604bccea7b52bcf5b4a367_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a13f0deed3a1651d4b0477dc1d1a8d9fc}\label{classvvenc_1_1InputBitstream_a13f0deed3a1651d4b0477dc1d1a8d9fc}} 
+\index{InputBitstream@{InputBitstream}!read@{read}}
+\index{read@{read}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void read (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{ui\+Number\+Of\+Bits,  }\item[{uint32\+\_\+t \&}]{rui\+Bits }\end{DoxyParamCaption})}
+
+
+
+Definition at line 270 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a13f0deed3a1651d4b0477dc1d1a8d9fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aa0dd026735d73cb3a3769b76043d5ba8}\label{classvvenc_1_1InputBitstream_aa0dd026735d73cb3a3769b76043d5ba8}} 
+\index{InputBitstream@{InputBitstream}!readByte@{readByte}}
+\index{readByte@{readByte}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t read\+Byte (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 205 of file Bit\+Stream.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classvvenc_1_1InputBitstream_aa0dd026735d73cb3a3769b76043d5ba8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classvvenc_1_1InputBitstream_aa0dd026735d73cb3a3769b76043d5ba8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a851f98b4b9141bd0910ce136b93b8b14}\label{classvvenc_1_1InputBitstream_a851f98b4b9141bd0910ce136b93b8b14}} 
+\index{InputBitstream@{InputBitstream}!readByte@{readByte}}
+\index{readByte@{readByte}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{readByte()}{readByte()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void read\+Byte (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{rui\+Bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 180 of file Bit\+Stream.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a851f98b4b9141bd0910ce136b93b8b14_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a2f764590d45f21c0956f5f9585e2fd2b}\label{classvvenc_1_1InputBitstream_a2f764590d45f21c0956f5f9585e2fd2b}} 
+\index{InputBitstream@{InputBitstream}!readByteAlignment@{readByteAlignment}}
+\index{readByteAlignment@{readByteAlignment}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{readByteAlignment()}{readByteAlignment()}}
+{\footnotesize\ttfamily uint32\+\_\+t read\+Byte\+Alignment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 400 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a2f764590d45f21c0956f5f9585e2fd2b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a2f764590d45f21c0956f5f9585e2fd2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a5d49023134a5a8d23d1c71ccd656586d}\label{classvvenc_1_1InputBitstream_a5d49023134a5a8d23d1c71ccd656586d}} 
+\index{InputBitstream@{InputBitstream}!readOutTrailingBits@{readOutTrailingBits}}
+\index{readOutTrailingBits@{readOutTrailingBits}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{readOutTrailingBits()}{readOutTrailingBits()}}
+{\footnotesize\ttfamily uint32\+\_\+t read\+Out\+Trailing\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 344 of file Bit\+Stream.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a5d49023134a5a8d23d1c71ccd656586d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a5d49023134a5a8d23d1c71ccd656586d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a530472c4666346a9d590b97fc990fe70}\label{classvvenc_1_1InputBitstream_a530472c4666346a9d590b97fc990fe70}} 
+\index{InputBitstream@{InputBitstream}!resetToStart@{resetToStart}}
+\index{resetToStart@{resetToStart}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{resetToStart()}{resetToStart()}}
+{\footnotesize\ttfamily void reset\+To\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 101 of file Bit\+Stream.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1InputBitstream_a530472c4666346a9d590b97fc990fe70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_ae184854117575735ffeea718606bb108}\label{classvvenc_1_1InputBitstream_ae184854117575735ffeea718606bb108}} 
+\index{InputBitstream@{InputBitstream}!setEmulationPreventionByteLocation@{setEmulationPreventionByteLocation}}
+\index{setEmulationPreventionByteLocation@{setEmulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{setEmulationPreventionByteLocation()}{setEmulationPreventionByteLocation()}}
+{\footnotesize\ttfamily void set\+Emulation\+Prevention\+Byte\+Location (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ uint32\+\_\+t $>$ \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 217 of file Bit\+Stream.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_af3c412591d9ca2a877113ae64c07ef9b}\label{classvvenc_1_1InputBitstream_af3c412591d9ca2a877113ae64c07ef9b}} 
+\index{InputBitstream@{InputBitstream}!m\_emulationPreventionByteLocation@{m\_emulationPreventionByteLocation}}
+\index{m\_emulationPreventionByteLocation@{m\_emulationPreventionByteLocation}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_emulationPreventionByteLocation}{m\_emulationPreventionByteLocation}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ m\+\_\+emulation\+Prevention\+Byte\+Location\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+F\+I\+FO for storage of complete bytes. 
+
+
+
+Definition at line 159 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_ab61f584eff07357d17450dae15cd579f}\label{classvvenc_1_1InputBitstream_ab61f584eff07357d17450dae15cd579f}} 
+\index{InputBitstream@{InputBitstream}!m\_fifo@{m\_fifo}}
+\index{m\_fifo@{m\_fifo}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_fifo}{m\_fifo}}
+{\footnotesize\ttfamily std\+::vector$<$uint8\+\_\+t$>$ m\+\_\+fifo\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 158 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_a437be8cbdc8f2b734b9a70c226d6719f}\label{classvvenc_1_1InputBitstream_a437be8cbdc8f2b734b9a70c226d6719f}} 
+\index{InputBitstream@{InputBitstream}!m\_fifo\_idx@{m\_fifo\_idx}}
+\index{m\_fifo\_idx@{m\_fifo\_idx}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_fifo\_idx}{m\_fifo\_idx}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+fifo\+\_\+idx\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 161 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_ad9c1102ded3d932c9ee83c42456739ca}\label{classvvenc_1_1InputBitstream_ad9c1102ded3d932c9ee83c42456739ca}} 
+\index{InputBitstream@{InputBitstream}!m\_held\_bits@{m\_held\_bits}}
+\index{m\_held\_bits@{m\_held\_bits}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_held\_bits}{m\_held\_bits}}
+{\footnotesize\ttfamily uint8\+\_\+t m\+\_\+held\+\_\+bits\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 164 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_ac8fc4991c89fedb6a533383aa16671dd}\label{classvvenc_1_1InputBitstream_ac8fc4991c89fedb6a533383aa16671dd}} 
+\index{InputBitstream@{InputBitstream}!m\_num\_held\_bits@{m\_num\_held\_bits}}
+\index{m\_num\_held\_bits@{m\_num\_held\_bits}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_num\_held\_bits}{m\_num\_held\_bits}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+num\+\_\+held\+\_\+bits\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Read index into m\+\_\+fifo. 
+
+
+
+Definition at line 163 of file Bit\+Stream.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1InputBitstream_aba39ea88c8343da1605574994c5c8c3c}\label{classvvenc_1_1InputBitstream_aba39ea88c8343da1605574994c5c8c3c}} 
+\index{InputBitstream@{InputBitstream}!m\_numBitsRead@{m\_numBitsRead}}
+\index{m\_numBitsRead@{m\_numBitsRead}!InputBitstream@{InputBitstream}}
+\doxysubsubsection{\texorpdfstring{m\_numBitsRead}{m\_numBitsRead}}
+{\footnotesize\ttfamily uint32\+\_\+t m\+\_\+num\+Bits\+Read\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 165 of file Bit\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{BitStream_8h}{Bit\+Stream.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{BitStream_8cpp}{Bit\+Stream.\+cpp}}\end{DoxyCompactItemize}

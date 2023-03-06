@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['read_5fcode_12138',['READ_CODE',['../VLCReader_8h.html#a04713562d7830e580a56706e86612198',1,'VLCReader.h']]],
+  ['read_5fflag_12139',['READ_FLAG',['../VLCReader_8h.html#a32a36fd3db65a396d87ec1e1c32e3093',1,'VLCReader.h']]],
+  ['read_5fscode_12140',['READ_SCODE',['../VLCReader_8h.html#aec4d4624b043ef8649a9bd170516faba',1,'VLCReader.h']]],
+  ['read_5fsvlc_12141',['READ_SVLC',['../VLCReader_8h.html#a08060c79bd5f304f0d2cb9c11e088bcc',1,'VLCReader.h']]],
+  ['read_5fuvlc_12142',['READ_UVLC',['../VLCReader_8h.html#a7f963bb3988b8b7b3475d0f35a02a806',1,'VLCReader.h']]],
+  ['reco_5fcore_5finc_12143',['RECO_CORE_INC',['../Buffer_8cpp.html#af669f51b63e85a21eacd50e5cbcc370e',1,'Buffer.cpp']]],
+  ['reco_5fcore_5fop_12144',['RECO_CORE_OP',['../Buffer_8cpp.html#a2c6a10e76e072d016021a2a20a757ca5',1,'Buffer.cpp']]],
+  ['reco_5finc_12145',['RECO_INC',['../Buffer_8cpp.html#a4b89e8a70705edf62dddf4b47120971b',1,'Buffer.cpp']]],
+  ['reco_5fop_12146',['RECO_OP',['../Buffer_8cpp.html#a684b9f777ae0e7531f7acebbdfa6299d',1,'Buffer.cpp']]],
+  ['reg_12147',['REG',['../EncAdaptiveLoopFilter_8cpp.html#ac12997fa537ec8cbf0f69bf8228cc2a0',1,'EncAdaptiveLoopFilter.cpp']]],
+  ['reg_5fsqr_12148',['REG_SQR',['../EncAdaptiveLoopFilter_8cpp.html#ae7df443c9de60919830393561271c24f',1,'EncAdaptiveLoopFilter.cpp']]],
+  ['rem_5fhf_5finc_12149',['REM_HF_INC',['../Buffer_8cpp.html#a05d6e8e9d1daccac253e920d8a34dcc9',1,'REM_HF_INC():&#160;Buffer.cpp'],['../Buffer_8h.html#a05d6e8e9d1daccac253e920d8a34dcc9',1,'REM_HF_INC():&#160;Buffer.h']]],
+  ['rem_5fhf_5fop_12150',['REM_HF_OP',['../Buffer_8cpp.html#a703695e66c3f3f3493151ce1d4c88060',1,'REM_HF_OP():&#160;Buffer.cpp'],['../Buffer_8h.html#a703695e66c3f3f3493151ce1d4c88060',1,'REM_HF_OP():&#160;Buffer.h']]],
+  ['rem_5fhf_5fop_5fclip_12151',['REM_HF_OP_CLIP',['../Buffer_8h.html#a419915c372efdf172c230a257d39ef1c',1,'Buffer.h']]],
+  ['rext_5f_5fhigh_5fbit_5fdepth_5fsupport_12152',['RExt__HIGH_BIT_DEPTH_SUPPORT',['../TypeDef_8h.html#ab83b92458760e4de03222af2caa7a8e6',1,'TypeDef.h']]],
+  ['rext_5f_5fhigh_5fprecision_5fforward_5ftransform_12153',['RExt__HIGH_PRECISION_FORWARD_TRANSFORM',['../TypeDef_8h.html#a7a7a573cbeef5940cfb3f065791d4c4e',1,'TypeDef.h']]],
+  ['ricemax_12154',['RICEMAX',['../DepQuant_8cpp.html#af5a952b3918a2e4337b48a4ba9ac178a',1,'DepQuant.cpp']]],
+  ['rotparams_12155',['ROTPARAMS',['../vvencimpl_8cpp.html#a4213c136e65b9ab6f33bbce9da9ab5c1',1,'vvencimpl.cpp']]],
+  ['round_12156',['ROUND',['../EncAdaptiveLoopFilter_8cpp.html#af6b649b1ed94420c340e1260e646dcc7',1,'EncAdaptiveLoopFilter.cpp']]],
+  ['rsp_5fsgnl_5finc_12157',['RSP_SGNL_INC',['../Buffer_8cpp.html#a96e58603721b9972d199f76650575cdb',1,'Buffer.cpp']]],
+  ['rsp_5fsgnl_5fop_12158',['RSP_SGNL_OP',['../Buffer_8cpp.html#a79fcd960bac223ac6af1908fb9ddabb8',1,'Buffer.cpp']]]
+];

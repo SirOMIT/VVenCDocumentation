@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cache_5fmem_5falign_5fsize_11978',['CACHE_MEM_ALIGN_SIZE',['../CommonDef_8h.html#a380167a1300e5e9d9d4311695a645f6f',1,'CommonDef.h']]],
+  ['check_11979',['CHECK',['../StatCounter_8h.html#a87a0b8601d301b04efad305d35b8ba20',1,'CHECK():&#160;StatCounter.h'],['../TypeDef_8h.html#a87a0b8601d301b04efad305d35b8ba20',1,'CHECK():&#160;TypeDef.h']]],
+  ['check_5fnullptr_11980',['CHECK_NULLPTR',['../TypeDef_8h.html#a0d1405c51e4ef43494ce21f88340cf7b',1,'TypeDef.h']]],
+  ['checkd_11981',['CHECKD',['../TypeDef_8h.html#ac531f1e5ad68cc4529d1924729d1d165',1,'TypeDef.h']]],
+  ['chroma_5f400_11982',['CHROMA_400',['../TypeDef_8h.html#a1644a589f6466e6ce533230a841fc96a',1,'TypeDef.h']]],
+  ['chroma_5f420_11983',['CHROMA_420',['../TypeDef_8h.html#ab5157d7616d3a5a5cc5649d73944675f',1,'TypeDef.h']]],
+  ['chroma_5f422_11984',['CHROMA_422',['../TypeDef_8h.html#af457e9b724e2265a4a650c38bf8c38f1',1,'TypeDef.h']]],
+  ['chroma_5f444_11985',['CHROMA_444',['../TypeDef_8h.html#abbdb28d3901ce83e21e7e7701512cdb7',1,'TypeDef.h']]],
+  ['clang_5fversion_5fat_5fleast_11986',['CLANG_VERSION_AT_LEAST',['../CommonDef_8h.html#af8e2dde85604978972dd0f2a87af0d7d',1,'CommonDef.h']]],
+  ['clip_5finc_11987',['CLIP_INC',['../TrQuant__EMT_8cpp.html#a872885763ad0e468469d0d9ad222fb10',1,'TrQuant_EMT.cpp']]],
+  ['clip_5fop_11988',['CLIP_OP',['../TrQuant__EMT_8cpp.html#a20c0badfba045344708c9f94def5c96b',1,'TrQuant_EMT.cpp']]],
+  ['cnt_5foffset_11989',['CNT_OFFSET',['../BinDecoder_8cpp.html#a40f7e656758a0c6789535c6fb1531ca0',1,'BinDecoder.cpp']]],
+  ['cnu_11990',['CNU',['../Contexts_8cpp.html#a357690d917de99cb4c6690424cdc70aa',1,'Contexts.cpp']]],
+  ['coeff_5ferr_5fscale_5fprecision_5fbits_11991',['COEFF_ERR_SCALE_PRECISION_BITS',['../QuantRDOQ2_8cpp.html#a985dc2629a8a76dfde10598401b6c379',1,'QuantRDOQ2.cpp']]],
+  ['cpycoeff_5finc_11992',['CPYCOEFF_INC',['../TrQuant__EMT_8cpp.html#aeee47315bac578bb1e8dea8f249ee77a',1,'TrQuant_EMT.cpp']]],
+  ['cpycoeff_5fop_11993',['CPYCOEFF_OP',['../TrQuant__EMT_8cpp.html#a49fc01f951db8922c6a6869873ff4f1c',1,'TrQuant_EMT.cpp']]],
+  ['cpyresi_5finc_11994',['CPYRESI_INC',['../TrQuant__EMT_8cpp.html#a6d031378daf0ddd5c048d72d297143f6',1,'TrQuant_EMT.cpp']]],
+  ['cpyresi_5fop_11995',['CPYRESI_OP',['../TrQuant__EMT_8cpp.html#ac75154a3b0445785d450aadec13212e1',1,'TrQuant_EMT.cpp']]]
+];

@@ -1,0 +1,691 @@
+\hypertarget{classvvenc_1_1EncRCSeq}{}\doxysection{Enc\+R\+C\+Seq}
+\label{classvvenc_1_1EncRCSeq}\index{EncRCSeq@{EncRCSeq}}
+
+
+{\ttfamily \#include \char`\"{}Rate\+Ctrl.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Enc\+R\+C\+Seq\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{classvvenc_1_1EncRCSeq__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCSeq_a3efb04a13787237fcaf583e8cd31e42e}{Enc\+R\+C\+Seq}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1EncRCSeq_a60612dfbccf81f1d0286a6e08b44edf4}{$\sim$\+Enc\+R\+C\+Seq}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a02fd3c2635e6886180079e82fd389744}{clip\+Rc\+Alpha}} (double \&alpha)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a0c6695ec3f5a446595ddcffa3a806638}{create}} (bool \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a306c1d7f4f6833176d12c84d77b9b412}{two\+Pass}}, int tot\+Frames, int target\+Bitrate, int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aebcd9a87b695d3618612fcba5248dbf8}{frame\+Rate}}, int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a75852d45ae317ffce5daf5eb321b167a}{intra\+Period}}, int G\+O\+P\+Size, int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ab13b9106f285947f00b2801086096701}{pic\+Width}}, int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_abc77673ab15d1f85309626e27061db57}{pic\+Height}}, int L\+C\+U\+Width, int L\+C\+U\+Height, int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a1fe0fb155bd34080852231563d329a54}{number\+Of\+Level}}, int adaptive\+Bit, std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}} $>$ \&\mbox{\hyperlink{classvvenc_1_1EncRCSeq_aebf7716c3a56bb979162b37c9134214c}{first\+Pass\+Data}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a3a80b6032f86a56bec74609034b3246f}{destroy}} ()
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a64065a84a8249e4e0b7b78c07eccdee6}{get\+Left\+Average\+Bits}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a7c166c40a06c904af730175d13d28cd9}{get\+Target\+Bits\+From\+First\+Pass}} (const int poc, int \&\mbox{\hyperlink{classvvenc_1_1EncRCSeq_ae086e1bbe8b434f83a875d578aa23f4c}{target\+Bits}}, double \&frame\+Vs\+Gop\+Ratio, bool \&is\+New\+Scene, bool \&refresh\+Parameters)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a75ac805c2469793c17ab6b63d2e6ba62}{init\+Bits\+Ratio}} (int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a8fef0bac5e1611ffdb8b0b437ea98d8b}{bits\+Ratio}}\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_abd81d866fc4161422a991e1a9d18a590}{init\+G\+O\+P\+I\+D2\+Level}} (int G\+O\+P\+I\+D2\+Level\mbox{[}$\,$\mbox{]})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ae858753d5596f9b39e1a73afe294dd0a}{init\+Pic\+Para}} (\mbox{\hyperlink{structvvenc_1_1TRCParameter}{T\+R\+C\+Parameter}} $\ast$pic\+Para=\mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a541a5402f3f9aa808585ae50807253e4}{set\+All\+Bit\+Ratio}} (double basic\+Lambda, double $\ast$equa\+CoeffA, double $\ast$equa\+CoeffB)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a8574b3b8a8bb59ad2ef9ebad57e47add}{update\+After\+Pic}} (int bits, int tgt\+Bits)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a65f367eacfb22811464a0a5379ffc72e}{actual\+Bit\+Cnt}} \mbox{[}8\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ab0af52bb2fd3511beea867ee60f1895c}{adaptive\+Bits}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a258d3cda3d572c3f9f8d074846658a78}{average\+Bits}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ac77b590e38a8e565a52609ab911451d1}{bit\+Depth}}
+\item 
+int $\ast$ \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a8fef0bac5e1611ffdb8b0b437ea98d8b}{bits\+Ratio}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a593aab4c0ea65f4f654fa7f6031fb0b7}{bits\+Used}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a250403b84afe6f3ee74581c633dd5132}{estimated\+Bit\+Usage}}
+\item 
+std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}} $>$ \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aebf7716c3a56bb979162b37c9134214c}{first\+Pass\+Data}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a177fb8c710ad770bd0faad793da46ab9}{fpp\+Par\+Frames}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aebcd9a87b695d3618612fcba5248dbf8}{frame\+Rate}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aa03c2b87d895da2089dcc9e5448b7cd2}{frames\+Coded}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a3c7e7f3985dc338448fcb2c5b5ad43c5}{frames\+Left}}
+\item 
+int $\ast$ \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a73b2bf1e6352c4dd8c524005a8b14081}{gop\+I\+D2\+Level}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ad0db87e2ca0c90c9609a9a82f52174a5}{gop\+Size}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a75852d45ae317ffce5daf5eb321b167a}{intra\+Period}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a50bbd78bc67e4ea27b0e424823b93e84}{last\+Intra\+Lambda}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aad35fc85fff0a753627ea3ff5192834c}{last\+Intra\+QP}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aa921605b08e04dcf79d24564b00dcc84}{last\+Lambda}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a4e3179468eeee6f92e2a0641290fe74c}{lcu\+Height}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ab3bd8609092be43aa7654c97fb5aa668}{lcu\+Width}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a516a779a4b162eddb49c63d03b75c2a9}{number\+Of\+L\+CU}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_aae0bdbf90049bf94c419c0918b5e1d3d}{number\+Of\+Pixel}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_abc77673ab15d1f85309626e27061db57}{pic\+Height}}
+\item 
+\mbox{\hyperlink{structvvenc_1_1TRCParameter}{T\+R\+C\+Parameter}} $\ast$ \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a1c83771eaab208a9759847df673b293f}{pic\+Param}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ab13b9106f285947f00b2801086096701}{pic\+Width}}
+\item 
+double \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ad4b745de663253d20459b3744de3ecd1}{qp\+Correction}} \mbox{[}8\mbox{]}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a0537991a88d47e85ab1a38c1a8c828f9}{target\+Bit\+Cnt}} \mbox{[}8\mbox{]}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a4fd2f41f944b9e6ffa3df9815904bed8}{target\+Rate}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a0186bee82f4d469206cfcb18da843a46}{total\+Frames}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a306c1d7f4f6833176d12c84d77b9b412}{two\+Pass}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a180bfc8253ef87d73463f4cdd26143cf}{bits\+Left}}
+\item 
+int \mbox{\hyperlink{classvvenc_1_1EncRCSeq_a1fe0fb155bd34080852231563d329a54}{number\+Of\+Level}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classvvenc_1_1EncRCSeq_ae086e1bbe8b434f83a875d578aa23f4c}{target\+Bits}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 105 of file Rate\+Ctrl.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a3efb04a13787237fcaf583e8cd31e42e}\label{classvvenc_1_1EncRCSeq_a3efb04a13787237fcaf583e8cd31e42e}} 
+\index{EncRCSeq@{EncRCSeq}!EncRCSeq@{EncRCSeq}}
+\index{EncRCSeq@{EncRCSeq}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{EncRCSeq()}{EncRCSeq()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file Rate\+Ctrl.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a60612dfbccf81f1d0286a6e08b44edf4}\label{classvvenc_1_1EncRCSeq_a60612dfbccf81f1d0286a6e08b44edf4}} 
+\index{EncRCSeq@{EncRCSeq}!````~EncRCSeq@{$\sim$EncRCSeq}}
+\index{````~EncRCSeq@{$\sim$EncRCSeq}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{$\sim$EncRCSeq()}{~EncRCSeq()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1EncRCSeq}{Enc\+R\+C\+Seq}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 112 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classvvenc_1_1EncRCSeq_a60612dfbccf81f1d0286a6e08b44edf4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a02fd3c2635e6886180079e82fd389744}\label{classvvenc_1_1EncRCSeq_a02fd3c2635e6886180079e82fd389744}} 
+\index{EncRCSeq@{EncRCSeq}!clipRcAlpha@{clipRcAlpha}}
+\index{clipRcAlpha@{clipRcAlpha}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{clipRcAlpha()}{clipRcAlpha()}}
+{\footnotesize\ttfamily void clip\+Rc\+Alpha (\begin{DoxyParamCaption}\item[{double \&}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Definition at line 273 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a02fd3c2635e6886180079e82fd389744_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a0c6695ec3f5a446595ddcffa3a806638}\label{classvvenc_1_1EncRCSeq_a0c6695ec3f5a446595ddcffa3a806638}} 
+\index{EncRCSeq@{EncRCSeq}!create@{create}}
+\index{create@{create}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void create (\begin{DoxyParamCaption}\item[{bool}]{two\+Pass,  }\item[{int}]{tot\+Frames,  }\item[{int}]{target\+Bitrate,  }\item[{int}]{frame\+Rate,  }\item[{int}]{intra\+Period,  }\item[{int}]{G\+O\+P\+Size,  }\item[{int}]{pic\+Width,  }\item[{int}]{pic\+Height,  }\item[{int}]{L\+C\+U\+Width,  }\item[{int}]{L\+C\+U\+Height,  }\item[{int}]{number\+Of\+Level,  }\item[{int}]{adaptive\+Bit,  }\item[{std\+::list$<$ \mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}} $>$ \&}]{first\+Pass\+Data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classvvenc_1_1EncRCSeq_a0c6695ec3f5a446595ddcffa3a806638_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a0c6695ec3f5a446595ddcffa3a806638_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a3a80b6032f86a56bec74609034b3246f}\label{classvvenc_1_1EncRCSeq_a3a80b6032f86a56bec74609034b3246f}} 
+\index{EncRCSeq@{EncRCSeq}!destroy@{destroy}}
+\index{destroy@{destroy}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 170 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a3a80b6032f86a56bec74609034b3246f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a64065a84a8249e4e0b7b78c07eccdee6}\label{classvvenc_1_1EncRCSeq_a64065a84a8249e4e0b7b78c07eccdee6}} 
+\index{EncRCSeq@{EncRCSeq}!getLeftAverageBits@{getLeftAverageBits}}
+\index{getLeftAverageBits@{getLeftAverageBits}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{getLeftAverageBits()}{getLeftAverageBits()}}
+{\footnotesize\ttfamily int get\+Left\+Average\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 118 of file Rate\+Ctrl.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a64065a84a8249e4e0b7b78c07eccdee6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a7c166c40a06c904af730175d13d28cd9}\label{classvvenc_1_1EncRCSeq_a7c166c40a06c904af730175d13d28cd9}} 
+\index{EncRCSeq@{EncRCSeq}!getTargetBitsFromFirstPass@{getTargetBitsFromFirstPass}}
+\index{getTargetBitsFromFirstPass@{getTargetBitsFromFirstPass}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{getTargetBitsFromFirstPass()}{getTargetBitsFromFirstPass()}}
+{\footnotesize\ttfamily void get\+Target\+Bits\+From\+First\+Pass (\begin{DoxyParamCaption}\item[{const int}]{poc,  }\item[{int \&}]{target\+Bits,  }\item[{double \&}]{frame\+Vs\+Gop\+Ratio,  }\item[{bool \&}]{is\+New\+Scene,  }\item[{bool \&}]{refresh\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Definition at line 246 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a7c166c40a06c904af730175d13d28cd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a75ac805c2469793c17ab6b63d2e6ba62}\label{classvvenc_1_1EncRCSeq_a75ac805c2469793c17ab6b63d2e6ba62}} 
+\index{EncRCSeq@{EncRCSeq}!initBitsRatio@{initBitsRatio}}
+\index{initBitsRatio@{initBitsRatio}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{initBitsRatio()}{initBitsRatio()}}
+{\footnotesize\ttfamily void init\+Bits\+Ratio (\begin{DoxyParamCaption}\item[{int}]{bits\+Ratio\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 191 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a75ac805c2469793c17ab6b63d2e6ba62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_abd81d866fc4161422a991e1a9d18a590}\label{classvvenc_1_1EncRCSeq_abd81d866fc4161422a991e1a9d18a590}} 
+\index{EncRCSeq@{EncRCSeq}!initGOPID2Level@{initGOPID2Level}}
+\index{initGOPID2Level@{initGOPID2Level}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{initGOPID2Level()}{initGOPID2Level()}}
+{\footnotesize\ttfamily void init\+G\+O\+P\+I\+D2\+Level (\begin{DoxyParamCaption}\item[{int}]{G\+O\+P\+I\+D2\+Level\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 199 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_abd81d866fc4161422a991e1a9d18a590_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ae858753d5596f9b39e1a73afe294dd0a}\label{classvvenc_1_1EncRCSeq_ae858753d5596f9b39e1a73afe294dd0a}} 
+\index{EncRCSeq@{EncRCSeq}!initPicPara@{initPicPara}}
+\index{initPicPara@{initPicPara}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{initPicPara()}{initPicPara()}}
+{\footnotesize\ttfamily void init\+Pic\+Para (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TRCParameter}{T\+R\+C\+Parameter}} $\ast$}]{pic\+Para = {\ttfamily \mbox{\hyperlink{CommonDef_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_ae858753d5596f9b39e1a73afe294dd0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a541a5402f3f9aa808585ae50807253e4}\label{classvvenc_1_1EncRCSeq_a541a5402f3f9aa808585ae50807253e4}} 
+\index{EncRCSeq@{EncRCSeq}!setAllBitRatio@{setAllBitRatio}}
+\index{setAllBitRatio@{setAllBitRatio}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{setAllBitRatio()}{setAllBitRatio()}}
+{\footnotesize\ttfamily void set\+All\+Bit\+Ratio (\begin{DoxyParamCaption}\item[{double}]{basic\+Lambda,  }\item[{double $\ast$}]{equa\+CoeffA,  }\item[{double $\ast$}]{equa\+CoeffB }\end{DoxyParamCaption})}
+
+
+
+Definition at line 262 of file Rate\+Ctrl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classvvenc_1_1EncRCSeq_a541a5402f3f9aa808585ae50807253e4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a541a5402f3f9aa808585ae50807253e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a8574b3b8a8bb59ad2ef9ebad57e47add}\label{classvvenc_1_1EncRCSeq_a8574b3b8a8bb59ad2ef9ebad57e47add}} 
+\index{EncRCSeq@{EncRCSeq}!updateAfterPic@{updateAfterPic}}
+\index{updateAfterPic@{updateAfterPic}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{updateAfterPic()}{updateAfterPic()}}
+{\footnotesize\ttfamily void update\+After\+Pic (\begin{DoxyParamCaption}\item[{int}]{bits,  }\item[{int}]{tgt\+Bits }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Rate\+Ctrl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1EncRCSeq_a8574b3b8a8bb59ad2ef9ebad57e47add_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a65f367eacfb22811464a0a5379ffc72e}\label{classvvenc_1_1EncRCSeq_a65f367eacfb22811464a0a5379ffc72e}} 
+\index{EncRCSeq@{EncRCSeq}!actualBitCnt@{actualBitCnt}}
+\index{actualBitCnt@{actualBitCnt}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{actualBitCnt}{actualBitCnt}}
+{\footnotesize\ttfamily uint64\+\_\+t actual\+Bit\+Cnt\mbox{[}8\mbox{]}}
+
+
+
+Definition at line 145 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ab0af52bb2fd3511beea867ee60f1895c}\label{classvvenc_1_1EncRCSeq_ab0af52bb2fd3511beea867ee60f1895c}} 
+\index{EncRCSeq@{EncRCSeq}!adaptiveBits@{adaptiveBits}}
+\index{adaptiveBits@{adaptiveBits}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{adaptiveBits}{adaptiveBits}}
+{\footnotesize\ttfamily int adaptive\+Bits}
+
+
+
+Definition at line 139 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a258d3cda3d572c3f9f8d074846658a78}\label{classvvenc_1_1EncRCSeq_a258d3cda3d572c3f9f8d074846658a78}} 
+\index{EncRCSeq@{EncRCSeq}!averageBits@{averageBits}}
+\index{averageBits@{averageBits}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{averageBits}{averageBits}}
+{\footnotesize\ttfamily int average\+Bits}
+
+
+
+Definition at line 133 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ac77b590e38a8e565a52609ab911451d1}\label{classvvenc_1_1EncRCSeq_ac77b590e38a8e565a52609ab911451d1}} 
+\index{EncRCSeq@{EncRCSeq}!bitDepth@{bitDepth}}
+\index{bitDepth@{bitDepth}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{bitDepth}{bitDepth}}
+{\footnotesize\ttfamily int bit\+Depth}
+
+
+
+Definition at line 140 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a180bfc8253ef87d73463f4cdd26143cf}\label{classvvenc_1_1EncRCSeq_a180bfc8253ef87d73463f4cdd26143cf}} 
+\index{EncRCSeq@{EncRCSeq}!bitsLeft@{bitsLeft}}
+\index{bitsLeft@{bitsLeft}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{bitsLeft}{bitsLeft}}
+{\footnotesize\ttfamily int64\+\_\+t bits\+Left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 157 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a8fef0bac5e1611ffdb8b0b437ea98d8b}\label{classvvenc_1_1EncRCSeq_a8fef0bac5e1611ffdb8b0b437ea98d8b}} 
+\index{EncRCSeq@{EncRCSeq}!bitsRatio@{bitsRatio}}
+\index{bitsRatio@{bitsRatio}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{bitsRatio}{bitsRatio}}
+{\footnotesize\ttfamily int$\ast$ bits\+Ratio}
+
+
+
+Definition at line 150 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a593aab4c0ea65f4f654fa7f6031fb0b7}\label{classvvenc_1_1EncRCSeq_a593aab4c0ea65f4f654fa7f6031fb0b7}} 
+\index{EncRCSeq@{EncRCSeq}!bitsUsed@{bitsUsed}}
+\index{bitsUsed@{bitsUsed}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{bitsUsed}{bitsUsed}}
+{\footnotesize\ttfamily int64\+\_\+t bits\+Used}
+
+
+
+Definition at line 141 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a250403b84afe6f3ee74581c633dd5132}\label{classvvenc_1_1EncRCSeq_a250403b84afe6f3ee74581c633dd5132}} 
+\index{EncRCSeq@{EncRCSeq}!estimatedBitUsage@{estimatedBitUsage}}
+\index{estimatedBitUsage@{estimatedBitUsage}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{estimatedBitUsage}{estimatedBitUsage}}
+{\footnotesize\ttfamily int64\+\_\+t estimated\+Bit\+Usage}
+
+
+
+Definition at line 142 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aebf7716c3a56bb979162b37c9134214c}\label{classvvenc_1_1EncRCSeq_aebf7716c3a56bb979162b37c9134214c}} 
+\index{EncRCSeq@{EncRCSeq}!firstPassData@{firstPassData}}
+\index{firstPassData@{firstPassData}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{firstPassData}{firstPassData}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structvvenc_1_1TRCPassStats}{T\+R\+C\+Pass\+Stats}}$>$ first\+Pass\+Data}
+
+
+
+Definition at line 152 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a177fb8c710ad770bd0faad793da46ab9}\label{classvvenc_1_1EncRCSeq_a177fb8c710ad770bd0faad793da46ab9}} 
+\index{EncRCSeq@{EncRCSeq}!fppParFrames@{fppParFrames}}
+\index{fppParFrames@{fppParFrames}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{fppParFrames}{fppParFrames}}
+{\footnotesize\ttfamily int fpp\+Par\+Frames}
+
+
+
+Definition at line 124 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aebcd9a87b695d3618612fcba5248dbf8}\label{classvvenc_1_1EncRCSeq_aebcd9a87b695d3618612fcba5248dbf8}} 
+\index{EncRCSeq@{EncRCSeq}!frameRate@{frameRate}}
+\index{frameRate@{frameRate}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{frameRate}{frameRate}}
+{\footnotesize\ttfamily int frame\+Rate}
+
+
+
+Definition at line 127 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aa03c2b87d895da2089dcc9e5448b7cd2}\label{classvvenc_1_1EncRCSeq_aa03c2b87d895da2089dcc9e5448b7cd2}} 
+\index{EncRCSeq@{EncRCSeq}!framesCoded@{framesCoded}}
+\index{framesCoded@{framesCoded}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{framesCoded}{framesCoded}}
+{\footnotesize\ttfamily int frames\+Coded}
+
+
+
+Definition at line 137 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a3c7e7f3985dc338448fcb2c5b5ad43c5}\label{classvvenc_1_1EncRCSeq_a3c7e7f3985dc338448fcb2c5b5ad43c5}} 
+\index{EncRCSeq@{EncRCSeq}!framesLeft@{framesLeft}}
+\index{framesLeft@{framesLeft}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{framesLeft}{framesLeft}}
+{\footnotesize\ttfamily int frames\+Left}
+
+
+
+Definition at line 138 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a73b2bf1e6352c4dd8c524005a8b14081}\label{classvvenc_1_1EncRCSeq_a73b2bf1e6352c4dd8c524005a8b14081}} 
+\index{EncRCSeq@{EncRCSeq}!gopID2Level@{gopID2Level}}
+\index{gopID2Level@{gopID2Level}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{gopID2Level}{gopID2Level}}
+{\footnotesize\ttfamily int$\ast$ gop\+I\+D2\+Level}
+
+
+
+Definition at line 151 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ad0db87e2ca0c90c9609a9a82f52174a5}\label{classvvenc_1_1EncRCSeq_ad0db87e2ca0c90c9609a9a82f52174a5}} 
+\index{EncRCSeq@{EncRCSeq}!gopSize@{gopSize}}
+\index{gopSize@{gopSize}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{gopSize}{gopSize}}
+{\footnotesize\ttfamily int gop\+Size}
+
+
+
+Definition at line 128 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a75852d45ae317ffce5daf5eb321b167a}\label{classvvenc_1_1EncRCSeq_a75852d45ae317ffce5daf5eb321b167a}} 
+\index{EncRCSeq@{EncRCSeq}!intraPeriod@{intraPeriod}}
+\index{intraPeriod@{intraPeriod}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{intraPeriod}{intraPeriod}}
+{\footnotesize\ttfamily int intra\+Period}
+
+
+
+Definition at line 134 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a50bbd78bc67e4ea27b0e424823b93e84}\label{classvvenc_1_1EncRCSeq_a50bbd78bc67e4ea27b0e424823b93e84}} 
+\index{EncRCSeq@{EncRCSeq}!lastIntraLambda@{lastIntraLambda}}
+\index{lastIntraLambda@{lastIntraLambda}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{lastIntraLambda}{lastIntraLambda}}
+{\footnotesize\ttfamily double last\+Intra\+Lambda}
+
+
+
+Definition at line 147 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aad35fc85fff0a753627ea3ff5192834c}\label{classvvenc_1_1EncRCSeq_aad35fc85fff0a753627ea3ff5192834c}} 
+\index{EncRCSeq@{EncRCSeq}!lastIntraQP@{lastIntraQP}}
+\index{lastIntraQP@{lastIntraQP}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{lastIntraQP}{lastIntraQP}}
+{\footnotesize\ttfamily int last\+Intra\+QP}
+
+
+
+Definition at line 148 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aa921605b08e04dcf79d24564b00dcc84}\label{classvvenc_1_1EncRCSeq_aa921605b08e04dcf79d24564b00dcc84}} 
+\index{EncRCSeq@{EncRCSeq}!lastLambda@{lastLambda}}
+\index{lastLambda@{lastLambda}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{lastLambda}{lastLambda}}
+{\footnotesize\ttfamily double last\+Lambda}
+
+
+
+Definition at line 143 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a4e3179468eeee6f92e2a0641290fe74c}\label{classvvenc_1_1EncRCSeq_a4e3179468eeee6f92e2a0641290fe74c}} 
+\index{EncRCSeq@{EncRCSeq}!lcuHeight@{lcuHeight}}
+\index{lcuHeight@{lcuHeight}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{lcuHeight}{lcuHeight}}
+{\footnotesize\ttfamily int lcu\+Height}
+
+
+
+Definition at line 132 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ab3bd8609092be43aa7654c97fb5aa668}\label{classvvenc_1_1EncRCSeq_ab3bd8609092be43aa7654c97fb5aa668}} 
+\index{EncRCSeq@{EncRCSeq}!lcuWidth@{lcuWidth}}
+\index{lcuWidth@{lcuWidth}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{lcuWidth}{lcuWidth}}
+{\footnotesize\ttfamily int lcu\+Width}
+
+
+
+Definition at line 131 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a516a779a4b162eddb49c63d03b75c2a9}\label{classvvenc_1_1EncRCSeq_a516a779a4b162eddb49c63d03b75c2a9}} 
+\index{EncRCSeq@{EncRCSeq}!numberOfLCU@{numberOfLCU}}
+\index{numberOfLCU@{numberOfLCU}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{numberOfLCU}{numberOfLCU}}
+{\footnotesize\ttfamily int number\+Of\+L\+CU}
+
+
+
+Definition at line 136 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a1fe0fb155bd34080852231563d329a54}\label{classvvenc_1_1EncRCSeq_a1fe0fb155bd34080852231563d329a54}} 
+\index{EncRCSeq@{EncRCSeq}!numberOfLevel@{numberOfLevel}}
+\index{numberOfLevel@{numberOfLevel}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{numberOfLevel}{numberOfLevel}}
+{\footnotesize\ttfamily int number\+Of\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 155 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_aae0bdbf90049bf94c419c0918b5e1d3d}\label{classvvenc_1_1EncRCSeq_aae0bdbf90049bf94c419c0918b5e1d3d}} 
+\index{EncRCSeq@{EncRCSeq}!numberOfPixel@{numberOfPixel}}
+\index{numberOfPixel@{numberOfPixel}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{numberOfPixel}{numberOfPixel}}
+{\footnotesize\ttfamily int number\+Of\+Pixel}
+
+
+
+Definition at line 135 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_abc77673ab15d1f85309626e27061db57}\label{classvvenc_1_1EncRCSeq_abc77673ab15d1f85309626e27061db57}} 
+\index{EncRCSeq@{EncRCSeq}!picHeight@{picHeight}}
+\index{picHeight@{picHeight}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{picHeight}{picHeight}}
+{\footnotesize\ttfamily int pic\+Height}
+
+
+
+Definition at line 130 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a1c83771eaab208a9759847df673b293f}\label{classvvenc_1_1EncRCSeq_a1c83771eaab208a9759847df673b293f}} 
+\index{EncRCSeq@{EncRCSeq}!picParam@{picParam}}
+\index{picParam@{picParam}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{picParam}{picParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvvenc_1_1TRCParameter}{T\+R\+C\+Parameter}}$\ast$ pic\+Param}
+
+
+
+Definition at line 149 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ab13b9106f285947f00b2801086096701}\label{classvvenc_1_1EncRCSeq_ab13b9106f285947f00b2801086096701}} 
+\index{EncRCSeq@{EncRCSeq}!picWidth@{picWidth}}
+\index{picWidth@{picWidth}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{picWidth}{picWidth}}
+{\footnotesize\ttfamily int pic\+Width}
+
+
+
+Definition at line 129 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ad4b745de663253d20459b3744de3ecd1}\label{classvvenc_1_1EncRCSeq_ad4b745de663253d20459b3744de3ecd1}} 
+\index{EncRCSeq@{EncRCSeq}!qpCorrection@{qpCorrection}}
+\index{qpCorrection@{qpCorrection}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{qpCorrection}{qpCorrection}}
+{\footnotesize\ttfamily double qp\+Correction\mbox{[}8\mbox{]}}
+
+
+
+Definition at line 144 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a0537991a88d47e85ab1a38c1a8c828f9}\label{classvvenc_1_1EncRCSeq_a0537991a88d47e85ab1a38c1a8c828f9}} 
+\index{EncRCSeq@{EncRCSeq}!targetBitCnt@{targetBitCnt}}
+\index{targetBitCnt@{targetBitCnt}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{targetBitCnt}{targetBitCnt}}
+{\footnotesize\ttfamily uint64\+\_\+t target\+Bit\+Cnt\mbox{[}8\mbox{]}}
+
+
+
+Definition at line 146 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_ae086e1bbe8b434f83a875d578aa23f4c}\label{classvvenc_1_1EncRCSeq_ae086e1bbe8b434f83a875d578aa23f4c}} 
+\index{EncRCSeq@{EncRCSeq}!targetBits@{targetBits}}
+\index{targetBits@{targetBits}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{targetBits}{targetBits}}
+{\footnotesize\ttfamily int64\+\_\+t target\+Bits\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 156 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a4fd2f41f944b9e6ffa3df9815904bed8}\label{classvvenc_1_1EncRCSeq_a4fd2f41f944b9e6ffa3df9815904bed8}} 
+\index{EncRCSeq@{EncRCSeq}!targetRate@{targetRate}}
+\index{targetRate@{targetRate}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{targetRate}{targetRate}}
+{\footnotesize\ttfamily int target\+Rate}
+
+
+
+Definition at line 126 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a0186bee82f4d469206cfcb18da843a46}\label{classvvenc_1_1EncRCSeq_a0186bee82f4d469206cfcb18da843a46}} 
+\index{EncRCSeq@{EncRCSeq}!totalFrames@{totalFrames}}
+\index{totalFrames@{totalFrames}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{totalFrames}{totalFrames}}
+{\footnotesize\ttfamily int total\+Frames}
+
+
+
+Definition at line 125 of file Rate\+Ctrl.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1EncRCSeq_a306c1d7f4f6833176d12c84d77b9b412}\label{classvvenc_1_1EncRCSeq_a306c1d7f4f6833176d12c84d77b9b412}} 
+\index{EncRCSeq@{EncRCSeq}!twoPass@{twoPass}}
+\index{twoPass@{twoPass}!EncRCSeq@{EncRCSeq}}
+\doxysubsubsection{\texorpdfstring{twoPass}{twoPass}}
+{\footnotesize\ttfamily bool two\+Pass}
+
+
+
+Definition at line 123 of file Rate\+Ctrl.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8h}{Rate\+Ctrl.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Encoder\+Lib/\mbox{\hyperlink{RateCtrl_8cpp}{Rate\+Ctrl.\+cpp}}\end{DoxyCompactItemize}

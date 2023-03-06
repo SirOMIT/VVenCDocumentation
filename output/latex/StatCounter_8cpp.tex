@@ -1,0 +1,112 @@
+\hypertarget{StatCounter_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Stat\+Counter.cpp File Reference}
+\label{StatCounter_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/StatCounter.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/StatCounter.cpp}}
+{\ttfamily \#include \char`\"{}Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Stat\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdarg$>$}\newline
+Include dependency graph for Stat\+Counter.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{StatCounter_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_ab8b02c60c4b0fffc409d11847636777a}{I\+D\+X\+\_\+\+T\+O\+\_\+\+S\+I\+ZE}}(\+\_\+i)~(1$<$$<$\+\_\+i)
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_a69c5533d4d0e49311a2bc33e89ad2928}{M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}~2
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_a7fa9168f1e8e400ee896af4f1f3a838d}{O\+U\+T\+P\+UT}}(...)~\{ sprintf( c\+Str, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ ); m\+\_\+str $<$$<$ c\+Str; \}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_ae1343ddc75854eb629a182649afa819a}{O\+U\+T\+P\+U\+T\+\_\+\+C\+O\+N\+D\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX}}(\+\_\+stype,  \+\_\+idx, ...)~\{ sprintf( c\+Str, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ ); m\+\_\+str $<$$<$ c\+Str; \}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_ab18be9e5fc192067a9aade6a0b533446}{O\+U\+T\+S\+TR}}(\+\_\+w, ...)~\{ m\+\_\+str $<$$<$ std\+::setw( \+\_\+w ) $<$$<$ \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+; \}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_a2b66b7a84ccd15380e8216e7e73e4554}{O\+U\+T\+S\+T\+RC}}(\+\_\+w,  \+\_\+c)~\{ m\+\_\+str $<$$<$ std\+::setfill( \+\_\+c ) $<$$<$ std\+::setw( \+\_\+w  ) $<$$<$ \+\_\+c $<$$<$ std\+::setfill( \textquotesingle{} \textquotesingle{} ); \}
+\item 
+\#define \mbox{\hyperlink{StatCounter_8cpp_a0400cf7353c73045b5646e65a4b8850e}{O\+U\+T\+S\+T\+RF}}(\+\_\+w,  \+\_\+p, ...)~\{ m\+\_\+str $<$$<$ std\+::fixed $<$$<$ std\+::setw( \+\_\+w ) $<$$<$ std\+::setprecision(\+\_\+p) $<$$<$ \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+; \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{StatCounter_8cpp_ab8b02c60c4b0fffc409d11847636777a}\label{StatCounter_8cpp_ab8b02c60c4b0fffc409d11847636777a}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!IDX\_TO\_SIZE@{IDX\_TO\_SIZE}}
+\index{IDX\_TO\_SIZE@{IDX\_TO\_SIZE}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{IDX\_TO\_SIZE}{IDX\_TO\_SIZE}}
+{\footnotesize\ttfamily \#define I\+D\+X\+\_\+\+T\+O\+\_\+\+S\+I\+ZE(\begin{DoxyParamCaption}\item[{}]{\+\_\+i }\end{DoxyParamCaption})~(1$<$$<$\+\_\+i)}
+
+
+
+Definition at line 68 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_a69c5533d4d0e49311a2bc33e89ad2928}\label{StatCounter_8cpp_a69c5533d4d0e49311a2bc33e89ad2928}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!MIN\_SIZE\_IDX@{MIN\_SIZE\_IDX}}
+\index{MIN\_SIZE\_IDX@{MIN\_SIZE\_IDX}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{MIN\_SIZE\_IDX}{MIN\_SIZE\_IDX}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX~2}
+
+
+
+Definition at line 67 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_a7fa9168f1e8e400ee896af4f1f3a838d}\label{StatCounter_8cpp_a7fa9168f1e8e400ee896af4f1f3a838d}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!OUTPUT@{OUTPUT}}
+\index{OUTPUT@{OUTPUT}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTPUT}{OUTPUT}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+UT(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~\{ sprintf( c\+Str, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ ); m\+\_\+str $<$$<$ c\+Str; \}}
+
+
+
+Definition at line 62 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_ae1343ddc75854eb629a182649afa819a}\label{StatCounter_8cpp_ae1343ddc75854eb629a182649afa819a}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!OUTPUT\_COND\_SIZE\_IDX@{OUTPUT\_COND\_SIZE\_IDX}}
+\index{OUTPUT\_COND\_SIZE\_IDX@{OUTPUT\_COND\_SIZE\_IDX}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTPUT\_COND\_SIZE\_IDX}{OUTPUT\_COND\_SIZE\_IDX}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+U\+T\+\_\+\+C\+O\+N\+D\+\_\+\+S\+I\+Z\+E\+\_\+\+I\+DX(\begin{DoxyParamCaption}\item[{}]{\+\_\+stype,  }\item[{}]{\+\_\+idx,  }\item[{}]{... }\end{DoxyParamCaption})~\{ sprintf( c\+Str, \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+ ); m\+\_\+str $<$$<$ c\+Str; \}}
+
+
+
+Definition at line 66 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_ab18be9e5fc192067a9aade6a0b533446}\label{StatCounter_8cpp_ab18be9e5fc192067a9aade6a0b533446}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!OUTSTR@{OUTSTR}}
+\index{OUTSTR@{OUTSTR}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTSTR}{OUTSTR}}
+{\footnotesize\ttfamily \#define O\+U\+T\+S\+TR(\begin{DoxyParamCaption}\item[{}]{\+\_\+w,  }\item[{}]{... }\end{DoxyParamCaption})~\{ m\+\_\+str $<$$<$ std\+::setw( \+\_\+w ) $<$$<$ \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+; \}}
+
+
+
+Definition at line 63 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_a2b66b7a84ccd15380e8216e7e73e4554}\label{StatCounter_8cpp_a2b66b7a84ccd15380e8216e7e73e4554}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!OUTSTRC@{OUTSTRC}}
+\index{OUTSTRC@{OUTSTRC}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTSTRC}{OUTSTRC}}
+{\footnotesize\ttfamily \#define O\+U\+T\+S\+T\+RC(\begin{DoxyParamCaption}\item[{}]{\+\_\+w,  }\item[{}]{\+\_\+c }\end{DoxyParamCaption})~\{ m\+\_\+str $<$$<$ std\+::setfill( \+\_\+c ) $<$$<$ std\+::setw( \+\_\+w  ) $<$$<$ \+\_\+c $<$$<$ std\+::setfill( \textquotesingle{} \textquotesingle{} ); \}}
+
+
+
+Definition at line 64 of file Stat\+Counter.\+cpp.
+
+\mbox{\Hypertarget{StatCounter_8cpp_a0400cf7353c73045b5646e65a4b8850e}\label{StatCounter_8cpp_a0400cf7353c73045b5646e65a4b8850e}} 
+\index{StatCounter.cpp@{StatCounter.cpp}!OUTSTRF@{OUTSTRF}}
+\index{OUTSTRF@{OUTSTRF}!StatCounter.cpp@{StatCounter.cpp}}
+\doxysubsubsection{\texorpdfstring{OUTSTRF}{OUTSTRF}}
+{\footnotesize\ttfamily \#define O\+U\+T\+S\+T\+RF(\begin{DoxyParamCaption}\item[{}]{\+\_\+w,  }\item[{}]{\+\_\+p,  }\item[{}]{... }\end{DoxyParamCaption})~\{ m\+\_\+str $<$$<$ std\+::fixed $<$$<$ std\+::setw( \+\_\+w ) $<$$<$ std\+::setprecision(\+\_\+p) $<$$<$ \+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+; \}}
+
+
+
+Definition at line 65 of file Stat\+Counter.\+cpp.
+

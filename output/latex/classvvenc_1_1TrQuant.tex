@@ -1,0 +1,924 @@
+\hypertarget{classvvenc_1_1TrQuant}{}\doxysection{Tr\+Quant}
+\label{classvvenc_1_1TrQuant}\index{TrQuant@{TrQuant}}
+
+
+transform and quantization class  
+
+
+
+
+{\ttfamily \#include \char`\"{}Tr\+Quant.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Tr\+Quant\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classvvenc_1_1TrQuant__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_afab6d47e9590ad940e297b665c45169f}{get\+Lambdas}} (double(\&lambdas)\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]}) const
+\item 
+\mbox{\hyperlink{classvvenc_1_1DepQuant}{Dep\+Quant}} $\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a87e6c075e1007002eeb629eff733c322}{get\+Quant}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_ae88b42646e4ac67be7437f88406d2285}{scale\+Lambda}} (const double scale)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a03afb3eb7f04ff2cb52376063d842a94}{select\+Lambda}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a72e58ebf155275f2bc449293684972b1}{set\+Lambdas}} (const double lambdas\mbox{[}\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0faad77bdcaef23bd1b468f38e6ac85c521}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+MP}}\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1TrQuant_add3f3b55471c7a8f7235827dee17ff50}{m\+\_\+b\+Enc}}
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} $\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a3f28fc08b3817f8f32bc631d3a39dca8}{m\+\_\+blk}}
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} $\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a42e4fa1666b4fdc49783154c134fb155}{m\+\_\+pl\+Temp\+Coeff}}
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1TrQuant_aa60b68bf2c925387a2f610de33aced39}{m\+\_\+scaling\+List\+Enabled}}
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} $\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_af826466e37fb582b795f81caf03c47cc}{m\+\_\+tmp}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_aceb59c2a7145e754be32bf07cbe02389}{x\+Get\+Coeff\+Energy}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&comp\+ID, const \mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&coeffs, double $\ast$diag\+Ratio, double $\ast$hor\+Ver\+Ratio)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$($\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a7c7e84cabc03dfd1cca0588db7d16d19}{m\+\_\+fwd\+I\+CT}} )(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)
+\item 
+std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$($\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_abd0faf71f7fcc452cd5a30d9bf82226c}{m\+\_\+fwd\+I\+C\+T\+Mem}} \mbox{[}1+2 $\ast$\mbox{\hyperlink{classvvenc_1_1TrQuant_aff588b15ba4683661a56be7a9999320d}{max\+Abs\+Ict\+Mode}}\mbox{]})(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)
+\item 
+void($\ast$$\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_ac9d13b77838e8ded29ce81589a3b2e83}{m\+\_\+inv\+I\+CT}} )(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)
+\item 
+void($\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a8fa010652d1b1dfa79428b506be409f1}{m\+\_\+inv\+I\+C\+T\+Mem}} \mbox{[}1+2 $\ast$\mbox{\hyperlink{classvvenc_1_1TrQuant_aff588b15ba4683661a56be7a9999320d}{max\+Abs\+Ict\+Mode}}\mbox{]})(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \mbox{\hyperlink{classvvenc_1_1TrQuant_a06ee809c6c316208172c317416987ecd}{m\+\_\+mts\+Coeffs}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a4f406491f3eb78a23d1dc00dee540704}{N\+U\+M\+\_\+\+T\+R\+A\+F\+O\+\_\+\+M\+O\+D\+E\+S\+\_\+\+M\+TS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}
+\item 
+\mbox{\hyperlink{classvvenc_1_1DepQuant}{Dep\+Quant}} $\ast$ \mbox{\hyperlink{classvvenc_1_1TrQuant_abbef708c185cc02fd48725dd00cd62b5}{m\+\_\+quant}}
+\begin{DoxyCompactList}\small\item\em Quantizer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \mbox{\hyperlink{classvvenc_1_1TrQuant_a76081fc2619b59b5248030e8fd13408c}{m\+\_\+temp\+In\+Matrix}} \mbox{[}48\mbox{]}
+\item 
+\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \mbox{\hyperlink{classvvenc_1_1TrQuant_abd03852a7242175cc50c39b6d1d38089}{m\+\_\+temp\+Out\+Matrix}} \mbox{[}48\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{classvvenc_1_1TrQuant_aff588b15ba4683661a56be7a9999320d}{max\+Abs\+Ict\+Mode}} = 3
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1TrQuant_a0e5a79118e4f25fb22a4e8f01bf5eb47}{Tr\+Quant}} ()
+\item 
+\mbox{\hyperlink{classvvenc_1_1TrQuant_aae098e68fca39bcef7b5a6621fdbdfb8}{$\sim$\+Tr\+Quant}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a7e79c99719be45856d155cccd3dc33e1}{init}} (const \mbox{\hyperlink{classvvenc_1_1Quant}{Quant}} $\ast$other\+Quant, const int rdoq=0, const bool b\+Use\+R\+D\+O\+Q\+TS=false, const bool use\+Selective\+R\+D\+OQ=false, const bool scaling\+Lists\+Enabled=false, const bool b\+Enc=false, const bool use\+Transform\+Skip\+Fast=false, const int thr\+Value=8)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_ade34c28b491ba61af93501c1fd5abcd3}{inv\+Transform\+NxN}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Resi, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+Q\+Ps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_aa75cb739cc3a76b68078e6696558b79d}{transform\+NxN}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&ui\+Abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx, const bool load\+Tr=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_ac402a78434b540bc32cc370e4a69aace}{checktransforms\+NxN}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, std\+::vector$<$ \mbox{\hyperlink{namespacevvenc_ad62ea957935587c4a14c133ba59d63ba}{Tr\+Mode}} $>$ $\ast$tr\+Modes, const int max\+Cand, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID=\mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa3b276b5937d942b2fe5cbfa69d5a016a}{C\+O\+M\+P\+\_\+Y}})
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a05f1ce6070ab15e4a6a6ee621891926c}{inv\+Transform\+I\+CT}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+Cb, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+Cr)
+\item 
+std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a95ea469291deded93ea7f78254de8f54}{fwd\+Transform\+I\+CT}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+Cb, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+Cr, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+C1, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&res\+C2, int joint\+Cb\+Cr=-\/1)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classvvenc_1_1TrQuant_a85398aca013c701f21594ab422bec5e7}{select\+I\+C\+T\+Candidates}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{structvvenc_1_1CompStorage}{Comp\+Storage}} $\ast$res\+Cb, \mbox{\hyperlink{structvvenc_1_1CompStorage}{Comp\+Storage}} $\ast$res\+Cr)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1TrQuant_a5b5029676d24071157e09c05925411ae}{x\+Get\+L\+F\+N\+S\+T\+Intra\+Mode}} (const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&tu\+Area, const uint32\+\_\+t dir\+Mode)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1TrQuant_a30369c2693b3cc399f9a576ec843fb76}{x\+Get\+Transpose\+Flag}} (uint32\+\_\+t intra\+Mode)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_ae0a1cf94f84132e226732532ed0bfbf7}{x\+Fwd\+Lfnst}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const bool load\+Tr=false)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a60e24196175022979d3e3b710cce3923}{x\+Inv\+Lfnst}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a7569a265003481b7c3eca8cb3a0285a4}{x\+Fwd\+Lfnst\+NxN}} (int $\ast$src, int $\ast$dst, const uint32\+\_\+t mode, const uint32\+\_\+t index, const uint32\+\_\+t size, int zero\+Out\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a9a3b8bffdd3c5f3a80d26f00409e2728}{x\+Inv\+Lfnst\+NxN}} (int $\ast$src, int $\ast$dst, const uint32\+\_\+t mode, const uint32\+\_\+t index, const uint32\+\_\+t size, int zero\+Out\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a1539653e6b573c8860ab74d90fb56bbd}{x\+Set\+Tr\+Types}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const int width, const int height, int \&tr\+Type\+Hor, int \&tr\+Type\+Ver)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a4d22619c477cc2f951ed26aad997dd7f}{xT}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&resi, \mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&dst\+Coeff, const int width, const int height)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a8452675699cff8e3e66a1588ea356d51}{x\+Quant}} (\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&p\+Src, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&ui\+Abs\+Sum, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP, const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&ctx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a40731eed889e10cf8e2af9121d8a4be4}{x\+De\+Quant}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, \mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&dst\+Coeff, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&comp\+ID, const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&c\+QP)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_a5c092a04954f8ac3279b6fc254829b5c}{x\+IT}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&p\+Coeff, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Residual)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_aba8ba190351d255aeebf5ef9ab314c7e}{x\+Transform\+Skip}} (const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&comp\+ID, const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&resi, \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} $\ast$ps\+Coeff)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1TrQuant_add81bd40d44e18e5805d760a1e1ab881}{x\+I\+Transform\+Skip}} (const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&pl\+Coef, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&p\+Residual, const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&tu, const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} component)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+transform and quantization class 
+
+Definition at line 75 of file Tr\+Quant.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a0e5a79118e4f25fb22a4e8f01bf5eb47}\label{classvvenc_1_1TrQuant_a0e5a79118e4f25fb22a4e8f01bf5eb47}} 
+\index{TrQuant@{TrQuant}!TrQuant@{TrQuant}}
+\index{TrQuant@{TrQuant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{TrQuant()}{TrQuant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 173 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a0e5a79118e4f25fb22a4e8f01bf5eb47_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aae098e68fca39bcef7b5a6621fdbdfb8}\label{classvvenc_1_1TrQuant_aae098e68fca39bcef7b5a6621fdbdfb8}} 
+\index{TrQuant@{TrQuant}!````~TrQuant@{$\sim$TrQuant}}
+\index{````~TrQuant@{$\sim$TrQuant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{$\sim$TrQuant()}{~TrQuant()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1TrQuant}{Tr\+Quant}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 200 of file Tr\+Quant.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_ac402a78434b540bc32cc370e4a69aace}\label{classvvenc_1_1TrQuant_ac402a78434b540bc32cc370e4a69aace}} 
+\index{TrQuant@{TrQuant}!checktransformsNxN@{checktransformsNxN}}
+\index{checktransformsNxN@{checktransformsNxN}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{checktransformsNxN()}{checktransformsNxN()}}
+{\footnotesize\ttfamily void checktransforms\+NxN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{std\+::vector$<$ \mbox{\hyperlink{namespacevvenc_ad62ea957935587c4a14c133ba59d63ba}{Tr\+Mode}} $>$ $\ast$}]{tr\+Modes,  }\item[{const int}]{max\+Cand,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID = {\ttfamily \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0fa3b276b5937d942b2fe5cbfa69d5a016a}{C\+O\+M\+P\+\_\+Y}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 704 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ac402a78434b540bc32cc370e4a69aace_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ac402a78434b540bc32cc370e4a69aace_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a95ea469291deded93ea7f78254de8f54}\label{classvvenc_1_1TrQuant_a95ea469291deded93ea7f78254de8f54}} 
+\index{TrQuant@{TrQuant}!fwdTransformICT@{fwdTransformICT}}
+\index{fwdTransformICT@{fwdTransformICT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{fwdTransformICT()}{fwdTransformICT()}}
+{\footnotesize\ttfamily std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ fwd\+Transform\+I\+CT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+Cb,  }\item[{const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+Cr,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+C1,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+C2,  }\item[{int}]{joint\+Cb\+Cr = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 295 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classvvenc_1_1TrQuant_a95ea469291deded93ea7f78254de8f54_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a95ea469291deded93ea7f78254de8f54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_afab6d47e9590ad940e297b665c45169f}\label{classvvenc_1_1TrQuant_afab6d47e9590ad940e297b665c45169f}} 
+\index{TrQuant@{TrQuant}!getLambdas@{getLambdas}}
+\index{getLambdas@{getLambdas}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{getLambdas()}{getLambdas()}}
+{\footnotesize\ttfamily void get\+Lambdas (\begin{DoxyParamCaption}\item[{double(\&)}]{lambdas\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 104 of file Tr\+Quant.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvvenc_1_1TrQuant_afab6d47e9590ad940e297b665c45169f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a87e6c075e1007002eeb629eff733c322}\label{classvvenc_1_1TrQuant_a87e6c075e1007002eeb629eff733c322}} 
+\index{TrQuant@{TrQuant}!getQuant@{getQuant}}
+\index{getQuant@{getQuant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{getQuant()}{getQuant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DepQuant}{Dep\+Quant}}$\ast$ get\+Quant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a7e79c99719be45856d155cccd3dc33e1}\label{classvvenc_1_1TrQuant_a7e79c99719be45856d155cccd3dc33e1}} 
+\index{TrQuant@{TrQuant}!init@{init}}
+\index{init@{init}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Quant}{Quant}} $\ast$}]{other\+Quant,  }\item[{const int}]{rdoq = {\ttfamily 0},  }\item[{const bool}]{b\+Use\+R\+D\+O\+Q\+TS = {\ttfamily false},  }\item[{const bool}]{use\+Selective\+R\+D\+OQ = {\ttfamily false},  }\item[{const bool}]{scaling\+Lists\+Enabled = {\ttfamily false},  }\item[{const bool}]{b\+Enc = {\ttfamily false},  }\item[{const bool}]{use\+Transform\+Skip\+Fast = {\ttfamily false},  }\item[{const int}]{thr\+Value = {\ttfamily 8} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 237 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a7e79c99719be45856d155cccd3dc33e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a7e79c99719be45856d155cccd3dc33e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a05f1ce6070ab15e4a6a6ee621891926c}\label{classvvenc_1_1TrQuant_a05f1ce6070ab15e4a6a6ee621891926c}} 
+\index{TrQuant@{TrQuant}!invTransformICT@{invTransformICT}}
+\index{invTransformICT@{invTransformICT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{invTransformICT()}{invTransformICT()}}
+{\footnotesize\ttfamily void inv\+Transform\+I\+CT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+Cb,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{res\+Cr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 303 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classvvenc_1_1TrQuant_a05f1ce6070ab15e4a6a6ee621891926c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a05f1ce6070ab15e4a6a6ee621891926c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_ade34c28b491ba61af93501c1fd5abcd3}\label{classvvenc_1_1TrQuant_ade34c28b491ba61af93501c1fd5abcd3}} 
+\index{TrQuant@{TrQuant}!invTransformNxN@{invTransformNxN}}
+\index{invTransformNxN@{invTransformNxN}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{invTransformNxN()}{invTransformNxN()}}
+{\footnotesize\ttfamily void inv\+Transform\+NxN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Resi,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+Q\+Ps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 263 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ade34c28b491ba61af93501c1fd5abcd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ade34c28b491ba61af93501c1fd5abcd3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_ae88b42646e4ac67be7437f88406d2285}\label{classvvenc_1_1TrQuant_ae88b42646e4ac67be7437f88406d2285}} 
+\index{TrQuant@{TrQuant}!scaleLambda@{scaleLambda}}
+\index{scaleLambda@{scaleLambda}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{scaleLambda()}{scaleLambda()}}
+{\footnotesize\ttfamily void scale\+Lambda (\begin{DoxyParamCaption}\item[{const double}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Tr\+Quant.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classvvenc_1_1TrQuant_ae88b42646e4ac67be7437f88406d2285_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ae88b42646e4ac67be7437f88406d2285_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a85398aca013c701f21594ab422bec5e7}\label{classvvenc_1_1TrQuant_a85398aca013c701f21594ab422bec5e7}} 
+\index{TrQuant@{TrQuant}!selectICTCandidates@{selectICTCandidates}}
+\index{selectICTCandidates@{selectICTCandidates}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{selectICTCandidates()}{selectICTCandidates()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ select\+I\+C\+T\+Candidates (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{structvvenc_1_1CompStorage}{Comp\+Storage}} $\ast$}]{res\+Cb,  }\item[{\mbox{\hyperlink{structvvenc_1_1CompStorage}{Comp\+Storage}} $\ast$}]{res\+Cr }\end{DoxyParamCaption})}
+
+
+
+Definition at line 309 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a85398aca013c701f21594ab422bec5e7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a85398aca013c701f21594ab422bec5e7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a03afb3eb7f04ff2cb52376063d842a94}\label{classvvenc_1_1TrQuant_a03afb3eb7f04ff2cb52376063d842a94}} 
+\index{TrQuant@{TrQuant}!selectLambda@{selectLambda}}
+\index{selectLambda@{selectLambda}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{selectLambda()}{selectLambda()}}
+{\footnotesize\ttfamily void select\+Lambda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 103 of file Tr\+Quant.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classvvenc_1_1TrQuant_a03afb3eb7f04ff2cb52376063d842a94_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a03afb3eb7f04ff2cb52376063d842a94_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a72e58ebf155275f2bc449293684972b1}\label{classvvenc_1_1TrQuant_a72e58ebf155275f2bc449293684972b1}} 
+\index{TrQuant@{TrQuant}!setLambdas@{setLambdas}}
+\index{setLambdas@{setLambdas}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{setLambdas()}{setLambdas()}}
+{\footnotesize\ttfamily void set\+Lambdas (\begin{DoxyParamCaption}\item[{const double}]{lambdas\mbox{[}\+M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+C\+O\+M\+P\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 102 of file Tr\+Quant.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classvvenc_1_1TrQuant_a72e58ebf155275f2bc449293684972b1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classvvenc_1_1TrQuant_a72e58ebf155275f2bc449293684972b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aa75cb739cc3a76b68078e6696558b79d}\label{classvvenc_1_1TrQuant_aa75cb739cc3a76b68078e6696558b79d}} 
+\index{TrQuant@{TrQuant}!transformNxN@{transformNxN}}
+\index{transformNxN@{transformNxN}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{transformNxN()}{transformNxN()}}
+{\footnotesize\ttfamily void transform\+NxN (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{ui\+Abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx,  }\item[{const bool}]{load\+Tr = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 654 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_aa75cb739cc3a76b68078e6696558b79d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_aa75cb739cc3a76b68078e6696558b79d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a40731eed889e10cf8e2af9121d8a4be4}\label{classvvenc_1_1TrQuant_a40731eed889e10cf8e2af9121d8a4be4}} 
+\index{TrQuant@{TrQuant}!xDeQuant@{xDeQuant}}
+\index{xDeQuant@{xDeQuant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xDeQuant()}{xDeQuant()}}
+{\footnotesize\ttfamily void x\+De\+Quant (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{\mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&}]{dst\+Coeff,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&}]{comp\+ID,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 228 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a40731eed889e10cf8e2af9121d8a4be4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a40731eed889e10cf8e2af9121d8a4be4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_ae0a1cf94f84132e226732532ed0bfbf7}\label{classvvenc_1_1TrQuant_ae0a1cf94f84132e226732532ed0bfbf7}} 
+\index{TrQuant@{TrQuant}!xFwdLfnst@{xFwdLfnst}}
+\index{xFwdLfnst@{xFwdLfnst}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xFwdLfnst()}{xFwdLfnst()}}
+{\footnotesize\ttfamily void x\+Fwd\+Lfnst (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const bool}]{load\+Tr = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 963 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ae0a1cf94f84132e226732532ed0bfbf7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_ae0a1cf94f84132e226732532ed0bfbf7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a7569a265003481b7c3eca8cb3a0285a4}\label{classvvenc_1_1TrQuant_a7569a265003481b7c3eca8cb3a0285a4}} 
+\index{TrQuant@{TrQuant}!xFwdLfnstNxN@{xFwdLfnstNxN}}
+\index{xFwdLfnstNxN@{xFwdLfnstNxN}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xFwdLfnstNxN()}{xFwdLfnstNxN()}}
+{\footnotesize\ttfamily void x\+Fwd\+Lfnst\+NxN (\begin{DoxyParamCaption}\item[{int $\ast$}]{src,  }\item[{int $\ast$}]{dst,  }\item[{const uint32\+\_\+t}]{mode,  }\item[{const uint32\+\_\+t}]{index,  }\item[{const uint32\+\_\+t}]{size,  }\item[{int}]{zero\+Out\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 773 of file Tr\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a7569a265003481b7c3eca8cb3a0285a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aceb59c2a7145e754be32bf07cbe02389}\label{classvvenc_1_1TrQuant_aceb59c2a7145e754be32bf07cbe02389}} 
+\index{TrQuant@{TrQuant}!xGetCoeffEnergy@{xGetCoeffEnergy}}
+\index{xGetCoeffEnergy@{xGetCoeffEnergy}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xGetCoeffEnergy()}{xGetCoeffEnergy()}}
+{\footnotesize\ttfamily void x\+Get\+Coeff\+Energy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&}]{coeffs,  }\item[{double $\ast$}]{diag\+Ratio,  }\item[{double $\ast$}]{hor\+Ver\+Ratio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a5b5029676d24071157e09c05925411ae}\label{classvvenc_1_1TrQuant_a5b5029676d24071157e09c05925411ae}} 
+\index{TrQuant@{TrQuant}!xGetLFNSTIntraMode@{xGetLFNSTIntraMode}}
+\index{xGetLFNSTIntraMode@{xGetLFNSTIntraMode}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xGetLFNSTIntraMode()}{xGetLFNSTIntraMode()}}
+{\footnotesize\ttfamily uint32\+\_\+t x\+Get\+L\+F\+N\+S\+T\+Intra\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1Area}{Area}} \&}]{tu\+Area,  }\item[{const uint32\+\_\+t}]{dir\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 826 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classvvenc_1_1TrQuant_a5b5029676d24071157e09c05925411ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a5b5029676d24071157e09c05925411ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a30369c2693b3cc399f9a576ec843fb76}\label{classvvenc_1_1TrQuant_a30369c2693b3cc399f9a576ec843fb76}} 
+\index{TrQuant@{TrQuant}!xGetTransposeFlag@{xGetTransposeFlag}}
+\index{xGetTransposeFlag@{xGetTransposeFlag}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xGetTransposeFlag()}{xGetTransposeFlag()}}
+{\footnotesize\ttfamily bool x\+Get\+Transpose\+Flag (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{intra\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 851 of file Tr\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a30369c2693b3cc399f9a576ec843fb76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a60e24196175022979d3e3b710cce3923}\label{classvvenc_1_1TrQuant_a60e24196175022979d3e3b710cce3923}} 
+\index{TrQuant@{TrQuant}!xInvLfnst@{xInvLfnst}}
+\index{xInvLfnst@{xInvLfnst}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xInvLfnst()}{xInvLfnst()}}
+{\footnotesize\ttfamily void x\+Inv\+Lfnst (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 858 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a60e24196175022979d3e3b710cce3923_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a60e24196175022979d3e3b710cce3923_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a9a3b8bffdd3c5f3a80d26f00409e2728}\label{classvvenc_1_1TrQuant_a9a3b8bffdd3c5f3a80d26f00409e2728}} 
+\index{TrQuant@{TrQuant}!xInvLfnstNxN@{xInvLfnstNxN}}
+\index{xInvLfnstNxN@{xInvLfnstNxN}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xInvLfnstNxN()}{xInvLfnstNxN()}}
+{\footnotesize\ttfamily void x\+Inv\+Lfnst\+NxN (\begin{DoxyParamCaption}\item[{int $\ast$}]{src,  }\item[{int $\ast$}]{dst,  }\item[{const uint32\+\_\+t}]{mode,  }\item[{const uint32\+\_\+t}]{index,  }\item[{const uint32\+\_\+t}]{size,  }\item[{int}]{zero\+Out\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 799 of file Tr\+Quant.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a9a3b8bffdd3c5f3a80d26f00409e2728_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a5c092a04954f8ac3279b6fc254829b5c}\label{classvvenc_1_1TrQuant_a5c092a04954f8ac3279b6fc254829b5c}} 
+\index{TrQuant@{TrQuant}!xIT@{xIT}}
+\index{xIT@{xIT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xIT()}{xIT()}}
+{\footnotesize\ttfamily void x\+IT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Coeff,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Residual }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 531 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a5c092a04954f8ac3279b6fc254829b5c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a5c092a04954f8ac3279b6fc254829b5c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_add81bd40d44e18e5805d760a1e1ab881}\label{classvvenc_1_1TrQuant_add81bd40d44e18e5805d760a1e1ab881}} 
+\index{TrQuant@{TrQuant}!xITransformSkip@{xITransformSkip}}
+\index{xITransformSkip@{xITransformSkip}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xITransformSkip()}{xITransformSkip()}}
+{\footnotesize\ttfamily void x\+I\+Transform\+Skip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Coeff,  }\item[{\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&}]{p\+Residual,  }\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Wrapper function between HM interface and core NxN transform skipping 
+
+Definition at line 625 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{classvvenc_1_1TrQuant_add81bd40d44e18e5805d760a1e1ab881_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_add81bd40d44e18e5805d760a1e1ab881_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a8452675699cff8e3e66a1588ea356d51}\label{classvvenc_1_1TrQuant_a8452675699cff8e3e66a1588ea356d51}} 
+\index{TrQuant@{TrQuant}!xQuant@{xQuant}}
+\index{xQuant@{xQuant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xQuant()}{xQuant()}}
+{\footnotesize\ttfamily void x\+Quant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a4fb75ab2c109c0079e47cdb4e43e6e66}{C\+Coeff\+Buf}} \&}]{p\+Src,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} \&}]{ui\+Abs\+Sum,  }\item[{const \mbox{\hyperlink{classvvenc_1_1QpParam}{Qp\+Param}} \&}]{c\+QP,  }\item[{const \mbox{\hyperlink{classvvenc_1_1Ctx}{Ctx}} \&}]{ctx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 643 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a8452675699cff8e3e66a1588ea356d51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a8452675699cff8e3e66a1588ea356d51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a1539653e6b573c8860ab74d90fb56bbd}\label{classvvenc_1_1TrQuant_a1539653e6b573c8860ab74d90fb56bbd}} 
+\index{TrQuant@{TrQuant}!xSetTrTypes@{xSetTrTypes}}
+\index{xSetTrTypes@{xSetTrTypes}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xSetTrTypes()}{xSetTrTypes()}}
+{\footnotesize\ttfamily void x\+Set\+Tr\+Types (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const int}]{width,  }\item[{const int}]{height,  }\item[{int \&}]{tr\+Type\+Hor,  }\item[{int \&}]{tr\+Type\+Ver }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 381 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a1539653e6b573c8860ab74d90fb56bbd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a1539653e6b573c8860ab74d90fb56bbd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a4d22619c477cc2f951ed26aad997dd7f}\label{classvvenc_1_1TrQuant_a4d22619c477cc2f951ed26aad997dd7f}} 
+\index{TrQuant@{TrQuant}!xT@{xT}}
+\index{xT@{xT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xT()}{xT()}}
+{\footnotesize\ttfamily void xT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{resi,  }\item[{\mbox{\hyperlink{namespacevvenc_ad5c3dca2d71c77d0e4fa5a2f04859160}{Coeff\+Buf}} \&}]{dst\+Coeff,  }\item[{const int}]{width,  }\item[{const int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 445 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a4d22619c477cc2f951ed26aad997dd7f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_a4d22619c477cc2f951ed26aad997dd7f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aba8ba190351d255aeebf5ef9ab314c7e}\label{classvvenc_1_1TrQuant_aba8ba190351d255aeebf5ef9ab314c7e}} 
+\index{TrQuant@{TrQuant}!xTransformSkip@{xTransformSkip}}
+\index{xTransformSkip@{xTransformSkip}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{xTransformSkip()}{xTransformSkip()}}
+{\footnotesize\ttfamily void x\+Transform\+Skip (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1TransformUnit}{Transform\+Unit}} \&}]{tu,  }\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} \&}]{comp\+ID,  }\item[{const \mbox{\hyperlink{namespacevvenc_a884b8bac1e5400566c898f71b2034de4}{C\+Pel\+Buf}} \&}]{resi,  }\item[{\mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} $\ast$}]{ps\+Coeff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 1072 of file Tr\+Quant.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classvvenc_1_1TrQuant_aba8ba190351d255aeebf5ef9ab314c7e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1TrQuant_aba8ba190351d255aeebf5ef9ab314c7e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_add3f3b55471c7a8f7235827dee17ff50}\label{classvvenc_1_1TrQuant_add3f3b55471c7a8f7235827dee17ff50}} 
+\index{TrQuant@{TrQuant}!m\_bEnc@{m\_bEnc}}
+\index{m\_bEnc@{m\_bEnc}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_bEnc}{m\_bEnc}}
+{\footnotesize\ttfamily bool m\+\_\+b\+Enc\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 111 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a3f28fc08b3817f8f32bc631d3a39dca8}\label{classvvenc_1_1TrQuant_a3f28fc08b3817f8f32bc631d3a39dca8}} 
+\index{TrQuant@{TrQuant}!m\_blk@{m\_blk}}
+\index{m\_blk@{m\_blk}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_blk}{m\_blk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}}$\ast$ m\+\_\+blk\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 113 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a7c7e84cabc03dfd1cca0588db7d16d19}\label{classvvenc_1_1TrQuant_a7c7e84cabc03dfd1cca0588db7d16d19}} 
+\index{TrQuant@{TrQuant}!m\_fwdICT@{m\_fwdICT}}
+\index{m\_fwdICT@{m\_fwdICT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_fwdICT}{m\_fwdICT}}
+{\footnotesize\ttfamily std\+::pair$<$int64\+\_\+t,int64\+\_\+t$>$($\ast$$\ast$ m\+\_\+fwd\+I\+CT(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 124 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_abd0faf71f7fcc452cd5a30d9bf82226c}\label{classvvenc_1_1TrQuant_abd0faf71f7fcc452cd5a30d9bf82226c}} 
+\index{TrQuant@{TrQuant}!m\_fwdICTMem@{m\_fwdICTMem}}
+\index{m\_fwdICTMem@{m\_fwdICTMem}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_fwdICTMem}{m\_fwdICTMem}}
+{\footnotesize\ttfamily std\+::pair$<$int64\+\_\+t,int64\+\_\+t$>$($\ast$ m\+\_\+fwd\+I\+C\+T\+Mem(const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, const \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 122 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_ac9d13b77838e8ded29ce81589a3b2e83}\label{classvvenc_1_1TrQuant_ac9d13b77838e8ded29ce81589a3b2e83}} 
+\index{TrQuant@{TrQuant}!m\_invICT@{m\_invICT}}
+\index{m\_invICT@{m\_invICT}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_invICT}{m\_invICT}}
+{\footnotesize\ttfamily void($\ast$$\ast$ m\+\_\+inv\+I\+CT(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 123 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a8fa010652d1b1dfa79428b506be409f1}\label{classvvenc_1_1TrQuant_a8fa010652d1b1dfa79428b506be409f1}} 
+\index{TrQuant@{TrQuant}!m\_invICTMem@{m\_invICTMem}}
+\index{m\_invICTMem@{m\_invICTMem}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_invICTMem}{m\_invICTMem}}
+{\footnotesize\ttfamily void($\ast$ m\+\_\+inv\+I\+C\+T\+Mem(\mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&, \mbox{\hyperlink{namespacevvenc_a9115a4189ed494b0ea588a79981d93cb}{Pel\+Buf}} \&)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 121 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a06ee809c6c316208172c317416987ecd}\label{classvvenc_1_1TrQuant_a06ee809c6c316208172c317416987ecd}} 
+\index{TrQuant@{TrQuant}!m\_mtsCoeffs@{m\_mtsCoeffs}}
+\index{m\_mtsCoeffs@{m\_mtsCoeffs}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_mtsCoeffs}{m\_mtsCoeffs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} m\+\_\+mts\+Coeffs\mbox{[}\mbox{\hyperlink{namespacevvenc_a4f406491f3eb78a23d1dc00dee540704}{N\+U\+M\+\_\+\+T\+R\+A\+F\+O\+\_\+\+M\+O\+D\+E\+S\+\_\+\+M\+TS}}\mbox{]}\mbox{[}\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}} $\ast$\mbox{\hyperlink{namespacevvenc_ae3a6a93e6dee23c0d8a6faad359055e3}{M\+A\+X\+\_\+\+T\+B\+\_\+\+S\+I\+Z\+EY}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 125 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a42e4fa1666b4fdc49783154c134fb155}\label{classvvenc_1_1TrQuant_a42e4fa1666b4fdc49783154c134fb155}} 
+\index{TrQuant@{TrQuant}!m\_plTempCoeff@{m\_plTempCoeff}}
+\index{m\_plTempCoeff@{m\_plTempCoeff}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_plTempCoeff}{m\_plTempCoeff}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}}$\ast$ m\+\_\+pl\+Temp\+Coeff\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 110 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_abbef708c185cc02fd48725dd00cd62b5}\label{classvvenc_1_1TrQuant_abbef708c185cc02fd48725dd00cd62b5}} 
+\index{TrQuant@{TrQuant}!m\_quant@{m\_quant}}
+\index{m\_quant@{m\_quant}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_quant}{m\_quant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1DepQuant}{Dep\+Quant}}$\ast$ m\+\_\+quant\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Quantizer. 
+
+
+
+Definition at line 117 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aa60b68bf2c925387a2f610de33aced39}\label{classvvenc_1_1TrQuant_aa60b68bf2c925387a2f610de33aced39}} 
+\index{TrQuant@{TrQuant}!m\_scalingListEnabled@{m\_scalingListEnabled}}
+\index{m\_scalingListEnabled@{m\_scalingListEnabled}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_scalingListEnabled}{m\_scalingListEnabled}}
+{\footnotesize\ttfamily bool m\+\_\+scaling\+List\+Enabled\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 112 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_a76081fc2619b59b5248030e8fd13408c}\label{classvvenc_1_1TrQuant_a76081fc2619b59b5248030e8fd13408c}} 
+\index{TrQuant@{TrQuant}!m\_tempInMatrix@{m\_tempInMatrix}}
+\index{m\_tempInMatrix@{m\_tempInMatrix}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_tempInMatrix}{m\_tempInMatrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} m\+\_\+temp\+In\+Matrix\mbox{[}48\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 118 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_abd03852a7242175cc50c39b6d1d38089}\label{classvvenc_1_1TrQuant_abd03852a7242175cc50c39b6d1d38089}} 
+\index{TrQuant@{TrQuant}!m\_tempOutMatrix@{m\_tempOutMatrix}}
+\index{m\_tempOutMatrix@{m\_tempOutMatrix}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_tempOutMatrix}{m\_tempOutMatrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}} m\+\_\+temp\+Out\+Matrix\mbox{[}48\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_af826466e37fb582b795f81caf03c47cc}\label{classvvenc_1_1TrQuant_af826466e37fb582b795f81caf03c47cc}} 
+\index{TrQuant@{TrQuant}!m\_tmp@{m\_tmp}}
+\index{m\_tmp@{m\_tmp}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{m\_tmp}{m\_tmp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacevvenc_aeba68786bfeeda596a9fc2ef5ebe7ce6}{T\+Coeff}}$\ast$ m\+\_\+tmp\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 114 of file Tr\+Quant.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1TrQuant_aff588b15ba4683661a56be7a9999320d}\label{classvvenc_1_1TrQuant_aff588b15ba4683661a56be7a9999320d}} 
+\index{TrQuant@{TrQuant}!maxAbsIctMode@{maxAbsIctMode}}
+\index{maxAbsIctMode@{maxAbsIctMode}!TrQuant@{TrQuant}}
+\doxysubsubsection{\texorpdfstring{maxAbsIctMode}{maxAbsIctMode}}
+{\footnotesize\ttfamily const int max\+Abs\+Ict\+Mode = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 120 of file Tr\+Quant.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{TrQuant_8h}{Tr\+Quant.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{TrQuant_8cpp}{Tr\+Quant.\+cpp}}\end{DoxyCompactItemize}

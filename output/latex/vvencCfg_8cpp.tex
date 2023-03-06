@@ -1,0 +1,530 @@
+\hypertarget{vvencCfg_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/vvenc/vvenc\+Cfg.cpp File Reference}
+\label{vvencCfg_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/vvenc/vvencCfg.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/vvenc/vvencCfg.cpp}}
+
+
+encoder configuration class  
+
+
+{\ttfamily \#include \char`\"{}vvenc/vvenc\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Common\+Def.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+Lib/\+Profile\+Level\+Tier.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+Include dependency graph for vvenc\+Cfg.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static V\+V\+E\+N\+C\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E\+\_\+\+B\+E\+G\+IN bool \mbox{\hyperlink{vvencCfg_8cpp_ad64a7624eb438cd2666c376e204d550a}{check\+Cfg\+Parameter}} (vvenc\+\_\+config $\ast$cfg)
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_ab6fdd2b69bf525011bc4267346ca4984}{get\+Cost\+Function\+Str}} (int cost)
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_a38e52a9e5228669596fa83640d7e5e2b}{get\+Dynamic\+Range\+Str}} (int dynamic\+Range)
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_aecb96d89490b74a9773ba49a54b95ed6}{get\+Level\+Str}} (int level)
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_a1ec6bb81cd1eeec61ed6b2272c1af798}{get\+Profile\+Str}} (int profile)
+\item 
+static void \mbox{\hyperlink{vvencCfg_8cpp_a864df75d7a030596cef97ea9d285328c}{vvenc\+\_\+check\+Char\+Array\+Str}} (char array\mbox{[}$\,$\mbox{]}, int size)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_afddb377bba59c710bed9a5f03a9d2fd2}{vvenc\+\_\+\+Chroma\+Qp\+Mapping\+Table\+Params\+\_\+default}} (vvenc\+Chroma\+Qp\+Mapping\+Table\+Params $\ast$p)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_a6090730d2a2a6e96c949db499d21d3c9}{vvenc\+\_\+config\+\_\+default}} (vvenc\+\_\+config $\ast$c)
+\item 
+static bool \mbox{\hyperlink{vvencCfg_8cpp_a0fc98e35073bbf3eebaab4e49dee3105}{vvenc\+\_\+confirm\+Parameter}} (vvenc\+\_\+config $\ast$c, bool bflag, const char $\ast$message)
+\item 
+const V\+V\+E\+N\+C\+\_\+\+D\+E\+CL char $\ast$ \mbox{\hyperlink{vvencCfg_8cpp_ae0ffc742c15a6f3cb56c15cc53d696cd}{vvenc\+\_\+get\+\_\+config\+\_\+as\+\_\+string}} (vvenc\+\_\+config $\ast$c, vvenc\+Msg\+Level e\+Msg\+Level)
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_aa1cde417185c836d0382efb91e8f794f}{vvenc\+\_\+get\+Content\+Light\+Level\+Str}} (unsigned int cll\mbox{[}2\mbox{]})
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_a7e471638ecfd699fcb4e5653c6955b35}{vvenc\+\_\+get\+Mastering\+Display\+Str}} (unsigned int md\mbox{[}10\mbox{]})
+\item 
+static std\+::vector$<$ int $>$ \mbox{\hyperlink{vvencCfg_8cpp_a2bf642fc458cba831c29e81bf6d7b052}{vvenc\+\_\+get\+Qp\+Vals\+As\+Vec}} (int Qp\+Vals\mbox{[}$\,$\mbox{]})
+\item 
+static int \mbox{\hyperlink{vvencCfg_8cpp_aad44cb356fcd2d1336de8474e9bb06bb}{vvenc\+\_\+get\+Qp\+Vals\+Size}} (int Qp\+Vals\mbox{[}$\,$\mbox{]})
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_a0ec8cf203759e2b93b4eac5e1598289f}{vvenc\+\_\+\+G\+O\+P\+Entry\+\_\+default}} (vvenc\+G\+O\+P\+Entry $\ast$G\+O\+P\+Entry)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL bool \mbox{\hyperlink{vvencCfg_8cpp_a136ca7e6c3fa69328f8207675a949e17}{vvenc\+\_\+init\+\_\+config\+\_\+parameter}} (vvenc\+\_\+config $\ast$c)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL int \mbox{\hyperlink{vvencCfg_8cpp_a094921f182e72fb201f4cc1f19468cd6}{vvenc\+\_\+init\+\_\+default}} (vvenc\+\_\+config $\ast$c, int width, int height, int framerate, int targetbitrate, int qp, vvenc\+Preset\+Mode preset)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL int \mbox{\hyperlink{vvencCfg_8cpp_a9504fd603fb55078515aacea62ed1994}{vvenc\+\_\+init\+\_\+preset}} (vvenc\+\_\+config $\ast$c, vvenc\+Preset\+Mode preset)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_a6d2412a76c68536afba800178157a8a5}{vvenc\+\_\+\+Reshape\+C\+W\+\_\+default}} (vvenc\+Reshape\+CW $\ast$reshape\+CW)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_a18424fbcb1ec5ee4ed21fa27157e9a76}{vvenc\+\_\+\+R\+P\+L\+Entry\+\_\+default}} (vvenc\+R\+P\+L\+Entry $\ast$R\+P\+L\+Entry)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_ad95365430507b8e1b02924be6f81bae4}{vvenc\+\_\+vvenc\+M\+C\+T\+F\+\_\+default}} (vvenc\+M\+C\+TF $\ast$vvenc\+M\+C\+TF)
+\item 
+V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void \mbox{\hyperlink{vvencCfg_8cpp_a87b2f0488c75a375904abf75567bd21d}{vvenc\+\_\+\+W\+C\+G\+Chroma\+Q\+P\+Control\+\_\+default}} (vvenc\+W\+C\+G\+Chroma\+Q\+P\+Control $\ast$W\+C\+G\+Chroma\+Q\+P\+Control)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{vvencCfg_8cpp_acb34a6d361e4c30cfdda3e1ad96649fa}{vvenc\+\_\+cfg\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+encoder configuration class 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vvencCfg_8cpp_ad64a7624eb438cd2666c376e204d550a}\label{vvencCfg_8cpp_ad64a7624eb438cd2666c376e204d550a}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!checkCfgParameter@{checkCfgParameter}}
+\index{checkCfgParameter@{checkCfgParameter}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{checkCfgParameter()}{checkCfgParameter()}}
+{\footnotesize\ttfamily static bool check\+Cfg\+Parameter (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{cfg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 2020 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_ad64a7624eb438cd2666c376e204d550a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_ad64a7624eb438cd2666c376e204d550a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_ab6fdd2b69bf525011bc4267346ca4984}\label{vvencCfg_8cpp_ab6fdd2b69bf525011bc4267346ca4984}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!getCostFunctionStr@{getCostFunctionStr}}
+\index{getCostFunctionStr@{getCostFunctionStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{getCostFunctionStr()}{getCostFunctionStr()}}
+{\footnotesize\ttfamily static std\+::string get\+Cost\+Function\+Str (\begin{DoxyParamCaption}\item[{int}]{cost }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 175 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{vvencCfg_8cpp_ab6fdd2b69bf525011bc4267346ca4984_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a38e52a9e5228669596fa83640d7e5e2b}\label{vvencCfg_8cpp_a38e52a9e5228669596fa83640d7e5e2b}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!getDynamicRangeStr@{getDynamicRangeStr}}
+\index{getDynamicRangeStr@{getDynamicRangeStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{getDynamicRangeStr()}{getDynamicRangeStr()}}
+{\footnotesize\ttfamily static std\+::string get\+Dynamic\+Range\+Str (\begin{DoxyParamCaption}\item[{int}]{dynamic\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 189 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{vvencCfg_8cpp_a38e52a9e5228669596fa83640d7e5e2b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_aecb96d89490b74a9773ba49a54b95ed6}\label{vvencCfg_8cpp_aecb96d89490b74a9773ba49a54b95ed6}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!getLevelStr@{getLevelStr}}
+\index{getLevelStr@{getLevelStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{getLevelStr()}{getLevelStr()}}
+{\footnotesize\ttfamily static std\+::string get\+Level\+Str (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 149 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{vvencCfg_8cpp_aecb96d89490b74a9773ba49a54b95ed6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a1ec6bb81cd1eeec61ed6b2272c1af798}\label{vvencCfg_8cpp_a1ec6bb81cd1eeec61ed6b2272c1af798}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!getProfileStr@{getProfileStr}}
+\index{getProfileStr@{getProfileStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{getProfileStr()}{getProfileStr()}}
+{\footnotesize\ttfamily static std\+::string get\+Profile\+Str (\begin{DoxyParamCaption}\item[{int}]{profile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 130 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{vvencCfg_8cpp_a1ec6bb81cd1eeec61ed6b2272c1af798_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a864df75d7a030596cef97ea9d285328c}\label{vvencCfg_8cpp_a864df75d7a030596cef97ea9d285328c}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_checkCharArrayStr@{vvenc\_checkCharArrayStr}}
+\index{vvenc\_checkCharArrayStr@{vvenc\_checkCharArrayStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_checkCharArrayStr()}{vvenc\_checkCharArrayStr()}}
+{\footnotesize\ttfamily static void vvenc\+\_\+check\+Char\+Array\+Str (\begin{DoxyParamCaption}\item[{char}]{array\mbox{[}$\,$\mbox{]},  }\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 99 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a864df75d7a030596cef97ea9d285328c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_afddb377bba59c710bed9a5f03a9d2fd2}\label{vvencCfg_8cpp_afddb377bba59c710bed9a5f03a9d2fd2}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_ChromaQpMappingTableParams\_default@{vvenc\_ChromaQpMappingTableParams\_default}}
+\index{vvenc\_ChromaQpMappingTableParams\_default@{vvenc\_ChromaQpMappingTableParams\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_ChromaQpMappingTableParams\_default()}{vvenc\_ChromaQpMappingTableParams\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+\+Chroma\+Qp\+Mapping\+Table\+Params\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+Chroma\+Qp\+Mapping\+Table\+Params $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Definition at line 267 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_afddb377bba59c710bed9a5f03a9d2fd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a6090730d2a2a6e96c949db499d21d3c9}\label{vvencCfg_8cpp_a6090730d2a2a6e96c949db499d21d3c9}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_config\_default@{vvenc\_config\_default}}
+\index{vvenc\_config\_default@{vvenc\_config\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_config\_default()}{vvenc\_config\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+config\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 318 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a6090730d2a2a6e96c949db499d21d3c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a6090730d2a2a6e96c949db499d21d3c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a0fc98e35073bbf3eebaab4e49dee3105}\label{vvencCfg_8cpp_a0fc98e35073bbf3eebaab4e49dee3105}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_confirmParameter@{vvenc\_confirmParameter}}
+\index{vvenc\_confirmParameter@{vvenc\_confirmParameter}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_confirmParameter()}{vvenc\_confirmParameter()}}
+{\footnotesize\ttfamily static bool vvenc\+\_\+confirm\+Parameter (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c,  }\item[{bool}]{bflag,  }\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 657 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{vvencCfg_8cpp_a0fc98e35073bbf3eebaab4e49dee3105_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a0fc98e35073bbf3eebaab4e49dee3105_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_ae0ffc742c15a6f3cb56c15cc53d696cd}\label{vvencCfg_8cpp_ae0ffc742c15a6f3cb56c15cc53d696cd}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_get\_config\_as\_string@{vvenc\_get\_config\_as\_string}}
+\index{vvenc\_get\_config\_as\_string@{vvenc\_get\_config\_as\_string}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_get\_config\_as\_string()}{vvenc\_get\_config\_as\_string()}}
+{\footnotesize\ttfamily const V\+V\+E\+N\+C\+\_\+\+D\+E\+CL char$\ast$ vvenc\+\_\+get\+\_\+config\+\_\+as\+\_\+string (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c,  }\item[{vvenc\+Msg\+Level}]{e\+Msg\+Level }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3183 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_ae0ffc742c15a6f3cb56c15cc53d696cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_aa1cde417185c836d0382efb91e8f794f}\label{vvencCfg_8cpp_aa1cde417185c836d0382efb91e8f794f}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_getContentLightLevelStr@{vvenc\_getContentLightLevelStr}}
+\index{vvenc\_getContentLightLevelStr@{vvenc\_getContentLightLevelStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_getContentLightLevelStr()}{vvenc\_getContentLightLevelStr()}}
+{\footnotesize\ttfamily static std\+::string vvenc\+\_\+get\+Content\+Light\+Level\+Str (\begin{DoxyParamCaption}\item[{unsigned int}]{cll\mbox{[}2\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 225 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_aa1cde417185c836d0382efb91e8f794f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a7e471638ecfd699fcb4e5653c6955b35}\label{vvencCfg_8cpp_a7e471638ecfd699fcb4e5653c6955b35}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_getMasteringDisplayStr@{vvenc\_getMasteringDisplayStr}}
+\index{vvenc\_getMasteringDisplayStr@{vvenc\_getMasteringDisplayStr}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_getMasteringDisplayStr()}{vvenc\_getMasteringDisplayStr()}}
+{\footnotesize\ttfamily static std\+::string vvenc\+\_\+get\+Mastering\+Display\+Str (\begin{DoxyParamCaption}\item[{unsigned int}]{md\mbox{[}10\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 205 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a7e471638ecfd699fcb4e5653c6955b35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a2bf642fc458cba831c29e81bf6d7b052}\label{vvencCfg_8cpp_a2bf642fc458cba831c29e81bf6d7b052}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_getQpValsAsVec@{vvenc\_getQpValsAsVec}}
+\index{vvenc\_getQpValsAsVec@{vvenc\_getQpValsAsVec}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_getQpValsAsVec()}{vvenc\_getQpValsAsVec()}}
+{\footnotesize\ttfamily static std\+::vector$<$int$>$ vvenc\+\_\+get\+Qp\+Vals\+As\+Vec (\begin{DoxyParamCaption}\item[{int}]{Qp\+Vals\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 83 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a2bf642fc458cba831c29e81bf6d7b052_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_aad44cb356fcd2d1336de8474e9bb06bb}\label{vvencCfg_8cpp_aad44cb356fcd2d1336de8474e9bb06bb}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_getQpValsSize@{vvenc\_getQpValsSize}}
+\index{vvenc\_getQpValsSize@{vvenc\_getQpValsSize}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_getQpValsSize()}{vvenc\_getQpValsSize()}}
+{\footnotesize\ttfamily static int vvenc\+\_\+get\+Qp\+Vals\+Size (\begin{DoxyParamCaption}\item[{int}]{Qp\+Vals\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 66 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_aad44cb356fcd2d1336de8474e9bb06bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a0ec8cf203759e2b93b4eac5e1598289f}\label{vvencCfg_8cpp_a0ec8cf203759e2b93b4eac5e1598289f}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_GOPEntry\_default@{vvenc\_GOPEntry\_default}}
+\index{vvenc\_GOPEntry\_default@{vvenc\_GOPEntry\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_GOPEntry\_default()}{vvenc\_GOPEntry\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+\+G\+O\+P\+Entry\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+G\+O\+P\+Entry $\ast$}]{G\+O\+P\+Entry }\end{DoxyParamCaption})}
+
+
+
+Definition at line 233 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a0ec8cf203759e2b93b4eac5e1598289f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a136ca7e6c3fa69328f8207675a949e17}\label{vvencCfg_8cpp_a136ca7e6c3fa69328f8207675a949e17}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_init\_config\_parameter@{vvenc\_init\_config\_parameter}}
+\index{vvenc\_init\_config\_parameter@{vvenc\_init\_config\_parameter}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_init\_config\_parameter()}{vvenc\_init\_config\_parameter()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL bool vvenc\+\_\+init\+\_\+config\+\_\+parameter (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c }\end{DoxyParamCaption})}
+
+
+
+Definition at line 666 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a136ca7e6c3fa69328f8207675a949e17_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a136ca7e6c3fa69328f8207675a949e17_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a094921f182e72fb201f4cc1f19468cd6}\label{vvencCfg_8cpp_a094921f182e72fb201f4cc1f19468cd6}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_init\_default@{vvenc\_init\_default}}
+\index{vvenc\_init\_default@{vvenc\_init\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_init\_default()}{vvenc\_init\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL int vvenc\+\_\+init\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{framerate,  }\item[{int}]{targetbitrate,  }\item[{int}]{qp,  }\item[{vvenc\+Preset\+Mode}]{preset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2642 of file vvenc\+Cfg.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a094921f182e72fb201f4cc1f19468cd6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{vvencCfg_8cpp_a094921f182e72fb201f4cc1f19468cd6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a9504fd603fb55078515aacea62ed1994}\label{vvencCfg_8cpp_a9504fd603fb55078515aacea62ed1994}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_init\_preset@{vvenc\_init\_preset}}
+\index{vvenc\_init\_preset@{vvenc\_init\_preset}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_init\_preset()}{vvenc\_init\_preset()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL int vvenc\+\_\+init\+\_\+preset (\begin{DoxyParamCaption}\item[{vvenc\+\_\+config $\ast$}]{c,  }\item[{vvenc\+Preset\+Mode}]{preset }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2666 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a9504fd603fb55078515aacea62ed1994_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a6d2412a76c68536afba800178157a8a5}\label{vvencCfg_8cpp_a6d2412a76c68536afba800178157a8a5}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_ReshapeCW\_default@{vvenc\_ReshapeCW\_default}}
+\index{vvenc\_ReshapeCW\_default@{vvenc\_ReshapeCW\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_ReshapeCW\_default()}{vvenc\_ReshapeCW\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+\+Reshape\+C\+W\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+Reshape\+CW $\ast$}]{reshape\+CW }\end{DoxyParamCaption})}
+
+
+
+Definition at line 292 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a6d2412a76c68536afba800178157a8a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a18424fbcb1ec5ee4ed21fa27157e9a76}\label{vvencCfg_8cpp_a18424fbcb1ec5ee4ed21fa27157e9a76}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_RPLEntry\_default@{vvenc\_RPLEntry\_default}}
+\index{vvenc\_RPLEntry\_default@{vvenc\_RPLEntry\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_RPLEntry\_default()}{vvenc\_RPLEntry\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+\+R\+P\+L\+Entry\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+R\+P\+L\+Entry $\ast$}]{R\+P\+L\+Entry }\end{DoxyParamCaption})}
+
+
+
+Definition at line 279 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a18424fbcb1ec5ee4ed21fa27157e9a76_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_ad95365430507b8e1b02924be6f81bae4}\label{vvencCfg_8cpp_ad95365430507b8e1b02924be6f81bae4}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_vvencMCTF\_default@{vvenc\_vvencMCTF\_default}}
+\index{vvenc\_vvencMCTF\_default@{vvenc\_vvencMCTF\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_vvencMCTF\_default()}{vvenc\_vvencMCTF\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+vvenc\+M\+C\+T\+F\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+M\+C\+TF $\ast$}]{vvenc\+M\+C\+TF }\end{DoxyParamCaption})}
+
+
+
+Definition at line 305 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_ad95365430507b8e1b02924be6f81bae4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{vvencCfg_8cpp_a87b2f0488c75a375904abf75567bd21d}\label{vvencCfg_8cpp_a87b2f0488c75a375904abf75567bd21d}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_WCGChromaQPControl\_default@{vvenc\_WCGChromaQPControl\_default}}
+\index{vvenc\_WCGChromaQPControl\_default@{vvenc\_WCGChromaQPControl\_default}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_WCGChromaQPControl\_default()}{vvenc\_WCGChromaQPControl\_default()}}
+{\footnotesize\ttfamily V\+V\+E\+N\+C\+\_\+\+D\+E\+CL void vvenc\+\_\+\+W\+C\+G\+Chroma\+Q\+P\+Control\+\_\+default (\begin{DoxyParamCaption}\item[{vvenc\+W\+C\+G\+Chroma\+Q\+P\+Control $\ast$}]{W\+C\+G\+Chroma\+Q\+P\+Control }\end{DoxyParamCaption})}
+
+
+
+Definition at line 258 of file vvenc\+Cfg.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vvencCfg_8cpp_a87b2f0488c75a375904abf75567bd21d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{vvencCfg_8cpp_acb34a6d361e4c30cfdda3e1ad96649fa}\label{vvencCfg_8cpp_acb34a6d361e4c30cfdda3e1ad96649fa}} 
+\index{vvencCfg.cpp@{vvencCfg.cpp}!vvenc\_cfgString@{vvenc\_cfgString}}
+\index{vvenc\_cfgString@{vvenc\_cfgString}!vvencCfg.cpp@{vvencCfg.cpp}}
+\doxysubsubsection{\texorpdfstring{vvenc\_cfgString}{vvenc\_cfgString}}
+{\footnotesize\ttfamily std\+::string vvenc\+\_\+cfg\+String\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 64 of file vvenc\+Cfg.\+cpp.
+

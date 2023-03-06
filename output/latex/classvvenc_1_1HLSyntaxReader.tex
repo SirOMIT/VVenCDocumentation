@@ -1,0 +1,776 @@
+\hypertarget{classvvenc_1_1HLSyntaxReader}{}\doxysection{H\+L\+Syntax\+Reader}
+\label{classvvenc_1_1HLSyntaxReader}\index{HLSyntaxReader@{HLSyntaxReader}}
+
+
+{\ttfamily \#include \char`\"{}V\+L\+C\+Reader.\+h\char`\"{}}
+
+
+
+Inheritance diagram for H\+L\+Syntax\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classvvenc_1_1HLSyntaxReader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for H\+L\+Syntax\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classvvenc_1_1HLSyntaxReader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_aedfaea7208a67c5c2ecd4e5daf589c87}{H\+L\+Syntax\+Reader}} ()
+\item 
+virtual \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a91aaa3ea5c1d4178a88ef336b48f5a2b}{$\sim$\+H\+L\+Syntax\+Reader}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a640d776d1a20b32724cba77ebacdf31e}{alf\+Filter}} (\mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}} \&alf\+Param, const bool \mbox{\hyperlink{namespacevvenc_a17767316ca808028dc71f1c9c379da44}{is\+Chroma}}, const int alt\+Idx)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_aca7364d92f190599132063a0dd900f18}{dpb\+\_\+parameters}} (int max\+Sub\+Layers\+Minus1, bool sub\+Layer\+Info\+Flag, \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$pc\+S\+PS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a9257a8fdbed1ff9c532a7e7d34421177}{get\+Slice\+Poc}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$pc\+Slice, \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$parameter\+Set\+Manager, const int prev\+Tid0\+P\+OC)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_ac3a62006f15adcb7d47ba470cb37fc6e}{parse\+Alf\+Aps}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$aps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a56fa10c9cf541d87afe32e26780f8034}{parse\+A\+PS}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$pc\+A\+PS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_ae34770b4300139805d2b50eb34047bc9}{parse\+Constraint\+Info}} (\mbox{\hyperlink{structvvenc_1_1ConstraintInfo}{Constraint\+Info}} $\ast$cinfo)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_af3b835b83adcd1779fe3a0119470abdb}{parse\+D\+CI}} (\mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$dci)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a55252c0a3ddf2fc216addaedbaf4da09}{parse\+Extra\+P\+H\+Bits\+Struct}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, int num\+Bytes)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a2ef6d7d696fb1a49e237f0f416091c1c}{parse\+Extra\+S\+H\+Bits\+Struct}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps, int num\+Bytes)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a1cc30b5c22da84c7996997ad2e071798}{parse\+Filler\+Data}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$bs, uint32\+\_\+t \&fd\+Size)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a9c73b36708d53b5539e2562e6c6cd065}{parse\+General\+Hrd\+Parameters}} (\mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} $\ast$general\+Hrd)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a27110e7125692b38e999f8d0a3e0ef99}{parse\+Lmcs\+Aps}} (\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$aps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_ae2fa65386bef0211a7131fedde907a99}{parse\+Ols\+Hrd\+Parameters}} (\mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} $\ast$general\+Hrd, \mbox{\hyperlink{structvvenc_1_1OlsHrdParams}{Ols\+Hrd\+Params}} $\ast$ols\+Hrd, uint32\+\_\+t first\+Sub\+Layer, uint32\+\_\+t temp\+Level\+High)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_ac99b492d40a07ba32ffcb7d4484d925d}{parse\+Picture\+Header}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$parameter\+Set\+Manager, bool read\+Rbsp\+Trailing\+Bits)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a839a9f4626efdbbc0f9e54bf53113a8f}{parse\+P\+PS}} (\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$pc\+P\+PS, \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$parameter\+Set\+Manager)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_af06ed7578020c384ab56b180102f9eb0}{parse\+Pred\+Weight\+Table}} (\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$pps, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a55d21f14fd1b6883308a8d870d0346eb}{parse\+Pred\+Weight\+Table}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$pc\+Slice, const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$sps)
+\begin{DoxyCompactList}\small\item\em parse explicit wp tables \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a51ab2c7bab47403550570ebffd76b509}{parse\+Profile\+Tier\+Level}} (\mbox{\hyperlink{structvvenc_1_1ProfileTierLevel}{Profile\+Tier\+Level}} $\ast$ptl, bool profile\+Tier\+Present, int max\+Num\+Sub\+Layers\+Minus1)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a97891cca4b5b90f71bcca76f893fce96}{parse\+Remaining\+Bytes}} (bool no\+Trailing\+Bytes\+Expected)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a7fe2f70e9617b1395c414a5a314d5ef3}{parse\+Slice\+Header}} (\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$slice, \mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$pic\+Header, \mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$parameter\+Set\+Manager, const int prev\+Tid0\+P\+OC)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a48441f50523ab47e6ae1155b3f35ea78}{parse\+S\+PS}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$pc\+S\+PS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_ab9aef541a99f12afce49e60cfc8c2a1b}{parse\+Terminating\+Bit}} (uint32\+\_\+t \&rui\+Bit)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a1049fdd0a57f6b03f39ceff8b448de83}{parse\+V\+PS}} (\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$pc\+V\+PS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_aebaa8818f1acce0683a1ad02f67a317c}{parse\+V\+UI}} (\mbox{\hyperlink{structvvenc_1_1VUI}{V\+UI}} $\ast$pc\+V\+UI, \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$pc\+S\+PS)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a0b98eeee77b103b25cbad24c488a07b2}{set\+Bitstream}} (\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$p)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_af3fa63a568dc4335e10b9777caab7739}{copy\+Ref\+Pic\+List}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$pc\+S\+PS, \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$source\+\_\+rpl, \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$dest\+\_\+rpl)
+\item 
+void \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a0d6d5d7ca973c1092cfc214f291b527d}{parse\+Ref\+Pic\+List}} (\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$pc\+S\+PS, \mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$rpl, int rpl\+Idx)
+\item 
+bool \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader_a54c116b400f1888fed6d989f29392d71}{x\+More\+Rbsp\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 131 of file V\+L\+C\+Reader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_aedfaea7208a67c5c2ecd4e5daf589c87}\label{classvvenc_1_1HLSyntaxReader_aedfaea7208a67c5c2ecd4e5daf589c87}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!HLSyntaxReader@{HLSyntaxReader}}
+\index{HLSyntaxReader@{HLSyntaxReader}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{HLSyntaxReader()}{HLSyntaxReader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1HLSyntaxReader}{H\+L\+Syntax\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 247 of file V\+L\+C\+Reader.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a91aaa3ea5c1d4178a88ef336b48f5a2b}\label{classvvenc_1_1HLSyntaxReader_a91aaa3ea5c1d4178a88ef336b48f5a2b}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!````~HLSyntaxReader@{$\sim$HLSyntaxReader}}
+\index{````~HLSyntaxReader@{$\sim$HLSyntaxReader}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{$\sim$HLSyntaxReader()}{~HLSyntaxReader()}}
+{\footnotesize\ttfamily $\sim$\mbox{\hyperlink{classvvenc_1_1HLSyntaxReader}{H\+L\+Syntax\+Reader}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 251 of file V\+L\+C\+Reader.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a640d776d1a20b32724cba77ebacdf31e}\label{classvvenc_1_1HLSyntaxReader_a640d776d1a20b32724cba77ebacdf31e}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!alfFilter@{alfFilter}}
+\index{alfFilter@{alfFilter}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{alfFilter()}{alfFilter()}}
+{\footnotesize\ttfamily void alf\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1AlfParam}{Alf\+Param}} \&}]{alf\+Param,  }\item[{const bool}]{is\+Chroma,  }\item[{const int}]{alt\+Idx }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3722 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classvvenc_1_1HLSyntaxReader_a640d776d1a20b32724cba77ebacdf31e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a640d776d1a20b32724cba77ebacdf31e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_af3fa63a568dc4335e10b9777caab7739}\label{classvvenc_1_1HLSyntaxReader_af3fa63a568dc4335e10b9777caab7739}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!copyRefPicList@{copyRefPicList}}
+\index{copyRefPicList@{copyRefPicList}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{copyRefPicList()}{copyRefPicList()}}
+{\footnotesize\ttfamily void copy\+Ref\+Pic\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{pc\+S\+PS,  }\item[{\mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{source\+\_\+rpl,  }\item[{\mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{dest\+\_\+rpl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 260 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classvvenc_1_1HLSyntaxReader_af3fa63a568dc4335e10b9777caab7739_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_af3fa63a568dc4335e10b9777caab7739_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_aca7364d92f190599132063a0dd900f18}\label{classvvenc_1_1HLSyntaxReader_aca7364d92f190599132063a0dd900f18}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!dpb\_parameters@{dpb\_parameters}}
+\index{dpb\_parameters@{dpb\_parameters}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{dpb\_parameters()}{dpb\_parameters()}}
+{\footnotesize\ttfamily void dpb\+\_\+parameters (\begin{DoxyParamCaption}\item[{int}]{max\+Sub\+Layers\+Minus1,  }\item[{bool}]{sub\+Layer\+Info\+Flag,  }\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{pc\+S\+PS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 986 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_aca7364d92f190599132063a0dd900f18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a9257a8fdbed1ff9c532a7e7d34421177}\label{classvvenc_1_1HLSyntaxReader_a9257a8fdbed1ff9c532a7e7d34421177}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!getSlicePoc@{getSlicePoc}}
+\index{getSlicePoc@{getSlicePoc}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{getSlicePoc()}{getSlicePoc()}}
+{\footnotesize\ttfamily void get\+Slice\+Poc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{pc\+Slice,  }\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$}]{parameter\+Set\+Manager,  }\item[{const int}]{prev\+Tid0\+P\+OC }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3154 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{classvvenc_1_1HLSyntaxReader_a9257a8fdbed1ff9c532a7e7d34421177_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a9257a8fdbed1ff9c532a7e7d34421177_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_ac3a62006f15adcb7d47ba470cb37fc6e}\label{classvvenc_1_1HLSyntaxReader_ac3a62006f15adcb7d47ba470cb37fc6e}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseAlfAps@{parseAlfAps}}
+\index{parseAlfAps@{parseAlfAps}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseAlfAps()}{parseAlfAps()}}
+{\footnotesize\ttfamily void parse\+Alf\+Aps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{aps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 652 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ac3a62006f15adcb7d47ba470cb37fc6e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ac3a62006f15adcb7d47ba470cb37fc6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a56fa10c9cf541d87afe32e26780f8034}\label{classvvenc_1_1HLSyntaxReader_a56fa10c9cf541d87afe32e26780f8034}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseAPS@{parseAPS}}
+\index{parseAPS@{parseAPS}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseAPS()}{parseAPS()}}
+{\footnotesize\ttfamily void parse\+A\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{pc\+A\+PS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 618 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a56fa10c9cf541d87afe32e26780f8034_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a56fa10c9cf541d87afe32e26780f8034_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_ae34770b4300139805d2b50eb34047bc9}\label{classvvenc_1_1HLSyntaxReader_ae34770b4300139805d2b50eb34047bc9}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseConstraintInfo@{parseConstraintInfo}}
+\index{parseConstraintInfo@{parseConstraintInfo}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseConstraintInfo()}{parseConstraintInfo()}}
+{\footnotesize\ttfamily void parse\+Constraint\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1ConstraintInfo}{Constraint\+Info}} $\ast$}]{cinfo }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3233 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ae34770b4300139805d2b50eb34047bc9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ae34770b4300139805d2b50eb34047bc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_af3b835b83adcd1779fe3a0119470abdb}\label{classvvenc_1_1HLSyntaxReader_af3b835b83adcd1779fe3a0119470abdb}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseDCI@{parseDCI}}
+\index{parseDCI@{parseDCI}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseDCI()}{parseDCI()}}
+{\footnotesize\ttfamily void parse\+D\+CI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1DCI}{D\+CI}} $\ast$}]{dci }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1522 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_af3b835b83adcd1779fe3a0119470abdb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_af3b835b83adcd1779fe3a0119470abdb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a55252c0a3ddf2fc216addaedbaf4da09}\label{classvvenc_1_1HLSyntaxReader_a55252c0a3ddf2fc216addaedbaf4da09}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseExtraPHBitsStruct@{parseExtraPHBitsStruct}}
+\index{parseExtraPHBitsStruct@{parseExtraPHBitsStruct}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseExtraPHBitsStruct()}{parseExtraPHBitsStruct()}}
+{\footnotesize\ttfamily void parse\+Extra\+P\+H\+Bits\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{int}]{num\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Definition at line 997 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a55252c0a3ddf2fc216addaedbaf4da09_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a2ef6d7d696fb1a49e237f0f416091c1c}\label{classvvenc_1_1HLSyntaxReader_a2ef6d7d696fb1a49e237f0f416091c1c}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseExtraSHBitsStruct@{parseExtraSHBitsStruct}}
+\index{parseExtraSHBitsStruct@{parseExtraSHBitsStruct}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseExtraSHBitsStruct()}{parseExtraSHBitsStruct()}}
+{\footnotesize\ttfamily void parse\+Extra\+S\+H\+Bits\+Struct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps,  }\item[{int}]{num\+Bytes }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1010 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a2ef6d7d696fb1a49e237f0f416091c1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a1cc30b5c22da84c7996997ad2e071798}\label{classvvenc_1_1HLSyntaxReader_a1cc30b5c22da84c7996997ad2e071798}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseFillerData@{parseFillerData}}
+\index{parseFillerData@{parseFillerData}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseFillerData()}{parseFillerData()}}
+{\footnotesize\ttfamily void parse\+Filler\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{bs,  }\item[{uint32\+\_\+t \&}]{fd\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 226 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a1cc30b5c22da84c7996997ad2e071798_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a9c73b36708d53b5539e2562e6c6cd065}\label{classvvenc_1_1HLSyntaxReader_a9c73b36708d53b5539e2562e6c6cd065}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseGeneralHrdParameters@{parseGeneralHrdParameters}}
+\index{parseGeneralHrdParameters@{parseGeneralHrdParameters}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseGeneralHrdParameters()}{parseGeneralHrdParameters()}}
+{\footnotesize\ttfamily void parse\+General\+Hrd\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} $\ast$}]{general\+Hrd }\end{DoxyParamCaption})}
+
+
+
+Definition at line 888 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a9c73b36708d53b5539e2562e6c6cd065_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a27110e7125692b38e999f8d0a3e0ef99}\label{classvvenc_1_1HLSyntaxReader_a27110e7125692b38e999f8d0a3e0ef99}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseLmcsAps@{parseLmcsAps}}
+\index{parseLmcsAps@{parseLmcsAps}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseLmcsAps()}{parseLmcsAps()}}
+{\footnotesize\ttfamily void parse\+Lmcs\+Aps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1APS}{A\+PS}} $\ast$}]{aps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 766 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a27110e7125692b38e999f8d0a3e0ef99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_ae2fa65386bef0211a7131fedde907a99}\label{classvvenc_1_1HLSyntaxReader_ae2fa65386bef0211a7131fedde907a99}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseOlsHrdParameters@{parseOlsHrdParameters}}
+\index{parseOlsHrdParameters@{parseOlsHrdParameters}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseOlsHrdParameters()}{parseOlsHrdParameters()}}
+{\footnotesize\ttfamily void parse\+Ols\+Hrd\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1GeneralHrdParams}{General\+Hrd\+Params}} $\ast$}]{general\+Hrd,  }\item[{\mbox{\hyperlink{structvvenc_1_1OlsHrdParams}{Ols\+Hrd\+Params}} $\ast$}]{ols\+Hrd,  }\item[{uint32\+\_\+t}]{first\+Sub\+Layer,  }\item[{uint32\+\_\+t}]{temp\+Level\+High }\end{DoxyParamCaption})}
+
+
+
+Definition at line 913 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ae2fa65386bef0211a7131fedde907a99_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_ac99b492d40a07ba32ffcb7d4484d925d}\label{classvvenc_1_1HLSyntaxReader_ac99b492d40a07ba32ffcb7d4484d925d}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parsePictureHeader@{parsePictureHeader}}
+\index{parsePictureHeader@{parsePictureHeader}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parsePictureHeader()}{parsePictureHeader()}}
+{\footnotesize\ttfamily void parse\+Picture\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$}]{parameter\+Set\+Manager,  }\item[{bool}]{read\+Rbsp\+Trailing\+Bits }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1780 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ac99b492d40a07ba32ffcb7d4484d925d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ac99b492d40a07ba32ffcb7d4484d925d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a839a9f4626efdbbc0f9e54bf53113a8f}\label{classvvenc_1_1HLSyntaxReader_a839a9f4626efdbbc0f9e54bf53113a8f}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parsePPS@{parsePPS}}
+\index{parsePPS@{parsePPS}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parsePPS()}{parsePPS()}}
+{\footnotesize\ttfamily void parse\+P\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{pc\+P\+PS,  }\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$}]{parameter\+Set\+Manager }\end{DoxyParamCaption})}
+
+
+
+Definition at line 371 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a839a9f4626efdbbc0f9e54bf53113a8f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a839a9f4626efdbbc0f9e54bf53113a8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_af06ed7578020c384ab56b180102f9eb0}\label{classvvenc_1_1HLSyntaxReader_af06ed7578020c384ab56b180102f9eb0}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parsePredWeightTable@{parsePredWeightTable}}
+\index{parsePredWeightTable@{parsePredWeightTable}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parsePredWeightTable()}{parsePredWeightTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void parse\+Pred\+Weight\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{const \mbox{\hyperlink{structvvenc_1_1PPS}{P\+PS}} $\ast$}]{pps,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3551 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_af06ed7578020c384ab56b180102f9eb0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a55d21f14fd1b6883308a8d870d0346eb}\label{classvvenc_1_1HLSyntaxReader_a55d21f14fd1b6883308a8d870d0346eb}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parsePredWeightTable@{parsePredWeightTable}}
+\index{parsePredWeightTable@{parsePredWeightTable}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parsePredWeightTable()}{parsePredWeightTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void parse\+Pred\+Weight\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{pc\+Slice,  }\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{sps }\end{DoxyParamCaption})}
+
+
+
+parse explicit wp tables 
+
+
+
+Definition at line 3432 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a55d21f14fd1b6883308a8d870d0346eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a55d21f14fd1b6883308a8d870d0346eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a51ab2c7bab47403550570ebffd76b509}\label{classvvenc_1_1HLSyntaxReader_a51ab2c7bab47403550570ebffd76b509}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseProfileTierLevel@{parseProfileTierLevel}}
+\index{parseProfileTierLevel@{parseProfileTierLevel}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseProfileTierLevel()}{parseProfileTierLevel()}}
+{\footnotesize\ttfamily void parse\+Profile\+Tier\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1ProfileTierLevel}{Profile\+Tier\+Level}} $\ast$}]{ptl,  }\item[{bool}]{profile\+Tier\+Present,  }\item[{int}]{max\+Num\+Sub\+Layers\+Minus1 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3338 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a51ab2c7bab47403550570ebffd76b509_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a51ab2c7bab47403550570ebffd76b509_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a0d6d5d7ca973c1092cfc214f291b527d}\label{classvvenc_1_1HLSyntaxReader_a0d6d5d7ca973c1092cfc214f291b527d}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseRefPicList@{parseRefPicList}}
+\index{parseRefPicList@{parseRefPicList}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseRefPicList()}{parseRefPicList()}}
+{\footnotesize\ttfamily void parse\+Ref\+Pic\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{pc\+S\+PS,  }\item[{\mbox{\hyperlink{structvvenc_1_1ReferencePictureList}{Reference\+Picture\+List}} $\ast$}]{rpl,  }\item[{int}]{rpl\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 274 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classvvenc_1_1HLSyntaxReader_a0d6d5d7ca973c1092cfc214f291b527d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a0d6d5d7ca973c1092cfc214f291b527d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a97891cca4b5b90f71bcca76f893fce96}\label{classvvenc_1_1HLSyntaxReader_a97891cca4b5b90f71bcca76f893fce96}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseRemainingBytes@{parseRemainingBytes}}
+\index{parseRemainingBytes@{parseRemainingBytes}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseRemainingBytes()}{parseRemainingBytes()}}
+{\footnotesize\ttfamily void parse\+Remaining\+Bytes (\begin{DoxyParamCaption}\item[{bool}]{no\+Trailing\+Bytes\+Expected }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3407 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classvvenc_1_1HLSyntaxReader_a97891cca4b5b90f71bcca76f893fce96_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a7fe2f70e9617b1395c414a5a314d5ef3}\label{classvvenc_1_1HLSyntaxReader_a7fe2f70e9617b1395c414a5a314d5ef3}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseSliceHeader@{parseSliceHeader}}
+\index{parseSliceHeader@{parseSliceHeader}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseSliceHeader()}{parseSliceHeader()}}
+{\footnotesize\ttfamily void parse\+Slice\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1Slice}{Slice}} $\ast$}]{slice,  }\item[{\mbox{\hyperlink{structvvenc_1_1PicHeader}{Pic\+Header}} $\ast$}]{pic\+Header,  }\item[{\mbox{\hyperlink{classvvenc_1_1ParameterSetManager}{Parameter\+Set\+Manager}} $\ast$}]{parameter\+Set\+Manager,  }\item[{const int}]{prev\+Tid0\+P\+OC }\end{DoxyParamCaption})}
+
+
+
+Definition at line 2393 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a7fe2f70e9617b1395c414a5a314d5ef3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a7fe2f70e9617b1395c414a5a314d5ef3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a48441f50523ab47e6ae1155b3f35ea78}\label{classvvenc_1_1HLSyntaxReader_a48441f50523ab47e6ae1155b3f35ea78}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseSPS@{parseSPS}}
+\index{parseSPS@{parseSPS}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseSPS()}{parseSPS()}}
+{\footnotesize\ttfamily void parse\+S\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{pc\+S\+PS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1024 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a48441f50523ab47e6ae1155b3f35ea78_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a48441f50523ab47e6ae1155b3f35ea78_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_ab9aef541a99f12afce49e60cfc8c2a1b}\label{classvvenc_1_1HLSyntaxReader_ab9aef541a99f12afce49e60cfc8c2a1b}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseTerminatingBit@{parseTerminatingBit}}
+\index{parseTerminatingBit@{parseTerminatingBit}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseTerminatingBit()}{parseTerminatingBit()}}
+{\footnotesize\ttfamily void parse\+Terminating\+Bit (\begin{DoxyParamCaption}\item[{uint32\+\_\+t \&}]{rui\+Bit }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3393 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_ab9aef541a99f12afce49e60cfc8c2a1b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a1049fdd0a57f6b03f39ceff8b448de83}\label{classvvenc_1_1HLSyntaxReader_a1049fdd0a57f6b03f39ceff8b448de83}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseVPS@{parseVPS}}
+\index{parseVPS@{parseVPS}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseVPS()}{parseVPS()}}
+{\footnotesize\ttfamily void parse\+V\+PS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1VPS}{V\+PS}} $\ast$}]{pc\+V\+PS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1551 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a1049fdd0a57f6b03f39ceff8b448de83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a1049fdd0a57f6b03f39ceff8b448de83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_aebaa8818f1acce0683a1ad02f67a317c}\label{classvvenc_1_1HLSyntaxReader_aebaa8818f1acce0683a1ad02f67a317c}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!parseVUI@{parseVUI}}
+\index{parseVUI@{parseVUI}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{parseVUI()}{parseVUI()}}
+{\footnotesize\ttfamily void parse\+V\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structvvenc_1_1VUI}{V\+UI}} $\ast$}]{pc\+V\+UI,  }\item[{\mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} $\ast$}]{pc\+S\+PS }\end{DoxyParamCaption})}
+
+
+
+Definition at line 801 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_aebaa8818f1acce0683a1ad02f67a317c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_aebaa8818f1acce0683a1ad02f67a317c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a0b98eeee77b103b25cbad24c488a07b2}\label{classvvenc_1_1HLSyntaxReader_a0b98eeee77b103b25cbad24c488a07b2}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!setBitstream@{setBitstream}}
+\index{setBitstream@{setBitstream}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{setBitstream()}{setBitstream()}}
+{\footnotesize\ttfamily void set\+Bitstream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvvenc_1_1InputBitstream}{Input\+Bitstream}} $\ast$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 143 of file V\+L\+C\+Reader.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a0b98eeee77b103b25cbad24c488a07b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1HLSyntaxReader_a54c116b400f1888fed6d989f29392d71}\label{classvvenc_1_1HLSyntaxReader_a54c116b400f1888fed6d989f29392d71}} 
+\index{HLSyntaxReader@{HLSyntaxReader}!xMoreRbspData@{xMoreRbspData}}
+\index{xMoreRbspData@{xMoreRbspData}!HLSyntaxReader@{HLSyntaxReader}}
+\doxysubsubsection{\texorpdfstring{xMoreRbspData()}{xMoreRbspData()}}
+{\footnotesize\ttfamily bool x\+More\+Rbsp\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 3693 of file V\+L\+C\+Reader.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a54c116b400f1888fed6d989f29392d71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1HLSyntaxReader_a54c116b400f1888fed6d989f29392d71_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{VLCReader_8h}{V\+L\+C\+Reader.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Decoder\+Lib/\mbox{\hyperlink{VLCReader_8cpp}{V\+L\+C\+Reader.\+cpp}}\end{DoxyCompactItemize}

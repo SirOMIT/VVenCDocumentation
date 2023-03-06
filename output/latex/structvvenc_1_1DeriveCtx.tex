@@ -1,0 +1,318 @@
+\hypertarget{structvvenc_1_1DeriveCtx}{}\doxysection{Derive\+Ctx}
+\label{structvvenc_1_1DeriveCtx}\index{DeriveCtx@{DeriveCtx}}
+
+
+{\ttfamily \#include \char`\"{}Context\+Modelling.\+h\char`\"{}}
+
+
+
+Inheritance diagram for Derive\+Ctx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{structvvenc_1_1DeriveCtx__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Derive\+Ctx\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a17364a4c4281565ea40150cd3b64c76d}{Ctx\+Affine\+Flag}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_acace7f55840507c46aaf4b537a792648}{Ctx\+I\+B\+C\+Flag}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_ab9b12504d9aa0a994fb8555adb6c0633}{Ctx\+Inter\+Dir}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a74044af6b88237dfb2beb9591e814788}{Ctx\+Mip\+Flag}} (const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&cu) const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a9e9b7ded1fb541044fad67b73aa86e39}{Ctx\+Mode\+Cons\+Flag}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a4cd611b9b928bdcc2e9661ef62cdf08c}{Ctx\+Pred\+Mode\+Flag}} () const
+\item 
+unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_ae107655f200eb1a6e8d8807c97c3afb7}{Ctx\+Skip\+Flag}} () const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1DeriveCtx_ab1a92e73af96973fe5277a3627f11de6}{Ctx\+Split}} (const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&partitioner, unsigned \&ctx\+Spl, unsigned \&ctx\+Qt, unsigned \&ctx\+Hv, unsigned \&ctx\+Hor\+Bt, unsigned \&ctx\+Ver\+Bt, const bool can\+Split\mbox{[}6\mbox{]}) const
+\item 
+void \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a2eb3f9674e7f0c5837a16d85565c3273}{determine\+Neighbor\+Cus}} (const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&cs, const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&ua, const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}} ch, const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}} tree\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \mbox{\hyperlink{structvvenc_1_1DeriveCtx_af4b9124a26f6e85912e0be7897204318}{Ctx\+Qt\+Cbf}} (const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}} comp\+ID, const bool prev\+Cbf=false, const int isp\+Idx=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1DeriveCtx_ab4dadfdefcb7ed316888a508e0244305}{cu\+Restricted\+Above}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} $\ast$ \mbox{\hyperlink{structvvenc_1_1DeriveCtx_a5c3d64134f7b3d16b918899ad9d69b28}{cu\+Restricted\+Left}} \mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 489 of file Context\+Modelling.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a17364a4c4281565ea40150cd3b64c76d}\label{structvvenc_1_1DeriveCtx_a17364a4c4281565ea40150cd3b64c76d}} 
+\index{DeriveCtx@{DeriveCtx}!CtxAffineFlag@{CtxAffineFlag}}
+\index{CtxAffineFlag@{CtxAffineFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxAffineFlag()}{CtxAffineFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+Affine\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 507 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a17364a4c4281565ea40150cd3b64c76d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_acace7f55840507c46aaf4b537a792648}\label{structvvenc_1_1DeriveCtx_acace7f55840507c46aaf4b537a792648}} 
+\index{DeriveCtx@{DeriveCtx}!CtxIBCFlag@{CtxIBCFlag}}
+\index{CtxIBCFlag@{CtxIBCFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxIBCFlag()}{CtxIBCFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+I\+B\+C\+Flag (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 525 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_acace7f55840507c46aaf4b537a792648_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_ab9b12504d9aa0a994fb8555adb6c0633}\label{structvvenc_1_1DeriveCtx_ab9b12504d9aa0a994fb8555adb6c0633}} 
+\index{DeriveCtx@{DeriveCtx}!CtxInterDir@{CtxInterDir}}
+\index{CtxInterDir@{CtxInterDir}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxInterDir()}{CtxInterDir()}}
+{\footnotesize\ttfamily unsigned Ctx\+Inter\+Dir (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 499 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_ab9b12504d9aa0a994fb8555adb6c0633_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_ab9b12504d9aa0a994fb8555adb6c0633_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a74044af6b88237dfb2beb9591e814788}\label{structvvenc_1_1DeriveCtx_a74044af6b88237dfb2beb9591e814788}} 
+\index{DeriveCtx@{DeriveCtx}!CtxMipFlag@{CtxMipFlag}}
+\index{CtxMipFlag@{CtxMipFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxMipFlag()}{CtxMipFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+Mip\+Flag (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}} \&}]{cu }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 440 of file Context\+Modelling.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a74044af6b88237dfb2beb9591e814788_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a74044af6b88237dfb2beb9591e814788_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a9e9b7ded1fb541044fad67b73aa86e39}\label{structvvenc_1_1DeriveCtx_a9e9b7ded1fb541044fad67b73aa86e39}} 
+\index{DeriveCtx@{DeriveCtx}!CtxModeConsFlag@{CtxModeConsFlag}}
+\index{CtxModeConsFlag@{CtxModeConsFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxModeConsFlag()}{CtxModeConsFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+Mode\+Cons\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 501 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a9e9b7ded1fb541044fad67b73aa86e39_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a4cd611b9b928bdcc2e9661ef62cdf08c}\label{structvvenc_1_1DeriveCtx_a4cd611b9b928bdcc2e9661ef62cdf08c}} 
+\index{DeriveCtx@{DeriveCtx}!CtxPredModeFlag@{CtxPredModeFlag}}
+\index{CtxPredModeFlag@{CtxPredModeFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxPredModeFlag()}{CtxPredModeFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+Pred\+Mode\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 519 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a4cd611b9b928bdcc2e9661ef62cdf08c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_af4b9124a26f6e85912e0be7897204318}\label{structvvenc_1_1DeriveCtx_af4b9124a26f6e85912e0be7897204318}} 
+\index{DeriveCtx@{DeriveCtx}!CtxQtCbf@{CtxQtCbf}}
+\index{CtxQtCbf@{CtxQtCbf}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxQtCbf()}{CtxQtCbf()}}
+{\footnotesize\ttfamily static unsigned Ctx\+Qt\+Cbf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacevvenc_af483359f17deab82472b16da461a9a0f}{Component\+ID}}}]{comp\+ID,  }\item[{const bool}]{prev\+Cbf = {\ttfamily false},  }\item[{const int}]{isp\+Idx = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 496 of file Context\+Modelling.\+h.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{structvvenc_1_1DeriveCtx_af4b9124a26f6e85912e0be7897204318_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_af4b9124a26f6e85912e0be7897204318_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_ae107655f200eb1a6e8d8807c97c3afb7}\label{structvvenc_1_1DeriveCtx_ae107655f200eb1a6e8d8807c97c3afb7}} 
+\index{DeriveCtx@{DeriveCtx}!CtxSkipFlag@{CtxSkipFlag}}
+\index{CtxSkipFlag@{CtxSkipFlag}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxSkipFlag()}{CtxSkipFlag()}}
+{\footnotesize\ttfamily unsigned Ctx\+Skip\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 513 of file Context\+Modelling.\+h.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_ae107655f200eb1a6e8d8807c97c3afb7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_ab1a92e73af96973fe5277a3627f11de6}\label{structvvenc_1_1DeriveCtx_ab1a92e73af96973fe5277a3627f11de6}} 
+\index{DeriveCtx@{DeriveCtx}!CtxSplit@{CtxSplit}}
+\index{CtxSplit@{CtxSplit}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{CtxSplit()}{CtxSplit()}}
+{\footnotesize\ttfamily void Ctx\+Split (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1Partitioner}{Partitioner}} \&}]{partitioner,  }\item[{unsigned \&}]{ctx\+Spl,  }\item[{unsigned \&}]{ctx\+Qt,  }\item[{unsigned \&}]{ctx\+Hv,  }\item[{unsigned \&}]{ctx\+Hor\+Bt,  }\item[{unsigned \&}]{ctx\+Ver\+Bt,  }\item[{const bool}]{can\+Split\mbox{[}6\mbox{]} }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 150 of file Context\+Modelling.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_ab1a92e73af96973fe5277a3627f11de6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_ab1a92e73af96973fe5277a3627f11de6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a2eb3f9674e7f0c5837a16d85565c3273}\label{structvvenc_1_1DeriveCtx_a2eb3f9674e7f0c5837a16d85565c3273}} 
+\index{DeriveCtx@{DeriveCtx}!determineNeighborCus@{determineNeighborCus}}
+\index{determineNeighborCus@{determineNeighborCus}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{determineNeighborCus()}{determineNeighborCus()}}
+{\footnotesize\ttfamily void determine\+Neighbor\+Cus (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvvenc_1_1CodingStructure}{Coding\+Structure}} \&}]{cs,  }\item[{const \mbox{\hyperlink{structvvenc_1_1UnitArea}{Unit\+Area}} \&}]{ua,  }\item[{const \mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8}{Channel\+Type}}}]{ch,  }\item[{const \mbox{\hyperlink{namespacevvenc_ad31da9b5f4979160b0e600cd47e42b91}{Tree\+Type}}}]{tree\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 139 of file Context\+Modelling.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a2eb3f9674e7f0c5837a16d85565c3273_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structvvenc_1_1DeriveCtx_a2eb3f9674e7f0c5837a16d85565c3273_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_ab4dadfdefcb7ed316888a508e0244305}\label{structvvenc_1_1DeriveCtx_ab4dadfdefcb7ed316888a508e0244305}} 
+\index{DeriveCtx@{DeriveCtx}!cuRestrictedAbove@{cuRestrictedAbove}}
+\index{cuRestrictedAbove@{cuRestrictedAbove}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{cuRestrictedAbove}{cuRestrictedAbove}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ cu\+Restricted\+Above\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}}
+
+
+
+Definition at line 492 of file Context\+Modelling.\+h.
+
+\mbox{\Hypertarget{structvvenc_1_1DeriveCtx_a5c3d64134f7b3d16b918899ad9d69b28}\label{structvvenc_1_1DeriveCtx_a5c3d64134f7b3d16b918899ad9d69b28}} 
+\index{DeriveCtx@{DeriveCtx}!cuRestrictedLeft@{cuRestrictedLeft}}
+\index{cuRestrictedLeft@{cuRestrictedLeft}!DeriveCtx@{DeriveCtx}}
+\doxysubsubsection{\texorpdfstring{cuRestrictedLeft}{cuRestrictedLeft}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1CodingUnit}{Coding\+Unit}}$\ast$ cu\+Restricted\+Left\mbox{[}\mbox{\hyperlink{namespacevvenc_a19a96edeeb9d37072c4ce9f862d19ba8a4f1a8d47fade1c4c9d0e4656e34a1bbd}{M\+A\+X\+\_\+\+N\+U\+M\+\_\+\+CH}}\mbox{]}}
+
+
+
+Definition at line 491 of file Context\+Modelling.\+h.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8h}{Context\+Modelling.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ContextModelling_8cpp}{Context\+Modelling.\+cpp}}\end{DoxyCompactItemize}

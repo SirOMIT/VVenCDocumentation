@@ -1,0 +1,244 @@
+\hypertarget{LoopFilter_8cpp}{}\doxysection{/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\+Loop\+Filter.cpp File Reference}
+\label{LoopFilter_8cpp}\index{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/LoopFilter.cpp@{/home/itaabane/Bureau/vvencp/vvenc-\/master/source/Lib/CommonLib/LoopFilter.cpp}}
+
+
+deblocking filter  
+
+
+{\ttfamily \#include \char`\"{}Loop\+Filter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Slice.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Mv.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Tools.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Unit\+Partitioner.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+codingstruct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dtrace\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Quant.\+h\char`\"{}}\newline
+Include dependency graph for Loop\+Filter.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{LoopFilter_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacevvenc}{vvenc}}
+\item 
+ \mbox{\hyperlink{namespacevvenc_1_1CU}{vvenc\+::\+CU}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Transform\+Unit const  $\ast$ \mbox{\hyperlink{namespacevvenc_1_1CU_ae773b0a93e1c20084c95aaabb0627818}{get\+TU}} (const Coding\+Unit \&cu, const Position \&pos, const Channel\+Type ch\+Type)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_ae4904d2a0eb6098be35db0ab916cd492}{Bs\+Get}}(val,  comp\+Idx)~( ( ( val ) $>$$>$ ( ( comp\+Idx ) $<$$<$ 1 ) ) \& 3 )
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_af737d1b19c0d265e9d7172b8157a01cc}{Bs\+Set}}(val,  comp\+Idx)~(   ( val ) $<$$<$ ( ( comp\+Idx ) $<$$<$ 1 ) )
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_af5d0876ba8b3e64d6d1aef7a8ad4f0c5}{db\+Coeffs3}} \mbox{[}3\mbox{]} = \{ 53, 32, 11 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a189b34c91378d5706c1e408c5f7cdc9c}{db\+Coeffs5}} \mbox{[}5\mbox{]} = \{ 58, 45, 32, 19, 6 \}
+\item 
+static const int \mbox{\hyperlink{namespacevvenc_a810bd3d17277e39583081f67a93b5142}{db\+Coeffs7}} \mbox{[}7\mbox{]} = \{ 59, 50, 41, 32, 23, 14, 5 \}
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_abec0e97c672c69fa409dc46fa4910bf2}{D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+N\+T\+R\+A\+\_\+\+T\+C\+\_\+\+O\+F\+F\+S\+ET}}~2
+\begin{DoxyCompactList}\small\item\em Default intra TC offset. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_ad4ee76dd47188f8ac964ed290fd86ea8}{G\+E\+T\+\_\+\+O\+F\+F\+S\+ET}}(ptr,  stride,  x,  y)~( ( ptr ) + ( x ) + ( y ) $\ast$ ( stride ) )
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_a3a8f46c5a1492ec91275bdc3443ae74e}{G\+E\+T\+\_\+\+O\+F\+F\+S\+E\+TX}}(ptr,  stride,  x)~( ( ptr ) + ( x ) )
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_aaa5bd3acdb1651602f72dfb01dd3672e}{G\+E\+T\+\_\+\+O\+F\+F\+S\+E\+TY}}(ptr,  stride,  y)~( ( ptr ) + ( y ) $\ast$ ( stride ) )
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_ab5443b27d451e58b2c0bc5ece09f2139}{I\+N\+CX}}(ptr,  stride)~\{ ptr++; \}
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_ab4ad98fcb83d22f38c533b2d066c5522}{I\+N\+CY}}(ptr,  stride)~\{ ptr += ( stride ); \}
+\item 
+static bool \mbox{\hyperlink{namespacevvenc_aca2f15033131b7593d24de9d045fcabd}{is\+Available}} (const Coding\+Unit \&cu, const Coding\+Unit \&cu2, const bool b\+Enforce\+Slice\+Restriction)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_aaeb6b4b62523239a7a60ae1d1b63c4fc}{is\+Crossed\+By\+Virtual\+Boundaries}} (const S\+PS $\ast$pps, const Area \&area, int \&num\+Hor\+Vir\+Bndry, int \&num\+Ver\+Vir\+Bndry, int hor\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]}, int ver\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]})
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_acf7f62ee45a2084a244abd232bb25d6f}{O\+F\+F\+S\+ET}}(ptr,  stride,  x,  y)~\{ ptr += ( x ) + ( y ) $\ast$ ( stride ); \}
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_a801491118dabfe946f60d39b36cc0689}{O\+F\+F\+S\+E\+TX}}(ptr,  stride,  x)~\{ ptr += ( x ); \}
+\item 
+\#define \mbox{\hyperlink{LoopFilter_8cpp_a9e66d9c7a14ac97083cf08a059900b86}{O\+F\+F\+S\+E\+TY}}(ptr,  stride,  y)~\{ ptr += ( y ) $\ast$ ( stride ); \}
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\Pos\+Type \mbox{\hyperlink{namespacevvenc_abc3818a9110245c6eeb774354ce17c52}{parl\+Pos}} (const Position \&)
+\item 
+template$<$$>$ Pos\+Type \mbox{\hyperlink{namespacevvenc_a55f723a0cb45612fd8af6e794d6b070f}{parl\+Pos$<$ E\+D\+G\+E\+\_\+\+H\+O\+R $>$}} (const Position \&pos)
+\item 
+template$<$$>$ Pos\+Type \mbox{\hyperlink{namespacevvenc_ae7b1c0c0a861bf300ec28276e231abcb}{parl\+Pos$<$ E\+D\+G\+E\+\_\+\+V\+E\+R $>$}} (const Position \&pos)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\Size\+Type \mbox{\hyperlink{namespacevvenc_a21d27a5761bfa9d9f8ecd16967c81ea8}{parl\+Size}} (const Size \&)
+\item 
+template$<$$>$ Size\+Type \mbox{\hyperlink{namespacevvenc_afb62a865cac413cc255bc790d71dd99f}{parl\+Size$<$ E\+D\+G\+E\+\_\+\+H\+O\+R $>$}} (const Size \&size)
+\item 
+template$<$$>$ Size\+Type \mbox{\hyperlink{namespacevvenc_a0f0072c6c946087a834e9cae71f7b1d4}{parl\+Size$<$ E\+D\+G\+E\+\_\+\+V\+E\+R $>$}} (const Size \&size)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\Pos\+Type \mbox{\hyperlink{namespacevvenc_a6e189235c596157dede87322759c2234}{perp\+Pos}} (const Position \&)
+\item 
+template$<$$>$ Pos\+Type \mbox{\hyperlink{namespacevvenc_a47034d317d15aec61896b6b2c300f242}{perp\+Pos$<$ E\+D\+G\+E\+\_\+\+H\+O\+R $>$}} (const Position \&pos)
+\item 
+template$<$$>$ Pos\+Type \mbox{\hyperlink{namespacevvenc_a6b7de328025d9e5c200eb147c235148a}{perp\+Pos$<$ E\+D\+G\+E\+\_\+\+V\+E\+R $>$}} (const Position \&pos)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\Size\+Type \mbox{\hyperlink{namespacevvenc_af8d17d1d9e992c4820f032608bb22ddd}{perp\+Size}} (const Size \&)
+\item 
+template$<$$>$ Size\+Type \mbox{\hyperlink{namespacevvenc_a4a6cced0ba99af88ea07f47c4059fd23}{perp\+Size$<$ E\+D\+G\+E\+\_\+\+H\+O\+R $>$}} (const Size \&size)
+\item 
+template$<$$>$ Size\+Type \mbox{\hyperlink{namespacevvenc_a5e7bd13d1da5210e6164a10fe41bc3a7}{perp\+Size$<$ E\+D\+G\+E\+\_\+\+V\+E\+R $>$}} (const Size \&size)
+\item 
+static void \mbox{\hyperlink{namespacevvenc_a20e9a8080c416a9291858e8a557fa162}{x\+Bilinear\+Filter}} (Pel $\ast$srcP, Pel $\ast$srcQ, ptrdiff\+\_\+t offset, int ref\+Middle, int refP, int refQ, int number\+P\+Side, int number\+Q\+Side, const int $\ast$db\+CoeffsP, const int $\ast$db\+CoeffsQ, int tc)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a59b01ab329b395bd0a873b8ff6e7fc1f}{x\+Calc\+DP}} (const Pel $\ast$pi\+Src, const ptrdiff\+\_\+t i\+Offset, const bool is\+Chroma\+Hor\+C\+T\+B\+Boundary=false)
+\item 
+static int \mbox{\hyperlink{namespacevvenc_a9aa93e1a0bcbdf8d5bc9a6d745496dcf}{x\+Calc\+DQ}} (const Pel $\ast$pi\+Src, const ptrdiff\+\_\+t i\+Offset)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a11eb81de4b325e06f6943bd9893aff8a}{x\+Derive\+Edgefilter\+Param}} (const Position pos, const int num\+Ver\+Vir\+Bndry, const int num\+Hor\+Vir\+Bndry, const int ver\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]}, const int hor\+Vir\+Bndry\+Pos\mbox{[}$\,$\mbox{]}, bool \&ver\+Edge\+Filter, bool \&hor\+Edge\+Filter)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a15633f3746b8780579e03693446490cd}{x\+Filtering\+Pand\+Q\+Core}} (Pel $\ast$src, ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, int number\+P\+Side, int number\+Q\+Side, int tc)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{namespacevvenc_a2f325d7e006d38f0b0dfdda6b956cce0}{x\+Get\+Boundary\+Strength\+Single}} (Loop\+Filter\+Param \&lfp, const Coding\+Unit \&cu, const Position \&local\+Pos, const Coding\+Unit \&cuP)
+\item 
+L\+F\+C\+U\+Param \mbox{\hyperlink{namespacevvenc_a3b41d9e076e3e2c4b659e84b7f6ca912}{x\+Get\+Loopfilter\+Param}} (const Coding\+Unit \&cu)
+\item 
+static void \mbox{\hyperlink{namespacevvenc_aa2a6e0d1307a9a248b88ade464a0b6c7}{x\+Pel\+Filter\+Chroma}} (Pel $\ast$pi\+Src, const ptrdiff\+\_\+t i\+Offset, const int tc, const bool sw, const bool b\+Part\+P\+No\+Filter, const bool b\+Part\+Q\+No\+Filter, const Clp\+Rng \&clp\+Rng, const bool large\+Boundary, const bool is\+Chroma\+Hor\+C\+T\+B\+Boundary)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a3c878af5a7314f69916c5ccb5a3f3578}{x\+Pel\+Filter\+Luma\+Core}} (Pel $\ast$pi\+Src, const ptrdiff\+\_\+t step, const ptrdiff\+\_\+t offset, const int tc, const bool sw, const int i\+Thr\+Cut, const bool b\+Filter\+SecondP, const bool b\+Filter\+SecondQ, const Clp\+Rng \&clp\+Rng)
+\item 
+void \mbox{\hyperlink{namespacevvenc_a9a424816ade70979cf6645b5abd8592f}{x\+Pel\+Filter\+Luma\+Core\+Pel}} (Pel $\ast$pi\+Src, const ptrdiff\+\_\+t i\+Offset, const int tc, const bool sw, const int i\+Thr\+Cut, const bool b\+Filter\+SecondP, const bool b\+Filter\+SecondQ, const Clp\+Rng \&clp\+Rng)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{namespacevvenc_afa900a8535e12a550792d30d6b4552dd}{x\+Set\+Edge\+Filter\+Inside\+Pu}} (const Coding\+Unit \&cu, const Area \&area, const bool b\+Value)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{namespacevvenc_aa36bf4134161f368f427be3f768ada01}{x\+Set\+Max\+Filter\+Length\+P\+Q\+For\+Coding\+Sub\+Blocks}} (const Coding\+Unit \&cu)
+\item 
+{\footnotesize template$<$Deblock\+Edge\+Dir edge\+Dir$>$ }\\void \mbox{\hyperlink{namespacevvenc_af124b4f2bf48fa1dc68219fbee73256f}{x\+Set\+Max\+Filter\+Length\+P\+Q\+From\+Transform\+Sizes}} (const Coding\+Unit \&cu, const Transform\+Unit \&curr\+TU, const bool b\+Value, bool derive\+Bd\+Strngt)
+\item 
+bool \mbox{\hyperlink{namespacevvenc_a0f3ed0447356429f92e4f772b689ef07}{x\+Use\+Strong\+Filtering}} (Pel $\ast$pi\+Src, const ptrdiff\+\_\+t i\+Offset, const int d, const int beta, const int tc, bool side\+Pis\+Large=false, bool side\+Qis\+Large=false, int max\+Filter\+LengthP=7, int max\+Filter\+LengthQ=7, bool is\+Chroma\+Hor\+C\+T\+B\+Boundary=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+deblocking filter 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{LoopFilter_8cpp_ae4904d2a0eb6098be35db0ab916cd492}\label{LoopFilter_8cpp_ae4904d2a0eb6098be35db0ab916cd492}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!BsGet@{BsGet}}
+\index{BsGet@{BsGet}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{BsGet}{BsGet}}
+{\footnotesize\ttfamily \#define Bs\+Get(\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{comp\+Idx }\end{DoxyParamCaption})~( ( ( val ) $>$$>$ ( ( comp\+Idx ) $<$$<$ 1 ) ) \& 3 )}
+
+
+
+Definition at line 111 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_af737d1b19c0d265e9d7172b8157a01cc}\label{LoopFilter_8cpp_af737d1b19c0d265e9d7172b8157a01cc}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!BsSet@{BsSet}}
+\index{BsSet@{BsSet}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{BsSet}{BsSet}}
+{\footnotesize\ttfamily \#define Bs\+Set(\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{comp\+Idx }\end{DoxyParamCaption})~(   ( val ) $<$$<$ ( ( comp\+Idx ) $<$$<$ 1 ) )}
+
+
+
+Definition at line 110 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_abec0e97c672c69fa409dc46fa4910bf2}\label{LoopFilter_8cpp_abec0e97c672c69fa409dc46fa4910bf2}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!DEFAULT\_INTRA\_TC\_OFFSET@{DEFAULT\_INTRA\_TC\_OFFSET}}
+\index{DEFAULT\_INTRA\_TC\_OFFSET@{DEFAULT\_INTRA\_TC\_OFFSET}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_INTRA\_TC\_OFFSET}{DEFAULT\_INTRA\_TC\_OFFSET}}
+{\footnotesize\ttfamily \#define D\+E\+F\+A\+U\+L\+T\+\_\+\+I\+N\+T\+R\+A\+\_\+\+T\+C\+\_\+\+O\+F\+F\+S\+ET~2}
+
+
+
+Default intra TC offset. 
+
+
+
+Definition at line 76 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_ad4ee76dd47188f8ac964ed290fd86ea8}\label{LoopFilter_8cpp_ad4ee76dd47188f8ac964ed290fd86ea8}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!GET\_OFFSET@{GET\_OFFSET}}
+\index{GET\_OFFSET@{GET\_OFFSET}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{GET\_OFFSET}{GET\_OFFSET}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+O\+F\+F\+S\+ET(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~( ( ptr ) + ( x ) + ( y ) $\ast$ ( stride ) )}
+
+
+
+Definition at line 103 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_a3a8f46c5a1492ec91275bdc3443ae74e}\label{LoopFilter_8cpp_a3a8f46c5a1492ec91275bdc3443ae74e}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!GET\_OFFSETX@{GET\_OFFSETX}}
+\index{GET\_OFFSETX@{GET\_OFFSETX}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{GET\_OFFSETX}{GET\_OFFSETX}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+O\+F\+F\+S\+E\+TX(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{x }\end{DoxyParamCaption})~( ( ptr ) + ( x ) )}
+
+
+
+Definition at line 101 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_aaa5bd3acdb1651602f72dfb01dd3672e}\label{LoopFilter_8cpp_aaa5bd3acdb1651602f72dfb01dd3672e}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!GET\_OFFSETY@{GET\_OFFSETY}}
+\index{GET\_OFFSETY@{GET\_OFFSETY}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{GET\_OFFSETY}{GET\_OFFSETY}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+O\+F\+F\+S\+E\+TY(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{y }\end{DoxyParamCaption})~( ( ptr ) + ( y ) $\ast$ ( stride ) )}
+
+
+
+Definition at line 102 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_ab5443b27d451e58b2c0bc5ece09f2139}\label{LoopFilter_8cpp_ab5443b27d451e58b2c0bc5ece09f2139}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!INCX@{INCX}}
+\index{INCX@{INCX}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{INCX}{INCX}}
+{\footnotesize\ttfamily \#define I\+N\+CX(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride }\end{DoxyParamCaption})~\{ ptr++; \}}
+
+
+
+Definition at line 96 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_ab4ad98fcb83d22f38c533b2d066c5522}\label{LoopFilter_8cpp_ab4ad98fcb83d22f38c533b2d066c5522}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!INCY@{INCY}}
+\index{INCY@{INCY}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{INCY}{INCY}}
+{\footnotesize\ttfamily \#define I\+N\+CY(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride }\end{DoxyParamCaption})~\{ ptr += ( stride ); \}}
+
+
+
+Definition at line 97 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_acf7f62ee45a2084a244abd232bb25d6f}\label{LoopFilter_8cpp_acf7f62ee45a2084a244abd232bb25d6f}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!OFFSET@{OFFSET}}
+\index{OFFSET@{OFFSET}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{OFFSET}{OFFSET}}
+{\footnotesize\ttfamily \#define O\+F\+F\+S\+ET(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})~\{ ptr += ( x ) + ( y ) $\ast$ ( stride ); \}}
+
+
+
+Definition at line 100 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_a801491118dabfe946f60d39b36cc0689}\label{LoopFilter_8cpp_a801491118dabfe946f60d39b36cc0689}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!OFFSETX@{OFFSETX}}
+\index{OFFSETX@{OFFSETX}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{OFFSETX}{OFFSETX}}
+{\footnotesize\ttfamily \#define O\+F\+F\+S\+E\+TX(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{x }\end{DoxyParamCaption})~\{ ptr += ( x ); \}}
+
+
+
+Definition at line 98 of file Loop\+Filter.\+cpp.
+
+\mbox{\Hypertarget{LoopFilter_8cpp_a9e66d9c7a14ac97083cf08a059900b86}\label{LoopFilter_8cpp_a9e66d9c7a14ac97083cf08a059900b86}} 
+\index{LoopFilter.cpp@{LoopFilter.cpp}!OFFSETY@{OFFSETY}}
+\index{OFFSETY@{OFFSETY}!LoopFilter.cpp@{LoopFilter.cpp}}
+\doxysubsubsection{\texorpdfstring{OFFSETY}{OFFSETY}}
+{\footnotesize\ttfamily \#define O\+F\+F\+S\+E\+TY(\begin{DoxyParamCaption}\item[{}]{ptr,  }\item[{}]{stride,  }\item[{}]{y }\end{DoxyParamCaption})~\{ ptr += ( y ) $\ast$ ( stride ); \}}
+
+
+
+Definition at line 99 of file Loop\+Filter.\+cpp.
+

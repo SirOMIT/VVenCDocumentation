@@ -1,0 +1,32 @@
+<map id="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/x86/BufferX86.h" name="/home/itaabane/Bureau/vvencp/vvenc&#45;master/source/Lib/CommonLib/x86/BufferX86.h">
+<area shape="rect" id="node1" title=" " alt="" coords="496,5,656,76"/>
+<area shape="rect" id="node2" href="$CommonDefX86_8h.html" title=" " alt="" coords="140,199,271,225"/>
+<area shape="rect" id="node20" href="$Unit_8h.html" title="defines unit as a set of blocks and basic unit types (coding, prediction, transform)" alt="" coords="547,199,605,225"/>
+<area shape="rect" id="node30" href="$InterpolationFilter_8h.html" title="Declaration of InterpolationFilter class." alt="" coords="647,124,779,151"/>
+<area shape="rect" id="node3" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions." alt="" coords="307,497,413,524"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,572,80,599"/>
+<area shape="rect" id="node5" title=" " alt="" coords="104,572,176,599"/>
+<area shape="rect" id="node6" title=" " alt="" coords="200,572,267,599"/>
+<area shape="rect" id="node7" title=" " alt="" coords="291,572,344,599"/>
+<area shape="rect" id="node8" title=" " alt="" coords="368,572,437,599"/>
+<area shape="rect" id="node9" title=" " alt="" coords="462,572,541,599"/>
+<area shape="rect" id="node10" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations." alt="" coords="565,572,648,599"/>
+<area shape="rect" id="node19" title=" " alt="" coords="672,572,731,599"/>
+<area shape="rect" id="node11" title=" " alt="" coords="276,647,335,673"/>
+<area shape="rect" id="node12" title=" " alt="" coords="359,647,412,673"/>
+<area shape="rect" id="node13" title=" " alt="" coords="436,647,505,673"/>
+<area shape="rect" id="node14" title=" " alt="" coords="530,647,595,673"/>
+<area shape="rect" id="node15" title=" " alt="" coords="620,647,681,673"/>
+<area shape="rect" id="node16" title=" " alt="" coords="705,647,775,673"/>
+<area shape="rect" id="node17" title=" " alt="" coords="799,647,865,673"/>
+<area shape="rect" id="node18" title=" " alt="" coords="889,647,1017,673"/>
+<area shape="rect" id="node21" href="$Common_8h.html" title="Common 2D&#45;geometrical structures." alt="" coords="739,348,826,375"/>
+<area shape="rect" id="node22" href="$Mv_8h.html" title="motion vector class (header)" alt="" coords="119,423,169,449"/>
+<area shape="rect" id="node23" href="$MotionInfo_8h.html" title="motion information handling classes (header)" alt="" coords="97,348,191,375"/>
+<area shape="rect" id="node24" title=" " alt="" coords="545,273,607,300"/>
+<area shape="rect" id="node25" href="$Buffer_8h.html" title="Low&#45;overhead class describing 2D memory layout." alt="" coords="425,273,492,300"/>
+<area shape="rect" id="node26" title=" " alt="" coords="398,348,463,375"/>
+<area shape="rect" id="node27" title=" " alt="" coords="488,348,571,375"/>
+<area shape="rect" id="node28" title=" " alt="" coords="595,348,663,375"/>
+<area shape="rect" id="node29" title=" " alt="" coords="216,348,323,375"/>
+</map>

@@ -1,0 +1,192 @@
+\hypertarget{classvvenc_1_1ProfileLevelTierFeatures}{}\doxysection{Profile\+Level\+Tier\+Features}
+\label{classvvenc_1_1ProfileLevelTierFeatures}\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+
+
+{\ttfamily \#include \char`\"{}Profile\+Level\+Tier.\+h\char`\"{}}
+
+
+
+Collaboration diagram for Profile\+Level\+Tier\+Features\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classvvenc_1_1ProfileLevelTierFeatures__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_afd22d1fd3337db9ab1f439cfa3ed53b7}{Profile\+Level\+Tier\+Features}} ()
+\item 
+void \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_ac2d6dfc1740bc768d16bd27b976a96e4}{extract\+P\+T\+L\+Information}} (const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&sps)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_ad463e395735e9e35b4da4ed37b8698d7}{get\+Cpb\+Size\+In\+Bits}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1LevelTierFeatures}{Level\+Tier\+Features}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a7ca8adc29ae310261f6fbd5dcfd07c43}{get\+Level\+Tier\+Features}} () const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a97b1dac08376d91c08678952fad1d232}{get\+Max\+Dpb\+Size}} (uint32\+\_\+t pic\+Size\+Max\+In\+SamplesY) const
+\item 
+double \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a805568c2e5eea6c0a4a1ce2f26e9357f}{get\+Min\+Cr}} () const
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ProfileFeatures}{Profile\+Features}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_ac5d348e8d7a6211d30253efca9cabbbc}{get\+Profile\+Features}} () const
+\item 
+vvenc\+Tier \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a893b77021eb06a4842bce08f1a9d661c}{get\+Tier}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1LevelTierFeatures}{Level\+Tier\+Features}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a01f1bdaa2547633e408592e1b4831eca}{m\+\_\+p\+Level\+Tier}}
+\item 
+const \mbox{\hyperlink{structvvenc_1_1ProfileFeatures}{Profile\+Features}} $\ast$ \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_aa14ad085b5c42c0473f62ec8f95d871d}{m\+\_\+p\+Profile}}
+\item 
+vvenc\+Tier \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures_a4e976f296167746c94852e3fc5eb088f}{m\+\_\+tier}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 94 of file Profile\+Level\+Tier.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_afd22d1fd3337db9ab1f439cfa3ed53b7}\label{classvvenc_1_1ProfileLevelTierFeatures_afd22d1fd3337db9ab1f439cfa3ed53b7}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{ProfileLevelTierFeatures()}{ProfileLevelTierFeatures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvvenc_1_1ProfileLevelTierFeatures}{Profile\+Level\+Tier\+Features}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 101 of file Profile\+Level\+Tier.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_ac2d6dfc1740bc768d16bd27b976a96e4}\label{classvvenc_1_1ProfileLevelTierFeatures_ac2d6dfc1740bc768d16bd27b976a96e4}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!extractPTLInformation@{extractPTLInformation}}
+\index{extractPTLInformation@{extractPTLInformation}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{extractPTLInformation()}{extractPTLInformation()}}
+{\footnotesize\ttfamily void extract\+P\+T\+L\+Information (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structvvenc_1_1SPS}{S\+PS}} \&}]{sps }\end{DoxyParamCaption})}
+
+
+
+Definition at line 145 of file Profile\+Level\+Tier.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ProfileLevelTierFeatures_ac2d6dfc1740bc768d16bd27b976a96e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_ad463e395735e9e35b4da4ed37b8698d7}\label{classvvenc_1_1ProfileLevelTierFeatures_ad463e395735e9e35b4da4ed37b8698d7}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getCpbSizeInBits@{getCpbSizeInBits}}
+\index{getCpbSizeInBits@{getCpbSizeInBits}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getCpbSizeInBits()}{getCpbSizeInBits()}}
+{\footnotesize\ttfamily uint64\+\_\+t get\+Cpb\+Size\+In\+Bits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 187 of file Profile\+Level\+Tier.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classvvenc_1_1ProfileLevelTierFeatures_ad463e395735e9e35b4da4ed37b8698d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a7ca8adc29ae310261f6fbd5dcfd07c43}\label{classvvenc_1_1ProfileLevelTierFeatures_a7ca8adc29ae310261f6fbd5dcfd07c43}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getLevelTierFeatures@{getLevelTierFeatures}}
+\index{getLevelTierFeatures@{getLevelTierFeatures}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getLevelTierFeatures()}{getLevelTierFeatures()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1LevelTierFeatures}{Level\+Tier\+Features}}$\ast$ get\+Level\+Tier\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file Profile\+Level\+Tier.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a97b1dac08376d91c08678952fad1d232}\label{classvvenc_1_1ProfileLevelTierFeatures_a97b1dac08376d91c08678952fad1d232}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getMaxDpbSize@{getMaxDpbSize}}
+\index{getMaxDpbSize@{getMaxDpbSize}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getMaxDpbSize()}{getMaxDpbSize()}}
+{\footnotesize\ttfamily uint32\+\_\+t get\+Max\+Dpb\+Size (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{pic\+Size\+Max\+In\+SamplesY }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 192 of file Profile\+Level\+Tier.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a805568c2e5eea6c0a4a1ce2f26e9357f}\label{classvvenc_1_1ProfileLevelTierFeatures_a805568c2e5eea6c0a4a1ce2f26e9357f}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getMinCr@{getMinCr}}
+\index{getMinCr@{getMinCr}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getMinCr()}{getMinCr()}}
+{\footnotesize\ttfamily double get\+Min\+Cr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line 182 of file Profile\+Level\+Tier.\+cpp.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_ac5d348e8d7a6211d30253efca9cabbbc}\label{classvvenc_1_1ProfileLevelTierFeatures_ac5d348e8d7a6211d30253efca9cabbbc}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getProfileFeatures@{getProfileFeatures}}
+\index{getProfileFeatures@{getProfileFeatures}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getProfileFeatures()}{getProfileFeatures()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ProfileFeatures}{Profile\+Features}}$\ast$ get\+Profile\+Features (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 105 of file Profile\+Level\+Tier.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a893b77021eb06a4842bce08f1a9d661c}\label{classvvenc_1_1ProfileLevelTierFeatures_a893b77021eb06a4842bce08f1a9d661c}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!getTier@{getTier}}
+\index{getTier@{getTier}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{getTier()}{getTier()}}
+{\footnotesize\ttfamily vvenc\+Tier get\+Tier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 107 of file Profile\+Level\+Tier.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a01f1bdaa2547633e408592e1b4831eca}\label{classvvenc_1_1ProfileLevelTierFeatures_a01f1bdaa2547633e408592e1b4831eca}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!m\_pLevelTier@{m\_pLevelTier}}
+\index{m\_pLevelTier@{m\_pLevelTier}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{m\_pLevelTier}{m\_pLevelTier}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1LevelTierFeatures}{Level\+Tier\+Features}}$\ast$ m\+\_\+p\+Level\+Tier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 98 of file Profile\+Level\+Tier.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_aa14ad085b5c42c0473f62ec8f95d871d}\label{classvvenc_1_1ProfileLevelTierFeatures_aa14ad085b5c42c0473f62ec8f95d871d}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!m\_pProfile@{m\_pProfile}}
+\index{m\_pProfile@{m\_pProfile}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{m\_pProfile}{m\_pProfile}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structvvenc_1_1ProfileFeatures}{Profile\+Features}}$\ast$ m\+\_\+p\+Profile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 97 of file Profile\+Level\+Tier.\+h.
+
+\mbox{\Hypertarget{classvvenc_1_1ProfileLevelTierFeatures_a4e976f296167746c94852e3fc5eb088f}\label{classvvenc_1_1ProfileLevelTierFeatures_a4e976f296167746c94852e3fc5eb088f}} 
+\index{ProfileLevelTierFeatures@{ProfileLevelTierFeatures}!m\_tier@{m\_tier}}
+\index{m\_tier@{m\_tier}!ProfileLevelTierFeatures@{ProfileLevelTierFeatures}}
+\doxysubsubsection{\texorpdfstring{m\_tier}{m\_tier}}
+{\footnotesize\ttfamily vvenc\+Tier m\+\_\+tier\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 99 of file Profile\+Level\+Tier.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ProfileLevelTier_8h}{Profile\+Level\+Tier.\+h}}\item 
+/home/itaabane/\+Bureau/vvencp/vvenc-\/master/source/\+Lib/\+Common\+Lib/\mbox{\hyperlink{ProfileLevelTier_8cpp}{Profile\+Level\+Tier.\+cpp}}\end{DoxyCompactItemize}
